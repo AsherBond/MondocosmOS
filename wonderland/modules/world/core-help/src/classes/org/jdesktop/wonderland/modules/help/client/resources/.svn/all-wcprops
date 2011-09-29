@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/4572/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4387/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4521/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4520/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4572/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4557/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4387/trunk/modules/world/core-help/src/classes/org/jdesktop/wonderland/modules/help/client/resources/Bundle_de.properties
+END

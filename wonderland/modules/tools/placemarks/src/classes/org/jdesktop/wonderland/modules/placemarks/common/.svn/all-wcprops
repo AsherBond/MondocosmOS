@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common
+END
+PlacemarkRemoveMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3788/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarkRemoveMessage.java
+END
+PlacemarksMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3788/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarksMessage.java
+END
+PlacemarkConfigConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/2598/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarkConfigConnectionType.java
+END
+PlacemarkComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarkComponentServerState.java
+END
+PlacemarkList.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3788/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarkList.java
+END
+PlacemarkNewMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3788/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/common/PlacemarkNewMessage.java
+END

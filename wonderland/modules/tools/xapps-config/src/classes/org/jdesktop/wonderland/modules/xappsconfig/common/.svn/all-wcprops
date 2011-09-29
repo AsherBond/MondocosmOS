@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/common
+END
+XAppRegistryItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/common/XAppRegistryItem.java
+END
+XAppsConfigConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/common/XAppsConfigConnectionType.java
+END
+XAppsNewMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/common/XAppsNewMessage.java
+END
+XAppsRemoveMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/common/XAppsRemoveMessage.java
+END

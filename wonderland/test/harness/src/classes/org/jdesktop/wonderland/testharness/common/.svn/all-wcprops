@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common
+END
+ClientLoginRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/ClientLoginRequest.java
+END
+UserSimRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/UserSimRequest.java
+END
+ClientLogoutRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/ClientLogoutRequest.java
+END
+UserSimReply.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/UserSimReply.java
+END
+TestRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/TestRequest.java
+END
+ClientReply.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/ClientReply.java
+END
+TestReply.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/TestReply.java
+END
+Client3DRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/common/Client3DRequest.java
+END

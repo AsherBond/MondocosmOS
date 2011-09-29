@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-sharedstate-module" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-sharedstate-module}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    <property name="web.dir" location="${modules.dir}/../web"/>
+
+    <property name="module.src" value="${module.plugin.src}"/>
+    <property name="module.jarname" value="${module.name}"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <!-- import web build file -->
+    <import file="${web.dir}/build-tools/build-scripts/web-build.xml"/>
+
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+
+ 
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5" miniVersion="3" jarfile="${module.dist.dir}/${module.name}.jar"
+                moduleDescription="${module.description}" builddir="${build.dir}">
+            <client>
+                <clientjar name="sharedstate-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar>
+            </client>
+
+            <server>
+                <serverjar name="sharedstate-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+        </module>
+    </target>
+                 
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

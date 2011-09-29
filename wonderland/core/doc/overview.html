@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="NeoOffice 2.2  (Unix)">
+	<META NAME="CREATED" CONTENT="20080401;10510100">
+	<META NAME="CHANGED" CONTENT="20080423;14511500">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P>The Wonderland virtual world platform provides an open, extensible
+framework on which users can develop and deploy entire virtual worlds
+or applications that can run within an existing Wonderland virtual
+world.</P>
+<P><BR><BR>
+</P>
+<P>Naming convention : In the server code you will find many classes
+ending with MO, this stands for ManagedObject (a Darkstar interface).
+By convention we use this label to provide for quick identification
+of server versus client classes.</P>
+<P STYLE="margin-top: 0.17in"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>View</FONT></FONT></P>
+<P>A View provides a view into the virtual world, having properties
+of at least location and look direction. Avatars and Cameras are
+examples of a view. The view allows the client application to
+establish a view into the virtual world. In many cases this view
+associated with an avatar, in which case the avatar, through the cell
+system, will control the view. However on smaller devices, or simpler
+interfaces, the client may choose not to have a local avatar in which
+case the view can be controlled through the View Handler.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Connections</FONT></FONT></P>
+<P>The Connections provide a high level communication infrastructure
+for Wonderland subsystems. Any subsystem which can provide a stand
+alone service to the user will use the Connection mechanism to
+encapsulate all communication. This allows client applications to
+easily select the Wonderland subsystems that are appropriate for the
+users current mode of operation or client device capabilities. For
+the example the IM, Audio chat and Cells are all subsystems that are
+optional, and each provides it's own connection. The client side
+implementation of a specific Connetion is a singleton and they must
+be correctly initialised (by calling attach in the session login)
+before use. Connections are managed by the Session.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Cell</FONT></FONT></P>
+<P>The cell system provides the structure of the virtual world. Each
+cell is a volume in the 3D world described as either a bounding box
+or sphere, arranged in a tree. The tree provides a spatial
+organization and requires that the bounds of any child cell is fully
+enclosed within the bounds of the parent cell. Cells can provide
+either/both content and a communication channel to the client.
+Depending on the client capabilities (as specified in the {@see
+org.jdesktop.wonderland.common.cell.ClientCapabilities} class) each
+cell can provide it's own client side representation by specifying
+the client side class used to represent the cell (see {@see
+org.jdesktop.wonderland.server.cell.CellMO#getClientCellClassName(ClientCapabilities)}),
+the same mechanism also provides for multiple communication channels
+allowing, for example, support for clients with varying network
+bandwidth capabilities. The security system in Wonderland can be used
+to provide varying level of access to any cell (and it's children) to
+a particular user. Cells are broken into two main groups, static
+cells which do not change and dynamic cells which change in some way
+and are synchronized throughout the system (to be specific the static
+cells can be updated but this is a heavyweight operation and may
+briefly cause a pause in client rendering). Dynamic cells implement
+{@see org.jdesktop.wonderland.client.cell.ChannelCell} thus providing
+a communication Channel over which messages are sent/received to keep
+the cell state (loosely) synchronized.  It is the developers
+responsibility to manage the state of dynamic cells and determine
+what data needs to be shared. MovableCell is one example of a cell
+which is dynamic{@see
+org.jdesktop.wonderland.client.cell.MovableCell}.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Cell
+Cache</FONT></FONT></P>
+<P>The cell cache is completely internal to the Wonderland platform,
+developers should not need to interact with it directly, however it
+is a central component so is included in the is overview. Every View
+in the virtual world has a Cell Cache. The Cache is responsible for
+determining which cells are available to a user. There is a server
+portion of the cell cache, and if the client supports it, a client
+portion. The server Cell Cache ( {@see
+org.jdesktop.wonderland.server.cell.CellCacheMO} ) is responsible for
+determining which cells are potentially visible to a client use a
+combination of locality to the view and security policy. The client
+is notified as cells are moved into and out of the potentially
+visible set. The client Cell Cache then computes which state each
+cell should be in as the view moves and takes the appropriate
+rendering action.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Wonderland
+Session</FONT></FONT></P>
+<P>Each client application connected to the wonderland server is
+represented by a Session on both the client and the server. The
+session handles the login and also provides a single point for
+accessing all the connections required for that session. A single
+user can have multiple concurrent sessions.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>User</FONT></FONT></P>
+<P>Wonderland representation of a real person. Users have a unique
+username and a real world name. They also have a {@see
+org.jdesktop.wonderland.server.UserSecurityContextMO}) which provides
+the point of control for the security features within Wonderland.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>ClientCapabilities</FONT></FONT></P>
+<P>The Wonderland platform is designed to support client devices with
+a large variation in capabilities. Although the virtual world is
+defined as a 3D space it is quite possible to interact with the world
+from other interfaces. The platform already includes support for
+users on a telephone and we have plans for interfaces from cell
+phones and web access. The {@see
+org.jdesktop.wonderland.common.cell.ClientCapabilities} class
+provides an extensible way to describe the capabilities of a client
+device, such as rendering capabilities (2D or 3D) and network
+bandwidth. This information is used by the Cell system to determine
+the content that is delivered to a client and the cell channel to
+which a client is attached.</P>
+<P><!-- Document   : package
+    Created on : Apr 1, 2008, 10:50:42 AM
+    Author     : paulby
+--><BR><BR>
+</P>
+</BODY>
+</HTML>

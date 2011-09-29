@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2980/trunk/core/src/classes/org/jdesktop/wonderland/common/messages
+END
+MessageList.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessageList.java
+END
+MessageID.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2980/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessageID.java
+END
+MessageException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessageException.java
+END
+WonderlandSetupMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/WonderlandSetupMessage.java
+END
+ResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/ResponseMessage.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/Message.java
+END
+MessagePacker.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessagePacker.java
+END
+ProtocolSelectionMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/ProtocolSelectionMessage.java
+END
+MessageMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessageMonitor.java
+END
+ExtractMessageException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/ExtractMessageException.java
+END
+OKMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/OKMessage.java
+END
+MessageMonitorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/MessageMonitorImpl.java
+END
+ErrorMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/messages/ErrorMessage.java
+END

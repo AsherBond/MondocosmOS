@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/modules
+END
+ModuleAssetStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/modules/ModuleAssetStream.java
+END
+ModuleAssetRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/modules/ModuleAssetRepository.java
+END
+ModuleAssetRepositoryFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/modules/ModuleAssetRepositoryFactory.java
+END

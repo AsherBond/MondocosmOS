@@ -1,0 +1,9 @@
+
+# the server name
+sgs.server=localhost
+
+# the server port
+sgs.port=1139
+
+# the configuration file to use
+sgs.config.file.src=WonderlandMaster.cfg

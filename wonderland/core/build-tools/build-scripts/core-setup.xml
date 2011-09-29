@@ -1,0 +1,161 @@
+<project basedir="." default="..." name="core.setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="core.build-scripts.dir" file="${ant.file.core.setup}"/>
+    <property name="core.dir" location="${core.build-scripts.dir}/../.."/>
+    <property name="top.dir" location="${core.dir}/.."/>
+
+    <!-- import the main setup file -->
+    <import file="${top.dir}/build-tools/build-scripts/setup.xml"/>
+    
+    <!-- import core properties -->
+    <property file="${core.build-scripts.dir}/core.properties"/>
+    
+    <!-- import core classpath -->
+    <import file="${core.build-scripts.dir}/classpath.xml"/>
+
+    <property name="downloads.dir" location="${core.lib.dir}/downloads"/>
+    
+    <target name="init">
+        <mkdir dir="${downloads.dir}"/>
+    </target>
+    
+    <!-- unpack zips -->
+    <!-- We are going to use our own modified version of Scenario.jar until the popup bug fix can
+	 be integrated into the master Scenario.jar
+	 <target name="unpack-core-libs" depends="init, unpack-jbullet, unpack-scenegraph, unpack-javolution">
+    -->
+    <target name="unpack-core-libs" depends="init">
+        <!-- darkstar -->
+   	<unpack-lib-zip pkgname="sgs-server"
+			srcdir="${core.lib.zip.dir}" destdir="${core.sgs.dir}"/>
+	<unpack-lib-zip pkgname="sgs-client"
+			srcdir="${core.lib.zip.dir}" destdir="${core.sgs.dir}"/>
+                         
+        <!-- jogl -->
+        <unpack-lib-zip pkgname="jogl"
+                        srcdir="${core.lib.zip.os.dir}" destdir="${core.lib.os.dir}/.."/>
+
+        <!-- Escher -->
+        <unpack-lib-zip pkgname="escher"
+                        srcdir="${core.lib.zip.os.dir}" destdir="${core.lib.os.dir}/.."/>
+
+        <!-- add video if the wonderland-video directory exists as a peer of wonderland -->
+        <if>
+            <available file="${top.dir}/../wonderland-video/lib/zip/${ostype}/xuggler.zip"/>
+            <then>
+                <unpack-lib-zip pkgname="xuggler"
+                        srcdir="${top.dir}/../wonderland-video/lib/zip/${ostype}" destdir="${core.lib.os.dir}/.."/>
+            </then>
+        </if>
+    </target>
+
+    <!--
+    <target name="unpack-jbullet">
+        <if>
+            <not>
+            <available file="${core.lib.dir}/common/jbullet.jar"/>
+            </not>
+            <then>
+                <get src="http://jbullet.advel.cz/download/jbullet-20080917.zip" dest="${downloads.dir}/jbullet.zip"/>
+                <unzip src="${downloads.dir}/jbullet.zip" dest="${core.lib.dir}" overwrite="true">
+                    <patternset>
+                        <include name="**/jbullet.jar"/>
+                    </patternset>
+                    <mapper type="flatten"/>
+                </unzip>
+                <move file="${core.lib.dir}/jbullet.jar" todir="${core.lib.dir}/common"/>
+                <delete file="jbullet.zip" quiet="true"/>
+            </then>
+        </if>
+    </target>
+    -->
+    <!--
+    <target name="unpack-javolution">
+        <if>
+            <not>
+            <available file="${core.lib.dir}/common/javolution.jar"/>
+            </not>
+            <then>
+                <get src="http://javolution.org/javolution-5.2.6-bin.zip" dest="${downloads.dir}/javolution.zip"/>
+                <unzip src="${downloads.dir}/javolution.zip" dest="${core.lib.dir}" overwrite="true">
+                    <patternset>
+                        <include name="**/javolution.jar"/>
+                    </patternset>
+                    <mapper type="flatten"/>
+                </unzip>
+                <move file="${core.lib.dir}/javolution.jar" todir="${core.lib.dir}/common"/>
+                <delete file="jbullet.zip" quiet="true"/>
+            </then>
+        </if>
+    </target>
+    -->
+
+    <!-- From OpenJFX compiler bootstrap.xml -->
+    <property name="bootstrap.dir" value="${downloads.dir}"/>
+    
+    <!-- Temporary hack while we wait for the mac scenario builds -->
+    <property name="scenegraph.platform" value="linux-i586"/>
+
+    <!--
+    <condition property="scenegraph.platform" value="windows-i586">
+        <os family="windows"/>
+    </condition>
+    <condition property="scenegraph.platform" value="linux-i586">
+        <os name="Linux"/>
+    </condition>
+    <condition property="scenegraph.platform" value="macosx-universal">
+        <os name="Linux"/>
+    </condition>
+    <condition property="scenegraph.platform" value="solaris-sparc">
+        <not>
+            <isset property="scenegraph.platform"/>
+        </not>
+    </condition>
+    -->
+
+    <property name="scenegraph.url" value="http://openjfx.java.sun.com/hudson/job/jfx-scenegraph/label=${scenegraph.platform}/lastSuccessfulBuild/artifact/scenegraph/dist/*zip*/dist.zip"/>
+    <property name="scenegraph.file" value="${bootstrap.dir}/Scenario-dist.zip"/>
+
+    <target name="-check-scenegraph-timestamps">
+        <delete file="${bootstrap.dir}/scenegraph.rss" failonerror="false"/>
+        <get src="http://openjfx.java.sun.com/hudson/job/jfx-scenegraph/rssAll" dest="${bootstrap.dir}/scenegraph.rss" ignoreerrors="true"/>
+        <xmlproperty file="${bootstrap.dir}/scenegraph.rss"/>
+        <loadfile property="scenegraph.last.updated" srcfile="${bootstrap.dir}/scenegraph.last.update" failonerror="false"/>
+        <condition property="scenegraph-zip-uptodate">
+            <equals arg1="${feed.entry.updated}" arg2="${scenegraph.last.updated}"/>
+        </condition>
+    </target>
+    
+    <target name="-fetch-scenegraph-zip" depends="-check-scenegraph-timestamps" unless="scenegraph-zip-uptodate">
+        <get src="${scenegraph.url}" dest="${scenegraph.file}" usetimestamp="true" ignoreerrors="true"/>
+        <!-- save RSS update list -->
+        <echo file="${bootstrap.dir}/scenegraph.last.update" message="${feed.entry.updated}"/>
+    </target>
+   
+    <target name="fetch-scenegraph" depends="-fetch-scenegraph-zip">
+        <uptodate property="scenegraph-uptodate" srcfile="${scenegraph.file}" targetfile="${downloads.dir}/Scenario/tstamp"/>
+    </target>
+
+    <target name="unpack-scenegraph" depends="fetch-scenegraph" unless="scenegraph-uptodate">
+        <unzip src="${scenegraph.file}" dest="${downloads.dir}/Scenario/" overwrite="true"/>
+        <touch file="${downloads.dir}/Scenario/tstamp"/>
+        <copy file="${downloads.dir}/Scenario/dist/Scenario.jar" todir="${core.lib.dir}/common"/>
+    </target>
+    <!-- End From OpenJFX compiler bootstrap.xml -->
+
+    
+    <target name="-core-scrub-libs" depends="clean-core-libs"/>
+
+    <target name="clean-core-libs" description="Clean external libraries">
+        <delete dir="${core.sgs.dir}"/>
+
+        <!-- remove all OS directories -->
+        <for list="${ostypes}" param="ostype">
+            <sequential>
+                <delete dir="${core.lib.dir}/@{ostype}"/>
+            </sequential>
+        </for>
+
+        <delete dir="${downloads.dir}"/>
+    </target>    
+</project>

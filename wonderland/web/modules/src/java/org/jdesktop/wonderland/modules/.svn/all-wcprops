@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4623/trunk/web/modules/src/java/org/jdesktop/wonderland/modules
+END
+ModuleList.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/3657/trunk/web/modules/src/java/org/jdesktop/wonderland/modules/ModuleList.java
+END
+Module.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3657/trunk/web/modules/src/java/org/jdesktop/wonderland/modules/Module.java
+END
+ModulePart.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1365/trunk/web/modules/src/java/org/jdesktop/wonderland/modules/ModulePart.java
+END
+ModuleAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1365/trunk/web/modules/src/java/org/jdesktop/wonderland/modules/ModuleAttributes.java
+END
+ModuleFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1365/trunk/web/modules/src/java/org/jdesktop/wonderland/modules/ModuleFactory.java
+END

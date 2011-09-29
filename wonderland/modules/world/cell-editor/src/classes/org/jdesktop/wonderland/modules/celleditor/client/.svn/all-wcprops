@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4732/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client
+END
+CellPhysicsPropertiesComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/4186/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/CellPhysicsPropertiesComponentProperties.java
+END
+PositionJPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4614/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/PositionJPanel.form
+END
+CellPropertiesJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4489/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/CellPropertiesJFrame.java
+END
+CellPhysicsPropertiesComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/3401/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/CellPhysicsPropertiesComponentProperties.form
+END
+CellPropertiesJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4476/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/CellPropertiesJFrame.form
+END
+CellPhysicsPropertiesComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4186/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/CellPhysicsPropertiesComponentFactory.java
+END
+BasicJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4622/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/BasicJPanel.java
+END
+AddComponentDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3987/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/AddComponentDialog.java
+END
+PaletteClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4729/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/PaletteClientPlugin.java
+END
+BasicJPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4622/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/BasicJPanel.form
+END
+AddComponentDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3987/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/AddComponentDialog.form
+END
+PositionJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4614/trunk/modules/world/cell-editor/src/classes/org/jdesktop/wonderland/modules/celleditor/client/PositionJPanel.java
+END

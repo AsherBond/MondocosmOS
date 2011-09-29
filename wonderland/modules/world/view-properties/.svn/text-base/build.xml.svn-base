@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-viewproperties-module" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-viewproperties-module}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/viewproperties"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.viewproperties"/>
+    <property name="module.jarname" value="viewproperties-module"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${modules.dir}/foundation/content-repository/build/client/contentrepo-client.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="viewproperties" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="View properties configuration library" builddir="${build.dir}">
+
+            <requires name="content-repository" version="0" minorVersion="5"/>
+            <client>
+                <clientjar name="viewproperties-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/**/*.properties"/>
+                    </fileset>
+                </clientjar>
+            </client>
+        </module>
+    </target>
+             
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

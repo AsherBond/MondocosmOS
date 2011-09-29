@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4502/trunk/web/lib/glassfish
+END
+glassfish-embedded-all-3.0-b74b.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4502/trunk/web/lib/glassfish/glassfish-embedded-all-3.0-b74b.jar
+END
+grizzly-1.9.18k.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4502/trunk/web/lib/glassfish/grizzly-1.9.18k.diff
+END
+glassfish_3.0b74b.diff
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4502/trunk/web/lib/glassfish/glassfish_3.0b74b.diff
+END

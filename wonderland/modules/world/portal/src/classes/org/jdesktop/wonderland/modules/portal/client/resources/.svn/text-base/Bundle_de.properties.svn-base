@@ -1,0 +1,12 @@
+Portal_Cell=Portal
+PortalComponentProperties.browseButton.text=Durchsuchen...
+PortalComponentProperties.contentRepositoryRadioButton.text=Inhaltsspeicher
+PortalComponentProperties.fileRadioButton.text=Datei
+PortalComponentProperties.fromPlacemarkB.text=Von Lesezeichen setzen...
+PortalComponentProperties.jLabel10.text=Winkel:
+PortalComponentProperties.jLabel1.text=Server-URL:
+PortalComponentProperties.jLabel2.text=Position:
+PortalComponentProperties.jLabel7.text=Tonquelle:
+PortalComponentProperties.jLabel8.text=Lautst\u00e4rke:
+PortalComponentProperties.previewButton.text=Vorschau
+Portal_Description=Die Portalf\u00e4higkeit erlaubt es, Benutzer zu teleportieren

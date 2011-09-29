@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/win32
+END
+jinput-dx8.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/win32/jinput-dx8.dll
+END
+lwjgl.dll
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/win32/lwjgl.dll
+END
+jinput-raw.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/win32/jinput-raw.dll
+END
+OpenAL32.dll
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/win32/OpenAL32.dll
+END

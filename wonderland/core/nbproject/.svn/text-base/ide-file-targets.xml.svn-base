@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="wonderland-core-IDE">
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/41/freeform-config.html#runsingle) -->
+    <target name="run-selected-file-in-classes">
+        <fail unless="run.class">Must set property 'run.class'</fail>
+        <ant antfile="build.xml" inheritall="false">
+            <target name="jar"/>
+        </ant>
+        <java classname="${run.class}" failonerror="true" fork="true">
+            <classpath>
+                <pathelement path="build/lib/wonderland-client.jar:build/lib/wonderland-common.jar:ext/sgs/sgs-0.9.4-r3093/lib/sgs.jar:ext/sgs/sgs-client-0.9.4-r3093/lib/sgs-client.jar:ext/jme20/target/jme-audio.jar:ext/jme20/target/jme-awt.jar:ext/jme20/target/jme-collada.jar:ext/jme20/target/jme-editors.jar:ext/jme20/target/jme-effects.jar:ext/jme20/target/jme-font.jar:ext/jme20/target/jme-gamestates.jar:ext/jme20/target/jme-model.jar:ext/jme20/target/jme-scene.jar:ext/jme20/target/jme-terrain.jar:ext/jme20/target/jme-xml.jar:ext/jme20/target/jme.jar:ext/linux/jars/jai_imageio.jar:ext/linux/jars/jai_core.jar:ext/macosx/jars/jai_core.jar"/>
+            </classpath>
+        </java>
+    </target>
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/articles/freeform-config.html#compilesingle) -->
+    <target name="compile-selected-files-in-classes">
+        <fail unless="files">Must set property 'files'</fail>
+        <!-- TODO decide on and define some value for ${build.classes.dir} -->
+        <mkdir dir="${build.classes.dir}"/>
+        <javac destdir="${build.classes.dir}" includes="${files}" source="1.5" srcdir="src/classes">
+            <classpath path="ext/sgs/sgs-client-0.9.8/lib/sgs-client.jar:ext/sgs/sgs-client-0.9.8/lib/sgs-shared-1.3.jar:ext/sgs/sgs-server-dist-0.9.10/lib/sgs-server-api-0.9.10.jar:ext/sgs/sgs-server-dist-0.9.10/lib/sgs-server-0.9.10.jar:ext/sgs/sgs-server-dist-0.9.10/lib/sgs-server-internal-api-0.9.10.jar:ext/common/swing-layout-1.0.jar:ext/common/mtgame.jar:ext/jme20/target/jme-audio.jar:ext/jme20/target/jme-awt.jar:ext/jme20/target/jme-collada.jar:ext/jme20/target/jme-editors.jar:ext/jme20/target/jme-effects.jar:ext/jme20/target/jme-font.jar:ext/jme20/target/jme-gamestates.jar:ext/jme20/target/jme-model.jar:ext/jme20/target/jme-scene.jar:ext/jme20/target/jme-swt.jar:ext/jme20/target/jme-terrain.jar:ext/jme20/target/jme-xml.jar:ext/jme20/target/jme.jar:../lib/jaxb/activation.jar:../lib/jaxb/jaxb-api.jar:../lib/jaxb/jaxb-impl.jar:../lib/jaxb/jaxb-xjc.jar:../lib/jaxb/jaxb1-impl.jar:../lib/jaxb/jsr173_1.0_api.jar:ext/common/Scenario.jar:ext/common/javolution.jar:ext/common/stun.jar:ext/common/scannotation-1.0.2.jar:ext/macosx/jars/gluegen-rt.jar:ext/macosx/jars/jogl.jar:ext/common/looks-2.2.2.jar:ext/common/trident.jar"/>
+        </javac>
+    </target>
+</project>

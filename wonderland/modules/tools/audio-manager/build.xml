@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="audio-manager">
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.audio-manager}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/audiomanager"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.audiomanager"/>
+    <property name="module.jarname" value="audiomanager"/>
+    <property name="module.plugins" value="AudioManagerServerPlugin AudioManagerClientPlugin"/>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${current.dir}/lib/voicelib.jar"/>
+        <path location="${current.dir}/lib/voip.jar"/>
+        <path location="${current.dir}/lib/bridge_connector.jar"/>
+        <path location="${current.dir}/../presence-manager/build/lib/server/presencemanager-server.jar"/>
+        <path location="${current.dir}/../orb/build/lib/server/orb-server.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-common.classpath">
+        <path location="${current.dir}/../presence-manager/build/lib/client/presencemanager-client.jar"/>
+        <path location="${current.dir}/../orb/build/lib/client/orb-client.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${modules.dir}/foundation/content-repository/build/client/contentrepo-client.jar"/>
+        <path location="${current.dir}/lib/stun.jar"/>
+        <path location="${current.dir}/../presence-manager/build/lib/client/presencemanager-client.jar"/>
+        <path location="${current.dir}/../orb/build/lib/client/orb-client.jar"/>
+        <path location="${current.dir}/../../world/avatarbase/build/client/avatarbase-client.jar"/>
+        <path location="${current.dir}/../../world/avatarbase/lib/avatars.jar"/>
+        <path location="${current.dir}/../orb/build/lib/client/orb-client.jar"/>
+        <path location="${current.dir}/../text-chat/build/client/textchat-client.jar"/>
+    </pathconvert>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+   
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="audiomanager" majorVersion="0" minorVersion="5" miniVersion="3"
+                moduleDescription="Audio foundation API and library"
+                jarfile="${module.dist.dir}/${module.jarname}.jar"
+                builddir="${build.lib.dir}">
+
+            <requires name="presencemanager" version="0" minorVersion="5"/>
+            <requires name="content-repository" version="0" minorVersion="5"/>
+            <requires name="avatarbase" version="0" minorVersion="5" miniVersion="1"/>
+
+            <client dir="${current.dir}/lib">
+                <clientjar name="audiomanager-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/client/voicechat/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/resources/**/*.png"/>
+                        <include name="${module.src}/client/resources/**/*.properties"/>
+                        <include name="${module.src}/common/**/*.properties"/>
+                    </fileset>
+                </clientjar>
+
+                <include name="stun.jar"/>
+            </client>
+            <server dir="${current.dir}/lib">
+                <serverjar name="audiomanager-server" basedir="${build.classes.dir}">
+                    <service type="com.sun.sgs.service.Service"
+                             provider="com.sun.mpk20.voicelib.impl.service.voice.VoiceServiceImpl"/>
+                    <service type="com.sun.sgs.service.Manager"
+                             provider="com.sun.mpk20.voicelib.impl.app.VoiceManagerImpl"/>
+                             
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/common/**/*.properties"/>
+                    </fileset>
+                </serverjar>
+		
+                <include name="voicelib.jar"/>
+                <include name="bridge_connector.jar"/>
+                <include name="voip.jar"/>
+            </server>
+        </module>
+    </target>
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+
+    <target name="clean" depends="-module-clean"/>
+</project>

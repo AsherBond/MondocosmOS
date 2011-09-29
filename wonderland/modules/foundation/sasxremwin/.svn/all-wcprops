@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4631/trunk/modules/foundation/sasxremwin
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3013/trunk/modules/foundation/sasxremwin/logging.properties
+END
+run.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4185/trunk/modules/foundation/sasxremwin/run.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4329/trunk/modules/foundation/sasxremwin/build.xml
+END

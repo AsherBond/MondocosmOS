@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/4725/trunk/web/front/web
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4725/trunk/web/front/web/index.jsp
+END
+admin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4405/trunk/web/front/web/admin.jsp
+END
+admin_default.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/619/trunk/web/front/web/admin_default.jsp
+END
+clientSettings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4608/trunk/web/front/web/clientSettings.jsp
+END
+clientProps.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4608/trunk/web/front/web/clientProps.jsp
+END

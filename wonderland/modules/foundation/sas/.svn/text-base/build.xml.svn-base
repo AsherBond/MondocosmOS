@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sas" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.sas}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/sas"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.sas"/>
+    <property name="module.jarname" value="sas"/>
+    
+    <property name="module-common.classpath" value="${current.dir}/../appbase/build/client/appbase-client.jar"/>
+
+    <property name="module-server.classpath" value="${current.dir}/../appbase/build/server/appbase-server.jar"/>
+
+    <property name="module-provider.classpath" value="${current.dir}/../appbase/build/client/appbase-client.jar"/>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+						compile-provider"/>
+
+    <target name="compile-provider" depends="-module-init, -module-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/provider/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${core-client.classpath}"/>  
+                <pathelement path="${module-provider.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="jar-provider" depends="compile-provider">
+      <mkdir dir="${current.dir}/build/provider"/>
+      <jar destfile="${current.dir}/build/provider/sas-provider.jar">
+	<fileset dir="${build.classes.dir}">
+          <include name="${module.src}/provider/**"/>
+          <include name="${module.src}/common/**"/>
+	</fileset>
+      </jar>
+    </target>
+
+    <target name="dist" depends="build,jar-provider">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="sas" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="Shared application server" builddir="${build.dir}">
+
+           <client>
+               <clientjar name="sas-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar> 
+           </client>
+
+           <server>
+                <serverjar name="sas-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            
+        </module>
+    </target>                                                       
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+
+    <target name="clean" depends="-module-clean"/>
+</project>

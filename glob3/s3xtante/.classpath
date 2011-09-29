@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jai_codec.jar"/>
+	<classpathentry kind="lib" path="lib/jai_core.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/jcommon-1.0.14.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/jep-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/jfreechart-1.0.11.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/jgraph.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/kxml2.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/TableLayout-bin-jdk1.5-2007-04-21.jar"/>
+	<classpathentry kind="lib" path="lib/geonames-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/jcalendar.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/gishur_core.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/gishur_x.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/jts-1.11.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/libMath.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/euclid"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/igolibs"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe"/>
+	<classpathentry kind="lib" path="lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/jogl.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/geoapi-2.3-M1.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/geoapi-pending-2.3-M1.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-api-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-epsg-hsql-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-main-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-metadata-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-referencing-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/gt-shapefile-2.7-M3.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/gt/jsr-275-1.0-beta-2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/globe/libs/gt/gt-swing-2.7-M3.jar" sourcepath="/home/fpulido/Escritorio/Tools/geotools-2.7-M3-project.zip"/>
+	<classpathentry kind="lib" path="lib/sextante/sextante_algorithms.jar" sourcepath="/algorithms"/>
+	<classpathentry kind="lib" path="lib/sextante/sextante_gui.jar"/>
+	<classpathentry kind="lib" path="lib/sextante/sextante.jar" sourcepath="/sextante"/>
+	<classpathentry kind="lib" path="/globe/libs/worldwind-1.2.0/worldwind.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/worldwind-1.2.0/worldwindx.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

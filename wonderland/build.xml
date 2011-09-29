@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="wonderland">
+
+<!-- set the current directory -->
+<dirname property="current.dir" file="${ant.file.wonderland}"/>
+
+<!-- import generic setup -->
+<import file="build-tools/build-scripts/setup.xml"/>
+    
+<target name="build" description="Build everything">
+    <!-- build areas in correct order, use default build target -->
+    <ant dir="utils"   inheritall="false"/>
+    <ant dir="core"    inheritall="false"/>
+    <ant dir="web"     inheritall="false"/>
+    <ant dir="modules" inheritall="false"/>
+
+    <!-- if wonderland-modules exists and is a sibling of wonderland, build
+         it too -->
+    <if>
+        <available file="${wonderland-modules.stable.dir}/build.xml"/>
+        <then>
+            <ant dir="${wonderland-modules.stable.dir}" inheritall="false"/>
+        </then>
+    </if>
+</target>
+
+<target name="package" depends="build" description="Assemble into final package">
+    <mkdir dir="dist"/>
+   
+    <!-- create the final jar in the dist directory -->
+    <ant dir="web" target="-package" inheritall="false">
+        <property name="server.package.dir" value="${basedir}/dist"/>
+    </ant>
+</target>
+
+<target name="javadoc" description="Build javadoc">
+    <ant dir="core" target="javadoc" inheritall="false"/>
+</target>
+
+<target name="clean" description="Clean all rebuildable stuff.">
+    <!-- delete top-level dist directory -->
+    <delete dir="dist"/>
+
+    <!-- clean individual components -->
+    <ant dir="utils"   target="clean" inheritall="false"/>
+    <ant dir="core"    target="clean" inheritall="false"/>
+    <ant dir="web"     target="clean" inheritall="false"/>
+    <ant dir="modules" target="clean" inheritall="false"/>
+
+    <!-- if wonderland-modules exists and is a sibling of wonderland, clean
+         it too -->
+    <if>
+        <available file="${wonderland-modules.stable.dir}/build.xml"/>
+        <then>
+            <ant dir="${wonderland-modules.stable.dir}" target="clean" inheritall="false"/>
+        </then>
+    </if>
+</target>
+
+<target name="scrub" depends="clean" 
+        description="Remove anything that is not part of the default distribution">
+            
+    <!-- right now, only core needs scrubbing -->
+    <ant dir="core" target="scrub" inheritall="false"/>
+</target>
+
+<target name="release" depends="package, javadoc" description="Build release">
+</target>
+
+<target name="daily-build" depends="release" description="Do the daily build">
+  <fail unless="daily.build.dir" message="No ${daily.build.dir} directory specified"/>
+  
+  <tstamp>
+     <format property="daily.build.date" pattern="yyyy-MM-dd"/>
+  </tstamp>
+  
+  <property name="daily.build.today.dir" location="${daily.build.dir}/daily-${wonderland.version}/${daily.build.date}"/>
+  <mkdir dir="${daily.build.today.dir}"/>
+
+  <!-- copy javadoc to javadoc directory -->
+  <copy todir="${daily.build.dir}/api-update">
+    <fileset dir="core/release/javadoc"/>
+  </copy>
+  
+  <!-- copy Wonderland.jar -->
+  <copy todir="${daily.build.today.dir}" file="${dist.dir}/Wonderland.jar"/>
+</target>
+
+<target name="run-server" depends="package, -run-setup,
+                                   -run-args-with-properties,
+                                   -run-args-without-properties,
+                                   -run-with-wrapper,
+                                   -run-without-wrapper"
+        description="Run the Wonderland Server"/>
+        
+<target name="-run-setup">
+    <!-- Use my.run.properties to override default values in web-default.properties.
+     You can specify an alternate run.properties override file by
+     running with "ant -Drun.properties.file=<file>" -->
+    <property name="run.properties.file" location="${basedir}/my.run.properties"/>
+
+    <condition property="run.properties.exists"> 
+        <available file="${run.properties.file}"/>
+    </condition>
+
+    <condition property="run.with.wrapper">
+        <equals arg1="${system.type}" arg2="windows-x86"
+                casesensitive="false"/>
+    </condition>
+</target>
+
+<target name="-run-args-with-properties" if="run.properties.exists">
+    <path id="run.properties.path">
+        <pathelement location="${run.properties.file}"/>
+    </path>
+</target>
+
+<target name="-run-args-without-properties" unless="run.properties.exists">
+    <path id="run.properties.path"/>
+</target>
+
+<target name="-run-without-wrapper" unless="run.with.wrapper">
+    <java dir="dist" jar="dist/Wonderland.jar" fork="true">
+        <arg pathref="run.properties.path"/>
+    </java>
+</target>
+
+<!-- workaround for issues with shutdown on Windows.  Use a wrapper
+     so that the webserver shuts down cleanly -->
+<target name="-run-with-wrapper" if="run.with.wrapper">
+    <property name="wonderland.jar.location"
+              location="${current.dir}/dist/Wonderland.jar"/>
+
+    <java dir="dist" classname="org.jdesktop.wonderland.utils.ant.RunWrapper"
+          fork="true">
+        <classpath>
+            <pathelement path="${current.dir}/utils/ant/build/lib/wonderland-ant-utils.jar"/>
+        </classpath>
+
+        <arg value="${wonderland.jar.location}"/>
+        <arg pathref="run.properties.path"/>
+    </java>
+</target>
+
+<!--Netbeans debugging -->
+<target name="debug-server" depends="package, -run-setup,
+                                   -run-args-with-properties,
+                                   -run-args-without-properties,
+                                   -debug-with-wrapper,
+                                   -debug-without-wrapper"
+        description="Run the Wonderland Server"/>
+        
+        <!-- workaround for issues with shutdown on Windows.  Use a wrapper
+             so that the webserver shuts down cleanly -->
+        <target name="-debug-with-wrapper" if="run.with.wrapper">
+            <property name="wonderland.jar.location"
+              location="${current.dir}/dist/Wonderland.jar"/>
+            <nbjpdastart addressproperty="jpda.address" name="wonderland" transport="dt_socket">
+                <classpath>
+                    <pathelement path="${current.dir}/utils/ant/build/lib/wonderland-ant-utils.jar"/>
+                </classpath>
+            </nbjpdastart>
+            
+            <java dir="dist" classname="org.jdesktop.wonderland.utils.ant.RunWrapper" fork="true">
+                <classpath>
+                    <pathelement path="${current.dir}/utils/ant/build/lib/wonderland-ant-utils.jar"/>
+                </classpath>
+                <jvmarg value="-Xdebug"/>
+                <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>
+                <arg value="${wonderland.jar.location}"/>
+                <arg pathref="run.properties.path"/>
+            </java>
+        </target>
+
+        <target name="-debug-without-wrapper" unless="run.with.wrapper">
+            <nbjpdastart addressproperty="jpda.address" name="wonderland" transport="dt_socket">
+            </nbjpdastart>
+            <java dir="dist" jar="dist/Wonderland.jar" fork="true">
+                <jvmarg value="-Xdebug"/>
+                <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>
+                <arg pathref="run.properties.path"/>
+            </java>
+        </target>
+</project>

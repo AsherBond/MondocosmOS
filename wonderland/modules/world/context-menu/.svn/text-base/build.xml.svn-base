@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-contextmenu-module" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-contextmenu-module}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/contextmenu"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.contextmenu"/>
+    <property name="module.jarname" value="conextmenu-module"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="context-menu" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="Context menu library" builddir="${build.dir}">
+                    
+            <client>
+                <clientjar name="contextmenu-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                </clientjar> 
+            </client>
+        </module>
+    </target>                                  
+             
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

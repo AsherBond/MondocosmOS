@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jme-collada-cell>
+    <position-component>
+        <origin>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </origin>
+        <bounds>
+            <type>BOX</type>
+            <radius>15.0</radius>
+        </bounds>
+        <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+        </scale>
+        <rotation>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <angle>0.0</angle>
+        </rotation>
+    </position-component>
+    <model>wla://jmecolladaloader/RoomLow10x15/models/RoomLow10x15.dae</model>
+    <geometry-rotation>
+        <x>-0.9999999403953552</x>
+        <y>0.0</y>
+        <z>0.0</z>
+        <angle>1.5707963705062866</angle>
+    </geometry-rotation>
+</jme-collada-cell>
+

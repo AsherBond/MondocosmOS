@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client
+END
+EditPlacemarksJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/EditPlacemarksJFrame.form
+END
+PlacemarkComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkComponentProperties.java
+END
+PlacemarkUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkUtils.java
+END
+PlacemarkComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkComponentProperties.form
+END
+PlacemarkClientConfigConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkClientConfigConnection.java
+END
+AddEditPlacemarkJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/AddEditPlacemarkJDialog.java
+END
+AddEditPlacemarkJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/AddEditPlacemarkJDialog.form
+END
+PlacemarkRegistryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkRegistryImpl.java
+END
+PlacemarkComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3788/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkComponentFactory.java
+END
+EditPlacemarksJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/EditPlacemarksJFrame.java
+END
+PlacemarkPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4723/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/PlacemarkPlugin.java
+END

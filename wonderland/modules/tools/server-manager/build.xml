@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="server-manager">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.server-manager}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+    <property name="web.dir" location="${modules.dir}/../web"/>
+    
+    <property name="module.src" value="org/jdesktop/wonderland/servermanager"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.servermanager"/>
+    <property name="module.jarname" value="servermanager"/>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <!-- import web build file -->
+    <import file="${web.dir}/build-tools/build-scripts/web-build.xml"/>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${web.dir}/runner/dist/wonderland-runner-api.jar"/>
+        <path location="${modules.dir}/foundation/darkstar-api/build/lib/darkstar-api.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path path="${web.classpath}"/>
+    </pathconvert>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${modules.dir}/foundation/security/build/lib/server/security-server.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+   
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="servermanager" majorVersion="0" minorVersion="5"
+	  	moduleDescription="Server manager library"
+                jarfile="${module.dist.dir}/${module.jarname}.jar"
+                builddir="${build.lib.dir}">
+
+            <requires name="darkstar-api" version="0" minorVersion="5"/>
+
+            <part name="web">
+                <jar name="servermanager-web.war">
+                    <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                        <include name="${module.src}/client/**"/>
+                        <include name="${module.src}/common/**"/>
+                    </zipfileset>
+                    
+                    <fileset dir="${current.dir}/web"/>
+                </jar>
+            </part>
+            
+            <server>
+                <serverjar name="servermanager-server" basedir="${build.classes.dir}">
+                    <serverplugin provider="org.jdesktop.wonderland.servermanager.server.ServerManagerServerPlugin"/>
+                    
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>                   
+                </serverjar>
+            </server>
+        </module>
+    </target>                                  
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

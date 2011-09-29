@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/message
+END
+SecretRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/message/SecretRequestMessage.java
+END
+TakeControlRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/message/TakeControlRequestMessage.java
+END
+SecretResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/message/SecretResponseMessage.java
+END
+XrwSecurityMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/message/XrwSecurityMessage.java
+END

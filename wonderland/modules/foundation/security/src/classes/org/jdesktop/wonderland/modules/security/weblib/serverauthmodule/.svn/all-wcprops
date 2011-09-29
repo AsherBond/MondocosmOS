@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/3490/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/weblib/serverauthmodule
+END
+WonderSAM.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3490/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/weblib/serverauthmodule/WonderSAM.java
+END
+SessionResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/2816/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/weblib/serverauthmodule/SessionResolver.java
+END
+GroupResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/2816/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/weblib/serverauthmodule/GroupResolver.java
+END

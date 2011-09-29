@@ -1,0 +1,22 @@
+#EN: Attach
+Attach=Attacher
+#EN: Bystanders
+Bystanders=Spectateurs
+#EN: Detach
+Detach=Detacher
+#EN: Mute
+Mute=Muet
+#EN: Attach
+OrbDialog.attachButton.text=Attacher
+#EN: End Call
+OrbDialog.endCallButton.text=Fin Appel
+#EN: Mute
+OrbDialog.muteButton.text=Muet
+#EN: OK
+OrbDialog.okButton.text=OK
+#EN: Unmute
+Unmute=Parlant
+#EN: Name:
+OrbDialog.nameLabel.text=Nom
+#EN: Volume:
+OrbDialog.volumeLabel.text=Volume:

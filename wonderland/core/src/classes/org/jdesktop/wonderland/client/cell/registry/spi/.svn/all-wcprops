@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/spi
+END
+CellFactorySPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2243/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/spi/CellFactorySPI.java
+END
+CellComponentFactorySPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/spi/CellComponentFactorySPI.java
+END

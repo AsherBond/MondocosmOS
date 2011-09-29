@@ -1,0 +1,60 @@
+<project basedir="." default="run" name="sasxremwin.run">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="current.dir" file="${ant.file.sas.xremwin.run}"/>
+
+    <!-- override to fix library locations in core -->
+    <property name="core.lib.dir" location="${current.dir}/core/lib"/>
+    <property name="core.build.lib.dir" location="${current.dir}/core/lib"/>
+
+    <!-- import common setup -->
+    <import file="${current.dir}/build-tools/build-scripts/run-setup.xml"/>
+
+    <!-- import core setup -->
+    <import file="${current.dir}/core/build-tools/build-scripts/core-setup.xml"/>
+   
+    <target name="run" depends="-find-properties">
+        <exec command="chmod +x bin/runxremwin"/>
+        <exec command="chmod +x bin/linux/Xvfb-xremwin"/>
+        <exec command="chmod +x bin/linux64/Xvfb-xremwin"/>
+        <exec command="chmod +x bin/solaris/Xvfb-xremwin"/>
+        <java classname="org.jdesktop.wonderland.modules.sasxremwin.provider.SasXrwProviderMain"
+              fork="true">
+            <classpath>
+                <path location="${current.dir}/lib/sasxremwin-provider.jar"/>
+                <path location="${current.dir}/lib/appbase-client.jar"/>
+                <path location="${current.dir}/lib/xremwin-client.jar"/>
+                <path location="${current.dir}/lib/escher-0.2.2.lg.jar"/>
+                <path location="${current.dir}/lib/sas-provider.jar"/>
+
+                <!-- core stuff we need -->
+                <pathelement path="${core-client.classpath}"/>
+            </classpath>
+
+            <jvmarg value="-Djava.util.logging.config.file=logging.properties"/>
+
+            <syspropertyset refid="commandline.properties"/>
+            <sysproperty key="java.library.path" value="${current.dir}/lib/${ostype}/native"/>
+            <sysproperty key="wonderland.web.server.url" value="${wonderland.web.server.url}"/>
+        </java>
+    </target>
+
+    <target name="-find-properties">
+        <!-- Generate a set containing all properties passed on the
+             commandline.  The way we do this is a little strange, since
+             we want to ignore ant internal properties.  So we take
+             the inverese of what we want, add in the ant properties,
+             and then take the inverse of the whole thing.
+        -->
+        <propertyset id="noncommandline.properties" negate="true">
+            <propertyref builtin="commandline"/>
+        </propertyset>
+        <propertyset id="ant.internal.properties">
+            <propertyref prefix="ant"/>
+            <propertyref name="basedir"/>
+        </propertyset>
+        <propertyset id="commandline.properties" negate="true">
+            <propertyset refid="ant.internal.properties"/>
+            <propertyset refid="noncommandline.properties"/>
+        </propertyset>
+    </target>
+</project>

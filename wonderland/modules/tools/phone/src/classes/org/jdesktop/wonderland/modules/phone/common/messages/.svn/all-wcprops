@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4224/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages
+END
+JoinCallResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/JoinCallResponseMessage.java
+END
+CallEndedResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2320/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/CallEndedResponseMessage.java
+END
+PhoneControlMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/PhoneControlMessage.java
+END
+JoinCallMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/JoinCallMessage.java
+END
+CallInvitedResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/CallInvitedResponseMessage.java
+END
+PlaceCallResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/PlaceCallResponseMessage.java
+END
+PlaceCallMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/PlaceCallMessage.java
+END
+EndCallResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/EndCallResponseMessage.java
+END
+EndCallMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/EndCallMessage.java
+END
+CallEstablishedResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/CallEstablishedResponseMessage.java
+END
+LockUnlockResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/LockUnlockResponseMessage.java
+END
+LockUnlockMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4224/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/LockUnlockMessage.java
+END
+PhoneResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/PhoneResponseMessage.java
+END
+PlayTreatmentMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/messages/PlayTreatmentMessage.java
+END

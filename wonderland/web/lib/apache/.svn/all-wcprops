@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/450/trunk/web/lib/apache
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/450/trunk/web/lib/apache/LICENSE.txt
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/450/trunk/web/lib/apache/commons-fileupload-1.2.1.jar
+END
+commons-io-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/313/trunk/web/lib/apache/commons-io-1.4.jar
+END

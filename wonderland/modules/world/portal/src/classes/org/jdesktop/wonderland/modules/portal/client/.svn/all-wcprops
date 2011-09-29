@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4723/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client
+END
+PortalComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4723/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/PortalComponentProperties.java
+END
+AudioCacheHandlerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/AudioCacheHandlerException.java
+END
+PortalComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4722/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/PortalComponentProperties.form
+END
+AudioCacheHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4354/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/AudioCacheHandler.java
+END
+PortalComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/PortalComponent.java
+END
+PortalCellFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4685/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/PortalCellFactory.java
+END
+PortalComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/3379/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/client/PortalComponentFactory.java
+END

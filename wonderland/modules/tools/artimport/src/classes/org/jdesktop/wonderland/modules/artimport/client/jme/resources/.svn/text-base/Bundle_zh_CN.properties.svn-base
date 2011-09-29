@@ -1,0 +1,226 @@
+#EN: Model Import Errors...
+ArtToolsPlugin.modelImportErrorsMI.text=\u6a21\u578b\u5bfc\u5165\u9519\u8bef...
+#EN: Choose Directory
+CHOOSE_DIRECTORY=\u9009\u62e9\u76ee\u5f55
+#EN: Choose Directory for Module jar
+CHOOSE_DIRECTORY_FOR_MODULE_JAR=\u4e3a\u6a21\u5757jar\u6587\u4ef6\u9009\u62e9\u76ee\u5f55
+#EN: Clear All
+CLEAR_ALL=\u5168\u90e8\u6e05\u9664
+#EN: Clear all the warnings for all models
+CLEAR_ALL_THE_WARNINGS_FOR_ALL_MODELS=\u4e3a\u6240\u6709\u6a21\u578b\u6e05\u9664\u6240\u6709\u8b66\u544a
+#EN: New Module...
+Create_Module=\u65b0\u5efa\u6a21\u5757 ...
+#EN: Directory
+Directory=\u76ee\u5f55
+#EN: Error compiling model
+Error_Compiling_Model=\u7f16\u8bd1\u6a21\u578b\u51fa\u9519
+#EN: Error
+Error=\u9519\u8bef
+#EN: Model...
+Import_Model...=\u6a21\u578b...
+#EN: Cancel
+ImportSessionFrame.cancelButton.text=\u53d6\u6d88
+#EN: Deploy to server
+ImportSessionFrame.deployToServerB.text=\u90e8\u7f72\u5230\u670d\u52a1\u5668
+#EN: Deploy target module to server
+ImportSessionFrame.deployToServerB.toolTipText=\u90e8\u7f72\u76ee\u6807\u6a21\u5757\u5230\u670d\u52a1\u5668
+#EN: Description :
+ImportSessionFrame.descriptionL.text=\u63cf\u8ff0 :
+#EN: Edit
+ImportSessionFrame.editB.text=\u7f16\u8f91
+#EN: Edit
+ImportSessionFrame.editPMI.text=\u7f16\u8f91
+#EN: Load Model...
+ImportSessionFrame.importModelB.text=\u8f7d\u5165\u6a21\u578b...
+#EN: Loading.... Please wait
+ImportSessionFrame.jLabel4.text=\u8f7d\u5165\u4e2d....\u8bf7\u7a0d\u5019
+#EN: Target Server :
+ImportSessionFrame.jLabel5.text=\u76ee\u6807\u670d\u52a1\u5668 :
+#EN: File
+ImportSessionFrame.jMenu1.text=\u6587\u4ef6
+#EN: Load Import Group
+ImportSessionFrame.loadImportGroupMI.text=\u88c5\u8f7d\u5bfc\u5165\u5c0f\u7ec4
+#EN: Model List
+ImportSessionFrame.modelListL.text=\u6a21\u578b\u5217\u8868
+#EN: OK
+ImportSessionFrame.okB.text=OK
+#EN: Remove
+ImportSessionFrame.removeB.text=\u79fb\u9664
+#EN: Remove the model from the import
+ImportSessionFrame.removeB.toolTipText=\u4ece\u5bfc\u5165\u4e2d\u5220\u9664\u6a21\u5757
+#EN: Remove
+ImportSessionFrame.removePMI.text=\u79fb\u9664
+#EN: Save as module...
+ImportSessionFrame.saveAsModuleB.text=\u53e6\u5b58\u4e3a\u6a21\u5757...
+#EN: Save the module jar file
+ImportSessionFrame.saveAsModuleB.toolTipText=\u4fdd\u5b58\u8be5\u6a21\u5757jar\u6587\u4ef6
+#EN: Save as source...
+ImportSessionFrame.saveAsSrcB.text=\u53e6\u5b58\u4e3a\u6e90\u6587\u4ef6...
+#EN: Create a module source base, with build.xml etc
+ImportSessionFrame.saveAsSrcB.toolTipText=\u7528build.xml\u7b49\u6587\u4ef6\u521b\u5efa\u4e00\u4e2a\u6a21\u5757\u7684\u6e90\u57fa\u7840
+#EN: Save Import Group
+ImportSessionFrame.saveImportGroupMI.text=\u4fdd\u5b58\u5bfc\u5165\u7ec4
+#EN: MyModule
+ImportSessionFrame.targetModuleTF.text=\u6211\u7684\u6a21\u5757
+#EN: Target Name :
+ImportSessionFrame.targetNameL.text=\u76ee\u6807\u540d\u79f0 :
+#EN: Insert Model
+ImportSessionFrame.title=\u63d2\u5165\u6a21\u578b
+#EN: Loader Warnings
+LOADER_WARNINGS=\u5bfc\u5165\u5668\u8b66\u544a
+#EN: Backface culling Enabled
+ModelCellComponentProperties.backfaceCullingEnabledCB.text=\u80cc\u9762\u5254\u9664\u542f\u7528
+#EN: Graph Optimization Enabled
+ModelCellComponentProperties.graphOptimizationEnabledCB.text=\u56fe\u50cf\u4f18\u5316\u5df2\u542f\u52a8
+#EN: Graph optimization will flatten the scene graph, removing intermediate nodes.
+ModelCellComponentProperties.graphOptimizationEnabledCB.toolTipText=\u56fe\u50cf\u4f18\u5316\u52a8\u4f5c\u5c06\u4f7f\u5f97\u666f\u89c2\u56fe\u50cf\u53d8\u5f97\u5e73\u5766\uff0c\u540c\u65f6\u5220\u9664\u6240\u6709\u4e2d\u95f4\u8282\u70b9.
+#EN: Deployed Model URL
+ModelCellComponentProperties.jLabel1.text=\u5df2\u90e8\u7f72\u7684\u6a21\u578b\u7684\u7f51\u5740
+#EN: Lighting Enabled
+ModelCellComponentProperties.lightingEnabledCB.text=\u542f\u7528\u7167\u660e
+#EN: Picking Enabled
+ModelCellComponentProperties.pickingEnabledCB.text=\u542f\u7528\u91c7\u6458
+#EN: Print Scene Graph
+ModelCellComponentProperties.printSceneGraphB.text=\u6253\u5370\u573a\u666f\u56fe
+#EN: Model Component
+Model_Component=\u6a21\u578b\u7ec4\u4ef6
+#EN: Advanced
+ModelImporterFrame.advancedPanel.TabConstraints.tabTitle=\u9ad8\u7ea7
+#EN: Move with Avatar
+ModelImporterFrame.avatarMoveCB.text=\u8ddf\u7740\u865a\u62df\u4eba\u79fb\u52a8
+#EN: Basic
+ModelImporterFrame.basicPanel.TabConstraints.tabTitle=\u57fa\u672c
+#EN: Cancel
+ModelImporterFrame.cancelB1.text=\u53d6\u6d88
+#EN: Cancel
+ModelImporterFrame.cancelB.text=\u53d6\u6d88
+#EN: Geometry Statistics...
+ModelImporterFrame.geometryStatsB.text=\u51e0\u4f55\u7edf\u8ba1...
+#EN: Show the geometry statistics
+ModelImporterFrame.geometryStatsB.toolTipText=\u663e\u793a\u51e0\u4f55\u7edf\u8ba1
+#EN: Rotation:
+ModelImporterFrame.jLabel10.text=\u65cb\u8f6c:
+#EN: X:
+ModelImporterFrame.jLabel11.text=X:
+#EN: Z:
+ModelImporterFrame.jLabel12.text=Z:
+#EN: Y:
+ModelImporterFrame.jLabel13.text=Y:
+#EN: Model File:
+ModelImporterFrame.jLabel1.text=\u6a21\u578b\u6587\u4ef6:
+#EN: Bounds Center:
+ModelImporterFrame.jLabel25.text=\u754c\u9650\u4e2d\u5fc3:
+#EN: Bounds Size:
+ModelImporterFrame.jLabel26.text=\u754c\u9650\u5c3a\u5bf8:
+#EN: X:
+ModelImporterFrame.jLabel27.text=X:
+#EN: Y:
+ModelImporterFrame.jLabel28.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel29.text=Z:
+#EN: Texture Directory:
+ModelImporterFrame.jLabel2.text=\u7eb9\u7406\u76ee\u5f55:
+#EN: Texture Details:
+ModelImporterFrame.jLabel30.text=\u7eb9\u7406\u7ec6\u8282:
+#EN: X:
+ModelImporterFrame.jLabel31.text=X:
+#EN: Y:
+ModelImporterFrame.jLabel32.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel33.text=Z:
+#EN: Scale:
+ModelImporterFrame.jLabel3.text=\u6807\u5c3a:
+#EN: Model Name:
+ModelImporterFrame.jLabel5.text=\u6a21\u578b\u540d\u79f0:
+#EN: X:
+ModelImporterFrame.jLabel6.text=X:
+#EN: Location:
+ModelImporterFrame.jLabel7.text=\u4f4d\u7f6e:
+#EN: Y:
+ModelImporterFrame.jLabel8.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel9.text=Z:
+#EN: The name of the model used in wonderland
+ModelImporterFrame.modelNameTF.toolTipText=\u5728\u4ed9\u5883\u4e2d\u4f7f\u7528\u7684\u6a21\u578b\u540d\u79f0
+#EN: The model file being imported
+ModelImporterFrame.modelX3dTF.toolTipText=\u6b63\u5728\u88ab\u5bfc\u5165\u7684\u6a21\u578b\u6587\u4ef6
+#EN: OK
+ModelImporterFrame.okB1.text=OK
+#EN: OK
+ModelImporterFrame.okB.text=OK
+#EN: The directory in which the model textures will be placed
+ModelImporterFrame.texturePrefixTF.toolTipText=\u5c06\u8981\u5b58\u653e\u8be5\u6a21\u578b\u7eb9\u7406\u7684\u76ee\u5f55
+#EN: Model Import
+ModelImporterFrame.title=\u6a21\u578b\u5bfc\u5165
+#EN: Model Import Warnings
+MODEL_IMPORT_WARNINGS=\u6a21\u578b\u5bfc\u5165\u8b66\u544a
+#EN: Model loading generated warnings\nSee Loader Warnings Window for details
+MODEL_LOADING_GENERATED_WARNINGS=\u6a21\u578b\u5bfc\u5165\u5668\u7ed9\u51fa\u4e86\u8b66\u544a\n\u8be6\u7ec6\u4fe1\u606f\u5728\u5bfc\u5165\u5668\u8b66\u544a\u7a97\u53e3\u91cc
+#EN: Models
+Models=\u6a21\u578b
+#EN: This module already exists,\nOverwrite ?
+Module_Conflict_Message=\u8fd9\u4e2a\u6a21\u5757\u5df2\u7ecf\u5b58\u5728\uff0c\u8986\u76d6\u5417\uff1f
+#EN: Module Conflict
+Module_Conflict=\u6a21\u5757\u51b2\u7a81
+#EN: Module created in Directory {0}
+Module_Created_In_Directory=\u5df2\u7ecf\u5728\u76ee\u5f55 {0} \u4e2d\u521b\u5efa\u6a21\u5757
+#EN: Module Directory exists, replace ?
+Module_Exists_Message=\u6a21\u5757\u76ee\u5f55\u5b58\u5728\uff0c\u53d6\u4ee3\u5b83\uff1f
+#EN: Module exists !
+Module_Exists=\u6a21\u5757\u5df2\u5b58\u5728\uff01
+#EN: Failed to create module jar
+Module_JAR_Creation_Error=\u65e0\u6cd5\u521b\u5efa\u6a21\u5757 jar \u6587\u4ef6
+#EN: Include Art
+ModuleManagerUI.artCB.text=\u5305\u542b Art (\u827a\u672f)
+#EN: Include art resources in the module
+ModuleManagerUI.artCB.toolTipText=\u5728\u6a21\u5757\u4e2d\u5305\u542b\u827a\u672f\u8d44\u6e90
+#EN: Cancel
+ModuleManagerUI.cancelButton.text=\u53d6\u6d88
+#EN: Choose...
+ModuleManagerUI.chooseDirB.text=\u9009\u62e9...
+#EN: Client Package
+ModuleManagerUI.clientPackageCB.text=\u5ba2\u6237\u7aef\u8f6f\u4ef6\u5305
+#EN: Common Package
+ModuleManagerUI.commonPackageCB.text=\u666e\u901a\u8f6f\u4ef6\u5305
+#EN: Create Module
+ModuleManagerUI.createModuleB.text=\u521b\u5efa\u6a21\u5757
+#EN: Create New Module
+ModuleManagerUI.createModulePanel.border.title=\u521b\u5efa\u65b0\u6a21\u5757
+#EN: Foundation
+ModuleManagerUI.foundationDirCB.text=\u57fa\u7840
+#EN: Module Name:
+ModuleManagerUI.jLabel1.text=\u6a21\u5757\u540d\u79f0:
+#EN: Parent Directory:
+ModuleManagerUI.jLabel2.text=\u7236\u76ee\u5f55:
+#EN: Module Description:
+ModuleManagerUI.jLabel3.text=\u6a21\u5757\u63cf\u8ff0:
+#EN: Module Parent Directory
+ModuleManagerUI.jPanel2.border.title=\u6a21\u5757\u7236\u76ee\u5f55
+#EN: Module Description
+ModuleManagerUI.moduleDescriptionTF.text=\u6a21\u5757\u63cf\u8ff0
+#EN: example
+ModuleManagerUI.moduleNameTF.text=\u8303\u4f8b
+#EN: Samples
+ModuleManagerUI.samplesDirCB.text=\u6837\u672c
+#EN: Server Package
+ModuleManagerUI.serverPackageCB.text=\u670d\u52a1\u5668\u8f6f\u4ef6\u5305
+#EN: New Module
+ModuleManagerUI.title=\u65b0\u5efa\u6a21\u5757
+#EN: Tools
+ModuleManagerUI.toolsDirCB.text=\u5de5\u5177
+#EN: World
+ModuleManagerUI.worldDirCB.text=\u4e16\u754c
+#EN: No Loader for {0}
+No_Loader_For=\u6ca1\u6709\u7ed9{0}\u7684\u8f7d\u5165\u5668
+#EN: Original Filename
+Original_Filename=\u539f\u59cb\u6587\u4ef6\u540d
+#EN: Original Model Name
+Original_Model_Name=\u539f\u59cb\u578b\u53f7\u540d\u79f0
+#EN: Select an option
+Select_An_Option=\u9009\u62e9\u4e00\u4e2a\u9009\u9879
+#EN: Wonderland Filename
+Wonderland_Filename=\u4ed9\u5883\u6587\u4ef6\u540d
+#EN: Wonderland Name
+Wonderland_Name=\u4ed9\u5883\u540d\u79f0
+#EN: Wonderland Path
+Wonderland_Path=\u4ed9\u5883\u8def\u5f84

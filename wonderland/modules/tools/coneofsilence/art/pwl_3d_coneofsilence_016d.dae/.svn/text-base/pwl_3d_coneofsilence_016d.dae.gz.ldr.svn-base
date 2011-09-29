@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loader-data>
+    <version>1</version>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.jmecolladaloader.client.JmeColladaLoader</modelLoaderClassname>
+    <deployedTextures value="cspart01.png" key="cspart01.png"/>
+    <deployedTextures value="base.png" key="base.png"/>
+</loader-data>

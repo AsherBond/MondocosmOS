@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4687/trunk/modules/tools/sharedstate
+END
+my.module.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3739/trunk/modules/tools/sharedstate/my.module.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/build.xml
+END

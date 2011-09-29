@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4662/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client
+END
+HUDCompassLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4648/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDCompassLayoutManager.java
+END
+HUDFlowLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/3446/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDFlowLayoutManager.java
+END
+HUDView2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/4591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDView2D.java
+END
+HUDView3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/3984/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDView3D.java
+END
+HUDDialogImpl.form
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/3308/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDDialogImpl.form
+END
+HUDImageComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDImageComponent.java
+END
+ControlArbHUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/3719/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/ControlArbHUD.java
+END
+HUDApp2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDApp2D.java
+END
+HUDMessageComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/3446/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDMessageComponent.java
+END
+HUDAbsoluteLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/3446/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDAbsoluteLayoutManager.java
+END
+HUDAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDAnimator.java
+END
+WonderlandHUDComponentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4662/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUDComponentManager.java
+END
+HUDFrameHeader2DImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4174/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDFrameHeader2DImpl.java
+END
+HUDView3DDisplayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDView3DDisplayer.java
+END
+WonderlandHUDManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2935/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUDManagerFactory.java
+END
+HUDDialogComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDDialogComponent.java
+END
+WonderlandHUDFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/2935/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUDFactory.java
+END
+WonderlandHUDManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/3717/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUDManager.java
+END
+HUDFrameHeader2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/3870/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDFrameHeader2D.java
+END
+HUDPopup2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/4591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDPopup2D.java
+END
+HUDObject2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/3717/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDObject2D.java
+END
+HUDFrameHeader2DImpl.form
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4174/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDFrameHeader2DImpl.form
+END
+HUDButtonComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDButtonComponent.java
+END
+WonderlandHUDIconManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/3446/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUDIconManager.java
+END
+HUDComponentState.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/3103/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDComponentState.java
+END
+HUDWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/4591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDWindow.java
+END
+HUDView2DDisplayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDView2DDisplayer.java
+END
+HUDViewListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/3855/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDViewListener.java
+END
+HUDDialogImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/3446/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDDialogImpl.java
+END
+HUDComponent2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/3802/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDComponent2D.java
+END
+HUDClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/HUDClientPlugin.java
+END
+WonderlandHUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4407/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/WonderlandHUD.java
+END

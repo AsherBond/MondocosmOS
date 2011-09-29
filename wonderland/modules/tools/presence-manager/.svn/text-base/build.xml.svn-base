@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="presence-manager">
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.presence-manager}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+
+    <property name="module.src" value="org/jdesktop/wonderland/modules/presencemanager"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.presencemanager"/>
+    <property name="module.jarname" value="presencemanager"/>
+    <property name="module.plugins" value="PresenceManagerServerPlugin PresenceManagerClientPlugin"/>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${current.dir}/../audio-manager/lib/voicelib.jar"/>
+        <path location="${current.dir}/../audio-manager/lib/bridge_connector.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${current.dir}/../../world/avatarbase/build/client/avatarbase-client.jar"/>
+    </pathconvert>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+   
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="presencemanager" majorVersion="0" minorVersion="5"
+                moduleDescription="Presence manager API and library"
+                jarfile="${module.dist.dir}/${module.jarname}.jar"
+                builddir="${build.lib.dir}">
+            <client dir="${current.dir}/lib">
+                <clientjar name="presencemanager-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar>
+            </client>
+
+            <server dir="${current.dir}/lib">
+                <serverjar name="presencemanager-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+        </module>
+    </target>
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+
+    <target name="clean" depends="-module-clean"/>
+</project>

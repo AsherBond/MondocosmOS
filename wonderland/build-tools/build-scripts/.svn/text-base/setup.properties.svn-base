@@ -1,0 +1,58 @@
+#---------------------------------------------------------------------
+# Global configuration
+#---------------------------------------------------------------------
+wonderland.version=0.5-dev
+
+#---------------------------------------------------------------------
+# Wonderland directories
+#
+# The build.xml should have the following lines before including this 
+# property file
+#   <property name="top.dir" location=".."/>
+#   <property name="current.dir" location="."/>
+#---------------------------------------------------------------------
+wonderland.dir=${top.dir}
+wonderland.core.dir=${top.dir}/core
+wonderland.test.dir=${top.dir}/test
+wonderland.tools.dir=${top.dir}/tools
+wonderland.lib.dir=${top.dir}/lib
+
+#---------------------------------------------------------------------
+# Directories for the optional wonderland-modules project
+#---------------------------------------------------------------------
+wonderland-modules.dir=${top.dir}/../wonderland-modules
+wonderland-modules.stable.dir=${wonderland-modules.dir}/stable
+
+#---------------------------------------------------------------------
+# Global Build options
+#---------------------------------------------------------------------
+build.version=0-5-0-daily
+
+# build.level must be either debug or opt
+build.level=debug
+
+#---------------------------------------------------------------------
+# Directories for building
+#
+# The build.xml should be sure to include platform-setup.xml before
+# this file, since many of the directories here are platform dependent
+#---------------------------------------------------------------------
+build.dir=${current.dir}/build
+build.platform=${ostype}-${arch}
+build.classes.dir=${build.dir}/classes
+build.lib.dir=${build.dir}/lib
+
+#---------------------------------------------------------------------
+# Directories for distributions
+#---------------------------------------------------------------------
+dist.dir=${current.dir}/dist
+
+#---------------------------------------------------------------------
+# Directories for releases
+#---------------------------------------------------------------------
+release.dir=${current.dir}/release
+release.pkgname=wonderland
+release.platform.dir=${release.dir}/${build.platform}/${release.pkgname}
+release.lib.dir=${release.platform.dir}/lib
+release.bin.dir=${release.platform.dir}/bin
+release.javadoc.dir=${release.dir}/javadoc

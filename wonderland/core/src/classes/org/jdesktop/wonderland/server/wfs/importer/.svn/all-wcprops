@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4728/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/importer
+END
+CellImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4036/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/importer/CellImporter.java
+END
+CellImporterUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4728/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/importer/CellImporterUtils.java
+END
+CellMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/importer/CellMap.java
+END

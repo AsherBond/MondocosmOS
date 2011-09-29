@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4180/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/utils
+END
+ScenegraphUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4180/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/utils/ScenegraphUtils.java
+END
+GUIUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2808/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/utils/GUIUtils.java
+END
+TextLabel2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3940/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/utils/TextLabel2D.java
+END

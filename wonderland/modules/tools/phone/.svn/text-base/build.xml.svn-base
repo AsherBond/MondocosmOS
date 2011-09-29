@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="phone">
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.phone}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/phone"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.phone"/>
+    <property name="module.jarname" value="phone"/>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${current.dir}/../audio-manager/lib/voicelib.jar"/>
+	<path location="${current.dir}/../audio-manager/lib/voip.jar"/>
+	<path location="${current.dir}/../audio-manager/lib/bridge_connector.jar"/>
+	<path location="${current.dir}/../audio-manager/build/lib/server/audiomanager-server.jar"/>
+	<path location="${current.dir}/../orb/build/lib/server/orb-server.jar"/>
+    </pathconvert>
+
+    <!-- microphone is dependent on the jmecolladaloader -->
+    <pathconvert property="module-client.classpath">
+	<path location="${current.dir}/../../world/jmecolladaloader/build/classes"/>
+	<path location="${current.dir}/../presence-manager/build/lib/client/presencemanager-client.jar"/>
+    </pathconvert>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+   
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="phone" majorVersion="0" minorVersion="5"
+                moduleDescription="Telephone Cell"
+                jarfile="${module.dist.dir}/${module.jarname}.jar"
+                builddir="${build.lib.dir}">
+            <client>
+                <clientjar name="phone-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/cell/resources/**"/>
+                    </fileset>
+                </clientjar>
+            </client>
+                
+            <server>
+                <serverjar name="phone-server" basedir="${build.classes.dir}">                    
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>                   
+                </serverjar>    
+            </server>
+	    <art dir="${current.dir}/art"/>
+        </module>
+    </target>                                  
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+
+    <target name="clean" depends="-module-clean"/>
+</project>

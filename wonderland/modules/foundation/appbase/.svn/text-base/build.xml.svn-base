@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="appbase" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.appbase}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/appbase"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.appbase"/>
+    <property name="module.jarname" value="appbase"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="appbase" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="2D application API and library" builddir="${build.dir}">
+        
+            <client dir="${current.dir}/lib">
+                <clientjar name="appbase-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/client/gui/**"/>
+                    <include name="${module.src}/client/swing/**"/>
+                    <include name="${module.src}/client/utils/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <exclude name="${module.src}/client/cell/**"/>
+                    <exclude name="${module.src}/common/cell/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/**/*.properties"/>
+                    </fileset>
+                </clientjar>
+                <clientjar name="appbase-client-cell" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/cell/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/cell/view/viewdefault/resources/**/*.png"/>
+                        <include name="${module.src}/client/**/*.properties"/>
+                    </fileset>
+                    <include name="${module.src}/common/cell/**"/>
+                </clientjar>
+            </client> 
+                
+            <server>
+                <serverjar name="appbase-server" basedir="${build.classes.dir}">
+                  <include name="${module.src}/server/**"/>
+                  <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            
+            <art dir="${current.dir}/art"/>
+        </module>
+    </target>                                                       
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+
+    <target name="clean" depends="-module-clean"/>
+
+     <!-- javadoc -->
+     <!-- TODO: NOTYET <target name="javadoc" depends="javadoc-api, javadoc-all"/> -->
+     <target name="javadoc" depends="javadoc-all"/>
+         
+     <target name="javadoc-all" description="All Wonderland App Base Javadoc" unless="nojavadoc">
+        <mkdir dir="${release.javadoc.dir}"/>
+
+        <javadoc destdir="${release.javadoc.dir}/all"
+            sourcepath="${javasrc.dir}"
+            packagenames="org.jdesktop.wonderland.modules.appbase.*"
+            windowtitle="Wonderland App Base">
+
+            <classpath>
+		<pathelement path="${core-server.classpath}"/>
+		<pathelement path="${core-client.classpath}"/>
+		<pathelement path="${module-client.classpath}"/>
+            </classpath>
+            
+            <doctitle><![CDATA[<h1>Open Wonderland App Base</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Open Wonderland App Base</i>]]></bottom>
+
+        </javadoc>
+    </target>
+
+    <!-- TODO: NOTYET
+    <target name="javadoc-api" 
+            description="Wonderland App Base API Javadoc" unless="nojavadoc">
+        <mkdir dir="${release.javadoc.dir}"/>
+
+        <javadoc destdir="${release.javadoc.dir}/api"
+            sourcepath="${javasrc.dir}"
+            packagenames="org.jdesktop.wonderland.modules.appbase.*"
+            windowtitle="Wonderland App Base API">
+                
+            <classpath>
+		<pathelement path="${core-server.classpath}"/>
+		<pathelement path="${core-client.classpath}"/>
+		<pathelement path="${module-client.classpath}"/>
+            </classpath>
+            
+            <doclet name="org.jdesktop.wonderland.utils.doclet.WonderlandDoclet"
+                    path="${wonderland.doclet.dir}/dist/wonderland-doclet.jar">
+                <param name="-wonderlandAPI" value="stable,experimental"/> 
+            </doclet>
+            
+            <doctitle><![CDATA[<h1>Open Wonderland App Base API</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Open Wonderland App Base API</i>]]></bottom>
+        </javadoc>
+    </target>
+    -->
+
+</project>

@@ -1,0 +1,3 @@
+# set the session manager class
+session.manager.class=org.jdesktop.wonderland.modules.securitysession.noauth.weblib.NoAuthSessionManagerImpl
+

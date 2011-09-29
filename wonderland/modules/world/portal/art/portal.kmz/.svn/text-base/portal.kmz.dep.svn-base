@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployed-model>
+    <version>1</version>
+    <modelURL>wla://portal/portal.kmz/models/untitled.dae.gz</modelURL>
+    <loaderDataURL>wla://portal/portal.kmz/portal.kmz.ldr</loaderDataURL>
+    <modelBGScale>
+        <x>0.01016</x>
+        <y>0.01016</y>
+        <z>0.01016</z>
+    </modelBGScale>
+    <modelBGTranslation>
+        <x>-1.38691692</x>
+        <y>-1.41641008</y>
+        <z>0.173926712</z>
+    </modelBGTranslation>
+    <modelBGRotation>
+        <x>-0.99999994</x>
+        <y>0.0</y>
+        <z>0.0</z>
+        <angle>1.5707964</angle>
+    </modelBGRotation>
+    <modelBounds>
+        <boundsType>BOX</boundsType>
+        <center_x>0.0</center_x>
+        <center_y>0.0</center_y>
+        <center_z>0.0</center_z>
+        <dimension_x>1.44526004</dimension_x>
+        <dimension_y>1.44525876</dimension_y>
+        <dimension_z>0.13593452</dimension_z>
+    </modelBounds>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.kmzloader.client.KmzLoader</modelLoaderClassname>
+</deployed-model>

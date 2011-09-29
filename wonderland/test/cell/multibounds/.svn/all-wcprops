@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1365/trunk/test/cell/multibounds
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/250/trunk/test/cell/multibounds/build.properties
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/250/trunk/test/cell/multibounds/README
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1352/trunk/test/cell/multibounds/build.xml
+END

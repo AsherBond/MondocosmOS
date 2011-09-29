@@ -1,0 +1,5 @@
+DND_Error_message=The drag and drop of your file failed. Please try again.
+DND_Error_Title=Drag and Drop Failed
+Launch_Failed=Launch Failed
+Launch_Failed_Message=Unable to launch Cell that supports {0}
+Unsupported_Content_Type=The content type for this URL is not supported: {0}

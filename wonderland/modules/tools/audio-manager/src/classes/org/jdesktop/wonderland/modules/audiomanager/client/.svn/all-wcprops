@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4729/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client
+END
+AudioTreatmentStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/3839/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioTreatmentStatusListener.java
+END
+AudioTreatmentComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/3320/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioTreatmentComponentFactory.java
+END
+NamePropertiesHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/NamePropertiesHUDPanel.form
+END
+UsernameAliasChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/2502/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/UsernameAliasChangeListener.java
+END
+AudioProblemJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioProblemJFrame.java
+END
+SortUsers.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/2759/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/SortUsers.java
+END
+AudioManagerClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4575/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioManagerClientPlugin.java
+END
+ConeOfSilenceComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ConeOfSilenceComponentProperties.java
+END
+UserListHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4455/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/UserListHUDPanel.form
+END
+MemberChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3476/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/MemberChangeListener.java
+END
+VuMeterMiniPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4616/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VuMeterMiniPanel.java
+END
+AudioTreatmentComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioTreatmentComponentProperties.java
+END
+AudioMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4729/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioMenu.java
+END
+ConeOfSilenceComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ConeOfSilenceComponentFactory.java
+END
+VoiceChatBusyHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VoiceChatBusyHUDPanel.java
+END
+AudioProblemJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4356/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioProblemJFrame.form
+END
+UserListPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4505/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/UserListPanel.java
+END
+CallEndedHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/CallEndedHUDPanel.java
+END
+VolumeControlJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VolumeControlJFrame.java
+END
+KeypadDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/KeypadDialog.java
+END
+ConeOfSilenceComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/4296/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ConeOfSilenceComponentProperties.form
+END
+ConeOfSilenceComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4224/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ConeOfSilenceComponent.java
+END
+DisconnectListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2759/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/DisconnectListener.java
+END
+HUDTabbedPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/4505/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/HUDTabbedPanel.java
+END
+VuMeterMiniPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4616/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VuMeterMiniPanel.form
+END
+VuMeterPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4616/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VuMeterPanel.java
+END
+AudioTreatmentComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4296/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioTreatmentComponentProperties.form
+END
+ChangeNameHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ChangeNameHUDPanel.java
+END
+AudioMenu.form
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4607/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioMenu.form
+END
+AudioTreatmentComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioTreatmentComponent.java
+END
+CallMigrationForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/CallMigrationForm.java
+END
+BoundsViewerEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4465/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/BoundsViewerEntity.java
+END
+VoiceChatBusyHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VoiceChatBusyHUDPanel.form
+END
+NamePropertiesHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4222/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/NamePropertiesHUDPanel.java
+END
+CallEndedHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/CallEndedHUDPanel.form
+END
+KeypadDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/KeypadDialog.form
+END
+VolumeControlJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4348/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VolumeControlJFrame.form
+END
+VolumeChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VolumeChangeListener.java
+END
+AudioParticipantComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3988/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioParticipantComponent.java
+END
+KeypadListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2225/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/KeypadListener.java
+END
+HUDTabbedPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/4505/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/HUDTabbedPanel.form
+END
+PresenceControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4459/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/PresenceControls.java
+END
+UserInRangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3245/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/UserInRangeListener.java
+END
+ChangeNameHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4296/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/ChangeNameHUDPanel.form
+END
+VuMeterPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4616/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/VuMeterPanel.form
+END
+AudioManagerClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4667/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioManagerClient.java
+END
+UserListHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4505/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/UserListHUDPanel.java
+END
+CallMigrationForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/CallMigrationForm.form
+END
+AudioMenuListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/AudioMenuListener.java
+END

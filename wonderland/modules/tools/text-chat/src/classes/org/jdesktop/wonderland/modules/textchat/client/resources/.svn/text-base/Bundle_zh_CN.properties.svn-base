@@ -1,0 +1,6 @@
+#EN: Text Chat All
+Text_Chat_All=\u548c\u6240\u6709\u4eba\u6587\u5b57\u804a\u5929
+#EN: Text Chat ({0})
+Text_Chat_With=\u548c ({0}) \u6587\u5b57\u804a\u5929
+#EN: Send
+TextChatPanel.sendButton.text=\u53d1\u9001

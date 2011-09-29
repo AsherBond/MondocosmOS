@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/2185/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages
+END
+MapResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/MapResponseMessage.java
+END
+GetResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/GetResponseMessage.java
+END
+PutRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2185/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/PutRequestMessage.java
+END
+ChangeValueMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/ChangeValueMessage.java
+END
+MapRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/MapRequestMessage.java
+END
+RemoveRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/2185/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/RemoveRequestMessage.java
+END
+GetRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/messages/GetRequestMessage.java
+END

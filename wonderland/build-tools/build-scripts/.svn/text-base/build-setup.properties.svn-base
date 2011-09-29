@@ -1,0 +1,49 @@
+#---------------------------------------------------------------------
+# Source directories
+#---------------------------------------------------------------------
+src.dir=${current.dir}/src
+javasrc.dir=${src.dir}/classes
+
+#---------------------------------------------------------------------
+# Build options
+#---------------------------------------------------------------------
+
+# build.debug must be either true or false
+build.debug=true
+
+# build.level must be either debug or opt
+build.debuglevel.debug=lines,vars,source
+build.debuglevel.opt=lines,source
+
+# whether to show deprecation
+build.showdeprecation=true
+build.verbose=true
+
+# source and target versions
+build.source.version=6
+build.target.version=6
+build.boot.class.path=
+
+# source and target versions to use when compiling the client
+build.client.source.version=1.5
+build.client.target.version=1.5
+build.client.boot.class.path=
+
+# whether to compress jars
+jar.compress=false
+
+#---------------------------------------------------------------------
+# Keystore for signing jars
+#---------------------------------------------------------------------
+# replace with a path to a keystore
+wonderland.keystore.dir=${wonderland.dir}/build-tools/keystore
+wonderland.keystore=${wonderland.keystore.dir}/wonderlandKeystore.jks
+wonderland.keystore.alias=wonderlandsig
+wonderland.keystore.password=wonderland
+
+#---------------------------------------------------------------------
+# Properties for deploying to Wonderland server
+#---------------------------------------------------------------------
+wonderland.web.url=http://localhost:8080/
+wonderland.web.username=
+wonderland.web.password=

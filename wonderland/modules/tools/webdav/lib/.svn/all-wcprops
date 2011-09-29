@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/4395/trunk/modules/tools/webdav/lib
+END
+jdom-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1398/trunk/modules/tools/webdav/lib/jdom-1.0.jar
+END
+webdavclient4j-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1398/trunk/modules/tools/webdav/lib/webdavclient4j-LICENSE.txt
+END
+jdom.license
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1398/trunk/modules/tools/webdav/lib/jdom.license
+END
+webdavclient4j-core-0.92.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4395/trunk/modules/tools/webdav/lib/webdavclient4j-core-0.92.jar
+END
+webdavclient4j-bugfix.diff
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4395/trunk/modules/tools/webdav/lib/webdavclient4j-bugfix.diff
+END

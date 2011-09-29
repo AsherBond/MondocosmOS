@@ -1,0 +1,18 @@
+#EN: Confirm Quit
+Confirm_Quit=Confirmaci\u00f3n de Salida
+#EN: Are you sure you wish to quit app {0}?
+Quit_Message=Est\u00e1 seguro de que quiere cerrar la applicaci\u00f3n {0}?
+#EN: Release App Control
+Release_App_Control=Liberar el Control de la Aplicaci\u00f3n
+#EN: Release Control
+Release_Control=Liberar el Control
+#EN: Remove from HUD
+Remove_from_HUD=Eliminar en el HUD
+#EN: Show in HUD
+Show_in_HUD=Mostrar en el HUD
+#EN: Take Control
+Take_Control=Tomar el Control
+#EN: To Back
+To_Back=A atr\u00e1s
+#EN: To Front
+To_Front=Al frente

@@ -1,0 +1,228 @@
+<project basedir="." default="..." name="core.run-server">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="core.run-scripts.dir" file="${ant.file.core.run-server}"/>
+    <property name="core.build-scripts.dir" location="${core.run-scripts.dir}/../build-scripts"/>
+
+    <!-- set the current directory to the core directory -->
+    <property name="current.dir" location="${core.run-scripts.dir}/../.."/>
+    
+    <!-- override properties for execution -->
+    <property name="core.build.lib.dir" location="${current.dir}/lib"/>
+    <property name="core.lib.dir" location="${current.dir}/lib"/>
+
+    <!-- import common setup -->
+    <import file="${core.build-scripts.dir}/core-setup.xml"/>
+   
+    <!-- import global run setup -->
+    <import file="${setup.build-scripts.dir}/run-setup.xml"/>
+   
+    <!-- import runtime properties -->
+    <property file="${core.run-scripts.dir}/run-server.properties"/>
+    
+    <!-- setup the server -->
+    <target name="-core-setup-server" depends="-core-server-setup-bdb-platform,
+                                               -core-server-setup-assertions,
+                                               -core-server-setup-no-assertions,
+                                               -core-server-setup-debug,
+                                               -core-server-setup-classpath">
+        
+        <!-- create the data directory if necessary -->
+        <mkdir dir="${sgs.data.dir}"/>
+        <mkdir dir="${sgs.data.dir}/dsdb"/>
+
+        <!-- default empty values for services and managers -->
+        <property name="sgs.services" value=""/>
+        <property name="sgs.managers" value=""/>
+
+        <!-- setup default values for propertysets.  If these have
+         been set by previous calls to -setup-multinode-master or
+         -setup-multinode-appnode, those values will override these -->
+        <propertyset id="master.props"/>
+        <propertyset id="appnode.props"/>
+        <property name="debug.args" value=""/>
+
+        <!-- set the default sgs configuration file.  This may be overridden
+             by the wfs reader or writer -->
+        <property name="sgs.config.file" value="WonderlandMain.cfg"/>
+
+        <!-- make sure to substitute in a platform-appropriate data directory
+             path -->
+        <property name="sgs.platform.data.dir" location="${sgs.data.dir}"/>
+
+        <!-- copy the config file to the right place -->
+        <copy file="${current.dir}/${sgs.config.file}"
+              tofile="${sgs.data.dir}/${sgs.config.file}" overwrite="true">
+            <filterset>
+                <!-- we can use "." here because the java command to start
+                     the Darkstar server is run in the sgs root directory -->
+                <filter token="SGS_ROOT_DIR" value="."/>
+                <filter token="SGS_PORT" value="${sgs.port}"/>
+                <filter token="SGS_SERVICES" value="${sgs.services}"/>
+                <filter token="SGS_MANAGERS" value="${sgs.managers}"/>
+                
+                <!--<filter token="SGS_SERVICES" value="org.jdesktop.wonderland.server.spatial.UniverseService"/>
+                <filter token="SGS_MANAGERS" value="org.jdesktop.wonderland.server.spatial.UniverseServiceManagerImpl"/>-->
+
+                <filter token="WONDERLAND_PRIVATE_LOCAL_ADDRESS" value="localhost"/>
+                <filter token="WONDERLAND_NETWORK_INTERFACE" value=""/>
+            </filterset>            
+        </copy>
+    
+        <!-- copy logging properties also -->
+        <copy file="${core.sgs.server.dir}/sgs-logging.properties"
+              tofile="${sgs.data.dir}/sgs-logging.properties"/>
+
+        <!-- Generate a set containing all properties passed on the
+             commandline.  The way we do this is a little strange, since
+             we want to ignore ant internal properties.  So we take
+             the inverese of what we want, add in the ant properties,
+             and then take the inverse of the whole thing.
+        -->
+        <propertyset id="noncommandline.properties" negate="true">
+            <propertyref builtin="commandline"/>
+        </propertyset>
+        <propertyset id="ant.internal.properties">
+            <propertyref prefix="ant"/>
+            <propertyref name="basedir"/>
+        </propertyset>
+        <propertyset id="commandline.properties" negate="true">
+            <propertyset refid="ant.internal.properties"/>
+            <propertyset refid="noncommandline.properties"/>
+        </propertyset>
+    </target>
+        
+    <target name="-core-server-setup-bdb-platform">    
+         <!-- setup bdb for the correct platform -->
+        <switch value="${system.type}">
+            <case value="windows-x86">
+                <property name="sgs.bdb.platform" value="win32-x86"/>
+            </case>
+
+            <case value="linux-i386">
+                <property name="sgs.bdb.platform" value="linux-x86"/>
+            </case>
+            <case value="linux-amd64">
+                <property name="sgs.bdb.platform" value="linux-x86_64"/>
+            </case>
+
+            <case value="sunos-x86">
+                <property name="sgs.bdb.platform" value="solaris-x86"/>
+            </case>
+            <case value="sunos-sparc">
+                <property name="sgs.bdb.platform" value="solaris-sparc"/>
+            </case>
+
+            <case value="macos-x86">
+                <property name="sgs.bdb.platform" value="macosx-x86"/>
+	    </case>
+            <case value="macos-ppc">
+                <property name="sgs.bdb.platform" value="macosx-ppc"/>
+	    </case>
+        
+            <default>
+                <fail message="Platform ${system.type} not supported!"/>
+            </default>
+        </switch>
+        
+    </target>
+
+    <target name="-core-server-setup-assertions" if="use.assertions">
+        <assertions id="sgs.assertions">
+            <enable/>
+        </assertions>
+    </target>
+    
+    <target name="-core-server-setup-no-assertions" unless="use.assertions">
+        <assertions id="sgs.assertions">
+            <disable/>
+        </assertions>
+    </target>
+    
+    <target name="-core-server-setup-multinode-master">
+        <property name="com.sun.sgs.node.type" value="coreServerNode"/>
+        <propertyset id="master.props">
+            <propertyref name="com.sun.sgs.node.type"/>
+        </propertyset>
+    </target>
+    
+    <target name="-core-server-setup-multinode-appnode">
+        <property name="com.sun.sgs.node.type" value="appNode"/>
+        <property name="com.sun.sgs.server.host" value="${sgs.server}"/>
+        
+        <propertyset id="appnode.props">
+            <propertyref name="com.sun.sgs.node.type"/>
+            <propertyref name="com.sun.sgs.server.host"/>
+        </propertyset>
+    </target>
+
+    <target name="-core-server-setup-debug" if="sgs.server.debug">
+        <property name="debug.args"
+                  value="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8890,suspend=y"/>
+    </target>
+
+    <!-- setup the classpath to run the server with.  Clients can override
+         this method to give an alternate classpath -->
+    <target name="-core-server-setup-classpath">
+        <!-- override the core.server.run.classpath to specify an
+             alternate run classpath -->
+        <pathconvert property="core.server.run.classpath">
+            <path path="${core-server.classpath}"/>
+        </pathconvert>
+        
+        <!-- override the core.server.module.classpath to specify an
+             alternate module classpath -->
+        <pathconvert property="core.server.module.classpath">
+            <path>
+                <fileset dir="${top.dir}">
+                    <include name="modules/**"/>
+                </fileset>
+            </path>
+        </pathconvert>
+    </target>
+    
+    <target name="core-run-server" depends="-core-setup-server" 
+            description="Run Sun Game Server for Open Wonderland">
+
+        <property name="sgs.logging.properties.file"
+                  location="${sgs.platform.data.dir}/sgs-logging.properties"/>
+        <pathconvert property="platform.library.path">
+            <path location="${sgs.bdb.dir}/${sgs.bdb.platform}"/>
+        </pathconvert>
+
+        <!-- run server -->
+        <java classname="com.sun.sgs.impl.kernel.Kernel" dir="${sgs.platform.data.dir}" fork="true">
+            <jvmarg value="-Djava.library.path=${platform.library.path}"/>
+            <jvmarg value="-Djava.util.logging.config.file=${sgs.logging.properties.file}"/>
+            <jvmarg line="${debug.args}"/>
+
+            <classpath>
+                <pathelement path="${core.server.run.classpath}"/>
+                <pathelement path="${core.server.module.classpath}"/>
+            </classpath>
+                
+            <!-- override the reference to enabled assertions -->
+            <assertions refid="sgs.assertions"/>
+            
+            <!--env key="${env.path.name}" path="${env.path.defvalue}"/-->
+
+            <syspropertyset refid="commandline.properties"/>
+            <syspropertyset refid="master.props"/>
+            <syspropertyset refid="appnode.props"/>
+
+            <!-- note that this path is relative to the directory
+                 specified in the java command above -->
+            <arg value="${sgs.config.file}"/>
+        </java>
+    </target>
+
+    <target name="core-clean-server" description="Delete Darkstar database">
+        <!-- reset the data directory -->
+        <delete dir="${sgs.data.dir}" failonerror="false"/>
+    </target>
+
+    <!-- run as a master in a multinode setup -->
+    <target name="core-run-server-master" depends="-core-server-setup-multinode-master, core-run-server"/>
+    
+    <!-- run as an appnode in a multinode setup -->
+    <target name="core-run-server-appnode" depends="-core-server-setup-multinode-appnode, core-run-server"/>
+</project>

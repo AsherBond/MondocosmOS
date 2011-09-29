@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4678/trunk/build-tools/build-scripts
+END
+setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/641/trunk/build-tools/build-scripts/setup.xml
+END
+unpack.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/410/trunk/build-tools/build-scripts/unpack.xml
+END
+platform-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4678/trunk/build-tools/build-scripts/platform-setup.xml
+END
+run-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/410/trunk/build-tools/build-scripts/run-setup.xml
+END
+classpath.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/450/trunk/build-tools/build-scripts/classpath.xml
+END
+package-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/450/trunk/build-tools/build-scripts/package-setup.xml
+END
+build-setup.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3622/trunk/build-tools/build-scripts/build-setup.properties
+END
+noop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/410/trunk/build-tools/build-scripts/noop.xml
+END
+setup.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2268/trunk/build-tools/build-scripts/setup.properties
+END
+build-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2986/trunk/build-tools/build-scripts/build-setup.xml
+END

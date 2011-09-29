@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4629/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl
+END
+SpatialCellImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4629/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/SpatialCellImpl.java
+END
+Universe.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3267/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/Universe.java
+END
+UniverseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4442/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/UniverseImpl.java
+END
+SpaceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/SpaceManager.java
+END
+Space.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4496/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/Space.java
+END
+ViewCellImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/ViewCellImpl.java
+END
+SpatialCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2902/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/SpatialCell.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/778/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/package.html
+END
+ViewCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4552/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/ViewCache.java
+END
+SpaceManagerGridImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2626/trunk/core/src/classes/org/jdesktop/wonderland/server/spatial/impl/SpaceManagerGridImpl.java
+END

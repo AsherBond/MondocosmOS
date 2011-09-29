@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="wonderland-core-IDE">
+    <import file="../build.xml"/>
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/articles/freeform-config.html#debugj2se) -->
+    <target depends="jar" description="Run the Wonderland client" name="debug-nb">
+        <mkdir dir="log"/>
+        <!-- softphone jar location, set by the SoftphoneInstaller during webstart startup -->
+        <property location="${current.dir}/ext/softphone/softphone.jar" name="softphone.jar.location"/>
+        <nbjpdastart addressproperty="jpda.address" name="wonderland-core" transport="dt_socket">
+            <classpath>
+                <pathelement path="${core-client.classpath}"/>
+            </classpath>
+        </nbjpdastart>
+        <java classname="org.jdesktop.wonderland.client.jme.JmeClientMain" fork="true">
+            <!-- arguments here must be replicated in some form in the
+                 jnlp file! -->
+            <jvmarg value="-Djava.library.path=${core.lib.os.native.dir}"/>
+            <jvmarg value="-Djava.protocol.handler.pkgs=org.jdesktop.wonderland.client.protocols"/>
+            <jvmarg value="-Xmx512m"/>
+            <jvmarg value="-Dorg.jdesktop.wonderland.client.softphone.jar=${softphone.jar.location}"/>
+            <jvmarg value="-Dwonderland.version=${wonderland.version}"/>
+            <!--start debug-->
+            <!-- 
+            <jvmarg value="-Xdebug"/>
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,address=8890,suspend=n"/>
+            -->
+            <!--end debug-->
+            <classpath>
+                <pathelement path="${core-client.classpath}"/>
+            </classpath>
+            <env key="${env.path.name}" path="${env.path.defvalue}"/>
+            <jvmarg value="-Xdebug"/>
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>
+        </java>
+    </target>
+</project>

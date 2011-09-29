@@ -1,0 +1,16 @@
+<project basedir="." default="..." name="web.setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="web.build-scripts.dir" file="${ant.file.web.setup}"/>
+    <property name="web.dir" location="${web.build-scripts.dir}/../.."/>
+    <property name="top.dir" location="${web.dir}/.."/>
+    
+    <!-- import the main setup file -->
+    <import file="${top.dir}/build-tools/build-scripts/setup.xml"/>
+    
+    <!-- import core properties -->
+    <property file="${web.build-scripts.dir}/web.properties"/>
+    
+    <!-- import core classpath -->
+    <import file="${web.build-scripts.dir}/classpath.xml"/>
+    
+</project>

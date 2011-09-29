@@ -1,0 +1,27 @@
+<project name="" default="generate-without-source" basedir=".">
+    <description>
+        SEXTANTE bindings for Glob3
+    </description>
+  <!-- set global properties for this build -->
+  <property name="dist"  location="dist"/>
+  <property name="bin"  location="bin"/>
+  <property name="build" location="bin"/>
+  <property name="without_src"  location="without_src"/>
+  <property name="plugin" value="es.unex.sextante"/>
+  <property name="version.number" value="0.7"/>
+
+  <target name="generate-without-source">
+
+    <ant antfile="../sextante/build.xml" inheritall="no" />
+
+    <copy todir="./lib/sextante">
+       <fileset dir="../dist">
+          <include name="**"/>
+          <exclude name="jts*"/>
+        </fileset>
+     </copy>
+  </target>
+
+
+
+</project>

@@ -1,0 +1,15 @@
+<project basedir="." default="unpack" name="setup.unpack">
+    <property name="zip.file" location="${unpack.src.dir}/${pkgname}.zip"/>
+    <property name="ref.file" location="${unpack.dest.dir}/${pkgname}-bundle-readme.txt"/>
+
+    <available property="package.exists" file="${zip.file}"/>
+    <uptodate property="unpack.done" targetfile="${ref.file}" srcfile="${zip.file}"/>
+
+    <target name="unpack" if="package.exists" unless="unpack.done">
+	<mkdir dir="${unpack.dest.dir}" />
+	<unzip src="${zip.file}" dest="${unpack.dest.dir}" overwrite="true">
+	    <patternset excludes="**/CVS"/>
+	</unzip>
+	<touch file="${ref.file}"/>
+    </target>
+</project>

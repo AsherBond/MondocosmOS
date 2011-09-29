@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/4572/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi
+END
+ImiAvatarDetailsJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3525/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarDetailsJDialog.form
+END
+ImiAvatarLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3083/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarLoader.java
+END
+ImiAvatarFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/3475/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarFactory.java
+END
+ImiAvatarLoaderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/2963/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarLoaderFactory.java
+END
+ImiAvatarDetailsJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3738/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarDetailsJDialog.java
+END
+ImiAvatar.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3503/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatar.java
+END
+ImiAvatarConfigManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/3912/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/ImiAvatarConfigManager.java
+END
+WonderlandCharacterParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/3554/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/WonderlandCharacterParams.java
+END

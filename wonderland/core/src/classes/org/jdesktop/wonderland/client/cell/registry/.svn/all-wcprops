@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3922/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry
+END
+CellRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/3922/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/CellRegistry.java
+END
+CellComponentRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2254/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/CellComponentRegistry.java
+END

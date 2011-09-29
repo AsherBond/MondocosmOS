@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-list>
+    <!-- GENDER -->
+    <genders>
+        <name>Male</name>
+        <gender>1</gender>
+    </genders>
+
+    <!-- HEADS -->
+    <heads>
+        <name>Male C Head</name>
+        <description>Male_Head_Caucasian</description>
+        <model>assets/models/collada/Heads/Binary/MaleCHead.bhf</model>
+        <skin-tone>
+            <r>1.0</r><g>0.5451</g><b>0.3725</b>
+        </skin-tone>
+    </heads>
+    <heads>
+        <name>FaceGen Medium-Poly Head 2</name>
+        <description>Male_Head_AfricanAmerican_Medium_Poly</description>
+        <model>assets/models/collada/Heads/Binary/FG_MaleHead02Medium.bhf</model>
+        <skin-tone>
+            <r>0.6941</r><g>0.3294</g><b>0.0941</b>
+        </skin-tone>
+    </heads>
+    
+    <!-- ALERT: Added Head -->
+
+    <heads>
+        <name>FaceGen Low-Poly Head2</name>
+        <description>Male_Head_AfricanAmerican_Low_Poly</description>
+        <model>assets/models/collada/Heads/Binary/FG_Male02LowPoly.bhf</model>
+        <skin-tone>
+            <r>0.8352</r><g>0.5961</g><b>0.5020</b>
+        </skin-tone>
+    </heads>
+    <heads>
+        <name>Black Head</name>
+        <description>Male_Head_Black</description>
+        <model>assets/models/collada/Heads/Binary/blackHead.bhf</model>
+        <skin-tone>
+            <r>0.8352</r><g>0.5961</g><b>0.5020</b>
+        </skin-tone>
+    </heads>
+    <heads>
+        <name>Asian Head</name>
+        <description>Male_Head_Asian</description>
+        <model>assets/models/collada/Heads/Binary/AsianHeadMale.bhf</model>
+        <skin-tone>
+            <r>0.9451</r><g>0.6745</g><b>0.4941</b>
+        </skin-tone>
+    </heads>
+    
+    <!-- ALERT: Added Head -->
+    
+    <heads>
+        <name>Middle Aged Guy</name>
+        <description>Male_Head_Middle_Aged_Guy</description>
+        <model>assets/models/collada/Heads/Binary/midAgeGuy.bhf</model>
+    </heads>    
+
+    <!-- HAIR -->
+    <hair>
+        <name>Bald</name>
+        <description>Male_Hair_Bald</description>
+    </hair>
+    <hair>
+        <name>Male_PonyTailShape</name>
+        <description>Male_Hair_PonyTailShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_PonyTailShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_ChinLengthPartLeftShape</name>
+        <description>Male_Hair_ChinLengthPartLeftShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ChinLengthPartLeftShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_ChinLengthPartRightShape</name>
+        <description>Male_Hair_ChinLengthPartRightShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ChinLengthPartRightShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_SlickedBackShape</name>
+        <description>Male_Hair_SlickedBackShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_SlickedBackShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_PartLeftShape</name>
+        <description>Male_Hair_PartLeftShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_PartLeftShape</shapes>
+    </hair>
+    
+    <hair>
+        <name>Male_PartRightShape</name>
+        <description>Male_Hair_PartRightShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_PartRightShape</shapes>
+    </hair>
+    
+    <hair>
+        <name>Male_ShortMessyShape</name>
+        <description>Male_Hair_ShortMessyShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ShortMessyShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_FlatTopShape</name>
+        <description>Male_Hair_FlatTopShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_FlatTopShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_ShortTopUpShape</name>
+        <description>Male_Hair_ShortTopUpShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ShortTopUpShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_ShortBasicShape</name>
+        <description>Male_Hair_ShortBasicShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ShortBasicShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_ShortRecedShape</name>
+        <description>Male_Hair_ShortRecedShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_ShortRecedShape</shapes>
+    </hair>
+    
+    <!-- ALERT: Changed shape name to match art geometry -->
+    <hair>
+        <name>Male_BaldingShape</name>
+        <description>Male_Hair_BaldingShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_BaldingShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_BaldPiccardShape</name>
+        <description>Male_Hair_BaldPiccardShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_BaldPiccardShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_SuperFauxHawkShape</name>
+        <description>Male_Hair_SuperFauxHawkShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_SuperFauxHawkShape</shapes>
+    </hair>
+    <hair>
+        <name>Male_SpikeyShape</name>
+        <description>Male_Hair_SpikeyShape</description>
+        <model>assets/models/collada/Hair/MaleHair/FG_Male01HairDefaults.dae</model>
+        <shapes>Male_SpikeyShape</shapes>
+    </hair>
+
+
+
+    <!-- HANDS -->
+    <hands>
+        <name>Hands</name>
+        <description>Male_Hands_Default</description>
+        <model>assets/models/collada/Avatars/MaleAvatar/Male_Hands.dae</model>
+        <shapes>RHandShape</shapes>
+        <shapes>LHandShape</shapes>
+    </hands>
+
+    <!-- TORSOS -->
+    <torsos>
+        <name>T Shirt</name>
+        <description>Male_Torso_T_Shirt</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleTShirt.dae</model>
+        <shapes>PoloShape</shapes>
+        <shapes>ArmsShape</shapes>
+    </torsos>
+    <torsos>
+        <name>Polo</name>
+        <description>Male_Torso_Polo</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MalePolo.dae</model>
+        <shapes>PoloShape</shapes>
+        <shapes>TorsoNudeShape</shapes>
+    </torsos>
+    <torsos>
+        <name>Dress Shirt</name>
+        <description>Male_Torso_Dress_Shirt</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleDressShirt.dae</model>
+        <shapes>DressShirtShape</shapes>
+    </torsos>
+    <torsos>
+        <name>Sweater</name>
+        <description>Male_Torso_Dress_Sweater</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleSweater.dae</model>
+        <shapes>SweaterMaleShape</shapes>
+    </torsos>
+    <torsos>
+        <name>Suit Shirt</name>
+        <description>Male_Torso_Suit_Shirt</description>
+        <model>assets/models/collada/Clothing/MaleClothing/SuitDressShirt.dae</model>
+        <shapes>SuitShirtShape</shapes>
+    </torsos>
+    <torsos>
+        <name>Meso</name>
+        <description>Male_Torso_Meso</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleMesoTop.dae</model>
+        <shapes>TorsoNudeShape</shapes>
+        <shapes>polySurfaceShape2</shapes>
+    </torsos>
+    
+    <!-- ALERT: There's a MaleDressShirtSUIT.dae that's not used. Special case? I didn't add it -->
+
+    <!-- JACKETS -->
+    <jackets>
+        <name>No Jacket</name>
+        <description>Male_Jacket_None</description>
+    </jackets>
+    <jackets>
+        <name>Suit Jacket</name>
+        <description>Male_Jacket_Suit</description>
+        <model>assets/models/collada/Clothing/MaleClothing/SuitJacket.dae</model>
+        <shapes>SuitJacketShape</shapes>
+    </jackets>
+    
+    <!-- FEET -->
+    <feet>
+        <name>Tennis Shoes</name>
+        <description>Male_Feet_Tennis_Shoes</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleTennisShoes.dae</model>
+        <shapes>TennisShoesShape</shapes>
+    </feet>
+    <feet>
+        <name>Flip Flops</name>
+        <description>Male_Feet_Flip_Flops</description>
+        <model>assets/models/collada/Clothing/MaleClothing/FlipFlopsFeet.dae</model>
+        <shapes>LFootNudeShape</shapes>
+        <shapes>RFootNudeShape</shapes>
+        <shapes>LFlipFlopShape</shapes>
+        <shapes>RFlipFlopShape</shapes>
+    </feet>
+    <feet>
+        <name>Dress Shoes</name>
+        <description>Male_Feet_Dress_Shoes</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleDressShoes.dae</model>
+        <shapes>polySurfaceShape3</shapes>
+    </feet>
+    <feet>
+        <name>Cowboy Boots</name>
+        <description>Male_Feet_Cowboy_Boots</description>
+        <model>assets/models/collada/Clothing/MaleClothing/CowBoyBoot_CUT.dae</model>
+        <shapes>CowBoyBootsShape</shapes>
+    </feet>
+    
+    <!-- ALERT: There's a CowBoyBoot.dae that's not used. Special case? I didn't add it -->
+
+    <feet>
+        <name>Bare Feet</name>
+        <description>Male_Feet_Bare_Feet</description>
+        <model>assets/models/collada/Avatars/MaleAvatar/Male_Bind.dae</model>
+        <shapes>RFootNudeShape</shapes>
+        <shapes>LFootNudeShape</shapes>
+    </feet>
+
+    <!-- LEGS -->
+    <legs>
+        <name>Jeans</name>
+        <description>Male_Legs_Jeans</description>
+        <model>assets/models/collada/Clothing/MaleClothing/Jeans.dae</model>
+        <shapes>polySurface3Shape</shapes>
+    </legs>
+    <legs>
+        <name>Shorts</name>
+        <description>Male_Legs_Shorts</description>
+        <model>assets/models/collada/Clothing/MaleClothing/Shorts.dae</model>
+        <shapes>LegsNudeShape</shapes>
+        <shapes>MaleShortsShape</shapes>
+    </legs>
+    <legs>
+        <name>Dress Pants</name>
+        <description>Male_Legs_Dress_Pants</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleDressPants1.dae</model>
+        <shapes>MaleDressPantsShape</shapes>
+    </legs>
+    <legs>
+        <name>Slacks</name>
+        <description>Male_Legs_Slacks</description>
+        <model>assets/models/collada/Clothing/MaleClothing/Slacks.dae</model>
+        <shapes>SuitPantsShape</shapes>
+    </legs>
+    <legs>
+        <name>Meso</name>
+        <description>Male_Legs_Meso</description>
+        <model>assets/models/collada/Clothing/MaleClothing/MaleMesoBottom.dae</model>
+        <shapes>LegsNudeShape</shapes>
+        <shapes>polySurfaceShape6</shapes>
+    </legs>
+</config-list>

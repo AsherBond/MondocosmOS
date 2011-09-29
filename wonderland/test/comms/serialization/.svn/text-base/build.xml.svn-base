@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-serializationtest" default="all" basedir=".">
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-serializationtest}"/>
+    <property name="test.dir" location="${current.dir}/../.."/>
+    
+    <property name="servertest.src" value="org/jdesktop/wonderland/comms"/>
+    <property name="servertest.packagename" value="org.jdesktop.wonderland.comms"/>
+    <property name="servertest.jarname" value="serializationtest"/>
+    
+    <!-- import common build file -->
+    <import file="${test.dir}/build-tools/build-scripts/test-build.xml"/>
+       
+    <!-- extra classpath -->
+       
+    <target name="build" depends="-test-init, -test-compile-client"/>
+    <target name="jar" depends="build, -test-jar-client"/>
+    <target name="clean" depends="-test-clean"/>
+        
+    <target name="run-test" depends="jar">
+<!--        <junit fork="yes" haltonfailure="true">
+            <test name="org.jdesktop.wonderland.client.datamgr.AssetManagerTest"/>
+            <formatter type="plain" usefile="false" />
+
+            <classpath>
+		<pathelement path="${wonderland-client-compile.classpath}"/>
+                <pathelement path="${core.lib.dir}/wonderland-client.jar"/>
+                <pathelement location="../build-tools/import/junit-4.4.jar"/>
+	    </classpath>
+        </junit>
+        
+        <java fork="yes" classname="org.junit.runner.JUnitCore">
+            
+            <arg value="org.jdesktop.wonderland.comms.client.SerializationTest"/>
+            <classpath>
+		<pathelement path="${core-client.classpath}"/>
+                <pathelement path="${junit.classpath}"/>              
+                <pathelement path="${test-client.classpath}"/>
+                <pathelement path="${build.classes.dir}"/>
+	    </classpath>
+        </java>
+-->
+        
+    </target>
+</project>

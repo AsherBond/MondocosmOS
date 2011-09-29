@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages
+END
+SessionInitializationMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages/SessionInitializationMessage.java
+END
+AttachedClientMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages/AttachedClientMessage.java
+END
+AttachClientMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages/AttachClientMessage.java
+END
+DetachClientMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages/DetachClientMessage.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/249/trunk/core/src/classes/org/jdesktop/wonderland/common/comms/messages/package.html
+END

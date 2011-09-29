@@ -1,0 +1,11 @@
+Cancel=Cancel
+Launch_Failed=Launch Failed
+Launch_Failed_Message=Unable to launch Cell that supports {0}
+Please_Wait_Message=Please wait while {0} is being uploaded
+Please_Wait_Title=Uploading Model
+Replace_Question=The file {0} already exists in the content repository. Do you wish to replace it and continue?
+Replace=Replace
+Replace_Title=Replace Content?
+Upload_Failed_Message=Failed to upload content file {0}
+Upload_Failed_Title=Upload Failed
+Use_Existing=Use Existing

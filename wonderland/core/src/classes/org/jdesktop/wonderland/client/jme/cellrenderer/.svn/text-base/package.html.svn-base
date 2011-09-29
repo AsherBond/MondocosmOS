@@ -1,0 +1,17 @@
+<!-- 
+    Document   : package
+    Created on : Aug 18, 2008, 8:20:28 PM
+    Author     : paulby
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+  JME (or 3D) renderers for the default cell types. Wonderland provides a 
+  Model/View paradigm for cells, classes in this package provide the view portion
+  for rendering the cell in the JME 3D client.
+  </body>
+</html>

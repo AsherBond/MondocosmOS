@@ -1,0 +1,108 @@
+#EN: Add Capability
+Add_Capability_Title=\u589E\u52A0\u529F\u80FD
+#EN: Cancel
+AddComponentDialog.cancelButton.text=\u53D6\u6D88
+#EN: Select Capability to Add from the List Below:
+AddComponentDialog.jLabel1.text=\u4ECE\u4E0B\u9762\u5217\u8868\u91CC\u9009\u62E9\u8981\u6DFB\u52A0\u7684\u529F\u80FD:
+#EN: OK
+AddComponentDialog.okButton.text=OK
+#EN: Do you want to apply the properties before closing?
+Apply_Close_Message=\u4F60\u60F3\u5728\u5173\u95ED\u4E4B\u524D\u5E94\u7528\u6240\u6709\u7684\u7279\u6027\u5417?
+#EN: Do you want to apply the properties before switching?
+Apply_Switch_Message=\u4F60\u60F3\u5728\u5207\u6362\u4E4B\u524D\u5E94\u7528\u6240\u6709\u7684\u7279\u6027\u5417?
+#EN: Apply values?
+Apply_Title=\u5E94\u7528\u65B0\u503C?
+#EN: Basic
+Basic=\u57FA\u672C
+#EN: <none>
+BasicJPanel.cellClassLabel.text=<\u65E0>
+#EN: <none>
+BasicJPanel.cellIDLabel.text=<\u65E0>
+#EN: Object ID:
+BasicJPanel.jLabel1.text=\u5BF9\u8C61\u6807\u793A:
+#EN: Object Name:
+BasicJPanel.jLabel2.text=\u5BF9\u8C61\u540D\u79F0:
+#EN: Object Class:
+BasicJPanel.jLabel3.text=\u5BF9\u8C61\u7C7B:
+#EN: Capability
+Capability=\u529F\u80FD
+#EN: Object Editor
+Cell_Editor=\u5BF9\u8C61\u7F16\u8F91\u5668...
+#EN: Mass:
+CellPhysicsPropertiesComponentProperties.jLabel1.text=\u5927\u91CF:
+#EN: kg
+CellPhysicsPropertiesComponentProperties.jLabel2.text=\u516C\u65A4
+#EN: +
+CellPropertiesJFrame.addCapabilityButton.text=+
+#EN: Apply
+CellPropertiesJFrame.applyButton.text=\u5E94\u7528
+#EN: Capabilities
+CellPropertiesJFrame.capabilityPanel.border.title=\u529F\u80FD
+#EN: Object Hierarchy
+CellPropertiesJFrame.cellHierarchyPanel.border.title=\u5BF9\u8C61\u5C42\u6B21\u7ED3\u6784
+#EN: Properties
+CellPropertiesJFrame.jPanel4.border.title=\u5C5E\u6027
+#EN: Refresh
+CellPropertiesJFrame.refreshButton.text=\u5237\u65B0
+#EN: -
+CellPropertiesJFrame.removeCapabilityButton.text=-
+#EN: -
+CellPropertiesJFrame.removeCellButton.text=-
+#EN: Revert
+CellPropertiesJFrame.restoreButton.text=\u53CD\u5411\u9009\u62E9
+#EN: Object Editor
+CellPropertiesJFrame.title=\u5BF9\u8C61\u7F16\u8F91\u5668
+#EN: Confirm Delete
+Confirm_Delete=\u786E\u8BA4\u5220\u9664
+#EN: Are you sure you want to delete object {0}?
+Confirm_Delete_Message=\u4F60\u786E\u5B9A\u8981\u5220\u9664\u5BF9\u8C61 {0}?
+#EN: Description
+Description=\u63CF\u8FF0
+#EN: Physics Properties Component
+Physics_Properties_Component=\u7269\u7406\u7279\u6027\u7EC4\u4EF6
+#EN: Physics Properties
+Physics_Properties=\u7269\u7406\u7279\u6027
+#EN: Rotation
+PositionJPanel.jLabel10.text=\u65CB\u8F6C
+#EN: X :
+PositionJPanel.jLabel11.text=X :
+#EN: Z :
+PositionJPanel.jLabel12.text=Z :
+#EN: Y :
+PositionJPanel.jLabel13.text=Y :
+#EN: Scale
+PositionJPanel.jLabel14.text=\u6807\u5C3A
+#EN: degrees
+PositionJPanel.jLabel15.text=\u5EA6
+#EN: meters
+PositionJPanel.jLabel1.text=\u7C73
+#EN: meters
+PositionJPanel.jLabel2.text=\u7C73
+#EN: meters
+PositionJPanel.jLabel3.text=\u7C73
+#EN: degrees
+PositionJPanel.jLabel4.text=\u5EA6
+#EN: degrees
+PositionJPanel.jLabel5.text=\u5EA6
+#EN: X :
+PositionJPanel.jLabel6.text=X :
+#EN: Location
+PositionJPanel.jLabel7.text=\u4F4D\u7F6E
+#EN: Y :
+PositionJPanel.jLabel8.text=Y :
+#EN: Z :
+PositionJPanel.jLabel9.text=Z :
+#EN: Position
+Position=\u4F4D\u7F6E
+#EN: Properties...
+Properties...=\u7279\u6027...
+#EN: Do you want to refresh the properties?
+Refresh_Message=\u60A8\u60F3\u5237\u65B0\u6240\u6709\u7279\u6027\u5417\uFF1F
+#EN: Refresh values?
+Refresh_Title=\u5237\u65B0\u6240\u6709\u7684\u6570\u503C?
+#EN: Do you want to restore the properties to original values?
+Restore_Message=\u4F60\u8981\u6062\u590D\u539F\u6765\u7684\u5C5E\u6027\u503C?
+#EN: Restore values?
+Restore_Title=\u6062\u590D\u539F\u503C?
+#EN: World Root
+World_Root=\u6839\u4E16\u754C

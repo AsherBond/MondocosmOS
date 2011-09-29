@@ -1,0 +1,40 @@
+#EN: Cancel
+Cancel=Annuler
+#EN: Content Browser
+Content_Browser=Navigateur de Contenu...
+#EN: Cancel
+ContentBrowserJDialog.cancelButton.text=Annuler
+#EN: Delete
+ContentBrowserJDialog.deleteCollectionButton.toolTipText=Effacer
+#EN: Download File
+ContentBrowserJDialog.downloadButton.toolTipText=T\u00E9l\u00E9charger Fichier
+#EN: Home
+ContentBrowserJDialog.homeButton.toolTipText=Retour D\u00E9part
+#EN: New Directory
+ContentBrowserJDialog.newCollectionButton.toolTipText=Nouveau R\u00E9pertoire
+#EN: OK
+ContentBrowserJDialog.okButton.text=OK
+#EN: Content Browser
+ContentBrowserJDialog.title=Navigateur de Contenu
+#EN: Upload File
+ContentBrowserJDialog.uploadButton.toolTipText=Charger Fichier
+#EN: Create
+Create=Cr\u00E9er
+#EN: Create New Directory
+Create_New_Directory=Cr\u00E9er Nouveau R\u00E9pertoire
+#EN: Directories
+Directories=R\u00E9pertoires
+#EN: Last Modified
+Last_Modified=Derni\u00E8re Modification
+#EN: Modules
+Modules=Modules
+#EN: Name
+Name=Nom
+#EN: Please enter the name of the directory:
+New_Directory_Message=Veuillez entrer le nom du r\u00E9pertoire:
+#EN: Size
+Size=Taille
+#EN: System
+System=Syst\u00E8me
+#EN: Users
+Users=Utilisateurs

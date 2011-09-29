@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: build.xml 296 2008-08-27 14:15:12Z jslott $
+     $Revision: 296 $
+     $Date: 2008-08-27 10:15:12 -0400 (Wed, 27 Aug 2008) $
+     $Author: jslott $
+-->
+<project basedir="." default="jar" name="core.build">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="core.build-scripts.dir" file="${ant.file.core.build}"/>
+    
+    <!-- import common setup -->
+    <import file="${core.build-scripts.dir}/core-setup.xml"/>
+    
+    <!-- import build setup -->
+    <import file="${top.dir}/build-tools/build-scripts/build-setup.xml"/>
+    
+    <!-- import packaging code -->
+    <import file="${core.build-scripts.dir}/core-package.xml"/>
+    
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="-core-init" depends="unpack-core-libs" description="Initial core setup">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+    </target>
+    
+    <!-- compile -->
+    <target name="-core-compile" depends="-core-init, -core-compile-server, -core-compile-client"/>
+    
+    <!-- Compile the common -->
+    <target name="-core-compile-common" depends="-core-init" description="Compile common code">
+        <wl-compile-client>
+            <client-compile-classes>
+                <include name="org/jdesktop/wonderland/common/**"/>
+            </client-compile-classes>
+            
+            <client-compile-classpath>
+                <pathelement path="${core-common-compile.classpath}"/>
+            </client-compile-classpath>
+        </wl-compile-client>
+    </target>
+    
+    <!-- Compile the client side code -->
+    <target name="-core-compile-client" depends="-core-compile-common" 
+            description="Compile client code">
+        <wl-compile-client>
+            <client-compile-classes>
+                <exclude name="org/jdesktop/wonderland/client/picking/**"/>
+                <exclude name="org/jdesktop/wonderland/client/unusedevent/**"/>
+                <exclude name="org/jdesktop/wonderland/client/scripting/**"/>
+                <include name="org/jdesktop/wonderland/client/**"/>
+            </client-compile-classes>
+            
+            <client-compile-classpath>
+                <pathelement path="${core-client-compile.classpath}"/>
+            </client-compile-classpath>
+        </wl-compile-client>
+    </target>
+    
+    <!-- Compile the server side code -->
+    <target name="-core-compile-server" depends="-core-compile-common" 
+            description="Compile Darkstar server app">
+        <wl-compile>
+            <compile-classes>
+                <include name="org/jdesktop/wonderland/server/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+		<pathelement path="${core-server-compile.classpath}"/>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <!-- Build the jars -->
+    <target name="-core-jar" depends="-core-compile, -core-jar-server, -core-jar-client"/>
+
+    <!-- build the common jar -->
+    <target name="-core-jar-common" depends="-core-compile-common" 
+            description="Build common jar">
+       <jar compress="${jar.compress}" jarfile="${build.lib.dir}/wonderland-common.jar">    
+            <fileset dir="${build.classes.dir}/">
+                <include name="org/jdesktop/wonderland/common/**"/>
+            </fileset>
+            <fileset dir="src/classes">
+                <include name="org/jdesktop/wonderland/common/cell/security/**/*.properties"/>
+            </fileset>
+         </jar>
+    </target>
+     
+    <!-- Build the server jar -->
+    <target name="-core-jar-server" depends="-core-compile-server, -core-jar-common" 
+            description="Build the server side jar">
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/wonderland-server.jar">
+            <fileset dir="${build.classes.dir}">
+		<include name="org/jdesktop/wonderland/server/**"/>
+	    </fileset>
+        </jar>
+    </target>
+    
+    <!-- build the client jar -->
+    <target name="-core-jar-client" depends="-core-compile-client, -core-jar-common" 
+            description="Build client side jars">
+        
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/wonderland-client.jar">    
+            <fileset dir="${build.classes.dir}/">
+                <include name="org/jdesktop/wonderland/client/**"/>
+            </fileset>
+            <fileset dir="${javasrc.dir}/" includes="org/jdesktop/wonderland/client/**/*.png"/>
+            <fileset dir="${javasrc.dir}/" includes="org/jdesktop/wonderland/client/**/*.jpg"/>
+            <fileset dir="${javasrc.dir}/" includes="org/jdesktop/wonderland/client/**/*.dae"/>
+            <fileset dir="${javasrc.dir}/" includes="org/jdesktop/wonderland/client/**/*.properties"/>
+         </jar>
+     </target>
+     
+     <!-- core javadoc -->
+     <target name="-core-javadoc" depends="-core-javadoc-api, -core-javadoc-all"/>
+         
+     <target name="-core-javadoc-all" description="All Wonderland Javadoc" unless="nojavadoc">
+        <mkdir dir="${release.javadoc.dir}"/>
+
+        <javadoc destdir="${release.javadoc.dir}/all"
+            sourcepath="${javasrc.dir}"
+            packagenames="org.jdesktop.*"
+            windowtitle="Wonderland Platform"
+            overview="${top.dir}/core/doc/overview.html">
+            <classpath>
+		<pathelement path="${core-server.classpath}"/>
+		<pathelement path="${core-client.classpath}"/>
+            </classpath>
+            
+            <doctitle><![CDATA[<h1>Open Wonderland</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Open Wonderland - http://openwonderland.org</i>]]></bottom>
+            <link offline="true" href="http://java.sun.com/javase/6/docs/api" packageListLoc="${javadoc.packagelist.dir}/1.5.0"/>
+            <link offline="true" href="http://www.jmonkeyengine.com/doc/" packageListLoc="${javadoc.packagelist.dir}/jmonkeyengine"/>
+            <link offline="true" href="http://TODO/" packageListLoc="${javadoc.packagelist.dir}/sgs-server"/>
+            <link offline="true" href="http://TODO/" packageListLoc="${javadoc.packagelist.dir}/sgs-client"/>
+        </javadoc>
+    </target>
+
+    <target name="-core-javadoc-api" depends="-build-wonderland-doclet" 
+            description="Wonderland API Javadoc" unless="nojavadoc">
+        <mkdir dir="${release.javadoc.dir}"/>
+
+        <javadoc destdir="${release.javadoc.dir}/api"
+            sourcepath="${javasrc.dir}"
+            packagenames="org.jdesktop.*"
+            windowtitle="Wonderland API"
+            overview="${top.dir}/core/doc/overview.html">
+                
+            <classpath>
+		<pathelement path="${core-server.classpath}"/>
+		<pathelement path="${core-client.classpath}"/>
+            </classpath>
+            
+            <doclet name="org.jdesktop.wonderland.utils.doclet.WonderlandDoclet"
+                    path="${wonderland.doclet.dir}/dist/wonderland-doclet.jar">
+                <param name="-wonderlandAPI" value="stable,experimental"/> 
+            </doclet>
+            
+            <doctitle><![CDATA[<h1>Open Wonderland</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Open Wonderland - http://openwonderland.org</i>]]></bottom>
+            <link offline="true" href="http://java.sun.com/javase/6/docs/api" packageListLoc="${javadoc.packagelist.dir}/1.5.0"/>
+            <link offline="true" href="http://www.jmonkeyengine.com/doc/" packageListLoc="${javadoc.packagelist.dir}/jmonkeyengine"/>
+            <link offline="true" href="http://TODO/" packageListLoc="${javadoc.packagelist.dir}/sgs-server"/>
+            <link offline="true" href="http://TODO/" packageListLoc="${javadoc.packagelist.dir}/sgs-client"/>
+        </javadoc>
+    </target>
+    
+    <target name="-build-wonderland-doclet" description="Build Wonderland doclet in utils">
+        <property name="wonderland.doclet.dir" location="${top.dir}/utils/wonderland-doclet"/>
+        
+        <ant antfile="${wonderland.doclet.dir}/build.xml" target="dist" inheritall="false" dir="${wonderland.doclet.dir}"/>
+    </target>
+    
+    <!-- package core -->
+    <target name="-core-package" depends="-core-jar, -core-package-server, -core-package-client"/>
+
+    <!-- deploy task.  This will only work after web and modules have been
+         built!
+    -->
+    <target name="-core-deploy">
+        <ant dir="${top.dir}/modules/tools/darkstar" target="deploy" inheritall="false"/>
+    </target>
+
+    <!-- clean -->
+    <target name="-core-clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${release.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="${core.run.dir}"/>
+    </target>
+</project>

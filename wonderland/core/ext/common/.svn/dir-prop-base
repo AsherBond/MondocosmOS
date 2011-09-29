@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 93
+javolution.jar
+Scenario.jar
+assemblyline.odg
+Scenario-0.6.jar
+jbullet.jar
+dir_conflicts.prej
+
+END

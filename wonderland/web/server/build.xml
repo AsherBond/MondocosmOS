@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-webserver" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-webserver}"/>
+    
+    <!-- import web properties -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+    
+    <!-- import core properties -->
+    <import file="${core.dir}/build-tools/build-scripts/core-setup.xml"/>
+    
+    <target name="build" depends="-set-extra-classpath, -web-compile"/>
+    
+    <target name="-set-extra-classpath">
+        <pathconvert property="web-extra.classpath">
+            <path path="${web.dir}/modules/dist/wonderland-modules-core.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-common.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-client.jar"/>
+            <path path="${web.dir}/runner/dist/wonderland-runner-core.jar"/>
+        </pathconvert>
+    </target>
+
+    <target name="-declare-ant-task">
+         <taskdef name="listfiles"
+                  classname="org.jdesktop.wonderland.utils.ant.ListFilesTask"
+                  classpath="${web.classpath}"/>
+         <taskdef name="wonderlandjar"
+                  classname="org.jdesktop.wonderland.utils.ant.WonderlandPackageTask"
+                  classpath="${web.classpath}"/>
+
+    </target>
+    
+    <target name="jar" depends="build">   
+        <mkdir dir="${build.dir}/lib"/>
+        <mkdir dir="${build.dir}/jar"/>
+        
+        <!-- create a jar file with the AppServer launching classes -->
+        <jar destfile="${build.dir}/lib/wonderland-webserver.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="**"/>
+                <exclude name="org/jdesktop/wonderland/webserver/launcher/**"/>
+            </fileset>
+            
+            <fileset dir="${javasrc.dir}">
+                <include name="META-INF/**"/>
+            </fileset>
+        </jar>
+        
+        <!-- copy properties files into build/jar -->
+        <copy todir="${build.dir}/jar">
+            <fileset dir="${current.dir}">
+                <include name="web-default.properties"/>
+                <include name="web-logging.properties"/>
+                <include name="domain.xml"/>
+            </fileset>
+            
+            <filterset begintoken="%" endtoken="%">
+                <filter token="WONDERLAND_VERSION" value="${wonderland.version}"/>
+            </filterset>
+        </copy>
+        
+    </target>
+    
+    <!-- "package" target assumes that everything in all projects has already
+         been built. -->
+    <target name="package" depends="-declare-ant-task, -set-external-modules-dir" description="Package Wonderland into a jar">
+        <fail message="No server.package.dir specified" unless="server.package.dir"/>
+        
+        <mkdir dir="${server.package.dir}"/>
+        <mkdir dir="${build.dir}/checksums"/>
+
+        <wonderlandjar destfile="${server.package.dir}/Wonderland.jar"
+                       checksumdir="${build.dir}/checksums">
+            <!-- classes -->
+            <fileset dir="${build.classes.dir}" >
+                <include name="org/jdesktop/wonderland/webserver/launcher/**"/>
+            </fileset>
+            
+            <!-- include some utility classes at top level as well -->
+            <zipfileset src="${web.dir}/utils/dist/wonderland-web-utils.jar">
+                <include name="org/jdesktop/wonderland/utils/PropertyUtil*.class"/>
+                <include name="org/jdesktop/wonderland/utils/RunUtil*.class"/>
+                <include name="org/jdesktop/wonderland/utils/FileListUtil*.class"/>
+                <include name="org/jdesktop/wonderland/utils/SystemPropertyUtil*.class"/>
+            </zipfileset>
+
+            <!-- we also need ScannedClassloader from wonderland-common -->
+            <zipfileset src="${top.dir}/core/build/lib/wonderland-common.jar">
+                <include name="org/jdesktop/wonderland/common/utils/ScannedClassLoader*.class"/>
+                <include name="org/jdesktop/wonderland/common/utils/ClassScanningError*.class"/>
+            </zipfileset>
+
+            <!-- and scannotation & javassist -->
+            <zipfileset src="${core.common.dir}/scannotation-1.0.2.jar"/>
+            <zipfileset src="${core.common.dir}/javassist.jar"/>
+            
+            <!-- files that are needed for the web server classpath -->
+            <checksumfileset file="${web.dir}/utils/dist/wonderland-web-utils.jar" prefix="webserver"/>
+            <checksumfileset dir="${web.dir}/lib/glassfish" prefix="webserver"/>
+            <checksumfileset file="${build.dir}/lib/wonderland-webserver.jar" prefix="webserver"/>
+            <checksumfileset dir="${web.dir}/lib/apache" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/modules/dist/wonderland-modules-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/asset/dist/wonderland-asset-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/checksums/dist/wonderland-checksums-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/help/dist/wonderland-help-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/runner/dist/wonderland-runner-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/front/dist/wonderland-webadmin-core.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/runner/lib/winp-1.5.jar" prefix="webserver"/>
+            <checksumfileset file="${web.dir}/wfs/dist/wonderland-wfs.jar" prefix="webserver"/>
+            <checksumfileset file="${top.dir}/utils/wonderland-version/dist/wonderland-version.jar" prefix="webserver"/>
+
+            <!-- include wonderland client from core, since many web apps will
+                 act as clients of the Wonderland system -->
+            <checksumfileset file="${top.dir}/core/build/lib/wonderland-client.jar" prefix="webserver"/>
+            <checksumfileset file="${top.dir}/core/build/lib/wonderland-common.jar" prefix="webserver"/>
+            <checksumfileset dir="${core.sgs.client.dir}/lib" prefix="webserver"/>
+            <checksumfileset file="${core.common.dir}/stun.jar" prefix="webserver"/>
+
+            <!-- dtds for local deployments -->
+            <checksumfileset file="${current.dir}/schemas.zip" prefix="webserver/schemas"/>
+
+            <!-- contents of the document root -->
+            <checksumfileset dir="${current.dir}/web" prefix="docroot"/>
+            
+            <!-- wars to deploy -->
+            <checksumfileset dir="${top.dir}/web/wfs/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/modules/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/asset/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/checksums/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/help/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/front/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+            <checksumfileset dir="${top.dir}/web/runner/dist" prefix="deploy">
+                <include name="**/*.war"/>
+            </checksumfileset>
+
+            <!-- special case - add the remote deployment war for the runner
+                 for deployment in the deployRemote directory -->
+            <checksumfileset dir="${top.dir}/web/runner/build/lib/remote" prefix="deployRemote">
+                <include name="*.war"/>
+            </checksumfileset>
+
+            <!-- modules -->
+            <checksumfileset dir="${top.dir}/modules/dist" prefix="modules">
+                <include name="*.jar"/>
+            </checksumfileset>
+
+            <!-- modules from wonderland-modules project, if it exists and
+                 is a sibling to this one named "wonderland-modules" -->
+            <!-- modules -->
+            <checksumfileset refid="wonderland-modules-stable-includes" prefix="modules"/>
+
+            <!-- include any generated META-INF.  These will be updated
+                 below if they are out of date. -->
+            <fileset dir="${build.dir}/jar"/>
+
+            <manifest>
+                <attribute name="Main-Class" value="org.jdesktop.wonderland.webserver.launcher.WebServerLauncher"/>
+            </manifest>
+        </wonderlandjar>      
+    </target>
+    
+    <target name="-web-server-build-modules" unless="webserver.nomodules">
+        <ant dir="${top.dir}/modules" inheritall="false"/>
+    </target>
+
+    <target name="-set-external-modules-dir">
+        <if>
+            <available file="${wonderland-modules.stable.dir}/build.xml"/>
+            <then>
+                <fileset id="wonderland-modules-stable-includes"
+                         dir="${wonderland-modules.stable.dir}/dist">
+                    <include name="*.jar"/>
+                </fileset>
+            </then>
+            <else>
+                <!-- an empty, but valid file set -->
+                <fileset id="wonderland-modules-stable-includes"
+                         dir="${top.dir}/modules/dist">
+                    <exclude name="**"/>
+                </fileset>
+            </else>
+        </if>
+    </target>
+
+    <target name="run" depends="-set-package-dir, package">
+        <java jar="${build.dir}/lib/Wonderland.jar"/>
+    </target>
+    
+    <target name="debug" depends="-set-package-dir, package">
+        <!--nbjpdastart addressproperty="jpda.address" name="wonderland-webserver" transport="dt_socket">
+            <classpath>
+                <pathelement path="${build.classes.dir}"/>
+                <pathelement path="${web.classpath}"/>
+                <pathelement location="${web.dir}/modules/dist/wonderland-modules-core.jar"/>
+            </classpath>
+        </nbjpdastart-->
+
+        <java jar="${build.dir}/lib/Wonderland.jar">
+            <!--start debug-->
+            <jvmarg value="-Xdebug"/>
+            <jvmarg value="-Xnoagent"/>
+            <jvmarg value="-Djava.compiler=none"/>
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,address=8890"/>
+            <!--end debug-->
+        </java>
+    </target>
+    <target name="-set-package-dir">
+        <property name="server.package.dir" value="${build.dir}/lib"/>           
+    </target>
+    
+    <target name="clean" depends="-web-clean"/>
+</project>

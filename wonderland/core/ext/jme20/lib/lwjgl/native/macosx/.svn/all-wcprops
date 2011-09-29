@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/macosx
+END
+openal.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/macosx/openal.dylib
+END
+liblwjgl.jnilib
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/macosx/liblwjgl.jnilib
+END
+libjinput-osx.jnilib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/macosx/libjinput-osx.jnilib
+END

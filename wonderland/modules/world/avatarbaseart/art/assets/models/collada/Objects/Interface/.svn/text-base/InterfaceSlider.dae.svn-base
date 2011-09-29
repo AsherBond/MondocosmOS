@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>ckendall</author>
+      <authoring_tool>Maya2008 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;removeStaticCurves=1;exportCameraAsLookat=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=1;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=1;exportPhysics=1;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file:///Users/ckendall/Documents/IMI/Avatar/Interface/InterfaceSlider.mb</source_data>
+    </contributor>
+    <created>2008-11-14T01:48:36Z</created>
+    <modified>2008-11-14T01:48:36Z</modified>
+    <unit meter="0.01" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_physics_scenes>
+    <physics_scene id="MayaNativePhysicsScene">
+      <technique_common>
+        <gravity>0 -980 0</gravity>
+        <time_step>0.083</time_step>
+      </technique_common>
+    </physics_scene>
+  </library_physics_scenes>
+  <library_images>
+    <image id="file1" name="file1">
+      <init_from>./InterfaceSliderPlate_CLR.png</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="blinn1" name="blinn1">
+      <instance_effect url="#blinn1-fx"/>
+    </material>
+    <material id="blinn2" name="blinn2">
+      <instance_effect url="#blinn2-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="blinn1-fx">
+      <profile_COMMON>
+        <newparam sid="file1-surface">
+          <surface type="2D">
+            <init_from>file1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file1-sampler">
+          <sampler2D>
+            <source>file1-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file1-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="MAYA">
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn2-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.556256 0.556256 0.556256 0.8</color>
+            </diffuse>
+            <specular>
+              <color>0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="BackPlateShape" name="BackPlateShape">
+      <mesh>
+        <source id="BackPlateShape-positions" name="position">
+          <float_array id="BackPlateShape-positions-array" count="228">-0.15763 0.208721 0.011436 -0.16308 0.20508 0.011436 -0.166721 0.19963 0.011436 -0.168 0.193202 0.011436 -0.151202 0.21 0.011436 0.166721 0.19963 0.011436 0.16308 0.20508 0.011436 0.15763 0.208721 0.011436 0.151202 0.21 0.011436 0.168 0.193202 0.011436 -0.166721 -0.19963 0.011436 -0.16308 -0.20508 0.011436 -0.15763 -0.208721 0.011436 -0.151202 -0.21 0.011436 -0.168 -0.193202 0.011436 0.15763 -0.208721 0.011436 0.16308 -0.20508 0.011436 0.166721 -0.19963 0.011436 0.168 -0.193202 0.011436 0.151202 -0.21 0.011436 -0.164644 0.196558 -0.011436 -0.168 0.193202 -0.008091 -0.168 -0.193202 -0.008091 -0.164644 -0.196558 -0.011436 -0.151202 0.21 -0.008091 -0.154561 0.206641 -0.011436 0.154561 0.206641 -0.011436 0.151202 0.21 -0.008091 0.168 0.193202 -0.008091 0.164644 0.196558 -0.011436 0.164644 -0.196558 -0.011436 0.168 -0.193202 -0.008091 -0.154561 -0.206641 -0.011436 -0.151202 -0.21 -0.008091 0.151202 -0.21 -0.008091 0.154561 -0.206641 -0.011436 -0.16357 0.198325 -0.011436 -0.166721 0.19963 -0.008091 -0.160668 0.202668 -0.011436 -0.16308 0.20508 -0.008091 -0.156325 0.20557 -0.011436 -0.15763 0.208721 -0.008091 0.156325 0.20557 -0.011436 0.15763 0.208721 -0.008091 0.160668 0.202668 -0.011436 0.16308 0.20508 -0.008091 0.16357 0.198325 -0.011436 0.166721 0.19963 -0.008091 -0.156325 -0.20557 -0.011436 -0.15763 -0.208721 -0.008091 -0.160668 -0.202668 -0.011436 -0.16308 -0.20508 -0.008091 -0.16357 -0.198325 -0.011436 -0.166721 -0.19963 -0.008091 0.16357 -0.198325 -0.011436 0.166721 -0.19963 -0.008091 0.160668 -0.202668 -0.011436 0.16308 -0.20508 -0.008091 0.156325 -0.20557 -0.011436 0.15763 -0.208721 -0.008091 -0.020866 -0.126033 -0.011436 -0.020866 0.126033 -0.011436 -0.019589 0.132498 -0.011436 0.019589 0.132498 -0.011436 0.020866 0.126033 -0.011436 0.020866 -0.126033 -0.011436 0.019589 -0.132498 -0.011436 -0.019589 -0.132498 -0.011436 -0.020866 -0.126033 -0.001265 -0.020866 0.126033 -0.001265 -0.019589 0.132498 -0.001265 0.019589 0.132498 -0.001265 0.020866 0.126033 -0.001265 0.020866 -0.126033 -0.001265 0.019589 -0.132498 -0.001265 -0.019589 -0.132498 -0.001265</float_array>
+          <technique_common>
+            <accessor source="#BackPlateShape-positions-array" count="76" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BackPlateShape-normals" name="normal">
+          <float_array id="BackPlateShape-normals-array" count="396">0.098014 0.995185 0 -0.098014 0.995185 0 -0.098014 0.995185 0 0.098014 0.995185 0 -0.098014 -0.995185 0 -0.098014 -0.995185 0 0.098014 -0.995185 0 0.098014 -0.995185 0 0.995185 -0.098015 0 0.995185 -0.098015 0 0.995185 0.098015 0 0.995185 0.098015 0 -0.995185 0.098015 0 -0.995185 -0.098015 0 -0.995185 -0.098015 0 -0.995185 0.098015 0 -0.923878 0.382686 0 -0.923878 0.382686 0 -0.707112 0.707102 0 -0.707112 0.707102 0 -0.382691 0.923876 0 -0.382691 0.923876 0 0.382691 0.923876 0 0.382691 0.923876 0 0.707112 0.707102 0 0.707112 0.707102 0 0.923878 0.382686 0 0.923878 0.382686 0 -0.382691 -0.923876 0 -0.382691 -0.923876 0 -0.707112 -0.707102 0 -0.707112 -0.707102 0 -0.923878 -0.382686 0 -0.923878 -0.382686 0 0.923878 -0.382686 0 0.923878 -0.382686 0 0.707112 -0.707102 0 0.707112 -0.707102 0 0.382691 -0.923876 0 0.382691 -0.923876 0 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 -0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 0.000000 0 -1 -0.723507 0.105732 -0.682172 -0.723507 0.105732 -0.682172 -0.664914 0.303718 -0.682382 -0.664914 0.303718 -0.682382 -0.723506 -0.105732 -0.682172 -0.723506 -0.105732 -0.682172 -0.664914 -0.303718 -0.682381 -0.664914 -0.303718 -0.682381 -0.105625 0.723285 -0.682423 -0.105625 0.723285 -0.682423 -0.303611 0.664854 -0.682488 -0.303611 0.664854 -0.682488 0.105625 0.723285 -0.682423 0.105625 0.723285 -0.682423 0.303611 0.664854 -0.682488 0.303611 0.664854 -0.682488 0.723506 0.105732 -0.682172 0.723506 0.105732 -0.682172 0.664914 0.303718 -0.682381 0.664914 0.303718 -0.682381 0.723507 -0.105732 -0.682172 0.723507 -0.105732 -0.682172 0.664914 -0.303718 -0.682382 0.664914 -0.303718 -0.682382 -0.105625 -0.723285 -0.682424 -0.105625 -0.723285 -0.682424 -0.303611 -0.664854 -0.682488 -0.303611 -0.664854 -0.682488 0.105625 -0.723285 -0.682424 0.105625 -0.723285 -0.682424 0.303611 -0.664854 -0.682488 0.303611 -0.664854 -0.682488 -0.495131 0.495129 -0.713927 -0.495131 0.495129 -0.713927 0.495132 0.49513 -0.713927 0.495132 0.49513 -0.713927 -0.495132 -0.49513 -0.713927 -0.495132 -0.49513 -0.713927 0.495131 -0.495129 -0.713927 0.495131 -0.495129 -0.713927 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.995243 0.097418 0 0.995243 -0.097418 0 0.995243 -0.097418 0 0.995243 0.097418 0 0.981019 -0.19391 0 0.981019 -0.19391 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -0.981019 -0.19391 0 -0.995243 -0.097418 0 -0.995243 -0.097418 0 -0.981019 -0.19391 0 -0.995243 0.097418 0 -0.995243 0.097418 0 -0.981019 0.19391 0 -0.981019 0.19391 0 0 1 0 0 1 0 0 1 0 0 1 0 0.981019 0.19391 0 0.981019 0.19391 0</float_array>
+          <technique_common>
+            <accessor source="#BackPlateShape-normals-array" count="132" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BackPlateShape-map1" name="map1">
+          <float_array id="BackPlateShape-map1-array" count="192">0.086679 0.947176 0.73192 0.947178 0.731771 0.988825 0.086827 0.988823 0.745481 0.988825 0.745707 0.94483 0.073117 0.988823 0.073117 0.947176 0.738683 0.939551 0.742425 0.938139 0.757104 0.988825 0.757104 0.947178 0.061494 0.988823 0.061494 0.947176 0.079913 0.93955 0.076171 0.938139 0.731771 0.009947 0.73192 0.051595 0.086678 0.051595 0.086827 0.009948 0.745481 0.009947 0.745481 0.051595 0.073117 0.009948 0.072891 0.053942 0.757104 0.009947 0.757104 0.051595 0.738683 0.059222 0.742426 0.060634 0.079914 0.059222 0.076171 0.060633 0.061494 0.009948 0.061494 0.051595 0.009436 0.08734 0.051083 0.087192 0.051081 0.911582 0.009434 0.911434 0.009436 0.07363 0.051083 0.07363 0.009434 0.925143 0.053429 0.925369 0.009436 0.062007 0.051083 0.062008 0.058705 0.080432 0.060119 0.076684 0.058705 0.918339 0.06012 0.922087 0.009434 0.936766 0.051081 0.936766 0.767517 0.911582 0.767518 0.08719 0.809165 0.087339 0.809164 0.911433 0.809165 0.073629 0.765167 0.073403 0.809164 0.925142 0.767517 0.925142 0.759893 0.080434 0.758477 0.076686 0.809165 0.062006 0.767518 0.062006 0.809164 0.936765 0.767517 0.936765 0.759893 0.918339 0.758477 0.922087 0.757104 0.062007 0.745481 0.947178 0.75196 0.931622 0.745707 0.053942 0.051081 0.925144 0.765168 0.925369 0.757104 0.936766 0.066638 0.067151 0.451683 0.781968 0.453348 0.76818 0.767518 0.073629 0.366915 0.781968 0.053427 0.073404 0.453348 0.230593 0.061494 0.936765 0.073117 0.051595 0.377458 0.771123 0.36525 0.76818 0.377255 0.234614 0.072891 0.944831 0.44114 0.771122 0.451683 0.216805 0.377255 0.764158 0.066638 0.931622 0.441343 0.234614 0.441343 0.764158 0.36525 0.230593 0.44114 0.22765 0.75196 0.067151 0.377458 0.22765 0.061494 0.062007 0.366915 0.216805</float_array>
+          <technique_common>
+            <accessor source="#BackPlateShape-map1-array" count="96" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="BackPlateShape-vertices">
+          <input semantic="POSITION" source="#BackPlateShape-positions"/>
+        </vertices>
+        <triangles material="blinn1SG" count="124">
+          <input semantic="VERTEX" source="#BackPlateShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#BackPlateShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#BackPlateShape-map1" offset="2" set="0"/>
+          <p>27 0 0 24 1 1 8 3 3 8 3 3 24 1 1 4 2 2 13 4 16 33 5 17 19 7 19 19 7 19 33 5 17 34 6 18 18 8 32 31 9 33 9 11 35 9 11 35 31 9 33 28 10 34 21 12 48 22 13 49 3 15 51 3 15 51 22 13 49 14 14 50 3 15 51 2 16 54 21 12 48 21 12 48 2 16 54 37 17 55 2 16 54 1 18 60 37 17 55 37 17 55 1 18 60 39 19 61 1 18 10 0 20 4 39 19 11 39 19 11 0 20 4 41 21 65 0 20 4 4 2 2 41 21 65 41 21 65 4 2 2 24 1 1 8 3 3 7 22 6 27 0 0 27 0 0 7 22 6 43 23 7 7 22 6 6 24 12 43 23 7 43 23 7 6 24 12 45 25 13 6 24 46 5 26 38 45 25 47 45 25 47 5 26 38 47 27 68 5 26 38 9 11 35 47 27 68 47 27 68 9 11 35 28 10 34 13 4 16 12 28 20 33 5 17 33 5 17 12 28 20 49 29 21 12 28 20 11 30 24 49 29 21 49 29 21 11 30 24 51 31 25 11 30 58 10 32 52 51 31 59 51 31 59 10 32 52 53 33 74 10 32 52 14 14 50 53 33 74 53 33 74 14 14 50 22 13 49 18 8 32 17 34 36 31 9 33 31 9 33 17 34 36 55 35 37 17 34 36 16 36 40 55 35 37 55 35 37 16 36 40 57 37 41 16 36 30 15 38 22 57 37 31 57 37 31 15 38 22 59 39 79 15 38 22 19 7 19 59 39 79 59 39 79 19 7 19 34 6 18 20 40 62 36 41 63 25 44 8 25 44 8 36 41 63 40 43 9 36 41 63 38 42 66 40 43 9 26 45 14 42 46 15 29 49 44 29 49 44 42 46 15 46 48 45 42 46 15 44 47 87 46 48 45 30 50 42 54 51 43 35 54 28 35 54 28 54 51 43 58 53 29 54 51 43 56 52 71 58 53 29 32 55 26 48 56 27 23 59 56 23 59 56 48 56 27 52 58 57 48 56 27 50 57 92 52 58 57 21 61 48 37 62 69 20 60 62 20 60 62 37 62 69 36 63 63 21 61 48 20 60 62 22 65 49 22 65 49 20 60 62 23 64 56 22 65 49 23 64 56 53 67 53 53 67 53 23 64 56 52 66 57 24 68 1 25 69 8 41 71 5 41 71 5 25 69 8 40 70 9 25 69 8 24 68 1 26 73 14 26 73 14 24 68 1 27 72 0 27 72 0 43 74 83 26 73 14 26 73 14 43 74 83 42 75 15 28 76 34 29 77 44 47 79 39 47 79 39 29 77 44 46 78 45 29 77 44 28 76 34 30 81 42 30 81 42 28 76 34 31 80 33 31 80 33 55 82 76 30 81 42 30 81 42 55 82 76 54 83 43 33 85 17 49 86 67 32 84 26 32 84 26 49 86 67 48 87 27 33 85 17 32 84 26 34 89 18 34 89 18 32 84 26 35 88 28 34 89 18 35 88 28 59 91 23 59 91 23 35 88 28 58 90 29 36 63 63 37 62 69 38 93 66 38 93 66 37 62 69 39 92 70 38 93 66 39 92 70 40 70 9 40 70 9 39 92 70 41 71 5 42 75 15 43 74 83 44 95 87 44 95 87 43 74 83 45 94 78 44 95 87 45 94 78 46 78 45 46 78 45 45 94 78 47 79 39 48 87 27 49 86 67 50 97 92 50 97 92 49 86 67 51 96 64 50 97 92 51 96 64 52 66 57 52 66 57 51 96 64 53 67 53 54 83 43 55 82 76 56 99 71 56 99 71 55 82 76 57 98 94 56 99 71 57 98 94 58 90 29 58 90 29 57 98 94 59 91 23 23 59 56 20 40 62 60 101 77 60 101 77 20 40 62 61 100 73 20 40 62 25 44 8 61 100 73 61 100 73 25 44 8 62 102 72 25 44 8 26 45 14 62 102 72 26 45 14 63 103 75 62 102 72 29 49 44 64 104 81 26 45 14 26 45 14 64 104 81 63 103 75 29 49 44 30 50 42 64 104 81 64 104 81 30 50 42 65 105 90 30 50 42 35 54 28 65 105 90 65 105 90 35 54 28 66 106 95 35 54 28 32 55 26 66 106 95 32 55 26 67 107 85 66 106 95 23 59 56 60 101 77 32 55 26 32 55 26 60 101 77 67 107 85 60 108 77 61 109 73 68 111 88 68 111 88 61 109 73 69 110 89 61 109 73 62 112 72 69 110 89 69 110 89 62 112 72 70 113 84 62 114 72 63 115 75 70 117 84 70 117 84 63 115 75 71 116 80 63 118 75 64 119 81 71 121 80 71 121 80 64 119 81 72 120 86 64 119 81 65 122 90 72 120 86 72 120 86 65 122 90 73 123 82 65 122 90 66 124 95 73 123 82 73 123 82 66 124 95 74 125 93 66 126 95 67 127 85 74 129 93 74 129 93 67 127 85 75 128 91 67 130 85 60 108 77 75 131 91 75 131 91 60 108 77 68 111 88</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>0</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="PlateValueShape" name="PlateValueShape">
+      <mesh>
+        <source id="PlateValueShape-positions" name="position">
+          <float_array id="PlateValueShape-positions-array" count="24">-0.020866 -0.126033 -0.001265 -0.020866 0.126033 -0.001265 -0.019589 0.132498 -0.001265 0.019589 0.132498 -0.001265 0.020866 0.126033 -0.001265 0.020866 -0.126033 -0.001265 0.019589 -0.132498 -0.001265 -0.019589 -0.132498 -0.001265</float_array>
+          <technique_common>
+            <accessor source="#PlateValueShape-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="PlateValueShape-normals" name="normal">
+          <float_array id="PlateValueShape-normals-array" count="24">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#PlateValueShape-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="PlateValueShape-map1" name="map1">
+          <float_array id="PlateValueShape-map1-array" count="16">0.889351 0.018977 0.889351 0.482423 0.887001 0.494309 0.814969 0.494309 0.81262 0.482423 0.812619 0.018977 0.814969 0.007091 0.887001 0.007091</float_array>
+          <technique_common>
+            <accessor source="#PlateValueShape-map1-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="PlateValueShape-vertices">
+          <input semantic="POSITION" source="#PlateValueShape-positions"/>
+          <input semantic="NORMAL" source="#PlateValueShape-normals"/>
+        </vertices>
+        <triangles material="blinn2SG" count="6">
+          <input semantic="VERTEX" source="#PlateValueShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#PlateValueShape-map1" offset="1" set="0"/>
+          <p>2 2 3 3 1 1 3 3 4 4 1 1 1 1 4 4 0 0 6 6 7 7 5 5 7 7 0 0 5 5 0 0 4 4 5 5</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>0</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="SliderShape" name="SliderShape">
+      <mesh>
+        <source id="SliderShape-positions" name="position">
+          <float_array id="SliderShape-positions-array" count="60">-0.056003 0.005178 -0.059073 -0.058223 0.005355 -0.056854 -0.056003 0.007581 -0.056862 0.058223 0.005355 -0.056854 0.056003 0.005178 -0.059073 0.056003 0.007581 -0.056862 -0.056003 -0.007581 -0.056862 -0.058223 -0.005355 -0.056854 -0.056003 -0.005178 -0.059073 0.058223 -0.005355 -0.056854 0.056003 -0.007581 -0.056862 0.056003 -0.005178 -0.059073 -0.056003 0.012292 -0.0001 -0.058223 0.010073 -0.0001 0.058223 0.010073 -0.0001 0.056003 0.012292 -0.0001 -0.058223 -0.010073 -0.0001 -0.056003 -0.012292 -0.0001 0.056003 -0.012292 -0.0001 0.058223 -0.010073 -0.0001</float_array>
+          <technique_common>
+            <accessor source="#SliderShape-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SliderShape-normals" name="normal">
+          <float_array id="SliderShape-normals-array" count="192">-1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0.996573 -0.08272 0 0.996573 -0.08272 0 0.996573 -0.08272 0 0.996573 -0.08272 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 0 -0.996573 -0.08272 0 -0.996573 -0.08272 0 -0.996573 -0.08272 0 -0.996573 -0.08272 -0.707107 0 -0.707107 -0.707107 0 -0.707107 -0.707107 0 -0.707107 -0.707107 0 -0.707107 -0.706492 0.705291 -0.058589 -0.706492 0.705291 -0.058589 -0.706492 0.705291 -0.058589 -0.706492 0.705291 -0.058589 0 0.677241 -0.735761 0 0.677241 -0.735761 0 0.677241 -0.735761 0 0.677241 -0.735761 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.706492 0.705291 -0.058589 0.706492 0.705291 -0.058589 0.706492 0.705291 -0.058589 0.706492 0.705291 -0.058589 -0.706492 -0.705291 -0.058589 -0.706492 -0.705291 -0.058589 -0.706492 -0.705291 -0.058589 -0.706492 -0.705291 -0.058589 0 -0.677241 -0.735761 0 -0.677241 -0.735761 0 -0.677241 -0.735761 0 -0.677241 -0.735761 0.706492 -0.705291 -0.058589 0.706492 -0.705291 -0.058589 0.706492 -0.705291 -0.058589 0.706492 -0.705291 -0.058589 -0.563372 0.559539 -0.607888 -0.563372 0.559539 -0.607888 -0.563372 0.559539 -0.607888 0.563372 0.559539 -0.607888 0.563372 0.559539 -0.607888 0.563372 0.559539 -0.607888 -0.563372 -0.559539 -0.607888 -0.563372 -0.559539 -0.607888 -0.563372 -0.559539 -0.607888 0.563372 -0.559539 -0.607888 0.563372 -0.559539 -0.607888 0.563372 -0.559539 -0.607888</float_array>
+          <technique_common>
+            <accessor source="#SliderShape-normals-array" count="64" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SliderShape-map1" name="map1">
+          <float_array id="SliderShape-map1-array" count="68">0.979832 0.366053 0.969485 0.490521 0.84264 0.744295 0.935647 0.366053 0.974367 0.490538 0.984698 0.366053 0.941115 0.490538 0.930781 0.366053 0.995495 0.994807 0.871011 0.994807 0.87101 0.749161 0.995495 0.749161 0.865741 0.994807 0.843028 0.994807 0.843027 0.749162 0.865741 0.749161 0.866129 0.999673 0.947548 0.232564 0.837758 0.749161 0.837759 0.994807 0.98625 0.357032 0.975918 0.232547 0.872375 0.744556 0.872374 0.498911 0.937199 0.357032 0.932333 0.357032 0.942666 0.232547 0.981384 0.357032 0.84264 0.999673 0.971036 0.232564 0.866129 0.744295 0.945997 0.490521 0.996859 0.498911 0.996859 0.744556</float_array>
+          <technique_common>
+            <accessor source="#SliderShape-map1-array" count="34" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SliderShape-vertices">
+          <input semantic="POSITION" source="#SliderShape-positions"/>
+        </vertices>
+        <triangles material="blinn1SG" count="30">
+          <input semantic="VERTEX" source="#SliderShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SliderShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#SliderShape-map1" offset="2" set="0"/>
+          <p>13 0 0 1 1 1 16 3 3 16 3 3 1 1 1 7 2 31 15 4 8 5 5 9 12 7 11 12 7 11 5 5 9 2 6 10 4 8 12 11 9 13 0 11 15 0 11 15 11 9 13 8 10 14 19 12 24 9 13 17 14 15 27 14 15 27 9 13 17 3 14 29 17 16 23 6 17 32 18 19 22 18 19 22 6 17 32 10 18 33 1 20 30 0 21 15 7 23 2 7 23 2 0 21 15 8 22 14 1 25 1 13 26 0 2 24 4 2 24 4 13 26 0 12 27 5 0 28 15 2 29 10 4 31 12 4 31 12 2 29 10 5 30 9 4 32 12 3 33 16 11 35 13 11 35 13 3 33 16 9 34 28 3 36 29 5 37 21 14 39 27 14 39 27 5 37 21 15 38 20 7 40 31 6 41 6 16 43 3 16 43 3 6 41 6 17 42 7 6 44 18 8 45 14 10 47 19 10 47 19 8 45 14 11 46 13 9 49 17 19 50 24 10 48 26 10 48 26 19 50 24 18 51 25 0 52 15 1 53 30 2 54 10 3 55 16 4 56 12 5 57 9 6 58 18 7 59 2 8 60 14 9 61 28 10 62 19 11 63 13</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>0</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="InterfaceSlider">
+      <node id="BackPlate2" name="BackPlate2" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+      </node>
+      <node id="group1" name="group1" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <node id="BackPlate" name="BackPlate" type="NODE">
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <instance_geometry url="#BackPlateShape">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="blinn1SG" target="#blinn1">
+                  <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="PlateValue" name="PlateValue" type="NODE">
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <instance_geometry url="#PlateValueShape">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="blinn2SG" target="#blinn2"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Slider" name="Slider" type="NODE">
+          <translate sid="rotatePivot">0 0 -0.029587</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <translate sid="rotatePivotInverse">0 0 0.029587</translate>
+          <translate sid="scalePivot">0 0 -0.029587</translate>
+          <translate sid="scalePivotInverse">0 0 0.029587</translate>
+          <instance_geometry url="#SliderShape">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="blinn1SG" target="#blinn1">
+                  <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_physics_scene url="#MayaNativePhysicsScene"/>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

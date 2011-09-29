@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/410/trunk/test/build-tools/build-scripts
+END
+classpath.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/410/trunk/test/build-tools/build-scripts/classpath.xml
+END
+test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/410/trunk/test/build-tools/build-scripts/test.properties
+END
+test-build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/410/trunk/test/build-tools/build-scripts/test-build.xml
+END
+test-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/410/trunk/test/build-tools/build-scripts/test-setup.xml
+END

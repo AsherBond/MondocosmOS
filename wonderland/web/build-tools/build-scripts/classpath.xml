@@ -1,0 +1,33 @@
+<project basedir="." default="..." name="web.classpath">
+    
+    <!-- core classpaths -->
+   
+    <!-- embedded glassfish v3 -->
+    <pathconvert property="web.glassfish.classpath">
+        <path location="${web.glassfish.dir}/glassfish-embedded-all-3.0-b74b.jar"/>
+    </pathconvert>
+   
+    <!-- apache commons -->
+    <pathconvert property="web.apache.classpath">
+	<path location="${web.apache.dir}/commons-io-1.4.jar"/>
+        <path location="${web.apache.dir}/commons-fileupload-1.2.1.jar"/>
+    </pathconvert>
+    
+    <!-- Other wonderland specific supporting jars -->
+    <pathconvert property="web.restlib.classpath">
+        <path location="${web.restlib.dir}/jsr311-api-1.1.1.jar"/>
+    </pathconvert>
+
+    <!-- web utlities -->
+    <pathconvert property="web.utils.classpath">
+        <path location="${web.utils.dir}/wonderland-web-utils.jar"/>
+    </pathconvert>
+
+    <pathconvert property="web.classpath">
+        <path path="${jaxb.classpath}"/>
+        <path path="${web.glassfish.classpath}"/>
+        <path path="${web.apache.classpath}"/>
+	<path path="${web.restlib.classpath}"/>
+        <path path="${web.utils.classpath}"/>
+    </pathconvert>
+</project>

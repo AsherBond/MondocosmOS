@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4707/trunk/core/build-tools/build-scripts
+END
+core-package.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3685/trunk/core/build-tools/build-scripts/core-package.xml
+END
+classpath.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4707/trunk/core/build-tools/build-scripts/classpath.xml
+END
+core.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2837/trunk/core/build-tools/build-scripts/core.properties
+END
+core-build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4695/trunk/core/build-tools/build-scripts/core-build.xml
+END
+core-setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4707/trunk/core/build-tools/build-scripts/core-setup.xml
+END

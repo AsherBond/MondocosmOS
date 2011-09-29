@@ -1,0 +1,106 @@
+<project basedir="." default="..." name="setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="setup.build-scripts.dir" file="${ant.file.setup}"/>
+    <property name="top.dir" location="${setup.build-scripts.dir}/../.."/>
+    
+    <!-- suck in all the environment variables (prefixed by env) -->
+    <property environment="env"/>
+
+    <!-- load custom ant tasks -->
+    
+    <!-- the library to load antcontrib tasks from.  When building from a 
+         build file where these tasks have already been loaded, this
+         property can be set to "noop.xml" to skip loading the resources -->
+    <property name="antcontrib.taskdef.resource" value="net/sf/antcontrib/antlib.xml"/>
+    <taskdef resource="${antcontrib.taskdef.resource}">
+        <classpath>
+            <pathelement location="${top.dir}/lib/ant/ant-contrib.jar"/>
+            <pathelement location="${setup.build-scripts.dir}"/>
+        </classpath>
+    </taskdef>
+
+    <tstamp>
+	<format property="build.stamp" pattern="yyMMddHHmm"/>
+	<format property="build.date" pattern="kk:mm zzz dd MMM yyyy"/>
+    </tstamp>
+
+    <!-- do platform specific setup -->
+    <import file="${setup.build-scripts.dir}/platform-setup.xml"/>
+
+    <!-- 
+        Use my.build.properties at the top level to override default values in
+        *.properties. You can specify an alternate build.properties override 
+        file by running with "ant -Dmy.build.properties.file=<file>" 
+    -->
+    <property name="my.build.properties.file" location="${top.dir}/my.build.properties"/>
+    <property file="${my.build.properties.file}"/>
+
+    <!-- 
+        Include setup properties after platform-specific setup has been done,
+        so we can include platform-specific values ostype and arch.
+    -->
+    <property file="${setup.build-scripts.dir}/setup.properties"/>
+
+    <!-- import common classpath information -->
+    <import file="${setup.build-scripts.dir}/classpath.xml"/>
+
+    <!-- If building in verbose mode, echo important build properties... -->
+    <if>
+	<and>
+	    <istrue value="${build.verbose}"/>
+	    <not> <isset property="${build-setup.echoed}"/> </not>
+	</and>
+	<then>
+	    <echo message="project-name = ${project.name}"/>
+	    <echo message="ostype = ${ostype}"/>
+	    <echo message="arch = ${arch}"/>
+	    <echo message="build level=${build.level}, debug=${build.debug}, debuglevel=${build.debuglevel}"/>
+	    <echo message="build.platform.dir = ${build.platform.dir}"/>
+	    <property name="${build-setup.echoed}" value="true"/>
+        </then>
+    </if>
+
+    <if>
+        <available file="${current.dir}/nbproject"/>
+        <then>
+            <echo file="${current.dir}/nbproject/nb.properties">
+wonderland.ostype=${ostype}
+wonderland.arch=${arch}
+wonderland.system.type=${system.type}
+            </echo>
+        </then>
+    </if>
+    
+    <!-- common macros -->
+    
+    <!-- unpack a .zip -->
+    <macrodef name="unpack-lib-zip">
+	<attribute name="pkgname"/>
+	<attribute name="srcdir"/>
+	<attribute name="destdir"/>
+	<attribute name="enabled" default="true"/>
+	<attribute name="verbose" default="false"/>
+	<sequential>
+	    <if>
+		<istrue value="@{verbose}"/>
+		<then>
+		    <echo message="pkgname = @{pkgname}"/>
+		    <echo message="srcdir = @{srcdir}"/>
+		    <echo message="destdir = @{destdir}"/>
+		    <echo message="enabled = @{enabled}"/>
+		</then>
+	    </if>
+
+	    <if>
+		<istrue value="@{enabled}"/>
+		<then>
+		    <ant dir="${setup.build-scripts.dir}" antfile="unpack.xml">
+			<property name="pkgname" value="@{pkgname}"/>
+			<property name="unpack.src.dir" value="@{srcdir}"/>
+			<property name="unpack.dest.dir" value="@{destdir}"/>
+		    </ant>
+		</then>
+	    </if>
+	</sequential>
+    </macrodef>
+</project>

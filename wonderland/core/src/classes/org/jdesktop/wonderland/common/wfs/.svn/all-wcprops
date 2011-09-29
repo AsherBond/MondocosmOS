@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs
+END
+WorldRootList.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/WorldRootList.java
+END
+WFSRecordingList.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/WFSRecordingList.java
+END
+WorldRoot.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/WorldRoot.java
+END
+CellList.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/CellList.java
+END
+CellPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/CellPath.java
+END
+CellDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/3658/trunk/core/src/classes/org/jdesktop/wonderland/common/wfs/CellDescriptor.java
+END

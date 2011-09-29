@@ -1,0 +1,128 @@
+diff -r -x CVS src/java/org/jdesktop/deployment/jnlp/servlet/DownloadRequest.java /Users/jkaplan/misc/jnlp-servlet/deployment/jnlp/servlet/src/java/org/jdesktop/deployment/jnlp/servlet/DownloadRequest.java
+55,56c55
+<     private long _ifModifiedSince = -1;
+< 
+---
+>     
+61,64c60
+< 
+<     // If-Modified-Since RFC 2616 : Standard headers
+<     public static final String IF_MODIFIED_SINCE        = "if-modified-since";
+< 
+---
+>     
+75d70
+<         _ifModifiedSince = request.getDateHeader(IF_MODIFIED_SINCE);
+181d175
+<     public long getIfModifiedSince() { return _ifModifiedSince; }
+diff -r -x CVS src/java/org/jdesktop/deployment/jnlp/servlet/DownloadResponse.java /Users/jkaplan/misc/jnlp-servlet/deployment/jnlp/servlet/src/java/org/jdesktop/deployment/jnlp/servlet/DownloadResponse.java
+77,81c77
+< 
+<     static DownloadResponse getNotModifiedResponse(String mimeType, long timestamp, String versionId) {
+<         return new NotModifiedResponse(mimeType, versionId, timestamp);
+<     }
+< 
+---
+>     
+149c145,159
+< 	    setResponseHeaders(response);
+---
+> 	    // Set header information
+> 	    response.setContentType(getMimeType());
+> 	    response.setContentLength(getContentLength());
+> 	    if (getVersionId() != null) response.setHeader(HEADER_JNLP_VERSION, getVersionId());
+> 	    if (getLastModified() != 0) response.setDateHeader(HEADER_LASTMOD, getLastModified());			    
+> 	    if (_fileName != null) {
+> 	
+> 		if (_fileName.endsWith(".pack.gz")) {
+> 		    response.setHeader(CONTENT_ENCODING, PACK200_GZIP_ENCODING );
+> 		} else if (_fileName.endsWith(".gz")) {
+> 		    response.setHeader(CONTENT_ENCODING, GZIP_ENCODING );
+> 		} else {
+> 		    response.setHeader(CONTENT_ENCODING, null);
+> 		}
+> 	    }
+164,183d173
+< 
+<         protected void setResponseHeaders(HttpServletResponse response)
+<             throws IOException
+<         {
+<             // Set header information
+< 	    response.setContentType(getMimeType());
+< 	    response.setContentLength(getContentLength());
+< 	    if (getVersionId() != null) response.setHeader(HEADER_JNLP_VERSION, getVersionId());
+< 	    if (getLastModified() != 0) response.setDateHeader(HEADER_LASTMOD, getLastModified());
+< 	    if (_fileName != null) {
+< 
+< 		if (_fileName.endsWith(".pack.gz")) {
+< 		    response.setHeader(CONTENT_ENCODING, PACK200_GZIP_ENCODING );
+< 		} else if (_fileName.endsWith(".gz")) {
+< 		    response.setHeader(CONTENT_ENCODING, GZIP_ENCODING );
+< 		} else {
+< 		    response.setHeader(CONTENT_ENCODING, null);
+< 		}
+< 	    }
+<         }
+244,268c234
+<     }
+< 
+<     static private class NotModifiedResponse extends FileDownloadResponse {
+<         NotModifiedResponse(String mimeType, String versionId, long lastModified) {
+<             super (mimeType, versionId, lastModified);
+< 	}
+< 
+<         public void sendRespond(HttpServletResponse response) throws IOException {
+<             setResponseHeaders(response);
+< 
+<             response.sendError(HttpServletResponse.SC_NOT_MODIFIED);
+<         }
+< 
+<         public String toString() { return super.toString() + "[ Not Modified ]"; }
+< 
+<         @Override
+<         int getContentLength() throws IOException {
+<             return -1;
+<         }
+< 
+<         @Override
+<         InputStream getContent() throws IOException {
+<             throw new UnsupportedOperationException("Not supported.");
+<         }
+<     }
+---
+>     }    
+diff -r -x CVS src/java/org/jdesktop/deployment/jnlp/servlet/JnlpDownloadServlet.java /Users/jkaplan/misc/jnlp-servlet/deployment/jnlp/servlet/src/java/org/jdesktop/deployment/jnlp/servlet/JnlpDownloadServlet.java
+138,145c138,141
+< 	} // catch(Throwable e) {
+< 	//    _log.addFatal("servlet.log.fatal.internalerror", e);
+< 	    
+<         // at this point, we should assume things are too serious to
+<         // send an error to the client.  Let's throw the error back up and
+<         // hope the container takes care of it for us
+<         //response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+< 	// }
+---
+> 	} catch(Throwable e) {
+> 	    _log.addFatal("servlet.log.fatal.internalerror", e);
+> 	    response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+> 	}
+205,206c201,202
+< 	}
+< 
+---
+> 	} 
+> 	
+228,238c224
+< 
+<         // if-modified-since handling
+<         if (jnlpres.getLastModified() != 0 &&
+<                 (dreq.getIfModifiedSince() >= jnlpres.getLastModified()))
+<         {
+<             _log.addDebug("Resource " + jr + " not modified");
+<             return DownloadResponse.getNotModifiedResponse(jr.getMimeType(),
+<                                                            jr.getLastModified(),
+<                                                            jr.getReturnVersionId());
+<         }
+< 
+---
+> 	

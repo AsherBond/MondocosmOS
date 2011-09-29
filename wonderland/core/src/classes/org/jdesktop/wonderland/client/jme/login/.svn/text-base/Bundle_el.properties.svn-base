@@ -1,0 +1,94 @@
+#EN: WARNING\nThe contents of the following directories will be deleted: \n\n    {0}\n    {1}\n    {2}\n\nWould you like to continue?
+Clear_Cache_Warning_Message=\u03a0\u03a1\u039f\u0395\u0399\u0394\u039f\u03a0\u039f\u0399\u0397\u03a3\u0397\n\u03a4\u03b1 \u03c0\u03b5\u03c1\u03b9\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b1 \u03c4\u03bf\u03c5 \u03c0\u03b1\u03c1\u03b1\u03ba\u03ac\u03c4\u03c9 \u03c6\u03b1\u03ba\u03ad\u03bb\u03bf\u03c5 \u03b8\u03b1 \u03b4\u03b9\u03b1\u03b3\u03c1\u03b1\u03c6\u03bf\u03cd\u03bd: \n\n    {0}\n    {1}\n    {2}\n\n\u0398\u03ad\u03bb\u03b5\u03c4\u03b5 \u03bd\u03b1 \u03c3\u03c5\u03bd\u03b5\u03c7\u03af\u03c3\u03b5\u03c4\u03b5?
+#EN: Confirm delete directories
+Confirm_Delete_Directories=\u0395\u03c0\u03b9\u03b2\u03b5\u03b2\u03b1\u03af\u03c9\u03c3\u03b7 \u03b4\u03b9\u03b1\u03b3\u03c1\u03b1\u03c6\u03ae\u03c2 \u03c6\u03b1\u03ba\u03ad\u03bb\u03c9\u03bd
+#EN: Connecting...
+Connecting...=\u03a3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7...
+#EN: Downloading module: {0} ({1}%)
+Downloading\ module=\u039a\u03b1\u03c4\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 module: {0} ({1}%)
+#EN: Authenticated User
+EitherLoginPanel.authLoginRB.text=\u03a0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf\u03c2 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2
+#EN: Guest
+EitherLoginPanel.guestLoginRB.text=\u0395\u03c0\u03b9\u03c3\u03ba\u03ad\u03c0\u03c4\u03b7\u03c2
+#EN: Connect as:
+EitherLoginPanel.jLabel1.text=\u03a3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7 \u03c9\u03c2:
+#EN: Error connecting: {0}
+Error_Connecting=\u039b\u03ac\u03b8\u03bf\u03c2 \u03ba\u03b1\u03c4\u03ac \u03c4\u03b7 \u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7: {0}
+#EN: Audio
+LoginOptionsFrame.audioPanel.TabConstraints.tabTitle=\u0389\u03c7\u03bf\u03b9
+#EN: Cache
+LoginOptionsFrame.cachePanel.TabConstraints.tabTitle=Cache
+#EN: Cancel
+LoginOptionsFrame.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Clear Cache
+LoginOptionsFrame.clearCacheButton.text=\u0395\u03ba\u03ba\u03b1\u03b8\u03ac\u03c1\u03b9\u03c3\u03b7 Cache
+#EN: Port:
+LoginOptionsFrame.httpProxyPortTFLabel.text=Port:
+#EN: HTTP Proxy:
+LoginOptionsFrame.httpProxyTFLabel.text=HTTP Proxy:
+#EN: Port:
+LoginOptionsFrame.httpsProxyPortTFLabel.text=Port:
+#EN: HTTPS Proxy:
+LoginOptionsFrame.httpsProxyTFLabel.text=HTTPS Proxy:
+#EN: Local IP Address:
+LoginOptionsFrame.jLabel1.text=\u03a4\u03bf\u03c0\u03b9\u03ba\u03ae \u0394\u03b9\u03b5\u03cd\u03b8\u03c5\u03bd\u03c3\u03b7 IP:
+#EN: Cache Directory:
+LoginOptionsFrame.jLabel2.text=\u03a6\u03ac\u03ba\u03b5\u03bb\u03bf\u03c2 Cache:
+#EN: Phone number:
+LoginOptionsFrame.jLabel3.text=\u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03c4\u03b7\u03bb\u03b5\u03c6\u03ce\u03bd\u03bf\u03c5:
+#EN: Audio Quality:
+LoginOptionsFrame.jLabel4.text=\u03a0\u03bf\u03b9\u03cc\u03c4\u03b7\u03c4\u03b1 \u0389\u03c7\u03bf\u03c5:
+#EN: Use this phone number instead of the softphone
+LoginOptionsFrame.jLabel5.text=\u03a7\u03c1\u03ae\u03c3\u03b7 \u03b1\u03c5\u03c4\u03bf\u03cd \u03c4\u03bf\u03c5 \u03c4\u03b7\u03bb\u03b5\u03c6\u03c9\u03bd\u03b9\u03ba\u03bf\u03cd \u03b1\u03c1\u03b9\u03b8\u03bc\u03bf\u03cd \u03b1\u03bd\u03c4\u03af \u03c4\u03bf\u03c5 softphone
+#EN: Network Interface
+LoginOptionsFrame.jPanel1.border.title=Interface \u0394\u03b9\u03ba\u03c4\u03cd\u03bf\u03c5
+#EN: Web Proxies
+LoginOptionsFrame.jPanel2.border.title=Proxies \u0394\u03b9\u03ba\u03c4\u03cd\u03bf\u03c5
+#EN: Network
+LoginOptionsFrame.networkPanel.TabConstraints.tabTitle=\u0394\u03af\u03ba\u03c4\u03c5\u03bf
+#EN: No proxy
+LoginOptionsFrame.noProxyRB.text=\u03a7\u03c9\u03c1\u03af\u03c2 proxy
+#EN: No Proxy For:
+LoginOptionsFrame.noProxyTFLabel.text=\u038c\u03c7\u03b9 Proxy \u0393\u03b9\u03b1:
+#EN: OK
+LoginOptionsFrame.okButton.text=\u039f\u039a
+#EN: Use system proxy settings
+LoginOptionsFrame.systemProxyRB.text=\u03a7\u03c1\u03ae\u03c3\u03b7 \u03c4\u03c9\u03bd \u03c0\u03b1\u03c1\u03b1\u03bc\u03ad\u03c4\u03c1\u03c9\u03bd \u03c4\u03bf\u03c5 proxy \u03c4\u03bf\u03c5 \u03c3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2
+#EN: Advanced Properties
+LoginOptionsFrame.title=\u0393\u03b9\u03b1 \u03a0\u03c1\u03bf\u03c7\u03c9\u03c1\u03b7\u03bc\u03ad\u03bd\u03bf\u03c5\u03c2
+#EN: Manual proxy configuration:
+LoginOptionsFrame.wlProxyRB.text=\u03a7\u03b5\u03b9\u03c1\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03b7 \u03a1\u03cd\u03b8\u03bc\u03b9\u03c3\u03b7 proxy:
+#EN: Full Name:
+NoAuthLoginPanel.naFullNameLabel.text=\u03a0\u03bb\u03ae\u03c1\u03b5\u03c2 \u038c\u03bd\u03bf\u03bc\u03b1:
+#EN: Server:
+NoAuthLoginPanel.naServerLabel.text=Server:
+#EN: Username:
+NoAuthLoginPanel.naUsernameLabel.text=\u038c\u03bd\u03bf\u03bc\u03b1 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7:
+#EN: Password:
+WebServiceAuthLoginPanel.naFullNameLabel.text=\u039a\u03c9\u03b4\u03b9\u03ba\u03cc\u03c2 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7:
+#EN: Server:
+WebServiceAuthLoginPanel.naServerLabel.text=Server:
+#EN: Username:
+WebServiceAuthLoginPanel.naUsernameLabel.text=\u038c\u03bd\u03bf\u03bc\u03b1 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7:
+#EN: Advanced...
+WonderlandLoginDialog.advancedButton.text=\u0393\u03b9\u03b1 \u03c0\u03c1\u03bf\u03c7\u03c9\u03c1\u03b7\u03bc\u03ad\u03bd\u03bf\u03c5\u03c2...
+#EN: Cancel
+WonderlandLoginDialog.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Waiting for external login...
+WonderlandLoginDialog.jLabel1.text=\u0391\u03bd\u03b1\u03bc\u03bf\u03bd\u03ae \u03b3\u03b9\u03b1 \u03b5\u03be\u03c9\u03c4\u03b5\u03c1\u03b9\u03ba\u03ae \u03b5\u03af\u03c3\u03bf\u03b4\u03bf...
+#EN: Login
+WonderlandLoginDialog.loginButton.text=Login
+#EN: Status:
+WonderlandLoginDialog.statusLabel.text=\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7:
+#EN: Log in
+WonderlandLoginDialog.tagLineLabel.text=Log in
+#EN: Password:
+WonderlandLoginDialog.upPasswordLabel.text=\u039a\u03c9\u03b4\u03b9\u03ba\u03cc\u03c2 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7:
+#EN: Server:
+WonderlandLoginDialog.upServerLabel.text=Server:
+#EN: Username:
+WonderlandLoginDialog.upUsernameLabel.text=\u038c\u03bd\u03bf\u03bc\u03b1 \u03a7\u03c1\u03ae\u03c3\u03c4\u03b7:
+#EN: Server:
+WonderlandLoginDialog.webServerLabel.text=Server:
+#EN: Open Wonderland
+WonderlandLoginDialog.worldNameLabel.text=Open Wonderland

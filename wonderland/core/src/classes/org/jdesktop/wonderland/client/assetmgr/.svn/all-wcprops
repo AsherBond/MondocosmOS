@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/4710/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr
+END
+AssetCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4677/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetCache.java
+END
+AssetDBException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/3747/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetDBException.java
+END
+AssetFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetFactory.java
+END
+AssetRepositoryFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3219/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetRepositoryFactory.java
+END
+AssetManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4677/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetManager.java
+END
+AssetInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4539/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetInputStream.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/351/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/package.html
+END
+AssetFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetFile.java
+END
+Asset.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4677/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/Asset.java
+END
+AssetRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetRepository.java
+END
+AssetCacheException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetCacheException.java
+END
+AssetDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4553/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetDB.java
+END
+AssetStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetStream.java
+END
+AssetID.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/AssetID.java
+END
+TrackingInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4710/trunk/core/src/classes/org/jdesktop/wonderland/client/assetmgr/TrackingInputStream.java
+END

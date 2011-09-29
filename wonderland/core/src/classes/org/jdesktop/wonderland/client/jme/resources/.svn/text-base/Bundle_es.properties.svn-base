@@ -1,0 +1,138 @@
+#EN: 120 fps
+120\ fps=120 fps
+#EN: 15 fps
+15\ fps=15 fps
+#EN: 200 fps
+200\ fps=200 fps
+#EN: 30 fps (default)
+30\ fps\ (default)=30 fps (por defecto)
+#EN: 60 fps
+60\ fps=60 fps
+#EN: Asset Meter
+Asset\ Meter=Medidor de Recursos
+#EN: Audio
+Audio=Audio
+#EN: Audio Quality
+Audio\ Quality=Calidad de Audio
+#EN: Avatar...
+Avatar...=Avatar...
+#EN: Avatar Controls
+Avatar\ Controls=Controles del Avatar
+#EN: Avatar Settings...
+Avatar\ Settings...=Configuraci\u00f3n del Avatar...
+#EN: Object Palette HUD
+Cell\ Palette\ HUD=Paleta de Objeto HUD
+#EN: Object Viewer
+Cell\ Viewer=Visor de Objeto
+#EN: Chat
+Chat=Chat
+#EN: Component
+Component=Componente
+#EN: Content Browser
+Content\ Browser=Ojeador de Contenido
+#EN: Another client running
+DB_ERROR_TITLE=Otro cliente ejecut\u00e1ndose
+#EN: Unable to connect to client cache database. You likely have another\ninstance of Open Wonderland running. Please make sure you first\nexit other running clients.
+DB_ERROR=Imposible conectar con la cach\u00e9 del cliente. Puede que haya otra\ninstancia de Open Wonderland en ejecuci\u00f3n. Por favor, aseg\u00farese de que\nprimero cierra los otros clientes.
+#EN: You may need to exit running\nJava processes manually via the Task Manager.
+DB_ERROR_WINDOWS=Puede que necesite cerrar manualmente los procesos\nJava en ejecuci\u00f3n (utilizando el Administrador de Tareas).
+#EN: Edit
+Edit=Editar
+#EN: Exit
+Exit=Salir
+#EN: File
+File=Fichero
+#EN: First Person Camera
+First\ Person\ Camera=C\u00e1mara de Primera Persona
+#EN: fps:
+fps\:=fps:
+#EN: <FPS :>
+FPS_\:=<FPS :>
+#EN: FPS Meter
+FPS_Meter=FPS Meter
+#EN: Front Camera
+Front\ Camera=C\u00e1mara Frontal
+#EN: A camera looking at the front of the avatar (for testing only)
+Front_Camera_Tooltip=Una c\u00e1mara posicionada frente al avatar (s\u00f3lo para pruebas)
+#EN: Go!
+Go!=\u00a1Adelante!
+#EN: Groups...
+Groups...=Grupos...
+#EN: High (44.1k stereo)
+High\ (44.1k\ stereo)=Alto (44.1k estereo)
+#EN: Insert
+Insert=Insertar
+#EN: Use the Java Preferences utility\nto make Java 6 the default for Java Applications.
+JAVA_VERSION_ERROR_OSX=Utilice la utilidad de Java Preferences\npara que Java 6 sea el JDK por defecto.
+#EN: Download Java 6 from:\nhttp://java.com/en/download/index.jsp
+JAVA_VERSION_ERROR_OTHER=Descargue Java 6 desde:\nhttp://java.com/en/download/index.jsp
+#EN: Incompatible Java Version
+JAVA_VERSION_ERROR_TITLE=Versi\u00f3n de Java incompatible.
+#EN: Open Wonderland requires Java 6.
+JAVA_VERSION_ERROR=Open Wonderland requires Java 6.
+#EN: Level
+Level=Nivel
+#EN: Location:
+Location\:=Ubicaci\u00f3n:
+#EN: Log Audio Problem
+Log\ Audio\ Problem=Problema en el registro de Audio
+#EN: Logger
+Logger=Logger
+#EN: Log out
+Log\ out=Cierre de sesi\u00f3n
+#EN: Error Log...
+Log_Viewer=Registro de Errores...
+#EN: Low (8k stereo)
+Low\ (8k\ stereo)=Bajo (8k estereo)
+#EN: Max Frame Rate
+Max\ Frame\ Rate=Max Frame Rate
+#EN: Minimum (8k mono)
+Minimum\ (8k\ mono)=M\u00ednimo (8k mono)
+#EN: Model...
+Model...=Modelo...
+#EN: Module Art Palette
+Module\ Art\ Palette=Paleta del M\u00f3dulo de Arte
+#EN: Mute
+Mute=Silencio
+#EN: New Module...
+New\ Module...=Nuevo M\u00f3dulo...
+#EN: Normal (16k stereo)
+Normal\ (16k\ stereo)=Normal (16k estereo)
+#EN: Palettes
+Palettes=Paletas
+#EN: Physics Enabled
+Physics\ Enabled=F\u00edsica Activada
+#EN: Placemarks
+Placemarks=Marcas de Posici\u00f3n
+#EN: Private Text Chat
+Private\ Text\ Chat=Chat de Texto Privado
+#EN: Private Voice Chat
+Private\ Voice\ Chat=Chat de Voz Privado
+#EN: Reconnect Softphone
+Reconnect\ Softphone=Reconectar el Softphone
+#EN: Shortcuts
+Shortcuts=Atajos
+#EN: Softphone
+Softphone=Softphone
+#EN: Starting Location
+Starting\ Location=Comenzando la ubicaci\u00f3n
+#EN: Test Audio...
+Test\ Audio...=Prueba de Audio...
+#EN: Text Chat All
+Text\ Chat\ All=Chat de Texto con Todos
+#EN: Third Person Camera
+Third\ Person\ Camera=C\u00e1mara de Tercera Persona
+#EN: Tools
+Tools=Herramientas
+#EN: Transfer Call...
+Transfer\ Call...=Transferir Llamada...
+#EN: User Guide
+User\ Guide=Gu\u00eda del Usuario
+#EN: Users
+Users=Usuarios
+#EN: View
+View=Vista
+#EN: Window
+Window=Ventana
+#EN: Wonderland
+Wonderland=Wonderland

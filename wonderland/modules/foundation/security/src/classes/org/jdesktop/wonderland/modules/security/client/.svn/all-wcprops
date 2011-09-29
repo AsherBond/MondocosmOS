@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4572/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client
+END
+SecurityQueryComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2953/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityQueryComponent.java
+END
+SecurityComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3628/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityComponentFactory.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/4530/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4521/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/4514/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle_zh_CN.properties
+END
+SecurityClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2953/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityClientPlugin.java
+END
+SecurityComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3628/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityComponentProperties.java
+END
+SecurityComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3481/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityComponentProperties.form
+END
+SecurityComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2953/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/SecurityComponent.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4572/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4557/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3993/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/client/Bundle_de.properties
+END

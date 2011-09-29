@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/common
+END
+MasterStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/common/MasterStatus.java
+END
+ManagerMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/common/ManagerMessage.java
+END
+SimpleTestDirectorMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/common/SimpleTestDirectorMessage.java
+END
+CommsHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/common/CommsHandler.java
+END

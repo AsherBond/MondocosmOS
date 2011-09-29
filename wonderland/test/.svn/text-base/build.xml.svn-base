@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-test" default="all" basedir=".">
+    <target name="all" depends="build, jar"/>
+    
+    <target name="build">
+        <ant antfile="serverplugin/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="comms/serverprotocol/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="comms/serverlistener/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="comms/clientlistener/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="harness/build.xml" inheritAll="false" target="build"/>
+    </target>
+    
+    <target name="jar">
+        <ant antfile="serverplugin/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="comms/serverprotocol/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="comms/serverlistener/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="comms/clientlistener/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="harness/build.xml" inheritAll="false" target="jar"/>
+    </target>
+    
+    <target name="clean">
+        <ant antfile="serverplugin/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="comms/serverprotocol/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="comms/serverlistener/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="comms/clientlistener/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="harness/clientlistener/build.xml" inheritAll="false" target="clean"/>
+    </target>
+</project>

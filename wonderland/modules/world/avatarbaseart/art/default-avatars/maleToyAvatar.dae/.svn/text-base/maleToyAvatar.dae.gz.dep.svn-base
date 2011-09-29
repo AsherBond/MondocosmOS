@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployed-model>
+    <version>1</version>
+    <modelURL>wla://avatarbaseart/default-avatars/maleToyAvatar.dae/maleToyAvatar.dae.gz</modelURL>
+    <loaderDataURL>wla://avatarbaseart/default-avatars/maleToyAvatar.dae/maleToyAvatar.dae.gz.ldr</loaderDataURL>
+    <modelBGScale>
+        <x>0.01</x>
+        <y>0.01</y>
+        <z>0.01</z>
+    </modelBGScale>
+    <modelBGTranslation>
+        <x>-2.6779994E-4</x>
+        <y>-7.0983917E-4</y>
+        <z>0.0020293496</z>
+    </modelBGTranslation>
+    <modelBGRotation>
+        <x>1.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+        <angle>0.0</angle>
+    </modelBGRotation>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.jmecolladaloader.client.JmeColladaLoader</modelLoaderClassname>
+</deployed-model>

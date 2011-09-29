@@ -1,0 +1,34 @@
+#EN: Portal
+Portal_Cell=Portal
+#EN: Browse
+PortalComponentProperties.browseButton.text=Navegar
+#EN: Content Repository
+PortalComponentProperties.contentRepositoryRadioButton.text=Repositorio de Contenido
+#EN: File
+PortalComponentProperties.fileRadioButton.text=Fichero
+#EN: Set from placemark...
+PortalComponentProperties.fromPlacemarkB.text=Fijar desde marca de posici\u00f3n...
+#EN: Look Direction:
+PortalComponentProperties.jLabel10.text=Direcci\u00f3n de Vista:
+#EN: Server URL:
+PortalComponentProperties.jLabel1.text=URL del Servidor:
+#EN: Location:
+PortalComponentProperties.jLabel2.text=Posici\u00f3n:
+#EN: y:
+PortalComponentProperties.jLabel4.text=y:
+#EN: z:
+PortalComponentProperties.jLabel5.text=z:
+#EN: Audio source:
+PortalComponentProperties.jLabel7.text=Fuente de Audio:
+#EN: Volume:
+PortalComponentProperties.jLabel8.text=Volumen:
+#EN: x:
+PortalComponentProperties.jLabel9.text=x:
+#EN: Preview
+PortalComponentProperties.previewButton.text=Vista Previa
+#EN: URL
+PortalComponentProperties.URLRadioButton.text=URL
+#EN: A portal capability allows users to teleport
+Portal_Description=Una capacidad del protal permite el teletransporte a los usuarios
+#EN: Portal
+Portal=Portal

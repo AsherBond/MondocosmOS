@@ -1,0 +1,90 @@
+
+/* Tables to hold information about installed modules */
+
+table.installed {
+        width: 100%;
+        text-align: left;
+        border: solid #adb7c1;
+        border-width: 0px 1px 1px 1px;
+        border-collapse: collapse;
+}
+
+tr.header {
+	background-color: #adb7c1;
+	color: #fff;
+	font-weight: normal;
+}
+
+tr {
+        background-color: rgb(243, 243, 243); /* #f3f3f3 */
+        background-color: rgba(243, 243, 243, 0.5);
+	border: 1px solid #adb7c1;
+}
+
+/* CSS3 for alternating rows. */
+tr:nth-child(even) {
+        background-color: rgb(214, 219, 224); /* #d6dbe0 */
+        background-color: rgba(214, 219, 224, 0.5);
+}
+
+td, th {
+        text-align: left;
+        padding: 7px 10px;
+        margin: 0;
+}
+
+tr.installed_a {
+        background-color: #f2f2f2;
+}
+
+tr.installed_b {
+        background-color:#ffffff;
+}
+
+/* Specifically for nested tables, i.e. tightvnccontrol */
+table table tr td:first-child {
+        text-align: right;
+}
+
+table table td {
+        padding: 3px 5px;
+        font-size: .85em;
+        line-height: 1em;
+}
+
+/* ----------------------------------- NEW ----------------------------------*/
+
+body {
+	padding: 30px;
+}
+
+h2 {
+	color: #576573;
+}
+
+h2 > table {
+	margin-bottom: 10px;
+}
+
+caption {
+	text-align: left;
+	border: solid #adb7c1;
+	border-width: 1px 1px 0px 1px;
+	padding: 7px 10px;
+}
+
+caption .heading {
+	font-size: 24px;
+	color: #4d4d4d;
+}
+
+caption .heading + a {
+    font-size: 14px;
+}
+
+caption .refresh {
+	float: right;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}

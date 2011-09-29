@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3786/trunk/core/src/classes/org/jdesktop/wonderland/client/protocols/wlzip
+END
+WlzipManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/protocols/wlzip/WlzipManager.java
+END
+WlzipURLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/3786/trunk/core/src/classes/org/jdesktop/wonderland/client/protocols/wlzip/WlzipURLConnection.java
+END
+Handler.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/protocols/wlzip/Handler.java
+END

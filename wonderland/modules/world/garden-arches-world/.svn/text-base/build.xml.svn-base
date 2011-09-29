@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-garden-arches-world" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-garden-arches-world}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    <property name="module.src" value="${module.plugin.src}"/>
+    <property name="module.jarname" value="${module.name}"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <target name="build" depends="-module-init"/>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5"
+                jarfile="${module.dist.dir}/${module.name}.jar"
+                moduleDescription="${module.description}" builddir="${build.dir}">
+
+            <art dir="${current.dir}/art"/>
+            <part name="wfs" dir="${current.dir}/wfs"/>
+        </module>
+    </target>                                  
+                 
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

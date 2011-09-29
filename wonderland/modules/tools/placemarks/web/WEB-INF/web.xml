@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <listener>
+        <listener-class>org.jdesktop.wonderland.modules.placemarks.web.servlet.PlacemarksServlet</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>PlacemarksServlet</servlet-name>
+        <servlet-class>org.jdesktop.wonderland.modules.placemarks.web.servlet.PlacemarksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlacemarksServlet</servlet-name>
+        <url-pattern>/browse/*</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <display-name>Require  Admin</display-name>
+        <web-resource-collection>
+            <web-resource-name>Access to group editor servlet</web-resource-name>
+            <description>Access to group editor requires admin access</description>
+            <url-pattern>/browse/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>HEAD</http-method>
+            <http-method>PUT</http-method>
+            <http-method>OPTIONS</http-method>
+            <http-method>TRACE</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Require admin</description>
+            <role-name>admin</role-name>
+            </auth-constraint>
+        </security-constraint>
+    <security-role>
+        <description>A regular user of the system</description>
+        <role-name>user</role-name>
+    </security-role>
+    <security-role>
+        <description>A system administrator</description>
+        <role-name>admin</role-name>
+    </security-role>
+</web-app>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1365/trunk/web/utils/src/classes/org/jdesktop/wonderland/utils/ant
+END
+ListFilesTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1365/trunk/web/utils/src/classes/org/jdesktop/wonderland/utils/ant/ListFilesTask.java
+END
+WonderlandPackageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1365/trunk/web/utils/src/classes/org/jdesktop/wonderland/utils/ant/WonderlandPackageTask.java
+END

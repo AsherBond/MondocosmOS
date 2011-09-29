@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/common/cell
+END
+Capability.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/Capability.java
+END
+ComponentLookupClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1516/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/ComponentLookupClass.java
+END
+CellStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2581/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellStatus.java
+END
+MultipleParentException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/MultipleParentException.java
+END
+CellCacheConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellCacheConnectionType.java
+END
+CellEditConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellEditConnectionType.java
+END
+ClientCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/ClientCapabilities.java
+END
+CallID.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2001/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CallID.java
+END
+ProximityListenerRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4490/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/ProximityListenerRecord.java
+END
+AvatarBoundsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1911/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/AvatarBoundsHelper.java
+END
+CellChannelConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellChannelConnectionType.java
+END
+CellTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4670/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellTransform.java
+END
+CellID.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4476/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/CellID.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/249/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/package.html
+END

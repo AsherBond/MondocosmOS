@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4596/trunk/web/modules/web
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4596/trunk/web/modules/web/index.jsp
+END
+confirmRemove.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3979/trunk/web/modules/web/confirmRemove.jsp
+END
+installFailed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3979/trunk/web/modules/web/installFailed.jsp
+END
+installSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3979/trunk/web/modules/web/installSuccess.jsp
+END

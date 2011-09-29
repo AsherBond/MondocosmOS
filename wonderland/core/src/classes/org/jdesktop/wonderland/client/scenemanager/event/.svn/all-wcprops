@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2605/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event
+END
+SceneEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2432/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/SceneEvent.java
+END
+HoverEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2605/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/HoverEvent.java
+END
+ActivatedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/ActivatedEvent.java
+END
+ContextEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/ContextEvent.java
+END
+SelectionEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/SelectionEvent.java
+END
+EnterExitEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/event/EnterExitEvent.java
+END

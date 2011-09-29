@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4503/trunk/modules/tools/security-session-noauth
+END
+my.module.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3739/trunk/modules/tools/security-session-noauth/my.module.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4329/trunk/modules/tools/security-session-noauth/build.xml
+END

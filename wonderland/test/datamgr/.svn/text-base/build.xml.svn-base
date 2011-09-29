@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-datamgrtest" default="all" basedir=".">
+    <property name="top.dir" location="../.."/>
+    <property name="current.dir" location="."/>
+    <property name="core.dir" location="${top.dir}/core"/>
+    
+    <!-- Use my-build.properties to override default values in build.properties -->
+    <property file="my.build.properties"/>
+    <property file="${core.dir}/my.build.properties"/>
+    <property file="build.properties"/>
+    <property file="${core.dir}/build.properties"/>
+    
+    <property name="project.name" value="${ant.project.name}"/>
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="${build-import.dir}/ant-contrib.jar"/>
+        </classpath>
+    </taskdef>
+    
+    <!-- Do platform/x11/environment specific setup common to all tasks -->
+    <import file="${build-import.dir}/build-setup.xml"/>
+    
+    <!-- core directory -->
+    <property name="core.platform.dir" value="${core.dir}/build/${build.location}"/>
+    <property name="core.lib.dir" location="${core.platform.dir}/lib"/>
+    
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+    </target>
+    
+    <target name="build" depends="init">
+        <wl-compile>
+            <compile-classes>
+                <include name="org/jdesktop/wonderland/client/datamgr/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+		<pathelement path="${wonderland-client-compile.classpath}"/>
+                <pathelement path="${core.lib.dir}/wonderland-client.jar"/>
+                <pathelement path="${core.lib.dir}/wonderland-common.jar"/>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+    
+    <target name="jar" depends="build"/>
+        
+    <target name="run-test" depends="jar">
+<!--        <junit fork="yes" haltonfailure="true">
+            <test name="org.jdesktop.wonderland.client.datamgr.AssetManagerTest"/>
+            <formatter type="plain" usefile="false" />
+
+            <classpath>
+		<pathelement path="${wonderland-client-compile.classpath}"/>
+                <pathelement path="${core.lib.dir}/wonderland-client.jar"/>
+                <pathelement location="../build-tools/import/junit-4.4.jar"/>
+	    </classpath>
+        </junit>
+        
+        <java fork="yes" classname="org.junit.runner.JUnitCore">
+            
+            <arg value="org.jdesktop.wonderland.client.datamgr.AssetManagerTest"/>
+            <classpath>
+		<pathelement path="${wonderland-client-compile.classpath}"/>
+                <pathelement path="${core.lib.dir}/wonderland-client.jar"/>
+                <pathelement path="${core.lib.dir}/wonderland-common.jar"/>
+                <pathelement location="../../build-tools/import/junit-4.4.jar"/>
+                <pathelement path="${build.classes.dir}"/>
+	    </classpath>
+        </java> -->
+        
+    </target>
+    
+    <target name="jar-server" depends="build">
+        <wl-services dir="${build.dir}/serverplugintest"
+                     type="org.jdesktop.wonderland.server.ServerPlugin">
+            <providers>
+                org.jdesktop.wonderland.serverplugintest.HelloWorldPlugin
+            </providers>
+        </wl-services>
+        
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/serverplugintest.jar">
+            <fileset dir="${build.classes.dir}">
+		<include name="org/jdesktop/wonderland/serverplugintest/**"/>
+	    </fileset>
+            <fileset dir="${build.dir}/serverplugintest">
+                <include name="**"/>
+            </fileset>
+        </jar>
+    </target>
+    
+    <!-- override target used in run-sgs -->
+    <target name="modules-server-classpath">
+        <pathconvert property="module-server.classpath">
+            <path location="${build.lib.dir}/serverplugintest.jar"/>
+            <path location="${core.lib.dir}/wonderland-server.jar"/>
+        </pathconvert>
+    </target>
+   
+    <target name="run-server">
+        <antcall target="run-sgs"/>
+    </target>
+       
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="data"/>
+    </target>
+    
+    <import file="${build-import.dir}/run-sgs.xml"/>
+</project>

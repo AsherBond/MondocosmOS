@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4728/trunk/core/src/classes/org/jdesktop/wonderland/server
+END
+WonderlandBoot.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1542/trunk/core/src/classes/org/jdesktop/wonderland/server/WonderlandBoot.java
+END
+WonderlandContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4574/trunk/core/src/classes/org/jdesktop/wonderland/server/WonderlandContext.java
+END
+UserListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2910/trunk/core/src/classes/org/jdesktop/wonderland/server/UserListener.java
+END
+ServerPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/ServerPlugin.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3908/trunk/core/src/classes/org/jdesktop/wonderland/server/UserManager.java
+END
+TimeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/TimeManager.java
+END
+UserMO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2910/trunk/core/src/classes/org/jdesktop/wonderland/server/UserMO.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/249/trunk/core/src/classes/org/jdesktop/wonderland/server/package.html
+END

@@ -1,0 +1,11 @@
+# local host address
+#wonderland.private.local.address=<host name or address>
+#wonderland.private.local.address=interface:<interface name>
+#wonderland.private.local.address=server:<TCP server name or address>:<TCP server port>[:<timeout ms>]
+
+data.dir=${current.dir}/data
+
+# darkstar setup
+sgs.data.dir=${data.dir}/sgs
+sgs.port=1139
+sgs.bdb.dir=${core.sgs.server.dir}/lib/natives

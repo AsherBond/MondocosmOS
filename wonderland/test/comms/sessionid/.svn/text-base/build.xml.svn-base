@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-sessionidtest" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-serverprotocoltest}"/>
+    <property name="test.dir" location="${current.dir}/../.."/>
+        
+    <property name="servertest.src" value="org/jdesktop/wonderland/sessionid"/>
+    <property name="servertest.packagename" value="org.jdesktop.wonderland.sessionid"/>
+    <property name="servertest.jarname" value="sessionidtest"/>
+    
+    <!-- import common build file -->
+    <import file="${test.dir}/build-tools/build-scripts/test-build.xml"/>
+       
+    <target name="build" depends="-test-init, -test-compile-common, 
+                                              -test-compile-server,
+                                              -test-compile-client"/>
+    <target name="jar" depends="build, -test-jar-server, -test-jar-client"/>
+    <target name="run-client" depends="-test-run-client"/>
+    <target name="run-server" depends="-test-run-server"/>
+    <target name="clean" depends="-test-clean"/>
+</project>

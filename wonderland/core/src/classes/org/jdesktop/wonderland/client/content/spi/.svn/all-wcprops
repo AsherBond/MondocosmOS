@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4579/trunk/core/src/classes/org/jdesktop/wonderland/client/content/spi
+END
+ContentImporterSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4579/trunk/core/src/classes/org/jdesktop/wonderland/client/content/spi/ContentImporterSPI.java
+END
+ContentBrowserSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2033/trunk/core/src/classes/org/jdesktop/wonderland/client/content/spi/ContentBrowserSPI.java
+END

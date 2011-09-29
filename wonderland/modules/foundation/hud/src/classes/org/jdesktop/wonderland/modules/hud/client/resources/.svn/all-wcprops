@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4572/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources
+END
+error24x24.png
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/error24x24.png
+END
+info24x24.png
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/info24x24.png
+END
+GenericSettings32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/3016/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/GenericSettings32x32.png
+END
+GenericUsers32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3016/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/GenericUsers32x32.png
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4521/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/4514/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/Bundle_zh_CN.properties
+END
+grab19x500.png
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1845/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/grab19x500.png
+END
+GenericWindow32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/3035/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/GenericWindow32x32.png
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4572/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4557/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/Bundle_fr.properties
+END
+warning24x24.png
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/2591/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/warning24x24.png
+END
+query24x24.png
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/query24x24.png
+END
+close16x16.png
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/3867/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/close16x16.png
+END
+hideHUD16x16.png
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/3867/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/hideHUD16x16.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3306/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/Bundle.properties
+END
+showHUD16x16.png
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/3867/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/showHUD16x16.png
+END
+minimize16x16.png
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3867/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/minimize16x16.png
+END
+maximize16x16.png
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3867/trunk/modules/foundation/hud/src/classes/org/jdesktop/wonderland/modules/hud/client/resources/maximize16x16.png
+END

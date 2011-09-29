@@ -1,0 +1,12 @@
+# the server name
+sgs.server=localhost
+
+# the port to use
+sgs.port=1239
+
+# the name of the configuration file to use (WonderlandMain.cfg will be copied 
+# to this file name, with the values above substituted in)
+sgs.config.file.dest=WonderlandMain-AppNode1.cfg
+
+# the directory to store the Darkstar database information
+wonderland.data.root=data/AppNode1

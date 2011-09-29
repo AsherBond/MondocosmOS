@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security
+END
+ComponentAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3437/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/ComponentAction.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/3987/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle.properties
+END
+MoveAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3437/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/MoveAction.java
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4513/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle_zh_CN.properties
+END
+ModifyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/3437/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/ModifyAction.java
+END
+ChildrenAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/3437/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/ChildrenAction.java
+END
+ViewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3437/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/ViewAction.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3993/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/security/Bundle_de.properties
+END

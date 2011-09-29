@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4611/trunk/core/src/classes/org/jdesktop/wonderland/client/login
+END
+DarkstarServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1398/trunk/core/src/classes/org/jdesktop/wonderland/client/login/DarkstarServer.java
+END
+SessionCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/client/login/SessionCreator.java
+END
+LoginManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2308/trunk/core/src/classes/org/jdesktop/wonderland/client/login/LoginManager.java
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_el.properties
+END
+PluginFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4611/trunk/core/src/classes/org/jdesktop/wonderland/client/login/PluginFilter.java
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4238/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_zh_CN.properties
+END
+ServerSessionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4611/trunk/core/src/classes/org/jdesktop/wonderland/client/login/ServerSessionManager.java
+END
+LoginUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3799/trunk/core/src/classes/org/jdesktop/wonderland/client/login/LoginUI.java
+END
+SessionLifecycleListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/login/SessionLifecycleListener.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_fr.properties
+END
+ServerDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/login/ServerDetails.java
+END
+ProgrammaticLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/login/ProgrammaticLogin.java
+END
+Bundle_en_GB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3813/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_en_GB.properties
+END
+PrimaryServerListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/client/login/PrimaryServerListener.java
+END
+ServerStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2308/trunk/core/src/classes/org/jdesktop/wonderland/client/login/ServerStatusListener.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4175/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3813/trunk/core/src/classes/org/jdesktop/wonderland/client/login/Bundle_de.properties
+END

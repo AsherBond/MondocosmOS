@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>glob3 - panoramics example</title>
+
+    <script>
+      function switchToPanoramic(name) {
+        var viewer = document.getElementById("PanoramicViewer");
+        viewer.switchToPanoramic(name);
+      }
+    </script>
+
+  </head>
+
+
+  <body>
+    <h2>glob3 - panoramics example</h2>
+
+    <p>
+      <a href="javascript:switchToPanoramic('Barrancos')">Barrancos</a>
+      <a href="javascript:switchToPanoramic('Alodroal')">Alodroal (debug)</a>
+    </p>
+
+    <applet width="800"
+            height="600"
+            code="es.igosoftware.panoramic.viewer.GPanoramicViewerWidget"
+            id="PanoramicViewer">
+      <param name="jnlp_href" value="applet.jnlp">
+    </applet>
+
+  </body>
+</html>

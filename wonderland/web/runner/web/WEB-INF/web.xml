@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>Wonderland Server Runner</display-name>
+    <listener>
+        <description>Notify of initialization and shutdown</description>
+        <listener-class>org.jdesktop.wonderland.runner.servlet.RunnerContextListener</listener-class>
+    </listener>
+    <listener>
+        <description>Timer to notice when remote runners go away</description>
+        <listener-class>org.jdesktop.wonderland.runner.resources.RemoteStatusResource</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>RunServlet</servlet-name>
+        <servlet-class>org.jdesktop.wonderland.runner.servlet.RunnerServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+     <servlet>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RunServlet</servlet-name>
+        <url-pattern>/run</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <url-pattern>/services/*</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <display-name>RequireAuth</display-name>
+        <web-resource-collection>
+            <web-resource-name>Access to server status</web-resource-name>
+            <description>Access to server status requires admin login</description>
+            <url-pattern>/run</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>HEAD</http-method>
+            <http-method>PUT</http-method>
+            <http-method>OPTIONS</http-method>
+            <http-method>TRACE</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>Access to runner actions resource</web-resource-name>
+            <description>Access to runner actions resource requires admin</description>
+            <url-pattern>/services/runner/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>HEAD</http-method>
+            <http-method>PUT</http-method>
+            <http-method>OPTIONS</http-method>
+            <http-method>TRACE</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Require a admin</description>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <description>A regular user of the system</description>
+        <role-name>user</role-name>
+    </security-role>
+    <security-role>
+        <description>A system administrator</description>
+        <role-name>admin</role-name>
+    </security-role>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--taglib>
+        <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+        <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+    </taglib-->
+   <welcome-file-list>
+        <welcome-file>run</welcome-file>
+        <welcome-file>RunServlet</welcome-file>
+    </welcome-file-list>
+</web-app>

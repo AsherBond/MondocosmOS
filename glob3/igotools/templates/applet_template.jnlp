@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0"
+      href="applet.jnlp">
+  <information>
+    <title>@APPLET_CLASS@</title>
+    <vendor>www.glob3.org</vendor>
+    <homepage href="http://www.glob3.org"/>
+    <description>Glob3 Application Template</description>
+    <description kind="short">Glob3 Java Application Template</description>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se
+        href="http://java.sun.com/products/autodl/j2se"
+        version="1.6+"
+        initial-heap-size="512m"
+        max-heap-size="512m"/>
+    <property name="sun.java2d.noddraw" value="true"/>
+    <extension name="jogl" href="http://worldwind.arc.nasa.gov/java/jogl/webstart/jogl.jnlp"/>
+@APPLET_JARS@
+  </resources>
+  <icon href="bitmaps/splash.png" kind="splash"/> 
+  <applet-desc
+      name="@APPLET_CLASS@"
+      main-class="@APPLET_CLASS@"
+      width="300"
+      height="300"/>
+</jnlp>

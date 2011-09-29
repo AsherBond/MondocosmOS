@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-version" default="jar" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-version}"/>
+    <property name="utils.dir" location="${current.dir}/.."/>
+    
+    <property name="util.src" value="org/jdesktop/wonderland/utils/version"/>
+    <property name="util.jarname" value="wonderland-version"/>
+    
+    <!-- import common build file -->
+    <import file="${utils.dir}/build-tools/build-scripts/utils-build.xml"/>
+       
+    <target name="build" depends="-utils-init, -version-prepare, -utils-compile"/>
+
+    <target name="-version-prepare" depends="-version-get-svn, -version-get-failure">
+        <tstamp>
+            <format property="version.build.date" pattern="d-MMMM-yyyy" locale="en,US"/>
+        </tstamp>
+
+        <copy file="${javasrc.dir}/${util.src}/Version.java.template"
+              tofile="${javasrc.dir}/${util.src}/Version.java"
+              overwrite="true">
+            <filterset begintoken="@" endtoken="@">
+                <filter token="VERSION" value="${wonderland.version}"/>
+                <filter token="REVISION" value="${svn.info.rev}"/>
+                <filter token="DATE" value="${version.build.date}"/>
+            </filterset>
+        </copy>
+    </target>
+
+    <target name="clean" depends="-utils-clean">
+        <delete dir="dist"/>
+        <delete file="${javasrc.dir}/${util.src}/Version.java"/>
+    </target>
+    
+    <target name="jar" depends="build, -utils-jar">
+        <mkdir dir="${current.dir}/dist"/>
+        <copy todir="${current.dir}/dist" file="${build.lib.dir}/${util.jarname}.jar"/>
+    </target>
+
+    <!-- get the subversion version number -->
+    <target name="-version-get-svn" depends="-setup-subversion">
+        <svn javahl="false" failonerror="false">
+            <info target="${top.dir}/build.xml" verbose="false"/>
+        </svn>
+    </target>
+
+    <!-- if we can't get the subversion information, set defaults -->
+    <target name="-version-get-failure" unless="svn.info.rev">
+        <property name="svn.info.rev" value="unknown"/>
+    </target>
+</project>

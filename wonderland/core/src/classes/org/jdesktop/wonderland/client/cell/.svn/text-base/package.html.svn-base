@@ -1,0 +1,24 @@
+<!-- 
+    Document   : package
+    Created on : Aug 18, 2008, 8:13:21 PM
+    Author     : paulby
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>org.jdesktop.wonderland.client.cell package</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+  Provides the data (or model) portion of the client side cells. The view is
+  handles by the other classes, for example jme renderers are in org.jdesktop.wonderland.client.jme.cellrenderer
+  
+  Cells can be extended either by subclassing (which provides for static extension) or
+  by the use of CellComponents which allow dynamic addition (and removal) of
+  cell capabilities.
+  
+  One important CellComponent is the MovableComponent which provides the infrasture
+  which allows cells to move around the world. The component handles all communication
+  and provides listeners etc for movement updates.
+  </body>
+</html>

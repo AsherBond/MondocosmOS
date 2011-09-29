@@ -1,0 +1,49 @@
+<!-- 
+    Document   : package
+    Created on : Jan 2, 2008, 9:58:09 AM
+    Author     : paulby
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Wonderland Cell System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      Cells provide spatialised geometry, behavior and network support for world content.
+  <p>
+      Each Cell in the world has a local bounds defined by the developer. The local bounds
+      must encapsulate all the geometry for that cell, if the geometry changes size
+      or position then it may be necessary to update the bounds of the cell. The developer is 
+      responsible for ensuring that the local bounds always encapsulates the geometry.
+      Cell bounds are defined in Cell local coordinates. The local bounds do not have
+      to encapsulate the bounds of the cells children.
+  </p>
+  <p>
+      The bounds of a cell can overlap the bounds of it's sibling cells.
+  </p>
+  
+  <p>
+      Cells include the concept of liveness. A live cell is one that is 
+      attached (possibly indirectly) to a RootCellMO. Some CellMO method calls
+      only return valid results for live cells, for non live cells they throw
+      IllegalStateException. The RootCellMO is created and managed by
+      CellManagerMO.
+  </p>
+  
+  <p>
+      The functionality of cells can be changed by adding CellComponentMO to a 
+      cell. For example all cells are static (in that there origin or bounds can
+      not be changed) unless they have  MovableComponentMO in their component list.
+      This allows features to be dynamically added and removed from cells which is
+      not possible using subclassing.
+  </p>
+  
+  <p>
+      Spaces - 
+        A live Cell is always in at least one space
+        Space origin and bounds are immutable (need to special case movable spaces)
+  </p>
+  
+  </body>
+</html>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4667/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client
+END
+TextChatClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3362/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/TextChatClientPlugin.java
+END
+TextChatPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4505/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/TextChatPanel.java
+END
+TextChatConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2189/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/TextChatConnection.java
+END
+TextChatPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/3660/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/TextChatPanel.form
+END
+ChatManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4667/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/ChatManager.java
+END

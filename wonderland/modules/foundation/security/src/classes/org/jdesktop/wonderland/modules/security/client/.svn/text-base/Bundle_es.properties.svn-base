@@ -1,0 +1,60 @@
+#EN: Choose a permission.
+Choose_Permission=Escoger un permiso.
+#EN: Denied
+Denied=Denegado
+#EN: Edit permissions for {0}
+Edit_Permission_For=Editar permisos para {0}
+#EN: Granted
+Granted=Concedido
+#EN: Group
+Group=Grupo
+#EN: Name
+Name=Nombre
+#EN: Owner?
+Owner=\u00bfPropietario?
+#EN: Permissions
+Permissions=Permisos
+#EN: Add...
+SecurityComponentProperties.addButton.text=A\u00f1adir...
+#EN: Cancel
+SecurityComponentProperties.addCancelButton.text=Cancelar
+#EN: Group
+SecurityComponentProperties.addGroupRB.text=Grupo
+#EN: OK
+SecurityComponentProperties.addOKButton.text=Aceptar
+#EN: Search...
+SecurityComponentProperties.addSearchButton.text=Buscar...
+#EN: User
+SecurityComponentProperties.addUserRB.text=Usuario
+#EN: Edit...
+SecurityComponentProperties.editButton.text=Editar...
+#EN: Cancel
+SecurityComponentProperties.editPermsCancelButton.text=Cancelar
+#EN: OK
+SecurityComponentProperties.editPermsOKButton.text=Aceptar
+#EN: Permissions for
+SecurityComponentProperties.editPermsPrincipalLabel.text=Permisos para
+#EN: Permissions:
+SecurityComponentProperties.jLabel1.text=Permisos:
+#EN: Type:
+SecurityComponentProperties.jLabel2.text=Tipo:
+#EN: Name:
+SecurityComponentProperties.jLabel3.text=Nombre:
+#EN: Description:
+SecurityComponentProperties.jLabel4.text=Descripci\u00f3n:
+#EN: Permission:
+SecurityComponentProperties.jLabel5.text=Permiso:
+#EN: Remove
+SecurityComponentProperties.removeButton.text=Eliminar
+#EN: Add security configuration to a object
+Security_Description=A\u00f1adir configuraci\u00f3n de seguridad a un objeto
+#EN: Security
+Security=Seguridad
+#EN: Type
+Type=Tipo
+#EN: Unspecified
+Unspecified=Sin especificar
+#EN: User
+User=Usuario
+#EN: Everyone else
+Everybody=Todos los dem\u00e1s

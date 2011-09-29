@@ -1,0 +1,54 @@
+#EN: Attempting to reconnect...
+ATTEMPTING_TO_RECONNECT...=\u8bd5\u56fe\u91cd\u65b0\u8fde\u63a5...
+#EN: Error connecting to server
+ERROR_CONNECTING_TO_SERVER=\u8fde\u63a5\u5230\u670d\u52a1\u5668\u51fa\u9519
+#EN: Close
+LogViewerFrame.closeButton.text=\u5173\u95ed
+#EN: Cancel
+LogViewerFrame.configCancelButton.text=\u53d6\u6d88
+#EN: Configure Logging
+LogViewerFrame.configDialog.title=\u914d\u7f6e\u65e5\u5fd7\u8bb0\u5f55\u7cfb\u7edf
+#EN: Configure...
+LogViewerFrame.configureButton.text=\u914d\u7f6e...
+#EN: Close
+LogViewerFrame.errorCloseButton.text=\u5173\u95ed
+#EN: Copy
+LogViewerFrame.errorCopyButton.text=\u590d\u5236
+#EN: Error Report...
+LogViewerFrame.errorReportButton.text=\u9519\u8bef\u62a5\u544a...
+#EN: Error Report
+LogViewerFrame.errorReportDialog.title=\u9519\u8bef\u62a5\u544a
+#EN: Select All
+LogViewerFrame.errorSelectButton.text=\u9009\u62e9\u6240\u6709
+#EN: Messages to save:
+LogViewerFrame.jLabel1.text=\u9700\u8981\u4fdd\u5b58\u7684\u6d88\u606f:
+#EN: Default log level:
+LogViewerFrame.jLabel2.text=\u9ed8\u8ba4\u65e5\u5fd7\u7ea7\u522b:
+#EN: Individual Log levels:
+LogViewerFrame.jLabel3.text=\u5355\u4e2a\u65e5\u5fd7\u7ea7\u522b:
+#EN: Visible at startup:
+LogViewerFrame.jLabel4.text=\u542f\u52a8\u65f6\u53ef\u89c1:
+#EN: -
+LogViewerFrame.levelTableMinus.text=-
+#EN: +
+LogViewerFrame.levelTablePlus.text=+
+#EN: Save
+LogViewerFrame.okButton.text=\u4fdd\u5b58
+#EN: Log Viewer
+LogViewerFrame.title=\u65e5\u5fd7\u67e5\u770b\u5668
+#EN: Help
+MainFrameImpl.helpMenu.text=\u5e2e\u52a9
+#EN: Insert
+MainFrameImpl.insertMenu.text=\u63d2\u5165
+#EN: Placemarks
+MainFrameImpl.placemarksMenu.text=\u5730\u6807
+#EN: View
+MainFrameImpl.viewMenu.text=\u89c6\u56fe
+#EN: Window
+MainFrameImpl.windowMenu.text=\u89c6\u7a97
+#EN: Reconnect to server
+RECONNECT_TO_SERVER=\u91cd\u65b0\u8fde\u63a5\u5230\u670d\u52a1\u5668
+#EN: Server disconnected
+SERVER_DISCONNECTED=\u670d\u52a1\u5668\u65ad\u5f00
+#EN: Unable to reconnect to server:
+UNABLE_TO_RECONNECT_TO_SERVER\:_=\u65e0\u6cd5\u91cd\u65b0\u8fde\u63a5\u5230\u670d\u52a1\u5668:

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4693/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone
+END
+MicrophoneInfoListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4158/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/MicrophoneInfoListener.java
+END
+SoftphoneControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4158/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/SoftphoneControl.java
+END
+SoftphoneControlImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4693/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/SoftphoneControlImpl.java
+END
+AudioQuality.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/3816/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/AudioQuality.java
+END
+SoftphoneListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/SoftphoneListener.java
+END
+SpeakerInfoListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4158/trunk/core/src/classes/org/jdesktop/wonderland/client/softphone/SpeakerInfoListener.java
+END

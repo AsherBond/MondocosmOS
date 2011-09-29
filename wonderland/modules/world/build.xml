@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="world-modules">  
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.world-modules}"/>
+    
+    <!-- TODO - allow ordering to be defined for some projects, current -->
+    <!-- ordering seems to be alphabetical which correctly compiles jmecolladloader before kmzloader, -->
+    <!-- the ordering in the fileset us not honoured :-( -->
+
+    <!-- all projects -->
+    <fileset dir="${current.dir}" id="all.projects">
+        <exclude name="kmzloader/build.xml"/>
+        <exclude name="jmecolladaloader/build.xml"/>
+        <exclude name="avatarbase/build.xml"/>
+        <include name="*/**/build.xml"/>
+    </fileset>
+    
+    <fileset dir="${current.dir}" id="kmzloader.module">
+        <include name="kmzloader/build.xml"/>
+    </fileset>
+
+    <fileset dir="${current.dir}" id="jmecolladaloader.module">
+        <include name="jmecolladaloader/build.xml"/>
+    </fileset>
+    
+    <fileset dir="${current.dir}" id="avatarbase.module">
+        <include name="avatarbase/build.xml"/>
+    </fileset>
+
+    <!-- build and package all subprojects -->
+    <target name="dist">
+        <build-subprojects fileset="jmecolladaloader.module" target="dist"/>
+        <build-subprojects fileset="kmzloader.module" target="dist"/>
+        <build-subprojects fileset="avatarbase.module" target="dist"/>
+        <build-subprojects fileset="all.projects" target="dist"/>
+    </target>
+    
+    <!-- clean all sub-projects -->
+    <target name="clean">
+        <!-- clean sub-projects -->
+        <build-subprojects fileset="jmecolladaloader.module" target="clean"/>
+        <build-subprojects fileset="kmzloader.module" target="clean"/>
+        <build-subprojects fileset="avatarbase.module" target="clean"/>
+        <build-subprojects fileset="all.projects" target="clean"/>       
+    </target>
+    
+    <!-- macro to iterate across all subprojects -->
+    <macrodef name="build-subprojects">
+        <!-- the reference id of the fileset to iterate over -->
+        <attribute name="fileset"/>
+        
+        <!-- the build target to run -->
+        <attribute name="target"/>
+        <sequential>
+            <subant target="@{target}" inheritall="false">
+                <fileset refid="@{fileset}"/>
+            </subant>
+        </sequential>
+    </macrodef>
+</project>

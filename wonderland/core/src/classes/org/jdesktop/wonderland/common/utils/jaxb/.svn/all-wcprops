@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4132/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/jaxb
+END
+QuaternionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2891/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/jaxb/QuaternionAdapter.java
+END
+Vector3fAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2891/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/jaxb/Vector3fAdapter.java
+END
+BoundingVolumeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4132/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/jaxb/BoundingVolumeAdapter.java
+END

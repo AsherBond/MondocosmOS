@@ -1,0 +1,108 @@
+#EN: Add Capability
+Add_Capability_Title=A\u00F1adir Capacidad
+#EN: Cancel
+AddComponentDialog.cancelButton.text=Cancelar
+#EN: Select Capability to Add from the List Below:
+AddComponentDialog.jLabel1.text=Seleccione desde la Lista Inferior una Capacidad para A\u00F1adir:
+#EN: OK
+AddComponentDialog.okButton.text=Aceptar
+#EN: Do you want to apply the properties before closing?
+Apply_Close_Message=\u00BFLe gustar\u00EDa aplicar las propiedades antes de cerrar?
+#EN: Do you want to apply the properties before switching?
+Apply_Switch_Message=\u00BFLe gustar\u00EDa aplicar las propiedades antes de cambiar?
+#EN: Apply values?
+Apply_Title=\u00BFAplicar valores?
+#EN: Basic
+Basic=B\u00E1sico
+#EN: <none>
+BasicJPanel.cellClassLabel.text=<ninguno>
+#EN: <none>
+BasicJPanel.cellIDLabel.text=<ninguno>
+#EN: Object ID:
+BasicJPanel.jLabel1.text=ID del Objeto:
+#EN: Object Name:
+BasicJPanel.jLabel2.text=Nombre del Objeto:
+#EN: Object Class:
+BasicJPanel.jLabel3.text=Clase del ObjetoO:
+#EN: Capability
+Capability=Capacidades
+#EN: Object Editor
+Cell_Editor=Editor de Objetos...
+#EN: Mass:
+CellPhysicsPropertiesComponentProperties.jLabel1.text=Masa:
+#EN: kg
+CellPhysicsPropertiesComponentProperties.jLabel2.text=kg
+#EN: +
+CellPropertiesJFrame.addCapabilityButton.text=+
+#EN: Apply
+CellPropertiesJFrame.applyButton.text=Aplicar
+#EN: Capabilities
+CellPropertiesJFrame.capabilityPanel.border.title=Capacidades
+#EN: Object Hierarchy
+CellPropertiesJFrame.cellHierarchyPanel.border.title=Jerarqu\u00EDa del Objeto
+#EN: Properties
+CellPropertiesJFrame.jPanel4.border.title=Propiedades
+#EN: Refresh
+CellPropertiesJFrame.refreshButton.text=Refrescar
+#EN: -
+CellPropertiesJFrame.removeCapabilityButton.text=-
+#EN: -
+CellPropertiesJFrame.removeCellButton.text=-
+#EN: Revert
+CellPropertiesJFrame.restoreButton.text=Revertir
+#EN: Object Editor
+CellPropertiesJFrame.title=Editor del Objeto
+#EN: Confirm Delete
+Confirm_Delete=Confirmar Borrado
+#EN: Are you sure you want to delete object {0}?
+Confirm_Delete_Message=\u00BFSeguro que quiere borrar el objeto {0}?
+#EN: Description
+Description=Descripci\u00F3n
+#EN: Physics Properties Component
+Physics_Properties_Component=Componente de Propiedades F\u00EDsicas
+#EN: Physics Properties
+Physics_Properties=Propiedades F\u00EDsicas
+#EN: Rotation
+PositionJPanel.jLabel10.text=Rotaci\u00F3n
+#EN: X :
+PositionJPanel.jLabel11.text=X :
+#EN: Z :
+PositionJPanel.jLabel12.text=Z :
+#EN: Y :
+PositionJPanel.jLabel13.text=Y :
+#EN: Scale
+PositionJPanel.jLabel14.text=Escala
+#EN: degrees
+PositionJPanel.jLabel15.text=grados
+#EN: meters
+PositionJPanel.jLabel1.text=metros
+#EN: meters
+PositionJPanel.jLabel2.text=metros
+#EN: meters
+PositionJPanel.jLabel3.text=metros
+#EN: degrees
+PositionJPanel.jLabel4.text=grados
+#EN: degrees
+PositionJPanel.jLabel5.text=grados
+#EN: X :
+PositionJPanel.jLabel6.text=X :
+#EN: Location
+PositionJPanel.jLabel7.text=Posici\u00F3n
+#EN: Y :
+PositionJPanel.jLabel8.text=Y :
+#EN: Z :
+PositionJPanel.jLabel9.text=Z :
+#EN: Position
+Position=Posici\u00F3n
+#EN: Properties...
+Properties...=Propiedades...
+#EN: Do you want to refresh the properties?
+Refresh_Message=Desea refrescar las propiedades?
+#EN: Refresh values?
+Refresh_Title=Refrescar valores?
+#EN: Do you want to restore the properties to original values?
+Restore_Message=\u00BFDesea restaurar los valores originales de las propiedades?
+#EN: Restore values?
+Restore_Title=\u00BFRestaurar los valores?
+#EN: World Root
+World_Root=Rotar el Mundo

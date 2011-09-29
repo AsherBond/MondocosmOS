@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages
+END
+AudioTreatmentDoneMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/3411/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentDoneMessage.java
+END
+GetVoiceBridgeRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/3671/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/GetVoiceBridgeRequestMessage.java
+END
+GetPlayersInRangeRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3282/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/GetPlayersInRangeRequestMessage.java
+END
+AudioTreatmentEstablishedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/3839/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentEstablishedMessage.java
+END
+UDPPortTestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/UDPPortTestMessage.java
+END
+AudioTreatmentRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentRequestMessage.java
+END
+ChangeUsernameAliasMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2502/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/ChangeUsernameAliasMessage.java
+END
+PlayerInRangeMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/2210/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/PlayerInRangeMessage.java
+END
+GetVoiceBridgeResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/1959/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/GetVoiceBridgeResponseMessage.java
+END
+GetPlayersInRangeResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/3282/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/GetPlayersInRangeResponseMessage.java
+END
+PlayTreatmentRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/PlayTreatmentRequestMessage.java
+END
+ConeOfSilenceEnterExitMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/4224/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/ConeOfSilenceEnterExitMessage.java
+END
+AudioTreatmentEnterExitMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/2502/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentEnterExitMessage.java
+END
+MuteCallRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/MuteCallRequestMessage.java
+END
+AudioTreatmentMenuChangeMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3045/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentMenuChangeMessage.java
+END
+AudioTreatmentEndedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/3839/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioTreatmentEndedMessage.java
+END
+AudioVolumeMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3220/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/AudioVolumeMessage.java
+END
+PlaceCallRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/PlaceCallRequestMessage.java
+END
+TransferCallRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/TransferCallRequestMessage.java
+END

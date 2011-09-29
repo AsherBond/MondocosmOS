@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages
+END
+PresenceInfoChangedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PresenceInfoChangedMessage.java
+END
+PresenceInfoChangeAliasMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PresenceInfoChangeAliasMessage.java
+END
+PlayerInRangeMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2832/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PlayerInRangeMessage.java
+END
+CellLocationRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/3842/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/CellLocationRequestMessage.java
+END
+PresenceInfoRemovedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PresenceInfoRemovedMessage.java
+END
+PresenceInfoAddedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PresenceInfoAddedMessage.java
+END
+PresenceInfoChangedAliasMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/PresenceInfoChangedAliasMessage.java
+END
+ClientConnectResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/ClientConnectResponseMessage.java
+END
+CellLocationResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/!svn/ver/3842/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/CellLocationResponseMessage.java
+END
+ClientConnectMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/common/messages/ClientConnectMessage.java
+END

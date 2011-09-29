@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/4572/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3362/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle.properties
+END
+UserListChatText32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3047/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/UserListChatText32x32.png
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4521/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4019/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4572/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4557/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3362/trunk/modules/tools/text-chat/src/classes/org/jdesktop/wonderland/modules/textchat/client/resources/Bundle_de.properties
+END

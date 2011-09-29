@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources
+END
+default_vertex.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/4210/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/default_vertex.glsl
+END
+avatar_fragment.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4210/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/avatar_fragment.glsl
+END
+pose_vertex.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4210/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/pose_vertex.glsl
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle_zh_CN.properties
+END
+default_fragment.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/4210/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/default_fragment.glsl
+END
+avatar_vertex.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/4210/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/avatar_vertex.glsl
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4572/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/resources/Bundle_de.properties
+END

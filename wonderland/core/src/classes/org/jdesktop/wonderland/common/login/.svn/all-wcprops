@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3799/trunk/core/src/classes/org/jdesktop/wonderland/common/login
+END
+AuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/3508/trunk/core/src/classes/org/jdesktop/wonderland/common/login/AuthenticationService.java
+END
+AuthenticationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/common/login/AuthenticationServiceImpl.java
+END
+CredentialManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/common/login/CredentialManager.java
+END
+AuthenticationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/3799/trunk/core/src/classes/org/jdesktop/wonderland/common/login/AuthenticationManager.java
+END
+AuthenticationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3799/trunk/core/src/classes/org/jdesktop/wonderland/common/login/AuthenticationInfo.java
+END
+InvalidLoginException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/common/login/InvalidLoginException.java
+END
+AuthenticationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2816/trunk/core/src/classes/org/jdesktop/wonderland/common/login/AuthenticationException.java
+END

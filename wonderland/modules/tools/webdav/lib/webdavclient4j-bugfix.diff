@@ -1,0 +1,1895 @@
+Index: clientlib/src/java/org/apache/webdav/lib/WebdavSession.java
+===================================================================
+--- clientlib/src/java/org/apache/webdav/lib/WebdavSession.java	(revision 74)
++++ clientlib/src/java/org/apache/webdav/lib/WebdavSession.java	(working copy)
+@@ -24,12 +24,16 @@
+ package org.apache.webdav.lib;
+ 
+ import java.io.IOException;
++import java.util.logging.Logger;
+ import org.apache.commons.httpclient.Credentials;
+ import org.apache.commons.httpclient.HostConfiguration;
+ import org.apache.commons.httpclient.HttpClient;
++import org.apache.commons.httpclient.HttpConnectionManager;
+ import org.apache.commons.httpclient.HttpState;
+ import org.apache.commons.httpclient.UsernamePasswordCredentials;
+ import org.apache.commons.httpclient.HttpURL;
++import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
++import org.apache.commons.httpclient.SimpleHttpConnectionManager;
+ 
+ /**
+  * This WebdavSession class is for the session management of WebDAV clients.
+@@ -72,6 +76,11 @@
+     protected HttpClient client;
+ 
+     /**
++     * The optional shared HTTP connection manager
++     */
++    protected HttpConnectionManager connectionManager;
++
++    /**
+      * Credentials to use for authentication
+      */
+     protected Credentials hostCredentials = null;
+@@ -97,7 +106,13 @@
+      */
+     protected int debug = 0;
+ 
++    /**
++     * A logger for output
++     */
++    private static final Logger logger =
++            Logger.getLogger(WebdavSession.class.getName());
+ 
++
+     // ------------------------------------------------------------- Properties
+ 
+ 
+@@ -142,7 +157,15 @@
+         throws IOException {
+ 
+         if (reset || client == null) {
+-            client = new HttpClient();
++            logger.fine("Creating new httpclient for " + this);
++            
++            // check if there is a shared connection manager defined. If not,
++            // use a default instance.
++            if (connectionManager == null) {
++                logger.fine("Creating new connection manager for " + this);
++                connectionManager = new SimpleHttpConnectionManager();
++            }
++            client = new HttpClient(connectionManager);
+             // Set a state which allows lock tracking
+             client.setState(new WebdavState());
+             HostConfiguration hostConfig = client.getHostConfiguration();
+Index: clientlib/src/java/org/apache/webdav/lib/WebdavResource.java
+===================================================================
+--- clientlib/src/java/org/apache/webdav/lib/WebdavResource.java	(revision 74)
++++ clientlib/src/java/org/apache/webdav/lib/WebdavResource.java	(working copy)
+@@ -35,9 +35,12 @@
+ import java.text.SimpleDateFormat;
+ import java.util.*;
+ 
++import java.util.logging.Level;
++import java.util.logging.Logger;
+ import org.apache.commons.httpclient.Credentials;
+ import org.apache.commons.httpclient.HostConfiguration;
+ import org.apache.commons.httpclient.HttpClient;
++import org.apache.commons.httpclient.HttpConnectionManager;
+ import org.apache.commons.httpclient.HttpException;
+ import org.apache.commons.httpclient.HttpMethod;
+ import org.apache.commons.httpclient.HttpStatus;
+@@ -183,6 +186,14 @@
+ 
+     /**
+      * The constructor.
++     */
++    protected WebdavResource(HttpConnectionManager connectionManager) {
++        super();
++        this.connectionManager = connectionManager;
++    }
++
++    /**
++     * The constructor.
+      *
+      * @param httpURL The specified http URL.
+      * @param credentials The credentials to use for authentication.
+@@ -636,6 +647,11 @@
+      */
+     protected final static TimeZone gmtZone = TimeZone.getTimeZone("GMT");
+ 
++    /**
++     * A logger for output
++     */
++    private static final Logger logger =
++            Logger.getLogger(WebdavResource.class.getName());
+ 
+     static {
+         for (int i = 0; i < formats.length; i++) {
+@@ -1010,13 +1026,16 @@
+     
+             ResponseEntity response =
+                 (ResponseEntity) responses.nextElement();
+-    
++
+             boolean itself = false;
+             String href = response.getHref();
+             if (!href.startsWith("/"))
+                 href = URIUtil.getPath(href);
+             href = decodeMarks(href);
+ 
++            logger.fine("[WebdavResource] setWebdavProperties response " +
++                        "href: " + href);
++
+             /*
+              * Decode URIs to common (unescaped) format for comparison 
+              * as HttpClient.URI.setPath() doesn't escape $ and : chars.
+@@ -1313,10 +1332,13 @@
+         // make its existence false
+         setExistence(false);
+ 
++        logger.fine("[WebdavResource] Set properties for " + httpURL);
++
+         try {
+             setProperties(action, depth);
+         } catch (Exception e) {
+-            // Ignore the exception if default properties cannot be loaded 
++            // Ignore the exception if default properties cannot be loaded
++            logger.log(Level.FINE, "Error setting properties for " + httpURL, e);
+         }
+     }
+ 
+@@ -2270,8 +2292,12 @@
+     public int executeHttpRequestMethod(HttpClient client, HttpMethod method)
+         throws IOException, HttpException {
+ 
+-        client.executeMethod(method);
+-        return method.getStatusCode();
++        try {
++            client.executeMethod(method);
++            return method.getStatusCode();
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2302,11 +2328,16 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
++        
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++            setStatusCode(statusCode);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2348,29 +2379,34 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        if (responses.hasMoreElements()) {
+-            ResponseEntity response =
+-                (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
++        try {
++            client.executeMethod(method);
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            if (responses.hasMoreElements()) {
++                ResponseEntity response =
++                    (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
+ 
+-            Enumeration responseProperties =
+-                method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property =
+-                    (Property) responseProperties.nextElement();
+-                if (property instanceof AclProperty) {
+-                    acl = (AclProperty)property;
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties =
++                    method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property =
++                        (Property) responseProperties.nextElement();
++                    if (property instanceof AclProperty) {
++                        acl = (AclProperty)property;
++                    }
++
+                 }
+-
+             }
++        } finally {
++            method.releaseConnection();
+         }
+ 
+         return acl;
+@@ -2415,29 +2451,34 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        if (responses.hasMoreElements()) {
+-            ResponseEntity response =
+-                (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
++        try {
++            client.executeMethod(method);
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            if (responses.hasMoreElements()) {
++                ResponseEntity response =
++                    (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
+ 
+-            Enumeration responseProperties =
+-                method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property =
+-                    (Property) responseProperties.nextElement();
+-                if (property instanceof PrincipalCollectionSetProperty) {
+-                    set = (PrincipalCollectionSetProperty)property;
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties =
++                    method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property =
++                        (Property) responseProperties.nextElement();
++                    if (property instanceof PrincipalCollectionSetProperty) {
++                        set = (PrincipalCollectionSetProperty)property;
++                    }
++
+                 }
+-
+             }
++        } finally {
++            method.releaseConnection();
+         }
+ 
+         return set;
+@@ -2480,29 +2521,34 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        if (responses.hasMoreElements()) {
+-            ResponseEntity response =
+-                (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
++        try {
++            client.executeMethod(method);
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            if (responses.hasMoreElements()) {
++                ResponseEntity response =
++                    (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
+ 
+-            Enumeration responseProperties =
+-                method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property =
+-                    (Property) responseProperties.nextElement();
+-                if (property instanceof LockDiscoveryProperty) {
+-                    set = (LockDiscoveryProperty)property;
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties =
++                    method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property =
++                        (Property) responseProperties.nextElement();
++                    if (property instanceof LockDiscoveryProperty) {
++                        set = (LockDiscoveryProperty)property;
++                    }
++
+                 }
+-
+             }
++        } finally {
++            method.releaseConnection();
+         }
+ 
+         return set;
+@@ -2520,7 +2566,7 @@
+         throws HttpException, IOException {
+ 
+         return getMethodData(httpURL.getPathQuery());
+-    }
++     }
+ 
+ 
+     /**
+@@ -2581,11 +2627,16 @@
+         GetMethod method = new GetMethod(URIUtil.encodePathQuery(path));
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return method.getResponseBodyAsString();
++            setStatusCode(statusCode);
++
++            return method.getResponseBodyAsString();
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2621,42 +2672,45 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        // get the file only if status is any kind of OK
+-        if (statusCode >= 200 && statusCode < 300) {
++            setStatusCode(statusCode);
+ 
+-            FileOutputStream fos = null;
+-            InputStream inStream = null;
+-            try {
+-                // Do a simple little loop to read the response back into the passed
+-                // file parameter.
+-                inStream = method.getResponseBodyAsStream();
++            // get the file only if status is any kind of OK
++            if (statusCode >= 200 && statusCode < 300) {
+ 
+-                fos = new FileOutputStream(file);
+-                byte buffer[] = new byte[65535];
+-                int bytesRead;
+-                while ((bytesRead = inStream.read(buffer)) >= 0) {
+-                    fos.write(buffer, 0, bytesRead);
++                FileOutputStream fos = null;
++                InputStream inStream = null;
++                try {
++                    // Do a simple little loop to read the response back into the passed
++                    // file parameter.
++                    inStream = method.getResponseBodyAsStream();
++
++                    fos = new FileOutputStream(file);
++                    byte buffer[] = new byte[65535];
++                    int bytesRead;
++                    while ((bytesRead = inStream.read(buffer)) >= 0) {
++                        fos.write(buffer, 0, bytesRead);
++                    }
++
++                    return true;
++
++                } finally {
++                    if(fos != null)
++                        fos.close();
++                    if(inStream != null)
++                        inStream.close();
+                 }
+ 
+-                return true;
++            } else {
++                return false;
+ 
+-            } finally {
+-                if(fos != null)
+-                    fos.close();
+-                if(inStream != null)
+-                    inStream.close();
+             }
+-
+-        } else {
+-            return false;
+-
++        } finally {
++            method.releaseConnection();
+         }
+-
+-
+    }
+ 
+ 
+@@ -2700,10 +2754,15 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2743,10 +2802,15 @@
+         method.setRequestBody(is);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2788,10 +2852,15 @@
+         method.setRequestBody(data);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2839,11 +2908,15 @@
+             fis = new FileInputStream(file);
+             method.setRequestBody(fis);
+             generateTransactionHeader(method);
+-            int statusCode = client.executeMethod(method);
+ 
+-            setStatusCode(statusCode);
+-            return (statusCode >= 200 && statusCode < 300) ? true : false;
++            try {
++                int statusCode = client.executeMethod(method);
+ 
++                setStatusCode(statusCode);
++                return (statusCode >= 200 && statusCode < 300) ? true : false;
++            } finally {
++                method.releaseConnection();
++            }
+         } finally {
+             if(fis != null)
+                 fis.close();
+@@ -2893,10 +2966,15 @@
+         method.setRequestBody(url.openStream());
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -2937,19 +3015,24 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        if  (statusCode >= 200 && statusCode < 300) {
+-            // check if the specific method is possbile
+-            allowedMethods = method.getAllowedMethods();
+-            // check WebDAV capabilities.
+-            davCapabilities = method.getDavCapabilities();
+-            return true;
++            setStatusCode(statusCode);
++
++            if  (statusCode >= 200 && statusCode < 300) {
++                // check if the specific method is possbile
++                allowedMethods = method.getAllowedMethods();
++                // check WebDAV capabilities.
++                davCapabilities = method.getDavCapabilities();
++                return true;
++            }
++
++            return false;
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return false;
+     }
+ 
+ 
+@@ -2996,43 +3079,48 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector options = new Vector();
+-        int statusCode = method.getStatusLine().getStatusCode();
+-        if (statusCode >= 200 && statusCode < 300) {
+-            // check if the specific method is possbile
+-            Enumeration allowedMethods = method.getAllowedMethods();
+-            while (allowedMethods.hasMoreElements()) {
+-                options.addElement(allowedMethods.nextElement());
+-            }
+-            // check WebDAV capabilities.
+-            Enumeration davCapabilities = method.getDavCapabilities();
+-            while (davCapabilities.hasMoreElements()) {
+-                options.addElement(davCapabilities.nextElement());
+-            }
+-            Enumeration responses = method.getResponses();
+-            if (responses.hasMoreElements()) {
+-                ResponseEntity response =
+-                    (ResponseEntity) responses.nextElement();
+-                Enumeration workspaces = response.getWorkspaces();
+-                String sResult="";
+-                while (workspaces.hasMoreElements()){
+-                    sResult += workspaces.nextElement().toString();
++        try {
++            client.executeMethod(method);
++
++            Vector options = new Vector();
++            int statusCode = method.getStatusLine().getStatusCode();
++            if (statusCode >= 200 && statusCode < 300) {
++                // check if the specific method is possbile
++                Enumeration allowedMethods = method.getAllowedMethods();
++                while (allowedMethods.hasMoreElements()) {
++                    options.addElement(allowedMethods.nextElement());
+                 }
+-                Enumeration histories = response.getHistories();
+-                while (histories.hasMoreElements()){
+-                    sResult += histories.nextElement().toString();
++                // check WebDAV capabilities.
++                Enumeration davCapabilities = method.getDavCapabilities();
++                while (davCapabilities.hasMoreElements()) {
++                    options.addElement(davCapabilities.nextElement());
+                 }
+-                // Set status code for this resource.
+-                if ((thisResource == true) && (response.getStatusCode() > 0))
+-                    setStatusCode(response.getStatusCode());
+-                thisResource = false;
+-                options.addElement(sResult);
++                Enumeration responses = method.getResponses();
++                if (responses.hasMoreElements()) {
++                    ResponseEntity response =
++                        (ResponseEntity) responses.nextElement();
++                    Enumeration workspaces = response.getWorkspaces();
++                    String sResult="";
++                    while (workspaces.hasMoreElements()){
++                        sResult += workspaces.nextElement().toString();
++                    }
++                    Enumeration histories = response.getHistories();
++                    while (histories.hasMoreElements()){
++                        sResult += histories.nextElement().toString();
++                    }
++                    // Set status code for this resource.
++                    if ((thisResource == true) && (response.getStatusCode() > 0))
++                        setStatusCode(response.getStatusCode());
++                    thisResource = false;
++                    options.addElement(sResult);
++                }
+             }
++
++            return options.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return options.elements();
+     }
+ 
+ 
+@@ -3056,37 +3144,42 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector options = new Vector();
+-        int statusCode = method.getStatusLine().getStatusCode();
+-        if  (statusCode >= 200 && statusCode < 300) {
+-            Enumeration responses = method.getResponses();
+-            if (responses.hasMoreElements()) {
+-                ResponseEntity response =
+-                    (ResponseEntity) responses.nextElement();
+-                // String sResult="";
+-                if (type == OPTIONS_WORKSPACE){
+-                    Enumeration workspaces = response.getWorkspaces();
+-                    while (workspaces.hasMoreElements()){
+-                        options.add(workspaces.nextElement().toString());
++        try {
++            client.executeMethod(method);
++
++            Vector options = new Vector();
++            int statusCode = method.getStatusLine().getStatusCode();
++            if  (statusCode >= 200 && statusCode < 300) {
++                Enumeration responses = method.getResponses();
++                if (responses.hasMoreElements()) {
++                    ResponseEntity response =
++                        (ResponseEntity) responses.nextElement();
++                    // String sResult="";
++                    if (type == OPTIONS_WORKSPACE){
++                        Enumeration workspaces = response.getWorkspaces();
++                        while (workspaces.hasMoreElements()){
++                            options.add(workspaces.nextElement().toString());
++                        }
++                    } else if (type == OPTIONS_VERSION_HISTORY){
++                        Enumeration histories = response.getHistories();
++                        while (histories.hasMoreElements()){
++                            options.add(histories.nextElement().toString());
++                        }
+                     }
+-                } else if (type == OPTIONS_VERSION_HISTORY){
+-                    Enumeration histories = response.getHistories();
+-                    while (histories.hasMoreElements()){
+-                        options.add(histories.nextElement().toString());
+-                    }
++
++                    // Set status code for this resource.
++                    if ((thisResource == true) && (response.getStatusCode() > 0))
++                        setStatusCode(response.getStatusCode());
++                    thisResource = false;
++                    // options.addElement(sResult);
+                 }
++            }
+ 
+-                // Set status code for this resource.
+-                if ((thisResource == true) && (response.getStatusCode() > 0))
+-                    setStatusCode(response.getStatusCode());
+-                thisResource = false;
+-                // options.addElement(sResult);
+-            }
++            return options.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return options.elements();
+     }
+ 
+ 
+@@ -3111,37 +3204,42 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector options = new Vector();
+-        int statusCode = method.getStatusLine().getStatusCode();
+-        if  (statusCode >= 200 && statusCode < 300) {
+-            Enumeration responses = method.getResponses();
+-            if (responses.hasMoreElements()) {
+-                ResponseEntity response =
+-                    (ResponseEntity) responses.nextElement();
+-                // String sResult="";
+-                if (type == OPTIONS_WORKSPACE){
+-                    Enumeration workspaces = response.getWorkspaces();
+-                    while (workspaces.hasMoreElements()){
+-                        options.add(workspaces.nextElement().toString());
++        try {
++            client.executeMethod(method);
++
++            Vector options = new Vector();
++            int statusCode = method.getStatusLine().getStatusCode();
++            if  (statusCode >= 200 && statusCode < 300) {
++                Enumeration responses = method.getResponses();
++                if (responses.hasMoreElements()) {
++                    ResponseEntity response =
++                        (ResponseEntity) responses.nextElement();
++                    // String sResult="";
++                    if (type == OPTIONS_WORKSPACE){
++                        Enumeration workspaces = response.getWorkspaces();
++                        while (workspaces.hasMoreElements()){
++                            options.add(workspaces.nextElement().toString());
++                        }
++                    } else if (type == OPTIONS_VERSION_HISTORY){
++                        Enumeration histories = response.getHistories();
++                        while (histories.hasMoreElements()){
++                            options.add(histories.nextElement().toString());
++                        }
+                     }
+-                } else if (type == OPTIONS_VERSION_HISTORY){
+-                    Enumeration histories = response.getHistories();
+-                    while (histories.hasMoreElements()){
+-                        options.add(histories.nextElement().toString());
+-                    }
++
++                    // Set status code for this resource.
++                    if ((thisResource == true) && (response.getStatusCode() > 0))
++                        setStatusCode(response.getStatusCode());
++                    thisResource = false;
++                    // options.addElement(sResult);
+                 }
++            }
+ 
+-                // Set status code for this resource.
+-                if ((thisResource == true) && (response.getStatusCode() > 0))
+-                    setStatusCode(response.getStatusCode());
+-                thisResource = false;
+-                // options.addElement(sResult);
+-            }
++            return options.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return options.elements();
+     }
+ 
+     /**
+@@ -3198,10 +3296,15 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -3218,32 +3321,37 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector results = new Vector();
++        try {
++            client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        while (responses.hasMoreElements()) {
+-            ResponseEntity response = (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
+-            String sResult = href;
++            Vector results = new Vector();
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            while (responses.hasMoreElements()) {
++                ResponseEntity response = (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
++                String sResult = href;
+ 
+-            Enumeration responseProperties = method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property = (Property) responseProperties.nextElement();
+-                sResult += "\n" + property.getName() + ":\t" +
+-                    DOMUtils.getTextValue(property.getElement());
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
+ 
++                Enumeration responseProperties = method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property = (Property) responseProperties.nextElement();
++                    sResult += "\n" + property.getName() + ":\t" +
++                        DOMUtils.getTextValue(property.getElement());
++
++                }
++                results.addElement(sResult);
+             }
+-            results.addElement(sResult);
++
++            return results.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return results.elements();
+     }
+ 
+     public Enumeration reportMethod(HttpURL httpURL, Vector properties)
+@@ -3258,9 +3366,14 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        return method.getResponses();
++        try {
++            client.executeMethod(method);
++
++            return method.getResponses();
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     public Enumeration reportMethod(HttpURL httpURL, Vector properties,
+@@ -3275,43 +3388,48 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        /*first draft, does work anyhow
+-         Enumeration results = method.getAllResponseURLs();
++        try {
++            client.executeMethod(method);
+ 
+-         return results;*/
+-        /*  Enumeration responses = method.getResponses();
+-         ResponseEntity response = (ResponseEntity) responses.nextElement();
+-         String href = (String) response.getHref();
+-         Enumeration results = method.getResponseProperties(href);
++            /*first draft, does work anyhow
++            Enumeration results = method.getAllResponseURLs();
+ 
+-         return results;*/
++            return results;*/
++            /*  Enumeration responses = method.getResponses();
++            ResponseEntity response = (ResponseEntity) responses.nextElement();
++            String href = (String) response.getHref();
++            Enumeration results = method.getResponseProperties(href);
+ 
+-        Vector results = new Vector();
++            return results;*/
+ 
+-        Enumeration responses = method.getResponses();
+-        while (responses.hasMoreElements()) {
+-            ResponseEntity response = (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
+-            String sResult = href;
++            Vector results = new Vector();
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            while (responses.hasMoreElements()) {
++                ResponseEntity response = (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
++                String sResult = href;
+ 
+-            Enumeration responseProperties = method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property = (Property) responseProperties.nextElement();
+-                sResult += "\n" + property.getName() + ":\t" +
+-                    DOMUtils.getTextValue(property.getElement());
+-                // results.addElement(DOMUtils.getTextValue(property.getElement()));
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties = method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property = (Property) responseProperties.nextElement();
++                    sResult += "\n" + property.getName() + ":\t" +
++                        DOMUtils.getTextValue(property.getElement());
++                    // results.addElement(DOMUtils.getTextValue(property.getElement()));
++                }
++                results.addElement(sResult);
+             }
+-            results.addElement(sResult);
++
++            return results.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return results.elements();
+     }
+ 
+ 
+@@ -3329,32 +3447,38 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector results = new Vector();
++        try {
++            client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        while (responses.hasMoreElements()) {
+-            ResponseEntity response = (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
+-            String sResult = href;
++            Vector results = new Vector();
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            while (responses.hasMoreElements()) {
++                ResponseEntity response = (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
++                String sResult = href;
+ 
+-            Enumeration responseProperties = method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property = (Property) responseProperties.nextElement();
+-                sResult += "\n" + property.getName() + ":\t" +
+-                    DOMUtils.getTextValue(property.getElement());
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties = method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property = (Property) responseProperties.nextElement();
++                    sResult += "\n" + property.getName() + ":\t" +
++                        DOMUtils.getTextValue(property.getElement());
++                }
++                results.addElement(sResult);
+             }
+-            results.addElement(sResult);
++
++            return results.elements();
++        } finally {
++            method.releaseConnection();
+         }
++    }
+ 
+-        return results.elements();
+-    }
+     // expand-property Report
+     public Enumeration reportMethod(HttpURL httpURL, String sQuery, int depth)
+ 
+@@ -3368,31 +3492,36 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        client.executeMethod(method);
+ 
+-        Vector results = new Vector();
++        try {
++            client.executeMethod(method);
+ 
+-        Enumeration responses = method.getResponses();
+-        while (responses.hasMoreElements()) {
+-            ResponseEntity response = (ResponseEntity) responses.nextElement();
+-            //String href = (String) response.getHref();
+-            String sResult; //= href;
++            Vector results = new Vector();
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            while (responses.hasMoreElements()) {
++                ResponseEntity response = (ResponseEntity) responses.nextElement();
++                //String href = (String) response.getHref();
++                String sResult; //= href;
+ 
+-            sResult = response.toString();
+-            /*while (responseProperties.hasMoreElements()) {
+-             Property property = (Property) responseProperties.nextElement();
+-             sResult += "\t" + DOMUtils.getTextValue(property.getElement());
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
+ 
+-             }*/
+-            results.addElement(sResult);
++                sResult = response.toString();
++                /*while (responseProperties.hasMoreElements()) {
++                Property property = (Property) responseProperties.nextElement();
++                sResult += "\t" + DOMUtils.getTextValue(property.getElement());
++
++                }*/
++                results.addElement(sResult);
++            }
++
++            return results.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return results.elements();
+     }
+ 
+ 
+@@ -3448,22 +3577,27 @@
+         // Default depth=infinity, type=allprop
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int status = client.executeMethod(method);
+ 
+-        // Set status code for this resource.
+-        if (thisResource == true) {
+-            setStatusCode(status);
++        try {
++            int status = client.executeMethod(method);
++
++            // Set status code for this resource.
++            if (thisResource == true) {
++                setStatusCode(status);
++            }
++            // Also accept OK sent by buggy servers.
++            if (status != HttpStatus.SC_MULTI_STATUS
++                && status != HttpStatus.SC_OK) {
++                HttpException ex = new HttpException();
++                ex.setReasonCode(status);
++                throw ex;
++            }
++            thisResource = false;
++
++            return method.getResponses();
++        } finally {
++            method.releaseConnection();
+         }
+-        // Also accept OK sent by buggy servers.
+-        if (status != HttpStatus.SC_MULTI_STATUS
+-            && status != HttpStatus.SC_OK) {
+-            HttpException ex = new HttpException();
+-            ex.setReasonCode(status);
+-            throw ex;
+-        }
+-        thisResource = false;
+-
+-        return method.getResponses();
+     }
+ 
+ 
+@@ -3513,6 +3647,9 @@
+                                       Vector properties)
+         throws HttpException, IOException {
+ 
++        logger.fine("[WebdavResource] propFindMethod path: " + path +
++                    " depth: " + depth + " properties: " + properties.size());
++
+         setClient();
+         // Change the depth for prop
+         PropFindMethod method = new PropFindMethod(URIUtil.encodePath(path),
+@@ -3523,23 +3660,31 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int status = client.executeMethod(method);
+ 
+-        // Set status code for this resource.
+-        if (thisResource == true) {
+-            // Set the status code.
+-            setStatusCode(method.getStatusLine().getStatusCode());
++        try {
++            int status = client.executeMethod(method);
++
++            logger.fine("[WebdavResource] propFindMethod path: " + path +
++                        " status: " + status);
++
++            // Set status code for this resource.
++            if (thisResource == true) {
++                // Set the status code.
++                setStatusCode(method.getStatusLine().getStatusCode());
++            }
++            // Also accept OK sent by buggy servers.
++            if (status != HttpStatus.SC_MULTI_STATUS
++                && status != HttpStatus.SC_OK) {
++                HttpException ex = new HttpException();
++                ex.setReasonCode(status);
++                throw ex;
++            }
++            thisResource = false;
++
++            return method.getResponses();
++        } finally {
++            method.releaseConnection();
+         }
+-        // Also accept OK sent by buggy servers.
+-        if (status != HttpStatus.SC_MULTI_STATUS
+-            && status != HttpStatus.SC_OK) {
+-            HttpException ex = new HttpException();
+-            ex.setReasonCode(status);
+-            throw ex;
+-        }
+-        thisResource = false;
+-
+-        return method.getResponses();
+     }
+ 
+ 
+@@ -3623,40 +3768,45 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int status = client.executeMethod(method);
+ 
+-        // Also accept OK sent by buggy servers.
+-        if (status != HttpStatus.SC_MULTI_STATUS
+-            && status != HttpStatus.SC_OK) {
+-            HttpException ex = new HttpException();
+-            ex.setReasonCode(status);
+-            throw ex;
+-        }
++        try {
++            int status = client.executeMethod(method);
+ 
+-        // It contains the results.
+-        Vector results = new Vector();
++            // Also accept OK sent by buggy servers.
++            if (status != HttpStatus.SC_MULTI_STATUS
++                && status != HttpStatus.SC_OK) {
++                HttpException ex = new HttpException();
++                ex.setReasonCode(status);
++                throw ex;
++            }
+ 
+-        Enumeration responses = method.getResponses();
+-        if (responses.hasMoreElements()) {
+-            ResponseEntity response =
+-                (ResponseEntity) responses.nextElement();
+-            String href = response.getHref();
++            // It contains the results.
++            Vector results = new Vector();
+ 
+-            // Set status code for this resource.
+-            if ((thisResource == true) && (response.getStatusCode() > 0))
+-                setStatusCode(response.getStatusCode());
+-            thisResource = false;
++            Enumeration responses = method.getResponses();
++            if (responses.hasMoreElements()) {
++                ResponseEntity response =
++                    (ResponseEntity) responses.nextElement();
++                String href = response.getHref();
+ 
+-            Enumeration responseProperties =
+-                method.getResponseProperties(href);
+-            while (responseProperties.hasMoreElements()) {
+-                Property property =
+-                    (Property) responseProperties.nextElement();
+-                results.addElement(property.getPropertyAsString());
++                // Set status code for this resource.
++                if ((thisResource == true) && (response.getStatusCode() > 0))
++                    setStatusCode(response.getStatusCode());
++                thisResource = false;
++
++                Enumeration responseProperties =
++                    method.getResponseProperties(href);
++                while (responseProperties.hasMoreElements()) {
++                    Property property =
++                        (Property) responseProperties.nextElement();
++                    results.addElement(property.getPropertyAsString());
++                }
+             }
++
++            return results.elements();
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return results.elements();
+     }
+ 
+ 
+@@ -3947,12 +4097,17 @@
+         if (hasSomething) {
+             generateTransactionHeader(method);
+             generateAdditionalHeaders(method);
+-            int statusCode = client.executeMethod(method);
+-            // Possbile Status Codes => SC_OK
+-            // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_LOCKED, 507
+-            setStatusCode(statusCode);
+-            if (statusCode >= 200 && statusCode < 300) {
+-                return true;
++
++            try {
++                int statusCode = client.executeMethod(method);
++                // Possbile Status Codes => SC_OK
++                // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_LOCKED, 507
++                setStatusCode(statusCode);
++                if (statusCode >= 200 && statusCode < 300) {
++                    return true;
++                }
++            } finally {
++                method.releaseConnection();
+             }
+         }
+         return false;
+@@ -3989,10 +4144,15 @@
+ 
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4034,10 +4194,15 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4083,13 +4248,18 @@
+         method.setOverwrite(overwrite);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile MOVE Status Codes => SC_CREATED, SC_NO_CONTENT
+-        // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
+-        // SC_LOCKED, SC_BAD_GATEWAY
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile MOVE Status Codes => SC_CREATED, SC_NO_CONTENT
++            // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
++            // SC_LOCKED, SC_BAD_GATEWAY
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4133,13 +4303,18 @@
+         method.setOverwrite(overwrite);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile COPY Status Codes => SC_CREATED, SC_NO_CONTENT
+-        // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
+-        // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile COPY Status Codes => SC_CREATED, SC_NO_CONTENT
++            // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
++            // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4180,13 +4355,18 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile MKCOL Status Codes => SC_CREATED
+-        // WebdavStatus.SC_FORBIDDEN, SC_METHOD_NOT_ALLOWED, SC_CONFLICT,
+-        // SC_LOCKED, SC_UNSUPPORTED_MEDIA_TYPE, SC_INSUFFICIENT_STORAGE
+-        setStatusCode(statusCode);
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile MKCOL Status Codes => SC_CREATED
++            // WebdavStatus.SC_FORBIDDEN, SC_METHOD_NOT_ALLOWED, SC_CONFLICT,
++            // SC_LOCKED, SC_UNSUPPORTED_MEDIA_TYPE, SC_INSUFFICIENT_STORAGE
++            setStatusCode(statusCode);
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4318,19 +4498,24 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+-        String lock = method.getLockToken();
+-        WebdavState state = (WebdavState) client.getState();
+-        if (state != null) {
+-            state.addLock(path, lock);
+-        }
+-        this.owner = method.getOwner();
+ 
+-        // Possbile LOCK Status Codes => SC_OK
+-        // WebdavStatus.SC_SC_PRECONDITION_FAILED, SC_LOCKED
+-        setStatusCode(statusCode, lock);
++        try {
++            int statusCode = client.executeMethod(method);
++            String lock = method.getLockToken();
++            WebdavState state = (WebdavState) client.getState();
++            if (state != null) {
++                state.addLock(path, lock);
++            }
++            this.owner = method.getOwner();
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            // Possbile LOCK Status Codes => SC_OK
++            // WebdavStatus.SC_SC_PRECONDITION_FAILED, SC_LOCKED
++            setStatusCode(statusCode, lock);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4389,19 +4574,24 @@
+ 
+         generateIfHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+-        String txHandle = method.getLockToken();
+-        WebdavState state = (WebdavState) client.getState();
+-        if (state != null) {
+-            state.setTransactionHandle(txHandle);
+-        }
+-        this.owner = method.getOwner();
+ 
+-        // Possbile LOCK Status Codes => SC_OK
+-        // WebdavStatus.SC_SC_PRECONDITION_FAILED, SC_LOCKED
+-        setStatusCode(statusCode, txHandle);
++        try {
++            int statusCode = client.executeMethod(method);
++            String txHandle = method.getLockToken();
++            WebdavState state = (WebdavState) client.getState();
++            if (state != null) {
++                state.setTransactionHandle(txHandle);
++            }
++            this.owner = method.getOwner();
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            // Possbile LOCK Status Codes => SC_OK
++            // WebdavStatus.SC_SC_PRECONDITION_FAILED, SC_LOCKED
++            setStatusCode(statusCode, txHandle);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -4463,14 +4653,19 @@
+ 
+         generateIfHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        if (statusCode >= 200 && statusCode < 300) {
+-            state.setTransactionHandle(null);
+-            return true;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            if (statusCode >= 200 && statusCode < 300) {
++                state.setTransactionHandle(null);
++                return true;
++            }
++            return false;
++        } finally {
++            method.releaseConnection();
+         }
+-        return false;
+     }
+ 
+     /**
+@@ -4543,15 +4738,20 @@
+         generateTransactionHeader(method);
+         method.setLockToken(lock);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
+-        if (statusCode >= 200 && statusCode < 300) {
+-            state.removeLocks(path);
+-            return true;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            setStatusCode(statusCode);
++            if (statusCode >= 200 && statusCode < 300) {
++                state.removeLocks(path);
++                return true;
++            }
++
++            return false;
++        } finally {
++            method.releaseConnection();
+         }
+-
+-        return false;
+     }
+ 
+ 
+@@ -4661,11 +4861,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4681,11 +4886,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4703,11 +4913,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4748,15 +4963,20 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile MKCOL Status Codes => SC_CREATED
+-        // WebdavStatus.SC_FORBIDDEN, SC_METHOD_NOT_ALLOWED, SC_CONFLICT,
+-        // SC_LOCKED, SC_UNSUPPORTED_MEDIA_TYPE, SC_INSUFFICIENT_STORAGE
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++            // Possbile MKCOL Status Codes => SC_CREATED
++            // WebdavStatus.SC_FORBIDDEN, SC_METHOD_NOT_ALLOWED, SC_CONFLICT,
++            // SC_LOCKED, SC_UNSUPPORTED_MEDIA_TYPE, SC_INSUFFICIENT_STORAGE
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4879,11 +5099,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4920,11 +5145,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+ 
+@@ -4964,11 +5194,16 @@
+         generateIfHeader(method);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        setStatusCode(statusCode);
++        try {
++            int statusCode = client.executeMethod(method);
+ 
+-        return (statusCode >= 200 && statusCode < 300) ? true : false;
++            setStatusCode(statusCode);
++
++            return (statusCode >= 200 && statusCode < 300) ? true : false;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -5072,24 +5307,29 @@
+         method.setFollowRedirects(this.followRedirects);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int status = client.executeMethod(method);
+ 
+-        // Set status code for this resource.
+-        if (thisResource == true) {
+-            // Set the status code.
+-            setStatusCode(method.getStatusLine().getStatusCode());
+-        }
++        try {
++            int status = client.executeMethod(method);
+ 
+-        //slide/tamino delivers status code OK.
+-        //can be removed when the server sends MULTI_STATUS
+-        if (status != HttpStatus.SC_MULTI_STATUS && status != HttpStatus.SC_OK) {
+-            HttpException ex = new HttpException();
+-            ex.setReasonCode(status);
+-            throw ex;
++            // Set status code for this resource.
++            if (thisResource == true) {
++                // Set the status code.
++                setStatusCode(method.getStatusLine().getStatusCode());
++            }
++
++            //slide/tamino delivers status code OK.
++            //can be removed when the server sends MULTI_STATUS
++            if (status != HttpStatus.SC_MULTI_STATUS && status != HttpStatus.SC_OK) {
++                HttpException ex = new HttpException();
++                ex.setReasonCode(status);
++                throw ex;
++            }
++            thisResource = false;
++
++            return method.getResponses();
++        } finally {
++            method.releaseConnection();
+         }
+-        thisResource = false;
+-
+-        return method.getResponses();
+     }
+ 
+ 
+@@ -5129,14 +5369,19 @@
+         method.setOverwrite(overwrite);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile BIND Status Codes => SC_CREATED, SC_NO_CONTENT
+-        // SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
+-        // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE,
+-        // SC_LOOP_DETECTED
+-        setStatusCode(statusCode);
+-        return statusCode >= 200 && statusCode < 300;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile BIND Status Codes => SC_CREATED, SC_NO_CONTENT
++            // SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
++            // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE,
++            // SC_LOOP_DETECTED
++            setStatusCode(statusCode);
++            return statusCode >= 200 && statusCode < 300;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -5172,13 +5417,18 @@
+         method.setDebug(debug);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile BIND Status Codes => SC_CREATED, SC_NOT_FOUND
+-        // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
+-        // SC_LOCKED, SC_BAD_GATEWAY
+-        setStatusCode(statusCode);
+-        return statusCode >= 200 && statusCode < 300;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile BIND Status Codes => SC_CREATED, SC_NOT_FOUND
++            // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
++            // SC_LOCKED, SC_BAD_GATEWAY
++            setStatusCode(statusCode);
++            return statusCode >= 200 && statusCode < 300;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -5230,14 +5480,19 @@
+         method.setOverwrite(overwrite);
+         generateTransactionHeader(method);
+         generateAdditionalHeaders(method);
+-        int statusCode = client.executeMethod(method);
+ 
+-        // Possbile BIND Status Codes => SC_CREATED, SC_NO_CONTENT
+-        // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
+-        // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE,
+-        // SC_LOOP_DETECTED
+-        setStatusCode(statusCode);
+-        return statusCode >= 200 && statusCode < 300;
++        try {
++            int statusCode = client.executeMethod(method);
++
++            // Possbile BIND Status Codes => SC_CREATED, SC_NO_CONTENT
++            // WebdavStatus.SC_FORBIDDEN, SC_CONFLICT, SC_PRECONDITION_FAILED,
++            // SC_LOCKED, SC_BAD_GATEWAY, SC_INSUFFICIENT_STORAGE,
++            // SC_LOOP_DETECTED
++            setStatusCode(statusCode);
++            return statusCode >= 200 && statusCode < 300;
++        } finally {
++            method.releaseConnection();
++        }
+     }
+ 
+     /**
+@@ -5280,19 +5535,23 @@
+        generateTransactionHeader(method);
+        generateAdditionalHeaders(method);
+ 
+-       int statusCode = client.executeMethod(method);
++       try {
++            int statusCode = client.executeMethod(method);
+        
+-       if (statusCode == HttpStatus.SC_OK) {
+-          return new Subscription(
+-                      path, 
+-                      method.getResponsedSubscriptionId(),
+-                      method.getCallback(),
+-                      method.getResponsedSubscriptionLifetime(),
+-                      method.getResponsedContentLocation(),
+-                      method.getNotificationType()
+-                );
+-       } else {
+-          return null;
++            if (statusCode == HttpStatus.SC_OK) {
++                return new Subscription(
++                        path,
++                        method.getResponsedSubscriptionId(),
++                        method.getCallback(),
++                        method.getResponsedSubscriptionLifetime(),
++                        method.getResponsedContentLocation(),
++                        method.getNotificationType()
++                    );
++            } else {
++                return null;
++            }
++       } finally {
++           method.releaseConnection();
+        }
+     }
+     
+@@ -5314,13 +5573,17 @@
+        generateTransactionHeader(method);
+        generateAdditionalHeaders(method);
+ 
+-       int statusCode = client.executeMethod(method);
++       try {
++            int statusCode = client.executeMethod(method);
+        
+-       if (statusCode == HttpStatus.SC_OK) {
+-          return true;
+-       } else {
+-          return false;
+-       } 
++            if (statusCode == HttpStatus.SC_OK) {
++                return true;
++            } else {
++                return false;
++            }
++       } finally {
++           method.releaseConnection();
++       }
+     }
+     
+     /**
+@@ -5353,12 +5616,16 @@
+        generateTransactionHeader(method);
+        generateAdditionalHeaders(method);
+ 
+-       int statusCode = client.executeMethod(method);
++       try {
++            int statusCode = client.executeMethod(method);
+        
+-       if (statusCode == HttpStatus.SC_OK) {
+-          return true;
+-       } else {
+-          return false;
++            if (statusCode == HttpStatus.SC_OK) {
++                return true;
++            } else {
++                return false;
++            }
++       } finally {
++           method.releaseConnection();
+        }
+     }
+     /**
+@@ -5392,12 +5659,16 @@
+        generateTransactionHeader(method);
+        generateAdditionalHeaders(method);
+ 
+-       int statusCode = client.executeMethod(method);
++       try {
++            int statusCode = client.executeMethod(method);
+        
+-       if (statusCode == HttpStatus.SC_MULTI_STATUS) {
+-          return method.getSubscriptionsWithEvents().size() > 0;
+-       } else {
+-          return false;
++            if (statusCode == HttpStatus.SC_MULTI_STATUS) {
++                return method.getSubscriptionsWithEvents().size() > 0;
++            } else {
++                return false;
++            }
++       } finally {
++           method.releaseConnection();
+        }
+     }
+     /**
+Index: clientlib/src/java/org/apache/webdav/lib/methods/XMLResponseMethodBase.java
+===================================================================
+--- clientlib/src/java/org/apache/webdav/lib/methods/XMLResponseMethodBase.java	(revision 74)
++++ clientlib/src/java/org/apache/webdav/lib/methods/XMLResponseMethodBase.java	(working copy)
+@@ -315,7 +315,9 @@
+         // Also accept OK sent by buggy servers in reply to a PROPFIND or
+         // REPORT (Xythos, Catacomb, ...?).
+         if (getStatusCode() == WebdavStatus.SC_MULTI_STATUS
+-            || (this instanceof PropFindMethod || this instanceof ReportMethod)) {
++            || (this instanceof PropFindMethod || this instanceof ReportMethod)
++            && getStatusCode() == HttpStatus.SC_OK)
++        {
+             try {
+                 parseXMLResponse(input);
+             } catch (IOException e) {

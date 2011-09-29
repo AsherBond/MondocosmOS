@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Source for wonderland.jnlp -->
+
+<jnlp spec="1.0+"
+  codebase="$$codebase"
+  href="Wonderland.jnlp">
+
+  <information>
+    <title>Open Wonderland 0.5</title>
+    <vendor>Open Wonderland Foundation</vendor>
+    <homepage href="http://openwonderland.org/"/>
+    <description>Open Wonderland 0.5</description>
+    <description kind="short">Toolkit for building collaborative, immersive environments</description>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+  
+  <resources>
+    <j2se version="1.6+" initial-heap-size="128m" max-heap-size="512m" java-vm-args="-Xincgc"/>
+    
+    <!-- jar files auto-populated by build script -->
+    %LOCAL_JAR_FILES%
+    
+    <property name="wonderland.server.url" value="$$wonderland.server.url"/>
+    <property name="wonderland.client.config.dir" value="$$wonderland.client.config.dir"/>
+    <property name="wonderland.protocol.handler.pkgs" value="org.jdesktop.wonderland.client.protocols"/>
+    <property name="wonderland.version" value="%VERSION%"/>
+
+    <!-- properties passed in via the URL -->
+    $$url.props
+  </resources>
+
+  <resources os="Windows" arch="x86">
+    <nativelib href="win32/wonderland_native.jar"/>
+  </resources>
+
+  <resources os="Windows" arch="amd64">
+    <nativelib href="win64/wonderland_native.jar"/>
+  </resources>
+
+  <resources os="Linux" arch="i386">
+    <nativelib href="linux/wonderland_native.jar"/>
+  </resources>
+
+  <resources os="Linux" arch="amd64">
+    <nativelib href="linux64/wonderland_native.jar"/>
+  </resources>
+  
+  <resources os="Mac OS X">
+    <nativelib href="macosx/wonderland_native.jar"/>
+  </resources>
+
+  <resources os="SunOS" arch="x86">
+    <nativelib href="solaris/wonderland_native.jar"/>
+  </resources>
+
+  <application-desc main-class="org.jdesktop.wonderland.client.jme.JmeClientMain">
+  </application-desc>
+</jnlp>

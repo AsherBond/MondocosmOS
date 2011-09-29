@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4540/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault
+END
+FrameSide.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3969/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameSide.java
+END
+FrameTranspRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/3969/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameTranspRect.java
+END
+View2DCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/View2DCell.java
+END
+FrameHeaderSwingWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/3864/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameHeaderSwingWindow.java
+END
+FHSEventHook.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/3796/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FHSEventHook.java
+END
+Gui2DResizeCorner.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/3969/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/Gui2DResizeCorner.java
+END
+HeaderPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4364/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/HeaderPanel.java
+END
+FrameRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3961/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameRect.java
+END
+HeaderPanelAllocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/HeaderPanelAllocator.java
+END
+FrameHeaderSwing.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/4540/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameHeaderSwing.java
+END
+EntityLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/2091/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/EntityLogger.java
+END
+FrameComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/3496/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameComponent.java
+END
+Gui2DSide.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3998/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/Gui2DSide.java
+END
+Frame2DCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/Frame2DCell.java
+END
+FrameResizeCorner.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/3496/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/FrameResizeCorner.java
+END
+ResizeRectangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/ResizeRectangle.java
+END
+App2DCellRendererJME.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/3469/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/App2DCellRendererJME.java
+END
+HeaderPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4338/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/HeaderPanel.form
+END
+View2DCellFactoryDefault.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/View2DCellFactoryDefault.java
+END

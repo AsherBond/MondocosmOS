@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages
+END
+CellClientComponentMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1684/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellClientComponentMessage.java
+END
+CellDeleteMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2185/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellDeleteMessage.java
+END
+CellCreateMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2185/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellCreateMessage.java
+END
+MovableMessageResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2754/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/MovableMessageResponse.java
+END
+CellChannelComponentRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellChannelComponentRequestMessage.java
+END
+CellCreatedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4691/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellCreatedMessage.java
+END
+CellServerComponentResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerComponentResponseMessage.java
+END
+CellServerStateUpdateMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerStateUpdateMessage.java
+END
+CellDuplicateMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2185/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellDuplicateMessage.java
+END
+ViewCreateResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/ViewCreateResponseMessage.java
+END
+CellHierarchyMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellHierarchyMessage.java
+END
+CellMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellMessage.java
+END
+CellClientStateMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellClientStateMessage.java
+END
+CellServerStateRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerStateRequestMessage.java
+END
+CellReparentMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2754/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellReparentMessage.java
+END
+CellHierarchyUnloadMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellHierarchyUnloadMessage.java
+END
+CellServerStateSetMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerStateSetMessage.java
+END
+MovableAvatarMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/MovableAvatarMessage.java
+END
+CellEditMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2754/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellEditMessage.java
+END
+MovableMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2754/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/MovableMessage.java
+END
+CellServerStateResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/2760/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerStateResponseMessage.java
+END
+CellServerComponentMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/2185/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/messages/CellServerComponentMessage.java
+END

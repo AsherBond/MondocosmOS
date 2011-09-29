@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="avatarbaseart" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.avatarbaseart}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/avatarbaseart"/>
+    <property name="module.jarname" value="avatarbaseart"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="avatarbaseart" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/avatarbaseart.jar"
+                moduleDescription="Avatar artwork" builddir="${build.dir}">
+            <!--
+            <client>
+                <clientjar name="avatarbaseart-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar> 
+            </client>
+            -->
+
+            <!--
+            <server>
+                <serverjar name="avatarbaseart-server" basedir="${build.classes.dir}">
+                    <cellsetup>
+                        <provider classname="${module.plugin.cellsetup}"/>
+                    </cellsetup>
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            -->
+            <art dir="${current.dir}/art"/>
+        </module>
+    </target>                                  
+                                           
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

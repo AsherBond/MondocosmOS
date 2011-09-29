@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux
+END
+liblwjgl64.so
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux/liblwjgl64.so
+END
+libopenal.so
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux/libopenal.so
+END
+liblwjgl.so
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux/liblwjgl.so
+END
+libjinput-linux64.so
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux/libjinput-linux64.so
+END
+libjinput-linux.so
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/native/linux/libjinput-linux.so
+END

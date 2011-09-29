@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4221/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui
+END
+SimpleTestDirectorUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/SimpleTestDirectorUI.java
+END
+SimpleTestDirectorUI.form
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/SimpleTestDirectorUI.form
+END
+UserJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4221/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/UserJPanel.java
+END
+UserJPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/UserJPanel.form
+END
+HarnessManagerUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/HarnessManagerUI.java
+END
+HarnessManagerUI.form
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1352/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/manager/ui/HarnessManagerUI.form
+END

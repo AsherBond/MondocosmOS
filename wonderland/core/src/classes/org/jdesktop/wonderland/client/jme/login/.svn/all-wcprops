@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4679/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login
+END
+LoginOptionsFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4553/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/LoginOptionsFrame.java
+END
+JmeLoginUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4679/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/JmeLoginUI.java
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4513/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle_zh_CN.properties
+END
+WonderlandLoginDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/WonderlandLoginDialog.java
+END
+NoAuthLoginPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/NoAuthLoginPanel.java
+END
+EitherLoginPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/EitherLoginPanel.form
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle_fr.properties
+END
+WebServiceAuthLoginPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/WebServiceAuthLoginPanel.form
+END
+GradientPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/GradientPanel.java
+END
+LoginOptionsFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4553/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/LoginOptionsFrame.form
+END
+pwl_idy_watermark_112h.png
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4110/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/pwl_idy_watermark_112h.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4553/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle.properties
+END
+WonderlandLoginDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/WonderlandLoginDialog.form
+END
+WebServiceAuthLoginPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/WebServiceAuthLoginPanel.java
+END
+NoAuthLoginPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/NoAuthLoginPanel.form
+END
+EitherLoginPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/EitherLoginPanel.java
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4347/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/Bundle_de.properties
+END
+pwl_idy_logomark-type_64.png
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/4384/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/login/pwl_idy_logomark-type_64.png
+END

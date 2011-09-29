@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4668/trunk/core/src/classes/org/jdesktop/wonderland/common/utils
+END
+ClassScanningError.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1542/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/ClassScanningError.java
+END
+ScannedClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4668/trunk/core/src/classes/org/jdesktop/wonderland/common/utils/ScannedClassLoader.java
+END

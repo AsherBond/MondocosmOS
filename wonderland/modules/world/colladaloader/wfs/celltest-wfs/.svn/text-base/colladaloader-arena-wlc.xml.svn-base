@@ -1,0 +1,10 @@
+<collada-cell>
+  <position-component>
+    <origin>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+    </origin>
+  </position-component>
+    <model>wla://colladaloader/assets/models/collada/Environments/Arena/Arena.dae</model>
+</collada-cell>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/4540/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell
+END
+AppConventionalCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/3961/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/AppConventionalCell.java
+END
+App2DCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3983/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/App2DCell.java
+END
+FirstVisibleInitializerCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/3686/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/FirstVisibleInitializerCell.java
+END
+App2DCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2091/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/App2DCellRenderer.java
+END

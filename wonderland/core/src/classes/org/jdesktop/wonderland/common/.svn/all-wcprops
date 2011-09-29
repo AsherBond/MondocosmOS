@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/common
+END
+NetworkAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2835/trunk/core/src/classes/org/jdesktop/wonderland/common/NetworkAddress.java
+END
+AssetURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2107/trunk/core/src/classes/org/jdesktop/wonderland/common/AssetURI.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2886/trunk/core/src/classes/org/jdesktop/wonderland/common/FileUtils.java
+END
+Math3DUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4670/trunk/core/src/classes/org/jdesktop/wonderland/common/Math3DUtils.java
+END
+ThreadManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/ThreadManager.java
+END
+WlHttpURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1944/trunk/core/src/classes/org/jdesktop/wonderland/common/WlHttpURI.java
+END
+PrivateAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/PrivateAPI.java
+END
+StableAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/StableAPI.java
+END
+ModuleURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2107/trunk/core/src/classes/org/jdesktop/wonderland/common/ModuleURI.java
+END
+ArtURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2107/trunk/core/src/classes/org/jdesktop/wonderland/common/ArtURI.java
+END
+InternalAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/InternalAPI.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/291/trunk/core/src/classes/org/jdesktop/wonderland/common/package.html
+END
+AssetType.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1921/trunk/core/src/classes/org/jdesktop/wonderland/common/AssetType.java
+END
+LogControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4363/trunk/core/src/classes/org/jdesktop/wonderland/common/LogControl.java
+END
+ExperimentalAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/ExperimentalAPI.java
+END
+ContentURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2107/trunk/core/src/classes/org/jdesktop/wonderland/common/ContentURI.java
+END
+JarURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1944/trunk/core/src/classes/org/jdesktop/wonderland/common/JarURI.java
+END
+JarURIAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/common/JarURIAdapter.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4372/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/resources
+END
+GetModuleChecksumsResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4372/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/resources/GetModuleChecksumsResource.java
+END
+GetContentChecksumResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4372/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/resources/GetContentChecksumResource.java
+END

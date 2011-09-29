@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources
+END
+WFSListCellsResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/WFSListCellsResource.java
+END
+WFSRecordingsResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/WFSRecordingsResource.java
+END
+WFSCellResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1398/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/WFSCellResource.java
+END
+CreateWFSRecordingResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/CreateWFSRecordingResource.java
+END
+CreateWFSCellResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3489/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/CreateWFSCellResource.java
+END
+CreateWFSSnapshotResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/CreateWFSSnapshotResource.java
+END
+WFSDirectoryResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/WFSDirectoryResource.java
+END
+WFSRootsResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4372/trunk/web/wfs/src/java/org/jdesktop/wonderland/web/wfs/resources/WFSRootsResource.java
+END

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="animationbase" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.animationbase}"/>
+
+    <property name="wonderland.dir" value="${current.dir}/../../.."/>
+
+    <!-- import properties for this module -->
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>    
+    <property name="module.src" value="${module.plugin.src}"/>
+    <property name="module.jarname" value="${module.name}"/>
+ 
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <pathconvert property="module-client.classpath">
+        <path location="${current.dir}/lib/trident.jar"/>
+    </pathconvert>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+
+        <module name="${module.name}" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.name}.jar" moduleDescription="${module.description}" builddir="${build.dir}">
+
+            <client dir="${current.dir}/lib">
+                <include name="*.jar"/>
+                <clientjar name="${module.name}-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <!--<fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/../../../../../META-INF"/>
+                    </fileset>-->
+
+                </clientjar> 
+            </client>
+
+
+<!--
+            <server>
+                <serverjar name="${module.name}-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+
+            <art dir="${current.dir}/art"/>
+-->
+        </module>
+    </target>                                  
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

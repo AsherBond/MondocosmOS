@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3496/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete
+END
+FrameHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameHeader.java
+END
+FrameTexRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameTexRect.java
+END
+FrameLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameLabel.java
+END
+FrameCloseButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/3496/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameCloseButton.java
+END
+Gui2DCloseButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/Gui2DCloseButton.java
+END
+FrameLabelTitle.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameLabelTitle.java
+END
+FrameLabelController.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/!svn/ver/2974/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/cell/view/viewdefault/obsolete/FrameLabelController.java
+END

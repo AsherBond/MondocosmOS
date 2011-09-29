@@ -1,0 +1,54 @@
+#EN: Attempting to reconnect...
+ATTEMPTING_TO_RECONNECT...=Intentando reconectar...
+#EN: Error connecting to server
+ERROR_CONNECTING_TO_SERVER=Error conectando con el servidor
+#EN: Close
+LogViewerFrame.closeButton.text=Cerrar
+#EN: Cancel
+LogViewerFrame.configCancelButton.text=Cancelar
+#EN: Configure Logging
+LogViewerFrame.configDialog.title=Configurar Registro
+#EN: Configure...
+LogViewerFrame.configureButton.text=Configurar...
+#EN: Close
+LogViewerFrame.errorCloseButton.text=Cerrar
+#EN: Copy
+LogViewerFrame.errorCopyButton.text=Copiar
+#EN: Error Report...
+LogViewerFrame.errorReportButton.text=Informe de Errores...
+#EN: Error Report
+LogViewerFrame.errorReportDialog.title=Informe de Errores
+#EN: Select All
+LogViewerFrame.errorSelectButton.text=Seleccionar Todo
+#EN: Messages to save:
+LogViewerFrame.jLabel1.text=Mensajes para Guardar:
+#EN: Default log level:
+LogViewerFrame.jLabel2.text=Nivel de Registro por defecto:
+#EN: Individual Log levels:
+LogViewerFrame.jLabel3.text=Nivel de Registro Individual:
+#EN: Visible at startup:
+LogViewerFrame.jLabel4.text=Visible en lanzamiento:
+#EN: -
+LogViewerFrame.levelTableMinus.text=-
+#EN: +
+LogViewerFrame.levelTablePlus.text=+
+#EN: Save
+LogViewerFrame.okButton.text=Guardad
+#EN: Log Viewer
+LogViewerFrame.title=Visor de Registro
+#EN: Help
+MainFrameImpl.helpMenu.text=Ayuda
+#EN: Insert
+MainFrameImpl.insertMenu.text=Insertar
+#EN: Placemarks
+MainFrameImpl.placemarksMenu.text=Marcas de posici\u00f3n
+#EN: View
+MainFrameImpl.viewMenu.text=Vista
+#EN: Window
+MainFrameImpl.windowMenu.text=Ventana
+#EN: Reconnect to server
+RECONNECT_TO_SERVER=Reconectar con el servidor
+#EN: Server disconnected
+SERVER_DISCONNECTED=Servidor desconectado
+#EN: Unable to reconnect to server:
+UNABLE_TO_RECONNECT_TO_SERVER\:_=No se puede reconectar con el servidor:

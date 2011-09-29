@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/4600/trunk/web/server
+END
+schemas.zip
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4569/trunk/web/server/schemas.zip
+END
+domain.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4323/trunk/web/server/domain.xml
+END
+web-default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4408/trunk/web/server/web-default.properties
+END
+web-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4323/trunk/web/server/web-logging.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/4569/trunk/web/server/build.xml
+END

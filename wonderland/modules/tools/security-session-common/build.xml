@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="wonderland-security-session">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-security-session}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-web.classpath">
+        <path location="${current.dir}/../../foundation/security/build/lib/weblib/wonderland-security-weblib.jar"/>
+        <path location="${current.dir}/../security-group/build/lib/weblib/wonderland-security-groups-weblib.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path location="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-common.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-client.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-weblib.classpath">
+        <path location="${current.dir}/../../foundation/security/build/lib/weblib/wonderland-security-weblib.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+                                                -module-compile-web,
+                                                -security-session-common-compile-weblib"/>
+
+    <target name="-security-session-common-compile-weblib" depends="-module-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/weblib/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-weblib.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="dist" depends="build"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

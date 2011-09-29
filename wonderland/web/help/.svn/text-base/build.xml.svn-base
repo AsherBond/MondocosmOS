@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-help" default="default" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-help}"/>
+
+    <!-- override default source directory -->
+    <property name="javasrc.dir" location="${current.dir}/src/java"/>
+
+    <!-- import web build file -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+
+    <target name="build" depends="-set-extra-classpath, -web-compile"/>
+
+    <target name="-set-extra-classpath">
+        <pathconvert property="web-extra.classpath">
+            <path path="${current.dir}/../modules/dist/wonderland-modules-core.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-common.jar"/>
+        </pathconvert>
+    </target>
+
+    <target name="dist" depends="build" description="Build and assemble web war">
+        <mkdir dir="${dist.dir}"/>
+
+        <jar jarfile="${dist.dir}/wonderland-web-help.war">
+            <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                <include name="org/jdesktop/wonderland/web/help/resources/**"/>
+            </zipfileset>
+
+            <fileset dir="${current.dir}/web"/>
+        </jar>
+
+        <jar jarfile="${dist.dir}/wonderland-help-core.jar">
+            <fileset dir="${build.classes.dir}">
+                <exclude name="org/jdesktop/wonderland/web/help/resources/**"/>
+            </fileset>
+            <fileset dir="${javasrc.dir}">
+                <include name="META-INF/**"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="clean" depends="-web-clean"/>
+</project>

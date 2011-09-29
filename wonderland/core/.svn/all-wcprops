@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/4733/trunk/core
+END
+run-client.properties.example
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1911/trunk/core/run-client.properties.example
+END
+logger.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/539/trunk/core/logger.dtd
+END
+xjc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/539/trunk/core/xjc.sh
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/3175/trunk/core/build.xml
+END

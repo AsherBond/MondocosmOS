@@ -1,0 +1,278 @@
+#EN: Invite
+AddInitiateButtonPanel.actionButton.text=\u03a0\u03c1\u03cc\u03c3\u03ba\u03bb\u03b7\u03c3\u03b7
+#EN: Cancel
+AddInitiateButtonPanel.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Name:
+AddPhoneUserPanel.nameLabel.text=\u038c\u03bd\u03bf\u03bc\u03b1:
+#EN: Phone #:
+AddPhoneUserPanel.phoneLabel.text=\u03a4\u03b7\u03bb\u03ad\u03c6\u03c9\u03bd\u03bf #:
+#EN: Add:
+AddTypePanel.addLabel.text=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7:
+#EN: Phone User
+AddTypePanel.phoneUserRadioButton.text=\u03a7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 \u03c4\u03b7\u03bb\u03b5\u03c6\u03ce\u03bd\u03bf\u03c5
+#EN: Wonderland User
+AddTypePanel.userRadioButton.text=\u03a7\u03c1\u03ae\u03c3\u03c4\u03b7\u03c2 Wonderland
+#EN: Alias is already being used!
+Alias_Used=\u03a4\u03bf \u03c8\u03b5\u03c5\u03b4\u03ce\u03bd\u03c5\u03bc\u03bf \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03b5\u03af\u03c4\u03b1\u03b9 \u03ae\u03b4\u03b7!
+#EN: Audio Capabilities
+Audio_Capabilities=\u0394\u03c5\u03bd\u03b1\u03c4\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2 \u03ae\u03c7\u03bf\u03c5
+#EN: Audio Capabilities
+Audio_Capabilities_Description=\u0394\u03c5\u03bd\u03b1\u03c4\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2 \u03ae\u03c7\u03bf\u03c5
+#EN: AudioCapabilitiesDiagram_en.png
+AudioCapabilitiesDiagram=AudioCapabilitiesDiagram_el.png
+#EN: Audio
+AudioMenu.audioMenu.text=\u0389\u03c7\u03bf\u03c2
+#EN: Audio Quality
+AudioMenu.audioQualityMenu.text=\u03a0\u03bf\u03b9\u03cc\u03c4\u03b7\u03c4\u03b1 \u03ae\u03c7\u03bf\u03c5
+#EN: Audio Volume
+AudioMenu.audioVolumeMenuItem.text=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7 \u03ae\u03c7\u03bf\u03c5
+#EN: Log Audio Problem
+AudioMenu.logAudioProblemMenuItem.text=\u039a\u03b1\u03c4\u03b1\u03b3\u03c1\u03b1\u03c6\u03ae \u03c0\u03c1\u03bf\u03b2\u03bb\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u03ae\u03c7\u03bf\u03c5
+#EN: Reconnect Softphone
+AudioMenu.reconnectSoftphoneMenuItem.text=\u0395\u03c0\u03b1\u03bd\u03b1\u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7 Softphone
+#EN: Softphone
+AudioMenu.softphoneMenuItem.text=Softphone
+#EN: Test Audio
+AudioMenu.testAudioMenuItem.text=\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03ae\u03c7\u03bf\u03c5
+#EN: Test UDP Port
+AudioMenu.testUDPPortMenuItem.text=\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 UDP Port
+#EN: Transfer Call...
+AudioMenu.transferCallMenuItem.text=\u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2...
+#EN: Softphone Problem:
+AudioProblemJFrame.audioProblemLabel.text=\u03a0\u03c1\u03cc\u03b2\u03bb\u03b7\u03bc\u03b1 \u03bc\u03b5 Softphone:
+#EN: Ignore
+AudioProblemJFrame.ignoreButton.text=\u0391\u03b3\u03bd\u03cc\u03b7\u03c3\u03b5
+#EN: OK
+AudioProblemJFrame.okButton.text=\u039f\u039a
+#EN: Reconfigure...
+AudioProblemJFrame.reconfigureButton.text=\u0395\u03c0\u03b1\u03bd\u03b1\u03c1\u03cd\u03b8\u03bc\u03b9\u03c3\u03b7...
+#EN: Reconnect
+AudioProblemJFrame.reconnectButton.text=\u0395\u03c0\u03b1\u03bd\u03b1\u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7
+#EN: Audio Problem
+AudioProblemJFrame.title=\u03a0\u03c1\u03cc\u03b2\u03bb\u03b7\u03bc\u03b1 \u03ae\u03c7\u03bf\u03c5
+#EN: Always
+AudioTreatmentComponentProperties.alwaysRadioButton.text=\u03a0\u03ac\u03bd\u03c4\u03b1
+#EN: Ambient
+AudioTreatmentComponentProperties.ambientRadioButton.text=\u0394\u03b9\u03b1\u03c7\u03ad\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03bf \u03c7\u03ce\u03c1\u03bf
+#EN: Browse...
+AudioTreatmentComponentProperties.browseButton.text=\u0391\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7...
+#EN: Content Repository
+AudioTreatmentComponentProperties.contentRepositoryRadioButton.text=\u0392\u03ac\u03c3\u03b7 \u03c0\u03b5\u03c1\u03b9\u03b5\u03c7\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd
+#EN: Distance attenuated
+AudioTreatmentComponentProperties.distanceAttenuatedRadioButton.text=\u0395\u03be\u03b1\u03c3\u03b8\u03b5\u03bd\u03b5\u03af \u03bc\u03b5 \u03c4\u03b7\u03bd \u03b1\u03c0\u03cc\u03c3\u03c4\u03b1\u03c3\u03b7
+#EN: File
+AudioTreatmentComponentProperties.fileRadioButton.text=\u0391\u03c1\u03c7\u03b5\u03af\u03bf
+#EN: Circle with Radius
+AudioTreatmentComponentProperties.jCheckBox1.text=\u039a\u03cd\u03ba\u03bb\u03bf\u03c2 \u03bc\u03b5 \u03b1\u03ba\u03c4\u03af\u03bd\u03b1
+#EN: Play:
+AudioTreatmentComponentProperties.jLabel10.text=\u0391\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03b3\u03c9\u03b3\u03ae:
+#EN: Extent:
+AudioTreatmentComponentProperties.jLabel11.text=\u0388\u03ba\u03c4\u03b1\u03c3\u03b7:
+#EN: Full Volume Area:
+AudioTreatmentComponentProperties.jLabel12.text=\u03a0\u03b5\u03c1\u03b9\u03bf\u03c7\u03ae \u03c0\u03bb\u03ae\u03c1\u03bf\u03c5\u03c2 \u03ad\u03bd\u03c4\u03b1\u03c3\u03b7\u03c2:
+#EN: % from center
+AudioTreatmentComponentProperties.jLabel13.text=% \u03b1\u03c0\u03cc \u03c4\u03bf \u03ba\u03ad\u03bd\u03c4\u03c1\u03bf
+#EN: Characteristics:
+AudioTreatmentComponentProperties.jLabel14.text=\u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03b7\u03c1\u03b9\u03c3\u03c4\u03b9\u03ba\u03ac:
+#EN: Slow
+AudioTreatmentComponentProperties.jLabel15.text=\u0391\u03c1\u03b3\u03cc
+#EN: Audio Source:
+AudioTreatmentComponentProperties.jLabel1.text=\u03a0\u03b7\u03b3\u03ae \u03ae\u03c7\u03bf\u03c5:
+#EN: Volume:
+AudioTreatmentComponentProperties.jLabel2.text=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7:
+#EN: Fall-off:
+AudioTreatmentComponentProperties.jLabel3.text=\u0395\u03be\u03b1\u03c3\u03b8\u03ad\u03bd\u03b7\u03c3\u03b7:
+#EN: Status:
+AudioTreatmentComponentProperties.jLabel4.text=\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7:
+#EN: Fast
+AudioTreatmentComponentProperties.jLabel5.text=\u0393\u03c1\u03ae\u03b3\u03bf\u03c1\u03bf
+#EN: Audio Group:
+AudioTreatmentComponentProperties.jLabel7.text=\u039f\u03bc\u03ac\u03b4\u03b1 \u03ae\u03c7\u03bf\u03c5:
+#EN: Manually
+AudioTreatmentComponentProperties.manualRadioButton.text=\u03a7\u03b5\u03b9\u03c1\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03b1
+#EN: Play Once
+AudioTreatmentComponentProperties.playOnceCheckBox.text=\u0391\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03b3\u03c9\u03b3\u03ae \u03bc\u03b9\u03b1 \u03c6\u03bf\u03c1\u03ac
+#EN: When first avatar is in range
+AudioTreatmentComponentProperties.proximityRadioButton.text=\u038c\u03c4\u03b1\u03bd \u03c4\u03bf \u03c0\u03c1\u03ce\u03c4\u03bf avatar \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03c4\u03b7\u03bd \u03c0\u03b5\u03c1\u03b9\u03bf\u03c7\u03ae
+#EN: Show Bounds
+AudioTreatmentComponentProperties.showBoundsCheckBox.text=\u03a0\u03c1\u03bf\u03b2\u03bf\u03bb\u03ae \u03bf\u03c1\u03af\u03c9\u03bd
+#EN: Circle with radius:
+AudioTreatmentComponentProperties.specifyRadiusRadioButton.text=\u039a\u03cd\u03ba\u03bb\u03bf\u03c2 \u03bc\u03b5 \u03b1\u03ba\u03c4\u03af\u03bd\u03b1:
+#EN: URL
+AudioTreatmentComponentProperties.URLRadioButton.text=URL
+#EN: Use object bounds:
+AudioTreatmentComponentProperties.useCellBoundsRadioButton.text=\u03a7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03ae\u03c3\u03b7 \u03bf\u03c1\u03af\u03c9\u03bd \u03ba\u03bf\u03c5\u03c4\u03b9\u03bf\u03cd:
+#EN: Audio Volume
+Audio_Volume=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7 \u03ae\u03c7\u03bf\u03c5
+#EN: BOX ({0}, {1}, {2})
+BOX=KOYTI ({0}, {1}, {2})
+#EN: Call
+Call=\u039a\u03bb\u03ae\u03c3\u03b7
+#EN: call status
+CallMigrationForm.callStatusLabel.text=\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2
+#EN: Close
+CallMigrationForm.closeButton.text=\u039a\u03bb\u03b5\u03af\u03c3\u03b9\u03bc\u03bf
+#EN: Softphone
+CallMigrationForm.connectSoftphoneRadioButton.text=Softphone
+#EN: Transfer call to:
+CallMigrationForm.jLabel1.text=\u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2 \u03c3\u03b5:
+#EN: Phone #:
+CallMigrationForm.phoneTransferRadioButton.text=\u03a4\u03b7\u03bb\u03ad\u03c6\u03c9\u03bd\u03bf #:
+#EN: Transfer Call
+CallMigrationForm.title=\u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2
+#EN: Transfer
+CallMigrationForm.transferButton.text=\u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac
+#EN: Cancel
+Cancel=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Change Alias
+Change_Alias=\u0391\u03bb\u03bb\u03b1\u03b3\u03ae \u03c8\u03b5\u03c5\u03b4\u03c9\u03bd\u03cd\u03bc\u03bf\u03c5
+#EN: Change alias for {0}
+Change_Alias_For=\u0391\u03bb\u03bb\u03b1\u03b3\u03ae \u03c8\u03b5\u03c5\u03b4\u03c9\u03bd\u03cd\u03bc\u03bf\u03c5 \u03c3\u03b5 {0}
+#EN: Change alias for user
+ChangeNameHUDPanel.aliasLabel.text=\u0391\u03bb\u03bb\u03b1\u03b3\u03ae \u03c8\u03b5\u03c5\u03b4\u03c9\u03bd\u03cd\u03bc\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7
+#EN: Cancel
+ChangeNameHUDPanel.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Display name as:
+ChangeNameHUDPanel.nameLabel.text=\u03a0\u03c1\u03bf\u03b2\u03bf\u03bb\u03ae \u03bf\u03bd\u03cc\u03bc\u03b1\u03c4\u03bf\u03c2 \u03c9\u03c2:
+#EN: OK
+ChangeNameHUDPanel.okButton.text=\u039f\u039a
+#EN: Name:
+ConeOfSilenceComponentProperties.jLabel1.text=\u038c\u03bd\u03bf\u03bc\u03b1:
+#EN: Outside Audio Volume:
+ConeOfSilenceComponentProperties.jLabel3.text=\u0395\u03be\u03c9\u03c4\u03b5\u03c1\u03b9\u03ba\u03ae \u03ad\u03bd\u03c4\u03b1\u03c3\u03b7 \u03ae\u03c7\u03bf\u03c5:
+#EN: Bounds:
+ConeOfSilenceComponentProperties.jLabel4.text=\u038c\u03c1\u03b9\u03b1:
+#EN: Show Bounds
+ConeOfSilenceComponentProperties.showBoundsCheckBox.text=\u03a0\u03c1\u03bf\u03b2\u03bf\u03bb\u03ae \u039f\u03c1\u03af\u03c9\u03bd
+#EN: Specify Box:
+ConeOfSilenceComponentProperties.specifyBoxRadioButton.text=\u03a0\u03c1\u03bf\u03c3\u03b4\u03b9\u03bf\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2 \u03ba\u03bf\u03c5\u03c4\u03b9\u03bf\u03cd:
+#EN: Specify Radius:
+ConeOfSilenceComponentProperties.specifyRadiusRadioButton.text=\u03a0\u03c1\u03bf\u03c3\u03b4\u03b9\u03bf\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2 \u03b1\u03ba\u03c4\u03af\u03bd\u03b1\u03c2:
+#EN: Use Object Bounds:
+ConeOfSilenceComponentProperties.useCellBoundsRadioButton.text=\u03a7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7 \u03bf\u03c1\u03b9\u03ce\u03bd \u0391\u03bd\u03c4\u03b9\u03ba\u03b5\u03b9\u03bc\u03ad\u03bd\u03bf\u03c5:
+#EN: Cone of Silence
+Cone_of_Silence=\u039a\u03ce\u03bd\u03bf\u03c2 \u03b7\u03c3\u03c5\u03c7\u03af\u03b1\u03c2
+#EN: ConeOfSilence
+ConeOfSilence=ConeOfSilence
+#EN: Surrounds area with a Cone of Silence
+Cone_of_Silence_Description=\u03a7\u03c1\u03ae\u03c3\u03b7 \u039a\u03ce\u03bd\u03bf\u03c5 \u0397\u03c3\u03c5\u03c7\u03af\u03b1\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03c0\u03b5\u03c1\u03b9\u03bf\u03c7\u03ae
+#EN: Content Upload Error
+Content_Upload_Error=\u039b\u03ac\u03b8\u03bf\u03c2 \u03ba\u03b1\u03c4\u03ac \u03c4\u03bf \u03b1\u03bd\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 \u03c0\u03b5\u03c1\u03b9\u03b5\u03c7\u03bf\u03bc\u03ad\u03bd\u03bf\u03c5
+#EN: Add...
+InProgressButtonPanel.addButton.text=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7...
+#EN: Hang Up
+InProgressButtonPanel.hangUpButton.text=\u03a4\u03b5\u03c1\u03bc\u03b1\u03c4\u03b9\u03bc\u03cc\u03c2 \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2
+#EN: Hold
+InProgressButtonPanel.holdButton.text=\u039a\u03c1\u03ac\u03c4\u03b7\u03bc\u03b1
+#EN: Leave
+InProgressButtonPanel.leaveButton.text=\u0391\u03c0\u03bf\u03c7\u03ce\u03c1\u03b7\u03c3\u03b7
+#EN: Invite
+Invite=\u03a0\u03c1\u03cc\u03c3\u03ba\u03bb\u03b7\u03c3\u03b7
+#EN: Large
+Large=\u039c\u03b5\u03b3\u03ac\u03bb\u03bf
+#EN: Master volume
+Master_Volume=\u039a\u03cd\u03c1\u03b9\u03b1 \u03ad\u03bd\u03c4\u03b1\u03c3\u03b7
+#EN: Volume
+Microphone_Level=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7
+#EN: Mute
+Mute=\u03a3\u03af\u03b3\u03b1\u03c3\u03b7
+#EN: Avatar Names
+NamePropertiesHUDPanel.avatarNamesLabel.text=\u039f\u03bd\u03cc\u03bc\u03b1\u03c4\u03b1 Avatar
+#EN: Cancel
+NamePropertiesHUDPanel.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Font size:
+NamePropertiesHUDPanel.myFontSizeLabel.text=\u039c\u03ad\u03b3\u03b5\u03b8\u03bf\u03c2 \u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03bf\u03c3\u03b5\u03b9\u03c1\u03ac\u03c2:
+#EN: OK
+NamePropertiesHUDPanel.okButton.text=\u039f\u039a
+#EN: Font size:
+NamePropertiesHUDPanel.otherFontSizeLabel.text=\u039c\u03ad\u03b3\u03b5\u03b8\u03bf\u03c2 \u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03bf\u03c3\u03b5\u03b9\u03c1\u03ac\u03c2:
+#EN: Show my name
+NamePropertiesHUDPanel.showMyNameCheckBox.text=\u0394\u03b5\u03af\u03be\u03b5 \u03c4\u03bf \u03cc\u03bd\u03bf\u03bc\u03b1 \u03bc\u03bf\u03c5
+#EN: Show other's names
+NamePropertiesHUDPanel.showOtherNamesCheckBox.text=\u0394\u03b5\u03af\u03be\u03b5 \u03c4\u03b1 \u03bf\u03bd\u03cc\u03bc\u03b1\u03c4\u03b1 \u03c4\u03c9\u03bd \u03ac\u03bb\u03bb\u03c9\u03bd
+#EN: Name is already being used!
+Name_Used=\u03a4\u03bf \u03cc\u03bd\u03bf\u03bc\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03ae\u03b4\u03b7 \u03c3\u03b5 \u03c7\u03c1\u03ae\u03c3\u03b7!
+#EN: Non-existent file {0}
+Nonexistent_File=\u0391\u03bd\u03cd\u03c0\u03b1\u03c1\u03ba\u03c4\u03bf \u03b1\u03c1\u03c7\u03b5\u03af\u03bf {0}
+#EN: Pause
+Pause=\u03a0\u03b1\u03cd\u03c3\u03b7
+#EN: Personal phone
+Personal_phone=\u03a0\u03c1\u03bf\u03c3\u03c9\u03c0\u03b9\u03ba\u03cc \u03c4\u03b7\u03bb\u03ad\u03c6\u03c9\u03bd\u03bf
+#EN: Play
+Play=\u0391\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03b3\u03c9\u03b3\u03ae
+#EN: Call is visible, not audible to others
+PrivacyPanel.privacyDescriptionLabel.text=\u0397 \u03ba\u03bb\u03ae\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bf\u03c1\u03b1\u03c4\u03ae, \u03c7\u03c9\u03c1\u03af\u03c2 \u03bd\u03b1 \u03b1\u03ba\u03bf\u03cd\u03b3\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03bf\u03c5\u03c2 \u03ac\u03bb\u03bb\u03bf\u03c5\u03c2
+#EN: Private
+PrivacyPanel.privateRadioButton.text=\u0399\u03b4\u03b9\u03c9\u03c4\u03b9\u03ba\u03cc
+#EN: Secret
+PrivacyPanel.secretRadioButton.text=\u039c\u03c5\u03c3\u03c4\u03b9\u03ba\u03cc
+#EN: Call is visible, not audible to others
+Private_Description=\u0397 \u03ba\u03bb\u03ae\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bf\u03c1\u03b1\u03c4\u03ae, \u03c7\u03c9\u03c1\u03af\u03c2 \u03bd\u03b1 \u03b1\u03ba\u03bf\u03cd\u03b3\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03bf\u03c5\u03c2 \u03ac\u03bb\u03bb\u03bf\u03c5\u03c2
+#EN: Volume for {0} users
+Private_Volume_For_Multiple=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7 \u03b3\u03b9\u03b1 {0} \u03c7\u03c1\u03ae\u03c3\u03c4\u03b5\u03c2
+#EN: Volume for {0}
+Private_Volume_For_Single=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7 \u03b3\u03b9\u03b1 {0}
+#EN: Volume
+Private_Volume=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7
+#EN: Call is heard by everyone nearby
+Public_Description=\u0397 \u03ba\u03bb\u03ae\u03c3\u03b7 \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9 \u03b1\u03bd\u03c4\u03b9\u03bb\u03b7\u03c0\u03c4\u03ae \u03b1\u03c0\u03cc \u03bf\u03c0\u03bf\u03b9\u03bf\u03bd\u03b4\u03ae\u03c0\u03bf\u03c4\u03b5 \u03ba\u03bf\u03bd\u03c4\u03ac
+#EN: Regular
+Regular=\u039a\u03b1\u03bd\u03bf\u03bd\u03b9\u03ba\u03cc
+#EN: Resume
+Resume=\u03a3\u03c5\u03bd\u03ad\u03c7\u03b5\u03b9\u03b1
+#EN: Call cannot be seen or heard by others
+Secret_Description=\u0397 \u03ba\u03bb\u03ae\u03c3\u03b7 \u03b4\u03b5\u03bd \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9 \u03b1\u03bd\u03c4\u03b9\u03bb\u03b7\u03c0\u03c4\u03ae \u03b1\u03c0\u03cc \u03ac\u03bb\u03bb\u03bf\u03c5\u03c2
+#EN: Small
+Small=\u039c\u03b9\u03ba\u03c1\u03cc
+#EN: Softphone
+Softphone=Softphone
+#EN: Sphere with radius {0}
+Sphere_With_Radius=\u03a3\u03c6\u03ac\u03b9\u03c1\u03b1 \u03bc\u03b5 \u03b1\u03ba\u03c4\u03af\u03bd\u03b1 {0}
+#EN: Stop
+Stop=\u0394\u03b9\u03b1\u03ba\u03bf\u03c0\u03ae
+#EN: Text Chat...
+Text_Chat...=\u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1 \u03ba\u03b5\u03b9\u03bc\u03ad\u03bd\u03bf\u03c5...
+#EN: Transferring call...
+Transferring_Call=\u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac \u03ba\u03bb\u03ae\u03c3\u03b7\u03c2...
+#EN: Transfer
+Transfer=\u039c\u03b5\u03c4\u03ac\u03c6\u03bf\u03c1\u03ac
+#EN: Treatment started successfully
+Treatment_Started=\u03a0\u03b7\u03b3\u03ae \u03ae\u03c7\u03bf\u03c5 \u03be\u03b5\u03ba\u03af\u03bd\u03b7\u03c3\u03b5 \u03b5\u03c0\u03b9\u03c4\u03c5\u03c7\u03ce\u03c2
+#EN: Failed to upload {0}\n{1}
+Upload_Failed_Exception=\u0391\u03c0\u03bf\u03c4\u03c5\u03c7\u03b9\u03b1 \u03ba\u03b1\u03c4\u03b1 \u03c4\u03bf \u03b1\u03bd\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 : {0}\n{1}
+#EN: Failed to upload {0}
+Upload_Failed=\u0391\u03c0\u03bf\u03c4\u03c5\u03c7\u03b9\u03b1 \u03ba\u03b1\u03c4\u03b1 \u03c4\u03bf \u03b1\u03bd\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 : {0}
+#EN: Uploading {0}
+Uploading_Treatment=\u0391\u03bd\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 {0}
+#EN: Edit
+UserListHUDPanel.editButton.toolTipText=\u0395\u03c0\u03b5\u03be\u03b5\u03c1\u03b3\u03b1\u03c3\u03af\u03b1
+#EN: Goto User
+UserListHUDPanel.gotoUserButton.toolTipText=\u03a4\u03b7\u03bb\u03b5\u03bc\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ac \u03c3\u03c4\u03bf\u03bd \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7
+#EN: Mute
+UserListHUDPanel.muteButton.toolTipText=\u03a3\u03af\u03b3\u03b1\u03c3\u03b7
+#EN: Phone Chat
+UserListHUDPanel.phoneButton.toolTipText=\u03a4\u03b7\u03bb\u03b5\u03c6\u03c9\u03bd\u03b9\u03ba\u03ae \u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1
+#EN: Properties
+UserListHUDPanel.propertiesButton.toolTipText=\u0399\u03b4\u03b9\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2
+#EN: Text Chat
+UserListHUDPanel.textChatButton.toolTipText=\u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1 \u039a\u03b5\u03b9\u03bc\u03ad\u03bd\u03bf\u03c5
+#EN: Voice Chat
+UserListHUDPanel.voiceChatButton.toolTipText=\u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1 \u03c6\u03c9\u03bd\u03ae\u03c2
+#EN: Volume for:
+UserListHUDPanel.volumeLabel.text=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7 \u03b3\u03b9\u03b1:
+#EN: User Properties
+User_Properties=\u0399\u03b4\u03b9\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2 \u03c7\u03c1\u03ae\u03c3\u03c4\u03b7
+#EN: Users
+Users=\u03a7\u03c1\u03ae\u03c3\u03c4\u03b5\u03c2
+#EN: Voice Chat
+Voice_Chat=\u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1 \u03a6\u03c9\u03bd\u03ae\u03c2
+#EN: Voice Chat...
+Voice_Chat...=\u03a3\u03c5\u03bd\u03bf\u03bc\u03b9\u03bb\u03af\u03b1 \u03a6\u03c9\u03bd\u03ae\u03c2...
+#EN: Volume:
+VolumeControlJFrame.jLabel1.text=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7:
+#EN: Volume Control
+VolumeControlJFrame.title=\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03ad\u03bd\u03c4\u03b1\u03c3\u03b7\u03c2
+#EN: Volume
+Volume=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7
+#EN: Volume...
+Volume...=\u0388\u03bd\u03c4\u03b1\u03c3\u03b7...

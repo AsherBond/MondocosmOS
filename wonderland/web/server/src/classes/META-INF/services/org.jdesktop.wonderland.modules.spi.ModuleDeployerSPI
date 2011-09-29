@@ -1,0 +1,3 @@
+org.jdesktop.wonderland.webserver.WebLibDeployer
+org.jdesktop.wonderland.webserver.WebDeployer
+org.jdesktop.wonderland.webserver.SystemPropertyDeployer

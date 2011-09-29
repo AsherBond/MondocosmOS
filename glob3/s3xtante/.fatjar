@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Jun 24 18:28:35 CEST 2011
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=s3xtante_fat.jar
+manifest.mergeall=true
+manifest.mainclass=es.unex.s3xtante.S3xtante
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|igolibs>;<po|euclid>;<po|igolibs>;<po|igolibs>;<po|algorithms>;<po|libMath>;<po|sextante>;<po|libMath>;<po|sextante_gui>;<po|sextante>;<po|libMath>;<po|libMath>;<po|libMath>;<po|sextante>;<po|libMath>;<po|sextante_gui>;<po|sextante>;<po|libMath>;<po|libMath>;<jar|jai_codec.jar>;<jar|jai_core.jar>
+includes=

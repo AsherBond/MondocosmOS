@@ -1,0 +1,94 @@
+#EN: WARNING\nThe contents of the following directories will be deleted: \n\n    {0}\n    {1}\n    {2}\n\nWould you like to continue?
+Clear_Cache_Warning_Message=\u4e0b\u9762\u76ee\u5f55\u91cc\u7684\u5185\u5bb9\u5c06\u88ab\u5220\u9664: \n\n    {0}\n    {1}\n    {2}\n\n\u60a8\u60f3\u7ee7\u7eed\u5417?
+#EN: Confirm delete directories
+Confirm_Delete_Directories=\u786e\u8ba4\u5220\u9664\u76ee\u5f55
+#EN: Connecting...
+Connecting...=\u8fde\u63a5...
+#EN: Downloading module: {0} ({1}%)
+Downloading\ module=\u4e0b\u8f7d\u6a21\u5757: {0} ({1}%)
+#EN: Authenticated User
+EitherLoginPanel.authLoginRB.text=\u5df2\u9a8c\u8bc1\u7684\u7528\u6237
+#EN: Guest
+EitherLoginPanel.guestLoginRB.text=\u5ba2\u4eba
+#EN: Connect as:
+EitherLoginPanel.jLabel1.text=\u8fde\u63a5\u4e3a:
+#EN: Error connecting: {0}
+Error_Connecting=\u8fde\u63a5\u9519\u8bef: {0}
+#EN: Audio
+LoginOptionsFrame.audioPanel.TabConstraints.tabTitle=\u97f3\u9891
+#EN: Cache
+LoginOptionsFrame.cachePanel.TabConstraints.tabTitle=\u9ad8\u901f\u7f13\u5b58
+#EN: Cancel
+LoginOptionsFrame.cancelButton.text=\u53d6\u6d88
+#EN: Clear Cache
+LoginOptionsFrame.clearCacheButton.text=\u6e05\u9664\u9ad8\u901f\u7f13\u5b58
+#EN: Port:
+LoginOptionsFrame.httpProxyPortTFLabel.text=\u7aef\u53e3:
+#EN: HTTP Proxy:
+LoginOptionsFrame.httpProxyTFLabel.text=HTTP\u4ee3\u7406:
+#EN: Port:
+LoginOptionsFrame.httpsProxyPortTFLabel.text=\u7aef\u53e3:
+#EN: HTTPS Proxy:
+LoginOptionsFrame.httpsProxyTFLabel.text=HTTPS\u4ee3\u7406:
+#EN: Local IP Address:
+LoginOptionsFrame.jLabel1.text=\u672c\u5730IP\u5730\u5740:
+#EN: Cache Directory:
+LoginOptionsFrame.jLabel2.text=\u9ad8\u901f\u7f13\u5b58\u76ee\u5f55:
+#EN: Phone number:
+LoginOptionsFrame.jLabel3.text=\u7535\u8bdd\u53f7\u7801:
+#EN: Audio Quality:
+LoginOptionsFrame.jLabel4.text=\u97f3\u9891\u8d28\u91cf:
+#EN: Use this phone number instead of the softphone
+LoginOptionsFrame.jLabel5.text=\u4f7f\u7528\u8fd9\u4e2a\u7535\u8bdd\u53f7\u7801\uff0c\u800c\u4e0d\u662f\u8f6f\u7535\u8bdd
+#EN: Network Interface
+LoginOptionsFrame.jPanel1.border.title=\u7f51\u7edc\u63a5\u53e3
+#EN: Web Proxies
+LoginOptionsFrame.jPanel2.border.title=\u7f51\u7ad9\u4ee3\u7406
+#EN: Network
+LoginOptionsFrame.networkPanel.TabConstraints.tabTitle=\u7f51\u7edc
+#EN: No proxy
+LoginOptionsFrame.noProxyRB.text=\u65e0\u4ee3\u7406
+#EN: No Proxy For:
+LoginOptionsFrame.noProxyTFLabel.text=\u4e0d\u4f7f\u7528\u4ee3\u7406:
+#EN: OK
+LoginOptionsFrame.okButton.text=OK
+#EN: Use system proxy settings
+LoginOptionsFrame.systemProxyRB.text=\u4f7f\u7528\u7cfb\u7edf\u4ee3\u7406\u8bbe\u7f6e
+#EN: Advanced Properties
+LoginOptionsFrame.title=\u9ad8\u7ea7\u5c5e\u6027
+#EN: Manual proxy configuration:
+LoginOptionsFrame.wlProxyRB.text=\u624b\u52a8\u4ee3\u7406\u914d\u7f6e:
+#EN: Full Name:
+NoAuthLoginPanel.naFullNameLabel.text=\u5168\u540d:
+#EN: Server:
+NoAuthLoginPanel.naServerLabel.text=\u670d\u52a1\u5668:
+#EN: Username:
+NoAuthLoginPanel.naUsernameLabel.text=\u7528\u6237\u540d:
+#EN: Password:
+WebServiceAuthLoginPanel.naFullNameLabel.text=\u5bc6\u7801:
+#EN: Server:
+WebServiceAuthLoginPanel.naServerLabel.text=\u670d\u52a1\u5668:
+#EN: Username:
+WebServiceAuthLoginPanel.naUsernameLabel.text=\u7528\u6237\u540d:
+#EN: Advanced...
+WonderlandLoginDialog.advancedButton.text=\u9ad8\u7ea7...
+#EN: Cancel
+WonderlandLoginDialog.cancelButton.text=\u53d6\u6d88
+#EN: Waiting for external login...
+WonderlandLoginDialog.jLabel1.text=\u7b49\u5f85\u5916\u90e8\u767b\u5f55...
+#EN: Login
+WonderlandLoginDialog.loginButton.text=\u767b\u5f55
+#EN: Status:
+WonderlandLoginDialog.statusLabel.text=\u72b6\u6001:
+#EN: Log in
+WonderlandLoginDialog.tagLineLabel.text=\u767b\u5f55
+#EN: Password:
+WonderlandLoginDialog.upPasswordLabel.text=\u5bc6\u7801:
+#EN: Server:
+WonderlandLoginDialog.upServerLabel.text=\u670d\u52a1\u5668:
+#EN: Username:
+WonderlandLoginDialog.upUsernameLabel.text=\u7528\u6237\u540d:
+#EN: Server:
+WonderlandLoginDialog.webServerLabel.text=\u670d\u52a1\u5668:
+#EN: Open Wonderland
+WonderlandLoginDialog.worldNameLabel.text=\u5f00\u6e90\u4ed9\u5883

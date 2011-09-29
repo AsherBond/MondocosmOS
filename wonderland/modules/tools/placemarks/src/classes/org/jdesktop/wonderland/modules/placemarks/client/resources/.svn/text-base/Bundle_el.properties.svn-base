@@ -1,0 +1,70 @@
+#EN: 0
+AddEditPlacemarkJDialog.angleTextField.text=0
+#EN: Cancel
+AddEditPlacemarkJDialog.cancelButton.text=\u0391\u03ba\u03cd\u03c1\u03c9\u03c3\u03b7
+#EN: Add Placemark
+AddEditPlacemarkJDialog.jLabel1.text=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 Placemark
+#EN: Placemark Name:
+AddEditPlacemarkJDialog.jLabel2.text=Placemark Name:
+#EN: Server URL:
+AddEditPlacemarkJDialog.jLabel3.text=Server URL:
+#EN: Location:
+AddEditPlacemarkJDialog.jLabel4.text=\u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1:
+#EN: X:
+AddEditPlacemarkJDialog.jLabel5.text=X:
+#EN: Y:
+AddEditPlacemarkJDialog.jLabel6.text=Y:
+#EN: Z:
+AddEditPlacemarkJDialog.jLabel7.text=Z:
+#EN: Look Direction:
+AddEditPlacemarkJDialog.jLabel8.text=\u039a\u03b1\u03c4\u03b5\u03cd\u03b8\u03c5\u03bd\u03c3\u03b7 \u03bf\u03c0\u03c4\u03b9\u03ba\u03ae\u03c2 :
+#EN: degrees
+AddEditPlacemarkJDialog.jLabel9.text=\u03b2\u03b1\u03b8\u03bc\u03bf\u03af
+#EN: OK
+AddEditPlacemarkJDialog.okButton.text=\u039f\u039a
+#EN: Add Placemark
+AddEditPlacemarkJDialog.title=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 Placemark
+#EN: 0
+AddEditPlacemarkJDialog.xTextField.text=0
+#EN: 0
+AddEditPlacemarkJDialog.yTextField.text=0
+#EN: 0
+AddEditPlacemarkJDialog.zTextField.text=0
+#EN: Add Placemark
+Add_Placemark=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 Placemark
+#EN: Add Placemark...
+Add_Placemark...=Add Placemark...
+#EN: Edit Placemark
+Edit_Placemark=\u0395\u03c0\u03b5\u03be\u03b5\u03c1\u03b3\u03b1\u03c3\u03af\u03b1 Placemark
+#EN: Add...
+EditPlacemarksJFrame.addButton.text=\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7...
+#EN: Close
+EditPlacemarksJFrame.closeButton.text=\u039a\u03bb\u03b5\u03af\u03c3\u03b9\u03bc\u03bf
+#EN: Edit...
+EditPlacemarksJFrame.editButton.text=\u0395\u03c0\u03b5\u03be\u03b5\u03c1\u03b3\u03b1\u03c3\u03af\u03b1...
+#EN: Remove
+EditPlacemarksJFrame.removeButton.text=\u0394\u03b9\u03b1\u03b3\u03c1\u03b1\u03c6\u03ae
+#EN: Manage Placemarks
+EditPlacemarksJFrame.title=\u0394\u03b9\u03b1\u03c7\u03b5\u03af\u03c1\u03b9\u03c3\u03b7 Placemarks
+#EN: Location
+Location=\u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1
+#EN: Look Angle
+Look_Angle=\u0393\u03c9\u03bd\u03af\u03b1 \u039f\u03c0\u03c4\u03b9\u03ba\u03ae\u03c2
+#EN: {0} degrees
+Look_Angle_Value={0} \u03b2\u03b1\u03b8\u03bc\u03bf\u03af
+#EN: Manage Placemarks...
+Manage_Placemarks...=Manage Placemarks...
+#EN: Name
+Name=\u038c\u03bd\u03bf\u03bc\u03b1
+#EN: Placemark Name:
+PlacemarkComponentProperties.jLabel1.text_1=\u038c\u03bd\u03bf\u03bc\u03b1\u03c3\u03af\u03b1 Placemark:
+#EN: Placemark Name
+PlacemarkComponentProperties.jLabel1.text=\u038c\u03bd\u03bf\u03bc\u03b1\u03c3\u03af\u03b1 Placemark
+#EN: Create a placemark at the location of this object
+Placemark_Description=\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03af\u03b1 Placemark \u03c3\u03c4\u03b7\u03bd \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1 \u03b1\u03c5\u03c4\u03bf\u03cd \u03c4\u03bf\u03c5 \u03b1\u03bd\u03c4\u03b9\u03ba\u03b5\u03b9\u03bc\u03ad\u03bd\u03bf\u03c5
+#EN: Placemark
+Placemark=Placemark
+#EN: Server URL
+Server_URL=Server URL
+#EN: Starting Location
+Starting_Location=\u0391\u03c1\u03c7\u03b9\u03ba\u03ae \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1

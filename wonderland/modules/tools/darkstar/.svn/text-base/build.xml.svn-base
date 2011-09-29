@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-darkstar-server" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-darkstar-server}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+    <property name="web.dir" location="${modules.dir}/../web"/>
+
+    <property name="module.name" value="darkstar"/>
+    <property name="module.src" value="org/jdesktop/wonderland/modules/darkstar"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.darkstar"/>
+    <property name="module.jarname" value="${module.name}"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <!-- import web build file -->
+    <import file="${web.dir}/build-tools/build-scripts/web-build.xml"/>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${web.dir}/asset/dist/wonderland-asset-core.jar"/>
+        <path location="${web.dir}/checksums/dist/wonderland-checksums-core.jar"/>
+        <path location="${web.dir}/modules/dist/wonderland-modules-core.jar"/>
+        <path location="${web.dir}/runner/dist/wonderland-runner-api.jar"/>
+        <path location="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+        <path location="${web.dir}/wfs/dist/wonderland-wfs.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-client.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-common.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path location="${modules.dir}/foundation/darkstar-api/build/lib/darkstar-api.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-web.classpath">
+        <path location="${web.dir}/runner/dist/wonderland-runner-api.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-client.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-common.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path location="${web.dir}/wfs/dist/wonderland-wfs.jar"/>
+        <path location="${modules.dir}/foundation/darkstar-api/build/lib/darkstar-api.jar"/>
+    </pathconvert>
+    
+    <target name="build" depends="-module-init, -module-compile-server, -darkstar-compile-web"/>
+
+    <target name="-darkstar-compile-web" depends="-module-init, -module-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/web/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-web.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.name}.jar"
+                moduleDescription="Darkstar server"
+                builddir="${build.dir}">
+
+            <!-- include core libraries -->
+            <part name="runner" dir="${core.dir}/dist/">
+                <include name="*.zip"/>
+            </part>
+
+            <part name="weblib">
+                <jar name="darkstar-runner" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <zipfileset dir="${javasrc.dir}">
+                        <include name="META-INF/**"/>
+                    </zipfileset>
+                    
+                </jar>
+            </part>
+
+            <part name="web">
+                <jar name="darkstarserver.war">
+                    <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                        <include name="${module.src}/web/**"/>
+                        <include name="${module.src}/common/**"/>
+                    </zipfileset>
+
+                    <fileset dir="${current.dir}/web"/>
+                </jar>
+            </part>
+
+            <part name="webremote">
+                <jar name="darkstarserver-remote.war">
+                    <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                        <include name="${module.src}/web/resources/DarkstarRunnerActionResource*.class"/>
+                        <include name="${module.src}/common/**"/>
+                    </zipfileset>
+
+                    <fileset dir="${current.dir}/webremote"/>
+                </jar>
+            </part>
+        </module>
+    </target>
+
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

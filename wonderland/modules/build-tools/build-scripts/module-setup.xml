@@ -1,0 +1,17 @@
+<project basedir="." default="..." name="module.setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="module.build-scripts.dir" file="${ant.file.module.setup}"/>
+    
+    <!-- default directories -->
+    <property name="module.dir" location="${module.build-scripts.dir}/../.."/>
+    <property name="top.dir" location="${module.dir}/.."/>
+    
+    <!-- import the main setup file -->
+    <import file="${top.dir}/build-tools/build-scripts/setup.xml"/>
+    
+    <!-- import core properties -->
+    <property file="${module.build-scripts.dir}/module.properties"/>
+    
+    <!-- import core classpath -->
+    <import file="${module.build-scripts.dir}/classpath.xml"/>
+</project>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1999/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/common
+END
+ContentNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/1999/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/common/ContentNode.java
+END
+ContentResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1999/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/common/ContentResource.java
+END
+ContentCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/1999/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/common/ContentCollection.java
+END
+ContentRepositoryException.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/1999/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/common/ContentRepositoryException.java
+END

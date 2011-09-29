@@ -1,0 +1,23 @@
+K 10
+svn:ignore
+V 174
+jme-bundle-readme.txt
+sgs
+linux
+jme.svn
+jme.src
+downloads
+voicebridge
+voicelib
+macosx
+jme
+jbullet.zip
+bridgemonitor
+.cvsignore
+dir_conflicts.prej
+win32
+solaris
+win64
+linux64
+
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4732/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4732/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4603/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4603/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_zh_CN.properties
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3400/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4732/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4613/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4603/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_de.properties
+END
+Bundle_en_GB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3590/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/resources/Bundle_en_GB.properties
+END

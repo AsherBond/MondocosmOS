@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Default deployment plan
+-->
+
+<DeploymentPlan>
+    <entry>
+        <runnerClass>org.jdesktop.wonderland.webserver.WebServerRunner</runnerClass>
+        <runnerName>Web Administration Server</runnerName>
+    </entry>
+    <entry>
+        <runnerClass>org.jdesktop.wonderland.modules.darkstar.server.DarkstarRunnerImpl</runnerClass>
+        <runnerName>Darkstar Server</runnerName>
+    </entry>
+    <entry>
+        <runnerClass>org.jdesktop.wonderland.modules.voicebridge.server.VoicebridgeRunner</runnerClass>
+        <runnerName>Voice Bridge</runnerName>
+    </entry>
+    <entry>
+        <runnerClass>org.jdesktop.wonderland.modules.sasxremwin.weblib.SasProviderRunnerImpl</runnerClass>
+        <runnerName>Shared Application Server</runnerName>
+    </entry>
+</DeploymentPlan>

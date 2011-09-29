@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="xremwin" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.xremwin}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/xremwin"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.xremwin"/>
+    <property name="module.jarname" value="xremwin"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-common.classpath">
+      <path location="${current.dir}/../appbase/build/client/appbase-client.jar"/>
+      <path location="${current.dir}/../appbase/build/client/appbase-client-cell.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-client.classpath">
+      <path location="${current.dir}/../appbase/build/client/appbase-client.jar"/>
+      <path location="${current.dir}/../appbase/build/client/appbase-client-cell.jar"/>
+      <path location="${current.dir}/lib/escher-0.2.2.lg.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-server.classpath">
+      <path location="${current.dir}/../appbase/build/server/appbase-server.jar"/>
+      <path location="${current.dir}/../security/build/lib/server/security-server.jar"/>
+    </pathconvert>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+                                                -module-jar-common"/>
+
+    <target name="-module-jar-common" depends="-module-compile-common">
+      <mkdir dir="${current.dir}/build/lib"/>
+      <jar destfile="${current.dir}/build/lib/xremwin-common.jar">
+        <fileset dir="${build.classes.dir}">
+          <include name="${module.src}/common/**"/>
+        </fileset>
+      </jar>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="xremwin" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="X11 shared application library" builddir="${build.dir}">
+  
+           <client dir="${current.dir}/lib">
+             <include name="escher-0.2.2.lg.jar"/>
+             <clientjar name="xremwin-client" basedir="${build.classes.dir}">
+               <include name="${module.src}/client/**"/>
+               <include name="${module.src}/common/**"/>
+               <exclude name="${module.src}/client/cell/**"/>
+               <exclude name="${module.src}/common/cell**"/>
+             </clientjar>
+             <clientjar name="xremwin-client-cell" basedir="${build.classes.dir}">
+               <include name="${module.src}/client/cell/**"/>
+               <include name="${module.src}/common/cell/**"/>
+               <fileset dir="${current.dir}/src/classes">
+                   <include name="${module.src}/client/resources/**/*.png"/>
+                   <include name="${module.src}/common/**/*.properties"/>
+               </fileset>
+             </clientjar>
+           </client> 
+    
+           <server>
+                <serverjar name="xremwin-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/common/**/*.properties"/>
+                    </fileset>
+                </serverjar>
+            </server>
+            
+            <art dir="${current.dir}/art"/>
+        </module>
+    </target>                                                       
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

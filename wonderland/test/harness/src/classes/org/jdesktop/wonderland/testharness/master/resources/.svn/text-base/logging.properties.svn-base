@@ -1,0 +1,55 @@
+############################################################
+#  \tLogging Configuration File
+#
+# java -Djava.util.logging.config.file=logging.properties
+############################################################
+
+############################################################
+#  \tGlobal properties
+############################################################
+
+# "handlers" specifies a comma separated list of log Handler 
+# classes.  These handlers will be installed during VM startup.
+# Note that these classes must be on the system classpath.
+# By default we only configure a ConsoleHandler, which will only
+# show messages at the INFO and above levels.
+#handlers = java.util.logging.ConsoleHandler
+handlers = java.util.logging.FileHandler, java.util.logging.ConsoleHandler
+#handlers = java.util.logging.FileHandler
+
+# Default global logging level.
+# This specifies which kinds of events are logged across
+# all loggers.  For any given facility this global level
+# can be overriden by a facility specific level
+# Note that the ConsoleHandler also has a separate level
+# setting to limit messages printed to the console.
+#.level = INFO
+.level = INFO
+
+# Limit the messages that are printed on the console to at least this level:
+java.util.logging.ConsoleHandler.level = INFO
+java.util.logging.FileHandler.level = ALL
+
+# Specify the console log formatter:
+#java.util.logging.ConsoleHandler.formatter = com.sun.gi.utils.OneLineFormatter
+
+java.util.logging.FileHandler.limit = 10000000
+java.util.logging.FileHandler.count = 1
+java.util.logging.FileHandler.pattern = log/master-%g.log
+
+############################################################
+# Facility specific properties.
+############################################################
+
+org.jdesktop.wonderland.level=INFO
+
+com.sun.mpk20.voicelib.level = WARNING
+sun.awt.level = WARNING
+java.awt.level = WARNING
+javax.swing.level = WARNING
+com.sun.sgs.level = WARNING
+wonderland.config.level = INFO
+com.jme.level = WARNING
+
+#com.sun.sgs.impl.service.channel.level=ALL
+#com.sun.sgs.impl.service.session.level=ALL

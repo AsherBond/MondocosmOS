@@ -1,0 +1,92 @@
+<project basedir="." default="..." name="core.package">
+    <!-- 
+        imported from core-build.xml, so we can assume the common build
+        packages and core properties are imported already.
+    -->
+    <target name="-core-package-server" depends="-setup-package-server">
+        <mkdir dir="${dist.dir}"/>
+        
+        <zip zipfile="${dist.dir}/wonderland-server-dist.zip">
+            <!-- include entire Darkstar server .zip -->
+            <zipfileset src="${core.lib.zip.dir}/sgs-server.zip" prefix="core/lib/sgs">
+                <include name="sgs-server-dist-${core.sgs.version}/lib/**"/>
+            </zipfileset>
+            
+            <!-- include jme.jar for bounds checking -->
+            <zipfileset dir="${core.jme.dir}" prefix="core/lib/jme20">
+                <include name="target/jme.jar"/>
+            </zipfileset>
+            
+            <!-- include wonderland server and common directories -->
+            <zipfileset dir="${build.lib.dir}" prefix="core/lib">
+                <include name="wonderland-common.jar"/>
+                <include name="wonderland-server.jar"/>
+            </zipfileset>
+
+            <!-- other necessary common jars -->
+            <zipfileset dir="${core.common.dir}" prefix="core/lib/common">
+                <include name="scannotation-1.0.2.jar"/>
+                <include name="javassist.jar"/>
+                <include name="vecmath.jar"/>
+            </zipfileset>
+
+            <!-- include ant files -->
+            <zipfileset dir="${core.build-scripts.dir}" prefix="core/build-tools/build-scripts">
+                <include name="core-setup.xml"/>
+                <include name="classpath.xml"/>
+                <include name="core.properties"/>
+            </zipfileset>
+            
+            <zipfileset dir="${core.build-scripts.dir}/../run-scripts" prefix="core/build-tools/run-scripts">
+                <include name="run-server.properties"/>
+                <include name="run-server.xml"/>
+            </zipfileset>
+            
+            <!-- include ant files -->
+            <zipfileset file="${core.build-scripts.dir}/../run-scripts/run-server-main.xml" 
+                        fullpath="run.xml"/>
+            
+            <!-- include wonderland properties -->
+            <zipfileset dir="${src.dir}/darkstar_config" prefix="core">
+                <include name="*.cfg"/>
+            </zipfileset>
+            <zipfileset file="${src.dir}/darkstar_config/sgs-logging.properties" prefix="core/lib/sgs/sgs-server-dist-${core.sgs.version}"/>
+        </zip> 
+    </target>
+
+    <target name="-core-package-client" depends="-setup-package-server">
+        <mkdir dir="${dist.dir}"/>
+
+        <zip zipfile="${dist.dir}/wonderland-client-dist.zip">
+            <!-- include entire Darkstar server .zip -->
+            <zipfileset src="${core.lib.zip.dir}/sgs-client.zip" prefix="core/lib/sgs">
+                <include name="sgs-client-${core.sgs.version}/lib/**"/>
+            </zipfileset>
+
+            <!-- include jme.jar for bounds checking -->
+            <zipfileset dir="${core.jme.dir}" prefix="core/lib/jme20">
+                <include name="target/jme.jar"/>
+            </zipfileset>
+
+            <!-- include wonderland server and common directories -->
+            <zipfileset dir="${build.lib.dir}" prefix="core/lib">
+                <include name="wonderland-common.jar"/>
+                <include name="wonderland-client.jar"/>
+            </zipfileset>
+
+            <!-- other necessary common jars -->
+            <zipfileset dir="${core.common.dir}" prefix="core/lib/common">
+                <include name="scannotation-1.0.2.jar"/>
+                <include name="javassist.jar"/>
+                <include name="mtgame.jar"/>
+            </zipfileset>
+
+            <!-- include ant files -->
+            <zipfileset dir="${core.build-scripts.dir}" prefix="core/build-tools/build-scripts">
+                <include name="core-setup.xml"/>
+                <include name="classpath.xml"/>
+                <include name="core.properties"/>
+            </zipfileset>
+        </zip>
+    </target>
+</project>

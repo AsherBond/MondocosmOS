@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/common
+END
+VolumeConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/common/VolumeConverter.java
+END
+PortalComponentClientState.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/common/PortalComponentClientState.java
+END
+PortalComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4371/trunk/modules/world/portal/src/classes/org/jdesktop/wonderland/modules/portal/common/PortalComponentServerState.java
+END

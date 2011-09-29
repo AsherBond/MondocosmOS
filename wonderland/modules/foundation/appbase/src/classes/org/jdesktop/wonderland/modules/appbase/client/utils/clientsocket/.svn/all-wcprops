@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket
+END
+MasterSocketSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/MasterSocketSet.java
+END
+SlaveClientSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/SlaveClientSocket.java
+END
+MasterClientSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/MasterClientSocket.java
+END
+WriteStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/WriteStatistics.java
+END
+ReadStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/ReadStatistics.java
+END
+ClientSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/ClientSocket.java
+END
+ClientSocketListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4112/trunk/modules/foundation/appbase/src/classes/org/jdesktop/wonderland/modules/appbase/client/utils/clientsocket/ClientSocketListener.java
+END

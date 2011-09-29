@@ -1,0 +1,226 @@
+#EN: Model Import Errors...
+ArtToolsPlugin.modelImportErrorsMI.text=Erreurs d'importation...
+#EN: Choose Directory
+CHOOSE_DIRECTORY=Choisir r\u00e9pertoire
+#EN: Choose Directory for Module jar
+CHOOSE_DIRECTORY_FOR_MODULE_JAR=Choisir le R\u00e9pertoire pour le Module jar
+#EN: Clear All
+CLEAR_ALL=Tout effacer
+#EN: Clear all the warnings for all models
+CLEAR_ALL_THE_WARNINGS_FOR_ALL_MODELS=Effacer tous les avertissements
+#EN: New Module...
+Create_Module=Nouveau Module...
+#EN: Directory
+Directory=R\u00e9pertoire
+#EN: Error compiling model
+Error_Compiling_Model=Erreur durant la compilation du mo\u00e8le
+#EN: Error
+Error=Erreur
+#EN: Model...
+Import_Model...=Mod\u00e8le...
+#EN: Cancel
+ImportSessionFrame.cancelButton.text=Annuler
+#EN: Deploy to server
+ImportSessionFrame.deployToServerB.text=D\u00e9ployer vers serveur
+#EN: Deploy target module to server
+ImportSessionFrame.deployToServerB.toolTipText=D\u00e9ployer le module cible vers le serveur
+#EN: Description :
+ImportSessionFrame.descriptionL.text=Description :
+#EN: Edit
+ImportSessionFrame.editB.text=Edition
+#EN: Edit
+ImportSessionFrame.editPMI.text=Edition
+#EN: Load Model...
+ImportSessionFrame.importModelB.text=Charger le Mod\u00e8le...
+#EN: Loading.... Please wait
+ImportSessionFrame.jLabel4.text=Chargement en cours....
+#EN: Target Server :
+ImportSessionFrame.jLabel5.text=Serveur Cible:
+#EN: File
+ImportSessionFrame.jMenu1.text=Fichier
+#EN: Load Import Group
+ImportSessionFrame.loadImportGroupMI.text=Charger Groupe Import
+#EN: Model List
+ImportSessionFrame.modelListL.text=Liste Mod\u00e8les
+#EN: OK
+ImportSessionFrame.okB.text=OK
+#EN: Remove
+ImportSessionFrame.removeB.text=Enlever
+#EN: Remove the model from the import
+ImportSessionFrame.removeB.toolTipText=Enlever le mod\u00e8le de l'import
+#EN: Remove
+ImportSessionFrame.removePMI.text=Enlever
+#EN: Save as module...
+ImportSessionFrame.saveAsModuleB.text=Sauvegarder comme module...
+#EN: Save the module jar file
+ImportSessionFrame.saveAsModuleB.toolTipText=Sauvegarder le fichier jar du module
+#EN: Save as source...
+ImportSessionFrame.saveAsSrcB.text=Sauvegarder comme source...
+#EN: Create a module source base, with build.xml etc
+ImportSessionFrame.saveAsSrcB.toolTipText=Cr\u00e9ation d'une base de sources pour le module, avec build.xml etc
+#EN: Save Import Group
+ImportSessionFrame.saveImportGroupMI.text=Sauvegarder le Groupe Import
+#EN: MyModule
+ImportSessionFrame.targetModuleTF.text=MonModule
+#EN: Target Name :
+ImportSessionFrame.targetNameL.text=Nom cible :
+#EN: Insert Model
+ImportSessionFrame.title=Ins\u00e9rer Mod\u00e8le
+#EN: Loader Warnings
+LOADER_WARNINGS=Avertissements de chargement
+#EN: Backface culling Enabled
+ModelCellComponentProperties.backfaceCullingEnabledCB.text=Cacher faces AR
+#EN: Graph Optimization Enabled
+ModelCellComponentProperties.graphOptimizationEnabledCB.text=Optimisation du Graphe Permise
+#EN: Graph optimization will flatten the scene graph, removing intermediate nodes.
+ModelCellComponentProperties.graphOptimizationEnabledCB.toolTipText=L'optimisation du graphe va aplatir le graphe de sc\u00e8ne en enlevant les noeuds interm\u00e9diaires.
+#EN: Deployed Model URL
+ModelCellComponentProperties.jLabel1.text=URL du Mod\u00e8le D\u00e9ploy\u00e9
+#EN: Lighting Enabled
+ModelCellComponentProperties.lightingEnabledCB.text=Eclairage Permis
+#EN: Picking Enabled
+ModelCellComponentProperties.pickingEnabledCB.text=Prise Permise
+#EN: Print Scene Graph
+ModelCellComponentProperties.printSceneGraphB.text=Imprimer Graphe Scene
+#EN: Model Component
+Model_Component=Composant du Mod\u00e8le
+#EN: Advanced
+ModelImporterFrame.advancedPanel.TabConstraints.tabTitle=Avanc\u00e9
+#EN: Move with Avatar
+ModelImporterFrame.avatarMoveCB.text=D\u00e9placer avec l'Avatar
+#EN: Basic
+ModelImporterFrame.basicPanel.TabConstraints.tabTitle=Basique
+#EN: Cancel
+ModelImporterFrame.cancelB1.text=Annuler
+#EN: Cancel
+ModelImporterFrame.cancelB.text=Annuler
+#EN: Geometry Statistics...
+ModelImporterFrame.geometryStatsB.text=Statistiques G\u00e9om\u00e9tries...
+#EN: Show the geometry statistics
+ModelImporterFrame.geometryStatsB.toolTipText=Afficher les statistiques de g\u00e9om\u00e9trie
+#EN: Rotation:
+ModelImporterFrame.jLabel10.text=Rotation:
+#EN: X:
+ModelImporterFrame.jLabel11.text=X:
+#EN: Z:
+ModelImporterFrame.jLabel12.text=Z:
+#EN: Y:
+ModelImporterFrame.jLabel13.text=Y:
+#EN: Model File:
+ModelImporterFrame.jLabel1.text=Fichier du Mod\u00e8le:
+#EN: Bounds Center:
+ModelImporterFrame.jLabel25.text=Centre du Bornage:
+#EN: Bounds Size:
+ModelImporterFrame.jLabel26.text=Taille du Bornage:
+#EN: X:
+ModelImporterFrame.jLabel27.text=X:
+#EN: Y:
+ModelImporterFrame.jLabel28.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel29.text=Z:
+#EN: Texture Directory:
+ModelImporterFrame.jLabel2.text=R\u00e9pertoire de Texture:
+#EN: Texture Details:
+ModelImporterFrame.jLabel30.text=Informations Texture:
+#EN: X:
+ModelImporterFrame.jLabel31.text=X:
+#EN: Y:
+ModelImporterFrame.jLabel32.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel33.text=Z:
+#EN: Scale:
+ModelImporterFrame.jLabel3.text=Echelle:
+#EN: Model Name:
+ModelImporterFrame.jLabel5.text=Nom du Mod\u00e8le:
+#EN: X:
+ModelImporterFrame.jLabel6.text=X:
+#EN: Location:
+ModelImporterFrame.jLabel7.text=Emplacement:
+#EN: Y:
+ModelImporterFrame.jLabel8.text=Y:
+#EN: Z:
+ModelImporterFrame.jLabel9.text=Z:
+#EN: The name of the model used in wonderland
+ModelImporterFrame.modelNameTF.toolTipText=Le nom du mod\u00e8le utilis\u00e9 dans Wonderland
+#EN: The model file being imported
+ModelImporterFrame.modelX3dTF.toolTipText=Le fichier de mod\u00e8le qui est import\u00e9
+#EN: OK
+ModelImporterFrame.okB1.text=OK
+#EN: OK
+ModelImporterFrame.okB.text=OK
+#EN: The directory in which the model textures will be placed
+ModelImporterFrame.texturePrefixTF.toolTipText=Le r\u00e9pertoire dans lequel les textures du mod\u00e8le seront plac\u00e9es
+#EN: Model Import
+ModelImporterFrame.title=Importer Mod\u00e8le
+#EN: Model Import Warnings
+MODEL_IMPORT_WARNINGS=Avertissements d'importation
+#EN: Model loading generated warnings\nSee Loader Warnings Window for details
+MODEL_LOADING_GENERATED_WARNINGS=Le chargement a g\u00e9n\u00e9r\u00e9 des avertissements\nVoir fen\u00eatre avertissements pour d\u00e9tails
+#EN: Models
+Models=Mod\u00e8les
+#EN: This module already exists,\nOverwrite ?
+Module_Conflict_Message=Ce module existe d\u00e9j\u00e0,\nVoulez-vous le replacer ?
+#EN: Module Conflict
+Module_Conflict=Conflit de Module
+#EN: Module created in Directory {0}
+Module_Created_In_Directory=Module cr\u00e9\u00e9 dans le R\u00e9pertoire {0}
+#EN: Module Directory exists, replace ?
+Module_Exists_Message=Le R\u00e9pertoire de Modules existe d\u00e9j\u00e0, voulez-vous le remplacer ?
+#EN: Module exists !
+Module_Exists=Le Module existe !\u00e9
+#EN: Failed to create module jar
+Module_JAR_Creation_Error=Echec lors de la cr\u00e9ation du module jar
+#EN: Include Art
+ModuleManagerUI.artCB.text=Inclure l'Art
+#EN: Include art resources in the module
+ModuleManagerUI.artCB.toolTipText=Inclure les ressources d'art dans le module
+#EN: Cancel
+ModuleManagerUI.cancelButton.text=Annuler
+#EN: Choose...
+ModuleManagerUI.chooseDirB.text=Choisir...
+#EN: Client Package
+ModuleManagerUI.clientPackageCB.text=Package Client
+#EN: Common Package
+ModuleManagerUI.commonPackageCB.text=Package Commun
+#EN: Create Module
+ModuleManagerUI.createModuleB.text=Cr\u00e9er Module
+#EN: Create New Module
+ModuleManagerUI.createModulePanel.border.title=Cr\u00e9er un Nouveau Module
+#EN: Foundation
+ModuleManagerUI.foundationDirCB.text=Fondation
+#EN: Module Name:
+ModuleManagerUI.jLabel1.text=Nom de Module:
+#EN: Parent Directory:
+ModuleManagerUI.jLabel2.text=R\u00e9pertoire Parent:
+#EN: Module Description:
+ModuleManagerUI.jLabel3.text=Description du Module:
+#EN: Module Parent Directory
+ModuleManagerUI.jPanel2.border.title=R\u00e9pertoire du Parent du Module
+#EN: Module Description
+ModuleManagerUI.moduleDescriptionTF.text=Description Module
+#EN: example
+ModuleManagerUI.moduleNameTF.text=exemple
+#EN: Samples
+ModuleManagerUI.samplesDirCB.text=Exemples
+#EN: Server Package
+ModuleManagerUI.serverPackageCB.text=Package Serveur
+#EN: New Module
+ModuleManagerUI.title=Nouveau Module
+#EN: Tools
+ModuleManagerUI.toolsDirCB.text=Outils
+#EN: World
+ModuleManagerUI.worldDirCB.text=Monde
+#EN: No Loader for {0}
+No_Loader_For=Pas de Chargeur pour {0}
+#EN: Original Filename
+Original_Filename=Nom originel du Fichier
+#EN: Original Model Name
+Original_Model_Name=Nom originel du Mod\u00e8le
+#EN: Select an option
+Select_An_Option=S\u00e9lectionner une option
+#EN: Wonderland Filename
+Wonderland_Filename=Nom de Fichier Wonderland
+#EN: Wonderland Name
+Wonderland_Name=Nom Wonderland
+#EN: Wonderland Path
+Wonderland_Path=Chemin Wonderland

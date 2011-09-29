@@ -1,0 +1,28 @@
+// Config file for Wonderland on Darkstar
+com.sun.sgs.wonderland.local.hostname=@WONDERLAND_LOCAL_HOSTNAME@
+com.sun.sgs.wonderland.network.interface=@WONDERLAND_NETWORK_INTERFACE@
+
+com.sun.sgs.app.name=Wonderland
+com.sun.sgs.app.root=@SGS_ROOT_DIR@
+com.sun.sgs.impl.transport.tcp.listen.port=@SGS_PORT@
+com.sun.sgs.app.listener=org.jdesktop.wonderland.server.WonderlandBoot
+com.sun.sgs.services=org.jdesktop.wonderland.server.spatial.UniverseService:org.jdesktop.wonderland.server.auth.ClientIdentityService:org.jdesktop.wonderland.server.wfs.exporter.CellExportService:org.jdesktop.wonderland.server.comms.SessionMapService@SGS_SERVICES@
+com.sun.sgs.managers=org.jdesktop.wonderland.server.spatial.UniverseServiceManagerImpl:org.jdesktop.wonderland.server.auth.ClientIdentityManager:org.jdesktop.wonderland.server.wfs.exporter.CellExportManagerImpl:org.jdesktop.wonderland.server.comms.SessionMapManagerImpl@SGS_MANAGERS@
+
+// profiler
+com.sun.sgs.impl.kernel.profile.level=medium
+com.sun.sgs.impl.kernel.profile.listeners=\
+com.sun.sgs.impl.profile.listener.AggregateProfileListener:\
+com.sun.sgs.impl.profile.listener.SnapshotTaskListener:\
+com.sun.sgs.impl.profile.listener.SnapshotProfileListener:\
+com.sun.sgs.impl.profile.listener.SnapshotParticipantListener
+//com.sun.sgs.impl.profile.listener.AccessedObjectsListener
+
+
+// com.sun.sgs.impl.profile.listener.AccessedObjectsListener:\
+
+// Wonderland authenticator
+com.sun.sgs.app.authenticators=org.jdesktop.wonderland.server.auth.WebServiceAuthenticator
+
+// Automatically remove db logs that are no longer needed
+com.sun.sgs.impl.service.data.store.db.bdb.remove.logs=true

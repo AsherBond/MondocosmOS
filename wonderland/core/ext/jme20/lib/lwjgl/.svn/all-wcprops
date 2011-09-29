@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2785/trunk/core/ext/jme20/lib/lwjgl
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/LICENSE
+END
+jinput.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/jinput.jar
+END
+lwjgl_util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/lwjgl_util.jar
+END
+lwjgl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/lwjgl.jar
+END
+lwjgl_util_applet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/288/trunk/core/ext/jme20/lib/lwjgl/lwjgl_util_applet.jar
+END

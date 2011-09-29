@@ -1,0 +1,42 @@
+Index: modules/http/src/main/java/com/sun/grizzly/http/SelectorThread.java
+===================================================================
+--- modules/http/src/main/java/com/sun/grizzly/http/SelectorThread.java	(revision 4309)
++++ modules/http/src/main/java/com/sun/grizzly/http/SelectorThread.java	(working copy)
+@@ -160,10 +160,11 @@
+ 
+     protected boolean tcpNoDelay=false;
+     
++    // set linger to -1 to avoid webserver freezes. See Grizzly issue #547 and
++    // OWL issue #4 for details
++    protected int linger=-1;
+     
+-    protected int linger=100;
+     
+-    
+     protected int socketTimeout=-1;
+     
+     
+@@ -559,6 +560,9 @@
+     private AsyncInterceptor asyncInterceptor;
+ 
+ 
++    static {
++        logger.warning("[SelectorThread] Using linger = -1");
++    }
+     
+     // ---------------------------------------------------- Constructor --//
+
+Index: modules/grizzly/src/main/java/com/sun/grizzly/SelectorHandlerRunner.java
+===================================================================
+--- modules/grizzly/src/main/java/com/sun/grizzly/SelectorHandlerRunner.java	(revision 4477)
++++ modules/grizzly/src/main/java/com/sun/grizzly/SelectorHandlerRunner.java	(working copy)
+@@ -272,7 +272,7 @@
+             Object attachment = key.attachment();
+             if (attachment instanceof SelectedKeyAttachmentLogic) {
+                 ((SelectedKeyAttachmentLogic) attachment).handleSelectedKey(key);
+-                return true;
++                //return true;
+             }
+ 
+             if (!key.isValid()) {
+     

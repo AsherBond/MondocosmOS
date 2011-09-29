@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="wonderland-security">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-security}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <pathconvert property="module-weblib.classpath">
+        <path location="${top.dir}/core/build/lib/wonderland-common.jar"/>
+        <path location="${top.dir}/web/server/build/lib/wonderland-webserver.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+                                                -module-compile-web,
+                                                -security-compile-weblib"/>
+
+    <target name="-security-compile-weblib" depends="-module-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/weblib/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-weblib.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5"
+                moduleDescription="${module.description}"
+                jarfile="${module.dist.dir}/${module.name}.jar"
+                builddir="${build.lib.dir}">
+
+            <client>
+                <clientjar name="security-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/**/*.properties"/>
+                        <include name="${module.src}/common/**/*.properties"/>
+                    </fileset>                    
+                </clientjar>
+            </client>
+
+            <server>
+                <serverjar name="security-server" basedir="${build.classes.dir}">
+                    <service type="com.sun.sgs.service.Service">
+                        <provider classname="org.jdesktop.wonderland.modules.security.server.service.SecurityService"/>
+                        <provider classname="org.jdesktop.wonderland.modules.security.server.service.CellResourceService"/>
+                    </service>
+                    <service type="com.sun.sgs.service.Manager">
+                        <provider classname="org.jdesktop.wonderland.modules.security.server.service.SecurityManagerImpl"/>
+                        <provider classname="org.jdesktop.wonderland.modules.security.server.service.CellResourceManagerImpl"/>
+                    </service>
+                    
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/common/**/*.properties"/>
+                    </fileset>
+                </serverjar>
+            </server>
+
+            <part name="weblib">
+                <jar name="wonderland-security-weblib.jar">
+                    <zipfileset dir="${build.classes.dir}">
+                        <include name="${module.src}/weblib/**"/>
+                    </zipfileset>
+                </jar>
+            </part>
+        </module>
+    </target>                                  
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-doclet" default="jar" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-doclet}"/>
+    <property name="utils.dir" location="${current.dir}/.."/>
+    
+    <property name="util.src" value="org/jdesktop/wonderland/utils/doclet"/>
+    <property name="util.jarname" value="wonderland-doclet"/>
+    
+    <!-- import common build file -->
+    <import file="${utils.dir}/build-tools/build-scripts/utils-build.xml"/>
+       
+    <target name="build" depends="-utils-init, -utils-compile"/>
+    <target name="jar" depends="build, -utils-jar"/>
+    
+    <target name="clean" depends="-utils-clean">
+        <delete dir="dist"/>
+    </target>
+    
+    <target name="dist" depends="jar">
+        <mkdir dir="dist"/>
+        <copy todir="dist" file="${build.lib.dir}/${util.jarname}.jar"/>
+    </target>
+    
+    <target name="run" depends="jar">  
+        <mkdir dir="${build.dir}/javadoc"/>
+        <javadoc destdir="${build.dir}/javadoc"
+                 sourcepath="${core.dir}/src/classes"
+                 packagenames="org.jdesktop.*">
+            
+            <doclet name="org.jdesktop.wonderland.utils.doclet.WonderlandDoclet"
+                    path="${build.lib.dir}/${util.jarname}.jar">
+                <param name="-wonderlandAPI" value="experimental"/> 
+            </doclet>    
+                
+            <classpath>
+                <pathelement location="${sgs.lib.dir}/SunGameServer.jar"/>
+            </classpath>
+            
+            <doctitle><![CDATA[<h1>Open Wonderland</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Open Wonderland - http://openwonderland.org</i>]]></bottom>
+            <link offline="true" href="http://java.sun.com/javase/6/docs/api" packageListLoc="${javadoc.packagelist.dir}/1.5.0"/>
+            <link offline="true" href="http://download.java.net/media/java3d/javadoc/1.5.0/" packageListLoc="${javadoc.packagelist.dir}/j3dapi"/>
+        </javadoc>
+    </target>
+</project>

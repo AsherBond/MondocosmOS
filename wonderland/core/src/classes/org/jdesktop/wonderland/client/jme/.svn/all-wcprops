@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4731/trunk/core/src/classes/org/jdesktop/wonderland/client/jme
+END
+MainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4723/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/MainFrame.java
+END
+LogViewerFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4706/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/LogViewerFrame.form
+END
+ReconnectDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ReconnectDialog.java
+END
+Chart.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Chart.java
+END
+LogViewerHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4706/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/LogViewerHandler.java
+END
+VMeter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/VMeter.java
+END
+MainFrameImpl.form
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4590/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/MainFrameImpl.form
+END
+LogViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4706/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/LogViewer.java
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_el.properties
+END
+ViewManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4727/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ViewManager.java
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4513/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_zh_CN.properties
+END
+AvatarRenderManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2439/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/AvatarRenderManager.java
+END
+ThirdPersonCameraProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4681/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ThirdPersonCameraProcessor.java
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_fr.properties
+END
+SimpleAvatarControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2287/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/SimpleAvatarControls.java
+END
+ClientContextJME.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4476/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ClientContextJME.java
+END
+WonderlandURLStreamHandlerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1988/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/WonderlandURLStreamHandlerFactory.java
+END
+WebstartStartupListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/WebstartStartupListener.java
+END
+ViewProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2787/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ViewProperties.java
+END
+FirstPersonCameraProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/FirstPersonCameraProcessor.java
+END
+SceneWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1964/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/SceneWorker.java
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4307/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_de.properties
+END
+CameraController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2439/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/CameraController.java
+END
+ViewControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2287/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/ViewControls.java
+END
+CellRefComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/CellRefComponent.java
+END
+JmeCellCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4476/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/JmeCellCache.java
+END
+TestHarnessSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/3960/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/TestHarnessSupport.java
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4307/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle_es.properties
+END
+Meter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4451/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Meter.java
+END
+LogViewerFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4706/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/LogViewerFrame.java
+END
+JmeClientSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2254/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/JmeClientSession.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/291/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/package.html
+END
+FrontHackPersonCameraProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/FrontHackPersonCameraProcessor.java
+END
+JmeClientMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4731/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/JmeClientMain.java
+END
+MainFrameImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4727/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/MainFrameImpl.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4706/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Bundle.properties
+END
+CameraProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/3653/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/CameraProcessor.java
+END
+Webstart.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1542/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/Webstart.java
+END

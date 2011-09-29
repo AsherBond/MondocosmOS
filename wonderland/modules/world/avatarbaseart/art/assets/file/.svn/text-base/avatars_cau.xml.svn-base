@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document	: presetCaucasianMaleAvatars.xml
+    Created on	: December 2, 2008, 03:25 PM
+    Author		: Paul Viet Nguyen Truong (ptruong)
+    Description	: Load data for preset avatars
+-->
+
+<caucasianAvatars>
+	<avatar>
+		<desc>Caucasian bald male wearing briefs</desc>
+		<image>http://www.zeitgeistgames.com/assets/images/cau_02.png</image>
+		<bind>assets/models/collada/Avatars/MaleAvatar/Male_Bind.dae</bind>
+		<head>assets/models/collada/Heads/MaleHead/MaleCHead.dae</head>
+		<headnum>6</headnum>
+		<headgeom>rightEyeGeoShape</headgeom>
+        <headgeom>leftEyeGeoShape</headgeom>
+        <headgeom>UpperTeethShape</headgeom>
+        <headgeom>LowerTeethShape</headgeom>
+        <headgeom>TongueGeoShape</headgeom>
+        <headgeom>HeadGeoShape</headgeom>
+		<hair>null</hair>
+		<hairnum>0</hairnum>
+		<hairgeom>null</hairgeom>
+		<hands>assets/models/collada/Avatars/MaleAvatar/Male_Hands.dae</hands>
+		<handsnum>2</handsnum>
+		<handsgeom>RHandShape</handsgeom>
+		<handsgeom>LHandShape</handsgeom>
+		<shirt>null</shirt>
+		<shirtnum>0</shirtnum>
+		<shirtgeom>null</shirtgeom>
+		<pants>null</pants>
+		<pantsnum>0</pantsnum>
+		<pantsgeom>null</pantsgeom>
+		<shoes>null</shoes>
+		<shoesnum>0</shoesnum>
+		<shoesgeom>null</shoesgeom>
+		<anim>assets/models/collada/Animations/MaleBodyAnimations/Male_Anim_Idle.dae</anim>
+	</avatar>
+	<avatar>
+		<desc>Caucasian male with ponytail wearing briefs</desc>
+		<image>http://www.zeitgeistgames.com/assets/images/cau_03.png</image>
+		<bind>assets/models/collada/Avatars/MaleAvatar/Male_Bind.dae</bind>
+		<head>assets/models/collada/Heads/MaleHead/MaleCHead.dae</head>
+		<headnum>6</headnum>
+		<headgeom>rightEyeGeoShape</headgeom>
+        <headgeom>leftEyeGeoShape</headgeom>
+        <headgeom>UpperTeethShape</headgeom>
+        <headgeom>LowerTeethShape</headgeom>
+        <headgeom>TongueGeoShape</headgeom>
+        <headgeom>HeadGeoShape</headgeom>
+        <hair>assets/models/collada/Hair/MaleHair/HairPlaceable.dae</hair>
+		<hairnum>1</hairnum>
+		<hairgeom>LPonyTail</hairgeom>
+		<hands>assets/models/collada/Avatars/MaleAvatar/Male_Hands.dae</hands>
+		<handsnum>2</handsnum>
+		<handsgeom>RHandShape</handsgeom>
+		<handsgeom>LHandShape</handsgeom>
+		<shirt>null</shirt>
+		<shirtnum>0</shirtnum>
+		<shirtgeom>null</shirtgeom>
+		<pants>null</pants>
+		<pantsnum>0</pantsnum>
+		<pantsgeom>null</pantsgeom>
+		<shoes>null</shoes>
+		<shoesnum>0</shoesnum>
+		<shoesgeom>null</shoesgeom>
+		<anim>assets/models/collada/Animations/MaleBodyAnimations/Male_Anim_Idle.dae</anim>
+	</avatar>
+	<avatar>
+		<desc>Caucasian bald male wearing polo, jeans and tennis shoes</desc>
+		<image>http://www.zeitgeistgames.com/assets/images/cau_00.png</image>
+		<bind>assets/models/collada/Avatars/MaleAvatar/Male_Bind.dae</bind>
+		<head>assets/models/collada/Heads/MaleHead/MaleCHead.dae</head>
+		<headnum>6</headnum>
+		<headgeom>rightEyeGeoShape</headgeom>
+        <headgeom>leftEyeGeoShape</headgeom>
+        <headgeom>UpperTeethShape</headgeom>
+        <headgeom>LowerTeethShape</headgeom>
+        <headgeom>TongueGeoShape</headgeom>
+        <headgeom>HeadGeoShape</headgeom>
+		<hair>null</hair>
+		<hairnum>0</hairnum>
+		<hairgeom>null</hairgeom>
+		<hands>assets/models/collada/Avatars/MaleAvatar/Male_Hands.dae</hands>
+		<handsnum>2</handsnum>
+		<handsgeom>RHandShape</handsgeom>
+		<handsgeom>LHandShape</handsgeom>
+		<shirt>assets/models/collada/Clothing/MaleClothing/MalePolo.dae</shirt>
+		<shirtnum>2</shirtnum>
+		<shirtgeom>PoloShape</shirtgeom>
+		<shirtgeom>TorsoNudeShape</shirtgeom>
+		<pants>assets/models/collada/Clothing/MaleClothing/Jeans.dae</pants>
+		<pantsnum>1</pantsnum>
+		<pantsgeom>polySurface3Shape</pantsgeom>
+		<shoes>assets/models/collada/Clothing/MaleClothing/MaleTennisShoes.dae</shoes>
+		<shoesnum>1</shoesnum>
+		<shoesgeom>TennisShoesShape</shoesgeom>
+		<anim>assets/models/collada/Animations/MaleBodyAnimations/Male_Anim_Idle.dae</anim>
+	</avatar>
+	<avatar>
+		<desc>Caucasian male wearing t-shirt, shorts and flip-flops</desc>
+		<image>http://www.zeitgeistgames.com/assets/images/cau_01.png</image>
+		<bind>assets/models/collada/Avatars/MaleAvatar/Male_Bind.dae</bind>
+		<head>assets/models/collada/Heads/MaleHead/MaleCHead.dae</head>
+		<headnum>6</headnum>
+		<headgeom>rightEyeGeoShape</headgeom>
+        <headgeom>leftEyeGeoShape</headgeom>
+        <headgeom>UpperTeethShape</headgeom>
+        <headgeom>LowerTeethShape</headgeom>
+        <headgeom>TongueGeoShape</headgeom>
+        <headgeom>HeadGeoShape</headgeom>
+		<hair>assets/models/collada/Hair/MaleHair/HairPlaceable.dae</hair>
+		<hairnum>1</hairnum>
+		<hairgeom>LPonyTail</hairgeom>
+		<hands>assets/models/collada/Avatars/MaleAvatar/Male_Hands.dae</hands>
+		<handsnum>2</handsnum>
+		<handsgeom>RHandShape</handsgeom>
+		<handsgeom>LHandShape</handsgeom>
+		<shirt>assets/models/collada/Clothing/MaleClothing/MaleTShirt.dae</shirt>
+		<shirtnum>2</shirtnum>
+		<shirtgeom>PoloShape</shirtgeom>
+		<shirtgeom>ArmsShape</shirtgeom>
+		<pants>assets/models/collada/Clothing/MaleClothing/Shorts.dae</pants>
+		<pantsnum>2</pantsnum>
+		<pantsgeom>LegsNudeShape</pantsgeom>
+		<pantsgeom>MaleShortsShape</pantsgeom>
+		<shoes>assets/models/collada/Clothing/MaleClothing/FlipFlopsFeet.dae</shoes>
+		<shoesnum>4</shoesnum>
+		<shoesgeom>LFootNudeShape</shoesgeom>
+		<shoesgeom>RFootNudeShape</shoesgeom>
+		<shoesgeom>RFlipFlopShape</shoesgeom>
+		<shoesgeom>LFlipFlopShape</shoesgeom>
+		<anim>assets/models/collada/Animations/MaleBodyAnimations/Male_Anim_Idle.dae</anim>
+	</avatar>
+</caucasianAvatars>

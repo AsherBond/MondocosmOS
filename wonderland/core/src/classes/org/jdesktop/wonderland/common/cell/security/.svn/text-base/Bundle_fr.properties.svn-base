@@ -1,0 +1,20 @@
+#EN: Permission to add or remove children from this object.
+ChangeCellChildren_Description=Permission d'ajouter ou d'enlever des cellules enfants de cette cellule.
+#EN: Add/Remove Object Children
+ChangeCellChildren_DisplayName=Ajouter/Enlever des Cellules Enfants
+#EN: Change Capabilities
+Change_Components=Changement de Composants
+#EN: Permission to add or remove capabilities from this object.
+Change_Components_Description=Permission d'ajouter ou d'enlever des composants de cette cellule.
+#EN: Permission to modify this object.
+Modify_Description=Permission de modifier cette cellule.
+#EN: Modify
+Modify=Modifier
+#EN: Permission to move this object.
+Move_Description=Permission de d\u00e9placer cette cellule.
+#EN: Move
+Move=D\u00e9placer
+#EN: Permission to view this object.
+View_Description=Permission d'afficher cette cellule.
+#EN: View
+View=Afficher

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4726/trunk/core/ext/common
+END
+derby.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/249/trunk/core/ext/common/derby.jar
+END
+TimingFramework.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2581/trunk/core/ext/common/TimingFramework.jar
+END
+javassist.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1542/trunk/core/ext/common/javassist.jar
+END
+mtgame.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/4726/trunk/core/ext/common/mtgame.jar
+END
+javolution-license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1071/trunk/core/ext/common/javolution-license.txt
+END
+commons-cli-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4707/trunk/core/ext/common/commons-cli-1.1.jar
+END
+apache-commons-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/249/trunk/core/ext/common/apache-commons-LICENSE.txt
+END
+derby-COPYRIGHT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/249/trunk/core/ext/common/derby-COPYRIGHT.txt
+END
+scannotation-1.0.2-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1542/trunk/core/ext/common/scannotation-1.0.2-LICENSE.txt
+END
+javassist-LICENSE.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1542/trunk/core/ext/common/javassist-LICENSE.html
+END
+jbullet-license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1071/trunk/core/ext/common/jbullet-license.txt
+END
+commons-httpclient-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/249/trunk/core/ext/common/commons-httpclient-3.0.1.jar
+END
+deployment-servlet-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/249/trunk/core/ext/common/deployment-servlet-LICENSE.txt
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/249/trunk/core/ext/common/commons-codec-1.3.jar
+END
+commons-beanutils-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/249/trunk/core/ext/common/commons-beanutils-core.jar
+END
+vecmath.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/4699/trunk/core/ext/common/vecmath.jar
+END
+derby-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/249/trunk/core/ext/common/derby-LICENSE.txt
+END
+stun.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/4291/trunk/core/ext/common/stun.jar
+END
+deployment-servlet-1.0beta.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/249/trunk/core/ext/common/deployment-servlet-1.0beta.jar
+END
+javolution.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1071/trunk/core/ext/common/javolution.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/249/trunk/core/ext/common/servlet-api.jar
+END
+scannotation-1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1542/trunk/core/ext/common/scannotation-1.0.2.jar
+END
+swing-worker-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2578/trunk/core/ext/common/swing-worker-1.2.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/249/trunk/core/ext/common/commons-logging-1.1.jar
+END
+swing-layout-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/249/trunk/core/ext/common/swing-layout-1.0.jar
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/249/trunk/core/ext/common/README.txt
+END
+deployment-servlet-README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/249/trunk/core/ext/common/deployment-servlet-README.txt
+END
+jbullet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3172/trunk/core/ext/common/jbullet.jar
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/249/trunk/core/ext/common/.cvsignore
+END
+Scenario.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1739/trunk/core/ext/common/Scenario.jar
+END

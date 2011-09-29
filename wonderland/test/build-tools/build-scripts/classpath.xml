@@ -1,0 +1,7 @@
+<project basedir="." default="..." name="test.classpath">
+    
+    <!-- test classpaths -->
+    <pathconvert property="junit.classpath">
+	  <path location="${test.lib.dir}/junit/junit-4.4.jar"/>
+    </pathconvert>
+</project>

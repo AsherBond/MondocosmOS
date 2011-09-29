@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4731/trunk/core/src/classes/org/jdesktop/wonderland/client
+END
+ClientContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4553/trunk/core/src/classes/org/jdesktop/wonderland/client/ClientContext.java
+END
+BaseClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2254/trunk/core/src/classes/org/jdesktop/wonderland/client/BaseClientPlugin.java
+END
+ClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2254/trunk/core/src/classes/org/jdesktop/wonderland/client/ClientPlugin.java
+END

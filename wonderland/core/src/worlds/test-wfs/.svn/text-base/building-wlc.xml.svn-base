@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0-dp" class="java.beans.XMLDecoder"> 
+ <object class="org.jdesktop.wonderland.server.setup.BasicCellMOSetup"> 
+  <void property="boundsRadius"> 
+   <double>100.0</double> 
+  </void> 
+  <void property="boundsType"> 
+   <string>BOX</string> 
+  </void> 
+  <void property="cellMOClassName"> 
+   <string>org.jdesktop.wonderland.server.cell.StaticModelCellMO</string> 
+  </void> 
+  <void property="cellSetup"> 
+   <object class="org.jdesktop.wonderland.common.cell.setup.ModelCellSetup"> 
+   <void property="modelFile"> 
+     <string>models/default_building/conferenceroom.j3s.gz</string> 
+    </void>
+   </object> 
+  </void> 
+  <void property="origin"> 
+   <void index="0"> 
+    <double>50.0</double> 
+   </void> 
+   <void index="2"> 
+    <double>50.0</double> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

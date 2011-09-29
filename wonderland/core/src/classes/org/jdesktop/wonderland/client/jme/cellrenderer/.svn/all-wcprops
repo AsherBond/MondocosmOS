@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4676/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer
+END
+CellRendererJME.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer/CellRendererJME.java
+END
+ModelRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4676/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer/ModelRenderer.java
+END
+BasicRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4622/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer/BasicRenderer.java
+END
+AvatarJME.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2287/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer/AvatarJME.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/291/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/cellrenderer/package.html
+END

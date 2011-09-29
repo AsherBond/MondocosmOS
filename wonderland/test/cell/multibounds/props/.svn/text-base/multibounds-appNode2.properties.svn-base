@@ -1,0 +1,29 @@
+
+# Properties for running the multibounds client test.  Values that are not
+# set will be assigned these default values.
+
+# the server to connect to
+sgs.server=localhost
+
+# the port to connect to
+sgs.port=1339
+
+# the user name to log in with
+multibounds.username=foo2
+
+# the number of groups to create
+multibounds.group.num=1
+
+# the number of clients in each group
+multibounds.group.size=3
+
+# the distance between groups
+multibounds.group.separation=7
+
+# the percentage of time each client is idle
+multibounds.idle=0
+
+# coordinates of inital group
+multibounds.x=10
+multibounds.y=0
+multibounds.z=10

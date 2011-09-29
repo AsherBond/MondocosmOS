@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4572/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources
+END
+upArrow23x10.png
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3027/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/upArrow23x10.png
+END
+downArrow23x10.png
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3027/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/downArrow23x10.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/3970/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4521/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4240/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4572/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4557/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/3970/trunk/modules/tools/asset-meter/src/classes/org/jdesktop/wonderland/modules/assetmeter/client/resources/Bundle_de.properties
+END

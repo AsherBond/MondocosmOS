@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/4221/trunk/test/harness
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1352/trunk/test/harness/build.properties
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1146/trunk/test/harness/README.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3959/trunk/test/harness/build.xml
+END

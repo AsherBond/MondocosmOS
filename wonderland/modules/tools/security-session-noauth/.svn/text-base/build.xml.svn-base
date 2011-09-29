@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="wonderland-security-session-noauth">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-security-session-noauth}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <!-- set the location of the security-session-common source -->
+    <property name="security.common.dir" location="${current.dir}/../security-session-common"/>
+
+    <pathconvert property="module-web.classpath">
+        <path location="${current.dir}/../../foundation/security/build/lib/weblib/wonderland-security-weblib.jar"/>
+        <path location="${current.dir}/../security-group/build/lib/weblib/wonderland-security-groups-weblib.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path location="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-common.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-client.jar"/>
+        <path location="${security.common.dir}/build/classes"/>
+    </pathconvert>
+
+    <pathconvert property="module-weblib.classpath">
+        <path location="${current.dir}/../../foundation/security/build/lib/weblib/wonderland-security-weblib.jar"/>
+        <path location="${security.common.dir}/build/classes"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+                                                -module-compile-web,
+                                                -security-session-noauth-compile-weblib"/>
+
+    <target name="-security-session-noauth-compile-weblib" depends="-module-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/weblib/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-weblib.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5"
+                moduleDescription="${module.description}"
+                jarfile="${module.dist.dir}/${module.name}.jar"
+                builddir="${build.lib.dir}">
+            
+            <requires name="security" version="0" minorVersion="5"/>
+            <requires name="security-groups" version="0" minorVersion="5"/>
+            
+            <part name="web">
+                <jar name="security-session-noauth.war">
+                    <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                        <include name="${module.src}/web/**"/>
+                    </zipfileset>
+
+                    <!-- include common files from security-session-common package -->
+                    <zipfileset dir="${security.common.dir}/build/classes" prefix="WEB-INF/classes">
+                        <include name="org/jdesktop/wonderland/modules/securitysession/web/**"/>
+                    </zipfileset>
+
+                    <!-- include the persistence.xml file from security-groups, since
+                         we depend on that to do group resolution -->
+                    <fileset dir="${current.dir}/web">
+                        <exclude name="WEB-INF/persistence.xml"/>
+                    </fileset>
+                    <zipfileset dir="${current.dir}/../security-group/web/WEB-INF"
+                                prefix="WEB-INF/classes/META-INF">
+                        <include name="persistence.xml"/>
+                    </zipfileset>
+                </jar>
+            </part>
+
+            <part name="weblib">
+                <jar name="wonderland-security-session-noauth-weblib.jar">
+                    <zipfileset dir="${build.classes.dir}">
+                        <include name="${module.src}/weblib/**"/>
+                    </zipfileset>
+
+                    <!-- include common files from security-session-common package -->
+                    <zipfileset dir="${security.common.dir}/build/classes">
+                        <include name="org/jdesktop/wonderland/modules/securitysession/weblib/**"/>
+                    </zipfileset>
+                </jar>
+            </part>
+
+            <part name="properties" dir="${current.dir}/src/properties"/>
+        </module>
+    </target>                                  
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

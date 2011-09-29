@@ -1,0 +1,110 @@
+<project basedir="." default="..." name="setup.build-setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="setup.build-scripts.dir" file="${ant.file.setup.build-setup}"/>
+    <property name="top.dir" location="${setup.build-scripts.dir}/../.."/>
+   
+    <!-- import common setup.xml -->
+    <import file="${setup.build-scripts.dir}/setup.xml"/>
+    
+    <!-- build-specific properties -->
+    <property file="${setup.build-scripts.dir}/build-setup.properties"/>
+    
+    <!-- import packaging targets -->
+    <import file="${setup.build-scripts.dir}/package-setup.xml"/>
+    
+    <!-- get the debug level depending on the build level -->
+    <propertycopy name="build.debuglevel" from="build.debuglevel.${build.level}"/>
+   
+    <!-- common macros -->
+    
+    <!-- basic compile options -->
+    <macrodef name="wl-compile">
+        <attribute name="source" default="${build.source.version}"/>
+        <attribute name="target" default="${build.target.version}"/>
+        <attribute name="bootclasspath" default="${build.boot.class.path}"/>
+        
+        <element name="compile-classes"/>
+        <element name="compile-classpath"/>
+
+        <sequential>
+            <javac  debug="${build.debug}"
+                debuglevel="${build.debuglevel}"
+                deprecation="${build.showdeprecation}"
+                destdir="${build.classes.dir}"
+                nowarn="true"
+                source="@{source}"
+                target="@{target}"
+                srcdir="${javasrc.dir}">
+            
+                <compile-classes/>
+                
+                <classpath>
+                    <compile-classpath/>
+                </classpath>
+
+                <bootclasspath>
+                    <path path="@{bootclasspath}"/>
+                </bootclasspath>
+            </javac>
+        </sequential>
+    </macrodef>
+
+    <!-- special-case compilation for the client, to use Java 1.5 instead
+         of Java 6 -->
+    <macrodef name="wl-compile-client">
+        <element name="client-compile-classes"/>
+        <element name="client-compile-classpath"/>
+
+        <sequential>
+            <wl-compile source="${build.client.source.version}"
+                        target="${build.client.target.version}"
+                        bootclasspath="${build.client.boot.class.path}">
+
+                <compile-classes>
+                    <client-compile-classes/>
+                </compile-classes>
+
+                <compile-classpath>
+                    <client-compile-classpath/>
+                </compile-classpath>
+            </wl-compile>
+        </sequential>
+    </macrodef>
+    
+    <!-- workaround for broken services in ant 1.7 -->
+    <macrodef name="wl-services">
+        <attribute name="dir"/>
+        <attribute name="type"/>
+        <element name="providers"/>
+        
+        <sequential>
+            <mkdir dir="@{dir}/META-INF/services"/>
+            <echo file="@{dir}/META-INF/services/@{type}"><providers/></echo>
+        </sequential>
+    </macrodef>
+
+    <!-- target to setup pack200 and unpack200 ant tasks -->
+    <target name="-setup-pack200" unless="pack200.setup">
+        <property name="pack200.setup" value="true"/>
+
+        <taskdef name="pack200"
+             classname="com.sun.tools.apache.ant.pack200.Pack200Task"
+             classpath="${top.dir}/lib/ant/Pack200Task.jar"/>
+
+        <taskdef name="unpack200"
+             classname="com.sun.tools.apache.ant.pack200.Unpack200Task"
+             classpath="${top.dir}/lib/ant/Pack200Task.jar"/>
+    </target>
+
+    <!-- target to setup subversion ant tasks -->
+    <target name="-setup-subversion" unless="subversion.setup">
+        <property name="subversion.setup" value="true"/>
+
+        <typedef resource="org/tigris/subversion/svnant/svnantlib.xml">
+            <classpath>
+                <pathelement path="${top.dir}/lib/ant/svnant.jar"/>
+                <pathelement path="${top.dir}/lib/ant/svnClientAdapter.jar"/>
+            </classpath>
+        </typedef>
+    </target>
+</project>

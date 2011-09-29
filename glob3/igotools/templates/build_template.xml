@@ -1,0 +1,602 @@
+<project name="%PROJECT_NAME%"
+         default="build"
+         basedir=".">
+
+  <!-- use eclipse java compiler (jdt) -->
+  <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" />
+
+  <property name="build"   location="_build" />
+  <property name="deploy"  location="_deploy" />
+
+  <property name="runtime_classpath" value="%RUNTIME_CLASSPATH%" />
+  <property name="tools_jdk_home" value="%TOOLS_JDK_HOME%" />
+
+  <condition property="is32"> <os arch="x86"  /> </condition>
+  <!-- condition property="is64"> <os arch="amd64"/> </condition-->
+  <condition property="is64">
+    <or>
+      <os arch="x86_64" />
+      <os arch="amd64" />
+    </or>
+  </condition>
+
+  <condition property="isLinux">
+    <and>
+      <os family="unix"/>
+      <not>
+        <os family="mac"/>
+      </not>
+    </and>
+  </condition>
+  <condition property="isWindows"> <os family="windows" /> </condition>
+  <condition property="isApple">
+    <os family="mac" />
+  </condition>
+
+  <target name="init32" if="is32"> <property name="bits" value="32" /> </target>
+  <target name="init64" if="is64"> <property name="bits" value="64" /> </target>
+
+
+  <target name="initLinux" if="isLinux">
+    <property name="platform" value="linux" />
+  </target>
+
+  <target name="initWindows" if="isWindows">
+    <property name="platform" value="windows" />
+  </target>
+
+  <target name="initApple" if="isApple">
+    <property name="platform" value="apple" />
+  </target>
+
+
+  <target name="init"
+          depends="init32,init64,initLinux,initWindows,initApple">
+    <property name="platform_bits" value="${platform}_${bits}" />
+    <property name="is_${platform}_${bits}" value="true" />
+    <!-- echo message="=== platform=${platform_bits}"/ -->
+  </target>
+
+
+
+
+  <!-- dependency-projects -->
+%DEPENDENCIES_TARGETS%
+
+
+  <target name="clean"
+          depends="%CLEAN_DEPENDS%"
+          description="Clean up." >
+
+    <delete dir="${build}" />
+    <delete dir="${deploy}" />
+
+    <delete>
+      <fileset dir="es" includes="**/*.class" />
+    </delete>
+  </target>
+
+
+  <target name="compile"
+          depends="%COMPILE_DEPENDS%"
+          description="Compile the source." >
+    <javac
+        sourcepath="."
+        srcdir="."
+        destdir="."
+        includeantruntime="false"
+        classpath="%COMPILE_CLASSPATH%"
+        failonerror="true"
+        nowarn="off"
+        source="1.6"
+        target="1.6">
+      <compilerarg line="-g -Xemacs -enableJavadoc -warn:-raw -warn:+null,+hiding,+unused,+syncOverride,+unusedAllocation,+unusedArgument -proceedOnError:Fatal" />
+      <include name="es/**/*.java" />
+      <exclude name="**/*.class" />
+    </javac>
+  </target>
+
+
+
+  <target name="build"
+          depends="compile"
+          description="Create project .jar and copy needed dependencies-jars to _build/libs">
+
+    <mkdir dir="${build}" />
+
+    <!-- create %PROJECT_NAME%.jar -->
+    <jar
+        jarfile="${build}/%PROJECT_NAME%.jar"
+        basedir=".">
+      <manifest>
+        <attribute name="Main-Class"             value="%MAIN_CLASS%" />
+        <attribute name="Implementation-Title"   value="IGO Tools" />
+        <attribute name="Implementation-Version" value="0.1" />
+        <attribute name="Implementation-Vendor"  value="IGO Software" />
+        <attribute name="SplashScreen-Image"     value="bitmaps/splash.png" />
+      </manifest>
+      <include name="bitmaps/splash.png" />
+      <include name="es/**/*.class" />
+%JAR_INCLUDES%
+    </jar>
+
+    <!-- copy dependency jars -->
+%COPY_DEPENDENCY_JAR%
+
+
+    <!-- creating _build/runjava.sh -->
+    <property name="build_run_script" location="_build/runjava.sh" />
+    <!-- echo message="  - Creating _build/runjava.sh..." / -->
+
+    <copy file="%IGOTOOLS_HOME%/templates/run_template.sh" tofile="${build_run_script}" />
+
+    <replaceregexp file="${build_run_script}"
+                   byline="true"
+                   match="@CLASSPATH@"
+                   replace="%BUILD_CLASSPATH%" />
+
+    <replaceregexp file="${build_run_script}"
+                   byline="true"
+                   match="@BUILD_TOOLS_JDK_HOME@"
+                   replace="%BUILD_TOOLS_JDK_HOME%" />
+
+    <chmod file="${build_run_script}" perm="ugo+rx" />
+
+  </target>
+
+
+
+  <target name="run_linux_32"
+          depends="build"
+          if="is_linux_32">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_linux_32%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+  <target name="run_linux_64"
+          depends="build"
+          if="is_linux_64">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_linux_64%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+  <target name="run_apple_32"
+          depends="build"
+          if="is_apple_32">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_apple_32%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+  <target name="run_apple_64"
+          depends="build"
+          if="is_apple_64">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_apple_64%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+
+
+  <target name="run_windows_32"
+          depends="build"
+          if="is_windows_32">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_windows_32%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+  <target name="run_windows_64"
+          depends="build"
+          if="is_windows_64">
+    <java classname="%MAIN_CLASS%"
+          classpath="${runtime_classpath}"
+          fork="yes"
+          failonerror="yes">
+      <jvmarg line="-splash:bitmaps/splash.png" />
+      <jvmarg line="%JAVA_VM_ARGS_windows_64%" />
+%RUN_JVMARGS%
+    </java>
+  </target>
+
+
+  <target name="run"
+          depends="run_linux_32,run_linux_64,run_apple_32,run_apple_64,run_windows_32,run_windows_64">
+  </target>
+
+
+  <target name="test_linux_32"
+          depends="build"
+          if="is_linux_32">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_linux_32%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="test_linux_64"
+          depends="build"
+          if="is_linux_64">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_linux_64%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+
+  <target name="test_apple_32"
+          depends="build"
+          if="is_apple_32">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_apple_32%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="test_apple_64"
+          depends="build"
+          if="is_apple_64">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_apple_64%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+
+
+  <target name="test_windows_32"
+          depends="build"
+          if="is_windows_32">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_windows_32%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="test_windows_64"
+          depends="build"
+          if="is_windows_64">
+    <echo message="- Running tests in %PROJECT_NAME%..." />
+    <junit printsummary="withOutAndErr"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath path="${runtime_classpath}" />
+      <jvmarg line="%JAVA_VM_ARGS_windows_64%" />
+%RUN_JVMARGS%
+
+      <formatter type="xml" />
+
+      <batchtest fork="yes"
+                 todir="${build}/test-results/">
+        <fileset dir=".">
+          <include name="es/**/*Test*.java" />
+          <include name="es/**/*Story*.java" />
+          <exclude name="es/**/*Abstract*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+
+  <target name="initTest">
+    <delete dir="${build}/test-results/" />
+    <mkdir dir="${build}/test-results/" />
+  </target>
+
+
+  <target name="privateTest"
+          depends="initTest,test_linux_32,test_linux_64,test_apple_32,test_apple_64,test_windows_32,test_windows_64"
+          description="Run the project tests.">
+  </target>
+
+  <target name="test"
+          depends="%TEST_DEPENDS%privateTest"
+          description="Run all the tests (project and dependencies projects tests are executed).">
+  </target>
+
+
+  <target name="initDeploy">
+    <echo message="---------------------------------------------------------------------" />
+    <echo message=" Deploying %PROJECT_NAME%..." />
+    <echo message="---------------------------------------------------------------------" />
+
+    <mkdir dir="${deploy}" />
+
+    <delete file="${deploy}/run.sh" />
+    <delete file="${deploy}/run.bat" />
+    <delete file="${deploy}/index.html" />
+    <delete file="${deploy}/applet.jnlp" />
+
+    <delete dir="${deploy}/libs" />
+    <delete dir="${deploy}/bitmaps" />
+
+    <mkdir dir="${deploy}/jre/linux/32" />
+    <mkdir dir="${deploy}/jre/linux/64" />
+    <mkdir dir="${deploy}/jre/windows/32" />
+  </target>
+
+
+  <target name="copy_jre_linux">
+    <echo message="  - Copying linux-32 JRE..." />
+    <sync todir="${deploy}/jre/linux/32">
+      <fileset dir="${tools_jdk_home}/linux/32" />
+    </sync>
+    <chmod file="${deploy}/jre/linux/32/bin/java" perm="ugo+rx" />
+
+    <echo message="  - Copying linux-64 JRE..." />
+    <sync todir="${deploy}/jre/linux/64">
+      <fileset dir="${tools_jdk_home}/linux/64" />
+    </sync>
+    <chmod file="${deploy}/jre/linux/64/bin/java" perm="ugo+rx" />
+  </target>
+
+
+  <target name="copy_jre_windows">
+    <echo message="  - Copying windows-32 JRE..." />
+    <sync todir="${deploy}/jre/windows/32">
+      <fileset dir="${tools_jdk_home}/windows/32" />
+    </sync>
+    <chmod file="${deploy}/jre/windows/32/bin/java" perm="ugo+rx" />
+  </target>
+
+  <target name="copy_jre"
+          depends="copy_jre_linux,copy_jre_windows">
+  </target>
+
+  <target name="create_unix_run_script">
+    <property name="deploy_unix_run_script" location="_deploy/run.sh" />
+    <echo message="  - Creating _deploy/run.sh..." />
+
+    <copy file="%IGOTOOLS_HOME%/templates/deploy_run_template.sh" tofile="${deploy_unix_run_script}" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@MAIN_CLASS@"
+                   replace="%MAIN_CLASS%" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@CLASSPATH@"
+                   replace="%CLASSPATH%" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_linux_64@"
+                   replace="%JAVA_VM_ARGS_linux_64%" />
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_linux_32@"
+                   replace="%JAVA_VM_ARGS_linux_32%" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_apple_64@"
+                   replace="%JAVA_VM_ARGS_apple_64%" />
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_apple_32@"
+                   replace="%JAVA_VM_ARGS_apple_32%" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_JAVA_LIBRARY_PATH@"
+                   replace="%JAVA_VM_JAVA_LIBRARY_PATH%" />
+
+    <replaceregexp file="${deploy_unix_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_JNA_LIBRARY_PATH@"
+                   replace="%JAVA_VM_JNA_LIBRARY_PATH%" />
+
+    <chmod file="${deploy_unix_run_script}" perm="ugo+rx" />
+  </target>
+
+  <target name="create_windows_run_script">
+    <property name="deploy_windows_run_script" location="_deploy/run.bat" />
+    <echo message="  - Creating _deploy/run.bat..." />
+
+    <copy file="%IGOTOOLS_HOME%/templates/deploy_run_template.bat" tofile="${deploy_windows_run_script}" />
+
+    <replaceregexp file="${deploy_windows_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_windows_64@"
+                   replace="%JAVA_VM_ARGS_windows_64%" />
+    <replaceregexp file="${deploy_windows_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_ARGS_windows_32@"
+                   replace="%JAVA_VM_ARGS_windows_32%" />
+
+    <replaceregexp file="${deploy_windows_run_script}"
+                   byline="true"
+                   match="@MAIN_CLASS@"
+                   replace="%MAIN_CLASS%" />
+
+    <replace file="${deploy_windows_run_script}"
+             token="@WINDOWS_CLASSPATH@"
+             value="%WINDOWS_CLASSPATH%" />
+
+    <replaceregexp file="${deploy_windows_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_JAVA_LIBRARY_PATH@"
+                   replace="%JAVA_VM_JAVA_LIBRARY_PATH%" />
+
+    <replaceregexp file="${deploy_windows_run_script}"
+                   byline="true"
+                   match="@JAVA_VM_JNA_LIBRARY_PATH@"
+                   replace="%JAVA_VM_JNA_LIBRARY_PATH%" />
+
+  </target>
+
+  <target name="create_run_scripts"
+          depends="create_unix_run_script,create_windows_run_script">
+  </target>
+
+
+  <target name="create_applet_files">
+    <property name="index_html"  location="_deploy/index.html" />
+    <property name="applet_jnlp" location="_deploy/applet.jnlp" />
+
+    <copy file="%IGOTOOLS_HOME%/templates/index_template.html" tofile="${index_html}" />
+    <copy file="%IGOTOOLS_HOME%/templates/applet_template.jnlp" tofile="${applet_jnlp}" />
+
+    <replaceregexp file="${index_html}"
+                   byline="true"
+                   match="@APPLET_CLASS@"
+                   replace="%APPLET_CLASS%" />
+
+    <replaceregexp file="${applet_jnlp}"
+                   byline="true"
+                   match="@APPLET_CLASS@"
+                   replace="%APPLET_CLASS%" />
+
+    <replace file="${applet_jnlp}"
+             token="@APPLET_JARS@" >
+      <replacevalue><![CDATA[%APPLET_JARS%]]></replacevalue>
+    </replace>
+
+  </target>
+
+  <target name="copy_splash">
+    <echo message="  - Copying bitmaps/splash.png..." />
+    <copy file="bitmaps/splash.png" todir="${deploy}/bitmaps/" />
+  </target>
+
+  <target name="copy_jars">
+    <echo message="  - Copying jars..." />
+%DEPLOY_COPY_JARS%
+  </target>
+
+  <target name="copy_natives">
+    <echo message="  - Copying natives..." />
+%DEPLOY_COPY_NATIVES%
+  </target>
+
+  <target name="copy_deploy_includes">
+    <echo message="  - Copying deploy includes..." />
+%DEPLOY_COPY_INCLUDES%
+  </target>
+
+  <target name="sign_jars">
+    <echo message="  - Signing jars..." />
+%DEPLOY_SIGN_JARS%
+  </target>
+
+
+  <target name="check_post_deploy_xml">
+    <available file="post_deploy.xml" property="post_deploy_xml.present"/>
+  </target>
+
+  <target name="do_if_post_deploy_xml" depends="check_post_deploy_xml" if="post_deploy_xml.present">
+    <echo message="  - Found post_deploy_xml, executing..." />
+    <ant antfile="post_deploy.xml" />
+  </target>
+
+
+  <target name="deploy"
+       depends="build,initDeploy,copy_jre,create_run_scripts,create_applet_files,copy_splash,copy_jars,copy_natives,copy_deploy_includes,sign_jars,do_if_post_deploy_xml"
+       description="Deploy the project into the _deploy directory." >
+  </target>
+
+
+</project>

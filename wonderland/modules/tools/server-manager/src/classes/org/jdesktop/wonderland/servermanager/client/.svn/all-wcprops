@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3788/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client
+END
+ServerManagerConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/1398/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client/ServerManagerConnection.java
+END
+PingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client/PingListener.java
+END
+PingDataCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/2207/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client/PingDataCollection.java
+END
+PingData.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client/PingData.java
+END
+PingDataCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3788/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/client/PingDataCollector.java
+END

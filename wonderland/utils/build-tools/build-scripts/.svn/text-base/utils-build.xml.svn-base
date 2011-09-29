@@ -1,0 +1,39 @@
+<project basedir="." default="..." name="utils.build">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="utils.build-scripts.dir" file="${ant.file.utils.build}"/>
+    
+    <!-- import the web setup file -->
+    <import file="${utils.build-scripts.dir}/utils-setup.xml"/>
+    
+    <!-- import the global build setup -->
+    <import file="${setup.build-scripts.dir}/build-setup.xml"/>
+    
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="-utils-init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+    </target>
+   
+    <target name="-utils-compile" depends="-utils-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${util.src}/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+   
+    <target name="-utils-jar" depends="-utils-compile">
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/${util.jarname}.jar">   
+            <fileset dir="${build.classes.dir}">
+		<include name="${util.src}/**"/>
+	    </fileset>
+        </jar>
+    </target>
+    
+    <target name="-utils-clean">
+        <delete dir="${build.dir}"/>
+    </target>
+</project>

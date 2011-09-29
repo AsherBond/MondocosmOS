@@ -1,0 +1,38 @@
+Index: security/core/src/main/java/com/sun/enterprise/security/ssl/SecuritySupportImpl.java
+===================================================================
+--- security/core/src/main/java/com/sun/enterprise/security/ssl/SecuritySupportImpl.java	(revision 35161)
++++ security/core/src/main/java/com/sun/enterprise/security/ssl/SecuritySupportImpl.java	(working copy)
+@@ -88,19 +88,21 @@
+     }
+ 
+     protected void initJKS() {
+-        String keyStoreFileName = null;
+-        String trustStoreFileName = null;
+-
+-        if (Util.isEmbeddedServer()) {
+-            try {
+-                keyStoreFileName = Util.writeConfigFileToTempDir("keystore.jks").getAbsolutePath();
+-                trustStoreFileName = Util.writeConfigFileToTempDir("cacerts.jks").getAbsolutePath();
+-            } catch (IOException ex) {
+-                _logger.log(Level.SEVERE, "Error obtaining keystore and truststore files for embedded server", ex);
++        String keyStoreFileName = System.getProperty(keyStoreProp);
++        String trustStoreFileName = System.getProperty(trustStoreProp);
++        
++        try {
++            if (Util.isEmbeddedServer()) {
++                if (keyStoreFileName == null) {
++                    keyStoreFileName = Util.writeConfigFileToTempDir("keystore.jks").getAbsolutePath();
++                }
++              
++                if (trustStoreFileName == null) {
++                    trustStoreFileName = Util.writeConfigFileToTempDir("cacerts.jks").getAbsolutePath();
++                }
+             }
+-        } else {
+-            keyStoreFileName = System.getProperty(keyStoreProp);
+-            trustStoreFileName = System.getProperty(trustStoreProp);
++        } catch (IOException ex) {
++            _logger.log(Level.SEVERE, "Error obtaining keystore and truststore files for embedded server", ex);
+         }
+ 
+         if (!initialized) {

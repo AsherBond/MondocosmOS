@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2881/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/component/state
+END
+PhysicsProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/2881/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/component/state/PhysicsProperties.java
+END
+CellPhysicsPropertiesComponentClientState.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2881/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/component/state/CellPhysicsPropertiesComponentClientState.java
+END
+CellPhysicsPropertiesComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2881/trunk/core/src/classes/org/jdesktop/wonderland/common/cell/component/state/CellPhysicsPropertiesComponentServerState.java
+END

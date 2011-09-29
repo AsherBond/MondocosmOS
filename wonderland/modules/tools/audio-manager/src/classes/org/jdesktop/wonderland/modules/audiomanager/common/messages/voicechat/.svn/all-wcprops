@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/3975/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat
+END
+VoiceChatInfoRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatInfoRequestMessage.java
+END
+VoiceChatHoldMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/3975/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatHoldMessage.java
+END
+VoiceChatEndMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatEndMessage.java
+END
+VoiceChatJoinRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatJoinRequestMessage.java
+END
+VoiceChatJoinAcceptedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatJoinAcceptedMessage.java
+END
+VoiceChatInfoResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatInfoResponseMessage.java
+END
+VoiceChatCallEndedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/!svn/ver/2928/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatCallEndedMessage.java
+END
+VoiceChatLeaveMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3975/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatLeaveMessage.java
+END
+VoiceChatUserMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatUserMessage.java
+END
+VoiceChatMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2959/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatMessage.java
+END
+VoiceChatJoinMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatJoinMessage.java
+END
+VoiceChatTransientMemberMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/3476/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatTransientMemberMessage.java
+END
+VoiceChatDialOutMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/!svn/ver/2928/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatDialOutMessage.java
+END
+VoiceChatBusyMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/2895/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/messages/voicechat/VoiceChatBusyMessage.java
+END

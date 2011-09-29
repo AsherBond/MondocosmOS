@@ -1,0 +1,40 @@
+#EN: Details...
+AffordanceHUDPanel.detailsButton.text=Detalles...
+#EN: Affordance Size
+AffordanceHUDPanel.jLabel1.text=Tama\u00f1o de adecuaci\u00f3n
+#EN: 1x
+AffordanceHUDPanel.jLabel3.text=1x
+#EN: 5x
+AffordanceHUDPanel.jLabel5.text=5x
+#EN: Resize
+AffordanceHUDPanel.resizeToggleButton.toolTipText=Redimensionar
+#EN: Rotate
+AffordanceHUDPanel.rotateToggleButton.toolTipText=Rotar
+#EN: Move
+AffordanceHUDPanel.translateToggleButton.toolTipText=Mover
+#EN: Edit (checking) ...
+Edit_Checking=Editar (comprobando) ...
+#EN: Edit Object: {0}
+Edit_Object=Editar Objeto: {0}
+#EN: Edit Object: <None Selected>
+Edit_Object_None_Selected=Editar Objeto: <No Seleccionado>
+#EN: Edit...
+Edit...=Editar...
+#EN: Rotation (degrees)
+PositionHUDPanel.jLabel10.text=Rotaci\u00f3n (grados)
+#EN: X:
+PositionHUDPanel.jLabel11.text=X:
+#EN: Y:
+PositionHUDPanel.jLabel12.text=Y:
+#EN: Z:
+PositionHUDPanel.jLabel13.text=Z:
+#EN: Scale
+PositionHUDPanel.jLabel14.text=Escala
+#EN: X:
+PositionHUDPanel.jLabel1.text=X:
+#EN: Y:
+PositionHUDPanel.jLabel2.text=Y:
+#EN: Z:
+PositionHUDPanel.jLabel3.text=Z:
+#EN: Position (meters)
+PositionHUDPanel.jLabel4.text=Posici\u00f3n (metros)

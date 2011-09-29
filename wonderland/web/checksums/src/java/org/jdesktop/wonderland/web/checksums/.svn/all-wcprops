@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4372/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums
+END
+ChecksumFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1895/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/ChecksumFactory.java
+END
+ChecksumManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1895/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/ChecksumManager.java
+END
+AssetDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1895/trunk/web/checksums/src/java/org/jdesktop/wonderland/web/checksums/AssetDescriptor.java
+END

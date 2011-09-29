@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common
+END
+SharedData.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4450/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedData.java
+END
+SharedDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedDouble.java
+END
+SharedInteger.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedInteger.java
+END
+SharedChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedChar.java
+END
+SharedMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedMap.java
+END
+SharedLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedLong.java
+END
+SharedShort.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedShort.java
+END
+SharedMapEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3324/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedMapEvent.java
+END
+SharedBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedBoolean.java
+END
+SharedByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedByte.java
+END
+SharedFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedFloat.java
+END
+SharedString.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/common/SharedString.java
+END

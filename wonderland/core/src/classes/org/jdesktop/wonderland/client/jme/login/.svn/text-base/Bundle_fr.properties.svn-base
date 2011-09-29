@@ -1,0 +1,94 @@
+#EN: WARNING\nThe contents of the following directories will be deleted: \n\n    {0}\n    {1}\n    {2}\n\nWould you like to continue?
+Clear_Cache_Warning_Message=ATTENTION\nLe contenu des r\u00e9pertoires suivants va \u00eatre effac\u00e9: \n\n    {0}\n    {1}\n    {2}\n\nVoulez-vous continuer ?
+#EN: Confirm delete directories
+Confirm_Delete_Directories=Confirmer effacement r\u00e9pertoires
+#EN: Connecting...
+Connecting...=Connexion...
+#EN: Downloading module: {0} ({1}%)
+Downloading\ module=T\u00e9l\u00e9chargement du module: {0} ({1}%)
+#EN: Authenticated User
+EitherLoginPanel.authLoginRB.text=Utilisateur enregistr\u00e9
+#EN: Guest
+EitherLoginPanel.guestLoginRB.text=Invit\u00e9
+#EN: Connect as:
+EitherLoginPanel.jLabel1.text=Connexion en temps que:
+#EN: Error connecting: {0}
+Error_Connecting=Erreur de connexion: {0}
+#EN: Audio
+LoginOptionsFrame.audioPanel.TabConstraints.tabTitle=Audio
+#EN: Cache
+LoginOptionsFrame.cachePanel.TabConstraints.tabTitle=Cache
+#EN: Cancel
+LoginOptionsFrame.cancelButton.text=Annuler
+#EN: Clear Cache
+LoginOptionsFrame.clearCacheButton.text=Vider Cache
+#EN: Port:
+LoginOptionsFrame.httpProxyPortTFLabel.text=Port:
+#EN: HTTP Proxy:
+LoginOptionsFrame.httpProxyTFLabel.text=Proxy HTTP:
+#EN: Port:
+LoginOptionsFrame.httpsProxyPortTFLabel.text=Port:
+#EN: HTTPS Proxy:
+LoginOptionsFrame.httpsProxyTFLabel.text=Proxy HTTPS:
+#EN: Local IP Address:
+LoginOptionsFrame.jLabel1.text=Adresse IP locale:
+#EN: Cache Directory:
+LoginOptionsFrame.jLabel2.text=R\u00e9pertoire Cache:
+#EN: Phone number:
+LoginOptionsFrame.jLabel3.text=Num\u00e9ro T\u00e9l\u00e9phone:
+#EN: Audio Quality:
+LoginOptionsFrame.jLabel4.text=Qualit\u00e9 Audio:
+#EN: Use this phone number instead of the softphone
+LoginOptionsFrame.jLabel5.text=Utiliser ce num\u00e9ro plut\u00f4t que le softphone
+#EN: Network Interface
+LoginOptionsFrame.jPanel1.border.title=Interface R\u00e9seau
+#EN: Web Proxies
+LoginOptionsFrame.jPanel2.border.title=Proxy Web
+#EN: Network
+LoginOptionsFrame.networkPanel.TabConstraints.tabTitle=R\u00e9seau
+#EN: No proxy
+LoginOptionsFrame.noProxyRB.text=Pas de proxy
+#EN: No Proxy For:
+LoginOptionsFrame.noProxyTFLabel.text=Pas de proxy pour:
+#EN: OK
+LoginOptionsFrame.okButton.text=OK
+#EN: Use system proxy settings
+LoginOptionsFrame.systemProxyRB.text=Utiliser proxy syst\u00e8me
+#EN: Advanced Properties
+LoginOptionsFrame.title=Propri\u00e9t\u00e9s avanc\u00e9es
+#EN: Manual proxy configuration:
+LoginOptionsFrame.wlProxyRB.text=Configuration manuelle du proxy:
+#EN: Full Name:
+NoAuthLoginPanel.naFullNameLabel.text=Pr\u00e9nom et Nom:
+#EN: Server:
+NoAuthLoginPanel.naServerLabel.text=Serveur:
+#EN: Username:
+NoAuthLoginPanel.naUsernameLabel.text=Nom utilisateur:
+#EN: Password:
+WebServiceAuthLoginPanel.naFullNameLabel.text=Mot de passe:
+#EN: Server:
+WebServiceAuthLoginPanel.naServerLabel.text=Serveur:
+#EN: Username:
+WebServiceAuthLoginPanel.naUsernameLabel.text=Nom utilisateur:
+#EN: Advanced...
+WonderlandLoginDialog.advancedButton.text=Param. avanc\u00e9s...
+#EN: Cancel
+WonderlandLoginDialog.cancelButton.text=Annuler
+#EN: Waiting for external login...
+WonderlandLoginDialog.jLabel1.text=En attente du login externe...
+#EN: Login
+WonderlandLoginDialog.loginButton.text=Login
+#EN: Status:
+WonderlandLoginDialog.statusLabel.text=Etat:
+#EN: Log in
+WonderlandLoginDialog.tagLineLabel.text=Log in
+#EN: Password:
+WonderlandLoginDialog.upPasswordLabel.text=Mot de passe:
+#EN: Server:
+WonderlandLoginDialog.upServerLabel.text=Serveur:
+#EN: Username:
+WonderlandLoginDialog.upUsernameLabel.text=Nom utilisateur:
+#EN: Server:
+WonderlandLoginDialog.webServerLabel.text=Serveur:
+#EN: Open Wonderland
+WonderlandLoginDialog.worldNameLabel.text=Open Wonderland

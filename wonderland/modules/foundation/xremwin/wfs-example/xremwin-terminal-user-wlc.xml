@@ -1,0 +1,20 @@
+<!-- User-launched firefox -->
+<xremwin-cell>
+  <position-component>
+    <origin>
+        <x>0.0</x>
+        <y>5.0</y>
+        <z>5.0</z>
+    </origin>
+    <rotation>
+        <x>0.0</x>
+        <y>1.0</y>
+        <z>0.0</z>
+	<angle>3.141569</angle>
+    </rotation>
+  </position-component>
+  <appName>Terminal</appName>
+  <launchLocation>user</launchLocation>
+  <launchUser>Deron</launchUser>
+  <command>gnome-terminal</command>
+</xremwin-cell>

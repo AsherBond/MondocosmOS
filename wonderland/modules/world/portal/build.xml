@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="package" name="wonderland-portal">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-portal}"/>
+    <property file="${current.dir}/my.module.properties"/>
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <!-- classpath for building client -->
+    <pathconvert property="module-client.classpath">
+	<path location="${modules.dir}/foundation/content-repository/build/client/contentrepo-client.jar"/>
+        <path location="${modules.dir}/world/jmecolladaloader/build/client/jmecolladaloader-client.jar"/>
+        <path location="${modules.dir}/world/avatarbase/build/client/avatarbase-client.jar"/>
+        <path location="${modules.dir}/foundation/placemarks-api/build/client/placemarks-api-client.jar"/>
+    </pathconvert>
+
+    <pathconvert property="module-server.classpath">
+        <path location="${modules.dir}/foundation/placemarks-api/build/server/placemarks-api-server.jar"/>
+        <path location="${modules.dir}/tools/audio-manager/lib/voicelib.jar"/>
+        <path location="${modules.dir}/tools/audio-manager/lib/bridge_connector.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+
+        <module name="${module.name}" majorVersion="0" minorVersion="5"
+                moduleDescription="${module.description}"
+                jarfile="${module.dist.dir}/${module.name}.jar"
+                builddir="${build.lib.dir}">
+
+            <requires name="placemarks-api" version="0" minorVersion="5"/>
+	    <requires name="content-repository" version="0" minorVersion="5"/>
+
+            <client>
+                <clientjar name="portal-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <include name="${module.src}/common/messages/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/resources/**"/>
+                    </fileset>
+                </clientjar>
+            </client>
+
+            <server>
+                <serverjar name="portal-server" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                    <include name="${module.src}/common/messages/*"/>
+                </serverjar>
+            </server>
+
+            <art dir="${current.dir}/art"/>
+        </module>
+    </target>
+
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

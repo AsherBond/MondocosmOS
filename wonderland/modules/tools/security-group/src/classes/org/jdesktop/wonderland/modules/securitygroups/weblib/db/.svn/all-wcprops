@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/weblib/db
+END
+GroupDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/weblib/db/GroupDAO.java
+END
+MemberEntityId.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/weblib/db/MemberEntityId.java
+END
+MemberEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/weblib/db/MemberEntity.java
+END
+GroupEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/weblib/db/GroupEntity.java
+END

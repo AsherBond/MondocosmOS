@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <name>hud-module</name>
+        </general-data>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
+            <!-- Do not use Project Properties customizer when editing this file manually. -->
+            <name>hud-module</name>
+            <properties/>
+            <folders>
+                <source-folder>
+                    <label>hud-module</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>src/classes</label>
+                    <type>java</type>
+                    <location>src/classes</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <target>dist</target>
+                </action>
+                <action name="clean">
+                    <target>clean</target>
+                </action>
+                <action name="rebuild">
+                    <target>clean</target>
+                    <target>dist</target>
+                </action>
+                <action name="run.single">
+                    <target>run-selected-file-in-classes</target>
+                    <context>
+                        <property>run.class</property>
+                        <folder>src/classes</folder>
+                        <pattern>\.java$</pattern>
+                        <format>java-name</format>
+                        <arity>
+                            <one-file-only/>
+                        </arity>
+                    </context>
+                </action>
+            </ide-actions>
+            <export>
+                <type>jar</type>
+                <location>dist/hud.jar</location>
+                <build-target>dist</build-target>
+            </export>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>src/classes</label>
+                        <location>src/classes</location>
+                    </source-folder>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
+            <compilation-unit>
+                <package-root>src/classes</package-root>
+                <classpath mode="compile">../../../core/build/lib/wonderland-client.jar:../../../core/build/lib/wonderland-common.jar:../../../core/ext/common/swing-layout-1.0.jar:../../../core/ext/common/swing-worker-1.2.jar:../../../core/ext/common/mtgame.jar:../../../core/ext/jme20/target/jme.jar:../../../core/ext/sgs/sgs-client-0.9.8/lib/sgs-client.jar:../appbase/build/client/appbase-client.jar:../appbase/build/client/appbase-client-cell.jar:../animationbase/lib/trident.jar:../animationbase/build/client/animationbase-client.jar</classpath>
+                <built-to>dist/hud.jar</built-to>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+        </java-data>
+        <preferences xmlns="http://www.netbeans.org/ns/auxiliary-configuration-preferences/1">
+            <module name="org-netbeans-modules-editor-indent">
+                <node name="text">
+                    <node name="x-java">
+                        <node name="CodeStyle">
+                            <node name="project"/>
+                        </node>
+                    </node>
+                </node>
+                <node name="CodeStyle">
+                    <node name="project">
+                        <property name="text-limit-width" value="80"/>
+                        <property name="tab-size" value="8"/>
+                    </node>
+                    <property name="usedProfile" value="default"/>
+                </node>
+            </module>
+        </preferences>
+    </configuration>
+</project>

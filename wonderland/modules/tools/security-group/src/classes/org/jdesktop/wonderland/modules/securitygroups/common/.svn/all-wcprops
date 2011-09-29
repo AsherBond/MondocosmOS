@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/4689/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common
+END
+InvalidateGroupMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/InvalidateGroupMessage.java
+END
+GroupDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4370/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/GroupDTO.java
+END
+GroupsDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4370/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/GroupsDTO.java
+END
+SecurityCacheConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/SecurityCacheConnectionType.java
+END
+GroupUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/4689/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/GroupUtils.java
+END
+MemberDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/common/MemberDTO.java
+END

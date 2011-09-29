@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-utils" default="jar" basedir=".">
+    <target name="all" depends="build, jar"/>
+    
+    <target name="build">
+        <ant antfile="wonderland-doclet/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="ant/build.xml" inheritAll="false" target="build"/>
+        <ant antfile="wonderland-version/build.xml" inheritAll="false" target="build"/>
+    </target>
+    
+    <target name="jar">
+        <ant antfile="wonderland-doclet/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="ant/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="wonderland-version/build.xml" inheritAll="false" target="jar"/>
+    </target>
+    
+    <target name="clean">
+        <ant antfile="wonderland-doclet/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="ant/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="wonderland-version/build.xml" inheritAll="false" target="clean"/>
+    </target>
+</project>

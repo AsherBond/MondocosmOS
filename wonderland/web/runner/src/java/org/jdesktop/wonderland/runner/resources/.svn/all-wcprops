@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4372/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources
+END
+RunnerActionResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2816/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/RunnerActionResource.java
+END
+DeploymentPlanResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4372/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/DeploymentPlanResource.java
+END
+ActionResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2816/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/ActionResource.java
+END
+RunnerChecksumsResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1398/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/RunnerChecksumsResource.java
+END
+RemoteStatusResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2511/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/RemoteStatusResource.java
+END
+RunnerListResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1365/trunk/web/runner/src/java/org/jdesktop/wonderland/runner/resources/RunnerListResource.java
+END

@@ -1,0 +1,17 @@
+curly
+Hair_AfAmLngCrew
+Hair_AfAmShortCrew
+Hair_Bald
+Hair_Balding
+Hair_Faux
+Hair_Normal
+Hair_ShavedFlatTop
+Hair_ShavedShort
+Hair_Spiky
+LPonyTail
+M_center
+M_pt_left
+M_pt_Right
+M_slickedbk
+S_Pt_left
+S_pt_right

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/comms
+END
+LoginFailureException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2816/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/LoginFailureException.java
+END
+WonderlandServerInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WonderlandServerInfo.java
+END
+WonderlandSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WonderlandSession.java
+END
+WaitingDialogPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4222/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WaitingDialogPanel.java
+END
+ResponseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/ResponseListener.java
+END
+OKErrorResponseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1518/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/OKErrorResponseListener.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/291/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/package.html
+END
+CellClientSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2254/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/CellClientSession.java
+END
+WonderlandSessionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WonderlandSessionImpl.java
+END
+WaitingDialogPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4175/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WaitingDialogPanel.form
+END
+ConnectionFailureException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/ConnectionFailureException.java
+END
+ServerUnavailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2511/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/ServerUnavailableException.java
+END
+WaitResponseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/WaitResponseListener.java
+END
+BaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/BaseConnection.java
+END
+LoginParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/LoginParameters.java
+END
+SessionStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/SessionStatusListener.java
+END
+ClientConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/comms/ClientConnection.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4572/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common
+END
+TakeControlAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3316/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/TakeControlAction.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/3987/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4521/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4019/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle_zh_CN.properties
+END
+XrwSecurityConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3116/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/XrwSecurityConnectionType.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4572/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4557/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/3993/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/common/Bundle_de.properties
+END

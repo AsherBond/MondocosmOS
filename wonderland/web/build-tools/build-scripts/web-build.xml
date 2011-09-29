@@ -1,0 +1,45 @@
+<project basedir="." default="..." name="web.build">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="web.build-scripts.dir" file="${ant.file.web.build}"/>
+    
+    <!-- import the web setup file -->
+    <import file="${web.build-scripts.dir}/web-setup.xml"/>
+    
+    <!-- import the global build setup -->
+    <import file="${setup.build-scripts.dir}/build-setup.xml"/>
+    
+    <!-- 
+        import the core setup files.  This will include the core classpaths,
+        which we depend on.
+    -->
+    <import file="${top.dir}/core/build-tools/build-scripts/core-setup.xml"/>
+    
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="-web-build-init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+
+        <!-- default paths.  Override to add test-specific paths -->
+        <property name="web-extra.classpath" value=""/>
+    </target>
+
+   <target name="-web-compile" depends="-web-build-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${web-extra.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="-web-clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="data"/>
+        <delete dir="log"/>
+    </target>
+</project>

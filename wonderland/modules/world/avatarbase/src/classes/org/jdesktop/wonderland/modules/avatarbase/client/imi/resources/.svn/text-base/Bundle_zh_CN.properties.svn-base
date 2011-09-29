@@ -1,0 +1,178 @@
+#EN: Caucasian
+Female_Head_Caucasian=\u9ad8\u52a0\u7d22\u4eba
+#EN: Asian
+Female_Head_Asian=\u4e9a\u6d32\u4eba
+#EN: African American
+Female_Head_AfricanAmerican=\u975e\u88d4\u7f8e\u56fd\u4eba
+#EN: Hispanic
+Female_Head_Hispanic=\u897f\u73ed\u7259\u88d4
+#EN: June (low poly)
+Female_Head_June_Low_Poly=\u516d\u6708 (\u4f4e\u805a\uff09
+#EN: April (high poly)
+Female_Head_April_High_Poly=\u56db\u6708 (\u9ad8\u805a)
+#EN: Bald
+Female_Hair_Bald=\u79c3\u5934
+#EN: Pig Tails
+Female_Hair_PigTailsShape=\u732a\u5c3e\u5df4
+#EN: Curly Pig Tails
+Female_Hair_CulyPigTailzShape=\u5377\u6bdb\u732a\u5c3e\u5df4
+#EN: Large Bun
+Female_Hair_BunShape_Large=\u5927\u5377\u53d1
+#EN: Medium Bun
+Female_Hair_BunShape_Medium=\u4e2d\u7b49\u5377\u53d1
+#EN: Curly Pony Tail
+Female_Hair_CurlyPonyTailShape=\u5377\u6bdb\u9a6c\u5c3e\u5df4
+#EN: Long Pony Tail
+Female_Hair_PonyTailShape_Long=\u957f\u9a6c\u5c3e\u5df4
+#EN: Medium Pony Tail
+Female_Hair_PonyTailShape_Medium=\u4e2d\u9a6c\u5c3e\u5df4
+#EN: Long Bangs
+Female_Hair_BangsShape_Long=\u957f\u5218\u6d77
+#EN: Layered Bangs
+Female_Hair_BangsShape_Layered=\u5206\u5c42\u5218\u6d77
+#EN: Layered Left Part
+Female_Hair_Left_Part_Layered=\u5206\u5c42\u5de6\u5206
+#EN: Layered Right Part
+Female_Hair_Right_Part_Layered=\u5206\u5c42\u53f3\u5206
+#EN: Layered Center Part
+Female_Hair_Center_Part_Layered=\u5206\u5c42\u4e2d\u5206
+#EN: Curly Bangs
+Female_Hair_BangsShape_Curly=\u5377\u5f0f\u5218\u6d77
+#EN: Curly Right Part
+Female_Hair_Right_Part_Culry=\u53f3\u5206\u5377\u53d1
+#EN: Curly Left Part
+Female_Hair_Left_Part_Culry=\u5de6\u5206\u5377\u53d1
+#EN: Curly Center Part
+Female_Hair_Center_Part_Curly=\u4e2d\u5206\u5377\u53d1
+#EN: Long Dredz
+Female_Hair_Long_DredzShape=\u957f Dredz
+#EN: Medium Bangs
+Female_Hair_BangsShape_Medium=\u4e2d\u5ea6\u5218\u6d77
+#EN: Medium Center Part
+Female_Hair_Center_Part_Medium=\u4e2d\u5ea6\u4e2d\u5206
+#EN: Medium Curly Bangs
+Female_Hair_BangzShape_Medium_Curly=\u4e2d\u5ea6\u5377\u5218\u6d77
+#EN: Medium African Bangs
+Female_Hair_AfricanBangsShape_Medium=\u4e2d\u5ea6\u975e\u6d32\u5f0f\u5218\u6d77
+#EN: Medium African Right Part
+Female_Hair_African_Right_Part_Medium=\u4e2d\u5ea6\u975e\u6d32\u5f0f\u53f3\u5206
+#EN: Medium African Left Part
+Female_Hair_African_Medium_Left_Part=\u4e2d\u5ea6\u975e\u6d32\u5f0f\u5de6\u5206
+#EN: Medium African Center Part
+Female_Hair_African_Center_Part_Medium=\u4e2d\u5ea6\u975e\u6d32\u5f0f\u4e2d\u5206
+#EN: Short African Messy
+Female_Hair_Short_African_MessyShape=\u77ed\u975e\u6d32\u5f0f\u4e71\u53d1
+#EN: Short Right Part
+Female_Hair_Short_Right_Part=\u77ed\u53f3\u5206
+#EN: Short Left Part
+Female_Hair_Short_Left_Part=\u77ed\u5de6\u5206
+#EN: Short Center Part
+Female_Hair_Short_Center_Part=\u77ed\u4e2d\u5206
+#EN: Default Hands
+Female_Hands_Default=\u9ed8\u8ba4\u624b
+#EN: Dress Shirt
+Female_Torso_Dress_Shirt=\u7a7f\u886c\u886b
+#EN: Sweater
+Female_Torso_Sweater=\u6bdb\u8863
+#EN: Jacket
+Female_Torso_Jacket=\u5939\u514b
+#EN: T Shirt
+Female_Torso_T_Shirt=T\u6064
+#EN: No Jacket
+Female_Jacket_None=\u65e0\u886c\u886b
+#EN: Dress Shoes
+Female_Feet_Dress_Shoes=\u7a7f\u978b
+#EN: Running Shoes
+Female_Feet_Converse=\u8dd1\u978b
+#EN: Flip Flops
+Female_Feet_Flip_Flops=\u4eba\u5b57\u62d6
+#EN: Bare Feet
+Female_Feet_Bare_Feet=\u8d64\u811a
+#EN: Jeans
+Female_Legs_Jeans=\u725b\u4ed4\u88e4
+#EN: Dress Pants
+Female_Legs_Dress_Pants=\u7a7f\u957f\u88e4
+#EN: Shorts
+Female_Legs_Shorts=\u77ed\u88e4
+#EN: Caucasian
+Male_Head_Caucasian=\u9ad8\u52a0\u7d22\u4eba
+#EN: African American (med poly)
+Male_Head_AfricanAmerican_Medium_Poly=\u975e\u88d4\u7f8e\u56fd\u4eba (\u4e2d\u5ea6\u805a)
+#EN: African American (low poly)
+Male_Head_AfricanAmerican_Low_Poly=\u975e\u88d4\u7f8e\u56fd\u4eba (\u4f4e\u5ea6\u805a)
+#EN: Dark
+Male_Head_Black=\u9ed1\u8272
+#EN: Asian
+Male_Head_Asian=\u4e9a\u6d32\u4eba
+#EN: Middle Aged Guy
+Male_Head_Middle_Aged_Guy=\u4e2d\u5e74\u7537\u4eba
+#EN: Bald
+Male_Hair_Bald=\u79c3\u5934
+#EN: Pony Tail
+Male_Hair_PonyTailShape=\u9a6c\u5c3e
+#EN: Chin Length Part Left
+Male_Hair_ChinLengthPartLeftShape=\u4e0b\u5df4\u957f\u5de6\u5206
+#EN: Chin Length Part Right
+Male_Hair_ChinLengthPartRightShape=\u4e0b\u5df4\u957f\u53f3\u5206
+#EN: Slicked Back
+Male_Hair_SlickedBackShape=\u5411\u540e\u68b3
+#EN: Short Part Left
+Male_Hair_PartLeftShape=\u77ed\u5f0f\u5de6\u5206
+#EN: Short Part Right
+Male_Hair_PartRightShape=\u77ed\u5f0f\u53f3\u5206
+#EN: Short Messy
+Male_Hair_ShortMessyShape=\u77ed\u5f0f\u4e71\u53d1
+#EN: Flat Top
+Male_Hair_FlatTopShape=\u5e73\u5934
+#EN: Short Top
+Male_Hair_ShortTopUpShape=\u77ed\u5e73\u5934
+#EN: Basic Short
+Male_Hair_ShortBasicShape=\u57fa\u672c\u77ed
+#EN: Short Recede
+Male_Hair_ShortRecedShape=\u77ed\u56de\u843d
+#EN: Balding
+Male_Hair_BaldingShape=\u5149\u5934
+#EN: Piccard Balding
+Male_Hair_BaldPiccardShape=Piccard \u5149\u5934
+#EN: Mohawk
+Male_Hair_SuperFauxHawkShape=Mohawk
+#EN: Spikey
+Male_Hair_SpikeyShape=Spikey
+#EN: Default Hands
+Male_Hands_Default=\u9ed8\u8ba4\u624b
+#EN: T Shirt
+Male_Torso_T_Shirt=T\u6064
+#EN: Polo Shirt
+Male_Torso_Polo=\u9a6c\u7403\u886b
+#EN: Dress Shirt
+Male_Torso_Dress_Shirt=\u7a7f\u886c\u886b
+#EN: Sweater
+Male_Torso_Dress_Sweater=\u6bdb\u8863
+#EN: Suit Shirt
+Male_Torso_Suit_Shirt=\u897f\u670d\u886c\u886b
+#EN: Meso
+Male_Torso_Meso=Meso
+#EN: No Jacket
+Male_Jacket_None=\u65e0\u886c\u886b
+#EN: Suit Jacket
+Male_Jacket_Suit=\u897f\u88c5\u5916\u5957
+#EN: Tennis Shoes
+Male_Feet_Tennis_Shoes=\u7f51\u7403\u978b
+#EN: Flip Flops
+Male_Feet_Flip_Flops=\u4eba\u5b57\u62d6
+#EN: Dress Shoes
+Male_Feet_Dress_Shoes=\u7a7f\u978b
+#EN: Cowboy Boots
+Male_Feet_Cowboy_Boots=\u725b\u4ed4\u9774
+#EN: Bare Feet
+Male_Feet_Bare_Feet=\u8d64\u811a
+#EN: Jeans
+Male_Legs_Jeans=\u725b\u4ed4\u88e4
+#EN: Shorts
+Male_Legs_Shorts=\u77ed\u88e4
+#EN: Dress Pants
+Male_Legs_Dress_Pants=\u7a7f\u957f\u88e4
+#EN: Slacks
+Male_Legs_Slacks=\u897f\u88e4
+#EN: Meso
+Male_Legs_Meso=Meso

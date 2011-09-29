@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4675/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4675/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4622/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4622/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_zh_CN.properties
+END
+module_nbproject_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/852/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/module_nbproject_template.xml
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3318/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4622/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4622/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4622/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_de.properties
+END
+Bundle_en_GB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4306/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/Bundle_en_GB.properties
+END
+module_build_template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/985/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/resources/module_build_template.xml
+END

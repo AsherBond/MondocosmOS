@@ -1,0 +1,11 @@
+AffordanceHUDPanel.jLabel1.text=Manipulatorengr\u00F6\u00DFe
+AffordanceHUDPanel.resizeToggleButton.toolTipText=Gr\u00F6\u00DFe \u00E4ndern
+AffordanceHUDPanel.rotateToggleButton.toolTipText=Drehen
+AffordanceHUDPanel.translateToggleButton.toolTipText=Bewegen
+Edit...=Bearbeiten...
+Edit_Checking=Bearbeiten (\u00FCberpr\u00FCfe)...
+Edit_Object=Bearbeite Objekt: {0}
+Edit_Object_None_Selected=Bearbeite Objekt: <keins ausgew\u00E4hlt>
+PositionHUDPanel.jLabel10.text=Drehung (Grad)
+PositionHUDPanel.jLabel14.text=Gr\u00F6\u00DFe
+PositionHUDPanel.jLabel4.text=Position (Meter)

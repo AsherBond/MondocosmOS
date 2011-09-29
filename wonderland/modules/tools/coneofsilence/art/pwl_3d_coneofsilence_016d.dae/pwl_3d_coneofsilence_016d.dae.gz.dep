@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployed-model>
+    <version>1</version>
+    <modelURL>wla://coneofsilence/pwl_3d_coneofsilence_016d.dae/pwl_3d_coneofsilence_016d.dae.gz</modelURL>
+    <loaderDataURL>wla://coneofsilence/pwl_3d_coneofsilence_016d.dae/pwl_3d_coneofsilence_016d.dae.gz.ldr</loaderDataURL>
+    <modelBGScale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+    </modelBGScale>
+    <modelBGTranslation>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+    </modelBGTranslation>
+    <modelBGRotation>
+        <x>0.0</x>
+        <y>0.7071068</y>
+        <z>0.7071068</z>
+        <angle>3.1415927</angle>
+    </modelBGRotation>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.jmecolladaloader.client.JmeColladaLoader</modelLoaderClassname>
+</deployed-model>

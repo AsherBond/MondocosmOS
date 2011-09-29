@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe"/>
+	<classpathentry kind="lib" path="libs/org.jzy3d-0.8.4.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/jogl.jar" sourcepath="/home/dgd/Escritorio/jogl-1.1.1a/jogl-1.1.1a-src.zip"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

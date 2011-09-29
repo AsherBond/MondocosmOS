@@ -1,0 +1,9 @@
+Apply_Message=Do you wish to apply the properties before closing?
+Apply_Title=Apply values?
+Properties...=Properties...
+ViewPropertiesJDialog.cancelButton.text=Close
+ViewPropertiesJDialog.fovLabel.text=Field Of View:
+ViewPropertiesJDialog.frontClipLabel.text=Front Clip:
+ViewPropertiesJDialog.okButton.text=Apply
+ViewPropertiesJDialog.rearClipLabel.text=Back Clip:
+View_Properties=View Properties

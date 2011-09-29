@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="artimport" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.artimport}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/artimport"/>
+    <property name="module.jarname" value="artimport"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <pathconvert property="module-client.classpath">
+        <path location="${current.dir}/lib/ant.jar"/>
+        <path location="${current.dir}/lib/ant-launcher.jar"/>
+        <path location="${current.dir}/lib/jmejtree_jme2.jar"/>
+        <path location="${current.dir}/lib/propertytable.jar"/>
+        <path location="${current.dir}/lib/scenemonitor_jme2.jar"/>
+        <path location="${current.dir}/lib/sm_properties_jme2.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+
+        <!-- Include resources -->
+        <copy todir="${build.classes.dir}/${module.src}/client/jme/resources">
+            <fileset dir="${current.dir}/src/classes/${module.src}/client/jme/resources"/>
+        </copy>
+
+        <module name="artimport" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/artimport.jar"
+                moduleDescription="3D model import library" builddir="${build.dir}">
+                    
+            <client dir="${current.dir}/lib">
+                <clientjar name="artimport-client" basedir="${build.classes.dir}">
+                    <clientplugin provider="org.jdesktop.wonderland.modules.artimport.client.jme.ArtToolsPlugin"/>
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar>
+
+                <include name="ant.jar"/>
+                <include name="ant-launcher.jar"/>
+                <include name="jmejtree_jme2.jar"/>
+                <include name="propertytable.jar"/>
+                <include name="sm_properties_jme2.jar"/>
+
+            </client>
+
+             <!--
+            <server>
+                <serverjar name="artimport-server" basedir="${build.classes.dir}">
+                    <cellsetup>
+                        <provider classname="${module.plugin.cellsetup}"/>
+                    </cellsetup>
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            -->
+            <!--<art dir="${current.dir}/art"/>-->
+        </module>
+    </target>                                  
+                                           
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-darkstar-api-module" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-darkstar-api-module}"/>
+    <property file="${current.dir}/my.module.properties"/>
+
+
+    <property name="modules.dir" location="${wonderland.dir}/modules"/>
+    <property name="module.src" value="${module.plugin.src}"/>
+    <property name="module.jarname" value="${module.name}"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-weblib.classpath">
+        <path location="${web.dir}/runner/dist/wonderland-runner-api.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-client.jar"/>
+        <path location="${core.dir}/build/lib/wonderland-common.jar"/>
+        <path location="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        <path location="${web.dir}/wfs/dist/wonderland-wfs.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client,
+                                                -darkstar-api-compile-weblib"/>
+
+    <target name="-darkstar-api-compile-weblib" depends="-module-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/weblib/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-weblib.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+
+        <jar jarfile="${build.lib.dir}/${module.name}.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="${module.src}/weblib/**"/>
+            </fileset>
+        </jar>
+
+        <module name="${module.name}" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.name}.jar"
+                moduleDescription="${module.description}" builddir="${build.dir}">
+                    
+            <part name="weblib" dir="${build.lib.dir}">
+                <include name="${module.name}.jar"/>
+            </part>
+        </module>
+    </target>                                  
+                 
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

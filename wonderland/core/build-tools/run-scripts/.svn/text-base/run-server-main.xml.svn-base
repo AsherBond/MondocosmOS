@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    This file will be renamed run.xml at the top level.  It just imports
+    the core run-server.xml file, and executes the run method in there.
+-->
+<project basedir="." default="run" name="wonderland.run.server">
+    <!-- current directory needed in all scripts -->
+    <property name="current.dir" value="core"/>
+
+    <!-- override properties -->
+    <property name="core.build.lib.dir" location="core/lib"/>
+    <property name="core.lib.dir" location="core/lib"/>
+
+    <!-- import the core build script -->
+    <property name="core.run-scripts.dir"
+              location="core/build-tools/run-scripts"/>
+   
+    <!-- run the server -->
+    <target name="run" depends="-run-setup,
+                                -run-coldstart,
+                                -run-server"/>
+
+    <target name="-run-setup">
+        <!-- macro for the remote ant call -->
+        <macrodef name="run-server">
+            <attribute name="target" default="core-run-server"/>
+            <sequential>
+                <ant dir="${core.run-scripts.dir}"
+                     antfile="run-server.xml"
+                     inheritall="false"
+                     target="@{target}"/>
+            </sequential>
+        </macrodef>
+    </target>
+
+    <!-- start the Wonderland server -->
+    <target name="-run-server">
+        <run-server/>
+    </target>
+
+    <!-- remove the current data directory before starting Wonderland -->
+    <target name="-run-coldstart" if="sgs.coldstart">
+        <run-server target="core-clean-server"/>
+    </target>
+</project>

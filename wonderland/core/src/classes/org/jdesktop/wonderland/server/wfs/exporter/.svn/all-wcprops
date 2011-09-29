@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4476/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter
+END
+CellExportDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3390/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExportDescriptor.java
+END
+CellExportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/3489/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExportService.java
+END
+CellExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4476/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExporter.java
+END
+CellExporterUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/3948/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExporterUtils.java
+END
+CellExportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2513/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExportManager.java
+END
+CellExportManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2513/trunk/core/src/classes/org/jdesktop/wonderland/server/wfs/exporter/CellExportManagerImpl.java
+END

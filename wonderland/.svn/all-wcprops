@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/!svn/ver/4733/trunk
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/4373/trunk/LICENSE.txt
+END
+README-build.txt
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2796/trunk/README-build.txt
+END
+my.run.properties.example
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1500/trunk/my.run.properties.example
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2268/trunk/build.xml
+END

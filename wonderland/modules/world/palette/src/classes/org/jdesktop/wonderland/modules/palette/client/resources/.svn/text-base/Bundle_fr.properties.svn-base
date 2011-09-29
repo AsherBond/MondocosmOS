@@ -1,0 +1,24 @@
+#EN: Insert
+CellPalette.createButton.text=Ins\u00e9rer
+#EN: Insert Object:
+CellPalette.jLabel1.text=Ins\u00e9rer Composant:
+#EN: Insert Object
+CellPalette.title=Ins\u00e9rer Composant
+#EN: Object...
+Object...=Composant...
+#EN: Confirm Delete
+Confirm_Delete=Confirmer Suppression
+#EN: Are you sure you want to delete object {0}?
+Confirm_Delete_Message=Etes-vous certain de vouloir supprimer la cellule {0}?
+#EN: {0} Copy
+Copy_Of={0} Copier
+#EN: Delete
+Delete=Supprimer
+#EN: Delete (checking)
+Delete_Checking=Supprimer (v\u00e9rifier)
+#EN: Duplicate
+Duplicate=Dupliquer
+#EN: Duplicate (checking)
+Duplicate_Checking=Dupliquer (v\u00e9rifier)
+#EN: Shortcuts
+Shortcuts=Raccourcis

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/4683/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4521/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4518/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_zh_CN.properties
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4088/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4572/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4557/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/4113/trunk/modules/tools/placemarks/src/classes/org/jdesktop/wonderland/modules/placemarks/client/resources/Bundle_de.properties
+END

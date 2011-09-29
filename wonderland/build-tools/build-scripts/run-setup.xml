@@ -1,0 +1,9 @@
+<project basedir="." default="..." name="setup.run-setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="setup.build-scripts.dir" file="${ant.file.setup.run-setup}"/>
+       
+    <!-- import common setup.xml -->
+    <import file="${setup.build-scripts.dir}/setup.xml"/>
+    
+    <!-- common macros -->
+</project>

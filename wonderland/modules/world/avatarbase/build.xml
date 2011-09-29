@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="avatarbase" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.avatarbase}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/avatarbase"/>
+    <property name="module.jarname" value="avatarbase"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${modules.dir}/foundation/content-repository/build/client/contentrepo-client.jar"/>
+        <path location="${current.dir}/lib/avatars.jar"/>
+        <path location="${modules.dir}/foundation/hud/build/client/hud-client.jar"/>
+    </pathconvert>
+       
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client,
+						-module-jar-common">
+        <!-- copy resource bundles -->
+        <copy todir="${build.classes.dir}/${module.src}/client/resources">
+            <fileset dir="${current.dir}/src/classes/${module.src}/client/resources"/>
+        </copy>
+        <copy todir="${build.classes.dir}/${module.src}/client/jme/cellrenderer/resources">
+            <fileset dir="${current.dir}/src/classes/${module.src}/client/jme/cellrenderer/resources"/>
+        </copy>
+        <copy todir="${build.classes.dir}/${module.src}/client/imi/resources">
+            <fileset dir="${current.dir}/src/classes/${module.src}/client/imi/resources"/>
+        </copy>
+        <copy todir="${build.classes.dir}/${module.src}/client/ui/resources">
+            <fileset dir="${current.dir}/src/classes/${module.src}/client/ui/resources"/>
+        </copy>
+    </target>
+    
+    <target name="-module-jar-common" depends="-module-compile-common">
+      <mkdir dir="${current.dir}/build/lib"/>
+      <jar destfile="${current.dir}/build/lib/avatarbase-common.jar">
+        <fileset dir="${build.classes.dir}">
+          <include name="${module.src}/common/**"/>
+        </fileset>
+      </jar>
+    </target>
+
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="avatarbase" majorVersion="0" minorVersion="5" miniVersion="2" jarfile="${module.dist.dir}/avatarbase.jar"
+                moduleDescription="Avatar API and library" builddir="${build.dir}">
+
+            <requires name="content-repository" version="0" minorVersion="5"/>
+
+            <client dir="${current.dir}/lib">
+                <include name="avatars.jar"/>
+                <clientjar name="avatarbase-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar>
+            </client>
+
+            <server>
+                <serverjar name="avatarbase-server" basedir="${build.classes.dir}">
+                    <serverplugin provider="org.jdesktop.wonderland.modules.avatarbase.server.cell.AvatarPluginSrv"/>
+                    <!--<cellsetup>
+                        <provider classname="${module.plugin.cellsetup}"/>
+                    </cellsetup>-->
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+        </module>
+    </target>
+
+    <target name="test" depends="build">
+        <java classname="org.jdesktop.wonderland.modules.avatarbase.client.AvatarConfigManager" fork="true">
+
+            <jvmarg value="-Xmx512m"/>
+            <jvmarg value="-ea"/>
+            <jvmarg value="-Dwonderland.version=${wonderland.version}"/>
+
+            <!--start debug-->
+            <!--
+            <jvmarg value="-Xdebug"/>
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,address=8890,suspend=n"/>
+            -->
+            <!--
+            <jvmarg value="-agentpath:/tmp/NBProfiler60438.link/deployed/jdk15/mac/libprofilerinterface.jnilib=/tmp/NBProfiler60438.link,5140"/>
+            -->
+            <!--end debug-->
+
+            <classpath>
+                <pathelement path="${module-client.classpath}"/>
+                <pathelement path="${core-client.classpath}"/>
+                <pathelement path="${current.dir}/build/classes"/>
+            </classpath>
+
+            <env key="${env.path.name}" path="${env.path.defvalue}"/>
+        </java>
+    </target>
+                                           
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

@@ -1,0 +1,23 @@
+K 10
+svn:ignore
+V 539
+.AudioMenu.java.swp
+.AudioManagerClient.java.swp
+.VolumeControlJFrame.java.swp
+.VoiceChatDialog.java.swp
+.UserListJFrame.java.swp
+.PlaceCallDialog.java.swp
+.IncomingCallDialog.java.swp
+.InCallDialog.java.swp
+.AddUserDialog.java.swp
+.CallMigrationForm.java.swp
+.AudioTreatmentComponentProperties.java.swp
+.ConeOfSilenceComponentProperties.java.swp
+.AudioParticipantComponent.java.swp
+.VoiceChatBusyHUDPanel.java.swp
+.IncomingCallHUDPanel.java.swp
+.UserListHUDPanel.java.swp
+.MicrophoneComponentProperties.java.swp
+.MicVuMeterPanel.java.swp
+
+END

@@ -1,0 +1,10 @@
+#EN: The drag and drop of your file failed. Please try again.
+DND_Error_message=\u62d6\u62fd\u60a8\u7684\u6587\u4ef6\u5931\u8d25\uff0c\u8bf7\u518d\u8bd5\u4e00\u6b21.
+#EN: Drag and Drop Failed
+DND_Error_Title=\u62d6\u653e\u5931\u8d25
+#EN: Launch Failed
+Launch_Failed=\u542f\u52a8\u5931\u8d25
+#EN: Unable to launch Cell that supports {0}
+Launch_Failed_Message=\u65e0\u6cd5\u542f\u52a8\u652f\u6301 {0} \u7684\u5355\u5143
+#EN: The content type for this URL is not supported: {0}
+Unsupported_Content_Type=\u4e0d\u652f\u6301\u6b64\u7f51\u5740\u7684\u5185\u5bb9\u7c7b\u578b: {0}

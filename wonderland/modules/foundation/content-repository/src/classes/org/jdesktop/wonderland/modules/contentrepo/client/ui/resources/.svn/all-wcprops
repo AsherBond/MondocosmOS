@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources
+END
+ContentBrowserNewDirectory32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/!svn/ver/2746/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/ContentBrowserNewDirectory32x32.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_zh_CN.properties
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3295/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_de_CH.properties
+END
+ContentBrowserDeleteFile32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/2748/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/ContentBrowserDeleteFile32x32.png
+END
+ContentBrowserUploadFile32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/2746/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/ContentBrowserUploadFile32x32.png
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_fr.properties
+END
+ContentBrowserDownloadFile32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/!svn/ver/2746/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/ContentBrowserDownloadFile32x32.png
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/Bundle_de.properties
+END
+ContentBrowserHome32x32.png
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/!svn/ver/2747/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/resources/ContentBrowserHome32x32.png
+END

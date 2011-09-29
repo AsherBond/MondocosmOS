@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-modules" default="default" basedir=".">
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-asset}"/>
+
+    <!-- override default source directory -->
+    <property name="javasrc.dir" location="${current.dir}/src/java"/>
+
+    <!-- import web build file -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+
+    <target name="build" depends="-set-extra-classpath, -web-compile"/>
+
+    <target name="-set-extra-classpath">
+        <pathconvert property="web-extra.classpath">
+            <path path="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-client.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-common.jar"/>
+            <path path="${web.dir}/front/dist/wonderland-webadmin-core.jar"/>
+        </pathconvert>
+    </target>
+
+    <target name="dist" depends="build" description="Build and assemble web war">
+        <mkdir dir="${dist.dir}"/>
+
+        <jar jarfile="${dist.dir}/wonderland-web-modules.war">
+            <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                <include name="org/jdesktop/wonderland/modules/service/resources/**"/>
+                <include name="org/jdesktop/wonderland/modules/servlets/**"/>
+            </zipfileset>
+
+            <fileset dir="${current.dir}/web"/>
+        </jar>
+
+        <jar jarfile="${dist.dir}/wonderland-modules-api.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="org/jdesktop/wonderland/modules/*.class"/>
+                <include name="org/jdesktop/wonderland/modules/ant/**"/>
+            </fileset>
+
+            <!-- include some client classes that are required by the deploy
+                 ant task -->
+            <zipfileset src="${core.dir}/build/lib/wonderland-client.jar">
+                <include name="org/jdesktop/wonderland/client/login/**"/>
+                <include name="org/jdesktop/wonderland/client/comms/**"/>
+            </zipfileset>
+        </jar>
+
+        <jar jarfile="${dist.dir}/wonderland-modules-core.jar">
+            <fileset dir="${build.classes.dir}">
+                <exclude name="org/jdesktop/wonderland/modules/ant/**"/>
+                <exclude name="org/jdesktop/wonderland/modules/service/resources/**"/>
+                <exclude name="org/jdesktop/wonderland/modules/servlets/**"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="clean" depends="-web-clean"/>
+</project>

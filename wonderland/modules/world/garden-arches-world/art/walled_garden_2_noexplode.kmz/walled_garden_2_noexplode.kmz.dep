@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployed-model>
+    <version>1</version>
+    <modelURL>wla://garden-arches/walled_garden_2_noexplode.kmz/models/walled_garden_2_noexplode.dae.gz</modelURL>
+    <loaderDataURL>wla://garden-arches/walled_garden_2_noexplode.kmz/walled_garden_2_noexplode.kmz.ldr</loaderDataURL>
+    <modelBGScale>
+        <x>0.08</x>
+        <y>0.08</y>
+        <z>0.08</z>
+    </modelBGScale>
+    <modelBGTranslation>
+        <x>-130.31998</x>
+        <y>0.0</y>
+        <z>230.99998</z>
+    </modelBGTranslation>
+    <modelBGRotation>
+        <x>-0.99999994</x>
+        <y>0.0</y>
+        <z>0.0</z>
+        <angle>1.5707964</angle>
+    </modelBGRotation>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.kmzloader.client.KmzLoader</modelLoaderClassname>
+</deployed-model>

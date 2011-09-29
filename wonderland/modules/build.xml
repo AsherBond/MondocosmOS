@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="wonderland-modules"> 
+    <!-- Compile and package all modules.  This is done in a particular order
+         to make sure module dependencies are met. --> 
+    <target name="dist">
+        <!-- go through and compile the individual modules -->
+        <ant antfile="foundation/build.xml" target="dist" inheritall="false"/>
+        <ant antfile="world/build.xml" target="dist" inheritall="false"/>
+        <ant antfile="tools/build.xml" target="dist" inheritall="false"/>
+        
+        <!-- copy the modules into a common dist directory -->
+        <mkdir dir="dist"/>
+        <copy todir="dist">
+            <fileset dir=".">
+                <include name="**/dist/*.jar"/>
+                <exclude name="/dist/**"/>
+            </fileset>
+            <mapper type="flatten"/>
+        </copy>
+    </target>
+    
+    <!-- clean all sub-projects -->
+    <target name="clean">
+        <!-- delete dist directory -->
+        <delete dir="dist" failonerror="false"/>
+ 
+        <!-- clean sub-projects -->
+        <ant antfile="foundation/build.xml" target="clean" inheritall="false"/> 
+        <ant antfile="tools/build.xml" target="clean" inheritall="false"/> 
+        <ant antfile="world/build.xml" target="clean" inheritall="false"/> 
+ 
+        <!-- delete leftover module dist directories. This will guarantee
+             that modules that have been deleted do not show up in our
+             builds due to leftover dist directories -->
+        <delete>
+            <fileset dir=".">
+                <include name="**/dist/*.jar"/>
+            </fileset>
+        </delete>
+
+    </target>
+</project>

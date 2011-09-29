@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="colladaloader" default="dist" basedir=".">
+
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.colladaloader}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/colladaloader"/>
+    <property name="module.jarname" value="colladaloader"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${current.dir}/..//avatarbase/lib/avatars.jar"/>
+    </pathconvert>
+
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="colladaloader" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/colladaloader.jar"
+                moduleDescription="Collada loader library" builddir="${build.dir}">
+                    
+            <client>
+                <clientjar name="colladaloader-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar> 
+            </client>
+                
+            <server>
+                <serverjar name="colladaloader-server" basedir="${build.classes.dir}">
+                    <!--<serverplugin provider="org.jdesktop.wonderland.modules.colladaloader.server.cell.TestWorld"/>-->
+                    <cellsetup>
+                        <provider classname="org.jdesktop.wonderland.modules.colladaloader.common.cell.state.ColladaCellServerState"/>
+                    </cellsetup>
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            <art dir="${current.dir}/art"/>
+            <part name="wfs" dir="${current.dir}/wfs"/>
+        </module>
+    </target>                                  
+                                           
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master
+END
+MasterMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/3875/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/MasterMain.java
+END
+UserContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/UserContext.java
+END
+CityUserManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/CityUserManagerImpl.java
+END
+SimpleTestDirector.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/SimpleTestDirector.java
+END
+GroupUserManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/GroupUserManagerImpl.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/UserManager.java
+END
+UsernameManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/UsernameManager.java
+END
+SlaveConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3845/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/SlaveConnection.java
+END
+TestDirector.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1365/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/TestDirector.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3959/trunk/test/harness/src/classes/org/jdesktop/wonderland/testharness/master/User.java
+END

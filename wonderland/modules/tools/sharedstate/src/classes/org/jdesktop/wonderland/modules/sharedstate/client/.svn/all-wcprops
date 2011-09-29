@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client
+END
+SharedMapListenerCli.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3324/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client/SharedMapListenerCli.java
+END
+SharedMapImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4680/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client/SharedMapImpl.java
+END
+SharedStateComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/2585/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client/SharedStateComponent.java
+END
+SharedMapCli.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/1518/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client/SharedMapCli.java
+END
+SharedMapEventCli.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3324/trunk/modules/tools/sharedstate/src/classes/org/jdesktop/wonderland/modules/sharedstate/client/SharedMapEventCli.java
+END

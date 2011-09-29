@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3277/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/spi
+END
+CellSelectionSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3277/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/spi/CellSelectionSPI.java
+END
+CellCreationParentSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2988/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/spi/CellCreationParentSPI.java
+END

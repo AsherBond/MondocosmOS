@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4732/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui
+END
+BrowserFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/3484/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/BrowserFrame.form
+END
+BrowserPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4729/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/BrowserPlugin.java
+END
+DirectoryTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/2578/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/DirectoryTableCellRenderer.java
+END
+AsynchronousJTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/2601/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/AsynchronousJTree.java
+END
+AsyncTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3295/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/AsyncTableModel.java
+END
+ContentBrowserJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/3987/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/ContentBrowserJDialog.java
+END
+ContentBrowserJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/3295/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/ContentBrowserJDialog.form
+END
+AsynchronousJTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/2578/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/AsynchronousJTable.java
+END
+BrowserFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/3484/trunk/modules/foundation/content-repository/src/classes/org/jdesktop/wonderland/modules/contentrepo/client/ui/BrowserFrame.java
+END

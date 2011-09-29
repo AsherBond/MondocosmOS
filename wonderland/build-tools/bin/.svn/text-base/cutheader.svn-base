@@ -1,0 +1,39 @@
+#! /bin/sh
+
+awk 'BEGIN {
+    state = 0
+}
+{
+    if (state == 0) {
+	if (NF > 0) {
+	    str1 = $1
+	    if (substr(str1, 1, 2) == "/*") {
+		strN = $NF
+		if (substr(strN, length(strN)-1, 2) != "*/") {
+		    state = 1
+		}
+	    }
+	    else {
+		state = 3
+		print
+	    }
+	}
+    }
+    else if (state == 1) {
+	if (NF > 0) {
+	    strN = $NF
+	    if (substr(strN, length(strN)-1, 2) == "*/") {
+		state = 2
+	    }
+	}
+    }
+    else if (state == 2) {
+	if (NF > 0) {
+	    state = 3
+	    print
+	}
+    }
+    else {
+	print
+    }
+}'

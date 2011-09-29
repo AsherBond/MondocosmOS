@@ -1,0 +1,163 @@
+<project basedir="." default="..." name="test.build">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="test.build-scripts.dir" file="${ant.file.test.build}"/>
+    
+    <!-- import the web setup file -->
+    <import file="${test.build-scripts.dir}/test-setup.xml"/>
+    
+    <!-- import the global build setup -->
+    <import file="${setup.build-scripts.dir}/build-setup.xml"/>
+    
+    <!-- 
+        import the core setup files.  This will include the core classpaths,
+        which we depend on.
+    -->
+    <import file="${top.dir}/core/build-tools/build-scripts/core-setup.xml"/>
+    
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="-test-init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+        
+        <!-- default paths.  Override to add test-specific paths -->
+        <property name="test-common.classpath" value=""/>
+        <property name="test-client.classpath" value=""/>
+        <property name="test-server.classpath" value=""/>
+    </target>
+   
+    <target name="-test-compile-common" depends="-test-init">
+        <wl-compile>
+            <compile-classes>
+                <include name="${servertest.src}/common/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+		<pathelement path="${core-common.classpath}"/>
+                <pathelement path="${test-common.classpath}"/>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+    
+    <target name="-test-compile-server" depends="-test-init, -test-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${servertest.src}/server/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+		<pathelement path="${core-server.classpath}"/>
+                <pathelement path="${test-server.classpath}"/>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+    
+    <target name="-test-compile-client" depends="-test-init, -test-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${servertest.src}/client/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+		<pathelement path="${core-client.classpath}"/>
+                <pathelement path="${test-client.classpath}"/>
+	    </compile-classpath>
+        </wl-compile>
+    </target>
+            
+    <target name="-test-jar-server" depends="-test-compile-server, -test-jar-server-noplugins, -test-jar-server-plugins"/>
+    
+    <target name="-test-jar-server-plugins" if="servertest.plugins">
+        <wl-services dir="${build.dir}/${servertest.jarname}"
+                     type="org.jdesktop.wonderland.server.ServerPlugin">
+            <providers>
+                ${servertest.packagename}.server.${servertest.plugins}
+            </providers>
+        </wl-services>
+        
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/${servertest.jarname}-server.jar">   
+            <fileset dir="${build.classes.dir}">
+		<include name="${servertest.src}/common/**"/>
+                <include name="${servertest.src}/server/**"/>
+	    </fileset>
+            <fileset dir="${build.dir}/${servertest.jarname}">
+                <include name="**"/>
+            </fileset>
+        </jar>
+    </target>
+    
+    <target name="-test-jar-server-noplugins" unless="servertest.plugins">
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/${servertest.jarname}-server.jar">   
+            <fileset dir="${build.classes.dir}">
+		<include name="${servertest.src}/common/**"/>
+                <include name="${servertest.src}/server/**"/>
+	    </fileset>
+        </jar>
+    </target>
+    
+    <target name="-test-jar-client" depends="-test-compile-client">
+        <jar compress="${jar.compress}" jarfile="${build.lib.dir}/${servertest.jarname}-client.jar">
+            <fileset dir="${build.classes.dir}">
+		<include name="${servertest.src}/common/**"/>
+                <include name="${servertest.src}/client/**"/>
+	    </fileset>
+        </jar>
+    </target>
+    
+    <target name="-test-run-server" depends="-test-jar-server">
+        <!-- turn on assertions -->
+        <property name="use.assertions" value="true"/>
+        
+        <!-- unzip the distributed packages into the run directory -->
+        <mkdir dir="${test.run.dir}"/>
+        <unzip src="${core.dist.dir}/wonderland-setup-dist.zip" dest="${test.run.dir}"/>
+        <unzip src="${core.dist.dir}/wonderland-server-dist.zip" dest="${test.run.dir}"/>
+        
+        <!-- add our .jars to the runtime classpath path -->
+        <pathconvert property="test.server.run.classpath">
+            <path path="${core-server.classpath}"/>
+            <path path="${test-server.classpath}"/>
+            <path path="${test-common.classpath}"/>
+            <path location="${build.lib.dir}/${servertest.jarname}-server.jar"/>
+        </pathconvert>
+        
+        <!-- run -->
+        <ant antfile="${test.run.dir}/run.xml" inheritall="false">
+            <property name="antcontrib.taskdef.resource" value="noop.xml"/>
+            <property name="core.server.run.classpath" value="${test.server.run.classpath}"/>
+        </ant>
+        
+        <!-- clean up -->
+        <delete dir="${test.run.dir}"/>
+    </target>
+    
+    <target name="-test-run-client" depends="-test-jar-client">
+        <mkdir dir="log"/>
+        
+        <java classname="${servertest.packagename}.client.ClientMain">
+            <jvmarg value="-Dsgs.server=${sgs.server}"/>
+            <jvmarg value="-Dsgs.port=${sgs.port}"/>
+            <jvmarg value="-Dsgs.username=${sgs.username}"/>
+            <jvmarg value="-Dsgs.password=${sgs.password}"/>
+            
+            <jvmarg value="-Djava.util.logging.config.class=org.jdesktop.wonderland.client.LogControl"/>
+            
+            <classpath>
+                <pathelement path="${core-client.classpath}"/>
+                <pathelement path="${test-client.classpath}"/>
+                <pathelement path="${test-common.classpath}"/>
+                <path location="${build.lib.dir}/${servertest.jarname}-client.jar"/>
+            </classpath>
+            
+            <assertions>
+                <enable/>
+            </assertions>
+        </java>
+    </target>
+    
+    <target name="-test-clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="data"/>
+        <delete dir="log"/>
+        <delete dir="run"/>
+    </target>
+</project>

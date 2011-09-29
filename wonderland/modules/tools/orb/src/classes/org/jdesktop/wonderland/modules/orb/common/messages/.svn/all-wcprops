@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2620/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages
+END
+OrbAttachVirtualPlayerMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2459/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbAttachVirtualPlayerMessage.java
+END
+OrbChangePositionMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2203/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbChangePositionMessage.java
+END
+OrbRecoordinateMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbRecoordinateMessage.java
+END
+OrbBystandersMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2620/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbBystandersMessage.java
+END
+OrbSpeakingMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbSpeakingMessage.java
+END
+OrbEndCallMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbEndCallMessage.java
+END
+OrbSetVolumeMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbSetVolumeMessage.java
+END
+OrbSetNewHostMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbSetNewHostMessage.java
+END
+OrbAttachMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/2208/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbAttachMessage.java
+END
+OrbChangeNameMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2171/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbChangeNameMessage.java
+END
+OrbMuteCallMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1365/trunk/modules/tools/orb/src/classes/org/jdesktop/wonderland/modules/orb/common/messages/OrbMuteCallMessage.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4224/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common
+END
+PhoneCellServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1855/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/PhoneCellServerState.java
+END
+CallListing.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/CallListing.java
+END
+PhoneInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1615/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/PhoneInfo.java
+END
+PhoneCellClientState.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4050/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/common/PhoneCellClientState.java
+END

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="_build/|_deploy/" kind="src" path=""/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe-points-streaming"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/jogl.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/worldwind-1.2.0/worldwind.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe-weather-aemet"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/3728/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/cell
+END
+TranslateAffordanceCellComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/3728/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/cell/TranslateAffordanceCellComponent.java
+END
+RotateAffordanceCellComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2581/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/cell/RotateAffordanceCellComponent.java
+END
+AffordanceCellComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2819/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/cell/AffordanceCellComponent.java
+END
+ResizeAffordanceCellComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2819/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/cell/ResizeAffordanceCellComponent.java
+END

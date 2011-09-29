@@ -1,0 +1,29 @@
+#! /bin/csh -f
+
+set tmp = $0
+set dir = ${tmp:h}
+if (${dir} == ${tmp}) set dir = .
+set prog = ${tmp:t}
+
+set COPYRIGHT = ${dir}/CopyrightHeader.txt
+set YEARS = "2008"
+set path = ( ${dir} $path )
+
+if (! -r ${COPYRIGHT}) then
+    echo "${prog}: ${COPYRIGHT}: Cannot open"
+    exit(1)
+endif
+
+foreach file ( ${argv:q} )
+    if (! -w ${file}) then
+	echo "${file}: cannot open for writing"
+    else
+        echo "workng on ${file}"
+	mv -f ${file} ${file}.bak
+	cat /dev/null > ${file}
+	cat ${COPYRIGHT} \
+	    | sed -e "s/@FILENAME@/${file:t}/" -e "s/@YEARS@/${YEARS}/" \
+	    >> ${file}
+	cutheader < ${file}.bak >> ${file}
+    endif
+end

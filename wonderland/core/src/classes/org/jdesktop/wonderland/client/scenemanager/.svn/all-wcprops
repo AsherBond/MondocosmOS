@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4622/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager
+END
+SceneManagerPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/SceneManagerPolicy.java
+END
+SceneManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4218/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/SceneManager.java
+END
+DefaultSceneManagerPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4622/trunk/core/src/classes/org/jdesktop/wonderland/client/scenemanager/DefaultSceneManagerPolicy.java
+END

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<name>Monasterio_del_Escorial.kmz</name>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon63.png">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal3/icon63.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon55.png">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal3/icon55.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon63.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon55.png">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon63.png</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon55.png</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Monasterio de San Lorenzo del Escorial</name>
+		<description><![CDATA[<img src="http://personal.telefonica.terra.es/web/galeriasb/europa/spain/escorialb.jpg" alt="El Escorial">
+
+The <a href="http://www.losviajeros.com/fotos/europa/spain/index.php?lg=s&fn=escorial">Royal Monastery of San Lorenzo del Escorial</a> is the main civil building of the King Philip II of Spain.<br />
+
+El <a href="http://www.losviajeros.com/fotos/europa/spain/index.php?lg=s&fn=escorial">Monasterio de San Lorenzo del Escorial</a> la mayor construcción civil del Reinado de Felipe II. <br /> <br />
+
+<a href="http://www.google-earth.es/foros.php?">Foros de Google Earth</a> <br />
+
+
+]]></description>
+		<LookAt>
+			<longitude>-4.148034039094946</longitude>
+			<latitude>40.58901578301848</latitude>
+			<altitude>0</altitude>
+			<range>454.6571782109496</range>
+			<tilt>1.837171944520045</tilt>
+			<heading>-1.049226535763644</heading>
+		</LookAt>
+		<styleUrl>#default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon63.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon55.png</styleUrl>
+		<Point>
+			<coordinates>-4.149181162230946,40.58931152423048,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
+

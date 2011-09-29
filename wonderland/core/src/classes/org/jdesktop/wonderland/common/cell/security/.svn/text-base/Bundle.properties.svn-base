@@ -1,0 +1,10 @@
+ChangeCellChildren_Description=Permission to add or remove children from this object.
+ChangeCellChildren_DisplayName=Add/Remove Object Children
+Change_Components=Change Capabilities
+Change_Components_Description=Permission to add or remove capabilities from this object.
+Modify_Description=Permission to modify this object.
+Modify=Modify
+Move_Description=Permission to move this object.
+Move=Move
+View_Description=Permission to view this object.
+View=View

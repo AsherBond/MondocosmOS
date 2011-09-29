@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3980/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs
+END
+WFS.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFS.java
+END
+WFSCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSCell.java
+END
+WFSCellDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1773/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSCellDirectory.java
+END
+WFSVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3657/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSVersion.java
+END
+InvalidWFSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/InvalidWFSException.java
+END
+WFSObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSObject.java
+END
+WFSFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSFactory.java
+END
+WFSRootDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1365/trunk/web/wfs/src/java/org/jdesktop/wonderland/tools/wfs/WFSRootDirectory.java
+END

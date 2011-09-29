@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4625/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils
+END
+CellUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4484/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/CellUtils.java
+END
+CellCreationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2033/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/CellCreationException.java
+END
+CellCreationParentRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/3854/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/CellCreationParentRegistry.java
+END
+CellPlacementUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4625/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/CellPlacementUtils.java
+END
+CellSelectionRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3277/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/utils/CellSelectionRegistry.java
+END

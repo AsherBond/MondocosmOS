@@ -1,0 +1,70 @@
+#EN: 0
+AddEditPlacemarkJDialog.angleTextField.text=0
+#EN: Cancel
+AddEditPlacemarkJDialog.cancelButton.text=Annuler
+#EN: Add Placemark
+AddEditPlacemarkJDialog.jLabel1.text=Ajouter Favori
+#EN: Placemark Name:
+AddEditPlacemarkJDialog.jLabel2.text=Nom du Favori:
+#EN: Server URL:
+AddEditPlacemarkJDialog.jLabel3.text=URL du Serveur:
+#EN: Location:
+AddEditPlacemarkJDialog.jLabel4.text=Emplacement:
+#EN: X:
+AddEditPlacemarkJDialog.jLabel5.text=X:
+#EN: Y:
+AddEditPlacemarkJDialog.jLabel6.text=Y:
+#EN: Z:
+AddEditPlacemarkJDialog.jLabel7.text=Z:
+#EN: Look Direction:
+AddEditPlacemarkJDialog.jLabel8.text=Dir. du Regard:
+#EN: degrees
+AddEditPlacemarkJDialog.jLabel9.text=degr\u00e9s
+#EN: OK
+AddEditPlacemarkJDialog.okButton.text=OK
+#EN: Add Placemark
+AddEditPlacemarkJDialog.title=Ajouter Favori
+#EN: 0
+AddEditPlacemarkJDialog.xTextField.text=0
+#EN: 0
+AddEditPlacemarkJDialog.yTextField.text=0
+#EN: 0
+AddEditPlacemarkJDialog.zTextField.text=0
+#EN: Add Placemark
+Add_Placemark=Ajouter un Favori
+#EN: Add Placemark...
+Add_Placemark...=Ajouter un Favori...
+#EN: Edit Placemark
+Edit_Placemark=Modifier un Favori
+#EN: Add...
+EditPlacemarksJFrame.addButton.text=Ajouter...
+#EN: Close
+EditPlacemarksJFrame.closeButton.text=Fermer
+#EN: Edit...
+EditPlacemarksJFrame.editButton.text=Modifier...
+#EN: Remove
+EditPlacemarksJFrame.removeButton.text=Enlever
+#EN: Manage Placemarks
+EditPlacemarksJFrame.title=G\u00e9rer les Favoris
+#EN: Location
+Location=Emplacement
+#EN: Look Angle
+Look_Angle=Angle Regard
+#EN: {0} degrees
+Look_Angle_Value={0} degr\u00e9s
+#EN: Manage Placemarks...
+Manage_Placemarks...=G\u00e9rer les Favoris...
+#EN: Name
+Name=Nom
+#EN: Placemark Name:
+PlacemarkComponentProperties.jLabel1.text_1=Nom du Favori:
+#EN: Placemark Name
+PlacemarkComponentProperties.jLabel1.text=Nom du Favori
+#EN: Create a placemark at the location of this object
+Placemark_Description=Cr\u00e9er un favori \u00e0 cet emplacement
+#EN: Placemark
+Placemark=Favori
+#EN: Server URL
+Server_URL=URL du Serveur
+#EN: Starting Location
+Starting_Location=D\u00e9part

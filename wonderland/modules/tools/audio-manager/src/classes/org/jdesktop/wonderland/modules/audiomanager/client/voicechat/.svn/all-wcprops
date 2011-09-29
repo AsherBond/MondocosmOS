@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4222/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat
+END
+AddPhoneUserPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3320/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddPhoneUserPanel.java
+END
+IncomingCallHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4001/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/IncomingCallHUDPanel.form
+END
+CallAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3965/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/CallAnimator.java
+END
+HoldPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4095/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/HoldPanel.java
+END
+AddUserPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddUserPanel.java
+END
+InProgressButtonPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4070/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/InProgressButtonPanel.java
+END
+TestVoicePanels.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2999/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/TestVoicePanels.java
+END
+AddHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4095/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddHUDPanel.java
+END
+AddTypePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3320/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddTypePanel.java
+END
+AddInitiateButtonPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddInitiateButtonPanel.form
+END
+PrivacyPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4001/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/PrivacyPanel.form
+END
+IncomingCallHUDPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4222/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/IncomingCallHUDPanel.java
+END
+AddPhoneUserPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3320/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddPhoneUserPanel.form
+END
+HoldPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4095/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/HoldPanel.form
+END
+InProgressButtonPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4070/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/InProgressButtonPanel.form
+END
+AddUserPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3029/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddUserPanel.form
+END
+TestVoicePanels.form
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2999/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/TestVoicePanels.form
+END
+AddInitiateButtonPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/3507/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddInitiateButtonPanel.java
+END
+AddHUDPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4095/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddHUDPanel.form
+END
+AddTypePanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3320/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/AddTypePanel.form
+END
+PrivacyPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4001/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/client/voicechat/PrivacyPanel.java
+END

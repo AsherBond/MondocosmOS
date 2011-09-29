@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="@MODULE_NAME@" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.@MODULE_NAME@}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="@MODULE_PKG@"/>
+    <property name="module.jarname" value="@MODULE_NAME@"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="@MODULE_NAME@" majorVersion="1" minorVersion="0" jarfile="${module.dist.dir}/@MODULE_NAME@.jar"
+                moduleDescription="@MODULE_DESC@" builddir="${build.dir}">
+            @CLIENT_START@
+            <client>
+                <clientjar name="@MODULE_NAME@-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar> 
+            </client>
+            @CLIENT_END@
+
+            @SERVER_START@
+            <server>
+                <serverjar name="@MODULE_NAME@-server" basedir="${build.classes.dir}">
+                    <cellsetup>
+                        <provider classname="${module.plugin.cellsetup}"/>
+                    </cellsetup>
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </serverjar>
+            </server>
+            @SERVER_END@
+            @ART@
+        </module>
+    </target>                                  
+                                           
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

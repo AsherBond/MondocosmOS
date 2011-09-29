@@ -1,0 +1,40 @@
+#EN: Details...
+AffordanceHUDPanel.detailsButton.text=\u8be6\u7ec6...
+#EN: Affordance Size
+AffordanceHUDPanel.jLabel1.text=Affordance \u5927\u5c0f
+#EN: 1x
+AffordanceHUDPanel.jLabel3.text=1x
+#EN: 5x
+AffordanceHUDPanel.jLabel5.text=5x
+#EN: Resize
+AffordanceHUDPanel.resizeToggleButton.toolTipText=\u8c03\u6574
+#EN: Rotate
+AffordanceHUDPanel.rotateToggleButton.toolTipText=\u65cb\u8f6c
+#EN: Move
+AffordanceHUDPanel.translateToggleButton.toolTipText=\u79fb\u52a8
+#EN: Edit (checking) ...
+Edit_Checking=\u7f16\u8f91(\u68c0\u67e5\uff09 ...
+#EN: Edit Object: {0}
+Edit_Object=\u7f16\u8f91\u5bf9\u8c61: {0}
+#EN: Edit Object: <None Selected>
+Edit_Object_None_Selected=\u7f16\u8f91\u5bf9\u8c61: <\u4ec0\u4e48\u90fd\u6ca1\u9009>
+#EN: Edit...
+Edit...=\u7f16\u8f91...
+#EN: Rotation (degrees)
+PositionHUDPanel.jLabel10.text=\u65cb\u8f6c (\u5ea6)
+#EN: X:
+PositionHUDPanel.jLabel11.text=X:
+#EN: Y:
+PositionHUDPanel.jLabel12.text=Y:
+#EN: Z:
+PositionHUDPanel.jLabel13.text=Z:
+#EN: Scale
+PositionHUDPanel.jLabel14.text=\u6807\u5c3a
+#EN: X:
+PositionHUDPanel.jLabel1.text=X:
+#EN: Y:
+PositionHUDPanel.jLabel2.text=Y:
+#EN: Z:
+PositionHUDPanel.jLabel3.text=Z:
+#EN: Position (meters)
+PositionHUDPanel.jLabel4.text=\u4f4d\u7f6e (\u7c73)

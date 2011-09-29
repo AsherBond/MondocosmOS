@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-palette-module" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-palette-module}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/palette"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.palette"/>
+    <property name="module.jarname" value="palettemodule"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+
+    <pathconvert property="module-client.classpath">
+        <path location="${modules.dir}/foundation/security/build/lib/client/security-client.jar"/>
+    </pathconvert>
+
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="palette" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="Cell palette library" builddir="${build.dir}">
+                    
+            <client>
+                <clientjar name="palette-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/resources/**"/>
+                    </fileset>
+                </clientjar>
+            </client>
+        </module>
+    </target>
+             
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

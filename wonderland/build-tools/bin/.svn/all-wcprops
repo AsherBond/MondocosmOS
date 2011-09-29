@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/1365/trunk/build-tools/bin
+END
+CopyrightHeader.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1365/trunk/build-tools/bin/CopyrightHeader.txt
+END
+cutheader
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/678/trunk/build-tools/bin/cutheader
+END
+newcr
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/678/trunk/build-tools/bin/newcr
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/3393/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client
+END
+EditXAppsClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/EditXAppsClientPlugin.java
+END
+XAppRegistryPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/3393/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/XAppRegistryPlugin.java
+END
+XAppsClientConfigConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/XAppsClientConfigConnection.java
+END
+XAppCellFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/3131/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/XAppCellFactory.java
+END
+XAppRegistryItemUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/XAppRegistryItemUtils.java
+END
+EditXAppsJFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/EditXAppsJFrame.java
+END
+EditXAppsJFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/EditXAppsJFrame.form
+END
+AddXAppJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/AddXAppJDialog.java
+END
+AddXAppJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/2540/trunk/modules/tools/xapps-config/src/classes/org/jdesktop/wonderland/modules/xappsconfig/client/AddXAppJDialog.form
+END

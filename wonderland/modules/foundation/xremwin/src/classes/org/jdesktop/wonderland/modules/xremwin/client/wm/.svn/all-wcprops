@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3924/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm
+END
+NativeWindowControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/NativeWindowControl.java
+END
+X11WindowManagerHints.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11WindowManagerHints.java
+END
+X11IntegrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11IntegrationModule.java
+END
+NativeWindowMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/NativeWindowMonitor.java
+END
+ConfigureNotifyBugFixed.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3196/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/ConfigureNotifyBugFixed.java
+END
+X11Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/3196/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11Client.java
+END
+X11FixesExt.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/3196/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11FixesExt.java
+END
+IntegrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/IntegrationModule.java
+END
+X11CompositeExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2761/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11CompositeExtension.java
+END
+X11WindowManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/3924/trunk/modules/foundation/xremwin/src/classes/org/jdesktop/wonderland/modules/xremwin/client/wm/X11WindowManager.java
+END

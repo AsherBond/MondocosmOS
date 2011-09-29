@@ -1,0 +1,134 @@
+<project basedir="." default="..." name="module.build">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="module.build-scripts.dir" file="${ant.file.module.build}"/>
+    
+    <!-- import the web setup file -->
+    <import file="${module.build-scripts.dir}/module-setup.xml"/>
+    
+    <!-- import the global build setup -->
+    <import file="${setup.build-scripts.dir}/build-setup.xml"/>
+    
+    <!-- 
+        import the core setup files.  This will include the core classpaths,
+        which we depend on.
+    -->
+    <import file="${top.dir}/core/build-tools/build-scripts/core-setup.xml"/>
+
+    <!--
+        import web setups files, including web classpath which we need for
+        the web build targets
+    -->
+    <import file="${top.dir}/web/build-tools/build-scripts/web-build.xml"/>
+
+    <!-- Initialization - make dirs, unpack ext stuff... -->
+    <target name="-module-init" depends="-module-ant-task">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+        
+        <!-- default paths.  Override to add test-specific paths -->
+        <property name="module-common.classpath" value=""/>
+        <property name="module-client.classpath" value=""/>
+        <property name="module-server.classpath" value=""/>
+        <property name="module-web.classpath" value=""/>
+
+        <!-- set defaults for other properties.  May be overridden by
+             subclasses -->
+        <property name="module.jarname" value="${module.name}"/>
+    </target>
+   
+    <!-- include the module ant task -->
+    <target name="-module-ant-task">
+        <taskdef name="module"
+                  classname="org.jdesktop.wonderland.modules.ant.ModuleTask">
+            <classpath>
+                <pathelement location="${top.dir}/web/modules/dist/wonderland-modules-api.jar"/>
+                <pathelement location="${core.dir}/build/lib/wonderland-common.jar"/>
+                <pathelement path="${jaxb.classpath}"/>
+            </classpath>
+        </taskdef>
+        <taskdef name="deploy"
+                  classname="org.jdesktop.wonderland.modules.ant.DeployTask">
+            <classpath>
+                <pathelement location="${top.dir}/web/modules/dist/wonderland-modules-api.jar"/>
+                <pathelement location="${core.dir}/build/lib/wonderland-common.jar"/>
+                <pathelement path="${jaxb.classpath}"/>
+            </classpath>
+        </taskdef>
+        <taskdef name="runner"
+                 classname="org.jdesktop.wonderland.runner.ant.RunnerTask">
+            <classpath>
+                <pathelement location="${top.dir}/web/runner/dist/wonderland-runner-api.jar"/>
+                <pathelement location="${core.dir}/build/lib/wonderland-common.jar"/>
+                <pathelement path="${jaxb.classpath}"/>
+            </classpath>
+        </taskdef>
+    </target>
+   
+    <target name="-module-compile-common" depends="-module-init">
+        <wl-compile-client>
+            <client-compile-classes>
+                <include name="${module.src}/common/**"/>
+            </client-compile-classes>
+            
+            <client-compile-classpath>
+                <pathelement path="${core-common.classpath}"/>
+                <pathelement path="${module-common.classpath}"/>
+            </client-compile-classpath>
+        </wl-compile-client>
+    </target>
+    
+    <target name="-module-compile-server" depends="-module-init, -module-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/server/**"/>
+            </compile-classes>
+            
+            <compile-classpath>
+            <pathelement path="${core-server.classpath}"/>
+                <pathelement path="${module-server.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+    
+    <target name="-module-compile-client" depends="-module-init, -module-compile-common">
+        <wl-compile-client>
+            <client-compile-classes>
+                <include name="${module.src}/client/**"/>
+            </client-compile-classes>
+            
+            <client-compile-classpath>
+                <pathelement path="${core-client.classpath}"/>
+                <pathelement path="${module-client.classpath}"/>
+            </client-compile-classpath>
+        </wl-compile-client>
+    </target>
+
+    <target name="-module-compile-web" depends="-module-init, -module-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/web/**"/>
+            </compile-classes>
+
+            <compile-classpath>
+                <pathelement path="${web.classpath}"/>
+                <pathelement path="${module-web.classpath}"/>
+            </compile-classpath>
+        </wl-compile>
+    </target>
+                
+    <target name="-module-deploy">
+        <deploy module="${module.dist.dir}/${module.jarname}.jar"
+                serverurl="${wonderland.web.url}"
+                username="${wonderland.web.username}"
+                password="${wonderland.web.password}"/>
+        <runner action="restart" 
+                serverurl="${wonderland.web.url}"
+                username="${wonderland.web.username}"
+                password="${wonderland.web.password}"/>
+    </target>            
+                
+    <target name="-module-clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${module.dist.dir}"/>
+    </target>
+</project>

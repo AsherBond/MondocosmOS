@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/test/comms/serverprotocol/src/classes/org/jdesktop/wonderland/serverprotocoltest/common
+END
+TestProtocolVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/1365/trunk/test/comms/serverprotocol/src/classes/org/jdesktop/wonderland/serverprotocoltest/common/TestProtocolVersion.java
+END
+BadProtocolVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/1365/trunk/test/comms/serverprotocol/src/classes/org/jdesktop/wonderland/serverprotocoltest/common/BadProtocolVersion.java
+END

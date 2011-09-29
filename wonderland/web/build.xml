@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web" default="build" basedir=".">    
+    <target name="build">
+       <ant dir="utils"    target="jar"  inheritall="false"/>
+       <ant dir="webstart" target="dist" inheritall="false"/>
+       <ant dir="front"    target="dist" inheritall="false"/>
+       <ant dir="modules"  target="dist" inheritall="false"/>
+       <ant dir="wfs"      target="dist" inheritall="false"/>
+       <ant dir="asset"    target="dist" inheritall="false"/>
+       <ant dir="checksums" target="dist" inheritall="false"/>
+       <ant dir="runner"   target="dist" inheritall="false"/>
+       <ant dir="help"     target="dist" inheritall="false"/>
+       <ant dir="server"   target="jar"  inheritall="false"/>
+    </target>
+    
+    <!-- this target assumes build has been called, but doesn't
+         explicitly depend on to avoid duplication.  Don't use this
+         directly, call the top level "package" target instead, since
+         that will build everything that is needed. -->
+    <target name="-package">
+        <ant dir="server" target="package" inheritall="false">
+            <property name="server.package.dir" value="${server.package.dir}"/>
+        </ant>
+    </target>
+    
+    <target name="run-web" depends="build, -set-server-package-dir, -package">
+        <!-- create Wonderland.jar in server/build/lib" -->
+        <java dir="server" jar="${server.package.dir}/Wonderland.jar" fork="true"/>
+    </target>
+    
+    <target name="-set-server-package-dir">
+        <property name="server.package.dir" location="${basedir}/server/build/lib"/>
+    </target>
+    
+    <target name="clean">
+       <ant dir="asset"    target="clean" inheritall="false"/>
+       <ant dir="checksums" target="clean" inheritall="false"/>
+       <ant dir="utils"    target="clean" inheritall="false"/>
+       <ant dir="runner"   target="clean" inheritall="false"/>
+       <ant dir="webstart" target="clean" inheritall="false"/>
+       <ant dir="front"    target="clean" inheritall="false"/>
+       <ant dir="modules"  target="clean" inheritall="false"/>
+       <ant dir="wfs"      target="clean" inheritall="false"/>
+       <ant dir="help"     target="clean" inheritall="false"/>
+       <ant dir="server"   target="clean" inheritall="false"/>
+    </target>
+</project>

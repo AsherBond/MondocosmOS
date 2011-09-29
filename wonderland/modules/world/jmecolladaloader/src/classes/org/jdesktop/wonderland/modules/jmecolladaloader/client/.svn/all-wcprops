@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4572/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client
+END
+JmeColladaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4371/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/JmeColladaLoader.java
+END
+ModelDndContentImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4371/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/ModelDndContentImporter.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3404/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4521/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4019/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle_zh_CN.properties
+END
+JmeColladaLoaderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/2886/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/JmeColladaLoaderFactory.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4572/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4557/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle_fr.properties
+END
+JmeColladaCellComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3404/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/JmeColladaCellComponentProperties.java
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3404/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/Bundle_de.properties
+END
+JmeColladaCellComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/2886/trunk/modules/world/jmecolladaloader/src/classes/org/jdesktop/wonderland/modules/jmecolladaloader/client/JmeColladaCellComponentProperties.form
+END

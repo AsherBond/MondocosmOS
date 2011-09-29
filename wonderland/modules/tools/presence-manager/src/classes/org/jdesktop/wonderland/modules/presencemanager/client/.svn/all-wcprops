@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4188/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client
+END
+PresenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManager.java
+END
+PresenceManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManagerImpl.java
+END
+PresenceManagerListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4034/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManagerListener.java
+END
+PresenceManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/2486/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManagerFactory.java
+END
+PresenceManagerClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/3342/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManagerClientPlugin.java
+END
+PresenceManagerClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4188/trunk/modules/tools/presence-manager/src/classes/org/jdesktop/wonderland/modules/presencemanager/client/PresenceManagerClient.java
+END

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-webstart" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-webstart}"/>
+    
+    <!-- import web build file -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+    
+    <!-- import webstart packaging -->
+    <import file="${current.dir}/build-tools/build-scripts/webstart-package.xml"/>
+    
+    <target name="build" depends="-web-build-init">
+      <wl-compile-client>
+        <client-compile-classes>
+          <include name="org/jdesktop/wonderland/webstart/**"/>
+        </client-compile-classes>
+        <client-compile-classpath>
+          <pathelement path="${web.classpath}"/>
+          <pathelement path="${core.dir}/build/lib/wonderland-client.jar"/>
+        </client-compile-classpath>
+      </wl-compile-client>
+    </target>
+    
+    <target name="jar" depends="build">
+      <mkdir dir="${build.lib.dir}"/>
+      <mkdir dir="${build.dir}/service/resources"/>
+      
+      <if>
+          <or>
+              <not>
+                <uptodate srcfile="${ant.file.wonderland-web-webstart}" 
+                          targetfile="${build.dir}/service/META-INF/services/org.jdesktop.wonderland.client.jme.WebstartStartupListener"/>
+              </not>
+          </or>
+          <then>
+              <wl-services dir="${build.dir}/service" 
+                           type="org.jdesktop.wonderland.client.jme.WebstartStartupListener">
+                  <providers>org.jdesktop.wonderland.webstart.SoftphoneInstaller</providers>
+              </wl-services>
+          </then>
+      </if>
+      
+      <taskdef name="filedate" classname="org.jdesktop.wonderland.webstart.ant.FileDateTask">
+          <classpath location="${build.classes.dir}"/>
+      </taskdef>
+      <if>
+          <not>
+              <uptodate srcfile="${core.dir}/ext/softphone/softphone.jar"
+                        targetfile="${build.dir}/service/resources/softphone-build-date"/>
+          </not>
+          <then>
+              <filedate prop="softphone.build.date" file="${core.dir}/ext/softphone/softphone.jar"/>
+              <echo file="${build.dir}/service/resources/softphone-build-date"
+                    message="${softphone.build.date}"/>
+          </then>
+      </if>
+      
+      <jar jarfile="${build.lib.dir}/wonderland-web-webstart.jar">
+          <fileset dir="${build.classes.dir}"/>
+          <fileset dir="${build.dir}/service"/>
+          
+          <zipfileset dir="${core.dir}/ext/softphone" prefix="resources">
+              <include name="*"/>
+          </zipfileset>
+      </jar>
+    </target>
+
+    <target name="dist" depends="jar, -package-setup, -webstart-package"/>
+    
+    <target name="-package-setup">
+        <property name="webstart.dist.dir" location="${current.dir}/dist/webstart"/>
+        <property name="webstart.jar.dir" location="${current.dir}/build/webstart"/>
+    </target>
+    
+    <target name="clean" depends="-web-clean">
+        <delete dir="${current.dir}/dist"/>
+    </target>
+</project>

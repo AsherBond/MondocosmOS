@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model-cell>
+    <name>garden_arches</name>
+    <metadata/>
+    <position-component>
+        <translation>
+            <x>-9.680023</x>
+            <y>0.0</y>
+            <z>19.000015</z>
+        </translation>
+        <bounds>
+            <type>SPHERE</type>
+            <x>283.8292236328125</x>
+            <y>1.0</y>
+            <z>1.0</z>
+        </bounds>
+        <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+        </scale>
+        <rotation>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <angle>0.0</angle>
+        </rotation>
+    </position-component>
+    <model-cell-component>
+        <deployedModelURL>wla://garden-arches/walled_garden_2_noexplode.kmz/walled_garden_2_noexplode.kmz.dep</deployedModelURL>
+    </model-cell-component>
+</model-cell>

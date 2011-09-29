@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4590/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4288/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/logging.properties
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4590/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4513/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4385/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/Bundle_de.properties
+END
+login-dialog-bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/329/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/resources/login-dialog-bg.png
+END

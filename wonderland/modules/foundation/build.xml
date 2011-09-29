@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="foundation-modules">  
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.foundation-modules}"/>
+    
+    <!-- all projects.  Ordering of filelist will be respected -->
+    <filelist dir="${current.dir}" id="all.projects">
+        <file name="security/build.xml"/>
+        <file name="appbase/build.xml"/>
+        <file name="content-repository/build.xml"/>
+        <file name="animationbase/build.xml"/> 
+        <file name="hud/build.xml"/>
+        <file name="darkstar-api/build.xml"/>
+        <file name="placemarks-api/build.xml"/>
+
+        <file name="xremwin/build.xml"/>
+        <file name="sas/build.xml"/>
+        <file name="sasxremwin/build.xml"/>
+    </filelist>
+ 
+    <!-- build and package all subprojects -->
+    <target name="dist">
+        <build-subprojects filelist="all.projects" target="dist"/>
+    </target>
+
+    <!-- build the client portions of the module -->
+    <target name="build-clientonly">
+        <build-subprojects filelist="all.projects" target="-module-compile-client"/>
+    </target>
+
+    <!-- clean all sub-projects -->
+    <target name="clean">
+        <!-- clean sub-projects -->
+        <build-subprojects filelist="all.projects" target="clean"/>
+    </target>
+    
+    <!-- macro to iterate across all subprojects -->
+    <macrodef name="build-subprojects">
+        <!-- the reference id of the fileset to iterate over -->
+        <attribute name="filelist"/>
+        
+        <!-- the build target to run -->
+        <attribute name="target"/>
+        <sequential>
+            <subant target="@{target}" inheritall="false">
+                <filelist refid="@{filelist}"/>
+            </subant>
+        </sequential>
+    </macrodef>
+</project>

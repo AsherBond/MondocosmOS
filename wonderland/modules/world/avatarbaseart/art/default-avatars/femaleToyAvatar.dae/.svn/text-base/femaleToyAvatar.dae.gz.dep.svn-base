@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployed-model>
+    <version>1</version>
+    <modelURL>wla://avatarbaseart/default-avatars/femaleToyAvatar.dae/femaleToyAvatar.dae.gz</modelURL>
+    <loaderDataURL>wla://avatarbaseart/default-avatars/femaleToyAvatar.dae/femaleToyAvatar.dae.gz.ldr</loaderDataURL>
+    <modelBGScale>
+        <x>0.01</x>
+        <y>0.01</y>
+        <z>0.01</z>
+    </modelBGScale>
+    <modelBGTranslation>
+        <x>-1.3470091E-4</x>
+        <y>-6.0788915E-4</y>
+        <z>-0.0025908314</z>
+    </modelBGTranslation>
+    <modelBGRotation>
+        <x>1.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+        <angle>0.0</angle>
+    </modelBGRotation>
+    <modelLoaderClassname>org.jdesktop.wonderland.modules.jmecolladaloader.client.JmeColladaLoader</modelLoaderClassname>
+</deployed-model>

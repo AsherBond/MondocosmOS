@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-front" default="default" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-front}"/>
+
+    <!-- override default source directory -->
+    <property name="javasrc.dir" location="${current.dir}/src/java"/>
+
+    <!-- import web build file -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+
+    <target name="build" depends="-set-extra-classpath, -web-compile">
+        <property name="build.web.dir" location="${build.dir}/web"/>
+
+        <!-- copy in webstart files built by the webstart module -->
+        <copy todir="${build.web.dir}/app">
+            <fileset dir="${web.dir}/webstart/dist/webstart"/>
+        </copy>
+
+        <copy todir="${build.web.dir}">
+            <fileset dir="${current.dir}/web"/>
+        </copy>
+
+        <!-- substitute in the version number -->
+        <replace dir="${build.web.dir}">
+            <include name="*.jsp"/>
+            <replacefilter token="@VERSION@"
+                           value="${wonderland.version}"/>
+        </replace>
+    </target>
+
+    <target name="-set-extra-classpath">
+        <pathconvert property="web-extra.classpath">
+            <path path="${current.dir}/lib/deployment-servlet-1.0beta.jar"/>
+            <path path="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-client.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-common.jar"/>
+            <path path="${top.dir}/utils/wonderland-version/dist/wonderland-version.jar"/>
+        </pathconvert>
+    </target>
+
+    <target name="dist" depends="build" description="Build and assemble web war">
+        <mkdir dir="${dist.dir}"/>
+        <jar jarfile="${dist.dir}/wonderland-web-front.war">
+            <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                <exclude name="org/jdesktop/wonderland/front/admin/**"/>
+            </zipfileset>
+
+            <zipfileset dir="${current.dir}/lib" prefix="WEB-INF/lib"/>
+
+            <fileset dir="${build.web.dir}"/>
+        </jar>
+
+        <jar jarfile="${dist.dir}/wonderland-webadmin-core.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="org/jdesktop/wonderland/front/admin/**"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="clean" depends="-web-clean"/>
+</project>

@@ -1,0 +1,50 @@
+#EN: Add User
+Add_User=A\u00f1adir Usuario
+#EN: Create
+Create=Crear
+#EN: Edit Group {0}
+Edit_Group=Editar Grupo {0}
+#EN: Enter user name
+Enter_User_Name=Introducir nombre de usuario
+#EN: Add User...
+GroupEditorFrame.addButton.text=A\u00f1adir Usuario...
+#EN: Cancel
+GroupEditorFrame.cancelButton.text=Cancelar
+#EN: Group name:
+GroupEditorFrame.jLabel1.text=Nombre del grupo:
+#EN: OK
+GroupEditorFrame.okButton.text=Aceptar
+#EN: Remove
+GroupEditorFrame.removeButton.text=Eliminar
+#EN: Group {0} already exists.\nPlease choose a different name.
+Group_Exists_Message=El grupo {0} ya existe.\nPor favor, escoja un nombre distinto.
+#EN: Group exists
+Group_Exists_Title=El grupo existe
+#EN: New Group...
+GroupManagerFrame.addButton.text=Nuevo Grupo...
+#EN: Close
+GroupManagerFrame.closeButton.text=Cerrar
+#EN: Edit...
+GroupManagerFrame.editButton.text=Editar...
+#EN: Refresh
+GroupManagerFrame.filterButton.text=Refrescar
+#EN: Groups:
+GroupManagerFrame.jLabel1.text=Grupos:
+#EN: Filter:
+GroupManagerFrame.jLabel2.text=Filtro:
+#EN: Remove
+GroupManagerFrame.removeButton.text=Eliminar
+#EN: Edit Groups
+GroupManagerFrame.title=Editar Grupos
+#EN: Group Name
+Group_Name=Nombre del Grupo
+#EN: Groups...
+Groups...=Grupos...
+#EN: Members
+Members=Miembros
+#EN: New Group
+New_Group=Nuevo Grupo
+#EN: Owner
+Owner=Propietario
+#EN: Username
+Username=Usuario

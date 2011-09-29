@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="libs/" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="libs/jCharts-0.7.5/jCharts-0.7.5.jar"/>
+	<classpathentry kind="lib" path="libs/bsh/bsh-2.0b4.jar" sourcepath="libs/bsh/bsh-2.0b4-src.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

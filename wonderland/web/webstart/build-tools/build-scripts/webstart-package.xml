@@ -1,0 +1,200 @@
+<project basedir="." default="..." name="webstart.package">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="webstart.build-scripts.dir" file="${ant.file.webstart.package}"/>
+    
+    <!-- the main package target -->
+    <target name="-webstart-package" depends="-webstart-setup, -webstart-copy-jars, 
+                                              -webstart-generate-native-jars, 
+                                              -webstart-update-jnlp, 
+                                              -webstart-sign-jars"/>
+                                    
+    <target name="-webstart-setup" depends="-setup-pack200">
+        <!-- create the app dir -->
+        <mkdir dir="${webstart.dist.dir}"/>
+    </target>
+
+    <!-- copy jar files into the build/lib directory -->
+    <target name="-webstart-copy-jars">
+        <!-- copy all jars on the client classpath -->
+        <pathconvert property="copy.jars">
+            <path path="${core-client.classpath}"/>
+        </pathconvert>
+        <for param="copy.jar" list="${copy.jars}" delimiter="${path.separator}">
+            <sequential>
+                <if>
+                    <available file="@{copy.jar}"/>
+                    <then>
+                        <copy todir="${webstart.jar.dir}" file="@{copy.jar}"/>
+                    </then>
+                </if>
+            </sequential>
+        </for>
+        
+        <!-- add the webstart-specific jar -->
+        <copy todir="${webstart.jar.dir}" file="${build.lib.dir}/wonderland-web-webstart.jar"/>
+    </target>
+    
+    <!-- create native jars -->
+    <target name="-webstart-generate-native-jars">
+        <for list="${ostypes}" param="ostype">
+            <sequential>
+                <nativejar ostype="@{ostype}"/>
+            </sequential>
+        </for>
+    </target>
+    
+    <!-- update the app/Wonderland.jnlp with the list of jars -->
+    <target name="-webstart-update-jnlp">
+        <!-- generate a list of jar files to put in the jnlp -->
+        <pathconvert property="jnlp.jars" pathsep=",">
+            <path>
+                <fileset dir="${webstart.jar.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </path>
+            <mapper type="flatten"/>
+        </pathconvert>
+        
+        <!-- create a temporary file and store local jar names to it -->
+        <delete file="${build.dir}/jnlp.jars"/>
+        
+        <for param="jar.name" list="${jnlp.jars}">
+            <sequential>
+                <echo file="${build.dir}/jnlp.jars" append="true"><![CDATA[<jar href="]]>@{jar.name}<![CDATA["/>]]>
+    </echo>
+            </sequential>
+        </for>
+      
+        <!-- read the local jar files into a property -->
+        <loadfile property="local.jars" srcfile="${build.dir}/jnlp.jars"/>
+        
+        <!-- copy the source .jnlp file and substitute the jar locations -->
+        <copy todir="${webstart.dist.dir}" file="${current.dir}/web/Wonderland.jnlp" overwrite="true">
+            <filterset begintoken="%" endtoken="%">
+                <filter token="LOCAL_JAR_FILES" value="${local.jars}"/>
+                <filter token="VERSION" value="${wonderland.version}"/>
+            </filterset>
+        </copy>
+        
+        <!-- set the main property -->
+        <replace file="${webstart.dist.dir}/Wonderland.jnlp">
+            <replacetoken><![CDATA[<jar href="wonderland-client.jar"/>]]></replacetoken>
+            <replacevalue><![CDATA[<jar href="wonderland-client.jar" main="true"/>]]></replacevalue>
+        </replace>
+    </target>
+    
+    
+    <target name="-webstart-sign-jars" depends="-webstart-sign-common-jars, 
+                                                -webstart-sign-native-jars"/>
+    
+    <!-- sign and pack200 all jars in the app directory --> 
+    <target name="-webstart-sign-common-jars">
+        <pathconvert property="common.jars" pathsep=",">
+            <fileset dir="${webstart.jar.dir}">
+                <include name="*.jar"/>
+            </fileset>
+            <mapper type="flatten"/>
+        </pathconvert>
+        
+        <for param="sign.jar.name" list="${common.jars}">
+            <sequential>
+                <signjarnopack src.jar="${webstart.jar.dir}/@{sign.jar.name}"
+                               dest.jar="${webstart.dist.dir}/@{sign.jar.name}"/>
+            </sequential>
+        </for>
+    </target>
+    
+    <!-- sign all jars in the native directories --> 
+    <target name="-webstart-sign-native-jars">
+        <for list="${ostypes}" param="ostype">
+            <sequential>
+                <if>
+                    <available file="${webstart.jar.dir}/@{ostype}/wonderland_native.jar"/>
+                    <then>
+                        <mkdir dir="${webstart.dist.dir}/@{ostype}"/>
+                        <signjarnopack src.jar="${webstart.jar.dir}/@{ostype}/wonderland_native.jar"
+                                       dest.jar="${webstart.dist.dir}/@{ostype}/wonderland_native.jar"/>
+                    </then>
+                </if>
+            </sequential>
+        </for>
+    </target>
+    
+    <!-- macro for making native jars -->
+    <macrodef name="nativejar">
+        <attribute name="ostype"/>
+        
+        <sequential>
+            <ant antfile="${core.build-scripts.dir}/core-setup.xml" 
+                 target="unpack-core-libs"
+                 inheritall="false">
+                     <property name="ostype" value="@{ostype}"/>
+            </ant>
+            <if>
+                <available file="${core.lib.dir}/@{ostype}/native"/>
+                <then>
+                    <mkdir dir="${webstart.jar.dir}/@{ostype}"/>
+                    <jar jarfile="${webstart.jar.dir}/@{ostype}/wonderland_native.jar">
+                        <fileset dir="${core.lib.dir}/@{ostype}/native"/>
+                    </jar>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+    
+    <!-- macro for signing and pack200ing jars -->
+    <macrodef name="signandpackjar">
+        <attribute name="src.jar"/>
+        <attribute name="dest.jar"/>
+        
+        <sequential>
+            <if>
+                <not>
+                    <uptodate targetfile="@{dest.jar}.pack.gz"
+                              srcfile="@{src.jar}"/>
+                </not>
+                <then>
+                    <pack200 src="@{src.jar}"
+                             destfile="@{dest.jar}.repack.jar"
+                             repack="true"
+                             segmentlimit="-1"/>
+                    <signjar jar="@{dest.jar}.repack.jar"
+                             keystore="${wonderland.keystore}"
+                             alias="${wonderland.keystore.alias}"
+                             storepass="${wonderland.keystore.password}"
+                             signedjar="@{dest.jar}.repack.sign.jar"/>
+                    <pack200 src="@{dest.jar}.repack.sign.jar"
+                             gzipoutput="true"
+                             destfile="@{dest.jar}.pack.gz"
+                             segmentlimit="-1"/>
+                                 
+                    <!-- copy over the original jar with the signed version.
+                         Force an overwrite, since ant will sometimes decide
+                         the files are the same age if the packing happens
+                         quickly -->
+                    <copy file="@{dest.jar}.repack.sign.jar"
+                          tofile="@{dest.jar}"
+                          overwrite="true"/>
+                        
+                    <!-- remove intermediate files -->
+                    <delete file="@{dest.jar}.repack.jar"/>
+                    <delete file="@{dest.jar}.repack.sign.jar"/>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+    
+    <!-- macro for signing jars without pack200 -->
+    <macrodef name="signjarnopack">
+        <attribute name="src.jar"/>
+        <attribute name="dest.jar"/>
+        
+        <sequential>
+            <signjar jar="@{src.jar}"
+                     keystore="${wonderland.keystore}"
+                     alias="${wonderland.keystore.alias}"
+                     storepass="${wonderland.keystore.password}"
+                     signedjar="@{dest.jar}"/>        
+        </sequential>
+    </macrodef>
+</project>

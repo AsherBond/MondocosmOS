@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dmvc"/>
+	<classpathentry kind="lib" path="/dmvc/libs/netty-3.1.5.GA/netty-3.1.5.GA.jar" sourcepath="/dmvc/libs/netty-3.1.5.GA/netty-3.1.5.GA-sources.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/igolibs"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/globe"/>
+	<classpathentry kind="lib" path="/globe/libs/jogl/gluegen-rt.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="globe/libs"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/globe/libs/jogl/jogl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="globe/libs"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/globe/libs/worldwind-1.2.0/worldwind.jar"/>
+	<classpathentry kind="lib" path="/globe/libs/worldwind-1.2.0/worldwindx.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

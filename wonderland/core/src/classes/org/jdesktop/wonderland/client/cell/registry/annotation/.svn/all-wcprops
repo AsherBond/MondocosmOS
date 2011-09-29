@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1547/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/annotation
+END
+CellFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1542/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/annotation/CellFactory.java
+END
+CellComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1547/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/registry/annotation/CellComponentFactory.java
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/4572/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client
+END
+ViewPropertiesJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/ViewPropertiesJDialog.java
+END
+ViewPropertiesJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/ViewPropertiesJDialog.form
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4521/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4019/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_zh_CN.properties
+END
+ViewPropertiesClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/ViewPropertiesClientPlugin.java
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_de_CH.properties
+END
+ViewPropertiesUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2787/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/ViewPropertiesUtils.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4572/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4557/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3341/trunk/modules/world/view-properties/src/classes/org/jdesktop/wonderland/modules/viewproperties/client/Bundle_de.properties
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/4608/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet
+END
+ClientPropertiesServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4608/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/ClientPropertiesServlet.java
+END
+ClientSettingsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4608/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/ClientSettingsServlet.java
+END
+DefaultPageServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2816/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/DefaultPageServlet.java
+END
+ClientPropertiesEditorServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4608/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/ClientPropertiesEditorServlet.java
+END
+WonderlandSubstitutionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4551/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/WonderlandSubstitutionHandler.java
+END
+AdminServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4608/trunk/web/front/src/java/org/jdesktop/wonderland/front/servlet/AdminServlet.java
+END

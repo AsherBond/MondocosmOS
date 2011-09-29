@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="dist" name="wonderland-modules-tools">  
+     <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-modules-tools}"/>
+    
+    <!-- all projects -->
+    <filelist dir="${current.dir}" id="all.projects">
+        <file name="darkstar/build.xml"/>
+        <file name="security-group/build.xml"/>
+        <file name="security-session-common/build.xml"/>
+        <file name="security-session-noauth/build.xml"/>
+        <file name="presence-manager/build.xml"/>
+        <file name="text-chat/build.xml"/>
+        <file name="orb/build.xml"/>
+        <file name="webdav/build.xml"/>
+        <file name="voicebridge/build.xml"/>
+        <file name="server-manager/build.xml"/>
+        <file name="audio-manager/build.xml"/>
+        <file name="sharedstate/build.xml"/>
+        <file name="artimport/build.xml"/>
+        <file name="coneofsilence/build.xml"/>
+        <file name="phone/build.xml"/>
+        <file name="artimport/build.xml"/>
+        <file name="snapshot-manager/build.xml"/>
+        <file name="asset-meter/build.xml"/>
+        <file name="xapps-config/build.xml"/>
+        <file name="placemarks/build.xml"/>
+    </filelist>
+    
+    <target name="dist">
+        <build-subprojects fileset="all.projects" target="dist"/>
+    </target>
+    
+    <!-- clean all sub-projects -->
+    <target name="clean">
+        <!-- clean sub-projects -->
+        <build-subprojects fileset="all.projects" target="clean"/>       
+    </target>
+    
+    <!-- macro to iterate across all subprojects -->
+    <macrodef name="build-subprojects">
+        <!-- the reference id of the fileset to iterate over -->
+        <attribute name="fileset"/>
+        
+        <!-- the build target to run -->
+        <attribute name="target"/>
+        <sequential>
+            <subant target="@{target}" inheritall="false">
+                <filelist refid="@{fileset}"/>
+            </subant>
+        </sequential>
+    </macrodef>
+</project>

@@ -1,0 +1,23 @@
+Index: src/main/org/tigris/subversion/svnant/SvnTask.java
+===================================================================
+--- src/main/org/tigris/subversion/svnant/SvnTask.java	(revision 4456)
++++ src/main/org/tigris/subversion/svnant/SvnTask.java	(working copy)
+@@ -421,7 +421,17 @@
+     
+     public void execute() throws BuildException {
+ 
+-        ISVNClientAdapter svnClient = getClientAdapter(this);        
++        ISVNClientAdapter svnClient;
++        try {
++            svnClient = getClientAdapter(this);        
++        } catch (BuildException be) {
++            if (!isFailonerror()) {
++                getProject().log(this, be.getLocalizedMessage(), Project.MSG_ERR); 
++                return;
++            } else {
++                throw be;
++            }
++        }
+ 
+         if (username != null)
+             svnClient.setUsername(username);

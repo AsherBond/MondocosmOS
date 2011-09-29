@@ -1,0 +1,242 @@
+#EN: Action:
+Action\:=Action:
+#EN: Add to My Avatars
+Add_to_My_Avatars=Ajouter \u00e0 mes avatars
+#EN: An avatar with name exists, overwrite ?
+An_avatar_with_name_exists,_overwrite_?=L'avatar au m\u00eame nom existe, voulez-vous le remplacer ?
+#EN: Animation
+Animation=Animation
+#EN: Answer Cell
+AnswerCell=R\u00e9pondre t\u00e9l
+#EN: 0
+AnswerCell_X=0
+#EN: Apply
+Apply=Appliquer
+#EN: Apply selected avatar
+Apply_selected_avatar=Appliquer avatar s\u00e9lectionn\u00e9
+#EN: Configure Avatar...
+Avatar_Appearance...=Configurer avatar...
+#EN: Avatar Collision Response Enabled
+Avatar_Collision_Response_Enabled=D\u00e9tection collisions
+#EN: Avatar Config...
+Avatar_Config...=Config. avatar...
+#EN: Close
+AvatarConfigFrame.closeButton.text=Fermer
+#EN: Customize...
+AvatarConfigFrame.customizeButton.text=Personnaliser...
+#EN: Delete
+AvatarConfigFrame.deleteButton.text=Effacer
+#EN: My Avatars
+AvatarConfigFrame.jLabel1.text=Mes avatars
+#EN: New...
+AvatarConfigFrame.newButton.text=Nouveau...
+#EN: Use
+AvatarConfigFrame.useButton.text=Utiliser
+#EN: Avatar Controls
+Avatar_Controls=Contr\u00f4les avatar
+#EN: Avatar Exists
+Avatar_Exists=Avatar existant
+#EN: Avatar Gravity Enabled
+Avatar_Gravity_Enabled=Gravit\u00e9 pesanteur
+#EN: Avatar Name:
+Avatar_Name\:=Nom avatar:
+#EN: Avatar Name
+AVATAR_NAME=Nom Avatar
+#EN: The avatar name cannot include spaces, sorry!
+AVATAR_NAME_SPACES=Le nom de l'avatar ne peut contenir d'espaces !
+#EN: Avatar Settings...
+Avatar_Settings...=R\u00e9glages avatar...
+#EN: Backward
+Backward=Arri\u00e8re
+#EN: Bow
+Bow=R\u00e9v\u00e9rence
+#EN: 1
+Bow_X=1
+#EN: Cartoon (Female)
+Cartoon_Female=Cartoon (F\u00e9minin)
+#EN: Cartoon (Male)
+Cartoon_Male=Cartoon (Masculin)
+#EN: Chase Camera
+Chase_Camera=Cam\u00e9ra poursuite
+#EN: Cheer
+Cheer=Acclamer
+#EN: 2
+Cheer_X=2
+#EN: Clap
+Clap=Applaudir
+#EN: 2
+Clap_X=2
+#EN: Close
+Close=Fermer
+#EN: Configure...
+Configure...=Configurer...
+#EN: Current Avatar:
+Current_Avatar\:=Avatar actuel:
+#EN: Customise
+Customise=Personnaliser
+#EN: Delete
+Delete=Effacer
+#EN: Delete selected avatar
+Delete_selected_avatar=Effacer avatar
+#EN: Configure Avatar
+Edit_Avatar=Modifier avatar
+#EN: Enabled Subsystems
+Enabled_Subsystems=Sous-syst\u00e08mes permis
+#EN: Expression:
+Expression\:=Expression:
+#EN: Female
+Female=F\u00e9minin
+#EN: Follow
+Follow=Suivre
+#EN: 3
+Follow_X=3
+#EN: Forward
+Forward=Avant
+#EN: Gender:
+Gender\:=Genre:
+#EN: Gestures
+Gesture_UI=Gestes
+#EN: Go home
+Go_home=D\u00e9part
+#EN: Go to 0,0,0
+Go_to_0,0,0=Aller \u00e0 0,0,0
+#EN: Hair Color
+Hair_Color=Couleur cheveux
+#EN: Hide Gestures
+HideGestures=Cacher gestes
+#EN: Cancel
+ImiAvatarDetailsJDialog.cancelButton.text=Annuler
+#EN: Feet:
+ImiAvatarDetailsJDialog.feetLabel.text=Pieds:
+#EN: Female
+ImiAvatarDetailsJDialog.femaleRadioButton.text=F\u00e9minin
+#EN: Gender:
+ImiAvatarDetailsJDialog.genderLabel.text=Genre:
+#EN: Hair Color...
+ImiAvatarDetailsJDialog.hairButton.text=Couleur cheveux...
+#EN: Hair:
+ImiAvatarDetailsJDialog.hairLabel.text=Cheveux:
+#EN: Hands:
+ImiAvatarDetailsJDialog.handsLabel.text=Mains:
+#EN: Head:
+ImiAvatarDetailsJDialog.headLabel.text=T\u00eate:
+#EN: Jacket:
+ImiAvatarDetailsJDialog.jacketLabel.text=Veste:
+#EN: Legs:
+ImiAvatarDetailsJDialog.legsLabel.text=Jambes:
+#EN: Male
+ImiAvatarDetailsJDialog.maleRadioButton.text=Masculin
+#EN: Name:
+ImiAvatarDetailsJDialog.nameLabel.text=Nom:
+#EN: Pants Color...
+ImiAvatarDetailsJDialog.pantsButton.text=Couleur pantalons...
+#EN: Randomize
+ImiAvatarDetailsJDialog.randomizeButton.text=Au hasard
+#EN: Shoe Color...
+ImiAvatarDetailsJDialog.shoeButton.text=Couleur chaussures...
+#EN: Skin Color...
+ImiAvatarDetailsJDialog.skinButton.text=Couleur peau...
+#EN: Configure avatar
+ImiAvatarDetailsJDialog.title=Configurer avatar
+#EN: Shirt Color...
+ImiAvatarDetailsJDialog.torsoButton.text=Couleur chemise/sier...
+#EN: Torso:
+ImiAvatarDetailsJDialog.torsoLabel.text=Buste:
+#EN: Use
+ImiAvatarDetailsJDialog.useButton.text=Utiliser
+#EN: Import...
+Import...=Importer...
+#EN: Laugh
+Laugh=Rire
+#EN: 2
+Laugh_X=2
+#EN: Left
+Left=Gauche
+#EN: Left Wink
+LeftWink=Clign. G.
+#EN: Loading Avatar...
+Loading_Avatar...=Chargement avatar...
+#EN: Loading Avatars, please wait.....
+Loading_Avatars,_please_wait.....=Charg. avatars, veuillez patienter.....
+#EN: Location:
+Location\:=Emplacement:
+#EN: Male
+Male=Masculin
+#EN: my_avatar
+my_avatar=my_avatar
+#EN: NewAvatar{0}
+NewAvatar=NouvelAvatar{0}
+#EN: No
+No=Non
+#EN: 4
+No_X=4
+#EN: Pants Color
+Pants_Color=Couleur pantalons
+#EN: Please enter an avatar name before saving.
+PLEASE_ENTER_AVATAR_NAME=Veuillez entrer un nom d'avatar avant de sauvegarder.
+#EN: Pose Transfer to GPU
+Pose_Transfer_to_GPU=Transfer Pose vers GPU
+#EN: Public Speaking
+PublicSpeaking=En public
+#EN: 1
+PublicSpeaking_X=1
+#EN: Raise Hand
+RaiseHand=Lever main
+#EN: 3
+RaiseHand_X=3
+#EN: Randomize
+Randomize=Au hasard
+#EN: Render Quality:
+Render_Quality\:=Qualit\u00e9 du rendu:
+#EN: Right
+Right=Droit(e)
+#EN: Right Wink
+RightWink=Clign. D.
+#EN: Run
+Run=Courir
+#EN: Save
+Save=Sauver
+#EN: Shake Hands
+ShakeHands=Serr. main
+#EN: 1
+ShakeHands_X=1
+#EN: Shirt Color
+Shirt_Color=Couleur chemise/sier
+#EN: Shoe Color
+Shoe_Color=Couleur chaussures
+#EN: Show Gestures
+ShowGestures=Montrer gestes
+#EN: Sit
+Sit=S'assoir
+#EN: 0
+Sit_X=0
+#EN: Skin Color
+Skin_Color=Couleur peau
+#EN: Take Damage
+TakeDamage=Mal prendre
+#EN: Texturing
+Texturing=Texturer
+#EN: The avatar name {0} is already taken. Please enter another name.
+THE_AVATAR_NAME_TAKEN=Le nom de l''avatar {0} est d\u00e9j\u00e0 pris.
+#EN: Toy (Female)
+Toy_Female=Jouet (F\u00e9minin)
+#EN: Toy (Male)
+Toy_Male=Jouet (Masculin)
+#EN: Unable to apply null default avatar
+Unable_to_apply_null_default_avatar=Impossible d'utiliser l'avatar inexistant par d\u00e9faut
+#EN: Unknown render quality
+Unknown_render_quality=Qualit\u00e9 de rendu inconnue
+#EN: Vertex Deformation
+Vertex_Deformation=D\u00e9formation de Vertex
+#EN: Wave
+Wave=Agiter main
+#EN: 3
+Wave_X=3
+#EN: Wink
+Wink=Clin d'oeil
+#EN: 4
+Wink_X=4
+#EN: 4
+Yes_X=4
+#EN: Yes
+Yes=Oui

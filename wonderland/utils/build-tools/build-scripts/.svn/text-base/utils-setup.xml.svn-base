@@ -1,0 +1,19 @@
+<project basedir="." default="..." name="utils.setup">
+    <!-- set the build-scripts directory to the current directory -->
+    <dirname property="utils.build-scripts.dir" file="${ant.file.utils.setup}"/>
+    
+    <!-- 
+         Use my.build.properties to override default values in test.properties.
+         You can specify an alternate build.properties override file by
+         running with "ant -Dbuild.properties.file=<file>" 
+    -->
+    <property name="build.properties.file" location="my.build.properties"/>
+    <property file="${current.dir}/${build.properties.file}"/>
+    
+    <!-- default directories -->
+    <property name="utils.dir" location="${utils.build-scripts.dir}/../.."/>
+    <property name="top.dir" location="${utils.dir}/.."/>
+    
+    <!-- import the main setup file -->
+    <import file="${top.dir}/build-tools/build-scripts/setup.xml"/>
+</project>

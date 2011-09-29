@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4580/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content
+END
+AbstractContentImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4580/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/AbstractContentImporter.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4351/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4521/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4513/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4572/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4557/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4351/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/content/Bundle_de.properties
+END

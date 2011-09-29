@@ -1,0 +1,3 @@
+
+# whether to build the Wonderland core
+build.core=true

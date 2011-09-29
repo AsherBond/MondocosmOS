@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fme="http://www.safe.com/gml/fme" targetNamespace="http://www.safe.com/gml/fme" elementFormDefault="qualified">
+<import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+<element name="EN_1180009_1" type="fme:EN_1180009_1Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1180009_1Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element name="PRODUCT" minOccurs="0" type="short"/>
+<element name="NOPIPES" minOccurs="0" type="short"/>
+<element name="RELGROUND" minOccurs="0" type="short"/>
+<element ref="gml:curveProperty" minOccurs="0"/>
+<element ref="gml:multiCurveProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1360059_2" type="fme:EN_1360059_2Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1360059_2Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:surfaceProperty" minOccurs="0"/>
+<element ref="gml:multiSurfaceProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1360049_2" type="fme:EN_1360049_2Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1360049_2Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:surfaceProperty" minOccurs="0"/>
+<element ref="gml:multiSurfaceProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1120009_1" type="fme:EN_1120009_1Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1120009_1Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="NOLINES" minOccurs="0" type="integer"/>
+<element name="TYPE" minOccurs="0" type="integer"/>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:curveProperty" minOccurs="0"/>
+<element ref="gml:multiCurveProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1360049_0" type="fme:EN_1360049_0Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1360049_0Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:pointProperty" minOccurs="0"/>
+<element ref="gml:multiPointProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_2170009_0" type="fme:EN_2170009_0Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_2170009_0Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:pointProperty" minOccurs="0"/>
+<element ref="gml:multiPointProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1360059_0" type="fme:EN_1360059_0Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1360059_0Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:pointProperty" minOccurs="0"/>
+<element ref="gml:multiPointProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+<element name="EN_1340009_0" type="fme:EN_1340009_0Type" substitutionGroup="gml:_Feature"/>
+<complexType name="EN_1340009_0Type">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="CODE" minOccurs="0" type="integer"/>
+<element name="ACCURACY" minOccurs="0" type="integer"/>
+<element name="DATANAME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="VALDATE" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType></element>
+<element name="PROVIDER" minOccurs="0" type="short"/>
+<element name="ID" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="64"/>
+</restriction>
+</simpleType></element>
+<element name="THEME" minOccurs="0">
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType></element>
+<element ref="gml:pointProperty" minOccurs="0"/>
+<element ref="gml:multiPointProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+</schema>

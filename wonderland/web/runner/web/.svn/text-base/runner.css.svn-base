@@ -1,0 +1,65 @@
+/* ce.css */
+
+body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        background-color: white;
+}
+
+#contents {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    
+#header {
+        height: 96px;
+        border: 0px black solid;
+        background-image: url(images/banner-middle.jpg);
+        background-repeat: repeat-x;
+        padding: 0em;
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+}
+
+#header h1 {
+        color: white;
+        text-align: left;
+        font-size: 24pt;
+        padding-left: 0.2em;
+        padding-top: 0.4em;
+    }
+
+#header img {
+    border: 0px black solid;
+    float: right;
+}
+
+#labs {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+/* Tables to hold information about installed modules */
+
+table.installed {
+        width: 100%;
+        text-align: left;
+}
+
+td.installed {
+        text-align: left;
+        padding: 3px 3px 3px 3px;
+}
+
+tr.installed_a {
+        background-color: #f2f2f2;
+}
+
+tr.installed_b {
+        background-color:#ffffff;
+}
+
+tr.header {
+        background-color: #6b7f93;
+        color: white;
+}

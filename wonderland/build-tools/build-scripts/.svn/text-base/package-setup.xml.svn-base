@@ -1,0 +1,28 @@
+<project basedir="." default="..." name="setup.package">
+    <!-- 
+        imported from build-setup.xml, so we can assume the common build
+        properties are imported already.
+    -->
+    <target name="-setup-package-server">
+        <mkdir dir="${dist.dir}"/>
+        
+        <zip zipfile="${dist.dir}/wonderland-setup-dist.zip">
+            <!-- include entire Darkstar server .zip -->
+            <zipfileset dir="${wonderland.lib.dir}" prefix="lib">
+                <include name="jaxb/**"/>
+                <include name="ant/**"/>
+            </zipfileset>
+            
+            <!-- include ant files -->
+            <zipfileset dir="${setup.build-scripts.dir}" prefix="build-tools/build-scripts">
+                <include name="setup.xml"/>
+                <include name="classpath.xml"/>
+                <include name="setup.properties"/>
+                <include name="platform-setup.xml"/>
+                <include name="run-setup.xml"/>
+                <include name="unpack.xml"/>
+                <include name="noop.xml"/>
+            </zipfileset>
+        </zip> 
+    </target>
+</project>

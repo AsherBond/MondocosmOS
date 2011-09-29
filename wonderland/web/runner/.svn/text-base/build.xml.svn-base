@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-runner" default="default" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-asset}"/>
+
+    <!-- override default source directory -->
+    <property name="javasrc.dir" location="${current.dir}/src/java"/>
+
+    <!-- import web build file -->
+    <import file="${current.dir}/../build-tools/build-scripts/web-build.xml"/>
+
+    <target name="build" depends="-set-extra-classpath, -web-compile"/>
+
+    <target name="-set-extra-classpath">
+        <pathconvert property="web-extra.classpath">
+            <path path="${web.dir}/modules/dist/wonderland-modules-core.jar"/>
+            <path path="${web.dir}/asset/dist/wonderland-asset-core.jar"/>
+            <path path="${web.dir}/checksums/dist/wonderland-checksums-core.jar"/>
+            <path path="${web.dir}/utils/dist/wonderland-web-utils.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-client.jar"/>
+            <path path="${core.dir}/build/lib/wonderland-common.jar"/>
+            <path path="${core.dir}/ext/common/stun.jar"/>
+            <path path="${current.dir}/lib/winp-1.5.jar"/>
+        </pathconvert>
+    </target>
+
+    <target name="dist" depends="build" description="Build and assemble web war">
+        <mkdir dir="${dist.dir}"/>
+
+        <jar jarfile="${dist.dir}/wonderland-web-runner.war">
+            <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                <include name="org/jdesktop/wonderland/runner/servlet/**"/>
+                <include name="org/jdesktop/wonderland/runner/resources/**"/>
+            </zipfileset>
+
+            <fileset dir="${current.dir}/web"/>
+        </jar>
+
+        <!-- remote webapp -->
+        <mkdir dir="${build.lib.dir}/remote"/>
+        <jar jarfile="${build.lib.dir}/remote/wonderland-web-remote-runner.war">
+            <zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+                <include name="org/jdesktop/wonderland/runner/resources/**"/>
+            </zipfileset>
+
+            <fileset dir="${current.dir}/remote-web"/>
+        </jar>
+
+        <jar jarfile="${dist.dir}/wonderland-runner-api.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="org/jdesktop/wonderland/runner/*.class"/>
+                <include name="org/jdesktop/wonderland/runner/ant/**"/>
+            </fileset>
+
+            <!-- include some client classes that are required by the runner
+                 ant task -->
+            <zipfileset src="${core.dir}/build/lib/wonderland-client.jar">
+                <include name="org/jdesktop/wonderland/client/login/**"/>
+                <include name="org/jdesktop/wonderland/client/comms/**"/>
+            </zipfileset>
+        </jar>
+        
+        <jar jarfile="${dist.dir}/wonderland-runner-core.jar">
+            <fileset dir="${build.classes.dir}">
+                <exclude name="org/jdesktop/wonderland/runner/servlet/**"/>
+                <exclude name="org/jdesktop/wonderland/runner/resources/**"/>
+            </fileset>
+
+            <!-- package config files -->
+            <zipfileset dir="${javasrc.dir}">
+                <include name="META-INF/**"/>
+            </zipfileset>
+        </jar>
+    </target>
+
+    <target name="clean" depends="-web-clean"/>
+</project>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators
+END
+FloatInterpolator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators/FloatInterpolator.java
+END
+QuaternionInterpolator.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators/QuaternionInterpolator.java
+END
+DimensionInterpolator.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators/DimensionInterpolator.java
+END
+PointInterpolator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators/PointInterpolator.java
+END
+Vector2fInterpolator.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/3238/trunk/modules/foundation/animationbase/src/classes/org/jdesktop/wonderland/modules/animationbase/client/interpolators/Vector2fInterpolator.java
+END

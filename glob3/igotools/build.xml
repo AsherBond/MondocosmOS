@@ -1,0 +1,57 @@
+<project name="IGO Tools"
+         default="dist"
+         basedir=".">
+
+  <!-- use eclipse java compiler (jdt) -->
+  <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+
+
+  <property name="src"   location="src"/>
+  <property name="build" location="bin"/>
+  <property name="dist"  location="_build"/>
+
+
+  <target name="clean"
+          description="Clean up." >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+
+
+  <target name="init">
+    <mkdir dir="${build}"/>
+  </target>
+
+
+  <target name="compile"
+          depends="init"
+          description="Compile the source." >
+    <javac
+        srcdir="${src}"
+        destdir="${build}"
+        includeantruntime="false"
+        source="1.6"
+        target="1.6"
+        />
+  </target>
+
+
+  <target name="dist"
+          depends="compile"
+          description="Generate the jar distribution." >
+    <mkdir dir="${dist}"/>
+
+    <jar
+        jarfile="${dist}/igotools.jar"
+        basedir="${build}">
+      <manifest>
+        <attribute name="Main-Class"             value="es.igosoftware.tools.TBuild"/>
+        <attribute name="Implementation-Title"   value="IGO Tools"/>
+        <attribute name="Implementation-Version" value="0.1"/>
+        <attribute name="Implementation-Vendor"  value="IGO Software"/>
+      </manifest>
+    </jar>
+  </target>
+
+
+</project>

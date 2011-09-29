@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/4572/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client
+END
+ContainerClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3854/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/ContainerClientPlugin.java
+END
+ContainerComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/2988/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/ContainerComponentProperties.java
+END
+ContainerComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/2988/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/ContainerComponentProperties.form
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/3987/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4521/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/4019/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle_zh_CN.properties
+END
+ContainerComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3854/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/ContainerComponent.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4572/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4557/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/3993/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/Bundle_de.properties
+END
+ContainerComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/3403/trunk/modules/world/containercell/src/classes/org/jdesktop/wonderland/modules/containercell/client/ContainerComponentFactory.java
+END

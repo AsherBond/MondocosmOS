@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/common
+END
+PingResponseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/common/PingResponseMessage.java
+END
+ServerManagerConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/common/ServerManagerConnectionType.java
+END
+PingRequestMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1365/trunk/modules/tools/server-manager/src/classes/org/jdesktop/wonderland/servermanager/common/PingRequestMessage.java
+END

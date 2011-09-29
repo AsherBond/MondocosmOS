@@ -1,0 +1,15 @@
+<phone-cell>
+  <position-component>
+    <origin>
+	<x>0.0</x>
+        <y>0.0</y>
+        <z>20.0</z>
+    </origin>
+  </position-component>
+    <password>foo</password>
+    <simulateCalls>false</simulateCalls>
+    <phoneNumber>1</phoneNumber>
+    <phoneLocation>Conference Room </phoneLocation>
+    <zeroVolumeRadius>.2</zeroVolumeRadius>
+    <fullVolumeRadius>.1</fullVolumeRadius>
+</phone-cell>

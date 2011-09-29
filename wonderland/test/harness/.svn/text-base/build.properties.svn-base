@@ -1,0 +1,5 @@
+sgs.test.port=1140
+
+harness.master.hostname=localhost
+#harness.master.hostname=lundy
+harness.master.port=43210

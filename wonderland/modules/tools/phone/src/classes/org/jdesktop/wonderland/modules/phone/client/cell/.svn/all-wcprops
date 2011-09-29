@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4572/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell
+END
+PhoneForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneForm.form
+END
+PhoneCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/3201/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneCellRenderer.java
+END
+PhoneCellFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4369/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneCellFactory.java
+END
+KeypadListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/KeypadListener.java
+END
+VirtualPhoneListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/VirtualPhoneListener.java
+END
+JDialogKeypad.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/JDialogKeypad.java
+END
+JDialogKeypad.form
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/JDialogKeypad.form
+END
+PhoneCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4147/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneCell.java
+END
+PhonePasswordDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4369/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhonePasswordDialog.java
+END
+PhoneMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneMessageHandler.java
+END
+PhoneForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhoneForm.java
+END
+PhonePasswordDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/4060/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/PhonePasswordDialog.form
+END

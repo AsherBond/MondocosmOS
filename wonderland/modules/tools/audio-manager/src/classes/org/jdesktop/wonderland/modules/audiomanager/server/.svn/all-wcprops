@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4490/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server
+END
+AudioParticipantComponentMO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioParticipantComponentMO.java
+END
+AudioTreatmentProximityListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioTreatmentProximityListener.java
+END
+VoiceChatProximityListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4151/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/VoiceChatProximityListener.java
+END
+AudioManagerServerPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/2001/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioManagerServerPlugin.java
+END
+VoiceChatPhoneMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/VoiceChatPhoneMessageHandler.java
+END
+VoiceChatHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4205/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/VoiceChatHandler.java
+END
+AudioTreatmentComponentMO.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4440/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioTreatmentComponentMO.java
+END
+AudioCallStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4205/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioCallStatusListener.java
+END
+ConeOfSilenceProximityListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4490/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/ConeOfSilenceProximityListener.java
+END
+VoiceChatPhoneStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/4034/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/VoiceChatPhoneStatusListener.java
+END
+AudioManagerConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/AudioManagerConnectionHandler.java
+END
+ConeOfSilenceComponentMO.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4224/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/server/ConeOfSilenceComponentMO.java
+END

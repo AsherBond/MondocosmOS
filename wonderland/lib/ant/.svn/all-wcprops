@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/3025/trunk/lib/ant
+END
+ant-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/450/trunk/lib/ant/ant-LICENSE.txt
+END
+svnClientAdapter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2986/trunk/lib/ant/svnClientAdapter.jar
+END
+Pack200Task-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/450/trunk/lib/ant/Pack200Task-LICENSE.txt
+END
+svnClientAdapter-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2986/trunk/lib/ant/svnClientAdapter-LICENSE.txt
+END
+svnant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3025/trunk/lib/ant/svnant.jar
+END
+svnant-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2986/trunk/lib/ant/svnant-LICENSE.txt
+END
+ant-contrib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/450/trunk/lib/ant/ant-contrib.jar
+END
+ant-launcher.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/450/trunk/lib/ant/ant-launcher.jar
+END
+svnant-1.2.1.diff
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3025/trunk/lib/ant/svnant-1.2.1.diff
+END
+ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/450/trunk/lib/ant/ant.jar
+END
+ant-contrib-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/450/trunk/lib/ant/ant-contrib-LICENSE.txt
+END
+Pack200Task.jar
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/450/trunk/lib/ant/Pack200Task.jar
+END

@@ -1,0 +1,50 @@
+#EN: Add User
+Add_User=\u6dfb\u52a0\u7528\u6237
+#EN: Create
+Create=\u521b\u5efa
+#EN: Edit Group {0}
+Edit_Group=\u7f16\u8f91\u7ec4 {0}
+#EN: Enter user name
+Enter_User_Name=\u8f93\u5165\u7528\u6237\u540d
+#EN: Add User...
+GroupEditorFrame.addButton.text=\u6dfb\u52a0\u7528\u6237...
+#EN: Cancel
+GroupEditorFrame.cancelButton.text=\u53d6\u6d88
+#EN: Group name:
+GroupEditorFrame.jLabel1.text=\u5c0f\u7ec4\u540d:
+#EN: OK
+GroupEditorFrame.okButton.text=OK
+#EN: Remove
+GroupEditorFrame.removeButton.text=\u79fb\u9664
+#EN: Group {0} already exists.\nPlease choose a different name.
+Group_Exists_Message=\u5c0f\u7ec4 {0} \u5df2\u7ecf\u5b58\u5728\u3002\ n\u8bf7\u9009\u62e9\u4e00\u4e2a\u4e0d\u540c\u7684\u540d\u79f0\u3002
+#EN: Group exists
+Group_Exists_Title=\u5c0f\u7ec4\u5df2\u7ecf\u5b58\u5728
+#EN: New Group...
+GroupManagerFrame.addButton.text=\u65b0\u5efa\u7ec4...
+#EN: Close
+GroupManagerFrame.closeButton.text=\u5173\u95ed
+#EN: Edit...
+GroupManagerFrame.editButton.text=\u7f16\u8f91...
+#EN: Refresh
+GroupManagerFrame.filterButton.text=\u5237\u65b0
+#EN: Groups:
+GroupManagerFrame.jLabel1.text=\u7ec4:
+#EN: Filter:
+GroupManagerFrame.jLabel2.text=\u8fc7\u6ee4\u5668:
+#EN: Remove
+GroupManagerFrame.removeButton.text=\u79fb\u9664
+#EN: Edit Groups
+GroupManagerFrame.title=\u7f16\u8f91\u7ec4
+#EN: Group Name
+Group_Name=\u7ec4\u540d\u79f0
+#EN: Groups...
+Groups...=\u7ec4...
+#EN: Members
+Members=\u6210\u5458
+#EN: New Group
+New_Group=\u65b0\u7ec4
+#EN: Owner
+Owner=\u6240\u6709\u8005
+#EN: Username
+Username=\u7528\u6237\u540d

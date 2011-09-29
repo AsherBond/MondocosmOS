@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/792/trunk/web/wfs/lib
+END
+nblibraries-private.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/313/trunk/web/wfs/lib/nblibraries-private.properties
+END
+nblibraries.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/792/trunk/web/wfs/lib/nblibraries.properties
+END

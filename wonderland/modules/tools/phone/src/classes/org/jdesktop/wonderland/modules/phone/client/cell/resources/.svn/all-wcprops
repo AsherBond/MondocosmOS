@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4572/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources
+END
+virtualphone_preview.png
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/3989/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/virtualphone_preview.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/4336/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4521/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4517/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_zh_CN.properties
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4336/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4572/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4557/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4336/trunk/modules/tools/phone/src/classes/org/jdesktop/wonderland/modules/phone/client/cell/resources/Bundle_de.properties
+END

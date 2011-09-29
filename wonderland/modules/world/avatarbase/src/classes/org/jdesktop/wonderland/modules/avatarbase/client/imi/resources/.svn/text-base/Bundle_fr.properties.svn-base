@@ -1,0 +1,178 @@
+#EN: Caucasian
+Female_Head_Caucasian=Europ\u00e9en
+#EN: Asian
+Female_Head_Asian=Asiatique
+#EN: African American
+Female_Head_AfricanAmerican=Afro Am\u00e9ricain
+#EN: Hispanic
+Female_Head_Hispanic=Hispanique
+#EN: June (low poly)
+Female_Head_June_Low_Poly=Poly clair
+#EN: April (high poly)
+Female_Head_April_High_Poly=Poly fonc\u00e9
+#EN: Bald
+Female_Hair_Bald=Chauve
+#EN: Pig Tails
+Female_Hair_PigTailsShape=Couettes
+#EN: Curly Pig Tails
+Female_Hair_CulyPigTailzShape=Couettes fris\u00e9es
+#EN: Large Bun
+Female_Hair_BunShape_Large=Large Chignon
+#EN: Medium Bun
+Female_Hair_BunShape_Medium=Chignon Moyen
+#EN: Curly Pony Tail
+Female_Hair_CurlyPonyTailShape=Queue de Cheval Fris\u00e9e
+#EN: Long Pony Tail
+Female_Hair_PonyTailShape_Long=Longue Queue de Cheval
+#EN: Medium Pony Tail
+Female_Hair_PonyTailShape_Medium=Queue de Cheval Moyenne
+#EN: Long Bangs
+Female_Hair_BangsShape_Long=Frange carr\u00e9e
+#EN: Layered Bangs
+Female_Hair_BangsShape_Layered=Frange
+#EN: Layered Left Part
+Female_Hair_Left_Part_Layered=Raie \u00e0 droite
+#EN: Layered Right Part
+Female_Hair_Right_Part_Layered=Raie \u00e0 gauche
+#EN: Layered Center Part
+Female_Hair_Center_Part_Layered=Raie au milieu
+#EN: Curly Bangs
+Female_Hair_BangsShape_Curly=Frange boucl\u00e9e
+#EN: Curly Right Part
+Female_Hair_Right_Part_Culry=Boucl\u00e9e droite
+#EN: Curly Left Part
+Female_Hair_Left_Part_Culry=Boucl\u00e9e gauche
+#EN: Curly Center Part
+Female_Hair_Center_Part_Curly=Boucl\u00e9e arri\u00e8re
+#EN: Long Dredz
+Female_Hair_Long_DredzShape=Dread longs
+#EN: Medium Bangs
+Female_Hair_BangsShape_Medium=Mi-longs et frange
+#EN: Medium Center Part
+Female_Hair_Center_Part_Medium=Mi-longs
+#EN: Medium Curly Bangs
+Female_Hair_BangzShape_Medium_Curly=Mi-longs fris\u00e9s
+#EN: Medium African Bangs
+Female_Hair_AfricanBangsShape_Medium=Carr\u00e9 fris\u00e9s
+#EN: Medium African Right Part
+Female_Hair_African_Right_Part_Medium=Carr\u00e9 fris\u00e9 droite
+#EN: Medium African Left Part
+Female_Hair_African_Medium_Left_Part=Carr\u00e9 fris\u00e9 gauche
+#EN: Medium African Center Part
+Female_Hair_African_Center_Part_Medium=Carr\u00e9 fris\u00e9 milieu
+#EN: Short African Messy
+Female_Hair_Short_African_MessyShape=Courts fris\u00e9s
+#EN: Short Right Part
+Female_Hair_Short_Right_Part=Courts fris\u00e9s droite
+#EN: Short Left Part
+Female_Hair_Short_Left_Part=Courts fris\u00e9s gauche
+#EN: Short Center Part
+Female_Hair_Short_Center_Part=Courts fris\u00e9s milieu
+#EN: Default Hands
+Female_Hands_Default=Mains par d\u00e9faut
+#EN: Dress Shirt
+Female_Torso_Dress_Shirt=Chemisier
+#EN: Sweater
+Female_Torso_Sweater=Pull
+#EN: Jacket
+Female_Torso_Jacket=Veste
+#EN: T Shirt
+Female_Torso_T_Shirt=T-Shirt
+#EN: No Jacket
+Female_Jacket_None=Pas de veste
+#EN: Dress Shoes
+Female_Feet_Dress_Shoes=Chaussures ville
+#EN: Running Shoes
+Female_Feet_Converse=Chaussures sport
+#EN: Flip Flops
+Female_Feet_Flip_Flops=Tongs
+#EN: Bare Feet
+Female_Feet_Bare_Feet=Nus
+#EN: Jeans
+Female_Legs_Jeans=Jeans
+#EN: Dress Pants
+Female_Legs_Dress_Pants=Pantalons
+#EN: Shorts
+Female_Legs_Shorts=Pantacourt
+#EN: Caucasian
+Male_Head_Caucasian=Caucasien
+#EN: African American (med poly)
+Male_Head_AfricanAmerican_Medium_Poly=Afro Am\u00e9ricain fonc\u00e9
+#EN: African American (low poly)
+Male_Head_AfricanAmerican_Low_Poly=Afro Am\u00e9ricain clair
+#EN: Dark
+Male_Head_Black=Noir
+#EN: Asian
+Male_Head_Asian=Asiatique
+#EN: Middle Aged Guy
+Male_Head_Middle_Aged_Guy=Age moyen
+#EN: Bald
+Male_Hair_Bald=Chauve
+#EN: Pony Tail
+Male_Hair_PonyTailShape=Queue de Cheval
+#EN: Chin Length Part Left
+Male_Hair_ChinLengthPartLeftShape=Mi-longs gauche
+#EN: Chin Length Part Right
+Male_Hair_ChinLengthPartRightShape=Mi-longs droite
+#EN: Slicked Back
+Male_Hair_SlickedBackShape=En arri\u00e8re
+#EN: Short Part Left
+Male_Hair_PartLeftShape=Courts gauche
+#EN: Short Part Right
+Male_Hair_PartRightShape=Courts droite
+#EN: Short Messy
+Male_Hair_ShortMessyShape=En brosse
+#EN: Flat Top
+Male_Hair_FlatTopShape=Courts plats
+#EN: Short Top
+Male_Hair_ShortTopUpShape=Tr\u00e8 courts
+#EN: Basic Short
+Male_Hair_ShortBasicShape=Courts
+#EN: Short Recede
+Male_Hair_ShortRecedShape=Un peu d\u00e9garni
+#EN: Balding
+Male_Hair_BaldingShape=D\u00e9garni
+#EN: Piccard Balding
+Male_Hair_BaldPiccardShape=Chauve
+#EN: Mohawk
+Male_Hair_SuperFauxHawkShape=Banane
+#EN: Spikey
+Male_Hair_SpikeyShape=H\u00e9riss\u00e9s
+#EN: Default Hands
+Male_Hands_Default=Mains par d\u00e9faut
+#EN: T Shirt
+Male_Torso_T_Shirt=T-Shirt
+#EN: Polo Shirt
+Male_Torso_Polo=Polo
+#EN: Dress Shirt
+Male_Torso_Dress_Shirt=Chemise sport
+#EN: Sweater
+Male_Torso_Dress_Sweater=Pull
+#EN: Suit Shirt
+Male_Torso_Suit_Shirt=Chemise habill\u00e9e
+#EN: Meso
+Male_Torso_Meso=M\u00e9so
+#EN: No Jacket
+Male_Jacket_None=Sans veste
+#EN: Suit Jacket
+Male_Jacket_Suit=Veston
+#EN: Tennis Shoes
+Male_Feet_Tennis_Shoes=Chaussures sport
+#EN: Flip Flops
+Male_Feet_Flip_Flops=Tongs
+#EN: Dress Shoes
+Male_Feet_Dress_Shoes=Chaussures ville
+#EN: Cowboy Boots
+Male_Feet_Cowboy_Boots=Bottes
+#EN: Bare Feet
+Male_Feet_Bare_Feet=Nus
+#EN: Jeans
+Male_Legs_Jeans=Jeans
+#EN: Shorts
+Male_Legs_Shorts=Bermuda
+#EN: Dress Pants
+Male_Legs_Dress_Pants=Pantalons
+#EN: Slacks
+Male_Legs_Slacks=Pantalons moulant
+#EN: Meso
+Male_Legs_Meso=M\u00e9so

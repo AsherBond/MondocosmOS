@@ -1,0 +1,12 @@
+CellPalette.createButton.text=Insert
+CellPalette.jLabel1.text=Insert Object:
+CellPalette.title=Insert Object
+Object...=Object...
+Confirm_Delete=Confirm Delete
+Confirm_Delete_Message=Are you sure you want to delete object {0}?
+Copy_Of={0} Copy
+Delete=Delete
+Delete_Checking=Delete (checking)
+Duplicate=Duplicate
+Duplicate_Checking=Duplicate (checking)
+Shortcuts=Shortcuts

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4572/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources
+END
+female-configs-binary.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/3738/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/female-configs-binary.xml
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4029/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4521/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4520/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_zh_CN.properties
+END
+male-configs-binary.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3738/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/male-configs-binary.xml
+END
+Bundle_de_CH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4009/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_de_CH.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4572/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4557/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4029/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_de.properties
+END
+Bundle_en_GB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4029/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/imi/resources/Bundle_en_GB.properties
+END

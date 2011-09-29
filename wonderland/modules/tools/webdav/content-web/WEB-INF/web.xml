@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>webdav</servlet-name>
+        <servlet-class>org.jdesktop.wonderland.modules.webdav.web.content.WonderlandWebdavServlet</servlet-class>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>readonly</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>webdav</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <security-constraint>
+        <display-name>Optional Authentication</display-name>
+        <web-resource-collection>
+            <web-resource-name>Access to webdav resources</web-resource-name>
+            <description>Access to webdav resources uses optional login</description>
+            <url-pattern>/*</url-pattern>
+            <url-pattern>/users/*</url-pattern>
+            <url-pattern>/groups/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>HEAD</http-method>
+            <http-method>PUT</http-method>
+            <http-method>OPTIONS</http-method>
+            <http-method>TRACE</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+    </security-constraint>
+    <security-role>
+        <description>A regular user of the system</description>
+        <role-name>user</role-name>
+    </security-role>
+    <security-role>
+        <description>A system administrator</description>
+        <role-name>admin</role-name>
+    </security-role>
+</web-app>

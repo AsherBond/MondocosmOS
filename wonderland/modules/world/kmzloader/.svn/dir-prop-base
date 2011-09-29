@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 56
+build
+dist
+.xjc.sh.swp
+.ogckml22.xsd.swp
+.build.xml.swp
+
+END

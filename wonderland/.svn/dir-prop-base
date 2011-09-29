@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 50
+my.build.properties
+my.run.properties
+dist
+.a.swp
+
+END

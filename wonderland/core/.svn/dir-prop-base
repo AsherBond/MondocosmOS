@@ -1,0 +1,33 @@
+K 10
+svn:ignore
+V 473
+.build.properties.swp
+.build.xml.swp
+.run-client.properties.swp
+build.number
+data
+run
+build
+mpk20.dae
+mpk20.jmempk20.jme
+.a.swp
+wonderland-client-1.log
+.run-client.properties.example.swp
+.master.properties.swp
+.wonderland-client-0.log.swp
+master.properties
+sgs-logging.properties
+a
+wonderland-client-0.log
+wonderland-client-2.log
+log
+.appNode1.properties.swp
+appNode1.properties
+wonderland-client-3.log
+appNode2.properties
+run-client.properties
+release
+properties.cfg
+dist
+
+END

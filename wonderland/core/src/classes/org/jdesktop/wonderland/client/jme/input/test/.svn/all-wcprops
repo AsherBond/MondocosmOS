@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3196/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/input/test
+END
+EnterExitEvent3DLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/3196/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/input/test/EnterExitEvent3DLogger.java
+END
+KeyEvent3DLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3196/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/input/test/KeyEvent3DLogger.java
+END
+MouseEvent3DLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3196/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/input/test/MouseEvent3DLogger.java
+END
+SpinObjectEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/3196/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/input/test/SpinObjectEventListener.java
+END

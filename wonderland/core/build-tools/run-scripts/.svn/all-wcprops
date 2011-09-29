@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4695/trunk/core/build-tools/run-scripts
+END
+run-server.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1322/trunk/core/build-tools/run-scripts/run-server.properties
+END
+run-server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4695/trunk/core/build-tools/run-scripts/run-server.xml
+END
+run-server-main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1398/trunk/core/build-tools/run-scripts/run-server-main.xml
+END

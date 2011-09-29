@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport
+END
+ModelLoaderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2881/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/ModelLoaderFactory.java
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/3254/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/Model.java
+END
+LoaderManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/LoaderManager.java
+END
+ImportedModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4362/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/ImportedModel.java
+END
+DeployedModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4143/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/DeployedModel.java
+END
+ModelLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/3611/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/ModelLoader.java
+END
+ImportSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/3944/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/ImportSettings.java
+END
+LoaderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4272/trunk/core/src/classes/org/jdesktop/wonderland/client/jme/artimport/LoaderListener.java
+END

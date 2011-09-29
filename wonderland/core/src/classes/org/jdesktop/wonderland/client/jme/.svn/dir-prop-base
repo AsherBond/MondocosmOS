@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 92
+.MainFrame.form.swp
+.ReconnectFrame.java.swp
+.SimpleAvatarControls.java.swp
+.Meter.java.swp
+
+END

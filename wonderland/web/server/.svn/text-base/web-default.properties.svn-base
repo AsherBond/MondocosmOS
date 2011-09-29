@@ -1,0 +1,20 @@
+# Default directories for deployment files
+wonderland.config.dir=$PATH{user.home}/.wonderland-server/%WONDERLAND_VERSION%
+
+wonderland.webserver.wfs.root=${wonderland.config.dir}/wfs
+wonderland.webserver.modules.root=${wonderland.config.dir}/modules
+wonderland.log.dir=${wonderland.config.dir}/log
+wonderland.run.dir=${wonderland.config.dir}/run
+wonderland.webserver.content.dir=content
+
+# Whether or not to automatically start any configured apps (such as the
+# Darkstar server) when the web server starts up
+wonderland.runner.autostart=true
+
+# Whether or not to shutdown any applications launched through the web
+# UI when the web server exits
+wonderland.runner.autostop=true
+
+# OWL issue 4: use asynchronous writes in Grizzly to avoid issues when
+# clients can't keep up with the download
+com.sun.grizzly.http.asyncwrite.enabled=true

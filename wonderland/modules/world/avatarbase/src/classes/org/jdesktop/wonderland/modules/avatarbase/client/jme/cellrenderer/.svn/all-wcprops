@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4729/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer
+END
+BoundsDebugger.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/BoundsDebugger.java
+END
+NameTagComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/3948/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/NameTagComponent.java
+END
+ImiPickGeometry.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4545/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/ImiPickGeometry.java
+END
+PickGeometry.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4545/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/PickGeometry.java
+END
+AvatarControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/3938/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarControls.java
+END
+AvatarInstrumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/2285/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarInstrumentation.java
+END
+BasicPickGeometry.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4545/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/BasicPickGeometry.java
+END
+ShaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4209/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/ShaderTest.java
+END
+AvatarImiJME.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/4694/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarImiJME.java
+END
+BoundsDebuggerFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4729/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/BoundsDebuggerFrame.java
+END
+AvatarCollisionChangeRequestEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/!svn/ver/3415/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarCollisionChangeRequestEvent.java
+END
+GestureHUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/4667/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/GestureHUD.java
+END
+WonderlandAvatarCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4030/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/WonderlandAvatarCache.java
+END
+AvatarTestPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/2317/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarTestPanel.form
+END
+AvatarAnimationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/4458/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarAnimationEvent.java
+END
+AvatarNameEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3889/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarNameEvent.java
+END
+NameTagNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4217/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/NameTagNode.java
+END
+JMEUpdateJoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4454/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/JMEUpdateJoint.java
+END
+AvatarInstrumentation.form
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/2285/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarInstrumentation.form
+END
+WlAvatarController.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/4694/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/WlAvatarController.java
+END
+WlAvatarContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/4694/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/WlAvatarContext.java
+END
+AvatarRendererChangeRequestEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/!svn/ver/1365/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarRendererChangeRequestEvent.java
+END
+LoadingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/3948/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/LoadingInfo.java
+END
+BoundsDebuggerFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4576/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/BoundsDebuggerFrame.form
+END
+AvatarTestPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/2833/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/AvatarTestPanel.java
+END
+WlAvatarCharacter.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4545/trunk/modules/world/avatarbase/src/classes/org/jdesktop/wonderland/modules/avatarbase/client/jme/cellrenderer/WlAvatarCharacter.java
+END

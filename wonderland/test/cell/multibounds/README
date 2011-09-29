@@ -1,0 +1,107 @@
+
+Wonderland Bounds Test
+----------------------
+
+This directory contains a basic stress test of the Wonderland bounds system.
+The test consists of two clients and a server plugin:
+
+- the bounds client provides a user interface for visualizing the cells
+  and bounds in view of a single client
+
+- the multibounds client simulats a number of clients connecting to the
+  Wonderland server and moving around.
+
+- the server plugin creates a few server side cells that move periodically
+
+This test is designed to simulate some number of clients connecting to the
+Wonderland server, instantiating avatars and moving those avatars around.  
+This does not test several other parts of the Wonderland system, such as 
+audio or large numbers of server-side cells.
+
+The test is designed to be run on both single node and multi node Darkstar.
+The tests are run with ant (1.7.0 or later required).  The settings for each
+test can be defined in a properties file.  Several sample properties files
+are included in the props/ directory.
+
+
+Building the test
+-----------------
+
+The test can be built by running "ant jar".  Be default, this will compile
+both the Wonderland core and all the components of the test.  You can modify
+the test not to build the Wonderland core by removing the "build.core"
+property from the build.properties file in this directory.
+
+
+Running on a single Darkstar node
+---------------------------------
+
+To run on a single Darkstar node run the Wonderland server as follows:
+
+# ant run-server
+
+This will use the default properties defined in the Wonderland core directory.
+
+To run the bounds client on a single node of Darkstar, use the following 
+command:
+
+# ant run-bounds
+
+This will use the settings defined in props/bounds-client.properties to
+determine which Wonderland server and port to connect to.  See the
+bounds-client.properties file for more information.
+
+To run the multibounds client on a single node of Darkstar, use the following
+command:
+
+# ant run-multibounds
+
+This will use the settings defined in props/mutlibounds-client.properties to
+determine which Wonderland server and port to connect to.  See the 
+multibounds-client.properties file for more information.
+
+
+Running on multiple Darkstar nodes
+----------------------------------
+
+The multibounds test is designed to run on multinode Darkstar by overriding
+the properties files used to launch the various tests.  Sample configuration
+files are provided for a setup with a single master node and two appnodes
+all running on the same server.  These values can be changed by modifying
+the given configuration files or using different files.
+
+Before running with multinode Darkstar, you must change the cache used by
+Wonderland to store cell information.  To do this, open the file 
+wonderland/core/src/darkstar_config/WonderlandMain.cfg and change the following
+line:
+
+com.sun.sgs.services=org.jdesktop.wonderland.server.cell.bounds.local.CellDescriptionServiceImpl
+
+by replacing the ".local." with ".darkstar.", so the new line will look like:
+
+com.sun.sgs.services=org.jdesktop.wonderland.server.cell.bounds.darkstar.CellDescriptionServiceImpl
+                             
+Next, start the server.  In three different terminals, enter the following
+commands:
+
+# ant -Dbuild.properties.file=props/master.properties run-master
+# ant -Dbuild.properties.file=props/appNode1.properties run-appnode
+# ant -Dbuild.properties.file=props/appNode2.properties run-appnode
+
+This will lauch a single master node and two app nodes.  Note the configuration
+file in use is specified in the ant command, so for example the master
+uses props/master.properties.
+
+To start a bounds client talking to one of the app nodes, use the following
+command:
+
+# ant -Dbounds.properties.file=props/bounds-appNode1.properties run-bounds
+
+This will launch a bounds viewer client connecting to Darkstar app node 1.
+
+To start a multibounds client talking to one of the app nodes, use the
+following command:
+
+# ant -Dmultibounds.properties.file=props/multibounds-appNode2.properties run-multibounds
+
+This will launch a multibounds client connecting to Darkstar app node 2.

@@ -1,0 +1,278 @@
+#EN: Invite
+AddInitiateButtonPanel.actionButton.text=Invitar
+#EN: Cancel
+AddInitiateButtonPanel.cancelButton.text=Cancelar
+#EN: Name:
+AddPhoneUserPanel.nameLabel.text=Nombre:
+#EN: Phone #:
+AddPhoneUserPanel.phoneLabel.text=N\u00ba de Tel\u00e9fono:
+#EN: Add:
+AddTypePanel.addLabel.text=A\u00f1adir:
+#EN: Phone User
+AddTypePanel.phoneUserRadioButton.text=Usuario del Tel\u00e9fono
+#EN: Wonderland User
+AddTypePanel.userRadioButton.text=Usuario de Wonderland
+#EN: Alias is already being used!
+Alias_Used=\u00a1 El alias ya est\u00e1 en uso !
+#EN: Audio Capabilities
+Audio_Capabilities=Capacidades de Audio
+#EN: Audio Capabilities
+Audio_Capabilities_Description=Capacidades de Audio
+#EN: AudioCapabilitiesDiagram_en.png
+AudioCapabilitiesDiagram=AudioCapabilitiesDiagram_es.png
+#EN: Audio
+AudioMenu.audioMenu.text=Audio
+#EN: Audio Quality
+AudioMenu.audioQualityMenu.text=Calidad de Audio
+#EN: Audio Volume
+AudioMenu.audioVolumeMenuItem.text=Volumen de Audio
+#EN: Log Audio Problem
+AudioMenu.logAudioProblemMenuItem.text=Problema de registar el Audio
+#EN: Reconnect Softphone
+AudioMenu.reconnectSoftphoneMenuItem.text=Reconectar el Softphone
+#EN: Softphone
+AudioMenu.softphoneMenuItem.text=Softphone
+#EN: Test Audio
+AudioMenu.testAudioMenuItem.text=Prueba de Audio
+#EN: Test UDP Port
+AudioMenu.testUDPPortMenuItem.text=Testee el puerto UDP
+#EN: Transfer Call...
+AudioMenu.transferCallMenuItem.text=Transfir Llamada...
+#EN: Softphone Problem:
+AudioProblemJFrame.audioProblemLabel.text=Problema con el Softphone:
+#EN: Ignore
+AudioProblemJFrame.ignoreButton.text=Ignorar
+#EN: OK
+AudioProblemJFrame.okButton.text=Aceptar
+#EN: Reconfigure...
+AudioProblemJFrame.reconfigureButton.text=Reconfigurar...
+#EN: Reconnect
+AudioProblemJFrame.reconnectButton.text=Reconectar
+#EN: Audio Problem
+AudioProblemJFrame.title=Problema con el Audio
+#EN: Always
+AudioTreatmentComponentProperties.alwaysRadioButton.text=Siempre
+#EN: Ambient
+AudioTreatmentComponentProperties.ambientRadioButton.text=Ambiente
+#EN: Browse...
+AudioTreatmentComponentProperties.browseButton.text=Ojear...
+#EN: Content Repository
+AudioTreatmentComponentProperties.contentRepositoryRadioButton.text=Repositorio de Contenido
+#EN: Distance attenuated
+AudioTreatmentComponentProperties.distanceAttenuatedRadioButton.text=Atenuador de Distancia
+#EN: File
+AudioTreatmentComponentProperties.fileRadioButton.text=Fichero
+#EN: Circle with Radius
+AudioTreatmentComponentProperties.jCheckBox1.text=C\u00edrculo con Radio
+#EN: Play:
+AudioTreatmentComponentProperties.jLabel10.text=Reproducir:
+#EN: Extent:
+AudioTreatmentComponentProperties.jLabel11.text=Alcance:
+#EN: Full Volume Area:
+AudioTreatmentComponentProperties.jLabel12.text=\u00c1rea de Volumen Completo:
+#EN: % from center
+AudioTreatmentComponentProperties.jLabel13.text=% desde el centro
+#EN: Characteristics:
+AudioTreatmentComponentProperties.jLabel14.text=Caracter\u00edsticas:
+#EN: Slow
+AudioTreatmentComponentProperties.jLabel15.text=Despacio
+#EN: Audio Source:
+AudioTreatmentComponentProperties.jLabel1.text=Fuente de Audio:
+#EN: Volume:
+AudioTreatmentComponentProperties.jLabel2.text=Volumen:
+#EN: Fall-off:
+AudioTreatmentComponentProperties.jLabel3.text=Disminuir:
+#EN: Status:
+AudioTreatmentComponentProperties.jLabel4.text=Estado:
+#EN: Fast
+AudioTreatmentComponentProperties.jLabel5.text=R\u00e1pido
+#EN: Audio Group:
+AudioTreatmentComponentProperties.jLabel7.text=Grupo de Audio:
+#EN: Manually
+AudioTreatmentComponentProperties.manualRadioButton.text=Manualmente
+#EN: Play Once
+AudioTreatmentComponentProperties.playOnceCheckBox.text=Reproducir una vez
+#EN: When first avatar is in range
+AudioTreatmentComponentProperties.proximityRadioButton.text=Cuando el primer avatar est\u00e1 en rango
+#EN: Show Bounds
+AudioTreatmentComponentProperties.showBoundsCheckBox.text=Mostar L\u00edmites
+#EN: Circle with radius:
+AudioTreatmentComponentProperties.specifyRadiusRadioButton.text=C\u00edrculo con radio:
+#EN: URL
+AudioTreatmentComponentProperties.URLRadioButton.text=URL
+#EN: Use object bounds:
+AudioTreatmentComponentProperties.useCellBoundsRadioButton.text=Usar l\u00edmites del objeto:
+#EN: Audio Volume
+Audio_Volume=Volumen de Audio
+#EN: BOX ({0}, {1}, {2})
+BOX=CAJA ({0}, {1}, {2})
+#EN: Call
+Call=Llamar
+#EN: call status
+CallMigrationForm.callStatusLabel.text=estado de la llamada
+#EN: Close
+CallMigrationForm.closeButton.text=Cerrar
+#EN: Softphone
+CallMigrationForm.connectSoftphoneRadioButton.text=Softphone
+#EN: Transfer call to:
+CallMigrationForm.jLabel1.text=Transferir llamada a:
+#EN: Phone #:
+CallMigrationForm.phoneTransferRadioButton.text=N\u00ba de tel\u00e9fono:
+#EN: Transfer Call
+CallMigrationForm.title=Transferir llamada
+#EN: Transfer
+CallMigrationForm.transferButton.text=Transferir
+#EN: Cancel
+Cancel=Cancelar
+#EN: Change Alias
+Change_Alias=Cambiar Alias
+#EN: Change alias for {0}
+Change_Alias_For=Cambiar el Alias de {0}
+#EN: Change alias for user
+ChangeNameHUDPanel.aliasLabel.text=Cambiar el Alias del usuario
+#EN: Cancel
+ChangeNameHUDPanel.cancelButton.text=Cancelar
+#EN: Display name as:
+ChangeNameHUDPanel.nameLabel.text=Mostrar nombre como:
+#EN: OK
+ChangeNameHUDPanel.okButton.text=Aceptar
+#EN: Name:
+ConeOfSilenceComponentProperties.jLabel1.text=Nombre:
+#EN: Outside Audio Volume:
+ConeOfSilenceComponentProperties.jLabel3.text=Fuera del Volumen de Audio:
+#EN: Bounds:
+ConeOfSilenceComponentProperties.jLabel4.text=L\u00edmites:
+#EN: Show Bounds
+ConeOfSilenceComponentProperties.showBoundsCheckBox.text=Mostrar L\u00edmites
+#EN: Specify Box:
+ConeOfSilenceComponentProperties.specifyBoxRadioButton.text=Especificar Caja:
+#EN: Specify Radius:
+ConeOfSilenceComponentProperties.specifyRadiusRadioButton.text=Especificar Radio:
+#EN: Use Object Bounds:
+ConeOfSilenceComponentProperties.useCellBoundsRadioButton.text=Usar los L\u00edmites del Objeto:
+#EN: Cone of Silence
+Cone_of_Silence=Cono de Silencio
+#EN: ConeOfSilence
+ConeOfSilence=ConoDeSilencio
+#EN: Surrounds area with a Cone of Silence
+Cone_of_Silence_Description=Rodear el \u00e1rea con un Cono de Silencio
+#EN: Content Upload Error
+Content_Upload_Error=Error en el Cargador de Contenido
+#EN: Add...
+InProgressButtonPanel.addButton.text=A\u00f1adir...
+#EN: Hang Up
+InProgressButtonPanel.hangUpButton.text=Colgar
+#EN: Hold
+InProgressButtonPanel.holdButton.text=Retener
+#EN: Leave
+InProgressButtonPanel.leaveButton.text=Abandonar
+#EN: Invite
+Invite=Invitar
+#EN: Large
+Large=Grande
+#EN: Master volume
+Master_Volume=Volumen Maestro
+#EN: Volume
+Microphone_Level=Volumen
+#EN: Mute
+Mute=Silencio
+#EN: Avatar Names
+NamePropertiesHUDPanel.avatarNamesLabel.text=Nombres de Avatar
+#EN: Cancel
+NamePropertiesHUDPanel.cancelButton.text=Cancelar
+#EN: Font size:
+NamePropertiesHUDPanel.myFontSizeLabel.text=Tama\u00f1o de fuente:
+#EN: OK
+NamePropertiesHUDPanel.okButton.text=Aceptar
+#EN: Font size:
+NamePropertiesHUDPanel.otherFontSizeLabel.text=Tama\u00f1o de fuente:
+#EN: Show my name
+NamePropertiesHUDPanel.showMyNameCheckBox.text=Mostrar mi nombre
+#EN: Show other's names
+NamePropertiesHUDPanel.showOtherNamesCheckBox.text=Mostrar el nombre de otro
+#EN: Name is already being used!
+Name_Used=\u00a1 El nombre ya est\u00e1 en uso !
+#EN: Non-existent file {0}
+Nonexistent_File=Archivo No existente {0}
+#EN: Pause
+Pause=Pausa
+#EN: Personal phone
+Personal_phone=Tel\u00e9fono personal
+#EN: Play
+Play=Reproducir
+#EN: Call is visible, not audible to others
+PrivacyPanel.privacyDescriptionLabel.text=La llamada es visible, no audible para otros
+#EN: Private
+PrivacyPanel.privateRadioButton.text=Privado
+#EN: Secret
+PrivacyPanel.secretRadioButton.text=Secreto
+#EN: Call is visible, not audible to others
+Private_Description=La llamada es visible, no audible para otros
+#EN: Volume for {0} users
+Private_Volume_For_Multiple=Volumen para {0} usuarios
+#EN: Volume for {0}
+Private_Volume_For_Single=Volumen para {0}
+#EN: Volume
+Private_Volume=Volumen
+#EN: Call is heard by everyone nearby
+Public_Description=La llamada la escucha todo el que est\u00e9 alrededor
+#EN: Regular
+Regular=Regular
+#EN: Resume
+Resume=Reanudar
+#EN: Call cannot be seen or heard by others
+Secret_Description=La llamada no puede ser vista u oida por otros
+#EN: Small
+Small=Peque\u00f1o
+#EN: Softphone
+Softphone=Softphone
+#EN: Sphere with radius {0}
+Sphere_With_Radius=Esfera con radio {0}
+#EN: Stop
+Stop=Parar
+#EN: Text Chat...
+Text_Chat...=Chat de Texto...
+#EN: Transferring call...
+Transferring_Call=Transferir llamada...
+#EN: Transfer
+Transfer=Transferir
+#EN: Treatment started successfully
+Treatment_Started=El tratamiento ha comenzado satisfactoriamente
+#EN: Failed to upload {0}\n{1}
+Upload_Failed_Exception=Fallo al cargar {0}\n{1}
+#EN: Failed to upload {0}
+Upload_Failed=Fallo al cargar {0}
+#EN: Uploading {0}
+Uploading_Treatment=Subiendo {0}
+#EN: Edit
+UserListHUDPanel.editButton.toolTipText=Editar
+#EN: Goto User
+UserListHUDPanel.gotoUserButton.toolTipText=Ir a Usuario
+#EN: Mute
+UserListHUDPanel.muteButton.toolTipText=Silencio
+#EN: Phone Chat
+UserListHUDPanel.phoneButton.toolTipText=Chat de Tel\u00e9fono
+#EN: Properties
+UserListHUDPanel.propertiesButton.toolTipText=Propiedades
+#EN: Text Chat
+UserListHUDPanel.textChatButton.toolTipText=Chat de Texto
+#EN: Voice Chat
+UserListHUDPanel.voiceChatButton.toolTipText=Chat de Voz
+#EN: Volume for:
+UserListHUDPanel.volumeLabel.text=Volumen para:
+#EN: User Properties
+User_Properties=Propiedades del Usuario
+#EN: Users
+Users=Usuarios
+#EN: Voice Chat
+Voice_Chat=Char de Voz
+#EN: Voice Chat...
+Voice_Chat...=Chat de Voz...
+#EN: Volume:
+VolumeControlJFrame.jLabel1.text=Volumen:
+#EN: Volume Control
+VolumeControlJFrame.title=Control de Volumen
+#EN: Volume
+Volume=Volumen
+#EN: Volume...
+Volume...=Volume...

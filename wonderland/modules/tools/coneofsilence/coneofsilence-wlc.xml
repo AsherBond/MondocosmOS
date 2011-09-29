@@ -1,0 +1,16 @@
+<ConeOfSilence-cell>
+  <position-component>
+    <origin>
+	<x>0.0</x>
+        <y>0.0</y>
+        <z>10.0</z>
+    </origin>
+  </position-component>
+
+    <name>ConeOfSilence1</name>
+
+    <fullVolumeRadius>2.2</fullVolumeRadius>
+
+    <scale>1.5</scale>
+
+</ConeOfSilence-cell>

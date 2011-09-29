@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4733/trunk/core/ext/jme20/target
+END
+jme-awt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-awt.jar
+END
+jme-gamestates.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-gamestates.jar
+END
+jme-scene.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-scene.jar
+END
+jme-swt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-swt.jar
+END
+jme-effects.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-effects.jar
+END
+jme-collada.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4724/trunk/core/ext/jme20/target/jme-collada.jar
+END
+jme-xml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-xml.jar
+END
+jme-model.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-model.jar
+END
+jme-audio.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-audio.jar
+END
+jme.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4733/trunk/core/ext/jme20/target/jme.jar
+END
+jme-terrain.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-terrain.jar
+END
+jme-font.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-font.jar
+END
+jme-editors.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4699/trunk/core/ext/jme20/target/jme-editors.jar
+END

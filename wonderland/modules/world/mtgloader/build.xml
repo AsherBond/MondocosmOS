@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mtgloader" default="package" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.mtgloader}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+        
+    <property name="module.src" value="org/jdesktop/wonderland/modules/mtgloader"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.mtgloader"/>
+    <property name="module.jarname" value="mtgloader"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <!-- kmzload is dependent on the jmecolladaloader and content-repo -->
+    <pathconvert property="module-client.classpath">
+        <path location="${current.dir}/../jmecolladaloader/build/classes"/>
+        <path location="${current.dir}/../../tools/artimport/build/classes"/>
+    </pathconvert>
+       
+    <target name="build" depends="-module-init, -module-compile-common, 
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="mtgloader" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.jarname}.jar"
+                moduleDescription="MTG loader library" builddir="${build.dir}">
+           <client>
+                <clientjar name="mtgloader-client" basedir="${build.classes.dir}">
+                    <clientplugin provider="org.jdesktop.wonderland.modules.mtgloader.client.MtgLoaderFactory"/>
+                    
+                    <include name="${module.src}/client/**"/>
+                    <include name="${module.src}/common/**"/>
+                </clientjar> 
+            </client>
+        </module>
+    </target>
+
+    <target name="clean" depends="-module-clean"/>
+    <target name="deploy" depends="dist, -module-deploy"/>
+</project>

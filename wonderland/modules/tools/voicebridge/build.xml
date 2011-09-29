@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-voice-bridge" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-voice-bridge}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+
+    <property name="module.name" value="voicebridge"/>
+    <property name="module.src" value="org/jdesktop/wonderland/modules/voicebridge"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.voicebridge"/>
+    <property name="bridge-recorder.build.dir" value="build/bridge-recorder"/>
+    <property name="bridge-recorder.zipname" value="bridge-recorder.zip"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <pathconvert property="module-server.classpath">
+        <path location="${top.dir}/web/runner/dist/wonderland-runner-core.jar"/>
+        <path location="${top.dir}/web/utils/dist/wonderland-web-utils.jar"/>
+        <path location="${modules.dir}/foundation/darkstar-api/build/lib/darkstar-api.jar"/>
+    </pathconvert>   
+       
+    <pathconvert property="module-recorder.classpath">
+        <path location = "${modules.dir}/tools/audio-manager/lib/voip.jar"/>
+        <path location = "${top.dir}/core/ext/common/commons-httpclient-3.0.1.jar"/>
+        <path location = "${top.dir}/core/build/lib/wonderland-client.jar"/>
+        <path location = "${top.dir}/core/build/lib/wonderland-common.jar"/>
+        <path location = "${modules.dir}/foundation/content-repository/build/client/contentrepo-client.jar"/>
+        <path location = "${modules.dir}/tools/webdav/build/client/webdav-client.jar"/>
+        <path location = "${modules.dir}/tools/webdav/lib/webdavclient4j-core-0.92.jar"/>
+    </pathconvert>
+    
+    <target name="build" depends="-module-init,  -module-compile-server,
+                                                 -module-compile-recorder"/>
+
+    <target name="-module-compile-recorder" depends="-module-init, -module-compile-common">
+        <wl-compile>
+            <compile-classes>
+                <include name="${module.src}/recorder/**"/>
+            </compile-classes>
+            <compile-classpath>
+                <pathelement path="${module-recorder.classpath}"/>
+                <!--<pathelement path="${module-web.classpath}"/>-->
+            </compile-classpath>
+        </wl-compile>
+    </target>
+
+    <target name="-jar-bridge-recorder" depends="-module-compile-recorder">
+        <!-- create the bridge-recorder.jar -->
+        <mkdir dir="${current.dir}/${bridge-recorder.build.dir}"/>
+        <jar destfile="${current.dir}/${bridge-recorder.build.dir}/bridge-recorder.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="${module.src}/recorder/**"/>
+            </fileset>
+            <manifest>
+                <attribute name="Bridge-Module-Info" value="org.jdesktop.wonderland.modules.voicebridge.recorder.BridgeRecorderInitializer"/>
+            </manifest>
+        </jar>
+
+        <!--create bridge-recorder.zip-->
+        <zip destfile="${current.dir}/lib/zip/${bridge-recorder.zipname}">
+            <!-- include the jar file -->
+            <zipfileset file="${current.dir}/${bridge-recorder.build.dir}/bridge-recorder.jar" prefix="modules"/>
+            <!-- include content repository stuff -->
+            <zipfileset file="${wonderland.dir}/modules/foundation/content-repository/build/client/contentrepo-client.jar" prefix="modules"/>
+            <zipfileset file="${wonderland.dir}/modules/tools/webdav/build/client/webdav-client.jar" prefix="modules"/>
+            <zipfileset dir="${wonderland.dir}/modules/tools/webdav/lib/" prefix="modules">
+                <include name="*.jar"/>
+            </zipfileset>
+            <!-- include necessary core libraries -->
+            <zipfileset dir="${wonderland.dir}/core/ext/common/" prefix="modules">
+                <include name="commons-httpclient*.jar"/>
+                <include name="commons-codec*.jar"/>
+                <include name="commons-logging*.jar"/>
+                <include name="scannotation*.jar"/>
+            </zipfileset>
+            <!-- include necessary SGS client libraries -->
+            <zipfileset dir="${wonderland.dir}/core/ext/sgs/sgs-client-0.9.10/lib" prefix="modules">
+                <include name="mina-core*.jar"/>
+                <include name="sgs-client.jar"/>
+                <include name="sgs-shared*.jar"/>
+                <include name="slf4j-api*.jar"/>
+                <include name="slf4j-jdk14*.jar"/>
+            </zipfileset>
+            <!-- include necessary Wonderland jars -->
+            <zipfileset dir="${wonderland.dir}/core/build/lib" prefix="modules">
+                <include name="wonderland-client.jar"/>
+                <include name="wonderland-common.jar"/>
+            </zipfileset>
+        </zip>
+    </target>
+    
+    <target name="dist" depends="build, -jar-bridge-recorder">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="${module.name}" majorVersion="0" minorVersion="5" jarfile="${module.dist.dir}/${module.name}.jar"
+                moduleDescription="jVoicebridge server" builddir="${build.dir}">
+
+            <requires name="darkstar-api" version="0" minorVersion="5"/>
+
+            <part name="runner" dir="${current.dir}/lib/zip">
+                <include name="voicebridge-dist.zip"/>
+                <include name="${bridge-recorder.zipname}"/>
+            </part>
+
+            <part name="weblib">
+                <jar name="voicebridge-runner" basedir="${build.classes.dir}">
+                    <include name="${module.src}/server/**"/>
+                    <include name="${module.src}/common/**"/>
+                </jar>
+            </part>
+        </module>
+    </target>                                  
+             
+    <target name="clean" depends="-module-clean"/>
+</project>

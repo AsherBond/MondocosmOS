@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-web-utils" default="jar" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-web-utils}"/>
+    
+    <!-- Use my-build.properties to override default values in build.properties.
+         You can specify an alternate build.properties override file by
+         running with "ant -Dbuild.properties.file=<file>" -->
+    <property name="build.properties.file" value="my.build.properties"/>
+    <property file="${build.properties.file}"/>
+    <property file="build.properties"/>
+    
+    <import file="../build-tools/build-scripts/web-build.xml"/>
+    
+    <target name="build" depends="-web-build-init">
+      <wl-compile>
+        <compile-classes>
+          <include name="org/jdesktop/wonderland/utils/**"/>
+        </compile-classes>
+        <compile-classpath>
+          <pathelement path="${web.classpath}"/>
+        </compile-classpath>
+      </wl-compile>
+    </target>
+
+    <target name="jar" depends="build">   
+        <mkdir dir="dist"/>
+        
+        <!-- create a jar file with the AppServer launching classes -->
+        <jar destfile="dist/wonderland-web-utils.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="**"/>
+            </fileset>
+        </jar>
+    </target>
+    
+    <target name="clean" depends="-web-clean"/>
+</project>

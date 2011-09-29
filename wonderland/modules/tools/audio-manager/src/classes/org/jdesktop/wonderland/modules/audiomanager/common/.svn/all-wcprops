@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common
+END
+VolumeConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4090/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/VolumeConverter.java
+END
+AudioTreatmentComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/3839/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/AudioTreatmentComponentServerState.java
+END
+AudioParticipantComponentClientState.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/2502/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/AudioParticipantComponentClientState.java
+END
+ConeOfSilenceComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4366/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/ConeOfSilenceComponentServerState.java
+END
+AudioTreatmentComponentClientState.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/3839/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/AudioTreatmentComponentClientState.java
+END
+AudioParticipantComponentServerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/2367/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/AudioParticipantComponentServerState.java
+END
+AudioManagerConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/1365/trunk/modules/tools/audio-manager/src/classes/org/jdesktop/wonderland/modules/audiomanager/common/AudioManagerConnectionType.java
+END

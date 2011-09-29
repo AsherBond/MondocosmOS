@@ -1,0 +1,22 @@
+#EN: Cancel
+Cancel=Cancelar
+#EN: Launch Failed
+Launch_Failed=El Lanzamiento ha Fallado
+#EN: Unable to launch Cell that supports {0}
+Launch_Failed_Message=No ha sido posible abrir una Celda (Cell) que de soporte a {0}
+#EN: Please wait while {0} is being uploaded
+Please_Wait_Message=Por favor, espere mientras {0} se est\u00e1 cargando
+#EN: Uploading Model
+Please_Wait_Title=Actualizando el Modelo
+#EN: The file {0} already exists in the content repository. Do you wish to replace it and continue?
+Replace_Question=El fichero {0} ya existe en el repositorio \u00bfDesea reemplazarlo y continuar?
+#EN: Replace
+Replace=Reemplazar
+#EN: Replace Content?
+Replace_Title=\u00bfReemplazar el Contenido?
+#EN: Failed to upload content file {0}
+Upload_Failed_Message=Fallo al subir el fichero de contenido {0}
+#EN: Upload Failed
+Upload_Failed_Title=Fallo al Subir
+#EN: Use Existing
+Use_Existing=Usar Existente

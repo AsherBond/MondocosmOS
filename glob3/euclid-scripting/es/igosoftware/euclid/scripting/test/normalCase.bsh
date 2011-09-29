@@ -1,0 +1,14 @@
+return new IAlgorithm() {
+
+	getName() {
+		return "name";
+	}
+
+	getDescription() {
+		return "description";
+	}
+
+	apply(parameters) {
+		return 3.14159;
+	}
+};

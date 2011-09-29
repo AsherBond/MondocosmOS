@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4572/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client
+END
+DefaultEnvironmentRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/4551/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/DefaultEnvironmentRenderer.java
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4476/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4521/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/4520/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/Bundle_zh_CN.properties
+END
+DefaultEnvironmentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/4476/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/DefaultEnvironmentProperties.java
+END
+DefaultEnvironmentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/!svn/ver/4476/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/DefaultEnvironmentProperties.form
+END
+DefaultEnvironmentCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/4476/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/DefaultEnvironmentCell.java
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4572/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/4557/trunk/modules/world/defaultenvironment/src/classes/org/jdesktop/wonderland/modules/defaultenvironment/client/Bundle_fr.properties
+END

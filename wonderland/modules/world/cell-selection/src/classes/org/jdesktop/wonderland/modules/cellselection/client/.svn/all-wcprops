@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/4572/trunk/modules/world/cell-selection/src/classes/org/jdesktop/wonderland/modules/cellselection/client
+END
+CellSelectionJDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3277/trunk/modules/world/cell-selection/src/classes/org/jdesktop/wonderland/modules/cellselection/client/CellSelectionJDialog.java
+END
+CellSelectionJDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/3277/trunk/modules/world/cell-selection/src/classes/org/jdesktop/wonderland/modules/cellselection/client/CellSelectionJDialog.form
+END
+CellSelectionClientPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/3277/trunk/modules/world/cell-selection/src/classes/org/jdesktop/wonderland/modules/cellselection/client/CellSelectionClientPlugin.java
+END
+SimpleCellSelectionSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/3277/trunk/modules/world/cell-selection/src/classes/org/jdesktop/wonderland/modules/cellselection/client/SimpleCellSelectionSPI.java
+END

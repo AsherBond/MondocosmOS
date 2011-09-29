@@ -1,0 +1,178 @@
+10
+
+dir
+4733
+http://openwonderland.googlecode.com/svn/trunk/core/src/classes/org/jdesktop/wonderland/client
+http://openwonderland.googlecode.com/svn
+
+
+
+2011-09-21T05:24:03.955893Z
+4731
+jonathankap
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d1a7cd20-233f-11df-bff0-d338b04bc40e
+
+cell
+dir
+
+hud
+dir
+
+protocols
+dir
+
+assetmgr
+dir
+
+help
+dir
+
+scenemanager
+dir
+
+input
+dir
+
+utils
+dir
+
+ClientContext.java
+file
+
+
+
+
+2011-09-29T14:38:31.690676Z
+8c22663bbf4c9c35e15202d0d0f15da6
+2010-10-26T15:52:56.326895Z
+4553
+jonathankap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8419
+
+softphone
+dir
+
+modules
+dir
+
+login
+dir
+
+BaseClientPlugin.java
+file
+
+
+
+
+2011-09-29T14:38:31.690676Z
+34615db79985ebf58e6333ff112b1be4
+2009-04-27T01:08:24.472423Z
+2254
+kaplanj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5661
+
+contextmenu
+dir
+
+content
+dir
+
+resources
+dir
+
+jme
+dir
+
+ClientPlugin.java
+file
+
+
+
+
+2011-09-29T14:38:31.690676Z
+db1e11d7dd888f6d436571b9d9d1841a
+2009-04-27T01:08:24.472423Z
+2254
+kaplanj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2345
+
+comms
+dir
+

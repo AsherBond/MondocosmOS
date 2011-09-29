@@ -1,0 +1,8 @@
+#EN: Username
+Username=Nom utilisateur
+#EN: Print Avatar Bounds
+Print_Avatar_Bounds=Imprimer les bornes de l'avatar
+#EN: Avatar Bounds Debugger...
+Avatar_Bounds_Debugger...=Debogueur limites avatar...
+#EN: Avatar Bounds Debugger
+BoundsDebuggerFrame.title=Debugger Bornes Avatar

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 39
+build.number
+data
+run
+build
+log
+.a.swp
+
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4579/trunk/modules/world/palette/src/classes/org/jdesktop/wonderland/modules/palette/client/dnd
+END
+CellServerStateTransferable.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/2243/trunk/modules/world/palette/src/classes/org/jdesktop/wonderland/modules/palette/client/dnd/CellServerStateTransferable.java
+END
+CellPaletteDataFlavorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/4579/trunk/modules/world/palette/src/classes/org/jdesktop/wonderland/modules/palette/client/dnd/CellPaletteDataFlavorHandler.java
+END
+PaletteDragGestureListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2243/trunk/modules/world/palette/src/classes/org/jdesktop/wonderland/modules/palette/client/dnd/PaletteDragGestureListener.java
+END

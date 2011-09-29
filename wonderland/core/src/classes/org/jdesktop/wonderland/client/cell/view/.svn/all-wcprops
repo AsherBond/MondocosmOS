@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/view
+END
+LocalAvatar.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3422/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/view/LocalAvatar.java
+END
+ClientView.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/view/ClientView.java
+END
+ViewCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/3948/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/view/ViewCell.java
+END
+AvatarCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4694/trunk/core/src/classes/org/jdesktop/wonderland/client/cell/view/AvatarCell.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4323/trunk/modules/tools/security-session-common
+END
+my.module.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3739/trunk/modules/tools/security-session-common/my.module.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2211/trunk/modules/tools/security-session-common/build.xml
+END

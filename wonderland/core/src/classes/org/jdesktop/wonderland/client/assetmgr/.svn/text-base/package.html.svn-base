@@ -1,0 +1,30 @@
+<!-- 
+    Document   : package
+    Created on : Dec 18, 2007, 9:30:46 AM
+    Author     : paulby
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Data Manager API</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+          This package provides management services for in world data such as
+          art assets and shared documents etc
+      </p>
+      
+      <p>
+          The AssetManager provides a service to download Files from a URL and
+          cache them in a local directory. Checksums are used to ensure the 
+          local copy is up to date with the service.
+          
+          Further each AssetType is handled by a different Asset class which
+          provide interfaces to postProcess the data when it is first downloaded
+          from a server and if necessary to process the data each time it is 
+          used.
+      </p>
+  
+  </body>
+</html>

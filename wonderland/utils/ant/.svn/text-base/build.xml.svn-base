@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-ant-utils" default="jar" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-ant-utils}"/>
+    <property name="utils.dir" location="${current.dir}/.."/>
+    
+    <property name="util.src" value="org/jdesktop/wonderland/utils/ant"/>
+    <property name="util.jarname" value="wonderland-ant-utils"/>
+    
+    <!-- import common build file -->
+    <import file="${utils.dir}/build-tools/build-scripts/utils-build.xml"/>
+       
+    <target name="build" depends="-utils-init, -utils-compile"/>
+    <target name="jar" depends="build, -utils-jar"/>
+    
+    <target name="clean" depends="-utils-clean">
+        <delete dir="dist"/>
+    </target>
+    
+    <target name="dist" depends="jar">
+        <mkdir dir="dist"/>
+        <copy todir="dist" file="${build.lib.dir}/${util.jarname}.jar"/>
+    </target>
+</project>

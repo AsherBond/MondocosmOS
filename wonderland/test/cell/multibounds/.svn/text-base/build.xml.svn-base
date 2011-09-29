@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wonderland-cellmultibounds" default="all" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.wonderland-serverprotocoltest}"/>
+    <property name="test.dir" location="${current.dir}/../.."/>
+        
+    <!-- Use my-build.properties to override default values in build.properties.
+         You can specify an alternate build.properties override file by
+         running with "ant -Dbuild.properties.file=<file>" -->
+    <property name="build.properties.file" value="my.build.properties"/>
+    <property file="${build.properties.file}"/>
+    <property file="build.properties"/>
+    
+    <property name="servertest.src" value="org/jdesktop/wonderland/multiboundstest"/>
+    <property name="servertest.packagename" value="org.jdesktop.wonderland.multiboundstest"/>
+    <property name="servertest.jarname" value="multiboundstest"/>
+    <property name="servertest.plugins" value="BoundsTestPlugin"/>
+    
+    <!-- import common build file -->
+    <import file="${test.dir}/build-tools/build-scripts/test-build.xml"/>
+       
+    <target name="build" depends="-test-init, -test-compile-common, 
+                                              -test-compile-server,
+                                              -test-compile-client,
+                                              compile-core"/>
+    <target name="jar" depends="build, -test-jar-server, -test-jar-client"/>
+    <target name="run-client" depends="-test-run-client"/>
+    <target name="run-server" depends="-test-run-server"/>
+    <target name="clean" depends="-test-clean"/>
+
+    <target name="compile-core" if="build.core">
+        <ant antfile="${core.build-lib.dir}/build.xml" inheritall="false" target="package"/>
+    </target>
+
+    <target name="run-viewer" depends="-test-jar-client">
+        <mkdir dir="log"/>
+        
+        <!-- override to change the properties file -->
+        <property name="bounds.properties.file" location="props/bounds-client.properties"/>
+        
+        <java classname="org.jdesktop.wonderland.multiboundstest.client.CellBoundsViewer" fork="true">
+            <jvmarg value="-client"/>
+            <jvmarg value="-Xmx384m"/>
+            <jvmarg value="-Xms32m"/>
+            <jvmarg value="-Djava.util.logging.config.class=org.jdesktop.wonderland.common.LogControl"/>
+	    <jvmarg value="-Djava.protocol.handler.pkgs=org.jdesktop.wonderland.client.protocols"/>
+            <classpath>
+		<pathelement path="${core-client.classpath}"/>
+                <path location="${build.lib.dir}/${servertest.jarname}-client.jar"/>
+	    </classpath>
+	    <env key="${env.path.name}" path="${env.path.defvalue}"/>
+            <arg value="${bounds.properties.file}"/>
+        </java>
+    </target>
+
+    <target name="run-multibounds" depends="-test-jar-client">
+        <mkdir dir="log"/>
+        <buildnumber/>
+        
+         <!-- override to change the properties file -->
+        <property name="multibounds.properties.file" location="props/multibounds-client.properties"/>
+        
+        <java classname="org.jdesktop.wonderland.multiboundstest.client.BoundsMultiClient" fork="true">
+            <jvmarg value="-client"/>
+            <jvmarg value="-Xmx384m"/>
+            <jvmarg value="-Xms32m"/>
+            <jvmarg value="-Djava.util.logging.config.class=org.jdesktop.wonderland.client.LogControl"/>
+            <classpath>
+		<pathelement path="${core-client.classpath}"/>
+                <path location="${build.lib.dir}/${servertest.jarname}-client.jar"/>
+	    </classpath>
+	    <env key="${env.path.name}" path="${env.path.defvalue}"/>
+                        
+            <arg value="${build.number}"/>
+            <arg value="${multibounds.properties.file}"/>
+        </java>
+    </target>
+</project>

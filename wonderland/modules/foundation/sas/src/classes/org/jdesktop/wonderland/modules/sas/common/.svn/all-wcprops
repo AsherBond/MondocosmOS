@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3648/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common
+END
+SasProviderLaunchMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/3116/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderLaunchMessage.java
+END
+SasProviderConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1744/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderConnectionType.java
+END
+SasProviderLaunchStatusMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2761/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderLaunchStatusMessage.java
+END
+SasProviderReadyMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/3648/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderReadyMessage.java
+END
+SasProviderAppStopMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3003/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderAppStopMessage.java
+END
+SasProviderAppExittedMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2761/trunk/modules/foundation/sas/src/classes/org/jdesktop/wonderland/modules/sas/common/SasProviderAppExittedMessage.java
+END

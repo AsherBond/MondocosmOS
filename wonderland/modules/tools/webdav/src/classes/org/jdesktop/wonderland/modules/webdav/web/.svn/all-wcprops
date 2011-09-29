@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4589/trunk/modules/tools/webdav/src/classes/org/jdesktop/wonderland/modules/webdav/web
+END
+FileWebContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1888/trunk/modules/tools/webdav/src/classes/org/jdesktop/wonderland/modules/webdav/web/FileWebContextListener.java
+END
+FileWebContentRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1398/trunk/modules/tools/webdav/src/classes/org/jdesktop/wonderland/modules/webdav/web/FileWebContentRepository.java
+END

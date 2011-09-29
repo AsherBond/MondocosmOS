@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/4572/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources
+END
+coneofsilence_preview.png
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/4117/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/coneofsilence_preview.png
+END
+Bundle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/3321/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle.properties
+END
+Bundle_el.properties
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4521/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle_el.properties
+END
+Bundle_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/4019/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle_zh_CN.properties
+END
+Bundle_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4572/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle_es.properties
+END
+Bundle_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/4557/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle_fr.properties
+END
+Bundle_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/3321/trunk/modules/tools/coneofsilence/src/classes/org/jdesktop/wonderland/modules/coneofsilence/client/cell/resources/Bundle_de.properties
+END

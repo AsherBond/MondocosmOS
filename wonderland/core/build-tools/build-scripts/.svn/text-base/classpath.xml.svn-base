@@ -1,0 +1,99 @@
+
+<project basedir="." default="..." name="core.classpath">
+    
+    <!-- core classpaths -->
+   
+    <!-- jme -->
+    <pathconvert property="jme.classpath">
+        <path location="${core.jme.dir}/target/jme.jar"/>
+        <path location="${core.jme.dir}/target/jme-gamestates.jar"/>
+        <path location="${core.jme.dir}/target/jme-awt.jar"/>
+        <path location="${core.jme.dir}/target/jme-audio.jar"/>
+        <path location="${core.jme.dir}/target/jme-scene.jar"/>
+        <path location="${core.jme.dir}/target/jme-effects.jar"/>
+        <path location="${core.jme.dir}/target/jme-model.jar"/>
+        <path location="${core.jme.dir}/target/jme-collada.jar"/>
+        <path location="${core.jme.dir}/target/jme-xml.jar"/>
+        <path location="${core.jme.dir}/target/jme-terrain.jar"/>
+        <path location="${core.jme.dir}/target/jme-font.jar"/>
+        <path location="${core.jme.dir}/lib/lwjgl/lwjgl_util.jar"/>
+        
+        <!-- jogl -->
+        <path location="${core.lib.os.dir}/jogl.jar"/>
+        <path location="${core.lib.os.dir}/gluegen-rt.jar"/>
+
+        <!-- xuggler video (if installed) -->
+        <path location="${top.dir}/../wonderland-video/lib/xuggle-xuggler.jar"/>
+	<path location="${core.common.dir}/commons-cli-1.1.jar"/>
+    </pathconvert>
+    
+    <!-- Other wonderland specific supporting jars -->
+    <pathconvert property="wonderland.lib.classpath">
+        <path location="${core.common.dir}/derby.jar"/>
+        <path location="${core.common.dir}/commons-beanutils-core.jar"/>
+        <path location="${core.common.dir}/commons-codec-1.3.jar"/>
+        <path location="${core.common.dir}/commons-httpclient-3.0.1.jar"/>
+        <path location="${core.common.dir}/commons-logging-1.1.jar"/>
+        <path location="${core.common.dir}/swing-layout-1.0.jar"/>
+        <path location="${core.common.dir}/swing-worker-1.2.jar"/>
+        <path location="${core.common.dir}/mtgame.jar"/>
+        <path location="${core.common.dir}/jbullet.jar"/>
+        <path location="${core.common.dir}/javolution.jar"/>
+    </pathconvert>
+    
+    <pathconvert property="darkstar.server.classpath">
+        <path location="${core.sgs.server.dir}/lib/sgs-server-${core.sgs.version}.jar"/>
+        <path location="${core.sgs.server.dir}/lib/sgs-server-api-${core.sgs.version}.jar"/>
+        <path location="${core.sgs.server.dir}/lib/sgs-server-internal-api-${core.sgs.version}.jar"/>
+        <path location="${core.sgs.server.dir}/lib/sgs-shared-${core.sgs.shared.version}.jar"/>
+        <path location="${core.sgs.server.dir}/lib/db-4.5.20.jar"/>
+    </pathconvert>
+
+    <pathconvert property="darkstar.client.classpath">
+        <path location="${core.sgs.client.dir}/lib/sgs-client.jar"/>
+        <path location="${core.sgs.client.dir}/lib/sgs-shared-${core.sgs.shared.version}.jar"/>
+        <path location="${core.sgs.client.dir}/lib/mina-core-1.1.0.jar"/>
+        <path location="${core.sgs.client.dir}/lib/slf4j-api-1.4.0.jar"/>
+        <path location="${core.sgs.client.dir}/lib/slf4j-jdk14-1.4.0.jar"/>
+    </pathconvert>
+    
+    <pathconvert property="core-common-compile.classpath">
+        <path path="${jme.classpath}"/>
+        <path path="${jaxb.classpath}"/>
+        <path location="${core.common.dir}/Scenario.jar"/>
+        <path location="${core.common.dir}/stun.jar"/>
+        <path location="${core.common.dir}/scannotation-1.0.2.jar"/>
+        <path location="${core.common.dir}/javassist.jar"/>
+        <path location="${top.dir}/utils/wonderland-version/dist/wonderland-version.jar"/>
+        <path location="${core.common.dir}/vecmath.jar"/>
+    </pathconvert>
+    
+    <pathconvert property="core-common.classpath">
+        <path path="${core-common-compile.classpath}"/>
+        <path location="${core.build.lib.dir}/wonderland-common.jar"/>
+    </pathconvert>
+    
+    <pathconvert property="core-client-compile.classpath">
+        <path path="${core-common-compile.classpath}"/>
+        <path path="${wonderland.lib.classpath}"/>
+        <path path="${darkstar.client.classpath}"/>
+    </pathconvert>
+
+    <pathconvert property="core-client.classpath">
+        <path path="${core-client-compile.classpath}"/>
+        <path location="${core.build.lib.dir}/wonderland-client.jar"/>
+        <path location="${core.build.lib.dir}/wonderland-common.jar"/>
+    </pathconvert>
+
+    <pathconvert property="core-server-compile.classpath">
+        <path path="${core-common-compile.classpath}"/>
+        <path path="${darkstar.server.classpath}"/>
+        <path path="${jaxb.classpath}"/>
+    </pathconvert>
+
+    <pathconvert property="core-server.classpath">
+        <path path="${core-server-compile.classpath}"/>
+        <path location="${core.build.lib.dir}/wonderland-server.jar"/>
+        <path location="${core.build.lib.dir}/wonderland-common.jar"/>
+    </pathconvert>
+</project>

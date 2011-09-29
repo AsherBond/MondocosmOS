@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/4432/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/web
+END
+GroupContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3788/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/web/GroupContextListener.java
+END
+GroupEditorServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2816/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/web/GroupEditorServlet.java
+END
+SecurityCacheConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2097/trunk/modules/tools/security-group/src/classes/org/jdesktop/wonderland/modules/securitygroups/web/SecurityCacheConnection.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/3230/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/jme
+END
+TranslateAffordance.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/3230/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/jme/TranslateAffordance.java
+END
+RotateAffordance.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3230/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/jme/RotateAffordance.java
+END
+Affordance.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/3166/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/jme/Affordance.java
+END
+ResizeAffordance.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/3230/trunk/modules/world/affordances/src/classes/org/jdesktop/wonderland/modules/affordances/client/jme/ResizeAffordance.java
+END

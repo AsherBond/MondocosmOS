@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4473/trunk/core/src/classes/org/jdesktop/wonderland/server/comms
+END
+CommsManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4034/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/CommsManagerFactory.java
+END
+SessionMapService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/3068/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/SessionMapService.java
+END
+SecureClientConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/SecureClientConnectionHandler.java
+END
+SessionMapManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1938/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/SessionMapManagerFactory.java
+END
+WonderlandSessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3908/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/WonderlandSessionListener.java
+END
+WonderlandClientID.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3908/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/WonderlandClientID.java
+END
+CommsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1938/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/CommsManager.java
+END
+CommunicationsProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/CommunicationsProtocol.java
+END
+ProtocolSessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4473/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/ProtocolSessionListener.java
+END
+SessionMapManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1938/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/SessionMapManager.java
+END
+WonderlandClientCommsProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/WonderlandClientCommsProtocol.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/291/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/package.html
+END
+ConnectAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2097/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/ConnectAction.java
+END
+CommsManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4034/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/CommsManagerImpl.java
+END
+ClientConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2816/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/ClientConnectionHandler.java
+END
+WonderlandClientSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1365/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/WonderlandClientSender.java
+END
+SessionMapManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1938/trunk/core/src/classes/org/jdesktop/wonderland/server/comms/SessionMapManagerImpl.java
+END

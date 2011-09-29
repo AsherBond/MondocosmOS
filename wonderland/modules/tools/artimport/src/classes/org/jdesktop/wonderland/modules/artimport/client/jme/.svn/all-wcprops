@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4675/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme
+END
+LoaderWarningsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4276/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/LoaderWarningsPanel.java
+END
+ModuleManagerUI.form
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3318/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModuleManagerUI.form
+END
+ModelCellComponentProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4675/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModelCellComponentProperties.java
+END
+ModuleSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/1601/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModuleSourceManager.java
+END
+ArtToolsPlugin.form
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4306/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ArtToolsPlugin.form
+END
+ImportSessionFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4398/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ImportSessionFrame.form
+END
+LoaderWarningsHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/4276/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/LoaderWarningsHandler.java
+END
+ModuleManagerUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/3318/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModuleManagerUI.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/852/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/package.html
+END
+ModelImporterFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4306/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModelImporterFrame.form
+END
+LoaderWarningsPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/4306/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/LoaderWarningsPanel.form
+END
+ModelCellComponentProperties.form
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/4675/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModelCellComponentProperties.form
+END
+ArtToolsPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/4365/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ArtToolsPlugin.java
+END
+ImportSessionFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4432/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ImportSessionFrame.java
+END
+ModelImporterFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/4365/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/ModelImporterFrame.java
+END
+TransformProcessorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/3263/trunk/modules/tools/artimport/src/classes/org/jdesktop/wonderland/modules/artimport/client/jme/TransformProcessorComponent.java
+END

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="core-help" default="dist" basedir=".">
+    <!-- current directory needed in all scripts -->
+    <dirname property="current.dir" file="${ant.file.core-help}"/>
+    <property name="modules.dir" location="${current.dir}/../.."/>
+
+    <property name="module.src" value="org/jdesktop/wonderland/modules/help"/>
+    <property name="module.packagename" value="org.jdesktop.wonderland.modules.help"/>
+    <property name="module.jarname" value="core-help"/>
+    
+    <!-- import common build file -->
+    <import file="${modules.dir}/build-tools/build-scripts/module-build.xml"/>
+       
+    <target name="build" depends="-module-init, -module-compile-common,
+                                                -module-compile-server,
+                                                -module-compile-client"/>
+    <target name="dist" depends="build">
+        <mkdir dir="${module.dist.dir}"/>
+        
+        <module name="core-help" majorVersion="0" minorVersion="5"
+                moduleDescription="Help menu library"
+                jarfile="${module.dist.dir}/${module.jarname}.jar"
+                builddir="${build.dir}">
+
+            <client>
+                <clientjar name="core-help-client" basedir="${build.classes.dir}">
+                    <include name="${module.src}/client/**"/>
+                    <fileset dir="${current.dir}/src/classes">
+                        <include name="${module.src}/client/resources/**"/>
+                    </fileset>
+                </clientjar>
+            </client>
+
+        </module>
+    </target>
+                                           
+    <target name="deploy" depends="dist, -module-deploy"/>
+    <target name="clean" depends="-module-clean"/>
+</project>

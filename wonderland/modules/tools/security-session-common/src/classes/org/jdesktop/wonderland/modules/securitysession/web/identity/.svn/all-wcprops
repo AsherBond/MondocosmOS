@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity
+END
+LogoutResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity/LogoutResource.java
+END
+ValidateResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity/ValidateResource.java
+END
+CookieNameResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity/CookieNameResource.java
+END
+ReadResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity/ReadResource.java
+END
+AttributesResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/2185/trunk/modules/tools/security-session-common/src/classes/org/jdesktop/wonderland/modules/securitysession/web/identity/AttributesResource.java
+END

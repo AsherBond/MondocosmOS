@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 148
+.WlAvatarCharacter.java.swp
+.AvatarTestPanel.form.swp
+.NameTagNode.java.swp
+.AvatarPlugin.java.swp
+.AvatarImiJME.java.swp
+.WlAvatarContext.java.swp
+
+END

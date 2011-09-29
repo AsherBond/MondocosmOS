@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1365/trunk/test/comms/serverlistener/src/classes/org/jdesktop/wonderland/serverlistenertest/common
+END
+TestClientType.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/test/comms/serverlistener/src/classes/org/jdesktop/wonderland/serverlistenertest/common/TestClientType.java
+END
+TestMessageOne.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/test/comms/serverlistener/src/classes/org/jdesktop/wonderland/serverlistenertest/common/TestMessageOne.java
+END
+TestMessageThree.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1365/trunk/test/comms/serverlistener/src/classes/org/jdesktop/wonderland/serverlistenertest/common/TestMessageThree.java
+END
+TestMessageTwo.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1365/trunk/test/comms/serverlistener/src/classes/org/jdesktop/wonderland/serverlistenertest/common/TestMessageTwo.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/4483/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service
+END
+CellResourceManagerInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2953/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/CellResourceManagerInternal.java
+END
+UserPrincipalResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/2211/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/UserPrincipalResolver.java
+END
+UserPrincipals.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2211/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/UserPrincipals.java
+END
+CellResourceManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/2953/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/CellResourceManagerImpl.java
+END
+SecurityManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2211/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/SecurityManagerImpl.java
+END
+SecurityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2211/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/SecurityService.java
+END
+CellResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4483/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/CellResourceService.java
+END
+GroupMemberResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/4472/trunk/modules/foundation/security/src/classes/org/jdesktop/wonderland/modules/security/server/service/GroupMemberResource.java
+END
