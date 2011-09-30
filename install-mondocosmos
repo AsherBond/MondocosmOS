@@ -1,0 +1,16 @@
+#!/bin/bash
+# Asher Bond 2011
+
+apt-get update && apt-get -y upgrade
+apt-get install git
+
+# default dir
+DIR=/var/lib
+
+git clone git://github.com/AsherBond/MondocosmOS.git MondocosmOS
+cd MondocosmOS
+install-it-all
+
+git clone git://github.com/AsherBond/MondocosmOS-Images.git
+cd MondocosmOS-Images
+install-it-all

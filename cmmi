@@ -1,0 +1,8 @@
+#!/bin/bash
+# Asher Bond 2011
+# configure make make install
+
+cd $1
+configure
+make
+make install

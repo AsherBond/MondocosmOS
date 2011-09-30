@@ -1,0 +1,8 @@
+#!/bin/bash
+# Asher Bond 2011
+# installs everything recursively
+
+cd $1
+
+# find all makefiles
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs cmmi 
