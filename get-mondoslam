@@ -1,0 +1,29 @@
+#!/bin/bash
+# Asher Bond 2011
+
+# get code for mondoslam
+
+# default directory
+DIR=`pwd`
+cd $DIR
+
+sudo apt-get update && apt-get -y upgrade
+sudo apt-get -y install subversion cvs
+
+# Ptamm dependencies
+export CVS_RSH=ssh
+
+cd $DIR
+cvs -z3 -d:pserver:anonymous@cvs.savannah.nongnu.org:/sources/toon co TooN
+cd TooN
+
+cd $DIR
+cvs -z3 -d:pserver:anonymous@cvs.savannah.nongnu.org:/sources/libcvd co libcvd
+cd libcvd
+
+cd $DIR
+cvs -z3 -d:pserver:anonymous@cvs.savannah.nongnu.org:/sources/libcvd co gvars3
+cd gvars3
+
+cd $DIR
+svn co https://mplapack.svn.sourceforge.net/svnroot/mplapack mplapack
