@@ -35,4 +35,11 @@
 /so2.h/1.14/Wed Jun 29 20:20:00 2011//
 /so3.h/1.50/Wed Jun 29 20:20:00 2011//
 /wls.h/1.27/Thu Apr  7 23:17:02 2011//
-D
+D/Documentation////
+D/benchmark////
+D/doc////
+D/functions////
+D/internal////
+D/optimization////
+D/regressions////
+D/test////

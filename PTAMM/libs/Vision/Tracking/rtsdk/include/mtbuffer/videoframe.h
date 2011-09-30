@@ -1,0 +1,184 @@
+// videoframe.h: interface for the CVideoFrame class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_VIDEOFRAME_H__9C9D1F0B_C328_4D03_A649_B9D271B0B687__INCLUDED_)
+#define AFX_VIDEOFRAME_H__9C9D1F0B_C328_4D03_A649_B9D271B0B687__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include <vector>
+#include <map>
+
+#include "others/misc/dllexp.h"
+#include "../utility/floattype.h"
+
+#include "mtbuffer.h"
+#include "objectpool.h"
+
+#include "cameraparameter.h"
+#include "framematch.h"
+#include "patternparameter.h"
+#include "markerinfo.h"
+#include "siftinfo.h"
+#include "siftmarker.h"
+//#include "Vision\\Tracking\\FeatureTracking\\simplesift_gpu\\include\\siftfeaturepoint.h"
+#include "simpleimage.h"
+
+#include "timestamp.h"
+namespace SIFT
+{
+	class CKeypoint;
+}
+
+//#include "cv.h"
+//#include "Vision\\Others\\OpenCV10\\include\\cv.h"
+
+//////////////////////////////////////////////////////////////////////////
+/// \ingroup Buffer
+/// \brief Main structure of the data.
+///
+/// The class is the basic processing unit, containing all the data.
+//////////////////////////////////////////////////////////////////////////
+class DLL_DLL_EXPORT CTrackerResult
+{
+	public:
+		CTrackerResult();
+		~CTrackerResult();
+};
+
+
+//////////////////////////////////////////////////////////////////////////
+/// \ingroup Buffer
+/// \brief Main structure of the data.
+///
+/// The class is the basic processing unit, containing all the data.
+//////////////////////////////////////////////////////////////////////////
+class DLL_DLL_EXPORT CVideoFrame: public time_stamp
+{
+public:
+	CVideoFrame();
+	virtual ~CVideoFrame();
+
+	//{
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief The captured image.
+	//////////////////////////////////////////////////////////////////////////
+	CSimpleImageb _image;
+	CSimpleImageb _image_half;
+
+	//////////////////////////////////////////////////////////////////////////dzl
+	/// \brief The captured image, grey version.
+	//////////////////////////////////////////////////////////////////////////
+	CSimpleImagef _grey_image;
+	CSimpleImagef _grey_image_half;
+	bool _downsampled;
+
+    //IplImage* _smoothed_grey_image;
+	//}!
+
+
+	//{
+	//////////////////////////////////////////////////////////////////////////
+	/// members for realtime segmentation.
+	CSimpleImageb _backimage;
+	CSimpleImageb _mask;
+	CSimpleImagei _map2last;
+	/// input image map to panorama.
+	CSimpleImagef _fore2backmap;
+
+	SOLVER_FLOAT _homography[3][3];
+	//}!
+
+	//{
+	//////////////////////////////////////////////////////////////////////////
+	/// members for marker-based tracking.
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief  Found ellipses, for marker. MARKER_FLOAT is the float type for marker.
+	///
+	/// This is for marker matcher.
+	//////////////////////////////////////////////////////////////////////////
+	//std::vector<conic_parameter<MARKER_FLOAT> > _patterns;
+	std::vector<pattern_parameter<MARKER_FLOAT> > _patterns;
+
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief The detected and matched markers.
+	///
+	/// This is for render.
+	//////////////////////////////////////////////////////////////////////////
+	std::vector<std::pair<std::string, marker_info> > _markers;
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief Operation on markers.
+	////////////////////////// ////////////////////////////////////////////////
+	void clear_arti_marker();
+	void new_marker(std::string&, marker_info&);
+	std::vector<std::pair<std::string, marker_info> >::iterator find_marker(std::string&);
+
+	//////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////
+	std::vector<SIFT::CKeypoint*> _siftkeypoint;
+	std::vector<std::pair<std::string, siftmarker> > _siftmarkers;
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief Operation on sift markers.
+	//////////////////////////////////////////////////////////////////////////
+	void clear_sift_marker();
+	void new_marker(std::string&, siftmarker&);
+	std::vector<std::pair<std::string, siftmarker> >::iterator find_siftmarker(std::string&);
+	//}!
+
+	//{
+	//////////////////////////////////////////////////////////////////////////
+	/// members for sift-based tracking.
+	//////////////////////////////////////////////////////////////////////////
+	sift_info _sift;
+
+	//////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief Found harris corners
+	//////////////////////////////////////////////////////////////////////////
+	std::vector<int> _corner_x, _corner_y;
+
+	std::vector<int> _recognized_ids;
+	std::vector<double> _recognized_intensity;
+
+
+	//////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////
+	//// \brief Simple SIFT.
+	std::vector<std::vector<float> > _descriptors;
+	std::vector<std::pair<float,float> > _simplepoints;
+	std::vector<float> _point_dog;
+
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief The subsampled image size.
+	//////////////////////////////////////////////////////////////////////////
+	int _iProcessWidth;
+	int _iProcessHeight;
+
+
+	//////////////////////////////////////////////////////////////////////////
+	/// \brief The other informations.
+	//////////////////////////////////////////////////////////////////////////
+	std::map<std::string, CTrackerResult*> _results; 
+
+	CTrackerResult* getResult(std::string name);
+	bool putResult(std::string name, CTrackerResult *result);
+};
+
+typedef mtbuffer<CVideoFrame> videobuffer;
+typedef object_pool<CVideoFrame> videopool;
+
+//typedef videoreadwriter<CVideoFrame> videoreadwriter;
+//typedef videoreader<CVideoFrame> videoreader;
+//typedef videowriter<CVideoFrame> videowriter;
+
+#include "thread.h"
+
+#endif // !defined(AFX_VIDEOFRAME_H__9C9D1F0B_C328_4D03_A649_B9D271B0B687__INCLUDED_)

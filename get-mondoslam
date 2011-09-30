@@ -8,7 +8,7 @@ DIR=`pwd`
 cd $DIR
 
 sudo apt-get update && apt-get -y upgrade
-sudo apt-get -y install subversion cvs
+sudo apt-get -y install subversion cvs git
 
 # Ptamm dependencies
 export CVS_RSH=ssh
@@ -27,3 +27,6 @@ cd gvars3
 
 cd $DIR
 svn co https://mplapack.svn.sourceforge.net/svnroot/mplapack mplapack
+
+cd $DIR
+git clone git://github.com/shihongzhi/PTAMM.git PTAMM

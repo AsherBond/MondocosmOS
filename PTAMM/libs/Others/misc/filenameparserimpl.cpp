@@ -1,0 +1,25 @@
+// FNParserImpl.cpp: implementation of the CFNParserImpl class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "FileNameParserImpl.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+FileName::CParserImpl::CParserImpl()
+{
+
+}
+
+FileName::CParserImpl::~CParserImpl()
+{
+
+}

@@ -1,0 +1,12 @@
+markerdata = N:\colorcalibration\colorcheckernew.txt
+objectdata = N:\marker\data\objectdata.txt
+sequence = N:\colorcalibration\219\0000.jpg
+showbinary = 0
+maxlinerror = 3.0
+smoothsigma = 0.0
+ligthminus = 0
+channel = 3
+filter = 1
+minpoint = 400
+maxpoint = 100000
+verbose = 0
