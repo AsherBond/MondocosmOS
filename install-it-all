@@ -2,7 +2,9 @@
 # Asher Bond 2011
 # installs everything recursively
 
+if [ ! -z $1 ]; then
 cd $1
+fi
 
 # find all makefiles
 find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs ./cmmi 

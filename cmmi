@@ -2,7 +2,11 @@
 # Asher Bond 2011
 # configure make make install
 
-cd $1
-configure
-make
-make install
+for var in "$@"
+do
+	echo "cd $var"
+	echo "configure"
+	echo "make"
+	echo "make install"
+done
+
