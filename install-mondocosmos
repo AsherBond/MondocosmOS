@@ -11,7 +11,7 @@ cd $DIR
 if [ ! `cd MondocosmOS` ]; then
 	git clone git://github.com/AsherBond/MondocosmOS.git MondocosmOS
 	cd MondocosmOS
-else	git up
+else	git pull
 fi
 ./install-it-all
 
