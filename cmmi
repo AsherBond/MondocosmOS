@@ -4,9 +4,9 @@
 
 for var in "$@"
 do
-	echo "cd $var"
-	echo "configure"
-	echo "make"
-	echo "make install"
+	cd $var
+	configure
+	make
+	make install
 done
 
