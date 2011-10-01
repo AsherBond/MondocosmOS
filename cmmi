@@ -2,8 +2,11 @@
 # Asher Bond 2011
 # configure make make install
 
+$basedir=`pwd`
+
 for var in "$@"
 do
+	cd $basedir
 	cd $var
 	./configure
 	make
