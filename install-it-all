@@ -6,5 +6,7 @@ if [ ! -z $1 ]; then
 cd $1
 fi
 
+cmmi=`find . -type f -name "cmmi"`
+
 # find all makefiles
-find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs ./cmmi 
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi 
