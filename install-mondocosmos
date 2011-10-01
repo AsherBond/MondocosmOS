@@ -6,12 +6,13 @@ apt-get install git
 
 # default dir
 DIR='/var/lib'
-cd $DIR
 
+cd $DIR
 git clone git://github.com/AsherBond/MondocosmOS.git MondocosmOS
 cd MondocosmOS
 ./install-it-all
 
+cd $DIR
 git clone git://github.com/AsherBond/MondocosmOS-Images.git
 cd MondocosmOS-Images
 ./install-it-all
