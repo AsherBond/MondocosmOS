@@ -5,7 +5,7 @@
 for var in "$@"
 do
 	cd $var
-	configure
+	./configure
 	make
 	make install
 done
