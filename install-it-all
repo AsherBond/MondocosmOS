@@ -3,10 +3,13 @@
 # installs everything recursively
 
 if [ ! -z $1 ]; then
-cd $1
+	mybase=$1
+else	mybase=`pwd`
 fi
+
+cd $mybase
 
 cmmi=`find . -type f -name "cmmi"`
 
 # find all makefiles
-find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi 
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi $mybase 

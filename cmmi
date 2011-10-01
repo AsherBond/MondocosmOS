@@ -1,12 +1,14 @@
 #!/bin/bash
 # Asher Bond 2011
 # configure make make install
+# use <trunkdir> <branch1 branch2 branch3>
 
-$basedir=`pwd`
+mybase=$1
+shift
 
 for var in "$@"
 do
-	cd $basedir
+	cd $mybase
 	cd $var
 	./configure
 	make
