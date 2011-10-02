@@ -1,0 +1,25 @@
+-- File:	CPP.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Feb 29 12:17:05 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %CPP_EDL) then
+@set %CPP_EDL = "";
+
+@set %CPP_Shared   = "libTKCPPExt.so";
+
+@if ( %LocalArch == "hp" ) then
+  @set %CPP_Shared   = "libTKCPPExt.sl";
+@endif;
+
+@if ( %LocalArch == "wnt" ) then
+  @set %CPP_Shared   = "TKCPPExt.dll";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @set %CPP_Shared   = "libTKCPPExt.dylib";
+@endif;
+
+@set %CPP_Name     = "CPP";
+
+@endif;

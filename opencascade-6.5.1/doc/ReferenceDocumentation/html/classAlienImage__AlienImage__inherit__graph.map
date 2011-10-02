@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classAlienImage__AlienImageData.html" title="This class defines an Alien image. &#160;&#160;Alien Image is X11 . xwd image or SGI .rgb image..." alt="" coords="603,192,813,221"/>
+<area shape="rect" id="node23" href="$classAlienImage__AlienUserImage.html" title="This class defines an Alien user image. &#160;&#160;Alien Image is X11 .xwd image or SGI .rgb..." alt="" coords="605,512,811,541"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,352,328,381"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,352,156,381"/>
+<area shape="rect" id="node9" href="$classAlienImage__AidaAlienData.html" title="This class defines an Aida Alien image. &#160;" alt="" coords="877,5,1075,35"/>
+<area shape="rect" id="node11" href="$classAlienImage__BMPAlienData.html" title="AlienImage_BMPAlienData" alt="" coords="877,59,1075,88"/>
+<area shape="rect" id="node13" href="$classAlienImage__EuclidAlienData.html" title="This class defines an Euclid .PIX Alien image. &#160;" alt="" coords="872,112,1080,141"/>
+<area shape="rect" id="node15" href="$classAlienImage__GIFAlienData.html" title="AlienImage_GIFAlienData" alt="" coords="881,165,1071,195"/>
+<area shape="rect" id="node17" href="$classAlienImage__SGIRGBAlienData.html" title="This class defines a SGI .rgb Alien image. &#160;" alt="" coords="865,219,1087,248"/>
+<area shape="rect" id="node19" href="$classAlienImage__SunRFAlienData.html" title="This class defines a SUN Raster File .rs Alien image. &#160;" alt="" coords="871,272,1081,301"/>
+<area shape="rect" id="node21" href="$classAlienImage__X11XWDAlienData.html" title="This class defines a X11 Alien image. &#160;" alt="" coords="863,325,1089,355"/>
+<area shape="rect" id="node25" href="$classAlienImage__AidaAlienImage.html" title="This class defines an Aida Alien image ( BYTEMAPS ). &#160;" alt="" coords="873,379,1079,408"/>
+<area shape="rect" id="node27" href="$classAlienImage__BMPAlienImage.html" title="AlienImage_BMPAlienImage" alt="" coords="873,432,1079,461"/>
+<area shape="rect" id="node29" href="$classAlienImage__EuclidAlienImage.html" title="This class defines an Euclid Alien image. &#160;" alt="" coords="868,485,1084,515"/>
+<area shape="rect" id="node31" href="$classAlienImage__GIFAlienImage.html" title="AlienImage_GIFAlienImage" alt="" coords="877,539,1075,568"/>
+<area shape="rect" id="node33" href="$classAlienImage__SGIRGBAlienImage.html" title="Defines an SGI .rgb Alien image, i.e. an image using &#160;&#160;the image format for Silicon..." alt="" coords="861,592,1091,621"/>
+<area shape="rect" id="node35" href="$classAlienImage__SunRFAlienImage.html" title="Defines a SunRF Alien image, i.e. an image using the &#160;&#160;image format for SUN workstations..." alt="" coords="867,645,1085,675"/>
+<area shape="rect" id="node37" href="$classAlienImage__XAlienImage.html" title="Defines an X11 Alien image, i.e. an image file to be &#160;&#160;used with X11 xwd utility..." alt="" coords="883,699,1069,728"/>
+</map>

@@ -1,0 +1,86 @@
+
+@template WOKDeliv_LDInit(%EngineName) is
+$proc WOKDeliv_MakePathld {} {
+$
+$if {[wokparam -t %%EngineName_LoadPath]} {
+$  set envload [wokparam -e %%EngineName_LoadPath]:
+$} else {
+$  set envload ""
+$}
+@end;
+
+@template WOKDeliv_MAKELDInit() is
+$return $envload
+$}
+$
+$proc WOKDeliv_Makeld {fact} {
+$
+$set envload [WOKDeliv_MakePathld]
+$
+$set orig ${fact}:[finfo -W $fact]
+$
+@end;
+
+@template WOKDeliv_FirstValue(%UlName) is
+$return ${envload}${LibDir_%UlName}\^
+@end;
+
+@if (%Station != "wnt") then
+
+-- Case UNIX
+
+@template WOKDeliv_AddingValue(%Value) is
+$set envload ${envload}%Value:
+@end;
+
+@template WOKDeliv_NextValue(%PreviousVal,%UlName) is
+$%PreviousVal:${LibDir_%UlName}\^
+@end;
+
+-- End Case UNIX
+
+@else
+
+-- Case NT
+
+@template WOKDeliv_AddingValue(%Value) is
+$set envload ${envload}%Value\;
+@end;
+
+@template WOKDeliv_NextValue(%PreviousVal,%UlName) is
+$%PreviousVal\;${LibDir_%UlName}\^
+@end;
+
+-- End Case NT
+
+@endif;
+
+@template WOKDeliv_DeclHome(%UlName) is
+$set LibDir_%UlName [wokparam -e WOKEntity_libdir ${orig}:%UlName]
+@end;
+
+@template WOKDeliv_LDEnd() is
+$
+$}
+$
+@end;
+
+
+@template WOKDeliv_MAKELDList() is
+$proc WOKDeliv_LDList {} {
+$
+$ set lp {}
+$ lappend lp [WOKDeliv_MakePathld]
+$ set l {}
+@end;
+
+@template WOKDeliv_AddULList(%UlName) is
+$ lappend l %UlName
+@end;
+
+@template WOKDeliv_EndLDList () is
+$
+$ lappend lp $l
+$ return $lp
+$}
+@end;

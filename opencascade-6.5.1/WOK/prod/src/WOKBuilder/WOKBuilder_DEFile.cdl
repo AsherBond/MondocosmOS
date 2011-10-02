@@ -1,0 +1,17 @@
+-- File:	WOKBuilder_DEFile.cdl
+-- Created:	Mon Oct 21 14:10:20 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class DEFile from WOKBuilder inherits Entity  from WOKBuilder 
+
+ uses
+    
+    Path from WOKUtils
+
+ is
+
+    Create ( apath : Path from WOKUtils ) returns mutable DEFile from WOKBuilder;
+
+end DEFile;

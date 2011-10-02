@@ -1,0 +1,251 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs3 { margin-left:4.50pt; margin-top:4.50pt; font-weight:bold; }
+img_whs4 { width:519px; height:529px; border-style:none; }
+img_whs5 { width:693px; height:770px; border-style:none; }
+img_whs6 { border-style:none; width:666px; height:762px; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nGeometric Tools\nCurves and Surfaces from Constraints");
+addAvenueInfo("Geometric Tools","","technical_overview/modeling_algorithms/geometric_tools/p_31_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Curves and Surfaces from Constraints</p>
+
+<h2>&nbsp;</h2>
+
+<p class="whs1">The <font style="font-weight: bold;">Curves 
+ and Surfaces from Constraints</font> component groups together high level 
+ functions used in 2D and 3D geometry for:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>creating 
+ faired and minimal variation 2D curves</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>construction 
+ of ruled surfaces</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>construction 
+ of pipe surfaces</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>filling 
+ surfaces</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>construction 
+ of plate surfaces</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>extension 
+ of a 3D curve or surface beyond its original bounds.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs3">2D Curves from constraints</p>
+
+<p class="whs1">Elastic beam curves 
+ have their origin in traditional methods of modeling such as those in 
+ boat-building, where a long thin piece of wood, a lathe, was forced to 
+ pass between two sets of nails and in this way, take the form of a curve 
+ based on the two points, the directions of the forces applied at those 
+ points, and the properties of the wooden lathe itself.</p>
+
+<p class="whs1">Maintaining these constraints 
+ requires both longitudinal and transversal forces to be applied to the 
+ beam in order to compensate for its internal elasticity. The longitudinal 
+ forces can be a push or a pull and the beam may or may not be allowed 
+ to slide over these fixed points.</p>
+
+<p class="whs1">The class <font style="font-weight: bold;">Batten</font> 
+ produces curves defined on the basis of one or more constraints on each 
+ of the two reference points. These include point and angle of tangency 
+ settings. The class <font style="font-weight: bold;">MinimalVariation</font> 
+ produces curves with minimal variation in curvature. The exact degree 
+ of variation is provided by curvature settings.</p>
+
+<p class="whs3">Ruled Surfaces</p>
+
+<p class="whs1">A ruled surface is 
+ built by ruling a line along the length of two curves.</p>
+
+<p class="whs3">Pipe Surfaces</p>
+
+<p class="whs1">A pipe is built by 
+ sweeping a curve (the section) along another curve (the path).</p>
+
+<p class="whs1">The following types 
+ of construction are available:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>pipes 
+ with a circular section of constant radius,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>pipes 
+ with a constant section,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>pipes 
+ with a section evolving between two given curves.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs3">Surface filling</p>
+
+<p class="whs1">It is often convenient 
+ to create a surface from two or more curves which will form the boundaries 
+ that define the new surface.</p>
+
+<p class="whs1">A case in point is 
+ the intersection of two fillets at a corner. If the radius of the fillet 
+ on one edge is different from that of the fillet on another, it becomes 
+ impossible to sew together all the edges of the resulting surfaces. This 
+ leaves a gap in the overall surface of the object which you are constructing.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="../../../image/occ_0006.gif" alt="image\occ_0006.gif" width="519px" height="529px" border="0" class="img_whs4"><font 
+ style="font-family: Helvetica;"> <br>
+<span style="font-family: Arial, sans-serif;"><br>
+Intersecting filleted edges with differing radii</span></font></p>
+
+<p class="whs1">These algorithms allow 
+ you to fill this gap from two, three or four curves. This can be done 
+ with or without constraints, and the resulting surface will be either 
+ a Bezier or a BSpline surface in one of a range of filling styles.</p>
+
+<p class="whs1">This package was designed 
+ with a view to handling gaps produced during fillet construction. Satisfactory 
+ results cannot be guaranteed for other uses.</p>
+
+<p class="whs3">Plate surfaces</p>
+
+<p class="whs1">In CAD, it is often 
+ necessary to generate a surface which has no exact mathematical definition, 
+ but which is defined by respective constraints. These can be of a mathematical, 
+ a technical or an aesthetic order.</p>
+
+<p class="whs1">Essentially, a plate 
+ surface is constructed by deforming a surface so that it conforms to a 
+ given number of curve or point constraints. In the figure below, you can 
+ see four segments of the outline of the plane, and a point which have 
+ been used as the curve constraints and the point constraint respectively. 
+ The resulting surface can be converted into a BSpline surface by using 
+ the function <font style="font-weight: bold;">MakeApprox</font>.</p>
+
+<p class="whs1">The surface is built 
+ using a variational spline algorithm. It uses the principle of deformation 
+ of a thin plate by localised mechanical forces. If not already given in 
+ the input, an initial surface is calculated. This corresponds to the plate 
+ prior to deformation. Then, the algorithm is called to calculate the final 
+ surface. It looks for a solution satisfying constraints and minimizing 
+ energy input.</p>
+
+<p class="whs1"><img src="../../../image/occ_0007.gif" alt="image\occ_0007.gif" width="693px" height="770px" border="0" class="img_whs5"><font 
+ style="font-family: Helvetica;"> <br>
+<span style="font-family: Arial, sans-serif;"><br>
+A surface generated from four curves and a point.</span></font></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="../../../image/occ_0008.gif" alt="image\occ_0008.gif" width="666px" height="762px" border="0" class="img_whs6"><font 
+ style="font-family: Helvetica;"> <br>
+<span style="font-family: Arial, sans-serif;"><br>
+A surface generated from two curves and a point.</span></font></p>
+
+<p class="whs3">Extension of a 3D curve or surface beyond 
+ its original bounds</p>
+
+<p class="whs1">The extension is performed 
+ according to a geometric requirement and a continuity constraint. It should 
+ be a small extension with respect to the size of the original curve or 
+ surface.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

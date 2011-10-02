@@ -1,0 +1,35 @@
+-- File:	MS_ExecPart.cdl
+-- Created:	Tue Feb  6 09:04:39 1996
+-- Author:	Kernel
+--		<kernel@ilebon>
+---Copyright:	 Matra Datavision 1996
+
+
+class ExecPart from MS
+
+inherits Exec from MS 
+
+uses HSequenceOfHAsciiString from TColStd,
+     HAsciiString            from TCollection,
+     HSequenceOfExecFile     from MS,
+     ExecFile                from MS
+
+is
+
+    Create(anExecutable : HAsciiString from TCollection) returns mutable ExecPart from MS;
+    
+    AddFile(me : mutable; aFile : ExecFile from MS);
+    AddLibrary(me : mutable; aName : HAsciiString from TCollection);
+    AddExternal(me : mutable; aName : HAsciiString from TCollection);
+    
+    Files(me) returns mutable HSequenceOfExecFile from MS;
+    Libraries(me) returns mutable HSequenceOfHAsciiString from TColStd;
+    Externals(me) returns mutable HSequenceOfHAsciiString from TColStd;
+    
+fields
+    myFiles : HSequenceOfExecFile from MS;
+    myLib   : HSequenceOfHAsciiString from TColStd;         
+    myExt   : HSequenceOfHAsciiString from TColStd;
+    
+end ExecPart from MS;
+

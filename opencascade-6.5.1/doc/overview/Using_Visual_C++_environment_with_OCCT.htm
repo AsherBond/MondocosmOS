@@ -1,0 +1,125 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Using Visual C++ environment with OCCT</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { margin-left:46px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFAQ\nUsing Visual C++ environment with OCCT");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Using Visual C++ environment with OCCT</p>
+
+<p>Under Windows, you can use the Visual C++ environment to develop Open 
+ CASCADE Technology based applications. To do that you must first create 
+ a new project, configure its project settings, and then customize the 
+ Visual C++ options.</p>
+
+<p>You will also find examples of Visual C++ projects if you download the 
+ Programming Examples based on MFC.</p>
+
+<p>In the Visual C++ menu, select <span style="font-style: italic;"><I>TOOLS/OPTIONS/Projects</I></span> 
+ and <span style="font-style: italic;"><I>Solution/VC++</I></span> Directories 
+ and set the path for OCCT include and libraries files.</p>
+
+<p>Then select <span style="font-style: italic;"><I>PROJECT/Properties/Configuration 
+ Properties/Linker/InputCategory</I></span> and add the OCCT Object/library 
+ modules: </p>
+
+<p class="whs1"><span style="font-family: 'Times New Roman', serif;">&quot; 
+ TKernel.lib TKGeomBase.lib TKTopAlgo.lib TKOffset.lib TKBool.lib TKPrim.lib 
+ TKFillet.lib TKMath.lib TKService.lib TKV3d.lib TKBrep.lib TKIGES.lib 
+ PTKernel.lib TKSTL.lib TKVRML.lib TKSTEP.lib TKShapeSchema.lib TKG3d.lib 
+ TKG2d.lib TKXSBase.lib TKPShape.lib TKShHealing.lib TKBO.lib</span> </p>
+
+<p>Then select <span style="font-style: italic;"><I>PROJECT/Properties/Configuration 
+ Properties/C/C++/Preprocessor</I></span> &nbsp;category: 
+ Code generation and select:</p>
+
+<p>Use run-time library: Debug Multi-thread DLL or Multi-thread DLL depending 
+ on whether you are using debug libraries or no debug libraries.</p>
+
+<p>&nbsp;&nbsp;</p>
+
+<p>Then select <span style="font-style: italic;"><I>PROJECT/SETTINGS/C/C++</I></span> 
+ Category: <span style="font-style: italic;"><I>Preprocessor</I></span> and add 
+ <span style="font-style: italic;"><I>_WINDOWS WNT</I></span> in preprocessor 
+ definitions:</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

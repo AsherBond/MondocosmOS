@@ -1,0 +1,36 @@
+-- File:	WOKNT_AdmFile.cdl
+-- Created:	Wed Jul 24 12:59:45 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class AdmFile from WOKNT inherits File from OSD
+
+    ---Purpose: reads file in WOK format
+    --          - lines beginning by '#' are ignored
+    --          - lines terminating by '\' are continued
+    --          - empty lines are ignored
+
+ uses
+ 
+    AsciiString             from TCollection,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    Path                    from WOKNT
+    
+ raises
+ 
+    ProgramError from Standard
+    
+ is
+ 
+    Create ( aPath : Path from WOKNT ) returns AdmFile from WOKNT;
+    	---Purpose: creates a class instance
+
+    Read ( me : out )
+     returns HSequenceOfHAsciiString from TColStd
+     raises  ProgramError            from Standard;
+     	---Purpose: reads a file in WOK format
+
+    Name ( me ) returns AsciiString from TCollection;
+end AdmFile;

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classPrs2d__Tolerance.html" title="Groups all the tolerances &#160;" alt="" coords="17,315,148,344"/>
+<area shape="rect" id="node4" href="$classGraphic2d__Line.html" title="Groups all the primitives which behaves like &#160;&#160;geometrical lines. &#160;&#160;for example:..." alt="" coords="21,237,144,267"/>
+<area shape="rect" id="node6" href="$classGraphic2d__Primitive.html" title="Groups all drawing elements which can be stored &#160;&#160;in a graphic object. &#160;&#160;Each primitive..." alt="" coords="5,160,160,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="21,83,144,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="8,5,157,35"/>
+</map>

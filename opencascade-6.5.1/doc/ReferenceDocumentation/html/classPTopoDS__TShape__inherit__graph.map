@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classPTopoDS__TCompound.html" title="PTopoDS_TCompound" alt="" coords="397,5,563,35"/>
+<area shape="rect" id="node7" href="$classPTopoDS__TCompSolid.html" title="PTopoDS_TCompSolid" alt="" coords="399,59,561,88"/>
+<area shape="rect" id="node9" href="$classPTopoDS__TEdge.html" title="PTopoDS_TEdge" alt="" coords="416,112,544,141"/>
+<area shape="rect" id="node13" href="$classPTopoDS__TFace.html" title="PTopoDS_TFace" alt="" coords="417,165,543,195"/>
+<area shape="rect" id="node17" href="$classPTopoDS__TShell.html" title="PTopoDS_TShell" alt="" coords="417,219,543,248"/>
+<area shape="rect" id="node19" href="$classPTopoDS__TSolid.html" title="PTopoDS_TSolid" alt="" coords="417,272,543,301"/>
+<area shape="rect" id="node21" href="$classPTopoDS__TVertex.html" title="PTopoDS_TVertex" alt="" coords="409,325,551,355"/>
+<area shape="rect" id="node25" href="$classPTopoDS__TWire.html" title="PTopoDS_TWire" alt="" coords="417,379,543,408"/>
+<area shape="rect" id="node2" href="$classStandard__Persistent.html" title="Standard_Persistent" alt="" coords="5,192,165,221"/>
+<area shape="rect" id="node11" href="$classPBRep__TEdge.html" title="PBRep_TEdge" alt="" coords="617,112,732,141"/>
+<area shape="rect" id="node15" href="$classPBRep__TFace.html" title="PBRep_TFace" alt="" coords="617,165,732,195"/>
+<area shape="rect" id="node23" href="$classPBRep__TVertex.html" title="PBRep_TVertex" alt="" coords="611,325,739,355"/>
+</map>

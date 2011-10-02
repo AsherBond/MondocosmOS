@@ -1,0 +1,78 @@
+-- File:	OBJS.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Feb 24 15:46:57 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %OBJS_EDL) then
+@set %OBJS_EDL = "";
+
+
+  @template OBJS_LibSchemaFileName ( %OBJS_LibSchemaName ) is
+   $lib%OBJS_LibSchemaName.ldb\^
+  @end;
+
+  @template OBJS_AppSchemaFileName ( %OBJS_AppSchemaName ) is
+   $lib%OBJS_AppSchemaName.asdb\^
+  @end;
+
+  @template OBJS_AppSchemaCxxFileName ( %OBJS_AppSchemaName ) is
+   $%OBJS_AppSchemaName_os_schema.cxx\^
+  @end;
+
+  @if ( %Station == "sun" ) then
+   @set %OBJS_Root         = "/PRODUCTS/OS4.0.2/sunpro";
+   @set %OBJS_OSSG_Options = "-Usun -DSOLARIS -DOBJS -no_default_includes -sopt /PRODUCTS/OS4.0.2/sunpro/etc/schema.opt -padm -arch set5 -I/opt/DEV4_2/SUNWspro/SC4.0/include/CC cargox:/PRODUCTS/OS4.0.2/sunpro/lib/liboscol.ldb";
+  @endif;
+
+  @if ( %Station == "sil" ) then
+   @set %OBJS_Root         = "/PRODUCTS/OS4.0.3";
+   @set %OBJS_OSSG_Options = "-DIRIX -DOBJS -no_default_includes -sopt /PRODUCTS/OS4.0.3/etc/schema.opt -padm -arch set5 -I/usr/include/CC detax:/PRODUCTS/OS4.0.3/lib/liboscol.ldb";
+  @endif;
+
+  @if ( %Station == "ao1" ) then
+   @set %OBJS_Root         = "/PRODUCTS/OS4.0.2";
+   @set %OBJS_OSSG_Options = "-DDECOSF1 -DOBJS -no_default_includes -sopt /PRODUCTS/OS4.0.2/etc/schema.opt -padm -arch set5 -xtaso_short -vptr_size_short -I/usr/include -I/usr/include/cxx decalon:/PRODUCTS/OS4.0.2/lib/liboscol.ldb";
+  @endif;
+
+  @if ( %Station == "hp" ) then
+   @set %OBJS_Root         = "/PRODUCTS/OS4.0.2";
+   @set %OBJS_OSSG_Options = "-DHPUX -DOBJS -no_default_includes -sopt /PRODUCTS/OS4.0.2/etc/schema.opt -padm -arch set5 -I/opt/CC/include/CC fourbux:/PRODUCTS/OS4.0.2/lib/liboscol.ldb";
+  @endif;
+
+  @template OBJS_OSSG_IncDirective ( %OBJS_IncDir ) is
+   $ -I%OBJS_IncDir \
+  @end;
+
+  @set %OBJS_OSSG_ArchDirective = "";
+
+  @if ( %Station != "hp" && %Station != "mac" ) then
+  	@set %LDPATHVAR = "LD_LIBRARY_PATH";
+  @endif;
+  @if ( %Station == "hp" ) then
+        @set %LDPATHVAR = "SHLIB_PATH";
+  @endif;
+  @if ( %Station == "mac" ) then
+        @set %LDPATHVAR = "DYLD_LIBRARY_PATH";
+  @endif;
+
+  @set %OBJS_OSSG_Suffix = " >& /tmp/ossg.$$";
+
+  @template OBJS_OSSG_CmdLine ( %OBJS_Root, %OBJS_IncDirectives, %OBJS_OSSG_Options, %LDPATHVAR, %OBJS_OSSG_Suffix, %Station,
+				%OBJS_SchFile, %OBJS_OutputDir,  %OBJS_OSSG_ArchDirective, %OBJS_TargetDir, %OBJS_AppSchemaName) is
+   $echo "%OBJS_IncDirectives"
+   $setenv OS_ROOTDIR                    "%OBJS_Root"
+   $setenv OS_COMP_SCHEMA_CHANGE_ACTION  warn
+   $setenv OS_CACHE_SIZE                 8192000
+   $/bin/env %LDPATHVAR=/usr/local/shlib:%OBJS_Root/lib %OBJS_Root/bin/ossg %OBJS_OSSG_ArchDirective %OBJS_IncDirectives -I%OBJS_Root/include %OBJS_OSSG_Options \
+   $ -asdb %OBJS_OutputDir/lib%OBJS_AppSchemaName.asdb -final_asdb %OBJS_TargetDir/lib%OBJS_AppSchemaName.asdb %OBJS_SchFile \
+   $ -assf %OBJS_OutputDir/%OBJS_AppSchemaName_os_schema.cxx %OBJS_OSSG_Suffix
+   $set wok_csh_status = $status
+   $if ( $wok_csh_status != 0 ) then
+   $  echo "Error : errors occured in ossg"
+   $endif
+   $cat /tmp/ossg.$$
+   $rm -f /tmp/ossg.$$
+   $set status = $wok_csh_status
+  @end;
+
+@endif;

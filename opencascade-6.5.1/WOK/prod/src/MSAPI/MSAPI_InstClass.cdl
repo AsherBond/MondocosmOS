@@ -1,0 +1,19 @@
+-- File:	MSAPI_InstClass.cdl
+-- Created:	Tue Sep 19 21:25:48 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class InstClass from MSAPI 
+
+	---Purpose: 
+
+uses
+    ArgTable     from WOKTools,
+    Return       from WOKTools
+
+is
+    Info(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+end InstClass;

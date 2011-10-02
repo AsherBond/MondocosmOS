@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classChFi3d__ChBuilder.html" title="construction tool for 3D chamfers on edges. &#160;" alt="" coords="5,83,141,112"/>
+<area shape="rect" id="node5" href="$classChFi3d__FilBuilder.html" title="Tool of construction of fillets 3d on edges. &#160;" alt="" coords="165,83,296,112"/>
+<area shape="rect" id="node7" href="$classFilletSurf__InternalBuilder.html" title="This class is private. It is used by the class Builder &#160;&#160;from FilletSurf. It computes..." alt="" coords="139,160,323,189"/>
+</map>

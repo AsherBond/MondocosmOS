@@ -1,0 +1,22 @@
+-- File:	WOKernel_EntityHasher.cdl
+-- Created:	Thu Jun 29 16:43:34 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class BaseEntityHasher from WOKernel 
+
+	---Purpose: 
+
+uses
+    BaseEntity from WOKernel
+is
+
+    HashCode(myclass; akey : BaseEntity from WOKernel)
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; akey1, akey2: BaseEntity from WOKernel)
+    	returns Boolean from Standard;
+
+end BaseEntityHasher;

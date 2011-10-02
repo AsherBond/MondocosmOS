@@ -1,0 +1,42 @@
+
+ Consulting the source repository:
+
+ For each selected item in the left list, all the recorded versions are displayed.
+ 
+ Select a given version with <MB1> to display the associated contents and activate the 
+ following options in the Tools menu:
+
+  <Check out> generates a copy of the selected version in the current directory. 
+  This version is named x.y,file.ext where x.y is the selected version and file.ext the name of 
+  the source.
+
+  <To editor> sends this copy to an editor.
+
+ Select the arrow between two consecutive versions with <MB1> to display the integration report 
+ containing information on the version upgrade.
+
+ Select 2 different versions with <Control_Mb1> to display the differences between both versions.
+
+ If the xdiff programm is contained in your path, the Tools menu activates the following option:
+
+  <More Diff> displays the differences.
+
+
+ The Admin menu displays the following submenus:
+
+  <Show params>    
+
+  Displays the location where to find the bases as well as the VC.edl file used for
+  parameterization.
+
+  <Check contents> 
+
+  Checks the contents of the item selected in the left list. In the case of a UD, all the files in
+  the UD are checked.
+
+  <Delete File> 
+
+  Deletes the item selected in the left list. In the case of a file, the file is deleted; in the 
+  case of a UD, the UD is removed from the repository.
+
+

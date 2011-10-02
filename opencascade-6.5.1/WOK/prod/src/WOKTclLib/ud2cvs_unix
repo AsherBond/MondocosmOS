@@ -1,0 +1,67 @@
+#!/bin/csh -f
+# Place a wok developement unit under CVS control if any.
+# This only require CVS read access.
+# No check for argument is done. This proc is intended to be launched
+# by a Tcl wrapper.
+# Arguments:
+# $1 = The hook of the workbench Home /adv_11/KAS/C30/yan/src
+# $2 = The name of the unit.
+# $3 = The full address of the cvs repository 
+# for example :pserver:anonymous@cvs.matra-dtv.fr:/www/cvs
+#
+# Note:
+# 1. CVS login must be already done.
+# 2. User have write access in root
+#
+set root=$argv[1] ; set ud=$argv[2] ; set rpr=$argv[3] 
+#
+cd $root
+if ( ! -e $ud/CVS ) then
+
+    if ( -e $ud ) then
+	\rm -rf .$ud >& /dev/null
+	\mv $ud .$ud
+	#
+	# Get files while getting ud.
+	#
+	set atleastone=0
+	foreach file (`\ls -1 .$ud`) 
+	set atleastone=1
+	cvs -d $rpr checkout -d $ud src/$ud/`basename $file` 
+	end
+	if ( $atleastone ) then
+	    #
+	    # Now ud exists because CVS created it.
+	    #
+	    if ( -e $ud ) then
+		\rm $ud/* >& /dev/null
+		#
+		# Move files which reside in the unit
+		#
+		\mv .$ud/* $ud
+		#
+		#
+		\rm -rf .$ud
+	    else
+		echo "ud2cvs-error: Unit $ud contains only new files. You need write access to create them."
+	    endif
+	else
+	    cvs -d $rpr checkout -d $ud src/$ud 
+	    if ( -e $ud ) then
+		# Nothing to move
+		\rm -rf .$ud
+		echo "ud2cvs-warning: Unit $ud was empty. All files where created."
+	    else
+		echo "ud2cvs-error: Unit $ud not found in ${rpr}. You need write access to create it first."
+	    endif
+	endif
+    else
+	echo "ud2cvs-error: Directory $root/$ud was not found."
+    endif
+else
+  echo "ud2cvs-error: Unit $ud has already a CVS directory."
+endif
+exit
+
+
+

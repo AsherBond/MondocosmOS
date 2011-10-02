@@ -1,0 +1,49 @@
+-- File:	MS_Interface.cdl
+-- Created:	Mon Aug 23 18:07:23 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+class Interface 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits GlobalEntity from MS 
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HAsciiString            from TCollection
+
+is
+
+    Create(aInterface : HAsciiString from TCollection) 
+    	returns mutable Interface from MS;
+    
+    Use(me : mutable; aInterface : HAsciiString from TCollection);
+    Uses(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+          
+    Class(me : mutable; aClass : HAsciiString from TCollection; aPackage : HAsciiString from TCollection);
+    Class(me : mutable; aClass : HAsciiString from TCollection);
+    Classes(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+
+     
+    Package(me : mutable; aPackage : HAsciiString from TCollection);
+    Packages(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+
+     
+    Method(me : mutable; aMethod : HAsciiString from TCollection);
+    Methods(me) 
+     	returns mutable HSequenceOfHAsciiString from TColStd;
+	
+fields
+
+    myUses        : HSequenceOfHAsciiString from TColStd;
+    myPackages    : HSequenceOfHAsciiString from TColStd;
+    myClasses     : HSequenceOfHAsciiString from TColStd;
+    myMethods     : HSequenceOfHAsciiString from TColStd;
+
+end Interface from MS;
+

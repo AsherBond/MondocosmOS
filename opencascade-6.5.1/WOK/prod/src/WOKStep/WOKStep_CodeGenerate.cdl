@@ -1,0 +1,59 @@
+-- File:	WOKStep_CodeGenerate.cdl
+-- Created:	Thu Jul 11 23:23:17 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class CodeGenerate from WOKStep
+inherits ProcessStep from WOKStep
+	---Purpose: Compile files
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    CodeGeneratorIterator       from WOKBuilder,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    HAsciiString                from TCollection,
+    DataMapOfHAsciiStringOfFile from WOKernel
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable CodeGenerate  from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    Init(me:mutable)
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    OutOfDateEntities(me:mutable) 
+    	returns HSequenceOfInputFile from WOKMake
+    	is redefined protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+fields
+
+    myiterator : CodeGeneratorIterator from WOKBuilder;
+
+end CodeGenerate;

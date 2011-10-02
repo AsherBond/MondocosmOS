@@ -1,0 +1,44 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_PrimType.cdl	1.1
+-- File:	MS_PrimType.cdl
+-- Created:	Tue Sep 17 18:09:02 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class PrimType 
+
+    from 
+    	MS 
+    inherits NatType from MS
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HSequenceOfClass from MS,
+	HAsciiString from TCollection,
+	MetaSchemaPtr from MS
+
+is  
+
+    Create(aName, aPackage, aContainer: HAsciiString; aPrivate: Boolean) 
+    	returns mutable PrimType  from MS;
+	
+    Inherit(me: mutable; aClass: HAsciiString; aPackage: HAsciiString);
+    GetInheritsNames(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    GetFullInheritsNames(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+	
+    IsPersistent(me)
+    	returns Boolean from Standard;
+	
+    IsTransient(me)
+    	returns Boolean from Standard;
+	
+    IsStorable(me)
+    	returns Boolean from Standard;
+	
+fields
+
+    myInherits       : HSequenceOfHAsciiString from TColStd;
+
+end PrimType from MS;

@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classGraphic2d__CircleMarker.html" title="The primitive CircleMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="5,392,184,421"/>
+<area shape="rect" id="node13" href="$classGraphic2d__EllipsMarker.html" title="The primitive EllipsMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="208,392,381,421"/>
+<area shape="rect" id="node15" href="$classGraphic2d__PolylineMarker.html" title="The primitive PolylineMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="405,392,597,421"/>
+<area shape="rect" id="node2" href="$classGraphic2d__Line.html" title="Groups all the primitives which behaves like &#160;&#160;geometrical lines. &#160;&#160;for example:..." alt="" coords="233,237,356,267"/>
+<area shape="rect" id="node4" href="$classGraphic2d__Primitive.html" title="Groups all drawing elements which can be stored &#160;&#160;in a graphic object. &#160;&#160;Each primitive..." alt="" coords="217,160,372,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="233,83,356,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="220,5,369,35"/>
+</map>

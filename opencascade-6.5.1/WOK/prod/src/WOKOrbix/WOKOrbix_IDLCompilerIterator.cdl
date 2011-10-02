@@ -1,0 +1,57 @@
+-- File:	WOKOrbix_IDLCompilerIterator.cdl
+-- Created:	Mon Aug 18 16:07:56 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class    IDLCompilerIterator from WOKOrbix 
+inherits ToolInShellIterator from WOKBuilder 
+	---Purpose: 
+
+uses
+    HSequenceOfEntity      from WOKBuilder,
+    IDLFile                from WOKOrbix,
+    IDLCompiler            from WOKOrbix,
+    BuildStatus            from WOKBuilder,
+    ToolInShell            from WOKBuilder,
+    HSequenceOfToolInShell from WOKBuilder,
+    HSequenceOfPath        from WOKUtils,
+    Param                  from WOKUtils,
+    Path                   from WOKUtils,
+    Shell                  from WOKUtils,
+    HAsciiString           from TCollection
+is
+
+    Create(toolgroup : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns IDLCompilerIterator from WOKOrbix;
+    
+
+    Create(tools : HSequenceOfToolInShell from WOKBuilder) 
+    	returns IDLCompilerIterator from WOKOrbix;
+
+    Create(toolgroup : HAsciiString    from TCollection;
+    	   ashell    : Shell           from WOKUtils; 
+	   adir      : Path            from WOKUtils;
+	   incdirs   : HSequenceOfPath from WOKUtils;
+    	   params    : Param           from WOKUtils)
+    	returns IDLCompilerIterator from WOKOrbix;
+
+    Init(me:out; ashell    : Shell           from WOKUtils; 
+	    	 adir      : Path            from WOKUtils;
+	    	 incdirs   : HSequenceOfPath from WOKUtils);
+
+    SetIncludeDirectories(me:out; incdirs : HSequenceOfPath from WOKUtils);
+    IncludeDirectories(me) returns HSequenceOfPath from WOKUtils;
+
+    GetTool(me;aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns ToolInShell from WOKBuilder
+    	is redefined;   
+
+    Execute(me:out; anidl : IDLFile from WOKOrbix)  
+    	returns BuildStatus from WOKBuilder;
+
+fields
+
+    myincdirs : HSequenceOfPath from WOKUtils;
+
+end IDLCompilerIterator;

@@ -1,0 +1,293 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>How to define a handled object without CDL</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-family:'Times New Roman' , serif; }
+p.whs2 { font-family:'Times New Roman' , serif; margin-left:46px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFAQ\nHow to define a handled object without CDL");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>How to define a handled object without CDL</p>
+
+<p>You can create a class manipulated by handle even if you do not use 
+ CDL (Open CASCADE Definition Language). To do that you have to use the 
+ Define_Standard_Handle macro which is defined in the include file Standard_DefineHandle.hxx.</p>
+
+<p>&nbsp;</p>
+
+<p>Here is an example which shows how to define a class SamplePoint manipulated 
+ by handle.</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1">Sample_Point.hxx:</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;#ifndef 
+ _Sample_Point_HeaderFile</p>
+
+<p class="whs2">&nbsp;&nbsp;#define 
+ _Sample_Point_HeaderFile</p>
+
+<p class="whs2">&nbsp;&nbsp;#ifndef 
+ _Standard_Macro_HeaderFile</p>
+
+<p class="whs2">&nbsp;&nbsp;#include 
+ &lt;Standard_Macro.hxx&gt;</p>
+
+<p class="whs2">&nbsp;&nbsp;#endif</p>
+
+<p class="whs2">&nbsp;&nbsp;#include 
+ &lt;MMgt_TShared.hxx&gt;</p>
+
+<p class="whs2">&nbsp;&nbsp;#include 
+ &lt;Standard_DefineHandle.hxx&gt;</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ Handle definition</p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;&nbsp;DEFINE_STANDARD_HANDLE(Sample_Point,MMgt_TShared)</p>
+
+<p class="whs2">&nbsp;&nbsp;class 
+ Sample_Point: public MMgt_TShared {</p>
+
+<p class="whs2">&nbsp;&nbsp;public:</p>
+
+<p class="whs2">&nbsp;&nbsp;Sample_Point();</p>
+
+<p class="whs2">&nbsp;&nbsp;Sample_Point(const 
+ Standard_Real, const</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real);</p>
+
+<p class="whs2">&nbsp;&nbsp;void 
+ SetX(const Standard_Real x) {</p>
+
+<p class="whs2">&nbsp;&nbsp;myX 
+ = x;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<p class="whs2">&nbsp;&nbsp;void 
+ SetY(const Standard_Real y) {</p>
+
+<p class="whs2">&nbsp;&nbsp;myY 
+ = y;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real 
+ X() const {</p>
+
+<p class="whs2">&nbsp;&nbsp;return 
+ myX;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real 
+ Y() const {</p>
+
+<p class="whs2">&nbsp;&nbsp;return 
+ myY;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ some methods like DynamicType() or</p>
+
+<p class="whs2">&nbsp;&nbsp;IsKind()</p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;&nbsp;DEFINE_STANDARD_RTTI(Sample_Point)</p>
+
+<p class="whs2">&nbsp;&nbsp;private:</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real 
+ myX;</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real 
+ myY;</p>
+
+<p class="whs2">&nbsp;&nbsp;};</p>
+
+<p class="whs2">&nbsp;&nbsp;#endif</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">Sample_Point.cxx:</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;#include 
+ &lt;Sample_Point.hxx&gt;</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ Implementation of Handle and type mgt</p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_HANDLE(Sample_Point,MMgt_TShared)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_RTTI(Sample_Point,MMgt_TShared)</p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ Foreach ancestors, we add a</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE 
+ and</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ a IMPLEMENT_STANDARD_SUPERTYPE_ARRAY_ENTRY</p>
+
+<p class="whs2">&nbsp;&nbsp;macro.</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ We must respect the order: from the direct ancestor class</p>
+
+<p class="whs2">&nbsp;&nbsp;// 
+ to the base class.</p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_TYPE(Sample_Point)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE(MMgt_TShared)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE(Standard_Transient)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE_ARRAY()</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE_ARRAY_ENTRY(MMgt_TShared)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE_ARRAY_ENTRY(Standard_Transient)</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_SUPERTYPE_ARRAY_END()</p>
+
+<p class="whs2">&nbsp;&nbsp;IMPLEMENT_STANDARD_TYPE_END(Sample_Point)</p>
+
+<p class="whs2"><span 
+ style="font-family: 'Times New Roman', serif; margin-left: 46px;">&nbsp;// 
+ Constructors implementation</span></p>
+
+<p class="whs2">&nbsp;&nbsp;//</p>
+
+<p class="whs2">&nbsp;&nbsp;Sample_Point::Sample_Point(const</p>
+
+<p class="whs2">&nbsp;&nbsp;Standard_Real 
+ x, const Standard_Real y)</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;{</p>
+
+<p class="whs2">&nbsp;&nbsp;myX 
+ = x;</p>
+
+<p class="whs2">&nbsp;&nbsp;myY 
+ = y;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;Sample_Point::Sample_Point()</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;&nbsp;{</p>
+
+<p class="whs2">&nbsp;&nbsp;myX 
+ = 0.0;</p>
+
+<p class="whs2">&nbsp;&nbsp;myY 
+ = 0.0;</p>
+
+<p class="whs2">&nbsp;&nbsp;}</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

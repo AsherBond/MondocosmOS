@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepFeat__MakeDPrism.html" title="Describes functions to build draft &#160;&#160;prism topologies from basis shape surfaces...." alt="" coords="5,237,184,267"/>
+<area shape="rect" id="node9" href="$classBRepFeat__MakePipe.html" title="Constructs compound shapes with pipe &#160;&#160;features. These can be depressions or protrusions..." alt="" coords="208,237,368,267"/>
+<area shape="rect" id="node11" href="$classBRepFeat__MakePrism.html" title="Describes functions to build prism features. &#160;&#160;These can be depressions or protrusions..." alt="" coords="392,237,560,267"/>
+<area shape="rect" id="node13" href="$classBRepFeat__MakeRevol.html" title="Describes functions to build revolved shells from basis shapes. &#160;" alt="" coords="584,237,752,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="276,83,487,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="281,5,481,35"/>
+</map>

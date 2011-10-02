@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepShape__EdgeCurve.html" title="StepShape_EdgeCurve" alt="" coords="5,392,181,421"/>
+<area shape="rect" id="node13" href="$classStepShape__OrientedEdge.html" title="StepShape_OrientedEdge" alt="" coords="205,392,400,421"/>
+<area shape="rect" id="node17" href="$classStepShape__Subedge.html" title="Representation of STEP entity Subedge &#160;" alt="" coords="424,392,584,421"/>
+<area shape="rect" id="node2" href="$classStepShape__TopologicalRepresentationItem.html" title="StepShape_TopologicalRepresentationItem" alt="" coords="148,237,457,267"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="188,160,417,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="241,83,364,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="228,5,377,35"/>
+<area shape="rect" id="node15" href="$classStepShape__SeamEdge.html" title="Representation of STEP entity SeamEdge &#160;" alt="" coords="216,469,389,499"/>
+</map>

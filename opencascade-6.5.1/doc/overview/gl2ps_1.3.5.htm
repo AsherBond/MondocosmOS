@@ -1,0 +1,253 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>gl2ps 1.3.5</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-weight:normal; font-size:10pt; }
+img_whs2 { border:none; width:619px; height:342px; border-style:none; }
+img_whs3 { border:none; width:508px; height:247px; border-style:none; }
+img_whs4 { border:none; width:724px; height:501px; border-style:none; }
+img_whs5 { border:none; width:603px; height:426px; border-style:none; }
+img_whs6 { border:none; width:696px; height:575px; border-style:none; }
+img_whs7 { border:none; width:625px; height:496px; border-style:none; }
+p.whs8 { font-size:10pt; font-weight:normal; }
+ul.whs9 { list-style:disc; }
+img_whs10 { border:none; width:630px; height:354px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Welcome to Open CASCADE Technology\nCompilation of third-party products used for OCCT\nRecommendations for compilation\ngl2ps 1.3.5");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>gl2ps 1.3.5</p>
+
+<p>&nbsp;</p>
+
+<p class=ReleaseNotes-2>Windows</p>
+
+<p class="whs1">1. Download (http://www.cmake.org/cmake/resources/software.html) 
+ and install the cmake build system.</p>
+
+<p class="whs1">2. Add to CMakeLists.txt 
+ after line 113 :</p>
+
+<p class="whs1">set_target_properties(shared 
+ PROPERTIES COMPILE_FLAGS &quot;-DGL2PSDLL -DGL2PSDLL_EXPORTS&quot;)</p>
+
+<p class="whs1">the following line:</p>
+
+<p class="whs1">add_definitions(-D_USE_MATH_DEFINES)</p>
+
+<p class="whs1">3. Launch cmake-gui.exe</p>
+
+<p class="whs1">4. Define a path for source 
+ files, where binaries will be built and then push the Configure button.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image19.jpg" width="619px" height="342px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">5. Select a compiler in 
+ the pop-up window.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image20.jpg" width="508px" height="247px" border="0" class="img_whs3"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">The following window will 
+ appear.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image21.jpg" width="724px" height="501px" border="0" class="img_whs4"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">6. Expand the ENABLE group 
+ and deselect ENABLE_PNG and ENABLE_ZLIB check boxes.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image22.jpg" width="603px" height="426px" border="0" class="img_whs5"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">7. Expand the CMAKE group 
+ and define CMAKE_INSTALL_PREFIX (path where you want to install the build 
+ results).</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image23.jpg" width="696px" height="575px" border="0" class="img_whs6"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">8. Push the Configure 
+ button again and then the Generate button in order to generate the VS 
+ projects.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">9. Open the gl2ps.sln 
+ project in VS and in Solution Explorer set <span style="font-weight: bold;"><B>INSTALL</B></span> 
+ as the StartUp project and start building.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image24.jpg" width="625px" height="496px" border="0" class="img_whs7"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">10. As a result you will 
+ get an installed gl2ps in the CMAKE_INSTALL_PREFIX path.</p>
+
+<p class=ReleaseNotes-2>&nbsp;</p>
+
+<p class=ReleaseNotes-2>Linux</p>
+
+<p class="whs8">1. Install or build cmake 
+ products from source files.</p>
+
+<p class="whs8">2. Update of gl2ps source 
+ files:</p>
+
+<p class="whs8">3. Comment line 106 and 
+ 107</p>
+
+<p class="whs8">&nbsp;&nbsp;#add_library(lib 
+ STATIC gl2ps.c gl2ps.h)</p>
+
+<p class="whs8">&nbsp;&nbsp;#set_target_properties(lib 
+ PROPERTIES OUTPUT_NAME gl2ps)</p>
+
+<p class="whs8">4. Correct line 116</p>
+
+<p class="whs8">Please, replace the string 
+ </p>
+
+<p class="whs8">&nbsp;&nbsp;install(TARGETS 
+ lib shared DESTINATION lib)</p>
+
+<p class="whs8">with</p>
+
+<p class="whs8">&nbsp;&nbsp;install(TARGETS 
+ shared DESTINATION lib)</p>
+
+<p class="whs8">5. Start <span style="font-weight: bold;"><B>ccmake</B></span> 
+ in GUI mode with a path to the source of gl2ps as an argument</p>
+
+<ul type="disc" class="whs9">
+	
+	<li class=kadov-p><p class="whs8">ccmake 
+ /dn40/gl2ps-1.3.5-source</p></li>
+</ul>
+
+<p class="whs8">6. Press [c] to make the 
+ initial configuration</p>
+
+<p class="whs8">7. Define CMAKE_INSTALL_PREFIX, 
+ EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH to a location where are 
+ you going to install the gl2ps products.</p>
+
+<p class="whs8">&nbsp;</p>
+
+<p class="whs8"><img src="image1.gif" width="630px" height="354px" border="0" class="img_whs10"></p>
+
+<p class="whs8">&nbsp;</p>
+
+<p class="whs8"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">8. 
+ Press [c] to make the final configuration</font></span></p>
+
+<p class="whs8">9. Press [g] to make generation 
+ of Makefile files and exit.</p>
+
+<ul type="disc" class="whs9">
+	
+	<li class=kadov-p><p class="whs8">make</p></li>
+	
+	<li class=kadov-p><p class="whs8">make 
+ install</p></li>
+</ul>
+
+<p class="whs8">10. As a result you will 
+ obtain an installed gl2ps in the CMAKE_INSTALL_PREFIX path.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classImage__PixelInterpolation.html" title="The class PixelInterpolation is used to compute a Pixel &#160;&#160;value on non&#45;integer Image..." alt="" coords="5,85,195,115"/>
+<area shape="rect" id="node3" href="$classImage__AveragePixelInterpolation.html" title="The class AveragePixelInterpolation is used to compute a SubPixel &#160;&#160;value on non..." alt="" coords="247,5,489,35"/>
+<area shape="rect" id="node5" href="$classImage__BalancedPixelInterpolation.html" title="The class BalancedPixelInterpolation is used to compute a &#160;&#160;SubPixel value on non..." alt="" coords="243,59,493,88"/>
+<area shape="rect" id="node7" href="$classImage__BilinearPixelInterpolation.html" title="The class BilinearPixelInterpolation is used to compute a &#160;&#160;SubPixel value on non..." alt="" coords="249,112,487,141"/>
+<area shape="rect" id="node9" href="$classImage__PlanarPixelInterpolation.html" title="The class PlanarPixelInterpolation is used to compute a &#160;&#160;SubPixelvalue on non integer..." alt="" coords="253,165,483,195"/>
+</map>

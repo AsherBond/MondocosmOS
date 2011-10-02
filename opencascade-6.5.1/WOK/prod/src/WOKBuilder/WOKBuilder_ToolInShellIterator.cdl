@@ -1,0 +1,82 @@
+-- File:	WOKBuilder_ToolInShellIterator.cdl
+-- Created:	Thu Jul 11 21:33:46 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class ToolInShellIterator from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    Entity                             from WOKBuilder,
+    HSequenceOfEntity                  from WOKBuilder,
+    ToolInShell                        from WOKBuilder,
+    BuildStatus                        from WOKBuilder,
+    HSequenceOfToolInShell             from WOKBuilder,
+    DataMapOfHAsciiStringOfToolInShell from WOKBuilder,
+    HSequenceOfPath                    from WOKUtils,
+    Shell                              from WOKUtils,
+    Param                              from WOKUtils,
+    Path                               from WOKUtils,
+    HAsciiString                       from TCollection
+is
+
+    Create(toolgroup : HAsciiString from TCollection;
+    	   Param    : Param        from WOKUtils)
+    	returns ToolInShellIterator from WOKBuilder;
+
+    Create(tools : HSequenceOfToolInShell from WOKBuilder) 
+    	returns ToolInShellIterator from WOKBuilder;
+
+    Create(toolgroup : HAsciiString from TCollection;
+    	   ashell    : Shell        from WOKUtils; 
+	   adir      : Path         from WOKUtils;
+    	   Param    : Param        from WOKUtils)
+    	returns ToolInShellIterator from WOKBuilder;
+
+    Destroy ( me : out );
+    ---C++: alias "Standard_EXPORT virtual ~WOKBuilder_ToolInShellIterator () {}"
+
+    Init(me:out; ashell    : Shell        from WOKUtils; 
+	    	 adir      : Path         from WOKUtils)
+    	is virtual;
+
+    SetShell(me:out; ashell : Shell from WOKUtils);
+    Shell(me) returns Shell from WOKUtils;
+    
+    SetParam(me:out; Param : Param from WOKUtils);
+    Param(me) returns Param from WOKUtils;
+
+    SetOutputDir(me:out; apath : Path from WOKUtils);
+    OutputDir(me) returns Path from WOKUtils;
+
+    GetTool(me;aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns ToolInShell from WOKBuilder
+    	is virtual;
+
+    LoadGroup(me:out)
+    	returns Integer from Standard
+    	is virtual;
+
+    Tools(me)
+    	returns HSequenceOfToolInShell from WOKBuilder;
+
+    IsTreatedExtension(me; anext : HAsciiString from TCollection) 
+       	returns Boolean from Standard;
+
+    AppropriateTool(me; anent : Entity from WOKBuilder)
+    	returns ToolInShell from WOKBuilder;
+
+    Produces(me)
+    	returns HSequenceOfEntity from WOKBuilder;
+
+fields
+    mygroup      : HAsciiString                       from TCollection;
+    myexts       : DataMapOfHAsciiStringOfToolInShell from WOKBuilder;
+    myparams     : Param                              from WOKUtils;
+    myshell      : Shell                              from WOKUtils;
+    myoutdir     : Path                               from WOKUtils;
+    mytools      : HSequenceOfToolInShell             from WOKBuilder;
+    myproduction : HSequenceOfEntity                  from WOKBuilder is protected;
+end ToolInShellIterator;

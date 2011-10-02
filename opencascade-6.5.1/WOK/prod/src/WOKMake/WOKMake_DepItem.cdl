@@ -1,0 +1,77 @@
+-- File:	WOKMake_DepItem.cdl
+-- Created:	Mon Nov 20 19:58:42 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class DepItem from WOKMake 
+inherits TShared from MMgt
+
+	---Purpose: Handles Single Output Item within a step
+
+uses
+    IndexedMapOfDepItem from WOKMake,
+    FileStatus          from WOKMake,
+    Path                from WOKUtils,
+    HAsciiString        from TCollection,
+    Boolean             from Standard
+    
+is
+
+    Create(afile : HAsciiString from TCollection ; issuedfrom : HAsciiString from TCollection) 
+    	returns mutable DepItem from WOKMake;
+    	
+	
+    SetOrigin(me:mutable; anorigin : HAsciiString from TCollection);
+    IssuedFrom(me) 
+    ---C++: return const &
+    ---C++: inline
+    	returns HAsciiString from TCollection;
+	
+    SetOutputFile(me:mutable; afile : HAsciiString from TCollection);
+    OutputFile(me)
+    ---C++: return const &
+    ---C++: inline
+       	returns HAsciiString from TCollection;
+
+    SetDirect(me:mutable);
+    SetIndirect(me:mutable);
+    IsDirectDep(me)
+    ---C++: inline
+        returns Boolean from Standard;
+
+    SetStatus(me:mutable; astatus : FileStatus from WOKMake);
+    Status(me)
+    ---C++: inline
+    	returns FileStatus from WOKMake;
+
+    --
+    --     READ/WRITE OUTPUT FILES 
+    --  
+
+    ReadLine(myclass; astream     : out IStream from Standard;
+    	    	      anitem      : out DepItem from WOKMake;
+    	    	      lastone     : DepItem from WOKMake)
+    	is private;
+
+    WriteLine(myclass; astream     : out OStream from Standard;
+    	    	       anitem      : DepItem from WOKMake;
+    	    	       lastone     : DepItem from WOKMake)
+        is private;
+
+    -- Into/From a seq
+    ReadFile(myclass; afile : Path from WOKUtils; 
+    	    	      aseq  : out IndexedMapOfDepItem from WOKMake)
+    	returns Integer from Standard;
+    
+    WriteFile(myclass; afile : Path from WOKUtils; aseq : IndexedMapOfDepItem from WOKMake)
+    	returns Integer from Standard;
+
+
+fields
+    myfile   : HAsciiString from TCollection;
+    myorigin : HAsciiString from TCollection;
+    mydirect : Boolean      from Standard;
+    mystatus : FileStatus   from WOKMake;
+end DepItem;

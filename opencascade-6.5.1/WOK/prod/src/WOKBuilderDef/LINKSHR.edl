@@ -1,0 +1,473 @@
+-- File:	LINKSHR.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 17:04:32 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %LINKSHR_EDL ) then
+ @set %LINKSHR_EDL = "";
+
+ @ifnotdefined ( %LDSHR_EDL ) then
+  @uses "LDSHR.edl";
+ @endif;
+
+ @ifnotdefined ( %CSF_EDL ) then
+    @uses "CSF.edl";
+ @endif;
+
+ @set %LINKSHR_Header          = "LINKSHR_Header";
+ @set %LINKSHR_ObjectRef       = "LD_ObjectRef";
+ @set %LINKSHR_ShortRef        = "LD_ShortRef";
+ @set %LINKSHR_LongRef         = "LD_LongRef";
+ @set %LINKSHR_SharedFullPath  = "LD_SharedFullPath";
+ @set %LINKSHR_ArchiveFullPath = "LDSHR_ArchiveFullPath";
+ @set %LINKSHR_ExternRef       = "LD_ExternRef";
+ @set %LINKSHR_Footer          = "LD_Footer";
+
+ @set %LINKSHR_Use_Externlib   = %CSF_USE_EXTERNLIB;
+ 
+ @if ( %Station == "sun" ) then
+  @set %LINKSHR_DBMSOpt = %CSF_LINKER_DBMSOpt;
+ @else
+  @set %LINKSHR_DBMSOpt = "";
+ @endif;
+---@set %LINKSHR_DBMSOpt =  %CSF_LINKER_CheckOpt ;
+
+
+ @if ( %Station != "hp" && %Station != "mac" ) then
+  @template LINKSHR_FileName ( %LINKSHR_LibName ) is
+   $lib%LINKSHR_LibName.so\^
+  @end;
+ @endif;
+
+ @if ( %Station == "hp" ) then
+  @template LINKSHR_FileName ( %LINKSHR_LibName ) is
+   $lib%LINKSHR_LibName.sl\^
+  @end;
+ @endif;
+
+ @if ( %Station == "mac" ) then
+  @template LINKSHR_FileName ( %LINKSHR_LibName ) is
+   $lib%LINKSHR_LibName.dylib\^
+  @end;
+ @endif;
+
+ @template LINKSHR_ArchiveFullPath ( %LibDir, %LibName ) is
+ $ -all %LibDir/lib%LibName.a -none \
+ @end;
+
+ @if( %Station == "sun" ) then 
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ArchiveFullPath = "LINKSHR_ArchiveFullPath";
+
+  @template LINKSHR_ArchiveFullPath () is
+   $\^
+  @end;
+
+  @template LINKSHR_Header ( %Target, %LDSHR_Opt  , %LINKSHR_DBMSOpt , %CSF_CXX_COMPILERLINKER ) is 
+   $%CSF_CXX_COMPILERLINKER  %LDSHR_Opt   %LINKSHR_DBMSOpt -o %Target \
+  @end;
+
+  @template LINKSHR_Footer (%CSF_LINKER_SysLib) is
+    $ %CSF_LINKER_SysLib;
+    $ set ld_status=$status
+    $ if ( $?LD_LIBRARY_PATH ) then
+    $  set ld_library_path=$LD_LIBRARY_PATH
+    $ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader (
+             %Target, %LINKSHR_DBMSOpt, %LD_LIBRARY_PATH, %CSF_LINKER
+            ) is 
+   $if ( $?LD_LIBRARY_PATH ) then
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH:${LD_LIBRARY_PATH}
+   $else
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH
+   $endif
+   $echo "Check of undefined symbols with LD_LIBRARY_PATH : $LD_LIBRARY_PATH"
+   $%CSF_LINKER -o /dev/null \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    $ if ( $status ) then
+    $   echo "Check failed"
+    $ else
+    $   echo "Check successed"
+    $ endif
+    $ if ( $?ld_library_path ) then
+    $  setenv LD_LIBRARY_PATH $ld_library_path
+    $ else
+    $  unsetenv LD_LIBRARY_PATH
+    $ endif
+    $ set status=$ld_status
+  @end;
+ @endif;
+
+ @if( %Station == "ao1") then
+  --@set %LINKSHR_LibLimit = "300";
+
+  @template LINKSHR_Header ( %Target, %LINKSHR_DBMSOpt, %CSF_CXX_COMPILERLINKER, %LogicalName, %CSF_LINKER_SysShared, %CSF_LINKER_SysOpt ) is 
+   $%CSF_CXX_COMPILERLINKER %CSF_LINKER_SysShared %LINKSHR_DBMSOpt %CSF_LINKER_SysOpt -o %Target -soname %LogicalName \
+  @end;
+ @endif;
+
+ @if( %Station == "sil" ) then
+  @set %LINKSHR_ObjectRef       = "LINKSHR_ObjectRef";
+
+  @template LINKSHR_ObjectRef ( %ObjectPath ) is
+   $\^
+  @end;
+
+    @set %LINKSHR_Opt = "-64 -mips4 -Wl,-mmap -multigot -no_prelink";
+    @set %LINKSHR_Check = "-64 -mips4 -mmap -multigot -no_unresolved";
+    @set %LINKSHR_Linker = "/usr/bin/ld";
+
+-- @template LINKSHR_Header ( %Target, %LINKSHR_DBMSOpt, %CSF_CXX_COMPILERLINKER, %LogicalName, %LD_ObjList, %CSF_LINKER_SysShared, %CSF_LINKER_SysOpt ) is
+-- --$/usr/bin/CC -n32 -mips3 -Wl,-mmap -multigot -no_prelink %CSF_LINKER_SysShared %LINKSHR_DBMSOpt -no_unresolved -o %Target -soname %LogicalName \
+-- $%CSF_CXX_COMPILERLINKER %CSF_LINKER_SysShared %CSF_LINKER_SysOpt %LINKSHR_DBMSOpt -no_unresolved -o %Target -soname %LogicalName \
+-- $  -all -objectlist %LD_ObjList -none \
+-- @end;
+     @template LINKSHR_Header ( %LINKSHR_DBMSOpt, %Target, %LogicalName, %LD_ObjList, %CSF_LINKER_SysShared, %CSF_CXX_COMPILER, %LINKSHR_Opt ) is
+         $set CSF_CXX_COMPILER = "%CSF_CXX_COMPILER"
+	 $set LINKSHR_Opt = "%LINKSHR_Opt"
+         $${CSF_CXX_COMPILER} ${LINKSHR_Opt} %CSF_LINKER_SysShared %LINKSHR_DBMSOpt -no_unresolved -o %Target -soname %LogicalName \
+         $  -all -objectlist %LD_ObjList -none \
+     @end;
+
+  @template LINKSHR_Footer ( %Station ) is
+    $-lm ;
+    $ set ld_status=$status
+    --$ /usr/bin/rm -f so_locations
+    --$ if ( $?LD_LIBRARY_PATH ) then
+    --$  set ld_library_path=$LD_LIBRARY_PATH
+    --$ endif
+  @end;
+
+--  @template LINKSHR_CheckUndefHeader (%CSF_LINKER, %LD_LIBRARY_PATH, %CSF_LINKER_CheckOpt, %CSF_LINKER_CheckOut ) is
+--   --$if ( $?LD_LIBRARY_PATH ) then
+--   --$ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH:$LD_LIBRARY_PATH
+--   --$else
+--   --$ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH
+--   --$endif
+--   $echo "Check of undefined symbols with LD_LIBRARY_PATH : $LD_LIBRARY_PATH"
+--   $echo "Does not run on SGI : -no_unresolved does give unresolved symbols of a shareable image ..."
+--   $%CSF_LINKER %CSF_LINKER_CheckOpt %CSF_LINKER_CheckOut \
+--  @end;
+
+     @template LINKSHR_CheckUndefHeader ( %LD_LIBRARY_PATH, %LINKSHR_Linker, %LINKSHR_Check ) is
+         $echo "Check of undefined symbols with LD_LIBRARY_PATH : $LD_LIBRARY_PATH"
+         $echo "Does not run on SGI : -no_unresolved does give unresolved symbols of a shareable image ..."
+	 $set LINKSHR_Linker = "%LINKSHR_Linker"
+	 $set LINKSHR_Check = "%LINKSHR_Check"
+         $${LINKSHR_Linker} ${LINKSHR_Check} -o /dev/null \
+     @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    --$ if ( $status ) then
+    --$   echo "Check failed"
+    --$ else
+    --$   echo "Check successed"
+    --$ endif
+    --$ if ( $?ld_library_path ) then
+    --$  setenv LD_LIBRARY_PATH $ld_library_path
+    --$ else
+    --$  unsetenv LD_LIBRARY_PATH
+    --$ endif
+    $ set status=$ld_status
+  @end;
+ @endif;
+
+ @if( %Station == "hp" ) then
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ObjectRef       = "LINKSHR_ObjectRef";
+
+  @template LINKSHR_Header ( %LINKSHR_DBMSOpt, %Target, %LD_ObjList, %LogicalName ) is
+   $\cp %LD_ObjList %LD_ObjList.o
+   --$/opt/aCC/bin/aCC %LINKSHR_DBMSOpt -b +Z -Wl,+s -Wl,+h%LogicalName -Wl,+vshlibunsats -v -o %Target  \
+   $/opt/aCC/bin/aCC %LINKSHR_DBMSOpt -b +Z -Wl,+s -Wl,+h%LogicalName -Wl,+vshlibunsats -o %Target  \
+   --$/opt/aCC/bin/aCC %LINKSHR_DBMSOpt -b -o %Target  \
+   $-Wl,-c%LD_ObjList.o \
+  @end;
+
+  @template LINKSHR_Footer ( %Station ) is
+   $-L/usr/lib/aCC -ldld -L/usr/lib -lM -lstd -lCsup -lstream -lcl -lc -lm \
+   $;
+   $ set ld_status=${status}
+   --$ if ( $?SHLIB_PATH ) then
+   --$  set ld_library_path="${SHLIB_PATH}"
+   --$ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader ( %LD_LIBRARY_PATH ) is 
+   --$if ( $?SHLIB_PATH ) then
+   --$ setenv SHLIB_PATH "%LD_LIBRARY_PATH:${SHLIB_PATH}"
+   --$else
+   --$ setenv SHLIB_PATH "%LD_LIBRARY_PATH"
+   --$endif
+   $echo "Check of undefined symbols with SHLIB_PATH : ${SHLIB_PATH}"
+   $echo "Does not run on HP : -Wl,+vshlibunsats gives always __shlinit undefined and does not give an error status ..."
+   $/opt/aCC/bin/aCC -b -Wl,+s -Wl,+vshlibunsats -o /dev/null \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    --$ if ( ${status} ) then
+    --$   echo "Check failed"
+    --$ else
+    --$   echo "Check successed"
+    --$ endif
+    --$ if ( $?ld_library_path ) then
+    --$  setenv SHLIB_PATH "${ld_library_path}"
+    --$ else
+    --$  unsetenv SHLIB_PATH
+    --$ endif
+    $ set status=$ld_status
+   $
+  @end;
+
+  @template LINKSHR_ObjectRef () is
+   $\^
+  @end;
+ @endif;
+
+ @if ( %Station == "lin" ) then
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ArchiveFullPath = "LINKSHR_ArchiveFullPath";
+
+  @template LINKSHR_ArchiveFullPath () is
+   $\^
+  @end;
+
+  @template LINKSHR_Header (%CSF_CXX_COMPILERLINKER, %Target, %LINKSHR_DBMSOpt, %CSF_LINKER_SysShared ) is
+   $%CSF_CXX_COMPILERLINKER %CSF_LINKER_SysShared %LINKSHR_DBMSOpt -o %Target \
+  @end;
+
+  @template LINKSHR_Footer (%CSF_LINKER_SysLib) is
+   $ %CSF_LINKER_SysLib;
+   $ set ld_status=$status
+   $ if ( $?LD_LIBRARY_PATH ) then
+   $  set ld_library_path=$LD_LIBRARY_PATH
+   $ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader (
+             %Target, %LINKSHR_DBMSOpt, %LD_LIBRARY_PATH, %CSF_LINKER_CheckOpt, %CSF_LINKER_CheckOut, %CSF_LINKER
+       ) is 
+   $if ( $?LD_LIBRARY_PATH ) then
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH:${LD_LIBRARY_PATH}
+   $else
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH 
+   $endif
+   $echo "Check of undefined symbols with LD_LIBRARY_PATH : $LD_LIBRARY_PATH"
+   $%CSF_LINKER %CSF_LINKER_CheckOpt %CSF_LINKER_CheckOut \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    $ if ( $status ) then
+    $   echo "Check failed"
+    $ else
+    $   echo "Check successed"
+    $ endif
+    $ if ( $?ld_library_path ) then
+    $  setenv LD_LIBRARY_PATH $ld_library_path
+    $ else
+    $  unsetenv LD_LIBRARY_PATH
+    $ endif
+    $ set status=$ld_status
+  @end;
+ @endif;
+
+--     #######   ###   #     #     --
+--     #     #    #     #   #      --
+--     #     #    #      # #       --
+--     #######    #       #        --
+--     #     #    #      # #       --
+--     #     #    #     #   #      --
+--     #     #   ###   #     #     --
+
+ @if ( %Station == "aix" ) then
+
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ArchiveFullPath = "LINKSHR_ArchiveFullPath";
+  @set %LINKSHR_ObjectRef       = "LINKSHR_ObjectRef";
+  @set %LINKSHR_ShortRef        = "LINKSHR_ShortRef";
+  @set %LINSHR_ShortRef         = "LD_ShortRef";
+  @set %LINKSHR_LibLimit = "300";
+
+  @template LINKSHR_ObjectRef ( %ObjectPath ) is
+   $\^
+  @end;
+
+  @template LINKSHR_ArchiveFullPath ( %LibName) is
+  $ lib%LibName.a \
+  @end;
+
+  @template LD_ShortRef ( %LibNameUsed ) is
+   $ -Ilib%LibNameUsed.exp \
+  @end;
+
+  @template LINKSHR_Header ( %Target, %LINKSHR_DBMSOpt , %LD_ObjList ) is 
+   $ set allLibPath  = `dirname %LD_ObjList`/../../lib/
+   $ set localud     = `basename %LD_ObjList .ObjList`
+   $ set locallib    = `dirname %LD_ObjList`/../${localud}/lib${localud}.a
+   $ mv -f $locallib $allLibPath
+   $ chmod 755 ${allLibPath}/lib${localud}.a
+   $ cd ${allLibPath}
+   $ /usr/ibmcxx/bin/makeC++SharedLib   -o %Target \
+   $ -bM:SRE \
+   $ -p 0 \
+  @end;
+
+  @template LINKSHR_Footer ( %Target, %LibName) is
+    $ -e${allLibPath}/lib%LibName.imp \
+    $ -bnoentry ;
+---    $ set ld_status=${status}
+--    $ echo "#\!lib%LibName"               > ${allLibPath}/lib%LibName.exp
+--    $ cat ${allLibPath}/lib%LibName.imp  >> ${allLibPath}/lib%LibName.exp
+--    $ if ( $?LIBPATH ) then
+--    $  set ld_library_path="${LIBPATH}"
+--    $ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader (
+             %Target, %LINKSHR_DBMSOpt, %LD_LIBRARY_PATH
+            ) is 
+--   $if ( $?{LIBPATH} ) then
+--   $ setenv {LIBPATH} %LD_LIBRARY_PATH:${LIBPATH}
+--   $else
+--   $  if ( $?LD_LIBRARY_PATH) then
+--   $     setenv LIBPATH %LD_LIBRARY_PATH
+--   $  else 
+--   $     setenv LIBPATH ""
+--   $  endif
+--   $endif
+--     $ echo " 	Check of undefined symbols not made on AIX "
+--     $ /usr/bin/ld -o /dev/null \
+	$ \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+ --   $ if ( ${status} ) then
+ --   $   echo "Check failed"
+ --   $ else
+ --   $   echo "Check1 successed"
+ --   $ endif
+ --   $ if ( $?{ld_library_path} ) then
+ --   $  setenv LIBPATH "${ld_library_path}"
+ --   $ else
+ --   $  unsetenv LIBPATH
+ --   $ endif
+--    $ set status=${ld_status}
+  @end;
+
+ @endif;
+
+---------------------------------------------
+-- Darwin (MacOS X)
+---------------------------------------------
+
+ @if ( %Station == "mac" ) then
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ArchiveFullPath = "LINKSHR_ArchiveFullPath";
+
+  @template LINKSHR_ArchiveFullPath () is
+   $\^
+  @end;
+
+  @template LINKSHR_Header (%CSF_CXX_COMPILERLINKER, %Target, %LINKSHR_DBMSOpt, %CSF_LINKER_SysShared ) is
+   $%CSF_CXX_COMPILERLINKER %CSF_LINKER_SysShared %LINKSHR_DBMSOpt -o %Target  \
+  @end;
+
+  @template LINKSHR_Footer (%CSF_LINKER_SysLib) is
+   $ %CSF_LINKER_SysLib;
+   $ set ld_status=$status
+   $ if ( $?DYLD_LIBRARY_PATH ) then
+   $  set ld_library_path=$DYLD_LIBRARY_PATH
+   $ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader (
+             %Target, %LINKSHR_DBMSOpt, %LD_LIBRARY_PATH, %CSF_LINKER_CheckOpt, %CSF_LINKER_CheckOut, %CSF_LINKER
+       ) is 
+   $if ( $?DYLD_LIBRARY_PATH ) then
+   $ setenv DYLD_LIBRARY_PATH %LD_LIBRARY_PATH:${DYLD_LIBRARY_PATH}
+   $else
+   $ setenv DYLD_LIBRARY_PATH %LD_LIBRARY_PATH 
+   $endif
+   $echo "Check of undefined symbols with DYLD_LIBRARY_PATH : $DYLD_LIBRARY_PATH"
+   $%CSF_LINKER %CSF_LINKER_CheckOpt %CSF_LINKER_CheckOut \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    $ if ( $status ) then
+    $   echo "Check failed"
+    $ else
+    $   echo "Check successed"
+    $ endif
+    $ if ( $?ld_library_path ) then
+    $  setenv DYLD_LIBRARY_PATH $ld_library_path
+    $ else
+    $  unsetenv DYLD_LIBRARY_PATH
+    $ endif
+    $ set status=$ld_status
+  @end;
+ @endif;
+
+---------------------------------------------
+-- FreeBSD
+---------------------------------------------
+
+ @if ( %Station == "bsd" ) then
+  @set %LINKSHR_Footer          = "LINKSHR_Footer";
+  @set %LINKSHR_ArchiveFullPath = "LINKSHR_ArchiveFullPath";
+
+  @template LINKSHR_ArchiveFullPath () is
+   $\^
+  @end;
+
+  @template LINKSHR_Header (%CSF_CXX_COMPILERLINKER, %Target, %LINKSHR_DBMSOpt, %CSF_LINKER_SysShared ) is
+   $%CSF_CXX_COMPILERLINKER %CSF_LINKER_SysShared %LINKSHR_DBMSOpt -o %Target \
+  @end;
+
+  @template LINKSHR_Footer (%CSF_LINKER_SysLib) is
+   $ %CSF_LINKER_SysLib;
+   $ set ld_status=$status
+   $ if ( $?LD_LIBRARY_PATH ) then
+   $  set ld_library_path=$LD_LIBRARY_PATH
+   $ endif
+  @end;
+
+  @template LINKSHR_CheckUndefHeader (
+             %Target, %LINKSHR_DBMSOpt, %LD_LIBRARY_PATH, %CSF_LINKER_CheckOpt, %CSF_LINKER_CheckOut, %CSF_LINKER
+       ) is
+   $if ( $?LD_LIBRARY_PATH ) then
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH:${LD_LIBRARY_PATH}
+   $else
+   $ setenv LD_LIBRARY_PATH %LD_LIBRARY_PATH
+   $endif
+   $echo "Check of undefined symbols with LD_LIBRARY_PATH : $LD_LIBRARY_PATH"
+   $%CSF_LINKER %CSF_LINKER_CheckOpt %CSF_LINKER_CheckOut \
+  @end;
+
+  @template LINKSHR_CheckUndefFooter () is
+    $ ;
+    $ if ( $status ) then
+    $   echo "Check failed"
+    $ else
+    $   echo "Check successed"
+    $ endif
+    $ if ( $?ld_library_path ) then
+    $  setenv LD_LIBRARY_PATH $ld_library_path
+    $ else
+    $  unsetenv LD_LIBRARY_PATH
+    $ endif
+    $ set status=$ld_status
+  @end;
+ @endif;
+
+@endif;
+

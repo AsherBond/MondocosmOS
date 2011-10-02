@@ -1,0 +1,46 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Common.cdl	1.1
+-- File:	Common.cdl
+-- Created:	Tue Jan 29 09:59:14 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Common 
+    	---Purpose:
+
+    from 
+    	MS 
+    inherits TShared from MMgt
+    uses 
+    	HAsciiString from TCollection,
+	MetaSchemaPtr from MS,
+	MetaSchema from MS
+     
+
+is
+    Initialize(aName: HAsciiString);
+    Initialize(aName: HAsciiString; aMetaSchema : MetaSchema from MS);
+
+    Name(me: mutable; aName:HAsciiString) is virtual;
+    Name(me) returns mutable HAsciiString is virtual;
+    ---C++:return const &
+    --            
+    FullName(me: mutable; aName:HAsciiString) is virtual;
+    FullName(me) returns mutable HAsciiString is virtual;
+    ---C++:return const &
+    
+    MetaSchema(me : mutable; aMetaSchema : MetaSchema from MS);
+    ---Purpose: set the workspace for <me>.
+    
+    GetMetaSchema(me) returns MetaSchemaPtr from MS;
+    ---Purpose: get the workspace of <me>.
+ 
+fields
+
+    myName         : HAsciiString from TCollection;
+    myFullName     : HAsciiString from TCollection;
+    myMetaSchema   : MetaSchemaPtr from MS;
+
+end Common from MS;

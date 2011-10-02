@@ -1,0 +1,97 @@
+-- File:	WOKAPI_Workbench.cdl
+-- Created:	Tue Aug  1 17:13:32 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Workbench from WOKAPI 
+inherits Entity from WOKAPI
+
+	---Purpose: Workbench Manipulation
+
+uses
+
+    Session                 from WOKAPI,
+    SequenceOfUnit          from WOKAPI,
+    SequenceOfWorkbench     from WOKAPI,
+    SequenceOfEntity        from WOKAPI,
+    HSequenceOfParamItem    from WOKUtils,
+    Workbench               from WOKernel,
+    ArgTable                from WOKTools,
+    Return                  from WOKTools,
+    HSequenceOfDefine       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    SequenceOfHAsciiString  from TColStd
+is
+
+    Create returns Workbench from WOKAPI;
+
+    Create(aent : Entity from WOKAPI)
+    	returns Workbench from WOKAPI;
+
+    Create(asession : Session from WOKAPI;
+    	   aname    : HAsciiString from TCollection;
+    	   verbose  : Boolean from Standard = Standard_False;
+    	   getit    : Boolean from Standard = Standard_True)
+	returns Workbench from WOKAPI;
+
+    BuildParameters(me:out; asession    : Session from WOKAPI;
+		            apath       : HAsciiString from TCollection; 
+		            afather     : HAsciiString from TCollection; 
+		            defines     : HSequenceOfDefine from WOKTools;
+    	                    usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+    Build(me:out; asession    : Session from WOKAPI;
+    	          apath       : HAsciiString from TCollection; 
+    	          afather     : HAsciiString from TCollection; 
+		  defines     : HSequenceOfDefine from WOKTools;
+    	          usedefaults : Boolean from Standard)
+    	returns Boolean from Standard;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;    
+
+    KnownTypeKeys(me)
+    	returns HAsciiString from TCollection;
+
+    KnownTypeNames(me; aseq : out SequenceOfHAsciiString from TColStd);
+
+    IsValid(me) 
+    	returns Boolean from Standard
+	is redefined;
+
+    ChangeFather(me; afather : Workbench from WOKAPI)
+    	returns Boolean from Standard;
+
+    Father(me)
+    	returns Workbench from WOKAPI;
+	
+    Ancestors(me; benchseq : out SequenceOfWorkbench from WOKAPI);
+
+    NestedEntities(me; aseq : out SequenceOfEntity from WOKAPI)
+    	returns Boolean from Standard
+    	is redefined;
+
+    Units(me; unitseq : out SequenceOfUnit from WOKAPI);
+
+    UnitsOfType(me; type     : HAsciiString from TCollection;
+    	    	    unitseq  : out SequenceOfUnit from WOKAPI; 
+    	    	    clearseq : Boolean from Standard = Standard_True);
+
+    Toolkits(me; tkseq : out SequenceOfUnit from WOKAPI);
+    
+    ImplSuppliers(me; aunitname   : HAsciiString from TCollection; 
+    	    	      unitseq     : out SequenceOfUnit from WOKAPI);
+		      
+    ImplClients(me; aunitname   : HAsciiString from TCollection;
+    	    	    unitseq     : out SequenceOfUnit from WOKAPI); 
+		    
+    SortUnitList(me; aunitlist       : HSequenceOfHAsciiString from TColStd;
+    	             asortedunitlist : out HSequenceOfHAsciiString from TColStd);
+	
+end Workbench;
+

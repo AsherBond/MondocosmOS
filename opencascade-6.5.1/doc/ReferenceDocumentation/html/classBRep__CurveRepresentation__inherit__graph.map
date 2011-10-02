@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRep__CurveOn2Surfaces.html" title="Defines a continuity between two surfaces. &#160;" alt="" coords="649,5,839,35"/>
+<area shape="rect" id="node9" href="$classBRep__GCurve.html" title="Root class for the geometric curves &#160;&#160;representation. Contains a range. &#160;" alt="" coords="687,59,801,88"/>
+<area shape="rect" id="node17" href="$classBRep__Polygon3D.html" title="BRep_Polygon3D" alt="" coords="676,112,812,141"/>
+<area shape="rect" id="node19" href="$classBRep__PolygonOnSurface.html" title="Representation of a 2D polygon in the parametric &#160;&#160;space of a surface. &#160;" alt="" coords="651,165,837,195"/>
+<area shape="rect" id="node23" href="$classBRep__PolygonOnTriangulation.html" title="A representation by an array of nodes on a &#160;&#160;triangulation. &#160;" alt="" coords="635,219,853,248"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,112,328,141"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,112,156,141"/>
+<area shape="rect" id="node11" href="$classBRep__Curve3D.html" title="Representation of a curve by a 3D curve. &#160;" alt="" coords="972,32,1095,61"/>
+<area shape="rect" id="node13" href="$classBRep__CurveOnSurface.html" title="Representation of a curve by a curve in the &#160;&#160;parametric space of a surface. &#160;" alt="" coords="947,85,1120,115"/>
+<area shape="rect" id="node15" href="$classBRep__CurveOnClosedSurface.html" title="Representation of a curve by two pcurves on &#160;&#160;a closed surface. &#160;" alt="" coords="1215,85,1433,115"/>
+<area shape="rect" id="node21" href="$classBRep__PolygonOnClosedSurface.html" title="Representation by two 2d polygons in the parametric &#160;&#160;space of a surface. &#160;" alt="" coords="917,165,1149,195"/>
+<area shape="rect" id="node25" href="$classBRep__PolygonOnClosedTriangulation.html" title="A representation by two arrays of nodes on a &#160;&#160;triangulation. &#160;" alt="" coords="901,219,1165,248"/>
+</map>

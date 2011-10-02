@@ -1,0 +1,351 @@
+-- File:	WOKEntity_WorkbenchUnit.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 13:56:57 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_WorkbenchUnit_EDL) then
+@set %WOKEntity_WorkbenchUnit_EDL = "";
+
+-- 
+--- Definition des fichiers dans un unite de developpement dans un WB
+--
+
+
+@string %WOKEntity_ParamList += " %Nesting_WOKVersion ";
+
+@string %WOKEntity_FileList += " source userinclude EXTERNLIB";
+
+@template WOKEntity_source       ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_userinclude  ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_EXTERNLIB  ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/EXTERNLIB\^
+@end;
+
+@if( %UnitType == "toolkit" ) then
+
+@string %WOKEntity_FileList += " PACKAGES ";
+
+@template WOKEntity_PACKAGES  ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/PACKAGES\^
+@end;
+
+@endif;
+
+-- Nothing Dependant derivated types
+
+@string %WOKEntity_FileList += " admfile tmpfile englisp drvfile ";
+
+@template WOKEntity_admfile      ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/.adm/%Entity/%File\^
+@end;
+
+@template WOKEntity_tmpfile       ( %Nesting_Drv, %File ) is
+$%Nesting_Drv/drv/.tmp/%File\^
+@end;
+
+@template WOKEntity_englisp ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_drvfile ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+--
+-- DBMS Dependant derivated types
+--
+
+@string %WOKEntity_FileList += " pubinclude privinclude derivated fddbboot ddlfile dbadmfile dbtmpfile ";
+
+@template WOKEntity_pubinclude   ( %Nesting_DBMS, %File ) is
+$%Nesting_DBMS/inc/%File\^
+@end;
+
+@template WOKEntity_privinclude  ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_derivated    ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_fddbboot    ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_ddlfile     ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_dbadmfile    ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/.adm/%File\^
+@end;
+
+@template WOKEntity_dbtmpfile    ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/.tmp/%File\^
+@end;
+
+--
+-- Station Dependant derivated types
+--
+
+@string %WOKEntity_FileList += " object mfile archive library executable engdatfile schcxxfile stadmfile sttmpfile ";
+
+@template WOKEntity_object       ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_mfile        ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_archive      ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_library      ( %Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_executable   ( %Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_schcxxfile   ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_engdatfile   ( %Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_stadmfile    ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/.adm/%File\^
+@end;
+
+@template WOKEntity_sttmpfile    ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/.tmp/%File\^
+@end;
+
+@string  %WOKEntity_DirList = %WOKEntity_DirList " tmpdir dbtmpdir sttmpdir " ;
+
+@template WOKEntity_tmpdir       ( %Nesting_Drv ) is
+$%Nesting_Drv/drv/.tmp/\^
+@end;
+
+@template WOKEntity_dbtmpdir     ( %Nesting_DBMS ) is
+$%Nesting_DBMS/drv/.tmp/\^
+@end;
+
+@template WOKEntity_sttmpdir     ( %Nesting_DBMS_Station, %Station  ) is
+$%Nesting_DBMS_Station/%Station/obj/.tmp/\^
+@end;
+
+--
+-- Public workbench files definition for delivery
+-- 
+
+@string %WOKEntity_FileList += " ccldrv msgfile cmpmsgfile demofile engine";
+@string %WOKEntity_FileList += " icon iconfd infofile ";
+--- @string %WOKEntity_FileList += "  intdat";
+@string %WOKEntity_FileList += " motifdefault userdoc";
+@string %WOKEntity_FileList += " shellscript srcinc template datafile";
+@string %WOKEntity_FileList += " default shapefile cclcfg cclrun shellcfg";
+@string %WOKEntity_FileList += " dbunit testexec testobject corelisp";
+@string %WOKEntity_FileList += " loginfile pluginccl pluginlist pluginmsg";
+@string %WOKEntity_FileList += " appresource msgappresource";
+
+@template WOKEntity_ccldrv   ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_msgfile (%Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_cmpmsgfile (%Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_demofile (%Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_engine    ( %Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_icon ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_iconfd ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_infofile ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+--@template WOKEntity_intdat ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+--$%Nesting_Home/prod/%Entity/drv/%DBMS/%Station/%File\^
+--@end;
+
+@template WOKEntity_motifdefault ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_userdoc ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@if (%UnitType == "delivery") then 
+
+@string %WOKEntity_FileList += "  releasenote patchs ";
+
+@template WOKEntity_releasenote(%Nesting_Src, %Entity, %File) is
+$%Nesting_Src/src/%Entity/ReleaseNotes\^
+@end;
+
+@template WOKEntity_patchs(%Nesting_Src, %Entity, %File) is
+$%Nesting_Src/src/%Entity/Patchs\^
+@end;
+
+@endif;
+
+@template WOKEntity_shellscript ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_srcinc ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_template ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_datafile ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_default ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_shapefile ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_cclcfg ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_cclrun ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_shellcfg ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_dbunit ( %Nesting_DBMS, %Entity, %File ) is
+$%Nesting_DBMS/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_testexec ( %Nesting_DBMS_Station, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_testobject ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_corelisp ( %Nesting_DBMS_Station, %Entity, %Station, %File ) is
+$%Nesting_DBMS_Station/%Station/obj/%Entity/%File\^
+@end;
+
+@template WOKEntity_loginfile ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_pluginccl ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_pluginlist ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_pluginmsg ( %Nesting_Drv, %Entity, %File ) is
+$%Nesting_Drv/drv/%Entity/%File\^
+@end;
+
+@template WOKEntity_appresource ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+@template WOKEntity_msgappresource ( %Nesting_Src, %Entity, %File ) is
+$%Nesting_Src/src/%Entity/%File\^
+@end;
+
+
+--
+-- Parcel Description Files
+--
+
+@if( %UnitType == "delivery" ) then
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " DELIVERIES COMPONENTSFile NameFile DefineFile VersionFile DepULFile " ;
+
+@template WOKEntity_DELIVERIES ( %Nesting_Drv, %Entity, %File) is
+$%Nesting_Drv/drv/%Entity/DELIVERIES\^
+@end;
+
+@template WOKEntity_COMPONENTSFile(%Nesting_Src, %Entity, %File) is
+$%Nesting_Src/src/%Entity/COMPONENTS\^
+@end;
+
+@template WOKEntity_NameFile(%Nesting_Drv, %Entity, %File) is
+$%Nesting_Drv/drv/%Entity/%Entity.NAME\^
+@end;
+
+@template WOKEntity_DefineFile(%Nesting_Drv, %Entity, %File) is
+$%Nesting_Drv/drv/%Entity/%Entity.edl\^
+@end;
+
+@template WOKEntity_VersionFile(%Nesting_Drv, %Entity, %File) is
+$%Nesting_Drv/drv/%Entity/%Entity.version\^
+@end;
+
+@template WOKEntity_DepULFile(%Nesting_Drv, %Entity) is
+$%Nesting_Drv/drv/%Entity/%Entity.depul\^
+@end;
+
+@endif;
+
+--- 
+--- DESTRUCTION OF UNIT
+---
+
+@if ( %Station != "wnt" ) then
+	@template WOKEntity_AfterDestroy ( %Nesting_Src, %Nesting_Drv, %Nesting_DBMS_Station, %Nesting_DBMS, %Station, %Entity ) is
+	$\rm -rf %Nesting_Src/src/%Entity
+	$\rm -rf %Nesting_Drv/drv/%Entity
+	$\rm -rf %Nesting_DBMS/drv/%Entity
+	$\rm -rf %Nesting_DBMS_Station/%Station/obj/%Entity
+	$\find %Nesting_DBMS/inc -name '%Entity.?xx'                   -exec rm {} \;
+	$\find %Nesting_DBMS/inc -name '%Entity_*.?xx'                 -exec rm {} \;
+	$\find %Nesting_DBMS/inc -name 'Handle_%Entity_*.hxx'          -exec rm {} \;
+	$\find %Nesting_DBMS_Station/%Station/lib -name 'lib%Entity.*' -exec rm {} \;
+	@end;
+@endif;
+
+@endif;
+

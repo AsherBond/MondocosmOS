@@ -1,0 +1,45 @@
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKAPI_Session_HeaderFile
+#include <WOKAPI_Session.hxx>
+#endif
+#ifndef _Standard_Failure_HeaderFile
+#include <Standard_Failure.hxx>
+#endif
+#ifndef _WOKAPI_Entity_HeaderFile
+#include <WOKAPI_Entity.hxx>
+#endif
+#ifndef _WOKAPI_SequenceOfFactory_HeaderFile
+#include <WOKAPI_SequenceOfFactory.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKernel_Entity_HeaderFile
+#include <WOKernel_Entity.hxx>
+#endif
+#ifndef _WOKernel_Factory_HeaderFile
+#include <WOKernel_Factory.hxx>
+#endif
+#ifndef _WOKernel_Warehouse_HeaderFile
+#include <WOKernel_Warehouse.hxx>
+#endif
+#ifndef _WOKernel_Parcel_HeaderFile
+#include <WOKernel_Parcel.hxx>
+#endif
+#ifndef _WOKernel_Workshop_HeaderFile
+#include <WOKernel_Workshop.hxx>
+#endif
+#ifndef _WOKernel_Workbench_HeaderFile
+#include <WOKernel_Workbench.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _WOKAPI_Session_HeaderFile
+#include <WOKAPI_Session.hxx>
+#endif

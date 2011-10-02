@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepVisual__ExternallyDefinedCurveFont.html" title="Representation of STEP entity ExternallyDefinedCurveFont &#160;" alt="" coords="5,237,296,267"/>
+<area shape="rect" id="node9" href="$classStepVisual__ExternallyDefinedTextFont.html" title="Representation of STEP entity ExternallyDefinedTextFont &#160;" alt="" coords="320,237,600,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="244,83,367,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="231,5,380,35"/>
+</map>

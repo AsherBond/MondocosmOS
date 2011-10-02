@@ -1,0 +1,141 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Resource File</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { margin-left:46px; }
+p.whs2 { margin-left:46px; font-family:'Times New Roman' , serif; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nWorking with OCAF\nResource File");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Resource File</p>
+
+<p>The resource file describes the documents (type and extension) and the 
+ type of data that the application can manipulate by identifying the storage 
+ and retrieval drivers appropriate for this data.</p>
+
+<p>Each driver is unique and identified by a GUID generated, for example, 
+ with the &quot;uuidgen&quot; tool in Windows.</p>
+
+<p>Five drivers are required to use all standard attributes provided within 
+ OCAF:</p>
+
+<p class="whs1">the schema driver (ad696002-5b34-11d1-b5ba-00a0c9064368)</p>
+
+<p class="whs1">the document storage driver (ad696000-5b34-11d1-b5ba-00a0c9064368)</p>
+
+<p class="whs1">the document retrieval driver (ad696001-5b34-11d1-b5ba-00a0c9064368)</p>
+
+<p class="whs1">the attribute storage driver (47b0b826-d931-11d1-b5da-00a0c9064368)</p>
+
+<p class="whs1">the attribute retrieval driver (47b0b827-d931-11d1-b5da-00a0c9064368)</p>
+
+<p>These drivers are provided as plug-ins and are located in the PappStdPlugin 
+ library.</p>
+
+<p>For example, this is a resource file:</p>
+
+<p class="whs2">formatlist:OCAF-MyApplication</p>
+
+<p class="whs2">! 
+ to declare a new model document named OCAF- MyApplication</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.Description: MyApplication Document Version 1.0</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.FileExtension: sta</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.StoragePlugin: ad696000-5b34-11d1-b5ba-00a0c9064368</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.RetrievalPlugin: ad696001-5b34-11d1-b5ba-00a0c9064368</p>
+
+<p class="whs2">OCAF- 
+ MyApplicationSchema: ad696002-5b34-11d1-b5ba-00a0c9064368</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.AttributeStoragePlugin: 47b0b826-d931-11d1-b5da-00a0c9064368</p>
+
+<p class="whs2">OCAF- 
+ MyApplication.AttributeRetrievalPlugin: 47b0b827-d931-11d1-b5da-00a0c9064368</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

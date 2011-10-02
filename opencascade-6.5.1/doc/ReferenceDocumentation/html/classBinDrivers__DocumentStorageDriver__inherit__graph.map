@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classBinXCAFDrivers__DocumentStorageDriver.html" title="BinXCAFDrivers_DocumentStorageDriver" alt="" coords="5,392,304,421"/>
+<area shape="rect" id="node2" href="$classBinLDrivers__DocumentStorageDriver.html" title="persistent implemention of storage a document in a binary file &#160;" alt="" coords="19,237,291,267"/>
+<area shape="rect" id="node4" href="$classPCDM__StorageDriver.html" title="persistent implemention of storage. &#160;" alt="" coords="72,160,237,189"/>
+<area shape="rect" id="node6" href="$classPCDM__Writer.html" title="PCDM_Writer" alt="" coords="99,83,211,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="80,5,229,35"/>
+</map>

@@ -1,0 +1,794 @@
+#include <TColStd_HSequenceOfInteger.hxx>
+#include <TColStd_HArray2OfBoolean.hxx>
+#include <TColStd_HArray1OfBoolean.hxx>
+#include <TColStd_HArray1OfInteger.hxx>
+#include <TColStd_HArray2OfInteger.hxx>
+
+#include <Standard_ErrorHandler.hxx>
+#include <Standard_Failure.hxx>
+#include <Standard_DomainError.hxx>
+
+// Construction of a graph :
+//     we need an interface generic item to initialize the nodes,edges
+//
+
+WOKTools_GGraph::WOKTools_GGraph() : myGNodes(new WOKTools_HSequenceOfGNode),myGEdges(new WOKTools_HSequenceOfGEdge)
+{
+}
+
+void WOKTools_GGraph::Destroy()
+{
+  Standard_Integer                  anIndex = 1;
+  Handle(WOKTools_GNode)            aNullGNode;
+
+  for(anIndex = 1; anIndex <= myGNodes->Length(); anIndex++) {
+    myGNodes->Value(anIndex)->GEdgesOut()->Clear();
+    myGNodes->Value(anIndex)->GEdgesIn()->Clear();
+  }
+
+  for(anIndex = 1; anIndex <= myGEdges->Length(); anIndex++) {
+    myGEdges->Value(anIndex)->Destination(aNullGNode);
+    myGEdges->Value(anIndex)->Source(aNullGNode);
+  }
+
+  myGEdges->Clear();
+  myGNodes->Clear();
+}
+
+// returns Standard_True if the two nodes are linked.
+// no matter for the direction.
+//
+Standard_Boolean WOKTools_GGraph::AreLinked(const Handle(WOKTools_GNode)& aNode, 
+					    const Handle(WOKTools_GNode)& anOtherNode) 
+{
+  MustBeRecompute();
+
+  Standard_NullObject_Raise_if (aNode.IsNull() || anOtherNode.IsNull(),"call AreLinked with null node");
+
+  Standard_Integer i,j;
+
+  i = WOKTools_GGraph::Index(myGNodes,aNode);
+  j = WOKTools_GGraph::Index(myGNodes,anOtherNode);
+
+  return (myMatrixAdj->Value(i,j) || myMatrixAdj->Value(j,i));
+}
+
+// returns Standard_True if the two nodes are linked in the direction :
+//       aSource -------> aDestination.
+//
+// Standard_False otherwise.
+//
+Standard_Boolean WOKTools_GGraph::AreDirectedLinked(const Handle(WOKTools_GNode)& aSource, 
+						    const Handle(WOKTools_GNode)& aDestination) 
+{
+  MustBeRecompute();
+  
+  Standard_NullObject_Raise_if (aSource.IsNull() || aDestination.IsNull(), "null source or destination");
+  
+  Standard_Integer i,j;
+
+  i = WOKTools_GGraph::Index(myGNodes,aSource);
+  j = WOKTools_GGraph::Index(myGNodes,aDestination);
+
+  return myMatrixAdj->Value(i,j);
+}
+
+Handle(WOKTools_GEdge) WOKTools_GGraph::DirectedLink(const Handle(WOKTools_GNode)& aSource, 
+						     const Handle(WOKTools_GNode)& aDestination) 
+{
+
+  Handle(WOKTools_GEdge)          anEdge;
+
+  MustBeRecompute();
+
+  Standard_NullObject_Raise_if (aSource.IsNull() || aDestination.IsNull(), "null source or destination");
+  
+  Standard_Integer i,psrc,pdest;
+  Standard_Boolean isFound = Standard_False;
+
+  psrc  = WOKTools_GGraph::Index(myGNodes,aSource);
+  pdest = WOKTools_GGraph::Index(myGNodes,aDestination);
+
+  for (i = 1; i <= myMatrixInd->UpperRow() && !isFound; i++) {
+    if (myMatrixInd->Value(i,psrc) == -1 &&  myMatrixInd->Value(i,pdest) == 1) {
+      anEdge = myGEdges->Value(i);
+      isFound = Standard_True;
+    }
+  }
+  
+  return anEdge;
+}
+
+// no comments
+//
+Handle(WOKTools_GNode) WOKTools_GGraph::AddItem(const GraphItem& anItem)
+{
+  Handle(WOKTools_GNode)            aGNode;
+
+  
+  aGNode = Find(anItem);
+
+  if (aGNode.IsNull()) {
+    aGNode = new WOKTools_GNode(anItem);
+    
+    myGNodes->Append(aGNode);
+    myModifiedFlag = Standard_True;
+  }
+
+  return(aGNode);
+}
+
+// no comments
+//
+Handle(WOKTools_GEdge) WOKTools_GGraph::AddEdge(const Handle(WOKTools_GNode)& aPred, 
+						const Handle(WOKTools_GNode)& aSucc)
+{
+  Handle(WOKTools_GEdge)          aGEdge;
+
+  if (!aPred.IsNull() && !aSucc.IsNull()) {
+    myModifiedFlag = Standard_True;
+
+    aGEdge = new WOKTools_GEdge(aPred,aSucc);
+
+    aPred->AddEdgeOut(aGEdge);
+    aSucc->AddEdgeIn(aGEdge);
+
+    myGEdges->Append(aGEdge); 
+  }
+  else Standard_NullObject::Raise();
+  
+  return aGEdge;
+}
+
+// no comments
+//
+void WOKTools_GGraph::DelNode(const Handle(WOKTools_GNode)& aNode)
+{
+  Standard_NullObject_Raise_if(aNode.IsNull(), "null node");
+
+  Standard_Integer                  pos = WOKTools_GGraph::Index(myGNodes,aNode);
+  Standard_Integer                  i;     
+  Handle(WOKTools_HSequenceOfGEdge) in  = aNode->GEdgesIn(),
+                                    out = aNode->GEdgesOut(),
+                                    tmpseq;
+
+  for (i = 1; i <= in->Length(); i++) {
+    tmpseq = in->Value(i)->Source()->GEdgesOut();
+    tmpseq->Remove(WOKTools_GGraph::Index(tmpseq,in->Value(i)));
+    myGEdges->Remove(WOKTools_GGraph::Index(myGEdges,in->Value(i)));
+  }
+
+  for (i = 1; i <= out->Length(); i++) {
+    tmpseq = out->Value(i)->Destination()->GEdgesIn();
+    tmpseq->Remove(WOKTools_GGraph::Index(tmpseq,out->Value(i)));
+    myGEdges->Remove(WOKTools_GGraph::Index(myGEdges,out->Value(i)));
+  }
+
+  myGNodes->Remove(pos);
+  myModifiedFlag = Standard_True;
+}
+
+
+// delete all nodes that bring the "anItem" users item.
+//
+void WOKTools_GGraph::DelNode(const GraphItem& anItem)
+{
+  Standard_Integer anInt;
+
+  for (anInt = 1; anInt <= myGNodes->Length(); anInt++) {
+    if (myGNodes->Value(anInt)->Value() == anItem) {
+      DelNode(myGNodes->Value(anInt));
+      if (anInt > 1) anInt--;
+    }
+  }
+}
+
+// no comments
+//
+void WOKTools_GGraph::DelEdge(const Handle(WOKTools_GEdge)& anEdge)
+{
+  Standard_Integer anIndex;
+
+  if (!anEdge.IsNull()) {
+    anIndex = WOKTools_GGraph::Index(myGEdges,anEdge);
+
+    if (anIndex != 0) {
+      Handle(WOKTools_HSequenceOfGEdge) in,
+                                        out;
+
+      in  = anEdge->Destination()->GEdgesIn();
+      out = anEdge->Source()->GEdgesOut();
+
+      in->Remove(WOKTools_GGraph::Index(in,anEdge));
+      out->Remove(WOKTools_GGraph::Index(out,anEdge));
+
+      myGEdges->Remove(anIndex);
+      myModifiedFlag = Standard_True;
+    }
+  }
+  else {
+    Standard_NullObject::Raise();
+  }
+}
+
+
+// no comments
+//
+void WOKTools_GGraph::DelEdge(const Handle(WOKTools_GNode)& aNode, 
+			      const Handle(WOKTools_GNode)& anOtherNode)
+{
+  Standard_NullObject_Raise_if (aNode.IsNull() || anOtherNode.IsNull(), "null node");
+
+  Standard_Integer                i;
+
+  for (i = 1; i <= myGEdges->Length(); i++) {
+    if ((myGEdges->Value(i)->Destination() == aNode && myGEdges->Value(i)->Source() == anOtherNode) ||
+	(myGEdges->Value(i)->Source() == aNode && myGEdges->Value(i)->Destination() == anOtherNode)) {
+      DelEdge(myGEdges->Value(i));
+      if (i > 1) i--;
+    }
+  }
+}
+
+// find all pathes between two nodes
+//
+Handle(WOKTools_HSequenceOfGPath) WOKTools_GGraph::Path(const Handle(WOKTools_GNode)& aNode,	
+							const Handle(WOKTools_GNode)& anOtherNode)
+{
+  Handle(WOKTools_HSequenceOfGPath)  aSeqPath     = new WOKTools_HSequenceOfGPath;
+  Handle(WOKTools_HSequenceOfGEdge)  aSeqEdge;
+  Standard_Integer                   aStartIndex  = 1,
+                                     aCurrentInd  = 1,
+                                     anInt;
+  Handle(TColStd_HSequenceOfInteger) aChild       = new TColStd_HSequenceOfInteger,
+                                     aFather      = new TColStd_HSequenceOfInteger;
+  Standard_Boolean                   aEnd         = Standard_False,
+                                     isCycle;
+  Handle(TColStd_HArray1OfBoolean)   aVisited,fatherFlag;
+
+  MustBeRecompute();
+ 
+  Standard_NullObject_Raise_if (aNode.IsNull() || anOtherNode.IsNull(),"null node");
+
+  // we start with this node (its the root)
+  
+  aStartIndex = WOKTools_GGraph::Index(myGNodes,aNode);
+  aCurrentInd = 1;
+  aVisited    = new TColStd_HArray1OfBoolean(1,myGNodes->Length(),Standard_False);
+  fatherFlag  = new TColStd_HArray1OfBoolean(1,myGNodes->Length(),Standard_False);
+
+  while(!aEnd) {
+    // here, we go downstairs
+    //
+    isCycle = Standard_False;
+    while(aCurrentInd <= myMatrixAdj->UpperRow()) {
+
+      if (myMatrixAdj->Value(aStartIndex,aCurrentInd)) {
+//	isCycle = Standard_False;
+
+	if ((!fatherFlag->Value(aStartIndex) || (myGNodes->Value(aCurrentInd)->Value() == anOtherNode->Value())) &&
+	    (myGNodes->Value(aCurrentInd)->Value() != aNode->Value())) {
+
+	  if (!isCycle)
+	    isCycle = fatherFlag->Value(aStartIndex);
+
+	  fatherFlag->SetValue(aStartIndex,Standard_True);
+
+	  aFather->Append(aStartIndex);
+	  aChild->Append(aCurrentInd);
+
+	  // we set this node visited
+	  // so, in the next loops we will not use it
+	  // 
+	  aVisited->SetValue(aCurrentInd,Standard_True);
+	  aStartIndex = aCurrentInd;
+
+	  if (myGNodes->Value(aCurrentInd)->Value() == anOtherNode->Value()) {
+	    aCurrentInd = myMatrixAdj->UpperRow();
+	  }
+	  else {
+	    aCurrentInd = 0;
+	  }
+	} 
+	else {
+	  // isCycle = Standard_True;
+	}
+      }
+
+      aCurrentInd++;
+    }
+       
+    // we are in a leaf, we go upstairs to seek a brother to the father node
+    // 
+    if (aCurrentInd > myMatrixAdj->UpperRow() && !aFather->IsEmpty()) {
+      // we have found the good node
+      //
+      if (myGNodes->Value(aChild->Value(aChild->Length()))->Value() == anOtherNode->Value()) {
+	aSeqEdge = new WOKTools_HSequenceOfGEdge;
+	for (anInt = 1; anInt < aFather->Length(); anInt++) {
+	  aSeqEdge->Append(DirectedLink(myGNodes->Value(aFather->Value(anInt)),myGNodes->Value(aFather->Value(anInt + 1))));
+	}
+	
+	aSeqEdge->Append(DirectedLink(myGNodes->Value(aFather->Value(aFather->Length())),myGNodes->Value(aChild->Value(aChild->Length()))));	       
+	aSeqPath->Append(new WOKTools_GPath(aSeqEdge,isCycle));  
+      }
+
+      aStartIndex = aFather->Value(aFather->Length());
+      aCurrentInd = aChild->Value(aChild->Length()) + 1;
+
+      fatherFlag->SetValue(aStartIndex,Standard_False);
+      
+      aChild->Remove(aChild->Length());
+      aFather->Remove(aFather->Length());
+    }
+    else {
+      aEnd = Standard_True;
+    }
+  }
+
+ return(aSeqPath);
+}
+
+// find the best pathes between two nodes (minimum crossed nodes)
+//
+Handle(WOKTools_HSequenceOfGPath) WOKTools_GGraph::BestPath(const Handle(WOKTools_GNode)& aNode,
+							    const Handle(WOKTools_GNode)& anOtherNode) 
+{
+  Handle(WOKTools_HSequenceOfGPath) aSeqPath = new WOKTools_HSequenceOfGPath,
+                                    aSeqNPath;
+  Standard_Integer                  anInt;
+  Handle(WOKTools_GPath)            aPath;
+
+  if (!aNode.IsNull() && !anOtherNode.IsNull()) {
+    MustBeRecompute();
+
+    aSeqNPath = Path(aNode,anOtherNode);
+    
+    if (!aSeqNPath->IsEmpty()) {
+      aPath = aSeqNPath->Value(1);
+      
+      for (anInt = 2; anInt <= aSeqNPath->Length(); anInt++) {
+	if (aPath->NodeLength() > aSeqNPath->Value(anInt)->NodeLength()) {
+	  aSeqPath->Clear();
+	  aSeqPath->Append(aSeqNPath->Value(anInt));
+	  aPath = aSeqNPath->Value(anInt);
+	}
+	else if (aPath->NodeLength() == aSeqNPath->Value(anInt)->NodeLength()) {
+	  aSeqPath->Append(aSeqNPath->Value(anInt));
+	}
+      }
+    }
+  }
+  else {
+    Standard_NullObject::Raise();
+  }
+
+ return(aSeqPath);
+}
+
+// find the list of nodes with the item <anItem>.
+//
+
+Handle(WOKTools_GNode) WOKTools_GGraph::Find(const GraphItem& anItem) 
+{
+  Handle(WOKTools_GNode) aNode;
+  Standard_Integer       anInt;
+  Standard_Boolean       isFound = Standard_False;
+
+  for (anInt = 1; anInt <= myGNodes->Length() && !isFound; anInt++) {
+    if (anItem == myGNodes->Value(anInt)->Value()) {
+      aNode = myGNodes->Value(anInt);
+      isFound = Standard_True;
+    }
+  }
+
+  return aNode;
+}
+
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Fathers(const Handle(WOKTools_GNode)& aNode) 
+{
+  Handle(WOKTools_HSequenceOfGNode) aSeqNode = new WOKTools_HSequenceOfGNode;
+  Handle(WOKTools_GNode)            aTmpNode;
+  Standard_Integer                  aCounter;
+  Handle(WOKTools_HSequenceOfGEdge) aSeqEdge;
+
+  MustBeRecompute();
+
+  if (!aNode.IsNull()) {
+     aSeqEdge = aNode->GEdgesIn();
+     
+     if (!aSeqEdge.IsNull()) {
+       for (aCounter = 1; aCounter <= aSeqEdge->Length(); aCounter++) {
+	 aTmpNode = aSeqEdge->Value(aCounter)->Source();	 
+	 aSeqNode->Append(aTmpNode);
+       }
+     }
+   }
+
+  return(aSeqNode);
+}
+// returns the roots of the graph
+//
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Roots()
+{
+  Handle(WOKTools_HSequenceOfGNode)        aSeqNode = new WOKTools_HSequenceOfGNode;
+  Standard_Integer                         anInt,j;
+  Standard_Boolean                         IsRoots;
+
+  MustBeRecompute();
+ 
+  for (anInt = 1; anInt <= myGNodes->Length(); anInt++) {
+    IsRoots = Standard_True;
+
+    for (j = 1; j <= myGEdges->Length() && IsRoots; j++) {
+      if (myMatrixInd->Value(j,anInt) == 1) {
+	IsRoots = Standard_False;
+      }
+    }
+    
+    if (IsRoots) {
+      aSeqNode->Append(myGNodes->Value(anInt));
+    }
+  }
+  
+  return(aSeqNode);
+}
+
+// find leaves of the graph with root <aNode> 
+//
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Leaves(const Handle(WOKTools_GNode)& aNode)
+{
+ Standard_Integer                      aStartIndex,
+                                       aCurrentInd;
+ Handle(TColStd_HSequenceOfInteger)    aChild       = new TColStd_HSequenceOfInteger,
+                                       aFather      = new TColStd_HSequenceOfInteger;
+ Standard_Boolean                      aEnd         = Standard_False,
+                                       goUp         = Standard_False,
+                                       isCycle;
+ Handle(TColStd_HArray1OfBoolean)      aVisited;
+ Handle(WOKTools_HSequenceOfGNode)     aSeqNode  = new WOKTools_HSequenceOfGNode;
+
+ MustBeRecompute();
+ 
+ if (!aNode.IsNull()) {
+   aCurrentInd = WOKTools_GGraph::Index(myGNodes,aNode);
+
+   if (aCurrentInd != 0) {
+     aVisited = new TColStd_HArray1OfBoolean(1,myGNodes->Length(),Standard_False);
+
+     // we start with this node (its the root)
+     //
+     aStartIndex = aCurrentInd;
+     aVisited->SetValue(aStartIndex,Standard_True);
+     aCurrentInd = 1;
+	 
+     while(!aEnd) {
+       // here, we go downstairs
+       //
+       isCycle = Standard_False;
+
+       while(aCurrentInd <= myMatrixAdj->UpperRow()) {
+	   
+	 if (myMatrixAdj->Value(aStartIndex,aCurrentInd)) {
+	   goUp = Standard_False;
+	   isCycle = Standard_False;
+
+	   if (!aVisited->Value(aCurrentInd)) {
+	     aFather->Append(aStartIndex);
+	     aChild->Append(aCurrentInd);
+
+	     // we set this node visited
+	     // so, in the next loops we will not use it
+	     // 
+	     aVisited->SetValue(aCurrentInd,Standard_True);
+	     aStartIndex = aCurrentInd;
+	     aCurrentInd = 0;
+	   } 
+	   else {
+	     isCycle = Standard_True;
+	   }
+	 }
+
+	 aCurrentInd++;
+       }
+       
+       // we are in a leaf, we go upstairs to seek a brother to the father node
+       // 
+       if ((aCurrentInd > myMatrixAdj->UpperRow()) && !aFather->IsEmpty()) {
+
+	 aStartIndex = aFather->Value(aFather->Length());
+	 aCurrentInd = aChild->Value(aChild->Length()) + 1;
+
+	 if (!isCycle && !goUp) {
+	   aSeqNode->Append(myGNodes->Value(aChild->Value(aChild->Length())));         
+	 }
+
+	 goUp = Standard_True;
+	 aChild->Remove(aChild->Length());
+	 aFather->Remove(aFather->Length());
+       }
+       else aEnd = Standard_True;
+     }
+   }
+ }
+ else {
+   Standard_NullObject::Raise();
+ } 
+
+ return aSeqNode;
+}
+
+// returns the leaves of the graph
+//
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Leaves()
+{
+  Handle(WOKTools_HSequenceOfGNode)        aSeqNode = new WOKTools_HSequenceOfGNode;
+  Standard_Integer                         anInt,j;
+  Standard_Boolean                         IsLeaves;
+
+  MustBeRecompute();
+ 
+  for (anInt = 1; anInt <= myGNodes->Length(); anInt++) {
+    IsLeaves = Standard_True;
+
+    for (j = 1; j <= myGEdges->Length() && IsLeaves; j++) {
+      if (myMatrixInd->Value(j,anInt) == -1) {
+	IsLeaves = Standard_False;
+      }
+    }
+    
+    if (IsLeaves) {
+      aSeqNode->Append(myGNodes->Value(anInt));
+    }
+  }
+  
+  return(aSeqNode);
+}
+
+// returns the graphics nodes of the graph
+//
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Nodes() const 
+{
+  return myGNodes;
+}
+
+// returns the graphic edges of the graph
+//
+Handle(WOKTools_HSequenceOfGEdge) WOKTools_GGraph::Edges() const 
+{
+  return myGEdges;
+}
+
+// Build the adjacency matrix
+// 
+void WOKTools_GGraph::BuildAdjMatrix() 
+{
+  Standard_Integer                  aK,aI,i;
+  Handle(WOKTools_GNode)            aGNode;
+  Handle(WOKTools_HSequenceOfGEdge) seqEdge;
+
+  Standard_NullObject_Raise_if (myGNodes->Length() == 0,"Attempt to construct an empty Graph");
+  
+  myMatrixAdj = new TColStd_HArray2OfBoolean(1,myGNodes->Length(),1,myGNodes->Length());
+
+  // initialisation de la matrice.
+  //
+  for (aI = myMatrixAdj->LowerRow(); aI <= myMatrixAdj->UpperRow(); aI++) {
+    for (Standard_Integer aJ = myMatrixAdj->LowerCol(); aJ <= myMatrixAdj->UpperCol(); aJ++) {
+      myMatrixAdj->SetValue(aI,aJ,Standard_False);
+    }
+  }
+
+ for (aI = 1; aI <= myGNodes->Length(); aI++) {
+   seqEdge  = myGNodes->Value(aI)->GEdgesOut();
+
+   for (i = 1; i <= seqEdge->Length(); i++) {
+     aGNode = seqEdge->Value(i)->Destination();
+       
+     if (aGNode != myGNodes->Value(aI)) {
+       aK = WOKTools_GGraph::Index(myGNodes,aGNode);
+       myMatrixAdj->SetValue(aI,aK,Standard_True);
+     }
+   } 
+ }
+}
+
+void WOKTools_GGraph::BuildIndMatrix() 
+{
+  Standard_Integer                aK,aI,aJ;
+  Handle(WOKTools_GNode)          aGNodeS,aGNodeD;
+
+  Standard_NullObject_Raise_if (myGNodes->Length() == 0,"Attempt to construct an empty Graph");
+  
+  myMatrixInd = new TColStd_HArray2OfInteger(1,myGEdges->Length(),1,myGNodes->Length());
+
+  // initialisation de la matrice.
+  //
+  for (aI = myMatrixInd->LowerRow(); aI <= myMatrixInd->UpperRow(); aI++) {
+    for (aJ = myMatrixInd->LowerCol(); aJ <= myMatrixInd->UpperCol(); aJ++) {
+      myMatrixInd->SetValue(aI,aJ,0);
+    }
+  }
+
+  for (aI = 1; aI <= myGEdges->Length(); aI++) {
+    aGNodeD = myGEdges->Value(aI)->Destination();
+    aGNodeS = myGEdges->Value(aI)->Source();
+    
+    aJ = WOKTools_GGraph::Index(myGNodes,aGNodeS);
+    aK = WOKTools_GGraph::Index(myGNodes,aGNodeD);
+
+    myMatrixInd->SetValue(aI,aJ,-1);
+    
+    if (myMatrixInd->Value(aI,aK) >= 0) {
+      myMatrixInd->SetValue(aI,aK,1);
+    }
+  }
+}
+
+Standard_Boolean WOKTools_GGraph::MustBeRecompute()
+{
+  Standard_Boolean result = myModifiedFlag;
+
+  if (myModifiedFlag) {
+    BuildAdjMatrix();
+    BuildIndMatrix();
+    myModifiedFlag = Standard_False;
+  }
+
+  return result;
+}
+
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Heirs(const Handle(WOKTools_GNode)& aNode,
+							 const Standard_Integer        aLevel)
+{
+ Standard_Integer                      aStartIndex  = 1,
+                                       aCurrentInd  = 1,
+				       aIndexLevel  = 1;
+ Handle(TColStd_HSequenceOfInteger)    aChild       = new TColStd_HSequenceOfInteger,
+                                       aFather      = new TColStd_HSequenceOfInteger;
+ Standard_Boolean                      aEnd         = Standard_False;
+ Handle(TColStd_HArray1OfBoolean)      aVisited;
+ Handle(WOKTools_HSequenceOfGNode)     aSeqGNode    = new WOKTools_HSequenceOfGNode;
+
+ MustBeRecompute();
+ 
+ if (!aNode.IsNull()) {
+   if ((aLevel >= 0) && (WOKTools_GGraph::Index(myGNodes,aNode) != 0)) {
+     aVisited = new TColStd_HArray1OfBoolean(1,myGNodes->Length(),Standard_False);
+	
+     // we start with this node (its the root)
+     //
+     aStartIndex = WOKTools_GGraph::Index(myGNodes,aNode);
+     aVisited->SetValue(aStartIndex,Standard_True);
+     aCurrentInd = 1;
+	
+     if (aLevel == 0) aIndexLevel = 0;
+
+     while(!aEnd) {
+       // here, we go downstairs
+       //
+       while(aCurrentInd <= myMatrixAdj->UpperRow()) {
+	 if (myMatrixAdj->Value(aStartIndex,aCurrentInd) && !aVisited->Value(aCurrentInd) && (aIndexLevel <= aLevel)) {
+	   aSeqGNode->Append(myGNodes->Value(aCurrentInd));
+	   
+	   // we set this node (aCurrentInd) visited
+	   // so, in the next loops we will not use it
+	   // 
+	   aVisited->SetValue(aCurrentInd,Standard_True);
+	   
+	   aFather->Append(aStartIndex);
+	   aChild->Append(aCurrentInd);
+	   
+	   if (aLevel != 0) aIndexLevel++;
+	   
+	   aStartIndex = aCurrentInd;
+	   aCurrentInd = 0;
+	 } 
+	 aCurrentInd++;
+       }
+	    
+       // we are in a leaf, we go upstairs to seek a brother to the father node
+       // 
+       if (aCurrentInd > myMatrixAdj->UpperRow() && !aFather->IsEmpty()) {
+	 aStartIndex = aFather->Value(aFather->Length());
+	 aCurrentInd = aFather->Value(aChild->Length()) + 1;
+	 
+	 if (aLevel != 0) aIndexLevel--;
+	 
+	 aChild->Remove(aChild->Length());
+	 aFather->Remove(aFather->Length());
+       }
+       else aEnd = Standard_True;
+     }
+   }
+ }
+ else {
+   Standard_NullObject::Raise();
+ }
+ 
+ return(aSeqGNode);
+}
+
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GGraph::Brothers(const Handle(WOKTools_GNode)& aNode)
+{
+ Standard_Integer                      aStartIndex  = 1,
+                                       aCurrentInd  = 1,
+                                       aFatherIndex = 1;
+ Handle(WOKTools_HSequenceOfGNode)     aFather      = new WOKTools_HSequenceOfGNode,
+                                       aSeqGNode    = new WOKTools_HSequenceOfGNode;
+
+ MustBeRecompute();
+ 
+ if (!aNode.IsNull()) {
+   if (WOKTools_GGraph::Index(myGNodes,aNode) != 0) {
+     // we start with this node (its the root)
+     // and we take his fathers
+     
+     aStartIndex = WOKTools_GGraph::Index(myGNodes,aNode);
+     
+     while(aCurrentInd <= myMatrixAdj->UpperRow()) {
+       if (myMatrixAdj->Value(aCurrentInd,aStartIndex))
+	 aFather->Append(myGNodes->Value(aCurrentInd));
+       
+       aCurrentInd++;
+     }	
+     // we take childs of all fathers
+
+     if (!aFather->IsEmpty()) {
+       for (aFatherIndex = 1; aFatherIndex <= aFather->Length(); aFatherIndex++) {
+	 aCurrentInd = 1;		
+	 aStartIndex = WOKTools_GGraph::Index(myGNodes,aFather->Value(aFatherIndex));
+	 
+	 while(aCurrentInd <= myMatrixAdj->UpperRow()) {
+	   if (myMatrixAdj->Value(aStartIndex,aCurrentInd) && myGNodes->Value(aCurrentInd) != aNode)
+	     aSeqGNode->Append(myGNodes->Value(aCurrentInd));
+	   
+	   aCurrentInd++;
+	 }
+       }
+     }
+   }
+ }
+ else Standard_NullObject::Raise();
+ 
+ return(aSeqGNode);
+}
+
+
+Standard_Integer WOKTools_GGraph::Index(const Handle(WOKTools_HSequenceOfGNode)& aSeq,
+					const Handle(WOKTools_GNode)& aNode)
+{
+  Standard_Integer result = 0,
+                   i;
+  
+  for (i = 1; i <= aSeq->Length() && result == 0; i++) {
+    if (aNode->Value() == aSeq->Value(i)->Value()) {
+      result = i;
+    }
+  }
+
+  return result;
+}
+
+Standard_Integer WOKTools_GGraph::Index(const Handle(WOKTools_HSequenceOfGEdge)& aSeq,
+					const Handle(WOKTools_GEdge)& anEdge)
+{
+  Standard_Integer       result = 0,
+                         i;
+  Handle(WOKTools_GNode) aNode1,aNode2,aNodeA,aNodeB;
+
+  aNodeA = anEdge->Source();
+  aNodeB = anEdge->Destination();
+  
+  for (i = 1; i <= aSeq->Length() && result == 0; i++) {
+    aNode1 = aSeq->Value(i)->Source();
+    aNode2 = aSeq->Value(i)->Destination();
+    
+    if ( ((aNode1->Value() == aNodeA->Value()) && (aNode2->Value() == aNodeB->Value())) ||
+	((aNode2->Value() == aNodeA->Value()) && (aNode1->Value() == aNodeB->Value()))) {
+      result = i;
+    }
+  }
+  
+  return result;
+}

@@ -1,0 +1,33 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepGeom__BoundedSurface.html" title="StepGeom_BoundedSurface" alt="" coords="1227,325,1437,355"/>
+<area shape="rect" id="node39" href="$classStepGeom__ElementarySurface.html" title="StepGeom_ElementarySurface" alt="" coords="1217,512,1447,541"/>
+<area shape="rect" id="node53" href="$classStepGeom__OffsetSurface.html" title="StepGeom_OffsetSurface" alt="" coords="1235,565,1429,595"/>
+<area shape="rect" id="node55" href="$classStepGeom__OrientedSurface.html" title="Representation of STEP entity OrientedSurface &#160;" alt="" coords="1227,619,1437,648"/>
+<area shape="rect" id="node57" href="$classStepGeom__SurfaceReplica.html" title="StepGeom_SurfaceReplica" alt="" coords="1232,672,1432,701"/>
+<area shape="rect" id="node59" href="$classStepGeom__SweptSurface.html" title="StepGeom_SweptSurface" alt="" coords="1235,725,1429,755"/>
+<area shape="rect" id="node2" href="$classStepGeom__GeometricRepresentationItem.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="657,592,967,621"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="377,592,607,621"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,592,328,621"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,592,156,621"/>
+<area shape="rect" id="node13" href="$classStepGeom__BSplineSurface.html" title="StepGeom_BSplineSurface" alt="" coords="1549,219,1749,248"/>
+<area shape="rect" id="node33" href="$classStepGeom__CurveBoundedSurface.html" title="Representation of STEP entity CurveBoundedSurface &#160;" alt="" coords="1524,272,1775,301"/>
+<area shape="rect" id="node35" href="$classStepGeom__RectangularCompositeSurface.html" title="StepGeom_RectangularCompositeSurface" alt="" coords="1496,325,1803,355"/>
+<area shape="rect" id="node37" href="$classStepGeom__RectangularTrimmedSurface.html" title="StepGeom_RectangularTrimmedSurface" alt="" coords="1504,379,1795,408"/>
+<area shape="rect" id="node15" href="$classStepGeom__BezierSurface.html" title="StepGeom_BezierSurface" alt="" coords="1979,5,2173,35"/>
+<area shape="rect" id="node17" href="$classStepGeom__BezierSurfaceAndRationalBSplineSurface.html" title="StepGeom_BezierSurfaceAndRationalBSplineSurface" alt="" coords="1888,59,2264,88"/>
+<area shape="rect" id="node19" href="$classStepGeom__BSplineSurfaceWithKnots.html" title="StepGeom_BSplineSurfaceWithKnots" alt="" coords="1941,112,2211,141"/>
+<area shape="rect" id="node21" href="$classStepGeom__BSplineSurfaceWithKnotsAndRationalBSplineSurface.html" title="StepGeom_BSplineSurfaceWithKnotsAndRationalBSplineSurface" alt="" coords="1851,165,2301,195"/>
+<area shape="rect" id="node23" href="$classStepGeom__QuasiUniformSurface.html" title="StepGeom_QuasiUniformSurface" alt="" coords="1956,219,2196,248"/>
+<area shape="rect" id="node25" href="$classStepGeom__QuasiUniformSurfaceAndRationalBSplineSurface.html" title="StepGeom_QuasiUniformSurfaceAndRationalBSplineSurface" alt="" coords="1867,272,2285,301"/>
+<area shape="rect" id="node27" href="$classStepGeom__RationalBSplineSurface.html" title="StepGeom_RationalBSplineSurface" alt="" coords="1948,325,2204,355"/>
+<area shape="rect" id="node29" href="$classStepGeom__UniformSurface.html" title="StepGeom_UniformSurface" alt="" coords="1975,379,2177,408"/>
+<area shape="rect" id="node31" href="$classStepGeom__UniformSurfaceAndRationalBSplineSurface.html" title="StepGeom_UniformSurfaceAndRationalBSplineSurface" alt="" coords="1885,432,2267,461"/>
+<area shape="rect" id="node41" href="$classStepGeom__ConicalSurface.html" title="StepGeom_ConicalSurface" alt="" coords="1549,432,1749,461"/>
+<area shape="rect" id="node43" href="$classStepGeom__CylindricalSurface.html" title="StepGeom_CylindricalSurface" alt="" coords="1540,485,1759,515"/>
+<area shape="rect" id="node45" href="$classStepGeom__Plane.html" title="StepGeom_Plane" alt="" coords="1580,539,1719,568"/>
+<area shape="rect" id="node47" href="$classStepGeom__SphericalSurface.html" title="StepGeom_SphericalSurface" alt="" coords="1544,592,1755,621"/>
+<area shape="rect" id="node49" href="$classStepGeom__ToroidalSurface.html" title="StepGeom_ToroidalSurface" alt="" coords="1549,645,1749,675"/>
+<area shape="rect" id="node51" href="$classStepGeom__DegenerateToroidalSurface.html" title="StepGeom_DegenerateToroidalSurface" alt="" coords="1935,645,2217,675"/>
+<area shape="rect" id="node61" href="$classStepGeom__SurfaceOfLinearExtrusion.html" title="StepGeom_SurfaceOfLinearExtrusion" alt="" coords="1513,712,1785,741"/>
+<area shape="rect" id="node63" href="$classStepGeom__SurfaceOfRevolution.html" title="StepGeom_SurfaceOfRevolution" alt="" coords="1531,765,1768,795"/>
+</map>

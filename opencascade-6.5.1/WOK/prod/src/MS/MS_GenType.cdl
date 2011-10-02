@@ -1,0 +1,73 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_GenType.cdl	1.1
+-- File:	MS_GenType.cdl
+-- Created:	Wed Jan 30 12:12:08 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class GenType 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Type from MS
+    uses 
+    	Type                    from MS,
+     	Class                   from MS,
+	Package                 from MS,
+     	HAsciiString            from TCollection,
+	HSequenceOfHAsciiString from TColStd
+
+is
+    Create(aClass: Class from MS; aName: HAsciiString from TCollection; aConstraint : HAsciiString from TCollection)
+     returns mutable GenType from MS;
+    ---Purpose: create a type with a type constraint
+   
+    Create(aClass: Class from MS; aName: HAsciiString from TCollection)
+     returns mutable GenType from MS;
+    ---Purpose: create a type with an any constraint	
+	 
+    TYpe(me)
+     returns mutable Type from MS;
+    ---Purpose: return the constraint's type
+    
+    TYpeName(me)
+     returns mutable HAsciiString from TCollection;
+    ---Purpose: returns the constraint type's name
+     
+    InstType(me : mutable; aTypeName : HAsciiString from TCollection);
+    ---Purpose: If the constraint type is generic, we set the instantiation types here
+    --          ex. :  G (item0;
+    --                    item1 as Sequence from TCollection(item0))
+    --                    
+    --                 InsType are for type item1 -> item0
+    
+    GetInstTypes(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+	   
+    SetAny(me : mutable);
+    ---Purpose: set no constraint checking
+ 
+    Any(me)
+     returns Boolean;
+    ---Purpose: ask if the this type has a constraint checking
+     
+    Package(me: mutable; aPackage: HAsciiString from TCollection)
+    	is redefined;
+    Package(me)
+    	returns mutable Package from MS
+    	is redefined;
+
+    Private(me)
+    	returns Boolean;
+    
+fields
+
+    myClass   : HAsciiString            from TCollection;
+    myAny     : Boolean                 from Standard;
+    myType    : HAsciiString            from TCollection;
+    myInsType : HSequenceOfHAsciiString from TColStd;
+    myPrivate : Boolean                 from Standard;
+    
+end GenType from MS;

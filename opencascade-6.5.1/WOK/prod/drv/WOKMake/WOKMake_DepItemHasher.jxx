@@ -1,0 +1,6 @@
+#ifndef _WOKMake_DepItem_HeaderFile
+#include <WOKMake_DepItem.hxx>
+#endif
+#ifndef _WOKMake_DepItemHasher_HeaderFile
+#include <WOKMake_DepItemHasher.hxx>
+#endif

@@ -1,0 +1,35 @@
+-- File:	WOKernel_Station.cdl
+-- Created:	Fri Jul 28 16:27:09 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Station from WOKernel 
+
+	---Purpose: Manages Stations Operations
+
+uses
+    StationID             from WOKernel,
+    HSequenceOfStationID  from WOKernel,
+    HAsciiString          from TCollection
+    
+raises
+    ProgramError        from Standard
+is
+
+    GetID(myclass; astring : HAsciiString from TCollection) 
+    	returns StationID    from WOKernel
+    	raises  ProgramError from Standard;
+
+    IsNameKnown(myclass; astring : HAsciiString from TCollection) 
+    	returns Boolean from Standard;
+	
+    GetName(myclass; anid : StationID from WOKernel)
+    	returns HAsciiString from TCollection;
+
+    GetHSeqOfStation(myclass; astr : HAsciiString from TCollection)
+    	returns HSequenceOfStationID from WOKernel
+    	raises  ProgramError from Standard;
+
+end Station;

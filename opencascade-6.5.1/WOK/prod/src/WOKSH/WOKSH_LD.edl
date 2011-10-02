@@ -1,0 +1,9 @@
+@ifnotdefined ( %WOKSH_LD_EDL ) then
+ @set %WOKSH_LD_EDL = "";
+ @if ( %Station == "sun" ) then
+  @template LD_Footer () is
+  $ -lC -lc;
+  @end;
+ @endif;
+@endif;
+

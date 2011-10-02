@@ -1,0 +1,266 @@
+// File:	WOKTools_Map.gxx
+// Created:	Thu Jan  7 18:14:26 1993
+// Author:	Remi LEQUETTE
+//		<rle@phylox>
+
+
+#include <Standard_DomainError.hxx>
+#include <Standard_NoSuchObject.hxx>
+
+// Node definition and nodes storage management
+
+#if (defined IRIX || defined WNT || defined LIN )
+
+template <class TheKey> class MapNode : public WOKTools_MapNode {
+  public :
+    MapNode(const TheKey& K, const Standard_Integer ahascode, MapNode* n) : WOKTools_MapNode(n),key(K), hashcode(ahascode) {}
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+  TheKey   key;
+  Standard_Integer hashcode;
+};
+
+#define Node MapNode<TheKey>
+
+#else
+
+class Node : public WOKTools_MapNode {
+  public :
+    Node(const TheKey& K, const Standard_Integer ahascode, Node* n) : WOKTools_MapNode(n),key(K), hashcode(ahascode) {}
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+  TheKey   key;
+  Standard_Integer hashcode;
+};
+#endif
+
+//=======================================================================
+//function : WOKTools_Map
+//purpose  : 
+//=======================================================================
+
+WOKTools_Map::WOKTools_Map(const Standard_Integer NbBuckets) :
+       WOKTools_BasicMap(NbBuckets,Standard_True)
+{
+}
+
+//=======================================================================
+//function : WOKTools_Map
+//purpose  : 
+//=======================================================================
+
+WOKTools_Map::WOKTools_Map(const WOKTools_Map& Other) :
+       WOKTools_BasicMap(Other.NbBuckets(),Standard_True)
+{
+  if (Other.Extent() != 0)
+    Standard_DomainError::Raise("WOKTools:Copy of Map");
+}
+
+//=======================================================================
+//function : Assign
+//purpose  : 
+//=======================================================================
+
+WOKTools_Map& WOKTools_Map::Assign(const WOKTools_Map& Other)
+{
+  if (this == &Other) return *this;
+  Clear();
+  ReSize(Other.NbBuckets());
+  Node** data = (Node**)myData1;
+  for (WOKTools_MapIterator It(Other); It.More(); It.Next()) {
+    int hashcode = It.Hashcode();
+    int k = Index(hashcode,NbBuckets());
+    Node* p = data[k];
+    while (p) {
+      if (hashcode == p->hashcode) {
+	if (Hasher::IsEqual(p->key,It.Key())) {
+	  break;
+	}
+      }
+      p = (Node*) p->next;
+    }
+    Increment();
+    data[k] = new Node(It.Key(),hashcode,data[k]);
+  }
+
+  return *this;
+}
+
+
+//=======================================================================
+//function : ReSize
+//purpose  : 
+//=======================================================================
+
+void WOKTools_Map::ReSize(const Standard_Integer N)
+{
+  Node** newdata;
+  Node** dummy;
+  Standard_Integer newBuck;
+  if (BeginResize(N,newBuck,
+		  *(Standard_Address*)&newdata,*(Standard_Address*)&dummy)) {
+    if (myData1) {
+      Node** olddata = (Node**) myData1;
+      Node *p, *q;
+      Standard_Integer i,k;
+      for (i = 0; i <= NbBuckets(); i++) {
+	if (olddata[i]) {
+	  p = olddata[i];
+	  while (p) {
+	    k = Index(p->hashcode,newBuck);
+	    q = (Node*) p->next;
+	    p->next = newdata[k];
+	    newdata[k] = p;
+	    p = q;
+	  }
+	}
+      }
+    }
+    EndResize(N,newBuck,newdata,dummy);
+  }
+}
+
+//=======================================================================
+//function : Clear
+//purpose  : 
+//=======================================================================
+
+void WOKTools_Map::Clear()
+{
+  if (!IsEmpty()) {
+    Standard_Integer i;
+    Node** data = (Node**) myData1;
+    Node *p,*q;
+    for (i = 0; i <= NbBuckets(); i++) {
+      if (data[i]) {
+	p = data[i];
+	while (p) {
+	  q = (Node*)p->next;
+	  delete p;
+	  p = q;
+	}
+      }
+    }
+  }
+  WOKTools_BasicMap::Destroy();
+}
+
+//=======================================================================
+//function : Add
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_Map::Add(const TheKey& K)
+{
+  if (Resizable()) ReSize(Extent());
+  Node** data = (Node**)myData1;
+  int hashcode = Hasher::HashCode(K);
+  int k = Index(hashcode,NbBuckets());
+  Node* p = data[k];
+  while (p) {
+    if (hashcode == p->hashcode) {
+      if (Hasher::IsEqual(p->key,K)) {
+	return Standard_False;
+      }
+    }
+    p = (Node*) p->next;
+  }
+  Increment();
+  data[k] = new Node(K,hashcode,data[k]);
+  return Standard_True;
+}
+
+//=======================================================================
+//function : Contains
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_Map::Contains(const TheKey& K) const
+{
+  if (IsEmpty()==Standard_True) return Standard_False;
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  Node* p = data[Index(hashcode,NbBuckets())];
+  while (p) {
+    if ( hashcode == p->hashcode ) {
+      if (Hasher::IsEqual(p->key,K)) {
+	return Standard_True;
+      }
+    }
+    p = (Node*) p->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : Remove
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_Map::Remove(const TheKey& K)
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  int k = Index(hashcode, NbBuckets());
+  Node* p = data[k];
+  Node* q = NULL;
+  while (p) {
+    if ( hashcode == p->hashcode ) {
+      if (Hasher::IsEqual(p->key,K)) {
+	Decrement();
+	if (q) q->next = p->next;
+	else   data[k] = (Node*) p->next;
+	delete p;
+	return Standard_True;
+      }
+    }
+    q = p;
+    p = (Node*) p->next;
+  }
+  return Standard_False;
+}
+
+
+// method of the iterator
+
+//=======================================================================
+//function : Key
+//purpose  : 
+//=======================================================================
+
+const TheKey& WOKTools_MapIterator::Key() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_MapIterator::Key");  
+  return ((Node*) myNode)->key;
+}
+
+
+// method of the iterator
+
+//=======================================================================
+//function : Hashcode
+//purpose  : 
+//=======================================================================
+
+Standard_Integer WOKTools_MapIterator::Hashcode() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_MapIterator::HashCode");  
+  return ((Node*) myNode)->hashcode;
+}
+
+
+#ifdef Node
+#undef Node
+#endif
+

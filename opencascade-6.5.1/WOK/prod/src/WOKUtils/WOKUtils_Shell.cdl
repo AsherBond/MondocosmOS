@@ -1,0 +1,17 @@
+-- File:	WOKUtils_Shell.cdl
+-- Created:	Fri Jan 31 19:03:00 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class Shell from WOKUtils 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+is
+
+    Create returns mutable Shell from WOKUtils;
+
+end Shell;

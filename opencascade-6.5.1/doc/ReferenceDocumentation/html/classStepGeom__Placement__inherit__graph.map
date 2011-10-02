@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepGeom__Axis1Placement.html" title="StepGeom_Axis1Placement" alt="" coords="5,392,216,421"/>
+<area shape="rect" id="node13" href="$classStepGeom__Axis2Placement2d.html" title="StepGeom_Axis2Placement2d" alt="" coords="240,392,467,421"/>
+<area shape="rect" id="node15" href="$classStepGeom__Axis2Placement3d.html" title="StepGeom_Axis2Placement3d" alt="" coords="491,392,717,421"/>
+<area shape="rect" id="node2" href="$classStepGeom__GeometricRepresentationItem.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="199,237,508,267"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="239,160,468,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="292,83,415,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="279,5,428,35"/>
+<area shape="rect" id="node17" href="$classStepFEA__FeaAxis2Placement3d.html" title="Representation of STEP entity FeaAxis2Placement3d &#160;" alt="" coords="487,469,721,499"/>
+</map>

@@ -1,0 +1,56 @@
+;# This procedure is called when using the command:
+;#
+;#   wnews -x -from n1 -to n2 -proc MyProc where n1 and n2 are two digits
+;#
+;# Entries in MYTABLE are unit and type names on the form Unit.type.
+;#
+;# Each item in MYTABLE is a list with the the following format:
+;#
+;# Example:
+;# MYTABLE(WOKMake.p)   = {Modified {  WOKUMake.edl 1.2}} {Modified {  WOKUMakeStep.edl 1.2}}
+;#
+
+proc MyProc { comments table args } {
+    upvar $table MYTABLE
+    set from_wb DESIGN:k1dev:ref
+    set dest_wb DESIGN:k1fab:ref
+    set l_fab [w_info -l $dest_wb]
+    set l_ud {}
+    foreach UD [lsort [array names MYTABLE]] {
+	set x      [split $UD .]
+	set name   [lindex $x 0]
+	set type   [lindex $x 1]
+	lappend l_ud $name
+	if { [lsearch $l_fab $name] == -1 } {
+	    puts "ucreate -${type} ${dest_wb}:${name}"
+	}
+	set from_src  [wokinfo -p source:. ${from_wb}:${name}]
+	set dest_src  [wokinfo -p source:. ${dest_wb}:${name}]
+	set l_file {}
+	foreach item $MYTABLE($UD) {
+	    set mark [lindex $item 0]  ;# == Modified | Added | Deleted
+	    switch -- $mark {
+
+		Modified {
+		    set elem [lindex $item 1]  ;# == {name.ext x.y}
+		    set file [lindex $elem 0]  ;#
+		    set vers [lindex $item 1]  ;#
+		    if { [lsearch $l_file $file] == -1 } {
+			puts "Copying $file from $from_src to $dest_src"
+			;# exec cp $from_src/$file $dest_src/$file
+			lappend l_file $file
+		    }
+		}
+
+		Added  {
+		}
+
+		Deleted {
+		}
+	    }
+	}
+    }
+    puts " je dois recopsdsdsd $l_ud"
+    puts "comments = $comments"
+    return 1
+}

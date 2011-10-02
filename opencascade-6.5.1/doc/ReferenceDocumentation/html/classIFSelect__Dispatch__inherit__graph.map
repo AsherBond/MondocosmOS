@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__DispGlobal.html" title="A DispGlobal gathers all the input Entities into only one &#160;&#160;global Packet &#160;" alt="" coords="607,5,761,35"/>
+<area shape="rect" id="node9" href="$classIFSelect__DispPerCount.html" title="A DispPerCount gathers all the input Entities into one or &#160;&#160;several Packets, each..." alt="" coords="595,59,773,88"/>
+<area shape="rect" id="node11" href="$classIFSelect__DispPerFiles.html" title="A DispPerFiles produces a determined count of Packets from the &#160;&#160;input Entities...." alt="" coords="601,112,767,141"/>
+<area shape="rect" id="node13" href="$classIFSelect__DispPerOne.html" title="A DispPerOne gathers all the input Entities into as many &#160;&#160;Packets as there Root..." alt="" coords="601,165,767,195"/>
+<area shape="rect" id="node15" href="$classIFSelect__DispPerSignature.html" title="A DispPerSignature sorts input Entities according to a &#160;&#160;Signature : it works with..." alt="" coords="584,219,784,248"/>
+<area shape="rect" id="node17" href="$classIGESSelect__DispPerDrawing.html" title="This type of dispatch defines sets of entities attached to &#160;&#160;distinct drawings. This..." alt="" coords="579,272,789,301"/>
+<area shape="rect" id="node19" href="$classIGESSelect__DispPerSingleView.html" title="This type of dispatch defines sets of entities attached to &#160;&#160;distinct single views..." alt="" coords="571,325,797,355"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,165,328,195"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,165,156,195"/>
+</map>

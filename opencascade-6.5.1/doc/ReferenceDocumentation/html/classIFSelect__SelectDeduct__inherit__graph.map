@@ -1,0 +1,45 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIFSelect__SelectAnyList.html" title="A SelectAnyList kind Selection selects a List of an Entity, as &#160;&#160;well as this Entity..." alt="" coords="840,165,1019,195"/>
+<area shape="rect" id="node13" href="$classIFSelect__SelectExplore.html" title="A SelectExplore determines from an input list of Entities, &#160;&#160;a list obtained by a..." alt="" coords="840,379,1019,408"/>
+<area shape="rect" id="node39" href="$classIFSelect__SelectExtract.html" title="A SelectExtract determines a list of Entities from an Input &#160;&#160;Selection, as a sub&#45;list..." alt="" coords="839,992,1020,1021"/>
+<area shape="rect" id="node75" href="$classIFSelect__SelectShared.html" title="A SelectShared selects Entities which are directly Shared &#160;&#160;by the Entities of the..." alt="" coords="843,1045,1016,1075"/>
+<area shape="rect" id="node77" href="$classIFSelect__SelectSharing.html" title="A SelectSharing selects Entities which directly Share (Level &#160;&#160;One) the Entities..." alt="" coords="841,1099,1017,1128"/>
+<area shape="rect" id="node79" href="$classIFSelect__SelectSuite.html" title="A SelectSuite can describe a suite of SelectDeduct as a unique &#160;&#160;one : in other words..." alt="" coords="848,1152,1011,1181"/>
+<area shape="rect" id="node81" href="$classIGESSelect__SelectDrawingFrom.html" title="This selection gets the Drawings attached to its input IGES &#160;&#160;entities. They are..." alt="" coords="812,1205,1047,1235"/>
+<area shape="rect" id="node83" href="$classIGESSelect__SelectFromDrawing.html" title="This selection gets in all the model, the entities which are &#160;&#160;attached to the drawing(s)..." alt="" coords="812,1259,1047,1288"/>
+<area shape="rect" id="node85" href="$classIGESSelect__SelectFromSingleView.html" title="This selection gets in all the model, the entities which are &#160;&#160;attached to the views..." alt="" coords="804,1312,1055,1341"/>
+<area shape="rect" id="node87" href="$classIGESSelect__SelectSingleViewFrom.html" title="This selection gets the Single Views attached to its input &#160;&#160;IGES entities. Single..." alt="" coords="804,1365,1055,1395"/>
+<area shape="rect" id="node2" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="377,1125,524,1155"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,1125,328,1155"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,1125,156,1155"/>
+<area shape="rect" id="node11" href="$classIFSelect__SelectInList.html" title="A SelectInList kind Selection selects a List of an Entity, &#160;&#160;which is composed of..." alt="" coords="1151,5,1316,35"/>
+<area shape="rect" id="node15" href="$classIFSelect__SelectSignedShared.html" title="In the graph, explore the Shareds of the input entities, &#160;&#160;until it encounters some..." alt="" coords="1124,59,1343,88"/>
+<area shape="rect" id="node17" href="$classIFSelect__SelectSignedSharing.html" title="In the graph, explore the sharings of the input entities, &#160;&#160;until it encounters some..." alt="" coords="1123,112,1344,141"/>
+<area shape="rect" id="node19" href="$classIGESSelect__SelectBasicGeom.html" title="This selection returns the basic geometric elements &#160;&#160;contained in an IGES Entity..." alt="" coords="1121,165,1345,195"/>
+<area shape="rect" id="node21" href="$classIGESSelect__SelectBypassGroup.html" title="Selects a list built as follows : &#160;&#160;Groups are entities type 402, forms 1,7,14,15..." alt="" coords="1116,219,1351,248"/>
+<area shape="rect" id="node23" href="$classIGESSelect__SelectBypassSubfigure.html" title="Selects a list built as follows : &#160;&#160;Subfigures correspond to &#160;&#160;* Definition (basic..." alt="" coords="1104,272,1363,301"/>
+<area shape="rect" id="node25" href="$classIGESSelect__SelectFaces.html" title="This selection returns the faces contained in an IGES Entity &#160;&#160;or itself if it is..." alt="" coords="1140,325,1327,355"/>
+<area shape="rect" id="node27" href="$classIGESSelect__SelectPCurves.html" title="This Selection returns the pcurves which lie on a face &#160;&#160;In two modes : global (i..." alt="" coords="1132,379,1335,408"/>
+<area shape="rect" id="node29" href="$classSTEPSelections__SelectAssembly.html" title="STEPSelections_SelectAssembly" alt="" coords="1113,432,1353,461"/>
+<area shape="rect" id="node31" href="$classSTEPSelections__SelectFaces.html" title="This selection returns &quot;STEP faces&quot; &#160;" alt="" coords="1125,485,1341,515"/>
+<area shape="rect" id="node33" href="$classSTEPSelections__SelectGSCurves.html" title="This selection returns &quot;curves in the geometric_set (except composite curves)&quot;..." alt="" coords="1112,539,1355,568"/>
+<area shape="rect" id="node35" href="$classSTEPSelections__SelectInstances.html" title="STEPSelections_SelectInstances" alt="" coords="1112,592,1355,621"/>
+<area shape="rect" id="node37" href="$classXSControl__ConnectedShapes.html" title="From a TopoDS_Shape, or from the entity which has produced it, &#160;&#160;searches for the..." alt="" coords="1124,645,1343,675"/>
+<area shape="rect" id="node41" href="$classIFSelect__SelectAnyType.html" title="A SelectAnyType sorts the Entities of which the Type is Kind &#160;&#160;of a given Type :..." alt="" coords="1141,699,1325,728"/>
+<area shape="rect" id="node45" href="$classIFSelect__SelectErrorEntities.html" title="A SelectErrorEntities sorts the Entities which are qualified &#160;&#160;as &quot;Error&quot;..." alt="" coords="1127,752,1340,781"/>
+<area shape="rect" id="node47" href="$classIFSelect__SelectFlag.html" title="A SelectFlag queries a flag noted in the bitmap of the Graph. &#160;&#160;The Flag is designated..." alt="" coords="1156,805,1311,835"/>
+<area shape="rect" id="node51" href="$classIFSelect__SelectRange.html" title="A SelectRange keeps or rejects a sub&#45;set of the input set, &#160;&#160;that is the Entities..." alt="" coords="1148,859,1319,888"/>
+<area shape="rect" id="node53" href="$classIFSelect__SelectRootComps.html" title="A SelectRootComps sorts the Entities which are part of Strong &#160;&#160;Componants, local..." alt="" coords="1131,912,1336,941"/>
+<area shape="rect" id="node55" href="$classIFSelect__SelectRoots.html" title="A SelectRoots sorts the Entities which are local roots of a &#160;&#160;set of Entities (not..." alt="" coords="1149,965,1317,995"/>
+<area shape="rect" id="node57" href="$classIFSelect__SelectSent.html" title="This class returns entities according sending to a file &#160;&#160;Once a model has been loaded..." alt="" coords="1153,1019,1313,1048"/>
+<area shape="rect" id="node59" href="$classIFSelect__SelectSignature.html" title="A SelectSignature sorts the Entities on a Signature Matching. &#160;&#160;The signature to..." alt="" coords="1137,1072,1329,1101"/>
+<area shape="rect" id="node61" href="$classIFSelect__SelectUnknownEntities.html" title="A SelectUnknownEntities sorts the Entities which are qualified &#160;&#160;as &quot;Unknown&quot;..." alt="" coords="1113,1125,1353,1155"/>
+<area shape="rect" id="node63" href="$classIGESSelect__SelectLevelNumber.html" title="This selection looks at Level Number of IGES Entities : &#160;&#160;it considers items attached..." alt="" coords="1115,1179,1352,1208"/>
+<area shape="rect" id="node65" href="$classIGESSelect__SelectName.html" title="Selects Entities which have a given name. &#160;&#160;Consider Property Name if present, else..." alt="" coords="1140,1232,1327,1261"/>
+<area shape="rect" id="node67" href="$classIGESSelect__SelectSubordinate.html" title="This selections uses Subordinate Status as sort criterium &#160;&#160;It is an integer number..." alt="" coords="1120,1285,1347,1315"/>
+<area shape="rect" id="node69" href="$classIGESSelect__SelectVisibleStatus.html" title="This selection looks at Blank Status of IGES Entities &#160;&#160;Direct selection keeps Visible..." alt="" coords="1116,1339,1351,1368"/>
+<area shape="rect" id="node71" href="$classXSControl__SelectForTransfer.html" title="This selection selects the entities which are recognised for &#160;&#160;transfer by an Actor..." alt="" coords="1127,1392,1340,1421"/>
+<area shape="rect" id="node43" href="$classIFSelect__SelectType.html" title="A SelectType keeps or rejects Entities of which the Type &#160;&#160;is Kind of a given Cdl..." alt="" coords="1456,699,1616,728"/>
+<area shape="rect" id="node49" href="$classIFSelect__SelectIncorrectEntities.html" title="A SelectIncorrectEntities sorts the Entities which have been &#160;&#160;noted as Incorrect..." alt="" coords="1415,805,1657,835"/>
+<area shape="rect" id="node73" href="$classSTEPSelections__SelectForTransfer.html" title="STEPSelections_SelectForTransfer" alt="" coords="1411,1392,1661,1421"/>
+</map>

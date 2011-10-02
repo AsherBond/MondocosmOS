@@ -1,0 +1,140 @@
+-- File:	WOKMake_BuildProcess.cdl
+-- Created:	Wed Mar 19 16:20:44 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class BuildProcess from WOKMake 
+inherits TShared   from MMgt
+
+	---Purpose: 
+
+uses
+    HAsciiString                       from TCollection,
+    Shell                              from WOKUtils,
+    DevUnit                            from WOKernel,
+    UnitGraph                          from WOKernel,
+    Locator                            from WOKernel,
+    MSTranslatorIterator               from WOKBuilder,
+    BuildProcessGroup                  from WOKMake,
+    Step                               from WOKMake,
+    DataMapOfHAsciiStringOfStep        from WOKMake,
+    IndexedDataMapOfBuildProcessGroup  from WOKMake,
+    HSequenceOfHAsciiString            from TColStd,
+    SequenceOfHAsciiString             from TColStd,
+    Boolean                            from Standard,
+    MapOfHAsciiString                  from WOKTools,
+    IndexedDataMapOfHAsciiStringOfInputFile       from WOKMake,
+    DataMapOfHAsciiStringOfSequenceOfHAsciiString from WOKMake
+    
+is
+
+    Create(alocator : Locator from WOKernel; ashell : Shell from WOKUtils; aunitgraph : UnitGraph from WOKernel)
+    	returns mutable BuildProcess from WOKMake;
+
+
+    UnitGraph(me) 
+    ---C++: return const &
+    ---C++: inline
+    	returns UnitGraph from WOKernel;
+	
+    Locator(me)
+    ---C++: return const &
+    ---C++: inline
+    	returns Locator from WOKernel;
+	
+    Shell(me)
+    ---C++: return const &
+    ---C++: inline
+    	returns Shell from WOKUtils;
+
+    TranslatorIterator(me:mutable)
+    ---C++: return &
+    ---C++: inline
+    	returns MSTranslatorIterator from WOKBuilder;
+
+    GetKnownUnits(me:mutable);
+
+    KnownUnits(me:mutable)
+    ---C++: return &
+    ---C++: inline
+    	returns MapOfHAsciiString from WOKTools;
+    
+    MakeState(me:mutable)
+    ---C++: return &
+    ---C++: inline
+	returns IndexedDataMapOfHAsciiStringOfInputFile from WOKMake;
+	
+    ComputeSteps(me:mutable; aunit : DevUnit from WOKernel)
+    	returns Boolean from Standard;
+
+    RemoveStep(me:mutable; aid : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    RemoveUnit(me:mutable; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    ClearUnits(me:mutable);
+
+    Steps(me) 
+    ---C++: return const &
+    ---C++: inline
+	returns DataMapOfHAsciiStringOfStep from WOKMake;
+
+    ClearGroups(me:mutable);
+
+    Groups(me)
+    ---C++: return const &
+    ---C++: inline
+	returns IndexedDataMapOfBuildProcessGroup from WOKMake; 
+
+    Units(me)
+    ---C++: return const &
+    ---C++: inline
+	returns DataMapOfHAsciiStringOfSequenceOfHAsciiString from WOKMake;
+
+    GetGroup(me:mutable; aname : HAsciiString from TCollection)
+    	returns BuildProcessGroup from WOKMake;
+
+    AddStep(me:mutable; astep : Step from WOKMake) is private;
+    
+    StepExists(me:mutable;  aunit : DevUnit from WOKernel; acode : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    GetStepFromID(me:mutable; anid : HAsciiString from TCollection)
+    	returns Step from WOKMake;
+
+    GetAndAddStep(me:mutable;  aunit : DevUnit from WOKernel; acode, asubcode : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns Step from WOKMake;
+
+    IsUnitInProcess(me; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    GetUnitSteps(me; aunit : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns SequenceOfHAsciiString from TColStd;
+
+    Find(me; aunit : DevUnit from WOKernel; acode, asubcode : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns Step from WOKMake;
+
+    Find(me; anid : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns Step from WOKMake;
+
+fields
+
+    myunitgraph   : UnitGraph                             from WOKernel;
+    mylocator     : Locator                               from WOKernel;
+    myshell       : Shell                                 from WOKUtils;
+    mycdlit       : MSTranslatorIterator                  from WOKBuilder;
+    myknownunits  : MapOfHAsciiString                     from WOKTools;
+    mymakestate   : IndexedDataMapOfHAsciiStringOfInputFile from WOKMake;
+
+    mysteps       : DataMapOfHAsciiStringOfStep                   from WOKMake;
+    mygroups      : IndexedDataMapOfBuildProcessGroup             from WOKMake; 
+    myunits       : DataMapOfHAsciiStringOfSequenceOfHAsciiString from WOKMake;
+    
+end BuildProcess;

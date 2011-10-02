@@ -1,0 +1,89 @@
+-- File:	WOKMake_MetaStep.cdl
+-- Created:	Mon Aug 26 17:06:37 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class    MetaStep from WOKMake 
+inherits Step     from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess            from WOKMake,
+    HSequenceOfInputFile    from WOKMake,
+    OutputFile              from WOKMake,    
+    InputFile               from WOKMake,
+    Status                  from WOKMake,
+    DevUnit                 from WOKernel,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection
+    
+is
+
+    Create( aprocess : BuildProcess   from WOKMake;
+    	    aunit    : DevUnit from WOKernel; 
+    	    acode    : HAsciiString from TCollection; 
+    	    checked, hidden : Boolean  from Standard);
+	       
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    SetAdmFileType(me:mutable; atype : HAsciiString from TCollection);
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    SetOutputDirTypeName(me:mutable; atype : HAsciiString from TCollection);
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    GetUnderlyingSteps(me:mutable)
+    ---Purpose: Get Underlying steps using output of input steps
+    	returns HSequenceOfHAsciiString from TColStd
+   	is virtual protected;
+
+    GetLastUnderlyingSteps(me:mutable)
+    ---Purpose: Get Underlying steps using last output of step    
+    	returns HSequenceOfHAsciiString from TColStd
+   	is virtual protected;
+
+    UnderlyingSteps(me:mutable)
+    	returns HSequenceOfHAsciiString from TColStd
+   	is virtual;
+    SetUnderlyingSteps(me:mutable; steps : HSequenceOfHAsciiString from TColStd);
+    	
+
+
+    Parts(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+    SetParts(me:mutable; parts : HSequenceOfHAsciiString from TColStd);
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    ---Purpose: Executes underlying steps
+    --          Computes output files
+    	is redefined private;
+
+    Make(me:mutable) 
+    ---Purpose: Computes dependances 
+    --          Decides if perform is needed.
+    --          Performs Step on needed entities
+    --          returns status    
+    	returns Status from WOKMake is redefined;
+  
+    HandleOutputFile(me:mutable; anfile : OutputFile from WOKMake)
+    ---Purpose: Handles Output file new/same/disappereread  
+    	returns Boolean from Standard
+    	is redefined protected;
+
+fields
+    
+    myadmtype    : HAsciiString            from TCollection;
+    myouttype    : HAsciiString            from TCollection;
+    myparts      : HSequenceOfHAsciiString from TColStd;
+    myundersteps : HSequenceOfHAsciiString from TColStd;
+
+end MetaStep;

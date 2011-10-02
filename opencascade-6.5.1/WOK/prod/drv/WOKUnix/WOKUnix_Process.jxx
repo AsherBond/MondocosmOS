@@ -1,0 +1,12 @@
+#ifndef _WOKUnix_ProcessOutput_HeaderFile
+#include <WOKUnix_ProcessOutput.hxx>
+#endif
+#ifndef _OSD_OSDError_HeaderFile
+#include <OSD_OSDError.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Process_HeaderFile
+#include <WOKUnix_Process.hxx>
+#endif

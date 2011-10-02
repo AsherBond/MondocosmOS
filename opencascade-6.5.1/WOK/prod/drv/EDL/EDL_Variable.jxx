@@ -1,0 +1,6 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _EDL_Variable_HeaderFile
+#include <EDL_Variable.hxx>
+#endif

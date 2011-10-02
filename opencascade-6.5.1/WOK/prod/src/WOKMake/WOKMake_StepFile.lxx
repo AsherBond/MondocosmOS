@@ -1,0 +1,105 @@
+// File:	WOKMake_StepFile.lxx
+// Created:	Tue Jun 18 13:44:56 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+// BASE CLASS STEPFILE defines 
+#define STEPFILE_PHYSIC 0x01
+#define STEPFILE_LOCATE 0x02
+#define STEPFILE_STEPID 0x04
+
+// INPUT FILES defines
+
+#define STEPFILE_DIRECT 0x08
+
+// OUTPUT FILES defines
+
+#define STEPFILE_REFPROD 0x10
+#define STEPFILE_MEMBEXT 0x20
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : ID
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKMake_StepFile::ID() const
+{
+  return myid;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : File
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_File)& WOKMake_StepFile::File() const
+{
+  return myfile;
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : BuilderEntity
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKBuilder_Entity)& WOKMake_StepFile::BuilderEntity() const
+{
+  return myent;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : LastPath
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKUtils_Path)& WOKMake_StepFile::LastPath() const
+{
+  return mylastpath;
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Status
+//purpose  : 
+//=======================================================================
+inline WOKMake_FileStatus WOKMake_StepFile::Status() const
+{
+  return mystatus;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsLocateAble
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_StepFile::IsLocateAble() const
+{
+  if(myattr & STEPFILE_LOCATE) return Standard_True;
+  else                         return Standard_False;
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsPhysic
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_StepFile::IsPhysic() const
+{
+  if(myattr & STEPFILE_PHYSIC) return Standard_True;
+  else                         return Standard_False;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsXStep
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_StepFile::IsStepID() const
+{
+  if(myattr & STEPFILE_STEPID) return Standard_True;
+  else                         return Standard_False;
+}
+

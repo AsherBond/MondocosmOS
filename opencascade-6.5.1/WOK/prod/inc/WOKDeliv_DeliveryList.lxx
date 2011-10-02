@@ -1,0 +1,35 @@
+// Copyright: 	Matra-Datavision 1996
+// File:	WOKDeliv_DeliveryList.lxx
+// Created:	Mon Nov  4 14:14:05 1996
+// Author:	Arnaud BOUZY
+//		<adn>
+
+inline void WOKDeliv_DeliveryList::SetPutPath()
+{
+  myPutPath = Standard_True;
+}
+
+inline Standard_Boolean WOKDeliv_DeliveryList::IsPutPath() const
+{
+  return myPutPath;
+}
+
+inline void WOKDeliv_DeliveryList::SetPutLib()
+{
+  myPutLib = Standard_True;
+}
+
+inline Standard_Boolean WOKDeliv_DeliveryList::IsPutLib() const
+{
+  return myPutLib;
+}
+
+inline void WOKDeliv_DeliveryList::SetPutInclude()
+{
+  myPutInclude = Standard_True;
+}
+
+inline Standard_Boolean WOKDeliv_DeliveryList::IsPutInclude() const
+{
+  return myPutInclude;
+}

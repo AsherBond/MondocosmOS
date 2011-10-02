@@ -1,0 +1,217 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Class BaseCollection</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:11.00pt; }
+p.whs3 { font-family:'Lucida Console' , monospace; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nNCollections\nFeatures\nClass BaseCollection");
+addAvenueInfo("Kernel","technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_1.htm","technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_3.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../../whd_show0.gif","../../../../../whd_show2.gif","../../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../../whd_hide0.gif","../../../../../whd_hide2.gif","../../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../../whd_prev0.gif","../../../../../whd_prev2.gif","../../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../../whd_next0.gif","../../../../../whd_next2.gif","../../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Class BaseCollection</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p>There is a common abstract base class for all collections for a given 
+ item type (e.g., gp_Pnt). Developer X can arbitrarily name this base class 
+ like MyPackage_BaseCollPnt in the examples above. This name is further 
+ used in the declarations of any (non-abstract) collection class to designate 
+ the C++ inheritance. </p>
+
+<p>This base class has the public API:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">abstract class <font 
+ style="font-weight: bold;">Iterator as the base class for all Iterators 
+ descried above; </font></p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Iterator&amp; <font 
+ style="font-weight: bold;">CreateIterator </font>() const - creates and 
+ returns the Iterator on this collection; </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Standard_Integer 
+ <font style="font-weight: bold;">Size </font>() const - returns the number 
+ of items in this collection; </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">void <font style="font-weight: bold;">Assign 
+ </font>(const NCollection_BaseCollection&amp; theOther) - copies the contents 
+ of the Other to this collection object; </p></li>
+</ul>
+
+<p>These members enable accessing any collection without knowing its exact 
+ type. In particular, it makes possible to implement methods receiving 
+ objects of the abstract collection type: </p>
+
+<p class="whs3">#include &lt;NColection_Map.hxx&gt;</p>
+
+<p class="whs3">typedef NCollection_Map&lt;gp_Pnt&gt; 
+ MyPackage_MapOfPnt;</p>
+
+<p class="whs3">typedef NCollection_BaseCollection&lt;gp_Pnt&gt; 
+ MyPackage_BaseCollPnt;</p>
+
+<p class="whs3">MyPackage_MapOfPnt 
+ aMapPnt;</p>
+
+<p class="whs3">....</p>
+
+<p class="whs3">gp_Pnt aResult = COG 
+ (aMapPnt);</p>
+
+<p class="whs3">....</p>
+
+<p class="whs3">gp_Pnt COG(const MyPackage_BaseCollPnt&amp; 
+ theColl)</p>
+
+<p class="whs3">{</p>
+
+<p class="whs3">&nbsp;&nbsp;gp_XYZ 
+ aCentreOfGravity(0., 0., 0.);</p>
+
+<p class="whs3">// create type-independent 
+ iterator (it is abstract type instance)</p>
+
+<p class="whs3">&nbsp;&nbsp;MyPackage_BaseCollString::Iterator&amp; 
+ anIter = theColl.CreateIterator();</p>
+
+<p class="whs3">&nbsp;&nbsp;for 
+ (; anIter.More(); anIter.Next()) {</p>
+
+<p class="whs3">&nbsp;&nbsp;&nbsp;&nbsp;aCentreOfGravity 
+ += anIter.Value().XYZ();</p>
+
+<p class="whs3">&nbsp;&nbsp;}</p>
+
+<p class="whs3">&nbsp;&nbsp;return 
+ aCentreOfGravity / theColl.Size();</p>
+
+<p class="whs3">}</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p>Note that there are fundamental differences between the shown type-independent 
+ iterator and the iterator belonging to a particular non-abstract collection:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Type-independent 
+ iterator can only be obtained <font style="font-style: italic;">via </font>the 
+ call <font style="font-style: italic;">CreateIterator()</font>; the typed 
+ iterator - only via the explicit construction. </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Type-independent 
+ iterator is an abstract class, so it is impossible to copy it or to assign 
+ it to another collection object; the typed iterators can be copied and 
+ reassigned using the method <font style="font-style: italic;">Init() </font>. 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Type-independent 
+ iterator is actually destroyed when its collection object is destroyed; 
+ the typed iterator is destroyed as any other C++ object in the corresponding 
+ C++ scope. </p></li>
+</ul>
+
+<p>The common point between them is that it is possible to create any number 
+ of both types of iterators on the same collection object. </p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

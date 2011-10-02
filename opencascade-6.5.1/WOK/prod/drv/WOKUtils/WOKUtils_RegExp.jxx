@@ -1,0 +1,3 @@
+#ifndef _WOKUtils_RegExp_HeaderFile
+#include <WOKUtils_RegExp.hxx>
+#endif

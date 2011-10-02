@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node13" href="$classAIS__AngleDimension.html" title="A framework to define display of angles. &#160;&#160;These displays are particularly useful..." alt="" coords="1297,5,1455,35"/>
+<area shape="rect" id="node15" href="$classAIS__Chamf2dDimension.html" title="A framework to define display of 2D chamfers. &#160;&#160;A chamfer is displayed with arrows..." alt="" coords="1287,59,1465,88"/>
+<area shape="rect" id="node17" href="$classAIS__Chamf3dDimension.html" title="A framework to define display of 3D chamfers. &#160;&#160;A chamfer is displayed with arrows..." alt="" coords="1287,112,1465,141"/>
+<area shape="rect" id="node19" href="$classAIS__ConcentricRelation.html" title="A framework to define a constraint by a relation of &#160;&#160;concentricity between two or..." alt="" coords="1287,165,1465,195"/>
+<area shape="rect" id="node21" href="$classAIS__DiameterDimension.html" title="A framework to display diameter dimensions. &#160;&#160;A diameter is displayed with arrows..." alt="" coords="1284,219,1468,248"/>
+<area shape="rect" id="node23" href="$classAIS__EllipseRadiusDimension.html" title="Computes geometry ( basis curve and plane of dimension) &#160;&#160;for input shape aShape..." alt="" coords="1273,272,1479,301"/>
+<area shape="rect" id="node29" href="$classAIS__EqualDistanceRelation.html" title="A framework to display equivalent distances between &#160;&#160;shapes and a given plane. ..." alt="" coords="1275,325,1477,355"/>
+<area shape="rect" id="node31" href="$classAIS__EqualRadiusRelation.html" title="AIS_EqualRadiusRelation" alt="" coords="1284,379,1468,408"/>
+<area shape="rect" id="node33" href="$classAIS__FixRelation.html" title="Constructs and manages a constraint by a fixed &#160;&#160;relation between two or more interactive..." alt="" coords="1315,432,1437,461"/>
+<area shape="rect" id="node35" href="$classAIS__IdenticRelation.html" title="Constructs a constraint by a relation of identity &#160;&#160;between two or more datums figuring..." alt="" coords="1300,485,1452,515"/>
+<area shape="rect" id="node37" href="$classAIS__LengthDimension.html" title="A framework to display lengths. &#160;&#160;These can be lengths along a face or edge, or ..." alt="" coords="1292,539,1460,568"/>
+<area shape="rect" id="node39" href="$classAIS__MidPointRelation.html" title="presentation of equal distance to point myMidPoint &#160;" alt="" coords="1295,592,1457,621"/>
+<area shape="rect" id="node41" href="$classAIS__OffsetDimension.html" title="A framework to display dimensions of offsets. &#160;&#160;The relation between the offset and..." alt="" coords="1295,645,1457,675"/>
+<area shape="rect" id="node43" href="$classAIS__ParallelRelation.html" title="A framework to display constraints of parallelism &#160;&#160;between two or more Interactive..." alt="" coords="1300,699,1452,728"/>
+<area shape="rect" id="node45" href="$classAIS__PerpendicularRelation.html" title="A framework to display constraints of perpendicularity &#160;&#160;between two or more interactive..." alt="" coords="1279,752,1473,781"/>
+<area shape="rect" id="node47" href="$classAIS__RadiusDimension.html" title="A framework to define display of radii. &#160;&#160;These displays serve as relational references..." alt="" coords="1295,805,1457,835"/>
+<area shape="rect" id="node49" href="$classAIS__SymmetricRelation.html" title="A framework to display constraints of symmetricity &#160;&#160;between two or more datum Interactive..." alt="" coords="1287,859,1465,888"/>
+<area shape="rect" id="node51" href="$classAIS__TangentRelation.html" title="A framework to display tangency constraints between &#160;&#160;two or more Interactive Objects..." alt="" coords="1297,912,1455,941"/>
+<area shape="rect" id="node2" href="$classAIS__InteractiveObject.html" title="Defines a class of objects with display and selection services. &#160;&#160;Entities which..." alt="" coords="896,459,1069,488"/>
+<area shape="rect" id="node4" href="$classSelectMgr__SelectableObject.html" title="A framework to supply the structure of the object to be &#160;&#160;selected. At the first..." alt="" coords="631,459,847,488"/>
+<area shape="rect" id="node6" href="$classPrsMgr__PresentableObject.html" title="A framework to supply the Graphic2d or Graphic3d &#160;&#160;structure of the object to be..." alt="" coords="377,459,580,488"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,459,328,488"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,459,156,488"/>
+<area shape="rect" id="node25" href="$classAIS__MaxRadiusDimension.html" title="Ellipse Max radius dimension of a Shape which can be Edge &#160;&#160;or Face (planar or cylindrical(surface..." alt="" coords="1528,245,1720,275"/>
+<area shape="rect" id="node27" href="$classAIS__MinRadiusDimension.html" title="&#45;&#45; Ellipse Min radius dimension of a Shape which &#160;&#160;can be Edge or Face (planar or..." alt="" coords="1531,299,1717,328"/>
+</map>

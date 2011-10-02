@@ -1,0 +1,21 @@
+-- File:	WOKEntity_Warehouse.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 13:17:22 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Warehouse_EDL) then
+@set %WOKEntity_Warehouse_EDL = "";
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " ParcelListFile  ";
+
+@template WOKEntity_ParcelListFile ( %Entity_Adm ) is
+$%Entity_Adm/ParcelList\^
+@end;
+
+@if ( %Station != "wnt" ) then
+	@template WOKEntity_AfterBuild ( %Entity_Adm ) is
+	$chmod a+w %Entity_Adm/ParcelList
+	@end;
+@endif;
+
+@endif;

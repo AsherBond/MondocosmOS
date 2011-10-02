@@ -1,0 +1,30 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_NatType.cdl	1.1
+-- File:	MS_NatType.cdl
+-- Created:	Tue Sep 17 17:35:27 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+deferred class NatType 
+
+    from 
+    	MS 
+    inherits Type from MS
+    uses
+	HAsciiString from TCollection
+
+is
+
+    Initialize(aName, aPackage, aContainer: HAsciiString; aPrivate: Boolean); 
+
+    Private(me: mutable; aPrivate: Boolean);
+    Private(me)
+    	returns Boolean;
+
+fields
+
+    myPrivate : Boolean;
+    
+end NatType from MS;
+

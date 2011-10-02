@@ -1,0 +1,77 @@
+-- File:	CPPJini_ClientInfo.cdl
+-- Created:	Wed Nov 17 09:40:25 1999
+-- Author:	Eugeny PLOTNIKOV
+--		<e-plotnikov@minsk.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1999
+
+private class ClientInfo from CPPJini inherits Transient from Standard
+ ---Purpose: stores information about client and its types
+
+ uses
+
+  MetaSchema        from MS,
+  MapOfHAsciiString from WOKTools,
+  HAsciiString      from TCollection,
+  ExtractionType    from CPPJini
+
+ is
+
+  Create (
+   aMS    : MetaSchema   from MS;
+   aName  : HAsciiString from TCollection;
+   aLevel : Integer      from Standard
+  ) returns mutable ClientInfo from CPPJini;
+   ---Purpose: constructor
+
+  HasComplete ( me; aName : HAsciiString from TCollection )
+   returns Boolean from Standard;
+   ---Purpose: checks if client has complete type
+
+  HasIncomplete ( me; aName : HAsciiString from TCollection )
+   returns Boolean from Standard;
+   ---Purpose: checks if client has incomplete type
+
+  HasSemicomplete ( me; aName : HAsciiString from TCollection )
+   returns Boolean from Standard;
+   ---Purpose: checks if client has semicomplete type
+
+  Defined (
+   me;
+   aName : HAsciiString       from TCollection;
+   aType : out ExtractionType from CPPJini
+  ) returns Boolean from Standard;
+   ---Purpose: checks if client has type defined or not
+
+  Name ( me ) returns HAsciiString from TCollection;
+   ---Purpose: returns <myName> field
+   ---C++: return const&
+
+  Level ( me ) returns Integer from Standard;
+   ---Purpose: returns level of the client in the 'uses' hierarchy
+   ---C++:     inline
+
+  Root ( me ) returns Boolean from Standard;
+   ---Purpose: returns a flag indicating whether client is a
+   --          root in the 'uses' hierarchy
+   ---C++:     inline
+
+  SetRoot ( me : mutable; aRoot : Boolean from Standard );
+   ---Purpose: sets client state indicating that the client is a root
+   --          in the 'uses' hierarchy
+   ---C++:     inline
+
+  SetLevel ( me : mutable; aLevel : Integer from Standard );
+   ---Purpose: sets a level of the client in the 'uses' hierarchy
+   ---C++:     inline
+
+ fields
+
+  myName         : HAsciiString      from TCollection;
+  myComplete     : MapOfHAsciiString from WOKTools;
+  myIncomplete   : MapOfHAsciiString from WOKTools;
+  mySemicomplete : MapOfHAsciiString from WOKTools;
+  myLevel        : Integer           from Standard;
+  myRoot         : Boolean           from Standard;
+
+end ClientInfo;
+

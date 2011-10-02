@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepAP203__CcDesignDateAndTimeAssignment.html" title="Representation of STEP entity CcDesignDateAndTimeAssignment &#160;" alt="" coords="728,5,1067,35"/>
+<area shape="rect" id="node9" href="$classStepAP214__AppliedDateAndTimeAssignment.html" title="StepAP214_AppliedDateAndTimeAssignment" alt="" coords="736,59,1059,88"/>
+<area shape="rect" id="node11" href="$classStepAP214__AutoDesignActualDateAndTimeAssignment.html" title="StepAP214_AutoDesignActualDateAndTimeAssignment" alt="" coords="700,112,1095,141"/>
+<area shape="rect" id="node13" href="$classStepAP214__AutoDesignNominalDateAndTimeAssignment.html" title="StepAP214_AutoDesignNominalDateAndTimeAssignment" alt="" coords="695,165,1100,195"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+</map>

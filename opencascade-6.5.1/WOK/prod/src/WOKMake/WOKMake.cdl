@@ -1,0 +1,132 @@
+-- File:	WOKMake.cdl
+-- Created:	Wed 28 Jun 15:22:48 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package WOKMake 
+
+	---Purpose: umake Command
+	--          
+	--          Implements the Notion of a WOKernel Entities Construction
+	--          
+	--          WOKMake Handles the link beetween WOKernel and WOKBuilder
+	--          
+
+uses
+    WOKernel,
+    WOKBuilder,
+    WOKUtils,
+    WOKTools,
+    TColStd,
+    TCollection,
+    MMgt,
+    Standard
+is
+
+    enumeration DependStatus is Unknown, TargetNotFound, DepListChanged, OutOfDate
+    ---Purpose: Lists various cases of dependance status
+    end DependStatus;
+
+    enumeration Status is Uptodate, Success, Incomplete, Failed, Processed, Unprocessed; 
+    ---Purpose: Status of Step Execution 
+    --          
+    --          UpToDate   : All out Entities are built and UpToDate
+    --          Success    : Entities out of date where processed successfully
+    --          Incomplete : Available Entities out of date where processed successfully
+    --                       (but some are still missing)
+    --          Failed     : Some of the entities could not be processed.
+
+    enumeration StepOption is Force, None;
+
+    enumeration FileStatus is Undetermined, Disappeared, New, Same, Moved;
+
+    --class StepDescrExplorer;
+
+    deferred class StepFile;
+	class InputFile;
+        class OutputFile;
+    
+    class DepItem;
+    
+    imported StepConstructPtr;
+    class StepBuilder;
+
+    deferred class Step;    
+
+    	class MetaStep;
+	class TriggerStep;
+
+    --class StepDescr;
+    class BuildProcessGroup;
+    class BuildProcess;
+    ---Purpose: BuildProcess handles Step Sequence execution
+    --          (within a unit or units)
+
+    class BuildProcessIterator;
+
+    pointer BuildProcessPtr to BuildProcess from WOKMake;
+
+-- INSTANTIATIONS
+
+    class  SequenceOfInputFile 
+    	instantiates  Sequence from TCollection ( InputFile            from WOKMake ); 
+    class HSequenceOfInputFile 
+    	instantiates HSequence from TCollection ( InputFile            from WOKMake ,
+	    	    	    	    	    	  SequenceOfInputFile  from WOKMake );
+    class  SequenceOfOutputFile 
+    	instantiates  Sequence from TCollection ( OutputFile             from WOKMake ); 
+    class HSequenceOfOutputFile  
+    	instantiates HSequence from TCollection ( OutputFile             from WOKMake ,
+	    	    	    	    	    	  SequenceOfOutputFile   from WOKMake );
+
+    class  SequenceOfStepOption 
+    	instantiates  Sequence from TCollection ( StepOption           from WOKMake ); 
+
+    class HSequenceOfStepOption
+    	instantiates HSequence from TCollection ( StepOption           from WOKMake, 
+    	    	    	    	    	    	  SequenceOfStepOption from WOKMake );
+
+    class  IndexedDataMapOfBuildProcessGroup
+    	instantiates  IndexedDataMap from WOKTools ( HAsciiString         from TCollection,
+    	    	    	    	    	    	     BuildProcessGroup    from WOKMake,
+    	    	    	    	    	    	     HAsciiStringHasher   from WOKTools );
+
+    private class DataMapOfHAsciiStringOfDevUnit
+    ---Purpose: Used To List Known DevUnits in a visibility
+    --          Accelerates Step ImplementationDep    
+    	instantiates  DataMap  from WOKTools    ( HAsciiString         from TCollection, 
+    	    	    	    	    	    	  DevUnit              from WOKernel, 
+	    	    	    	    	    	  HAsciiStringHasher   from WOKTools );
+
+    class IndexedDataMapOfHAsciiStringOfInputFile
+    	instantiates  IndexedDataMap  from WOKTools    ( HAsciiString         from TCollection, 
+    	    	    	    	    	    	    	 InputFile            from WOKMake,
+	    	    	    	    	    	    	 HAsciiStringHasher   from WOKTools );
+
+    class IndexedDataMapOfHAsciiStringOfOutputFile
+    	instantiates   IndexedDataMap from WOKTools    ( HAsciiString         from TCollection,
+	    	    	    	    	    	    	 OutputFile           from WOKMake,
+						    	 HAsciiStringHasher   from WOKTools );
+
+    private class DepItemHasher;
+    class IndexedMapOfDepItem
+    	instantiates   IndexedMap from WOKTools        ( DepItem              from WOKMake,
+						    	 DepItemHasher        from WOKMake );
+
+    class DataMapOfHAsciiStringOfStep					  
+    	instantiates          DataMap from WOKTools    ( HAsciiString         from TCollection,
+	    	    	    	    	    	    	 Step                 from WOKMake,
+    	    	    	    	    	    	    	 HAsciiStringHasher   from WOKTools );
+
+    class DataMapOfHAsciiStringOfSequenceOfHAsciiString					  
+    	instantiates          DataMap from WOKTools    ( HAsciiString           from TCollection,
+	    	    	    	    	    	    	 SequenceOfHAsciiString from TColStd,
+    	    	    	    	    	    	    	 HAsciiStringHasher     from WOKTools );
+
+    class DataMapOfHAsciiStringOfStepBuilder 
+    	instantiates  DataMap from WOKTools            ( HAsciiString         from TCollection,
+    	    	    	    	    	    	    	 StepBuilder          from WOKMake,
+    	    	    	    	    	    	    	 HAsciiStringHasher   from WOKTools );
+end WOKMake;

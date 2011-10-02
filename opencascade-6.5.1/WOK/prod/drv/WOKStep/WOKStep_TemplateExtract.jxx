@@ -1,0 +1,12 @@
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKStep_TemplateExtract_HeaderFile
+#include <WOKStep_TemplateExtract.hxx>
+#endif

@@ -1,0 +1,30 @@
+-- File:	WOKDeliv_DeliveryListShared.cdl
+-- Created:	Thu Jan 29 18:02:31 1998
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1998
+
+class DeliveryListShared from WOKDeliv inherits DeliveryStepList from WOKDeliv
+
+	---Purpose: Process Shared listing
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryListShared from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+end DeliveryListShared;
+

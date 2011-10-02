@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classSelect3D__SensitiveEntity.html" title="Abstract framework to define 3D sensitive entities. &#160;&#160;As the selection process uses..." alt="" coords="27,237,221,267"/>
+<area shape="rect" id="node4" href="$classSelectBasics__SensitiveEntity.html" title="root class ; the inheriting classes will be able to give &#160;&#160;sensitive Areas for the..." alt="" coords="15,160,233,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="63,83,185,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="49,5,199,35"/>
+</map>

@@ -1,0 +1,16 @@
+-- File:	WOKSteps_frontal.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 13 14:22:39 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_frontal_EDL) then
+@set %WOKSteps_frontal_EDL = "";
+
+
+  @set %WOKSteps_SrcGroup = "src";
+  @set %WOKSteps_src      = "*WOKStep_Source";	
+
+  @set %WOKSteps_ExecGroup = "frontal";
+  @set %WOKSteps_frontal   = "*WOKStep_frontal(src)"; 
+
+@endif;

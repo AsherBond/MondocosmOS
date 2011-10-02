@@ -1,0 +1,34 @@
+// File:	WOKTools_DataMapIterator.gxx
+// Created:	Fri Feb 26 19:21:18 1993
+// Author:	Remi LEQUETTE
+//		<rle@phylox>
+
+
+//=======================================================================
+//function : WOKTools_DataMapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_DataMapIterator::WOKTools_DataMapIterator() :
+       WOKTools_BasicMapIterator()
+{}
+
+//=======================================================================
+//function : WOKTools_DataMapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_DataMapIterator::WOKTools_DataMapIterator(const WOKTools_DataMap& aMap) :
+       WOKTools_BasicMapIterator(aMap)
+{}
+
+//=======================================================================
+//function : WOKTools_DataMapIterator
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DataMapIterator::Initialize(const WOKTools_DataMap& aMap)
+{
+  WOKTools_BasicMapIterator::Initialize(aMap);
+}
+

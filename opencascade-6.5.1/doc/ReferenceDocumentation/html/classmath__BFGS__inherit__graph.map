@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classAppDef__BSpGradient__BFGSOfMyBSplGradientOfBSplineCompute.html" title="AppDef_BSpGradient_BFGSOfMyBSplGradientOfBSplineCompute" alt="" coords="204,5,660,35"/>
+<area shape="rect" id="node5" href="$classAppDef__Gradient__BFGSOfMyGradientbisOfBSplineCompute.html" title="AppDef_Gradient_BFGSOfMyGradientbisOfBSplineCompute" alt="" coords="223,59,641,88"/>
+<area shape="rect" id="node7" href="$classAppDef__Gradient__BFGSOfMyGradientOfCompute.html" title="AppDef_Gradient_BFGSOfMyGradientOfCompute" alt="" coords="256,112,608,141"/>
+<area shape="rect" id="node9" href="$classAppDef__Gradient__BFGSOfTheGradient.html" title="AppDef_Gradient_BFGSOfTheGradient" alt="" coords="293,165,571,195"/>
+<area shape="rect" id="node11" href="$classBRepApprox__BSpGradient__BFGSOfMyBSplGradientOfTheComputeLineOfApprox.html" title="BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox" alt="" coords="155,219,709,248"/>
+<area shape="rect" id="node13" href="$classBRepApprox__Gradient__BFGSOfMyGradientbisOfTheComputeLineOfApprox.html" title="BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox" alt="" coords="173,272,691,301"/>
+<area shape="rect" id="node15" href="$classBRepApprox__Gradient__BFGSOfMyGradientOfTheComputeLineBezierOfApprox.html" title="BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox" alt="" coords="160,325,704,355"/>
+<area shape="rect" id="node17" href="$classGeomInt__BSpGradient__BFGSOfMyBSplGradientOfTheComputeLineOfWLApprox.html" title="GeomInt_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfWLApprox" alt="" coords="156,379,708,408"/>
+<area shape="rect" id="node19" href="$classGeomInt__Gradient__BFGSOfMyGradientbisOfTheComputeLineOfWLApprox.html" title="GeomInt_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfWLApprox" alt="" coords="175,432,689,461"/>
+<area shape="rect" id="node21" href="$classGeomInt__Gradient__BFGSOfMyGradientOfTheComputeLineBezierOfWLApprox.html" title="GeomInt_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfWLApprox" alt="" coords="161,485,703,515"/>
+</map>

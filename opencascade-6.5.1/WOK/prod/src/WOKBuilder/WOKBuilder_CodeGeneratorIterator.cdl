@@ -1,0 +1,52 @@
+-- File:	WOKBuilder_CodeGeneratorIterator.cdl
+-- Created:	Thu Jul 11 19:02:20 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class CodeGeneratorIterator  from WOKBuilder 
+inherits ToolInShellIterator from WOKBuilder
+
+	---Purpose: 
+
+uses
+
+    HSequenceOfEntity      from WOKBuilder,
+    CodeGenFile            from WOKBuilder,
+    CodeGenerator          from WOKBuilder,
+    BuildStatus            from WOKBuilder,
+    ToolInShell            from WOKBuilder,
+    HSequenceOfToolInShell from WOKBuilder,
+    Param                  from WOKUtils,
+    Path                   from WOKUtils,
+    Shell                  from WOKUtils,
+    HAsciiString           from TCollection
+
+is
+
+    Create(toolgroup : HAsciiString from TCollection;
+	   params    : Param        from WOKUtils)
+    	returns CodeGeneratorIterator from WOKBuilder;
+
+    Create(codegens : HSequenceOfToolInShell from WOKBuilder) 
+    	returns CodeGeneratorIterator from WOKBuilder;
+
+    Create(toolgroup : HAsciiString from TCollection;
+    	   ashell    : Shell        from WOKUtils; 
+	   adir      : Path         from WOKUtils;
+    	   params    : Param        from WOKUtils)
+    	returns CodeGeneratorIterator from WOKBuilder;
+
+    Init(me:out; ashell    : Shell        from WOKUtils; 
+	    	 adir      : Path         from WOKUtils)
+    	is redefined;
+
+    GetTool(me;aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns ToolInShell from WOKBuilder
+    	is redefined;
+
+    Execute(me:out; acodegenfile : CodeGenFile from WOKBuilder)  
+    	returns BuildStatus from WOKBuilder;
+	    
+end CodeGeneratorIterator;

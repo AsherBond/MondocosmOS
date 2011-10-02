@@ -1,0 +1,71 @@
+-- File:	WOKAPI_Process.cdl
+-- Created:	Tue Oct 28 11:41:46 1997
+-- Author:	
+--		<jga@GROMINEX>
+---Copyright:	 Matra Datavision 1997
+
+
+
+class Process from WOKAPI
+uses
+
+
+    HAsciiString      from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    Session           from WOKAPI,
+    Workbench         from WOKAPI,
+    BuildProcess      from WOKAPI,
+    HSequenceOfDefine from WOKTools
+    
+    
+is
+
+
+    Create(asession : Session from WOKAPI) returns Process from WOKAPI;
+    
+    Init(me:out; abench : HAsciiString from TCollection; 
+    	    	  debug : Boolean from Standard; 
+    	    	  aprof : HAsciiString from TCollection)
+    ---Purpose: Initialize process 
+    	returns Boolean from Standard;
+
+    ExploreInitSection(me:out; lines : HSequenceOfHAsciiString from TColStd;
+    	    	    	       fromindex : Integer from Standard = 1)
+    ---Purpose: Explores Init lines in config file and performs Init
+    	returns Integer from Standard;
+
+    BuildProcess(me)
+    ---C++: return const &
+      	returns BuildProcess from WOKAPI;
+
+    AdvanceToNextValidSection(me:out; lines : HSequenceOfHAsciiString from TColStd;
+    	    	    	          fromindex : Integer from Standard = 1)
+    ---Purpose: Advance to next section in executable state (regarding to :<cond> conditions
+        returns Integer from Standard;
+
+    ExploreTclSection(me:out; lines     : HSequenceOfHAsciiString from TColStd;
+    	    	    	      fromindex : Integer from Standard = 1)
+	returns Integer from Standard;
+	
+    ExecuteTcl(me:out; atclsection : HAsciiString from TCollection)
+      	returns Boolean from Standard;
+    
+    ExploreBuildSection(me:out; lines     : HSequenceOfHAsciiString from TColStd;
+    	    	    	      fromindex : Integer from Standard = 1)
+        returns Integer from Standard;
+	
+    ExecuteBuild(me:out; params : HSequenceOfDefine from WOKTools)
+    	returns Boolean from Standard;
+	
+	
+    ExecuteFile(me:out; afile : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+fields
+
+    mysession : Session      from WOKAPI;
+    mybp      : BuildProcess from WOKAPI;
+	
+end;
+
+

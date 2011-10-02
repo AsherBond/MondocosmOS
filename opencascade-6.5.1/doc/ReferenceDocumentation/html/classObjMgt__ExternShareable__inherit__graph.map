@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classPTopoDS__HShape.html" title="PTopoDS_HShape" alt="" coords="453,192,592,221"/>
+<area shape="rect" id="node2" href="$classStandard__Persistent.html" title="Standard_Persistent" alt="" coords="5,192,165,221"/>
+<area shape="rect" id="node7" href="$classPTopoDS__Compound.html" title="PTopoDS_Compound" alt="" coords="641,5,799,35"/>
+<area shape="rect" id="node9" href="$classPTopoDS__CompSolid.html" title="PTopoDS_CompSolid" alt="" coords="643,59,797,88"/>
+<area shape="rect" id="node11" href="$classPTopoDS__Edge.html" title="PTopoDS_Edge" alt="" coords="660,112,780,141"/>
+<area shape="rect" id="node13" href="$classPTopoDS__Face.html" title="PTopoDS_Face" alt="" coords="661,165,779,195"/>
+<area shape="rect" id="node15" href="$classPTopoDS__Shell.html" title="PTopoDS_Shell" alt="" coords="661,219,779,248"/>
+<area shape="rect" id="node17" href="$classPTopoDS__Solid.html" title="PTopoDS_Solid" alt="" coords="661,272,779,301"/>
+<area shape="rect" id="node19" href="$classPTopoDS__Vertex.html" title="PTopoDS_Vertex" alt="" coords="653,325,787,355"/>
+<area shape="rect" id="node21" href="$classPTopoDS__Wire.html" title="PTopoDS_Wire" alt="" coords="661,379,779,408"/>
+</map>

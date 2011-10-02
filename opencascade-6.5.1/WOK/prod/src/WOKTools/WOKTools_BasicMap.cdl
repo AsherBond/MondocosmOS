@@ -1,0 +1,96 @@
+-- File:	WOKTools_BasicMap.cdl
+-- Created:	Mon May 29 17:38:59 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+private deferred class BasicMap from WOKTools 
+
+	---Purpose: Root  class of  all the maps,  provides utilitites
+	-- for managing the buckets.
+
+is
+    Initialize(NbBuckets : Integer; single : Boolean);
+	---Purpose: Initialize the map.  Single is  True when the  map
+	-- uses only one table of buckets.
+	-- 
+	-- One table  : Map, DataMap
+	-- Two tables : DoubleMap, IndexedMap, IndexedDataMap
+
+    NbBuckets(me) returns Integer
+	---Purpose: Returns the number of buckets in <me>.
+	---C++: inline
+    is static;
+
+    Extent(me) returns Integer
+	---Purpose: Returns the number of keys already stored in <me>.
+	--          
+	---C++: inline
+    is static;
+    
+    IsEmpty(me) returns Boolean
+	---Purpose: Returns  True when the map  contains no keys. 
+	-- This is exactly Extent() == 0.
+	---C++: inline
+    is static;
+    
+    BeginResize(me; 
+    	    	NbBuckets     : Integer; 
+    	    	NewBuckets    : out Integer;
+    	        data1, data2  : out Address from Standard) 
+    returns Boolean
+	---Purpose: Tries to resize  the Map with  NbBuckets.  Returns
+	-- True if  possible, NewBuckts is  the  new nuber of
+	-- buckets.   data1 and data2  are the new tables  of
+	-- buckets where the data must be copied.
+    is static protected;
+    
+    EndResize(me : in out; 
+	      NbBuckets    : Integer; 
+    	      NewBuckets   : Integer;
+    	      data1, data2 : Address from Standard) 
+	---Purpose: If  BeginResize was  succesfull  after copying the
+	-- data to  data1  and data2 this methods  update the
+	-- tables and destroys the old ones.
+    is static protected;
+    
+    Resizable(me) returns Boolean
+	---Purpose: Returns   True  if resizing   the   map should  be
+	-- considered.
+	---C++: inline
+    is static protected;
+    
+    Increment(me : in out) 
+	---Purpose: Decrement the  extent of the  map.
+	---C++: inline
+    is static protected;
+    
+    Decrement(me : in out) 
+	---Purpose: Decrement the  extent of the  map.
+	---C++: inline
+    is static protected;
+    
+    Index(me; ahascode : Integer from Standard; NbBuckets : Integer from Standard)  returns Integer from Standard
+	---C++: inline
+    is static protected;
+    
+    Destroy(me : in out)
+	---Purpose: Destroys the buckets.
+    is static protected;
+    
+    Statistics(me; S : in out OStream)
+	---Purpose: Prints  on <S> usefull  statistics  about  the map
+	-- <me>.  It  can be used  to test the quality of the hashcoding. 
+    is static;
+	
+fields
+    isDouble    : Boolean from Standard; -- True for double maps
+    mySaturated : Boolean from Standard;
+    myNbBuckets : Integer;
+    mySize      : Integer;
+    myData1     : Address from Standard is protected;
+    myData2     : Address from Standard is protected;
+    
+friends
+    class BasicMapIterator from WOKTools
+end BasicMap;

@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKTools_HSequenceOfDefine_HeaderFile
+#include <WOKTools_HSequenceOfDefine.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKTools_Options_HeaderFile
+#include <WOKTools_Options.hxx>
+#endif

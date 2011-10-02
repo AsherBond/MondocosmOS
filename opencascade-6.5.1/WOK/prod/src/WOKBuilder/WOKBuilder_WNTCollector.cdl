@@ -1,0 +1,67 @@
+-- File:	WOKBuilder_WNTCollector.cdl
+-- Created:	Mon Oct 21 12:26:51 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+deferred class WNTCollector from WOKBuilder inherits ToolInShell from WOKBuilder
+
+    ---Purpose: defines abstract class to provide collection of
+    --          input files ( Windows NT specific )
+
+ uses
+
+    HAsciiString          from TCollection,
+    Param                 from WOKUtils,
+    File                  from OSD,
+    HSequenceOfObjectFile from WOKBuilder,
+    BuildStatus           from WOKBuilder,
+    Path                  from WOKUtils
+ 
+ is
+
+    Initialize (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    );
+    	---Purpose: initialization
+
+    SetTargetName ( me : mutable; aName : HAsciiString from TCollection );
+    	---Purpose: sets name for target
+
+    TargetName ( me ) returns HAsciiString from TCollection;
+    	---Purpose: retrieves the target name
+
+    OpenCommandFile ( me : mutable ) returns Boolean from Standard;
+    	---Purpose: creates tool command file
+
+    CloseCommandFile ( me : mutable ) returns Boolean from Standard;
+    	---Purpose: closes tool command file
+
+    EvalCFExt ( me : mutable )
+     returns HAsciiString from TCollection is deferred;
+     	---Purpose: evaluates extension for name of the command file
+    
+    EvalHeader ( me : mutable ) returns HAsciiString from TCollection is deferred;
+    	---Purpose: evaluats tool command line
+
+    ProduceObjectList (
+     me           : mutable;
+     anObjectList : HSequenceOfObjectFile from WOKBuilder
+    );
+    	---Purpose: writes list of the object files to the command file
+    	
+    EvalFooter ( me : mutable ) returns HAsciiString from TCollection is deferred;
+    	---Purpose: evaluates additional information for the tool
+
+    Execute ( me : mutable )
+     returns BuildStatus  from WOKBuilder
+     is redefined static;
+     	---Purpose: executes a tool ( library manager )
+
+ fields
+
+    myTargetName  : HAsciiString from TCollection is protected;
+    myCommandFile : File         from OSD         is protected;
+ 
+end WNTCollector;

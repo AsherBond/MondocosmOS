@@ -1,0 +1,22 @@
+-- File:	MS_Imported.cdl
+-- Created:	Mon Aug 23 18:44:03 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+class Imported 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits NatType from MS
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HAsciiString from TCollection
+
+is
+
+    Create(aName, aPackage, aContainer: HAsciiString; aPrivate: Boolean) 
+    	returns mutable Imported from MS;
+    
+end Imported from MS;

@@ -1,0 +1,42 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classGeom__AxisPlacement.html" title="The abstract class AxisPlacement describes the &#160;&#160;common behavior of positioning systems..." alt="" coords="563,59,733,88"/>
+<area shape="rect" id="node13" href="$classGeom__Curve.html" title="The abstract class Curve describes the common &#160;&#160;behavior of curves in 3D space. The..." alt="" coords="593,299,703,328"/>
+<area shape="rect" id="node39" href="$classGeom__Point.html" title="The abstract class Point describes the common &#160;&#160;behavior of geometric points in 3D..." alt="" coords="596,432,700,461"/>
+<area shape="rect" id="node43" href="$classGeom__Surface.html" title="Describes the common behavior of surfaces in 3D &#160;&#160;space. The Geom package provides..." alt="" coords="588,672,708,701"/>
+<area shape="rect" id="node77" href="$classGeom__Vector.html" title="The abstract class Vector describes the common &#160;&#160;behavior of vectors in 3D space..." alt="" coords="591,885,705,915"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,432,328,461"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,432,156,461"/>
+<area shape="rect" id="node9" href="$classGeom__Axis1Placement.html" title="Describes an axis in 3D space. &#160;&#160;An axis is defined by: &#160;its origin, also termed..." alt="" coords="813,5,992,35"/>
+<area shape="rect" id="node11" href="$classGeom__Axis2Placement.html" title="Describes a right&#45;handed coordinate system in 3D space. &#160;&#160;A coordinate system is..." alt="" coords="813,59,992,88"/>
+<area shape="rect" id="node15" href="$classGeom__BoundedCurve.html" title="The abstract class BoundedCurve describes the &#160;&#160;common behavior of bounded curves..." alt="" coords="819,112,987,141"/>
+<area shape="rect" id="node23" href="$classGeom__Conic.html" title="The abstract class Conic describes the common &#160;&#160;behavior of conic curves in 3D space..." alt="" coords="849,219,956,248"/>
+<area shape="rect" id="node33" href="$classGeom__Line.html" title="Describes an infinite line. &#160;&#160;A line is defined and positioned in space with an axis..." alt="" coords="855,272,951,301"/>
+<area shape="rect" id="node35" href="$classGeom__OffsetCurve.html" title="This class implements the basis services for an offset curve &#160;&#160;in 3D space. The Offset..." alt="" coords="827,325,979,355"/>
+<area shape="rect" id="node37" href="$classShapeExtend__ComplexCurve.html" title="Defines a curve which consists of several segments. &#160;&#160;Implements basic interface..." alt="" coords="793,379,1012,408"/>
+<area shape="rect" id="node17" href="$classGeom__BezierCurve.html" title="Describes a rational or non&#45;rational Bezier curve &#160;a non&#45;rational Bezier curve is..." alt="" coords="1125,5,1277,35"/>
+<area shape="rect" id="node19" href="$classGeom__BSplineCurve.html" title="Definition of the B_spline curve. &#160;&#160;A B&#45;spline curve can be &#160;&#160;Uniform or non&#45;uniform..." alt="" coords="1123,59,1280,88"/>
+<area shape="rect" id="node21" href="$classGeom__TrimmedCurve.html" title="Describes a portion of a curve (termed the &quot;basis &lt;br&gt; &#160;curve&quot;) limited..." alt="" coords="1119,112,1284,141"/>
+<area shape="rect" id="node25" href="$classGeom__Circle.html" title="Describes a circle in 3D space. &#160;&#160;A circle is defined by its radius and, as with..." alt="" coords="1148,165,1255,195"/>
+<area shape="rect" id="node27" href="$classGeom__Ellipse.html" title="Describes an ellipse in 3D space. &#160;&#160;An ellipse is defined by its major and minor..." alt="" coords="1147,219,1256,248"/>
+<area shape="rect" id="node29" href="$classGeom__Hyperbola.html" title="Describes a branch of a hyperbola in 3D space. &#160;&#160;A hyperbola is defined by its major..." alt="" coords="1133,272,1269,301"/>
+<area shape="rect" id="node31" href="$classGeom__Parabola.html" title="Describes a parabola in 3D space. &#160;&#160;A parabola is defined by its focal length (i..." alt="" coords="1139,325,1264,355"/>
+<area shape="rect" id="node41" href="$classGeom__CartesianPoint.html" title="Describes a point in 3D space. A &#160;&#160;Geom_CartesianPoint is defined by a gp_Pnt point..." alt="" coords="819,432,987,461"/>
+<area shape="rect" id="node45" href="$classGeom__BoundedSurface.html" title="The root class for bounded surfaces in 3D space. A &#160;&#160;bounded surface is defined by..." alt="" coords="813,485,992,515"/>
+<area shape="rect" id="node53" href="$classGeom__ElementarySurface.html" title="Describes the common behavior of surfaces which &#160;&#160;have a simple parametric equation..." alt="" coords="804,619,1001,648"/>
+<area shape="rect" id="node65" href="$classGeom__OffsetSurface.html" title="Describes an offset surface in 3D space. &#160;&#160;An offset surface is defined by: &#160;the..." alt="" coords="821,672,984,701"/>
+<area shape="rect" id="node67" href="$classGeom__SweptSurface.html" title="Describes the common behavior for surfaces &#160;&#160;constructed by sweeping a curve with..." alt="" coords="821,725,984,755"/>
+<area shape="rect" id="node73" href="$classGeomPlate__Surface.html" title="Describes the characteristics of plate surface objects &#160;&#160;returned by BuildPlateSurface::Surface..." alt="" coords="825,779,980,808"/>
+<area shape="rect" id="node75" href="$classShapeExtend__CompositeSurface.html" title="Composite surface is represented by a grid of surfaces &#160;&#160;(patches) connected geometrically..." alt="" coords="781,832,1024,861"/>
+<area shape="rect" id="node47" href="$classGeom__BezierSurface.html" title="Describes a rational or non&#45;rational Bezier surface. &#160;A non&#45;rational Bezier surface..." alt="" coords="1120,379,1283,408"/>
+<area shape="rect" id="node49" href="$classGeom__BSplineSurface.html" title="Describes a BSpline surface. &#160;&#160;In each parametric direction, a BSpline surface can..." alt="" coords="1117,432,1285,461"/>
+<area shape="rect" id="node51" href="$classGeom__RectangularTrimmedSurface.html" title="Describes a portion of a surface (a patch) limited &#160;&#160;by two values of the u parameter..." alt="" coords="1072,485,1331,515"/>
+<area shape="rect" id="node55" href="$classGeom__ConicalSurface.html" title="Describes a cone. &#160;&#160;A cone is defined by the half&#45;angle at its apex, and &#160;&#160;is positioned..." alt="" coords="1117,539,1285,568"/>
+<area shape="rect" id="node57" href="$classGeom__CylindricalSurface.html" title="This class defines the infinite cylindrical surface. &#160;&#160;&#160;&#160;The local coordinate system..." alt="" coords="1108,592,1295,621"/>
+<area shape="rect" id="node59" href="$classGeom__Plane.html" title="Describes a plane in 3D space. &#160;&#160;A plane is positioned in space by a coordinate system..." alt="" coords="1148,645,1255,675"/>
+<area shape="rect" id="node61" href="$classGeom__SphericalSurface.html" title="Describes a sphere. &#160;&#160;A sphere is defined by its radius, and is positioned in &#160;&#160;space..." alt="" coords="1112,699,1291,728"/>
+<area shape="rect" id="node63" href="$classGeom__ToroidalSurface.html" title="Describes a torus. &#160;&#160;A torus is defined by its major and minor radii, and &#160;&#160;positioned..." alt="" coords="1117,752,1285,781"/>
+<area shape="rect" id="node69" href="$classGeom__SurfaceOfLinearExtrusion.html" title="Describes a surface of linear extrusion (&quot;extruded &lt;br&gt; &#160;surface&quot;)..." alt="" coords="1081,805,1321,835"/>
+<area shape="rect" id="node71" href="$classGeom__SurfaceOfRevolution.html" title="Describes a surface of revolution (revolved surface). &#160;&#160;Such a surface is obtained..." alt="" coords="1099,859,1304,888"/>
+<area shape="rect" id="node79" href="$classGeom__Direction.html" title="The class Direction specifies a vector that is never null. &#160;&#160;It is a unit vector..." alt="" coords="837,885,968,915"/>
+<area shape="rect" id="node81" href="$classGeom__VectorWithMagnitude.html" title="Defines a vector with magnitude. &#160;&#160;A vector with magnitude can have a zero length..." alt="" coords="795,939,1011,968"/>
+</map>

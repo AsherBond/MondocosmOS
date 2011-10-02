@@ -1,0 +1,84 @@
+
+ This window may be activated if the current workbench is the direct child of the reference 
+ workbench.
+ It can be used to create an integration report which you can send into the integration queue.
+
+
+ Two lists are displayed:
+ the left list contains the UDs of your workbench, the right list contains the selected UDs. 
+ The selection is performed vith the <Add all> and <Del all> buttons, as well as with <Mb1>. 
+ In addition <MB3> can be used to select only one type of UD.
+
+
+ Buttons:
+
+ <Add all>	: selects all the UDs in the left list.
+
+ <Del all>	: deselects all the UDs from the right list.
+
+ <Compare>	: compares all the selected UDs (wprepare). The result is sent to the list 
+		  displayed below the buttons. The files may be marked differently:		
+		  # the file is different, diff is displayed on the right of the list.
+		  = the file is contained in your workbench but has not been modified.
+ 		  - the file is no longer contained in the UD in your workbench.
+ 		  + the file is displayed in the list cotaining the UD files of your workbench.
+
+
+ Use <Mb1> to select a file, and the arrows to move up and down the list. (see Exclude)
+
+ <Exclude>	: removes the item from the report. If a UD is selected, the UD is removed.
+
+ This may also be done via <Control-x> or <Control-k>. This operation is faster since the diffs 
+ are not displayed for each concerned element.
+
+ <Hide =>	: removes all the files marked "=" (those which have not been modified) from the 
+		  report.
+
+ <rm =>		: removes the unmodified files contained in your workbench. A dialog box is 
+		  displayed to confirm the deletion. This button may be used n your workbench.
+		  A dialog box is displayed to confirm the deletion. This button may be used after
+		  integration when the whole development has been transferred to the reference 
+		  workbench.
+
+ <Editor>		: sends the file to an editor. The editor is either:
+		  - emacs where you have created a *woksh* buffer,
+		  - an editor defined by the environment variable EDITOR,
+		  - the default editor provided with IWOK in all other cases.
+
+ <More Diff>	: this button is activated if the "xdiff" command is contained in your path.
+		  The comparison of the files is then performed with this program.
+
+ <Comments>	: allows input of comments associated with the integration.
+
+ <Save>		: writes the contents of the report onto the file ~/[user].[workbench].report, but
+		  does not include it into the integration queue. This allows edition of the 
+		  report with an editor.
+
+ <Store>		: performs the save operation and sends the result into the integration
+		  queue (wstore).
+
+ The following buttons are only activated if the report being created contains one element or 
+ more already in the integration queue. In this case, their names are displayed in orange in the 
+ left list.
+
+ <Show warnings>	: only displays elements of the report contained in the queue.
+
+ <Show all files>	: redisplays the whole list.
+
+ To perform the diff between the file copy and the copy of the integration queue, select the file
+ in the left list and push <Queue diff>. To merge the files, retrieve the file in the integration
+ queue with the <Get from Queue> button.
+ The resulting file is named "<queue,file>" and is found in the src directory of the concerned UD.
+
+
+ Menu:
+
+ <File>  
+
+ Ends the wprepare session.
+
+ <Admin> <Check> 
+
+ Checks that the files in the selected UDs can be set in the repository.
+ This check-up may be performed before preparing a report which will be later used with the 
+ wintegre -ref command.

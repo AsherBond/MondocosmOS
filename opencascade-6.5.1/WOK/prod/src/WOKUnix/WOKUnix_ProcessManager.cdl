@@ -1,0 +1,41 @@
+-- File:	WOKUnix_ProcessManager.cdl
+-- Created:	Tue Jun  6 14:02:25 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class ProcessManager from WOKUnix
+uses
+    Process from WOKUnix,
+    SequenceOfProcess from WOKUnix
+is
+    
+    Arm(myclass);
+
+    UnArm(myclass);
+
+    Processes(myclass) returns SequenceOfProcess from WOKUnix is  private;
+    ---C++: return  &
+
+    InteruptHandler(myclass);
+    
+    ChildDeathHandler(myclass);
+    
+    PipeHandler(myclass);
+
+    KillAll(myclass);
+
+    SetCriticalPid(myclass; apid : Integer);
+    
+    AddProcess(myclass; aprocess : Process from WOKUnix) is private;
+     
+    RemoveProcess(myclass; aprocess : Process from WOKUnix) is private;
+    
+    WaitProcess(myclass; aprocess : Process from WOKUnix) is private;
+
+friends
+
+    class Process      from WOKUnix,
+    class ShellManager from WOKUnix
+    
+end;

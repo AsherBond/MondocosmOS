@@ -1,0 +1,18 @@
+#ifndef _MS_HArray1OfParam_HeaderFile
+#include <MS_HArray1OfParam.hxx>
+#endif
+#ifndef _MS_Param_HeaderFile
+#include <MS_Param.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_HSequenceOfParam_HeaderFile
+#include <MS_HSequenceOfParam.hxx>
+#endif
+#ifndef _MS_Method_HeaderFile
+#include <MS_Method.hxx>
+#endif

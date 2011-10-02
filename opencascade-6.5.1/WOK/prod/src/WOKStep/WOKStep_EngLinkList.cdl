@@ -1,0 +1,41 @@
+-- File:	WOKStep_EngLinkList.cdl
+-- Created:	Thu Aug  1 18:44:07 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class EngLinkList from WOKStep 
+inherits LinkList from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfHAsciiString     from TColStd,
+    HAsciiString                from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable EngLinkList from WOKStep;
+
+    ComputeDependency(me; code : HAsciiString from TCollection; adirectlist : HSequenceOfHAsciiString from TColStd)
+    	returns HSequenceOfHAsciiString from TColStd is redefined protected;
+
+    ComputeInterface(me:mutable; aunit : DevUnit from WOKernel; infile : InputFile from WOKMake) 
+    	is virtual private;
+	
+    ComputeSchema(me:mutable; aunit : DevUnit from WOKernel; infile : InputFile from WOKMake)
+    	is virtual private;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+end EngLinkList;

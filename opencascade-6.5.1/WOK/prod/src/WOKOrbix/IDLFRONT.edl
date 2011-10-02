@@ -1,0 +1,29 @@
+-- File:	IDLFRONT.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Aug 25 11:46:53 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %IDLFRONT_EDL) then
+@set %IDLFRONT_EDL = "";
+
+@if ( %Station != "wnt" ) then
+
+  @if ( %LocalArch != "hp" && %LocalArch != "mac" ) then
+    @set %IDLFRONT_SHARED = "libTKIDLFront.so";
+  @endif;
+
+  @if ( %LocalArch == "hp" ) then
+    @set %IDLFRONT_SHARED = "libTKIDLFront.sl";
+  @endif;
+
+  @if ( %LocalArch == "mac" ) then
+    @set %IDLFRONT_SHARED = "libTKIDLFront.dylib";
+  @endif;
+
+@else
+  @set %IDLFRONT_SHARED = "TKIDLFront.dll";
+@endif;
+
+@set %IDLFRONT_NAME   = "IDLTranslate";
+
+@endif;

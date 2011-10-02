@@ -1,0 +1,24 @@
+-- File:	WOKMake_DepItemHasher.cdl
+-- Created:	Fri Oct  3 16:14:37 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+private class DepItemHasher from WOKMake
+uses
+    DepItem from WOKMake
+is
+
+   HashCode(myclass; Key : DepItem from WOKMake) returns Integer;
+	    ---Level: Public
+	---Purpose: Returns a HasCode value  for  the  Key <K>  in the
+	-- range 0..Upper.
+	-- Default ::HashCode(K,Upper)
+	    
+   IsEqual(myclass; K1, K2 : DepItem from WOKMake) returns Boolean;
+	---Level: Public
+	---Purpose: Returns True  when the two  keys are the same. Two
+	-- same  keys  must   have  the  same  hashcode,  the
+	-- contrary is not necessary.
+	-- Default K1 == K2
+end;

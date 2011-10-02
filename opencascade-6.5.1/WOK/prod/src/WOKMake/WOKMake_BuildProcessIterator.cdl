@@ -1,0 +1,57 @@
+-- File:	WOKMake_BuildProcessIterator.cdl
+-- Created:	Thu Jun 19 11:00:07 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class BuildProcessIterator from WOKMake 
+
+	---Purpose: 
+
+uses
+
+    BuildProcess      from WOKMake,
+    BuildProcessGroup from WOKMake,
+    Step              from WOKMake,
+    Status            from WOKMake,
+    MapOfHAsciiString from WOKTools
+
+is
+
+    Create(aprocess : BuildProcess from WOKMake; alogflag : Boolean from Standard)
+    	returns BuildProcessIterator from WOKMake;
+
+    CurGroup(me)
+    ---C++: return const &
+       	returns BuildProcessGroup from WOKMake;
+
+    CurStep(me)
+    ---C++: return const &
+    	returns Step from WOKMake;
+
+    MakeStep(me:out)
+    	returns Status from WOKMake;
+
+    Next(me:out);
+
+    More(me)
+    	returns Boolean from Standard;
+	
+    Terminate(me:out)
+    	returns Status from WOKMake;
+
+    ReorderCurrentGroup(me:in out)
+	is private;
+
+fields
+
+    myprocess : BuildProcess from WOKMake;
+    mystatus  : Status from WOKMake;
+    
+    mygrpidx    : Integer from Standard;
+    mystepidx   : Integer from Standard;
+    myprocessed : MapOfHAsciiString from WOKTools;
+    mylogflag   : Boolean from Standard;
+
+end BuildProcessIterator;

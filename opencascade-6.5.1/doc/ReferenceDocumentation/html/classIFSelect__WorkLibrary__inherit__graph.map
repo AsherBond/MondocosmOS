@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classIGESSelect__WorkLibrary.html" title="Performs Read and Write an IGES File with an IGES Model &#160;" alt="" coords="5,160,187,189"/>
+<area shape="rect" id="node7" href="$classStepSelect__WorkLibrary.html" title="Performs Read and Write a STEP File with a STEP Model &#160;&#160;Following the protocols,..." alt="" coords="211,160,392,189"/>
+<area shape="rect" id="node2" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="124,5,273,35"/>
+</map>

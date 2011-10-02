@@ -1,0 +1,37 @@
+-- File:	WOKStep_TemplateExtract.cdl
+-- Created:	Thu Jun 27 17:23:27 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class TemplateExtract from WOKStep
+inherits Extract from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess          from WOKMake,
+    DevUnit               from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    File                  from WOKernel,
+    HSequenceOfEntity     from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    HAsciiString          from TCollection
+
+is
+
+    Create(abp      : BuildProcess      from WOKMake; 
+    	   aunit    : DevUnit           from WOKernel; 
+    	   acode    : HAsciiString      from TCollection; 
+           checked, hidden : Boolean    from Standard) 
+    	returns mutable TemplateExtract from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+end TemplateExtract;

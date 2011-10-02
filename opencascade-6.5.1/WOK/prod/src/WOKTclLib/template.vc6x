@@ -1,0 +1,94 @@
+# Microsoft Developer Studio Project File - Name="__XQTNAM__" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 6.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Application" 0x0103
+
+CFG=__XQTNAM__ - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "__XQTNAM__.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "__XQTNAM__.mak" CFG="__XQTNAM__ - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "__XQTNAM__ - Win32 Release" (based on "Win32 (x86) Console Application")
+!MESSAGE "__XQTNAM__ - Win32 Debug" (based on "Win32 (x86) Console Application")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+CPP=cl.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "__XQTNAM__ - Win32 Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "..\..\..\win32\obj\__XQTNAM__"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "..\..\..\win32\bin"
+# PROP Intermediate_Dir "..\..\..\win32\obj\__XQTNAM__"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FD /c
+# ADD CPP /nologo __COMPOPT__ /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "No_Exception" /D "_WINDOWS" /D "WNT" /D "CSFDB" /FD /c
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x409 /d "NDEBUG"
+# ADD RSC /l 0x409 /d "NDEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386
+# ADD LINK32 __TKDEP__ /nologo /subsystem:console /machine:I386 /libpath:"..\..\..\win32\lib" /implib:"..\..\..\win32\lib\__XQTNAM__.lib"
+
+!ELSEIF  "$(CFG)" == "__XQTNAM__ - Win32 Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "..\..\..\win32\objd\__XQTNAM__"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "..\..\..\win32\bind"
+# PROP Intermediate_Dir "..\..\..\win32\objd\__XQTNAM__"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /GX /Zi /Od /D "WIN32" /D "DEB" /D "_DEBUG" /D "_WINDOWS" /FD /GZ /c
+# ADD CPP /nologo __COMPOPTD__ /W3 /GX /Zi /Od /D "WIN32" /D "DEB" /D "_DEBUG" /D "_WINDOWS" /D "WNT" /D "CSFDB" /FD /GZ /c
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x409 /d "_DEBUG"
+# ADD RSC /l 0x409 /d "_DEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 __TKDEP__ /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept /libpath:"..\..\..\win32\libd" /implib:"..\..\..\win32\libd\__XQTNAM__.lib"
+
+!ENDIF 
+
+# Begin Target
+
+# Name "__XQTNAM__ - Win32 Release"
+# Name "__XQTNAM__ - Win32 Debug"
+# Begin Group "Source Files"
+__FILES__
+# End Group
+# End Target
+# End Project

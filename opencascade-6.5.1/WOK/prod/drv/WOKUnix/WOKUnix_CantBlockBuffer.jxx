@@ -1,0 +1,12 @@
+#ifndef _WOKUnix_BufferOverflow_HeaderFile
+#include <WOKUnix_BufferOverflow.hxx>
+#endif
+#ifndef _WOKUnix_ProcessTimeOut_HeaderFile
+#include <WOKUnix_ProcessTimeOut.hxx>
+#endif
+#ifndef _WOKUnix_FDescr_HeaderFile
+#include <WOKUnix_FDescr.hxx>
+#endif
+#ifndef _WOKUnix_CantBlockBuffer_HeaderFile
+#include <WOKUnix_CantBlockBuffer.hxx>
+#endif

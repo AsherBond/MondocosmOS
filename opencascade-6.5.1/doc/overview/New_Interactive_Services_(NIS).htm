@@ -1,0 +1,139 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>New Interactive Services (NIS)</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+ul.whs1 { list-style:disc; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nVisualization\n3D Graphics & Visualization\nNew Interactive Services (NIS)");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>New Interactive Services (NIS)</p>
+
+<p>New Interactive Services package provides the API similar to the traditional 
+ AIS but with some important differences/improvements:</p>
+
+<ul type="disc" class="whs1">
+	
+	<li class=kadov-p><p>Each type of InteractiveObject should have a corresponding 
+ Drawer class that defines the presentation of the Object type using direct 
+ OpenGl calls. This is a much faster way to display 3D objects, providing 
+ for more than 1 million separate selectable entities in one view.</p></li>
+	
+	<li class=kadov-p><p>The abstract type NIS_InteractiveObject does not 
+ support any properties (color, material, other aspects). The relevant 
+ properties should be defined in the specializations of the Drawer class, 
+ and the API to set/modify should be implemented in the specializations 
+ of InteractiveObject class. </p></li>
+	
+	<li class=kadov-p><p>Interactive selection is managed by InteractiveObject 
+ methods instead of special selector classes and data types. This is possible 
+ since in NIS the selection is based on 3D representation (by a ray or 
+ a box corresponding to the view direction) without intermediate 2D projection.</p></li>
+	
+	<li class=kadov-p><p>Many InteractiveContext instances can be attached 
+ to a V3d_View, these instances being independent containers of interactive 
+ objects; removal (detaching) of InteractiveContext instance destroys the 
+ contained objects.</p></li>
+	
+	<li class=kadov-p><p>All data types and algorithms are designed to 
+ provide the best performance for both OpenGl (server side) and application. 
+ On the other hand, the API is open to any feature supported by any version 
+ of OpenGl. This allows building custom presentations quickly and efficiently.</p></li>
+	
+	<li class=kadov-p><p>The type NIS_View subclasses V3d_View thus providing 
+ all its public API, such as scene definition (view orientation, lights, 
+ background, etc.) and the standard view transformations (pan/zoom/rotate,fitAll,...). 
+ The traditional AIS-based presentations (e.g., AIS_Shape) are also supported, 
+ they can be rendered together with NIS presentations in the same view 
+ window.</p></li>
+	
+	<li class=kadov-p><p>The DRAW test plugin, TKViewerTest, has been modified 
+ to manage AIS_InteractiveContext and NIS_InteractiveContext together in 
+ one view window.</p></li>
+</ul>
+
+<p>This package is an experimental one, it does not yet provide the support 
+ of many features that you can find in AIS, e.g., visualization of topology, 
+ local contexts. It can be used to create efficient OpenGl-base visualization 
+ components, however, it does not replace AIS. You can think of NIS as 
+ a complement to the traditional AIS, better suited to some special tasks, 
+ rather than its replacement.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+-- File:	WOKStep_Extract.cdl
+-- Created:	Thu Jun 27 17:19:04 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+deferred class Extract from WOKStep 
+inherits MSStep from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess          from WOKMake,
+    InputFile             from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    DevUnit               from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    File                  from WOKernel,
+    MSExtractor           from WOKBuilder,
+    HSequenceOfEntity     from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    HAsciiString          from TCollection
+     
+is
+  
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel; 
+    	       acode    : HAsciiString    from TCollection;
+    	       checked, hidden : Boolean  from Standard);
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    SetExtractor(me:mutable; anextractor : MSExtractor from WOKBuilder);
+    Extractor(me) returns MSExtractor from WOKBuilder;
+
+    HandleInputFile(me:mutable; item : InputFile from WOKMake) 
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+fields
+
+    myextractor : MSExtractor from WOKBuilder;
+
+end Extract;

@@ -1,0 +1,12 @@
+#ifndef _WOKBuilder_ArchiveLibrary_HeaderFile
+#include <WOKBuilder_ArchiveLibrary.hxx>
+#endif
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_ArchiveExtract_HeaderFile
+#include <WOKBuilder_ArchiveExtract.hxx>
+#endif

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESSelect__AddFileComment.html" title="This class allows to add comment lines on writing an IGES File &#160;&#160;These lines are..." alt="" coords="5,315,224,344"/>
+<area shape="rect" id="node11" href="$classIGESSelect__FloatFormat.html" title="This class gives control out format for floatting values : &#160;&#160;ZeroSuppress or no,..." alt="" coords="248,315,435,344"/>
+<area shape="rect" id="node2" href="$classIFSelect__GeneralModifier.html" title="This class gives a frame for Actions which modify the effect &#160;&#160;of a Dispatch, i.e..." alt="" coords="133,160,323,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="167,83,289,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="153,5,303,35"/>
+</map>

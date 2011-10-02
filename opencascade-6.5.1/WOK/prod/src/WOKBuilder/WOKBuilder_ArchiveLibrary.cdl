@@ -1,0 +1,34 @@
+-- File:	WOKBuilder_ArchiveLibrary.cdl
+-- Created:	Mon Oct 16 16:27:11 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class ArchiveLibrary from WOKBuilder 
+inherits Library     from WOKBuilder
+	---Purpose: 
+
+uses
+    Path             from WOKUtils,
+    Param            from WOKUtils,
+    LibReferenceType from WOKBuilder,
+    HAsciiString     from TCollection
+is
+    
+    Create(apath : Path from WOKUtils) returns mutable ArchiveLibrary from WOKBuilder;
+
+    Create(aname    : HAsciiString     from TCollection; 
+    	   adir     : Path             from WOKUtils; 
+    	   areftype : LibReferenceType from WOKBuilder)
+    	returns mutable ArchiveLibrary from WOKBuilder;
+
+
+    GetLibFileName(me:mutable; params : Param  from  WOKUtils) 
+    	returns HAsciiString from TCollection
+    	is redefined;
+
+    GetLibFileName(myclass; params : Param  from  WOKUtils; aname : HAsciiString from TCollection) 
+    	returns HAsciiString from TCollection;
+
+end ArchiveLibrary;

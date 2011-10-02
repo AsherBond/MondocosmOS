@@ -1,0 +1,44 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classAIS__InteractiveObject.html" title="Defines a class of objects with display and selection services. &#160;&#160;Entities which..." alt="" coords="896,485,1069,515"/>
+<area shape="rect" id="node2" href="$classPrsMgr__PresentableObject.html" title="A framework to supply the Graphic2d or Graphic3d &#160;&#160;structure of the object to be..." alt="" coords="377,485,580,515"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,485,328,515"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,485,156,515"/>
+<area shape="rect" id="node11" href="$classAIS__Axis.html" title="Locates the x, y and z axes in an Interactive Object. &#160;&#160;These are used to orient..." alt="" coords="1207,139,1284,168"/>
+<area shape="rect" id="node13" href="$classAIS__Circle.html" title="Constructs circle datums to be used in construction of &#160;&#160;composite shapes. &#160;" alt="" coords="1201,192,1289,221"/>
+<area shape="rect" id="node15" href="$classAIS__ConnectedInteractive.html" title="Defines an Interactive Object through a connection to &#160;&#160;another Interactive Object..." alt="" coords="1145,245,1345,275"/>
+<area shape="rect" id="node19" href="$classAIS__Line.html" title="Constructs line datums to be used in construction of &#160;&#160;composite shapes. &#160;" alt="" coords="1207,299,1284,328"/>
+<area shape="rect" id="node21" href="$classAIS__MultipleConnectedInteractive.html" title="Defines an Interactive Object by gathering together &#160;&#160;several object presentations..." alt="" coords="1119,352,1372,381"/>
+<area shape="rect" id="node25" href="$classAIS__Plane.html" title="Constructs plane datums to be used in construction of &#160;&#160;composite shapes. &#160;" alt="" coords="1203,405,1288,435"/>
+<area shape="rect" id="node27" href="$classAIS__PlaneTrihedron.html" title="To construct a selectable 2d axis system in a 3d &#160;&#160;drawing. This can be placed anywhere..." alt="" coords="1172,459,1319,488"/>
+<area shape="rect" id="node29" href="$classAIS__Point.html" title="Constructs point datums to be used in construction of &#160;&#160;composite shapes. The datum..." alt="" coords="1203,512,1288,541"/>
+<area shape="rect" id="node31" href="$classAIS__Relation.html" title="One of the four types of interactive object in &#160;&#160;AIS,comprising dimensions and constraints..." alt="" coords="1193,565,1297,595"/>
+<area shape="rect" id="node73" href="$classAIS__Shape.html" title="A framework to manage presentation and selection of shapes. &#160;&#160;AIS_Shape is the interactive..." alt="" coords="1200,619,1291,648"/>
+<area shape="rect" id="node79" href="$classAIS__Triangulation.html" title="Interactive object that draws data from Poly_Triangulation, optionally with colors..." alt="" coords="1179,672,1312,701"/>
+<area shape="rect" id="node81" href="$classAIS__Trihedron.html" title="Create a selectable trihedron &#160;&#160;there are 4 modes of selection : &#160;&#160;mode = 0 to select..." alt="" coords="1191,725,1300,755"/>
+<area shape="rect" id="node83" href="$classMeshVS__Mesh.html" title="the main class provides interface to create mesh presentation as a whole &#160;" alt="" coords="1187,779,1304,808"/>
+<area shape="rect" id="node85" href="$classVoxel__Prs.html" title="Interactive object for voxels. &#160;" alt="" coords="1203,832,1288,861"/>
+<area shape="rect" id="node17" href="$classAIS__ConnectedShape.html" title="Constructs a Connected Interactive Object with an &#160;&#160;AIS_Shape presentation as its..." alt="" coords="1448,5,1613,35"/>
+<area shape="rect" id="node23" href="$classAIS__MultipleConnectedShape.html" title="Constructs an Interactive Object connected to a list of &#160;&#160;Interactive Objects having..." alt="" coords="1421,59,1640,88"/>
+<area shape="rect" id="node33" href="$classAIS__AngleDimension.html" title="A framework to define display of angles. &#160;&#160;These displays are particularly useful..." alt="" coords="1452,112,1609,141"/>
+<area shape="rect" id="node35" href="$classAIS__Chamf2dDimension.html" title="A framework to define display of 2D chamfers. &#160;&#160;A chamfer is displayed with arrows..." alt="" coords="1441,165,1620,195"/>
+<area shape="rect" id="node37" href="$classAIS__Chamf3dDimension.html" title="A framework to define display of 3D chamfers. &#160;&#160;A chamfer is displayed with arrows..." alt="" coords="1441,219,1620,248"/>
+<area shape="rect" id="node39" href="$classAIS__ConcentricRelation.html" title="A framework to define a constraint by a relation of &#160;&#160;concentricity between two or..." alt="" coords="1441,272,1620,301"/>
+<area shape="rect" id="node41" href="$classAIS__DiameterDimension.html" title="A framework to display diameter dimensions. &#160;&#160;A diameter is displayed with arrows..." alt="" coords="1439,325,1623,355"/>
+<area shape="rect" id="node43" href="$classAIS__EllipseRadiusDimension.html" title="Computes geometry ( basis curve and plane of dimension) &#160;&#160;for input shape aShape..." alt="" coords="1428,379,1633,408"/>
+<area shape="rect" id="node49" href="$classAIS__EqualDistanceRelation.html" title="A framework to display equivalent distances between &#160;&#160;shapes and a given plane. ..." alt="" coords="1429,432,1632,461"/>
+<area shape="rect" id="node51" href="$classAIS__EqualRadiusRelation.html" title="AIS_EqualRadiusRelation" alt="" coords="1439,485,1623,515"/>
+<area shape="rect" id="node53" href="$classAIS__FixRelation.html" title="Constructs and manages a constraint by a fixed &#160;&#160;relation between two or more interactive..." alt="" coords="1469,539,1592,568"/>
+<area shape="rect" id="node55" href="$classAIS__IdenticRelation.html" title="Constructs a constraint by a relation of identity &#160;&#160;between two or more datums figuring..." alt="" coords="1455,592,1607,621"/>
+<area shape="rect" id="node57" href="$classAIS__LengthDimension.html" title="A framework to display lengths. &#160;&#160;These can be lengths along a face or edge, or ..." alt="" coords="1447,645,1615,675"/>
+<area shape="rect" id="node59" href="$classAIS__MidPointRelation.html" title="presentation of equal distance to point myMidPoint &#160;" alt="" coords="1449,699,1612,728"/>
+<area shape="rect" id="node61" href="$classAIS__OffsetDimension.html" title="A framework to display dimensions of offsets. &#160;&#160;The relation between the offset and..." alt="" coords="1449,752,1612,781"/>
+<area shape="rect" id="node63" href="$classAIS__ParallelRelation.html" title="A framework to display constraints of parallelism &#160;&#160;between two or more Interactive..." alt="" coords="1455,805,1607,835"/>
+<area shape="rect" id="node65" href="$classAIS__PerpendicularRelation.html" title="A framework to display constraints of perpendicularity &#160;&#160;between two or more interactive..." alt="" coords="1433,859,1628,888"/>
+<area shape="rect" id="node67" href="$classAIS__RadiusDimension.html" title="A framework to define display of radii. &#160;&#160;These displays serve as relational references..." alt="" coords="1449,912,1612,941"/>
+<area shape="rect" id="node69" href="$classAIS__SymmetricRelation.html" title="A framework to display constraints of symmetricity &#160;&#160;between two or more datum Interactive..." alt="" coords="1441,965,1620,995"/>
+<area shape="rect" id="node71" href="$classAIS__TangentRelation.html" title="A framework to display tangency constraints between &#160;&#160;two or more Interactive Objects..." alt="" coords="1452,1019,1609,1048"/>
+<area shape="rect" id="node45" href="$classAIS__MaxRadiusDimension.html" title="Ellipse Max radius dimension of a Shape which can be Edge &#160;&#160;or Face (planar or cylindrical(surface..." alt="" coords="1688,352,1880,381"/>
+<area shape="rect" id="node47" href="$classAIS__MinRadiusDimension.html" title="&#45;&#45; Ellipse Min radius dimension of a Shape which &#160;&#160;can be Edge or Face (planar or..." alt="" coords="1691,405,1877,435"/>
+<area shape="rect" id="node75" href="$classAIS__TexturedShape.html" title="This class allows to map textures on shapes &#160;&#160;Textures are image files. &#160;&#160;The texture..." alt="" coords="1456,1072,1605,1101"/>
+<area shape="rect" id="node77" href="$classXCAFPrs__AISObject.html" title="Implements AIS_InteractiveObject functionality &#160;&#160;for shape in DECAF document &#160;" alt="" coords="1455,1125,1607,1155"/>
+</map>

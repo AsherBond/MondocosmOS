@@ -1,0 +1,55 @@
+-- File:	WOKNT_ShellOutput.cdl
+-- Created:	Tue Jul 30 10:10:37 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+private deferred class ShellOutput from WOKNT inherits File from OSD
+
+    ---Purpose: defines root class to manage output of sub-process
+
+ uses
+ 
+  HSequenceOfHAsciiString from TColStd
+  
+ is
+ 
+  Initialize;
+    ---Purpose: protected constructor
+
+  Cleanup ( me : out ) is virtual;
+    ---Purpose: provides 'cleanup' functionality
+    ---C++:     alias ~
+
+  Clear ( me : out ) is deferred;
+    ---Purpose: clears output buffer(s) of sub-process
+
+  Echo ( me : out ) returns HSequenceOfHAsciiString from TColStd is deferred;
+    ---Purpose: returns standard output of sub-process
+
+  Errors ( me : out ) returns HSequenceOfHAsciiString from TColStd is deferred;
+    ---Purpose: returns standard error output of sub-process
+
+  OpenStdOut ( me : out ) returns Integer from Standard is deferred;
+    ---Purpose: creates an I/O object for reading a standard output of sub-process
+    --          and returns this object handle.
+    --  Warning: returns INVALID_HANDLE_VALUE in case of failure
+
+  CloseStdOut ( me : out ) is deferred;
+    ---Purpose: closes an I/O object's handle opened by 'OpenStdOut' method
+
+  OpenStdErr ( me : out ) returns Integer from Standard is deferred;
+    ---Purpose: creates an I/O object for reading a standard error output of sub-process
+    --          and returns this object handle
+    --  Warning: returns INVALID_HANDLE_VALUE in case of failure
+
+  CloseStdErr ( me : out ) is deferred;
+    ---Purpose: closes an I/O object's handle opened by 'OpenStdErr' method
+
+  SyncStdOut ( me : out ) returns HSequenceOfHAsciiString from TColStd is deferred;
+    ---Purpose: waits for sub-process termination
+
+  SyncStdErr ( me : out ) returns HSequenceOfHAsciiString from TColStd is deferred;
+    ---Purpose: same as 'SyncStdOut' method
+
+end ShellOutput;  

@@ -1,0 +1,40 @@
+-- File:	WOKBuilder_ToolInProcess.cdl
+-- Created:	Mon Sep 11 10:46:08 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class ToolInProcess from WOKBuilder 
+inherits Tool from WOKBuilder
+
+	---Purpose: 
+
+uses 
+    Param         from WOKUtils,
+    Path          from WOKUtils,
+    HAsciiString  from TCollection,
+    Function      from OSD,
+    SharedLibrary from OSD
+raises 
+    ProgramError  from Standard
+is
+    Initialize(aname: HAsciiString from TCollection;  params : Param from WOKUtils);
+    
+    Load(me:mutable) 
+    	is redefined;
+	
+    Load(me:mutable; alibrary: Path from WOKUtils; afunc : HAsciiString from  TCollection);
+
+    Shared(me)  returns HAsciiString from TCollection;
+    SetShared(me:mutable; ashared : HAsciiString from TCollection);
+
+    Function(me) returns Function from OSD;
+
+    UnLoad(me:mutable);
+
+fields
+    mylib    : SharedLibrary from OSD;
+    myshared : HAsciiString    from TCollection;
+    myfunc   : Function      from OSD;
+end ToolInProcess;

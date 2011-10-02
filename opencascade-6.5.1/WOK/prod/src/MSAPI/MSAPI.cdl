@@ -1,0 +1,39 @@
+-- File:	MSAPI.cdl
+-- Created:	Fri Sep 15 14:26:33 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package MSAPI 
+
+	---Purpose: Encapsulation of MS package
+
+uses
+    MS,
+    WOKTools
+is
+
+    class MetaSchema;
+    
+    class Package;
+
+    class Schema;
+    
+    class Class;
+    
+    class StdClass;
+    
+    class GenClass;
+	
+    class InstClass;
+    
+    -- class Error;
+
+    class Method;
+    
+    class MemberMet;
+    
+    class ExternMet;
+	
+end MSAPI;

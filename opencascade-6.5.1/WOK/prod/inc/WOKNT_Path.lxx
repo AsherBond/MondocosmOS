@@ -1,0 +1,24 @@
+#include <TCollection_HAsciiString.hxx>
+#include <WOKNT_TimeStat.hxx>
+
+inline const Handle(TCollection_HAsciiString)& WOKNT_Path::Name() const
+{
+  return myPath;
+}
+
+inline WOKNT_TimeStat WOKNT_Path :: MDate() 
+{
+ if(myDate == -1) GetMDate();
+ return myDate;
+}
+
+inline void WOKNT_Path::ResetMDate()
+{
+ myDate = -1;
+}
+
+inline Standard_Boolean WOKNT_Path::CheckAttr ()  
+{
+  if(myAttrGet) return Standard_True;
+  return GetAttr();
+}

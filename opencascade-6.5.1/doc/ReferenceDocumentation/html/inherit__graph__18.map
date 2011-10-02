@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classAdaptor2d__Curve2d.html" title="Root class for 2D curves on which geometric &#160;&#160;algorithms work. &#160;&#160;An adapted curve..." alt="" coords="5,112,160,141"/>
+<area shape="rect" id="node3" href="$classAdaptor2d__Line2d.html" title="Adaptor2d_Line2d" alt="" coords="248,5,389,35"/>
+<area shape="rect" id="node5" href="$classAdaptor3d__OffsetCurve.html" title="Defines an Offset curve. &#160;&#160;&#160;" alt="" coords="228,59,409,88"/>
+<area shape="rect" id="node7" href="$classGeom2dAdaptor__Curve.html" title="An interface between the services provided by any &#160;&#160;curve from the package Geom2d..." alt="" coords="229,112,408,141"/>
+<area shape="rect" id="node11" href="$classProjLib__CompProjectedCurve.html" title="ProjLib_CompProjectedCurve" alt="" coords="209,165,428,195"/>
+<area shape="rect" id="node13" href="$classProjLib__ProjectedCurve.html" title="ProjLib_ProjectedCurve" alt="" coords="228,219,409,248"/>
+<area shape="rect" id="node9" href="$classBRepAdaptor__Curve2d.html" title="The Curve2d from BRepAdaptor allows to use an Edge &#160;&#160;on a Face like a 2d curve. (curve..." alt="" coords="479,112,652,141"/>
+</map>

@@ -1,0 +1,41 @@
+-- File:	WOKUnix_OutErrOutput.cdl
+-- Created:	Tue May  9 13:57:51 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private class OutErrOutput from WOKUnix 
+inherits ProcessOutput from WOKUnix
+
+	---Purpose: 
+
+uses
+    Timeval         from WOKUnix,
+    FDSet           from WOKUnix,
+    FDescr          from WOKUnix,
+    Buffer          from WOKUnix,
+    PopenBufferMode from WOKUnix,
+    HSequenceOfHAsciiString from TColStd
+is
+    Create returns mutable OutErrOutput from WOKUnix;
+    Create(aoutfd : FDescr from WOKUnix; aerrfd : FDescr from WOKUnix;  amode : PopenBufferMode from WOKUnix)  
+    	returns mutable OutErrOutput from WOKUnix;
+    Create(anoutput : OutErrOutput from WOKUnix; amode : PopenBufferMode from WOKUnix)  
+    	returns mutable OutErrOutput from WOKUnix;
+     
+    Clear(me) is redefined;
+    Echo(me)   returns HSequenceOfHAsciiString from TColStd is redefined;
+    Errors(me) returns HSequenceOfHAsciiString from TColStd is redefined; 
+    
+    
+    Select(me; afdmax : out Integer from Standard; atimeout : in out Timeval from WOKUnix; aset : out FDSet from WOKUnix) is redefined;
+    
+    Acquit(me; selectstatus : Integer; aset : FDSet from WOKUnix) is redefined;
+
+    Close(me:mutable) is redefined;
+
+fields
+    myout : Buffer from WOKUnix;
+    myerr : Buffer from WOKUnix;
+end OutErrOutput;

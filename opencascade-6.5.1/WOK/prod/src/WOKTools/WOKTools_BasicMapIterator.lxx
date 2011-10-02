@@ -1,0 +1,25 @@
+// File:	WOKTools_BasicMapIterator.lxx
+// Created:	Fri Feb 26 15:48:30 1993
+// Author:	Remi LEQUETTE
+//		<rle@phylox>
+
+#include <stddef.h>
+
+//=======================================================================
+//function : More
+//purpose  : 
+//=======================================================================
+
+inline Standard_Boolean WOKTools_BasicMapIterator::More() const
+{
+  return myNode != NULL;
+}
+
+
+// base class for the nodes
+
+struct WOKTools_MapNode {
+  WOKTools_MapNode(WOKTools_MapNode* n) : next(n) {}
+  WOKTools_MapNode* next;
+};
+

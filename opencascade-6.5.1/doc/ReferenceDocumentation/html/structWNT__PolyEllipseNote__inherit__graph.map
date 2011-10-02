@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$structWNT__ArcNote.html" title="WNT_ArcNote" alt="" coords="121,315,236,344"/>
+<area shape="rect" id="node19" href="$structWNT__EllipseNote.html" title="WNT_EllipseNote" alt="" coords="260,315,396,344"/>
+<area shape="rect" id="node2" href="$structWNT__PointNote.html" title="WNT_PointNote" alt="" coords="189,160,317,189"/>
+<area shape="rect" id="node4" href="$structW32__PointNote.html" title="////////////////////// POINTS ////////////////////////////" alt="" coords="191,83,316,112"/>
+<area shape="rect" id="node6" href="$structW32__Note.html" title="W32_Note" alt="" coords="208,5,299,35"/>
+<area shape="rect" id="node11" href="$structWNT__PolyChordNote.html" title="WNT_PolyChordNote" alt="" coords="5,392,165,421"/>
+<area shape="rect" id="node15" href="$structWNT__PolySectorNote.html" title="WNT_PolySectorNote" alt="" coords="189,392,355,421"/>
+<area shape="rect" id="node13" href="$structWNT__ChordNote.html" title="WNT_ChordNote" alt="" coords="19,469,152,499"/>
+<area shape="rect" id="node17" href="$structWNT__SectorNote.html" title="WNT_SectorNote" alt="" coords="203,469,341,499"/>
+</map>

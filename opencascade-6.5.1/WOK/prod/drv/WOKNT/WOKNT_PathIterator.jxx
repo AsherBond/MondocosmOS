@@ -1,0 +1,9 @@
+#ifndef _WOKNT_Path_HeaderFile
+#include <WOKNT_Path.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKNT_PathIterator_HeaderFile
+#include <WOKNT_PathIterator.hxx>
+#endif

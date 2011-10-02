@@ -1,0 +1,59 @@
+-- File:	WOKStep_WNTLink.cdl
+-- Created:	Tue Oct 22 09:45:42 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+deferred class WNTLink from WOKStep inherits WNTCollect from WOKStep
+
+ uses
+
+    BuildProcess            from WOKMake,
+    DevUnit                 from WOKernel,
+    HAsciiString            from TCollection,
+    InputFile               from WOKMake,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd,
+    HSequenceOfInputFile    from WOKMake
+ 
+ is
+ 
+    Initialize (
+     abp     : BuildProcess from WOKMake; 
+     aUnit   : DevUnit      from WOKernel;
+     aCode   : HAsciiString from TCollection;
+     checked : Boolean      from Standard;
+     hidden  : Boolean      from Standard
+    );
+    	---Purpose: provides initialization   
+
+    ComputeLibraryList (
+     me      : mutable;
+     anInput : HSequenceOfInputFile from WOKMake
+    )
+     returns mutable HSequenceOfLibrary from WOKBuilder
+     is deferred protected;
+     	---Purpose: computes library list to build a target
+
+    ComputeExternals ( me : mutable; anInput : HSequenceOfInputFile from WOKMake)
+     returns mutable HSequenceOfHAsciiString from TColStd
+     is virtual protected;
+     	---Purpose: computes list of external files
+
+    Execute (
+     me         : mutable;
+     anExecList : HSequenceOfInputFile from WOKMake
+    ) is redefined static;
+    	---Purpose: executes a tool
+
+    HandleInputFile (
+     me     : mutable;
+     anItem : InputFile from WOKMake
+    ) returns Boolean from Standard is redefined static;
+    	---Purpose: adds a file in list if the file is input for step
+
+ fields
+ 
+    myTarget : HAsciiString from TCollection is protected;
+
+end WNTLink;

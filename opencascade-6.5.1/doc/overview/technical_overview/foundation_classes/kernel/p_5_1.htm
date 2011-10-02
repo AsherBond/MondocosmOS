@@ -1,0 +1,155 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; }
+p.whs2 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs3 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nQuantities");
+addAvenueInfo("Kernel","","technical_overview/foundation_classes/kernel/p_2_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Quantities</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Quantities</font> 
+ component deals with mathematical and physical quantities.</p>
+
+<p class="whs2">A mathematical quantity 
+ is characterized by its value. It is a real value.</p>
+
+<p class="whs2">A physical quantity 
+ is characterized by:</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>its 
+ value, which is also a real value, and</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ unit in which it is expressed. This unit may be either an international 
+ unit complying with the International Unit System (SI) or a user defined 
+ unit. The unit is managed by the physical quantity user.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs2">Each mathematical or 
+ physical quantity is described by its name. This ensures distinction between 
+ two different quantities.</p>
+
+<p class="whs2">Moreover, both physical 
+ and mathematical quantities are also manipulated as real values:</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>They 
+ are defined as <font style="font-style: italic;">aliases</font> of real 
+ values, so all functions provided by the <font style="font-weight: bold;">Standard_Real</font> 
+ class are available on each quantity.</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>You 
+ may also mix several physical quantities in a mathematical or physical 
+ formula involving real values.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs2">Associated with the 
+ physical quantities, a range of functions provides tools to manage unit 
+ conversions.</p>
+
+<p class="whs2">The physical quantities 
+ described in this chapter are commonly used basic physical quantities. 
+ Nevertheless, the <font style="font-weight: bold;">Quantity</font> package 
+ includes all physical quantities you may require.</p>
+
+<p class="whs2">The <font style="font-weight: bold;">Quantities</font> 
+ component also provides resources to manage time information (dates and 
+ periods) and color definition.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

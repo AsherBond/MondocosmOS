@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classSelectMgr__EntityOwner.html" title="A framework to define classes of owners of sensitive primitives. &#160;&#160;The owner is the..." alt="" coords="304,237,488,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="335,83,457,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="321,5,471,35"/>
+<area shape="rect" id="node9" href="$classAIS__DimensionOwner.html" title="The owner is the entity which makes it possible to link &#160;&#160;the sensitive primitives..." alt="" coords="5,315,168,344"/>
+<area shape="rect" id="node11" href="$classMeshVS__MeshEntityOwner.html" title="The custom owner. This class provides methods to store owner information: &#160;&#160;1) An..." alt="" coords="192,315,395,344"/>
+<area shape="rect" id="node13" href="$classMeshVS__MeshOwner.html" title="The custom mesh owner used for advanced mesh selection. This class provides methods..." alt="" coords="419,315,581,344"/>
+<area shape="rect" id="node15" href="$classStdSelect__BRepOwner.html" title="Defines Specific Owners for Sensitive Primitives &#160;&#160;(Sensitive Segments,Circles....." alt="" coords="605,315,781,344"/>
+</map>

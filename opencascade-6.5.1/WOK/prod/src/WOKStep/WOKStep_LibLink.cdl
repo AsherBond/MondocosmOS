@@ -1,0 +1,31 @@
+-- File:	WOKStep_LibLink.cdl
+-- Created:	Thu Aug  1 18:49:45 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class LibLink from WOKStep 
+inherits  Link from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HAsciiString                from TCollection
+
+is
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable LibLink from WOKStep;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+
+end LibLink;

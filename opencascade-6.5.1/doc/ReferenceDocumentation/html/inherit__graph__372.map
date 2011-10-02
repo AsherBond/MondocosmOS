@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classBRepLib__Command.html" title="Root class for all commands in BRepLib. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of the notDone..." alt="" coords="5,192,157,221"/>
+<area shape="rect" id="node3" href="$classBRepLib__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="207,192,367,221"/>
+<area shape="rect" id="node5" href="$classBRepLib__MakeEdge.html" title="Provides methods to build edges. &#160;&#160;&#160;&#160;The methods have the following syntax, where..." alt="" coords="425,5,580,35"/>
+<area shape="rect" id="node7" href="$classBRepLib__MakeEdge2d.html" title="Provides methods to build edges. &#160;&#160;&#160;&#160;The methods have the following syntax, where..." alt="" coords="417,59,588,88"/>
+<area shape="rect" id="node9" href="$classBRepLib__MakeFace.html" title="Provides methods to build faces. &#160;&#160;&#160;&#160;A face may be built : &#160;&#160;&#160;&#160;* From a surface...." alt="" coords="427,112,579,141"/>
+<area shape="rect" id="node11" href="$classBRepLib__MakePolygon.html" title="Class to build polygonal wires. &#160;&#160;&#160;&#160;A polygonal wire may be build from &#160;&#160;&#160;2,4,3 points..." alt="" coords="417,165,588,195"/>
+<area shape="rect" id="node13" href="$classBRepLib__MakeShell.html" title="Provides methos to build shells. &#160;&#160;&#160;&#160;Build a shell from a set of faces. &#160;&#160;Build untied..." alt="" coords="428,219,577,248"/>
+<area shape="rect" id="node15" href="$classBRepLib__MakeSolid.html" title="Makes a solid from compsolid or shells. &#160;" alt="" coords="428,272,577,301"/>
+<area shape="rect" id="node17" href="$classBRepLib__MakeVertex.html" title="Provides methods to build vertices. &#160;" alt="" coords="420,325,585,355"/>
+<area shape="rect" id="node19" href="$classBRepLib__MakeWire.html" title="Provides methods to build wires. &#160;&#160;&#160;&#160;A wire may be built : &#160;&#160;&#160;&#160;* From a single edge..." alt="" coords="428,379,577,408"/>
+</map>

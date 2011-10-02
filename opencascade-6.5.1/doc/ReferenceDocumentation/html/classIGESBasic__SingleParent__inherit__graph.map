@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIGESData__SingleParentEntity.html" title="a SingleParentEntity is a kind of IGESEntity which can refer &#160;&#160;to a (Single) Parent..." alt="" coords="5,237,224,267"/>
+<area shape="rect" id="node4" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="32,160,197,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="53,83,176,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="40,5,189,35"/>
+</map>

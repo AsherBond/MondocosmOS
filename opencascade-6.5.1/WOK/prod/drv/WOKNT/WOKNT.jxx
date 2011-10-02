@@ -1,0 +1,3 @@
+#ifndef _WOKNT_HeaderFile
+#include <WOKNT.hxx>
+#endif

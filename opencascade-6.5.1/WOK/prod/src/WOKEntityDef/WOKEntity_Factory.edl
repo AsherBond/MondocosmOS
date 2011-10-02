@@ -1,0 +1,31 @@
+-- File:	WOKEntity_Factory.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 11:13:47 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Factory_EDL) then
+@set %WOKEntity_Factory_EDL = "";
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " SCCSDir ";
+
+@template WOKEntity_SCCSDir ( %Entity_Home ) is
+$%Entity_Home/SCCS/\^;
+@end;
+
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " WorkshopListFile  ";
+
+@template WOKEntity_WorkshopListFile ( %Entity_Adm ) is
+$%Entity_Adm/WSLIST\^
+@end;
+
+@string %WOKEntity_ParamList = %WOKEntity_ParamList " %Entity_Warehouse ";
+
+
+@if ( %Station != "wnt" ) then
+	@template WOKEntity_AfterBuild ( %Entity_Adm ) is
+	$chmod ugo+w %Entity_Adm/WSLIST
+	@end;
+@endif;
+
+@endif;

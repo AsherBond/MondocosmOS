@@ -1,0 +1,31 @@
+-- File:	CPPJini.cdl
+-- Created:	Wed Mar 24 11:22:00 1999
+-- Author:	Arnaud BOUZY
+--		<adn@motox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1999
+
+package CPPJini
+
+ uses
+
+  MS,
+  WOKTools,
+  TCollection
+
+ is
+
+  private class ClientInfo;
+
+  private class SequenceOfClientInfo instantiates
+   Sequence from TCollection ( ClientInfo ); 
+
+  enumeration ExtractionType is
+
+   COMPLETE,
+   INCOMPLETE,
+   SEMICOMPLETE
+
+  end ExtractionType; 
+					  
+end CPPJini;
+

@@ -1,0 +1,31 @@
+-- File:	WOKUtils_SearchIterator.cdl
+-- Created:	Tue Sep 26 17:51:00 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class SearchIterator from WOKUtils 
+
+	---Purpose: 
+
+uses
+    SearchList   from WOKUtils,
+    Path         from WOKUtils,
+    HAsciiString from TCollection
+    
+is
+    Create(alist : SearchList from WOKUtils; afile : HAsciiString from TCollection) returns SearchIterator from WOKUtils; 
+    
+    Value(me) returns Path from WOKUtils;
+
+    Next(me:out);
+    
+    More(me) returns Boolean from Standard;
+
+fields
+    mylist  : SearchList   from WOKUtils;
+    myidx   : Integer      from Standard;
+    myfile  : HAsciiString from TCollection;
+    myvalue : Path         from WOKUtils;
+end SearchIterator;

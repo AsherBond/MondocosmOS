@@ -1,0 +1,31 @@
+-- File:	WOKTools_CompareOfHAsciiString.cdl
+-- Created:	Thu Jan 30 17:58:23 1997
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class CompareOfHAsciiString from WOKTools 
+
+uses HAsciiString from TCollection
+
+is
+
+    Create;
+    
+    IsLower (me; Left, Right: HAsciiString from TCollection)
+	---Level: Public
+	---Purpose: returns True if <Left> is lower than <Right>.
+    returns Boolean;
+    
+    IsGreater (me; Left, Right: HAsciiString from TCollection)
+	---Level: Public
+	---Purpose: returns True if <Left> is greater than <Right>.
+    returns Boolean;
+
+    IsEqual(me; Left, Right: HAsciiString from TCollection)
+	---Level: Public
+	---Purpose: returns True when <Right> and <Left> are equal.
+    returns Boolean;
+
+end CompareOfHAsciiString;

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classStandard__MMgrOpt.html" title="Open CASCADE memory manager optimized for speed." alt="" coords="5,83,157,112"/>
+<area shape="rect" id="node5" href="$classStandard__MMgrRaw.html" title="Standard_MMgrRaw" alt="" coords="181,83,336,112"/>
+<area shape="rect" id="node7" href="$classStandard__MMgrTBBalloc.html" title="Implementation of OCC memory manager which uses Intel TBB scalable allocator." alt="" coords="360,83,544,112"/>
+</map>

@@ -1,0 +1,47 @@
+#ifndef WNT
+// File:	WOKUnix_Path.lxx
+// Created:	Thu Jul 27 19:46:43 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+#include <TCollection_HAsciiString.hxx>
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Name
+//purpose  : returns PathName    
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKUnix_Path::Name() const 
+{
+  return mypath;
+}
+
+inline Standard_Boolean WOKUnix_Path::CheckStats()
+{
+  if(mystats.st_mtime == -1) 
+    return GetStats();
+  else return Standard_True;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : MDate
+//purpose  : returns known date of path
+//=======================================================================
+inline WOKUnix_TimeStat WOKUnix_Path::MDate()
+{
+  if(mystats.st_mtime == -1) 
+    GetStats();
+  return mystats.st_mtime;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : ResetMDate
+//purpose  : 
+//=======================================================================
+inline void WOKUnix_Path::ResetMDate()
+{
+  mystats.st_mtime = -1;
+}
+#endif

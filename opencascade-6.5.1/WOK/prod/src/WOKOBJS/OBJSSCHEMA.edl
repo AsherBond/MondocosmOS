@@ -1,0 +1,25 @@
+-- File:	OBJSSCHEMA.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Feb 24 15:51:26 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %OBJSSCHEMA_EDL) then
+@set %OBJSSCHEMA_EDL = "";
+
+@set %OBJSSCHEMA_Shared   = "libTKOBJSSchema.so";
+
+@if ( %Station == "hp" ) then
+    @set %OBJSSCHEMA_Shared   = "libTKOBJSSchema.sl";
+@endif;
+
+@if ( %Station == "mac" ) then
+    @set %OBJSSCHEMA_Shared   = "libTKOBJSSchema.dylib";
+@endif;
+
+@if ( %Station == "wnt" ) then
+    @set %OBJSSCHEMA_Shared   = "TKOBJSSchema.dll";
+@endif;
+
+@set %OBJSSCHEMA_Name     = "OBJSSchema";
+
+@endif;

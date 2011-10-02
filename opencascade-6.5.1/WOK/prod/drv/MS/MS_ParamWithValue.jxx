@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_Method_HeaderFile
+#include <MS_Method.hxx>
+#endif
+#ifndef _MS_ParamWithValue_HeaderFile
+#include <MS_ParamWithValue.hxx>
+#endif

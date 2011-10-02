@@ -1,0 +1,169 @@
+-- File:	WOKernel_Entity.cdl
+-- Created:	Fri Jun 23 16:13:38 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Entity from WOKernel
+inherits BaseEntity from WOKernel
+
+	---Purpose: Base class of WOK entities (Factories, Warehouses,
+	--          Workshops, Workbenches, Development units.)
+	--          
+	
+uses
+    HAsciiString         from TCollection,
+    PSession             from WOKernel,
+    Session              from WOKernel,
+    PEntity              from WOKernel,
+    Entity               from WOKernel,
+    FileTypeBase         from WOKernel,
+    FileType             from WOKernel,
+    DBMSID               from WOKernel,
+    StationID            from WOKernel,
+    HSequenceOfStationID from WOKernel,
+    HSequenceOfDBMSID    from WOKernel,
+    HSequenceOfParamItem from WOKUtils,
+    Param                from WOKUtils
+
+raises ProgramError from Standard
+
+is
+    Initialize(aname    : HAsciiString from TCollection; anesting : Entity from WOKernel)
+    ---Purpose: Initialize a WOKernel Entity
+    	raises ProgramError from Standard;
+
+
+    EntityCode(me) 
+    	returns HAsciiString from TCollection
+	is deferred;
+
+    GetParams(me:mutable);
+    
+    GetParameters(me:mutable)
+    is virtual protected;
+
+    SetParams(me:mutable; aparam : Param from WOKUtils);
+    ---Purpose: change Parameters of Entity    
+
+    ChangeParams(me:mutable)
+    ---Purpose: Get parameters of Entity    
+    ---C++: inline
+    ---C++: return &
+       	returns Param from WOKUtils is static;
+
+    Params(me)
+    ---Purpose: Get parameters of Entity    
+    ---C++: inline
+    ---C++: return const &
+       	returns Param from WOKUtils is static;
+
+    ParameterName(me; aname : CString from Standard)
+    	returns HAsciiString from TCollection is static;
+
+    EvalParameter(me; aparamname : CString from Standard; isnecessary : Boolean from Standard = Standard_True) 
+    ---Purpose: Evaluates a parameter for the entity
+    --          Name_<aparamname> is evaluated
+    	returns HAsciiString from TCollection is static;
+
+    EvalDefaultParameterValue(me : mutable; aparamname : HAsciiString from TCollection;
+    	    	    	    	    	    evaldepth  : Integer      from Standard = 0)  
+    ---Purpose: Looks up for a default value to Parameter <aparamname>
+    	returns HAsciiString from TCollection is static;
+
+
+    --SetProfileParameters(me : mutable;  adbms    : DBMSID    from WOKernel;
+    --	    	    	    	    	astation : StationID from WOKernel);
+    ---Purpose: Sets profile parameters 
+    --              %Station = ao1|sun|hp|sil
+    --              %DBMS    = MEM|OBJY|OBJS|OO2
+    --              %Nesting_Station = %Nesting_%Station
+    --              %Nesting_DBMS    = %Nesting_%DBMS
+
+    SetFileTypeBase(me:mutable; abase : FileTypeBase from WOKernel) is protected;
+
+    FileTypeBase(me)
+    	returns FileTypeBase from WOKernel;
+
+    GetFileType(me; atypename : HAsciiString from TCollection) 
+    	returns FileType from WOKernel;
+
+    GetFileType(me; atypename : CString from Standard) 
+    	returns FileType from WOKernel;
+
+    DumpBuildParameters(me; aparamseq : HSequenceOfParamItem from WOKUtils); 
+    ---Purpose: Dumps in a file the construction parameters of Entity    
+
+    BuildParameters(me: mutable; someparams : HSequenceOfParamItem from WOKUtils; usedefaults : Boolean from Standard)
+    ---Purpose: constructs Sequence of Parameters Needed by Entity
+    --          to be built.
+    --          Checks their consistancy
+    	returns HSequenceOfParamItem from WOKUtils is virtual;
+
+    IsValidName(me)
+    ---Purpose: Checks if name given to the entity is valid
+    --          (forbidden characters are : " /<>\{}*~"
+    returns Boolean
+    is virtual;
+    
+    
+    IsValidName(myclass; aname : HAsciiString from TCollection)
+    ---Purpose: Checks if name given to the entity is valid
+    --          (forbidden characters are : " /<>\{}*~_"
+    returns Boolean;
+
+    Build(me: mutable; someparams : HSequenceOfParamItem from WOKUtils)
+    ---Purpose: Creates On disk the Entity
+    --          it must neither be opened or existing    
+    --          Parameters must all be present in someparams
+    	raises ProgramError from Standard is virtual;  
+    
+    Destroy(me: mutable) is virtual;
+    ---Purpose: Destroys Entity on Disk
+    --          it must not be opened    
+    
+    Open(me: mutable) 
+    ---Purpose: open an existing entity    
+    	raises ProgramError from Standard
+    	is deferred;
+	
+    SetOpened(me:mutable) is static;
+    ---Purpose: Flag Entity as Opened    
+    
+    Reset(me: mutable) is virtual;
+    ---Purpose: resets Entity fields (eq:Close)    
+    
+    Close(me: mutable) is deferred;
+    ---Purpose: closes entity
+    
+    SetClosed(me:mutable) is static;
+    ---Purpose: flag entity as closed    
+    
+    IsOpened(me) returns Boolean is static;
+    ---C++: inline
+    ---Purpose: tests if Entity is opened    
+
+    GetUniqueName(me)
+    ---Purpose: Calcultes the unique name of base entity
+    	returns HAsciiString from TCollection is redefined;
+	
+    NestedUniqueName(me; aname : HAsciiString from TCollection)
+    ---Purpose: Calculates the unique name of an Entity Nested in Entity
+    	returns HAsciiString from TCollection is static;
+
+    Stations(me)   returns HSequenceOfStationID from WOKernel;
+    DBMSystems(me) returns HSequenceOfDBMSID    from WOKernel;
+
+    Kill(me: mutable);
+    ---Purpose: Destroys The Entity    
+    ---C++: alias ~
+
+fields
+    myparams      : Param                   from WOKUtils;
+    mytypes       : FileTypeBase            from WOKernel;
+    myopenstatus  : Boolean                 from Standard;
+    mystations    : HSequenceOfStationID    from WOKernel;
+    mydbmss       : HSequenceOfDBMSID       from WOKernel;
+  
+end Entity;

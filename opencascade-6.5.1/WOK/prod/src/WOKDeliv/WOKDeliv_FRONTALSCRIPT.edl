@@ -1,0 +1,415 @@
+@template WOKDeliv_FrontalScript(%DeliveryHomeName, %UnitName) is
+$#!/bin/csh -f
+$## this is a template file for Frontal Building in Deliveries
+$## lines added by umake on a delivery :
+$#
+$set CCL_LELISP = ${CCLHOME}/${STATION}/bin/lelisp.bin
+$set CCL_COREFILE = $%DeliveryHomeName/${STATION}/lib/%UnitName.core
+$#
+$setenv CSF_VERBOSE 0
+$set CCL_DEBUGGER="exec"
+$set LOGFILE=0
+$#
+$set i = 1
+$while ($i <= $#argv)
+$    set c = $argv[$i]
+$    set i = `expr $i + 1`
+$    if (`expr $c = -h`) then
+$       echo "-f <file>"
+$       echo "-v : set verbose mode"
+$       echo "-w : print stack on error"
+$       echo "-d : start a debug session on error"
+$       echo "-record <file> <comment> : record a session"
+$       echo "-play <file> : play a record session"
+$	echo "-reference <dir> : set reference directory for record session"
+$	echo "-result <dir> : set result directory for record session"
+$       echo "-trace : outputs shareable images loading and diagnostics"
+$       echo "-debug : start CCL with debug"
+$       echo "-log <file> : outputs in file"
+$       exit(0)
+$    endif
+$    if (`expr $c = -f`) then
+$       setenv CCL_FILE $argv[$i]
+$       set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -showcode`) then
+$       setenv CCL_CODE 1
+$    endif
+$    if (`expr $c = -v`) then
+$       setenv CCL_VERBOSE 1
+$    endif
+$    if (`expr $c = -w`) then
+$       setenv CCL_WHERE 1
+$    endif
+$    if (`expr $c = -d`) then
+$       setenv CCL_DEBUG 1
+$    endif
+$    if (`expr $c = -util`) then
+$       setenv CCL_UTIL 1
+$    endif
+$    if (`expr $c = -trace`) then
+$       setenv CSF_VERBOSE 1
+$    endif
+$    if (`expr $c = -record`) then
+$        setenv TR_Status record
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$        setenv TR_Comment $argv[$i]
+$        set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -play`) then
+$        setenv TR_Status play
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -reference`) then
+$        setenv TR_RefDir $argv[$i] 
+$        set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -result`) then
+$        setenv TR_ResDir $argv[$i] 
+$        set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -log`) then
+$       set LOGFILE=$argv[$i] 
+$       set i = `expr $i + 1`
+$    endif
+$    if (`expr $c = -debug`) then
+$       set CCL_DEBUGGER="dbx"
+$       if (`expr $STATION = ao1` ) then
+$         set CCL_DEBUGGER="decladebug"
+$        endif
+$       if (`expr $STATION = sil` ) then
+$         set CCL_DEBUGGER="cvd"
+$         setenv TRAP_FPE "UNDERFL=FLUSH_ZERO;OVERFL=DEFAULT;DIVZERO=DEFAULT;INT_OVERFL=DEFAULT"
+$        endif
+$       if (`expr $STATION = hp` ) then
+$         set CCL_DEBUGGER="dde"
+$        endif
+$       echo "-stack 12 -code 1500 -heap 8192 -number 0 -vector 32 -string 50 -symbol 30 -float 0 -cons 8 -r $CCL_COREFILE"
+$    endif
+$end
+$if (`expr $CCL_DEBUGGER = exec` ) then
+$  if (`expr $LOGFILE = 0` ) then
+$    exec $CCL_LELISP -stack 12 -code 1500 -heap 8192 -number 0 -vector 32 -string 50 -symbol 30 -float 0 -cons 80 -r $CCL_COREFILE
+$  else
+$    exec $CCL_LELISP -stack 12 -code 1500 -heap 8192 -number 0 -vector 32 -string 50 -symbol 30 -float 0 -cons 80 -r $CCL_COREFILE > $LOGFILE
+$  endif
+$else
+$  $CCL_DEBUGGER $CCL_LELISP
+$endif
+$
+@end;
+
+
+@if (%Station == "wnt") then
+
+@template WOKDeliv_CCLScript(%DeliveryHomeName,%UnitName) is
+$@echo off
+$rem this is a template file for Frontal Building by umake
+$
+$set CSF_VERBOSE=0
+$set CCL_DEBUGGER=exec
+$set LOGFILE=0
+$set CCL_FILE=%%DeliveryHomeName%/inc/%UnitName.ccl
+$set opts=
+$
+$:loop
+$if "%1" == "" goto endloop
+$    set treated=0
+$    set c=%1
+$    shift
+$
+$    if "%c%"=="/h" goto thehelp
+$
+$    if "%c%"=="/play" set TR_Status=play
+$    if "%c%"=="/play" set TR_File=%1
+$    if "%c%"=="/play" shift
+$    if "%c%"=="/play" set treated=1
+$
+$    if "%c%"=="/record" set TR_Status=record
+$    if "%c%"=="/record" set TR_File=%1
+$    if "%c%"=="/record" shift
+$    if "%c%"=="/record" set TR_Comment=%1
+$    if "%c%"=="/record" shift
+$    if "%c%"=="/record" set treated=1
+$
+$    if "%c%"=="/reference" set TR_RefDir=%1
+$    if "%c%"=="/reference" shift
+$    if "%c%"=="/reference" set treated=1
+$
+$    if "%c%"=="/result" set TR_ResDir=%1
+$    if "%c%"=="/result" shift
+$    if "%c%"=="/result" set treated=1
+$
+$    if "%c%"=="/trace" set CSF_VERBOSE=1
+$    if "%c%"=="/trace" set treated=1
+$
+$    if "%c%"=="/log" set LOGFILE=%1
+$    if "%c%"=="/log" shift
+$    if "%c%"=="/log" set treated=1
+$
+$    if "%c%"=="/debug" set CCL_DEBUGGER=msdev
+$    if "%c%"=="/debug" set treated=1
+$
+$    if "%treated%"=="0" set opts=%opts% %c%
+$goto loop
+$
+$:endloop
+$if not "%CSF_MESSAGE%" == "" goto run
+$set CCL_INTER_MSGFILE=%%DeliveryHomeName%/wnt/bin/%UnitName_Cmp.us
+$if     exist %CCL_INTER_MSGFILE% set CSF_MESSAGE=%CCL_INTER_MSGFILE%
+$if not exist %CCL_INTER_MSGFILE% set CSF_MESSAGE=%%DeliveryHomeName%/etc/locale/%UnitName.us
+$
+$set CCL_INTER_MSGFILE=
+$:run
+$if "%CCL_DEBUGGER%"=="exec" goto exec
+$    echo Start debugger on process then perform (start) on interpretor
+$    CCLinterpretor %CCL_FILE% %opts% 
+$    goto fini
+$
+$:exec
+$    if "%LOGFILE%"=="0" CCLinterpretor %CCL_FILE% %opts% /call start
+$    if not "%LOGFILE%"=="0" CCLinterpretor %CCL_FILE% %opts% /call start > %LOGFILE%
+$    goto fini
+$:thehelp
+$    echo "/play <file> : play a record session"
+$    echo "/record <file> <comment> : record a session"
+$    echo "/reference <dir> : set reference directory for record session"
+$    echo "/result <dir> : set result directory for record session"
+$    echo "/v : set verbose mode"
+$    echo "/w : print stack on error"
+$    echo "/d : start a debug session on error"
+$    echo "/spy : trace macros, commands and all engine requests"
+$    echo "/call <macro> : call the macro (start is default)"
+$    echo "/trace : outputs shareable images loading and diagnostics"
+$    echo "/log <file> : outputs in a file"
+$    echo "/debug : start CCL with debugger"
+$    echo "<f1> ... <fn> : load these files"
+$    goto fini
+$:fini
+@end;
+
+@else
+
+@template WOKDeliv_CCLScript(%DeliveryHomeName,%UnitName) is
+$#!/bin/csh -f
+$## this is a template file for Frontal Building
+$## lines built by umake :
+$#
+$setenv CSF_VERBOSE 0
+$set CCL_DEBUGGER="exec"
+$set LOGFILE=0
+$set CCL_FILE=$%DeliveryHomeName/inc/%UnitName.ccl
+$
+$set i = 1
+$set opts = ""
+$while ($i <= $#argv)
+$    set c = $argv[$i]
+$    set i = `expr $i + 1`
+$    set treated = 0
+$    if (`expr $c = -h`) then
+$       echo "-play <file> : play a record session"
+$       echo "-record <file> <comment> : record a session"
+$	echo "-reference <dir> : set reference directory for record session"
+$	echo "-result <dir> : set result directory for record session"
+$       echo "-f <file> : load a file"
+$       echo "-v : set verbose mode"
+$       echo "-w : print stack on error"
+$       echo "-d : start a debug session on error"
+$       echo "-spy : trace macros, commands and all engine requests"
+$       echo "-call <macro> : call the macro (start is default)"
+$       echo "-trace : outputs shareable images loading and diagnostics"
+$       echo "-log <file> : outputs in a file"
+$       echo "-debug : start CCL with debugger"
+$       echo "<f1> ... <fn> : load these files"
+$       exit(0)
+$    endif
+$    if (`expr $c = -record`) then
+$        setenv TR_Status record
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$        setenv TR_Comment $argv[$i]
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -play`) then
+$        setenv TR_Status play
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -reference`) then
+$        setenv TR_RefDir $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -result`) then
+$        setenv TR_ResDir $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -f`) then
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -trace`) then
+$       setenv CSF_VERBOSE 1
+$       set treated = 1
+$    endif
+$    if (`expr $c = -log`) then
+$       set LOGFILE=$argv[$i] 
+$       set i = `expr $i + 1`
+$	set treated = 1
+$    endif
+$    if (`expr $c = -debug`) then
+$       set treated = 1
+$       set CCL_DEBUGGER="dbx"
+$       if (`expr $STATION = ao1`) then
+$          set CCL_DEBUGGER="decladebug"
+$       endif
+$       if (`expr $STATION = sil`) then
+$          set CCL_DEBUGGER="cvd"
+$          setenv TRAP_FPE "UNDERFL=FLUSH_ZERO;OVERFL=DEFAULT;DIVZERO=DEFAULT;INT_OVERFL=DEFAULT"
+$       endif
+$       if (`expr $STATION = hp`) then
+$          set CCL_DEBUGGER="dde"
+$       endif
+$    endif
+$    if ($treated == 0) then
+$        set opts = "$opts $c"
+$    endif
+$end
+$
+$if ( ! $?CSF_MESSAGE ) then
+$  if (-x $%DeliveryHomeName/${STATION}/bin/%UnitName_Cmp.us) then
+$     setenv CSF_MESSAGE $%DeliveryHomeName/${STATION}/bin/%UnitName_Cmp.us
+$  else 
+$     setenv CSF_MESSAGE $%DeliveryHomeName/etc/locale/%UnitName.us
+$  endif
+$endif
+$
+$if (`expr $CCL_DEBUGGER = exec`) then
+$    if (`expr $LOGFILE = 0`) then
+$       CCLinterpretor $CCL_FILE $opts -call start
+$    else
+$       CCLinterpretor $CCL_FILE $opts -call start >$LOGFILE
+$    endif
+$else
+$    echo " $CCL_FILE $opts -call start"
+$    $CCL_DEBUGGER `which CCLinterpretor`
+$endif
+@end;
+
+
+
+
+@template WOKDeliv_BINScript(%DeliveryHomeName,%UnitName) is
+$#!/bin/csh -f
+$## this is a template file for Frontal Building
+$## lines built by umake :
+$#
+$setenv CSF_VERBOSE 0
+$set CCL_DEBUGGER="exec"
+$set LOGFILE=0
+$set BIN_FILE=$%DeliveryHomeName/${STATION}/bin/CCL%UnitName.bin
+$
+$set i = 1
+$set opts = ""
+$while ($i <= $#argv)
+$    set c = $argv[$i]
+$    set i = `expr $i + 1`
+$    set treated = 0
+$    if (`expr $c = -h`) then
+$       echo "-play <file> : play a record session"
+$       echo "-record <file> <comment> : record a session"
+$	echo "-reference <dir> : set reference directory for record session"
+$	echo "-result <dir> : set result directory for record session"
+$       echo "-f <file> : load a file"
+$       echo "-v : set verbose mode"
+$       echo "-w : print stack on error"
+$       echo "-d : start a debug session on error"
+$       echo "-spy : trace macros, commands and all engine requests"
+$       echo "-call <macro> : call the macro (start is default)"
+$       echo "-trace : outputs shareable images loading and diagnostics"
+$       echo "-log <file> : outputs in a file"
+$       echo "-debug : start CCL with debugger"
+$       echo "<f1> ... <fn> : load these files"
+$       exit(0)
+$    endif
+$    if (`expr $c = -record`) then
+$        setenv TR_Status record
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$        setenv TR_Comment $argv[$i]
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -play`) then
+$        setenv TR_Status play
+$        setenv TR_File $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -reference`) then
+$        setenv TR_RefDir $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -result`) then
+$        setenv TR_ResDir $argv[$i] 
+$        set i = `expr $i + 1`
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -f`) then
+$	 set treated = 1
+$    endif
+$    if (`expr $c = -trace`) then
+$       setenv CSF_VERBOSE 1
+$       set treated = 1
+$    endif
+$    if (`expr $c = -log`) then
+$       set LOGFILE=$argv[$i] 
+$       set i = `expr $i + 1`
+$	set treated = 1
+$    endif
+$    if (`expr $c = -debug`) then
+$       set treated = 1
+$       set CCL_DEBUGGER="dbx"
+$       if (`expr $STATION = ao1`) then
+$          set CCL_DEBUGGER="decladebug"
+$       endif
+$       if (`expr $STATION = sil`) then
+$          set CCL_DEBUGGER="cvd"
+$          setenv TRAP_FPE "UNDERFL=FLUSH_ZERO;OVERFL=DEFAULT;DIVZERO=DEFAULT;INT_OVERFL=DEFAULT"
+$       endif
+$       if (`expr $STATION = hp`) then
+$          set CCL_DEBUGGER="dde"
+$       endif
+$    endif
+$    if ($treated == 0) then
+$        set opts = "$opts $c"
+$    endif
+$end
+$
+$if ( ! $?CSF_MESSAGE ) then
+$  if (-x $%DeliveryHomeName/${STATION}/bin/%UnitName_Cmp.us) then
+$     setenv CSF_MESSAGE $%DeliveryHomeName/${STATION}/bin/%UnitName_Cmp.us
+$  else 
+$     setenv CSF_MESSAGE $%DeliveryHomeName/etc/locale/%UnitName.us
+$  endif
+$endif
+$
+$if (`expr $CCL_DEBUGGER = exec`) then
+$    if (`expr $LOGFILE = 0`) then
+$       CCLinterpretor -session $BIN_FILE $opts -call start
+$    else
+$       CCLinterpretor -session $BIN_FILE $opts -call start >$LOGFILE
+$    endif
+$else
+$    echo " -session $BIN_FILE $opts -call start"
+$    $CCL_DEBUGGER `which CCLinterpretor`
+$endif
+@end;
+
+
+@endif;

@@ -1,0 +1,179 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { text-indent:30.25pt; }
+p.whs3 { font-weight:bold; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nPersistent Data Storage");
+addAvenueInfo("Persistent Data Storage","","technical_overview/application_framework/data_storage_and_persistent_collections/data_storage.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Persistent Data Storage</p>
+
+<h1>Overview</h1>
+
+<p>There are three schemas of persistence, which you can use to store and 
+ retrieve</p>
+
+<p>OCAF data (documents):</p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Standard persistence schema, compatible with previous 
+ OCAF applications</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>XmlOcaf persistence, allowing the storage of all 
+ OCAF data in XML form</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>BinOcaf persistence, allowing the storage of all 
+ OCAF data in binary format form</p></li>
+</ul>
+
+<p>All schemes are independent of each other, but they guarantee that the 
+ standard OCAF attributes stored and retrieved by one schema will be storable 
+ and retrievable by the other. Therefore in any OCAF application you can 
+ use any persistence schema or even all three of them. The choice is made 
+ by the Format string of stored OCAF documents or automatically by the 
+ file header data -- on retrieval.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p><font style="font-weight: bold;">Standard package</font></p>
+
+<p>Persistent data storage in OCAF using the Standard package is presented 
+ in the following chapters: </p>
+
+<p class="whs2">Basic Data Storage </p>
+
+<p class="whs2"><a href="persistent_collections.htm">Persistent 
+ Collections</a> </p>
+
+<p>Likewise, persistence storage of shapes is presented in the following 
+ chapters: </p>
+
+<p class="whs2"><a href="persistent_geometry.htm">Persistent 
+ Geometry</a> </p>
+
+<p class="whs2"><a href="persistent_topology.htm">Persistent 
+ Topology</a> </p>
+
+<p>Finally, information about opening and saving persistent data is presented 
+ in <a href="../standard_documents.htm">Standard Documents</a>. </p>
+
+<p>&nbsp;</p>
+
+<p class="whs3">LDOM Package for XML</p>
+
+<p>LDOM Package is presented in the following chapters: </p>
+
+<p class="whs2"><a href="../ldom_package_for_xml/document_drivers/overview_stor_driver.htm">Document 
+ Drivers</a> </p>
+
+<p class="whs2"><a href="../ldom_package_for_xml/attribute_drivers/attribute_drivers.htm">Attribute 
+ Drivers</a> </p>
+
+<p class="whs2"><a href="../ldom_package_for_xml/xml_document_structure/xml_document_structure.htm">XML 
+ Document Structure</a> </p>
+
+<p class="whs2"><a href="../ldom_package_for_xml/xml_schema/xml_schema.htm">XML 
+ Schema</a></p>
+
+<p class="whs2"><a href="../ldom_package_for_xml/ldom_implementation/ldom_package.htm">LDOM 
+ Package</a></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

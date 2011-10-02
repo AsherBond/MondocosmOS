@@ -1,0 +1,3 @@
+#ifndef _WOKTools_Verbose_HeaderFile
+#include <WOKTools_Verbose.hxx>
+#endif

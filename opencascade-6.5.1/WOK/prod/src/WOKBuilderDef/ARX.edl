@@ -1,0 +1,21 @@
+-- File:	ARX.edl
+-- Author:	Jean GAUTIER
+-- History:	Tue Aug  6 11:12:26 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %ARX_EDL) then
+@set %ARX_EDL = "";
+
+@set %ARX_Template       = "ARX_CmdLine";
+
+@set %ARX_ListCommand    = "ar t";
+
+@set %ARX_ExtractCommand = "ar x";
+
+@template ARX_CmdLine ( %ARX_ListCommand, %ARX_ExtractCommand, %OutputDir, %TmpFile, %Archive) is
+$ %ARX_ListCommand %Archive > %TmpFile
+$ cd %OutputDir
+$ %ARX_ExtractCommand %Archive 
+@end;
+
+@endif;

@@ -1,0 +1,24 @@
+-- File:	WOKUnix_SyncStatus.cdl
+-- Created:	Thu Jun  8 20:07:25 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private class SyncStatus from WOKUnix 
+inherits ShellStatus from WOKUnix
+	---Purpose: 
+
+uses
+    AsciiString from TCollection,
+    Shell  from WOKUnix
+is
+    Create returns mutable SyncStatus from WOKUnix;
+    Create(apath    : AsciiString      from TCollection)
+                        returns mutable SyncStatus from WOKUnix;
+ 
+    EndCmd(me:mutable; ashell : Shell from WOKUnix) is redefined;
+    Sync(me:mutable;   ashell : Shell from WOKUnix) is redefined;
+    Reset(me:mutable;  ashell : Shell from WOKUnix) is redefined;
+    
+end SyncStatus;

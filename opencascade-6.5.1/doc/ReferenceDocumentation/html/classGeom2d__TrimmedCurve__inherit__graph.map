@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classGeom2d__BoundedCurve.html" title="The abstract class BoundedCurve describes the &#160;&#160;common behavior of bounded curves..." alt="" coords="5,315,189,344"/>
+<area shape="rect" id="node4" href="$classGeom2d__Curve.html" title="The abstract class Curve describes the common &#160;&#160;behavior of curves in 2D space. The..." alt="" coords="35,237,160,267"/>
+<area shape="rect" id="node6" href="$classGeom2d__Geometry.html" title="The general abstract class Geometry in 2D space describes &#160;&#160;the common behaviour..." alt="" coords="20,160,175,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="36,83,159,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="23,5,172,35"/>
+</map>

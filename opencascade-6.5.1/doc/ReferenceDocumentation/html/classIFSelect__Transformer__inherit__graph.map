@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__TransformStandard.html" title="This class runs transformations made by Modifiers, as &#160;&#160;the ModelCopier does when..." alt="" coords="5,237,216,267"/>
+<area shape="rect" id="node9" href="$classIGESSelect__SplineToBSpline.html" title="This type of Transformer allows to convert Spline Curves (IGES &#160;&#160;type 112) and Surfaces..." alt="" coords="240,237,445,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="165,83,288,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="152,5,301,35"/>
+</map>

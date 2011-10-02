@@ -1,0 +1,32 @@
+-- File:	WOKSteps_server.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Aug  8 11:51:20 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_server_EDL) then
+@set %WOKSteps_server_EDL = "";
+
+  @set %WOKSteps_SrcGroup  = "src ";
+  @set %WOKSteps_src       = "*WOKOrbix_ServerSource";
+
+  @set %WOKSteps_XcppGroup = "obj.inc" ;
+
+  @set %WOKSteps_obj_inc   = "WOKStep_Include(src)";
+
+  @set    %WOKSteps_ObjGroup   = "obj.comp ";
+  @string %WOKSteps_ObjGroup  += "obj.idep ";
+
+  @set %WOKSteps_obj_comp  = "WOKStep_Compile(src)";
+  @set %WOKSteps_obj_idep  = "WOKStep_ImplementationDep(obj.comp)";
+
+  @set    %WOKSteps_ExecGroup  = "exec.list ";
+  @string %WOKSteps_ExecGroup += "exec.libs ";
+  @string %WOKSteps_ExecGroup += "exec.tks ";
+  @string %WOKSteps_ExecGroup += "exec.link ";
+
+  @set %WOKSteps_exec_list = "WOKOrbix_ExtractServerList(src)";
+  @set %WOKSteps_exec_libs = "WOKStep_DirectLinkList(exec.list,obj.comp,obj.idep)";
+  @set %WOKSteps_exec_tks  = "WOKStep_DirectTKReplace(exec.libs)";
+  @set %WOKSteps_exec_link = "WOKStep_ExecLink(exec.tks,exec.list)";
+
+@endif;

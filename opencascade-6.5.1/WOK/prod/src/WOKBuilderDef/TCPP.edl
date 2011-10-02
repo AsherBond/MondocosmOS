@@ -1,0 +1,25 @@
+-- File:	TCPP.edl
+-- Author:	Kernel
+-- History:	Tue Apr 30 09:57:03 1996	Kernel	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %TCPP_EDL) then
+@set %TCPP_EDL = "";
+
+@set %TCPP_Shared   = "libTKTCPPExt.so";
+
+@if ( %LocalArch == "hp" ) then
+  @set %TCPP_Shared   = "libTKTCPPExt.sl";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @set %TCPP_Shared   = "libTKTCPPExt.dylib";
+@endif;
+
+@if ( %Station == "wnt" ) then
+  @set %TCPP_Shared   = "TKTCPPExt.dll";
+@endif;
+
+@set %TCPP_Name     = "TCPP";
+
+@endif;

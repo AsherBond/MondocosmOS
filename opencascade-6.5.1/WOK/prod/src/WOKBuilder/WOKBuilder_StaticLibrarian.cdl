@@ -1,0 +1,30 @@
+-- File:	WOKBuilder_StaticLibrary.cdl
+-- Created:	Mon Oct 21 13:36:54 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class StaticLibrarian from WOKBuilder inherits WNTLibrarian from WOKBuilder
+
+    ---Purpose: defines tool to build static library
+
+ uses
+ 
+    HAsciiString from TCollection,
+    Param        from WOKUtils
+ 
+ is
+ 
+    Create (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    ) returns mutable StaticLibrarian from WOKBuilder;
+    	---Purpose: create a class instance
+
+    EvalHeader ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluats tool command line
+ 
+    EvalFooter ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluates additional information for the tool
+
+end StaticLibrarian;

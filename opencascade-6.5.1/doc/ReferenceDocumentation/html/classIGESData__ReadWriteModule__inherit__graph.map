@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESAppli__ReadWriteModule.html" title="Defines basic File Access Module for IGESAppli (specific parts) &#160;&#160;Specific actions..." alt="" coords="883,5,1091,35"/>
+<area shape="rect" id="node11" href="$classIGESBasic__ReadWriteModule.html" title="Defines basic File Access Module for IGESBasic (specific parts) &#160;&#160;Specific actions..." alt="" coords="880,59,1093,88"/>
+<area shape="rect" id="node13" href="$classIGESDefs__ReadWriteModule.html" title="Defines Defs File Access Module for IGESDefs (specific parts) &#160;&#160;Specific actions..." alt="" coords="881,112,1092,141"/>
+<area shape="rect" id="node15" href="$classIGESDimen__ReadWriteModule.html" title="Defines Dimen File Access Module for IGESDimen (specific parts) &#160;&#160;Specific actions..." alt="" coords="876,165,1097,195"/>
+<area shape="rect" id="node17" href="$classIGESDraw__ReadWriteModule.html" title="Defines Draw File Access Module for IGESDraw (specific parts) &#160;&#160;Specific actions..." alt="" coords="880,219,1093,248"/>
+<area shape="rect" id="node19" href="$classIGESGeom__ReadWriteModule.html" title="Defines Geom File Access Module for IGESGeom (specific parts) &#160;&#160;Specific actions..." alt="" coords="877,272,1096,301"/>
+<area shape="rect" id="node21" href="$classIGESGraph__ReadWriteModule.html" title="Defines Graph File Access Module for IGESGraph (specific parts) &#160;&#160;Specific actions..." alt="" coords="879,325,1095,355"/>
+<area shape="rect" id="node23" href="$classIGESSolid__ReadWriteModule.html" title="Defines Solid File Access Module for IGESSolid (specific parts) &#160;&#160;Specific actions..." alt="" coords="883,379,1091,408"/>
+<area shape="rect" id="node2" href="$classInterface__ReaderModule.html" title="Defines unitary operations required to read an Entity from a &#160;&#160;File (see FileReaderData..." alt="" coords="377,192,564,221"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,192,328,221"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,192,156,221"/>
+</map>

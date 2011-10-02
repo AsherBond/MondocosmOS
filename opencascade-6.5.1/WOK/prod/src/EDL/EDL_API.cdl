@@ -1,0 +1,170 @@
+-- File:	EDL_API.cdl
+-- Created:	Wed Sep 13 10:15:27 1995
+-- Author:	Kernel
+--		<kernel@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class API from EDL 
+
+ inherits TShared from MMgt
+ 
+ uses HSequenceOfHAsciiString from TColStd,
+      HSequenceOfAsciiString from TColStd,
+      HAsciiString            from TCollection,
+      Error                   from EDL,
+      Template                from EDL,
+      Variable                from EDL,
+      Interpretor             from EDL,
+      DataMapIteratorOfMapOfTemplate from EDL,
+      DataMapIteratorOfMapOfVariable from EDL
+     
+ is
+    
+    Create returns mutable API from EDL;
+    
+    Openlib(me; aName : CString from Standard)
+    	returns Error from EDL;
+    ---Purpose: Open a shared library named <aName>
+    --          The name must not be the name of the file
+    --          but the significant part :
+    --          
+    --          ex.:
+    --          
+    --          for library libTest.so
+    --          the name must be Test
+    
+    Call(me; aLibName  : CString from Standard; 
+    	     aFunction : CString from Standard;
+	     anArgList : HSequenceOfHAsciiString from TColStd)
+        returns Error from EDL;
+    ---Purpose: Call a function <aFunction> from library <aLibName> with
+    --          the arguments list <anArgList>
+    --          The name of the library is the same than Openlib
+    
+    Closelib(me; aName : CString from Standard);
+    ---Purpose: Close the library named <aName>
+    --          The name is the same than Openlib
+    
+    AddTemplate(me; aName : CString from Standard;
+                    aDefinition : HSequenceOfHAsciiString from TColStd;
+                    aVarList : HSequenceOfHAsciiString from TColStd);
+    ---Purpose: Add a template named <aName> with <aDefinition> as definition
+    
+    Apply(me; aResult  : CString from Standard;
+    	      aName    : CString from Standard);
+    ---Purpose: Evaluate a template named <aName> with the variables 
+    --          list <aVarList> and set the result in a variable named <aResult> 
+      	      
+    RemoveTemplate(me; aName : CString from Standard);
+    ---Purpose: Remove a template
+    
+    GetTemplate(me; aName : CString from Standard)
+    	returns Template from EDL;
+    ---C++: return &
+   
+    AddVariable(me; aName  : CString from Standard;
+                    aValue : CString from Standard);
+    ---Purpose: Create a variable <aName> or modifie it s value
+
+    AddVariable(me; aName  : CString from Standard;
+                    aValue : Integer from Standard);
+    ---Purpose: Create a variable <aName> or modifie it s value
+
+    AddVariable(me; aName  : CString from Standard;
+                    aValue : Real from Standard);
+    ---Purpose: Create a variable <aName> or modifie it s value
+   
+    AddVariable(me; aName  : CString from Standard;
+                    aValue : Character from Standard);
+    ---Purpose: Create a variable <aName> or modifie it s value
+   
+    GetVariable(me; aName : CString from Standard)
+	returns Variable from EDL;
+     ---C++: return &
+     ---Purpose: Returns the value of the variable named <aName>.	
+
+    GetVariableValue(me; aName : CString from Standard)
+	returns mutable HAsciiString from TCollection;
+    ---Purpose: Returns the value of the variable named <aName>.	
+
+    RemoveVariable(me; aName : CString from Standard);
+    ---Purpose: Remove a variable named <aName>.
+
+    IsDefined(me; aName : CString from Standard)
+    	returns Boolean from Standard;
+    ---Purpose: Return Standard_True if a variable or template named <aName> is defined
+    
+    OpenFile(me; aName : CString from Standard;
+                 aPath : CString from Standard)
+    	returns Error from EDL;
+    ---Purpose: Open a file named <aNamed> with a filename <aPath>
+    --          <aPath> can be either a variable name or a full path.
+    --          Ex. in EDL : @file afile "/tmp/output.txt";
+    --                        or
+    --                       @file afile %filename; 
+	
+    WriteFile(me; aName : CString from Standard;
+    	    	  aVar  : CString from Standard);
+    ---Purpose: Write in file <aName> (see OpenFile for the name) the value
+    --          of the variable named <aVar>
+   
+    WriteFileConst(me; aName : CString from Standard;
+    	    	   aVar  : CString from Standard);
+    ---Purpose: Write in file <aName> (see OpenFile for the name) the value
+    --          named <aVar>
+
+    WriteFileConst(me; aName : CString from Standard;
+    		   aValue  : Character from Standard);
+    ---Purpose: Write in file <aName> (see OpenFile for the name) the value
+    --          named <aValue>
+
+    WriteFileConst(me; aName : CString from Standard;
+    		   aValue  : Integer from Standard);
+    ---Purpose: Write in file <aName> (see OpenFile for the name) the value
+    --          named <aValue>
+
+    WriteFileConst(me; aName : CString from Standard;
+    		   aValue  : Real from Standard);
+    ---Purpose: Write in file <aName> (see OpenFile for the name) the value
+    --          named <aValue>
+
+    CloseFile(me; aName : CString from Standard);
+    ---Purpose: Close the file named <aName> (see OpenFile for the name)
+
+
+    AddIncludeDirectory(me; aDirectory : CString from Standard);
+    ---Purpose: Add a directory <aDirectory> to the EDL file search list
+    --          for the @uses command
+    
+    RemoveIncludeDirectory(me; aDirectory : CString from Standard);
+    ---Purpose: Remove a directory <aDirectory> from the EDL file search list
+    --          for the @uses command
+
+    GetIncludeDirectory(me)
+       returns mutable HSequenceOfAsciiString from TColStd;    	    
+    ---Purpose: return the directory list
+
+    GetTemplateIterator(me)
+       returns DataMapIteratorOfMapOfTemplate from EDL;
+    
+    GetVariableIterator(me)
+       returns DataMapIteratorOfMapOfVariable from EDL;
+       
+    ClearVariables(me);
+    ---Purpose: Destroy all variables.
+    
+    ClearTemplates(me);
+    ---Purpose: Destroy all templates.
+    
+    ClearIncludes(me);
+    ---Purpose: Destroy all include directories.
+    
+    Execute(me; aFileName : CString from Standard)
+    	returns Error from EDL;
+    ---Purpose: Execute the EDL file <aFileName>.
+   
+ fields
+ 
+    myInter : Interpretor from EDL;
+    
+ end;

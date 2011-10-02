@@ -1,0 +1,38 @@
+-- File:	MS_Schema.cdl
+-- Created:	Mon Aug 23 18:17:24 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Schema 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits GlobalEntity from MS 
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HAsciiString            from TCollection
+
+is
+
+    Create(aSchema : HAsciiString from TCollection) returns mutable Schema from MS;
+    
+    Package(me : mutable; aPackage : HAsciiString from TCollection);
+    GetPackages(me) returns mutable HSequenceOfHAsciiString from TColStd;
+    	
+    Class(me : mutable; aClass : HAsciiString from TCollection);
+    GetClasses(me) returns HSequenceOfHAsciiString from TColStd;
+  
+    Comment(me)  returns HAsciiString from TCollection;
+    SetComment(me : mutable; aComment : HAsciiString from TCollection);
+
+    
+fields
+
+    myPackages    : HSequenceOfHAsciiString from TColStd;
+    myClasses     : HSequenceOfHAsciiString from TColStd;
+    mySchemaComment  : HAsciiString from TCollection;   -- Comment to Schema declaration
+   
+end Schema from MS;
+

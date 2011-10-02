@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepShape__CsgSolid.html" title="StepShape_CsgSolid" alt="" coords="1268,32,1425,61"/>
+<area shape="rect" id="node13" href="$classStepShape__ManifoldSolidBrep.html" title="StepShape_ManifoldSolidBrep" alt="" coords="1237,85,1456,115"/>
+<area shape="rect" id="node21" href="$classStepShape__SolidReplica.html" title="StepShape_SolidReplica" alt="" coords="1257,139,1436,168"/>
+<area shape="rect" id="node23" href="$classStepShape__SweptAreaSolid.html" title="StepShape_SweptAreaSolid" alt="" coords="1244,192,1449,221"/>
+<area shape="rect" id="node29" href="$classStepShape__SweptFaceSolid.html" title="StepShape_SweptFaceSolid" alt="" coords="1244,272,1449,301"/>
+<area shape="rect" id="node2" href="$classStepGeom__GeometricRepresentationItem.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="657,139,967,168"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="377,139,607,168"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,139,328,168"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+<area shape="rect" id="node15" href="$classStepShape__BrepWithVoids.html" title="StepShape_BrepWithVoids" alt="" coords="1561,5,1759,35"/>
+<area shape="rect" id="node17" href="$classStepShape__FacetedBrep.html" title="StepShape_FacetedBrep" alt="" coords="1565,59,1755,88"/>
+<area shape="rect" id="node19" href="$classStepShape__FacetedBrepAndBrepWithVoids.html" title="StepShape_FacetedBrepAndBrepWithVoids" alt="" coords="1504,112,1816,141"/>
+<area shape="rect" id="node25" href="$classStepShape__ExtrudedAreaSolid.html" title="StepShape_ExtrudedAreaSolid" alt="" coords="1548,165,1772,195"/>
+<area shape="rect" id="node27" href="$classStepShape__RevolvedAreaSolid.html" title="StepShape_RevolvedAreaSolid" alt="" coords="1548,219,1772,248"/>
+<area shape="rect" id="node31" href="$classStepShape__ExtrudedFaceSolid.html" title="StepShape_ExtrudedFaceSolid" alt="" coords="1547,272,1773,301"/>
+<area shape="rect" id="node33" href="$classStepShape__RevolvedFaceSolid.html" title="StepShape_RevolvedFaceSolid" alt="" coords="1547,325,1773,355"/>
+</map>

@@ -1,0 +1,17 @@
+-- File:	WOKSteps_ccl.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 13 14:21:27 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_ccl_EDL) then
+@set %WOKSteps_ccl_EDL = "";
+
+  @set %WOKSteps_SrcGroup  = "src";
+  @set %WOKSteps_src       = "*WOKStep_Source";	
+
+  @set %WOKSteps_XcppGroup = "ccl";
+  @set %WOKSteps_ccl = "WOKStep_ccl(src)"; 
+
+  @set %WOKSteps_delivery_inc_list_steps = "ccl";
+
+@endif;

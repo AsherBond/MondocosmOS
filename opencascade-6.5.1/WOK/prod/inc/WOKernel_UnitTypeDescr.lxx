@@ -1,0 +1,27 @@
+// File:	WOKernel_UnitTypeDescr.lxx
+// Created:	Fri Jun  6 16:57:48 1997
+// Author:	Jean GAUTIER
+//		<jga@hourax.paris1.matra-dtv.fr>
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Key
+//purpose  : 
+//=======================================================================
+inline  Standard_Character WOKernel_UnitTypeDescr::Key() const
+{
+  return mykey;
+}
+
+ 
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Type
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_UnitTypeDescr::Type() const
+{
+  return mytype;
+}
+
+ 

@@ -1,0 +1,54 @@
+// File:	WOKernel_BaseEntity.lxx
+// Created:	Tue Aug  8 16:43:53 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Name
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_BaseEntity::Name() const 
+{
+  return myname;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : FullName
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_BaseEntity::FullName() const 
+{
+  return myfullname;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : UserPathName
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_BaseEntity::UserPathName() const 
+{
+  return myfullname;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Nesting
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_BaseEntity::Nesting() const 
+{
+  return mynestingentity;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Session
+//purpose  : 
+//=======================================================================
+inline Handle(WOKernel_Session) WOKernel_BaseEntity::Session() const 
+{
+  return mysession;
+}

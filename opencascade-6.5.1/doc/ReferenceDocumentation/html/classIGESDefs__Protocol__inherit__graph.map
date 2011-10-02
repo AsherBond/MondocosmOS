@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIGESData__Protocol.html" title="Description of basic Protocol for IGES &#160;&#160;This comprises treatement of IGESModel and..." alt="" coords="5,237,155,267"/>
+<area shape="rect" id="node4" href="$classInterface__Protocol.html" title="General description of Interface Protocols. A Protocol defines &#160;&#160;a set of Entity..." alt="" coords="7,160,153,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="19,83,141,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="5,5,155,35"/>
+</map>

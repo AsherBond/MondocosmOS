@@ -1,0 +1,50 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepFEA__FeaMaterialPropertyRepresentationItem.html" title="Representation of STEP entity FeaMaterialPropertyRepresentationItem &#160;" alt="" coords="735,272,1097,301"/>
+<area shape="rect" id="node29" href="$classStepFEA__FeaRepresentationItem.html" title="Representation of STEP entity FeaRepresentationItem &#160;" alt="" coords="792,725,1040,755"/>
+<area shape="rect" id="node45" href="$classStepGeom__GeometricRepresentationItem.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="761,1285,1071,1315"/>
+<area shape="rect" id="node81" href="$classStepRepr__CompoundRepresentationItem.html" title="Added for Dimensional Tolerances &#160;" alt="" coords="765,1339,1067,1368"/>
+<area shape="rect" id="node83" href="$classStepRepr__DescriptiveRepresentationItem.html" title="StepRepr_DescriptiveRepresentationItem" alt="" coords="763,1392,1069,1421"/>
+<area shape="rect" id="node85" href="$classStepRepr__MappedItem.html" title="StepRepr_MappedItem" alt="" coords="827,1445,1005,1475"/>
+<area shape="rect" id="node87" href="$classStepRepr__MeasureRepresentationItem.html" title="Implements a measure_representation_item entity &#160;&#160;which is used for storing validation..." alt="" coords="772,1499,1060,1528"/>
+<area shape="rect" id="node89" href="$classStepRepr__ReprItemAndLengthMeasureWithUnit.html" title="StepRepr_ReprItemAndLengthMeasureWithUnit" alt="" coords="744,1552,1088,1581"/>
+<area shape="rect" id="node91" href="$classStepShape__MeasureRepresentationItemAndQualifiedRepresentationItem.html" title="Added for Dimensional Tolerances &#160;&#160;Complex Type between MeasureRepresentationItem..." alt="" coords="657,1605,1175,1635"/>
+<area shape="rect" id="node93" href="$classStepShape__QualifiedRepresentationItem.html" title="Added for Dimensional Tolerances &#160;" alt="" coords="767,1659,1065,1688"/>
+<area shape="rect" id="node95" href="$classStepShape__TopologicalRepresentationItem.html" title="StepShape_TopologicalRepresentationItem" alt="" coords="761,1712,1071,1741"/>
+<area shape="rect" id="node97" href="$classStepVisual__StyledItem.html" title="StepVisual_StyledItem" alt="" coords="829,1765,1003,1795"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,1472,328,1501"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,1472,156,1501"/>
+<area shape="rect" id="node9" href="$classStepFEA__FeaAreaDensity.html" title="Representation of STEP entity FeaAreaDensity &#160;" alt="" coords="1343,5,1537,35"/>
+<area shape="rect" id="node11" href="$classStepFEA__FeaLinearElasticity.html" title="Representation of STEP entity FeaLinearElasticity &#160;" alt="" coords="1333,59,1547,88"/>
+<area shape="rect" id="node13" href="$classStepFEA__FeaMassDensity.html" title="Representation of STEP entity FeaMassDensity &#160;" alt="" coords="1341,112,1539,141"/>
+<area shape="rect" id="node15" href="$classStepFEA__FeaMoistureAbsorption.html" title="Representation of STEP entity FeaMoistureAbsorption &#160;" alt="" coords="1320,165,1560,195"/>
+<area shape="rect" id="node17" href="$classStepFEA__FeaSecantCoefficientOfLinearThermalExpansion.html" title="Representation of STEP entity FeaSecantCoefficientOfLinearThermalExpansion &#160;" alt="" coords="1235,219,1645,248"/>
+<area shape="rect" id="node19" href="$classStepFEA__FeaShellBendingStiffness.html" title="Representation of STEP entity FeaShellBendingStiffness &#160;" alt="" coords="1313,272,1567,301"/>
+<area shape="rect" id="node21" href="$classStepFEA__FeaShellMembraneBendingCouplingStiffness.html" title="Representation of STEP entity FeaShellMembraneBendingCouplingStiffness &#160;" alt="" coords="1249,325,1631,355"/>
+<area shape="rect" id="node23" href="$classStepFEA__FeaShellMembraneStiffness.html" title="Representation of STEP entity FeaShellMembraneStiffness &#160;" alt="" coords="1304,379,1576,408"/>
+<area shape="rect" id="node25" href="$classStepFEA__FeaShellShearStiffness.html" title="Representation of STEP entity FeaShellShearStiffness &#160;" alt="" coords="1321,432,1559,461"/>
+<area shape="rect" id="node27" href="$classStepFEA__FeaTangentialCoefficientOfLinearThermalExpansion.html" title="Representation of STEP entity FeaTangentialCoefficientOfLinearThermalExpansion &#160;" alt="" coords="1224,485,1656,515"/>
+<area shape="rect" id="node31" href="$classStepFEA__AlignedCurve3dElementCoordinateSystem.html" title="Representation of STEP entity AlignedCurve3dElementCoordinateSystem &#160;" alt="" coords="1253,539,1627,568"/>
+<area shape="rect" id="node33" href="$classStepFEA__AlignedSurface3dElementCoordinateSystem.html" title="Representation of STEP entity AlignedSurface3dElementCoordinateSystem &#160;" alt="" coords="1247,592,1633,621"/>
+<area shape="rect" id="node35" href="$classStepFEA__ArbitraryVolume3dElementCoordinateSystem.html" title="Representation of STEP entity ArbitraryVolume3dElementCoordinateSystem &#160;" alt="" coords="1243,645,1637,675"/>
+<area shape="rect" id="node37" href="$classStepFEA__ConstantSurface3dElementCoordinateSystem.html" title="Representation of STEP entity ConstantSurface3dElementCoordinateSystem &#160;" alt="" coords="1240,699,1640,728"/>
+<area shape="rect" id="node39" href="$classStepFEA__ParametricCurve3dElementCoordinateDirection.html" title="Representation of STEP entity ParametricCurve3dElementCoordinateDirection &#160;" alt="" coords="1235,752,1645,781"/>
+<area shape="rect" id="node41" href="$classStepFEA__ParametricCurve3dElementCoordinateSystem.html" title="Representation of STEP entity ParametricCurve3dElementCoordinateSystem &#160;" alt="" coords="1240,805,1640,835"/>
+<area shape="rect" id="node43" href="$classStepFEA__ParametricSurface3dElementCoordinateSystem.html" title="Representation of STEP entity ParametricSurface3dElementCoordinateSystem &#160;" alt="" coords="1235,859,1645,888"/>
+<area shape="rect" id="node47" href="$classStepFEA__NodeSet.html" title="Representation of STEP entity NodeSet &#160;" alt="" coords="1367,912,1513,941"/>
+<area shape="rect" id="node49" href="$classStepGeom__CartesianTransformationOperator.html" title="StepGeom_CartesianTransformationOperator" alt="" coords="1277,965,1603,995"/>
+<area shape="rect" id="node51" href="$classStepGeom__Curve.html" title="StepGeom_Curve" alt="" coords="1369,1019,1511,1048"/>
+<area shape="rect" id="node53" href="$classStepGeom__Direction.html" title="StepGeom_Direction" alt="" coords="1359,1072,1521,1101"/>
+<area shape="rect" id="node55" href="$classStepGeom__Placement.html" title="StepGeom_Placement" alt="" coords="1353,1125,1527,1155"/>
+<area shape="rect" id="node57" href="$classStepGeom__Point.html" title="StepGeom_Point" alt="" coords="1372,1179,1508,1208"/>
+<area shape="rect" id="node59" href="$classStepGeom__Surface.html" title="StepGeom_Surface" alt="" coords="1364,1232,1516,1261"/>
+<area shape="rect" id="node61" href="$classStepGeom__Vector.html" title="StepGeom_Vector" alt="" coords="1367,1285,1513,1315"/>
+<area shape="rect" id="node63" href="$classStepShape__Block.html" title="StepShape_Block" alt="" coords="1371,1339,1509,1368"/>
+<area shape="rect" id="node65" href="$classStepShape__BooleanResult.html" title="StepShape_BooleanResult" alt="" coords="1341,1392,1539,1421"/>
+<area shape="rect" id="node67" href="$classStepShape__EdgeBasedWireframeModel.html" title="Representation of STEP entity EdgeBasedWireframeModel &#160;" alt="" coords="1296,1445,1584,1475"/>
+<area shape="rect" id="node69" href="$classStepShape__FaceBasedSurfaceModel.html" title="Representation of STEP entity FaceBasedSurfaceModel &#160;" alt="" coords="1307,1499,1573,1528"/>
+<area shape="rect" id="node71" href="$classStepShape__GeometricSet.html" title="StepShape_GeometricSet" alt="" coords="1341,1552,1539,1581"/>
+<area shape="rect" id="node73" href="$classStepShape__HalfSpaceSolid.html" title="StepShape_HalfSpaceSolid" alt="" coords="1341,1605,1539,1635"/>
+<area shape="rect" id="node75" href="$classStepShape__RightAngularWedge.html" title="StepShape_RightAngularWedge" alt="" coords="1324,1659,1556,1688"/>
+<area shape="rect" id="node77" href="$classStepShape__RightCircularCone.html" title="StepShape_RightCircularCone" alt="" coords="1329,1712,1551,1741"/>
+<area shape="rect" id="node79" href="$classStepShape__RightCircularCylinder.html" title="StepShape_RightCircularCylinder" alt="" coords="1319,1765,1561,1795"/>
+</map>

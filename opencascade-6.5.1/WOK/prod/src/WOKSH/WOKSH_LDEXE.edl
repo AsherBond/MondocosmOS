@@ -1,0 +1,9 @@
+@ifnotdefined ( %WOKSH_LDEXE_EDL ) then
+ @set %WOKSH_LDEXE_EDL = "";
+ @if ( %Station == "sun" ) then
+  @template LDEXE_Footer () is
+  $ -lC -lc;
+  @end;
+ @endif;
+@endif;
+

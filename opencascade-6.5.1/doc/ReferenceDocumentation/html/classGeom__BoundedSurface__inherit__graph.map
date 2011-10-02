@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classGeom__BezierSurface.html" title="Describes a rational or non&#45;rational Bezier surface. &#160;A non&#45;rational Bezier surface..." alt="" coords="5,392,168,421"/>
+<area shape="rect" id="node13" href="$classGeom__BSplineSurface.html" title="Describes a BSpline surface. &#160;&#160;In each parametric direction, a BSpline surface can..." alt="" coords="192,392,360,421"/>
+<area shape="rect" id="node15" href="$classGeom__RectangularTrimmedSurface.html" title="Describes a portion of a surface (a patch) limited &#160;&#160;by two values of the u parameter..." alt="" coords="384,392,643,421"/>
+<area shape="rect" id="node2" href="$classGeom__Surface.html" title="Describes the common behavior of surfaces in 3D &#160;&#160;space. The Geom package provides..." alt="" coords="216,237,336,267"/>
+<area shape="rect" id="node4" href="$classGeom__Geometry.html" title="The abstract class Geometry for 3D space is the root &#160;&#160;class of all geometric objects..." alt="" coords="207,160,345,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="215,83,337,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="201,5,351,35"/>
+</map>

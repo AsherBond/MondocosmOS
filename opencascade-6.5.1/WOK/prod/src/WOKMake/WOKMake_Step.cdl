@@ -1,0 +1,352 @@
+-- File:	WOKMake_Step.cdl
+-- Created:	Wed Aug 23 11:21:00 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+deferred class Step from WOKMake 
+inherits TShared from MMgt
+
+ 	---Purpose: Base class for umake Process 
+   
+uses
+    Status                                   from WOKMake,
+    HSequenceOfStepOption                    from WOKMake,
+    HSequenceOfInputFile                     from WOKMake,
+    HSequenceOfOutputFile                    from WOKMake,
+    IndexedMapOfDepItem                      from WOKMake,
+    IndexedDataMapOfHAsciiStringOfInputFile  from WOKMake,
+    IndexedDataMapOfHAsciiStringOfOutputFile from WOKMake,
+    StepFile                                 from WOKMake,
+    InputFile                                from WOKMake,
+    OutputFile                               from WOKMake,
+    DepItem                                  from WOKMake,
+    FileStatus                               from WOKMake,
+    Status                                   from WOKMake,
+    BuildProcess                             from WOKMake,
+    BuildProcessPtr                          from WOKMake,
+    DevUnit                                  from WOKernel,
+    HSequenceOfFile                          from WOKernel,
+    File                                     from WOKernel,
+    Locator                                  from WOKernel,
+    UnitGraph                                from WOKernel,
+    HSequenceOfEntity                        from WOKBuilder,
+    Entity                                   from WOKBuilder,
+    Shell                                    from WOKUtils,
+    Path                                     from WOKUtils,
+    HSequenceOfHAsciiString                  from TColStd,
+    HArray2OfInteger                         from TColStd,
+    HAsciiString                             from TCollection
+
+raises     
+    ProgramError from Standard
+
+is
+    Initialize(aprocess : BuildProcess   from WOKMake;
+    	       aunit    : DevUnit        from WOKernel; 
+    	       acode    : HAsciiString   from TCollection; 
+    	       checked, hidden : Boolean from Standard);
+
+
+    --- Contruction D'une WOKBuilder_Entity a partir d'un WOKernel_File
+    BuilderEntity(me; afile : File from WOKernel)
+    	returns mutable Entity from WOKBuilder
+    	is virtual protected;
+
+    BuilderEntity(me; apath : Path from WOKUtils)
+    	returns mutable Entity from WOKBuilder
+    	is virtual protected;
+
+    -- Calcul des entites en entree de l'etape
+    -- 
+    -- 	 1 - les entites propres a l'etape dans cette ud 
+    -- 	 2 - les composants externes utilises par cette ud (autres specs,
+    -- 	     includes ...)
+
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is an input of step
+    --          2 - Sets Build Flag if file is a candidate to construction
+    	returns Boolean from Standard
+    	is deferred protected;
+
+    GetInputFromStep(me:mutable; astep : Step from WOKMake);
+	
+    GetInputFlow(me:mutable)
+    ---Purpose: Computes Entity list involved in step preforming
+    --          in the InputFlow list.
+    	is virtual protected;
+
+    -- Calcul des dependances liees a l'etape :
+    -- 
+    -- 	   1 - L'etape (ou un de ses composants) est-elle a (re)faire ?
+    -- 	   2 - Quels sont les entites d'entree de l'etape a refaire ?
+
+    InputFileList(me : mutable)
+    ---C++: return const &
+    	returns HSequenceOfInputFile from WOKMake;
+    
+    LoadDependencies(me:mutable)
+    	is virtual protected;
+
+    StepFileStatus(me:mutable; afile : mutable StepFile from WOKMake; alocator : Locator from WOKernel)
+    	returns FileStatus from WOKMake
+    	is private;
+    
+    OutOfDateEntities(me:mutable) 
+    ---Purpose: Set Build flag to OutOfDate entities 
+    --          Clears Build flag to Uptodate Entities
+    --          This base implementation does nothing
+    	returns HSequenceOfInputFile from WOKMake
+    	is virtual protected;
+
+    HandleTargets(me:mutable)
+    	returns HSequenceOfInputFile from WOKMake
+    	is virtual protected;
+
+    ForceBuild(me:mutable)  
+    	returns HSequenceOfInputFile from WOKMake
+    	is virtual protected;
+    ---Purpose: Force construction of step
+
+    CompleteExecList(me:mutable; alist : HSequenceOfInputFile from WOKMake)
+    	is virtual protected;
+
+    -- Construction
+    -- 
+
+    ExecutionInputList(me:mutable)
+    	returns HSequenceOfInputFile from WOKMake
+	is virtual protected;
+
+    CheckStatus(me; acontext : CString from Standard)
+    	returns Boolean from Standard
+    	is protected;
+    
+    AddExecDepItem(me: mutable; input  : InputFile from WOKMake; 
+    	    	    	    	output : OutputFile from WOKMake; 
+    	    	    	    	adirectflag : Boolean from Standard);
+    ---Purpose: Add an execution item in sequence
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    ---Purpose: Executes step
+    --          Computes output files
+    	is deferred private;
+    
+    AcquitExecution(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    	is virtual protected;     
+
+    Init(me:mutable)
+    	is virtual protected;
+
+
+    Make(me:mutable) 
+    ---Purpose: Computes dependances 
+    --          Decides if perform is needed.
+    --          Performs Step on needed entities
+    --          returns status    
+    	returns Status from WOKMake is virtual;
+
+    Terminate(me:mutable)
+    	is virtual protected;
+
+    OutputFileList(me)
+    	returns HSequenceOfOutputFile from WOKMake;
+
+    -- 
+    -- Ouput file Management
+    -- 
+    
+    HandleOutputFile(me:mutable; anfile : OutputFile from WOKMake)
+    ---Purpose: Handles Output file new/same/disappereread  
+    	returns Boolean from Standard
+    	is virtual ;
+    
+    --   
+    --   
+    --  
+    -- 
+
+    BuildProcess(me) 
+    ---C++: inline
+        returns BuildProcess from WOKMake
+	is protected;
+
+    Unit(me)
+    ---C++: return const &
+    ---C++: inline
+        returns DevUnit      from WOKernel;
+
+    StepOutputID(myclass; aname, acode: HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    StepOutputID(myclass; aname, acode, asubcode : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    StepOutputID(me)
+    	returns HAsciiString from TCollection;
+
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+    	is deferred protected;
+
+    InputFilesFileName(me) 
+    	returns HAsciiString from TCollection
+    	is virtual;
+    DepItemsFileName(me) 
+    	returns HAsciiString from TCollection
+    	is virtual;
+    OutputFilesFileName(me) 
+    	returns HAsciiString from TCollection
+    	is virtual;
+	
+    LogFileName(me)
+    	returns HAsciiString from TCollection
+    	is virtual;
+	
+    AdmFile(me; aname : HAsciiString from TCollection)
+    	returns mutable File from WOKernel
+    	is virtual;
+
+    LocateAdmFile(me; alocator : Locator from WOKernel; aname : HAsciiString from TCollection)
+    	returns mutable File from WOKernel;
+
+	
+    -- Step Properties Management
+    -- 
+
+    UniqueName(myclass; aunit : DevUnit from WOKernel; acode, asubcode : HAsciiString from TCollection) 
+    	returns HAsciiString from TCollection;
+
+    SplitUniqueName(myclass; anid : HAsciiString from TCollection; auname, acode, asubcode : out HAsciiString from TCollection);
+
+    UniqueName(me:mutable) 
+    ---C++: return const &    
+    	returns HAsciiString from TCollection;
+
+    Code(me)      returns HAsciiString from TCollection;
+    
+    SetSubCode(me:mutable; acode : HAsciiString from TCollection) is private;
+    SubCode(me)   returns HAsciiString from TCollection;
+    
+    IsHidden(me)  returns Boolean      from Standard;
+    IsChecked(me) returns Boolean      from Standard;
+
+    -- Step Status Management
+    -- 
+
+    SetUptodate(me:mutable);
+    SetSucceeded(me:mutable);
+    SetIncomplete(me:mutable);
+    SetFailed(me:mutable);
+    SetUnprocessed(me:mutable);
+    SetStatus(me:mutable; astatus : Status from WOKMake);    
+    
+    Status(me)    returns Status       from WOKMake;
+    
+    
+    IsOrIsSubStepOf(me; acode : HAsciiString from TCollection)
+    ---Purpose: return true if  step has that  code or if step is sub
+    --          of thet code
+    	returns Boolean from Standard;
+
+    Shell(me)
+    ---C++: return const &
+    ---C++: inline
+    	returns Shell from WOKUtils;
+
+    UnitGraph(me) 
+    ---C++: return const &
+    ---C++: inline
+    	returns UnitGraph from WOKernel;
+
+    Locator(me) 
+    ---C++: return const &
+    ---C++: inline
+    	returns Locator from WOKernel;
+
+    InLocator(me) 
+    	returns mutable Locator from WOKernel
+    	is virtual;
+
+    OutLocator(me)
+    	returns mutable Locator from WOKernel
+    	is virtual;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is deferred protected;
+	
+    SetOutputDir(me:mutable; adir : Path from WOKUtils);
+    OutputDir(me:mutable) returns Path from WOKUtils;
+
+    IsDBMSDependent(me)
+    	returns Boolean from Standard;
+    IsStationDependent(me)
+    	returns Boolean from Standard;
+
+	
+    -- Options Management
+    -- 
+    
+    SetOptions(me:mutable; options : HSequenceOfStepOption from WOKMake); 
+    Options(me) returns HSequenceOfStepOption from WOKMake;
+    
+    -- Targets Management
+    -- 
+
+    SetTargets(me:mutable; targets : HSequenceOfHAsciiString from TColStd);
+    Targets(me) returns HSequenceOfHAsciiString from TColStd;
+    
+    -- Gestion des etapes precedentes
+    -- 
+
+    PrecedenceSteps(me) returns HSequenceOfHAsciiString from TColStd;
+    SetPrecedenceSteps(me:mutable; steps : HSequenceOfHAsciiString from TColStd);
+
+    IsToExecute(me) returns Boolean from Standard;
+    DoExecute(me:mutable);
+    DontExecute(me:mutable);   
+
+fields
+    myunit        : DevUnit                                  from WOKernel;
+    myunique      : HAsciiString                             from TCollection;
+
+    mycode        : HAsciiString                             from TCollection;
+    mysubcode     : HAsciiString                             from TCollection;
+    
+    myprocess     : BuildProcessPtr                          from WOKMake;
+    
+    myinputcomp   : Boolean                                  from Standard;
+    myinflow      : IndexedDataMapOfHAsciiStringOfInputFile  from WOKMake is protected;
+    myinput       : HSequenceOfInputFile                     from WOKMake;
+    
+    mydeploaded   : Boolean                                  from Standard;
+    mydepin       : IndexedDataMapOfHAsciiStringOfInputFile  from WOKMake is protected;
+    mydepitems    : IndexedMapOfDepItem                      from WOKMake is protected;
+    mydepmatrix   : HArray2OfInteger                         from TColStd is protected;
+    mydepout      : IndexedDataMapOfHAsciiStringOfOutputFile from WOKMake is protected;
+    
+    myoutflow     : IndexedDataMapOfHAsciiStringOfOutputFile from WOKMake is protected;
+    myitems       : IndexedMapOfDepItem                      from WOKMake;
+    
+    myoutput      : HSequenceOfOutputFile                    from WOKMake;
+    
+    myprecsteps   : HSequenceOfHAsciiString                  from TColStd;
+    mystatus      : Status                                   from WOKMake;
+    mycheck       : Boolean                                  from Standard;
+    myhidden      : Boolean                                  from Standard;
+    myexecflag    : Boolean                                  from Standard;
+    mytargets     : HSequenceOfHAsciiString                  from TColStd;
+    myoptions     : HSequenceOfStepOption                    from WOKMake;
+
+    myoutputdir   : Path                                     from WOKUtils;
+       
+
+friends
+
+    class StepBuilder from WOKMake,
+    class BuildProcess from WOKMake
+
+end Step;
+

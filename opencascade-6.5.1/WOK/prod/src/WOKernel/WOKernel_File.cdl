@@ -1,0 +1,68 @@
+-- File:	WOKernel_File.cdl
+-- Created:	Fri Jun 23 18:40:23 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class File from WOKernel 
+inherits BaseEntity from WOKernel
+
+	---Purpose: a file in WOK context
+
+uses
+    Entity               from WOKernel,
+    Workbench            from WOKernel,
+    DevUnit              from WOKernel,
+    UnitNesting          from WOKernel,
+    FileType             from WOKernel,
+    HAsciiString         from TCollection,
+    HSequenceOfParamItem from WOKUtils,
+    Path                 from WOKUtils
+raises 
+    ProgramError from Standard
+is
+
+    Create(aname : HAsciiString from TCollection; anesting : Entity from WOKernel; atype : FileType from WOKernel)    
+    ---Purpose: Constructor of a File with a FileDependent Type
+    	returns mutable File from WOKernel;
+
+    Create(anesting : Entity from WOKernel; atype : FileType from WOKernel)    
+    ---Purpose: Constructor of a File with a !FileDependent Type
+    --          Warning : Raises if FileType is FileDependent
+    	returns mutable File from WOKernel;
+
+    Path(me) 
+    ---C++: return const &
+    ---C++: inline
+       	returns Path from WOKUtils;
+
+    SetPath(me:mutable; apath : Path from WOKUtils);
+
+    Type(me)     returns FileType from WOKernel;
+    ---C++: return const &
+    ---C++: inline
+    TypeName(me)
+    ---C++: return const &
+    ---C++: inline
+    	returns HAsciiString from TCollection;
+    SetType(me:mutable; atype : FileType from WOKernel);
+
+    GetUniqueName(me) 
+    	returns HAsciiString from TCollection is redefined;
+
+    LocatorName(me:mutable)
+    ---C++: return const &
+    	returns HAsciiString from TCollection;
+
+    FileLocatorName(myclass; unitname, type, aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    GetPath(me:mutable)
+    	raises ProgramError from Standard;
+
+fields
+    mytype        : FileType     from WOKernel;
+    mypath        : Path         from WOKUtils;
+    mylocatorname : HAsciiString from TCollection;
+end File;

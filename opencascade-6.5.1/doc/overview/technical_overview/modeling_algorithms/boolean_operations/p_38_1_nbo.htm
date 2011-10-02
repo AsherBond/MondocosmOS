@@ -1,0 +1,214 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { text-indent:36.00pt; font-family:Arial, sans-serif; }
+p.whs2 { font-family:Arial, sans-serif; }
+p.whs3 { margin-top:0; margin-bottom:0; font-family:Arial, sans-serif; }
+p.whs4 { font-weight:bold; font-family:Arial, sans-serif; }
+p.whs5 { margin-left:4.50pt; margin-top:4.50pt; font-family:HELVETICA; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nBoolean Operations");
+addAvenueInfo("Modeling Algorithms","technical_overview/modeling_algorithms/p_37_1.htm","technical_overview/modeling_algorithms/p_41_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Boolean operations</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">The <font 
+ style="font-weight: bold;">BRepAlgoAPI</font> package provides a full 
+ range of services to perform Boolean Operations on arguments (shapes that 
+ are defined in the BRep data structures). The implemented new algorithm 
+ is intended to replace the old Boolean Operations algorithm in the <font 
+ style="font-weight: bold;">BRepAlgo</font> package.</p>
+
+<p class="whs1">The New 
+ algorithm is rid of a large number of weak spots and limitations characteristics 
+ of the Old algorithm. </p>
+
+<p class="whs1">It is 
+ more robust and flexible. </p>
+
+<p class="whs1">It can 
+ treat arguments the Old algorithm was not adapted for.</p>
+
+<p class="whs1">The new 
+ algorithm is based on a new approach to operations with interfered shapes. 
+ The advantages of the new algorithm include an ability to treat arguments 
+ that have <font style="font-weight: bold;">shared</font> entities. It 
+ can properly process two solids with shared faces (in terms of TopoDS_Shape::IsSame()), 
+ two faces that have shared edges and so on. Now the New Boolean Operation 
+ algorithm can treat a wide range of shapes while the Old one fails on 
+ them.</p>
+
+<p class="whs1">A generalization 
+ of treatment of <font style="font-weight: bold;">same-domain faces</font> 
+ was included into the New algorithm. Two faces that share the same domain 
+ are processed according to the common rule even if the underlying surfaces 
+ are of different types. This allows to execute Boolean Operations properly 
+ for the same domain faces. It also concerns solids and shells that have 
+ the same domain faces. It is quite frequent when two faces share the same 
+ domain. And the New algorithm successfully copes with it in contrast to 
+ the Old one.</p>
+
+<p class="whs1">Generalization 
+ of treatment of <font style="font-weight: bold;">degenerated edges</font> 
+ gives a possibility to process them properly. Although there are still 
+ some difficulties with processing faces in areas close to degenerated 
+ edges.</p>
+
+<p class="whs2">&nbsp;Now the processing of 
+ arguments having <font style="font-weight: bold;">internal sub-shapes</font> 
+ gives a correct result. Internal sub-shape means a sub-shape of a shape 
+ with the orientation TopAbs_INTERNAL and is located inside the shape boundaries. 
+ The New algorithm processes faces with internal edges properly.</p>
+
+<p class="whs1">The new 
+ API of the Boolean Operations (in addition to the old API) allows reusing 
+ the already computed interference between arguments in different types 
+ of Boolean Operations. It is possible to use once computed interference 
+ in FUSE, CUT and COMMON operations on given arguments. So there is no 
+ need to re-compute the interference between the arguments. It allows reducing 
+ time for more than one operation on given arguments.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs4">The shape 
+ type of a Boolean Operation result and types of the arguments:</p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">For arguments 
+ with the same shape type (e.g. SOLID / SOLID) the type of the resulting 
+ shape will be a COMPOUND, containing shapes of this type;</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">For arguments 
+ with different shape types (e.g. SHELL / SOLID) the type of the resulting 
+ shape will be a COMPOUND, containing shapes of the type that is the same 
+ as that of the low type of the argument. Example: For SHELL/SOLID the 
+ result is a COMPOUND of SHELLs. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">For arguments 
+ with different shape types some of Boolean Operations can not be done 
+ using the default implementation, because of a non-manifold type of the 
+ result. Example: the FUSE operation for SHELL and SOLID can not be done, 
+ but the CUT operation can be done, where SHELL is the object and SOLID 
+ is the tool.</p></li>
+</ul>
+
+<p class="whs2">It is possible to perform Boolean 
+ Operations on arguments of the COMPOUND shape type. In this case each 
+ compound must not be heterogeneous, i.e. it must contain equidimensional 
+ shapes (EDGEs or/and WIREs, FACEs or/and SHELLs, SOLIDs). SOLIDs inside 
+ the COMPOUND must not contact (intersect or touch) each other. The same 
+ condition should be respected for SHELLs or FACEs, WIREs or EDGEs.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs2">It does not support Boolean 
+ Operations for COMPSOLID type of shape.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs5"><span style="font-family: Arial, sans-serif;">Note 
+ that</span><span style="font-weight: bold; font-family: Arial, sans-serif;"> 
+ <B></B></span><span style="font-family: Arial, sans-serif;"><font style="font-weight: bold; font-family: Arial, sans-serif;"
+															face=Arial>BRepAlgo</font> 
+ package provides a full range of services to perform Old Boolean Operations.</span> 
+ </p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

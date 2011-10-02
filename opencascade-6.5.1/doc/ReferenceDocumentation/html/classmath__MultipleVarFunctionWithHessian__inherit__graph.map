@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classFairCurve__Energy.html" title="necessary methodes to compute the energy of an FairCurve. &#160;" alt="" coords="147,237,285,267"/>
+<area shape="rect" id="node2" href="$classmath__MultipleVarFunctionWithGradient.html" title="The abstract class MultipleVarFunctionWithGradient &#160;&#160;describes the virtual functions..." alt="" coords="73,83,359,112"/>
+<area shape="rect" id="node4" href="$classmath__MultipleVarFunction.html" title="Describes the virtual functions associated with a multiple variable function. &#160;" alt="" coords="119,5,313,35"/>
+<area shape="rect" id="node9" href="$classFairCurve__EnergyOfBatten.html" title="Energy Criterium to minimize in Batten. &#160;" alt="" coords="5,315,208,344"/>
+<area shape="rect" id="node11" href="$classFairCurve__EnergyOfMVC.html" title="Energy Criterium to minimize in MinimalVariationCurve. &#160;" alt="" coords="232,315,419,344"/>
+</map>

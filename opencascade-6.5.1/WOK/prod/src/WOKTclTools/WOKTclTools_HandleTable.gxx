@@ -1,0 +1,130 @@
+// File:	WOKTclTools_HandleTable.gxx
+// Created:	Mon Oct 28 19:16:15 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+// File:	WOKTclTools_HandleTable.cxx
+// Created:	Wed Oct  9 13:27:57 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+#include <tclExtend.h>
+
+
+#include <Standard_ProgramError.hxx>
+
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : WOKTclTools_HandleTable
+//purpose  : 
+//=======================================================================
+WOKTclTools_HandleTable::WOKTclTools_HandleTable() 
+{
+  
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : WOKTclTools_HandleTable
+//purpose  : 
+//=======================================================================
+WOKTclTools_HandleTable::WOKTclTools_HandleTable(const Standard_CString aprefix, const Standard_Integer nbinit)
+{
+  Init(aprefix, nbinit);
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Init
+//purpose  : 
+//=======================================================================
+void WOKTclTools_HandleTable::Init(const Standard_CString aprefix, const Standard_Integer nbinit)
+{
+  myprefix = aprefix;
+  mybase   = Tcl_HandleTblInit(aprefix, sizeof(TableItem), nbinit);
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Prefix
+//purpose  : 
+//=======================================================================
+const TCollection_AsciiString& WOKTclTools_HandleTable::Prefix() const
+{
+  return myprefix;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : AddHandle
+//purpose  : 
+//=======================================================================
+Handle(TCollection_HAsciiString) WOKTclTools_HandleTable::AddHandle(const TableItem& object)
+{
+  static char HANDLE[256];
+  TableItem* ptr;
+  Handle(TCollection_HAsciiString) result;
+
+  ptr = (TableItem*) Tcl_HandleAlloc(mybase, HANDLE);
+  if(ptr != NULL)
+    {
+      *ptr = object;
+      result = new TCollection_HAsciiString;
+    }
+  return result;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : RemoveHandle
+//purpose  : 
+//=======================================================================
+void WOKTclTools_HandleTable::RemoveHandle(const Handle(TCollection_HAsciiString)& aname)
+{
+  Standard_Address handle;
+
+  handle = Tcl_HandleXlate(NULL, mybase, aname->ToCString());
+  if(handle != NULL)
+    {
+      Tcl_HandleFree(mybase,handle);
+    }
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : GetHandle
+//purpose  : 
+//=======================================================================
+const TableItem& WOKTclTools_HandleTable::GetHandle(const Handle(TCollection_HAsciiString)& aname) const
+{
+  Standard_Address handle;
+
+  handle = Tcl_HandleXlate(NULL, mybase, aname->ToCString());
+  if(handle == NULL)
+    {
+      Standard_ProgramError::Raise("WOKTclTools_HandleTable::GetHandle : no such handle");
+    }
+  return *((TableItem *) handle);
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : GetHandle
+//purpose  : 
+//=======================================================================
+const TableItem&  WOKTclTools_HandleTable::GetHandle(const Standard_CString aname) const
+{
+  Standard_Address handle;
+
+  handle = Tcl_HandleXlate(NULL, mybase, aname);
+  if(handle == NULL)
+    {
+      Standard_ProgramError::Raise("WOKTclTools_HandleTable::GetHandle : no such handle");
+    }
+  return *((TableItem *) handle);
+}

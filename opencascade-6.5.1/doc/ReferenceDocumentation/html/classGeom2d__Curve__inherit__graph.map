@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classBisector__Curve.html" title="Bisector_Curve" alt="" coords="781,85,907,115"/>
+<area shape="rect" id="node17" href="$classGeom2d__BoundedCurve.html" title="The abstract class BoundedCurve describes the &#160;&#160;common behavior of bounded curves..." alt="" coords="752,245,936,275"/>
+<area shape="rect" id="node25" href="$classGeom2d__Conic.html" title="The abstract class Conic describes the common &#160;&#160;behavior of conic curves in 2D space..." alt="" coords="783,352,905,381"/>
+<area shape="rect" id="node35" href="$classGeom2d__Line.html" title="Describes an infinite line in the plane (2D space). &#160;&#160;A line is defined and positioned..." alt="" coords="788,405,900,435"/>
+<area shape="rect" id="node37" href="$classGeom2d__OffsetCurve.html" title="This class implements the basis services for the creation, &#160;&#160;edition, modification..." alt="" coords="760,459,928,488"/>
+<area shape="rect" id="node2" href="$classGeom2d__Geometry.html" title="The general abstract class Geometry in 2D space describes &#160;&#160;the common behaviour..." alt="" coords="376,352,531,381"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,352,328,381"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,352,156,381"/>
+<area shape="rect" id="node11" href="$classBisector__BisecAna.html" title="Bisector_BisecAna" alt="" coords="1003,5,1149,35"/>
+<area shape="rect" id="node13" href="$classBisector__BisecCC.html" title="Construct the bisector between two curves. &#160;&#160;The curves can intersect only in their..." alt="" coords="1005,59,1147,88"/>
+<area shape="rect" id="node15" href="$classBisector__BisecPC.html" title="Provides the bisector between a point and a curve. &#160;&#160;the curvature on the curve has..." alt="" coords="1005,112,1147,141"/>
+<area shape="rect" id="node19" href="$classGeom2d__BezierCurve.html" title="Describes a rational or non&#45;rational Bezier curve &#160;a non&#45;rational Bezier curve is..." alt="" coords="992,165,1160,195"/>
+<area shape="rect" id="node21" href="$classGeom2d__BSplineCurve.html" title="Describes a BSpline curve. &#160;&#160;A BSpline curve can be: &#160;uniform or non&#45;uniform, &#160;rational..." alt="" coords="989,219,1163,248"/>
+<area shape="rect" id="node23" href="$classGeom2d__TrimmedCurve.html" title="Defines a portion of a curve limited by two values of &#160;&#160;parameters inside the parametric..." alt="" coords="985,272,1167,301"/>
+<area shape="rect" id="node27" href="$classGeom2d__Circle.html" title="Describes a circle in the plane (2D space). &#160;&#160;A circle is defined by its radius and..." alt="" coords="1015,325,1137,355"/>
+<area shape="rect" id="node29" href="$classGeom2d__Ellipse.html" title="Describes an ellipse in the plane (2D space). &#160;&#160;An ellipse is defined by its major..." alt="" coords="1013,379,1139,408"/>
+<area shape="rect" id="node31" href="$classGeom2d__Hyperbola.html" title="Describes a branch of a hyperbola in the plane (2D space). &#160;&#160;A hyperbola is defined..." alt="" coords="1000,432,1152,461"/>
+<area shape="rect" id="node33" href="$classGeom2d__Parabola.html" title="Describes a parabola in the plane (2D space). &#160;&#160;A parabola is defined by its focal..." alt="" coords="1005,485,1147,515"/>
+</map>

@@ -1,0 +1,100 @@
+-- File:	CPPExt_Template.edl
+-- Author:	Kernel (CLE)
+-- History:	Tue Sep 19 17:25:59 1995	Kernel	Creation
+-- Copyright:	Matra Datavision 1995
+-- Purpose:     C++ extractor
+
+@verboseoff;
+
+
+-- ==============
+-- misc templates
+-- ==============
+
+@template Include(%IClass,%Suffix) is
+$#ifndef _%IClass_HeaderFile
+$#include <%IClass.%Suffix>
+$#endif
+@end; 
+
+@template IncludeNoSafe(%IClass,%Suffix) is
+$#include <%IClass.%Suffix>
+@end; 
+
+@template Define(%DName,%DValue) is
+$#define %DName %DValue
+@end;
+
+@template Undefine(%DName) is
+$#undef %DName
+@end;
+
+@template ShortDec(%IClass) is
+$class %IClass;
+@end;
+
+-- ==============================================
+-- Methods templates
+-- ==============================================
+
+@template ConstructorHeader(%Class,%Arguments) is
+$Standard_EXPORT %Class(%Arguments)\^
+@end;
+
+@template MethodHeader(%Virtual,%RetSpec,%Return,%And,%MethodName,%Arguments,%MetSpec) is
+$%Virtual %RetSpec %Return%And %MethodName(%Arguments) %MetSpec\^
+@end;
+
+@template ExternalConstructorCallAncestorHeader(%Class,%Arguments,%Inherits) is
+$%Class::%Class(%Arguments) : %Inherits(__NullFHandle,__NullEngineAdaptor)\^
+@end;
+
+@template ExternalValueConstructorCallAncestorHeader(%Class,%Arguments,%Inherits) is
+$%Class::%Class(%Arguments) : %Inherits(__NullFHandle)\^
+@end;
+
+@template ExternalConstructorHeader(%Class,%Arguments,%Inherits) is
+$%Class::%Class(%Arguments)\^
+@end;
+
+@template ExternalMethodHeader(%Virtual,%RetSpec,%Return,%And,%MethodName,%Arguments,%MetSpec) is
+$%Virtual %RetSpec %Return%And %Class::%MethodName(%Arguments) %MetSpec\^
+@end;
+
+@template MethodTemplateDec(%Method) is
+$%Method;
+@end;
+
+@template InlineMethodTemplateDec(%Method) is
+$%Method\^
+@end;
+
+@template MethodTemplateDef(%Method,%MBody) is
+$%Method
+${
+$  %MBody
+$}
+$
+@end;
+
+@template AsyncGetArg(%Method,%WhatEngine,%ReturnBody) is
+$%Method
+${
+$ %WhatEngine->WaitAndRelease(uid);
+$ uid.Method()->GetArgumentAsynchrone();
+$ %ReturnBody
+$}
+@end;
+
+@template EmptyDestructorTemplate(%Class) is
+$~%Class();
+@end;
+
+@template FullEmptyHandleDestructorTemplate(%Class) is
+$Handle_%Class::~Handle_%Class() {}
+@end;
+
+@template FullEmptyDestructorTemplate(%Class) is
+$%Class::~%Class() {}
+@end;
+

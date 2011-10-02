@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIGESData__Protocol.html" title="Description of basic Protocol for IGES &#160;&#160;This comprises treatement of IGESModel and..." alt="" coords="575,245,724,275"/>
+<area shape="rect" id="node27" href="$classStepData__Protocol.html" title="Description of Basic Protocol for Step &#160;&#160;The class Protocol from StepData itself..." alt="" coords="575,512,724,541"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,379,328,408"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,379,156,408"/>
+<area shape="rect" id="node9" href="$classIGESAppli__Protocol.html" title="Description of Protocol for IGESAppli &#160;" alt="" coords="793,5,940,35"/>
+<area shape="rect" id="node11" href="$classIGESBasic__Protocol.html" title="Description of Protocol for IGESBasic &#160;" alt="" coords="791,59,943,88"/>
+<area shape="rect" id="node13" href="$classIGESData__FileProtocol.html" title="This class allows to define complex protocols, in order to &#160;&#160;treat various sub&#45;sets..." alt="" coords="781,112,952,141"/>
+<area shape="rect" id="node15" href="$classIGESDefs__Protocol.html" title="Description of Protocol for IGESDefs &#160;" alt="" coords="793,165,940,195"/>
+<area shape="rect" id="node17" href="$classIGESDimen__Protocol.html" title="Description of Protocol for IGESDimen &#160;" alt="" coords="787,219,947,248"/>
+<area shape="rect" id="node19" href="$classIGESDraw__Protocol.html" title="Description of Protocol for IGESDraw &#160;" alt="" coords="792,272,941,301"/>
+<area shape="rect" id="node21" href="$classIGESGeom__Protocol.html" title="Description of Protocol for IGESGeom &#160;" alt="" coords="789,325,944,355"/>
+<area shape="rect" id="node23" href="$classIGESGraph__Protocol.html" title="Description of Protocol for IGESGraph &#160;" alt="" coords="789,379,944,408"/>
+<area shape="rect" id="node25" href="$classIGESSolid__Protocol.html" title="Description of Protocol for IGESSolid &#160;" alt="" coords="793,432,940,461"/>
+<area shape="rect" id="node29" href="$classHeaderSection__Protocol.html" title="Protocol for HeaderSection Entities &#160;&#160;It requires HeaderSection as a Resource &#160;" alt="" coords="775,485,959,515"/>
+<area shape="rect" id="node31" href="$classStepAP214__Protocol.html" title="Protocol for StepAP214 Entities &#160;&#160;It requires StepAP214 as a Resource &#160;" alt="" coords="788,539,945,568"/>
+<area shape="rect" id="node33" href="$classStepData__FileProtocol.html" title="A FileProtocol is defined as the addition of several already &#160;&#160;existing Protocols..." alt="" coords="780,592,953,621"/>
+<area shape="rect" id="node35" href="$classStepData__DescrProtocol.html" title="A DescrProtocol is a protocol dynamically (at execution time) &#160;&#160;defined with : &#160;a..." alt="" coords="1009,592,1199,621"/>
+</map>

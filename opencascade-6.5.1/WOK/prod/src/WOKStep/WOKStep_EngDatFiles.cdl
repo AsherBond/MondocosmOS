@@ -1,0 +1,48 @@
+-- File:	WOKStep_EngDatFiles.cdl
+-- Created:	Mon Jul 29 17:14:58 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class EngDatFiles from WOKStep 
+inherits Step from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess          from WOKMake,
+    HSequenceOfStepOption from WOKMake,
+    InputFile             from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    DevUnit               from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    File                  from WOKernel,
+    HSequenceOfEntity     from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    HAsciiString          from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel;
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable EngDatFiles from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake) 
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+end EngDatFiles;

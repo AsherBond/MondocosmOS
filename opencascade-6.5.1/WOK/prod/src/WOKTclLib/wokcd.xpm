@@ -1,0 +1,32 @@
+/* XPM */
+static char * hand_right_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c wheat",
+"o	c sienna",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"    ......          ",
+"   .XXXXXX.         ",
+" ..XXXXXXX......... ",
+"..XXXXXXo.XXXXXXXXo.",
+"XXXXXX.XXXXXXoooooo.",
+"XXXXX.oXXXX........ ",
+"XXXXX.XXXoXXXX.     ",
+"X.X..oXXXXoXoo.     ",
+"XXoooXXXoXXXX.      ",
+"X.XXXXXXXoXoo.      ",
+"o.XXXXXoXXXX.       ",
+"..XXXXXXoXoo.       ",
+"  .XXXoXXX.         ",
+"   .XXXooo.         ",
+"    ......          ",
+"                    ",
+"                    ",
+"                    "};

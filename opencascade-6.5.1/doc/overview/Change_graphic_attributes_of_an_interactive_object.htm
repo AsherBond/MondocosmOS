@@ -1,0 +1,122 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Change graphic attributes of an interactive object</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nVisualization\nExamples\nChange graphic attributes of an interactive object");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Change graphic attributes of an interactive object</p>
+
+<p>The set of graphic attributes of an interactive object is defined in 
+ <span style="font-style: italic;"><I>AIS_Drawer</I></span>. Each interactive 
+ object can have its own visualization attributes.</p>
+
+<p>By default, the interactive object takes the graphic attributes of the 
+ interactive context in which it is visualized (visualization mode, deflection, 
+ values for the calculation of presentations, number of isoparametric lines, 
+ color, type of line, material, etc.)</p>
+
+<p>In the <span style="font-style: italic;"><I>AIS_InteractiveObject</I></span> 
+ abstract class, several standard attributes have been privileged. These 
+ include: color, thickness of line, material, and transparency. Consequently, 
+ a certain number virtual functions which allow us to act on these attributes 
+ have been proposed . Each new class of interactive object can use them 
+ as they are or can redefine these functions to bring about the changes 
+ it should produce in the behavior of the class.</p>
+
+<p>Other attributes can be changed by acting directly on the drawer of 
+ the object. An interactive object has a specific drawer as soon as you 
+ change an attribute on it. If you do not modify any graphic attribute 
+ on it, the default drawer of the interactive context is referenced and 
+ used.</p>
+
+<p>&nbsp;&nbsp;&nbsp;To 
+ get the <span style="font-style: italic;"><I>AIS_Drawer</I></span> of an object, 
+ call the method</p>
+
+<p>&nbsp;&nbsp;<span style="font-style: italic;"><I>Attributes</I></span> 
+ from <span style="font-style: italic;"><I>AIS_InteractiveObject</I></span>.</p>
+
+<p>&nbsp;&nbsp;&nbsp;To 
+ set the <span style="font-style: italic;"><I>AIS_Drawer</I></span> of an object, 
+ call the method</p>
+
+<p>&nbsp;&nbsp;<span style="font-style: italic;"><I>SetLocalAttributes</I></span> 
+ from <span style="font-style: italic;"><I>AIS_InteractiveObject</I></span>. </p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

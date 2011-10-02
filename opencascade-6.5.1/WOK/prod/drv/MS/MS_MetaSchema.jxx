@@ -1,0 +1,63 @@
+#ifndef _MS_Package_HeaderFile
+#include <MS_Package.hxx>
+#endif
+#ifndef _MS_Engine_HeaderFile
+#include <MS_Engine.hxx>
+#endif
+#ifndef _MS_Component_HeaderFile
+#include <MS_Component.hxx>
+#endif
+#ifndef _MS_Schema_HeaderFile
+#include <MS_Schema.hxx>
+#endif
+#ifndef _MS_Executable_HeaderFile
+#include <MS_Executable.hxx>
+#endif
+#ifndef _MS_Interface_HeaderFile
+#include <MS_Interface.hxx>
+#endif
+#ifndef _MS_Client_HeaderFile
+#include <MS_Client.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif
+#ifndef _MS_Method_HeaderFile
+#include <MS_Method.hxx>
+#endif
+#ifndef _MS_DataMapIteratorOfMapOfGlobalEntity_HeaderFile
+#include <MS_DataMapIteratorOfMapOfGlobalEntity.hxx>
+#endif
+#ifndef _MS_DataMapIteratorOfMapOfType_HeaderFile
+#include <MS_DataMapIteratorOfMapOfType.hxx>
+#endif
+#ifndef _MS_DataMapIteratorOfMapOfMethod_HeaderFile
+#include <MS_DataMapIteratorOfMapOfMethod.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_HSequenceOfInstClass_HeaderFile
+#include <MS_HSequenceOfInstClass.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _MS_Class_HeaderFile
+#include <MS_Class.hxx>
+#endif
+#ifndef _MS_MemberMet_HeaderFile
+#include <MS_MemberMet.hxx>
+#endif
+#ifndef _MS_ExternMet_HeaderFile
+#include <MS_ExternMet.hxx>
+#endif
+#ifndef _MS_Field_HeaderFile
+#include <MS_Field.hxx>
+#endif
+#ifndef _MS_InstClass_HeaderFile
+#include <MS_InstClass.hxx>
+#endif
+#ifndef _MS_MetaSchema_HeaderFile
+#include <MS_MetaSchema.hxx>
+#endif

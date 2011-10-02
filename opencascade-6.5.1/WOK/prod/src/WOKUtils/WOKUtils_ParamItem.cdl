@@ -1,0 +1,33 @@
+-- File:	WOKUtils_ParamItem.cdl
+-- Created:	Mon May 29 15:21:53 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class ParamItem from WOKUtils
+
+uses
+    HAsciiString from TCollection
+
+raises
+    ProgramError from Standard
+is
+    Create returns ParamItem from WOKUtils;
+    Create(aname :  HAsciiString from TCollection; avalue :  HAsciiString from TCollection)  
+    	returns ParamItem from WOKUtils; 
+    Create(aname : CString from Standard; avalue : CString from Standard)  
+    	returns ParamItem from WOKUtils;
+
+    SetName(me:out;  aname  : HAsciiString from TCollection);
+    SetValue(me:out; avalue : HAsciiString from TCollection);
+        
+    Name(me) 
+    	returns HAsciiString from TCollection;
+	
+    Value(me)
+    	returns HAsciiString from TCollection;
+    
+fields
+    myname  : HAsciiString from TCollection;
+    myvalue : HAsciiString from TCollection;
+end;

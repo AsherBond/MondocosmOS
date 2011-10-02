@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classGeom2d__Circle.html" title="Describes a circle in the plane (2D space). &#160;&#160;A circle is defined by its radius and..." alt="" coords="5,392,128,421"/>
+<area shape="rect" id="node13" href="$classGeom2d__Ellipse.html" title="Describes an ellipse in the plane (2D space). &#160;&#160;An ellipse is defined by its major..." alt="" coords="152,392,277,421"/>
+<area shape="rect" id="node15" href="$classGeom2d__Hyperbola.html" title="Describes a branch of a hyperbola in the plane (2D space). &#160;&#160;A hyperbola is defined..." alt="" coords="301,392,453,421"/>
+<area shape="rect" id="node17" href="$classGeom2d__Parabola.html" title="Describes a parabola in the plane (2D space). &#160;&#160;A parabola is defined by its focal..." alt="" coords="477,392,619,421"/>
+<area shape="rect" id="node2" href="$classGeom2d__Curve.html" title="The abstract class Curve describes the common &#160;&#160;behavior of curves in 2D space. The..." alt="" coords="233,237,359,267"/>
+<area shape="rect" id="node4" href="$classGeom2d__Geometry.html" title="The general abstract class Geometry in 2D space describes &#160;&#160;the common behaviour..." alt="" coords="219,160,373,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="235,83,357,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="221,5,371,35"/>
+</map>

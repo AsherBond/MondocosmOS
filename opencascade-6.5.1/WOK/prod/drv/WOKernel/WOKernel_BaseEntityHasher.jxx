@@ -1,0 +1,6 @@
+#ifndef _WOKernel_BaseEntity_HeaderFile
+#include <WOKernel_BaseEntity.hxx>
+#endif
+#ifndef _WOKernel_BaseEntityHasher_HeaderFile
+#include <WOKernel_BaseEntityHasher.hxx>
+#endif

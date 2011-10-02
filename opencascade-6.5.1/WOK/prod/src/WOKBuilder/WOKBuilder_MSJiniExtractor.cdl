@@ -1,0 +1,68 @@
+-- File:	WOKBuilder_MSJiniExtractor.cdl
+-- Created:	Mon Mar 22 17:13:53 1999
+-- Author:	Arnaud BOUZY
+--		<adn@motox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1999
+
+class MSJiniExtractor    from WOKBuilder 
+inherits MSHeaderExtractor from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MSActionType            from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSAction                from WOKBuilder,
+    Param                   from WOKUtils,
+    HSequenceOfMemberMet    from MS,
+    HSequenceOfExternMet    from MS,
+    MapOfHAsciiString       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSJiniExtractor from WOKBuilder;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSJiniExtractor from WOKBuilder;
+
+    Init(me:mutable; aname : HAsciiString from TCollection);
+    
+    MemberMethods(me)
+    	returns HSequenceOfMemberMet from MS;
+	
+    ExternMethods(me)
+    	returns HSequenceOfExternMet from MS;
+	
+    CompleteTypes(me)
+    ---C++: return const &
+    	returns MapOfHAsciiString    from WOKTools;
+    
+    IncompleteTypes(me)
+    ---C++: return const &
+    	returns MapOfHAsciiString    from WOKTools;
+    
+    SemiCompleteTypes(me)
+    ---C++: return const &
+    	returns MapOfHAsciiString    from WOKTools;
+    
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+fields
+
+    mycompl  : MapOfHAsciiString    from WOKTools;
+    myicompl : MapOfHAsciiString    from WOKTools;
+    myscompl : MapOfHAsciiString    from WOKTools;
+    mymmeth  : HSequenceOfMemberMet from MS;
+    myxmeth  : HSequenceOfExternMet from MS;
+    
+end MSJiniExtractor;

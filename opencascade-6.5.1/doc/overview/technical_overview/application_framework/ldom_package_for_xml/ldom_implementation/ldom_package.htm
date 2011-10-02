@@ -1,0 +1,223 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>LDOM package</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { font-family:Arial, sans-serif; }
+p.whs2 { margin-left:6.00pt; }
+p.whs3 { margin-left:0px; }
+p.whs4 { margin-left:0px; font-weight:bold; }
+p.whs5 { text-indent:30.25pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {margin-left:1pt; }";
+  strNSS += "p.whs4 {margin-left:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nLDOM Package for XML\nOverview");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/standard_documents.htm","technical_overview/application_framework/ldom_package_for_xml/document_drivers/overview_stor_driver.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../whd_show0.gif","../../../../whd_show2.gif","../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../whd_hide0.gif","../../../../whd_hide2.gif","../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../whd_prev0.gif","../../../../whd_prev2.gif","../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../whd_next0.gif","../../../../whd_next2.gif","../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>LDOM Package</p>
+
+<h2>&nbsp;</h2>
+
+<p class="whs1">The <font style="font-weight: bold;">LDOM</font> 
+ package allows to write and read XML files. It constitutes an integral 
+ part of XML OCAF persistence, which is the optional component provided 
+ on top of Open CASCADE Technology.</p>
+
+<p>The Light DOM (LDOM) package contains classes maintaining a data structure 
+ whose main principles conform to <font style="color: #0000ff; font-style: italic;"
+										color=#0000FF>W3C DOM Level 1 Recommendations</font>. 
+ The purpose of these classes as required by XML OCAF persistence schema 
+ is to: </p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Maintain a tree structure of objects in memory 
+ representing the XML document. The root of the structure is an object 
+ of the LDOM_Document type. This object contains all the data corresponding 
+ to a given XML document and contains one object of the LDOM_Element type 
+ named &quot;document element&quot;. The document element contains other 
+ LDOM_Element objects forming a tree. Other types of nodes (LDOM_Attr, 
+ LDOM_Text, LDOM_Comment, LDOM_CDATASection) represent the corresponding 
+ XML types and serve as branches of the tree of elements. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Provide a class LDOM_Parser to read XML files 
+ and convert them to LDOM_Document objects. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Provide a class LDOM_XmlWriter to convert LDOM_Document 
+ to a character stream in XML format and store it in file. </p></li>
+</ul>
+
+<p>This package covers the functionality provided by numerous products 
+ known as &quot;DOM parsers&quot;. Unlike most of them, LDOM was specifically 
+ developed to meet the following requirements: </p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>To minimize the virtual memory allocated by DOM 
+ data structures. In average, the amount of memory of LDOM is the same 
+ as the XML file size (UTF-8). </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>To minimize the time required for parsing and 
+ formatting XML, as well as for access to DOM data structures. </p></li>
+</ul>
+
+<p>Both these requirements are important when XML files are processed by 
+ applications since these files are relatively large (occupying megabytes 
+ and even hundreds of megabytes). To meet the requirements, some limitations 
+ were imposed on the <font style="color: #0000ff; font-style: italic;"
+							color=#0000FF>DOM Level 1</font> specification; 
+ these limitations are insignificant in applications like OCAF. Some of 
+ these limitations can be overridden in the course of future developments. 
+ The main limitations are:</p>
+
+<ol>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">No Unicode support 
+ as well as various other encodings; only ASCII strings are used in DOM/XML. 
+ Note: There is a data type <font style="font-style: italic;">TCollection_ExtendedString</font> 
+ for wide character data. This type is supported by LDOM_String as a sequence 
+ of numbers. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">Some superfluous 
+ methods are deleted: <font style="font-style: italic;">getPreviousSibling, 
+ getParentNode, etc</font>. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">No resolution of 
+ XML Entities of any kind </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">No support for DTD: 
+ the parser just checks for observance of general XML rules and never validates 
+ documents. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">Only 5 available 
+ types of DOM nodes: <font style="font-style: italic;">LDOM_Element, LDOM_Attr, 
+ LDOM_Text, LDOM_Comment, LDOM_CDATASection</font>. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">No support of Namespaces; 
+ prefixed names are used instead of qualified names. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">No support of the 
+ interface DOMException (no exception when attempting to remove a non-existing 
+ node). </p></li>
+</ol>
+
+<p class="whs3">LDOM is dependent on Kernel OCCT classes only. 
+ Therefore, it can be used outside OCAF persistence in various algorithms 
+ where DOM/XML support may be required. </p>
+
+<p class="whs4">See also: </p>
+
+<p class="whs5"><a href="../document_drivers/overview_stor_driver.htm">Document 
+ Drivers</a> </p>
+
+<p class="whs5"><a href="../attribute_drivers/attribute_drivers.htm">Attribute 
+ Drivers</a> </p>
+
+<p class="whs5"><a href="../xml_document_structure/xml_document_structure.htm">XML 
+ Document Structure</a> </p>
+
+<p class="whs5"><a href="../xml_schema/xml_schema.htm">XML 
+ Schema</a></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

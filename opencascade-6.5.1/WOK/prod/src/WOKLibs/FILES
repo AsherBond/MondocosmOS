@@ -1,0 +1,7 @@
+EXTERNLIB
+WOKLibs_CMPLRS.edl
+WOKLibs_LINKSHR.edl
+WOKLibs_WOKSteps.edl
+pkgIndex.tcl
+pkgIndex.tcl-hp
+pkgIndex.tcl-wnt

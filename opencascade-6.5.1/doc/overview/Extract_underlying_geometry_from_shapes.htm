@@ -1,0 +1,162 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Extract underlying geometry from shapes</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { background-color:Transparent; }
+p.whs2 { font-family:'Times New Roman' , serif; margin-left:46px; background-color:Transparent; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {background-color:white; }";
+  strNSS += "p.whs2 {background-color:white; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Data\nExamples\nExtract underlying geometry from shapes");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Extract underlying geometry from shapes</p>
+
+<p class="whs1">To extract the underlying geometry 
+ from a Shape, use the following methods:</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRep_Tool 
+ : :Surface</I></span> to get the geometric surface from a face.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRep_Tool 
+ : :Curve</I></span> to get the 3d geometric curve from an edge.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRep_Tool 
+ : :CurveOnSurface</I></span> to get the 2d geometric curve of an edge,</p>
+
+<p class="whs1">&nbsp;defined 
+ in the parametric space of a face.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRep_Tool 
+ : :Pnt</I></span> to get the 3D point from a vertex.</p>
+
+<p class="whs1">Some of these methods have a 
+ location as argument.</p>
+
+<p class="whs1">For example, when you use : </p>
+
+<p class="whs2">&nbsp;S1 
+ = BRep_Tool : : Surface(F,L);</p>
+
+<p class="whs1">you then get the surface stored 
+ in the TShape.</p>
+
+<p class="whs1">To use this surface in the same 
+ position as the face, you have to apply a transformation to it corresponding 
+ to the location of the face as follows:</p>
+
+<p class="whs2">&nbsp;&nbsp;gp_Trsf 
+ T(L) ;</p>
+
+<p class="whs2">&nbsp;&nbsp;S2 
+ = S1-&gt;Moved(T) ;</p>
+
+<p class="whs1">The same method used without 
+ location as argument is:</p>
+
+<p class="whs2">&nbsp;&nbsp;S3 
+ = BRep_Tool : : Surface(F);</p>
+
+<p class="whs1">returns a Surface in position, 
+ according to the location. S3 and S2 are geometrically equivalent surfaces.</p>
+
+<p class="whs1">Warning: with the first method, 
+ you get a pointer on the surface stored in the shape. So don't modify 
+ the surface because you will modify the shape and maybe produce an inconsistent 
+ model.</p>
+
+<p class="whs1">With the second method, you get 
+ a copy of the surface on which the location has been applied.</p>
+
+<p class="whs1">Note: you can use also a topological 
+ object directly just as if it were a geometric one by using the services 
+ of <span style="font-style: italic;"><I>BRepAdaptor</I></span> classes.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

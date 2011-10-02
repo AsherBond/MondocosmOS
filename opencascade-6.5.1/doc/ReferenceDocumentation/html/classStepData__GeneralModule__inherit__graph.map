@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classRWHeaderSection__GeneralModule.html" title="Defines General Services for HeaderSection Entities &#160;&#160;(Share,Check,Copy; Trace already..." alt="" coords="859,5,1109,35"/>
+<area shape="rect" id="node11" href="$classRWStepAP214__GeneralModule.html" title="Defines General Services for StepAP214 Entities &#160;&#160;(Share,Check,Copy; Trace already..." alt="" coords="872,59,1096,88"/>
+<area shape="rect" id="node13" href="$classStepData__DefaultGeneral.html" title="DefaultGeneral defines a GeneralModule which processes &#160;&#160;Unknown Entity from StepData..." alt="" coords="885,112,1083,141"/>
+<area shape="rect" id="node15" href="$classStepData__DescrGeneral.html" title="Works with a Protocol by considering its entity descriptions &#160;" alt="" coords="891,165,1077,195"/>
+<area shape="rect" id="node2" href="$classInterface__GeneralModule.html" title="This class defines general services, which must be provided &#160;&#160;for each type of Entity..." alt="" coords="376,85,568,115"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+</map>

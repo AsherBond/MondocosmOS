@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKAPI_MakeOption_HeaderFile
+#include <WOKAPI_MakeOption.hxx>
+#endif

@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classIFGraph__AllConnected.html" title="this class gives content of the CONNECTED COMPONANT(S) &#160;&#160;which include specific Entity(ies)..." alt="" coords="488,5,659,35"/>
+<area shape="rect" id="node7" href="$classIFGraph__AllShared.html" title="this class determines all Entities shared by some specific &#160;&#160;ones, at any level (those..." alt="" coords="503,59,644,88"/>
+<area shape="rect" id="node9" href="$classIFGraph__Articulations.html" title="this class gives entities which are Articulation points &#160;&#160;in a whole Model or in..." alt="" coords="492,112,655,141"/>
+<area shape="rect" id="node11" href="$classIFGraph__Compare.html" title="this class evaluates effect of two compared sub&#45;parts : &#160;&#160;cumulation (union), common..." alt="" coords="503,165,644,195"/>
+<area shape="rect" id="node13" href="$classIFGraph__Cumulate.html" title="this class evaluates effect of cumulated sub&#45;parts : &#160;&#160;overlapping, forgotten entities..." alt="" coords="500,219,647,248"/>
+<area shape="rect" id="node15" href="$classIFGraph__ExternalSources.html" title="this class gives entities which are Source of entities of &#160;&#160;a sub&#45;part, but are not..." alt="" coords="479,272,668,301"/>
+<area shape="rect" id="node2" href="$classInterface__EntityIterator.html" title="Defines an Iterator on Entities, complying with GraphTools &#160;&#160;needs. Allows considering..." alt="" coords="5,139,192,168"/>
+</map>

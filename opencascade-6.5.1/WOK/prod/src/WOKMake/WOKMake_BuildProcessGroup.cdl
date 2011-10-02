@@ -1,0 +1,59 @@
+-- File:	WOKMake_BuildProcessGroup.cdl
+-- Created:	Thu Jun 12 11:13:05 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class BuildProcessGroup from WOKMake 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    BuildProcess           from WOKMake,
+    BuildProcessPtr        from WOKMake,
+    Step                   from WOKMake,
+    UnitGraph              from WOKernel,
+    SequenceOfHAsciiString from TColStd,
+    HAsciiString           from TCollection
+    
+    
+is
+
+    Create(abp : BuildProcess from WOKMake; aname : HAsciiString from TCollection)
+    	returns BuildProcessGroup from WOKMake;
+    
+    Name(me)
+    	returns HAsciiString from TCollection;
+	
+    AddStep(me:mutable; astep : HAsciiString from TCollection);
+    
+    Steps(me)
+    ---C++: return const &
+    	returns SequenceOfHAsciiString from TColStd;
+    
+    Step(me; anidx : Integer from Standard)
+    ---C++: return const &
+    	returns Step from WOKMake;
+	
+    Length(me)
+    	returns Integer from Standard;
+
+
+    ChangeSteps(me:mutable; aseq : SequenceOfHAsciiString from TColStd);
+    
+    
+    IsOrdered(me)
+    returns Boolean;
+    
+    SetOrdered(me:mutable);
+   
+fields
+
+    myname  : HAsciiString           from TCollection;
+    mybp    : BuildProcessPtr        from WOKMake;
+    mysteps : SequenceOfHAsciiString from TColStd;
+    myordered : Boolean from Standard;
+
+end BuildProcessGroup;

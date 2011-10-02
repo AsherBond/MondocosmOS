@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classGeom__Axis1Placement.html" title="Describes an axis in 3D space. &#160;&#160;An axis is defined by: &#160;its origin, also termed..." alt="" coords="5,315,184,344"/>
+<area shape="rect" id="node11" href="$classGeom__Axis2Placement.html" title="Describes a right&#45;handed coordinate system in 3D space. &#160;&#160;A coordinate system is..." alt="" coords="208,315,387,344"/>
+<area shape="rect" id="node2" href="$classGeom__Geometry.html" title="The abstract class Geometry for 3D space is the root &#160;&#160;class of all geometric objects..." alt="" coords="127,160,265,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="135,83,257,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="121,5,271,35"/>
+</map>

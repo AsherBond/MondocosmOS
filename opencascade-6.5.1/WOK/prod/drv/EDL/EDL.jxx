@@ -1,0 +1,3 @@
+#ifndef _EDL_HeaderFile
+#include <EDL.hxx>
+#endif

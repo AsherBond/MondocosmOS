@@ -1,0 +1,155 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Data Framework</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; font-weight:bold; font-family:Arial, sans-serif; }
+p.whs2 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; }
+p.whs3 { margin-left:4.50pt; margin-top:4.50pt; }
+img_whs4 { width:550px; height:635px; border-style:none; }
+img_whs5 { width:374px; height:296px; border-style:none; }
+img_whs6 { width:582px; height:443px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nData Framework");
+addAvenueInfo("Application Framework","technical_overview/application_framework/application_framework.htm","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Data Framework</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">An OCAF document contains 
+ a data framework. This framework offers a single environment in which 
+ data is handled from different application components.</p>
+
+<p class="whs2">This allows you to exchange 
+ and modify data simply, consistently, with a maximum level of information, 
+ and with stable semantics.</p>
+
+<p class="whs2">The building block of this 
+ approach is the reference key, which allows the application to recover 
+ any entity in the current session or in a previous session.</p>
+
+<p class="whs2">In its transient form, the 
+ reference key is a label. And it is the label, which allows data to be 
+ attached to it by means of attributes.</p>
+
+<p class="whs2">The attribute is the container 
+ for application data, and is attached to a label in the hierarchy of the 
+ data framework. This same label may also contain many other attributes. 
+ Each attribute is identified by a GUID, and although a label may have 
+ several attributes attached to it, it must not have more than one attribute 
+ of the same GUID.</p>
+
+<p class="whs2">This hierarchical organization 
+ of data inside a document can be seen below.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3"><img src="../../image/occ_0065.gif" alt="image\occ_0065.gif" width="550px" height="635px" border="0" class="img_whs4"><font 
+ style="font-family: Helvetica;"> <span style="font-family: Arial, sans-serif;"><br>
+<br>
+Contents of a document</span></font></p>
+
+<p class="whs2">The two illustrations below 
+ show this functionality at work by the example of creation of a simple 
+ coffee pot model.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs3"><img src="../../image/occ_0066.gif" alt="image\occ_0066.gif" width="374px" height="296px" border="0" class="img_whs5"><font 
+ style="font-family: Helvetica; color: #000000;"
+	color=#000000> <br>
+<br>
+The coffee pot model</font></p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3"><img src="../../image/occ_0067.gif" alt="image\occ_0067.gif" width="582px" height="443px" border="0" class="img_whs6"><font 
+ style="font-family: Helvetica;"> <span style="font-family: Arial, sans-serif;"><br>
+<br>
+Structure of the coffee pot model</span></font></p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

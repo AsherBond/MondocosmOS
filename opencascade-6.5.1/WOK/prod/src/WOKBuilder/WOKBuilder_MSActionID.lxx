@@ -1,0 +1,36 @@
+// File:	WOKBuilder_MSActionID.lxx
+// Created:	Fri Apr 12 16:08:17 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+#include <TCollection_HAsciiString.hxx> 
+
+#include <WOKBuilder_MSActionType.hxx>
+
+//=======================================================================
+//function : WOKBuilder_MSActionID
+//purpose  : 
+//=======================================================================
+ inline WOKBuilder_MSActionID::WOKBuilder_MSActionID(const Handle(TCollection_HAsciiString)& aname, 
+					      const WOKBuilder_MSActionType atype)
+: myname(aname), mytype(atype)
+{
+}
+
+//=======================================================================
+//function : Name
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKBuilder_MSActionID::Name() const 
+{
+  return myname;
+}
+
+//=======================================================================
+//function : Type
+//purpose  : 
+//=======================================================================
+inline WOKBuilder_MSActionType WOKBuilder_MSActionID::Type() const 
+{
+  return mytype;
+}

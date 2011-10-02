@@ -1,0 +1,34 @@
+-- File:	WOKBuilder_DLLinker.cdl
+-- Created:	Mon Oct 21 13:23:51 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class DLLinker from WOKBuilder inherits WNTLinker from WOKBuilder
+
+    ---Purpose: provides tool to build dynamic-link library
+
+ uses
+ 
+    HAsciiString from TCollection,
+    Param        from WOKUtils
+ 
+ is
+ 
+    Create (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    ) returns mutable DLLinker from WOKBuilder;
+    	---Purpose: create a class instance
+
+    EvalHeader ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluats tool command line
+
+    EvalCFExt ( me : mutable )
+     returns HAsciiString from TCollection is redefined static;
+     	---Purpose: evaluates extension for name of the command file
+
+    EvalFooter ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluates additional information for the tool
+
+end DLLinker;

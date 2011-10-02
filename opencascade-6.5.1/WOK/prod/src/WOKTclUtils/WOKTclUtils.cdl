@@ -1,0 +1,23 @@
+-- File:	WOKTclUtils.cdl
+-- Created:	Thu Feb 27 16:56:10 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+
+
+package WOKTclUtils 
+
+	---Purpose: 
+
+uses
+    WOKTools,
+    WOKUtils,
+    TCollection
+
+is
+
+    class Path;
+
+end WOKTclUtils;

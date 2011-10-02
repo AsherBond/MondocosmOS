@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepAP214__Class.html" title="Representation of STEP entity Class &#160;" alt="" coords="65,237,204,267"/>
+<area shape="rect" id="node11" href="$classStepAP214__RepItemGroup.html" title="Representation of STEP entity RepItemGroup &#160;" alt="" coords="228,237,428,267"/>
+<area shape="rect" id="node13" href="$classStepFEA__FeaGroup.html" title="Representation of STEP entity FeaGroup &#160;" alt="" coords="452,237,601,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="267,83,389,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="253,5,403,35"/>
+<area shape="rect" id="node9" href="$classStepAP214__ExternallyDefinedClass.html" title="Representation of STEP entity ExternallyDefinedClass &#160;" alt="" coords="5,315,264,344"/>
+<area shape="rect" id="node15" href="$classStepFEA__ElementGroup.html" title="Representation of STEP entity ElementGroup &#160;" alt="" coords="361,315,545,344"/>
+<area shape="rect" id="node17" href="$classStepFEA__NodeGroup.html" title="Representation of STEP entity NodeGroup &#160;" alt="" coords="569,315,729,344"/>
+</map>

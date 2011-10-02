@@ -1,0 +1,34 @@
+-- File:	WOKUnix_FileBuffer.cdl
+-- Created:	Thu May  4 18:27:14 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+private class FileBuffer from WOKUnix
+inherits Buffer  from WOKUnix
+uses 
+    BufferIs from WOKUnix,
+    FDescr   from WOKUnix,
+    FDSet    from WOKUnix,
+    Timeval  from WOKUnix,
+    HSequenceOfHAsciiString from TColStd
+
+raises 
+    BufferOverflow from WOKUnix,
+    ProcessTimeOut from WOKUnix
+is
+    Create(afd : FDescr   from WOKUnix; astd : BufferIs from WOKUnix) returns mutable FileBuffer from WOKUnix;
+    
+    Select(me; afd : out Integer; atimeout : in out Timeval from WOKUnix; aset : in out FDSet from WOKUnix) is redefined;
+    Acquit(me:mutable; astatus : Integer from Standard; aset : FDSet from WOKUnix) raises ProcessTimeOut from WOKUnix is redefined;
+    
+    Echo(me : mutable)   returns HSequenceOfHAsciiString from TColStd is redefined;
+    Errors(me : mutable) returns HSequenceOfHAsciiString from TColStd is redefined;
+
+    Dump(me:mutable) raises BufferOverflow from WOKUnix is private;
+
+    Close(me:mutable) is redefined;
+
+fields
+    mybuffer : FDescr from WOKUnix;
+end;

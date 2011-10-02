@@ -1,0 +1,35 @@
+-- File:	WOKUtils_SearchList.cdl
+-- Created:	Tue Sep 26 17:21:51 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class SearchList from WOKUtils 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    Path            from WOKUtils,
+    HAsciiString    from TCollection,
+    HSequenceOfPath from WOKUtils
+is
+
+    Create returns mutable SearchList from WOKUtils;
+    
+    Create(another : SearchList from WOKUtils) returns mutable SearchList from WOKUtils; 
+
+    List(me) returns     HSequenceOfPath from WOKUtils;
+
+    AddPriorPath(me:mutable;    apath : Path from WOKUtils);
+    AddNonPriorPath(me:mutable; apath : Path from WOKUtils);
+    
+    SearchFile(me:mutable; afile : HAsciiString from TCollection)
+    	returns mutable Path from WOKUtils;
+    
+fields
+    mylist : HSequenceOfPath from WOKUtils;
+end SearchList;
+
+

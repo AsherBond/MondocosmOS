@@ -1,0 +1,168 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Freetype 2.3.7</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-weight:bold; }
+img_whs2 { border:none; width:749px; height:521px; border-style:none; }
+p.whs3 { font-weight:normal; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Welcome to Open CASCADE Technology\nCompilation of third-party products used for OCCT\nRecommendations for compilation\nFreetype 2.3.7");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Freetype 2.3.7</p>
+
+<p>&nbsp;</p>
+
+<p>Freetype must be built as a static library.</p>
+
+<p>&nbsp;</p>
+
+<p class=ReleaseNotes-2>Windows</p>
+
+<p>1. Open the freetype-2.3.7\builds\win32\visualc\freetype.sln project 
+ in the corresponding version of VS.</p>
+
+<p>2. Select <span style="font-weight: bold;"><B>Release Multithreaded</B></span> 
+ solution configuration.</p>
+
+<p>3. Select Project-&gt;Properties-&gt;General-&gt;Configuration Type-&gt;Static 
+ Library (.lib)</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1"><img src="image4.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs3">4. Select Project-&gt;Properties-&gt;C/C++-&gt;Code 
+ Generation-&gt;Runtime Library-&gt; Multi-threaded DLL (/MD).</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs1"><img src="image5.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-weight: normal;">If you 
+ need a debug version you can choose</span> Multi-threaded Debug DLL (/MDd).</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs3">5. Select Project-&gt;Properties-&gt;Librarian-&gt;General-&gt;Output 
+ File-&gt;</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3"><img src="image6.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3"><span style="font-weight: normal;">6. Start 
+ the compilation.</span></p>
+
+<p class="whs3">You have built a static freetype237MT.lib 
+ library located in freetype-2.3.7-source\objs.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class=ReleaseNotes-2>Linux</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3">&gt; cd freetype-2.3.7-sources</p>
+
+<p class="whs3">&gt; configure --prefix=/path-you-want-to 
+ install-freetype/freetype-2.3.7 –enable-shared=no</p>
+
+<p class="whs3">&gt; make</p>
+
+<p class="whs3">&gt; make install</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs1">Remark:</p>
+
+<p class="whs3"><span style="font-weight: bold;"><B>–enable-shared=no</B></span> 
+ means that only a static library will be built.</p>
+
+<p class="whs3">You will build and then install a static 
+ libfreetype.a library located in =/path-you-want-to install-freetype/freetype-2.3.7/lib</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

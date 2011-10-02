@@ -1,0 +1,26 @@
+-- File:	WOKEntity_Workshop.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 11:43:49 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Workshop_EDL) then
+@set %WOKEntity_Workshop_EDL = "";
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " WorkbenchListFile ";
+
+@template WOKEntity_WorkbenchListFile ( %Entity_Adm ) is
+$%Entity_Adm/WBLIST\^;
+@end;
+
+@string %WOKEntity_ParamList = %WOKEntity_ParamList " %Entity_ParcelConfig ";
+
+@if ( %Station != "wnt" ) then
+
+	@template WOKEntity_AfterBuild ( %Entity_Adm ) is
+	$chmod ugo+w %Entity_Adm
+	$chmod ugo+w %Entity_Adm/WBLIST
+	@end;
+
+@endif;
+
+@endif;

@@ -1,0 +1,37 @@
+-- File:	WOKStep_MSStep.cdl
+-- Created:	Thu Jun 27 17:17:55 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+deferred class MSStep from WOKStep 
+inherits Step from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess from WOKMake,
+    DevUnit      from WOKernel,
+    File         from WOKernel,
+    Entity       from WOKBuilder,
+    Path         from WOKUtils,
+    HAsciiString from TCollection
+
+is
+    
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel; 
+    	       acode    : HAsciiString    from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+
+    BuilderEntity(me; akernelent : File from WOKernel) 
+    	returns mutable Entity from WOKBuilder
+    	is redefined protected;
+    ---Purpose: Adds an entity to the known entity list
+    --          (one more time)
+
+    BuilderEntity(me; apath : Path from WOKUtils)
+    	returns mutable Entity from WOKBuilder
+    	is redefined protected;
+
+end MSStep;

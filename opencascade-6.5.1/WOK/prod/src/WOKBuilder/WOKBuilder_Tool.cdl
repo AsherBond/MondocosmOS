@@ -1,0 +1,77 @@
+-- File:	WOKBuilder_Tool.cdl
+-- Created:	Thu Aug 10 21:03:18 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Tool from WOKBuilder 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+
+    Entity            from WOKBuilder,
+    HSequenceOfEntity from WOKBuilder,
+    BuildStatus       from WOKBuilder,
+    Param             from WOKUtils,
+    Path              from WOKUtils,
+    HAsciiString      from TCollection
+
+raises ProgramError from Standard
+is
+
+    Initialize(aname: HAsciiString from TCollection; params : Param from WOKUtils);
+    
+    SetOutputDir(me:mutable; apath : Path from WOKUtils);    
+    OutputDir(me) returns Path from WOKUtils;
+    
+    SetName(me:mutable; aname : HAsciiString from TCollection );
+    Name(me)
+       	returns HAsciiString from TCollection;
+
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+	raises  ProgramError from Standard
+	is deferred;
+
+    Produces(me:mutable) 
+    	 returns HSequenceOfEntity from WOKBuilder;
+    SetProduction(me:mutable; aproduction : HSequenceOfEntity from WOKBuilder);
+    
+    Params(me) returns Param from WOKUtils 
+    ---C++: inline
+    ---C++: return const &
+      	is static protected;
+    SetParams(me:mutable; params : Param from WOKUtils) 
+    	is static protected;
+
+    EvalToolParameter(me; aparamname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    EvalToolParameter(me; aparamname : CString from Standard)
+    	returns HAsciiString from TCollection;
+
+    EvalToolTemplate(me; aparamname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    EvalToolTemplate(me; aparamname : CString from Standard)
+    	returns HAsciiString from TCollection;
+
+
+    Load(me:mutable) 
+    	is deferred;
+	
+    IsLoaded(me) returns Boolean from Standard;
+    SetLoaded(me:mutable);
+    UnsetLoaded(me:mutable);
+
+fields
+    myname       : HAsciiString      from TCollection;
+    myparams     : Param             from WOKUtils;
+    myproduction : HSequenceOfEntity from WOKBuilder;
+    outputdir    : Path              from WOKUtils;
+    myisloaded   : Boolean           from Standard;
+end Tool;
+

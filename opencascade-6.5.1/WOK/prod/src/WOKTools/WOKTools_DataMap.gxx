@@ -1,0 +1,333 @@
+// File:	WOKTools_DataMap.gxx
+// Created:	Fri Jan  8 16:33:21 1993
+// Author:	Remi LEQUETTE
+//		<rle@phylox>
+
+
+#include <Standard_DomainError.hxx>
+#include <Standard_NoSuchObject.hxx>
+
+// Node definition and nodes storage management
+
+#if (defined IRIX || defined WNT || defined LIN )
+
+template <class Item, class Key> class DataMapNode  : public WOKTools_MapNode {
+  public :
+    DataMapNode(const Key& K, const Standard_Integer ahascode, const Item& I, DataMapNode* n) :
+      WOKTools_MapNode(n), key(K), hashcode(ahascode) { value = I; }
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+
+  Key           key;
+  Standard_Integer hashcode;
+  Item          value;
+};
+
+#define Node DataMapNode<TheItem,TheKey>
+
+#else
+
+class Node  : public WOKTools_MapNode {
+  public :
+    Node(const TheKey& K, const Standard_Integer ahascode, const TheItem& I, Node* n) :
+      WOKTools_MapNode(n), key(K), hashcode(ahascode) { value = I; }
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+
+  TheKey           key;
+  Standard_Integer hashcode;
+  TheItem          value;
+};
+
+#endif
+
+//=======================================================================
+//function : WOKTools_DataMap
+//purpose  : 
+//=======================================================================
+
+WOKTools_DataMap::WOKTools_DataMap(const Standard_Integer NbBuckets) :
+       WOKTools_BasicMap(NbBuckets,Standard_True)
+{
+}
+
+//=======================================================================
+//function : WOKTools_DataMap
+//purpose  : 
+//=======================================================================
+
+WOKTools_DataMap::WOKTools_DataMap(const WOKTools_DataMap& Other) :
+       WOKTools_BasicMap(Other.NbBuckets(),Standard_True)
+{
+  if (!Other.IsEmpty())
+    Standard_DomainError::Raise("WOKTools:Copy of DataMap");
+}
+
+//=======================================================================
+//function : Assign
+//purpose  : 
+//=======================================================================
+
+WOKTools_DataMap& WOKTools_DataMap::Assign
+  (const WOKTools_DataMap& Other)
+{
+  // very simple implementation
+  // optimal (does not recompute the hashcode values)
+
+  if (this == &Other) return *this;
+  Clear();
+  ReSize(Other.NbBuckets());
+  Node** data = (Node**)myData1;
+  for (WOKTools_DataMapIterator It(Other); It.More(); It.Next()) {
+    int hashcode = It.Hashcode();
+    int k = Index(hashcode,NbBuckets());
+    Node* p = data[k];
+    while (p) {
+      if (hashcode == p->hashcode) {
+	if (Hasher::IsEqual(p->key,It.Key())) {
+	  p->value = It.Value();
+	  break;
+	}
+      }
+      p = (Node*) p->next;
+    }
+    Increment();
+    data[k] = new Node(It.Key(),hashcode,It.Value(),data[k]);
+  }
+  return *this;
+}
+
+
+//=======================================================================
+//function : ReSize
+//purpose  : 
+//=======================================================================
+void WOKTools_DataMap::ReSize(const Standard_Integer N)
+{
+  Node** newdata;
+  Node** dummy;
+  int newBuck;
+  if (BeginResize(N,newBuck,
+		  *(void **)&newdata,*(void **)&dummy)) {
+    if (myData1) {
+      Node** olddata = (Node**) myData1;
+      Node *p, *q;
+      int i,k;
+      for (i = 0; i <= NbBuckets(); i++) {
+	if (olddata[i]) {
+	  p = olddata[i];
+	  while (p) {
+	    k = Index(p->hashcode,newBuck);
+	    q = (Node*)  p->next;
+	    p->next = newdata[k];
+	    newdata[k] = p;
+	    p = q;
+	  }
+	}
+      }
+    }
+    EndResize(N,newBuck,newdata,dummy);
+  }
+}
+
+
+//=======================================================================
+//function : Clear
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DataMap::Clear()
+{
+  if (IsEmpty() == Standard_False) {
+    int i;
+    Node** data = (Node**) myData1;
+    Node *p,*q;
+    for (i = 0; i <= NbBuckets(); i++) {
+      if (data[i]) {
+	p = data[i];
+	while (p) {
+	  q = (Node*) p->next;
+	  delete p;
+	  p = q;
+	}
+      }
+    }
+  }
+  WOKTools_BasicMap::Destroy();
+}
+
+//=======================================================================
+//function : Add
+//purpose  : 
+//=======================================================================
+Standard_Boolean WOKTools_DataMap::Bind(const TheKey& K, const TheItem& I)
+{
+  if (Resizable()) ReSize(Extent());
+  Node** data = (Node**)myData1;
+  int hashcode = Hasher::HashCode(K);
+  int k = Index(hashcode,NbBuckets());
+  Node* p = data[k];
+  while (p) {
+    if (hashcode == p->hashcode) {
+      if (Hasher::IsEqual(p->key,K)) {
+	p->value = I;
+	return Standard_False;
+      }
+    }
+    p = (Node*) p->next;
+  }
+  Increment();
+  data[k] = new Node(K,hashcode,I,data[k]);
+  return Standard_True;
+}
+
+//=======================================================================
+//function : Contains
+//purpose  : 
+//=======================================================================
+Standard_Boolean WOKTools_DataMap::IsBound(const TheKey& K) const
+{
+  if (IsEmpty()==Standard_True) return Standard_False;
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  Node* p = data[Index(hashcode,NbBuckets())];
+  while (p) {
+    if ( hashcode == p->hashcode ) {
+      if (Hasher::IsEqual(p->key,K)) {
+	return Standard_True;
+      }
+    }
+    p = (Node*) p->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : Remove
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DataMap::UnBind(const TheKey& K)
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  int k = Index(hashcode, NbBuckets());
+  Node* p = data[k];
+  Node* q = NULL;
+  while (p) {
+    if ( hashcode == p->hashcode ) {
+      if (Hasher::IsEqual(p->key,K)) {
+	Decrement();
+	if (q) q->next = p->next;
+	else   data[k] = (Node*) p->next;
+	delete p;
+	return Standard_True;
+      }
+    }
+    q = p;
+    p = (Node*) p->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : Find
+//purpose  : 
+//=======================================================================
+const TheItem& WOKTools_DataMap::Find(const TheKey& K) const
+{
+  Standard_NoSuchObject_Raise_if(IsEmpty(),"WOKTools_DataMap::Find");
+  
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  Node* p = data[Index(hashcode, NbBuckets())];
+  while (p) {
+    if(hashcode == p->hashcode) {
+      if (Hasher::IsEqual(p->key,K)) {
+	return p->value;
+      }
+    }
+    p = (Node*) p->next;
+  }
+  Standard_NoSuchObject::Raise("WOKTools_DataMap::Find");
+  return p->value;
+}
+
+//=======================================================================
+//function : ChangeFind
+//purpose  : 
+//=======================================================================
+TheItem& WOKTools_DataMap::ChangeFind(const TheKey& K)
+{
+  Standard_NoSuchObject_Raise_if(IsEmpty(),"WOKTools_DataMap::ChangeFind");
+  
+  Node** data = (Node**) myData1;
+  int hashcode = Hasher::HashCode(K);
+  Node* p = data[Index(hashcode, NbBuckets())];
+  while (p) {
+    if ( hashcode == p->hashcode ) {
+      if (Hasher::IsEqual(p->key,K)) {
+	return p->value;
+      }
+    }
+    p = (Node*)  p->next;
+  }
+  Standard_NoSuchObject::Raise("WOKTools_DataMap::ChangeFind");
+  return p->value;
+}
+
+
+
+
+
+// method of the iterator
+
+//=======================================================================
+//function : Key
+//purpose  : 
+//=======================================================================
+
+const TheKey& WOKTools_DataMapIterator::Key() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_DataMapIterator::Key");  
+  return ((Node*) myNode)->key;
+}
+
+
+//=======================================================================
+//function : Value
+//purpose  : 
+//=======================================================================
+
+const TheItem& WOKTools_DataMapIterator::Value() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_DataMapIterator::Value");  
+  return ((Node*) myNode)->value;
+}
+
+
+//=======================================================================
+//function : Hashcode
+//purpose  : 
+//=======================================================================
+ Standard_Integer WOKTools_DataMapIterator::Hashcode() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_DataMapIterator::Value");  
+  return ((Node*) myNode)->hashcode;
+}
+
+#ifdef Node
+#undef Node
+#endif
+

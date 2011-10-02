@@ -1,0 +1,48 @@
+-- File:	WOKOBJS_MSSchExtractor.cdl
+-- Created:	Mon Feb 24 15:10:17 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+
+
+class MSSchExtractor from WOKOBJS 
+inherits MSExtractor from WOKBuilder
+
+	---Purpose: Coucou
+
+uses
+    MSActionStatus          from WOKBuilder,
+    MSAction                from WOKBuilder,
+    MSActionType            from WOKBuilder,
+    Param                   from WOKUtils,
+    TimeStat                from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+    
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSSchExtractor from WOKOBJS;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSSchExtractor from WOKOBJS;
+
+    GetTypeDepList(me; atype : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd
+	is private;
+
+    GetTypeMDate(me;  atype : HAsciiString from TCollection)
+    	returns TimeStat from WOKUtils;
+    
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+end MSSchExtractor;

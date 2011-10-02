@@ -1,0 +1,52 @@
+-- File:	WOKBuilder_SharedLinker.cdl
+-- Created:	Tue Oct 24 10:13:46 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class SharedLinker   from WOKBuilder 
+inherits Linker from WOKBuilder
+
+	---Purpose: 
+
+uses
+    ObjectFile        from WOKBuilder,
+    BuildStatus       from WOKBuilder,
+    SharedLibrary     from WOKBuilder,
+    HSequenceOfEntity from WOKBuilder,
+    HSequenceOfPath   from WOKUtils,
+    Param             from WOKUtils,
+    HAsciiString      from TCollection,
+    HSequenceOfHAsciiString from TColStd
+ 
+raises
+    ProgramError from Standard
+is
+
+    Create(aname : HAsciiString from  TCollection; params : Param from WOKUtils)
+    	returns mutable SharedLinker from WOKBuilder;
+	
+    ExportList(me) returns HSequenceOfHAsciiString from TColStd;
+
+    SetExportList(me:mutable; alist : HSequenceOfHAsciiString from TColStd);
+    SetExportList(me:mutable; anobject : ObjectFile from WOKBuilder);
+
+    LogicalName(me)
+    	returns HAsciiString from TCollection;
+	
+    SetLogicalName(me:mutable; aname : HAsciiString from TCollection);
+
+    EvalHeader(me:mutable) 
+    	returns  HAsciiString from TCollection 
+    	is redefined protected;
+
+    GetLinkerProduction(me:mutable)
+    	returns HSequenceOfEntity from WOKBuilder
+	is redefined protected;
+
+             
+fields
+    myexports   : HSequenceOfHAsciiString from TColStd; 
+    mylogicname : HAsciiString            from TCollection;
+end SharedLinker;

@@ -1,0 +1,177 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:0px; }
+ul.whs2 { list-style:disc; }
+p.whs3 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs4 { margin-left:4.50pt; margin-top:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-left:1pt; }";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nData Exchange\nSTEP");
+addAvenueInfo("Data Exchange","technical_overview/data_exchange/p_60_1.htm","technical_overview/data_exchange/overview.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>STEP</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1">The <font style="font-weight: bold;">STEP</font> 
+ interface reads STEP files produced in accordance with STEP Application 
+ Protocol 214 (Conformance Class 2 both CD and DIS versions of schema) 
+ and translates them to Open CASCADE Technology models. STEP Application 
+ Protocol 203 is also supported.</p>
+
+<p class="whs1">The STEP interface also translates OCCT models 
+ to STEP files. STEP files that are produced by this interface conform 
+ to STEP AP 203 or AP 214 (Conformance Class 2, either CD or DIS version 
+ of the schema) depending on the user’s option.</p>
+
+<p class="whs1">Basic interface reads and writes geometrical, 
+ topological STEP data and assembly structures. </p>
+
+<p class="whs1">The interface is able to translate one entity, 
+ a group of entities or a whole file.</p>
+
+<p class="whs1">Other kinds of data such as colors, validation 
+ properties, layers, names and the structure of assemblies can be read 
+ or written with the help of XDE tools - STEPCAFControl_Reader and STEPCAFControl_Writer. 
+ </p>
+
+<p class="whs1">To choose a translation mode when exporting 
+ to a <font style="font-weight: bold;">STEP</font> format, use <font style="font-weight: bold;">STEPControl_STEPModelType</font>.</p>
+
+<p class="whs1">There is a set of parameters that concern 
+ the translation and can be set before the beginning of the translation.</p>
+
+<p><font style="color: #000000; font-weight: bold;"
+		color=#000000>Note</font></p>
+
+<ul type="disc" class="whs2">
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p><font style="color: #000000;"
+								color=#000000>a </font><font style="color: #000000; font-weight: bold;"
+															color=#000000>STEP 
+ model</font><font style="color: #000000;"
+					color=#000000> is a STEP file that has been loaded 
+ into memory.</font></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p><font style="color: #000000;"
+								color=#000000>all references to </font><font 
+ style="color: #000000; font-weight: bold;"
+	color=#000000>shapes</font><font style="color: #000000;"
+									color=#000000> indicate OCCT shapes 
+ unless otherwise explicitly stated.</font></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs3"><font style="color: #000000;"
+															color=#000000>a 
+ </font><font style="color: #000000; font-weight: bold;"
+				color=#000000>root</font><font style="color: #000000;"
+												color=#000000> entity is 
+ the highest level entity of any given type, i.e. an entity that is not 
+ referenced by any other one.</font></p></li>
+</ul>
+
+<p class="whs1">It is possible to learn more about the STEP 
+ interface from <font style="font-weight: bold;"><a href="../../../step.pdf">STEP 
+ User's guide</a></font> </p>
+
+<p class="whs1">See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a>.</p>
+
+<p class="whs4">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+-- File:	WOKSH_CMPLRS.edl
+-- Author:	Stagiaire Pascal BABIN
+-- History:	Tue Jul  9 13:39:27 1996	Stagiaire Pascal BABIN	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKSH_CMPLRS_EDL) then
+@set %WOKSH_CMPLRS_EDL = "";
+
+ @uses "CSF.edl";
+
+ @string %CMPLRS_CXX_Options = " -I"%CSF_TCL_INCLUDE %CMPLRS_CXX_Options ;
+
+@endif;

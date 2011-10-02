@@ -1,0 +1,32 @@
+-- File:	WOKUtils_PathIterator.cdl
+-- Created:	Mon Aug 03 15:37:45 1998
+-- Author:	
+--		<jga@GROMINEX>
+---Copyright:	 Matra Datavision 1998
+
+
+class PathIterator from WOKUtils
+
+
+uses 
+
+    HAsciiString from TCollection,
+    Path from WOKUtils
+    
+is
+
+
+    Create(apath : Path from WOKUtils; recursive : Boolean from Standard = Standard_False)
+    	returns PathIterator from WOKUtils;
+	
+    Next(me:out);
+    
+    
+    Value(me; level : out Integer from Standard)
+    	returns Path from WOKUtils;
+	
+    More(me)
+    	returns Boolean from Standard;
+     
+end;
+

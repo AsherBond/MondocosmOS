@@ -1,0 +1,58 @@
+-- File:	WOKDeliv_DeliveryLIB.cdl
+-- Created:	Fri Mar 29 16:55:01 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+deferred class DeliveryLIB from WOKDeliv inherits DeliveryMetaStep from WOKDeliv
+
+	---Purpose: Process lib step for delivery units
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     Step from WOKMake,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection,
+     DeliveryList from WOKDeliv
+
+is
+
+    Initialize(aprocess : BuildProcess   from WOKMake;
+    	       aunit    : DevUnit from WOKernel; 
+    	       acode    : HAsciiString from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+
+
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is redefined private;
+    
+    TreatStep(me: mutable; astep : Step from WOKMake;
+    	    	    	   infileCOMP : InputFile from WOKMake)
+    is private;
+
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+    SetList(me:mutable) 
+    is deferred;
+    
+    NeedsObjects(me)
+    returns Boolean
+    is deferred;
+
+    ComputeOutputLIB(me: mutable; asource : DevUnit from WOKernel;
+    	    	    	          inComp : InputFile from WOKMake)
+    is deferred;
+    
+    IsAvailable(me; asource : DevUnit from WOKernel)
+    returns Boolean
+    is deferred;
+    
+end DeliveryLIB;

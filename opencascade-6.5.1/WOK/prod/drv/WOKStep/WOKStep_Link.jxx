@@ -1,0 +1,39 @@
+#ifndef _WOKBuilder_Linker_HeaderFile
+#include <WOKBuilder_Linker.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKBuilder_HSequenceOfObjectFile_HeaderFile
+#include <WOKBuilder_HSequenceOfObjectFile.hxx>
+#endif
+#ifndef _WOKUtils_HSequenceOfPath_HeaderFile
+#include <WOKUtils_HSequenceOfPath.hxx>
+#endif
+#ifndef _WOKBuilder_HSequenceOfLibrary_HeaderFile
+#include <WOKBuilder_HSequenceOfLibrary.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _WOKMake_InputFile_HeaderFile
+#include <WOKMake_InputFile.hxx>
+#endif
+#ifndef _WOKMake_HSequenceOfInputFile_HeaderFile
+#include <WOKMake_HSequenceOfInputFile.hxx>
+#endif
+#ifndef _WOKBuilder_Entity_HeaderFile
+#include <WOKBuilder_Entity.hxx>
+#endif
+#ifndef _WOKMake_HSequenceOfOutputFile_HeaderFile
+#include <WOKMake_HSequenceOfOutputFile.hxx>
+#endif
+#ifndef _WOKStep_Link_HeaderFile
+#include <WOKStep_Link.hxx>
+#endif

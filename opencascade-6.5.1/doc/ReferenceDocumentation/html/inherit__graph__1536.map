@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classmath__Function.html" title="This abstract class describes the virtual functions &#160;&#160;associated with a Function..." alt="" coords="5,622,128,652"/>
+<area shape="rect" id="node3" href="$classBRepGProp__TFunctionOfVinertGK.html" title="BRepGProp_TFunctionOfVinertGK" alt="" coords="177,516,423,545"/>
+<area shape="rect" id="node5" href="$classBRepGProp__UFunctionOfVinertGK.html" title="BRepGProp_UFunctionOfVinertGK" alt="" coords="177,569,423,598"/>
+<area shape="rect" id="node7" href="$classCPnts__MyGaussFunction.html" title="CPnts_MyGaussFunction" alt="" coords="207,622,393,652"/>
+<area shape="rect" id="node9" href="$classFairCurve__BattenLaw.html" title="This class compute the Heigth of an batten &#160;" alt="" coords="216,676,384,705"/>
+<area shape="rect" id="node11" href="$classmath__FunctionWithDerivative.html" title="This abstract class describes the virtual functions associated with &#160;&#160;a function..." alt="" coords="188,729,412,758"/>
+<area shape="rect" id="node13" href="$classAdaptor3d__InterFunc.html" title="Used to find the points U(t) = U0 or V(t) = V0 in &#160;&#160;order to determine the Cn discontinuities..." alt="" coords="645,9,808,38"/>
+<area shape="rect" id="node15" href="$classBisector__FunctionH.html" title="H(v) = (T1 .P2(v) &#45; P1) * ||T(v)|| &#45; &#160;&#160;2 2 &#160;&#160;(T(v).P2(v) &#45; P1) * ||T1|| &#160;" alt="" coords="651,62,803,92"/>
+<area shape="rect" id="node17" href="$classBisector__FunctionInter.html" title="2 2 &#160;&#160;F(u) = (PC(u) &#45; PBis1(u)) + (PC(u) &#45; PBis2(u)) &#160;" alt="" coords="639,116,815,145"/>
+<area shape="rect" id="node19" href="$classChFi3d__SearchSing.html" title="F(t) = (C1(t) &#45; C2(t)).(C1&#39;(t) &#45; C2&#39;(t)); &#160;" alt="" coords="653,169,800,198"/>
+<area shape="rect" id="node21" href="$classContap__TheArcFunctionOfContour.html" title="Contap_TheArcFunctionOfContour" alt="" coords="601,222,852,252"/>
+<area shape="rect" id="node23" href="$classCPnts__MyRootFunction.html" title="Implements a function for the Newton algorithm to find the &#160;&#160;solution of Integral(F)..." alt="" coords="637,276,816,305"/>
+<area shape="rect" id="node25" href="$classCSLib__NormalPolyDef.html" title="CSLib_NormalPolyDef" alt="" coords="644,329,809,358"/>
+<area shape="rect" id="node27" href="$classExtrema__PCFOfEPCOfELPCOfLocateExtPC.html" title="Extrema_PCFOfEPCOfELPCOfLocateExtPC" alt="" coords="568,382,885,412"/>
+<area shape="rect" id="node29" href="$classExtrema__PCFOfEPCOfELPCOfLocateExtPC2d.html" title="Extrema_PCFOfEPCOfELPCOfLocateExtPC2d" alt="" coords="560,436,893,465"/>
+<area shape="rect" id="node31" href="$classExtrema__PCFOfEPCOfExtPC.html" title="Extrema_PCFOfEPCOfExtPC" alt="" coords="617,489,836,518"/>
+<area shape="rect" id="node33" href="$classExtrema__PCFOfEPCOfExtPC2d.html" title="Extrema_PCFOfEPCOfExtPC2d" alt="" coords="609,542,844,572"/>
+<area shape="rect" id="node35" href="$classExtrema__PCLocFOfLocEPCOfLocateExtPC.html" title="Extrema_PCLocFOfLocEPCOfLocateExtPC" alt="" coords="569,596,884,625"/>
+<area shape="rect" id="node37" href="$classExtrema__PCLocFOfLocEPCOfLocateExtPC2d.html" title="Extrema_PCLocFOfLocEPCOfLocateExtPC2d" alt="" coords="561,649,892,678"/>
+<area shape="rect" id="node39" href="$classGeom2dGcc__FuncTCirCuOfMyL2d2Tan.html" title="Geom2dGcc_FuncTCirCuOfMyL2d2Tan" alt="" coords="589,702,864,732"/>
+<area shape="rect" id="node41" href="$classGeom2dGcc__FuncTCuPtOfMyL2d2Tan.html" title="Geom2dGcc_FuncTCuPtOfMyL2d2Tan" alt="" coords="591,756,863,785"/>
+<area shape="rect" id="node43" href="$classGeom2dGcc__FuncTOblOfMyL2dTanObl.html" title="Geom2dGcc_FuncTOblOfMyL2dTanObl" alt="" coords="589,809,864,838"/>
+<area shape="rect" id="node45" href="$classGeom2dInt__MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter.html" title="Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter" alt="" coords="472,862,981,892"/>
+<area shape="rect" id="node47" href="$classGeom2dInt__PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter.html" title="Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter" alt="" coords="504,916,949,945"/>
+<area shape="rect" id="node49" href="$classGeom2dLProp__FCurExtOfNumericCurInf2d.html" title="Geom2dLProp_FCurExtOfNumericCurInf2d" alt="" coords="573,969,880,998"/>
+<area shape="rect" id="node51" href="$classGeom2dLProp__FCurNulOfNumericCurInf2d.html" title="Geom2dLProp_FCurNulOfNumericCurInf2d" alt="" coords="576,1022,877,1052"/>
+<area shape="rect" id="node53" href="$classGeomFill__PlanFunc.html" title="GeomFill_PlanFunc" alt="" coords="655,1076,799,1105"/>
+<area shape="rect" id="node55" href="$classGeomLib__PolyFunc.html" title="Polynomial Function &#160;" alt="" coords="653,1129,800,1158"/>
+<area shape="rect" id="node57" href="$classHLRBRep__MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter.html" title="HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter" alt="" coords="477,1182,976,1212"/>
+<area shape="rect" id="node59" href="$classHLRBRep__PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter.html" title="HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter" alt="" coords="509,1236,944,1265"/>
+<area shape="rect" id="node61" href="$classHLRBRep__TheQuadCurvFuncOfTheQuadCurvExactInterCSurf.html" title="HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf" alt="" coords="512,1289,941,1318"/>
+<area shape="rect" id="node63" href="$classIntCurve__MyImpParToolOfIntImpConicParConic.html" title="IntCurve_MyImpParToolOfIntImpConicParConic" alt="" coords="560,1342,893,1372"/>
+<area shape="rect" id="node65" href="$classIntCurveSurface__TheQuadCurvFuncOfTheQuadCurvExactHInter.html" title="IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter" alt="" coords="501,1396,952,1425"/>
+<area shape="rect" id="node67" href="$classIntPatch__ArcFunction.html" title="IntPatch_ArcFunction" alt="" coords="644,1449,809,1478"/>
+</map>

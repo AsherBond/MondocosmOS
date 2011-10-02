@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classTDocStd__Application.html" title="The abstract root class for all application classes. &#160;&#160;They are in charge of: &#160;Creating..." alt="" coords="5,237,165,267"/>
+<area shape="rect" id="node4" href="$classCDF__Application.html" title="CDF_Application" alt="" coords="20,160,151,189"/>
+<area shape="rect" id="node6" href="$classCDM__Application.html" title="CDM_Application" alt="" coords="19,83,152,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="11,5,160,35"/>
+</map>

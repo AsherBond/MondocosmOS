@@ -1,0 +1,178 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Attribute Drivers</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+table.whs1 { width:623px; border-spacing:0px; }
+tr.whs2 { x-cell-content-align:top; }
+td.whs3 { width:18.27%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+td.whs4 { width:81.73%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs5 { text-indent:30.25pt; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nLDOM Package for XML\nAttribute Drivers");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/ldom_package_for_xml/document_drivers/overview_stor_driver.htm","technical_overview/application_framework/ldom_package_for_xml/xml_document_structure/xml_document_structure.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../whd_show0.gif","../../../../whd_show2.gif","../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../whd_hide0.gif","../../../../whd_hide2.gif","../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../whd_prev0.gif","../../../../whd_prev2.gif","../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../whd_next0.gif","../../../../whd_next2.gif","../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Attribute Drivers</p>
+
+<p>&nbsp;</p>
+
+<p>There is one attribute driver for XML persistence for each transient 
+ attribute from a set of standard OCAF attributes, with the exception of 
+ attribute types, which are never stored (pure transient). Standard OCAF 
+ attributes are collected in six packages, and their drivers also follow 
+ this distribution. Driver for attribute T*_* is called XmlM*_*. Conversion 
+ between transient and persistent form of attribute is performed by two 
+ methods Paste() of attribute driver. </p>
+
+<p><font style="font-weight: bold;">XmlMDF_ADriver</font> is the root class 
+ for all attribute drivers.</p>
+
+<p>At the beginning of storage/retrieval process, one instance of each 
+ attribute driver is created and appended to driver table implemented as 
+ <font style="font-weight: bold;">XmlMDF_ADriverTable</font>. <br>
+During OCAF Data storage, attribute drivers are retrieved from the driver 
+ table by the type of attribute. In the retrieval step, a data map is created 
+ linking names of DOM_Elements and attribute drivers, and then attribute 
+ drivers are sought in this map by DOM_Element qualified tag names. </p>
+
+<p>Every transient attribute is saved as a DOM_Element (root element of 
+ OCAF attribute) with attributes and possibly sub-nodes. The name of the 
+ root element can be defined in the attribute driver as a string passed 
+ to the base class constructor. The default is the attribute type name. 
+ Similarly, namespace prefixes for each attribute can be set. There is 
+ no default value, but it is possible to pass NULL or an empty string to 
+ store attributes without namespace prefixes. </p>
+
+<p>The basic class XmlMDF_ADriver supports errors reporting via the method 
+ <font style="font-weight: bold;">WriteMessage</font>(const TCollection_ExtendedString&amp;). 
+ It sends a message string to its message driver which is initialized in 
+ the constructor with a Handle(CDM_MessageDriver) passed from the application 
+ by Document Storage/Retrieval Driver. </p>
+
+<p><font style="font-weight: bold;">Synopsis </font></p>
+
+<table x-use-null-cells cellspacing="0" width="623" class="whs1">
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMDF</td>
+<td width="81.73%" class="whs4">
+<p>defines the basic class for all attribute drivers, the methods for OCAF 
+ labels tree conversion, and implements drivers for TDF_Reference and TDF_TagSource</td></tr>
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMDocStd</td>
+<td width="81.73%" class="whs4">
+<p>contains drivers for TDocStd_XLink attribute</td></tr>
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMDataStd </td>
+<td width="81.73%" class="whs4">
+<p>contains drivers for attributes from package TDataStd</td></tr>
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMNaming </td>
+<td width="81.73%" class="whs4">
+<p>contains drivers for attributes from package TNaming</td></tr>
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMFinction </td>
+<td width="81.73%" class="whs4">
+<p>contains drivers for attributes from package TFunction</td></tr>
+
+<tr valign="top" class="whs2">
+<td width="18.27%" class="whs3">
+<p>XmlMPrsStd</td>
+<td width="81.73%" class="whs4">
+<p>contains drivers for attributes from package TPrsStd</td></tr>
+</table>
+
+<p><font style="font-weight: bold;">See also</font> </p>
+
+<p class="whs5"><a href="../document_drivers/overview_stor_driver.htm">Document 
+ Drivers</a> </p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

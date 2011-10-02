@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classOSD__Chronometer.html" title="This class measures CPU time (both user and system) consumed &#160;&#160;by current process..." alt="" coords="5,5,155,35"/>
+<area shape="rect" id="node3" href="$classOSD__Timer.html" title="Working on heterogeneous platforms &#160;&#160;we need to use the system call gettimeofday..." alt="" coords="204,5,300,35"/>
+</map>

@@ -1,0 +1,46 @@
+-- File:	WOKOrbix.cdl
+-- Created:	Mon Aug 18 11:45:41 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+package WOKOrbix 
+
+	---Purpose: 
+
+uses
+    WOKTools,
+    WOKUtils,
+    WOKernel,
+    WOKBuilder,
+    WOKMake,
+    WOKStep,
+    TColStd,
+    TCollection
+    
+is
+
+    -- Orbix files
+    class IDLFile;
+
+    -- Orbix Tools
+    class IDLCompiler;
+    class IDLCompilerIterator;
+    class IDLTranslator;
+    
+    -- Orbix Steps
+    class IDLSource;
+    class IDLCompile;
+    class IDLFill;
+    class IDLSourceExtract;
+
+    class ServerSource;
+    class ExtractServerList;
+
+    private class DataMapOfHAsciiStringOfHAsciiString
+    	instantiates  DataMap  from WOKTools    ( HAsciiString         from TCollection, 
+	    	    	    	    	    	  HAsciiString         from TCollection, 
+						  HAsciiStringHasher   from WOKTools );
+
+end WOKOrbix;

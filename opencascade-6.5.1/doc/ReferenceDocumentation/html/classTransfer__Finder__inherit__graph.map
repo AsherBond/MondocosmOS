@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classTransfer__TransientMapper.html" title="Transfer_TransientMapper" alt="" coords="5,237,197,267"/>
+<area shape="rect" id="node9" href="$classTransferBRep__OrientedShapeMapper.html" title="TransferBRep_OrientedShapeMapper" alt="" coords="221,237,491,267"/>
+<area shape="rect" id="node11" href="$classTransferBRep__ShapeMapper.html" title="TransferBRep_ShapeMapper" alt="" coords="515,237,723,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="295,83,417,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="281,5,431,35"/>
+</map>

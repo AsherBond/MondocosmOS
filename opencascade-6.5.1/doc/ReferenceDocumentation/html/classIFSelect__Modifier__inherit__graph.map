@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIFSelect__ModifEditForm.html" title="This modifier applies an EditForm on the entities selected &#160;" alt="" coords="812,245,993,275"/>
+<area shape="rect" id="node11" href="$classIFSelect__ModifReorder.html" title="This modifier reorders a whole model from its roots, i.e. &#160;&#160;according to &lt;rootlast&gt;..." alt="" coords="816,299,989,328"/>
+<area shape="rect" id="node13" href="$classIGESSelect__ModelModifier.html" title="IGESSelect_ModelModifier" alt="" coords="804,352,1001,381"/>
+<area shape="rect" id="node43" href="$classStepSelect__ModelModifier.html" title="StepSelect_ModelModifier" alt="" coords="804,405,1001,435"/>
+<area shape="rect" id="node2" href="$classIFSelect__GeneralModifier.html" title="This class gives a frame for Actions which modify the effect &#160;&#160;of a Dispatch, i.e..." alt="" coords="377,325,567,355"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,325,328,355"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,325,156,355"/>
+<area shape="rect" id="node15" href="$classIGESSelect__AddGroup.html" title="Adds a Group to contain the entities designated by the &#160;&#160;Selection. If no Selection..." alt="" coords="1091,5,1259,35"/>
+<area shape="rect" id="node17" href="$classIGESSelect__AutoCorrect.html" title="Does the absolutely effective corrections on IGES Entity. &#160;&#160;That is to say : regarding..." alt="" coords="1081,59,1268,88"/>
+<area shape="rect" id="node19" href="$classIGESSelect__ChangeLevelList.html" title="Changes Level List (in directory part) to a new single value &#160;&#160;Only entities attached..." alt="" coords="1067,112,1283,141"/>
+<area shape="rect" id="node21" href="$classIGESSelect__ChangeLevelNumber.html" title="Changes Level Number (as null or single) to a new single value &#160;&#160;Entities attached..." alt="" coords="1052,165,1297,195"/>
+<area shape="rect" id="node23" href="$classIGESSelect__ComputeStatus.html" title="Computes Status of IGES Entities for a whole IGESModel. &#160;&#160;This concerns SubordinateStatus..." alt="" coords="1069,219,1280,248"/>
+<area shape="rect" id="node25" href="$classIGESSelect__RebuildDrawings.html" title="Rebuilds Drawings which were bypassed to produce new models. &#160;&#160;If a set of entities..." alt="" coords="1068,272,1281,301"/>
+<area shape="rect" id="node27" href="$classIGESSelect__RebuildGroups.html" title="Rebuilds Groups which were bypassed to produce new models. &#160;&#160;If a set of entities..." alt="" coords="1076,325,1273,355"/>
+<area shape="rect" id="node29" href="$classIGESSelect__RemoveCurves.html" title="Removes Curves UV or 3D (not both !) from Faces, those &#160;&#160;designated by the Selection..." alt="" coords="1072,379,1277,408"/>
+<area shape="rect" id="node31" href="$classIGESSelect__SetGlobalParameter.html" title="Sets a Global (Header) Parameter to a new value, directly given &#160;&#160;Controls the form..." alt="" coords="1055,432,1295,461"/>
+<area shape="rect" id="node33" href="$classIGESSelect__SetLabel.html" title="Sets/Clears Short Label of Entities, those designated by the &#160;&#160;Selection. No Selection..." alt="" coords="1093,485,1256,515"/>
+<area shape="rect" id="node35" href="$classIGESSelect__SetVersion5.html" title="Sets IGES Version (coded in global parameter 23) to be at least &#160;&#160;IGES 5.1 . If it..." alt="" coords="1083,539,1267,568"/>
+<area shape="rect" id="node37" href="$classIGESSelect__UpdateCreationDate.html" title="Allows to Change the Creation Date indication in the Header &#160;&#160;(Global Section) of..." alt="" coords="1052,592,1297,621"/>
+<area shape="rect" id="node39" href="$classIGESSelect__UpdateFileName.html" title="Sets the File Name in Header to be the actual name of the file &#160;&#160;If new file name..." alt="" coords="1068,645,1281,675"/>
+<area shape="rect" id="node41" href="$classIGESSelect__UpdateLastChange.html" title="Allows to Change the Last Change Date indication in the Header &#160;&#160;(Global Section)..." alt="" coords="1057,699,1292,728"/>
+</map>

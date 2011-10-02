@@ -1,0 +1,6 @@
+#ifndef _WOKBuilder_Entity_HeaderFile
+#include <WOKBuilder_Entity.hxx>
+#endif
+#ifndef _WOKBuilder_EntityHasher_HeaderFile
+#include <WOKBuilder_EntityHasher.hxx>
+#endif

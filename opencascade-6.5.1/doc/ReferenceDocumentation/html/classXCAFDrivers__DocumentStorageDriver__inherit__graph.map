@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classMDocStd__DocumentStorageDriver.html" title="storage driver for a standard document &#160;" alt="" coords="16,237,272,267"/>
+<area shape="rect" id="node4" href="$classPCDM__StorageDriver.html" title="persistent implemention of storage. &#160;" alt="" coords="61,160,227,189"/>
+<area shape="rect" id="node6" href="$classPCDM__Writer.html" title="PCDM_Writer" alt="" coords="88,83,200,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="69,5,219,35"/>
+</map>

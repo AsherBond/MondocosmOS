@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classTopOpeBRepBuild__LoopClassifier.html" title="classify loops in order to build Areas &#160;" alt="" coords="7,59,244,88"/>
+<area shape="rect" id="node3" href="$classTopOpeBRepBuild__CompositeClassifier.html" title="classify composite Loops, i.e, loops that can be either a Shape, or &#160;&#160;a block of..." alt="" coords="293,32,573,61"/>
+<area shape="rect" id="node9" href="$classTopOpeBRepBuild__PaveClassifier.html" title="This class compares vertices on an edge. &#160;&#160;&#160;&#160;A vertex V1 is inside a vertex V2 if..." alt="" coords="313,85,553,115"/>
+<area shape="rect" id="node5" href="$classTopOpeBRepBuild__ShellFaceClassifier.html" title="Classify faces and shells. &#160;&#160;shapes are Shells, Elements are Faces. &#160;" alt="" coords="623,5,892,35"/>
+<area shape="rect" id="node7" href="$classTopOpeBRepBuild__WireEdgeClassifier.html" title="Classify edges and wires. &#160;&#160;shapes are Wires, Element are Edge. &#160;" alt="" coords="623,59,892,88"/>
+</map>

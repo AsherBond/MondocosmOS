@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESGraph__Color.html" title="defines IGESColor, Type &lt;314&gt; Form &lt;0&gt; &#160;&#160;in package IGESGraph &#160;" alt="" coords="24,315,157,344"/>
+<area shape="rect" id="node2" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="8,160,173,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="29,83,152,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="16,5,165,35"/>
+</map>

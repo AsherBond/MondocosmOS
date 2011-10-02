@@ -1,0 +1,109 @@
+-- File:	WOKTools_Map.cdl
+-- Created:	Mon Jun 26 16:39:25 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+generic class Map from WOKTools (TheKey as any;
+    	    	    	    	 Hasher as any) -- as MapHasher(TheKey)
+inherits BasicMap from WOKTools
+
+    ---Purpose: WOK oriented (String) Map
+
+raises
+    DomainError from Standard
+    
+    class MapIterator inherits BasicMapIterator from WOKTools
+    
+	---Purpose: Provides iteration on  the content of  a map.  The
+	-- iteration    methods    are  inherited   from  the
+	-- BasicMapIterator.
+	--  Warning: While using an iterator on a map if the content of
+	-- the map  is   modified  during the  iteration  the
+	-- result is unpredictable.
+	
+    raises NoSuchObject from Standard
+    is
+       	Create returns MapIterator from WOKTools;
+	    ---Purpose: Creates an undefined Iterator (empty).
+	
+	Create (aMap : Map from WOKTools) 
+    	returns MapIterator from WOKTools;
+	    ---Purpose: Creates an Iterator on the map <aMap>.
+	
+	Initialize(me : in out; aMap : Map from WOKTools)
+	    ---Level: Public
+	    ---Purpose: Resets the Iterator in the map <aMap>.
+	is static;
+	
+	Key(me) returns any TheKey
+	    ---Level: Public
+	    ---Purpose: Returns the current Key. An error is raised if
+	    -- the iterator is empty (More returns False).
+	    ---C++: return const &
+	raises
+	    NoSuchObject from Standard
+	is static;
+
+    	Hashcode(me) returns Integer from Standard
+	raises
+	    NoSuchObject from Standard
+	is static;
+
+    end MapIterator from WOKTools;
+
+is
+
+    Create(NbBuckets : Integer = 1) returns Map from WOKTools;
+	---Purpose: Creates   a Map with  <NbBuckets> buckets. Without
+	-- arguments the map is automatically dimensioned.
+    
+
+    Create(Other : Map from WOKTools) returns Map from WOKTools
+	---Purpose: As  copying  Map  is an expensive  operation it is
+	-- incorrect  to  do  it implicitly. This constructor
+	-- will raise an  error if the Map  is not  empty. To
+	-- copy the content of a  Map use the  Assign  method (operator =).
+    raises DomainError from Standard
+    is private;
+    
+    Assign(me : in out; Other : Map from WOKTools) 
+    returns Map from WOKTools
+	---Level: Public
+	---Purpose: Replace the content of this map by  the content of
+	-- the map <Other>.
+	---C++: alias operator =
+	---C++: return &
+    is static;
+    
+    ReSize(me : in out; NbBuckets : Integer)
+	---Level: Public
+	---Purpose: Changes the  number    of  buckets of  <me>  to be
+	-- <NbBuckets>. The keys  already  stored in  the map are kept.
+    is static;
+    
+    Clear(me : in out)
+	---Level: Public
+	---Purpose: Removes all keys in the map.
+	---C++: alias ~
+    is static;
+    
+    Add(me : in out; aKey : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Adds the Key <aKey> to  the Map <me>. Returns True
+	-- if the Key was not already in the Map.
+    is static;
+
+    Contains(me; aKey : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Returns True  if the key  <aKey> is stored  in the
+	-- map <me>.
+    is static;
+    
+    Remove(me : in out; aKey : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Removes the Key <aKey> from the  map. Returns True
+	-- if the Key was in the Map.
+    is static;
+    
+end Map;

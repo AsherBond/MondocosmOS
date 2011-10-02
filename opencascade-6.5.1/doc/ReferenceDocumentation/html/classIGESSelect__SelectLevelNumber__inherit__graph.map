@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIFSelect__SelectExtract.html" title="A SelectExtract determines a list of Entities from an Input &#160;&#160;Selection, as a sub&#45;list..." alt="" coords="33,315,215,344"/>
+<area shape="rect" id="node4" href="$classIFSelect__SelectDeduct.html" title="A SelectDeduct determines a list of Entities from an Input &#160;&#160;Selection, by a computation..." alt="" coords="35,237,213,267"/>
+<area shape="rect" id="node6" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="51,160,197,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="63,83,185,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="49,5,199,35"/>
+</map>

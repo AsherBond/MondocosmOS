@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classFairCurve__Batten.html" title="Constructs curves with a constant or linearly increasing &#160;&#160;section to be used in..." alt="" coords="5,5,147,35"/>
+<area shape="rect" id="node3" href="$classFairCurve__MinimalVariation.html" title="Computes a 2D curve using an algorithm which &#160;&#160;minimizes tension, sagging, and jerk..." alt="" coords="195,5,395,35"/>
+</map>

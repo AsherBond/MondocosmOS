@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepAlgoAPI__Common.html" title="The class Common provides a &#160;&#160;Boolean common operation on a pair of arguments (Boolean..." alt="" coords="5,237,179,267"/>
+<area shape="rect" id="node9" href="$classBRepAlgoAPI__Cut.html" title="File: BRepAlgoAPI_Cut.cdl &#160;&#160;Created: Thu Oct 14 18:27:02 1993 &#160;&#160;Author: Remi LEQUETTE..." alt="" coords="203,237,341,267"/>
+<area shape="rect" id="node11" href="$classBRepAlgoAPI__Fuse.html" title="The class Fuse provides a &#160;&#160;Boolean fusion operation on a pair of arguments (Boolean..." alt="" coords="365,237,512,267"/>
+<area shape="rect" id="node13" href="$classBRepAlgoAPI__Section.html" title="Computes the intersection of two shapes or geometries. &#160;&#160;Geometries can be surfaces..." alt="" coords="536,237,701,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="249,83,460,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="255,5,455,35"/>
+</map>

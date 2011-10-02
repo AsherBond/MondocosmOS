@@ -1,0 +1,83 @@
+-- File:	WOKMake_StepFile.cdl
+-- Created:	Mon Jun 17 15:40:38 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+deferred class StepFile from WOKMake 
+inherits TShared from MMgt
+	---Purpose: 
+
+uses
+    FileStatus   from WOKMake,
+    File         from WOKernel,
+    Entity       from WOKBuilder,
+    Path         from WOKUtils,
+    HAsciiString from TCollection
+    
+is
+
+    Initialize;
+
+    Initialize(anid      : HAsciiString from TCollection;
+    	       afile     : File from WOKernel; 
+    	       abuildent : Entity from WOKBuilder; 
+    	       aoldpath  : Path from WOKUtils);
+    
+    SetFile(me:mutable; afile : File from WOKernel);
+    File(me)
+    ---C++: return const &
+    ---C++: inline
+       	returns File from WOKernel;
+    
+    SetBuilderEntity(me:mutable; aent : Entity from WOKBuilder);
+    BuilderEntity(me)
+    ---C++: return const &
+    ---C++: inline
+       	returns Entity from WOKBuilder;
+
+    SetID(me:mutable; aname : HAsciiString from TCollection);
+    ID(me)
+    ---C++: return const &
+    ---C++: inline
+        returns HAsciiString from TCollection;
+
+    SetLastPath(me:mutable; apath : Path from WOKUtils);
+    LastPath(me)
+    ---C++: return const &
+    ---C++: inline
+        returns Path from WOKUtils;
+	
+    SetStatus(me:mutable; astatus : FileStatus from WOKMake);
+    Status(me)
+    ---C++: inline
+       	returns FileStatus from WOKMake;
+
+    SetLocateFlag(me:mutable; aflg : Boolean from Standard);
+    IsLocateAble(me)
+    ---Purpose: True if File is Known to be in WOK Entity 
+    --          False if File is not in WOK (ex: .:.:/usr/include/stream.h)
+    ---C++: inline
+    	returns Boolean from Standard;
+ 
+    SetPhysicFlag(me:mutable; aflag : Boolean from Standard);
+    IsPhysic(me) 
+    ---C++: inline
+    	returns Boolean from Standard;
+
+    SetStepID(me:mutable; aflag : Boolean from Standard);
+    IsStepID(me)
+    ---C++: inline
+    	returns Boolean from Standard;
+	
+fields
+
+    myfile     : File         from WOKernel;
+    myid       : HAsciiString from TCollection;
+    myent      : Entity       from WOKBuilder;
+    mylastpath : Path         from WOKUtils;
+    myattr     : Integer      from Standard is protected;
+    mystatus   : FileStatus   from WOKMake;
+
+end StepFile;

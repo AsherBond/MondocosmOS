@@ -1,0 +1,181 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Memory Management</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFAQ\nMemory Management");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Memory Management</p>
+
+<p>In a work-session, geometry modeling applications create and delete 
+ a certain number of C++ objects. In this context, memory allocation and 
+ de-allocation standard functions are not suited to the system's requirements 
+ and for this reason a specialized Memory Manager is implemented into Open 
+ CASCADE Technology. The Memory Manager is based on the following principles:</p>
+
+<p>small memory arrays are grouped into clusters and then recycled (clusters 
+ are never released to the system),</p>
+
+<p>large arrays are allocated and de-allocated through the standard functions 
+ of the system (the arrays are released to system when they are no longer 
+ used).</p>
+
+<h3>The Reference Counter:</h3>
+
+<p>To lighten usual programming difficulties linked to the management of 
+ object life duration – before deleting an object, the user must ensure 
+ the object is no longer referenced – the delete function is secured by 
+ a reference counter. A smart-pointer called a Handle automates reference 
+ counter management and automatically deletes an object when it is no longer 
+ referenced – the application never calls the delete operator explicitly. 
+ To benefit from the memory manager in OCCT, transient classes must inherit 
+ from TShared. The principle of allocation is as follows:</p>
+
+<h3>Example:</h3>
+
+<p>&nbsp;&nbsp;Handle 
+ (TColStd_HSequenceOfInteger) H1 = new TColStd_HSequenceOfInteger;</p>
+
+<p>&nbsp;&nbsp;// 
+ H1 has one reference and corresponds to 48 bytes of memory</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;Handle 
+ (TColStd_HSequenceOfInteger) H2;</p>
+
+<p>&nbsp;&nbsp;H2 
+ = H1; // H1 has two references</p>
+
+<p>&nbsp;&nbsp;if 
+ (argc == 3) </p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Handle 
+ (TColStd_HSequenceOfInteger) H3;</p>
+
+<p>&nbsp;&nbsp;&nbsp;H3 
+ = H1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;// 
+ Here, H1 has three references</p>
+
+<p>&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+ Here, H1 has two references</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;// 
+ Here, H1 has 1 reference</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;// 
+ Here, H1 has no reference but the 48 bytes of memory are kept.</p>
+
+<p>&nbsp;&nbsp;Handle 
+ (TColStd_HSequenceOfInteger) H1 = new TColStd_HSequenceOfInteger;</p>
+
+<p>// Here, H1 has one reference and corresponds to the preceding 48 bytes 
+ of </p>
+
+<p>// memory. In this case, there is no allocation of memory.</p>
+
+<h3>Cycles</h3>
+
+<p>As cycles are objects which reference one another, memory management 
+ is impossible if the data structure contains any cycles, particularly 
+ if there are back references.</p>
+
+<p>For example in a graph, objects include primitives and each one of these 
+ primitives has to know the graphic object to which it belongs (i.e. a 
+ reference to this graphic object). With normal references, the classical 
+ handle is used. With back references, a pointer is used. </p>
+
+<h3>Memory Consumption</h3>
+
+<p>As a general rule, it is advisable to allocate memory through significant 
+ blocks. In this way, the user can work with blocks of contiguous data 
+ and it facilitates memory page manager processing.</p>
+
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

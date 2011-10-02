@@ -1,0 +1,3 @@
+#ifndef _WOKTools_ReturnValue_HeaderFile
+#include <WOKTools_ReturnValue.hxx>
+#endif

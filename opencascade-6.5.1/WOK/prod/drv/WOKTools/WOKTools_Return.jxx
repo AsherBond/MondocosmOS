@@ -1,0 +1,12 @@
+#ifndef _WOKTools_HSequenceOfReturnValue_HeaderFile
+#include <WOKTools_HSequenceOfReturnValue.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKTools_ReturnValue_HeaderFile
+#include <WOKTools_ReturnValue.hxx>
+#endif
+#ifndef _WOKTools_Return_HeaderFile
+#include <WOKTools_Return.hxx>
+#endif

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classRWHeaderSection__ReadWriteModule.html" title="General module to read and write HeaderSection entities &#160;" alt="" coords="875,5,1144,35"/>
+<area shape="rect" id="node11" href="$classRWStepAP214__ReadWriteModule.html" title="General module to read and write StepAP214 entities &#160;" alt="" coords="888,59,1131,88"/>
+<area shape="rect" id="node13" href="$classStepData__DescrReadWrite.html" title="StepData_DescrReadWrite" alt="" coords="907,112,1112,141"/>
+<area shape="rect" id="node2" href="$classInterface__ReaderModule.html" title="Defines unitary operations required to read an Entity from a &#160;&#160;File (see FileReaderData..." alt="" coords="377,59,564,88"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,59,328,88"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,59,156,88"/>
+</map>

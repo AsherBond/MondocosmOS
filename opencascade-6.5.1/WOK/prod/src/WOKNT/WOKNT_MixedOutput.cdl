@@ -1,0 +1,69 @@
+-- File:	WOKNT_MixedOutput.cdl
+-- Created:	Tue Jul 30 10:19:51 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+private class MixedOutput from WOKNT inherits ShellOutput from WOKNT
+
+    ---Purpose: manages output of sub-process ( creates a pipe ).
+    --          Standard output stream and standard error stream are MIXED.
+
+ uses
+ 
+  HSequenceOfHAsciiString from TColStd
+  
+ is
+ 
+  Create returns MixedOutput from WOKNT;
+    ---Purpose: creates a class instance
+
+  Cleanup ( me : out ) is redefined virtual;
+    ---Purpose: dummy method to be used in derived class
+    ---C++:     alias ~
+
+  OpenStdOut ( me : out ) returns Integer from Standard is redefined static;
+    ---Purpose: creates a pipe for reading a standard output of sub-process
+    --          and returns a pipe handle.
+    --  Warning: returns INVALID_HANDLE_VALUE in case of failure
+
+  CloseStdOut ( me : out ) is redefined static;
+    ---Purpose: closes write end of the 'STDOUT' pipe
+
+  OpenStdErr ( me : out ) returns Integer from Standard is virtual;
+    ---Purpose: creates a pipe for reading a standard error output of sub-process
+    --          and returns a pipe handle
+    --  Warning: this method is simply calling 'OpenStdOut' method
+
+  CloseStdErr ( me : out ) is redefined virtual;
+    ---Purpose: closes write end of the 'STDERR' pipe
+    --  Warning: this method is simply calling 'CloseStdOut' method
+
+  Clear ( me : out ) is redefined virtual;
+    ---Purpose: clears output buffer of sub-process
+
+  Echo ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined static;
+    ---Purpose: returns standard output of sub-process
+    --  Warning: returns NULL object if there is nothing to read
+
+  Errors ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined virtual;
+    ---Purpose: returns standard error output of sub-process
+    --  Warning: this method is simply calling 'Echo' method
+
+  SyncStdOut ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined static;
+    ---Purpose: waits for sub-process termination ( until the write end of pipe
+    --          will be closed ).
+    --  Warning: write end of pipe MUST BE CLOSED by parent process immediately
+    --          after creation of the child process else this method will
+    --          NEVER return. Use ONLY 'CloseStdOut' method for this purpose.
+
+  SyncStdErr ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined virtual;
+    ---Purpose: same as 'SyncStdOut' method
+    --  Warning: use 'CloseStdErr' method to close write end of pipe
+
+ fields
+ 
+  myOutHandle : Integer                 from Standard is protected;
+  myStdOut    : HSequenceOfHAsciiString from TColStd  is protected;
+  
+end MixedOutput;

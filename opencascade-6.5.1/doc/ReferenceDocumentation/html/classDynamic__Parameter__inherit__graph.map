@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classDynamic__BooleanParameter.html" title="This class describes a parameter with a boolean &#160;&#160;as value. &#160;" alt="" coords="587,5,800,35"/>
+<area shape="rect" id="node9" href="$classDynamic__InstanceParameter.html" title="This class describes a parameter with a dynamic &#160;&#160;fuzzy instance as value. &#160;" alt="" coords="584,59,803,88"/>
+<area shape="rect" id="node11" href="$classDynamic__IntegerParameter.html" title="This class describes a parameter with an integer &#160;&#160;as its value. &#160;" alt="" coords="588,112,799,141"/>
+<area shape="rect" id="node13" href="$classDynamic__ObjectParameter.html" title="This inherited class from Parameter describes all &#160;&#160;the parameters, which are characterized..." alt="" coords="591,165,796,195"/>
+<area shape="rect" id="node15" href="$classDynamic__RealParameter.html" title="This inherited class from Parameter describes all &#160;&#160;the parameters, which are characterized..." alt="" coords="599,219,788,248"/>
+<area shape="rect" id="node17" href="$classDynamic__StringParameter.html" title="This inherited class from Parameter describes all &#160;&#160;the parameters, which are characterized..." alt="" coords="595,272,792,301"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,139,328,168"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+</map>

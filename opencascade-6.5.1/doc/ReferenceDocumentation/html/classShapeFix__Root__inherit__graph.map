@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classShapeFix__ComposeShell.html" title="This class is intended to create a shell from the composite &#160;&#160;surface (grid of surfaces)..." alt="" coords="565,5,747,35"/>
+<area shape="rect" id="node9" href="$classShapeFix__Face.html" title="This operator allows to perform various fixes on face &#160;&#160;and its wires: fixes provided..." alt="" coords="596,59,716,88"/>
+<area shape="rect" id="node11" href="$classShapeFix__FixSmallFace.html" title="ShapeFix_FixSmallFace" alt="" coords="569,112,743,141"/>
+<area shape="rect" id="node13" href="$classShapeFix__Shape.html" title="Fixing shape in general &#160;" alt="" coords="592,165,720,195"/>
+<area shape="rect" id="node15" href="$classShapeFix__Shell.html" title="Fixing orientation of faces in shell &#160;" alt="" coords="597,219,715,248"/>
+<area shape="rect" id="node17" href="$classShapeFix__Solid.html" title="Provides method to build a solid from a shells and &#160;&#160;orients them in order to have..." alt="" coords="597,272,715,301"/>
+<area shape="rect" id="node19" href="$classShapeFix__SplitCommonVertex.html" title="Two wires have common vertex &#45; this case is valid in BRep model &#160;&#160;and isn&#39;t valid..." alt="" coords="545,325,767,355"/>
+<area shape="rect" id="node21" href="$classShapeFix__Wire.html" title="This class provides a set of tools for repairing a wire. &#160;" alt="" coords="597,379,715,408"/>
+<area shape="rect" id="node23" href="$classShapeFix__Wireframe.html" title="Provides methods for fixing wireframe of shape &#160;" alt="" coords="577,432,735,461"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,219,328,248"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,219,156,248"/>
+</map>

@@ -1,0 +1,56 @@
+
+-- -- File:	WOKUnix_ShellStatus.cdl
+-- Created:	Thu Jun  8 18:22:21 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private deferred class ShellStatus from WOKUnix 
+inherits TShared from MMgt
+	---Purpose: 
+
+uses
+    FDescr from WOKUnix,
+    Shell  from WOKUnix,
+    HAsciiString from TCollection,
+    AsciiString from TCollection,
+    File from OSD
+    
+raises
+
+    ProgramError from Standard
+is
+    Initialize;
+    Initialize(apath : AsciiString from TCollection); 
+    
+    StatusFile(me:mutable) returns FDescr from WOKUnix;
+    ---C++:return &
+
+
+    No(me)   returns Integer is static;
+    Name(me) returns HAsciiString from TCollection is static;
+	
+    Status(me) returns Integer is static;
+	
+    EndCmd(me:mutable; ashell : Shell from WOKUnix) is deferred;
+    Sync(me:mutable;   ashell : Shell from WOKUnix) is deferred;
+    Reset(me:mutable;  ashell : Shell from WOKUnix) is deferred;
+    
+    Get(me:mutable)  returns Integer raises ProgramError from Standard is virtual;
+    GetRemote(me:mutable)  returns Integer raises ProgramError from Standard is virtual;
+
+    Destroy(me:mutable)
+    ---C++: alias ~
+     is virtual;
+    
+fields
+    mystatus : Integer is protected;
+    myfile   : FDescr from WOKUnix;
+    myfileend: FDescr from WOKUnix;
+    
+end ShellStatus;
+
+
+
+

@@ -1,0 +1,14 @@
+-- File:	WOKUnix_CMPLRS.edl
+-- Author:	Prestataire Pascal BABIN
+-- History:	Wed Jan 29 14:13:00 1997	Prestataire Pascal BABIN	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKUnix_CMPLRS_EDL) then
+@set %WOKUnix_CMPLRS_EDL = "";
+
+@if ( %Station == "hp" ) then
+  @string %CMPLRS_C_Options = %CMPLRS_C_Options " -Ae";
+  --HPJR@string %CMPLRS_CXX_Options = %CMPLRS_CXX_Options " -w +a1";
+@endif;
+
+@endif;

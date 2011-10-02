@@ -1,0 +1,37 @@
+/* XPM */
+static char * layout_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 9 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c gold",
+"O	c sky blue",
+"+	c black",
+"@	c sienna",
+"#	c slate grey",
+"$	c tomato",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XX      XX XXX ....",
+" XX ooOOOXX XXXX ...",
+" XX oOOOOXX+ + + +..",
+" XX OOOOOXX+++++++..",
+" XX @@@@@XXXX####+..",
+" XX @@@@@XXXXX###+..",
+" XXXXXXXXXXXXXXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+" XX++++++++++XXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+" XX++++++++++XXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+" XXXX$X++++++XXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+" XXXX$X++++++XXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+" XXXXXXXXXXXXXXX#+..",
+"  ############## +..",
+"..++++++++++++++++.."};

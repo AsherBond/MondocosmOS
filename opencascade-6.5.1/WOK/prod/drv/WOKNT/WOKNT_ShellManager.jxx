@@ -1,0 +1,6 @@
+#ifndef _WOKNT_Shell_HeaderFile
+#include <WOKNT_Shell.hxx>
+#endif
+#ifndef _WOKNT_ShellManager_HeaderFile
+#include <WOKNT_ShellManager.hxx>
+#endif

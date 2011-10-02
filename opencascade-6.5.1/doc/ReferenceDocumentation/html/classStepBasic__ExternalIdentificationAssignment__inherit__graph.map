@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classStepAP214__AppliedExternalIdentificationAssignment.html" title="Representation of STEP entity AppliedExternalIdentificationAssignment &#160;" alt="" coords="5,315,381,344"/>
+<area shape="rect" id="node2" href="$classStepBasic__IdentificationAssignment.html" title="Representation of STEP entity IdentificationAssignment &#160;" alt="" coords="61,160,325,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="132,83,255,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="119,5,268,35"/>
+</map>

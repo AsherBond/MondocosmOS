@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classTDF__DeltaOnModification.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="20,237,215,267"/>
+<area shape="rect" id="node4" href="$classTDF__AttributeDelta.html" title="This class discribes the services we need to &#160;&#160;implement Delta and Undo/Redo services..." alt="" coords="39,160,196,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="56,83,179,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="43,5,192,35"/>
+</map>

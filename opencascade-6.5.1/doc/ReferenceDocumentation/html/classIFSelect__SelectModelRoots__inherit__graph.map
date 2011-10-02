@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIFSelect__SelectBase.html" title="SelectBase works directly from an InterfaceModel : it is the &#160;&#160;first base for other..." alt="" coords="28,237,191,267"/>
+<area shape="rect" id="node4" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="36,160,183,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="48,83,171,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="35,5,184,35"/>
+</map>

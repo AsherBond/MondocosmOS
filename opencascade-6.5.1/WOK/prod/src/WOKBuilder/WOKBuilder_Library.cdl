@@ -1,0 +1,51 @@
+-- File:	WOKBuilder_Library.cdl
+-- Created:	Mon Oct 16 16:43:03 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Library from WOKBuilder 
+inherits Entity from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path             from WOKUtils, 
+    Param            from WOKUtils,
+    LibReferenceType from WOKBuilder,
+    HAsciiString     from TCollection
+is
+
+    Initialize(apath : Path from WOKUtils);
+
+    Initialize(aname    : HAsciiString from TCollection; 
+	       adir     : Path from WOKUtils; 
+    	       areftype : LibReferenceType from WOKBuilder);
+
+
+    SetReferenceType(me:mutable; atype : LibReferenceType from WOKBuilder); 
+    ReferenceType(me) returns  LibReferenceType from WOKBuilder; 
+    
+    SetName(me:mutable; aname : HAsciiString from TCollection);
+    Name(me) returns HAsciiString from TCollection;
+    
+    SetDirectory(me:mutable; adir : Path from WOKUtils);
+    Directory(me) returns Path from WOKUtils;
+
+    GetLibFileName(me:mutable; params : Param  from  WOKUtils) 
+    ---Purpose: Gets the file name of Library    
+    	returns HAsciiString from TCollection
+    	is deferred;
+
+    GetPath(me:mutable; params : Param  from  WOKUtils) 
+    ---Purpose: Sets the path of Library    
+    	is static;
+
+fields
+    
+    myreftype : LibReferenceType from WOKBuilder;
+    mydir     : Path             from WOKUtils; 
+    myname    : HAsciiString     from TCollection;
+
+end Library;

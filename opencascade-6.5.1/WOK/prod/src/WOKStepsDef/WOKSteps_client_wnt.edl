@@ -1,0 +1,27 @@
+-- File:	WOKSteps_client_wnt.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Oct  6 16:55:32 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_client_wnt_EDL) then
+@set %WOKSteps_client_wnt_EDL = "";
+
+@string %WOKSteps_DepGroup  += " obj.implib ";
+@set    %WOKSteps_obj_implib = "WOKStep_ImportLibrary(obj.comp)";
+
+@set %WOKSteps_LibGroup = " obj.libs obj.tks obj.lib";
+@set %WOKSteps_obj_libs = "WOKStep_DirectLinkList(obj.comp,obj.idep)";
+@set %WOKSteps_obj_tks  = "WOKStep_DirectTKReplace(obj.libs)";
+@set %WOKSteps_obj_lib  = "WOKStep_DLLink(obj.tks,obj.implib)";
+
+@set %WOKSteps_toolkit_LinksWith    = " obj.implib ";
+@set %WOKSteps_package_LinksWith    = " obj.implib ";
+@set %WOKSteps_nocdlpack_LinksWith  = " obj.implib ";
+@set %WOKSteps_engine_LinksWith     = " obj.implib ";
+@set %WOKSteps_interface_LinksWith  = " obj.implib ";
+@set %WOKSteps_executable_LinksWith = " obj.implib ";
+
+@set %WOKSteps_toolkit_ListWith = " obj.comp obj.idep ";
+
+
+@endif;

@@ -1,0 +1,39 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classExpr__BinaryExpression.html" title="Defines all binary expressions. The order of the two &#160;&#160;operands is significant. ..." alt="" coords="611,112,784,141"/>
+<area shape="rect" id="node17" href="$classExpr__NamedExpression.html" title="Describe an expression used by its name (as constants &#160;&#160;or variables). A single reference..." alt="" coords="608,272,787,301"/>
+<area shape="rect" id="node23" href="$classExpr__NumericValue.html" title="This class describes any reel value defined in an &#160;&#160;expression. &#160;" alt="" coords="623,325,772,355"/>
+<area shape="rect" id="node25" href="$classExpr__PolyExpression.html" title="Expr_PolyExpression" alt="" coords="619,379,776,408"/>
+<area shape="rect" id="node33" href="$classExpr__UnaryExpression.html" title="Expr_UnaryExpression" alt="" coords="613,992,781,1021"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,325,328,355"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,325,156,355"/>
+<area shape="rect" id="node9" href="$classExpr__BinaryFunction.html" title="Defines the use of a binary function in an expression &#160;&#160;with given arguments. &#160;" alt="" coords="841,5,999,35"/>
+<area shape="rect" id="node11" href="$classExpr__Difference.html" title="Expr_Difference" alt="" coords="855,59,985,88"/>
+<area shape="rect" id="node13" href="$classExpr__Division.html" title="Expr_Division" alt="" coords="865,112,975,141"/>
+<area shape="rect" id="node15" href="$classExpr__Exponentiate.html" title="Expr_Exponentiate" alt="" coords="845,165,995,195"/>
+<area shape="rect" id="node19" href="$classExpr__NamedConstant.html" title="Describes any numeric constant known by a special name &#160;&#160;(as PI, e,...). &#160;" alt="" coords="835,219,1005,248"/>
+<area shape="rect" id="node21" href="$classExpr__NamedUnknown.html" title="This class describes any variable of an expression. &#160;&#160;Assignment is treated directly..." alt="" coords="837,272,1003,301"/>
+<area shape="rect" id="node27" href="$classExpr__PolyFunction.html" title="Defines the use of an n&#45;ary function in an expression &#160;&#160;with given arguments. &#160;" alt="" coords="848,325,992,355"/>
+<area shape="rect" id="node29" href="$classExpr__Product.html" title="Expr_Product" alt="" coords="864,379,976,408"/>
+<area shape="rect" id="node31" href="$classExpr__Sum.html" title="Expr_Sum" alt="" coords="876,432,964,461"/>
+<area shape="rect" id="node35" href="$classExpr__Absolute.html" title="Expr_Absolute" alt="" coords="861,485,979,515"/>
+<area shape="rect" id="node37" href="$classExpr__ArcCosine.html" title="Expr_ArcCosine" alt="" coords="857,539,983,568"/>
+<area shape="rect" id="node39" href="$classExpr__ArcSine.html" title="Expr_ArcSine" alt="" coords="865,592,975,621"/>
+<area shape="rect" id="node41" href="$classExpr__ArcTangent.html" title="Expr_ArcTangent" alt="" coords="853,645,987,675"/>
+<area shape="rect" id="node43" href="$classExpr__ArgCosh.html" title="Expr_ArgCosh" alt="" coords="863,699,977,728"/>
+<area shape="rect" id="node45" href="$classExpr__ArgSinh.html" title="Expr_ArgSinh" alt="" coords="867,752,973,781"/>
+<area shape="rect" id="node47" href="$classExpr__ArgTanh.html" title="Expr_ArgTanh" alt="" coords="865,805,975,835"/>
+<area shape="rect" id="node49" href="$classExpr__Cosh.html" title="Expr_Cosh" alt="" coords="875,859,965,888"/>
+<area shape="rect" id="node51" href="$classExpr__Cosine.html" title="Expr_Cosine" alt="" coords="868,912,972,941"/>
+<area shape="rect" id="node53" href="$classExpr__Exponential.html" title="Expr_Exponential" alt="" coords="851,965,989,995"/>
+<area shape="rect" id="node55" href="$classExpr__LogOf10.html" title="Expr_LogOf10" alt="" coords="863,1019,977,1048"/>
+<area shape="rect" id="node57" href="$classExpr__LogOfe.html" title="Expr_LogOfe" alt="" coords="867,1072,973,1101"/>
+<area shape="rect" id="node59" href="$classExpr__Sign.html" title="Expr_Sign" alt="" coords="877,1125,963,1155"/>
+<area shape="rect" id="node61" href="$classExpr__Sine.html" title="Expr_Sine" alt="" coords="877,1179,963,1208"/>
+<area shape="rect" id="node63" href="$classExpr__Sinh.html" title="Expr_Sinh" alt="" coords="877,1232,963,1261"/>
+<area shape="rect" id="node65" href="$classExpr__Square.html" title="Expr_Square" alt="" coords="868,1285,972,1315"/>
+<area shape="rect" id="node67" href="$classExpr__SquareRoot.html" title="Expr_SquareRoot" alt="" coords="852,1339,988,1368"/>
+<area shape="rect" id="node69" href="$classExpr__Tangent.html" title="Expr_Tangent" alt="" coords="864,1392,976,1421"/>
+<area shape="rect" id="node71" href="$classExpr__Tanh.html" title="Expr_Tanh" alt="" coords="876,1445,964,1475"/>
+<area shape="rect" id="node73" href="$classExpr__UnaryFunction.html" title="Defines the use of an unary function in an expression &#160;&#160;with a given argument. &#160;" alt="" coords="843,1499,997,1528"/>
+<area shape="rect" id="node75" href="$classExpr__UnaryMinus.html" title="Expr_UnaryMinus" alt="" coords="853,1552,987,1581"/>
+</map>

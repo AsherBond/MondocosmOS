@@ -1,0 +1,25 @@
+-- File:	WOKStepsCSFDB.edl
+-- Author:	Jean GAUTIER
+-- History:	Tue Jul 23 16:38:57 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKStepsDFLT_EDL) then
+@set %WOKStepsDFLT_EDL = "";
+
+@set %WOKStepsDFLT_LibPath = "libwokdfltsteps.so";
+
+@if ( %LocalArch == "hp" ) then
+  @set %WOKStepsDFLT_LibPath = "libwokdfltsteps.sl";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @set %WOKStepsDFLT_LibPath = "libwokdfltsteps.dylib";
+@endif;
+
+@if ( %LocalArch == "wnt" ) then
+  @set %WOKStepsDFLT_LibPath = "wokdfltsteps.dll";
+@endif;
+
+@set %WOKStepsDFLT_DefinedSteps = " WOKDFLT_DFLTExtract ";
+
+@endif;

@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__Modifier.html" title="This class gives a frame for Actions which can work globally &#160;&#160;on a File once completely..." alt="" coords="637,352,776,381"/>
+<area shape="rect" id="node45" href="$classIGESSelect__FileModifier.html" title="IGESSelect_FileModifier" alt="" coords="617,485,796,515"/>
+<area shape="rect" id="node51" href="$classStepSelect__FileModifier.html" title="StepSelect_FileModifier" alt="" coords="617,539,796,568"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,485,328,515"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,485,156,515"/>
+<area shape="rect" id="node9" href="$classIFSelect__ModifEditForm.html" title="This modifier applies an EditForm on the entities selected &#160;" alt="" coords="864,245,1045,275"/>
+<area shape="rect" id="node11" href="$classIFSelect__ModifReorder.html" title="This modifier reorders a whole model from its roots, i.e. &#160;&#160;according to &lt;rootlast&gt;..." alt="" coords="868,299,1041,328"/>
+<area shape="rect" id="node13" href="$classIGESSelect__ModelModifier.html" title="IGESSelect_ModelModifier" alt="" coords="856,352,1053,381"/>
+<area shape="rect" id="node43" href="$classStepSelect__ModelModifier.html" title="StepSelect_ModelModifier" alt="" coords="856,405,1053,435"/>
+<area shape="rect" id="node15" href="$classIGESSelect__AddGroup.html" title="Adds a Group to contain the entities designated by the &#160;&#160;Selection. If no Selection..." alt="" coords="1152,5,1320,35"/>
+<area shape="rect" id="node17" href="$classIGESSelect__AutoCorrect.html" title="Does the absolutely effective corrections on IGES Entity. &#160;&#160;That is to say : regarding..." alt="" coords="1143,59,1329,88"/>
+<area shape="rect" id="node19" href="$classIGESSelect__ChangeLevelList.html" title="Changes Level List (in directory part) to a new single value &#160;&#160;Only entities attached..." alt="" coords="1128,112,1344,141"/>
+<area shape="rect" id="node21" href="$classIGESSelect__ChangeLevelNumber.html" title="Changes Level Number (as null or single) to a new single value &#160;&#160;Entities attached..." alt="" coords="1113,165,1359,195"/>
+<area shape="rect" id="node23" href="$classIGESSelect__ComputeStatus.html" title="Computes Status of IGES Entities for a whole IGESModel. &#160;&#160;This concerns SubordinateStatus..." alt="" coords="1131,219,1341,248"/>
+<area shape="rect" id="node25" href="$classIGESSelect__RebuildDrawings.html" title="Rebuilds Drawings which were bypassed to produce new models. &#160;&#160;If a set of entities..." alt="" coords="1129,272,1343,301"/>
+<area shape="rect" id="node27" href="$classIGESSelect__RebuildGroups.html" title="Rebuilds Groups which were bypassed to produce new models. &#160;&#160;If a set of entities..." alt="" coords="1137,325,1335,355"/>
+<area shape="rect" id="node29" href="$classIGESSelect__RemoveCurves.html" title="Removes Curves UV or 3D (not both !) from Faces, those &#160;&#160;designated by the Selection..." alt="" coords="1133,379,1339,408"/>
+<area shape="rect" id="node31" href="$classIGESSelect__SetGlobalParameter.html" title="Sets a Global (Header) Parameter to a new value, directly given &#160;&#160;Controls the form..." alt="" coords="1116,432,1356,461"/>
+<area shape="rect" id="node33" href="$classIGESSelect__SetLabel.html" title="Sets/Clears Short Label of Entities, those designated by the &#160;&#160;Selection. No Selection..." alt="" coords="1155,485,1317,515"/>
+<area shape="rect" id="node35" href="$classIGESSelect__SetVersion5.html" title="Sets IGES Version (coded in global parameter 23) to be at least &#160;&#160;IGES 5.1 . If it..." alt="" coords="1144,539,1328,568"/>
+<area shape="rect" id="node37" href="$classIGESSelect__UpdateCreationDate.html" title="Allows to Change the Creation Date indication in the Header &#160;&#160;(Global Section) of..." alt="" coords="1113,592,1359,621"/>
+<area shape="rect" id="node39" href="$classIGESSelect__UpdateFileName.html" title="Sets the File Name in Header to be the actual name of the file &#160;&#160;If new file name..." alt="" coords="1129,645,1343,675"/>
+<area shape="rect" id="node41" href="$classIGESSelect__UpdateLastChange.html" title="Allows to Change the Last Change Date indication in the Header &#160;&#160;(Global Section)..." alt="" coords="1119,699,1353,728"/>
+<area shape="rect" id="node47" href="$classIGESSelect__AddFileComment.html" title="This class allows to add comment lines on writing an IGES File &#160;&#160;These lines are..." alt="" coords="845,459,1064,488"/>
+<area shape="rect" id="node49" href="$classIGESSelect__FloatFormat.html" title="This class gives control out format for floatting values : &#160;&#160;ZeroSuppress or no,..." alt="" coords="861,512,1048,541"/>
+<area shape="rect" id="node53" href="$classStepSelect__FloatFormat.html" title="This class gives control out format for floatting values : &#160;&#160;ZeroSuppress or no,..." alt="" coords="861,565,1048,595"/>
+</map>

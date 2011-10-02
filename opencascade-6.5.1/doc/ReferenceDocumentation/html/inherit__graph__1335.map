@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classInterface__FileReaderTool.html" title="Defines services which are required to load an InterfaceModel &#160;&#160;from a File. Typically..." alt="" coords="5,32,192,61"/>
+<area shape="rect" id="node3" href="$classIGESData__IGESReaderTool.html" title="specific FileReaderTool for IGES &#160;&#160;Parameters are accessed through specific objects..." alt="" coords="241,5,439,35"/>
+<area shape="rect" id="node5" href="$classStepData__StepReaderTool.html" title="Specific FileReaderTool for Step; works with FileReaderData &#160;&#160;provides references..." alt="" coords="240,59,440,88"/>
+</map>

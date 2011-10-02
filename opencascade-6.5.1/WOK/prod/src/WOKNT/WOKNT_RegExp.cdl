@@ -1,0 +1,88 @@
+-- File:	WOKNT_RegExp.cdl
+-- Created:	Fri Aug  2 09:43:37 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class RegExp from WOKNT inherits TShared from MMgt
+
+    ---Purpose: provides regular expression matching and searching
+
+ uses
+ 
+  RESyntax     from WOKNT,
+  HAsciiString from TCollection
+
+ raises
+ 
+  ProgramError from Standard
+
+ is
+ 
+  Create returns mutable RegExp from WOKNT;
+    ---Purpose: creates a class instance
+
+  Create (
+   aPattern  : HAsciiString from TCollection;
+   aSyntax   : RESyntax     from WOKNT = WOKNT_RESyntaxAWK;
+   aTransTbl : Address      from Standard = NULL;
+   aTblLen   : Integer      from Standard = 0
+  ) returns mutable RegExp  from WOKNT
+    raises ProgramError     from Standard;
+    	---Purpose: creates a class instance with given pattern that denotes a set
+    	--          of strings. Defines a translation table <aTransTbl> and
+    	--          its length <aTblLen> to perform character translation.
+    	--          Supply NULL for <aTransTbl> and zero value for <aTblLen>
+    	--          if no translation necessary. It is possible to set
+    	--          syntax of the regular expression by meaning <aSyntax>
+    	--          parameter.
+    	--  Warning: raises if syntax of the regular expression given is incorrect
+
+  Destroy ( me : mutable );
+    	---Purpose: destroys all resources attached to the class instanse
+    	---C++:     alias ~
+    
+  SetPattern (
+   me        : mutable;
+   aPattern  : HAsciiString from TCollection;
+   aSyntax   : RESyntax     from WOKNT = WOKNT_RESyntaxAWK;
+   aTransTbl : Address      from Standard = NULL;
+   aTblLen   : Integer      from Standard = 0
+  ) raises ProgramError from Standard;
+    	---Purpose: sets a new match pattern and possibly a new pattern syntax
+    	--  Warning: raises if the syntax given is incorrect
+
+  Search (
+   me;
+   aString   : HAsciiString from TCollection;
+   aStartPos : Integer      from Standard = 1
+  ) returns Integer      from Standard
+    raises  ProgramError from Standard;
+    	---Purpose: searches a sub-string in the <aString> which matches
+        --          the specified pattern starting at index <aStartPos>.
+        --          Returns an index of the match position on success.
+        --          Returns -1 if no match was found.
+    	--          Returns -2 if error was occur.
+    	--  Warning: raises if no search pattern was set
+
+  Match (
+   me;
+   aString   : HAsciiString from TCollection;
+   aStartPos : Integer      from Standard = 1;
+   aStopPos  : Integer      from Standard = 1
+  ) returns Integer     from Standard
+    raises ProgramError from Standard;
+    	---Purpose: match the pattern given against the string <aString>
+    	--          starting at index <aStartPos>. Do not consider matching
+    	--          past the position <aStopPos>.
+    	--          Returns the length of the string matched on success.
+    	--          Returns -1 if no match was found.
+    	--          Returns -2 if error was occur.
+    	--  Warning: raises if no search pattern was set
+
+ fields
+  
+  myBuffer : Address from Standard;	 
+  myAlloc  : Boolean from Standard;
+			    
+end RegExp;

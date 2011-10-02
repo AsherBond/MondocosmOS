@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIGESControl__Controller.html" title="Controller for IGES&#45;5.1 &#160;" alt="" coords="5,237,179,267"/>
+<area shape="rect" id="node9" href="$classSTEPControl__Controller.html" title="defines basic controller for STEP processor &#160;" alt="" coords="203,237,381,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="131,83,253,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="117,5,267,35"/>
+<area shape="rect" id="node11" href="$classSTEPCAFControl__Controller.html" title="Extends Controller from STEPControl in order to provide &#160;&#160;ActorWrite adapted for..." alt="" coords="189,315,395,344"/>
+</map>

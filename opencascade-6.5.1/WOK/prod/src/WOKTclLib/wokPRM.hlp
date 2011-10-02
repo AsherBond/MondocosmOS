@@ -1,0 +1,41 @@
+This window allows consultation of all the parameters in the current session. It contains three 
+options:
+
+
+ <ByName>: Displays all the classes of parameters.
+           Open the item and click on the parameter name to get the value.
+
+ If you do not know the precise class name, use the automatic completion in the field "Class Name"
+ with the space bar. Operate similarly for the parameter name.
+
+ In any case, if more than one completion is possible, the right window indicates all the possible
+ completions. Double-click to select the name.
+
+
+ <ByFile>: Displays the directories used in the search for .edl files when evaluating a parameter.
+ 	   The number in parentheses preceding the directory name indicates the order in which the
+ 	   directories are scanned during parameter evaluation.
+ 
+
+ <Modify>: Modifies a parameter.
+
+ 1. Enter the name of the parameter in the field "Parameter Name" (if the parameter already 
+    exists, use the space bar for automatic completion).
+
+ 2. To modify a given value, enter a new value in the field "Current value".
+    To add a value to the existing one, enter this value in the field "Append".
+
+ 3. Choose the scope where the modifications are performed (possible scopes are the development
+    units, the current workbench, the current workshop and the current factory).
+ 
+ 3. Choose the DBMS/platforms on which the modifications are performed. By default, the current
+    DBMS and workstation are selected.
+
+ 4. <Show> displays the generated EDL file. This file may be edited in the window where it is
+    displayed.
+
+ 5. <Write> writes the result into the given file.
+
+ 6. <Append> writes the result at the end of the given file.
+
+ 7. <Cancel> cancels the modification.

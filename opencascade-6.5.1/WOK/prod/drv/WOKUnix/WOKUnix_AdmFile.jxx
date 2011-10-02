@@ -1,0 +1,15 @@
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Path_HeaderFile
+#include <WOKUnix_Path.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_AdmFile_HeaderFile
+#include <WOKUnix_AdmFile.hxx>
+#endif

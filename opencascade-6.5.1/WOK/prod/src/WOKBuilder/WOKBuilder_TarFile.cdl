@@ -1,0 +1,21 @@
+-- File:	WOKBuilder_TarFile.cdl
+-- Created:	Mon Oct 16 16:49:21 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class TarFile from WOKBuilder 
+inherits Miscellaneous from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+
+is
+
+
+    Create(apath : Path from WOKUtils) returns mutable TarFile from WOKBuilder;
+
+end TarFile;

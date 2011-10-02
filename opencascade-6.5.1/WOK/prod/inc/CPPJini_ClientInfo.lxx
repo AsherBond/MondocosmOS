@@ -1,0 +1,23 @@
+inline Standard_Integer CPPJini_ClientInfo :: Level () const {
+
+ return myLevel;
+
+}  // end Standard_Integer CPPJini_ClientInfo :: Level
+ 
+inline Standard_Boolean CPPJini_ClientInfo :: Root () const {
+
+ return myRoot;
+
+}  // end Standard_Boolean CPPJini_ClientInfo :: Root
+ 
+inline void CPPJini_ClientInfo :: SetRoot ( const Standard_Boolean aRoot )  {
+
+ myRoot = aRoot;
+
+}  // end void CPPJini_ClientInfo :: SetRoot
+
+inline void CPPJini_ClientInfo :: SetLevel ( const Standard_Integer aLevel )  {
+
+ myLevel = aLevel;
+
+}  // end void CPPJini_ClientInfo :: SetLevel

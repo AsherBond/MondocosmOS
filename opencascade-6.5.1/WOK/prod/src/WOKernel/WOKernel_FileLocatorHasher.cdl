@@ -1,0 +1,21 @@
+-- File:	WOKernel_FileLocatorHasher.cdl
+-- Created:	Thu Apr 25 21:05:49 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+class FileLocatorHasher from WOKernel 
+
+	---Purpose: 
+
+uses
+    File from WOKernel
+is
+
+    HashCode(myclass; akey : File from WOKernel)
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; akey1, akey2: File from WOKernel)
+    	returns Boolean from Standard;
+
+end FileLocatorHasher;

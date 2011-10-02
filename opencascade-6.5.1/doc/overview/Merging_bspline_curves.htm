@@ -1,0 +1,300 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Merging bspline curves</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { background-color:Transparent; }
+p.whs2 { margin-left:46px; font-family:'Times New Roman' , serif; background-color:Transparent; }
+p.whs3 { font-family:'Times New Roman' , serif; background-color:Transparent; margin-left:72px; }
+p.whs4 { font-family:'Times New Roman' , serif; background-color:Transparent; margin-left:108px; }
+p.whs5 { font-family:'Times New Roman' , serif; margin-left:46px; background-color:Transparent; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {background-color:white; }";
+  strNSS += "p.whs2 {background-color:white; }";
+  strNSS += "p.whs3 {background-color:white; }";
+  strNSS += "p.whs4 {background-color:white; }";
+  strNSS += "p.whs5 {background-color:white; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Data\nExamples\nMerging BSpline curves");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Merging bspline curves</p>
+
+<p class="whs1">To merge joined bspline curves, 
+ you can use following methods:</p>
+
+<p class="whs2">void GeomConvert::ConcatG1</p>
+
+<p class="whs3">TColGeom_Array1OfBSplineCurve&amp; ArrayOfCurves,</p>
+
+<p class="whs3">const TColStd_Array1OfReal&amp; ArrayOfToler,</p>
+
+<p class="whs3">Handle(<span style="font-family: 'Times New Roman', serif;
+													background-color: Transparent;
+													margin-left: 72px;">TColGeom_HArray1OfBSplineCurve) 
+ &amp; ArrayOfConcatenated,</span></p>
+
+<p class="whs3">&nbsp;const 
+ Standard_Boolean ClosedG1Flag,</p>
+
+<p class="whs3">&nbsp;const 
+ Standard_Real ClosedTolerance)</p>
+
+<p class="whs1">This method concatenates according 
+ to G1 (tangency continuity along the curve) the <span style="font-style: italic;"><I>ArrayOfCurves</I></span> 
+ as far as possible:</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfCurves</I></span> 
+ must have dimension bounds [0, N-1], N - number of curves to be merged.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfToler</I></span> 
+ contains the biggest tolerance of the two points shared by two consecutives 
+ curves. Its dimension is: [0, N-2].</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfConcatenated</I></span> 
+ contains results of operation: one or more, when impossible to merge all 
+ curves from <span style="font-style: italic;"><I>ArrayOfCurves</I></span> into 
+ one, new bspline curves are created.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ClosedG1Flag</I></span> 
+ indicates if the <span style="font-style: italic;"><I>ArrayOfCurves</I></span> 
+ is closed or not.</p>
+
+<p class="whs1">If <span style="font-style: italic;"><I>ClosedG1Flag 
+ = Standard_True</I></span>, ClosedTolerance contains the biggest tolerance 
+ of the two points which are at the closure, otherwise its value is 0.0.</p>
+
+<p class="whs2">&nbsp;void 
+ GeomConvert::ConcatC1</p>
+
+<p class="whs3">TColGeom_Array1OfBSplineCurve&amp; ArrayOfCurves,</p>
+
+<p class="whs4">const TColStd_Array1OfReal&amp; ArrayOfToler,</p>
+
+<p class="whs3">Handle(<span style="font-family: 'Times New Roman', serif;
+													background-color: Transparent;
+													margin-left: 72px;">TColStd_HArray1OfInteger)&amp; 
+ ArrayOfIndices,</span></p>
+
+<p class="whs3">Handle(<span style="font-family: 'Times New Roman', serif;
+													background-color: Transparent;
+													margin-left: 72px;">TColGeom_HArray1OfBSplineCurve)&amp; 
+ ArrayOfConcatenated,</span></p>
+
+<p class="whs3">const Standard_Boolean ClosedG1Flag,</p>
+
+<p class="whs4">const Standard_Real ClosedTolerance,</p>
+
+<p class="whs4">const Standard_Real AngularTolerance)</p>
+
+<p class="whs1">This method concatenates according 
+ to C1 (first derivative continuity along the curve) the <span style="font-style: italic;"><I>ArrayOfCurves</I></span> 
+ as far possible:</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfCurves</I></span> 
+ must have dimension bounds [0, N-1], N - number of curves to be merged.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfToler</I></span> 
+ contains the biggest tolerance of the two points shared by two consecutives 
+ curves. Its dimension: [0,N-2].</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfConcatenated</I></span> 
+ contains results of operation: one or more, when impossible to merge all 
+ curves from ArrayOfCurves in one, new bspline curves.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ArrayOfIndices</I></span> 
+ contains indices that define curves from ArrayOfCurves which are beginning 
+ curves for each group of curves merged into a new curve.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>ClosedG1Flag</I></span> 
+ indicates if the ArrayOfCurves is closed or not.</p>
+
+<p class="whs1">If <span style="font-style: italic;"><I>ClosedG1Flag 
+ = Standard_True</I></span>, ClosedTolerance contains the biggest tolerance 
+ of the two points which are at the closure, otherwise its value is 0.0.</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>AngularTolerance</I></span> 
+ is used to check the continuity of tangencies.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">void GeomConvert::ConcatC1</p>
+
+<p class="whs3">TColGeom_Array1OfBSplineCurve&amp; ArrayOfCurves,</p>
+
+<p class="whs4">const TColStd_Array1OfReal&amp; ArrayOfToler,</p>
+
+<p class="whs3">Handle<span style="font-family: 'Times New Roman', serif;
+													background-color: Transparent;
+													margin-left: 72px;">(TColStd_HArray1OfInteger)&amp; 
+ ArrayOfIndices,</span></p>
+
+<p class="whs3">Handle(<span style="font-family: 'Times New Roman', serif;
+													background-color: Transparent;
+													margin-left: 72px;">TColGeom_HArray1OfBSplineCurve)&amp; 
+ ArrayOfConcatenated,</span></p>
+
+<p class="whs4">const Standard_Boolean ClosedG1Flag,</p>
+
+<p class="whs4">const Standard_Real ClosedTolerance)</p>
+
+<p class="whs2">The same as previously, except 
+ that AngularTolerance = Precision::Angular();</p>
+
+<p class="whs1">It is also possible to use class 
+ GeomConvert_CompCurveToBSplineCurve.</p>
+
+<p class="whs1">This class provides methods to 
+ concatenate several restricted curves to a bspline curve. Non-bspline 
+ curves are converted to bspline before concatenation.</p>
+
+<p class="whs1">Constructor:</p>
+
+<p class="whs2">GeomConvert_CompCurveToBSplineCurve::</p>
+
+<p class="whs2">GeomConvert_CompCurveToBSplineCurve(const 
+ Handle(Geom_BoundedCurve)&amp; BasisCurve,</p>
+
+<p class="whs2">&nbsp;const 
+ Convert_ParameterisationType Parameterization)</p>
+
+<p class="whs2">BasisCurve - beginning curve;</p>
+
+<p class="whs1">Parameterization defines the 
+ ways of conversion in bspline (by default <span style="font-weight: bold;"><B>Convert_TgtThetaOver2</B></span>).</p>
+
+<p class="whs1">The method to add a new curve 
+ is:</p>
+
+<p class="whs5">&nbsp;&nbsp;&nbsp;Standard_Boolean 
+ GeomConvert_CompCurveToBSplineCurve::</p>
+
+<p class="whs5">&nbsp;&nbsp;Add(const 
+ Handle(Geom_BoundedCurve)&amp; NewCurve,</p>
+
+<p class="whs5">&nbsp;&nbsp;const 
+ Standard_Real Tolerance,</p>
+
+<p class="whs5">&nbsp;&nbsp;const 
+ Standard_Boolean After,</p>
+
+<p class="whs5">&nbsp;&nbsp;const 
+ Standard_Boolean WithRatio,</p>
+
+<p class="whs5">&nbsp;&nbsp;const 
+ Standard_Integer MinM)</p>
+
+<p class="whs1">Appends a curve in the <span 
+ style="font-weight: bold;"><B>BSpline</B></span>.</p>
+
+<p class="whs1">Returns False if the curve is 
+ not C0 with the <span style="font-weight: bold;"><B>BSplineCurve</B></span>.</p>
+
+<p class="whs1">Tolerance is used to check the 
+ continuity and decrease the Multiplicity at the common Knot until MinM. 
+ If MinM = 0, the common Knot can be removed.</p>
+
+<p class="whs1">The parameter <span style="font-weight: bold;"><B>after</B></span> 
+ defines the place for a new curve when it is possible to put the new curve 
+ before or after the BasisCurve (in fact, it is case when concatenated 
+ curve can be closed).</p>
+
+<p class="whs1">It does not change the shape 
+ of the curve, but defines its first and last points.</p>
+
+<p class="whs1">If <span style="font-weight: bold;"><B>WithRatio 
+ = Standard_True</B></span> the algorithm tries to reach C1 continuity.</p>
+
+<p class="whs1">The method to get a result is:</p>
+
+<p class="whs2">Handle<span style="margin-left: 46px;
+	font-family: 'Times New Roman', serif;
+	background-color: Transparent;">(Geom_BSplineCurve) GeomConvert_CompCurveToBSplineCurve::BSplineCurve() 
+ const</span></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

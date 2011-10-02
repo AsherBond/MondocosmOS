@@ -1,0 +1,80 @@
+-- File:	WOKStep_WNTCollect.cdl
+-- Created:	Tue Oct 22 09:54:53 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+deferred class WNTCollect from WOKStep inherits Step from WOKMake
+
+ uses
+
+    BuildProcess             from WOKMake,
+    DevUnit                  from WOKernel,
+    HAsciiString             from TCollection,
+    HSequenceOfObjectFile    from WOKBuilder,
+    HSequenceOfInputFile     from WOKMake,
+    WNTCollector             from WOKBuilder,
+    OutputFile               from WOKMake,
+    MapOfHAsciiString        from WOKTools,
+    IndexedMapOfHAsciiString from WOKTools,
+    HArray2OfBoolean         from TColStd
+
+ is
+ 
+    Initialize (
+     abp     : BuildProcess from WOKMake; 
+     aUnit   : DevUnit      from WOKernel;
+     aCode   : HAsciiString from TCollection;
+     checked : Boolean      from Standard;
+     hidden  : Boolean      from Standard
+    );
+    	---Purpose: provides initialization
+
+    AdmFileType ( me )
+     returns HAsciiString from TCollection
+     is redefined static protected;
+     	---Purpose: returns type of ADM file
+
+    ComputeTool ( me : mutable )
+     returns mutable WNTCollector from WOKBuilder
+     is deferred protected;
+    	---Purpose: computes build tool
+
+    ComputeObjectList (
+     me      : mutable;
+     anInput : HSequenceOfInputFile from WOKMake
+    )
+     returns mutable HSequenceOfObjectFile from WOKBuilder
+     is virtual protected;
+     	---Purpose: computes object list to build
+
+    OutputDirTypeName ( me )
+     returns HAsciiString from TCollection
+     is redefined static protected;
+     	---Purpose: returns output directoty type name
+
+    CompleteExecList (
+     me         : mutable;
+     anExecList : HSequenceOfInputFile from WOKMake
+    ) is redefined static protected;
+
+    HandleOutputFile (
+     me    : mutable;
+     aFile : OutputFile from WOKMake
+    ) returns Boolean from Standard
+      is redefined static protected;
+
+ fields
+
+    myInitFlag  : Boolean                  from Standard;
+
+    myuds       : IndexedMapOfHAsciiString from WOKTools;
+    mytks       : IndexedMapOfHAsciiString from WOKTools;
+    
+    myautorized : MapOfHAsciiString        from WOKTools;
+    myauthlist  : Boolean                  from Standard;
+    
+    mytreated   : MapOfHAsciiString        from WOKTools;
+    mymatrix    : HArray2OfBoolean         from TColStd;
+
+end WNTCollect;

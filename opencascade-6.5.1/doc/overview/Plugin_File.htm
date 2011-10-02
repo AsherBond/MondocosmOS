@@ -1,0 +1,148 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Plugin File</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-family:'Times New Roman' , serif; margin-left:46px; }
+p.whs2 { margin-left:46px; font-family:'Times New Roman' , serif; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nWorking with OCAF\nPlugin File");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Plugin File</p>
+
+<p>This file describes the list of required plug-ins to run the application 
+ and the libraries in which plug-ins are located.</p>
+
+<p>You need at least the FWOSPlugin and the drivers plug-ins to run an 
+ OCAF application.</p>
+
+<p>The syntax of each item is:</p>
+
+<p class="whs1">Identification.Location 
+ Library_Name </p>
+
+<p>where:</p>
+
+<p>Identification is GUID.</p>
+
+<p>Location is here to specify the location of the Identification (where 
+ its definition is found).</p>
+
+<p>Library_Name is the library name (and path) where the plug-in is located.</p>
+
+<p>For example, this is a Plugin file:</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1">a148e300-5740-11d1-a904-080036aaa103.Location: 
+ FWOSPlugin</p>
+
+<p>!</p>
+
+<p>! base document drivers plugin</p>
+
+<p>!</p>
+
+<p class="whs2">ad696000-5b34-11d1-b5ba-00a0c9064368.Location: 
+ PAppStdPlugin</p>
+
+<p class="whs2">ad696001-5b34-11d1-b5ba-00a0c9064368.Location: 
+ PAppStdPlugin</p>
+
+<p class="whs2">ad696002-5b34-11d1-b5ba-00a0c9064368.Location: 
+ PAppStdPlugin</p>
+
+<p class="whs2">47b0b826-d931-11d1-b5da-00a0c9064368.Location: 
+ PAppStdPlugin</p>
+
+<p class="whs2">47b0b827-d931-11d1-b5da-00a0c9064368.Location: 
+ PAppStdPlugin</p>
+
+<p>&nbsp;</p>
+
+<p>Important: note that .dll extensions were used for the previous plugin 
+ names before Open CASCADE Technology version 4.0. </p>
+
+<p>For example, prior to 4.0, <span style="font-style: italic;"><I>PAppStdPlugin</I></span> 
+ was identified as <span style="font-style: italic;"><I>PAppStdPlugin.dll</I></span>.</p>
+
+<p>The extensions are no longer needed.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

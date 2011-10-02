@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classDynamic__CompositVariableInstance.html" title="This class corresponds to the instanciation of a &#160;&#160;variable group. It allows the..." alt="" coords="5,315,267,344"/>
+<area shape="rect" id="node11" href="$classDynamic__VariableInstance.html" title="This class is set in the fields of the &#160;&#160;MethodInstance class. When a MethodInstance..." alt="" coords="291,315,488,344"/>
+<area shape="rect" id="node2" href="$classDynamic__Variable.html" title="This class is the root class for describing &#160;&#160;variables. A variable is useful to..." alt="" coords="193,160,332,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="201,83,324,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="188,5,337,35"/>
+</map>

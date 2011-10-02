@@ -1,0 +1,149 @@
+-- File:	WOKAPI_BuildProcess.cdl
+-- Created:	Fri Jun 13 11:18:45 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class BuildProcess from WOKAPI 
+
+	---Purpose: 
+
+uses
+    Step                    from WOKMake,
+    HSequenceOfStepOption   from WOKMake,
+    BuildProcess            from WOKMake,
+    BuildStatus             from WOKAPI,
+    Workbench               from WOKAPI,
+    SequenceOfUnit          from WOKAPI,
+    Unit                    from WOKAPI,
+    SequenceOfMakeStep      from WOKAPI,
+    HSequenceOfDefine       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    SequenceOfHAsciiString  from TColStd
+    
+
+is
+
+    Create returns BuildProcess from WOKAPI;
+    
+    Init(me:out; abench     : Workbench from WOKAPI)
+    	returns Boolean from Standard;
+    
+    SetForceFlag(me:out; aflag : Boolean from Standard);
+    
+    Add(me:out; adevunit : Unit from WOKAPI);
+    Add(me:out; units : SequenceOfUnit from WOKAPI);
+
+    SelectOnGroups(me:out; aunit      : Unit from WOKAPI; 
+    	    	           group      : HAsciiString from TCollection;
+    	    	      	   selectflag : Boolean from Standard = Standard_True)
+    ---Purpose: Select agroup AND aunit for execution
+    --            all groups are selected if agroup is Null
+    --            all units are treated if aunit is invalid
+    --            returns number of selected steps
+    
+   	returns Integer from Standard;
+	
+    SelectOnGroups(me:out; units      : SequenceOfUnit from WOKAPI; 
+    	    	    	   groups     : SequenceOfHAsciiString from TColStd;
+    	    	    	   selectflag : Boolean from Standard = Standard_True)
+    ---Purpose:     Select groups AND units for execution
+    --            all groups are selected if groups is Empty
+    --            all units are treated if units is Empty
+    --            returns number of selected steps
+    	returns Integer from Standard;
+
+    SelectOnTypesAndGroups(me:out; unittypes  : SequenceOfHAsciiString from TColStd; 
+    	    	    	           groups     : SequenceOfHAsciiString from TColStd;
+    	    	    	           selectflag : Boolean from Standard = Standard_True)
+    ---Purpose:     Select groups AND units on their types for execution
+    --              all groups are selected if groups is Empty
+    --              all units are treated if unit types is Empty
+    --            returns number of selected steps
+    	returns Integer from Standard;
+
+    SelectOnSteps(me:out; aunit        : Unit from WOKAPI; 
+    	    	          astart, aend : HAsciiString from TCollection;
+    	    	    	  selectflag   : Boolean from Standard = Standard_True)
+    ---Purpose: Select steps within aunit for execution
+    --            select from begining if astart is Null
+    --            select until end if aend is Nul
+    --            returns number of selected steps
+    
+   	returns Integer from Standard;
+	
+    SelectOnSteps(me:out; units        : SequenceOfUnit from WOKAPI; 
+    	    	          astart, aend : HAsciiString from TCollection;
+    	    	    	  selectflag   : Boolean from Standard = Standard_True)
+    ---Purpose: Select steps within units for execution
+    --            select from begining if astart is Null
+    --            select until end if aend is Nul
+    --            returns number of selected steps
+   	returns Integer from Standard;
+
+    SelectOnSteps(me:out; unittypes    : SequenceOfHAsciiString from TColStd; 
+    	    	          astart, aend : HAsciiString from TCollection;
+    	    	    	  selectflag   : Boolean from Standard = Standard_True)
+    ---Purpose: Select steps within unit types for execution
+    --            select from begining if astart is Null
+    --            select until end if aend is Nul
+    --            returns number of selected steps
+   	returns Integer from Standard;
+    
+    SelectOnDefines(me:out; defines : HSequenceOfDefine from WOKTools)
+    ---Purpose: select steps on defines
+    --          defines are:
+    --               for units:
+    --                       Units=Unit1,Unit2,...,UnitN
+    --                       UnitTypes=UnitType1,UnitType2,...,UnitTypeN
+    --                       XUnits=Unit1,Unit2,...,UnitN
+    --                       XUnitTypes=UnitType1,UnitType2,...,UnitTypeN
+    --               for steps within units:
+    --                       Groups=Group1,Group2,...GroupN
+    --                       XGroups=Group1,Group2,...GroupN
+
+    	returns Integer from Standard;
+    
+    UnSelectAll(me:out)
+    ---Purpose: unselects all previously selected steps
+    --          returns number of unselected steps
+    	returns Integer from Standard;
+
+    
+    ApplyTargetsToSteps(me; astep   : HAsciiString from TCollection;
+    	    	    	    targets : HSequenceOfHAsciiString from TColStd)
+    	returns Integer from Standard;
+
+    SelectedStepsNumber(me)
+    	returns Integer from Standard;
+	
+    SelectedSteps(me; aseq : out SequenceOfMakeStep from WOKAPI);
+
+    UnitSteps(me; aunit : Unit from WOKAPI; aseq : out SequenceOfMakeStep from WOKAPI);
+
+    PrintBanner(me);
+
+    Execute(me:out; alogflag : Boolean from Standard = Standard_False) 
+    	returns BuildStatus from WOKAPI;
+
+    
+    ------ BuildProcess PRIVATE methods
+    
+    SelectStep(me:out; astep : Step from WOKMake;
+    	    	    	selectflag : Boolean from Standard = Standard_True)
+	returns Integer from Standard
+    	is private;
+
+
+fields
+
+    myinit    : Boolean      from Standard;
+    mybench   : Workbench    from WOKAPI;
+    myprocess : BuildProcess from WOKMake;
+    myforce   : Boolean      from Standard;
+    myselect  : Integer      from Standard;
+    myoptions : HSequenceOfStepOption from WOKMake;
+
+end BuildProcess;

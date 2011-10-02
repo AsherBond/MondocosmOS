@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classIGESData__IGESReaderTool.html" title="specific FileReaderTool for IGES &#160;&#160;Parameters are accessed through specific objects..." alt="" coords="5,83,203,112"/>
+<area shape="rect" id="node5" href="$classStepData__StepReaderTool.html" title="Specific FileReaderTool for Step; works with FileReaderData &#160;&#160;provides references..." alt="" coords="227,83,427,112"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classNCollection__Array1_1_1Iterator.html" title="Implementation of the Iterator interface." alt="" coords="524,5,855,35"/>
+<area shape="rect" id="node5" href="$classNCollection__Array2_1_1Iterator.html" title="NCollection_Array2\&lt; TheItemType \&gt;::Iterator" alt="" coords="524,59,855,88"/>
+<area shape="rect" id="node7" href="$classNCollection__DataMap_1_1Iterator.html" title="NCollection_DataMap\&lt; TheKeyType, TheItemType \&gt;::Iterator" alt="" coords="471,112,908,141"/>
+<area shape="rect" id="node9" href="$classNCollection__DoubleMap_1_1Iterator.html" title="NCollection_DoubleMap\&lt; TheKey2Type \&gt;::Iterator" alt="" coords="508,165,871,195"/>
+<area shape="rect" id="node11" href="$classNCollection__IndexedDataMap_1_1Iterator.html" title="Implementation of the Iterator interface." alt="" coords="443,219,936,248"/>
+<area shape="rect" id="node13" href="$classNCollection__IndexedMap_1_1Iterator.html" title="NCollection_IndexedMap\&lt; TheKeyType \&gt;::Iterator" alt="" coords="508,272,871,301"/>
+<area shape="rect" id="node15" href="$classNCollection__Map_1_1Iterator.html" title="Implementation of the Iterator interface." alt="" coords="536,325,843,355"/>
+<area shape="rect" id="node17" href="$classNCollection__Sequence_1_1Iterator.html" title="Implementation of the Iterator interface." alt="" coords="512,379,867,408"/>
+<area shape="rect" id="node19" href="$classNCollection__SList.html" title="NCollection_SList\&lt; TheItemType \&gt;" alt="" coords="560,432,819,461"/>
+<area shape="rect" id="node21" href="$classNCollection__TListIterator.html" title="NCollection_TListIterator\&lt; TheItemType \&gt;" alt="" coords="535,485,844,515"/>
+<area shape="rect" id="node23" href="$classNCollection__Vector_1_1Iterator.html" title="NCollection_Vector\&lt; TheItemType \&gt;::Iterator" alt="" coords="523,539,856,568"/>
+<area shape="rect" id="node25" href="$classPoly__CoherentTriangulation_1_1IteratorOfLink.html" title="Poly_CoherentTriangulation::IteratorOfLink" alt="" coords="996,485,1305,515"/>
+<area shape="rect" id="node27" href="$classPoly__CoherentTriangulation_1_1IteratorOfNode.html" title="Poly_CoherentTriangulation::IteratorOfNode" alt="" coords="992,539,1309,568"/>
+<area shape="rect" id="node29" href="$classPoly__CoherentTriangulation_1_1IteratorOfTriangle.html" title="Poly_CoherentTriangulation::IteratorOfTriangle" alt="" coords="984,592,1317,621"/>
+</map>

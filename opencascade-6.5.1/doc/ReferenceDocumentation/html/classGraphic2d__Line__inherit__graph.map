@@ -1,0 +1,48 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classGGraphic2d__Curve.html" title="The primitive Curve &#160;" alt="" coords="780,5,924,35"/>
+<area shape="rect" id="node11" href="$classGGraphic2d__SetOfCurves.html" title="The primitive SetOfCurves &#160;" alt="" coords="756,59,948,88"/>
+<area shape="rect" id="node13" href="$classGraphic2d__Circle.html" title="Constructs a primitive Circle &#160;" alt="" coords="785,112,919,141"/>
+<area shape="rect" id="node15" href="$classGraphic2d__Ellips.html" title="The primitive Ellips &#160;" alt="" coords="788,165,916,195"/>
+<area shape="rect" id="node17" href="$classGraphic2d__InfiniteLine.html" title="The primitive InfiniteLine &#160;" alt="" coords="767,219,937,248"/>
+<area shape="rect" id="node19" href="$classGraphic2d__Marker.html" title="The primitive Marker &#160;" alt="" coords="781,272,923,301"/>
+<area shape="rect" id="node21" href="$classGraphic2d__Polyline.html" title="The primitive Polyline &#160;" alt="" coords="779,325,925,355"/>
+<area shape="rect" id="node23" href="$classGraphic2d__Segment.html" title="The primitive Segment &#160;" alt="" coords="773,379,931,408"/>
+<area shape="rect" id="node25" href="$classGraphic2d__SetOfMarkers.html" title="The primitive SetOfMarkers &#160;&#160;Warning: This primitive must be use as possible for..." alt="" coords="759,432,945,461"/>
+<area shape="rect" id="node27" href="$classGraphic2d__SetOfPolylines.html" title="The primitive SetOfPolylines &#160;&#160;Warning: This primitive must be use as possible for..." alt="" coords="756,485,948,515"/>
+<area shape="rect" id="node29" href="$classGraphic2d__SetOfSegments.html" title="The primitive SetOfSegments &#160;&#160;Warning: This primitive must be use as possible for..." alt="" coords="751,539,953,568"/>
+<area shape="rect" id="node31" href="$classGraphic2d__VectorialMarker.html" title="Groups all the primitives which behaves like &#160;&#160;geometrical marker. &#160;&#160;for example..." alt="" coords="752,592,952,621"/>
+<area shape="rect" id="node39" href="$classPrs2d__Arrow.html" title="Constructs the primitive arrow &#160;" alt="" coords="800,645,904,675"/>
+<area shape="rect" id="node41" href="$classPrs2d__Axis.html" title="Constructs the primitive Axis &#160;" alt="" coords="805,699,899,728"/>
+<area shape="rect" id="node43" href="$classPrs2d__Dimension.html" title="Groups all dimensions &#160;" alt="" coords="784,752,920,781"/>
+<area shape="rect" id="node55" href="$classPrs2d__DrawSymbol.html" title="The primitive symbol for drawing &#160;" alt="" coords="777,805,927,835"/>
+<area shape="rect" id="node57" href="$classPrs2d__Point.html" title="Constructs presentable and selectable Point. &#160;&#160;It&#39;s displayed as a definite type..." alt="" coords="801,859,903,888"/>
+<area shape="rect" id="node59" href="$classPrs2d__RadiusIndep.html" title="Constructs the primitive Radius &#160;" alt="" coords="779,912,925,941"/>
+<area shape="rect" id="node61" href="$classPrs2d__Tolerance.html" title="Groups all the tolerances &#160;" alt="" coords="787,1232,917,1261"/>
+<area shape="rect" id="node93" href="$classPrs2d__ToleranceFrame.html" title="Prs2d_ToleranceFrame" alt="" coords="767,1285,937,1315"/>
+<area shape="rect" id="node2" href="$classGraphic2d__Primitive.html" title="Groups all drawing elements which can be stored &#160;&#160;in a graphic object. &#160;&#160;Each primitive..." alt="" coords="376,512,531,541"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,512,328,541"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,512,156,541"/>
+<area shape="rect" id="node33" href="$classGraphic2d__CircleMarker.html" title="The primitive CircleMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="1009,485,1188,515"/>
+<area shape="rect" id="node35" href="$classGraphic2d__EllipsMarker.html" title="The primitive EllipsMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="1012,539,1185,568"/>
+<area shape="rect" id="node37" href="$classGraphic2d__PolylineMarker.html" title="The primitive PolylineMarker &#160;&#160;Every marker takes a reference point as an argument..." alt="" coords="1003,592,1195,621"/>
+<area shape="rect" id="node45" href="$classPrs2d__Angle.html" title="Constructs the primitive Angle &#160;" alt="" coords="1048,645,1149,675"/>
+<area shape="rect" id="node47" href="$classPrs2d__Diameter.html" title="Constructs the primitive Radius &#160;" alt="" coords="1033,699,1164,728"/>
+<area shape="rect" id="node49" href="$classPrs2d__Length.html" title="Constructs the primitive Length &#160;" alt="" coords="1041,752,1156,781"/>
+<area shape="rect" id="node51" href="$classPrs2d__Radius.html" title="Constructs the primitive Radius &#160;" alt="" coords="1044,805,1153,835"/>
+<area shape="rect" id="node53" href="$classPrs2d__Repere.html" title="Constructs the repere &#160;" alt="" coords="1041,859,1156,888"/>
+<area shape="rect" id="node63" href="$classPrs2d__Angularity.html" title="Prs2d_Angularity" alt="" coords="1032,912,1165,941"/>
+<area shape="rect" id="node65" href="$classPrs2d__Circularity.html" title="Prs2d_Circularity" alt="" coords="1032,965,1165,995"/>
+<area shape="rect" id="node67" href="$classPrs2d__Concentric.html" title="Prs2d_Concentric" alt="" coords="1029,1019,1168,1048"/>
+<area shape="rect" id="node69" href="$classPrs2d__Cylindric.html" title="Prs2d_Cylindric" alt="" coords="1037,1072,1160,1101"/>
+<area shape="rect" id="node71" href="$classPrs2d__Flatness.html" title="Prs2d_Flatness" alt="" coords="1037,1125,1160,1155"/>
+<area shape="rect" id="node73" href="$classPrs2d__LineProfile.html" title="Prs2d_LineProfile" alt="" coords="1031,1179,1167,1208"/>
+<area shape="rect" id="node75" href="$classPrs2d__Parallelism.html" title="Prs2d_Parallelism" alt="" coords="1031,1232,1167,1261"/>
+<area shape="rect" id="node77" href="$classPrs2d__Perpendicular.html" title="Prs2d_Perpendicular" alt="" coords="1020,1285,1177,1315"/>
+<area shape="rect" id="node79" href="$classPrs2d__Position.html" title="Prs2d_Position" alt="" coords="1040,1339,1157,1368"/>
+<area shape="rect" id="node81" href="$classPrs2d__Straightness.html" title="Prs2d_Straightness" alt="" coords="1024,1392,1173,1421"/>
+<area shape="rect" id="node83" href="$classPrs2d__SurfProfile.html" title="Prs2d_SurfProfile" alt="" coords="1032,1445,1165,1475"/>
+<area shape="rect" id="node85" href="$classPrs2d__SymCircular.html" title="Prs2d_SymCircular" alt="" coords="1027,1499,1171,1528"/>
+<area shape="rect" id="node87" href="$classPrs2d__Symmetry.html" title="Prs2d_Symmetry" alt="" coords="1031,1552,1167,1581"/>
+<area shape="rect" id="node89" href="$classPrs2d__SymTotal.html" title="Prs2d_SymTotal" alt="" coords="1036,1605,1161,1635"/>
+<area shape="rect" id="node91" href="$classPrs2d__Taper.html" title="Prs2d_Taper" alt="" coords="1048,1659,1149,1688"/>
+</map>

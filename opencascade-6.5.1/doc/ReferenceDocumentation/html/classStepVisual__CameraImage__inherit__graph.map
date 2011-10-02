@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepVisual__CameraImage2dWithScale.html" title="StepVisual_CameraImage2dWithScale" alt="" coords="5,392,283,421"/>
+<area shape="rect" id="node13" href="$classStepVisual__CameraImage3dWithScale.html" title="StepVisual_CameraImage3dWithScale" alt="" coords="307,392,584,421"/>
+<area shape="rect" id="node2" href="$classStepRepr__MappedItem.html" title="StepRepr_MappedItem" alt="" coords="205,237,384,267"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="180,160,409,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="233,83,356,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="220,5,369,35"/>
+</map>

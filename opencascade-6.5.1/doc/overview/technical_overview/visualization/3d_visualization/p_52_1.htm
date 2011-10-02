@@ -1,0 +1,240 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+ul.whs2 { list-style:disc; }
+p.whs3 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nVisualization\n3D Graphics & Visualization\nApplication Interactive Services (AIS)");
+addAvenueInfo("3D Visualization","technical_overview/visualization/3d_visualization/p_51_1.htm","technical_overview/visualization/3d_visualization/p_53_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Application Interactive Services (AIS)</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">Application Interactive 
+ Services provide the means to create links between an application GUI 
+ viewer and the packages which are used to manage selection and presentation. 
+ The tools <font style="font-weight: bold;">AIS</font> defined in order 
+ to do this include different sorts of entities: both the selectable viewable 
+ objects themselves and the context and attribute managers to define their 
+ selection and display.</p>
+
+<p class="whs1">To orient the user 
+ as he works in a modeling environment, views and selections must be comprehensible. 
+ There must be several different sorts of selectable and viewable object 
+ defined. These must also be interactive, that is, connecting graphic representation 
+ and the underlying reference geometry. These entities are called Interactive 
+ Objects, and are divided into four types:</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p class="whs3"><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;</font></span>the 
+ Datum</p></li>
+	
+	<li class=kadov-p><p class="whs3"><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;</font></span>the 
+ Relation</p></li>
+	
+	<li class=kadov-p><p class="whs3"><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;</font></span>the 
+ Object</p></li>
+	
+	<li class=kadov-p><p class="whs3"><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;</font></span>None.</p></li>
+</ul>
+
+<p class="whs1">The Datum groups together 
+ the construction elements such as lines, circles, points, trihedrons, 
+ plane trihedrons, planes and axes.</p>
+
+<p class="whs1">The Relation is made 
+ up of constraints on one or more interactive shapes and the corresponding 
+ reference geometry. For example, you might want to constrain two edges 
+ in a parallel relation. This constraint is considered as an object in 
+ its own right, and is shown as a sensitive primitive. This takes the graphic 
+ form of a perpendicular arrow marked with the <font style="font-style: italic;">||</font> 
+ symbol and lying between the two edges.</p>
+
+<p class="whs1">The Object type includes 
+ topological shapes, and connections between shapes.</p>
+
+<p class="whs1"><font style="font-style: italic;">None</font>, 
+ in order not to eliminate the object, tells the application to look further 
+ until it finds an object definition in its generation which is accepted.</p>
+
+<p class="whs1">Inside these categories, 
+ you have the possibility of<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>an 
+ additional characterization by means of a signature. The signature provides 
+ an index to the further characterization. By default, the<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Interactive 
+ Object has a <font style="font-style: italic;">None</font> type and a 
+ signature of <font style="font-style: italic;">0</font> (equivalent to 
+ <font style="font-style: italic;">None</font>.) If you want to give a 
+ particular type and signature to your interactive object, you must redefine 
+ the two virtual methods: <font style="font-weight: bold;">Type</font> 
+ and <font style="font-weight: bold;">Signature</font>.</p>
+
+<p class="whs1">In the C++ inheritance 
+ structure of the package, each class representing a specific Interactive 
+ Object inherits <font style="font-weight: bold;">AIS_InteractiveObject</font>. 
+ Among these inheriting classes, <font style="font-weight: bold;">AIS_Relation</font> 
+ functions as the abstract mother class for inheriting classes defining 
+ display of specific relational constraints and types of dimension. Some 
+ of these include:</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>display 
+ of constraints based on relations of symmetry, tangency, parallelism and 
+ concentricity</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>display 
+ of dimensions for angles, offsets, diameters, radii and chamfers.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs1">No viewer can show 
+ everything at once with any coherence or clarity. Views must be managed 
+ carefully both sequentially and at any given instant. Another function 
+ of the view is that of a context to carry out design in. The design changes 
+ are applied to the objects in the view and then extended to the underlying 
+ reference geometry by a solver. To make sense of this complicated visual 
+ data, several display and selection tools are required. To facilitate 
+ management, each object and each construction element has a selection 
+ priority. There are also means to modify the default priority.</p>
+
+<p class="whs1">To define an environment 
+ of dynamic detection, you can use standard filter classes or create your 
+ own. A filter questions the owner of the sensitive primitive in local 
+ context to determine if it has the desired qualities. If it answers positively, 
+ it is kept. If not, it is rejected.</p>
+
+<p class="whs1">The standard filters 
+ supplied in AIS include:</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p class="whs3">AIS_AttributeFilter</p></li>
+	
+	<li class=kadov-p><p class="whs3">AIS_SignatureFilter</p></li>
+	
+	<li class=kadov-p><p class="whs3">AIS_TypeFilter.</p></li>
+</ul>
+
+<p class="whs1">Only the type filter 
+ can be used in the default operating mode, the neutral point. The others 
+ can only be used in open local contexts.</p>
+
+<p class="whs1">Neutral point and local 
+ context constitute the two operating modes of the central entity which 
+ pilots visualizations and selections, the Interactive Context. It is linked 
+ to a main viewer and if you like, a trash bin viewer as well.</p>
+
+<p class="whs1">The neutral point, 
+ which is the default mode, allows you to easily visualize and select interactive 
+ objects which have been loaded into the context. Opening local contexts 
+ allows you to prepare and use a temporary selection environment without 
+ disturbing the neutral point. A set of functions allows you to choose 
+ the interactive objects which you want to act on, the selection modes 
+ which you want to activate, and the temporary visualizations which you 
+ will execute. When the operation is finished, you close the current local 
+ context and return to the state in which you were before opening it (neutral 
+ point or previous local context).</p>
+
+<p class="whs1">An interactive object 
+ can have a certain number of graphic attributes which are specific to 
+ it, such as visualization mode, color, and material. By the same token, 
+ the interactive context has a set of graphic attributes, the Drawer which 
+ is valid by default for the objects it controls.<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>When 
+ an interactive object is visualized, the required graphic attributes are 
+ first taken from the object's own Drawer if one exists, or from the context 
+ drawer for the others.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

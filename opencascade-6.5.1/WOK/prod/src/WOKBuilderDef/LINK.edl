@@ -1,0 +1,85 @@
+-- File		:	LINK.edl
+-- Author	:	Eugeny PLOTNIKOV
+-- Date		:	23-OCT-1996
+-- Copyright	:	MATRA Datavision
+-- Purpose	:	Defines tools for link and library management
+--			( Microsoft Visual C/C++ V4.1 )
+
+@ifnotdefined ( %LINK_EDL ) then
+-- @set %LINK_EDL = ""--; Syntax error
+ @cout "LINK";
+
+ @uses "CSF.edl";
+
+-- filename extension for linker command file ( DLL )
+ @set %LINK_LinkerCFExtDLL = ".lnkDLL";
+
+-- filename extension for linker command file ( EXE )
+ @set %LINK_LinkerCFExtEXE = ".lnkEXE";
+
+-- switch for linker .def file
+ @set %LINK_LinkerDEFSwitch = " -def:";
+
+ @set %LINK_LinkerImplib    = " -implib:";
+ @set %LINK_LinkerOutput    = " -out:";
+ 
+
+ @set %LINKModeOpt  = "-debug";
+
+-- Set %LINK_NoDefStub if you do not want to link with stub objects
+ @set %LINK_NoDefStub = "1 ";
+
+ @if ( %DebugMode == "True" ) then
+ 	@set %LinkModeOpt = "-debug ";
+	@set %LINK_LinkerPDBOption = " -pdb:";
+	@template LINK_LinkerPDB ( %CollectorOutput ) is
+		$%CollectorOutput.pdb\^
+	@end;
+ @else
+	@set %LinkModeOpt = " ";
+	@set %LINK_LinkerPDBOption = " ";
+	@template LINK_LinkerPDB ( %CollectorOutput ) is
+		$ \^
+	@end;
+
+ @endif;
+ 
+
+ @template LINK_LinkerIMP ( %CollectorOutput ) is
+	$%CollectorOutput.lib\^
+ @end;
+
+ @template LINK_LinkerEXP ( %CollectorOutput ) is
+	$%CollectorOutput.exp\^
+ @end;
+
+ @template LINK_DLLMAN ( %CollectorOutput ) is
+	$%CollectorOutput.dll.manifest\^
+ @end;
+
+ @template LINK_EXEMAN ( %CollectorOutput ) is
+	$%CollectorOutput.exe.manifest\^
+ @end;
+
+ @template LINK_LinkerDLL ( %CollectorOutput ) is
+	$%CollectorOutput.dll\^
+ @end;
+
+ @template LINK_LinkerEXE ( %CollectorOutput ) is
+	$%CollectorOutput.exe\^
+ @end;
+
+ @template LINK_LinkerHeaderDLL ( %CSF_LINKER ,
+                                               %Station,
+                                               %LINKModeOpt ) is
+	$%CSF_LINKER -nologo -subsystem:windows -dll -incremental:no -machine:IX86 %LINKModeOpt \^
+ @end;
+
+ @template LINK_LinkerHeaderEXE ( %CSF_LINKER ,
+                                               %Station,
+                                               %LINKModeOpt,
+                                               %LinkSubsystem ) is
+	$%CSF_LINKER -nologo -subsystem:%LinkSubsystem -incremental:no -machine:IX86 %LINKModeOpt \^
+ @end;
+
+@endif;

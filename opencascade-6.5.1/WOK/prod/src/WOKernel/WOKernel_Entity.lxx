@@ -1,0 +1,37 @@
+// File:	WOKernel_Entity.lxx
+// Created:	Wed Jul 26 18:37:20 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : ChangeParams
+//purpose  : 
+//=======================================================================
+inline WOKUtils_Param& WOKernel_Entity::ChangeParams()  
+{
+  return myparams;
+}
+
+//=======================================================================
+//function : IsOpened
+//purpose  : is the entity opened ?
+//=======================================================================
+inline Standard_Boolean WOKernel_Entity::IsOpened() const 
+{
+  return myopenstatus;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Params
+//purpose  : 
+//=======================================================================
+inline const WOKUtils_Param& WOKernel_Entity::Params() const 
+{
+  return myparams;
+}
+
+

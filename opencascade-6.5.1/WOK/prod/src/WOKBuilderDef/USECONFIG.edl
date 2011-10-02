@@ -1,0 +1,10 @@
+@ifdefined (%ShopName) then
+@string %FileUseConfig = "%"%ShopName"_UseConfig";
+@set %UseConfig = [%FileUseConfig];
+@string %TargetConfig = "%"%ShopName"_ParcelConfig";
+@string %fileconfig = %UseConfig".edl";
+@uses %fileconfig;
+@string %MyConf = "%"%UseConfig"_Config";
+@set [%TargetConfig] = [%MyConf];
+@unset %ShopName;
+@endif;

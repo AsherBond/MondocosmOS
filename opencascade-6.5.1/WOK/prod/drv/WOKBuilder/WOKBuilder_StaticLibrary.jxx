@@ -1,0 +1,12 @@
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_StaticLibrary_HeaderFile
+#include <WOKBuilder_StaticLibrary.hxx>
+#endif

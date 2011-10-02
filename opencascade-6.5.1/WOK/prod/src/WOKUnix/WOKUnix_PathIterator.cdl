@@ -1,0 +1,66 @@
+-- File:	WOKUnix_PathIterator.cdl
+-- Created:	Mon Aug 03 15:37:45 1998
+-- Author:	
+--		<jga@GROMINEX>
+---Copyright:	 Matra Datavision 1998
+
+
+class PathIterator from WOKUnix
+
+
+uses 
+    Boolean from Standard,
+    HAsciiString from TCollection,
+    AsciiString from TCollection,
+    StackOfDir from WOKUnix,
+    Dir from WOKUnix,
+    DirEnt from WOKUnix,
+    Path from WOKUnix
+    
+is
+
+
+    Create(apath : Path from WOKUnix; recursive : Boolean from Standard = Standard_False; mask : CString from Standard = "*")
+    	returns PathIterator from WOKUnix;
+
+    SkipDots(me:out) is private;
+    	
+    IsDots(myclass; aname : CString from Standard)
+    	returns Boolean from Standard is private;
+
+    Push(me:out; apath : Path from WOKUnix; adir : Dir from WOKUnix) is private;
+    Pop(me:out) is private;
+    
+    Next(me:out);
+    
+    
+    PathValue(me)
+    	returns Path from WOKUnix;
+    
+    LevelValue(me)
+    	returns Integer from Standard;
+	
+    NameValue(me)
+    	returns HAsciiString from TCollection;
+
+    BrowsedPath(me)
+	returns Path from WOKUnix;    	
+		
+    More(me)
+    	returns Boolean from Standard;
+
+    Destroy(me:in out);
+    ---C++: alias ~
+
+fields
+
+    mymask      : AsciiString from TCollection;
+    mypath      : Path from WOKUnix;
+    mydata      : DirEnt from WOKUnix;
+    mystack     : StackOfDir from WOKUnix;
+    mymore      : Boolean from Standard;
+    myrecflag   : Boolean from Standard;
+
+end;
+
+

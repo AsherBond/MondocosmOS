@@ -1,0 +1,58 @@
+-- File:	WOKAPI_Locator.cdl
+-- Created:	Wed Apr 10 20:40:57 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class Locator from WOKAPI 
+
+	---Purpose: 
+
+uses
+    Entity                  from WOKAPI,
+    Workbench               from WOKAPI,
+    Unit                    from WOKAPI,
+    File                    from WOKAPI,
+    Session                 from WOKAPI,
+    Locator                 from WOKernel,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection
+
+is
+
+    Create returns Locator from WOKAPI;
+	
+    Create(alocator : Locator from WOKernel) returns Locator from WOKAPI;
+
+    IsValid(me) returns Boolean from Standard;
+
+    Set(me:out; alocator : Locator   from WOKernel);
+    Set(me:out; awb      : Workbench from WOKAPI);
+    Set(me:out; asession : Session   from WOKAPI; avisibility : HSequenceOfHAsciiString from TColStd);
+
+    Reset(me);
+    Check(me);
+
+    Locator(me)
+    	returns Locator from WOKernel;
+	    
+    Locate(me; alocatorname : HAsciiString from TCollection)
+    	returns File from WOKAPI;
+	
+    Locate(me; anent : Entity from WOKAPI; atype, aname : HAsciiString from TCollection)
+    	returns File from WOKAPI;
+	
+    Locate(me; anent : Entity from WOKAPI; atype : HAsciiString from TCollection)
+    	returns File from WOKAPI;
+    
+    Locate(me; afile : out File from WOKAPI);
+    
+    LocateUnit(me; alocatorname : HAsciiString from TCollection)
+    	returns Unit from WOKAPI;
+
+fields
+    
+    mylocator : Locator from WOKernel;
+
+end Locator;

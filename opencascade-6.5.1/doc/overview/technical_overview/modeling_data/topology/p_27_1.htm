@@ -1,0 +1,229 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; }
+p.whs2 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; background-color:Transparent; }
+ul.whs3 { list-style:disc; }
+p.whs4 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; font-family:Arial, sans-serif; background-color:Transparent; }
+p.whs5 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; font-family:Arial, sans-serif; }
+p.whs6 { margin-left:4.50pt; margin-top:10.00pt; font-family:Arial, sans-serif; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {background-color:white; }";
+  strNSS += "p.whs4 {text-indent:1pt;background-color:white; }";
+  strNSS += "p.whs5 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Data\nTopology\nTopological Data Structure");
+addAvenueInfo("Topology","","technical_overview/modeling_data/topology/p_28_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Topological Data Structure</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">The topological library allows 
+ you to build pure topological data structures.</p>
+
+<p class="whs2">Topology defines relationships 
+ between simple geometric entities. In this way, you can model complex 
+ shapes as assemblies of simpler entities. Thanks to the built-in non-manifold 
+ (or mixed-dimensional) feature, you can build models mixing:</p>
+
+<ul type="disc" class="whs3">
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;0D 
+ entities such as points</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;1D 
+ entities such as curves</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;2D 
+ entities such as surfaces</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;3D 
+ entities such as volumes.</p></li>
+</ul>
+
+<p class="whs2">&nbsp;You 
+ can, for example, represent a single object made of several distinct bodies 
+ containing embedded curves and surfaces connected or not to the outer 
+ boundary.</p>
+
+<p class="whs2">&nbsp;Abstract 
+ topological data structure describes a basic entity, the shape, which 
+ can be divided into the following component topologies:</p>
+
+<ul type="disc" class="whs3">
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Vertex, 
+ a zero-dimensional shape corresponding to a point in geometry</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Edge, 
+ a shape corresponding to a curve, and bound by a vertex at each extremity</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Wire, 
+ a sequence of edges connected by their vertices</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Face, 
+ part of a plane (in 2D geometry) or a surface (in 3D geometry) bounded 
+ by a closed wire</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Shell, 
+ a collection of faces connected by some of the edges their wire boundaries</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Solid, 
+ part of 3D space bound by a shell</p></li>
+	
+	<li class=kadov-p><p class="whs2">&nbsp;&nbsp;Compound 
+ solid, a collection of solids.</p></li>
+</ul>
+
+<p class="whs2">The wire and solid can be either 
+ infinite or closed.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">Topology defines the relationship 
+ between simple geometric entities, which can thus be linked together to 
+ represent complex shapes.</p>
+
+<p class="whs2">Abstract Topology is provided 
+ by six packages. The first three packages describe the topological data 
+ structure used in Open CASCADE Technology:</p>
+
+<p class="whs4">-&nbsp;<font style="font-weight: bold;">TopAbs</font> 
+ package provides general resources for topology-driven applications. It 
+ contains enumerations that are used to describe basic topological notions: 
+ topological shape, orientation and state. It also provides methods to 
+ manage these enumerations.</p>
+
+<p class="whs4">-&nbsp;<font style="font-weight: bold;">TopLoc</font> 
+ package provides resources to handle 3D local coordinate systems: Datum3D 
+ and Location. A Datum3D describes an elementary coordinate system, while 
+ a Location comprises a series of elementary coordinate systems.</p>
+
+<p class="whs5">-&nbsp;<font style="font-weight: bold;">TopoDS</font> 
+ package describes classes to model and build data structures that are 
+ purely topological.</p>
+
+<p class="whs5">&nbsp;</p>
+
+<p class="whs1">Three additional packages 
+ provide tools to access and manipulate this abstract topology:</p>
+
+<p class="whs5">-&nbsp;<font style="font-weight: bold;">TopTools</font> 
+ package provides basic tools to use on topological data structures.</p>
+
+<p class="whs5">-&nbsp;<font style="font-weight: bold;">TopExp</font> 
+ package provides classes to explore and manipulate the topological data 
+ structures described in the <font style="font-weight: bold;">TopoDS</font> 
+ package.</p>
+
+<p class="whs5">-&nbsp;<font style="font-weight: bold;">BRepTools</font> 
+ package provides classes to explore, manipulate, read and write <font 
+ style="font-weight: bold;">BRep</font> data structures. These more complex 
+ data structures combine topological descriptions with additional geometric 
+ information, and include rules for evaluating equivalence of different 
+ possible representations of the same object, for example, a point.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs6">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

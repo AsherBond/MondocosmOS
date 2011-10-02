@@ -1,0 +1,40 @@
+-- File:	WOKDeliv_DeliveryArchive.cdl
+-- Created:	Tue Aug 13 14:30:42 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliveryArchive from WOKDeliv inherits DeliveryLIB from WOKDeliv
+
+	---Purpose: Process Archives for delivery units
+
+uses DevUnit from WOKernel,
+     Step from WOKMake,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryArchive from WOKDeliv;
+
+    SetList(me:mutable);
+    
+    NeedsObjects(me)
+    returns Boolean;
+
+    CreateSubStep(me; asource : DevUnit from WOKernel; needobj : Boolean)
+    returns Step from WOKMake;
+
+    ComputeOutputLIB(me: mutable; asource : DevUnit from WOKernel;
+    	    	    		  inComp : InputFile from WOKMake);
+
+    IsAvailable(me; asource : DevUnit from WOKernel)
+    returns Boolean;
+    
+end DeliveryArchive;

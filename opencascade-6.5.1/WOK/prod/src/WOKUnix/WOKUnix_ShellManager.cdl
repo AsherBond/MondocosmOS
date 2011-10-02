@@ -1,0 +1,36 @@
+-- File:	WOKUnix_ShellManager.cdl
+-- Created:	Thu Apr  4 22:55:35 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class ShellManager from WOKUnix 
+
+	---Purpose: 
+
+uses
+
+    Shell from WOKUnix,
+    RemoteShell from WOKUnix,
+    HAsciiString from TCollection,
+    AsciiString from TCollection
+    
+is
+
+    GetShell(myclass)
+    ---Purpose: returns one unlocked shell of processes list    
+    	returns Shell from WOKUnix;
+    
+    GetShell(myclass; apid : Integer from Standard)
+    ---Purpose: get a precise shell     
+    	returns Shell from WOKUnix;
+
+    GetRemoteShell(myclass; 
+    	    	   ahost : HAsciiString from TCollection;
+    	    	   apath : AsciiString from TCollection)
+    ---Purpose: returns a host's unlocked remote shell of processes list  
+    	returns RemoteShell from WOKUnix;
+
+end ShellManager;
+

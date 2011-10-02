@@ -1,0 +1,27 @@
+/* XPM */
+static char *tiny_gray_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 6 1",
+/* colors */
+"  c black",
+". c grey",
+"X c dark slate grey",
+"o c white",
+"O c slate grey",
+"+ c None",
+/* pixels */
+"++++++++++++++",
+"+++++    +++++",
+"++++ OOOO ++++",
+"+++ Oo.OOX +++",
+"++ O.o.OOXX ++",
+"++ OOOOOXXX ++",
+"++ OOOOOXX  ++",
+"++ OOOOXXX  ++",
+"++ OOXXXX   ++",
+"+++ XXXX X +++",
+"++++ X    ++++",
+"+++++    +++++",
+"++++++++++++++",
+"++++++++++++++"
+};

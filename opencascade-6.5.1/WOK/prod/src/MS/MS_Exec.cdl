@@ -1,0 +1,24 @@
+-- File:	MS_Exec.cdl
+
+
+deferred class Exec 
+
+from MS 
+
+inherits GlobalEntity from MS 
+
+uses HAsciiString from TCollection
+
+is
+
+    Initialize(anExec : HAsciiString from TCollection);
+    
+    Schema(me : mutable; aSchema : HAsciiString from TCollection);
+    Schema(me) returns mutable HAsciiString from TCollection;
+
+fields
+
+    mySchema  : HAsciiString from TCollection;
+
+end Exec from MS;
+

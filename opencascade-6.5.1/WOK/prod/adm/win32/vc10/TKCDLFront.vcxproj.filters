@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{3E74E319-0B5E-0E59-10C4-80FCFE061F85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CDLFront">
+      <UniqueIdentifier>{24EE40DA-0F6B-08E3-07B1-8ED1522CC598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\drv\CDLFront\CDL.tab.c">
+      <Filter>Source files\CDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\CDLFront\lex.CDL.c">
+      <Filter>Source files\CDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CDLFront\CDL.tab.c">
+      <Filter>Source files\CDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CDLFront\CDLFront.cxx">
+      <Filter>Source files\CDLFront</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

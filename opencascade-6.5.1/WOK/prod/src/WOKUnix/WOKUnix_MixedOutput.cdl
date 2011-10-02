@@ -1,0 +1,35 @@
+-- File:	WOKUnix_MixedOutput.cdl
+-- Created:	Thu May  4 16:30:11 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+private class MixedOutput from WOKUnix
+inherits ProcessOutput from WOKUnix
+uses
+    Timeval from WOKUnix,
+    FDSet from WOKUnix,
+    FDescr from WOKUnix,
+    Buffer from WOKUnix,
+    PopenBufferMode from WOKUnix,
+    HSequenceOfHAsciiString from TColStd
+is
+    Create returns mutable MixedOutput from WOKUnix;
+    Create(afd : FDescr from WOKUnix; amode : PopenBufferMode from WOKUnix)           returns mutable MixedOutput from WOKUnix; 
+    Create(anoutput : MixedOutput from WOKUnix; amode : PopenBufferMode from WOKUnix) returns mutable MixedOutput from WOKUnix;
+
+    Clear(me)  is redefined;
+    Echo(me)   returns HSequenceOfHAsciiString from TColStd is redefined;
+    Errors(me) returns HSequenceOfHAsciiString from TColStd is redefined;
+
+    Select(me; afdmax : out Integer from Standard; atimeout : in out Timeval from WOKUnix; aset : out FDSet from WOKUnix) is redefined;
+    
+    Acquit(me; selectstatus : Integer; aset : FDSet from WOKUnix) is redefined;
+
+    Close(me:mutable) is redefined;
+
+fields
+    myout : Buffer from WOKUnix;
+    
+end MixedOutput;
+

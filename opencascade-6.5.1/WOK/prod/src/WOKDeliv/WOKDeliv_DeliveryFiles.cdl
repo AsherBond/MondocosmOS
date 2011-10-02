@@ -1,0 +1,47 @@
+-- File:	WOKDeliv_DeliveryFiles.cdl
+-- Created:	Mon Jan  6 15:35:21 1997
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class DeliveryFiles from WOKDeliv inherits DeliveryStep from WOKDeliv
+
+	---Purpose: Process construction of file lists of parcel
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     DataMapOfFiles from WOKDeliv,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection,
+     HSequenceOfHAsciiString from TColStd
+     
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryFiles from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+    
+    ReadAnOutputFile(me; anout : File from WOKernel; 
+    	    	    	 amap : in out DataMapOfFiles from WOKDeliv)
+    is private;
+    
+    AddFileListFiles(myclass; anoutunit : DevUnit from WOKernel; 
+    	    	    	      aSeq : HSequenceOfHAsciiString from TColStd)
+    is private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+end DeliveryFiles;

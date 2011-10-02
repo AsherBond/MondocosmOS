@@ -1,0 +1,28 @@
+-- File:	WOKTools_Verbose.cdl
+-- Created:	Wed Jun 28 20:14:46 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class Verbose from WOKTools 
+inherits Message from WOKTools
+
+	---Purpose: Verbose Information messages
+
+uses
+    AsciiString from TCollection,
+    CString     from Standard
+is
+
+    Create(aclass: CString from Standard = "WOK_VERBOSE") returns Verbose from WOKTools;
+    
+    LocalSwitcher(me; aswitch : CString from Standard) 
+    ---C++: return &
+    ---C++: alias operator ()
+    	returns Verbose from WOKTools;
+	
+    Code(me)
+    	returns Character from Standard
+	is redefined;
+	
+end Verbose;

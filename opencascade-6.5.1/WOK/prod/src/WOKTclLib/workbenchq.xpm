@@ -1,0 +1,34 @@
+/* XPM */
+static char * workbench_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"19 19 9 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor1	m white	c red",
+"X	c #999960600000",
+"o	c #999940405555",
+"O	c #CCCC60600000",
+"+	c #999960605555",
+"@	c #999920205555",
+"#	c #CCCC20200000",
+"$	c #333360605555",
+/* pixels */
+"                   ",
+"                   ",
+"                   ",
+"                   ",
+"        ...        ",
+"   .Xo......XoOoX  ",
+"  oX+X.......X@X+X ",
+" .#o#o.......oOoOo.",
+".........+.........",
+"..Oo   .....  .oXoO",
+"..oX  ...$... .....",
+"..Oo  ....... .oOoO",
+"..+      .    .Xo++",
+"..O      .    .oXoO",
+"..      ...       .",
+"       o....       ",
+"                   ",
+"                   ",
+"                   "};

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classStepBasic__ConversionBasedUnitAndAreaUnit.html" title="StepBasic_ConversionBasedUnitAndAreaUnit" alt="" coords="908,5,1231,35"/>
+<area shape="rect" id="node11" href="$classStepBasic__ConversionBasedUnitAndLengthUnit.html" title="StepBasic_ConversionBasedUnitAndLengthUnit" alt="" coords="900,59,1239,88"/>
+<area shape="rect" id="node13" href="$classStepBasic__ConversionBasedUnitAndMassUnit.html" title="StepBasic_ConversionBasedUnitAndMassUnit" alt="" coords="907,112,1232,141"/>
+<area shape="rect" id="node15" href="$classStepBasic__ConversionBasedUnitAndPlaneAngleUnit.html" title="StepBasic_ConversionBasedUnitAndPlaneAngleUnit" alt="" coords="887,165,1252,195"/>
+<area shape="rect" id="node17" href="$classStepBasic__ConversionBasedUnitAndRatioUnit.html" title="StepBasic_ConversionBasedUnitAndRatioUnit" alt="" coords="905,219,1233,248"/>
+<area shape="rect" id="node19" href="$classStepBasic__ConversionBasedUnitAndSolidAngleUnit.html" title="StepBasic_ConversionBasedUnitAndSolidAngleUnit" alt="" coords="891,272,1248,301"/>
+<area shape="rect" id="node21" href="$classStepBasic__ConversionBasedUnitAndTimeUnit.html" title="StepBasic_ConversionBasedUnitAndTimeUnit" alt="" coords="907,325,1232,355"/>
+<area shape="rect" id="node23" href="$classStepBasic__ConversionBasedUnitAndVolumeUnit.html" title="StepBasic_ConversionBasedUnitAndVolumeUnit" alt="" coords="899,379,1240,408"/>
+<area shape="rect" id="node2" href="$classStepBasic__NamedUnit.html" title="StepBasic_NamedUnit" alt="" coords="377,192,548,221"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,192,328,221"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,192,156,221"/>
+</map>

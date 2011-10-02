@@ -1,0 +1,54 @@
+-- File:	WOKSteps_nocdlpack.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 12:07:08 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_nocdlpack_EDL) then
+@set %WOKSteps_nocdlpack_EDL = "";
+
+
+  @set %WOKSteps_SrcGroup  = "src ";
+
+  @set %WOKSteps_src       = "*WOKStep_Source";
+
+  @set %WOKSteps_XcppGroup = "obj.cgen obj.inc ";
+  @set %WOKSteps_obj_cgen  = "WOKStep_CodeGenerate(src)";
+  @set %WOKSteps_obj_inc   = "*WOKStep_Include(src)";
+
+  @set %WOKSteps_ObjGroup  =  "obj.comp  ";	
+  @set %WOKSteps_obj_comp  = "WOKStep_Compile(src,obj.cgen)";
+
+  @set %WOKSteps_DepGroup  = "obj.idep";
+  @set %WOKSteps_obj_idep  = "WOKStep_ImplementationDep(obj.comp,src)";
+
+  --@string %WOKSteps_LibGroup   = " obj.lib ";
+  @set    %WOKSteps_obj_lib    = "WOKStep_DynamicLibrary(obj.comp,src)";
+
+  --@set %WOKSteps_nocdlpack_LinksWith    = " obj.lib ";
+  @set %WOKSteps_executable_LinksWith   = " obj.lib ";
+  @set %WOKSteps_engine_LinksWith       = " obj.lib ";
+  @set %WOKSteps_interface_LinksWith    = " obj.lib ";
+  @set %WOKSteps_jini_LinksWith         = " obj.lib ";
+  @set %WOKSteps_toolkit_LinksWith      = " obj.lib ";
+  --@set %WOKSteps_schema_LinksWith       = " obj.lib ";
+
+  @set %WOKSteps_toolkit_ListWith       = " obj.comp ";
+  @set %WOKSteps_delivery_inc_list_steps = "src obj.inc";
+  @set %WOKSteps_delivery_inc_list_extensions = ".hxx .lxx .h .INC .inc";
+
+  --@set %WOKSteps_delivery_lib_shared_list_steps ="obj.idep obj.lib";
+  @set %WOKSteps_delivery_lib_shared_list_steps ="obj.idep";
+  @set %WOKSteps_delivery_lib_shared_list_extensions = ".so .ImplDep";
+  @if (%Station == "hp") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".sl .ImplDep";
+  @endif;
+  @if (%Station == "mac") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".dylib .ImplDep";
+  @endif;
+  @if (%Station == "wnt") then
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".DLL .PDB .LIB .ImplDep";
+--    @string %WOKSteps_delivery_lib_shared_list_steps += " obj.implib";
+  @endif;
+
+@endif;
+

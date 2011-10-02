@@ -1,0 +1,59 @@
+-- File:	WOKOBJS_OSSG.cdl
+-- Created:	Mon Feb 24 15:17:16 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class    OSSG        from WOKOBJS 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+
+    Entity               from WOKBuilder,
+    AppSchema            from WOKOBJS,
+    Compilable           from WOKBuilder,
+    Include              from WOKBuilder,
+    HSequenceOfEntity    from WOKBuilder,
+    BuildStatus          from WOKBuilder,
+    Path                 from WOKUtils,
+    HSequenceOfPath      from WOKUtils,
+    Param                from WOKUtils,
+    HAsciiString         from TCollection
+
+is
+
+    Create(aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns mutable OSSG from WOKOBJS;
+   
+    IncludeDirectories(me) returns HSequenceOfPath from WOKUtils;
+    SetIncludeDirectories(me:mutable; incdirs : HSequenceOfPath from WOKUtils);
+
+    SetTargetDir(me: mutable; adir : Path from WOKUtils);
+    TargetDir(me) returns Path from WOKUtils;
+    
+    SchFile(me) returns mutable Compilable from WOKBuilder;
+    SetSchFile(me:mutable; afile : Compilable from WOKBuilder);
+
+    AppSchema(me) returns mutable HAsciiString from TCollection;
+    SetAppSchema(me:mutable; asdb : HAsciiString from TCollection);
+
+    Load(me:mutable)
+    	is redefined;
+	
+    Execute(me:mutable) 
+    	returns BuildStatus  from WOKBuilder;
+ 
+fields
+
+    myname      : HAsciiString         from TCollection;
+    myschname   : HAsciiString         from TCollection;
+    mytarget    : Path                 from WOKUtils;
+    myschfile   : Compilable           from WOKBuilder;
+    mypersclass : HAsciiString         from TCollection;
+    myincdirs   : HSequenceOfPath      from WOKUtils;
+
+end OSSG;
+

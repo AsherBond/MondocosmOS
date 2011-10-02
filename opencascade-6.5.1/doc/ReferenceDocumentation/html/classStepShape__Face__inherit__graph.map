@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepShape__FaceSurface.html" title="StepShape_FaceSurface" alt="" coords="13,392,197,421"/>
+<area shape="rect" id="node15" href="$classStepShape__OrientedFace.html" title="StepShape_OrientedFace" alt="" coords="221,392,416,421"/>
+<area shape="rect" id="node17" href="$classStepShape__Subface.html" title="Representation of STEP entity Subface &#160;" alt="" coords="440,392,595,421"/>
+<area shape="rect" id="node2" href="$classStepShape__TopologicalRepresentationItem.html" title="StepShape_TopologicalRepresentationItem" alt="" coords="164,237,473,267"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="204,160,433,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="257,83,380,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="244,5,393,35"/>
+<area shape="rect" id="node13" href="$classStepShape__AdvancedFace.html" title="StepShape_AdvancedFace" alt="" coords="5,469,205,499"/>
+</map>

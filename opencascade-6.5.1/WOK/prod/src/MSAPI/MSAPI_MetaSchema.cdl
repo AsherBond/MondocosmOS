@@ -1,0 +1,35 @@
+-- File:	MSAPI_MetaSchema.cdl
+-- Created:	Fri Sep 15 14:28:03 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MetaSchema from MSAPI 
+
+	---Purpose: 
+
+uses
+    ArgTable     from WOKTools,
+    Return       from WOKTools
+is
+
+    Translate(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+    Check(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+    Extract(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+    Info(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+    Remove(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+	
+    Clear(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+	
+end MetaSchema;

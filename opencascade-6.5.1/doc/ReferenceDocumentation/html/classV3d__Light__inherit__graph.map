@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classV3d__AmbientLight.html" title="Creation of an ambient light source in a viewer. &#160;" alt="" coords="27,237,171,267"/>
+<area shape="rect" id="node9" href="$classV3d__PositionLight.html" title="Base class for Positional, Spot and Directional Light classes &#160;" alt="" coords="195,237,336,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="120,83,243,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="107,5,256,35"/>
+<area shape="rect" id="node11" href="$classV3d__DirectionalLight.html" title="Create and modify a directional light source &#160;&#160;in a viewer. &#160;" alt="" coords="5,315,165,344"/>
+<area shape="rect" id="node13" href="$classV3d__PositionalLight.html" title="Creation and modification of an isolated &#160;&#160;light source. &#160;" alt="" coords="189,315,341,344"/>
+<area shape="rect" id="node15" href="$classV3d__SpotLight.html" title="Creation and modification of a spot. &#160;" alt="" coords="365,315,483,344"/>
+</map>

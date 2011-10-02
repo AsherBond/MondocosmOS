@@ -1,0 +1,6 @@
+#ifndef _WOKTools_Return_HeaderFile
+#include <WOKTools_Return.hxx>
+#endif
+#ifndef _WOKTclTools_MsgAPI_HeaderFile
+#include <WOKTclTools_MsgAPI.hxx>
+#endif

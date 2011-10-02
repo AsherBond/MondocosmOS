@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classSelect3D__SensitiveCircle.html" title="A framework to define sensitive 3D arcs and circles. &#160;" alt="" coords="1129,5,1321,35"/>
+<area shape="rect" id="node13" href="$classSelect3D__SensitiveCurve.html" title="A framework to define a sensitive 3D curve. &#160;" alt="" coords="1128,59,1323,88"/>
+<area shape="rect" id="node15" href="$classSelect3D__SensitiveFace.html" title="Sensitive Entity to make a face selectable. &#160;" alt="" coords="1132,112,1319,141"/>
+<area shape="rect" id="node19" href="$classSelect3D__SensitiveTriangle.html" title="A framework to define selection of triangles in a view. &#160;&#160;This comes into play in..." alt="" coords="1124,165,1327,195"/>
+<area shape="rect" id="node2" href="$classSelect3D__SensitiveEntity.html" title="Abstract framework to define 3D sensitive entities. &#160;&#160;As the selection process uses..." alt="" coords="647,85,841,115"/>
+<area shape="rect" id="node4" href="$classSelectBasics__SensitiveEntity.html" title="root class ; the inheriting classes will be able to give &#160;&#160;sensitive Areas for the..." alt="" coords="377,85,596,115"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+<area shape="rect" id="node17" href="$classMeshVS__SensitiveFace.html" title="This class provides custom sensitive face, which will be selected if it center is..." alt="" coords="1376,112,1552,141"/>
+</map>

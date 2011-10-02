@@ -1,0 +1,95 @@
+// File:	WOKMake_BuildProcess.lxx
+// Created:	Mon Mar 24 15:12:08 1997
+// Author:	Jean GAUTIER
+//		<jga@hourax.paris1.matra-dtv.fr>
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : UnitGraph
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_UnitGraph)& WOKMake_BuildProcess::UnitGraph() const
+{
+  return myunitgraph;
+}
+
+ 
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Locator
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_Locator)& WOKMake_BuildProcess::Locator() const
+{
+  return mylocator;
+}
+
+ 
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Shell
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKUtils_Shell)& WOKMake_BuildProcess::Shell() const
+{
+  return myshell;
+}
+
+ 
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Steps
+//purpose  : 
+//=======================================================================
+inline const WOKMake_DataMapOfHAsciiStringOfStep& WOKMake_BuildProcess::Steps() const
+{
+  return mysteps;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Groups
+//purpose  : 
+//=======================================================================
+inline const WOKMake_IndexedDataMapOfBuildProcessGroup& WOKMake_BuildProcess::Groups() const
+{
+  return mygroups;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Units
+//purpose  : 
+//=======================================================================
+inline const WOKMake_DataMapOfHAsciiStringOfSequenceOfHAsciiString& WOKMake_BuildProcess::Units() const
+{
+  return myunits;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : TranslatorIterator
+//purpose  : 
+//=======================================================================
+inline WOKBuilder_MSTranslatorIterator& WOKMake_BuildProcess::TranslatorIterator() 
+{
+  return mycdlit;
+}
+
+//=======================================================================
+//function : KnownUnits
+//purpose  : 
+//=======================================================================
+inline WOKTools_MapOfHAsciiString& WOKMake_BuildProcess::KnownUnits()
+{
+  return myknownunits;
+}
+
+//=======================================================================
+//function : MakeState
+//purpose  : 
+//=======================================================================
+inline WOKMake_IndexedDataMapOfHAsciiStringOfInputFile& WOKMake_BuildProcess::MakeState() 
+{
+  return mymakestate;
+}

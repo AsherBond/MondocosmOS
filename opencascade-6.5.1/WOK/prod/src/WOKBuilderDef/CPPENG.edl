@@ -1,0 +1,30 @@
+-- File:	CPPENG.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 16:36:32 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@if ( %Station != "wnt" ) then
+
+@if ( %LocalArch != "hp" && %LocalArch != "mac" ) then
+  @string %CPPENG_SHARED   = "libTKCPPIntExt.so";
+  @string %CPPENG_Shared   = "libTKCPPIntExt.so";
+@endif;
+
+@if ( %LocalArch == "hp" ) then
+  @string %CPPENG_SHARED   = "libTKCPPIntExt.sl";
+  @string %CPPENG_Shared   = "libTKCPPIntExt.sl";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @string %CPPENG_SHARED   = "libTKCPPIntExt.dylib";
+  @string %CPPENG_Shared   = "libTKCPPIntExt.dylib";
+@endif;
+
+@set    %CPPENG_TMPLDIRS = "/home/wb/kl/nw/prod/CPPIntExt/src";
+@set    %CPPENG_NAME     = "CPPEng";
+
+@else
+  @string %CPPENG_Shared   = "TKCPPIntExt.dll";
+@endif;
+
+@set    %CPPENG_Name     = "CPPEng";

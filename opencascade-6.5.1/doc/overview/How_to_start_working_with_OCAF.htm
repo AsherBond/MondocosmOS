@@ -1,0 +1,142 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>How to start working with OCAF</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-family:'Times New Roman' , serif; margin-left:46px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nWorking with OCAF\nHow to start working with OCAF");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>How to start working with OCAF</p>
+
+<p>To create a useful OCAF-based application, it is necessary to redefine 
+ the following two deferred methods: <span style="font-weight: bold;"><B>Formats</B></span> 
+ and <span style="font-weight: bold;"><B>ResourcesName</B></span></p>
+
+<p>In the <span style="font-weight: bold;"><B>Formats</B></span> method, it is 
+ necessary to add the format of the documents to be read by the application 
+ and which may have been built in other applications.</p>
+
+<p>For example:</p>
+
+<p class="whs1">void 
+ myApplication::Formats(TColStd_SequenceOfExtendedString&amp; Formats)</p>
+
+<p class="whs1">{</p>
+
+<p class="whs1">&nbsp;Formats.Append(TCollection_ExtendedString 
+ (&quot;OCAF-myApplication&quot;));</p>
+
+<p class="whs1">}</p>
+
+<p>In the <span style="font-weight: bold;"><B>ResourcesName</B></span> method, 
+ you only define the name of the resource file. This file contains several 
+ definitions for the saving and opening mechanisms associated with each 
+ format and calling of the plug-in file.</p>
+
+<p class="whs1">For 
+ example:</p>
+
+<p class="whs1">Standard_CString 
+ myApplication::ResourcesName()</p>
+
+<p class="whs1">{</p>
+
+<p class="whs1">&nbsp;return 
+ Standard_CString (&quot;Resources&quot;);</p>
+
+<p class="whs1">}</p>
+
+<p>To obtain the saving and opening mechanisms, it is necessary to set 
+ two environment variables: <span style="font-style: italic;"><I>CSF_PluginDefaults</I></span>, 
+ which defines the path of the plug-in file and <span style="font-style: italic;"><I>CSF_ResourcesDefault</I></span> 
+ which defines the resource file:</p>
+
+<p class="whs1">SetEnvironmentVariable 
+ ( &quot;CSF_ResourcesDefaults&quot;,myDirectory);</p>
+
+<p class="whs1">SetEnvironmentVariable 
+ ( &quot;CSF_PluginDefaults&quot;,myDirectory);</p>
+
+<p>The plugin and the resource files of the application will be located 
+ in <span style="font-style: italic;"><I>myDirector</I></span>. The name of the 
+ plugin file must be &quot;Plugin&quot;.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

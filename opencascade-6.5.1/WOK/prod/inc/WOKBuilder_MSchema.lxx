@@ -1,0 +1,14 @@
+// File:	WOKBuilder_MSchema.lxx
+// Created:	Mon Aug  5 17:56:03 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+//=======================================================================
+//function : MetaSchema
+//purpose  : 
+//=======================================================================
+inline const Handle(MS_MetaSchema)& WOKBuilder_MSchema::MetaSchema() const 
+{
+  return myschema;
+}

@@ -1,0 +1,14 @@
+// File:	WOKAPI_Entity.lxx
+// Created:	Thu Oct  2 13:59:48 1997
+// Author:	Jean GAUTIER
+//		<jga@hourax.paris1.matra-dtv.fr>
+
+//=======================================================================
+//function : Entity
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_Entity)& WOKAPI_Entity::Entity() const 
+{
+  return myEntity;
+}
+

@@ -1,0 +1,31 @@
+-- File:	EDL.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Feb 21 14:22:13 1996	Jean GAUTIER	Creation
+-- Copyright:   Matra Datavision 1996
+
+@ifnotdefined ( %EDL_EDL ) then
+@set %EDL_EDL = "";
+
+@template EDL_FileHeader ( %FileName, %ParamClass ) is
+$-- File       : %FileName
+$-- ParamClass : %ParamClass
+$-- Copyright  : Matra Datavision 1996
+$
+$@ifnotdefined ( %%ParamClass_EDL ) then
+$@set %%ParamClass_EDL = "";
+$
+@end;
+
+@template EDL_SetLine    ( %Name, %Value ) is
+$@set %Name = "%Value";
+@end;
+
+
+@template EDL_FileFooter ( %FileName, %ParamClass ) is
+$@ifdefined(%ShopName) then
+$@uses "USECONFIG.edl";
+$@endif;
+$@endif;
+@end;
+
+@endif;

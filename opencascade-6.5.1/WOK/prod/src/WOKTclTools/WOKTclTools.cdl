@@ -1,0 +1,36 @@
+-- File:	WOKTclTools.cdl
+-- Created:	Fri Nov 24 13:59:07 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package WOKTclTools 
+
+	---Purpose: 
+
+uses
+
+    WOKTools,
+    TCollection
+
+is
+
+    primitive CommandFunction;
+    imported PInterp;
+    primitive ExitHandler;
+
+    primitive WokCommand;
+    
+    class Package;
+
+    class Interpretor;
+
+    generic class HandleTable;
+
+    class MsgAPI;
+
+--    class SequenceOfHandleTable 
+--    	instantiates Sequence from TCollection ( HandleTable from WOKTclTools);
+
+end WOKTclTools;

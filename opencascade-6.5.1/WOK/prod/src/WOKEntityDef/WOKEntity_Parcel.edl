@@ -1,0 +1,123 @@
+-- File:	WOKEntity_Parcel.edl
+-- Author:	Arnaud BOUZY
+-- History:	Mon Apr  1 14:12:30 1996	Arnaud BOUZY	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Parcel_EDL) then
+@set %WOKEntity_Parcel_EDL = "";
+
+
+@if ( %WOK_VERSION != "2.0" ) then
+  @cout "WOK version 2.0 is required to use this stuff";
+@endif;
+
+@uses "WOKEntity_UnitTypes.edl";
+
+@template WOKEntity_HomeDir ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template WOKEntity_AdmDir  ( %Entity_Adm ) is
+$%Entity_Adm\^
+@end;
+
+@string %WOKEntity_ParamList = %WOKEntity_ParamList " %Entity_Delivery" ;
+
+--
+-- ADM files
+-- 
+@string %WOKEntity_FileList = %WOKEntity_FileList " DELIVERIES UnitListFile DeliveryInfoFile " ;
+
+@template WOKEntity_DELIVERIES ( %Entity_Adm ) is
+$%Entity_Adm/DELIVERIES\^
+@end;
+
+@template WOKEntity_UnitListFile (%Entity_Adm, %File ) is
+$%Entity_Adm/%File\^
+@end;
+
+@template WOKEntity_DeliveryInfoFile (%Entity_Adm, %File ) is
+$%Entity_Adm/%File\^
+@end;
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " admfiledir admdir demodir etcdir etclocaledir pubincdir manualdir sourcedir sttmpdir";
+
+@template WOKEntity_admfiledir  ( %Entity_Home, %Entity   ) is
+$%Entity_Home/.adm/\^
+@end;
+
+@template WOKEntity_admdir(%Entity_Adm) is
+$%Entity_Adm/\^
+@end;
+
+@template WOKEntity_demodir(%Entity_Home) is
+$%Entity_Home/demo/\^
+@end;
+
+@template WOKEntity_manualdir(%Entity_Home) is
+$%Entity_Home/man/\^
+@end;
+
+@template WOKEntity_etcdir(%Entity_Home) is
+$%Entity_Home/etc/\^
+@end;
+
+@template WOKEntity_etclocaledir(%Entity_Home) is
+$%Entity_Home/etc/locale/\^
+@end;
+
+@template WOKEntity_pubincdir(%Entity_Home) is
+$%Entity_Home/inc/\^
+@end;
+
+@template WOKEntity_sourcedir(%Entity_Home) is
+$%Entity_Home/src/\^
+@end;
+
+@template WOKEntity_sttmpdir(%Entity_Home,%Station) is
+$%Entity_Home/tmp/%Station/\^
+@end;
+
+--
+--  DBMS Dependant directories
+--
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " dbadmfiledir";
+
+@template WOKEntity_dbadmfiledir  ( %Entity_Home) is
+  $%Entity_Home/.adm/DB/\^
+@end;
+
+
+--
+--  Station Dependant directories
+--
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " stationdir libdir bindir";
+
+@template WOKEntity_stationdir(%Entity_Home, %Station) is
+$%Entity_Home/%Station/\^
+@end;
+
+@template WOKEntity_libdir ( %Entity_Home, %Station ) is
+$%Entity_Home/%Station/lib/\^
+@end;
+
+@template WOKEntity_bindir ( %Entity_Home, %Station ) is
+$%Entity_Home/%Station/bin/\^
+@end;
+
+--
+--  Station Dependant directories
+--
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " stadmfiledir ";
+
+@template WOKEntity_stadmfiledir  ( %Entity_Home, %Station) is
+$%Entity_Home/.adm/%Station/\^
+@end;
+
+
+@endif;
+
+

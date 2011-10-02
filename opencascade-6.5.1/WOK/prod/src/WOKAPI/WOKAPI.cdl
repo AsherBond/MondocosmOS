@@ -1,0 +1,89 @@
+-- File:	WOKAPI.cdl
+-- Created:	Mon Jul 31 19:46:31 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package WOKAPI 
+
+	---Purpose: proposes an API to WOK Facilities
+
+uses
+    WOKMake,
+    WOKernel,
+    WOKUtils,
+    WOKTools,
+    TCollection,
+    TColStd
+is
+
+    imported APICommand;
+    imported LocatorCommand;
+    
+    enumeration StepType    is Start, End, Only, None;
+    enumeration StepStatus  is OutOfDate, UpToDate, NeverBuilt;
+    enumeration BuildStatus is Success, Failed;
+
+    class Entity;    
+	 
+	class Session;
+    	---Purpose: Handles Session manipulation    
+
+    	class Factory;
+	
+	class Warehouse;
+	
+	class Parcel;
+	
+    	class Workshop;
+	
+    	class Workbench;
+	
+    	class Unit;
+
+    class File;
+    class Locator;
+
+    class Process;
+    class BuildProcess;
+    class MakeStep;
+    
+    class MakeOption;
+
+    class Command;
+
+	 
+--    class UnitGraph;  
+
+--- INSTANTIATIONS
+
+    class SequenceOfEntity 
+    	instantiates Sequence from TCollection ( Entity    from WOKAPI );
+
+    class SequenceOfFactory 
+    	instantiates Sequence from TCollection ( Factory    from WOKAPI );
+
+    class SequenceOfParcel
+    	instantiates Sequence from TCollection ( Parcel     from WOKAPI );
+	
+    class SequenceOfWorkshop
+    	instantiates Sequence from TCollection ( Workshop   from WOKAPI );
+	
+    class SequenceOfWorkbench
+    	instantiates Sequence from TCollection ( Workbench  from WOKAPI );
+
+    class SequenceOfUnit
+    	instantiates Sequence from TCollection ( Unit       from WOKAPI );
+
+    class SequenceOfMakeStep
+    	instantiates Sequence from TCollection ( MakeStep   from WOKAPI );
+	
+    class SequenceOfFile
+    	instantiates Sequence from TCollection ( File       from WOKAPI );
+
+    class SequenceOfMakeOption
+    	instantiates Sequence from TCollection ( MakeOption from WOKAPI );
+
+end WOKAPI;
+

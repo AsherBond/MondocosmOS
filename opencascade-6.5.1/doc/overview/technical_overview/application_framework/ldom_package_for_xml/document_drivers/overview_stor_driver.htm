@@ -1,0 +1,174 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:23.75pt; }
+p.whs2 { margin-left:42.00pt; }
+p.whs3 { text-indent:30.25pt; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nLDOM Package for XML\nDocument drivers");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/ldom_package_for_xml/ldom_implementation/ldom_package.htm","technical_overview/application_framework/ldom_package_for_xml/attribute_drivers/attribute_drivers.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../whd_show0.gif","../../../../whd_show2.gif","../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../whd_hide0.gif","../../../../whd_hide2.gif","../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../whd_prev0.gif","../../../../whd_prev2.gif","../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../whd_next0.gif","../../../../whd_next2.gif","../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<h1>Document Drivers</h1>
+
+<p>&nbsp;</p>
+
+<p><font style="font-weight: bold;">Document Storage/Retrieval Drivers</font> 
+ manage the conversion between a transient OCAF Document in memory and 
+ its persistent reflection in some container (disk, memory, network ...). 
+ For XML Persistence, they are defined in the package XmlDrivers. </p>
+
+<p>The main methods (entry points) of these drivers are: <font style="font-weight: bold;"><br>
+Write</font>() - for storage driver <font style="font-weight: bold;"><br>
+Read</font>() - for retrieval driver </p>
+
+<p>The most common case (which is implemented in XML Persistence) is writing/reading 
+ document to/from a regular OS file. Such conversion is performed in two 
+ steps: </p>
+
+<ol>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Convert the transient document into another form 
+ (called persistent), suitable for writing into a file, and vice versa. 
+ <font style="font-weight: bold;"><br>
+	In XML Persistence</font> LDOM_Document is used as the persistent form 
+ of an OCAF Document and the DOM_Nodes are the persistent objects. </p></li>
+</ol>
+
+<p class="whs1">An OCAF Document is a tree of labels with 
+ attributes. Its transformation into a persistent form can be functionally 
+ divided into two parts: </p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">Conversion of the 
+ <font style="font-weight: bold;">labels</font> structure, which is performed 
+ by the method XmlMDF::FromTo() </p></li>
+</ul>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">Conversion of the 
+ <font style="font-weight: bold;">attributes</font> and their underlying 
+ objects, which is performed by the corresponding attribute drivers (one 
+ driver per attribute type). </p></li>
+</ul>
+
+<p class="whs1">The driver for each attribute is selected 
+ from a <font style="font-weight: bold;">table of drivers,</font> either 
+ by attribute type (on storage) or by the name of the corresponding DOM_Element 
+ (on retrieval). The table of drivers is created by bymethods XmlDrivers_DocumentStorageDriver::<font 
+ style="font-weight: bold;">AttributeDrivers</font>() and XmlDrivers_DocumentRetrievalDriver::<font 
+ style="font-weight: bold;">AttributeDrivers</font>(). </p>
+
+<ol start=2>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p>Write the persistent document into afile (or read 
+ it from file). <br>
+	In standard persistence Storage and FSD packages contain classes for 
+ writing/reading the persistent document into a file. <br>
+	In XML persistence LDOMParser and LDOM_XmlWriter are used instead.</p></li>
+</ol>
+
+<p>Usually, the library containing document storage and retrieval drivers 
+ is loaded at run time by a plugin mechanism. To support this in XML Persistence, 
+ there is a plugin <font style="font-weight: bold;">XmlPlugin</font> and 
+ a <font style="font-weight: bold;">Factory</font>()method in the XmlDrivers 
+ package. This method compares passed GUIDs with known GUIDs and returns 
+ the corresponding driver or generates an exception if the GUID is unknown. 
+ </p>
+
+<p>The application defines which GUID is needed for document storage or 
+ retrieval and in which library it should be found. This depends on document 
+ format and application resources. Resources for XML Persistence and also 
+ for standard persistence are found in the <font style="font-weight: bold;">StdResource</font> 
+ unit. They are written for the <font style="font-weight: bold;">XmlOcaf</font> 
+ document format. </p>
+
+<p class="whs3">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

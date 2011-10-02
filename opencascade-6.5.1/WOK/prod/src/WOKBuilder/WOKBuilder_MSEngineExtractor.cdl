@@ -1,0 +1,38 @@
+-- File:	WOKBuilder_MSEngineExtractor.cdl
+-- Created:	Tue Mar 19 19:34:30 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class MSEngineExtractor from WOKBuilder 
+inherits    MSExtractor from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MSActionType            from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSAction                from WOKBuilder,
+    Param                   from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSEngineExtractor from WOKBuilder;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSEngineExtractor from WOKBuilder;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+end MSEngineExtractor;

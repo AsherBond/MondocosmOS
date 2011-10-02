@@ -1,0 +1,15 @@
+-- File:	WOKLibs_WOKSteps.edl@gallion
+-- Author:	Jean GAUTIER
+-- History:	Fri Aug  8 15:26:24 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKLibs_WOKSteps_EDL) then
+@set %WOKLibs_WOKSteps_EDL = "";
+
+@if( %Station != "wnt" ) then
+@set %WOKSteps_exec_link     = "#WOKStep_LibLink(exec.tks)";
+@else
+@set %WOKSteps_exec_link     = "#WOKStep_DLLink(exec.tks)";
+@endif;
+
+@endif;

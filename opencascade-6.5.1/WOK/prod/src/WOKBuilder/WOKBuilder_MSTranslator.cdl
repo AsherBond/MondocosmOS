@@ -1,0 +1,177 @@
+-- File:	WOKBuilder_MSTranslator.cdl
+-- Created:	Mon Sep 11 10:55:53 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSTranslator from WOKBuilder 
+inherits MSTool from WOKBuilder
+	---Purpose: Translates a file to fill MetaSchema 
+
+uses
+    Entity                  from WOKBuilder,
+    MSEntity                from WOKBuilder,
+    MSchema                 from WOKBuilder,
+    Specification           from WOKBuilder,
+    BuildStatus             from WOKBuilder,
+    MSTranslatorPtr         from WOKBuilder,
+    MSAction                from WOKBuilder,
+    MSActionType            from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSTranslatorIterator    from WOKBuilder,
+    MetaSchema              from MS,
+    HSequenceOfGlobalEntity from MS,
+    HSequenceOfType         from MS,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    Path                    from WOKUtils,
+    Param                   from WOKUtils
+raises ProgramError from Standard
+is
+    Create(aname, ashared : HAsciiString from TCollection) returns mutable MSTranslator from WOKBuilder;
+    
+    Create(aname :  HAsciiString from TCollection; params : Param from WOKUtils)  
+    	returns mutable MSTranslator from WOKBuilder;
+    
+    Load(me:mutable)
+    	is redefined;
+    
+    MSActionStatus(me; anaction : MSAction      from WOKBuilder;
+    	    	       afile    : Specification from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder;
+    
+    Translate(me:mutable; anaction  : MSAction                    from WOKBuilder;
+    	    	    	  afile     : Specification               from WOKBuilder;
+    	    	    	  globlist  : out HSequenceOfHAsciiString from TColStd; 
+    	    	    	  inctypes  : out HSequenceOfHAsciiString from TColStd;  
+			  insttypes : out HSequenceOfHAsciiString from TColStd; 
+			  gentypes  : out HSequenceOfHAsciiString from TColStd
+    	    	    	  ) returns BuildStatus from WOKBuilder is private; 
+
+    AddAction(me:mutable; anit     : out MSTranslatorIterator from WOKBuilder;
+    	    	    	  aname    : HAsciiString from TCollection;
+			  anaction : MSActionType from WOKBuilder);
+
+    BuildPackage(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	     afile    : Specification            from WOKBuilder;
+    	    	    	     anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+
+    BuildSchema(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	     afile    : Specification            from WOKBuilder;
+    	    	    	     anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildInterface(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	       afile    : Specification            from WOKBuilder;
+    	    	    	       anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildClient(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	       afile    : Specification            from WOKBuilder;
+    	    	    	       anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildEngine(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	    afile    : Specification            from WOKBuilder;
+    	    	    	    anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildExecutable(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	    afile    : Specification            from WOKBuilder;
+    	    	    	    anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildComponent(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	     	       afile    : Specification            from WOKBuilder;
+    	    	    	       anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    	
+    BuildDirectUses(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	    	afile    : Specification            from WOKBuilder; 
+    	    	    	        anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildSchUses(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	    	afile    : Specification            from WOKBuilder; 
+    	    	    	        anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildUses(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	  afile    : Specification            from WOKBuilder;
+    	    	          anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+
+    BuildGlobEnt(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	       	     afile    : Specification            from WOKBuilder;
+    	    	             anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+
+    BuildInstantiate(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	    	 afile    : Specification            from WOKBuilder;
+    	    	    	         anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildInterfaceTypes(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	    	    afile    : Specification            from WOKBuilder;
+    	    	    	            anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildSchemaTypes(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	    	 afile    : Specification            from WOKBuilder;
+    	    	    	         anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildPackageMethods(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	    	    afile    : Specification            from WOKBuilder;
+    	    	    	            anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildInstToStd(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	       afile    : Specification            from WOKBuilder;
+    	    	    	       anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+
+    BuildCompleteType(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	    	  afile    : Specification            from WOKBuilder;
+    	    	    	          anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildSchemaType(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	   	    	afile    : Specification            from WOKBuilder;
+    	    	    	        anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+    
+    BuildTypeUsed(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	      afile    : Specification            from WOKBuilder;
+    	    	    	      anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildInherits(me:mutable; anaction : MSAction                 from WOKBuilder;
+    	    	    	      afile    : Specification            from WOKBuilder;
+    	    	    	      anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+	
+    BuildGenClass(me:mutable; anaction : MSAction                 from WOKBuilder; 
+                              afile    : Specification            from WOKBuilder;
+                              anit     : out MSTranslatorIterator from WOKBuilder)
+    	returns BuildStatus from WOKBuilder is private;
+
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+	raises  ProgramError from Standard
+	is redefined;
+  
+    Execute(me:mutable; anaction : MSAction                 from WOKBuilder; 
+    	    	    	afile    : Specification            from WOKBuilder;
+    	    	    	anit     : out MSTranslatorIterator from WOKBuilder)
+    ---Purpose: Executes an action 
+    --          and updates Iterator and MSchema
+    	returns BuildStatus from WOKBuilder
+	raises ProgramError from Standard;
+    
+fields
+    mytranslator : MSTranslatorPtr from WOKBuilder;
+    myspecfile   : Specification   from WOKBuilder;
+end MSTranslator;

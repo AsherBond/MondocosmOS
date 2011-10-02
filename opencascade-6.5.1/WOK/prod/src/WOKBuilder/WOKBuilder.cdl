@@ -1,0 +1,217 @@
+-- File:	WOKBuilder.cdl
+-- Created:	Thu Aug 10 20:38:11 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MS,
+    WOKUtils,
+    WOKTools,
+    OSD,
+    TColStd,
+    TCollection,
+    MMgt,
+    OSD
+
+is
+
+    imported MSTranslatorPtr;
+    imported MSExtractorTemplatesPtr;
+    imported MSExtractorExtractPtr;
+
+    enumeration BuildStatus is Unbuilt, Success, Failed
+    ---Purpose: Status of a construction process
+    end BuildStatus;
+
+    enumeration MSActionType is 
+    	    	    	    	-- Type modification Type Flag
+    	    	    	    	TypeModified,
+    	    	    	    	-- Detailled translate actions type
+    	    	    	    	Package, Interface, Client, Engine, Schema, Executable, Component,
+    	    	    	    	SchUses, DirectUses, Uses, GlobEnt,
+    	    	    	    	Instantiate,  InstToStd, 
+    	    	    	    	InterfaceTypes, SchemaTypes, PackageMethods,
+    	    	    	    	GenType, CompleteType, SchemaType, Inherits, TypeUses, 
+    	    	    	    	-- Type extraction Type flag
+    	    	    	    	TypeExtracted, 
+ 				-- Detailled extraction type
+				HeaderExtract, SchemaExtract, ServerExtract, ClientExtract, EngineExtract, TemplateExtract
+    end MSActionType;
+
+    enumeration MSActionStatus is NotDefined, OutOfDate, UpToDate, HasFailed
+    end MSActionStatus;
+
+    enumeration LibReferenceType is ShortRef, LongRef, FullPath
+    end LibReferenceType;
+
+    deferred class Entity;
+    class EntityHasher from WOKBuilder;
+    
+    	deferred class Specification;
+	
+	     class CDLFile;
+	     --class ODLFile;
+	    
+	class MSEntity;
+    	class MSEntityHasher;
+	---Purpose: Entite dans le MS (fichier cdl traduit).
+	--          dans le MS en cours	
+	    
+	class Include;
+
+    	class CodeGenFile;
+
+    	class Compilable;
+	
+    	class ObjectFile;
+    	class MFile;
+
+    	class DEFile;
+	class DLLFile;
+	class EXEFile;
+	class PDBFile;
+
+    	deferred class Library;
+	
+	    class SharedLibrary;
+	    class ArchiveLibrary;
+	    
+	      -- Windows NT --------
+	                          --
+	    class ImportLibrary;  --
+	    class StaticLibrary;  --
+	    class ExportLibrary;  --
+	    --class ManifestEXE;    --
+	    class ManifestLibrary;--
+	                          --
+	      ----------------------
+
+    	class Executable;
+
+    	class Miscellaneous;
+	    
+    	    class CompressedFile;
+	    class TarFile;
+
+    class MSchema;
+
+    deferred class Tool;
+    
+    	deferred class ToolInProcess;
+	
+	    deferred class MSTool;
+	
+	    	class MSTranslator; 
+		
+	class MSAction;
+	class MSActionID;
+	class MSTranslatorIterator;
+
+	    deferred class MSExtractor;
+	    	class MSTemplateExtractor;
+    	    	class MSHeaderExtractor;
+	    	class MSServerExtractor;
+	    	class MSClientExtractor;
+	    	class MSEngineExtractor;
+                class MSJiniExtractor;		    
+
+	class MSExtractorIterator;
+	    
+    	deferred class ToolInShell;
+
+    	    class CodeGenerator;
+	    class Compiler;
+
+    	    class Archiver;
+	    class ArchiveExtract;
+	    
+	    deferred class Linker;
+		class SharedLinker; 
+		class ExecutableLinker;
+
+    	    ------------------------------------------
+    	    -------  Windows NT ----------------------
+    	    ------------------------------------------
+                                              --------
+       	    deferred class WNTCollector;      --------
+	                                      --------
+    	    	deferred class WNTLinker;     --------
+		    class DLLinker;           --------
+		    class EXELinker;          --------
+		                              --------
+		deferred class WNTLibrarian;  --------
+		    class StaticLibrarian;    --------
+		    class ImportLibrarian;    --------
+                                              --------
+    	    ------------------------------------------
+    	    ------------------------------------------
+    	    ------------------------------------------
+	    
+
+    	    class Command;
+
+    	class ToolInShellIterator;
+   	    class CompilerIterator;
+	    class CodeGeneratorIterator;
+
+    --- INSTATIATIONS
+
+    class SequenceOfEntity
+    	instantiates  Sequence from TCollection ( Entity              from WOKBuilder ); 
+    class HSequenceOfEntity
+    	instantiates HSequence from TCollection ( Entity              from WOKBuilder,  
+    	    	    	    	    	    	  SequenceOfEntity    from WOKBuilder ); 
+
+    class SequenceOfExtension
+    	instantiates  Sequence from TCollection ( Extension           from WOKUtils ); 
+    class HSequenceOfExtension
+    	instantiates HSequence from TCollection ( Extension           from WOKUtils, 
+    	    	    	    	    	    	  SequenceOfExtension from WOKBuilder ); 
+
+    class SequenceOfToolInShell
+    	instantiates  Sequence from TCollection ( ToolInShell            from WOKBuilder ); 
+    class HSequenceOfToolInShell
+    	instantiates HSequence from TCollection ( ToolInShell            from WOKBuilder,  
+                                                  SequenceOfToolInShell  from WOKBuilder ); 
+
+    class SequenceOfObjectFile
+    	instantiates  Sequence from TCollection ( ObjectFile          from WOKBuilder ); 
+    class HSequenceOfObjectFile
+    	instantiates HSequence from TCollection ( ObjectFile          from WOKBuilder,  
+                                                  SequenceOfObjectFile from WOKBuilder ); 
+
+    class SequenceOfLibrary
+    	instantiates  Sequence from TCollection ( Library              from WOKBuilder ); 
+    class HSequenceOfLibrary
+    	instantiates HSequence from TCollection ( Library              from WOKBuilder,  
+                                                  SequenceOfLibrary    from WOKBuilder ); 
+
+    private class QueueOfMSAction
+    	instantiates     Queue from TCollection ( MSAction            from WOKBuilder );
+
+    private class MapOfMSAction
+    	instantiates       Map from WOKTools    ( MSAction            from WOKBuilder,  
+	    	    	    	    	    	  MSActionID          from WOKBuilder ); 
+						  
+    private class DataMapOfMSActionIDOfMSAction
+    	instantiates   DataMap from WOKTools    ( MSActionID          from WOKBuilder,   
+	    	    	    	    	    	  MSAction            from WOKBuilder,  
+	    	    	    	    	    	  MSActionID          from WOKBuilder ); 
+    
+    private class DataMapOfHAsciiStringOfMSEntity
+    	instantiates   DataMap from WOKTools    ( HAsciiString        from TCollection,
+	    	    	    	    	    	  MSEntity            from WOKBuilder,
+						  HAsciiStringHasher  from WOKTools);
+
+    private class DataMapOfHAsciiStringOfToolInShell
+    	instantiates   DataMap from WOKTools    ( HAsciiString        from TCollection,
+	    	    	    	    	    	  ToolInShell         from WOKBuilder,
+						  HAsciiStringHasher  from WOKTools);
+
+end WOKBuilder;

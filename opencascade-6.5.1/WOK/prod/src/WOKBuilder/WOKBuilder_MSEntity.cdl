@@ -1,0 +1,53 @@
+-- File:	WOKBuilder_MSEntity.cdl
+-- Created:	Mon Sep 18 13:57:04 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSEntity  from WOKBuilder 
+inherits Entity from WOKBuilder
+	---Purpose: 
+
+uses
+
+    Specification from WOKBuilder,
+    Path          from WOKUtils,
+    TimeStat      from WOKUtils,
+    HAsciiString  from TCollection,
+    MetaSchema    from MS,
+    Type          from MS,
+    GlobalEntity  from MS
+    
+is
+    Create(aspecfile : Specification from WOKBuilder; 
+    	   aname     : HAsciiString  from TCollection) 
+    	returns mutable MSEntity from WOKBuilder;
+    
+    Create(aname     : HAsciiString  from TCollection) 
+    	returns mutable MSEntity from WOKBuilder;
+    
+    Name(me) returns HAsciiString from TCollection;
+    ---C++: inline
+    ---C++: return const &
+    SetName(me:mutable; aname : HAsciiString from TCollection);
+    
+    File(me) returns Specification from WOKBuilder;
+    ---C++: inline
+    ---C++: return const &
+    SetFile(me:mutable; aspecfile : Specification from WOKBuilder);
+    
+    IsType(me;   ams : MetaSchema from MS) returns Boolean from Standard; 
+    IsEntity(me; ams : MetaSchema from MS) returns Boolean from Standard;
+
+    GetType(me; ams : MetaSchema from MS) returns Type from MS;
+    ---C++: return const &
+    GetGlobalEntity(me; ams : MetaSchema from MS) returns GlobalEntity from MS;
+    ---C++: return const &
+
+    IsComplete(me) returns Boolean from Standard;
+
+fields
+    myfile : Specification from WOKBuilder;
+    myname : HAsciiString  from TCollection;
+end MSEntity;

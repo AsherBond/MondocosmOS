@@ -1,0 +1,18 @@
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKMake_InputFile_HeaderFile
+#include <WOKMake_InputFile.hxx>
+#endif
+#ifndef _WOKMake_HSequenceOfInputFile_HeaderFile
+#include <WOKMake_HSequenceOfInputFile.hxx>
+#endif
+#ifndef _WOKStep_LibLimit_HeaderFile
+#include <WOKStep_LibLimit.hxx>
+#endif

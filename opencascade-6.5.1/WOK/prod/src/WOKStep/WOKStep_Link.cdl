@@ -1,0 +1,92 @@
+-- File:	WOKStep_Link.cdl
+-- Created:	Thu Jun 27 17:35:05 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+deferred class Link from WOKStep
+inherits       Step from WOKMake
+
+	---Purpose: Provides services for link Purposes
+
+uses
+    BuildProcess            from WOKMake,
+    InputFile               from WOKMake,
+    HSequenceOfOutputFile   from WOKMake,
+    HSequenceOfInputFile    from WOKMake,
+    Status                  from WOKMake,
+    DevUnit                 from WOKernel,
+    HSequenceOfFile         from WOKernel,
+    File                    from WOKernel,
+    UnitGraph               from WOKernel,
+    Linker                  from WOKBuilder,
+    Entity                  from WOKBuilder,
+    HSequenceOfEntity       from WOKBuilder,
+    ObjectFile              from WOKBuilder,
+    HSequenceOfObjectFile   from WOKBuilder,
+    Library                 from WOKBuilder,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfPath         from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel;
+    	       acode    : HAsciiString    from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake) 
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    CompleteExecList(me:mutable; anexeclist : HSequenceOfInputFile from WOKMake)
+    	is redefined protected;
+
+    ComputeTool(me:mutable)
+    	returns mutable Linker from WOKBuilder
+	is virtual protected;
+
+    ComputeTarget(me:mutable)
+    	returns mutable Entity from WOKBuilder
+    	is virtual protected;
+
+    ComputeObjectList(me:mutable; input : HSequenceOfInputFile from WOKMake)
+    	returns mutable HSequenceOfObjectFile from WOKBuilder
+    	is virtual protected;
+
+    ComputeLibraryList(me:mutable; input : HSequenceOfInputFile from WOKMake)
+    	returns mutable HSequenceOfLibrary from WOKBuilder
+    	is virtual protected;
+	
+    ComputeLibrarySearchList(me:mutable; input : HSequenceOfInputFile from WOKMake)
+    	returns mutable HSequenceOfPath from WOKUtils
+    	is virtual protected;
+
+    ComputeDatabaseDirectories(me)
+    	returns HSequenceOfPath from WOKUtils is protected;
+
+    ExecuteLink(me:mutable; output : out HSequenceOfOutputFile from WOKMake)
+    	returns Status from WOKMake;
+
+
+fields
+
+    mylinker    : Linker                  from WOKBuilder  is protected;
+    mytarget    : HAsciiString            from TCollection is protected;
+    myobjects   : HSequenceOfObjectFile   from WOKBuilder  is protected;
+    mylibpathes : HSequenceOfPath         from WOKUtils    is protected;
+    mydbdirs    : HSequenceOfPath         from WOKUtils    is protected;
+    mylibraries : HSequenceOfLibrary      from WOKBuilder  is protected;
+    myexternals : HSequenceOfHAsciiString from TColStd     is protected;
+
+end Link;

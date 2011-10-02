@@ -1,0 +1,9 @@
+#ifndef _MS_HSequenceOfExecPart_HeaderFile
+#include <MS_HSequenceOfExecPart.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_Executable_HeaderFile
+#include <MS_Executable.hxx>
+#endif

@@ -1,0 +1,54 @@
+
+ Workbench Builder
+
+ Menus:
+        
+ <File>
+	<Profile ...>		: changes the compilation and database profiles.
+	<Load Cfg ...>		: loads a specific configuration for a given workbench.
+	<Save Cfg ...>		: saves the current configuration.
+	<Save Log ...>		: saves the text in the build window into a file.
+	<Set crontab ...>		: gives the configuration of the 'cron' table on the current station.
+	<Close...>		: ends the build process.
+
+ <Help>
+	<Help ...>			: this help.
+	<About ...>		: displays the version of the 'Workbench Builder'.
+
+ Buttons:
+
+ <Build>			: builds the units contained in the right window.
+ <Show Commands>	: displays in the build window the commands performed.
+ <Previous Error>		: positions the build window on the previous error.
+ <Next Error>		: positions the build window on the next error.
+ <Errors to Emacs>	: sends compilation errors to an Emacs buffer.
+ <Break>			: stops the building process at the end of the current command.
+
+ <Force>			: push the button to perform the umake commands with the '-f' parameter.
+ <Add All>		: adds all the units from the selection window [left window] to the 
+			  right window.
+ <Keep Failed>		: deselects all the units with no error.
+ <Del All>		: deselects all the units.
+
+
+
+ Input area <Name>:
+
+ The input area is located below the selection window. It is used to filter units according to
+ their name.
+ Example: If you type the letter 'A' then space, only the selection units beginning with an 'A' 
+ remain displayed in the window.
+
+
+ Selection window:
+
+ Click on the unit types (src, xcpp, obj, lib, ccl, exec, frontal, delivery) in the list provided
+ to display the menu used to filter units according to their type.
+
+
+ Profile button:
+
+ The profile button is located in the top right corner of the window with the current compilation
+ and database profiles. 
+ Push the profile button to display the profile selection window.
+

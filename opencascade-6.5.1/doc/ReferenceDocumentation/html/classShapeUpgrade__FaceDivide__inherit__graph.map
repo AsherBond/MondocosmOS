@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classShapeUpgrade__ClosedFaceDivide.html" title="Divides a Face with one or more seam edge to avoid closed faces. &#160;&#160;Splitting is performed..." alt="" coords="5,315,248,344"/>
+<area shape="rect" id="node11" href="$classShapeUpgrade__FaceDivideArea.html" title="Divides face by max area criterium. &#160;" alt="" coords="272,315,501,344"/>
+<area shape="rect" id="node2" href="$classShapeUpgrade__Tool.html" title="Tool is a root class for splitting classes &#160;&#160;Provides context for recording changes..." alt="" coords="181,160,331,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="195,83,317,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="181,5,331,35"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classStepToTopoDS__Builder.html" title=" " alt="" coords="293,5,464,35"/>
+<area shape="rect" id="node5" href="$classStepToTopoDS__MakeTransformed.html" title="Produces instances by Transformation of a basic item &#160;" alt="" coords="257,59,500,88"/>
+<area shape="rect" id="node7" href="$classStepToTopoDS__TranslateCompositeCurve.html" title="Translate STEP entity composite_curve to TopoDS_Wire &#160;&#160;If surface is given, the curve..." alt="" coords="229,112,528,141"/>
+<area shape="rect" id="node9" href="$classStepToTopoDS__TranslateCurveBoundedSurface.html" title="Translate curve_bounded_surface into TopoDS_Face &#160;" alt="" coords="212,165,545,195"/>
+<area shape="rect" id="node11" href="$classStepToTopoDS__TranslateEdge.html" title=" " alt="" coords="269,219,488,248"/>
+<area shape="rect" id="node13" href="$classStepToTopoDS__TranslateEdgeLoop.html" title=" " alt="" coords="253,272,504,301"/>
+<area shape="rect" id="node15" href="$classStepToTopoDS__TranslateFace.html" title=" " alt="" coords="271,325,487,355"/>
+<area shape="rect" id="node17" href="$classStepToTopoDS__TranslatePolyLoop.html" title=" " alt="" coords="256,379,501,408"/>
+<area shape="rect" id="node19" href="$classStepToTopoDS__TranslateShell.html" title=" " alt="" coords="271,432,487,461"/>
+<area shape="rect" id="node21" href="$classStepToTopoDS__TranslateVertex.html" title=" " alt="" coords="264,485,493,515"/>
+<area shape="rect" id="node23" href="$classStepToTopoDS__TranslateVertexLoop.html" title=" " alt="" coords="248,539,509,568"/>
+</map>

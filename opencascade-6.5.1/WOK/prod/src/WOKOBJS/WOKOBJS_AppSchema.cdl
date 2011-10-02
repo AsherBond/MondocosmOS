@@ -1,0 +1,29 @@
+-- File:	WOKOBJS_AppSchema.cdl
+-- Created:	Mon Feb 24 15:08:34 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+
+
+class    AppSchema from WOKOBJS 
+inherits Entity    from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path             from WOKUtils, 
+    Param            from WOKUtils,
+    HAsciiString     from TCollection
+
+is
+    
+    Create(apth  : Path from WOKUtils) 
+    	returns mutable AppSchema from WOKOBJS;
+
+    GetAppFileName(myclass; params : Param  from  WOKUtils; aname : HAsciiString from TCollection) 
+    	returns HAsciiString from TCollection;
+  
+
+end AppSchema;

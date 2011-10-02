@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classShapeSchema.html" title="ShapeSchema" alt="" coords="5,237,123,267"/>
+<area shape="rect" id="node9" href="$classStdLSchema.html" title="StdLSchema" alt="" coords="147,237,253,267"/>
+<area shape="rect" id="node11" href="$classStdSchema.html" title="StdSchema" alt="" coords="277,237,376,267"/>
+<area shape="rect" id="node13" href="$classXCAFSchema.html" title="Schema &#160;" alt="" coords="400,237,509,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="201,83,324,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="188,5,337,35"/>
+</map>

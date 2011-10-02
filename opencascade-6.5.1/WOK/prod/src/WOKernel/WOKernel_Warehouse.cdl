@@ -1,0 +1,42 @@
+-- File:	WOKernel_Warehouse.cdl
+-- Created:	Fri Jun 23 17:21:52 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Warehouse from WOKernel 
+inherits Entity from WOKernel
+	---Purpose: Warehouse contains parcels used by the workshops 
+	--          of the factory
+
+uses
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    Entity                  from WOKernel,
+    Parcel                  from WOKernel,
+    Factory                 from WOKernel,
+    HSequenceOfParamItem    from WOKUtils
+is
+    Create(aname : HAsciiString from TCollection; anesting : Factory from  WOKernel)  
+    	returns mutable Warehouse  from  WOKernel; 
+    
+    EntityCode(me) 
+    	returns HAsciiString from TCollection
+	is redefined;
+
+    Open(me: mutable)  is redefined;
+    Close(me: mutable) is redefined;
+ 
+    AddParcel(me:mutable; aparcel : Parcel from WOKernel);
+    RemoveParcel(me:mutable; aparcel : Parcel from WOKernel);
+
+    Parcels(me) 
+    	returns HSequenceOfHAsciiString from TColStd;
+     
+    DumpParcelList(me)
+    is private;
+
+fields
+    myparcels : HSequenceOfHAsciiString from TColStd;
+end Warehouse;

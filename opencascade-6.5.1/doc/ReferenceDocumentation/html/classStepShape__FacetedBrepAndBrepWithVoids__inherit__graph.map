@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classStepShape__ManifoldSolidBrep.html" title="StepShape_ManifoldSolidBrep" alt="" coords="52,392,271,421"/>
+<area shape="rect" id="node4" href="$classStepShape__SolidModel.html" title="StepShape_SolidModel" alt="" coords="76,315,247,344"/>
+<area shape="rect" id="node6" href="$classStepGeom__GeometricRepresentationItem.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="7,237,316,267"/>
+<area shape="rect" id="node8" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="47,160,276,189"/>
+<area shape="rect" id="node10" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="100,83,223,112"/>
+<area shape="rect" id="node12" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="87,5,236,35"/>
+</map>

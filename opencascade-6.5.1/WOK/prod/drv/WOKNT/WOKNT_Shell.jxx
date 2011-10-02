@@ -1,0 +1,15 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKNT_Path_HeaderFile
+#include <WOKNT_Path.hxx>
+#endif
+#ifndef _WOKNT_ShellManager_HeaderFile
+#include <WOKNT_ShellManager.hxx>
+#endif
+#ifndef _WOKNT_Shell_HeaderFile
+#include <WOKNT_Shell.hxx>
+#endif

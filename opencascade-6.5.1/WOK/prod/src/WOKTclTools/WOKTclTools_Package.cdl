@@ -1,0 +1,39 @@
+-- File:	WOKTclTools_Package.cdl
+-- Created:	Wed Aug 21 13:20:32 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class    Package from WOKTclTools 
+
+	---Purpose: 
+
+uses
+    AsciiString     from TCollection,
+    Interpretor     from WOKTclTools,
+    CommandFunction from WOKTclTools,
+    WokCommand      from WOKTclTools
+    
+is
+
+    Create(aninterp        : Interpretor from WOKTclTools; 
+    	   aname, aversion : CString from Standard)
+    	returns Package from WOKTclTools;
+
+    Require(me:out; exactversion : Boolean from Standard = Standard_False)
+    	returns Integer from Standard;
+	
+    Provide(me:out)
+    	returns Integer from Standard;
+      	
+    EvalInitFile(me:out; required : Boolean from Standard = Standard_True)
+    	returns Integer from Standard;
+    
+fields
+
+    myinterp  : Interpretor from WOKTclTools;
+    myname    : AsciiString from TCollection;
+    myversion : AsciiString from TCollection;
+
+end Package;

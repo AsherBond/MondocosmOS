@@ -1,0 +1,39 @@
+-- File:	WOKOBJS.cdl
+-- Created:	Mon Feb 24 14:48:34 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+package WOKOBJS 
+
+	---Purpose: Handles WOK specific treatments for Objectstore
+
+uses
+    TCollection,
+    TColStd,
+    WOKTools,
+    WOKUtils,
+    WOKBuilder,
+    WOKernel,
+    WOKMake,
+    WOKStep
+
+is
+
+    -- Manipulated Entities
+    class LibSchema;
+    class AppSchema;
+    class AppSchCxxFile;
+
+    -- Tools (Builder) used
+    class MSSchExtractor;
+    class OSSG;
+
+    -- Construction steps
+    class SchExtract;
+    class SchGen;
+    class EngLinkList;
+
+end WOKOBJS;
+

@@ -1,0 +1,33 @@
+-- File:	WOKNT_CompareOfString.cdl
+-- Created:	Wed Jul 31 11:31:03 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+private class CompareOfString from WOKNT inherits
+              PrivCompareOfString from WOKNT
+
+    ---Purpose: defines string comparator class
+
+ uses
+ 
+  HAsciiString from TCollection
+
+ is
+ 
+  Create;
+    ---Purpose: creates a class instance
+
+  IsLower ( me; Left, Right : HAsciiString from TCollection )
+   returns Boolean from Standard is redefined;
+    ---Purpose: returns True if <Left> is lower than <Right>
+
+  IsGreater ( me; Left, Right : HAsciiString from TCollection )
+   returns Boolean from Standard is redefined;
+    ---Purpose: returns True if <Left> is greater than <Right>.
+
+  IsEqual ( me; Left, Right : HAsciiString from TCollection )
+   returns Boolean from Standard is redefined;
+    ---Purpose: returns True when <Right> and <Left> are equal.
+
+end CompareOfString;	      

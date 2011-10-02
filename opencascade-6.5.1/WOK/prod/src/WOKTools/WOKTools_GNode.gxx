@@ -1,0 +1,41 @@
+#include WOKTools_GEdge_hxx
+
+WOKTools_GNode::WOKTools_GNode(const GraphItem& anItem)
+{
+  myItem     = anItem;
+  myEdgeIn   = new WOKTools_HSequenceOfGEdge;
+  myEdgeOut  = new WOKTools_HSequenceOfGEdge;
+}
+
+void WOKTools_GNode::SetValue(const GraphItem& anItem)
+{
+  myItem = anItem;
+}
+
+GraphItem WOKTools_GNode::Value() const 
+{
+  return myItem;
+}
+
+void WOKTools_GNode::AddEdgeIn(const Handle(WOKTools_GEdge)& in)
+{
+  myEdgeIn->Append(in);
+}
+
+void WOKTools_GNode::AddEdgeOut(const Handle(WOKTools_GEdge)& out)
+{
+  myEdgeOut->Append(out);
+}
+
+Handle(WOKTools_HSequenceOfGEdge) WOKTools_GNode::GEdgesOut() const
+{
+  return myEdgeOut;
+}
+
+
+Handle(WOKTools_HSequenceOfGEdge) WOKTools_GNode::GEdgesIn() const
+{
+  return myEdgeIn;
+}
+
+

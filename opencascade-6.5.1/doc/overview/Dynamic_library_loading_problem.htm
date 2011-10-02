@@ -1,0 +1,167 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Dynamic library loading problem</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-family:'Times New Roman' , serif; }
+p.whs2 { margin-left:46px; font-family:'Times New Roman' , serif; }
+p.whs3 { margin-left:46px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFAQ\nTroubleshooting");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Troubleshooting</p>
+
+<h2>Dynamic library loading problem</h2>
+
+<p>Open CASCADE Technology uses a dynamic library loading mode. Sometimes, 
+ an error message such as the following appears:</p>
+
+<p class="whs1">&nbsp;&quot;cannot 
+ map libname.so .. under any of the filenames ..&quot;</p>
+
+<p>When this happens, check your PATH under Windows, LD_LIBRARY_PATH under 
+ UNIX , SHLIB_PATH under HP-UX or LIBPATH under IBM AIX . It should contain 
+ the path where the required dynamic library is located.</p>
+
+<p>&nbsp;</p>
+
+<h2>Running Draw under Windows</h2>
+
+<p>When running DRAWEXE and using axo in the Command window you may see 
+ the following message :</p>
+
+<p class="whs1">&nbsp;&nbsp;invalid 
+ command name &quot;axo&quot;</p>
+
+<p>Make sure that the OCCT directory name does not contain any blank spaces.</p>
+
+<p>It causes some problems when reading the OCCT description TCL Commands 
+ files.</p>
+
+<p>If you have set DRAWHOME and DRAWDEFAULT, replace \ by / in the variable 
+ Type topic text here. </p>
+
+<p>&nbsp;</p>
+
+<h2>Error on application start on Windows</h2>
+
+<p>If Windows shows an error message with the text “Application failed 
+ to initialize properly” upon launching the application, check access rights 
+ for all libraries used in the application, in particular, third-party 
+ libraries. Make sure that you have all rights &nbsp;necessary 
+ to access these libraries. It is recommended to use option “Inherit access 
+ rights from parent”.</p>
+
+<p>&nbsp;</p>
+
+<h2>Problems with 3d viewer</h2>
+
+<p>If the 3d viewer fails to display the scene properly, or works very 
+ slowly, or exhibits another problem, make sure to have the latest version 
+ of the graphics card driver installed. If this is not possible or does 
+ not help, try to decrease hardware acceleration level (usually found in 
+ Troubleshooting section of the graphics card properties).</p>
+
+<p>&nbsp;</p>
+
+<h2>Fatal error during graphic initialization</h2>
+
+<p>If you get the following error message when running an Open CASCADE 
+ Technology based application:</p>
+
+<p class="whs2">Fatal 
+ error during graphic initialization</p>
+
+<p>Or if the application crashes without displaying error messages, you 
+ must set the environment variable CSF_GRAPHICSHR as follows:</p>
+
+<p>• On Windows, if we suppose that OCCT is installed in <span style="font-style: italic;"><I>D:\OpenCASCADE6.3.0</I></span></p>
+
+<p class="whs3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span 
+ style="font-family: 'Times New Roman', serif;">Set 
+ CSF_GraphicShr= D:\OpenCASCADE6.3.1\ros\win32\bin\TkOpenGl.dll</span></p>
+
+<p>• On Linux or Unix, if we suppose that OCCT is installed in <span style="font-style: italic;"><I>.../mydisk/ 
+ OpenCASCADE6.3.0</I></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class="whs2">Setenv 
+ CSF_GraphicsShr /mydisk/ OpenCASCADE6.3.0ros/lin/lib/libTKOpenGl.so</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

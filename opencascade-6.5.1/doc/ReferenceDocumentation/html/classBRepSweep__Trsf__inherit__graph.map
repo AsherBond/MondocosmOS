@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classBRepSweep__Rotation.html" title="Provides an algorithm to build object by &#160;&#160;Rotation sweep. &#160;" alt="" coords="5,160,173,189"/>
+<area shape="rect" id="node7" href="$classBRepSweep__Translation.html" title="Provides an algorithm to build object by &#160;&#160;translation sweep. &#160;" alt="" coords="197,160,379,189"/>
+<area shape="rect" id="node2" href="$classBRepSweep__NumLinearRegularSweep.html" title="BRepSweep_NumLinearRegularSweep" alt="" coords="49,5,327,35"/>
+</map>

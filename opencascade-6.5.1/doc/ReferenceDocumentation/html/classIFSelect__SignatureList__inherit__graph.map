@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__CheckCounter.html" title="A CheckCounter allows to see a CheckList (i.e. CheckIterator) &#160;&#160;not per entity, its..." alt="" coords="5,237,187,267"/>
+<area shape="rect" id="node9" href="$classIFSelect__SignCounter.html" title="SignCounter gives the frame to count signatures associated &#160;&#160;with entities, deducted..." alt="" coords="211,237,376,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="133,83,256,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="120,5,269,35"/>
+<area shape="rect" id="node11" href="$classIFSelect__GraphCounter.html" title="A GraphCounter computes values to be sorted with the help of &#160;&#160;a Graph. I.E. not..." alt="" coords="81,315,260,344"/>
+<area shape="rect" id="node13" href="$classIGESSelect__CounterOfLevelNumber.html" title="This class gives information about Level Number. It counts &#160;&#160;entities according level..." alt="" coords="284,315,548,344"/>
+</map>

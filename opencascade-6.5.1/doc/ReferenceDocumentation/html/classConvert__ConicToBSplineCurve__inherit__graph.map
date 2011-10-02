@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classConvert__CircleToBSplineCurve.html" title="This algorithm converts a circle into a rational B&#45;spline curve. &#160;&#160;The circle is..." alt="" coords="293,5,517,35"/>
+<area shape="rect" id="node5" href="$classConvert__EllipseToBSplineCurve.html" title="This algorithm converts a ellipse into a rational B&#45;spline curve. &#160;&#160;The ellipse is..." alt="" coords="291,59,520,88"/>
+<area shape="rect" id="node7" href="$classConvert__HyperbolaToBSplineCurve.html" title="This algorithm converts a hyperbola into a rational B&#45;spline curve. &#160;&#160;The hyperbola..." alt="" coords="279,112,532,141"/>
+<area shape="rect" id="node9" href="$classConvert__ParabolaToBSplineCurve.html" title="This algorithm converts a parabola into a non rational B&#45;spline &#160;&#160;curve. &#160;&#160;The parabola..." alt="" coords="284,165,527,195"/>
+</map>

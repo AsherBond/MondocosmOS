@@ -1,0 +1,101 @@
+-- File:	WOKMake_DeliveryStep.cdl
+-- Created:	Fri Mar 29 13:50:52 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+
+deferred class DeliveryStep from WOKDeliv inherits Step from WOKMake
+
+	---Purpose: Describes general services for delivery steps
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     Parcel from WOKernel,
+     Locator from WOKernel,
+     Path from WOKUtils,
+     HAsciiString from TCollection,
+     AsciiString from TCollection,
+     DeliveryList from WOKDeliv,
+     InputFile from WOKMake,
+     BuildProcess from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     OutputFile from WOKMake
+
+
+is
+    Initialize(aprocess : BuildProcess   from WOKMake;
+    	       aunit    : DevUnit from WOKernel; 
+    	       acode    : HAsciiString from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+	       
+
+    AdmFile(me; aname : HAsciiString from TCollection)
+    	returns mutable File from WOKernel
+	is redefined;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is protected;
+	
+    GetCOMPONENTS(me:mutable)
+    returns File from WOKernel
+    is protected;
+
+    ParseCOMPONENTS(me:mutable; aDeliveryStep : Integer)
+    returns DeliveryList from WOKDeliv
+    is protected;
+    	    	    	
+
+    CopyAFile(myclass;  delivunit : DevUnit from WOKernel;
+    	    	    	fromFile,toFile : File from WOKernel;
+    	    	    	silent : Boolean = Standard_False)
+    returns Boolean;
+
+
+    GetParcel(myclass; delivunit : DevUnit from WOKernel;
+                       name : HAsciiString from TCollection)
+    returns Parcel from WOKernel;
+
+    GetParcelUnit(myclass; delivunit : DevUnit from WOKernel;
+                           parcel : Parcel from WOKernel ; 
+    	    	           aUnit : DevUnit from WOKernel)
+    returns DevUnit from WOKernel;
+
+    GetFullParcelName(me: mutable; aParcelUnitName : HAsciiString from TCollection)
+    returns HAsciiString from TCollection
+    is protected;
+    
+    DefineLocator(me: mutable)
+    returns Locator from WOKernel
+    is private;
+    
+    GetInFileCOMPONENTS(me)
+    returns InputFile from WOKMake
+    is protected;
+    
+    DefineOutLocator(me:mutable)
+    is protected;
+    
+    OutLocator(me)
+    	returns mutable Locator from WOKernel
+    	is redefined;
+    
+    HandleOutputFile(me:mutable; anfile : OutputFile from WOKMake)
+    ---Purpose: Handles Output file new/same/disappereread  
+    	returns Boolean from Standard
+    	is redefined protected;
+    
+    AcquitExecution(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    	is redefined protected;     
+
+
+fields
+
+    myOutLocator : Locator from WOKernel is protected;
+    myList : DeliveryList from WOKDeliv is protected;
+    
+    myParcelLocator : Locator from WOKernel is protected;
+    
+
+end DeliveryStep;

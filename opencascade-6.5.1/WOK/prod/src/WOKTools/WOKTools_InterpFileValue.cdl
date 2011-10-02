@@ -1,0 +1,43 @@
+-- File:	WOKTools_InterFileValue.cdl
+-- Created:	Tue Sep 24 14:53:45 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class InterpFileValue from WOKTools 
+inherits ReturnValue from WOKTools
+
+	---Purpose: 
+
+uses
+    InterpFileType from WOKTools,
+    HAsciiString   from TCollection
+    
+is
+
+    Create(afile : HAsciiString from TCollection; atype : InterpFileType from WOKTools = WOKTools_CShell)
+    	returns InterpFileValue from WOKTools;
+	
+    InterpFormat(myclass; atype : InterpFileType from WOKTools)
+    	returns HAsciiString from TCollection;
+	
+    InterpType(myclass; aformat : HAsciiString from TCollection)
+    	returns InterpFileType from WOKTools;
+	
+    FileName(myclass; atype : InterpFileType from WOKTools; abasename : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    SetFile(me:mutable; afile : HAsciiString from TCollection);
+    File(me) returns HAsciiString from TCollection;
+    
+    SetInterpType(me:mutable; atype : InterpFileType from WOKTools);
+    InterpType(me) returns InterpFileType from WOKTools;
+
+
+fields
+     
+    myfile : HAsciiString   from TCollection;
+    mytype : InterpFileType from WOKTools;
+
+end InterpFileValue;

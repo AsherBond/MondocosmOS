@@ -1,0 +1,38 @@
+-- File:	WOKNT_ShellManager.cdl
+-- Created:	Fri Jul 26 17:33:13 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class ShellManager from WOKNT 
+
+        ---Purpose: shell management
+
+ uses
+ 
+  Shell           from WOKNT,
+  SequenceOfShell from WOKNT
+    
+ ---raises
+ --- Exception_CTRL_BREAK from OSD
+ 
+ is
+
+  GetShell ( myclass ) returns Shell from WOKNT;
+    ---Purpose: returns one unlocked shell of processes list    
+
+  Arm ( myclass );
+    ---Purpose: sets signal handlers
+
+  UnArm ( myclass );
+    ---Purpose: unsets signal handlers
+
+  KillAll ( myclass );
+    ---Purpose: Terminates all active sub-processes
+
+  Break ( myclass ) ;
+    ---raises OSD_Exception_CTRL_BREAK from OSD;
+    ---Purpose: Checks whethes CTRL-BREAK keystroke was or not.
+    --          if yes then raises
+
+end ShellManager;

@@ -1,0 +1,24 @@
+-- File:	WOKTools_ChDirValue.cdl
+-- Created:	Wed Sep 27 17:49:57 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class    ChDirValue  from WOKTools 
+inherits ReturnValue from WOKTools
+
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection
+is
+
+    Create(apath : HAsciiString from TCollection) returns mutable ChDirValue from WOKTools; 
+    
+    SetPath(me:mutable; apath: HAsciiString from TCollection);
+    Path(me) returns HAsciiString from TCollection;
+
+fields
+    mypath : HAsciiString from TCollection;
+end ChDirValue;

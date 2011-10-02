@@ -1,0 +1,66 @@
+-- File:	WOKDeliv_DeliveryExecList.cdl
+-- Created:	Tue Sep 17 09:28:50 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliveryExecList from WOKDeliv inherits DeliveryMetaStep from WOKDeliv
+
+	---Purpose: List contents of executable to produce for delivery
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     Step from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     Locator from WOKernel,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryExecList from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+    ExecuteMetaStep(me:mutable)
+    returns Boolean
+    is private;
+
+    ExploreMetaStep(me:mutable; aunit : DevUnit from WOKernel;
+    	    	    	    	infileCOMP : InputFile from WOKMake)
+    returns Boolean
+    is private;
+
+    ExploreStep(me:mutable; astep : Step from WOKMake;
+    	    	    	    aunit : DevUnit from WOKernel;
+    	    	    	    infileCOMP : InputFile from WOKMake)
+    returns Boolean
+    is private;
+
+    TreatDynamic(me:mutable)
+    returns Boolean
+    is private;
+
+    CompleteEngine(me:mutable)
+    returns Boolean
+    is private;
+
+    IsAvailable(me;aunit : DevUnit from WOKernel)
+    returns Boolean
+    is private;
+
+end DeliveryExecList;

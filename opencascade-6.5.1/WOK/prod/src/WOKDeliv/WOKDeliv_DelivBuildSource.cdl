@@ -1,0 +1,35 @@
+-- File:	WOKDeliv_DelivBuildSource.cdl
+-- Created:	Tue Dec 31 13:14:55 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class DelivBuildSource from WOKDeliv inherits DeliveryCopy from WOKDeliv
+
+	---Purpose: Produces Sources for a unit
+
+uses DevUnit from WOKernel,
+     Parcel from WOKernel,
+     File from WOKernel,
+     Status from WOKMake,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DelivBuildSource from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is redefined private;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+    is redefined;
+    
+end DelivBuildSource;

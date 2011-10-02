@@ -1,0 +1,35 @@
+-- File:	MS_Alias.cdl
+-- Created:	Mon Aug 23 18:46:43 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+class Alias 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits NatType from MS
+    uses 
+	Type   from MS,
+	HAsciiString from TCollection
+
+is
+
+    Create(aName, aPackage, aContainer: HAsciiString; aPrivate: Boolean) 
+    	returns mutable Alias from MS;
+    
+    Type(me: mutable; aType: HAsciiString; aPackage: HAsciiString);
+    Type(me)
+    	returns mutable HAsciiString from TCollection;
+    ---C++:return const &
+
+    DeepType(me)
+	returns mutable HAsciiString from TCollection;   
+    ---Purpose: returns the real type of the alias (used if the alias type is already an alias).
+    
+fields
+
+    myType         : HAsciiString from TCollection;
+
+end Alias from MS;

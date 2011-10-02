@@ -1,0 +1,53 @@
+-- File:	WOKNT_OutErrOutput.cdl
+-- Created:	Tue Jul 30 10:53:50 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+private class OutErrOutput from WOKNT inherits MixedOutput from WOKNT
+
+    ---Purpose: manages output of sub-process ( creates a pipe ).
+    --          Standard output stream and standard error stream are MIXED.
+
+ uses
+ 
+  HSequenceOfHAsciiString from TColStd
+  
+ is
+ 
+  Create returns OutErrOutput from WOKNT;
+    ---Purpose: creates a class instance
+
+  Cleanup ( me : out ) is redefined static;
+    ---Purpose: closes read end of the 'STDERR' handle
+    ---C++:     alias ~
+
+  OpenStdErr ( me : out ) returns Integer from Standard is redefined static;
+    ---Purpose: creates a pipe for reading a standard error output of sub-process
+    --          and returns a pipe handle
+    --  Warning: returns INVALID_HANDLE_VALUE in case of failure 
+
+  CloseStdErr ( me : out ) is redefined static;
+    ---Purpose: closes write end of the 'STDERR' pipe
+
+  Clear ( me : out ) is redefined static;
+    ---Purpose: clears output buffer of sub-process
+
+  Errors ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined static;
+    ---Purpose: returns standard error output of sub-process
+    --  Warning: returns NULL object if there is nothing to read
+
+  SyncStdErr ( me : out ) returns HSequenceOfHAsciiString from TColStd is redefined static;
+    ---Purpose: waits for sub-process termination ( until the write end of pipe
+    --          will be closed ).
+    --  Warning: write end of pipe MUST BE CLOSED by parent process immediately
+    --          after creation of the child process else this method will
+    --          NEVER return. Use ONLY 'CloseStdErr' method for this purpose.
+
+ fields
+ 
+  myErrHandleR : Integer                 from Standard;
+  myErrHandleW : Integer                 from Standard;
+  myStdErr     : HSequenceOfHAsciiString from TColStd;
+
+end OutErrOutput;

@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classMeshVS__DummySensitiveEntity.html" title="This class allows to create owners to all elements or nodes, &#160;&#160;both hidden and shown..." alt="" coords="647,112,884,141"/>
+<area shape="rect" id="node9" href="$classSelect2D__SensitiveEntity.html" title="A framework to define what all sensitive 2D entities have in common. &#160;&#160;This framework..." alt="" coords="668,165,863,195"/>
+<area shape="rect" id="node23" href="$classSelect3D__SensitiveEntity.html" title="Abstract framework to define 3D sensitive entities. &#160;&#160;As the selection process uses..." alt="" coords="668,512,863,541"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,165,328,195"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,165,156,195"/>
+<area shape="rect" id="node11" href="$classSelect2D__SensitiveArc.html" title="sensitive Areas for an Arc Of Circle &#160;&#160;One gives Radius and center,and limits. &#160;..." alt="" coords="964,5,1140,35"/>
+<area shape="rect" id="node13" href="$classSelect2D__SensitiveBox.html" title="defines a Sensitive Box (inside or boundary) &#160;" alt="" coords="963,59,1141,88"/>
+<area shape="rect" id="node15" href="$classSelect2D__SensitiveCircle.html" title="A framework to define sensitive Areas for a Circle &#160;&#160;Radius and center, or a geometric..." alt="" coords="956,112,1148,141"/>
+<area shape="rect" id="node17" href="$classSelect2D__SensitivePoint.html" title="A framework to define sensitive 2D points. &#160;" alt="" coords="957,165,1147,195"/>
+<area shape="rect" id="node19" href="$classSelect2D__SensitiveSegment.html" title="A framework to define sensitive areas along a line segment. &#160;" alt="" coords="944,219,1160,248"/>
+<area shape="rect" id="node21" href="$classStdSelect__SensitiveText2d.html" title="A framework to define a sensitive text entity for 2D views. &#160;" alt="" coords="951,272,1153,301"/>
+<area shape="rect" id="node25" href="$classMeshVS__SensitiveMesh.html" title="This class provides custom mesh sensitive entity used in advanced mesh selection..." alt="" coords="963,325,1141,355"/>
+<area shape="rect" id="node27" href="$classMeshVS__SensitivePolyhedron.html" title="MeshVS_SensitivePolyhedron" alt="" coords="943,379,1161,408"/>
+<area shape="rect" id="node29" href="$classSelect3D__SensitiveBox.html" title="A framework to define selection by a sensitive box. &#160;" alt="" coords="963,432,1141,461"/>
+<area shape="rect" id="node31" href="$classSelect3D__SensitiveGroup.html" title="A framework to define selection of a sensitive group &#160;&#160;by a sensitive entity which..." alt="" coords="956,485,1148,515"/>
+<area shape="rect" id="node33" href="$classSelect3D__SensitivePoint.html" title="A framework to define sensitive 3D points. &#160;" alt="" coords="957,539,1147,568"/>
+<area shape="rect" id="node35" href="$classSelect3D__SensitivePoly.html" title="Sensitive Entity to make a face selectable. &#160;" alt="" coords="961,592,1143,621"/>
+<area shape="rect" id="node47" href="$classSelect3D__SensitiveSegment.html" title="A framework to define sensitive zones along a segment &#160;&#160;One gives the 3D start and..." alt="" coords="944,645,1160,675"/>
+<area shape="rect" id="node51" href="$classSelect3D__SensitiveTriangulation.html" title="A framework to define selection of a sensitive entity made of a set of triangles..." alt="" coords="933,699,1171,728"/>
+<area shape="rect" id="node53" href="$classSelect3D__SensitiveWire.html" title="A framework to define selection of a wire owner by an &#160;&#160;elastic wire band. &#160;" alt="" coords="960,752,1144,781"/>
+<area shape="rect" id="node37" href="$classSelect3D__SensitiveCircle.html" title="A framework to define sensitive 3D arcs and circles. &#160;" alt="" coords="1227,485,1419,515"/>
+<area shape="rect" id="node39" href="$classSelect3D__SensitiveCurve.html" title="A framework to define a sensitive 3D curve. &#160;" alt="" coords="1225,539,1420,568"/>
+<area shape="rect" id="node41" href="$classSelect3D__SensitiveFace.html" title="Sensitive Entity to make a face selectable. &#160;" alt="" coords="1229,592,1416,621"/>
+<area shape="rect" id="node45" href="$classSelect3D__SensitiveTriangle.html" title="A framework to define selection of triangles in a view. &#160;&#160;This comes into play in..." alt="" coords="1221,645,1424,675"/>
+<area shape="rect" id="node43" href="$classMeshVS__SensitiveFace.html" title="This class provides custom sensitive face, which will be selected if it center is..." alt="" coords="1475,592,1651,621"/>
+<area shape="rect" id="node49" href="$classMeshVS__SensitiveSegment.html" title="This class provides custom sensitive face, which will be selected if it center is..." alt="" coords="1220,699,1425,728"/>
+</map>

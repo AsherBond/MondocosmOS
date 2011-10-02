@@ -1,0 +1,43 @@
+-- File:	EDL_Variable.cdl
+-- Created:	Thu Jun  1 18:07:36 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Variable from EDL
+uses HAsciiString from TCollection
+is
+    Create 
+  	returns Variable from EDL;
+
+    Create(aName : CString from Standard; aValue : CString from Standard) 
+    	returns Variable from EDL;
+
+    Create(aVar : Variable from EDL)
+    	returns Variable from EDL;
+	
+    Assign(me : out; aVar : Variable from EDL);
+    ---C++: alias operator =
+    
+    Destroy(me);
+    ---C++: alias ~
+        
+    GetName(me)
+    	returns CString from Standard;
+	
+    GetValue(me)
+    	returns CString from Standard;
+   
+    SetValue(me : out; aValue : CString from Standard);
+    
+    HashCode(myclass; aVar : Variable from EDL; Upper : Integer from Standard) 
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; aVar1 : Variable from EDL; aVar2 : Variable from EDL)
+    	returns Boolean from Standard;
+	
+fields
+    	myName  : HAsciiString from TCollection;
+	myValue : HAsciiString from TCollection;
+	
+end;

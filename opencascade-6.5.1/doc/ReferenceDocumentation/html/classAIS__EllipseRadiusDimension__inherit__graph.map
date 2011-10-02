@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node15" href="$classAIS__MaxRadiusDimension.html" title="Ellipse Max radius dimension of a Shape which can be Edge &#160;&#160;or Face (planar or cylindrical(surface..." alt="" coords="5,547,197,576"/>
+<area shape="rect" id="node17" href="$classAIS__MinRadiusDimension.html" title="&#45;&#45; Ellipse Min radius dimension of a Shape which &#160;&#160;can be Edge or Face (planar or..." alt="" coords="221,547,408,576"/>
+<area shape="rect" id="node2" href="$classAIS__Relation.html" title="One of the four types of interactive object in &#160;&#160;AIS,comprising dimensions and constraints..." alt="" coords="156,392,260,421"/>
+<area shape="rect" id="node4" href="$classAIS__InteractiveObject.html" title="Defines a class of objects with display and selection services. &#160;&#160;Entities which..." alt="" coords="121,315,295,344"/>
+<area shape="rect" id="node6" href="$classSelectMgr__SelectableObject.html" title="A framework to supply the structure of the object to be &#160;&#160;selected. At the first..." alt="" coords="100,237,316,267"/>
+<area shape="rect" id="node8" href="$classPrsMgr__PresentableObject.html" title="A framework to supply the Graphic2d or Graphic3d &#160;&#160;structure of the object to be..." alt="" coords="107,160,309,189"/>
+<area shape="rect" id="node10" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="147,83,269,112"/>
+<area shape="rect" id="node12" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="133,5,283,35"/>
+</map>

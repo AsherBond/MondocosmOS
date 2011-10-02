@@ -1,0 +1,31 @@
+-- File:	WOKSteps_Del.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Jun 27 18:59:43 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKSteps_Del_EDL) then
+@set %WOKSteps_Del_EDL = "";
+
+@template WOKSteps_Remove_File   ( %FilePath ) is
+ $ rm -f %FilePath
+@end;
+
+@template WOKSteps_Dummy_Include ( %FilePath ) is
+$ rm -f %FilePath
+-- $ echo #error %FilePath has disappeared > %FilePath
+@end;
+
+@template WOKSteps_Save_File     ( %FilePath ) is
+ $ 
+@end;
+
+@template WOKSteps_Dummy_Action  ( %FilePath ) is
+ $ set status = 0
+@end;
+
+@set %WOKSteps_Del_source      = "WOKSteps_Save_File";
+@set %WOKSteps_Del_pubinclude  = "WOKSteps_Dummy_Include";
+@set %WOKSteps_Del_msentity    = "WOKSteps_Dummy_Action";
+@set %WOKSteps_Del_Default     = "WOKSteps_Remove_File";
+
+@endif;

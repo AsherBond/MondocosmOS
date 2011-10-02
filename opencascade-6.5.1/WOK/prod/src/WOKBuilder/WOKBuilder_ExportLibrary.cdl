@@ -1,0 +1,32 @@
+-- File:	WOKBuilder_ExportLibrary.cdl
+-- Created:	Wed Oct 23 09:29:38 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class ExportLibrary from WOKBuilder inherits Library from WOKBuilder
+
+ uses
+    
+    Path             from WOKUtils, 
+    Param            from WOKUtils,
+    LibReferenceType from WOKBuilder,
+    HAsciiString     from TCollection
+
+ is
+
+    Create (apth  : Path from WOKUtils ) 
+     returns mutable ExportLibrary from WOKBuilder;
+
+    Create (
+     aname    : HAsciiString     from TCollection; 
+     adir     : Path             from WOKUtils; 
+     areftype : LibReferenceType from WOKBuilder
+    ) returns mutable ExportLibrary from WOKBuilder;
+
+    GetLibFileName (
+     me     : mutable;
+     params : Param  from  WOKUtils
+    ) returns HAsciiString from TCollection is redefined static;
+  
+end ExportLibrary;

@@ -1,0 +1,38 @@
+-- File:	WOKBuilder_MSTool.cdl
+-- Created:	Mon Sep 11 10:52:23 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class MSTool from WOKBuilder 
+inherits ToolInProcess from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MSchema       from WOKBuilder,
+    BuildStatus   from WOKBuilder,
+    Param         from WOKUtils,
+    HAsciiString  from TCollection
+
+raises
+    ProgramError  from Standard
+
+is
+    Initialize(aname : HAsciiString from TCollection; params : Param from WOKUtils);
+    
+    GetMSchema(myclass) returns mutable MSchema from WOKBuilder;
+
+    SetMSchema(me:mutable; aschema : MSchema from WOKBuilder);
+    MSchema(me) returns MSchema from WOKBuilder;
+
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+	raises  ProgramError from Standard
+	is redefined;
+  
+
+fields
+     myschema    : MSchema       from WOKBuilder;   
+end MSTool;

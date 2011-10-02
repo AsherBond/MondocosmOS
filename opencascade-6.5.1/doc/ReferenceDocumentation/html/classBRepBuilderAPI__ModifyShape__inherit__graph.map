@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepBuilderAPI__Copy.html" title="Duplication of a shape. &#160;&#160;A Copy object provides a framework for: &#160;defining the construction..." alt="" coords="812,5,977,35"/>
+<area shape="rect" id="node9" href="$classBRepBuilderAPI__GTransform.html" title="Geometric transformation on a shape. &#160;&#160;The transformation to be applied is defined..." alt="" coords="791,59,999,88"/>
+<area shape="rect" id="node11" href="$classBRepBuilderAPI__NurbsConvert.html" title="Conversion of the complete geometry of a shape into &#160;&#160;NURBS geometry. For example..." alt="" coords="781,112,1008,141"/>
+<area shape="rect" id="node13" href="$classBRepBuilderAPI__Transform.html" title="Geometric transformation on a shape. &#160;&#160;The transformation to be applied is defined..." alt="" coords="796,165,993,195"/>
+<area shape="rect" id="node15" href="$classBRepOffsetAPI__DraftAngle.html" title="Taper&#45;adding transformations on a shape. &#160;&#160;The resulting shape is constructed by..." alt="" coords="793,219,996,248"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="256,112,467,141"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="7,112,207,141"/>
+</map>

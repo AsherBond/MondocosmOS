@@ -1,0 +1,142 @@
+-- File:	WOKNT_Shell.cdl
+-- Created:	Thu Jul 25 12:42:56 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class Shell from WOKNT inherits TShared from MMgt
+
+    ---Purpose: creates and manages processes
+
+ uses
+ 
+  ExecutionMode           from WOKNT,
+  OutputMode              from WOKNT,
+  Path                    from WOKNT,
+  Array1OfString          from WOKNT,
+  HSequenceOfHAsciiString from TColStd,
+  HAsciiString            from TCollection
+  
+ is
+ 
+  Create (
+   anExecMode : ExecutionMode from WOKNT = WOKNT_SynchronousMode;
+   anOutMode  : OutputMode    from WOKNT = WOKNT_OutErrMixed
+  ) returns mutable Shell from WOKNT;
+    ---Purpose: creates a class instance
+
+  Destroy ( me : mutable );
+    ---Purpose: destrouys all resources attached to the Shell
+    ---C++:     alias ~
+
+  Launch ( me : mutable );
+    ---Purpose: launches a process
+
+  IsLaunched ( me ) returns Boolean from Standard;
+    ---Purpose: checks whether a process launched or not
+    ---C++:     inline
+
+  Kill ( me : mutable );
+    ---Purpose: terminates a process
+
+  Lock ( me : mutable );
+  
+  UnLock ( me : mutable );
+
+  IsLocked ( me ) returns Boolean from Standard;
+    ---C++:     inline
+  
+  Status ( me ) returns Integer from Standard;
+    ---Purpose: returns process's exit status
+    ---C++:     inline
+
+  Errors ( me : mutable ) returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: returns process output
+
+  ClearOutput ( me : mutable );
+    ---Purpose: clears process's output
+
+  Send ( me : mutable; aString : HAsciiString from TCollection );
+    ---Purpose: sends a string to the shell
+
+  Execute ( me : mutable; aCmdLine : HAsciiString from TCollection );
+    ---Purpose: executes a shell command
+
+  SyncAndStatus ( me : mutable ) returns Integer from Standard;
+    ---Purpose: waits for process termination and returns its exit status
+
+  BuiltInCommand (
+   me      : mutable;
+   aCmd    : in out HAsciiString from TCollection;
+   doParse : Boolean from Standard = Standard_True 
+  ) returns Boolean from Standard is protected;
+    ---Purpose: checks whether a specified command built-in or not.
+    --          Also provides primary parsing of the commend line
+    --          ( extraction of the environment variables ).
+
+  BuildEnvironment ( me : mutable; aRebuildFlag : Boolean from Standard = Standard_False )
+   returns Address from Standard is protected;
+    ---Purpose: builds environment block for sub-process
+
+  AddEnvironmentVariable (
+   me     : mutable;
+   aName  : HAsciiString from TCollection;
+   aValue : HAsciiString from TCollection
+  );
+    ---Purpose: adds environment variable to the shell's environment block
+
+  RemoveEnvironmentVariable (
+   me    : mutable;
+   aName : HAsciiString from TCollection
+  ); 
+    ---Purpose: removes specified variable from the shell's environment block
+
+  EnvironmentVariable ( me; aName : HAsciiString from TCollection )
+   returns HAsciiString from TCollection;
+    ---Purpose: returns a value for a given environment variable
+    --  Warning: returns a null string if specified variable does not exists
+
+  Echo ( me; aStr : HAsciiString from TCollection );
+    ---Purpose: echoes a string
+
+  SetEcho ( me : mutable );
+    ---Purpose: turns echo on
+    ---C++:     inline
+  
+  UnsetEcho ( me : mutable );
+    ---Purpose: turns echo off
+    ---C++:     inline
+
+  Log ( me; aStr : HAsciiString from TCollection );
+    ---Purpose: logs a string to the file
+  
+  LogInFile ( me : mutable; aPath : Path from WOKNT );
+    ---Purpose: creates log file and turns on logging to the file
+  
+  NoLog ( me : mutable );
+    ---Purpose: turns off logging to file  
+
+ fields
+
+  myOutMode     : OutputMode              from WOKNT;
+  myExecMode    : ExecutionMode           from WOKNT;
+  myStatus      : Integer                 from Standard;
+  myLocked      : Boolean                 from Standard;
+  myEcho        : Boolean                 from Standard;
+  myExeFlag     : Boolean                 from Standard;
+  myKillFlag    : Boolean                 from Standard;
+  myOutput      : Address                 from Standard;
+  myProcess     : Integer                 from Standard;
+  myCmdLine     : HAsciiString            from TCollection;
+  myStdOut      : HSequenceOfHAsciiString from TColStd;
+  myStdErr      : HSequenceOfHAsciiString from TColStd;
+  myEnvironment : HSequenceOfHAsciiString from TColStd;
+  myChannel     : Integer                 from Standard;
+  myDirectory   : HAsciiString            from TCollection;
+  myLogFile     : Path                    from WOKNT;
+
+ friends
+ 
+  class ShellManager from WOKNT
+
+end Shell;

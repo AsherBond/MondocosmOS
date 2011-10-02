@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classShapeUpgrade__SplitCurve2d.html" title="Splits a 2d curve with a criterion. &#160;" alt="" coords="619,59,829,88"/>
+<area shape="rect" id="node13" href="$classShapeUpgrade__SplitCurve3d.html" title="Splits a 3d curve with a criterion. &#160;" alt="" coords="619,112,829,141"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+<area shape="rect" id="node9" href="$classShapeUpgrade__ConvertCurve2dToBezier.html" title="converts/splits a 2d curve to a list of beziers &#160;" alt="" coords="879,5,1172,35"/>
+<area shape="rect" id="node11" href="$classShapeUpgrade__SplitCurve2dContinuity.html" title="Corrects/splits a 2d curve with a continuity criterion. &#160;&#160;Tolerance is used to correct..." alt="" coords="885,59,1165,88"/>
+<area shape="rect" id="node15" href="$classShapeUpgrade__ConvertCurve3dToBezier.html" title="converts/splits a 3d curve of any type to a list of beziers &#160;" alt="" coords="879,112,1172,141"/>
+<area shape="rect" id="node17" href="$classShapeUpgrade__SplitCurve3dContinuity.html" title="Corrects/splits a 2d curve with a continuity criterion. &#160;&#160;Tolerance is used to correct..." alt="" coords="885,165,1165,195"/>
+</map>

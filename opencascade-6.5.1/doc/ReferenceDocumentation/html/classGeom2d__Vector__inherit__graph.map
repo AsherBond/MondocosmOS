@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classGeom2d__Direction.html" title="The class Direction specifies a vector that is never null. &#160;&#160;It is a unit vector..." alt="" coords="5,315,152,344"/>
+<area shape="rect" id="node11" href="$classGeom2d__VectorWithMagnitude.html" title="Defines a vector with magnitude. &#160;&#160;A vector with magnitude can have a zero length..." alt="" coords="176,315,408,344"/>
+<area shape="rect" id="node2" href="$classGeom2d__Geometry.html" title="The general abstract class Geometry in 2D space describes &#160;&#160;the common behaviour..." alt="" coords="108,160,263,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="124,83,247,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="111,5,260,35"/>
+</map>

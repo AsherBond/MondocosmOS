@@ -1,0 +1,77 @@
+-- File:	WOKStep_LinkList.cdl
+-- Created:	Thu Aug  1 12:01:09 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+deferred class LinkList from WOKStep 
+inherits Step  from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess            from WOKMake,
+    InputFile               from WOKMake,
+    OutputFile              from WOKMake,
+    HSequenceOfInputFile    from WOKMake,
+    Status                  from WOKMake,
+    DevUnit                 from WOKernel,
+    HSequenceOfFile         from WOKernel,
+    File                    from WOKernel,
+    Linker                  from WOKBuilder,
+    Entity                  from WOKBuilder,
+    HSequenceOfEntity       from WOKBuilder,
+    ObjectFile              from WOKBuilder,
+    HSequenceOfObjectFile   from WOKBuilder,
+    Library                 from WOKBuilder,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfPath         from WOKUtils,
+    MapOfHAsciiString       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel;
+    	       acode    : HAsciiString    from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake) 
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    LoadDependencies(me:mutable)
+    	is redefined protected;
+
+    GetUnitLibrary(me:mutable; unit : DevUnit from WOKernel)
+    	returns OutputFile from WOKMake is protected;
+
+    ComputeDependency(me; code : HAsciiString from TCollection; adirectlist : HSequenceOfHAsciiString from TColStd)
+    	returns HSequenceOfHAsciiString from TColStd is deferred protected;
+
+    GetUnitContributionCodes(me; unit : DevUnit from WOKernel)
+    	returns HAsciiString from TCollection is virtual protected;
+
+    AddParcelUnitContribution(me:mutable; theinfile : InputFile from WOKMake; unit : HAsciiString from TCollection)
+	is virtual protected;
+	
+    AddWorkbenchUnitContribution(me:mutable; theinfile : InputFile from WOKMake; unit : HAsciiString from TCollection)
+	is virtual protected;
+
+    AddUnitContribution(me:mutable; theinfile : InputFile from WOKMake; unit : HAsciiString from TCollection)
+	is virtual protected;
+
+    ComputeExternals(me:mutable; aunit : HAsciiString from TCollection)
+	is virtual protected;
+
+end LinkList;

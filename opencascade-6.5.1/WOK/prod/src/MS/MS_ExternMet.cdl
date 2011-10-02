@@ -1,0 +1,41 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_ExternMet.cdl	1.1
+-- File:	MS_ExternMet.cdl
+-- Created:	Wed Jan 30 16:08:59 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class ExternMet 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Method from MS
+    uses 
+     	Package from MS,
+	MemberMet from MS,
+	Type from MS,
+	HAsciiString from TCollection
+
+is
+    Create(aName: HAsciiString) 
+    	returns mutable ExternMet from MS;
+    Create(aName: HAsciiString; aPackage: HAsciiString)
+    	returns mutable ExternMet from MS;
+	
+    CreateFullName(me : mutable) is redefined;
+    
+    Package(me: mutable; aPack: HAsciiString from TCollection);
+    Package(me)
+    	returns mutable HAsciiString from TCollection;
+	
+    Raises(me: mutable; aExcept: HAsciiString) is redefined ;
+    Raises(me: mutable; aExcept: HAsciiString; aPackage: HAsciiString);
+
+fields
+
+    myPackage : HAsciiString from TCollection;
+    
+end ExternMet from MS;

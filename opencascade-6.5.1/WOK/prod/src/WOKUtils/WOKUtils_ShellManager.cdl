@@ -1,0 +1,35 @@
+-- File:	WOKUtils_ShellManager.cdl
+-- Created:	Wed Mar  5 21:05:30 1997
+-- Author:	Prestataire Pascal BABIN
+--		<pba@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class ShellManager from WOKUtils 
+
+	---Purpose: 
+
+uses
+
+    Shell from WOKUtils,
+    RemoteShell from WOKUtils,
+    HAsciiString from TCollection,
+    AsciiString from TCollection
+    
+is
+
+    GetShell(myclass)
+    ---Purpose: returns one unlocked shell of processes list    
+    	returns Shell from WOKUtils;
+    
+    GetShell(myclass; apid : Integer from Standard)
+    ---Purpose: get a precise shell     
+    	returns Shell from WOKUtils;
+
+    GetRemoteShell(myclass; 
+    	    	   ahost : HAsciiString from TCollection;
+    	    	   apath : AsciiString from TCollection)
+    ---Purpose: returns a host's unlocked remote shell of processes list  
+    	returns RemoteShell from WOKUtils;
+
+end ShellManager;
+

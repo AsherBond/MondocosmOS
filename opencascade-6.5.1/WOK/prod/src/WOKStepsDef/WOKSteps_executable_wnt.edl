@@ -1,0 +1,11 @@
+
+
+@ifnotdefined ( %WOKSteps_executable_wnt_EDL) then
+@set %WOKSteps_executable_wnt_EDL = "";
+  @set    %WOKSteps_ExecGroup   = "exec.libs exec.tks exec.link exec.embed";
+
+  @set    %WOKSteps_exec_link   = "#WOKStep_EXELink(exec.tks)";
+  @set    %WOKSteps_exec_embed  = "*WOKStep_ManifestEmbed(exec.link)";
+                                                                   
+@endif;
+

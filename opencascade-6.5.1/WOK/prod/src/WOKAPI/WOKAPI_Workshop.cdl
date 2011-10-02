@@ -1,0 +1,68 @@
+-- File:	WOKAPI_Workshop.cdl
+-- Created:	Tue Aug  1 16:48:14 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class  Workshop from WOKAPI 
+inherits Entity from WOKAPI
+
+	---Purpose: 
+
+uses
+
+    Session                 from WOKAPI,
+    Workbench               from WOKAPI,
+    SequenceOfWorkbench     from WOKAPI,
+    SequenceOfParcel        from WOKAPI,
+    SequenceOfEntity        from WOKAPI,
+    Workshop                from WOKernel,
+    HSequenceOfParamItem    from WOKUtils,
+    ArgTable                from WOKTools,
+    Return                  from WOKTools,
+    HSequenceOfDefine       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+    
+is
+
+    Create returns Workshop from WOKAPI;
+
+    Create(aent : Entity from WOKAPI)
+    	returns Workshop from WOKAPI;
+
+    Create(asession : Session from WOKAPI;
+    	   aname    : HAsciiString from TCollection;
+    	   verbose,getit  : Boolean from Standard = Standard_True)
+    	returns Workshop from WOKAPI;
+    
+    BuildParameters(me:out; asession    : Session from WOKAPI;
+		            apath       : HAsciiString from TCollection; 
+		            defines     : HSequenceOfDefine from WOKTools;
+    	                    usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+    Build(me:out; asession    : Session from WOKAPI;
+    	          apath       : HAsciiString from TCollection; 
+		  defines     : HSequenceOfDefine from WOKTools;
+    	          usedefaults : Boolean from Standard)
+    	returns Boolean from Standard;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;
+
+    IsValid(me) 
+    	returns Boolean from Standard
+	is redefined;
+
+    NestedEntities(me; aseq : out SequenceOfEntity from WOKAPI)
+    	returns Boolean from Standard
+    	is redefined;
+
+    Workbenches(me; benchseq : out SequenceOfWorkbench from WOKAPI );
+    	
+    UsedParcels(me; parcelseq : out SequenceOfParcel from WOKAPI );
+
+end Workshop;

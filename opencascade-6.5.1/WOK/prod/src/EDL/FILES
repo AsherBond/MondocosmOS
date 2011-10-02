@@ -1,0 +1,9 @@
+EDL.yacc
+EDL.lex
+edl_rule.h
+EDL_CMPLRS.edl
+EDL_FunctionSignature.hxx
+EDL_ProcedureSignature.hxx
+EDL_WOKSteps.edl
+EDL_Replace.tcl
+EDL.tab.c

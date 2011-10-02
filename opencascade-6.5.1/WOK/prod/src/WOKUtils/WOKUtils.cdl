@@ -1,0 +1,109 @@
+-- File:	WOKUtils.cdl
+-- Created:	Thu May  4 16:20:32 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+
+
+package WOKUtils
+
+uses
+    EDL,
+    OSD,
+    TCollection,
+    TColStd,
+    SortTools,
+    MMgt,
+    WOKTools
+
+is
+
+-- IMPORTED TYPES
+
+    imported TimeStat;
+    imported Timeval;
+    imported SigHandler;
+    
+    imported TriggerHandler;
+    imported TriggerControl;
+
+    -- Classes imported from WOKUnix or WOKNT
+    -- 
+    imported ProcessManager; 
+    class    ShellManager;
+    imported Signal;
+    imported AdmFile;
+    imported Array1OfRegExp;
+    
+    class    RegExp;
+    class    Path;
+    class    PathIterator;
+
+    class    Shell;
+    class    RemoteShell;
+   
+-- ENUMERATIONS
+
+    enumeration BufferIs        is STDOUT, STDERR;
+    enumeration PopenOutputMode is POPEN_MIX_OUT_ERR, POPEN_OUT_ERR;
+    enumeration PopenBufferMode is POPEN_BUFFERED, POPEN_IMMEDIATE, POPEN_ECHOIFBLOCKED;
+    enumeration ShellMode       is SynchronousMode, AsynchronousMode, DumpScriptMode;
+
+    enumeration Extension       is CFile, HFile, CDLFile, ODLFile, IDLFile, CXXFile,
+    	    	    	    	   HXXFile, IXXFile, JXXFile, LXXFile,  GXXFile, INCFile,
+    	    	    	    	   PXXFile, F77File, CSHFile, 
+				   DBFile, FDDBFile,  DDLFile, HO2File,  
+				   LibSchemaFile, AppSchemaFile,
+				   LexFile, YaccFile, PSWFile, LWSFile, TemplateFile,
+    	    	    	    	   ObjectFile, MFile, CompressedFile,  ArchiveFile, DSOFile, DATFile,  
+    	    	    	    	   LispFile,  IconFile, TextFile, TarFile, 
+				   --- WNT extensions
+    	    	    	    	   LIBFile, DEFile, RCFile, RESFile, IMPFile, EXPFile, PDBFile, DLLFile, EXEFile,
+    	    	    	    	   UnknownFile, NoExtFile;
+
+    enumeration RESyntax        is RESyntaxAWK, RESyntaxEGREP, RESyntaxGREP, RESyntaxEMACS;
+
+    enumeration TriggerStatus   is Unknown, Succeeded, Failed, NotSetted;
+
+-- EXCEPTIONS
+    
+    exception BufferOverflow inherits Failure from Standard;
+    exception ProcessTimeOut inherits Failure from Standard;
+
+
+-- CLASSES
+
+
+
+    class PathHasher;
+
+    class SearchList;
+    class SearchIterator;
+
+    class ParamItem;
+    class Param;
+
+
+    class Trigger;
+
+-- INSTANCIATIONS
+
+    class MapOfPath
+    	instantiates Map     from WOKTools (Path       from WOKUtils,
+	    	    	    	    	    PathHasher from WOKUtils); 
+
+    class  SequenceOfPath
+    	instantiates  Sequence from TCollection ( Path from  WOKUtils);
+    class HSequenceOfPath 
+    	instantiates HSequence from TCollection ( Path from  WOKUtils, SequenceOfPath from WOKUtils);
+
+    class  SequenceOfParamItem
+    	instantiates  Sequence from TCollection ( ParamItem from WOKUtils);
+	
+    class HSequenceOfParamItem
+    	instantiates HSequence from TCollection ( ParamItem from WOKUtils, SequenceOfParamItem from WOKUtils);
+
+end;
+

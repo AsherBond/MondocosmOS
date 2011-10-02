@@ -1,0 +1,405 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>New features: New collection types</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-weight:bold; font-size:11pt; font-style:italic; }
+ul.whs2 { list-style:disc; }
+p.whs3 { margin-top:0px; margin-bottom:12px; }
+p.whs4 { margin-left:46px; margin-top:0px; margin-bottom:12px; }
+p.whs5 { margin-left:46px; }
+p.whs6 { font-size:11pt; font-style:italic; font-weight:bold; }
+p.whs7 { font-family:'Lucida Console' , monospace; }
+p.whs8 { font-size:11pt; font-weight:bold; font-style:italic; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {margin-top:1pt; }";
+  strNSS += "p.whs4 {margin-top:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nNCollections\nFeatures\nCollection types");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>New collection types</p>
+
+<p>&nbsp;</p>
+
+<p>There are 4 collection types provided as template classes:</p>
+
+<p>• NCollection_Vector</p>
+
+<p>• NCollection_UBTree</p>
+
+<p>• NCollection_SparseArray</p>
+
+<p>• NCollection_CellFilter</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1">Type Vector:</p>
+
+<p>Implemented internally as a list of arrays of the same size. Its properties:</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p>Direct (constant-time) access to members like 
+ in Array1 type; data are allocated in compact blocks, this provides faster 
+ iteration.</p></li>
+	
+	<li class=kadov-p><p>Can grow without limits, like List, Stack or Queue 
+ types.</p></li>
+	
+	<li class=kadov-p><p>Once having the size LEN, it cannot be reduced 
+ to any size less than LEN – there is no operation of removal of items.</p></li>
+</ul>
+
+<p class="whs3">Insertion in a Vector-type 
+ class is made by two methods:</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p class="whs3">SetValue(ind, 
+ theValue) – array-type insertion</p></li>
+</ul>
+
+<p class="whs4">where ind is the index of the inserted 
+ item, can be any non-negative number. If it is greater than or equal to 
+ Length(), then the vector is enlarged (its Length() grows).</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p class="whs3">Append(theValue) 
+ – list-type insertion</p></li>
+</ul>
+
+<p class="whs5">equivalent to myVec.SetValue(myVec.Length(), 
+ theValue) – incrementing the size of the collection.</p>
+
+<p>Other essential properties coming from List and Array1 type collections:</p>
+
+<ul type="disc" class="whs2">
+	
+	<li class=kadov-p><p>Like in List, the method Clear() destroys all 
+ contained objects and releases the allocated memory.</p></li>
+	
+	<li class=kadov-p><p>Like in Array1, the methods Value() and ChangeValue() 
+ return a contained object by index. Also, these methods have the form 
+ of overloaded operator ().</p></li>
+</ul>
+
+<p class="whs6">Type UBTree:</p>
+
+<p>The name of this type stands for “Unbalanced Binary Tree”. It stores 
+ the members in a binary tree of overlapped bounding objects (boxes or 
+ else).</p>
+
+<p>Once the tree of boxes of geometric objects is constructed, the algorithm 
+ is capable of fast geometric selection of objects. The tree can be easily 
+ updated by adding to it a new object with bounding box. </p>
+
+<p>The time of adding to the tree of one object is O(log(N)), where N is 
+ the total number of objects, so the time of building a tree of N objects 
+ is O(N(log(N)). The search time of one object is O(log(N)). </p>
+
+<p>Defining various classes inheriting NCollection_UBTree::Selector we 
+ can perform various kinds of selection over the same b-tree object </p>
+
+<p>The object may be of any type allowing copying. Among the best suitable 
+ solutions there can be a pointer to an object, handled object or integer 
+ index of object inside some collection. The bounding object may have any 
+ dimension and geometry. The minimal interface of TheBndType (besides public 
+ empty and copy constructor and operator =) used in UBTree algorithm is 
+ as the following: </p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;class 
+ MyBndType</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;{</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;public:</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inline 
+ void &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add 
+ (const MyBndType&amp; other);</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+ Updates me with other bounding type instance</p>
+
+<p class="whs7">&nbsp;</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inline 
+ Standard_Boolean &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IsOut 
+ (const MyBndType&amp; other) const;</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+ Classifies other bounding type instance relatively me</p>
+
+<p class="whs7">&nbsp;</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inline 
+ Standard_Real &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SquareExtent() 
+ const;</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+ Computes the squared maximal linear extent of me.</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+ (For box it is the squared diagonal of box)</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;};</p>
+
+<p>This interface is implemented in types of Bnd package: Bnd_Box, Bnd_Box2d, 
+ Bnd_B2x, Bnd_B3x.</p>
+
+<p>To select objects you need to define a class derived from UBTree::Selector 
+ that should redefine the necessary virtual methods to maintain the selection 
+ condition. Usually this class instance is also used to retrieve selected 
+ objects after search.</p>
+
+<p>The class UBTreeFiller is used to randomly populate an UBTree instance. 
+ The quality of a tree is better (considering the speed of searches) if 
+ objects are added to it in a random order trying to avoid the addition 
+ of a chain of nearby objects one following another. </p>
+
+<p>Instantiation of UBTreeFiller collects objects to be added, and then 
+ adds them at once to the given UBTree instance in a random order using 
+ the Fisher-Yates algorithm.</p>
+
+<p>Below is the sample code that creates an instance of NCollection_UBTree 
+ indexed by 2D boxes (Bnd_B2f), then a selection is performed returning 
+ the objects whose bounding boxes contain the given 2D point.</p>
+
+<p class="whs7">typedef NCollection_UBTree&lt;MyData, 
+ Bnd_B2f&gt; UBTree;</p>
+
+<p class="whs7">typedef NCollection_List&lt;MyData&gt; 
+ ListOfSelected;</p>
+
+<p class="whs7">//! Tree Selector 
+ type</p>
+
+<p class="whs7">class MyTreeSelector 
+ : public UBTree::Selector</p>
+
+<p class="whs7">{</p>
+
+<p class="whs7">public:</p>
+
+<p class="whs7">&nbsp;&nbsp;/**</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ Constructor. Initializes the selection criterion (e.g., a point)</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;*/</p>
+
+<p class="whs7">&nbsp;&nbsp;MyTreeSelector 
+ (const gp_XY&amp; thePnt) : myPnt(thePnt) {}</p>
+
+<p class="whs7">&nbsp;&nbsp;/**</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ Get the list of selected objects.</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;*/</p>
+
+<p class="whs7">&nbsp;&nbsp;const 
+ ListOfSelected&amp; ListAccepted () const</p>
+
+<p class="whs7">&nbsp;&nbsp;{ 
+ return myList; }</p>
+
+<p class="whs7">&nbsp;&nbsp;/**</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ Bounding box rejection - definition of virtual method.</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ @return True if theBox is outside the selection criterion</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;*/</p>
+
+<p class="whs7">&nbsp;&nbsp;Standard_Boolean 
+ Reject &nbsp;(const 
+ Bnd_B2f&amp; theBox) const</p>
+
+<p class="whs7">&nbsp;&nbsp;{ 
+ return theBox.IsOut(myPnt); }</p>
+
+<p class="whs7">&nbsp;&nbsp;/**</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ Redefined from the base class. Called when the bounding of theData</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;* 
+ conforms to the selection criterion. This method updates myList.</p>
+
+<p class="whs7">&nbsp;&nbsp;&nbsp;*/</p>
+
+<p class="whs7">&nbsp;&nbsp;Standard_Boolean 
+ Accept &nbsp;(const 
+ MyData&amp; theData)</p>
+
+<p class="whs7">&nbsp;&nbsp;{ 
+ myList.Append(theData); }</p>
+
+<p class="whs7">&nbsp;&nbsp;private:</p>
+
+<p class="whs7">&nbsp;&nbsp;gp_XY 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myPnt;</p>
+
+<p class="whs7">&nbsp;&nbsp;ListOfSelected 
+ myList;</p>
+
+<p class="whs7">};</p>
+
+<p class="whs7">. . .</p>
+
+<p class="whs7">// Create a UBTree 
+ instance and fill it with data, each data item having</p>
+
+<p class="whs7">// the corresponding 
+ 2D box.</p>
+
+<p class="whs7">UBTree aTree;</p>
+
+<p class="whs7">NCollection_UBTreeFiller 
+ &lt;MyData, Bnd_B2f&gt; aTreeFiller(aTree);</p>
+
+<p class="whs7">for(;;) {</p>
+
+<p class="whs7">&nbsp;&nbsp;const 
+ MyData&amp; aData = …;</p>
+
+<p class="whs7">&nbsp;&nbsp;const 
+ Bnd_B2d&amp; aBox = aData.GetBox();</p>
+
+<p class="whs7">&nbsp;&nbsp;aTreeFiller.Add(aData, 
+ aBox);</p>
+
+<p class="whs7">}</p>
+
+<p class="whs7">aTreeFiller.Fill();</p>
+
+<p class="whs7">. . .</p>
+
+<p class="whs7">// Perform selection 
+ based on ‘aPoint2d’</p>
+
+<p class="whs7">MyTreeSelector aSel(aPoint2d);</p>
+
+<p class="whs7">aTree.Select(aSel);</p>
+
+<p class="whs7">const ListOfSelected 
+ = aSel.ListAccepted();</p>
+
+<p>&nbsp;</p>
+
+<p class="whs8">Type SparseArray:</p>
+
+<p>This type has almost the same features as Vector but it allows to store 
+ items having scattered indices. In Vector, if you set an item with index 
+ 1000000, the container will allocate memory for all items with indices 
+ in the range 0-1000000. In SparseArray, only one small block of items 
+ will be reserved that contains the item with index 1000000.</p>
+
+<p>This class can be also seen as equivalence of DataMap&lt;int,TheItemType&gt; 
+ with the only one practical difference: it can be much less memory-expensive 
+ if items are small (e.g. Integer or Handle). </p>
+
+<p>This type has both interfaces of DataMap and Vector to access items.</p>
+
+<p>&nbsp;</p>
+
+<p class="whs8">Type CellFilter:</p>
+
+<p>This class represents a data structure for sorting geometric objects 
+ in n-dimensional space into cells, with associated algorithm for fast 
+ checking of coincidence (overlapping, intersection, etc.) with other objects. 
+ It can be considered as a functional alternative to UBTree, as in the 
+ best case it provides the direct access to an object like in an n-dimensional 
+ array, while search with UBTree provides logarithmic law access time.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

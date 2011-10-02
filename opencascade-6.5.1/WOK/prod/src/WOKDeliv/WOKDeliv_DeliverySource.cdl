@@ -1,0 +1,24 @@
+-- File:	WOKDeliv_DeliverySource.cdl
+-- Created:	Wed Mar 20 16:36:48 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliverySource from WOKDeliv inherits Source from WOKStep
+
+	---Purpose: Computes a DeliverySource File List
+
+uses BuildProcess from WOKMake,
+     DevUnit from WOKernel,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection;
+    	   checked, hidden : Boolean  from Standard)  
+    	returns mutable DeliverySource from WOKDeliv;
+
+end DeliverySource;

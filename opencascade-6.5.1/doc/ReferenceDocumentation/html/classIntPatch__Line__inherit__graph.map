@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIntPatch__ALine.html" title="Implementation of an intersection line described by a &#160;&#160;parametrised curve. &#160;" alt="" coords="5,237,128,267"/>
+<area shape="rect" id="node9" href="$classIntPatch__GLine.html" title="Implementation of an intersection line represented &#160;&#160;by a conic. &#160;" alt="" coords="152,237,277,267"/>
+<area shape="rect" id="node11" href="$classIntPatch__RLine.html" title="Implementation of an intersection line described by a &#160;&#160;restriction line on one of..." alt="" coords="301,237,427,267"/>
+<area shape="rect" id="node13" href="$classIntPatch__WLine.html" title="Definition of set of points as a result of the intersection &#160;&#160;between 2 parametrised..." alt="" coords="451,237,579,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="228,83,351,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="215,5,364,35"/>
+</map>

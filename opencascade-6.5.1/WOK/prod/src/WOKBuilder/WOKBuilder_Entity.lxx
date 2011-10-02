@@ -1,0 +1,15 @@
+// File:	WOKBuilder_Entity.lxx
+// Created:	Mon Aug  5 17:54:22 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+
+//=======================================================================
+//function : Path
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKUtils_Path)& WOKBuilder_Entity::Path() const
+{
+  return mypath;
+}

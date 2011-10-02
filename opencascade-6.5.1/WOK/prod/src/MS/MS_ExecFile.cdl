@@ -1,0 +1,29 @@
+-- File:	MS_ExecFile.cdl
+-- Created:	Mon Feb  5 09:17:58 1996
+-- Author:	Kernel
+--		<kernel@ilebon>
+---Copyright:	 Matra Datavision 1996
+
+
+class ExecFile from MS
+
+inherits TShared from MMgt
+
+uses Language     from MS,
+     HAsciiString from TCollection
+
+is
+    Create(aName : HAsciiString from TCollection) returns mutable ExecFile from MS;
+    
+    SetName(me : mutable; aName : HAsciiString from TCollection);
+    Name(me) returns mutable HAsciiString from TCollection;
+    
+    SetLanguage(me : mutable; aLang : Language from MS);
+    Language(me) returns Language from MS;
+    
+    fields
+    
+    	myName     : HAsciiString from TCollection;
+    	myLanguage : Language     from MS;
+    
+end;

@@ -1,0 +1,153 @@
+-- File:	WOKTools_DataMap.cdl
+-- Created:	Mon May 29 15:51:42 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+generic class DataMap from WOKTools
+   (TheKey    as any;
+    TheItem   as any;
+    Hasher as any) -- as MapHasher(TheKey)
+inherits BasicMap from WOKTools
+
+	---Purpose: The DataMap is a Map to store keys with associated
+	-- Items. See Map  from WOKTools for  a discussion
+	-- about the number of buckets.
+	-- 
+	-- The DataMap can be seen as an extended array where
+	-- the Keys  are the   indices.  For this reason  the
+	-- operator () is defined on DataMap to fetch an Item
+	-- from a Key. So the following syntax can be used :
+	-- 
+	-- anItem = aMap(aKey);
+	-- aMap(aKey) = anItem;
+	-- 
+	-- This analogy has its  limit.   aMap(aKey) = anItem
+	-- can  be done only  if aKey was previously bound to
+	-- an item in the map.
+
+raises
+    DomainError  from Standard,
+    NoSuchObject from Standard
+
+    class DataMapIterator inherits BasicMapIterator from WOKTools
+	---Purpose: Provides iteration on the  content  of a map.  The
+	-- iteration  methods are inherited  from  the BasicMapIterator. 
+	--  Warning: While using an iterator on a map if the content of
+	-- the map  is   modified  during the  iteration  the
+	-- result is unpredictable.
+
+    raises NoSuchObject from Standard	
+    is
+       	Create returns DataMapIterator from WOKTools;
+	    ---Purpose: Creates an undefined Iterator (empty).
+	
+	Create (aMap : DataMap from WOKTools) 
+    	returns DataMapIterator from WOKTools;
+	    ---Purpose: Creates an Iterator on the map <aMap>.
+	
+	Initialize(me : in out; aMap : DataMap from WOKTools)
+	    ---Level: Public
+	    ---Purpose: Resets the Iterator in the map <aMap>.
+	is static;
+	
+	Key(me) returns any TheKey
+	    ---Level: Public
+	    ---Purpose: Returns the current Key. An error is raised if
+	    -- the iterator is empty (More returns False).
+	    ---C++: return const &
+	raises
+	    NoSuchObject from Standard
+	is static;
+	
+	Value(me) returns any TheItem
+	    ---Level: Public
+	    ---Purpose: Returns the current Item. An error is raised if
+	    -- the iterator is empty (More returns False).
+	    ---C++: return const &
+	raises
+	    NoSuchObject from Standard
+	is static;
+
+    	Hashcode(me) returns Integer from Standard
+	raises
+	    NoSuchObject from Standard
+	is static;
+	
+    end DataMapIterator from WOKTools;
+
+is
+    Create(NbBuckets : Integer = 1) returns DataMap from WOKTools;
+	---Purpose: Creates   a DataMap with  <NbBuckets> buckets. Without
+	-- arguments the map is automatically dimensioned.
+    
+
+    Create(Other : DataMap from WOKTools) returns DataMap from WOKTools
+	---Purpose: As  copying  Map  is an expensive  operation it is
+	-- incorrect  to  do  it implicitly. This constructor is private and 
+	-- will raise an error if the Map is not empty. 
+	-- To copy the content of a DataMap use the Assign method (operator =).
+    raises DomainError from Standard
+    is private;
+    
+    Assign(me : in out; Other : DataMap from WOKTools) 
+    returns DataMap from WOKTools
+	---Level: Public
+	---Purpose: Replace the content of this map by  the content of
+	-- the map <Other>.
+	---C++: alias operator =
+	---C++: return &
+    is static;
+    
+    ReSize(me : in out; NbBuckets : Integer)
+	---Level: Public
+	---Purpose: Changes the  number    of  buckets of  <me>  to be
+	-- <NbBuckets>. The keys  already  stored in  the map are kept.
+    is static;
+    
+    Clear(me : in out)
+	---Level: Public
+	---Purpose: Removes all keys in the map.
+	---C++: alias ~
+    is static;
+    
+    Bind(me : in out; K : TheKey; I : TheItem) returns Boolean
+	---Level: Public
+	---Purpose: Adds the Key <K> to  the Map <me>  with  the  Item
+	-- <I>.  Returns True  if the Key  was not already in
+	-- the  Map.  If the  Key was already in the  Map the
+	-- Item in the Map is not replaced.
+    is static;
+
+    IsBound(me; K : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Returns True if the key <K>  is stored  in the map <me>. 
+    is static;
+    
+    UnBind(me : in out; K : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Removes the Key <K> from the  map. Returns True if
+	-- the Key was in the Map.
+    is static;
+    
+    Find(me; K : TheKey) returns any TheItem
+	---Level: Public
+	---Purpose: Returns  the Item stored  with the Key  <K> in the Map. 
+        --  Trigger: An exception is raised when <K> is not in the map.
+    raises NoSuchObject from Standard  
+	---C++: alias operator()
+	---C++: return const &
+    is static;
+    
+    ChangeFind(me : in out; K : TheKey) returns any TheItem
+	---Level: Public
+	---Purpose: Returns the  Item stored with  the Key  <K> in the
+	-- Map. This Item can be   modified with  the  syntax
+	-- aMap(K) = newItem; 
+        --  Trigger: An exception is raised when <K> is not in the map.
+	---C++: alias operator()
+	---C++: return &
+    raises NoSuchObject from Standard 
+    is static;
+    
+end DataMap;

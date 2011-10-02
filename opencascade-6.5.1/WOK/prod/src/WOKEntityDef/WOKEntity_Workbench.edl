@@ -1,0 +1,79 @@
+-- File:	WOKEntity_Workbench.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 13:54:26 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Workbench_EDL) then
+@set %WOKEntity_Workbench_EDL = "";
+
+@if ( %WOK_VERSION != "2.0" ) then
+  @cout "WOK version 2.0 is required to use this stuff";
+@endif;
+
+@uses "WOKEntity_UnitTypes.edl";
+
+
+@string %WOKEntity_ParamList = %WOKEntity_ParamList " %Station %DBMS %Entity_Src %Entity_Drv %Entity_DBMS %Entity_DBMS_Station %Entity_WOKVersion";
+
+@string %WOKEntity_DirList = %WOKEntity_DirList " pubincdir tmpdir srcdir drvdir dbtmpdir libdir bindir objdir sttmpdir workdir ";
+
+@template WOKEntity_srcdir ( %Entity_Src ) is
+$%Entity_Src/src\^
+@end;
+
+@template WOKEntity_pubincdir ( %Entity_DBMS ) is
+$%Entity_DBMS/inc\^
+@end;
+
+@template WOKEntity_tmpdir ( %Entity_DBMS ) is
+$%Entity_DBMS/drv/.tmp\^
+@end;
+
+@template WOKEntity_drvdir ( %Entity_DBMS ) is
+$%Entity_DBMS/drv\^
+@end;
+
+@template WOKEntity_dbtmpdir ( %Entity_DBMS ) is
+$%Entity_DBMS/drv/.tmp\^
+@end;
+
+@template WOKEntity_libdir ( %Entity_DBMS_Station, %Station ) is
+$%Entity_DBMS_Station/%Station/lib\^
+@end;
+
+@template WOKEntity_bindir ( %Entity_DBMS_Station, %Station ) is
+$%Entity_DBMS_Station/%Station/bin\^
+@end;
+
+@template WOKEntity_objdir ( %Entity_DBMS_Station, %Station ) is
+$%Entity_DBMS_Station/%Station/obj\^
+@end;
+
+@template WOKEntity_sttmpdir ( %Entity_DBMS_Station, %Station ) is
+$%Entity_DBMS_Station/%Station/obj/.tmp\^
+@end;
+
+@template WOKEntity_workdir ( %Entity_Home ) is
+$%Entity_Home/work\^
+@end;
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " UnitListFile ";
+
+@template WOKEntity_UnitListFile ( %Entity_Adm ) is
+$%Entity_Adm/UDLIST\^
+@end;
+
+@if ( %Station != "wnt" ) then
+	@template WOKEntity_AfterBuild ( %Entity_Adm, %Entity ) is
+	$chmod ugo+w %Entity_Adm
+	$chmod ugo+w %Entity_Adm/UDLIST
+	@end;
+
+	@template WOKEntity_AfterDestroy ( %Entity_Home, %Entity, %Entity_DBMS, %Entity_DBMS_Station) is
+	$rm -rf %Entity_DBMS_Station/%Station
+	$rm -rf %Entity_DBMS
+	$rm -rf %Entity_Home
+	@end;
+@endif;
+
+@endif;

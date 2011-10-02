@@ -1,0 +1,85 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classStepData__SelectType.html" title="SelectType is the basis used for SELECT_TYPE definitions from &#160;&#160;the EXPRESS form..." alt="" coords="5,2005,176,2035"/>
+<area shape="rect" id="node3" href="$classStepAP203__ApprovedItem.html" title="Representation of STEP SELECT type ApprovedItem &#160;" alt="" coords="295,5,492,35"/>
+<area shape="rect" id="node5" href="$classStepAP203__CertifiedItem.html" title="Representation of STEP SELECT type CertifiedItem &#160;" alt="" coords="296,59,491,88"/>
+<area shape="rect" id="node7" href="$classStepAP203__ChangeRequestItem.html" title="Representation of STEP SELECT type ChangeRequestItem &#160;" alt="" coords="272,112,515,141"/>
+<area shape="rect" id="node9" href="$classStepAP203__ClassifiedItem.html" title="Representation of STEP SELECT type ClassifiedItem &#160;" alt="" coords="295,165,492,195"/>
+<area shape="rect" id="node11" href="$classStepAP203__ContractedItem.html" title="Representation of STEP SELECT type ContractedItem &#160;" alt="" coords="287,219,500,248"/>
+<area shape="rect" id="node13" href="$classStepAP203__DateTimeItem.html" title="Representation of STEP SELECT type DateTimeItem &#160;" alt="" coords="292,272,495,301"/>
+<area shape="rect" id="node15" href="$classStepAP203__PersonOrganizationItem.html" title="Representation of STEP SELECT type PersonOrganizationItem &#160;" alt="" coords="260,325,527,355"/>
+<area shape="rect" id="node17" href="$classStepAP203__SpecifiedItem.html" title="Representation of STEP SELECT type SpecifiedItem &#160;" alt="" coords="295,379,492,408"/>
+<area shape="rect" id="node19" href="$classStepAP203__StartRequestItem.html" title="Representation of STEP SELECT type StartRequestItem &#160;" alt="" coords="280,432,507,461"/>
+<area shape="rect" id="node21" href="$classStepAP203__WorkItem.html" title="Representation of STEP SELECT type WorkItem &#160;" alt="" coords="309,485,477,515"/>
+<area shape="rect" id="node23" href="$classStepAP214__ApprovalItem.html" title="StepAP214_ApprovalItem" alt="" coords="297,539,489,568"/>
+<area shape="rect" id="node35" href="$classStepAP214__AutoDesignDateAndPersonItem.html" title="StepAP214_AutoDesignDateAndPersonItem" alt="" coords="233,592,553,621"/>
+<area shape="rect" id="node37" href="$classStepAP214__AutoDesignDateAndTimeItem.html" title="StepAP214_AutoDesignDateAndTimeItem" alt="" coords="240,645,547,675"/>
+<area shape="rect" id="node39" href="$classStepAP214__AutoDesignDatedItem.html" title="StepAP214_AutoDesignDatedItem" alt="" coords="265,699,521,728"/>
+<area shape="rect" id="node41" href="$classStepAP214__AutoDesignGeneralOrgItem.html" title="StepAP214_AutoDesignGeneralOrgItem" alt="" coords="248,752,539,781"/>
+<area shape="rect" id="node45" href="$classStepAP214__AutoDesignGroupedItem.html" title="StepAP214_AutoDesignGroupedItem" alt="" coords="259,805,528,835"/>
+<area shape="rect" id="node47" href="$classStepAP214__AutoDesignPresentedItemSelect.html" title="StepAP214_AutoDesignPresentedItemSelect" alt="" coords="229,859,557,888"/>
+<area shape="rect" id="node49" href="$classStepAP214__AutoDesignReferencingItem.html" title="StepAP214_AutoDesignReferencingItem" alt="" coords="247,912,540,941"/>
+<area shape="rect" id="node51" href="$classStepAP214__DocumentReferenceItem.html" title="StepAP214_DocumentReferenceItem" alt="" coords="255,965,532,995"/>
+<area shape="rect" id="node53" href="$classStepAP214__ExternalIdentificationItem.html" title="Representation of STEP SELECT type ExternalIdentificationItem &#160;" alt="" coords="252,1019,535,1048"/>
+<area shape="rect" id="node55" href="$classStepAP214__GroupItem.html" title="StepAP214_GroupItem" alt="" coords="307,1072,480,1101"/>
+<area shape="rect" id="node57" href="$classStepAP214__PresentedItemSelect.html" title="StepAP214_PresentedItemSelect" alt="" coords="268,1125,519,1155"/>
+<area shape="rect" id="node59" href="$classStepBasic__DateTimeSelect.html" title="StepBasic_DateTimeSelect" alt="" coords="289,1179,497,1208"/>
+<area shape="rect" id="node61" href="$classStepBasic__PersonOrganizationSelect.html" title="StepBasic_PersonOrganizationSelect" alt="" coords="257,1232,529,1261"/>
+<area shape="rect" id="node63" href="$classStepBasic__ProductOrFormationOrDefinition.html" title="Representation of STEP SELECT type ProductOrFormationOrDefinition &#160;" alt="" coords="236,1285,551,1315"/>
+<area shape="rect" id="node65" href="$classStepBasic__RoleSelect.html" title="Representation of STEP SELECT type RoleSelect &#160;" alt="" coords="308,1339,479,1368"/>
+<area shape="rect" id="node67" href="$classStepBasic__SizeSelect.html" title="StepBasic_SizeSelect" alt="" coords="309,1392,477,1421"/>
+<area shape="rect" id="node69" href="$classStepBasic__SourceItem.html" title="Representation of STEP SELECT type SourceItem &#160;" alt="" coords="305,1445,481,1475"/>
+<area shape="rect" id="node71" href="$classStepBasic__Unit.html" title="Implements a select type unit (NamedUnit or DerivedUnit) &#160;" alt="" coords="332,1499,455,1528"/>
+<area shape="rect" id="node73" href="$classStepDimTol__ShapeToleranceSelect.html" title="Representation of STEP SELECT type ShapeToleranceSelect &#160;" alt="" coords="267,1552,520,1581"/>
+<area shape="rect" id="node75" href="$classStepElement__CurveElementFreedom.html" title="Representation of STEP SELECT type CurveElementFreedom &#160;" alt="" coords="256,1605,531,1635"/>
+<area shape="rect" id="node77" href="$classStepElement__CurveElementPurpose.html" title="Representation of STEP SELECT type CurveElementPurpose &#160;" alt="" coords="259,1659,528,1688"/>
+<area shape="rect" id="node79" href="$classStepElement__ElementAspect.html" title="Representation of STEP SELECT type ElementAspect &#160;" alt="" coords="281,1712,505,1741"/>
+<area shape="rect" id="node81" href="$classStepElement__MeasureOrUnspecifiedValue.html" title="Representation of STEP SELECT type MeasureOrUnspecifiedValue &#160;" alt="" coords="240,1765,547,1795"/>
+<area shape="rect" id="node83" href="$classStepElement__SurfaceElementPurpose.html" title="Representation of STEP SELECT type SurfaceElementPurpose &#160;" alt="" coords="252,1819,535,1848"/>
+<area shape="rect" id="node85" href="$classStepElement__VolumeElementPurpose.html" title="Representation of STEP SELECT type VolumeElementPurpose &#160;" alt="" coords="253,1872,533,1901"/>
+<area shape="rect" id="node87" href="$classStepFEA__CurveElementEndCoordinateSystem.html" title="Representation of STEP SELECT type CurveElementEndCoordinateSystem &#160;" alt="" coords="225,1925,561,1955"/>
+<area shape="rect" id="node89" href="$classStepFEA__DegreeOfFreedom.html" title="Representation of STEP SELECT type DegreeOfFreedom &#160;" alt="" coords="287,1979,500,2008"/>
+<area shape="rect" id="node91" href="$classStepFEA__ElementOrElementGroup.html" title="Representation of STEP SELECT type ElementOrElementGroup &#160;" alt="" coords="264,2032,523,2061"/>
+<area shape="rect" id="node93" href="$classStepFEA__SymmetricTensor22d.html" title="Representation of STEP SELECT type SymmetricTensor22d &#160;" alt="" coords="280,2085,507,2115"/>
+<area shape="rect" id="node95" href="$classStepFEA__SymmetricTensor23d.html" title="Representation of STEP SELECT type SymmetricTensor23d &#160;" alt="" coords="280,2139,507,2168"/>
+<area shape="rect" id="node97" href="$classStepFEA__SymmetricTensor42d.html" title="Representation of STEP SELECT type SymmetricTensor42d &#160;" alt="" coords="280,2192,507,2221"/>
+<area shape="rect" id="node99" href="$classStepFEA__SymmetricTensor43d.html" title="Representation of STEP SELECT type SymmetricTensor43d &#160;" alt="" coords="280,2245,507,2275"/>
+<area shape="rect" id="node101" href="$classStepGeom__Axis2Placement.html" title="StepGeom_Axis2Placement" alt="" coords="288,2299,499,2328"/>
+<area shape="rect" id="node103" href="$classStepGeom__CurveOnSurface.html" title="StepGeom_CurveOnSurface" alt="" coords="288,2352,499,2381"/>
+<area shape="rect" id="node105" href="$classStepGeom__PcurveOrSurface.html" title="StepGeom_PcurveOrSurface" alt="" coords="287,2405,500,2435"/>
+<area shape="rect" id="node107" href="$classStepGeom__SurfaceBoundary.html" title="Representation of STEP SELECT type SurfaceBoundary &#160;" alt="" coords="287,2459,500,2488"/>
+<area shape="rect" id="node109" href="$classStepGeom__TrimmingSelect.html" title="StepGeom_TrimmingSelect" alt="" coords="292,2512,495,2541"/>
+<area shape="rect" id="node111" href="$classStepGeom__VectorOrDirection.html" title="StepGeom_VectorOrDirection" alt="" coords="281,2565,505,2595"/>
+<area shape="rect" id="node113" href="$classStepRepr__CharacterizedDefinition.html" title="Representation of STEP SELECT type CharacterizedDefinition &#160;" alt="" coords="267,2619,520,2648"/>
+<area shape="rect" id="node115" href="$classStepRepr__ConfigurationDesignItem.html" title="Representation of STEP SELECT type ConfigurationDesignItem &#160;" alt="" coords="264,2672,523,2701"/>
+<area shape="rect" id="node117" href="$classStepRepr__RepresentedDefinition.html" title="Representation of STEP SELECT type RepresentedDefinition &#160;" alt="" coords="271,2725,516,2755"/>
+<area shape="rect" id="node119" href="$classStepRepr__ShapeDefinition.html" title="StepRepr_ShapeDefinition" alt="" coords="295,2779,492,2808"/>
+<area shape="rect" id="node121" href="$classStepRepr__Transformation.html" title="StepRepr_Transformation" alt="" coords="299,2832,488,2861"/>
+<area shape="rect" id="node123" href="$classStepShape__CsgPrimitive.html" title="StepShape_CsgPrimitive" alt="" coords="300,2885,487,2915"/>
+<area shape="rect" id="node125" href="$classStepShape__DimensionalCharacteristic.html" title="Representation of STEP SELECT type DimensionalCharacteristic &#160;" alt="" coords="255,2939,532,2968"/>
+<area shape="rect" id="node127" href="$classStepShape__GeometricSetSelect.html" title="StepShape_GeometricSetSelect" alt="" coords="272,2992,515,3021"/>
+<area shape="rect" id="node129" href="$classStepShape__ReversibleTopologyItem.html" title="StepShape_ReversibleTopologyItem" alt="" coords="263,3045,524,3075"/>
+<area shape="rect" id="node131" href="$classStepShape__Shell.html" title="StepShape_Shell" alt="" coords="327,3099,460,3128"/>
+<area shape="rect" id="node133" href="$classStepShape__SurfaceModel.html" title="StepShape_SurfaceModel" alt="" coords="297,3152,489,3181"/>
+<area shape="rect" id="node135" href="$classStepShape__ToleranceMethodDefinition.html" title="Added for Dimensional Tolerances &#160;" alt="" coords="252,3205,535,3235"/>
+<area shape="rect" id="node137" href="$classStepShape__ValueQualifier.html" title="Added for Dimensional Tolerances &#160;" alt="" coords="297,3259,489,3288"/>
+<area shape="rect" id="node139" href="$classStepVisual__AreaOrView.html" title="StepVisual_AreaOrView" alt="" coords="304,3312,483,3341"/>
+<area shape="rect" id="node141" href="$classStepVisual__CurveStyleFontSelect.html" title="StepVisual_CurveStyleFontSelect" alt="" coords="269,3365,517,3395"/>
+<area shape="rect" id="node143" href="$classStepVisual__FillStyleSelect.html" title="StepVisual_FillStyleSelect" alt="" coords="296,3419,491,3448"/>
+<area shape="rect" id="node145" href="$classStepVisual__FontSelect.html" title="StepVisual_FontSelect" alt="" coords="307,3472,480,3501"/>
+<area shape="rect" id="node147" href="$classStepVisual__InvisibilityContext.html" title="StepVisual_InvisibilityContext" alt="" coords="283,3525,504,3555"/>
+<area shape="rect" id="node149" href="$classStepVisual__InvisibleItem.html" title="StepVisual_InvisibleItem" alt="" coords="301,3579,485,3608"/>
+<area shape="rect" id="node151" href="$classStepVisual__LayeredItem.html" title="StepVisual_LayeredItem" alt="" coords="300,3632,487,3661"/>
+<area shape="rect" id="node153" href="$classStepVisual__MarkerSelect.html" title="StepVisual_MarkerSelect" alt="" coords="299,3685,488,3715"/>
+<area shape="rect" id="node155" href="$classStepVisual__PresentationRepresentationSelect.html" title="StepVisual_PresentationRepresentationSelect" alt="" coords="225,3739,561,3768"/>
+<area shape="rect" id="node157" href="$classStepVisual__PresentationSizeAssignmentSelect.html" title="StepVisual_PresentationSizeAssignmentSelect" alt="" coords="224,3792,563,3821"/>
+<area shape="rect" id="node159" href="$classStepVisual__PresentationStyleSelect.html" title="StepVisual_PresentationStyleSelect" alt="" coords="260,3845,527,3875"/>
+<area shape="rect" id="node161" href="$classStepVisual__StyleContextSelect.html" title="StepVisual_StyleContextSelect" alt="" coords="276,3899,511,3928"/>
+<area shape="rect" id="node163" href="$classStepVisual__SurfaceStyleElementSelect.html" title="StepVisual_SurfaceStyleElementSelect" alt="" coords="251,3952,536,3981"/>
+<area shape="rect" id="node165" href="$classStepVisual__TextOrCharacter.html" title="StepVisual_TextOrCharacter" alt="" coords="287,4005,500,4035"/>
+<area shape="rect" id="node25" href="$classStepAP214__DateAndTimeItem.html" title="StepAP214_DateAndTimeItem" alt="" coords="645,432,875,461"/>
+<area shape="rect" id="node27" href="$classStepAP214__DateItem.html" title="StepAP214_DateItem" alt="" coords="675,485,845,515"/>
+<area shape="rect" id="node29" href="$classStepAP214__OrganizationItem.html" title="StepAP214_OrganizationItem" alt="" coords="649,539,871,568"/>
+<area shape="rect" id="node31" href="$classStepAP214__PersonAndOrganizationItem.html" title="StepAP214_PersonAndOrganizationItem" alt="" coords="615,592,905,621"/>
+<area shape="rect" id="node33" href="$classStepAP214__SecurityClassificationItem.html" title="StepAP214_SecurityClassificationItem" alt="" coords="620,645,900,675"/>
+<area shape="rect" id="node43" href="$classStepAP214__AutoDesignOrganizationItem.html" title="StepAP214_AutoDesignOrganizationItem" alt="" coords="611,752,909,781"/>
+</map>

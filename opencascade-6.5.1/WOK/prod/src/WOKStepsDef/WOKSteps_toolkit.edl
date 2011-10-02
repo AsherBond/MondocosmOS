@@ -1,0 +1,207 @@
+-- File:	WOKSteps_toolkit.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 13:20:03 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_toolkit_EDL) then
+@set %WOKSteps_toolkit_EDL = "";
+
+  @set %WOKSteps_SrcGroup = "src ";
+  @set %WOKSteps_src      = "*WOKStep_ToolkitSource";
+
+  @set %WOKSteps_DepGroup = " obj.idep lib.list ";
+  @set %WOKSteps_obj_idep = "*WOKStep_TclLibIdep(src)";
+  @set %WOKSteps_lib_list   = "WOKStep_TKList(src)";
+
+  @set %WOKSteps_LibGroup = " ";
+
+  @if ( %Station == "ao1" ) then
+
+        @string %WOKSteps_LibGroup += " lib.limit ";
+	@string %WOKSteps_LibGroup += " lib.arch ";
+
+	@set %WOKSteps_lib_limit = "WOKStep_LibLimit(lib.list)";
+	@set %WOKSteps_lib_arch  = "#WOKStep_ArchiveLibrary(lib.limit)";
+
+
+	@ifnotdefined ( %WOKSteps_LinkShr ) then
+
+	  @string %WOKSteps_LibGroup += " lib.build ";
+	  @set    %WOKSteps_lib_build = "WOKStep_DynamicLibrary(lib.arch)";
+
+	@else
+
+  	  -- Test avec GDE link avec les dependances directes
+	  @string %WOKSteps_LibGroup += " lib.libs ";
+	  @string %WOKSteps_LibGroup += " lib.tks ";
+  	  @string %WOKSteps_LibGroup += " lib.build ";
+	
+	  @set %WOKSteps_lib_libs = "WOKStep_DirectLinkList(obj.idep,lib.arch)";
+	  @set %WOKSteps_lib_tks  = "*WOKStep_DirectTKReplace(lib.libs)";
+
+	  @set %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+
+	@endif;
+
+	
+
+  @endif;
+
+  @if ( %Station == "hp" || %Station == "sil" ) then
+
+
+  	@string %WOKSteps_LibGroup += " lib.uncomp ";
+
+	@ifnotdefined ( %WOKSteps_LinkShr ) then
+
+	  @string %WOKSteps_LibGroup += " lib.build ";
+	  @set %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.uncomp)";
+
+	@else
+
+  	  -- Test avec GDE link avec les dependances directes
+	  @string %WOKSteps_LibGroup += " lib.libs ";
+	  @string %WOKSteps_LibGroup += " lib.tks ";
+  	  @string %WOKSteps_LibGroup += " lib.build ";
+	
+	  @set %WOKSteps_lib_libs = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.uncomp)";
+	  @set %WOKSteps_lib_tks  = "*WOKStep_DirectTKReplace(lib.libs)";
+
+	  @set %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+
+	@endif;
+
+  @endif;
+
+  @if ( %Station == "sun" ) then
+  	@string %WOKSteps_LibGroup += " lib.arx ";
+	
+	@set %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+	@ifnotdefined ( %WOKSteps_LinkShr ) then
+
+	  @string %WOKSteps_LibGroup += " lib.build ";
+	
+	  @set %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+
+	@else
+
+  	  -- Test avec GDE link avec les dependances directes
+	  @string %WOKSteps_LibGroup += " lib.libs ";
+	  @string %WOKSteps_LibGroup += " lib.tks ";
+  	  @string %WOKSteps_LibGroup += " lib.build ";
+	
+	  @set %WOKSteps_lib_libs = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.arx)";
+	  @set %WOKSteps_lib_tks  = "*WOKStep_DirectTKReplace(lib.libs)";
+
+	  @set %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+
+	@endif;
+  @endif;
+  
+  @if ( %Station == "lin" ) then
+   @string %WOKSteps_LibGroup  += " lib.arx ";
+   @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+
+   @ifnotdefined ( %WOKSteps_LinkShr ) then
+    @string %WOKSteps_LibGroup  += " lib.build ";
+    @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+   @else
+    @string %WOKSteps_LibGroup += " lib.libs ";
+    @string %WOKSteps_LibGroup += " lib.tks ";
+    @string %WOKSteps_LibGroup += " lib.build ";
+    @set    %WOKSteps_lib_libs  = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.arx)";
+    @set    %WOKSteps_lib_tks   = "*WOKStep_DirectTKReplace(lib.libs)";
+    @set    %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+   @endif;
+
+  @endif;
+
+  @if ( %Station == "mac" ) then
+   @string %WOKSteps_LibGroup  += " lib.arx ";
+   @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+
+   @ifnotdefined ( %WOKSteps_LinkShr ) then
+    @string %WOKSteps_LibGroup  += " lib.build ";
+    @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+   @else
+    @string %WOKSteps_LibGroup += " lib.libs ";
+    @string %WOKSteps_LibGroup += " lib.tks ";
+    @string %WOKSteps_LibGroup += " lib.build ";
+    @set    %WOKSteps_lib_libs  = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.arx)";
+    @set    %WOKSteps_lib_tks   = "*WOKStep_DirectTKReplace(lib.libs)";
+    @set    %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+   @endif;
+
+  @endif;
+
+  @if ( %Station == "bsd" ) then
+   @string %WOKSteps_LibGroup  += " lib.arx ";
+   @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+
+   @ifnotdefined ( %WOKSteps_LinkShr ) then
+    @string %WOKSteps_LibGroup  += " lib.build ";
+    @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arx)";
+   @else
+    @string %WOKSteps_LibGroup += " lib.libs ";
+    @string %WOKSteps_LibGroup += " lib.tks ";
+    @string %WOKSteps_LibGroup += " lib.build ";
+    @set    %WOKSteps_lib_libs  = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.arx)";
+    @set    %WOKSteps_lib_tks   = "*WOKStep_DirectTKReplace(lib.libs)";
+    @set    %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+   @endif;
+  @endif;
+
+  @if ( %Station == "aix" ) then
+
+   @string %WOKSteps_LibGroup += " lib.limit ";
+   @string %WOKSteps_LibGroup += " lib.arch ";
+
+   @set %WOKSteps_lib_limit = "WOKStep_LibLimit(lib.list)";
+   @set %WOKSteps_lib_arch  = "WOKStep_ArchiveLibrary(lib.limit)";
+
+   @string %WOKSteps_LibGroup  += " lib.arx ";
+   @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.arch)";
+
+   @ifnotdefined ( %WOKSteps_LinkShr ) then
+    @string %WOKSteps_LibGroup  += " lib.build ";
+    @set    %WOKSteps_lib_build  = "WOKStep_DynamicLibrary(lib.list,lib.arch)";
+   @else
+    @string %WOKSteps_LibGroup += " lib.libs ";
+    @string %WOKSteps_LibGroup += " lib.tks ";
+    @string %WOKSteps_LibGroup += " lib.build ";
+    @set    %WOKSteps_lib_libs  = "WOKStep_DirectLinkList(obj.idep,lib.list,lib.arch)";
+    @set    %WOKSteps_lib_tks   = "*WOKStep_DirectTKReplace(lib.libs)";
+    @set    %WOKSteps_lib_build = "WOKStep_LibLink(lib.tks)";
+   @endif;
+
+  @endif;
+------------ End AIX
+
+  @set %WOKSteps_lib_limit  = "WOKStep_LibLimit(lib.list)";
+  @set %WOKSteps_lib_arch   = "WOKStep_ArchiveLibrary(lib.limit)";
+  @set %WOKSteps_lib_uncomp = "WOKStep_LibUnCompress(lib.list)";
+  @set %WOKSteps_lib_arx    = "WOKStep_LibExtract(lib.list)";
+
+
+  @set %WOKSteps_toolkit_LinksWith = " lib.build ";
+  @set %WOKSteps_executable_LinksWith = " lib.build ";
+  @set %WOKSteps_engine_LinksWith     = " lib.build ";
+  @set %WOKSteps_interface_LinksWith     = " lib.build ";
+  @set %WOKSteps_jini_LinksWith     = " lib.build ";
+ 
+  @set %WOKSteps_IsOrdered = "Yes";
+	
+  @set %WOKSteps_delivery_lib_shared_list_steps ="obj.idep lib.build";
+  @set %WOKSteps_delivery_lib_shared_list_extensions = ".so .ImplDep";
+  @if (%Station == "hp") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".ImplDep .sl";
+  @endif;
+  @if (%Station == "mac") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".ImplDep .dylib";
+  @endif;
+  @if (%Station == "wnt") then
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".DLL .LIB .PDB .ImplDep";
+    @string %WOKSteps_delivery_lib_shared_list_steps += " obj.implib";
+  @endif;
+
+@endif;

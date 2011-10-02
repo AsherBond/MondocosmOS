@@ -1,0 +1,6 @@
+#ifndef _WOKernel_FileType_HeaderFile
+#include <WOKernel_FileType.hxx>
+#endif
+#ifndef _WOKernel_FileTypeHasher_HeaderFile
+#include <WOKernel_FileTypeHasher.hxx>
+#endif

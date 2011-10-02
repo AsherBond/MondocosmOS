@@ -1,0 +1,214 @@
+-- File:	COMMAND.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 16:16:40 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %COMMAND_EDL ) then
+@set %COMMAND_EDL = ""; 
+
+@if ( %Station != "wnt" ) then
+
+@if ( %Station != "hp" && %Station != "lin" && %Station != "mac" ) then
+  @set %COMMAND_CPCmd = "/usr/bin/cp";
+  @set %COMMAND_CHMODCmd = "/usr/bin/chmod";
+  @set %COMMAND_MVCmd = "/usr/bin/mv";
+  @set %COMMAND_RMCmd = "/usr/bin/rm";
+  @set %COMMAND_CMPCmd = "/usr/bin/cmp";
+@else
+  @set %COMMAND_CPCmd = "/bin/cp";
+  @set %COMMAND_CHMODCmd = "/bin/chmod";
+  @set %COMMAND_MVCmd = "/bin/mv";
+  @set %COMMAND_RMCmd = "/bin/rm";
+  @if ( %Station == "hp" ) then
+    @set %COMMAND_CMPCmd = "/bin/cmp";
+  @else
+    @set %COMMAND_CMPCmd = "/usr/bin/cmp";
+  @endif;
+@endif;
+
+
+@template COMMAND_Copy ( %COMMAND_CPCmd, %Source, %Dest )  is
+$ %COMMAND_CPCmd %Source %Dest 
+@end;
+
+@template COMMAND_PreserveCopy ( %COMMAND_CPCmd, %Source, %Dest )  is
+$ %COMMAND_CPCmd -p %Source %Dest 
+@end;
+
+@template COMMAND_CopyAndChmod ( %COMMAND_CPCmd,%COMMAND_CHMODCmd , %Source, %Dest )  is
+$ %COMMAND_CPCmd %Source %Dest 
+$ %COMMAND_CHMODCmd u+w %Dest
+@end;
+
+@template COMMAND_PreserveCopyAndChmod ( %COMMAND_CPCmd,%COMMAND_CHMODCmd , %Source, %Dest )  is
+$ %COMMAND_CPCmd -p %Source %Dest 
+$ %COMMAND_CHMODCmd u+w %Dest
+@end;
+
+@template COMMAND_PreserveCopyAndChmodExecute ( %COMMAND_CPCmd,%COMMAND_CHMODCmd , %Source, %Dest )  is
+$ %COMMAND_CPCmd -p %Source %Dest 
+$ %COMMAND_CHMODCmd u+w %Dest
+$ %COMMAND_CHMODCmd +x %Dest
+@end;
+
+@template COMMAND_CopyAndChmodRecursive ( %COMMAND_CPCmd, %COMMAND_CHMODCmd, %Source, %Dest )  is
+$ %COMMAND_CPCmd -pr %Source %Dest 
+$ %COMMAND_CHMODCmd -R u+w %Dest
+@end;
+
+@template COMMAND_Move (%COMMAND_MVCmd, %Source, %Dest )  is
+$ %COMMAND_MVCmd %Source %Dest 
+@end;
+
+@template COMMAND_ReplIfCh ( %Source, %COMMAND_CMPCmd, %COMMAND_MVCmd, %COMMAND_RMCmd, %Dest ) is
+$ %COMMAND_CMPCmd -s %Source %Dest 
+$ set stat = $status
+$ if ( $stat == 1 ) then 
+$    %COMMAND_MVCmd %Source %Dest 
+$    if ( $status != 0 ) then 
+$	set stat = 2
+$    endif
+$ else
+$    %COMMAND_RMCmd %Source
+$ endif
+$ set status = $stat
+@end;
+
+@template COMMAND_ReplIfChWith ( %Source, %Base, %COMMAND_MVCmd, %COMMAND_CMPCmd, %COMMAND_RMCmd, %Dest ) is
+$ %COMMAND_CMPCmd -s %Source %Base 
+$ set stat = $status
+$ if ( $stat == 1 ) then 
+$    %COMMAND_MVCmd %Source %Dest 
+$    if ( $status != 0 ) set stat = 2
+$ endif
+$ if ( $stat == 0 ) then 
+$    %COMMAND_RMCmd %Source
+$ endif
+$ set status = $stat
+@end;
+
+
+@template COMMAND_CopyIfCh ( %COMMAND_CPCmd, %COMMAND_CMPCmd, %Source, %Dest ) is
+$ %COMMAND_CMPCmd -s %Source %Dest 
+$ set stat = $status
+$ if ( $stat != 0 ) then
+$    set stat = 1 
+$    %COMMAND_CPCmd -p %Source %Dest 
+$    if ( $status != 0 ) then 
+$	set stat = 2
+$    endif
+$ endif
+$ set status = $stat
+@end;
+
+@set %CompressPath   = "/usr/bin/compress";
+@set %UnCompressPath = "/usr/bin/uncompress";
+
+
+@if ( %Station == "sil" ) then 
+	@set %CompressPath   = "/usr/bsd/compress";
+	@set %UnCompressPath = "/usr/bsd/uncompress";
+@endif;
+
+
+@template COMMAND_Compress ( %CompressPath, %File ) is
+$ %CompressPath -f %File 
+@end;
+
+@template COMMAND_CompressTo ( %CompressPath, %File, %Dest ) is
+$ cat %File | %CompressPath -f > %Dest
+@end;
+
+@template COMMAND_UnCompress ( %UnCompressPath, %File, %Dest  ) is
+$ %UnCompressPath -f %File 
+@end;
+
+@template COMMAND_UnCompressTo ( %UnCompressPath, %File, %Dest ) is
+$ set stat = 1
+$ %UnCompressPath -c %File > %Dest
+@end;
+
+@template COMMAND_CompressName ( %File ) is
+$%File.Z\^
+@end;
+
+
+@else
+
+
+
+@template COMMAND_Copy ( %Source, %Dest )  is
+$ @cp.exe %Source %Dest 
+@end;
+
+@template COMMAND_PreserveCopy ( %Source, %Dest )  is
+$ @cp.exe -p %Source %Dest 
+@end;
+
+@template COMMAND_PreserveCopyAndChmod ( %Source, %Dest )  is
+$ @cp.exe -p %Source %Dest;
+@end;
+
+@template COMMAND_PreserveCopyAndChmodExecute ( %Source, %Dest )  is
+$ @cp.exe -p %Source %Dest;
+@end;
+
+@template COMMAND_CopyAndChmod ( %Source, %Dest )  is
+$ @cp.exe -p %Source %Dest;
+@end;
+
+@template COMMAND_CopyAndChmodRecursive ( %Source, %Dest )  is
+$ @cp.exe -pr %Source %Dest;
+@end;
+
+@template COMMAND_Move ( %Source, %Dest )  is
+$ @mv.exe %Source %Dest 
+@end;
+
+@template COMMAND_ReplIfCh ( %Source, %Dest ) is
+$ wokReplIfCh %Source %Dest
+@end;
+
+@template COMMAND_ReplIfChWith ( %Source, %Base, %Dest ) is
+$ wokReplIfChWith %Source %Base %Dest
+@end;
+
+
+@template COMMAND_CopyIfCh ( %Source, %Dest ) is
+$ wokCopyIfCh %Source %Dest
+@end;
+
+@set %CompressPath   = "/usr/bin/compress";
+@set %UnCompressPath = "/usr/bin/uncompress";
+
+
+@if ( %Station == "sil" ) then 
+	@set %CompressPath   = "/usr/bsd/compress";
+	@set %UnCompressPath = "/usr/bsd/uncompress";
+@endif;
+
+
+@template COMMAND_Compress ( %CompressPath, %File ) is
+$ %CompressPath -f %File 
+@end;
+
+@template COMMAND_CompressTo ( %CompressPath, %File, %Dest ) is
+$ cat %File | %CompressPath -f > %Dest
+@end;
+
+@template COMMAND_UnCompress ( %UnCompressPath, %File, %Dest  ) is
+$ %UnCompressPath -f %File 
+@end;
+
+@template COMMAND_UnCompressTo ( %UnCompressPath, %File, %Dest ) is
+$ set stat = 1
+$ %UnCompressPath -c %File > %Dest
+@end;
+
+@template COMMAND_CompressName ( %File ) is
+$%File.Z\^
+@end;
+
+@endif;
+@endif;
+

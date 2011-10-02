@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_CodeGenFile.cdl
+-- Created:	Mon Oct 16 16:29:11 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class CodeGenFile from WOKBuilder 
+inherits Entity   from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+is
+
+    Create(apath : Path from WOKUtils);
+    
+end CodeGenFile;

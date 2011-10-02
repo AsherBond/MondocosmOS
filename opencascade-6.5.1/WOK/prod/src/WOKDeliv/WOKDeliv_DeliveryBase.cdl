@@ -1,0 +1,53 @@
+-- File:	WOKDeliv_DeliveryBase.cdl
+-- Created:	Tue Mar 26 15:36:09 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliveryBase from WOKDeliv inherits DeliveryStep from WOKDeliv
+
+	---Purpose: Process base for delivery units
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     Status from WOKMake,
+     Param from WOKUtils,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection,
+     MapOfHAsciiString from WOKTools
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryBase from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+    GetRequisites(me; totreat,treated : in out MapOfHAsciiString from WOKTools;
+		      params : in out Param from WOKUtils)
+    returns Boolean
+    is private;
+    
+    GetVersionFromParcel(me; deliveryname : HAsciiString from TCollection; 
+    	    	    	     parcelname : HAsciiString from TCollection)
+    returns HAsciiString from TCollection
+    is private;
+
+    Make(me:mutable) 
+    	returns Status from WOKMake is redefined;
+
+end DeliveryBase;

@@ -1,0 +1,45 @@
+-- File:	WOKDeliv_DelivBuildArchive.cdl
+-- Created:	Wed Aug 14 13:10:53 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class DelivBuildArchive from WOKDeliv inherits DeliveryCopy from WOKDeliv
+
+	---Purpose: Produces archives from deliveries
+
+uses DevUnit from WOKernel,
+     Parcel from WOKernel,
+     File from WOKernel,
+     Status from WOKMake,
+     InputFile from WOKMake,
+     BuildProcess from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DelivBuildArchive from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is redefined private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is redefined protected;
+    
+    BuildArchive(me: mutable; aparcel : Parcel from WOKernel;
+    	    	    	      aunit : DevUnit from WOKernel;
+    	    	    	      execlist : HSequenceOfInputFile from WOKMake)
+    returns Boolean
+    is private;
+    
+    CompleteExecList(me:mutable; anexeclist : HSequenceOfInputFile from WOKMake)
+    	is redefined protected;
+
+    
+end DelivBuildArchive;

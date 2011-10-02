@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<book name="Welcome to Open CASCADE Technology" >
+  <item name="Welcome to Open CASCADE Technology" url="Welcome_to_Open_CASCADE_Technology.htm" />
+  <item name="Copyright © 2001-2011 OPEN CASCADE S.A.S." url="Copyright.htm" />
+  <item name="Introduction to Open CASCADE Technology Documentation" url="Open_CASCADE_documentation.htm" />
+  <book name="Open CASCADE Technology Installation" >
+    <item name="Open CASCADE Technology Installation" url="welcome_to_open_cascade_technology/open_cascade_installation/open_cascade_installation.htm" />
+    <item name="System Environment Variables" url="welcome_to_open_cascade_technology/open_cascade_installation/system_environment_variables.htm" />
+  </book>
+  <book name="Hardware and Software Requirements" >
+    <item name="Linux Intel" url="welcome_to_open_cascade_technology/hardware_and_software_requirements/linux_intel_.htm" />
+    <item name="Windows Intel" url="welcome_to_open_cascade_technology/hardware_and_software_requirements/windows_intel_.htm" />
+  </book>
+  <book name="Release Notes" >
+    <item name="Release Notes" url="welcome_to_open_cascade_technology/release_notes/release_notes.htm" />
+  </book>
+  <book name="Getting Started" >
+    <item name="Draw Test Harness" url="development_tools/draw.htm" />
+    <item name="Experimenting with Draw Test Harness" url="welcome_to_open_cascade_technology/getting_started/experimenting_with_test_harness_draw_.htm" />
+    <book name="Programming Samples" >
+      <item name="MFC" url="welcome_to_open_cascade_technology/getting_started/programming_samples/mfc.htm" />
+      <item name="Qt" url="welcome_to_open_cascade_technology/getting_started/programming_samples/qt.htm" />
+      <item name="C#" url="welcome_to_open_cascade_technology/getting_started/programming_samples/c_sharp.htm" />
+    </book>
+  </book>
+  <book name="Building Modules" >
+    <item name="Building Modules" url="welcome_to_open_cascade_technology/building_modules/building_modules.htm" />
+    <item name="Building Tools Generation" url="Building_Tools_Generation.htm" />
+  </book>
+  <book name="Compilation of third-party products used for OCCT" >
+    <item name="Available distributives of third-party products" url="Available_distributive_of_OCCT_3rdparty_products.htm" />
+    <book name="Recommendations for compilation" >
+      <item name="Freetype 2.3.7" url="Freetype_2.3.7.htm" />
+      <item name="FTGL 2.1.2" url="FTGL_2.1.2.htm" />
+      <item name="gl2ps 1.3.5" url="gl2ps_1.3.5.htm" />
+      <item name="FreeImage 3.14.1" url="FreeImage_3.14.1.htm" />
+    </book>
+  </book>
+</book>
+<book name="Technical Overview" >
+  <item name="Overview of OCCT Library" url="technical_overview/overview_of_object_libraries.htm" />
+  <book name="Foundation Classes" >
+    <item name="Foundation Classes" url="technical_overview/foundation_classes/foundation_classes.htm" />
+    <item name="User's Guide (CDL)" url="development_tools/user_s_guide_cdl_.htm" />
+    <book name="Kernel" >
+      <item name="Quantities" url="technical_overview/foundation_classes/kernel/p_5_1.htm" />
+      <item name="Exceptions" url="technical_overview/foundation_classes/kernel/p_6_1.htm" />
+      <item name="Strings" url="technical_overview/foundation_classes/kernel/p_2_1.htm" />
+      <item name="Root Classes" url="technical_overview/foundation_classes/kernel/p_1_1.htm" />
+      <item name="Collections" url="technical_overview/foundation_classes/kernel/p_3_1.htm" />
+      <item name="Collections of Standard Objects" url="technical_overview/foundation_classes/kernel/p_4_1.htm" />
+      <book name="NCollections" >
+        <item name="Overview" url="technical_overview/foundation_classes/kernel/ncollections/p_80_1.htm" />
+        <book name="Instantiation of NCollection classes" >
+          <item name="Definition of a new collection class" url="technical_overview/foundation_classes/kernel/ncollections/instantiation_of_ncollection_classes/p_80_2_1.htm" />
+          <item name="Definition of a new collection class managed by Handle" url="technical_overview/foundation_classes/kernel/ncollections/instantiation_of_ncollection_classes/p_80_2_2.htm" />
+          <item name="Class architecture (public API)" url="technical_overview/foundation_classes/kernel/ncollections/instantiation_of_ncollection_classes/p_80_2_3.htm" />
+        </book>
+        <book name="Features" >
+          <item name="Iterators" url="technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_1.htm" />
+          <item name="Class BaseCollection" url="technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_2.htm" />
+          <item name="Heterogeneous Assign" url="technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_3.htm" />
+          <item name="Allocator" url="technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_4.htm" />
+          <item name="Collection types" url="New_features__New_collection_types.htm" />
+        </book>
+      </book>
+    </book>
+    <book name="Math Utilities" >
+      <item name="Vectors and matrices" url="technical_overview/foundation_classes/math_utilities/p_7_1.htm" />
+      <item name="Primitive Geometric Types" url="technical_overview/foundation_classes/math_utilities/p_8_1.htm" />
+    </book>
+  </book>
+  <book name="Modeling Data" >
+    <item name="Modeling Data" url="technical_overview/modeling_data/modeling_data.htm" />
+    <book name="Geometry Utilities" >
+      <item name="Manipulating geometry using Draw" url="technical_overview/modeling_data/geometry_utilities/p_14_10_3.htm" />
+      <item name="Interpolations and approximations" url="technical_overview/modeling_data/geometry_utilities/p_14_1.htm" />
+      <item name="Direct Construction" url="technical_overview/modeling_data/geometry_utilities/p_15_1.htm" />
+      <item name="Conversion to and from BSplines" url="technical_overview/modeling_data/geometry_utilities/p_16_1.htm" />
+      <item name="Points on curves" url="technical_overview/modeling_data/geometry_utilities/p_17_1.htm" />
+      <item name="Extrema" url="technical_overview/modeling_data/geometry_utilities/p_18_1.htm" />
+    </book>
+    <book name="Geometry" >
+      <item name="2D Geometry Types" url="technical_overview/modeling_data/2d_geometry/p_19_1.htm" />
+      <item name="3D Geometry Types" url="technical_overview/modeling_data/3d_geometry/p_22_1.htm" />
+      <item name="Adaptors for Curves and Surfaces" url="Adaptor_Curves_and_Surfaces.htm" />
+      <item name="Local Properties of curves and surfaces" url="technical_overview/modeling_data/3d_geometry/p_25_1.htm" />
+    </book>
+    <book name="Topology" >
+      <item name="Topological Data Structure" url="technical_overview/modeling_data/topology/p_27_1.htm" />
+      <item name="Global Properties of Shapes" url="technical_overview/modeling_data/topology/p_28_1.htm" />
+      <item name="Local Properties of Shapes" url="technical_overview/modeling_data/topology/p_29_1.htm" />
+    </book>
+    <book name="Examples" >
+      <item name="Merging BSpline curves" url="Merging_bspline_curves.htm" />
+      <item name="Computing curve length" url="Computing_curve_length.htm" />
+      <item name="Surface Concavity" url="Surface_Concavity.htm" />
+      <item name="Plane approximating a set of points" url="Plane_approximating_a_set_of_points.htm" />
+      <item name="Curve approximation with respect to tangencies" url="Curve_approximation_with_respect_to_tangencies.htm" />
+      <item name="Extract underlying geometry from shapes" url="Extract_underlying_geometry_from_shapes.htm" />
+      <item name="Coordinates of a Vertex" url="Coordinates_of_a_Vertex.htm" />
+      <item name="Exploring a Wire" url="Exploring_a_Wire.htm" />
+    </book>
+  </book>
+  <book name="Modeling Algorithms" >
+    <item name="Modeling Algorithms" url="technical_overview/modeling_algorithms/modeling_algorithms.htm" />
+    <item name="Standard Topological Objects" url="technical_overview/modeling_algorithms/topological_tools/p_35_1.htm" />
+    <item name="Construction of primitives" url="technical_overview/modeling_algorithms/p_37_1.htm" />
+    <item name="Boolean Operations" url="technical_overview/modeling_algorithms/boolean_operations/p_38_1_nbo.htm" />
+    <item name="Features" url="technical_overview/modeling_algorithms/p_41_1.htm" />
+    <item name="Hidden Line Removal" url="technical_overview/modeling_algorithms/p_42_1.htm" />
+    <item name="Shape Healing" url="User_s_Guise_(Shape_Healing).htm" />
+    <book name="Geometric Tools" >
+      <item name="Curves and Surfaces from Constraints" url="technical_overview/modeling_algorithms/geometric_tools/p_33_1.htm" />
+      <item name="Interpolation" url="technical_overview/modeling_algorithms/geometric_tools/p_31_1.htm" />
+      <item name="Intersections" url="technical_overview/modeling_algorithms/geometric_tools/p_30_1.htm" />
+      <item name="Projections" url="technical_overview/modeling_algorithms/geometric_tools/p_34_1.htm" />
+      <item name="Lines and Circles from constraints" url="technical_overview/modeling_algorithms/geometric_tools/p_32_1.htm" />
+    </book>
+    <book name="Examples" >
+      <item name="State of a Point" url="State_of_a_Point_in_a_Solid.htm" />
+      <item name="Connecting Faces" url="Connecting_Faces.htm" />
+      <item name="Solids Orientation" url="Solids_Orientation.htm" />
+    </book>
+  </book>
+  <book name="Visualization" >
+    <item name="Visualization" url="technical_overview/visualization/visualization.htm" />
+    <book name="Common Services" >
+      <item name="Images" url="technical_overview/visualization/common_services/p_43_1.htm" />
+      <item name="Drivers" url="technical_overview/visualization/common_services/p_45_1.htm" />
+      <item name="Basic Selection" url="technical_overview/visualization/common_services/p_46_1.htm" />
+    </book>
+    <book name="3D Graphics &amp; Visualization" >
+      <item name="3D Graphics" url="technical_overview/visualization/3d_visualization/p_50_1.htm" />
+      <item name="3D Viewer Objects" url="technical_overview/visualization/3d_visualization/p_51_1.htm" />
+      <item name="Application Interactive Services (AIS)" url="technical_overview/visualization/3d_visualization/p_52_1.htm" />
+      <item name="Presentation Management" url="technical_overview/visualization/3d_visualization/p_53_1.htm" />
+      <item name="Presentations of Geometry" url="technical_overview/visualization/3d_visualization/p_54_1.htm" />
+      <item name="Presentation of Dimensions and Geometric Constraints" url="technical_overview/visualization/3d_visualization/p_55_1.htm" />
+      <item name="Attribute Management" url="technical_overview/visualization/3d_visualization/p_56_1.htm" />
+      <item name="Selection Management" url="technical_overview/visualization/3d_visualization/p_57_1.htm" />
+      <item name="Standard Selections" url="technical_overview/visualization/3d_visualization/p_58_1.htm" />
+      <item name="Mesh Visualization Services" url="technical_overview/visualization/3d_visualization/meshvs_overview.htm" />
+      <item name="New Interactive Services (NIS)" url="New_Interactive_Services_(NIS).htm" />
+      <item name="Voxels" url="Voxels.htm" />
+    </book>
+    <book name="2D Graphics &amp; Visualization" >
+      <item name="2D Graphics" url="technical_overview/visualization/2d_visualization/p_47_1.htm" />
+      <item name="Viewer Objects" url="technical_overview/visualization/2d_visualization/p_48_1.htm" />
+      <item name="Standard Selections" url="technical_overview/visualization/2d_visualization/p_49_1.htm" />
+      <item name="Management of Presentation and Selection" url="technical_overview/visualization/2d_visualization/p_53_99.htm" />
+    </book>
+    <book name="Examples" >
+      <item name="Change graphic attributes of an interactive object" url="Change_graphic_attributes_of_an_interactive_object.htm" />
+      <item name="Dump a scene from the viewer" url="Dump_a_scene_from_the_viewer.htm" />
+      <item name="Add and Remove Objects from Selections" url="Adding_and_Removing_Objects_from_Selections.htm" />
+      <item name="Detect overlapped objects" url="Detect_overlapped_objects.htm" />
+      <item name="Get mouse coordinates in 3D view" url="Get_mouse_coordinates_in_3D_view.htm" />
+    </book>
+  </book>
+  <book name="Data Exchange" >
+    <item name="Data Exchange" url="technical_overview/data_exchange/data_exchange.htm" />
+    <item name="General Definitions" url="General_Definitions.htm" />
+    <item name="IGES" url="technical_overview/data_exchange/p_60_1.htm" />
+    <item name="STEP" url="technical_overview/data_exchange/p_61_1.htm" />
+    <item name="STL" url="technical_overview/data_exchange/overview.htm" />
+    <item name="VRML" url="technical_overview/data_exchange/vrmlapioverview.htm" />
+  </book>
+  <book name="Application Framework" >
+    <item name="Application Framework" url="technical_overview/application_framework/application_framework.htm" />
+    <item name="Data Framework" url="technical_overview/application_framework/data_framework.htm" />
+    <item name="TObj Package" url="Technical_Object.htm" />
+    <book name="Working with OCAF" >
+      <item name="How to start working with OCAF" url="How_to_start_working_with_OCAF.htm" />
+      <item name="Resource File" url="Resource_File.htm" />
+      <item name="Plugin File" url="Plugin_File.htm" />
+    </book>
+    <book name="Data Attributes" >
+      <item name="Overview" url="technical_overview/application_framework/data_attributes/data_attributes_overview.htm" />
+      <item name="Shape Attributes" url="technical_overview/application_framework/data_attributes/shape_attibutes.htm" />
+      <item name="Standard Attributes" url="technical_overview/application_framework/data_attributes/standard_attributes.htm" />
+      <item name="Function Attributes" url="technical_overview/application_framework/data_attributes/function_attributes.htm" />
+    </book>
+    <book name="Persistent Data Storage" >
+      <item name="Persistent Data Storage" url="technical_overview/application_framework/data_storage_and_persistent_collections/overview_data_storage.htm" />
+      <item name="Basic Data Storage" url="technical_overview/application_framework/data_storage_and_persistent_collections/data_storage.htm" />
+      <item name="Persistent Collections" url="technical_overview/application_framework/data_storage_and_persistent_collections/persistent_collections.htm" />
+      <item name="Persistent Geometry" url="technical_overview/application_framework/data_storage_and_persistent_collections/persistent_geometry.htm" />
+      <item name="Persistent Topology" url="technical_overview/application_framework/data_storage_and_persistent_collections/persistent_topology.htm" />
+      <item name="Standard Documents" url="technical_overview/application_framework/standard_documents.htm" />
+      <book name="LDOM Package for XML" >
+        <item name="Overview" url="technical_overview/application_framework/ldom_package_for_xml/ldom_implementation/ldom_package.htm" />
+        <item name="Document drivers" url="technical_overview/application_framework/ldom_package_for_xml/document_drivers/overview_stor_driver.htm" />
+        <item name="Attribute Drivers" url="technical_overview/application_framework/ldom_package_for_xml/attribute_drivers/attribute_drivers.htm" />
+        <item name="XML Document Structure" url="technical_overview/application_framework/ldom_package_for_xml/xml_document_structure/xml_document_structure.htm" />
+        <item name="XML Schema" url="technical_overview/application_framework/ldom_package_for_xml/xml_schema/xml_schema.htm" />
+      </book>
+    </book>
+  </book>
+  <book name="FAQ" >
+    <item name="Troubleshooting" url="Dynamic_library_loading_problem.htm" />
+    <item name="Memory Management" url="Memory_Management.htm" />
+    <item name="How to define a handled object without CDL" url="How_to_define_a_handled_object_without_CDL.htm" />
+    <item name="When is it necessary to use a handle?" url="When_is_it_necessary_to_use_a_handle_.htm" />
+    <item name="Casting shape handle to void" url="Casting_shape_handle_to_void.htm" />
+    <item name="How to test correct ending of OCCT algorithms?" url="How_to_test_correct_ending_of_OCCT_algorithms_.htm" />
+    <item name="How to cut, copy and paste inside a document" url="How_to_cut,_copy_and_paste_inside_a_document.htm" />
+    <item name="Using Visual C++ environment with OCCT" url="Using_Visual_C++_environment_with_OCCT.htm" />
+  </book>
+</book>
+
+</tocdata>

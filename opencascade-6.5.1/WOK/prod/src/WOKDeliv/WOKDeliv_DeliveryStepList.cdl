@@ -1,0 +1,46 @@
+-- File:	WOKDeliv_DeliveryStepList.cdl
+-- Created:	Mon Jan 12 10:15:43 1998
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1998
+
+class DeliveryStepList from WOKDeliv inherits DeliveryStep from WOKDeliv
+
+	---Purpose: Process cdl for delivery units
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryStepList from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is protected;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+    ParameterCodeName(me)
+    	returns HAsciiString from TCollection
+	is protected;	
+
+    IsToCopy(me; afile : File from WOKernel;
+    	    	 types : HAsciiString from TCollection;
+		 extens : HAsciiString from TCollection)
+	returns Boolean from Standard
+	is protected;
+	
+end DeliveryStepList;

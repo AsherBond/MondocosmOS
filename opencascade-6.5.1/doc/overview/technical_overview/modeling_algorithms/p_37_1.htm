@@ -1,0 +1,201 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Construction of Primitives Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:3.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+p.whs3 { margin-left:15.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+p.whs4 { margin-top:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nConstruction of primitives");
+addAvenueInfo("Modeling Algorithms","technical_overview/modeling_algorithms/topological_tools/p_35_1.htm","technical_overview/modeling_algorithms/boolean_operations/p_38_1_nbo.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Construction of Primitives Overview</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p><font style="color: #000000;"
+		color=#000000>The </font><font style="color: #000000; font-weight: bold;"
+										color=#000000>BRepPrimAPI</font><font 
+ style="color: #000000;"
+	color=#000000> package provides an API (Application Programming Interface) 
+ for:</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>Construction of primitives such as:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Boxes</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Cones</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Cylinders</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Prisms</font></p></li>
+</ul>
+
+<p><font style="color: #000000;"
+		color=#000000>Construction by sweeping along a profile:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Linear</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Rotational (through an angle of rotation).</font></p></li>
+</ul>
+
+<p class="whs3">&nbsp;</p>
+
+<p><font style="color: #000000;"
+		color=#000000>Sweeps are objects you obtain by sweeping a profile 
+ along a path. The profile can be any topology and the path is usually 
+ a curve or a wire. The profile generates objects according to the following 
+ rules:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Vertices generate Edges</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Edges generate Faces.</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Wires generate Shells.</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Faces generate Solids.</font></p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+	color=#000000>Shells generate Composite Solids.</font></p></li>
+</ul>
+
+<p class="whs3">&nbsp;</p>
+
+<p><font style="color: #000000;"
+		color=#000000>You are not allowed to sweep Solids and Composite 
+ Solids.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>Swept constructions along complex profiles such as 
+ BSpline curves are also available in the </font><font style="color: #000000; font-weight: bold;"
+														color=#000000>BRepOffsetAPI</font><font 
+ style="color: #000000;"
+	color=#000000> package.</font></p>
+
+<p class="whs4">&nbsp;</p>
+
+<p class="whs4"><font style="color: #000000;"
+									color=#000000>This API provides simple, 
+ high level calls for the most common operations.</font></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

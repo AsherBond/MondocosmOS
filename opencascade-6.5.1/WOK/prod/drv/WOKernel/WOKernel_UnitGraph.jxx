@@ -1,0 +1,15 @@
+#ifndef _WOKernel_Locator_HeaderFile
+#include <WOKernel_Locator.hxx>
+#endif
+#ifndef _WOKernel_Workbench_HeaderFile
+#include <WOKernel_Workbench.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKernel_UnitGraph_HeaderFile
+#include <WOKernel_UnitGraph.hxx>
+#endif

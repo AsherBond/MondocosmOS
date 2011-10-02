@@ -1,0 +1,18 @@
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKOrbix_IDLFile_HeaderFile
+#include <WOKOrbix_IDLFile.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKOrbix_IDLTranslator_HeaderFile
+#include <WOKOrbix_IDLTranslator.hxx>
+#endif

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classSTEPConstruct__Tool.html" title="Provides basic functionalities for tools which are intended &#160;&#160;for encoding/decoding..." alt="" coords="7,85,161,115"/>
+<area shape="rect" id="node3" href="$classStepAP209__Construct.html" title="Basic tool for working with AP209 model &#160;" alt="" coords="241,5,412,35"/>
+<area shape="rect" id="node5" href="$classSTEPConstruct__ExternRefs.html" title="Provides a tool for analyzing (reading) and creating (writing) &#160;&#160;references to external..." alt="" coords="224,59,429,88"/>
+<area shape="rect" id="node7" href="$classSTEPConstruct__Styles.html" title="Provides a mechanism for reading and writing shape styles &#160;&#160;(such as color) to and..." alt="" coords="240,112,413,141"/>
+<area shape="rect" id="node9" href="$classSTEPConstruct__ValidationProps.html" title="This class provides tools for access (write and read) &#160;&#160;the validation properties..." alt="" coords="211,165,443,195"/>
+</map>

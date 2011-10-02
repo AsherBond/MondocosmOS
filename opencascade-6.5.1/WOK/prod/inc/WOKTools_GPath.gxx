@@ -1,0 +1,57 @@
+WOKTools_GPath::WOKTools_GPath(const Handle(WOKTools_HSequenceOfGEdge)& aSeqEdge,
+			       const Standard_Boolean isCycle)
+{
+  myCycle = isCycle;
+
+  if (!aSeqEdge.IsNull()) {
+    myEdges = aSeqEdge;
+  }  
+  else {
+    Standard_ConstructionError::Raise();
+  }
+}
+
+Standard_Integer WOKTools_GPath::NodeLength() const 
+{
+  return myEdges->Length() + 1;
+}
+
+Standard_Integer WOKTools_GPath::EdgeLength() const 
+{
+  return myEdges->Length();
+}
+
+Handle(WOKTools_HSequenceOfGNode) WOKTools_GPath::Nodes() const 
+{
+  Handle(WOKTools_HSequenceOfGNode) aSeqNode;
+  Handle(WOKTools_GNode)            aNode;
+  Standard_Integer                  anInt;
+  
+  aSeqNode = new WOKTools_HSequenceOfGNode;
+  
+  for (anInt = 1; anInt <= myEdges->Length(); anInt++) {
+    aNode = myEdges->Value(anInt)->Source(); 
+    
+    aSeqNode->Append(aNode);
+  }
+  
+  if (!myEdges->IsEmpty()) {
+    aSeqNode->Append(myEdges->Value(myEdges->Length())->Destination());
+  }
+
+  return aSeqNode;
+}
+
+Handle(WOKTools_HSequenceOfGEdge) WOKTools_GPath::Edges() const 
+{
+  return myEdges;
+}
+
+Standard_Boolean WOKTools_GPath::IsCycle() const
+{
+  return myCycle;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+-- File:	TCPPExt_MethodTemplate.edl
+-- Author:	Kernel (CLE)
+-- History:	Thu Sep 14 15:51:01 1995	Kernel	Creation
+-- Copyright:	Matra Datavision 1995
+-- Purpose:     Templates for methods extraction
+
+@verboseoff;
+-- ==============================================
+-- Methods templates
+-- ==============================================
+
+@template ConstructorTemplate(%Class,%Arguments) is
+$%Class::%Class(%Arguments)
+${
+$}
+$
+@end;
+
+@template MethodTemplate(%RetSpec,%Return,%And,%Class,%MethodName,%Arguments,%MetSpec) is
+$%RetSpec %Return%And %Class::%MethodName(%Arguments) %MetSpec
+${
+$}
+$
+@end;
+
+@template InlineMethodTemplate(%Method) is
+$%Method 
+@end;

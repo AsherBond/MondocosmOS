@@ -1,0 +1,31 @@
+#include <WOKNT_ShellOutput.hxx>
+
+inline Standard_Boolean WOKNT_Shell :: IsLaunched () const {
+
+ return Standard_True;
+
+}  // end WOKNT_Shell :: IsLaunched
+
+inline Standard_Integer WOKNT_Shell :: Status () const {
+
+ return myStatus;
+
+}  // end WOKNT_Shell :: Status
+
+inline Standard_Boolean WOKNT_Shell :: IsLocked () const {
+
+ return myLocked;
+
+}  // end WOKNT_Shell :: IsLocked
+
+inline void WOKNT_Shell :: SetEcho () {
+
+ myEcho = Standard_True;
+
+}  // end WOKNT_Shell :: SetEcho
+
+inline void WOKNT_Shell :: UnsetEcho () {
+
+ myEcho = Standard_False;
+
+}  // end WOKNT_Shell :: UnsetEcho

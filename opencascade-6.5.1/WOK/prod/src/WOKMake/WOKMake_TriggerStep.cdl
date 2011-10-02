@@ -1,0 +1,76 @@
+-- File:	WOKMake_TriggerStep.cdl
+-- Created:	Tue Oct  8 14:22:59 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class TriggerStep from WOKMake
+inherits Step from WOKMake
+	---Purpose: 
+
+uses
+
+    BuildProcess          from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    InputFile             from WOKMake,
+    OutputFile            from WOKMake,
+    Status                from WOKMake,
+    DevUnit               from WOKernel,
+    HAsciiString          from TCollection,
+    Boolean               from Standard
+
+is
+
+    Create(aprocess : BuildProcess from WOKMake;
+    	   aunit : DevUnit from WOKernel; 
+    	   acode : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable TriggerStep from WOKMake;
+
+    CurrentTriggerStep(myclass)
+    ---C++: return &
+    	returns TriggerStep from WOKMake;
+
+    SetName(me:mutable; aname : HAsciiString from TCollection);
+    Name(me)
+    	returns HAsciiString from TCollection;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    	returns Boolean from Standard
+    	is redefined protected;
+	
+    Init(me:mutable)
+    	is redefined protected;
+
+    AddInputFile(me:mutable; inputfile : InputFile from WOKMake);
+
+    GetInputFile(me; anid : HAsciiString from TCollection)
+    	returns InputFile from WOKMake;
+
+    AddOutputFile(me:mutable; Outputfile : OutputFile from WOKMake);
+
+    GetOutputFile(me; anid : HAsciiString from TCollection)
+    	returns OutputFile from WOKMake;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    ---Purpose: Executes step
+    --          Computes output files
+    	is redefined private;
+	
+    Terminate(me:mutable)
+    	is redefined protected;
+
+    
+fields
+
+    myname : HAsciiString from TCollection;
+end TriggerStep;

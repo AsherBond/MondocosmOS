@@ -1,0 +1,216 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Persistent Geometry</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs3 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs4 { margin-left:4.50pt; font-weight:bold; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nPersistent Geometry");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/data_storage_and_persistent_collections/persistent_collections.htm","technical_overview/application_framework/data_storage_and_persistent_collections/persistent_topology.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Persistent Geometry</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">The <font style="font-weight: bold;">Persistent 
+ Geometry</font> component describes geometric data structures which can 
+ be stored in the database. These packages provide a way to convert data 
+ from the transient &quot;world&quot; to the persistent &quot;world&quot;.</p>
+
+<p class="whs2"><font style="font-weight: bold;">Persistent 
+ Geometry</font> consists of <font style="font-weight: bold;">a set of 
+ atomic data models</font> parallel to the geometric data structures described 
+ in the geometry packages. Geometric data models, independent of each other, 
+ can appear within the data model of any application. The system provides 
+ the means to convert each atomic transient data model into a persistent 
+ one, but it does not provide a way for these data models to share data.</p>
+
+<p class="whs2">Consequently, you can 
+ create a data model using these components, store data in, and retrieve 
+ it from a file or a database, using the geometric components provided 
+ in the transient and persistent &quot;worlds&quot;. In other words, you 
+ customize the system by declaring your own objects, and the conversion 
+ of the geometric components from persistent to transient and vice versa 
+ is automatically managed for you by the system.</p>
+
+<p class="whs2">However, these simple 
+ objects cannot be shared within a more complex data model. To allow data 
+ to be shared, you must provide additional tools.</p>
+
+<p class="whs2">Persistent Geometry 
+ is provided by several packages.</p>
+
+<p class="whs2">The <font style="font-weight: bold;">PGeom</font> 
+ package describes geometric persistent objects in 3D space, such as points, 
+ vectors, positioning systems, curves and surfaces.</p>
+
+<p class="whs2">These objects are persistent 
+ versions of those provided by the <font style="font-weight: bold;">Geom</font> 
+ package: for each type of transient object provided by <font style="font-weight: bold;">Geom</font> 
+ there is a corresponding type of persistent object in the <font style="font-weight: bold;">PGeom</font> 
+ package. In particular the inheritance structure is parallel.</p>
+
+<p class="whs2">However the <font style="font-weight: bold;">PGeom</font> 
+ package does not provide any functions to construct, edit or access the 
+ persistent objects. Instead the objects are manipulated as follows:</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Persistent 
+ objects are constructed by converting the equivalent transient <font style="font-weight: bold;">Geom</font> 
+ objects. To do this you use the <font style="font-weight: bold;">Translate</font> 
+ function from the <font style="font-weight: bold;">MgtGeom</font> package.</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Persistent 
+ objects created in this way are used to build persistent data structures 
+ that are then stored in a file or database.</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>When 
+ these objects are retrieved from the file or database, they are converted 
+ back into the corresponding transient objects from the <font style="font-weight: bold;">Geom</font> 
+ package. To do this, you use the <font style="font-weight: bold;">Translate</font> 
+ function provided by the <font style="font-weight: bold;">MgtGeom</font> 
+ package.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs2">In other words, you 
+ always edit or query <font style="font-weight: bold;">transient</font> 
+ data structures within the transient data model supplied by the session.</p>
+
+<p class="whs2">Consequently, the documentation 
+ for the <font style="font-weight: bold;">PGeom</font> package consists 
+ simply of a list of available objects.</p>
+
+<p class="whs2">The <font style="font-weight: bold;">PGeom2d</font> 
+ package describes persistent geometric objects in 2D space, such as points, 
+ vectors, positioning systems and curves. This package provides the same 
+ type of services as the <font style="font-weight: bold;">PGeom</font> 
+ package, but for the 2D geometric objects provided by the <font style="font-weight: bold;">Geom2d</font> 
+ package. Conversions are provided by the <font style="font-weight: bold;">Translate</font> 
+ function of the <font style="font-weight: bold;">MgtGeom2d</font> package.</p>
+
+<p class="whs4">Example</p>
+
+<p class="whs2"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Create 
+ a coordinate system<br>
+Handle(Geom_Axis2Placement) aSys;</font></p>
+
+<p class="whs2"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Create 
+ a persistent coordinate PTopoDS_HShape.cdlsystem<br>
+Handle(PGeom_Axis2placement)<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>aPSys = MgtGeom::Translate(aSys);</font></p>
+
+&nbsp; 
+
+<p class="whs2"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Restore 
+ a transient coordinate system<br>
+Handle(PGeom_Axis2Placement) aPSys;</font></p>
+
+<p class="whs2"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>Handle(Geom_Axis2Placement)<span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>aSys = MgtGeom::Translate(aPSys);</font></p>
+
+<p class="whs2">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

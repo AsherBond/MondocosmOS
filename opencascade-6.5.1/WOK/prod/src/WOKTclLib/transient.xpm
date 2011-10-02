@@ -1,0 +1,26 @@
+/* XPM */
+static char * transient_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"16 16 4 1 -1 -1",
+/* colors */
+" 	s topShadowColor	m white	c #bdbdbdbdbdbd",
+".	s iconGray6	m black	c #636363636363",
+"X	s bottomShadowColor	m black	c #636363636363",
+"o	s iconColor2	m white	c white",
+/* pixels */
+"                ",
+" ..............X",
+" ..............X",
+" ..oooooooooo..X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ......o.......X",
+" ..............X",
+" ..............X",
+" XXXXXXXXXXXXXXX"};

@@ -1,0 +1,20 @@
+-- File:	WOKSESSION.edl
+-- Author:	Atelier CAS2000
+-- History:	Fri Mar 10 16:43:31 2000	Atelier CAS2000	Creation
+-- Copyright:	 Matra Datavision 2000
+
+@ifnotdefined ( %WOKSESSION_EDL) then
+@set %WOKSESSION_EDL = "";
+
+--
+-- The name of the directory that will contains the ATLIST file , WOKSESSION.edl and DEFAULT.edl
+-- This directory will be pointed to by the V.E. WOK_ROOTADMDIR in the wok launcher.
+--
+@set    %WOKSESSION_Home = "TOSUBSTITUTE";
+--
+-- Nothing need to be changed below this line.
+--
+@string %WOKSESSION_Adm  = %WOKSESSION_Home ;
+@string %WOKSESSION_ATListFile = %WOKSESSION_Home "/ATLIST";
+
+@endif;

@@ -1,0 +1,82 @@
+-- File:	WOKernel_Workshop.cdl
+-- Created:	Fri Jun 23 17:43:57 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Workshop from WOKernel 
+inherits Entity from WOKernel
+
+	---Purpose: a workshop is a tree of workbench
+	--          It is used to work under a particular Parcel config
+	--          for a particuliar job	
+	--          A worshop implies a root workbench in it
+
+uses
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    HSequenceOfStationID    from WOKernel,
+    HSequenceOfDBMSID       from WOKernel,
+    FileTypeBase            from WOKernel,
+    Factory                 from WOKernel,
+    Workbench               from WOKernel,
+    HSequenceOfParamItem    from WOKUtils
+raises
+    ProgramError from Standard
+is
+    Create(aname : HAsciiString from TCollection; anesting : Factory from  WOKernel)  
+    	returns mutable Workshop from  WOKernel; 
+
+    BuildParameters(me: mutable; someparams : HSequenceOfParamItem from WOKUtils; usedefaults : Boolean from Standard)
+    ---Purpose: constructs Sequence of Parameters Needed by Entity
+    --          to be built.
+    --          Checks their consistancy
+    	returns HSequenceOfParamItem from WOKUtils is redefined;
+
+    GetParameters(me:mutable)
+    is redefined protected;
+
+    EntityCode(me) 
+    	returns HAsciiString from TCollection
+	is redefined;
+    
+    GetWorkbenches(me:mutable);
+    ---Purpose: Fills Workbench List    
+    
+    GetParcelsInUse(me:mutable);
+    ---Purpose: Fills Parcel List
+
+    Open(me: mutable)  is redefined;
+    Close(me: mutable) is redefined;
+
+    Workbenches(me)  
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ParcelsInUse(me) 
+    	returns HSequenceOfHAsciiString from TColStd;
+		
+    SupportedStations(me)
+    ---Purpose: Retourne les Stations Supportees par l'ilot    
+    	returns HSequenceOfStationID from WOKernel;
+	
+    SetSupportedStations(me : mutable; stations : HSequenceOfStationID from WOKernel); 
+    ---Purpose: Change la liste des Stations supportees    
+
+    DumpWorkbenchList(me);
+    ---Purpose: updates Workbench List    
+
+    AddWorkbench(me:mutable; aworkbench : Workbench from WOKernel)
+    ---Purpose: Adds a wb to the workshop
+    	raises ProgramError from Standard;
+
+    RemoveWorkbench(me:mutable; aworkbench : Workbench from WOKernel)
+    ---Purpose: Removes a wb to the workshop
+    	raises ProgramError from Standard;
+
+fields
+    myworkbenches  : HSequenceOfHAsciiString from TColStd;
+    myparcelsinuse : HSequenceOfHAsciiString from TColStd;
+    mystations     : HSequenceOfHAsciiString from TColStd;
+    mydbms         : HSequenceOfDBMSID    from WOKernel;
+end Workshop;

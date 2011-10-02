@@ -1,0 +1,17 @@
+-- File:	WOKUtils_RemoteShell.cdl
+-- Created:	Fri Jan 31 19:31:05 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class RemoteShell from WOKUtils 
+inherits Shell from WOKUtils
+
+	---Purpose: 
+
+is
+
+    Create returns mutable RemoteShell from WOKUtils;
+
+end RemoteShell;

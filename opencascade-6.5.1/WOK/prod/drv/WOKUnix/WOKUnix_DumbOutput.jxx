@@ -1,0 +1,9 @@
+#ifndef _WOKUnix_Buffer_HeaderFile
+#include <WOKUnix_Buffer.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_DumbOutput_HeaderFile
+#include <WOKUnix_DumbOutput.hxx>
+#endif

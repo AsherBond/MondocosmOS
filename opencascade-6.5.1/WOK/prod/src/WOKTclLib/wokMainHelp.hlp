@@ -1,0 +1,104 @@
+ Menu:
+
+
+ <File>  
+
+ Ends the iwok session. The session was started by typing the iwok command. 
+ You may also type iwok -f but in this case the exploration starts at the root with the session.
+ 
+ <Windows> 
+
+ Displays the name of all the created windows with the selected one first.
+ You may choose to hide or show all the created windows.
+
+
+
+ 'Contents of' window:
+
+
+ This window displays the name of the entity being explored.
+ Click on the 'pointed finger'icon to go there (i.e. wokcd).
+ This address becomes the current entity of the Tcl session and the application buttons are 
+ activated according to the type of entity.
+ The arrow located to the right of the field 'Contents of' lists all the last visited addresses; you
+ may perform your selection directly in this list.
+
+
+
+ Display management buttons:
+
+
+ <Columns>
+
+  Items are displayed in one column in alphabetical order.
+
+ <Last modified first> 
+  
+  Items are displayed in one column with the last modified items first.
+  For each item, the modification date and the size are provided.
+
+ <Date/Time> 
+  
+  Items are displayed in one column in alphabetical order.
+  For each item, the modification date and the size are provided.
+
+ <Rows> 
+
+  Items are displayed in rows in alphabetical order on one line.
+
+ <Go up>  
+ 
+  Goes up one level and displays the contents of the entity.
+  Example: If the current address is in a workbench, the list of all the workbenches in the 
+  workshop is displayed.
+
+ <wokcd>
+
+  Runs the wokcd command with the contents of the location window as an argument.
+
+ <Display Layout> 
+
+  Click on the Matra Datavision logo to stretch the window and display the contents of the 
+  selected entity. If the window has already been stretched, it is closed.
+  Double-click on the displayed element to explore its contents. In the case of a file, it is 
+  loaded into an editor.
+
+  The editor is either:
+     - emacs where you have created a *woksh* buffer,
+     - an editor defined by the environment variable EDITOR,
+     - the default editor provided with IWOK in all other cases.
+
+
+
+ WOK applications buttons:
+ 
+
+ The buttons are activated according to the type of entity where you performed the wokcd command.
+
+
+ <wprepare>  
+
+ Gives access to the WOK command wprepare which compares the workbench with the root workbench of
+ the workshop.
+
+
+ <umake> 
+
+ Gives access to the WOK command umake and all umake options.
+
+
+ <Params> 
+
+ Allows consultation and possible edition of the session parameters.
+ 
+
+ <CDL Browser>
+
+ Allows consultation of the CDL translation results in the current Tcl session.
+
+ 
+
+ 
+
+
+

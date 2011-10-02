@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{E4A1D350-0EEA-034D-160F-C9AA5E1BC668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CPPExt">
+      <UniqueIdentifier>{D5213BE5-0FE9-17B0-091A-F9FD12787666}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Alias.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Enum.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Exception.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_MPV.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Package.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_PersistentCSFDB.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_PersistentOBJS.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_PersistentOBJY.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Pointer.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Storable.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPExt\CPPExt_Transient.cxx">
+      <Filter>Source files\CPPExt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

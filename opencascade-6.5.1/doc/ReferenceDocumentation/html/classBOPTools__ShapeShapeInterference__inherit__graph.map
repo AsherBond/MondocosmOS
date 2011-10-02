@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classBOPTools__EEInterference.html" title="class for storing an Edge/Edge &#160;&#160;interference &#160;&#160;&#160;" alt="" coords="312,5,507,35"/>
+<area shape="rect" id="node5" href="$classBOPTools__ESInterference.html" title="class for storing an Edge/Face &#160;&#160;interference &#160;&#160;&#160;" alt="" coords="312,59,507,88"/>
+<area shape="rect" id="node7" href="$classBOPTools__SSInterference.html" title="class for storing a Face/Face interference &#160;&#160;Each F/F interference contains information..." alt="" coords="313,112,505,141"/>
+<area shape="rect" id="node9" href="$classBOPTools__VEInterference.html" title="class for storing info about an Verex/Edge interference &#160;&#160;&#160;" alt="" coords="312,165,507,195"/>
+<area shape="rect" id="node11" href="$classBOPTools__VSInterference.html" title="Class for storing info about an Verex/Face interference &#160;&#160;&#160;" alt="" coords="312,219,507,248"/>
+<area shape="rect" id="node13" href="$classBOPTools__VVInterference.html" title="class for storing an Verex/Vertex &#160;&#160;interference &#160;" alt="" coords="312,272,507,301"/>
+</map>

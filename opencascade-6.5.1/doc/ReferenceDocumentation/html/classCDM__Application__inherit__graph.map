@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classCDF__Application.html" title="CDF_Application" alt="" coords="276,160,407,189"/>
+<area shape="rect" id="node2" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="267,5,416,35"/>
+<area shape="rect" id="node7" href="$classTDocStd__Application.html" title="The abstract root class for all application classes. &#160;&#160;They are in charge of: &#160;Creating..." alt="" coords="261,237,421,267"/>
+<area shape="rect" id="node9" href="$classAppStd__Application.html" title="AppStd_Application" alt="" coords="5,315,155,344"/>
+<area shape="rect" id="node11" href="$classAppStdL__Application.html" title="AppStdL_Application" alt="" coords="179,315,336,344"/>
+<area shape="rect" id="node13" href="$classTObj__Application.html" title="This is a base class for OCAF based TObj models with declared virtual methods." alt="" coords="360,315,493,344"/>
+<area shape="rect" id="node15" href="$classXCAFApp__Application.html" title="Implements an Application for the DECAF documents &#160;" alt="" coords="517,315,677,344"/>
+</map>

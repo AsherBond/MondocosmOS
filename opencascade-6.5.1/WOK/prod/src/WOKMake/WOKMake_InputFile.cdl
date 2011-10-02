@@ -1,0 +1,80 @@
+-- File:	WOKMake_InputFile.cdl
+-- Created:	Mon Nov 20 19:56:42 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	Matra Datavision 1995
+
+
+class  InputFile  from WOKMake 
+inherits StepFile from WOKMake
+
+	---Purpose: Handles Single Input Item within a step
+
+uses
+    IndexedDataMapOfHAsciiStringOfInputFile from WOKMake,
+    HSequenceOfInputFile                    from WOKMake,
+    FileStatus                              from WOKMake,
+    OutputFile                              from WOKMake,
+    Locator                                 from WOKernel,
+    File                                    from WOKernel,
+    Entity                                  from WOKBuilder,
+    Path                                    from WOKUtils,
+    HAsciiString                            from TCollection,
+    Boolean                                 from Standard
+is
+    
+    Create returns mutable InputFile  from WOKMake;
+
+    Create(anid      : HAsciiString from TCollection;
+    	   afile     : File from WOKernel; 
+    	   abuildent : Entity from WOKBuilder; 
+    	   aoldpath  : Path from WOKUtils)
+    	returns mutable InputFile  from WOKMake;
+	
+    Create(outfile : OutputFile from WOKMake)
+    	returns mutable InputFile  from WOKMake;
+	
+	
+    --
+    --     READ/WRITE INPUT FILES 
+    --     
+
+    ReadLine(myclass; astream     : out IStream from Standard;
+    	    	      locator     : Locator from WOKernel;
+    	    	      infile      : out InputFile from WOKMake)
+    	is private;
+
+    WriteLine(myclass; astream     : out OStream from Standard;
+    	    	       infile      : InputFile from WOKMake)
+        is private;
+
+    -- Into/From a map
+    ReadFile(myclass; afile    : Path from WOKUtils; 
+    	    	      alocator : Locator from WOKernel;
+    	    	      amap     : out IndexedDataMapOfHAsciiStringOfInputFile from WOKMake)
+    	returns Integer from Standard;
+    
+    WriteFile(myclass; afile : Path from WOKUtils; amap : IndexedDataMapOfHAsciiStringOfInputFile from WOKMake)
+    	returns Integer from Standard;
+	
+    -- Into/From a seq
+    ReadFile(myclass; afile    : Path from WOKUtils;
+    	    	      alocator : Locator from WOKernel;
+    	    	      aseq     : HSequenceOfInputFile from WOKMake)
+    	returns Integer from Standard;
+    
+    WriteFile(myclass; afile : Path from WOKUtils; aseq : HSequenceOfInputFile from WOKMake)
+    	returns Integer from Standard;
+
+    -- Mgt Flags
+
+    SetDirectFlag(me:mutable; aflag : Boolean from Standard);
+    IsDirectInput(me)
+    ---Purpose: True if File is in Input Flow of Step
+    --          False if it is a deducted dependency input
+    ---C++: inline
+       	returns Boolean from Standard;
+	
+end InputFile;
+
+

@@ -1,0 +1,62 @@
+// File:	WOKMake_Step.lxx
+// Created:	Mon Dec  4 15:31:20 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+
+#include <WOKMake_BuildProcess.hxx>
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : BuildProcess
+//purpose  : 
+//=======================================================================
+inline Handle(WOKMake_BuildProcess) WOKMake_Step::BuildProcess() const
+{
+  return myprocess;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Unit
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_DevUnit)& WOKMake_Step::Unit() const
+{
+  return myunit;
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Locator
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_Locator)& WOKMake_Step::Locator() const
+{
+  return myprocess->Locator();
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Locator
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKUtils_Shell)& WOKMake_Step::Shell() const
+{
+  return myprocess->Shell();
+}
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Locator
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKernel_UnitGraph)& WOKMake_Step::UnitGraph() const
+{
+  return myprocess->UnitGraph();
+}
+

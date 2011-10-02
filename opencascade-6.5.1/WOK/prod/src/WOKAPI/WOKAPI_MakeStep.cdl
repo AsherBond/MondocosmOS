@@ -1,0 +1,51 @@
+-- File:	WOKAPI_MakeStep.cdl
+-- Created:	Wed Apr  3 22:51:15 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class MakeStep from WOKAPI 
+
+	---Purpose: 
+
+uses
+    Step           from WOKMake,
+    SequenceOfFile from WOKAPI,
+    HAsciiString   from TCollection
+    
+is
+
+    Create returns MakeStep from WOKAPI;
+
+    IsToExecute(me)
+    	returns Boolean from Standard;
+
+    UniqueName(me)
+    	returns HAsciiString from TCollection;
+
+    Code(me)
+    	returns HAsciiString from TCollection;
+
+    Input(me; aseq : out SequenceOfFile from WOKAPI)
+    	returns Integer from Standard;
+    
+    Output(me; aseq : out SequenceOfFile from WOKAPI)
+    	returns Integer from Standard;
+    
+    --- MakeStep PRIVATE methods
+    
+    Set(me:out; atep : Step from WOKMake)
+    	is private;
+
+  
+
+fields
+    
+    mystep : Step from WOKMake;
+
+friends
+
+    class BuildProcess from WOKAPI
+
+end MakeStep;

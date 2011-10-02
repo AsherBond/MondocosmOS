@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_Method_HeaderFile
+#include <MS_Method.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif
+#ifndef _MS_Param_HeaderFile
+#include <MS_Param.hxx>
+#endif

@@ -1,0 +1,52 @@
+-- File:	MS_StdClass.cdl
+-- Created:	Tue Jan 29 12:06:46 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class StdClass 
+    from 
+    	MS 
+    inherits Class from MS
+    uses
+	InstClass                 from MS,
+	HAsciiString              from TCollection     
+     	
+is
+
+    Create(aName: HAsciiString; aPackage: HAsciiString) 
+       returns mutable StdClass from MS;
+    
+    Create(aName, aPackage, Mother: HAsciiString; 
+    	   aPrivate, aDeferred, aInComplete: Boolean) 
+       returns mutable StdClass from MS;
+	       
+    Validity(me; aName: HAsciiString; aPackage: HAsciiString) is virtual;
+            	
+    CreatedBy(me : mutable; anInstClass : InstClass from MS);
+    ---Purpose: If a class was created by an instantiation, this 
+    --          method is called.
+    GetMyCreator(me) 
+    	returns mutable InstClass from MS;
+	
+    SetGenericState(me : mutable; aNestingState   : Boolean from Standard);
+    IsGeneric(me)
+	returns Boolean from Standard;
+    ---Purpose: if <me> has not been instantiated return True
+    --          Because <me> may be defined in a generic class.
+
+    --Comment(me)
+    --    returns HAsciiString from TCollection;
+
+    --SetComment(me : mutable; aComment : HAsciiString from TCollection);
+ 
+
+fields
+    myInstClass      : InstClass     from MS;
+    myNestingState   : Boolean       from Standard;      -- True if <me> is a generic stdclass (not created by insttostd - see InstClass)
+    myComment        : HAsciiString  from TCollection;   -- Comment to class declaration
+    
+end StdClass from MS;
+
+

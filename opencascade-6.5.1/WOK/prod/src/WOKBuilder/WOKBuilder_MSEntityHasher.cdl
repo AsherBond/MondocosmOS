@@ -1,0 +1,23 @@
+-- File:	WOKBuilder_MSEntityHasher.cdl
+-- Created:	Mon Sep 18 14:41:54 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class MSEntityHasher from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MSEntity from WOKBuilder
+is
+
+    --- Methods to be a Map Hasher
+      
+    HashCode(myclass; E1 : MSEntity from WOKBuilder)
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; E1,E2 : MSEntity from WOKBuilder)
+    	returns Boolean from Standard;
+
+end MSEntityHasher;

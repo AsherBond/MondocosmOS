@@ -1,0 +1,35 @@
+-- File:	WOKMake_toolkit_wnt.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Sep 19 12:13:28 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKMake_toolkit_wnt_EDL) then
+@set %WOKMake_toolkit_wnt_EDL = "";
+
+
+@if ( %Station == "wnt" ) then
+
+	
+	@set %WOKSteps_DepGroup   = " lib.list lib.implib ";
+	@set %WOKSteps_lib_list   = "WOKStep_WNTK(src)";
+	@set %WOKSteps_lib_implib = "WOKStep_ImportLibrary(lib.list)";
+
+
+	@set %WOKSteps_LibGroup   = " lib.libs lib.tks lib.build lib.embed ";
+
+	@set %WOKSteps_lib_libs   = "*WOKStep_DirectLinkList(lib.list)";
+	@set %WOKSteps_lib_tks    = "WOKStep_DirectTKReplace(lib.libs)";
+	@set %WOKSteps_lib_build  = "WOKStep_DLLink(lib.implib,lib.tks)";
+	@set %WOKSteps_lib_embed  = "*WOKStep_ManifestEmbed(lib.build)";
+
+	@set %WOKSteps_executable_LinksWith = " lib.implib ";
+	@set %WOKSteps_engine_LinksWith     = " lib.implib ";
+	@set %WOKSteps_interface_LinksWith  = " lib.implib ";
+	@set %WOKSteps_toolkit_LinksWith    = "lib.implib";
+	@set %WOKSteps_package_LinksWith    = "lib.implib";
+	@set %WOKSteps_nocdlpack_LinksWith  = "lib.implib";
+	@set %WOKSteps_schema_LinksWith     = "lib.implib";
+	
+@endif;
+
+@endif;

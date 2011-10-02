@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classStepRepr__AssemblyComponentUsage.html" title="Representation of STEP entity AssemblyComponentUsage &#160;" alt="" coords="41,315,316,344"/>
+<area shape="rect" id="node4" href="$classStepRepr__ProductDefinitionUsage.html" title="Representation of STEP entity ProductDefinitionUsage &#160;" alt="" coords="53,237,304,267"/>
+<area shape="rect" id="node6" href="$classStepBasic__ProductDefinitionRelationship.html" title="Representation of STEP entity ProductDefinitionRelationship &#160;" alt="" coords="31,160,327,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="117,83,240,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="104,5,253,35"/>
+</map>

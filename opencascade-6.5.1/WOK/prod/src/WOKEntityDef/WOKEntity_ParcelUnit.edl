@@ -1,0 +1,299 @@
+-- File:	WOKEntity_ParcelUnit.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Apr 12 00:26:51 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_ParcelUnit_EDL) then
+@set %WOKEntity_ParcelUnit_EDL = "";
+
+--
+-- Public parcel files definition for delivery
+-- 
+
+@string %WOKEntity_FileList += " ccldrv msgfile cmpmsgfile demofile derivated engine";
+@string %WOKEntity_FileList += " englisp icon iconfd infofile intdat";
+@string %WOKEntity_FileList += " library motifdefault archive object engdatfile";
+@string %WOKEntity_FileList += " shellscript source srcinc template datafile";
+@string %WOKEntity_FileList += " default shapefile cclcfg cclrun shellcfg";
+@string %WOKEntity_FileList += " dbunit testexec testobject executable corelisp";
+@string %WOKEntity_FileList += " loginfile userdoc pluginccl pluginlist pluginmsg";
+@string %WOKEntity_FileList += " appresource msgappresource";
+
+@if ( %UnitType == "toolkit" ) then
+
+  @string %WOKEntity_FileList = %WOKEntity_FileList " PACKAGES ";
+
+  @template WOKEntity_PACKAGES       ( %Nesting_Home, %Entity ,%File) is
+    $%Nesting_Home/etc/%Entity.PACKAGES\^
+  @end;
+
+@endif;
+
+@template WOKEntity_ccldrv (%Nesting_Home, %File ) is
+$%Nesting_Home/inc/%File\^
+@end;
+
+@template WOKEntity_msgfile (%Nesting_Home, %File ) is
+$%Nesting_Home/etc/locale/%File\^
+@end;
+
+@template WOKEntity_cmpmsgfile (%Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_demofile (%Nesting_Home, %File ) is
+$%Nesting_Home/demo/%File\^
+@end;
+
+@template WOKEntity_derivated    ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_engine    ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_englisp ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_icon ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_iconfd ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_infofile ( %Nesting_Home, %File ) is
+$%Nesting_Home/src/%File\^
+@end;
+
+@template WOKEntity_intdat ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_library      ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_motifdefault ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_object       ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_archive       ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_engdatfile       ( %Nesting_Home, %Station, %DBMS, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@if( %UnitType == "delivery" ) then
+
+  @string %WOKEntity_FileList += "  releasenote patchs ";
+
+  @template WOKEntity_releasenote(%Nesting_Home, %Entity, %File) is
+   $%Nesting_Home/%Entity.ReleaseNotes\^
+  @end;
+
+  @template WOKEntity_patchs(%Nesting_Home, %Entity, %File) is
+   $%Nesting_Home/%Entity.Patchs\^
+  @end;
+
+@endif;
+
+@template WOKEntity_shellscript ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_source       ( %Nesting_Home, %Entity, %File ) is
+$%Nesting_Home/src/%File\^
+@end;
+
+@template WOKEntity_srcinc ( %Nesting_Home, %File ) is
+$%Nesting_Home/inc/%File\^
+@end;
+
+@template WOKEntity_template ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_datafile ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_default ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_shapefile ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_cclcfg ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_cclrun ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_shellcfg ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_dbunit ( %Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_testexec ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_testobject ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_executable   ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+@template WOKEntity_corelisp ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/lib/%File\^
+@end;
+
+@template WOKEntity_loginfile ( %Nesting_Adm, %File ) is
+$%Nesting_Adm/%File\^
+@end;
+
+@template WOKEntity_userdoc ( %Nesting_Home, %File ) is
+$%Nesting_Home/man/%File\^
+@end;
+
+@template WOKEntity_pluginccl ( %Nesting_Home, %File ) is
+$%Nesting_Home/inc/%File\^
+@end;
+
+@template WOKEntity_pluginlist ( %Nesting_Adm, %File ) is
+$%Nesting_Adm/%File\^
+@end;
+
+@template WOKEntity_pluginmsg (%Nesting_Home, %File ) is
+$%Nesting_Home/etc/locale/%File\^
+@end;
+
+@template WOKEntity_appresource (%Nesting_Home, %File ) is
+$%Nesting_Home/etc/%File\^
+@end;
+
+@template WOKEntity_msgappresource (%Nesting_Home, %File ) is
+$%Nesting_Home/etc/locale/%File\^
+@end;
+
+
+-- 
+--- Definition des fichiers dans un unite de developpement dans une UL
+--
+
+@string %WOKEntity_FileList += " admfile EXTERNLIB";
+
+@template WOKEntity_admfile( %Nesting_Home, %File ) is
+$%Nesting_Home/adm/%File\^
+@end;
+
+@template WOKEntity_EXTERNLIB ( %Nesting_Home, %Entity, %File) is
+$%Nesting_Home/etc/%Entity.EXTERNLIB\^
+@end;
+
+@if (%UnitType == "delivery" ) then
+
+@string %WOKEntity_FileList += " DefineFile VersionFile DepULFile ";
+
+
+@template WOKEntity_DefineFile(%Nesting_Home, %Entity, %File) is
+$%Nesting_Home/adm/%Entity.edl\^
+@end;
+
+@template WOKEntity_VersionFile(%Nesting_Home, %Entity, %File) is
+$%Nesting_Home/adm/%Entity.version\^
+@end;
+
+@template WOKEntity_DepULFile(%Nesting_Home, %Entity) is
+$%Nesting_Home/adm/%Entity.depul\^
+@end;
+
+@endif;
+
+-- Nothing Dependant derivated types
+
+@string %WOKEntity_FileList += "  msentity englispfile ";
+
+@template WOKEntity_msentity ( %Nesting_Home, %File) is
+$%Nesting_Home/%File\^
+@end;
+
+@template WOKEntity_englispfile ( %Nesting_Home, %Station, %File ) is
+$%Nesting_Home/%Station/bin/%File\^
+@end;
+
+--
+-- DBMS Dependant derivated types
+--
+
+@string %WOKEntity_FileList += " pubinclude dbadmfile";
+
+
+@template WOKEntity_pubinclude   ( %Nesting_Home, %DBMS, %File ) is
+$%Nesting_Home/inc/%File\^
+@end;
+
+@template WOKEntity_dbadmfile       ( %Nesting_Home, %Entity, %DBMS, %File ) is
+$%Nesting_Home/.adm/DB/%File\^
+@end;
+
+--
+-- Station Dependant derivated types
+--
+
+@string %WOKEntity_FileList += " stadmfile";
+
+@template WOKEntity_stadmfile       ( %Nesting_Home, %Entity, %Station, %File ) is
+$%Nesting_Home/.adm/%Station/%File\^
+@end;
+
+@string  %WOKEntity_DirList += " sttmpdir ";
+
+@template WOKEntity_sttmpdir ( %Nesting_Home, %Station, %Entity ) is
+$%Nesting_Home/tmp/%Station/\^
+@end;
+
+
+--
+-- Parcel Description Files
+--
+
+@if( %UnitType == "delivery" ) then
+
+  @string %WOKEntity_FileList += " DELIVERIES COMPONENTSFile NameFile" ;
+
+  @template WOKEntity_DELIVERIES ( %Nesting_Home, %Entity, %File) is
+   $%Nesting_Home/adm/DELIVERIES\^
+  @end;
+  @template WOKEntity_COMPONENTSFile(%Nesting_Home, %Entity, %File) is
+   $%Nesting_Home/adm/%Entity.COMPONENTS\^
+  @end;
+
+  @template WOKEntity_NameFile(%Nesting_Home, %Entity, %File) is
+   $%Nesting_Home/adm/%Entity.NAME\^
+  @end;
+
+@endif;
+
+@endif;
+
+

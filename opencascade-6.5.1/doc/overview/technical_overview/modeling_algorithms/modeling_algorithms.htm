@@ -1,0 +1,425 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Modeling Algorithms</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-top:1.00pt; margin-bottom:1.00pt; }
+table.whs3 { width:576px; margin-left:0.75pt; border-spacing:0px; }
+tr.whs4 { x-cell-content-align:top; }
+td.whs5 { width:72.92%; height:16px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs6 { margin-left:6.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+td.whs7 { width:27.08%; height:16px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+h2.whs8 { margin-top:8.00pt; margin-bottom:6.00pt; }
+img_whs9 { width:150px; height:220px; border-style:none; }
+p.whs10 { margin-left:6.00pt; margin-top:1.00pt; margin-bottom:1.00pt; font-family:Arial, sans-serif; }
+p.whs11 { margin-left:24.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+p.whs12 { font-size:12pt; font-weight:bold; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "table.whs3 {margin-left:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nModeling Algorithms");
+addAvenueInfo("Modeling Algorithms","","User_s_Guise_(Shape_Healing).htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Modeling Algorithms</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="576" class="whs3">
+
+<tr valign="top" class="whs4">
+<td height="16" width="72.92%" class="whs5">
+<p>Modeling Algorithms module groups a wide range of topological algorithms 
+ used in modeling and geometric algorithms, called by them.</p>
+<p>These services are organized into the following libraries:</p>
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Geometric Tools 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Topological Tools 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Construction of 
+ Primitives </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Boolean Operations 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Fillets and Chamfers 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Offsets and Drafts 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Features </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Hidden Line Removal</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Shape Healing </p></li>
+</ul>
+<p class="whs6">The technical overview provides only 
+ a basic description of the libraries. Please, refer for more details to 
+ <font style="font-weight: bold;"><a href="../../../modalg.pdf">Modeling 
+ Algorithms User's guide</a></font> </p>
+<p>See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a>.</td>
+<td height="16" width="27.08%" class="whs7">
+<h2 class="whs8"><img src="../../image/ma.gif" alt="image\ma.gif" width="150px" height="220px" border="0" class="img_whs9"> </td></tr>
+</table>
+
+<p class="whs1">&nbsp;</p>
+
+<h2 class="whs8">Geometric Tools</h2>
+
+<p>This library provides algorithms to:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><a href="geometric_tools/p_30_1.htm">Calculate 
+ the intersection of two 2D curves, surfaces, or a 3D curve and a surface</a> 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><a href="geometric_tools/p_34_1.htm">Project 
+ points onto 2D and 3D curves, points onto surfaces, and 3D curves onto 
+ surfaces</a> </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><a href="geometric_tools/p_32_1.htm">Construct 
+ lines and circles from constraints</a> </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><a href="geometric_tools/p_30_1.htm">Construct 
+ curves and surfaces from constraints</a> </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><a href="geometric_tools/p_31_1.htm">Construct 
+ curves and surfaces by interpolation</a> </p></li>
+</ul>
+
+<p>OPEN CASCADE company also provides a product known as Surfaces from 
+ Scattered Points (SSP), which allows constructing surfaces from scattered 
+ points. This algorithm accepts or constructs an initial B-Spline surface 
+ and looks for its deformation (finite elements method) which would satisfy 
+ the constraints. Using optimized computation methods, this algorithm is 
+ able to construct a surface from more than 500 000 points.</p>
+
+<p>SSP product is not supplied with Open CASCADE Technology, but can be 
+ purchased separately. </p>
+
+<h2 class="whs8">Topological Tools</h2>
+
+<p>This library provides algorithms to:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Tessellate shapes 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Validate shapes 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Determine the local 
+ properties of shapes </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Determine the global 
+ properties of shapes </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs10">Perform 
+ geometric transformations</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs10">Find planes 
+ in which edges are located</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6"><font style="font-family: Arial, sans-serif;"
+	face=Arial><span style="font-family: Arial, sans-serif;">C</span>onvert 
+ shapes to NURBS geometry.</font></p></li>
+</ul>
+
+<p>It also furnishes a <a href="topological_tools/p_35_1.htm">complete 
+ brep data structure</a> for topological data structures defined in the 
+ Topology library of the Modeling Data module.</p>
+
+<h2 class="whs8">Construction of 
+ Primitives</h2>
+
+<p>This library provides algorithms to build <a href="p_37_1.htm">topological 
+ primitives</a> such as:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Prisms </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Cylinders </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Cones </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Tor</p></li>
+</ul>
+
+<h2 class="whs8">Boolean Operations</h2>
+
+<p>This library provides high-level algorithms to perform <a href="boolean_operations/p_38_1_nbo.htm">Boolean 
+ operations</a> to create new shapes from old ones by using:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Common </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Cut </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Fuse </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Section </p></li>
+</ul>
+
+<h2 class="whs8">Fillets and Chamfers</h2>
+
+<p>This library provides algorithms to make fillets and chamfers on shape 
+ edges.</p>
+
+<p>In OCCT, solutions for common fillet finishing problems are offered. 
+ The following cases are addressed:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Corners and apexes 
+ with different radii </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Corners and apexes 
+ with different concavity </p></li>
+</ul>
+
+<p>If there is a concavity, both surfaces that need to be extended and 
+ those, which do not, are treated.</p>
+
+<h2 class="whs8">Offsets, Drafts, 
+ Sewing and Sweeps</h2>
+
+<p>These classes provide the following services:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Creation of offset 
+ shapes and their variants such as: </p></li>
+	
+	<ul>
+		
+		<li style="font-size: 8pt;"
+			class=kadov-p><p class="whs11">Hollowing </p></li>
+		
+		<li style="font-size: 8pt;"
+			class=kadov-p><p class="whs11">Shelling </p></li>
+		
+		<li style="font-size: 8pt;"
+			class=kadov-p><p class="whs11">Lofting </p></li>
+	</ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Creation of tapered 
+ shapes using draft angles </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Sewing </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Creation of sweeps 
+ </p></li>
+</ul>
+
+<h2 class="whs8">Features</h2>
+
+<p>This <a href="p_41_1.htm">library</a> provides algorithms to build both 
+ form and mechanical features on shapes.</p>
+
+<p>Form features include:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Cylinders </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Draft prisms </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Prisms </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Revolved features 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Pipes </p></li>
+</ul>
+
+<p>Mechanical features include:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Ribs </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">Grooves </p></li>
+</ul>
+
+<h2 class="whs8">Hidden Line Removal</h2>
+
+<p>This <a href="p_42_1.htm">library</a> provides algorithms to define 
+ the lines of a shape hidden in a given projection. These lines can be 
+ shown or hidden.</p>
+
+<p>Services in this library allow you to work with the shape itself or 
+ a polyhedral simplification of it. With a polyhedral simplification, you 
+ reduce calculation time but obtain polygonal segments instead of an exact 
+ result.</p>
+
+<p class="whs12">Shape Healing</p>
+
+<p>This <a href="../../User_s_Guise_(Shape_Healing).htm">library</a> provides 
+ algorithms to modify the geometry and topology of OCCT shapes. </p>
+
+<p>Shape Healing adapts shapes to make them maximally appropriate for use 
+ by OCCT, for example:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">analyze shape characteristics 
+ and, in particular, <span style="margin-left: 6.00pt;
+									margin-top: 1.00pt;
+									margin-bottom: 1.00pt;">identify the 
+ shapes that do not comply with OCCT validity rules; </span></p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">fix incorrect or 
+ problem shapes;</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs6">upgrade and change 
+ shape characteristics if needed, for example a C0 supporting surface can 
+ become C1 continuous.</p></li>
+</ul>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

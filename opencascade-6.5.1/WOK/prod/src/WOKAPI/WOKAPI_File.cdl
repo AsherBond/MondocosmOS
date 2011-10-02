@@ -1,0 +1,87 @@
+-- File:	WOKAPI_File.cdl
+-- Created:	Wed Apr  3 22:47:41 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class File from WOKAPI 
+
+	---Purpose: 
+
+uses
+    Entity       from WOKAPI,
+    Locator      from WOKAPI,
+    File         from WOKernel,
+    HAsciiString from TCollection
+    
+is
+    
+    Create returns File from WOKAPI;
+
+    NestingEntity(me)
+    	returns Entity from WOKAPI;
+    
+    Type(me)
+    	returns HAsciiString from TCollection;
+	
+    Name(me)
+    	returns HAsciiString from TCollection;
+	
+    LocatorName(me)
+    	returns HAsciiString from TCollection;
+	
+    UserPath(me)
+    	returns HAsciiString from TCollection;
+
+    Exists(me)
+    	returns Boolean from Standard;
+
+    IsLocalTo(me; aent : Entity from WOKAPI)
+    	returns Boolean from Standard;
+
+    IsFile(me)
+    	returns Boolean from Standard;
+	
+    IsDirectory(me)
+    	returns Boolean from Standard;
+
+    IsValid(me)
+    	returns Boolean from Standard;
+	
+    IsLocated(me)
+    	returns Boolean from Standard;
+	
+    IsDBMSDependent(me)
+    	returns Boolean from Standard;
+	
+    IsStationDependent(me)
+    	returns Boolean from Standard;
+
+    Path(me)
+    	returns HAsciiString from TCollection;
+	
+    Locate(me:out; alocator : Locator from WOKAPI);
+       
+    Located(me:out);
+    UnLocated(me:out);
+    
+    ---- UNIT PRIVATE METHODS
+
+    Set(me:out; afile : File from WOKernel)
+    	is private;
+    
+	
+fields
+
+    myfile    : File from WOKernel;
+    mylocated : Boolean from Standard;
+
+friends 
+
+    class Unit    from WOKAPI,
+    class Session from WOKAPI,
+    class Entity  from WOKAPI,
+    class Locator from WOKAPI
+
+end File;

@@ -1,0 +1,177 @@
+-- File:	WOKernel_Session.cdl
+-- Created:	Fri Jun 23 17:16:37 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Session from WOKernel 
+inherits Entity from WOKernel
+
+	---Purpose: A WOK user session 
+	--          Manages WOK process lifetime
+
+uses
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    BaseEntity              from WOKernel,
+    DBMSID                  from WOKernel,
+    StationID               from WOKernel,
+    Factory                 from WOKernel,
+    Warehouse               from WOKernel,
+    Workshop                from WOKernel,
+    UnitNesting             from WOKernel,
+    Workbench               from WOKernel,
+    Parcel                  from WOKernel,
+    DevUnit                 from WOKernel,
+    File                    from WOKernel,
+    Entity                  from WOKernel,
+    DataMapOfHAsciiStringOfFactory   from WOKernel,
+    DataMapOfHAsciiStringOfWarehouse from WOKernel,
+    DataMapOfHAsciiStringOfWorkshop  from WOKernel,
+    DataMapOfHAsciiStringOfParcel    from WOKernel,
+    DataMapOfHAsciiStringOfWorkbench from WOKernel,
+    DataMapOfHAsciiStringOfDevUnit   from WOKernel,
+    FileTypeBase                     from WOKernel,
+    GlobalFileTypeBase               from WOKernel,
+    HSequenceOfParamItem             from WOKUtils
+
+	    
+raises
+    ProgramError from Standard
+is
+    Create(aname : HAsciiString from TCollection) returns mutable Session from WOKernel;
+    ---Purpose: instantiates Session does not Open It !!!    
+
+    EntityCode(me) 
+    	returns HAsciiString from TCollection
+	is redefined;
+
+    GetFileTypeBase(me; anent : Entity from WOKernel)
+    	returns FileTypeBase from WOKernel;
+
+    BuildParameters(me: mutable; someparams : HSequenceOfParamItem from WOKUtils; usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils is redefined;
+
+    Build(me: mutable; someparams : HSequenceOfParamItem from WOKUtils)   is redefined; 
+    ---Purpose: Nothing to do here    
+    Destroy(me: mutable) is redefined;
+    ---Purpose: Nothing either
+    
+    
+    Open(me:mutable)
+    	raises ProgramError from Standard is redefined;
+    
+    Open(me: mutable; aroot, libpath : HAsciiString from TCollection)  
+    ---Purpose: Loads factory list
+    	raises ProgramError from Standard;
+	
+    Close(me: mutable) is redefined;
+    ---Purpose: closes session
+    --          automatically closes opened entities in session    
+       
+    AddEntity(me:mutable; anentity : Entity from WOKernel)
+    	returns Boolean from Standard;
+    ---Purpose: Adds an Entity to the map
+        
+    RemoveEntity(me:mutable; anentity : Entity from WOKernel)
+    	returns Boolean from Standard;
+    ---Purpose: Removes an Entity to the map
+
+    IsKnownEntity(me; auniquename : HAsciiString from TCollection)
+    ---Purpose: Gets Entity Handle with its name
+    	returns Boolean from Standard;
+
+    IsKnownEntity(me; anentity : Entity from WOKernel)
+    ---Purpose: Gets Entity Handle with its name
+    	returns Boolean from Standard;
+	
+    ClearEntities(me:mutable);
+    ---Purpose: Clears Entity Map    
+	
+    -- Is Name a certain type of entity
+
+    IsFactory(me;     aname : HAsciiString from TCollection) returns Boolean from Standard; 
+    IsWarehouse(me;   aname : HAsciiString from TCollection) returns Boolean from Standard; 
+    IsWorkshop(me;    aname : HAsciiString from TCollection) returns Boolean from Standard; 
+    IsWorkbench(me;   aname : HAsciiString from TCollection) returns Boolean from Standard; 
+    IsUnitNesting(me; aname : HAsciiString from TCollection) returns Boolean from Standard;  
+    IsParcel(me;      aname : HAsciiString from TCollection) returns Boolean from Standard; 
+    IsDevUnit(me;     aname : HAsciiString from TCollection) returns Boolean from Standard;  
+
+    -- Get Entity using its name
+
+    GetEntity(me;      aname : HAsciiString from TCollection) returns Entity      from WOKernel;
+    ---C++: return const &
+    GetFactory(me;     aname : HAsciiString from TCollection) returns Factory     from WOKernel;
+    ---C++: return const &
+    GetWarehouse(me;   aname : HAsciiString from TCollection) returns Warehouse   from WOKernel;
+    ---C++: return const &
+    GetWorkshop(me;    aname : HAsciiString from TCollection) returns Workshop    from WOKernel;
+    ---C++: return const &
+    GetUnitNesting(me; aname : HAsciiString from TCollection) returns UnitNesting from WOKernel;  
+    ---C++: return const &
+    GetWorkbench(me;   aname : HAsciiString from TCollection) returns Workbench   from WOKernel;
+    ---C++: return const &
+    GetParcel(me;      aname : HAsciiString from TCollection) returns Parcel      from WOKernel;
+    ---C++: return const &
+    GetDevUnit(me;     aname : HAsciiString from TCollection) returns DevUnit     from WOKernel;
+    ---C++: return const &
+
+    GetMatchingEntities(me; aname    : HAsciiString from TCollection;
+    	    	    	    fullpath : Boolean from Standard = Standard_True) 
+    ---Purpose: renvoie les entites matchant un nom ou une partie de FullNames    
+    	returns HSequenceOfHAsciiString from TColStd;
+
+
+    Factories(me) 
+    ---Purpose: gives the factory sequence of Session    
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    DumpFactoryList(me);
+    ---Purpose: Updates files ATLIST with myfactories    
+
+    AddFactory(me:mutable; afact : Factory from WOKernel)
+    ---Purpose: Ajouter un atelier a la liste et met a jour 
+    --          le fichier ATLIST
+    	raises ProgramError from Standard;
+
+    RemoveFactory(me:mutable; afact : Factory from WOKernel)
+    ---Purpose: Removes the Factory from ATLIST    
+    	raises ProgramError from Standard;
+
+    SetStation(me:mutable; ast : StationID from WOKernel);
+
+    Station(me) 
+    ---C++: inline
+       	returns StationID from WOKernel;
+    
+    SetDBMSystem(me:mutable; adb : DBMSID from WOKernel);
+    
+    DBMSystem(me) 
+    ---C++: inline
+    	returns DBMSID from WOKernel;
+    
+    DebugMode(me)
+    	returns Boolean from Standard;
+	
+    SetDebugMode(me:mutable);
+    UnsetDebugMode(me:mutable);
+    
+fields
+    mystation       : StationID                         from WOKernel;
+    mydbms          : DBMSID                            from WOKernel;
+    mydebug         : Boolean                           from Standard;
+    myfactories     : DataMapOfHAsciiStringOfFactory    from WOKernel;
+    mywarehouses    : DataMapOfHAsciiStringOfWarehouse  from WOKernel;
+    myworkshops     : DataMapOfHAsciiStringOfWorkshop   from WOKernel;
+    myparcels       : DataMapOfHAsciiStringOfParcel     from WOKernel;
+    myworkbenches   : DataMapOfHAsciiStringOfWorkbench  from WOKernel;
+    myunits         : DataMapOfHAsciiStringOfDevUnit    from WOKernel;
+    myfiletypebases : GlobalFileTypeBase                from WOKernel;
+
+friends
+
+    class EntityIterator from WOKernel
+
+end Session;

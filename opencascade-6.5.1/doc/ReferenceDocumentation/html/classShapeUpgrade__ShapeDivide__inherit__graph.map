@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classShapeUpgrade__ShapeConvertToBezier.html" title="API class for performing conversion of 3D, 2D curves to bezier curves &#160;&#160;and surfaces..." alt="" coords="271,5,548,35"/>
+<area shape="rect" id="node5" href="$classShapeUpgrade__ShapeDivideAngle.html" title="Splits all surfaces of revolution, cylindrical, toroidal, &#160;&#160;conical, spherical surfaces..." alt="" coords="287,59,532,88"/>
+<area shape="rect" id="node7" href="$classShapeUpgrade__ShapeDivideArea.html" title="Divides faces from sprcified shape by max area criterium. &#160;" alt="" coords="291,112,528,141"/>
+<area shape="rect" id="node9" href="$classShapeUpgrade__ShapeDivideClosed.html" title="Divides all closed faces in the shape. Class &#160;&#160;ShapeUpgrade_ClosedFaceDivide is used..." alt="" coords="283,165,536,195"/>
+<area shape="rect" id="node11" href="$classShapeUpgrade__ShapeDivideClosedEdges.html" title="ShapeUpgrade_ShapeDivideClosedEdges" alt="" coords="263,219,556,248"/>
+<area shape="rect" id="node13" href="$classShapeUpgrade__ShapeDivideContinuity.html" title="ShapeUpgrade_ShapeDivideContinuity" alt="" coords="271,272,548,301"/>
+</map>

@@ -1,0 +1,3 @@
+#ifndef _WOKTools_CStringHasher_HeaderFile
+#include <WOKTools_CStringHasher.hxx>
+#endif

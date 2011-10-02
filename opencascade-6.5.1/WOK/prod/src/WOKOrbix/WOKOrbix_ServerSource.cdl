@@ -1,0 +1,38 @@
+-- File:	WOKOrbix_ServerSource.cdl
+-- Created:	Mon Aug 25 18:41:59 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class ServerSource from WOKOrbix
+inherits CDLUnitSource from WOKStep
+
+	---Purpose: Computes CDLUnitSource File List.
+
+uses
+    BuildProcess          from WOKMake,
+    InputFile             from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    DevUnit               from WOKernel,
+    File                  from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    HSequenceOfEntity     from WOKBuilder,
+    HAsciiString          from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection;  
+    	   checked, hidden : Boolean from Standard)  
+    	returns mutable ServerSource from WOKOrbix;
+
+    ReadUnitDescr(me:mutable; unitcdl : InputFile from WOKMake) is redefined protected;
+    ---Purpose: Read Unit.cdl file to obtain CDL files list    
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    ---Purpose: Executes step    
+    --          Computes output files
+    	is redefined private;
+
+end ServerSource;

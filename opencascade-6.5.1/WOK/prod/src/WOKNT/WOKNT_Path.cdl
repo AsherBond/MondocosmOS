@@ -1,0 +1,130 @@
+-- File:	WOKNT_Path.cdl
+-- Created:	Mon Jul 22 17:17:38 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class Path from WOKNT
+inherits TShared from MMgt
+
+ uses
+ 
+    Path         from OSD,
+    TimeStat     from WOKNT,
+    Extension    from WOKNT,
+    Dword        from WOKNT,
+    HAsciiString from TCollection
+    
+ raises
+ 
+    OSDError from OSD
+    
+ is
+ 
+    Create returns mutable Path from WOKNT;
+    	---Purpose: creates a class instance
+
+    Create( aPath : HAsciiString from TCollection )
+     returns mutable Path from WOKNT;
+     	---Purpose: creates a class instance
+
+    Create( aDir, aName : HAsciiString from TCollection )
+     returns mutable Path from WOKNT;
+     	---Purpose: creates a class instance
+
+    Create( aDir, aName : CString from Standard )
+     returns mutable Path from WOKNT;
+     	---Purpose: creates a class instance
+
+    CheckAttr(me:mutable) returns Boolean from Standard is private;
+    ---C++:     inline
+   
+    GetAttr(me:mutable) 
+     returns Boolean from Standard is private;
+
+    Exists(me:mutable) returns Boolean from Standard;
+    	---Purpose: tests whether specified entity exists or not
+
+    CreateDirectory(me:mutable; fCreateParents : Boolean from Standard = Standard_False)
+     returns Boolean from Standard;
+    	---Purpose: creates a directory
+
+    CreateFile(me:mutable; fCreateParents : Boolean from Standard = Standard_False)
+     returns Boolean from Standard;
+    	---Purpose: creates a file
+
+    RemoveDirectory(me:mutable; fRemoveChilds : Boolean from Standard = Standard_False)
+     returns Boolean from Standard;
+    	---Purpose: removes a directory
+
+    RemoveFile(me:mutable)
+     returns Boolean from Standard;
+    	---Purpose: removes a file
+
+    MoveTo(me: mutable; aDestPath : Path from WOKNT )
+     returns Boolean from Standard;
+     	---Purpose: moves a file/directory to the new location
+    	---Warning: raises if the operation was failed
+
+    GetMDate(me: mutable ) returns TimeStat from WOKNT;
+    	---Purpose: returns last modification date of the file
+
+    Extension(me) returns Extension from WOKNT;
+    	---Purpose: returns a file extension
+
+    BaseName(me) returns HAsciiString from TCollection;
+    	---Purpose: returns a base name of full file name
+
+    DirName(me) returns HAsciiString from TCollection;
+    	---Purpose: returns path component of full file name
+
+    FileName(me) returns HAsciiString from TCollection;
+    	---Purpose: returns file name ( name.ext )
+
+    Name(me) returns HAsciiString from TCollection;
+    	---Purpose: returns full name
+    	---C++:     return const &
+    	---C++:     inline
+
+    MDate(me:mutable) returns TimeStat from WOKNT;
+    	---Purpose: returns known modification date of path
+    	---C++:     inline
+
+    ResetMDate(me: mutable );
+    	---Purpose: resets modification date
+    	---C++:     inline
+
+    IsOlder(me: mutable; aName : Path from WOKNT ) returns Boolean from Standard;
+    	---Purpose: compares last modification time of the file
+
+    IsNewer(me: mutable; aName : Path from WOKNT ) returns Boolean from Standard;
+    	---Purpose: compares last modification time of the file
+
+    IsDirectory(me:mutable)
+    	returns Boolean from Standard;
+
+    IsFile(me:mutable) returns Boolean from Standard;
+    	---Purpose: checks whether 'myPath' is a file or not
+
+    IsSymLink(me:mutable) returns Boolean from Standard;
+    	---Purpose: checks whether specified file a symbolic link or not
+
+    ReducedPath(me)
+     returns Path from WOKNT;
+        ---Purpose: reduces Path as much as possible (reads links)
+
+    IsSameFile(me ; aPath : Path from WOKNT) returns Boolean from Standard;
+	---Purpose:
+
+    IsWriteAble(me:mutable) returns Boolean from Standard;
+
+    ExtensionName(me) returns HAsciiString from TCollection;
+
+
+ fields
+ 
+    myPath    : HAsciiString from TCollection;
+    myDate    : TimeStat     from WOKNT;
+    myAttr    : Dword        from WOKNT;
+    myAttrGet : Boolean      from Standard;
+end Path;

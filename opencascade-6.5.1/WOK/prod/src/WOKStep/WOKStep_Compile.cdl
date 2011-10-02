@@ -1,0 +1,54 @@
+-- File:	WOKStep_Compile.cdl
+-- Created:	Thu Jun 27 17:25:43 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class Compile from WOKStep
+inherits ProcessStep from WOKStep
+	---Purpose: Compile files
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    CompilerIterator            from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    HAsciiString                from TCollection,
+    DataMapOfHAsciiStringOfFile from WOKernel
+is
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable Compile from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+	
+    Init(me:mutable)
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+fields
+
+    myiterator  : CompilerIterator            from WOKBuilder;
+
+end Compile;

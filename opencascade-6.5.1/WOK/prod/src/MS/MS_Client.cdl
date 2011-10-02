@@ -1,0 +1,50 @@
+-- File:	MS_Client.cdl
+-- Created:	Mon Aug 23 18:07:23 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+class Client
+
+    from 
+    	MS 
+    inherits GlobalEntity from MS 
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HSequenceOfExternMet from MS,
+	HSequenceOfMemberMet from MS,
+	MapOfHAsciiString from WOKTools,
+	HAsciiString            from TCollection
+
+is
+
+    Create(aInterface : HAsciiString from TCollection) 
+    	returns mutable Client from MS;
+    
+    Interface(me : mutable; anInterface : HAsciiString from TCollection);
+    Interfaces(me) 
+     	returns mutable HSequenceOfHAsciiString from TColStd;
+	
+    Method(me : mutable; aMethod : HAsciiString from TCollection);
+    Methods(me) 
+     	returns mutable HSequenceOfHAsciiString from TColStd;
+    ---Purpose: The methods declared here will have an asynchronous execution
+    --          mode. The 'Create' methods are not allowd here.
+
+    ComputeTypes(me; SeqOfExternMet      : HSequenceOfExternMet from MS;
+		 SeqOfMemberMet      : HSequenceOfMemberMet from MS;
+		 CompleteMap         : in out MapOfHAsciiString from WOKTools;
+	     	 IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+		 SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+
+    Use ( me : mutable; aClient : HAsciiString from TCollection );
+
+    Uses ( me ) returns mutable HSequenceOfHAsciiString from TColStd;
+		 
+fields
+    myInterfaces  : HSequenceOfHAsciiString from TColStd;
+    myMethods     : HSequenceOfHAsciiString from TColStd;
+    myUses        : HSequenceOfHAsciiString from TColStd;
+
+end Client from MS;
+

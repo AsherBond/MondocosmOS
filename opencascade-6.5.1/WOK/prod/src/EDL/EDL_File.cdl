@@ -1,0 +1,45 @@
+-- File:	EDL_File.cdl
+-- Created:	Fri Jun  9 12:15:36 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class File from EDL
+uses HAsciiString from TCollection
+is
+
+    Create 
+    	returns File from EDL;
+    
+    Create(aName : CString from Standard)
+    	returns File from EDL;
+
+    Assign(me : out; aFile : File from EDL);
+    ---C++: alias operator =
+	
+    Destroy(me : out);
+    ---C++: alias ~
+      
+    GetName(me)
+    	returns CString from Standard;
+	
+    Open(me : out)
+    	returns Boolean from Standard;
+	
+    Write(me : out; aBuffer : CString from Standard);
+
+    Read(me)
+	returns CString from Standard;    
+
+    Close(me : out);
+    
+    GetFile(me)
+    	returns Address from Standard;
+    
+    
+fields
+
+    myName : HAsciiString from TCollection;
+    myFile : Address from Standard;
+    
+end;

@@ -1,0 +1,9 @@
+#ifndef _TCollection_AsciiString_HeaderFile
+#include <TCollection_AsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Shell_HeaderFile
+#include <WOKUnix_Shell.hxx>
+#endif
+#ifndef _WOKUnix_SyncStatus_HeaderFile
+#include <WOKUnix_SyncStatus.hxx>
+#endif

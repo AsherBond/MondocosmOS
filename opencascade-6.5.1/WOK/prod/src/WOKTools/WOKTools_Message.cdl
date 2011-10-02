@@ -1,0 +1,127 @@
+-- File:	WOKTools_Message.cdl
+-- Created:	Wed Jun 28 18:23:36 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Message from WOKTools 
+
+	---Purpose: WOK Messages Support
+
+uses
+    MsgHandler   from WOKTools,
+    MsgControl   from WOKTools,
+    MsgStreamPtr from WOKTools,
+    AsciiString  from TCollection,
+    HAsciiString from TCollection,
+    Integer      from Standard,
+    Boolean      from Standard,
+    CString      from Standard
+is
+
+    Initialize(aclass:CString from Standard; aheader : CString from Standard);
+
+    Destroy ( me );
+    ---C++: alias "Standard_EXPORT virtual ~WOKTools_Message () {}"
+
+    Init(me:out);
+
+    Code(me)
+    	returns Character from Standard
+	is deferred;
+
+    Print(me:out; astr : CString from Standard) 
+    ---C++: return  &
+    ---C++: alias operator <<    
+    	returns Message from WOKTools;
+
+    Print(me:out; astr : HAsciiString from TCollection) 
+    ---C++: return &
+    ---C++: alias operator <<    
+    	returns Message from WOKTools;    
+    	
+    Print(me:out; aint : Integer from Standard) 
+    ---C++: return &
+    ---C++: alias operator <<    
+    	returns Message from WOKTools;
+
+    Print(me:out; achar : Character from Standard) 
+    ---C++: return &
+    ---C++: alias operator <<    
+    	returns Message from WOKTools;
+
+    MsgControl(me:out; ahandler : MsgControl from WOKTools) 
+    ---C++: return &
+    ---C++: alias operator <<    
+    	returns Message from WOKTools;
+
+    Set(me:out);
+    UnSet(me:out);
+    IsSet(me) returns Boolean from Standard;
+    ---C++: inline
+
+    DoPrintHeader(me:out); 
+    DontPrintHeader(me:out); 
+    PrintHeader(me)  returns Boolean from Standard; 
+    ---C++: inline
+    
+    DoPrintContext(me:out);
+    DontPrintContext(me:out);
+    PrintContext(me) returns Boolean from Standard;
+    ---C++: inline
+
+    Switcher(me)
+    ---C++: inline
+    	returns CString from Standard is protected;
+	
+    SetSwitcher(me:out; aswitcher : CString from Standard) is protected; 
+    
+    SetEndMsgHandler(me : out; ahandler : MsgHandler from WOKTools);
+    EndMsgHandler(me)
+    ---C++: inline
+    	returns MsgHandler from WOKTools;
+
+    SetIndex(me:out; anindex : Integer from Standard);
+    Index(me) 
+    ---C++: inline
+    	returns Integer from Standard;
+	
+    Message(me) 
+    ---C++: inline
+    ---C++: return const &
+    	returns HAsciiString from TCollection;
+	
+    ToPrint(me)
+    ---C++: inline
+    	returns CString from Standard;
+    	
+    
+    LogToFile(me : out ; afile : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+    
+    LogToStream(me:out; astream : MsgStreamPtr from WOKTools)
+    	returns Boolean from Standard;
+    
+    EndLogging(me: out );
+    
+    LogStream(me)
+    ---C++: inline
+    	returns MsgStreamPtr from WOKTools;
+    
+fields 
+
+    myheader       : CString      from Standard;
+    mymessage      : HAsciiString from TCollection;
+    myindex        : Integer      from Standard;
+    myison         : Boolean      from Standard;
+    myprintcontext : Boolean      from Standard;
+    myprintheader  : Boolean      from Standard;
+    myswitcher     : CString      from Standard;
+    myendmsghandlr : MsgHandler   from WOKTools;
+    
+    mylogflag      : Boolean      from Standard;
+    mylogfile      : HAsciiString from TCollection;
+    mylogstream    : MsgStreamPtr from WOKTools;
+    
+end Message;

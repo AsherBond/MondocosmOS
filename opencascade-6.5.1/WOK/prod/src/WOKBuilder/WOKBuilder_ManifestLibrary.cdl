@@ -1,0 +1,32 @@
+-- File:	WOKBuilder_ManifestLibrary.cdl
+-- Created:	Wed Oct 26 09:29:38 2006
+-- Author:	MATVEYEV Ilya
+--		<imv@cascadex>
+---Copyright:	 Open CASCADE S.A. 2006
+
+class ManifestLibrary from WOKBuilder inherits Library from WOKBuilder
+
+ uses
+    
+    Path             from WOKUtils, 
+    Param            from WOKUtils,
+    LibReferenceType from WOKBuilder,
+    HAsciiString     from TCollection
+
+ is
+
+    Create (apth  : Path from WOKUtils ) 
+     returns mutable ManifestLibrary from WOKBuilder;
+
+    Create (
+     aname    : HAsciiString     from TCollection; 
+     adir     : Path             from WOKUtils; 
+     areftype : LibReferenceType from WOKBuilder
+    ) returns mutable ManifestLibrary from WOKBuilder;
+
+    GetLibFileName (
+     me     : mutable;
+     params : Param  from  WOKUtils
+    ) returns HAsciiString from TCollection is redefined static;
+  
+end ManifestLibrary;

@@ -1,0 +1,38 @@
+-- File:	WOKOBJS_SchExtract.cdl
+-- Created:	Mon Feb 24 15:35:28 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class SchExtract from WOKOBJS 
+inherits Extract from WOKStep
+
+	---Purpose: 
+
+uses
+
+    InputFile             from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    BuildProcess          from WOKMake,
+    DevUnit               from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    File                  from WOKernel,
+    HSequenceOfEntity     from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    HAsciiString          from TCollection
+
+is
+
+    Create(abp   : BuildProcess from WOKMake;
+    	   aunit : DevUnit from WOKernel; 
+    	   acode : HAsciiString from TCollection;
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable SchExtract from WOKOBJS;
+
+	
+    OutOfDateEntities(me:mutable) 
+    	returns HSequenceOfInputFile from WOKMake
+    	is redefined protected;
+
+end SchExtract;

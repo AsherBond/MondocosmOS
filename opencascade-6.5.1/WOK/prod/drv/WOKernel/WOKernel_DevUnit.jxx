@@ -1,0 +1,36 @@
+#ifndef _WOKernel_UnitTypeDescr_HeaderFile
+#include <WOKernel_UnitTypeDescr.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKernel_UnitNesting_HeaderFile
+#include <WOKernel_UnitNesting.hxx>
+#endif
+#ifndef _WOKUtils_HSequenceOfParamItem_HeaderFile
+#include <WOKUtils_HSequenceOfParamItem.hxx>
+#endif
+#ifndef _WOKernel_File_HeaderFile
+#include <WOKernel_File.hxx>
+#endif
+#ifndef _WOKernel_HSequenceOfFile_HeaderFile
+#include <WOKernel_HSequenceOfFile.hxx>
+#endif
+#ifndef _WOKernel_Locator_HeaderFile
+#include <WOKernel_Locator.hxx>
+#endif
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif
+#ifndef _WOKernel_UnitGraph_HeaderFile
+#include <WOKernel_UnitGraph.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif

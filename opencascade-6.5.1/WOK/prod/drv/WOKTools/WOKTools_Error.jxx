@@ -1,0 +1,3 @@
+#ifndef _WOKTools_Error_HeaderFile
+#include <WOKTools_Error.hxx>
+#endif

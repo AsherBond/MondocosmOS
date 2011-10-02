@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classGccInt__BCirc.html" title="Describes a circle as a bisecting curve between two 2D &#160;&#160;geometric objects (such..." alt="" coords="5,237,115,267"/>
+<area shape="rect" id="node9" href="$classGccInt__BElips.html" title="Describes an ellipse as a bisecting curve between two &#160;&#160;2D geometric objects (such..." alt="" coords="139,237,253,267"/>
+<area shape="rect" id="node11" href="$classGccInt__BHyper.html" title="Describes a hyperbola as a bisecting curve between two &#160;&#160;2D geometric objects (such..." alt="" coords="277,237,400,267"/>
+<area shape="rect" id="node13" href="$classGccInt__BLine.html" title="Describes a line as a bisecting curve between two 2D &#160;&#160;geometric objects (such as..." alt="" coords="424,237,536,267"/>
+<area shape="rect" id="node15" href="$classGccInt__BParab.html" title="Describes a parabola as a bisecting curve between two &#160;&#160;2D geometric objects (such..." alt="" coords="560,237,680,267"/>
+<area shape="rect" id="node17" href="$classGccInt__BPoint.html" title="Describes a point as a bisecting object between two 2D geometric objects. &#160;" alt="" coords="704,237,821,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="348,83,471,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="335,5,484,35"/>
+</map>

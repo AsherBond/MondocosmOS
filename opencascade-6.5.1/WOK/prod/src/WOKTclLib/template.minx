@@ -1,0 +1,363 @@
+# Makefile.in generated automatically by automake 1.4e from Makefile.am.
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+# Makefile.am for package __XQTNAM__
+
+
+SHELL = @SHELL@
+top_srcdir = @top_srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AS = @AS@
+AWK = @AWK@
+CC = @CC@
+CFLAGS_DEBUG = @CFLAGS_DEBUG@
+CFLAGS_OPTIMIZE = @CFLAGS_OPTIMIZE@
+CFLAGS_WARNING = @CFLAGS_WARNING@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+DL_LIBS = @DL_LIBS@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+INSTALL_STRIP_PROGRAM_ENV = @INSTALL_STRIP_PROGRAM_ENV@
+JAVA_INCLUDE = @JAVA_INCLUDE@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+MAINT = @MAINT@
+MAKEINFO = @MAKEINFO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+STRIP = @STRIP@
+TCL_BIN_DIR = @TCL_BIN_DIR@
+TCL_INCLUDE_FLAG = @TCL_INCLUDE_FLAG@
+TCL_LIB_FILE = @TCL_LIB_FILE@
+TCL_LIB_FLAG = @TCL_LIB_FLAG@
+TCL_LIB_SPEC = @TCL_LIB_SPEC@
+TCL_SRC_DIR = @TCL_SRC_DIR@
+TCL_VERSION = @TCL_VERSION@
+TK_BIN_DIR = @TK_BIN_DIR@
+TK_INCLUDE_FLAG = @TK_INCLUDE_FLAG@
+TK_LIB_FILE = @TK_LIB_FILE@
+TK_LIB_SPEC = @TK_LIB_SPEC@
+TK_SRC_DIR = @TK_SRC_DIR@
+TK_VERSION = @TK_VERSION@
+U = @U@
+VERSION = @VERSION@
+XMU_INCLUDE = @XMU_INCLUDE@
+X_INCLUDE = @X_INCLUDE@
+X_LIBS = @X_LIBS@
+YACC = @YACC@
+_am_include = @_am_include@
+_am_quote = @_am_quote@
+build_TKjcas = @build_TKjcas@
+install_sh = @install_sh@
+__MAKEFILEIN__
+subdir = src/__XQTNAM__
+mkinstalldirs = $(SHELL) $(top_srcdir)/make/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config.h
+CONFIG_CLEAN_FILES =
+bin_PROGRAMS = __XQTNAM__$(EXEEXT)
+PROGRAMS = $(bin_PROGRAMS)
+
+am___XQTNAM___OBJECTS = __XQTNAM__.$(OBJEXT)
+__XQTNAM___OBJECTS = $(am___XQTNAM___OBJECTS)
+__XQTNAM___DEPENDENCIES = __DEPENDENCIES__
+__XQTNAM___LDFLAGS =
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) \
+	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXFLAGS = @CXXFLAGS@
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I$(top_builddir)
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+DIST_SOURCES = $(__XQTNAM___SOURCES)
+depcomp = $(SHELL) $(top_srcdir)/make/depcomp
+@AMDEP_TRUE@DEP_FILES = $(DEPDIR)/__XQTNAM__.Po
+DIST_COMMON = Makefile.am Makefile.in
+SOURCES = $(__XQTNAM___SOURCES)
+OBJECTS = $(am___XQTNAM___OBJECTS)
+
+all: all-am
+
+.SUFFIXES:
+.SUFFIXES: .cxx .lo .o .obj
+
+$(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configure.ac $(ACLOCAL_M4)
+	cd $(top_srcdir) && \
+	  $(AUTOMAKE) --gnu  src/__XQTNAM__/Makefile
+
+Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	  CONFIG_HEADERS= CONFIG_LINKS= \
+	  CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    f=`echo $$p|sed 's/$(EXEEXT)$$//;$(transform);s/$$/$(EXEEXT)/'`; \
+	   echo " $(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/$$f"; \
+	   $(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/$$f; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  f=`echo $$p|sed 's/$(EXEEXT)$$//;$(transform);s/$$/$(EXEEXT)/'`; \
+	  echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
+	  rm -f $(DESTDIR)$(bindir)/$$f; \
+	done
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+__XQTNAM__$(EXEEXT): $(__XQTNAM___OBJECTS) $(__XQTNAM___DEPENDENCIES)
+	@rm -f __XQTNAM__$(EXEEXT)
+	$(CXXLINK) $(__XQTNAM___LDFLAGS) $(__XQTNAM___OBJECTS) $(__XQTNAM___LDADD) $(LIBS)
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	  && cd $(top_srcdir) \
+	  && gtags -i $$here
+
+distclean-tags:
+	-rm -f TAGS ID
+
+@AMDEP_TRUE@@_am_include@ @_am_quote@$(DEPDIR)/__XQTNAM__.Po@_am_quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+CXXDEPMODE = @CXXDEPMODE@
+
+.cxx.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CXXCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+
+.cxx.lo:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LTCXXCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+
+.cxx.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CXXCOMPILE) -c -o $@ `cygpath -w $<`
+
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+top_distdir = ../..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pR $$d/$$file $(distdir) \
+	    || exit 1; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || cp -p $$d/$$file $(distdir)/$$file \
+	    || exit 1; \
+	  fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile $(PROGRAMS)
+
+installdirs:
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	  INSTALL_PROGRAM_ENV='$(INSTALL_STRIP_PROGRAM_ENV)' install
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+	-rm -f Makefile.in
+clean: clean-am
+
+clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags
+
+dvi:
+
+dvi-am:
+
+info:
+
+info-am:
+
+install-data-am:
+
+install-exec-am: install-binPROGRAMS
+
+install-info:
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
+
+uninstall-am: uninstall-binPROGRAMS
+
+.PHONY: all all-am check check-am clean clean-binPROGRAMS clean-generic \
+	clean-libtool distclean distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags distdir dvi \
+	dvi-am info info-am install install-am install-binPROGRAMS \
+	install-data install-data-am install-exec install-exec-am \
+	install-info install-man install-strip installcheck \
+	installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-compile \
+	mostlyclean-generic mostlyclean-libtool tags uninstall \
+	uninstall-am uninstall-binPROGRAMS
+
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

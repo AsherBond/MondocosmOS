@@ -1,0 +1,141 @@
+-- File:	WOKTools_Trigger.cdl
+-- Created:	Thu Oct 26 16:28:05 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Trigger from WOKUtils 
+
+	---Purpose: Allows Config of Comportement
+
+uses
+    Param          from WOKUtils,
+    Path           from WOKUtils,
+    TriggerHandler from WOKUtils,
+    TriggerControl from WOKUtils,
+    TriggerStatus  from WOKUtils,
+    Return         from WOKTools,
+    InterpFileType from WOKTools,
+    HAsciiString   from TCollection
+    
+is
+    
+    Create
+    	returns Trigger from WOKUtils;
+	
+    SetTriggerHandler(myclass; ahandler : TriggerHandler from WOKUtils);
+    TriggerHandler(myclass)
+    ---C++: return &
+       	returns TriggerHandler from WOKUtils;
+
+    SetName(me:out; aname : CString from Standard)
+    ---C++: return &
+    ---C++: alias operator ()
+	returns Trigger from WOKUtils;
+	
+    SetName(me:out; aname : HAsciiString from TCollection)
+    ---C++: return &
+    ---C++: alias operator ()
+    	returns Trigger from WOKUtils;
+	
+    Name(me)
+    	returns HAsciiString from TCollection;
+
+    AddFile(me:out; afile  : HAsciiString from TCollection; 
+    	    	    params : Param from WOKUtils;
+    	    	    type   : InterpFileType from WOKTools = WOKTools_TclInterp) 
+    ---C++: return &
+    ---C++: alias operator ()
+    	returns Trigger from WOKUtils;
+
+    AddFile(me:out; afile  : CString from Standard; 
+    	    	    params : Param from WOKUtils;
+    	    	    type   : InterpFileType from WOKTools = WOKTools_TclInterp) 
+    ---C++: return &
+    ---C++: alias operator ()
+    	returns Trigger from WOKUtils;
+
+    AddArg(me:out; anarg : HAsciiString from TCollection)
+    ---C++: return &
+    ---C++: alias operator <<
+        returns Trigger from WOKUtils;
+
+    AddArg(me:out; anarg : CString from Standard)
+    ---C++: return &
+    ---C++: alias operator <<
+        returns Trigger from WOKUtils;
+	
+    AddArg(me:out; anarg : Boolean from Standard)
+    ---C++: return &
+    ---C++: alias operator <<
+        returns Trigger from WOKUtils;
+
+    AddArg(me:out; anarg : Integer from Standard)
+    ---C++: return &
+    ---C++: alias operator <<
+        returns Trigger from WOKUtils;
+
+    AddControl(me:out; anctrl : TriggerControl from WOKUtils)
+    ---C++: return &
+    ---C++: alias operator <<
+        returns Trigger from WOKUtils;
+
+    Args(me)
+    ---C++: return const &
+    	returns Return from WOKTools;
+
+    Execute(me:out) 
+    	returns TriggerStatus from WOKUtils;
+    
+    AddResult(me:out; aresult : HAsciiString from TCollection)
+    ---C++: return &
+        returns Trigger from WOKUtils;
+	
+    AddResult(me:out; aresult : CString from Standard)
+    ---C++: return &
+        returns Trigger from WOKUtils;
+	
+    AddResult(me:out; aresult : Boolean from Standard)
+    ---C++: return &
+        returns Trigger from WOKUtils;
+	
+    AddResult(me:out; aresult : Integer from Standard)
+    ---C++: return &
+        returns Trigger from WOKUtils;
+
+    GetResult(me:out; aresult : out HAsciiString from TCollection)
+    ---C++: alias operator >>
+    ---C++: return &
+        returns Trigger from WOKUtils;
+	
+    GetResult(me:out; aresult : out Boolean from Standard)
+    ---C++: return &
+    ---C++: alias operator >>
+        returns Trigger from WOKUtils;
+	
+    GetResult(me:out; aresult : out Integer from Standard)
+    ---C++: return &
+    ---C++: alias operator >>
+        returns Trigger from WOKUtils;
+
+    Return(me)
+    ---C++: return const &
+    	returns Return from WOKTools;
+	
+   ChangeReturn(me:out)
+    ---C++: return  &
+    	returns Return from WOKTools;
+	
+    Status(me)
+    	returns TriggerStatus from WOKUtils;
+
+fields
+    myfile  : Path           from WOKUtils;
+    myname  : HAsciiString   from TCollection;
+    mytype  : InterpFileType from WOKTools;
+    myargs  : Return         from WOKTools;
+    myrets  : Return         from WOKTools;
+    myidx   : Integer        from Standard;
+    mystat  : TriggerStatus  from WOKUtils;
+end Trigger;

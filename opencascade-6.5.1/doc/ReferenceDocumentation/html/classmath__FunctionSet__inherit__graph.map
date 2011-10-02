@@ -1,0 +1,50 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classFairCurve__DistributionOfEnergy.html" title="Abstract class to use the Energy of an FairCurve &#160;" alt="" coords="212,85,444,115"/>
+<area shape="rect" id="node11" href="$classFEmTool__ElementsOfRefMatrix.html" title="this class describes the functions needed for &#160;&#160;calculating matrix elements of RefMatrix..." alt="" coords="213,565,443,595"/>
+<area shape="rect" id="node13" href="$classmath__FunctionSetWithDerivatives.html" title="This abstract class describes the virtual functions associated &#160;&#160;with a set of N..." alt="" coords="201,1019,455,1048"/>
+<area shape="rect" id="node5" href="$classFairCurve__DistributionOfJerk.html" title="Compute the &quot;Jerk&quot; distribution. &#160;" alt="" coords="649,5,860,35"/>
+<area shape="rect" id="node7" href="$classFairCurve__DistributionOfSagging.html" title="Compute the Sagging Distribution &#160;" alt="" coords="636,59,873,88"/>
+<area shape="rect" id="node9" href="$classFairCurve__DistributionOfTension.html" title="Compute the Tension Distribution &#160;" alt="" coords="637,112,872,141"/>
+<area shape="rect" id="node15" href="$classBlend__AppFunction.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between two surfaces..." alt="" coords="680,165,829,195"/>
+<area shape="rect" id="node25" href="$classBlend__CurvPointFuncInv.html" title="Deferred class for a function used to compute a &#160;&#160;blending surface between a surface..." alt="" coords="663,245,847,275"/>
+<area shape="rect" id="node29" href="$classBlend__FuncInv.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between two surfaces..." alt="" coords="696,325,813,355"/>
+<area shape="rect" id="node41" href="$classBlend__SurfCurvFuncInv.html" title="Deferred class for a function used to compute a &#160;&#160;blending surface between a surface..." alt="" coords="668,379,841,408"/>
+<area shape="rect" id="node43" href="$classBlend__SurfPointFuncInv.html" title="Deferred class for a function used to compute a &#160;&#160;blending surface between a surface..." alt="" coords="665,432,844,461"/>
+<area shape="rect" id="node45" href="$classBRepApprox__TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox.html" title="BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox" alt="" coords="505,485,1004,515"/>
+<area shape="rect" id="node47" href="$classBRepApprox__TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox.html" title="BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox" alt="" coords="532,539,977,568"/>
+<area shape="rect" id="node49" href="$classContap__TheSurfFunctionOfContour.html" title="Contap_TheSurfFunctionOfContour" alt="" coords="627,592,883,621"/>
+<area shape="rect" id="node51" href="$classExtrema__CCFOfECC2dOfExtCC2d.html" title="Extrema_CCFOfECC2dOfExtCC2d" alt="" coords="628,645,881,675"/>
+<area shape="rect" id="node53" href="$classExtrema__CCFOfECCOfExtCC.html" title="Extrema_CCFOfECCOfExtCC" alt="" coords="644,699,865,728"/>
+<area shape="rect" id="node55" href="$classExtrema__CCFOfELCC2dOfLocateExtCC2d.html" title="Extrema_CCFOfELCC2dOfLocateExtCC2d" alt="" coords="600,752,909,781"/>
+<area shape="rect" id="node57" href="$classExtrema__CCFOfELCCOfLocateExtCC.html" title="Extrema_CCFOfELCCOfLocateExtCC" alt="" coords="616,805,893,835"/>
+<area shape="rect" id="node59" href="$classExtrema__CCLocFOfLocECC2dOfLocateExtCC2d.html" title="Extrema_CCLocFOfLocECC2dOfLocateExtCC2d" alt="" coords="580,859,929,888"/>
+<area shape="rect" id="node61" href="$classExtrema__CCLocFOfLocECCOfLocateExtCC.html" title="Extrema_CCLocFOfLocECCOfLocateExtCC" alt="" coords="596,912,913,941"/>
+<area shape="rect" id="node63" href="$classExtrema__FuncExtCS.html" title="Fonction permettant de rechercher les extrema de la &#160;&#160;distance entre une courbe et..." alt="" coords="675,965,835,995"/>
+<area shape="rect" id="node65" href="$classExtrema__FuncExtPS.html" title="Fonction permettant de rechercher les extrema de la &#160;&#160;distance entre un point et..." alt="" coords="675,1019,835,1048"/>
+<area shape="rect" id="node67" href="$classExtrema__FuncExtSS.html" title="Fonction permettant de rechercher les extrema de la &#160;&#160;distance entre deux surfaces..." alt="" coords="676,1072,833,1101"/>
+<area shape="rect" id="node69" href="$classGeom2dGcc__FuncTCuCuCuOfMyC2d3Tan.html" title="Geom2dGcc_FuncTCuCuCuOfMyC2d3Tan" alt="" coords="608,1125,901,1155"/>
+<area shape="rect" id="node71" href="$classGeom2dGcc__FuncTCuCuOfMyL2d2Tan.html" title="Geom2dGcc_FuncTCuCuOfMyL2d2Tan" alt="" coords="617,1179,892,1208"/>
+<area shape="rect" id="node73" href="$classGeom2dGcc__FuncTCuCuOnCuOfMyC2d2TanOn.html" title="Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn" alt="" coords="588,1232,921,1261"/>
+<area shape="rect" id="node75" href="$classGeom2dInt__TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter.html" title="Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter" alt="" coords="508,1285,1001,1315"/>
+<area shape="rect" id="node77" href="$classGeomFill__FunctionDraft.html" title="GeomFill_FunctionDraft" alt="" coords="665,1339,844,1368"/>
+<area shape="rect" id="node79" href="$classGeomFill__FunctionGuide.html" title="GeomFill_FunctionGuide" alt="" coords="665,1392,844,1421"/>
+<area shape="rect" id="node81" href="$classGeomInt__TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfWLApprox.html" title="GeomInt_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfWLApprox" alt="" coords="505,1445,1004,1475"/>
+<area shape="rect" id="node83" href="$classGeomInt__TheZerImpFuncOfTheImpPrmSvSurfacesOfWLApprox.html" title="GeomInt_TheZerImpFuncOfTheImpPrmSvSurfacesOfWLApprox" alt="" coords="533,1499,976,1528"/>
+<area shape="rect" id="node85" href="$classHLRBRep__TheCSFunctionOfInterCSurf.html" title="HLRBRep_TheCSFunctionOfInterCSurf" alt="" coords="616,1552,893,1581"/>
+<area shape="rect" id="node87" href="$classHLRBRep__TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter.html" title="HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter" alt="" coords="513,1605,996,1635"/>
+<area shape="rect" id="node89" href="$classIntCurveSurface__TheCSFunctionOfHInter.html" title="IntCurveSurface_TheCSFunctionOfHInter" alt="" coords="605,1659,904,1688"/>
+<area shape="rect" id="node91" href="$classIntPatch__CSFunction.html" title="IntPatch_CSFunction" alt="" coords="673,1712,836,1741"/>
+<area shape="rect" id="node93" href="$classIntPatch__TheFunctionOfTheInt2SOfThePWalkingInter.html" title="IntPatch_TheFunctionOfTheInt2SOfThePWalkingInter" alt="" coords="567,1765,943,1795"/>
+<area shape="rect" id="node95" href="$classIntPatch__TheSurfFunction.html" title="IntPatch_TheSurfFunction" alt="" coords="657,1819,852,1848"/>
+<area shape="rect" id="node97" href="$classProjLib__PrjFunc.html" title="ProjLib_PrjFunc" alt="" coords="693,1872,816,1901"/>
+<area shape="rect" id="node17" href="$classBlend__CSFunction.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between a surface..." alt="" coords="1091,19,1232,48"/>
+<area shape="rect" id="node19" href="$classBlend__Function.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between two surfaces..." alt="" coords="1100,72,1223,101"/>
+<area shape="rect" id="node21" href="$classBlend__RstRstFunction.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between a surface..." alt="" coords="1076,125,1247,155"/>
+<area shape="rect" id="node23" href="$classBlend__SurfRstFunction.html" title="Deferred class for a function used to compute a blending &#160;&#160;surface between a surface..." alt="" coords="1075,179,1248,208"/>
+<area shape="rect" id="node27" href="$classBRepBlend__CurvPointRadInv.html" title="This function is used to find a solution on a done &#160;&#160;point of the curve 1 when using..." alt="" coords="1055,232,1268,261"/>
+<area shape="rect" id="node31" href="$classBlendFunc__ChamfInv.html" title="BlendFunc_ChamfInv" alt="" coords="1080,285,1243,315"/>
+<area shape="rect" id="node33" href="$classBlendFunc__ChAsymInv.html" title="BlendFunc_ChAsymInv" alt="" coords="1075,339,1248,368"/>
+<area shape="rect" id="node35" href="$classBlendFunc__ConstRadInv.html" title="BlendFunc_ConstRadInv" alt="" coords="1069,392,1253,421"/>
+<area shape="rect" id="node37" href="$classBlendFunc__EvolRadInv.html" title="BlendFunc_EvolRadInv" alt="" coords="1076,445,1247,475"/>
+<area shape="rect" id="node39" href="$classBlendFunc__RuledInv.html" title="BlendFunc_RuledInv" alt="" coords="1084,499,1239,528"/>
+</map>

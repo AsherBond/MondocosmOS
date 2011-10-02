@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_MetaSchema_HeaderFile
+#include <MS_MetaSchema.hxx>
+#endif
+#ifndef _MS_Common_HeaderFile
+#include <MS_Common.hxx>
+#endif

@@ -1,0 +1,34 @@
+-- File:	WOKernel_UnitTypeDescr.cdl
+-- Created:	Fri Jun  6 16:41:02 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class    UnitTypeDescr from WOKernel 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection
+
+is
+
+    Create(akey : Character from Standard; atype : HAsciiString from TCollection)
+    	returns mutable UnitTypeDescr from WOKernel;
+    
+    Key(me) returns Character from Standard;
+    ---C++: inline
+
+    Type(me) returns HAsciiString from TCollection;
+    ---C++: inline
+    ---C++: return const &
+
+    
+fields
+
+    mykey  : Character from Standard;
+    mytype : HAsciiString from TCollection;
+
+end UnitTypeDescr;

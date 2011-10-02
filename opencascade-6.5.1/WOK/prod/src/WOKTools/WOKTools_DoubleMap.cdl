@@ -1,0 +1,160 @@
+-- File:	WOKTools_DoubleMap.cdl
+-- Created:	Thu Jun 29 14:40:21 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+generic class DoubleMap from WOKTools (TheKey1    as any;
+    	    	    	    	    	  TheKey2    as any;
+    	    	    	    	          Hasher1 as any; -- as MapHasher(TheKey1)
+    	    	    	    	          Hasher2 as any) -- as MapHasher(TheKey2)
+inherits BasicMap from WOKTools
+
+	---Purpose: The DoubleMap  is used to  bind  pairs (Key1,Key2)
+	-- and retrieve them in linear time. 
+	-- See Map from WOKTools for a discussion about the number of buckets.
+	
+raises
+    DomainError     from Standard,
+    MultiplyDefined from Standard,
+    NoSuchObject    from Standard
+
+    class DoubleMapIterator inherits BasicMapIterator from WOKTools
+    
+	---Purpose: Provides iteration on the  content  of a map.
+	-- The iteration methods are inherited from  the BasicMapIterator. 
+	--          
+	--  Warning: While using an iterator on a map if the content of
+	-- the map is modified during the iteration the result is 
+	-- unpredictable.
+	
+    raises NoSuchObject from Standard	
+    is
+       	Create returns DoubleMapIterator from WOKTools;
+	    ---Purpose: Creates an undefined Iterator (empty).
+	
+	Create (aMap : DoubleMap from WOKTools) 
+    	returns DoubleMapIterator from WOKTools;
+	    ---Purpose: Creates an Iterator on the map <aMap>.
+	
+	Initialize(me : in out; aMap : DoubleMap from WOKTools)
+	    ---Level: Public
+	    ---Purpose: Resets the Iterator in the map <aMap>.
+	is static;
+	
+	Key1(me) returns any TheKey1
+	    ---Level: Public
+	    ---Purpose: Returns the current Key1. An error is raised if
+	    -- the iterator is empty (More returns False).
+	    ---C++: return const &
+	raises
+	    NoSuchObject from Standard
+	is static;
+	
+	Key2(me) returns any TheKey2
+	    ---Level: Public
+	    ---Purpose: Returns the current Key2. An error is raised if
+	    -- the iterator is empty (More returns False).
+	    ---C++: return const &
+	raises
+	    NoSuchObject from Standard
+	is static;
+	
+       	Hashcode1(me) returns Integer from Standard
+	raises
+	    NoSuchObject from Standard
+	is static;
+ 	
+    	Hashcode2(me) returns Integer from Standard
+	raises
+	    NoSuchObject from Standard
+	is static;
+
+    end DoubleMapIterator from WOKTools;
+
+is
+
+    Create(NbBuckets : Integer = 1) returns DoubleMap from WOKTools;
+	---Purpose: Creates   a DoubleMap with  <NbBuckets> buckets. Without
+	-- arguments the map is automatically dimensioned.
+    
+
+    Create(Other : DoubleMap from WOKTools) 
+    returns DoubleMap from WOKTools
+	---Purpose: As  copying  Map  is an expensive  operation it is
+	-- incorrect  to  do  it implicitly. This constructor is private and 
+	-- will raise an  error if the Map  is not  empty. To copy the
+	-- content of a  Map use the  Assign  method (operator =).
+    raises DomainError from Standard
+    is private;
+    
+    Assign(me : in out; Other : DoubleMap from WOKTools) 
+    returns DoubleMap from WOKTools
+	---Level: Public
+	---Purpose: Replace the content of this map by  the content of
+	-- the map <Other>.
+	---C++: alias operator =
+	---C++: return &
+    is static;
+    
+    ReSize(me : in out; NbBuckets : Integer)
+	---Level: Public
+	---Purpose: Changes the  number    of  buckets of  <me>  to be
+	-- <NbBuckets>. The keys  already  stored in  the map are kept.
+    is static;
+    
+    Clear(me : in out)
+	---Level: Public
+	---Purpose: Removes all keys from the map.
+	---C++: alias ~
+    is static;
+    
+    Bind(me : in out; K1 : TheKey1; K2 : TheKey2)
+	---Level: Public
+	---Purpose: Adds the pair <K1>,<K2> to the map.
+	--  Trigger: An exception is raised if K1 or K2 are already bound.          
+    raises MultiplyDefined from Standard 
+    is static;
+    
+    AreBound(me; K1 : TheKey1; K2 : TheKey2) returns Boolean
+	---Level: Public
+	---Purpose: Returns True if <K1>  and  <K2>  are bound to each other. 
+    is static;
+
+    IsBound1(me; K : TheKey1) returns Boolean
+	---Level: Public
+	---Purpose: Returns  True if the  TheKey <K> is  bound in the map <me>.
+    is static;
+    
+    IsBound2(me; K : TheKey2) returns Boolean
+	---Level: Public
+	---Purpose: Returns True if  the key <K> is bound in the map <me>.
+    is static;
+    
+    Find1(me; K : TheKey1) returns any TheKey2
+	---Level: Public
+	---Purpose: Returns the Key2 bound to <K> in the map.
+	---C++: return const &
+    raises NoSuchObject
+    is static;
+    
+    Find2(me; K : TheKey2) returns any TheKey1
+	---Level: Public
+	---Purpose: Returns the Key1 bound to <K> in the map.
+	---C++: return const &
+    raises NoSuchObject
+    is static;
+    
+    UnBind1(me : in out; K : TheKey1) returns Boolean
+	---Level: Public
+	---Purpose: Unbind the Key <K>  from the map.  Returns True if
+	-- the Key was bound in the Map.
+    is static;
+    
+    UnBind2(me : in out; K : TheKey2) returns Boolean
+	---Level: Public
+	---Purpose: Unbind the Key <K>  from the map.  Returns True if
+	-- the Key was bound in the Map.
+    is static;
+    
+end DoubleMap;

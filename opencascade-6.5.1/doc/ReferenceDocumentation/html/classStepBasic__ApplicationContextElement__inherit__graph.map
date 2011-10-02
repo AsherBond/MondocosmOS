@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepBasic__ProductConceptContext.html" title="Representation of STEP entity ProductConceptContext &#160;" alt="" coords="713,5,977,35"/>
+<area shape="rect" id="node9" href="$classStepBasic__ProductContext.html" title="StepBasic_ProductContext" alt="" coords="743,59,948,88"/>
+<area shape="rect" id="node13" href="$classStepBasic__ProductDefinitionContext.html" title="StepBasic_ProductDefinitionContext" alt="" coords="709,112,981,141"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,59,328,88"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,59,156,88"/>
+<area shape="rect" id="node11" href="$classStepBasic__MechanicalContext.html" title="StepBasic_MechanicalContext" alt="" coords="1029,59,1259,88"/>
+<area shape="rect" id="node15" href="$classStepBasic__DesignContext.html" title="class added to Schema AP214 around April 1996 &#160;" alt="" coords="1044,112,1244,141"/>
+</map>

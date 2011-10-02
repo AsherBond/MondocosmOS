@@ -1,0 +1,22 @@
+-- File:	WOKTools_ReturnValue.cdl
+-- Created:	Wed Sep 27 17:34:54 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class ReturnValue from WOKTools 
+inherits TShared from MMgt
+
+	---Purpose: 
+uses
+    ReturnType from WOKTools
+is
+    Initialize;
+
+    Type(me) returns ReturnType from WOKTools;
+    SetType(me:mutable; atype : ReturnType from WOKTools);
+
+fields
+    mytype : ReturnType from WOKTools;
+end ReturnValue;

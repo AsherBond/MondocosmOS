@@ -1,0 +1,28 @@
+-- File:	WOKOBJS_AppSchCxxFile.cdl
+-- Created:	Mon Feb 24 17:20:35 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+
+class    AppSchCxxFile from WOKOBJS 
+inherits Entity    from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path             from WOKUtils, 
+    Param            from WOKUtils,
+    HAsciiString     from TCollection
+
+is
+    
+    Create(apth  : Path from WOKUtils) 
+    	returns mutable AppSchCxxFile from WOKOBJS;
+
+    GetAppSchSourceFileName(myclass; params : Param  from  WOKUtils; aname : HAsciiString from TCollection) 
+    	returns HAsciiString from TCollection;
+  
+
+end AppSchCxxFile;

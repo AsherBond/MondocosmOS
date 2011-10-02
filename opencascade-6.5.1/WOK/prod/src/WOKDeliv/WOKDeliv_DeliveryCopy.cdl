@@ -1,0 +1,41 @@
+-- File:	WOKDeliv_DeliveryCopy.cdl
+-- Created:	Tue Aug  6 11:20:10 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class DeliveryCopy from WOKDeliv inherits DeliveryStep from WOKDeliv
+
+	---Purpose: Process cdl for delivery units
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     Status from WOKMake,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryCopy from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is protected;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+    Make(me:mutable) 
+    	returns Status from WOKMake is redefined;
+
+
+end DeliveryCopy;

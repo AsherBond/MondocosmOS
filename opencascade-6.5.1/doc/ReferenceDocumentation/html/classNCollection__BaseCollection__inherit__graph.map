@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classNCollection__Array1.html" title="NCollection_Array1\&lt; TheItemType \&gt;" alt="" coords="419,5,685,35"/>
+<area shape="rect" id="node5" href="$classNCollection__Array2.html" title="NCollection_Array2\&lt; TheItemType \&gt;" alt="" coords="419,59,685,88"/>
+<area shape="rect" id="node7" href="$classNCollection__DataMap.html" title="NCollection_DataMap\&lt; TheItemType \&gt;" alt="" coords="409,112,695,141"/>
+<area shape="rect" id="node9" href="$classNCollection__IndexedDataMap.html" title="NCollection_IndexedDataMap\&lt; TheItemType \&gt;" alt="" coords="381,165,723,195"/>
+<area shape="rect" id="node11" href="$classNCollection__List.html" title="NCollection_List\&lt; TheItemType \&gt;" alt="" coords="427,219,677,248"/>
+<area shape="rect" id="node13" href="$classNCollection__Queue.html" title="NCollection_Queue\&lt; TheItemType \&gt;" alt="" coords="417,272,687,301"/>
+<area shape="rect" id="node15" href="$classNCollection__Sequence.html" title="NCollection_Sequence\&lt; TheItemType \&gt;" alt="" coords="407,325,697,355"/>
+<area shape="rect" id="node17" href="$classNCollection__Set.html" title="NCollection_Set\&lt; TheItemType \&gt;" alt="" coords="428,379,676,408"/>
+<area shape="rect" id="node19" href="$classNCollection__SList.html" title="NCollection_SList\&lt; TheItemType \&gt;" alt="" coords="423,432,681,461"/>
+<area shape="rect" id="node21" href="$classNCollection__Stack.html" title="NCollection_Stack\&lt; TheItemType \&gt;" alt="" coords="421,485,683,515"/>
+<area shape="rect" id="node23" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; TheItemType \&gt;" alt="" coords="417,539,687,568"/>
+</map>

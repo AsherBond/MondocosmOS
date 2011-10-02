@@ -1,0 +1,42 @@
+-- File:	WOKOrbix_IDLCompiler.cdl
+-- Created:	Mon Aug 18 16:00:28 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class IDLCompiler from WOKOrbix 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: Compilers Management
+uses
+    IDLFile              from WOKOrbix,
+    HSequenceOfEntity    from WOKBuilder,
+    BuildStatus          from WOKBuilder,
+    HSequenceOfPath      from WOKUtils,
+    Param                from WOKUtils,
+    HAsciiString         from TCollection
+    
+raises
+    ProgramError from Standard
+is
+
+    Create(aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns mutable IDLCompiler from WOKOrbix;
+
+    IncludeDirectories(me) returns HSequenceOfPath from WOKUtils;
+    SetIncludeDirectories(me:mutable; incdirs : HSequenceOfPath from WOKUtils);
+    
+    IDLFile(me) returns mutable IDLFile from WOKOrbix;
+    SetIDLFile(me:mutable; afile : IDLFile from WOKOrbix);
+
+    Execute(me:mutable) 
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+fields
+    myname    : HAsciiString         from TCollection;
+    mysource  : IDLFile              from WOKOrbix;
+    myincdirs : HSequenceOfPath      from WOKUtils;
+    myoptions : HAsciiString         from TCollection;
+end Compiler;

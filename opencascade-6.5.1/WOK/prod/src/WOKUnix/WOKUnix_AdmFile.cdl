@@ -1,0 +1,40 @@
+-- File:	WOKUnix_AdmFile.cdl
+-- Created:	Wed Jun 21 17:53:44 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class AdmFile from WOKUnix
+
+---Purpose: Reads a file in WOK format :
+--          
+--          - lines beginning with # are ignored
+--          
+--          - lines ending with \ are continued
+--          
+--          - empty lines are ignored
+--          
+inherits FDescr from WOKUnix
+uses
+    HAsciiString from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    Path from WOKUnix
+raises
+    ProgramError
+is
+    Create 
+    ---Purpose: empty contructor
+    	returns AdmFile from WOKUnix;
+    
+    Create(apath : HAsciiString from TCollection) 
+    ---Purpose: constructor initialising mypath
+    	returns AdmFile from WOKUnix;
+
+    Create(apath : Path from WOKUnix) 
+    ---Purpose: constructor initialising mypath
+    	returns AdmFile from WOKUnix;
+
+    Read(me : out) 
+    ---Purpose: Reads the file
+    	returns HSequenceOfHAsciiString from TColStd raises  ProgramError;
+end;

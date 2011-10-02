@@ -1,0 +1,48 @@
+-- File:	WOKernel_UnitTypeBase.cdl
+-- Created:	Fri Jun  6 17:11:01 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class UnitTypeBase from WOKernel 
+
+	---Purpose: 
+
+uses
+    HAsciiString            from TCollection,
+    Param                   from WOKUtils,
+    UnitTypeDescr           from WOKernel,
+    SequenceOfUnitTypeDescr from WOKernel
+
+is
+
+    Create
+    	returns UnitTypeBase from WOKernel;
+    
+    Clear(me:out);
+    
+    LoadBase(me : out; params : Param from WOKUtils)
+    ---Purpose: Loads known file type base
+    	returns Boolean from Standard;
+	
+    GetTypeDescr(me;akey  : Character from Standard)
+    ---C++: return const &
+    	returns UnitTypeDescr from WOKernel;
+	
+    GetTypeDescr(me;atype : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns UnitTypeDescr from WOKernel;
+
+    Length(me)
+    	returns Integer from Standard;
+
+    Value(me; anidx : Integer from Standard)
+    ---C++: return const &
+    	returns UnitTypeDescr from WOKernel;
+
+fields
+
+    mytypes : SequenceOfUnitTypeDescr from WOKernel;
+
+end UnitTypeBase;

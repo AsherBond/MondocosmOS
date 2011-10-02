@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{5E47E5AD-0DC1-001A-0FE8-C406D2CAE8DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CPPIntExt">
+      <UniqueIdentifier>{67E4F82D-1760-090D-1793-6748721894C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt_Body.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt_Case.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt_Ccl.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt_EInit.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPIntExt\CPPIntExt_Load.cxx">
+      <Filter>Source files\CPPIntExt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

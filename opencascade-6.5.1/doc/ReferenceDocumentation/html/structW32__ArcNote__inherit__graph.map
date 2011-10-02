@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$structW32__PolyChordNote.html" title="//////////////////// POLY CHORDS //////////////////////////" alt="" coords="5,315,163,344"/>
+<area shape="rect" id="node13" href="$structW32__PolySectorNote.html" title="/////////////////// POLY SECTORS //////////////////////////" alt="" coords="187,315,352,344"/>
+<area shape="rect" id="node2" href="$structW32__PolyEllipseNote.html" title="/////////////////// POLY ELLIPSES /////////////////////////" alt="" coords="95,160,257,189"/>
+<area shape="rect" id="node4" href="$structW32__PointNote.html" title="////////////////////// POINTS ////////////////////////////" alt="" coords="113,83,239,112"/>
+<area shape="rect" id="node6" href="$structW32__Note.html" title="W32_Note" alt="" coords="131,5,221,35"/>
+<area shape="rect" id="node11" href="$structW32__ChordNote.html" title="/////////////////////// CHORDS ////////////////////////////" alt="" coords="19,392,149,421"/>
+<area shape="rect" id="node15" href="$structW32__SectorNote.html" title="//////////////////// SECTORS //////////////////////////////" alt="" coords="201,392,337,421"/>
+</map>

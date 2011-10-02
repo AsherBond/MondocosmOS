@@ -1,0 +1,64 @@
+-- File:	WOKStep_ProcessStep.cdl
+-- Created:	Mon Aug 18 15:12:05 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+deferred class ProcessStep from WOKStep 
+inherits Step     from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    Path                        from WOKUtils,
+    HAsciiString                from TCollection,
+    MapOfHAsciiString           from WOKTools,
+    DataMapOfHAsciiStringOfFile from WOKernel,
+    IndexedDataMapOfHAsciiStringOfInputFile from WOKMake
+is
+
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel; 
+    	       acode    : HAsciiString    from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+
+    Init(me:mutable)
+    	is redefined protected;
+	
+	
+    ImplDepFileName(me)
+    	returns HAsciiString from TCollection
+	is virtual protected;
+	
+    GetUnitName(me:mutable; aincfile : HAsciiString from TCollection) 
+    	returns HAsciiString from TCollection 
+    	is protected;
+
+    GetKnownUnits(me:mutable) 
+    	is protected;
+
+    GetInputFileFromPath(me:mutable; apath : HAsciiString from TCollection)
+    ---C++: return const &
+    	returns InputFile from WOKMake
+    	is protected;
+
+    TreatOutput(me:mutable; input    : InputFile from WOKMake; 
+    	    	    	    output   : HSequenceOfEntity from WOKBuilder);
+
+    ComputeIncDirectories(me)
+    	returns HSequenceOfPath from WOKUtils is protected;
+
+    ComputeDatabaseDirectories(me)
+    	returns HSequenceOfPath from WOKUtils is protected;
+
+
+end ProcessStep;

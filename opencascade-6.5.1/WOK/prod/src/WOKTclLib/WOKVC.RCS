@@ -1,0 +1,314 @@
+#
+# Interface RCS. 
+#
+#;>
+# retourne le nom du fichier de travail 
+# si vrs = x    numero de lignee  (appele par InitFile et Cie)
+#               prefixe le nom avec x
+# si vrs = x.y  version exacte  (appele par FillRef et FillUSer au moment de wget)
+#               prefixe le nom avec x. C' est le nom du fichier de travail contenant la version x.y
+# si vrs last:x derniere version enregistree de la lignee x (appele par wget)
+#               prefixe le nom avec x 
+#;<
+proc wokIntegre:BASE:ftos { file vrs } {
+    return ${file},v
+}	
+#;>
+# retourne le nom du fichier a partir du nom du fichier de travail  (basename) 
+#;<
+proc wokIntegre:BASE:stof { file vrs } {
+    return [lindex [split $file ,] 0]
+}
+
+#;>
+# retourne 1 si file est un element d'une base
+#;<
+proc wokIntegre:BASE:IsElm { file } {
+    return [regexp {(.*),v$} $file all f]
+}
+#;>
+# Ecrit dans fileid la sequence d'init d'un fichier RCS. 
+# Le directory courant est une base temporaire
+# infile: Full path du fichier a enregistrer
+# vrs   : version
+# cmt   : commentaire
+# Sfile : Full path du Sfile (base) qui sera cree
+#;<
+proc wokIntegre:BASE:InitFile { infile vrs cmt Sfile {fileid stdout} } {
+    ;#puts stderr "Appel a InitFile [file tail $infile] vrs = $vrs "
+    set bna  [file tail $infile] 
+    set bnas [file tail $Sfile] 
+    set pfx ${bna}
+    puts $fileid [format "echo Init for file %s" $bna ]
+    puts $fileid [format "echo Init > /tmp/%s" $bna.desc]
+    puts $fileid [format "rcs -q -i -U -t/tmp/%s %s" $bna.desc $pfx]
+    puts $fileid [format "cp -p %s ./%s" $infile $pfx]
+    puts $fileid [format "ci -u -f -r%s -m%s %s %s" $vrs $cmt $pfx $bnas]
+    puts $fileid [format "rm -f ./%s" $bna]
+    puts $fileid [format "rm -f /tmp/%s " $bna.desc]
+    return 
+}
+#;>
+# Ecrit dans fileid la sequence d'init d'un fichier deja existant dans la base.
+# Pour RCS la sequence est la meme que UpdateFile.
+#;<
+proc wokIntegre:BASE:ReInitFile { Sfile vrs cmt infile {fileid stdout} } {
+    ;#puts stderr "Appel a UpdateFile  [file tail $Sfile] vrs = $vrs "
+    set bna [file tail $infile] 
+    set bnas [file tail $Sfile]
+    set pfx ${bna}
+    puts $fileid [format "echo Updating file %s" [file tail $infile]]
+    puts $fileid [format "cp %s ." $Sfile]
+    puts $fileid [format "co ./%s" $bnas]
+    puts $fileid [format "cp -p %s ./%s" $infile $pfx]
+    puts $fileid [format "ci -f -m%s %s %s" $cmt $pfx $bnas]
+    return
+}
+#;
+# Ecrit dans fileid la sequence d'update d'un fichier deja existant dans la base 
+# Le repertoire courant est une base temporaire. 
+# Note: ci a detruit le fichier d'entree.
+#;<
+proc wokIntegre:BASE:UpdateFile { Sfile vrs cmt infile {fileid stdout} } {
+    ;#puts stderr "Appel a UpdateFile  [file tail $Sfile] vrs = $vrs "
+    set bna [file tail $infile] 
+    set bnas [file tail $Sfile]
+    set pfx ${bna}
+    puts $fileid [format "echo Updating file %s" [file tail $infile]]
+    puts $fileid [format "cp %s ." $Sfile]
+    puts $fileid [format "co ./%s" $bnas]
+    puts $fileid [format "cp -p %s ./%s" $infile $pfx]
+    puts $fileid [format "ci -f -m%s %s %s" $cmt $pfx $bnas]
+    return
+}
+#;>
+# Ecrit dans fileid la sequence correspondante a un fichier qui disparait (-)
+#;<
+proc wokIntegre:BASE:DeleteFile { infile {fileid stdout} } {
+    puts $fileid [format "echo Deleted file %s" $infile]
+    return
+}
+#;>
+# Ecrit dans fileid la sequence pour recuperer un fichier (sans edit.)
+#
+# Si invrs = num      => recup de la version num ( version exacte )
+# Si invrs = last:num => derniere version dans la lignee num 
+# Si invrs = last     => derniere version enregistree
+#;<
+proc wokIntegre:BASE:GetFile { Sfile invrs {fileid stdout} } {
+    ;#puts "GET: invrs = $invrs -----  Sfile = $Sfile "
+    puts $fileid [format "echo Checkout file %s" $Sfile]
+    set lx [split [file tail $Sfile] ,]
+    set file [lindex $lx 0]
+    if { [regexp {(.*):(.*)} $invrs ignore key vrs] } {
+	if { [string compare $key last] == 0 } {
+	    puts $fileid [format "co -u %s" $Sfile]
+	} else {
+	    msgprint -c WOKVC -e "Getfile bad version syntax $invrs"
+	}
+    } else {
+	if { [string compare $invrs last] == 0 } {
+	    puts $fileid [format "co -u %s" $Sfile]
+	} else {
+	    puts $fileid [format "co -u -r%s %s" $invrs $Sfile]
+	}
+    }
+    ;#puts $fileid [format "chmod 644 $file"]
+    return
+}
+;#/home/wb/kl/KERNEL/SCCS//BASES/TSTPACK.p/4,f_UGSuppliers.c,v  -->  4,f_UGSuppliers.c
+;#revision 4.4 (unlocked)
+;#done
+
+#;>
+# retourne la liste des sfile dans une base
+#;<
+proc wokIntegre:BASE:List { Bname vrs } {
+    set diradm [glob -nocomplain [wokIntegre:BASE:GetRootName]/${Bname}.?]
+    if [file exists $diradm] {
+	set l {}	
+	foreach Sfile [wokUtils:EASY:readdir $diradm] {
+	    set x [split $Sfile ,]
+	    if { "[lindex $x 1]" == "v" } {
+		lappend l [lindex $x 0]
+	    }
+	}
+	return $l
+    } else {
+	return {}
+    }
+}
+
+#;>
+# Ecrit dans fileid la fin d'un envoi. Permet a BASE:Execute de retourner un status
+#;<
+proc wokIntegre:BASE:EOF { {fileid stdout} } {
+    puts $fileid "echo Successfull completion"
+    puts $fileid "exit 0"
+    return
+}
+#;>
+# Execute les commandes RCS command dans un Bourne Shell
+# 1. Ecrit sur fileid quand certains pattern sont reconnus.
+#    Retourne 1 si tout est OK. (Pattern De BASE::EOF bien recu)
+# debugger:
+#    exp_internal 1         : patterns sur stderr ( ca suffit en general)
+#    exp_internal -f file 0 : stdout et patterns dans file
+#    exp_internal -f file 1 : stdout et patterns dans file + pattern sur stderr
+#;<
+proc wokIntegre:BASE:Execute { VERBOSE command {fileid stdout} } {
+    package require Expect
+    spawn -noecho sh $command
+    set LOCID $spawn_id
+    log_user 0
+    exp_internal $VERBOSE
+    set return_status 0
+    set timeout 84
+    expect {
+	
+	-i $LOCID -indices -re "^Updating file (\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n" {
+	    if { $expect_out(4,string) == "done" && $expect_out(4,string) == "done" } {
+		set file $expect_out(1,string)
+		if [regexp {new revision: (.*);.*} $expect_out(6,string) all ver] {
+		    set straff [format "    Modified  :  %s %s" $file $ver]
+		    msgprint -c WOKVC -i $straff
+		    puts $fileid $straff
+		}
+		exp_continue
+	    } else {
+		puts stderr $expect_out(buffer)
+		close
+		return  $return_status
+	    }
+	}
+	
+	-i $LOCID -indices -re "^Checkout file (\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n" {
+	    if { $expect_out(4,string) == "done" } {
+		set vrs [lindex [split $expect_out(3,string)] 1]
+		set nam [lindex [split [file tail $expect_out(1,string)] ,] 0 ]
+		msgprint -c WOKVC -i "Checking out file $nam ( $vrs )"
+		exp_continue
+	    } else {
+		puts stderr $expect_out(buffer)
+		close
+		return  $return_status
+	    }
+	}
+
+
+	-i $LOCID -indices -re "^Init for file (\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n(\[^\r]*)\r\n" {
+	    if { $expect_out(4,string) == "done" } {
+		set file $expect_out(1,string)
+		regsub {initial revision: } $expect_out(3,string) "" ver
+		set straff [format "    Added     :  %s %s" $file $ver]
+		puts $fileid $straff
+		msgprint -c WOKVC -i $straff
+		exp_continue
+	    } else {
+		puts stderr $expect_out(buffer)
+		close
+		return  $return_status
+	    }
+	}
+
+
+	-i $LOCID -indices -re "^Processing unit : (\[^\r]*)\r\n" {
+	    set ud $expect_out(1,string)
+	    puts $fileid [format "\n  %s (Updated) :  \n----" $ud]
+	    msgprint -c WOKVC -i [format "  %s (Updated) :  \n----" $ud]
+	    exp_continue
+	}
+
+
+	-i $LOCID -indices -re "^Deleted file (\[^\r]*)\r\n" {
+	    set file $expect_out(1,string)
+	    set straff [format "    Deleted   :  %s x.x" $file]
+	    puts $fileid $straff
+	    msgprint -c WOKVC -i $straff
+	    exp_continue
+	}
+
+
+	-i $LOCID "Successfull completion\r\n" {
+	    set return_status 1
+	    exp_continue
+	}
+
+	-i $LOCID eof {
+	    if { $VERBOSE } {
+		puts stdout "Received eof"
+	    }
+	    return $return_status
+	}
+
+	-i $LOCID timeout  {
+	    msgprint -c WOKVC -e "Timeout excedeed ($timeout) from spawned process."
+	}
+
+    }
+    return $return_status
+}
+;#
+;#  (((((((((((((((pour le desktop: ici on fait exec et c'est une catastroffe )))))))))))))))
+;#;>
+;# retourne une string  contenant le diff de Sfile dans les versions v1 et v2
+;#;<
+proc wokIntegre:BASE:diff { sfile v1 v2 } {
+    return [exec rcsdiff -r$v1 -r$v2 -q $sfile]
+}
+;#;>
+;# retourne une string  contenant le contenu de la version v de sfile. 
+;#;<
+proc wokIntegre:BASE:cat  { sfile {v last} } {
+    if { $v == "last" } {
+	return [exec co -p -q $sfile]
+    } else {
+	return [exec co -p$v -q $sfile]
+    }
+}
+;#;>
+;# retourne une string  contenant le nom de la derniere version de sfile. 
+;#;<
+proc wokIntegre:BASE:vrs { sfile } {
+    return  [lindex [lindex [split [exec rlog -h $sfile] \n] 3] 1]
+}
+;#;>
+;# Check for corruption 
+;#;<
+proc wokIntegre:BASE:check { sfile } {
+    return 
+}	
+;#;>
+;# fabrique de quoi afficher l'arbre des versions. 
+;#;<
+proc wokIntegre:BASE:tree { infile fils} {
+    upvar $fils FILS
+    set sep ----------------------------
+    set lst [split [exec rlog $infile] \n]
+    set i 1 
+    set ll [llength $lst]
+    set listlab {}
+    while { $i < $ll } {
+	set x [lindex $lst $i]
+	if { "$x" == "$sep" } {
+	    incr i 
+	    lappend listlab [lindex [split [lindex $lst $i]] 1]
+	    incr i
+	    set itm [lindex $lst $i]
+	    incr i
+	    set cmt [lindex $lst $i]
+	}
+	incr i
+    }
+
+    set i 0
+    foreach e $listlab { 
+	set w {}
+	lappend w [list $e [expr $i + 1]]
+	set FILS($i) $w
+	incr i
+    }
+
+    set lab [lindex [lindex $listlab 0] 0]
+    return [list $lab 1] 
+}

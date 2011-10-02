@@ -1,0 +1,41 @@
+-- File:	WOKBuilder_ArchiveExtract.cdl
+-- Created:	Tue Aug  6 11:06:37 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class ArchiveExtract from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Param                 from WOKUtils,
+    ArchiveLibrary        from WOKBuilder,
+    BuildStatus           from WOKBuilder,
+    HAsciiString          from TCollection
+
+raises
+    ProgramError from Standard
+is
+    Create(params : Param from WOKUtils) 
+    	returns mutable ArchiveExtract from WOKBuilder;
+
+    Load(me:mutable)
+    	is redefined;
+    
+    SetArchive(me:mutable; anarchive : ArchiveLibrary from WOKBuilder);
+    
+    Archive(me) 
+	returns ArchiveLibrary from WOKBuilder;
+    
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+fields
+
+    mylib     : ArchiveLibrary        from WOKBuilder;
+
+end ArchiveExtract;

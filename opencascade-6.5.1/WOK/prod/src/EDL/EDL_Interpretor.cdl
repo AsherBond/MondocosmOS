@@ -1,0 +1,149 @@
+-- File:	EDL_Interpretor.cdl
+-- Created:	Tue Jun 13 10:35:35 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+private class Interpretor from EDL
+
+inherits TShared from MMgt
+
+uses AsciiString            from TCollection,
+     MapOfVariable          from EDL,
+     HSequenceOfAsciiString from TColStd,
+     MapOfTemplate          from EDL,
+     MapOfFile              from EDL,
+     MapOfLibrary           from EDL,
+     StackOfBoolean         from EDL,
+     HSequenceOfVariable    from EDL,
+     Error                  from EDL,
+     ParameterMode          from EDL,
+     File                   from EDL,
+     Variable               from EDL,
+     Template               from EDL,
+     Library                from EDL,
+     DataMapIteratorOfMapOfTemplate from EDL,
+     DataMapIteratorOfMapOfVariable from EDL
+     
+is
+
+    Create returns mutable Interpretor from EDL;
+    
+    ClearAll(me : mutable);
+    ---C++: alias ~
+        
+    ClearSymbolTable(me : mutable);
+    
+    ClearTemplateTable(me : mutable);
+
+    ClearVariableList(me : mutable);
+
+    ClearArgList(me : mutable);
+    
+    ClearRetList(me : mutable);
+    
+    Parse(me : mutable; aFile : CString from Standard)
+    	returns Error from EDL;
+	
+    AddIncludeDirectory(me : mutable; aDirectory : CString from Standard)
+    	returns Error from EDL;
+    GetIncludeDirectory(me)
+    	returns mutable HSequenceOfAsciiString from TColStd;
+    
+    AddFile(me : mutable; aVariable : CString from Standard; aFilename : CString from Standard)
+    	returns Error from EDL;
+    GetFile(me : mutable; aVariable : CString from Standard)
+    	returns File from EDL;
+    ---C++: return &
+    
+    RemoveFile(me : mutable; aVariable : CString from Standard);
+    
+    AddVariable(me : mutable; aVariable : CString from Standard; aValue : CString from Standard)
+    	returns Error from EDL;
+    GetVariable(me : mutable; aVariable : CString from Standard)
+    	returns Variable from EDL;
+    ---C++: return &
+    IsDefined(me; aVariable : CString from Standard)
+    	returns Boolean from Standard;
+
+    IsFile(me; aVariable : CString from Standard)
+    	returns Boolean from Standard;
+   
+    RemoveVariable(me : mutable; aVariable : CString from Standard);
+    
+    AddTemplate(me : mutable; aTemplate : CString from Standard)
+    	returns Error from EDL;
+    AddToTemplate(me : mutable; aTemplate : CString from Standard)
+    	returns Error from EDL;
+    ClearTemplate(me : mutable; aTemplate : CString from Standard)
+    	returns Error from EDL;
+    GetTemplate(me : mutable; aTemplate : CString from Standard)
+    	returns Template from EDL;
+    ---C++: return &    	
+    EvalTemplate(me : mutable; aTemplate : CString from Standard; aResult : CString from Standard); 
+    RemoveTemplate(me : mutable; aTemplate : CString from Standard);
+    
+    AddLibrary(me : mutable; aLibrary : CString from Standard)
+    	returns Error from EDL;
+    GetLibrary(me : mutable; aLibrary : CString from Standard)
+    	returns Library from EDL;
+    ---C++: return &
+    
+    CallFunction(me : mutable; aLibname : CString from Standard; aFunction : CString from Standard; aRetuenName : CString from Standard)
+    	returns Error from EDL;
+    
+    RemoveLibrary(me : mutable; aLibrary : CString from Standard);
+    
+    AddExecutionStatus(me : mutable; aValue : Boolean from Standard);
+    GetExecutionStatus(me : mutable)
+    	returns Boolean from Standard;
+    RemoveExecutionStatus(me : mutable)
+    	returns Boolean from Standard;	
+	
+    SetParameterType(me : mutable; aMode : ParameterMode from EDL);
+    GetParameterType(me)
+    	returns ParameterMode from EDL;
+	
+    AddExpressionMember(me : mutable; aValue : Boolean from Standard);
+    GetExpressionMember(me : mutable)
+    	returns Boolean from Standard;
+	
+    SetPrintList(me : mutable; aValue : CString from Standard);
+    GetPrintList(me : mutable)
+    	returns AsciiString from TCollection;
+    ---C++: return &	
+	
+    SetCurrentTemplate(me : mutable; aValue : CString from Standard);
+    GetCurrentTemplate(me : mutable)
+    	returns AsciiString from TCollection;
+    ---C++: return &	
+	
+    AddToVariableList(me : mutable; aVariable : CString from Standard);
+    GetVariableList(me)
+    	returns mutable HSequenceOfVariable    from EDL;
+    
+    AddToArgList(me : mutable; aVariable : CString from Standard);
+    AddToArgList(me : mutable; aVariable : CString from Standard; aValue : CString from Standard);
+
+    GetTemplateIterator(me)
+       returns DataMapIteratorOfMapOfTemplate from EDL;
+    
+    GetVariableIterator(me)
+       returns DataMapIteratorOfMapOfVariable from EDL;
+       
+fields 
+    mySymbolTable      : MapOfVariable          from EDL;
+    myIncludeTable     : HSequenceOfAsciiString from TColStd;
+    myTemplateTable    : MapOfTemplate          from EDL;
+    myFileTable        : MapOfFile              from EDL;
+    myLibraryTable     : MapOfLibrary           from EDL;
+    myExecutionStatus  : StackOfBoolean         from EDL;
+    myParameterType    : ParameterMode          from EDL;
+    myExpressionMember : StackOfBoolean         from EDL;
+    myPrintList        : AsciiString            from TCollection;
+    myCurrentTemplate  : AsciiString            from TCollection;
+    myVariableList     : HSequenceOfVariable    from EDL;
+    myArgList          : HSequenceOfVariable    from EDL;
+    myRetList          : HSequenceOfVariable    from EDL;
+    
+end;

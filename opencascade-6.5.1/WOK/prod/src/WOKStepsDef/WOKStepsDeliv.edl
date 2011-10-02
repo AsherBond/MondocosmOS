@@ -1,0 +1,41 @@
+-- File:	WOKStepsDeliv.edl
+-- Author:	Arnaud BOUZY
+-- Copyright:	 Matra Datavision 1996
+
+
+@ifnotdefined ( %WOKStepsDeliv_EDL) then
+@set %WOKStepsDeliv_EDL = "";
+
+  @set    %WOKStepsDeliv_LibPath      = "libwokdeliverysteps.so";
+
+  @if ( %LocalArch == "hp" ) then
+    @set  %WOKStepsDeliv_LibPath      = "libwokdeliverysteps.sl";
+  @endif;
+
+  @if ( %LocalArch == "mac" ) then
+    @set  %WOKStepsDeliv_LibPath      = "libwokdeliverysteps.dylib";
+  @endif;
+
+  @if ( %Station == "wnt" ) then
+    @set  %WOKStepsDeliv_LibPath      = "wokdeliverysteps.dll";
+  @endif;
+
+  @set    %WOKStepsDeliv_DefinedSteps  = " WOKDeliv_DeliverySource ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryBase ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryCopy ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliverySOURCES ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DelivBuildSource ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryGET ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryShared ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryArchive ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DelivBuildArchive ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliverySTUBClient ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryDATA ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryExecList ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DelivBuildExec ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryFiles ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryStepList ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryListShared ";
+  @string %WOKStepsDeliv_DefinedSteps += "WOKDeliv_DeliveryOBJSSchema ";
+
+@endif;

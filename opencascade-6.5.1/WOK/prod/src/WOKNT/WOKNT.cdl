@@ -1,0 +1,110 @@
+-- File:	WOKNT.cdl
+-- Created:	Mon Jul 22 15:58:28 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+package WOKNT
+
+    ---Purpose: This package defines utility classes for
+    --          WOK++ for Windows NT.
+
+ uses
+ 
+  MMgt, 
+  OSD, 
+  TCollection,
+  TColStd,
+  SortTools,
+  EDL,
+  WOKTools
+
+ is
+
+
+    enumeration Extension       is CFile, HFile, CDLFile, ODLFile, IDLFile, CXXFile,
+    	    	    	    	   HXXFile, IXXFile, JXXFile, LXXFile,  GXXFile, INCFile,
+    	    	    	    	   PXXFile, F77File, CSHFile, 
+				   DBFile, FDDBFile,  DDLFile, HO2File,  
+				   LibSchemaFile, AppSchemaFile,
+				   LexFile, YaccFile, PSWFile, LWSFile, TemplateFile,
+    	    	    	    	   ObjectFile, MFile, CompressedFile,  ArchiveFile, DSOFile, DATFile,  
+    	    	    	    	   LispFile,  IconFile, TextFile, TarFile, 
+				   --- WNT extensions
+    	    	    	    	   LIBFile, DEFile, RCFile, RESFile, IMPFile, EXPFile, PDBFile, DLLFile, EXEFile, 
+    	    	    	    	   UnknownFile, NoExtFile;
+
+   enumeration RESyntax        is RESyntaxAWK, RESyntaxEGREP, RESyntaxGREP, RESyntaxEMACS;
+
+    -----------------------
+    ---Category: classes---
+    -----------------------
+
+  ---class FDescr;
+  class AdmFile; 
+  class Path;
+  class PathIterator;
+
+  class Shell;
+  class ShellManager;
+
+  class RegExp;
+
+  private deferred class ShellOutput;
+  private          class MixedOutput;
+  private          class OutErrOutput;
+
+
+  private class CompareOfString;
+
+  private class StackOfHandle
+    	instantiates    Stack  from TCollection ( Handle from WOKNT );
+
+  private class SequenceOfShell 
+    	instantiates  Sequence from TCollection ( Shell from  WOKNT);
+
+	
+  private deferred class PrivCompareOfString 
+  	instantiates   Compare from TCollection ( HAsciiString from TCollection );
+
+  private class Array1OfString 
+  	instantiates    Array1 from TCollection ( HAsciiString from TCollection );
+
+  private class QuickSortOfString 
+  	instantiates QuickSort from SortTools (
+                                HAsciiString    from TCollection,
+                                Array1OfString  from WOKNT,
+                                CompareOfString from WOKNT );
+
+  private class Array1OfRegExp 
+    	instantiates    Array1 from TCollection ( RegExp from WOKNT );
+
+
+    ------------------------------
+    ---Category: imported types---
+    ------------------------------
+
+ imported TimeStat;
+
+ private imported FindData;
+ private imported Handle;
+ private imported Dword;
+    ----------------------------
+    ---Category: enumerations---
+    ----------------------------
+
+ enumeration ExecutionMode is
+   SynchronousMode, AsynchronousMode;
+  
+ enumeration OutputMode is
+   OutErrMixed, OutErrSeparated;
+
+ SystemLastError returns Integer from Standard;
+ 
+ SystemMessage(i : Integer from Standard) 
+    returns CString from Standard;
+
+ LastSystemMessage
+    	returns CString from Standard;
+
+end WOKNT;

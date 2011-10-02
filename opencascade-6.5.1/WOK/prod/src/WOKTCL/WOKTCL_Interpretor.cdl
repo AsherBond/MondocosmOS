@@ -1,0 +1,41 @@
+-- File:	WOKTCL_Interpretor.cdl
+-- Created:	Mon Apr  1 12:48:53 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+class    Interpretor from WOKTCL 
+inherits Interpretor from WOKTclTools
+
+	---Purpose: 
+
+uses
+    Return                from WOKTools,
+    PInterp               from WOKTclTools,
+    Session               from WOKAPI,
+    APICommand            from WOKAPI
+    
+is
+
+    Create returns Interpretor from WOKTCL;
+    Create(anInterp : PInterp from WOKTclTools) returns Interpretor from WOKTCL;
+
+    Add(me : mutable; Command  : CString;
+    	              Help     : CString;
+		      Function : APICommand from WOKAPI;
+		      Group    : CString = "WOK Command");
+    
+    Session(me)
+    ---C++: return const &
+       	returns Session from WOKAPI;
+	
+    ChangeSession(me:mutable)
+    ---C++: return  &
+       	returns Session from WOKAPI;
+
+
+fields
+
+    mysession  : Session from WOKAPI;
+    
+end Interpretor;

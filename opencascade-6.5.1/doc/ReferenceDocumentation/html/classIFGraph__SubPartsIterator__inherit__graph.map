@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classIFGraph__ConnectedComponants.html" title="determines Connected Componants in a Graph. They define &#160;&#160;disjoined sets of Entities..." alt="" coords="5,83,245,112"/>
+<area shape="rect" id="node5" href="$classIFGraph__Cycles.html" title="determines strong componants in a graph which are Cycles &#160;" alt="" coords="269,83,395,112"/>
+<area shape="rect" id="node7" href="$classIFGraph__StrongComponants.html" title="determines strong componants of a graph, that is &#160;&#160;isolated entities (single componants)..." alt="" coords="419,83,627,112"/>
+<area shape="rect" id="node9" href="$classIFGraph__SCRoots.html" title="determines strong componants in a graph which are Roots &#160;" alt="" coords="455,160,591,189"/>
+</map>

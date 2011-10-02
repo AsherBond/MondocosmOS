@@ -1,0 +1,50 @@
+-- File:	EDL_Library.cdl
+-- Created:	Wed Jun  7 10:47:14 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Library from EDL
+
+uses SharedLibrary from OSD,
+     Function      from OSD,
+     AsciiString   from TCollection,
+     HAsciiString  from TCollection
+     
+is
+
+    Create 
+    	returns Library from EDL;
+    
+    Create(aName : CString from Standard) 
+    	returns Library from EDL;
+
+    Assign(me : out; aLib : Library from EDL);
+    ---C++: alias operator =
+	
+    Destroy(me);
+    ---C++: alias ~
+    
+    GetName(me)
+    	returns CString from Standard;
+
+    GetSymbol(me; aName : CString from Standard)
+    	returns Function from OSD;
+
+    GetStatus(me) 
+    	returns CString from Standard;
+	
+    Close(me);
+    
+    HashCode(myclass; aVar : Library from EDL; Upper : Integer from Standard) 
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; alib1 : Library from EDL; alib2 : Library from EDL)
+    	returns Boolean from Standard;
+	
+fields
+
+    myName : HAsciiString from TCollection;
+    myLib  : SharedLibrary from OSD;
+    
+end;

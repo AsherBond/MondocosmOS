@@ -1,0 +1,49 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Enum.cdl	1.1
+-- File:	MS_Enum.cdl
+-- Created:	Wed Jan 30 12:38:17 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class Enum 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits NatType from MS
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HAsciiString from TCollection
+
+is
+
+    Create(aName, aPackage, aContainer: HAsciiString; aPrivate: Boolean) 
+    	returns mutable Enum from MS;
+    
+    Enum(me: mutable; aEnum: HAsciiString);
+    Enums(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+	
+    Check(me);
+
+    Comment(me)
+         returns HAsciiString from TCollection;
+    
+    SetComment(me : mutable; aComment : HAsciiString from TCollection);
+
+fields
+
+    myEnums        : HSequenceOfHAsciiString from TColStd;
+    myEnumComment      : HAsciiString from TCollection;   -- Comment to enumeration declaration 
+
+end Enum from MS;
+
+
+
+
+
+
+
+

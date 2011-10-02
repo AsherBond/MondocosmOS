@@ -1,0 +1,232 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>shape_attibutes</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { font-family:Arial, sans-serif; }
+p.whs3 { margin-left:4.50pt; margin-top:4.50pt; }
+img_whs4 { width:665px; height:380px; border-style:none; }
+h3.whs5 { font-family:Arial, sans-serif; }
+img_whs6 { width:444px; height:534px; border-style:none; }
+p.whs7 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nData Attributes\nShape Attributes");
+addAvenueInfo("Data Attributes","technical_overview/application_framework/data_attributes/data_attributes_overview.htm","technical_overview/application_framework/data_attributes/standard_attributes.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Shape Attributes</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2">A topological attribute can 
+ be seen as a hook into the topological structure. To this hook, data can 
+ be attached and references defined.</p>
+
+<p class="whs2">It is used for keeping and access 
+ to topological objects and their evolution. All topological objects are 
+ stored in the one user-protected TNaming_UsedShapes attribute at the root 
+ label of the data framework. This attribute contains map with all topological 
+ shapes, used in this document.</p>
+
+<p class="whs2">To all other labels TNaming_NamedShape 
+ attribute can be added. This attribute contains references (hooks) to 
+ shapes from the TNaming_UsedShapes attribute and evolution of these shapes. 
+ TNaming_NamedShape attribute contains a set of pairs of hooks: old shape 
+ and new shape (see the figure below). It allows not only get the topological 
+ shapes by the labels, but also trace evolution of the shapes and correctly 
+ resolve dependent shapes by the changed one. </p>
+
+<p class="whs2">If shape is just-created, then 
+ the old shape for accorded named shape is an empty shape. If a shape is 
+ deleted, then the new shape in this named shape is empty.</p>
+
+<p>&nbsp;</p>
+
+<p class="whs3"><img src="../../../image/shapeattrib.gif" alt="image\shapeattrib.gif" width="665px" height="380px" border="0" class="img_whs4"><font 
+ style="font-family: Helvetica;"> </font></p>
+
+<p class="whs3">&nbsp;</p>
+
+<h3 class="whs5">Shape attributes in data framework. 
+ </h3>
+
+<p class="whs2">Different algorithms may dispose 
+ sub-shapes of the result shape at the individual label depending on necessity: 
+ </p>
+
+<p class="whs2">&nbsp;</p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">If a sub-shape 
+ must have some extra attributes (material of each face or color of each 
+ edge). In this case a specific sub-shape is placed to the separate label 
+ (usually, sub-label of the result shape label) with all attributes of 
+ this sub-shape. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">If topological 
+ naming is needed, a necessary and sufficient (for selected sub-shapes 
+ identification) set of sub-shapes is placed to the child labels of the 
+ result shape label. As usual, as far as basic solids and closed shells 
+ are concerned, all faces of the shape are disposed. Edges and vertices 
+ sub-shapes can be identified as intersection of contiguous faces. Modified/generated 
+ shapes may be placed to one named shape and identified as this named shape 
+ and source named shape that also can be identified with used algorithms. 
+ </p></li>
+</ul>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">TNaming_NamedShape may contain 
+ a few pairs of hooks with the same evolution. In this case topology shape, 
+ which belongs to the named shape, is a compound of new shapes.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">The data model contains both 
+ the topology and the hooks, and functions handle both topological entities 
+ and hooks. Consider the case of a box function, which creates a solid 
+ with six faces and six hooks. Each hook is attached to a face. If you 
+ want, you can also have this function create hooks for edges and vertices 
+ as well as for faces. For the sake of simplicity though, let's limit the 
+ example.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">Not all functions can define 
+ explicit hooks for all topological entities they create, but all topological 
+ entities can be turned into hooks when necessary. This is where topological 
+ naming is necessary. </p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">Consider the following example. 
+ A box defines six hooks for the six faces, but a protrusion created on 
+ a face of the box can only define two hooks, one for the top face, and 
+ one for all the lateral faces. As the basic wire defining the protrusion 
+ may change in the future the protrusion function cannot designate the 
+ lateral faces without ambiguity, their number may change. Figure 6 illustrates 
+ this example, faces F1 to F6 of the box each have a hook. Faces F7 to 
+ F10, the lateral faces of the protrusion, share a single hook, and face 
+ F11, the top face, has one hook.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3"><img src="../../../image/occ_0068.gif" alt="image\occ_0068.gif" width="444px" height="534px" border="0" class="img_whs6"><font 
+ style="font-family: Helvetica;"> <span style="font-family: Arial, sans-serif;"><br>
+</span></font><span style="margin-left: 4.50pt;
+							margin-top: 4.50pt;
+							font-family: Arial, sans-serif;"><br>
+This structure raises two problems: </span></p>
+
+<p class="whs7">- the value of the face F6 
+ attribute-hook has changed </p>
+
+<p class="whs7">- no data can be attached 
+ to F7. </p>
+
+<p class="whs7">When a hook designates multiple 
+ faces like F7-F10 (or the hook on F6 if F6 was split) it is impossible 
+ to attach data to an individual face like F7. </p>
+
+<p class=Body-Text-Indent-2
+	style="font-family: Arial, sans-serif;">In fact, the protrusion has 
+ a trimmed face F6. As a result, the value of this face has changed and 
+ the current value of the hook attached to it needs to be found. Note that 
+ this face could have been split in two faces (for example if the function 
+ had been a slot) and both new faces would have been attached to the same 
+ hook.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

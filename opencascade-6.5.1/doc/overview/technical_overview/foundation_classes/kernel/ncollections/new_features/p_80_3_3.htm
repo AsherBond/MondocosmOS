@@ -1,0 +1,188 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Heterogeneous Assign</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:11.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nNCollections\nFeatures\nHeterogeneous Assign");
+addAvenueInfo("Kernel","technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_2.htm","technical_overview/foundation_classes/kernel/ncollections/new_features/p_80_3_4.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../../whd_show0.gif","../../../../../whd_show2.gif","../../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../../whd_hide0.gif","../../../../../whd_hide2.gif","../../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../../whd_prev0.gif","../../../../../whd_prev2.gif","../../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../../whd_next0.gif","../../../../../whd_next2.gif","../../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Heterogeneous Assign</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p>The semantics of the method Assign() has been changed in comparison 
+ to TCollection. In NCollection classes the method Assign() is virtual 
+ and it receives the object of the abstract BaseCollection class (see the 
+ previous section). Therefore this method can be used to assign any collection 
+ type to any other if only these collections are instantiated on the same 
+ ItemType. </p>
+
+<p>For example, conversion of Map into Array1 is performed like this:</p>
+
+<p class=code
+	style="margin-top: 0; margin-bottom: 0;">&nbsp;</p>
+
+<p class=code>#include &lt;NCollection_Map.hxx&gt;</p>
+
+<p class=code>#include &lt;NCollection_Array1.hxx&gt;</p>
+
+<p class=code>typedef NCollection_Map&lt;gp_Pnt&gt; MyPackage_MapOfPnt;</p>
+
+<p class=code>typedef NCollection_Array1&lt;gp_Pnt&gt; MyPackage_Array1OfPnt;</p>
+
+<p class=code>....</p>
+
+<p class=code>MyPackage_MapOfPnt aMapPnt;</p>
+
+<p class=code>....</p>
+
+<p class=code>MyPackage_Array1OfPnt anArr1Pnt (1, aMapPnt.Size());</p>
+
+<p class=code>anArr1Pnt.Assign (aMapPnt); // heterogeneous assignment</p>
+
+<p class=code
+	style="margin-top: 0; margin-bottom: 0;">&nbsp;</p>
+
+<p>There are some aspects to mention:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Unlike in TCollection, 
+ in NCollection the methods Assign and operator= do not coincide. The former 
+ is a virtual method defined in the BaseCollection class. The latter is 
+ always defined in instance classes as a non-virtual inline method and 
+ it corresponds exactly to the method Assign in TCollection classes. Therefore 
+ it is always profitable to use operator= instead of Assign wherever the 
+ types on both sides of assignment are known. </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">If the method Assign 
+ copies to Array1or Array2 structure, it first checks if the size of the 
+ array is equal to the number of items in the copied collection object. 
+ If the sizes differ, an exception is thrown, as in TCollection_Array1.gxx 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">Copying to Map, 
+ IndexedMap, DataMap and IndexedDataMap can bring about a loss of data: 
+ when two or more copied data items have the same key value, only one item 
+ is copied and the others are discarded. It can lead to an error in the 
+ code like the following:</p></li>
+</ul>
+
+<p class=code
+	style="margin-top: 0; margin-bottom: 0;">&nbsp;</p>
+
+<p class=code>MyPackage_Array1OfPnt anArr1Pnt (1, 100); </p>
+
+<p class=code>MyPackage_MapOfPnt aMapPnt;</p>
+
+<p class=code>....</p>
+
+<p class=code>aMapPnt.Assign(anArr1Pnt);</p>
+
+<p class=code>anArr1Pnt.Assign(aMapPnt);</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p>Objects of classes parameterised with two types (DoubleMap, DataMap 
+ and &nbsp;IndexedDataMap) 
+ cannot be assigned. Their method Assign throws the exception Standard_TypeMismatch 
+ (because it is impossible to check if the passed BaseCollection parameter 
+ belongs to the same collection type).</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

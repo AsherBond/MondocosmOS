@@ -1,0 +1,222 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:10.00pt; }
+p.whs2 { margin-left:4.50pt; margin-top:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nNCollections\nOverview");
+addAvenueInfo("Kernel","technical_overview/foundation_classes/kernel/p_6_1.htm","technical_overview/foundation_classes/kernel/ncollections/instantiation_of_ncollection_classes/p_80_2_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../whd_show0.gif","../../../../whd_show2.gif","../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../whd_hide0.gif","../../../../whd_hide2.gif","../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../whd_prev0.gif","../../../../whd_prev2.gif","../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../whd_next0.gif","../../../../whd_next2.gif","../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Overview</p>
+
+<p>&nbsp;</p>
+
+<p><font style="font-family: 'Lucida Console';"
+		face="Lucida Console">NCollection</font> package meets the requirements 
+ of Open CASCADE Technology users who do not use WOK development environment 
+ in their projects. Though it is quite natural to develop a code based 
+ on OCCT in any environment accepted in the industry, there is still one 
+ limitation: the so-called <span style="font-style: italic;"><I>OCCT</I></span><font 
+ style="font-style: italic;"> generic classes <span style="font-style: normal;">provided 
+ in </span><span style="font-style: italic;"><I>TCollection</I></span><span style="font-style: normal;"> 
+ package re</span></font>quire compilation of the definitions in the CDL 
+ language and therefore can only be instantiated in WOK development environment.</p>
+
+<p>The directory NCollection provides a full replacement of all TCollection 
+ generic classes so that any <span style="font-style: italic;"><I>OCCT </I></span>collection 
+ could be instantiated <font style="font-style: italic;">via</font> C++ 
+ template or macro definitions. It can be used in WOK as a package<font 
+ style="font-style: italic;"> </font>development unit, or in any other 
+ configuration, since it only uses the standard capabilities of C++ compiler</p>
+
+<p>Macro definitions of these classes are stored in <span style="font-style: italic;"><I>NCollection_Define*.hxx</I></span> 
+ files. These definitions are now obsolete though still can be used, particularly 
+ for compatibility with the existing code. On the contrary, template classes 
+ in <span style="font-style: italic;"><I>NCollection_*.hxx</I></span> files are 
+ recommended, they are supported by OPEN CASCADE Company and further developed 
+ according to various needs.</p>
+
+<p>The technology used in this unit continues and complements the one offered 
+ in the header file <font style="font-style: italic;">Standard_DefineHandle</font> 
+ – allowing to implement outside CDL the classes <font style="font-style: italic;">managed 
+ by Handle</font>, also providing <font style="font-style: italic;">OCCT 
+ RTTI</font> support.</p>
+
+<p>There are 13 parameterized templates in the files <font style="font-style: italic;">NCollection_Define*.hxx</font> 
+ defining the corresponding collection classes:</p>
+
+<p class=code>Array1</p>
+
+<p class=code>Array2</p>
+
+<p class=code>Vector</p>
+
+<p class=code>SparseArray</p>
+
+<p class=code>Stack</p>
+
+<p class=code>Queue</p>
+
+<p class=code>List</p>
+
+<p class=code>SList</p>
+
+<p class=code>Sequence</p>
+
+<p class=code>Set</p>
+
+<p class=code>Map</p>
+
+<p class=code>DataMap</p>
+
+<p class=code>DoubleMap</p>
+
+<p class=code>IndexedMap</p>
+
+<p class=code>IndexedDataMap</p>
+
+<p class=code>CellFilter</p>
+
+<p class=code>UBTree</p>
+
+<p>and also 4 macro definitions of classes <font style="font-style: italic;">managed 
+ by Handle </font>(corresponding to similar <font style="font-style: italic;">TCollection 
+ </font>generic classes), in separate <font style="font-style: italic;">NCollection_Define*.hxx</font> 
+ files:</p>
+
+<p class=code>HArray1</p>
+
+<p class=code>HArray2</p>
+
+<p class=code>HSequence</p>
+
+<p class=code>HSet</p>
+
+<p class=code>HUBTree <span style="font-family: Arial, sans-serif;">(defined 
+ in NCollection_UBTree.hxx)</span> </p>
+
+<p class="whs1"><font style="color: #000000; font-weight: bold;"
+															color=#000000>See 
+ Also</font></p>
+
+<p class="whs1"><font style="font-weight: bold;">Instantiation 
+ of collection classes</font></p>
+
+<p>Here we show how to implement in the user code the definitions from 
+ NCollection, taking as example sequence of point (analogue of TColgp_SequenceOfPnt).</p>
+
+<p class="whs2"><a href="instantiation_of_ncollection_classes/p_80_2_1.htm">Definition 
+ of a new collection class</a> </p>
+
+<p class="whs2"><a href="instantiation_of_ncollection_classes/p_80_2_2.htm">Definition 
+ of a new collection class managed by Handle</a> </p>
+
+<p><a href="instantiation_of_ncollection_classes/p_80_2_3.htm">Class architecture 
+ (public API)</a> </p>
+
+<p class="whs2">Interface 
+ to classes defined in CDL </p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2"><font style="font-weight: bold;"><span 
+ style="font-weight: bold;"><B>F</B></span>eatures</font></p>
+
+<p class="whs2"><font style="font-style: italic;">NCollection</font> 
+ defines some specific features, in addition to the public API inherited 
+ from <font style="font-style: italic;">TCollection</font> classes. </p>
+
+<p class="whs2"><a href="new_features/p_80_3_1.htm">Iterators</a> 
+ </p>
+
+<p><a href="new_features/p_80_3_2.htm">Class BaseCollection</a> </p>
+
+<p><a href="new_features/p_80_3_3.htm">Heterogeneous Assign</a> </p>
+
+<p><a href="new_features/p_80_3_4.htm">Allocator</a> </p>
+
+<p><a href="../../../../New_features__New_collection_types.htm">Collection 
+ Types </a></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

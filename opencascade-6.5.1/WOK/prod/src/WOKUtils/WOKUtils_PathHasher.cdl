@@ -1,0 +1,13 @@
+-- File:	WOKUtils_PathHasher.cdl
+-- Created:	Mon Jun 26 17:54:58 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class PathHasher from WOKUtils
+uses Path from WOKUtils
+is
+    HashCode(myclass; apath : Path from WOKUtils) returns Integer from Standard; 
+    
+    IsEqual(myclass; path1, path2 : Path from WOKUtils) returns Boolean  from Standard;
+end;

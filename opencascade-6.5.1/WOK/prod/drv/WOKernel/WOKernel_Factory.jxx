@@ -1,0 +1,24 @@
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _WOKernel_Session_HeaderFile
+#include <WOKernel_Session.hxx>
+#endif
+#ifndef _WOKernel_Workshop_HeaderFile
+#include <WOKernel_Workshop.hxx>
+#endif
+#ifndef _WOKernel_Warehouse_HeaderFile
+#include <WOKernel_Warehouse.hxx>
+#endif
+#ifndef _WOKernel_Factory_HeaderFile
+#include <WOKernel_Factory.hxx>
+#endif

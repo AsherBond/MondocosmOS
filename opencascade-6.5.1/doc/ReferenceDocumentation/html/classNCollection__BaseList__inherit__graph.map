@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classNCollection__List.html" title="NCollection_List\&lt; TheItemType \&gt;" alt="" coords="277,5,528,35"/>
+<area shape="rect" id="node5" href="$classNCollection__List.html" title="NCollection_List\&lt; CALL_DEF_PLANE \&gt;" alt="" coords="261,59,544,88"/>
+<area shape="rect" id="node7" href="$classNCollection__List.html" title="NCollection_List\&lt; const char * \&gt;" alt="" coords="281,112,524,141"/>
+<area shape="rect" id="node9" href="$classNCollection__List.html" title="NCollection_List\&lt; Handle_NIS_InteractiveObject \&gt;" alt="" coords="220,165,585,195"/>
+<area shape="rect" id="node11" href="$classNCollection__List.html" title="NCollection_List\&lt; Handle_NIS_View \&gt;" alt="" coords="265,219,540,248"/>
+<area shape="rect" id="node13" href="$classNCollection__List.html" title="NCollection_List\&lt; Handle_VrmlData_Node \&gt;" alt="" coords="243,272,563,301"/>
+<area shape="rect" id="node15" href="$classNCollection__List.html" title="NCollection_List\&lt; NIS_DrawList * \&gt;" alt="" coords="272,325,533,355"/>
+<area shape="rect" id="node17" href="$classNCollection__List.html" title="NCollection_List\&lt; NIS_InteractiveContext * \&gt;" alt="" coords="236,379,569,408"/>
+<area shape="rect" id="node19" href="$classNCollection__List.html" title="NCollection_List\&lt; OGLFont_SysInfo * \&gt;" alt="" coords="260,432,545,461"/>
+<area shape="rect" id="node21" href="$classNCollection__List.html" title="NCollection_List\&lt; ShapeData \&gt;" alt="" coords="285,485,520,515"/>
+<area shape="rect" id="node23" href="$classNCollection__List.html" title="NCollection_List\&lt; Standard_Integer \&gt;" alt="" coords="264,539,541,568"/>
+<area shape="rect" id="node25" href="$classNCollection__List.html" title="NCollection_List\&lt; TCollection_AsciiString \&gt;" alt="" coords="248,592,557,621"/>
+<area shape="rect" id="node27" href="$classNCollection__List.html" title="NCollection_List\&lt; TCollection_ExtendedString \&gt;" alt="" coords="229,645,576,675"/>
+<area shape="rect" id="node29" href="$classNCollection__Queue.html" title="NCollection_Queue\&lt; TheItemType \&gt;" alt="" coords="268,699,537,728"/>
+<area shape="rect" id="node31" href="$classNCollection__Queue.html" title="NCollection_Queue\&lt; Handle_OpenGl_Resource \&gt;" alt="" coords="227,752,579,781"/>
+<area shape="rect" id="node33" href="$classNCollection__Set.html" title="NCollection_Set\&lt; TheItemType \&gt;" alt="" coords="279,805,527,835"/>
+<area shape="rect" id="node35" href="$classNCollection__Stack.html" title="NCollection_Stack\&lt; TheItemType \&gt;" alt="" coords="272,859,533,888"/>
+</map>

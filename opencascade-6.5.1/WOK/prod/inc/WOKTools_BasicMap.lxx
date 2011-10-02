@@ -1,0 +1,76 @@
+// File:	WOKTools_BasicMap.lxx
+// Created:	Fri Feb 26 17:02:30 1993
+// Author:	Remi LEQUETTE
+//		<rle@phylox>
+
+//=======================================================================
+//function : NbBuckets
+//purpose  : 
+//=======================================================================
+
+inline Standard_Integer WOKTools_BasicMap::NbBuckets() const
+{
+  return myNbBuckets;
+}
+
+//=======================================================================
+//function : Extent
+//purpose  : 
+//=======================================================================
+
+inline Standard_Integer WOKTools_BasicMap::Extent() const
+{
+  return mySize;
+}
+
+//=======================================================================
+//function : IsEmpty
+//purpose  : 
+//=======================================================================
+
+inline Standard_Boolean WOKTools_BasicMap::IsEmpty() const
+{
+  return mySize == 0;
+}
+
+//=======================================================================
+//function : Resizable
+//purpose  : 
+//=======================================================================
+
+inline Standard_Boolean  WOKTools_BasicMap::Resizable()const
+{
+  return IsEmpty() || (!mySaturated && (mySize > myNbBuckets));
+}
+
+//=======================================================================
+//function : Increment
+//purpose  : 
+//=======================================================================
+
+inline void  WOKTools_BasicMap::Increment()
+{
+  mySize++;
+}
+
+
+//=======================================================================
+//function : Index
+//purpose  : 
+//=======================================================================
+inline Standard_Integer WOKTools_BasicMap::Index(const Standard_Integer ahascode, const Standard_Integer NbBuckets) const
+{
+  return (Abs(ahascode)%NbBuckets) + 1;
+}
+
+//=======================================================================
+//function : Decrement
+//purpose  : 
+//=======================================================================
+
+inline void  WOKTools_BasicMap::Decrement()
+{
+  mySize--;
+}
+
+

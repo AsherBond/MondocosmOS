@@ -1,0 +1,66 @@
+-- File:	WOKAPI_Unit.cdl
+-- Created:	Mon Aug 21 22:06:13 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class    Unit   from WOKAPI 
+inherits Entity from WOKAPI
+	---Purpose: Unit API in WOK
+
+uses
+
+    Session                   from WOKAPI,
+    Locator                   from WOKAPI,
+    SequenceOfUnit            from WOKAPI,   
+    SequenceOfFile            from WOKAPI,
+    MakeOption                from WOKAPI,
+    SequenceOfMakeOption      from WOKAPI,
+    DevUnit                   from WOKernel,
+    HSequenceOfParamItem      from WOKUtils,
+    HSequenceOfDefine         from WOKTools,
+    HAsciiString              from TCollection,
+    HSequenceOfHAsciiString   from TColStd
+is
+
+    Create returns Unit from WOKAPI;
+    
+    Create(aent : Entity from WOKAPI)
+    	returns Unit from WOKAPI;
+
+    Create(asession : Session from WOKAPI;
+    	   aname    : HAsciiString from TCollection;
+    	   verbose,getit  : Boolean from Standard = Standard_True)
+	returns Unit from WOKAPI;
+    
+    TypeKey(me) returns Character from Standard;
+
+    Type(me) returns HAsciiString from TCollection;
+
+    BuildParameters(me:out; asession    : Session from WOKAPI;
+		            apath       : HAsciiString from TCollection; 
+			    acode       : Character from Standard;
+		            defines     : HSequenceOfDefine from WOKTools;
+    	                    usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+
+    Build(me:out; asession    : Session from WOKAPI;
+    	          apath       : HAsciiString from TCollection; 
+		  acode       : Character from Standard;
+		  defines     : HSequenceOfDefine from WOKTools;
+    	          usedefaults : Boolean from Standard)
+    	returns Boolean from Standard;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;
+
+    IsValid(me) 
+    	returns Boolean from Standard
+	is redefined;
+
+    Files(me; alocator : Locator from WOKAPI; fileseq : out SequenceOfFile from WOKAPI);
+
+end Unit;

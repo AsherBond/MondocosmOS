@@ -1,0 +1,11 @@
+srcinc:::FILENAME.edl
+srcinc:::WOKEntity.edl
+srcinc:::WOKEntity_Factory.edl
+srcinc:::WOKEntity_Unit.edl
+srcinc:::WOKEntity_Warehouse.edl
+srcinc:::WOKEntity_Workbench.edl
+srcinc:::WOKEntity_WorkbenchUnit.edl
+srcinc:::WOKEntity_Workshop.edl
+srcinc:::WOKEntity_Parcel.edl
+srcinc:::WOKEntity_ParcelUnit.edl
+srcinc:::WOKEntity_UnitTypes.edl

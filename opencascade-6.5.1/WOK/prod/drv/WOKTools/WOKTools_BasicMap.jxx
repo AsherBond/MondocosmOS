@@ -1,0 +1,6 @@
+#ifndef _WOKTools_BasicMapIterator_HeaderFile
+#include <WOKTools_BasicMapIterator.hxx>
+#endif
+#ifndef _WOKTools_BasicMap_HeaderFile
+#include <WOKTools_BasicMap.hxx>
+#endif

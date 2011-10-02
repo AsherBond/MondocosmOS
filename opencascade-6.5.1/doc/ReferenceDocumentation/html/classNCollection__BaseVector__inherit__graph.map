@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; TheItemType \&gt;" alt="" coords="300,5,569,35"/>
+<area shape="rect" id="node5" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; BinLDrivers_DocumentSection \&gt;" alt="" coords="241,59,628,88"/>
+<area shape="rect" id="node7" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; BRepMesh_Circ \&gt;" alt="" coords="292,112,577,141"/>
+<area shape="rect" id="node9" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; Handle_NIS_InteractiveObject \&gt;" alt="" coords="241,165,628,195"/>
+<area shape="rect" id="node11" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; Interface_FileParameter \&gt;" alt="" coords="263,219,607,248"/>
+<area shape="rect" id="node13" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; NIS_InteractiveObject * \&gt;" alt="" coords="263,272,607,301"/>
+<area shape="rect" id="node15" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; ObjBnd \&gt;" alt="" coords="320,325,549,355"/>
+<area shape="rect" id="node17" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; Poly_CoherentLink \&gt;" alt="" coords="281,379,588,408"/>
+<area shape="rect" id="node19" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; Poly_CoherentNode \&gt;" alt="" coords="277,432,592,461"/>
+<area shape="rect" id="node21" href="$classNCollection__Vector.html" title="NCollection_Vector\&lt; Poly_CoherentTriangle \&gt;" alt="" coords="269,485,600,515"/>
+</map>

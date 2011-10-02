@@ -1,0 +1,58 @@
+-- File:	WOKBuilder_MSTranslatorAction.cdl
+-- Created:	Mon Nov 27 11:49:08 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSAction from WOKBuilder 
+inherits TShared         from MMgt
+
+	---Purpose: 
+
+uses
+    HAsciiString   from TCollection,
+    MSActionType   from WOKBuilder,
+    MSActionStatus from WOKBuilder,
+    MSEntity       from WOKBuilder,
+    TimeStat       from WOKUtils
+    
+is
+
+    Create returns mutable MSAction from WOKBuilder; 
+
+    Create(anaction : MSAction from WOKBuilder; atype : MSActionType from WOKBuilder) 
+    	returns mutable MSAction from WOKBuilder; 
+
+    Create(anentity : MSEntity from WOKBuilder; atype : MSActionType from WOKBuilder) 
+    	returns mutable MSAction from WOKBuilder; 
+	
+    Create(aname : HAsciiString from TCollection; atype : MSActionType from WOKBuilder) 
+    	returns mutable MSAction from WOKBuilder; 
+    
+    SetEntity(me:mutable; anentity : MSEntity from WOKBuilder);
+    Entity(me) returns MSEntity from WOKBuilder;
+    ---C++: return const &
+    ---C++: inline
+
+    SetType(me:mutable; atype :  MSActionType from WOKBuilder);   
+    Type(me) returns MSActionType from WOKBuilder;
+    ---C++: inline
+    
+    Date(me) returns TimeStat from WOKUtils;
+    ---C++: inline
+    
+    SetDate(me:mutable; adate : TimeStat from WOKUtils);
+    GetDate(me:mutable);
+    
+    Status(me) returns MSActionStatus from WOKBuilder;
+    SetStatus(me:mutable; astatus : MSActionStatus from WOKBuilder);
+
+fields
+
+    myent    : MSEntity       from WOKBuilder;
+    mytype   : MSActionType   from WOKBuilder;
+    mystatus : MSActionStatus from WOKBuilder;
+    mydate   : TimeStat       from WOKUtils;
+
+end MSAction;

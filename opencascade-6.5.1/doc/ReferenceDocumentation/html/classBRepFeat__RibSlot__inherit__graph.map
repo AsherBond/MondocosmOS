@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepFeat__MakeLinearForm.html" title="Builds a rib or a groove along a developable, planar surface. &#160;&#160;The semantics of..." alt="" coords="5,237,211,267"/>
+<area shape="rect" id="node9" href="$classBRepFeat__MakeRevolutionForm.html" title="MakeRevolutionForm Generates a surface of &#160;&#160;revolution in the feature as it slides..." alt="" coords="235,237,472,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="125,83,336,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="131,5,331,35"/>
+</map>

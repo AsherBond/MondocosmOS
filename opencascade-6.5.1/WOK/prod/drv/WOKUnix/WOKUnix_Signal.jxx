@@ -1,0 +1,3 @@
+#ifndef _WOKUnix_Signal_HeaderFile
+#include <WOKUnix_Signal.hxx>
+#endif

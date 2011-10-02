@@ -1,0 +1,6 @@
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_ProcessOutput_HeaderFile
+#include <WOKUnix_ProcessOutput.hxx>
+#endif

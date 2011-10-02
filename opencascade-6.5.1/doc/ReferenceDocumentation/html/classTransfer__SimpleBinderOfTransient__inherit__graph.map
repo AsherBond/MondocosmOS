@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classTransfer__BinderOfTransientInteger.html" title="This type of Binder allows to attach as result, besides a &#160;&#160;Transient Object, an..." alt="" coords="5,315,256,344"/>
+<area shape="rect" id="node2" href="$classTransfer__Binder.html" title="A Binder is an auxiliary object to Map the Result of the &#160;&#160;Transfer of a given Object..." alt="" coords="68,160,193,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="69,83,192,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="56,5,205,35"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepTools__GTrsfModification.html" title="Defines a modification of the geometry by a GTrsf &#160;&#160;from gp. All methods return True..." alt="" coords="633,5,844,35"/>
+<area shape="rect" id="node9" href="$classBRepTools__NurbsConvertModification.html" title="Defines a modification of the geometry by a Trsf &#160;&#160;from gp. All methods return True..." alt="" coords="604,59,873,88"/>
+<area shape="rect" id="node11" href="$classBRepTools__TrsfModification.html" title="Describes a modification that uses a gp_Trsf to &#160;&#160;change the geometry of a shape..." alt="" coords="639,112,839,141"/>
+<area shape="rect" id="node15" href="$classDraft__Modification.html" title="Draft_Modification" alt="" coords="665,165,812,195"/>
+<area shape="rect" id="node17" href="$classShapeCustom__BSplineRestriction.html" title="this tool intended for aproximation surfaces, curves and pcurves with &#160;&#160;specified..." alt="" coords="616,219,861,248"/>
+<area shape="rect" id="node19" href="$classShapeCustom__ConvertToBSpline.html" title="implement a modification for BRepTools &#160;&#160;Modifier algortihm. Converts Surface of..." alt="" coords="619,272,859,301"/>
+<area shape="rect" id="node21" href="$classShapeCustom__ConvertToRevolution.html" title="implements a modification for the BRepTools &#160;&#160;Modifier algortihm. Converts all elementary..." alt="" coords="608,325,869,355"/>
+<area shape="rect" id="node23" href="$classShapeCustom__DirectModification.html" title="implements a modification for the BRepTools &#160;&#160;Modifier algortihm. Will redress indirect..." alt="" coords="616,379,861,408"/>
+<area shape="rect" id="node25" href="$classShapeCustom__SweptToElementary.html" title="implements a modification for the BRepTools &#160;&#160;Modifier algortihm. Converts all elementary..." alt="" coords="609,432,868,461"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,219,328,248"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,219,156,248"/>
+<area shape="rect" id="node13" href="$classShapeCustom__TrsfModification.html" title="Complements BRepTools_TrsfModification to provide reversible &#160;&#160;scaling regarding..." alt="" coords="923,112,1149,141"/>
+</map>

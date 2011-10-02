@@ -1,0 +1,50 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classCDF__Directory.html" title="A directory is a collection of documents. There is only one instance &#160;&#160;of a given..." alt="" coords="289,5,412,35"/>
+<area shape="rect" id="node5" href="$classCDF__MetaDataDriver.html" title="CDF_MetaDataDriver" alt="" coords="267,59,435,88"/>
+<area shape="rect" id="node9" href="$classCDF__MetaDataDriverFactory.html" title="CDF_MetaDataDriverFactory" alt="" coords="241,112,460,141"/>
+<area shape="rect" id="node13" href="$classCDF__Session.html" title="CDF_Session" alt="" coords="297,165,404,195"/>
+<area shape="rect" id="node15" href="$classCDF__StoreList.html" title="CDF_StoreList" alt="" coords="291,219,411,248"/>
+<area shape="rect" id="node17" href="$classCDM__Application.html" title="CDM_Application" alt="" coords="284,272,417,301"/>
+<area shape="rect" id="node19" href="$classCDM__Document.html" title="An applicative document is an instance of a class inheriting CDM_Document. &#160;&#160;These..." alt="" coords="284,325,417,355"/>
+<area shape="rect" id="node21" href="$classCDM__MessageDriver.html" title="CDM_MessageDriver" alt="" coords="269,379,432,408"/>
+<area shape="rect" id="node23" href="$classCDM__MetaData.html" title="CDM_MetaData" alt="" coords="285,432,416,461"/>
+<area shape="rect" id="node25" href="$classCDM__Reference.html" title="CDM_Reference" alt="" coords="284,485,417,515"/>
+<area shape="rect" id="node27" href="$classDynamic__MethodDefinitionsDictionary.html" title="This class groups in a dictionary of all the &#160;&#160;various definitions of methods. It..." alt="" coords="211,539,491,568"/>
+<area shape="rect" id="node29" href="$classExtrema__CCache2dOfExtCC2d.html" title="Extrema_CCache2dOfExtCC2d" alt="" coords="235,592,467,621"/>
+<area shape="rect" id="node31" href="$classExtrema__CCacheOfExtCC.html" title="Extrema_CCacheOfExtCC" alt="" coords="251,645,451,675"/>
+<area shape="rect" id="node33" href="$classExtrema__LCCache2dOfLocateExtCC2d.html" title="Extrema_LCCache2dOfLocateExtCC2d" alt="" coords="207,699,495,728"/>
+<area shape="rect" id="node35" href="$classExtrema__LCCacheOfLocateExtCC.html" title="Extrema_LCCacheOfLocateExtCC" alt="" coords="223,752,479,781"/>
+<area shape="rect" id="node37" href="$classGraphic2d__Drawer.html" title="A Drawer groups all conversion methods. &#160;" alt="" coords="279,805,423,835"/>
+<area shape="rect" id="node39" href="$classIFSelect__WorkLibrary.html" title="This class defines the (empty) frame which can be used to &#160;&#160;enrich a XSTEP set with..." alt="" coords="269,859,432,888"/>
+<area shape="rect" id="node41" href="$classIGESData__FileRecognizer.html" title="IGESData_FileRecognizer" alt="" coords="256,912,445,941"/>
+<area shape="rect" id="node43" href="$classIGESData__GlobalNodeOfSpecificLib.html" title="IGESData_GlobalNodeOfSpecificLib" alt="" coords="223,965,479,995"/>
+<area shape="rect" id="node45" href="$classIGESData__GlobalNodeOfWriterLib.html" title="IGESData_GlobalNodeOfWriterLib" alt="" coords="228,1019,473,1048"/>
+<area shape="rect" id="node47" href="$classIGESData__SpecificModule.html" title="This class defines some Services which are specifically &#160;&#160;attached to IGES Entities..." alt="" coords="253,1072,448,1101"/>
+<area shape="rect" id="node49" href="$classInterface__GlobalNodeOfGeneralLib.html" title="Interface_GlobalNodeOfGeneralLib" alt="" coords="224,1125,477,1155"/>
+<area shape="rect" id="node51" href="$classInterface__GlobalNodeOfReaderLib.html" title="Interface_GlobalNodeOfReaderLib" alt="" coords="225,1179,476,1208"/>
+<area shape="rect" id="node53" href="$classMaterials__Color.html" title="This class encapsulates a Quantity_Color in a &#160;&#160;Transient object, to be used in an..." alt="" coords="288,1232,413,1261"/>
+<area shape="rect" id="node55" href="$classMaterials__MaterialsDictionary.html" title="This class creates a dictionary of materials. &#160;" alt="" coords="240,1285,461,1315"/>
+<area shape="rect" id="node57" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="289,1339,412,1368"/>
+<area shape="rect" id="node59" title="Internal adaptor class wrapping actual type and enhancing it by reference counter..." alt="" coords="240,1392,461,1421"/>
+<area shape="rect" id="node61" href="$classNIS__Drawer.html" title="NIS_Drawer" alt="" coords="301,1445,400,1475"/>
+<area shape="rect" id="node63" href="$classNIS__InteractiveContext.html" title="NIS_InteractiveContext" alt="" coords="259,1499,443,1528"/>
+<area shape="rect" id="node65" href="$classNIS__InteractiveObject.html" title="NIS_InteractiveObject" alt="" coords="264,1552,437,1581"/>
+<area shape="rect" id="node67" href="$classNIS__SelectFilter.html" title="NIS_SelectFilter" alt="" coords="287,1605,415,1635"/>
+<area shape="rect" id="node69" href="$classPCDM__Reader.html" title="PCDM_Reader" alt="" coords="292,1659,409,1688"/>
+<area shape="rect" id="node71" href="$classPCDM__ReadWriter.html" title="PCDM_ReadWriter" alt="" coords="277,1712,424,1741"/>
+<area shape="rect" id="node73" href="$classPCDM__ReferenceIterator.html" title="PCDM_ReferenceIterator" alt="" coords="253,1765,448,1795"/>
+<area shape="rect" id="node75" href="$classPCDM__Writer.html" title="PCDM_Writer" alt="" coords="295,1819,407,1848"/>
+<area shape="rect" id="node77" href="$classPoly__CoherentTriangulation.html" title="Poly_CoherentTriangulation" alt="" coords="249,1872,452,1901"/>
+<area shape="rect" id="node79" href="$classSelect3D__Projector.html" title="A framework to define 3D projectors. &#160;" alt="" coords="273,1925,428,1955"/>
+<area shape="rect" id="node81" href="$classStandard__Failure.html" title="Forms the root of the entire exception hierarchy. &#160;" alt="" coords="285,1979,416,2008"/>
+<area shape="rect" id="node83" href="$classStandard__Type.html" title="The class &lt;Type&gt; provides services to find out information &#160;&#160;about a type defined..." alt="" coords="291,2032,411,2061"/>
+<area shape="rect" id="node85" href="$classStepData__FileRecognizer.html" title="StepData_FileRecognizer" alt="" coords="255,2085,447,2115"/>
+<area shape="rect" id="node87" href="$classStepData__GlobalNodeOfWriterLib.html" title="StepData_GlobalNodeOfWriterLib" alt="" coords="228,2139,473,2168"/>
+<area shape="rect" id="node89" href="$classVrmlData__Node.html" title="VrmlData_Node" alt="" coords="287,2192,415,2221"/>
+<area shape="rect" id="node91" href="$classXw__FontMap.html" title="This class defines a FontMap object. &#160;" alt="" coords="297,2245,404,2275"/>
+<area shape="rect" id="node93" href="$classXw__MarkMap.html" title="This class defines a MarkMap object. &#160;" alt="" coords="296,2299,405,2328"/>
+<area shape="rect" id="node95" href="$classXw__TypeMap.html" title="This class defines a TypeMap object. &#160;" alt="" coords="297,2352,404,2381"/>
+<area shape="rect" id="node97" href="$classXw__WidthMap.html" title="This class defines a WidthMap object. &#160;" alt="" coords="293,2405,408,2435"/>
+<area shape="rect" id="node7" href="$classFWOSDriver__Driver.html" title="FWOSDriver_Driver" alt="" coords="571,59,720,88"/>
+<area shape="rect" id="node11" href="$classFWOSDriver__DriverFactory.html" title="FWOSDriver_DriverFactory" alt="" coords="544,112,747,141"/>
+</map>

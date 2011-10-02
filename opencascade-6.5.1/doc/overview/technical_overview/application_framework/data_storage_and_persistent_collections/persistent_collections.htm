@@ -1,0 +1,163 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Persistent Collections</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs3 { margin-left:4.50pt; margin-top:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nPersistent Collections");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/data_storage_and_persistent_collections/data_storage.htm","technical_overview/application_framework/data_storage_and_persistent_collections/persistent_geometry.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Persistent Collections</p>
+
+<p class="whs1">Persistent collections are classes which 
+ handle dynamically sized collections of data that can be stored in the 
+ database. These collections provide three categories of service:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>persistent 
+ strings,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>generic 
+ arrays of data, and</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>commonly 
+ used instantiations of arrays.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs3">Persistent strings 
+ are concrete classes that handle sequences of characters based on both 
+ ASCII (normal 8-bit) and Unicode (16-bit) character sets.</p>
+
+<p class="whs3">Arrays are generic 
+ classes, that is, they can hold a variety of objects not necessarily inheriting 
+ from a unique root class. These arrays can be instantiated with any kind 
+ of storable or persistent object, and then inserted into the persistent 
+ data model of a user application.</p>
+
+<p class="whs3">The purpose of these 
+ data collections is simply to convert transient data into its persistent 
+ equivalent so that it can be stored in the database. To this end, the 
+ collections are used to create the persistent data model and assure the 
+ link with the database. They do not provide editing or query capabilities 
+ because it is more efficient, within the operative data model of the application, 
+ to work with transient data structures (from the <font style="font-weight: bold;">TCollection</font> 
+ package).</p>
+
+<p class="whs3">For this reason:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ persistent strings only provide constructors and functions to convert 
+ between transient and persistent strings, and</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ persistent data collections are limited to arrays. In other words, <font 
+ style="font-weight: bold;">PCollection</font> does not include sequences, 
+ lists, queues, sets, stacks and so on (unlike <font style="font-weight: bold;">TCollection</font>).</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs3">Persistent string and 
+ array classes are found in the <font style="font-weight: bold;">PCollection</font> 
+ package.</p>
+
+<p class="whs3">In addition, the <font 
+ style="font-weight: bold;">PColStd</font> package provides standard, and 
+ frequently used, instantiations of persistent arrays, for very simple 
+ objects.</p>
+
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classAIS__TypeFilter.html" title="Selects Interactive Objects through their types. The &#160;&#160;filter questions each Interactive..." alt="" coords="23,237,137,267"/>
+<area shape="rect" id="node4" href="$classSelectMgr__Filter.html" title="The root class to define filter objects for selection. &#160;&#160;Advance handling of objects..." alt="" coords="15,160,145,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="19,83,141,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="5,5,155,35"/>
+</map>

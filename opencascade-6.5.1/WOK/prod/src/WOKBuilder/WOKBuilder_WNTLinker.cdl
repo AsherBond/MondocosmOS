@@ -1,0 +1,45 @@
+-- File:	WOKBuilder_WNTLinker.cdl
+-- Created:	Mon Oct 21 12:57:17 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+deferred class WNTLinker from WOKBuilder inherits WNTCollector from WOKBuilder
+
+    ---Purpose: defines link tool ( linker )
+
+ uses
+ 
+    HAsciiString            from TCollection,
+    Param                   from WOKUtils,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd,
+    DEFile                  from WOKBuilder
+    
+ is
+ 
+    Initialize (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    );
+    	---Purpose: initialization
+    
+    ProduceDEFile (
+     me      : mutable;
+     aDEFile : DEFile from WOKBuilder
+    );
+    	---Purpose: writes DEF file specification to the tool command file
+
+    ProduceLibraryList (
+     me       : mutable;
+     aLibList : HSequenceOfLibrary from WOKBuilder
+    );
+    	---Purpose: writes list of libraries to the tool command file
+
+    ProduceExternList (
+     me           : mutable;
+     anExternList : HSequenceOfHAsciiString from TColStd
+    );
+    	---Purpose: writes list of the external references to the tool command file
+
+end WNTLinker;

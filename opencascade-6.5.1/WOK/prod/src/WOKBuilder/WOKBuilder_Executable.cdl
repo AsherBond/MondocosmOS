@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_Executable.cdl
+-- Created:	Thu Feb  8 10:58:09 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+class Executable from WOKBuilder 
+inherits Entity from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+is
+
+    Create(apath : Path from WOKUtils) returns mutable Executable from WOKBuilder;
+
+
+end Executable;

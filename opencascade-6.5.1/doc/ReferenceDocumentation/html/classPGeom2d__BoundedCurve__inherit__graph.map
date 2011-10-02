@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classPGeom2d__BezierCurve.html" title="PGeom2d_BezierCurve" alt="" coords="5,315,184,344"/>
+<area shape="rect" id="node11" href="$classPGeom2d__BSplineCurve.html" title="PGeom2d_BSplineCurve" alt="" coords="208,315,389,344"/>
+<area shape="rect" id="node13" href="$classPGeom2d__TrimmedCurve.html" title="PGeom2d_TrimmedCurve" alt="" coords="413,315,603,344"/>
+<area shape="rect" id="node2" href="$classPGeom2d__Curve.html" title="PGeom2d_Curve" alt="" coords="232,160,365,189"/>
+<area shape="rect" id="node4" href="$classPGeom2d__Geometry.html" title="PGeom2d_Geometry" alt="" coords="217,83,380,112"/>
+<area shape="rect" id="node6" href="$classStandard__Persistent.html" title="Standard_Persistent" alt="" coords="219,5,379,35"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classIFSelect__SignCategory.html" title="This Signature returns the Category of an entity, as recorded &#160;&#160;in the model &#160;" alt="" coords="989,5,1163,35"/>
+<area shape="rect" id="node13" href="$classIFSelect__SignMultiple.html" title="Multiple Signature : ordered list of other Signatures &#160;&#160;It concatenates on a same..." alt="" coords="993,59,1159,88"/>
+<area shape="rect" id="node15" href="$classIFSelect__SignType.html" title="This Signature returns the cdl Type of an entity, under two &#160;&#160;forms : &#160;complete dynamic..." alt="" coords="1005,112,1147,141"/>
+<area shape="rect" id="node19" href="$classIFSelect__SignValidity.html" title="This Signature returns the Validity Status of an entity, as &#160;&#160;deducted from data..." alt="" coords="996,165,1156,195"/>
+<area shape="rect" id="node21" href="$classIGESSelect__IGESName.html" title="IGESName is a Signature specific to IGESNorm : &#160;&#160;it considers the Name of an IGESEntity..." alt="" coords="989,219,1163,248"/>
+<area shape="rect" id="node23" href="$classIGESSelect__IGESTypeForm.html" title="IGESTypeForm is a Signature specific to the IGES Norm : &#160;&#160;it gives the signature..." alt="" coords="976,272,1176,301"/>
+<area shape="rect" id="node25" href="$classIGESSelect__SignColor.html" title="Gives Color attached to an entity &#160;&#160;Several forms are possible, according to &lt;mode&gt;..." alt="" coords="993,325,1159,355"/>
+<area shape="rect" id="node27" href="$classIGESSelect__SignLevelNumber.html" title="Gives D.E. Level Number under two possible forms : &#160;&#160;* for counter : &quot;LEVEL..." alt="" coords="965,379,1187,408"/>
+<area shape="rect" id="node29" href="$classIGESSelect__SignStatus.html" title="Gives D.E. Status under the form i,j,k,l (4 figures) &#160;&#160;i for BlankStatus &#160;&#160;j for..." alt="" coords="988,432,1164,461"/>
+<area shape="rect" id="node31" href="$classStepSelect__StepType.html" title="StepType is a Signature specific to Step definitions : it &#160;&#160;considers the type as..." alt="" coords="992,485,1160,515"/>
+<area shape="rect" id="node35" href="$classXSControl__SignTransferStatus.html" title="This Signatures gives the Transfer Status of an entity, as &#160;&#160;recorded in a TransferProcess..." alt="" coords="967,539,1185,568"/>
+<area shape="rect" id="node2" href="$classInterface__SignType.html" title="Provides the basic service to get a type name, according &#160;&#160;to a norm &#160;&#160;It can be..." alt="" coords="569,272,719,301"/>
+<area shape="rect" id="node4" href="$classMoniTool__SignText.html" title="Provides the basic service to get a text which identifies &#160;&#160;an object in a context..." alt="" coords="377,272,519,301"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,272,328,301"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,272,156,301"/>
+<area shape="rect" id="node17" href="$classIFSelect__SignAncestor.html" title="IFSelect_SignAncestor" alt="" coords="1264,112,1437,141"/>
+<area shape="rect" id="node33" href="$classSTEPSelections__SelectDerived.html" title="STEPSelections_SelectDerived" alt="" coords="1236,485,1465,515"/>
+</map>

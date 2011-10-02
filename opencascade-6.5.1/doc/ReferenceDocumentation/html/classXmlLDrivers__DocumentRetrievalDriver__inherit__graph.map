@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classXmlDrivers__DocumentRetrievalDriver.html" title="XmlDrivers_DocumentRetrievalDriver" alt="" coords="23,315,297,344"/>
+<area shape="rect" id="node13" href="$classXmlTObjDrivers__DocumentRetrievalDriver.html" title="XmlTObjDrivers_DocumentRetrievalDriver" alt="" coords="321,315,628,344"/>
+<area shape="rect" id="node2" href="$classPCDM__RetrievalDriver.html" title="PCDM_RetrievalDriver" alt="" coords="231,160,404,189"/>
+<area shape="rect" id="node4" href="$classPCDM__Reader.html" title="PCDM_Reader" alt="" coords="259,83,376,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="243,5,392,35"/>
+<area shape="rect" id="node11" href="$classXmlXCAFDrivers__DocumentRetrievalDriver.html" title="retrieval driver of a XS document &#160;" alt="" coords="5,392,315,421"/>
+</map>

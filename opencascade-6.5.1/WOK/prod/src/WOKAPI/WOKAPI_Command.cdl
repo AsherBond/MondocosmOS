@@ -1,0 +1,272 @@
+-- File:	WOKAPI_Command.cdl
+-- Created:	Wed Apr  3 16:05:14 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class Command from WOKAPI 
+
+	---Purpose: 
+
+uses
+
+    Session      from WOKAPI,
+    Locator      from WOKAPI,
+    ArgTable     from WOKTools,
+    Return       from WOKTools
+
+is
+
+
+    ---
+    --       SESSION COMMANDS
+    --       
+
+    SessionInfo(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Gives Information about Session    
+    	returns Integer from Standard;
+    
+    MoveTo(myclass; asession : Session from WOKAPI; 
+    	    	    argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	    retval   : out Return from WOKTools)  
+    ---Purpose: moves toward an entity
+    	returns Integer from Standard;
+    
+    EnvironmentMgr(myclass; asession : Session from WOKAPI; 
+    	    	            argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	            retval   : out Return from WOKTools)  
+    ---Purpose: moves toward an entity
+    	returns Integer from Standard;
+    
+    ProfileMgt(myclass; asession : Session from WOKAPI; 
+    	    	     argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	     retval   : out Return from WOKTools)  
+    ---Purpose: Sets current DBMS System + Debug On/Off
+    	returns Integer from Standard;
+
+    ---
+    --       GENERAL FEATURES
+    --       
+
+    ParametersMgr(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: 
+    	returns Integer from Standard;
+	
+    EntityInfo(myclass; asession    : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: Info about entities
+    	returns Integer from Standard;
+
+    EntityClose(myclass; asession :  Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: 
+    	returns Integer from Standard;
+
+    ---
+    --       FACTORY COMMANDS
+    --       
+
+    FactoryCreate(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Creates a factory
+    	returns Integer from Standard;
+
+    FactoryInfo(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Gives Information about Factory
+    	returns Integer from Standard;
+    
+    FactoryDestroy(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Destroys a factory
+    	returns Integer from Standard; 
+    
+    ---
+    --      WAREHOUSE COMMANDS
+    --      
+
+    WarehouseCreate(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Creates a warehouse
+    	returns Integer from Standard;
+
+    WarehouseInfo(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Gives Information about Warehouse
+    	returns Integer from Standard;
+    
+    WarehouseDestroy(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Destroys a warehouse
+	    returns Integer from Standard;
+
+    WarehouseDeclare(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Declares a parcel in a warehouse
+	    returns Integer from Standard;
+
+    ---	
+    -- 	    PARCEL COMMANDS
+    -- 	        
+
+
+    ParcelInfo(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval : out Return from WOKTools)  
+    ---Purpose: Gives Information about parcel
+    	returns Integer from Standard;
+
+    
+    ---
+    --       WORKSHOP COMMANDS
+    --       
+
+    WorkshopCreate(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: creates a workshop
+    	returns Integer from Standard;
+
+    WorkshopInfo(myclass;  asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: Info about workshop
+    	returns Integer from Standard;
+
+    WorkshopDestroy(myclass;  asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: Destroys a workshop
+    	returns Integer from Standard;
+
+    ---
+    --       WORKBENCH COMMANDS
+    --       
+
+    WorkbenchCreate(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: creates a workbench
+    	returns Integer from Standard;
+	
+    WorkbenchInfo(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: info about workbench
+    	returns Integer from Standard;
+
+    WorkbenchMove(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: move workbench inheritence
+    	returns Integer from Standard;
+
+    WorkbenchDestroy(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: destroys workbench
+    	returns Integer from Standard;
+
+    WorkbenchProcess(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: processes a workbench
+    	returns Integer from Standard;
+
+
+    ---
+    --  	Locator commands
+    --  	
+
+    Locate(myclass; asession :  Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: Locates elements
+    	returns Integer from Standard;
+
+    	
+    ---
+    --       UNIT COMMANDS
+    --       
+
+    UnitCreate(myclass;  asession : Session from WOKAPI; 
+    	      	        argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	        retval   : out Return from WOKTools)  
+    ---Purpose: creates a devunit
+    	returns Integer from Standard;
+
+    UnitInfo(myclass; asession   : Session from WOKAPI; 
+    	      	        argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	        retval   : out Return from WOKTools)  
+    ---Purpose: info about devunit
+    	returns Integer from Standard;
+	
+    UnitMake(myclass; asession   : Session from WOKAPI; 
+    	      	        argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	        retval   : out Return from WOKTools)  
+    ---Purpose: builds a devunit
+    	returns Integer from Standard;
+	
+    UnitMakeInfo(myclass; asession   : Session from WOKAPI; 
+    	      	        argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	        retval   : out Return from WOKTools)  
+    ---Purpose: builds a devunit
+    	returns Integer from Standard;
+	
+    UnitDestroy(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	         retval   : out Return from WOKTools)  
+    ---Purpose: destroys devunit
+        returns Integer from Standard;
+
+
+
+    ---
+    -- Triggered Steps related commands
+    -- 
+
+    AddInputFile(myclass; asession : Session from WOKAPI; 
+    	      	         argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	         retval   : out Return from WOKTools)  
+    ---Purpose: Adds a secondary Input File to step
+        returns Integer from Standard;
+
+    InputFileInfo(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: gives  info about an inputfile
+        returns Integer from Standard;
+	
+    AddOutputFile(myclass; asession : Session from WOKAPI; 
+    	      	           argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	           retval   : out Return from WOKTools)  
+    ---Purpose: gives  info about an inputfile
+        returns Integer from Standard;
+	
+    OutputFileInfo(myclass; asession : Session from WOKAPI; 
+    	      	            argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	            retval   : out Return from WOKTools)  
+    ---Purpose: gives  info about an inputfile
+        returns Integer from Standard;
+
+    AddExecDepItem(myclass; asession : Session from WOKAPI; 
+    	      	            argc     : Integer from Standard; argv : ArgTable from WOKTools; 
+    	    	            retval   : out Return from WOKTools)  
+    ---Purpose: adds a dependence item to step
+        returns Integer from Standard;
+
+end Command;

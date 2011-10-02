@@ -1,0 +1,6 @@
+#ifndef _WOKTools_Return_HeaderFile
+#include <WOKTools_Return.hxx>
+#endif
+#ifndef _WOKTclUtils_Path_HeaderFile
+#include <WOKTclUtils_Path.hxx>
+#endif

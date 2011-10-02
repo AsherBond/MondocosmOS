@@ -1,0 +1,77 @@
+-- File:	WOKDeliv.cdl
+-- Created:	Mon Jul 29 16:46:32 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+package WOKDeliv 
+
+	---Purpose: Describes steps for building delivery units
+
+uses WOKMake,
+     WOKStep,
+     WOKernel,
+     WOKUtils,
+     WOKTools,
+     WOKBuilder,
+     TColStd,
+     TCollection
+
+is
+
+
+    class DeliveryList;
+
+    deferred class DeliveryStep;
+    
+    	class DeliverySource;
+
+    	class DeliveryBase;
+
+    	class DeliveryGET;
+	
+    	class DeliveryCopy;
+	
+	    class DelivBuildSource;
+
+	    class DelivBuildArchive;
+	    
+	    class DelivBuildExec;
+
+    	class DeliveryOBJSSchema;
+
+    	class DeliveryFiles;
+    
+    	class DeliveryStepList;
+
+    	    class DeliveryListShared;
+
+    deferred class DeliveryMetaStep;
+    
+   	class DeliverySOURCES;
+
+    	deferred class DeliveryLIB;
+	
+	    class DeliveryShared;
+	    
+	    class DeliveryArchive;
+	    
+    	class DeliverySTUBClient;
+
+    	class DeliveryExecList;
+    
+    	class DeliveryDATA;
+
+    class DataMapOfParcel instantiates 
+    	DataMap from WOKTools(HAsciiString from TCollection,
+	    	    	      Parcel from WOKernel,
+			      HAsciiStringHasher from WOKTools);
+			      
+
+    class DataMapOfFiles instantiates
+    	DataMap from WOKTools(HAsciiString from TCollection,
+	    	    	      HSequenceOfHAsciiString from TColStd,
+			      HAsciiStringHasher from WOKTools);
+			      
+end WOKDeliv;

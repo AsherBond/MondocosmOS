@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classInterface__CopyMap.html" title="Manages a Map for the need of single Transfers, such as Copies &#160;&#160;In such transfer..." alt="" coords="5,237,160,267"/>
+<area shape="rect" id="node9" href="$classTransfer__DispatchControl.html" title="This is an auxiliary class for TransferDispatch, which allows &#160;&#160;to record simple..." alt="" coords="184,237,373,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="119,83,241,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="105,5,255,35"/>
+</map>

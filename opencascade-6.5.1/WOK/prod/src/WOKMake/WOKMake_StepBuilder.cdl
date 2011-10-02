@@ -1,0 +1,59 @@
+-- File:	WOKMake_StepBuilder.cdl
+-- Created:	Wed Oct 23 17:00:00 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class StepBuilder from WOKMake 
+
+	---Purpose: 
+
+uses
+    BuildProcess                       from WOKMake,
+    HAsciiString                       from TCollection,
+    DevUnit                            from WOKernel,
+    StepConstructPtr                   from WOKMake,
+    Step                               from WOKMake,
+    DataMapOfHAsciiStringOfStepBuilder from WOKMake
+
+is
+
+    Create
+    	returns StepBuilder from WOKMake;
+
+    Create(aname : HAsciiString from TCollection; aptr : StepConstructPtr from WOKMake)
+    	returns StepBuilder from WOKMake;
+	
+    Name(me)
+    	returns HAsciiString from TCollection;
+	
+    Builder(me)
+    	returns StepConstructPtr from WOKMake;
+	
+    StepBuilders(myclass)
+    ---C++: return &
+        returns DataMapOfHAsciiStringOfStepBuilder from WOKMake;
+	
+    Add(me);
+
+    BuildStep(myclass; aprocess : BuildProcess from WOKMake;
+    	    	       thename  : HAsciiString from TCollection;
+    	    	       aunit    : DevUnit      from WOKernel;
+    	    	       acode    : HAsciiString from TCollection;
+		       checked,hidden : Boolean from Standard)
+    	returns Step from WOKMake;
+    
+    BuildStep(myclass; aprocess : BuildProcess from WOKMake;
+    	    	       aunit    : DevUnit      from WOKernel;
+    	    	       acode    : HAsciiString from TCollection;
+		       asubcode : HAsciiString from TCollection)
+    ---Warning: This entry point does not set precedence steps 
+    	returns Step from WOKMake;
+    
+fields
+
+    myname : HAsciiString     from TCollection;
+    myptr  : StepConstructPtr from WOKMake;
+
+end StepBuilder;

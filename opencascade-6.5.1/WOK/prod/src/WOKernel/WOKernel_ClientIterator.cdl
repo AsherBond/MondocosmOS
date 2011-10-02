@@ -1,0 +1,45 @@
+-- File:	WOKernel_ClientIterator.cdl
+-- Created:	Thu Feb  6 16:00:32 1997
+-- Author:	Prestataire Pascal BABIN
+--		<pba@voilax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+private class ClientIterator from WOKernel
+
+uses
+
+    HSequenceOfHAsciiString      from TColStd,
+    HAsciiString                 from TCollection,
+    UnitGraph                    from WOKernel
+    
+raises
+    NoMoreObject from Standard,
+    NoSuchObject from Standard
+is
+
+    Create (aClientGraph : UnitGraph from WOKernel; anUd : HAsciiString from TCollection) 
+    	returns ClientIterator from WOKernel;
+
+    More (me) returns Boolean;
+	---Purpose: Returns TRUE if there are other uds.
+
+    Next(me : in out)
+    	--- Purpose : Set the iterator to the next ud.
+    raises NoMoreObject from Standard;
+
+    Value(me : out) returns HAsciiString from TCollection
+	--- Purpose: Returns the ud value for the current position
+	--           of the iterator.
+    raises NoSuchObject from Standard;
+
+    GetClients(me : in out);
+    
+fields
+    
+    myClientGraph  : UnitGraph                    from WOKernel;
+    myMore         : Boolean                      from Standard;
+    myCurrentUd    : HAsciiString                 from TCollection; 
+    myClients      : HSequenceOfHAsciiString      from TColStd;
+    myIndex        : Integer                      from Standard;
+    
+end ClientIterator;

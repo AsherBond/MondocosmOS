@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classPrsMgr__Presentation2d.html" title="A framework to manage 2D displays, graphic entities &#160;&#160;and their updates. Plotters..." alt="" coords="5,237,184,267"/>
+<area shape="rect" id="node9" href="$classPrsMgr__Presentation3d.html" title="PrsMgr_Presentation3d" alt="" coords="208,237,387,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="135,83,257,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="121,5,271,35"/>
+</map>

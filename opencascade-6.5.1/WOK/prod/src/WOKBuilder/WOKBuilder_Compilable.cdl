@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_Compilable.cdl
+-- Created:	Thu Aug 10 20:52:30 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Compilable from WOKBuilder 
+inherits Entity from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+
+is
+    Create(apath : Path from WOKUtils);
+
+end Compilable;

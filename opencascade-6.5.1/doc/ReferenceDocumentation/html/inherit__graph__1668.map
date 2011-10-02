@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classOSD__FileNode.html" title="A class for &#39;File&#39; and &#39;Directory&#39; grouping common &#160;&#160;methods. &#160;&#160;The..." alt="" coords="7,32,121,61"/>
+<area shape="rect" id="node3" href="$classOSD__Directory.html" title="Management of directories &#160;" alt="" coords="171,5,293,35"/>
+<area shape="rect" id="node5" href="$classOSD__File.html" title="Basic tools to manage files &#160;&#160;Warning: &#39;ProgramError&#39; is raised when somebody..." alt="" coords="192,59,272,88"/>
+</map>

@@ -1,0 +1,35 @@
+-- File:	MS_Component.cdl
+-- Created:	Mon Aug 23 18:19:49 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+class Component 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Exec from MS 
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	HAsciiString from TCollection
+
+is
+
+    Create(anComponent :HAsciiString) 
+    	returns mutable Component from MS;
+    
+    Use(me: mutable; aComponent: HAsciiString);
+    Uses(me) returns mutable HSequenceOfHAsciiString from TColStd;
+          
+    Interface(me: mutable; aInterface: HAsciiString);
+    Interfaces(me) returns mutable HSequenceOfHAsciiString from TColStd;
+
+fields
+
+    myUses       : HSequenceOfHAsciiString from TColStd;
+    myInterfaces : HSequenceOfHAsciiString from TColStd;
+
+end Component from MS;
+
+

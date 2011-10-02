@@ -1,0 +1,26 @@
+-- File:	WOKDFLT.cdl
+-- Created:	Fri Jun 28 00:35:15 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+package WOKDFLT 
+
+	---Purpose: 
+
+uses
+    TColStd,
+    TCollection,
+    WOKUtils,
+    WOKernel,
+    WOKBuilder,
+    WOKMake,
+    WOKStep
+
+is
+    class MSDFLTExtractor;
+
+    class DFLTExtract;
+
+end WOKDFLT;

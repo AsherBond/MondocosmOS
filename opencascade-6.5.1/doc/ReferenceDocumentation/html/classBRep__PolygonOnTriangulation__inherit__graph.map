@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classBRep__PolygonOnClosedTriangulation.html" title="A representation by two arrays of nodes on a &#160;&#160;triangulation. &#160;" alt="" coords="5,315,269,344"/>
+<area shape="rect" id="node2" href="$classBRep__CurveRepresentation.html" title="Root class for the curve representations. Contains &#160;&#160;a location. &#160;" alt="" coords="32,160,243,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="76,83,199,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="63,5,212,35"/>
+</map>

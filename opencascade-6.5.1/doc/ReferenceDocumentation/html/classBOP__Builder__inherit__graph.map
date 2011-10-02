@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classBOP__EmptyBuilder.html" title="Performs Boolean Operation (BO) for shapes &#160;&#160;in cases when one of arguments(or both)..." alt="" coords="5,83,155,112"/>
+<area shape="rect" id="node5" href="$classBOP__Section.html" title="BOP_Section" alt="" coords="179,83,288,112"/>
+<area shape="rect" id="node7" href="$classBOP__ShellSolid.html" title="Performs Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse for arguments of &#160;&#160;shell/solid..." alt="" coords="312,83,432,112"/>
+<area shape="rect" id="node13" href="$classBOP__WireShape.html" title="The Root class to perform a Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse between arguments..." alt="" coords="524,83,655,112"/>
+<area shape="rect" id="node9" href="$classBOP__ShellShell.html" title="Performs Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse for arguments that &#160;&#160;are of type..." alt="" coords="169,160,289,189"/>
+<area shape="rect" id="node11" href="$classBOP__SolidSolid.html" title="Performs Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse for solids as &#160;&#160;arguments &#160;" alt="" coords="313,160,431,189"/>
+<area shape="rect" id="node15" href="$classBOP__WireShell.html" title="The class to perform a Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse between arguments..." alt="" coords="455,160,575,189"/>
+<area shape="rect" id="node17" href="$classBOP__WireSolid.html" title="The class is to perform a Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse between arguments..." alt="" coords="599,160,716,189"/>
+<area shape="rect" id="node19" href="$classBOP__WireWire.html" title=" &#160;Performs Boolean Operations (BO) &#160;&#160;Common,Cut,Fuse for wires as &#160;&#160;arguments &#160;" alt="" coords="740,160,857,189"/>
+</map>

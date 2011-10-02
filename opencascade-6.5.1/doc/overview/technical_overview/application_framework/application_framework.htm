@@ -1,0 +1,174 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Application Framework</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { text-align:right; }
+table.whs2 { width:576px; margin-left:3.00pt; border-spacing:0px; }
+tr.whs3 { x-cell-content-align:top; }
+td.whs4 { width:77.08%; height:22px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs5 { margin-left:6.00pt; }
+p.whs6 { font-weight:bold; }
+td.whs7 { width:22.92%; height:22px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+img_whs8 { width:139px; height:281px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nApplication Framework");
+addAvenueInfo("Application Framework","","technical_overview/application_framework/data_framework.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Application Framework</p>
+
+<p align="right" class="whs1">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="576" class="whs2">
+
+<tr valign="top" class="whs3">
+<td height="22" width="77.08%" class="whs4">
+<p>The Application Framework uses an associativity engine to simplify the 
+ development of your CAD application.</p>
+<p>Based on application/document architecture, it does this due to the 
+ following features:</p>
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Application data 
+ is handled by the mechanism of attributes </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Attributes may be 
+ organized according to your development needs </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Multiple documents 
+ can be managed by an application </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Ready-to-use modeling 
+ data attributes common to CAD/CAM applications </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Document modification 
+ and recomputation</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Data storage services 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">A ready-to-use Undo-Redo 
+ and Copy-Paste functions </p></li>
+</ul>
+<p>Since OCAF handles your application structure, your only major development 
+ task is the creation of application-specific data and GUIs. It is the 
+ organization of application data due to which OCAF differs from any other 
+ CAD framework. In OCAF, data structures are not shape-driven, but reference-key 
+ driven. In this respect, attributes such as shape data, color, material, 
+ are attached to a deeper invariant structure of a model than the shapes 
+ themselves. Then OCAF organizes and embeds these attributes in a document. 
+ For example, a geometry becomes the value of the Shape attribute, in the 
+ same way as a number is the value of the Integer attribute and a string 
+ is the value of the Name attribute.</p>
+<p><a href="standard_documents.htm">OCAF documents</a> are in their turn 
+ managed by an OCAF application.</p>
+<p>Please, refer for more details to <span style="font-weight: bold;"><B><a 
+ href="../../../ocaf.pdf">OCAF User's guide</a></B></span></p>
+<p>and the OCAF white papers</p>
+<p class="whs6"><a href="../../../ocaf_wp.pdf">Application 
+ Framework</a></p>
+<p class="whs6">&nbsp;</p>
+<p class="whs6"><a href="../../../ocaf_tree_wp.pdf">Distribution 
+ of Data through OCAF Tree</a></p>
+<p class="whs6">&nbsp;</p>
+<p class="whs6"><a href="../../../ocaf_functionmechanism_wp.pdf">Application 
+ Framework Function Mechanism</a></p>
+<p>&nbsp;</p>
+<p>See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a><font style="font-family: 'Lucida Console';"
+						face="Lucida Console">.</font></td>
+<td height="22" width="22.92%" class="whs7">
+<p align="right" class="whs1"><img src="../../image/af.gif" alt="image\af.gif" width="139px" height="281px" border="0" class="img_whs8"> </td></tr>
+</table>
+
+&nbsp; 
+
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

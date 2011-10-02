@@ -1,0 +1,68 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_GenClass.cdl	1.1
+-- File:	MS_GenClass.cdl
+-- Created:	Wed Jan 30 11:41:21 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class GenClass 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Class from  MS
+    uses 
+	GenType                 from MS,
+     	HSequenceOfGenType      from MS,
+     	HSequenceOfHAsciiString from TColStd,
+	HAsciiString            from TCollection
+
+is
+    Create(aName: HAsciiString from TCollection; aPackage: HAsciiString from TCollection)
+    	returns mutable GenClass from MS;
+    
+    Create(aName, aPackage : HAsciiString from TCollection;
+    	   aPrivate, aDeferred, aInComplete: Boolean)
+    	returns mutable GenClass from MS;
+	       
+    NestedStdClass(me: mutable; aClass : HAsciiString from TCollection);
+    NestedInsClass(me: mutable; aClass : HAsciiString from TCollection);
+    GetNestedStdClassesName(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    GetNestedInsClassesName(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    ---Purpose: these nested are created when the corresponding class is 
+    --          translated, before they are in the Nested group.
+    --          It s only because in the package.cdl we dont know
+    --          if the nested classes of a generic are "standard" or "instantiation".
+
+    AddNested(me : mutable; aClass : HAsciiString from TCollection);
+    RemoveNested(me : mutable; aClass : HAsciiString from TCollection);
+    GetNestedName(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    CheckNested(me);
+    ---Purpose: Nested group : each time the definition of a nested class of <me>
+    --          is translated, the class is moved from this group to the "NestStd" or
+    --          "NestedIns".
+    
+    Validity(me; aName: HAsciiString from TCollection; aPackage: HAsciiString from TCollection);
+    
+    GenType(me: mutable; aItem: HAsciiString from TCollection); 
+    GenType(me: mutable; aItem: HAsciiString from TCollection; aConstraint: HAsciiString from TCollection);
+    GenType(me: mutable; aItem: GenType from MS);
+    GenTypes(me)
+    	returns mutable HSequenceOfGenType from MS;
+
+	
+fields
+
+    myGenTypes : HSequenceOfGenType from MS;
+    myNestStd  : HSequenceOfHAsciiString from TColStd;
+    myNestIns  : HSequenceOfHAsciiString from TColStd;
+    myNested   : HSequenceOfHAsciiString from TColStd;
+    myComment  : HAsciiString            from TCollection;   -- Comment to class declaration 
+
+    
+end GenClass from MS;
+

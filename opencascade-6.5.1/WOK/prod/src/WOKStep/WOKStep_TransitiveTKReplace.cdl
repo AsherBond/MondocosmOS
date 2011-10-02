@@ -1,0 +1,30 @@
+-- File:	WOKStep_TransitiveTKReplace.cdl
+-- Created:	Tue Dec  2 18:51:19 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class TransitiveTKReplace from WOKStep 
+inherits TKReplace from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess from WOKMake,
+    DevUnit from WOKernel,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString from TCollection
+
+is
+
+    Create( abp      : BuildProcess     from WOKMake; 
+    	    aunit    : DevUnit          from WOKernel; 
+    	    acode    : HAsciiString     from TCollection; 
+    	    checked, hidden : Boolean   from Standard)
+    	returns mutable TransitiveTKReplace from WOKStep;
+ 
+ 
+   ComputeDependency(me; code : HAsciiString from TCollection; adirectlist : HSequenceOfHAsciiString from TColStd)
+    	returns HSequenceOfHAsciiString from TColStd is redefined protected;
+
+end TransitiveTKReplace;

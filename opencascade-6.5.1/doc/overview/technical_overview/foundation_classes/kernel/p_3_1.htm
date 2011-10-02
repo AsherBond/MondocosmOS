@@ -1,0 +1,199 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:4.50pt; margin-top:10.00pt; }
+p.whs3 { margin-left:4.50pt; margin-top:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nKernel\nCollections");
+addAvenueInfo("Kernel","technical_overview/foundation_classes/kernel/p_4_1.htm","technical_overview/foundation_classes/kernel/p_6_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Collections</p>
+
+<p>The <font style="font-weight: bold;">Collections</font> component contains 
+ classes that handle dynamically sized aggregates of data. They include 
+ a wide range of collections such as arrays, lists and maps.</p>
+
+<p>Collections classes are <font style="font-style: italic;">generic</font>, 
+ that is, they can hold a variety of objects, which do not necessarily 
+ inherit from a unique root class. When you need to use a collection of 
+ a given type of object you must <font style="font-style: italic;">instantiate</font> 
+ it for this specific type of element. Once this declaration is compiled 
+ all functions that are available on the generic collection are also available 
+ on your <font style="font-style: italic;">instantiated class</font>. Note, 
+ however, that:</p>
+
+<p>Each collection directly used as an argument in Open CASCADE Technology 
+ public syntax is <font style="font-style: italic;">instantiated</font> 
+ in an OCCT component using the corresponding generic class in package 
+ <font style="font-weight: bold;">TCollection</font>, by means of compiling 
+ the <font style="font-style: italic;">CDL declaration</font> of the instance.</p>
+
+<p>Alternatively all types of generic collections are available <font style="font-style: italic;">via</font> 
+ C++ classes defined in the <font style="font-weight: bold;">NCollection<span 
+ style="font-weight: normal;"> package</span></font>. In this case there 
+ is no need in support of the CDL language and WOK environment for building 
+ the project.</p>
+
+<p>The <font style="font-weight: bold;">TColStd</font> package (<font style="font-weight: bold;">Collections 
+ of Standard Objects</font> component) provides numerous instantiations 
+ of these generic collections with objects from the package <font style="font-weight: bold;">Standard</font> 
+ or from the <font style="font-weight: bold;">Strings</font> component.</p>
+
+<p>The <font style="font-weight: bold;">Collections</font> component provides 
+ a wide range of generic collections:</p>
+
+<p><font style="font-style: italic;">Arrays</font> are generally used for 
+ a quick access to an item, however an array is a fixed sized aggregate.</p>
+
+<p><font style="font-style: italic;">Sequences</font> are variable sized 
+ structures, they avoid the use of large and quasi-empty arrays. But a 
+ sequence item is longer to access than an array item: only an exploration 
+ <font style="font-style: italic;">in sequence</font> is efficient (but 
+ sequences are not adapted for numerous explorations).</p>
+
+<p>- Arrays and sequences are commonly used as data structures for more 
+ complex objects.</p>
+
+<p>- On the other hand <font style="font-style: italic;">maps</font> are 
+ dynamic structures where the size is constantly adapted to the number 
+ of inserted items and access to an item is the fastest. Maps structures 
+ are commonly used in cases of numerous explorations: they are typically 
+ internal data structures for complex algorithms. <font style="font-style: italic;">Sets</font> 
+ generate the same results as maps but computation time is considerable.</p>
+
+<p>- <font style="font-style: italic;">Lists</font>, <font style="font-style: italic;">queues</font> 
+ and <font style="font-style: italic;">stacks</font> are minor structures 
+ similar to sequences but with other exploration algorithms.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p>Most collections follow <font style="font-style: italic;">value semantics</font>: 
+ their instances are the actual collections, not <font style="font-style: italic;">handles</font> 
+ to a collection. Only arrays, sequences and sets may also be manipulated 
+ by <font style="font-style: italic;">handle</font>, and therefore shared.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs2"><font style="color: #000000; font-weight: bold;"
+															color=#000000>See 
+ Also</font></p>
+
+<p class="whs3"><a href="p_6_1.htm"><font 
+ style="font-family: Helvetica;">Exceptions</font></a><font style="font-family: Helvetica; color: #000000;"
+															color=#000000> 
+ component, </font><font style="font-family: Helvetica;
+								color: #000000;
+								font-weight: bold;"
+						color=#000000>Standard</font><font style="font-family: Helvetica; color: #000000;"
+															color=#000000> 
+ package</font></p>
+
+<p class="whs3"><a href="p_4_1.htm"><font 
+ style="font-family: Helvetica;">Collections of Standard Objects</font></a><font 
+ style="font-family: Helvetica; color: #000000;"
+	color=#000000> component, </font><font style="font-family: Helvetica;
+													color: #000000;
+													font-weight: bold;"
+											color=#000000>TColStd</font><font 
+ style="font-family: Helvetica; color: #000000;"
+	color=#000000> package</font></p>
+
+<p class="whs3"><a href="p_2_1.htm"><font 
+ style="font-family: Helvetica;">Strings</font></a><font style="font-family: Helvetica; color: #000000;"
+														color=#000000> 
+ component</font></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

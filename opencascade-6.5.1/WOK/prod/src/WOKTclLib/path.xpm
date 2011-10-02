@@ -1,0 +1,25 @@
+/* XPM */
+static char * clover_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c green",
+"X	c sea green",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"        ...         ",
+"       ....X        ",
+"       ...XX        ",
+"     .. XXX ..      ",
+"    ...X X ...X     ",
+"    ...XX.....X     ",
+"    X.XX . X.XX     ",
+"     XX ... XX      ",
+"       ....X        ",
+"       X..XX        ",
+"        XXX         ",
+"                    ",
+"                    "};

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classWNT__Window.html" title="This class defines Windows NT window &#160;&#160;Warning: The position and size for the creation..." alt="" coords="9,237,119,267"/>
+<area shape="rect" id="node11" href="$classXw__Window.html" title="This class defines a X11 window &#160;&#160;Warning: The position and size for the creation..." alt="" coords="144,237,243,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="67,83,189,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="53,5,203,35"/>
+<area shape="rect" id="node9" href="$classWNT__IconBox.html" title="This class defines a Windows NT icon box &#160;" alt="" coords="5,315,120,344"/>
+<area shape="rect" id="node13" href="$classXw__IconBox.html" title="This class defines a X11 IconBox &#160;&#160;Warning: The IconBox is not visible at the creation..." alt="" coords="144,315,245,344"/>
+</map>

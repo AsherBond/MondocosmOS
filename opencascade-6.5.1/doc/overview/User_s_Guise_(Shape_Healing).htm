@@ -1,0 +1,166 @@
+</B>
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>User's Guise (Shape Healing)</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { margin-left:0px; }
+p.whs2 { margin-left:6.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-left:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nShape Healing");
+addAvenueInfo("Modeling Algorithms","technical_overview/modeling_algorithms/modeling_algorithms.htm","technical_overview/modeling_algorithms/topological_tools/p_35_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Shape Healing</p>
+
+<p>&nbsp;</p>
+
+<p class="whs1">The <span style="font-weight: bold;"><B>Shape 
+ Healing</B></span> library provides algorithms to modify the geometry and 
+ topology of OCCT shapes. </p>
+
+<p class="whs1">Shape Healing adapts shapes to make them maximally 
+ appropriate for use by OCCT, for example:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">analyze shape characteristics 
+ and, in particular, identify the shapes that do not comply with OCCT validity 
+ rules;</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">fix incorrect shapes;</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">upgrade and change 
+ shape characteristics if needed, for example a C0 supporting surface can 
+ become C1 continuous.</p></li>
+</ul>
+
+<p class="whs1">The library has several sub-domain, each with 
+ its own scope of functionality:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">analysis - exploring 
+ shape properties, computing shape features, detecting violation of OCCT 
+ requirements (the shape itself is not modified);</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">fixing - fixing 
+ shape to meet the OCCT requirements (the shape may change its original 
+ form: modifying, removing, constructing sub-shapes, etc.);</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">upgrade - shape 
+ improvement for better usability in OCCT or other algorithms (the shape 
+ is replaced with a new one, but geometrically they are the same);</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">customization - 
+ modifying shape representation to fit specific needs (the shape is not 
+ modified, only the form of its representation is modified);</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs2">processing &nbsp;- 
+ mechanism of shape modification via a user-editable resource file.</p></li>
+</ul>
+
+<p class="whs1">The technical overview provides only a basic 
+ description of the libraries. Please, refer for more details to <span 
+ style="margin-left: 48px; font-weight: bold;"><B><a href="shape_heal.pdf">Shape 
+ Healing User's guide</a></p>
+
+<p class="whs1">See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a>.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

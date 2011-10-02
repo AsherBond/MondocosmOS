@@ -1,0 +1,6 @@
+@ifnotdefined ( %WOKUtils_WOKSteps_EDL ) then
+ @set %WOKUtils_WOKSteps_EDL  = "";
+ @string %WOKSteps_XcppGroup += "xcpp.repl";
+ @set %WOKSteps_xcpp_repl     = "*WOKUtils_Replace(xcpp.header)";
+@endif;
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{F80DC7C2-0DB7-142C-1786-B0278CD68344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKTclUtils">
+      <UniqueIdentifier>{6B2F2C13-09EB-08B8-0DF2-BF64E50FF1F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKTclTools">
+      <UniqueIdentifier>{69003C84-020A-1084-0586-8FA592EEFF04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MSAPI">
+      <UniqueIdentifier>{9E0D4728-019B-09C0-12AC-52C479DA692B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKTCL">
+      <UniqueIdentifier>{101F475E-0A57-038F-0EED-937163F6A89E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\WOKTclUtils\WOKTclUtils_Path.cxx">
+      <Filter>Source files\WOKTclUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTclTools\WOKTclTools_Interpretor.cxx">
+      <Filter>Source files\WOKTclTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTclTools\WOKTclTools_Messages.cxx">
+      <Filter>Source files\WOKTclTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTclTools\WOKTclTools_MsgAPI.cxx">
+      <Filter>Source files\WOKTclTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTclTools\WOKTclTools_Package.cxx">
+      <Filter>Source files\WOKTclTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTclTools\WOKTclTools_TriggerHandler.cxx">
+      <Filter>Source files\WOKTclTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_Class.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_ExternMet.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_GenClass.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_InstClass.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_MemberMet.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_MetaSchema.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_Method.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_Package.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_Schema.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MSAPI\MSAPI_StdClass.cxx">
+      <Filter>Source files\MSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTCL\WOKTCL_DefaultCommand.cxx">
+      <Filter>Source files\WOKTCL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTCL\WOKTCL_Interpretor.cxx">
+      <Filter>Source files\WOKTCL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTCL\WOKTCL_TriggerHandler.cxx">
+      <Filter>Source files\WOKTCL</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

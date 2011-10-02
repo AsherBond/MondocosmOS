@@ -1,0 +1,22 @@
+--
+-- This file defines the location and type of a WOK sources repository.
+-- It must be placed in the directory "Adm" of the concerned workshop , 
+-- or in the directory "Adm" of the factory if you want to share the same repository between 
+-- all the workshops. 
+-- Note that this option is provided only for compatibility with previous version 5 of WOK. 
+-- Attaching one repository per workshop is strongly recommended.
+--
+-- The following is a example. You must supply values according to your context
+--
+-- VC_ROOT is a directory name. The repository will be created in that directory.
+-- VC_TYPE is the type of the repository.
+--
+@ifnotdefined ( %VC_EDL) then
+@set %VC_EDL = "";
+
+@set %VC_ROOT  = "/dev/null";
+
+@set %VC_TYPE  = "SCCS";
+
+@endif;
+

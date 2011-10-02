@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_CompressedFile.cdl
+-- Created:	Mon Oct 16 16:31:53 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class    CompressedFile from WOKBuilder 
+inherits  Miscellaneous from WOKBuilder
+
+       	---Purpose: 
+
+uses
+    Path from WOKUtils
+is
+
+    Create(apath : Path from WOKUtils) returns mutable CompressedFile from WOKBuilder;
+
+end CompressedFile;

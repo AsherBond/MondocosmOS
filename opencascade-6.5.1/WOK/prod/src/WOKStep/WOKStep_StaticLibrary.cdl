@@ -1,0 +1,31 @@
+-- File:	WOKStep_StaticLibrary.cdl
+-- Created:	Fri Oct 25 16:24:17 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class StaticLibrary from WOKStep inherits WNTLibrary from WOKStep
+
+ uses
+    BuildProcess from WOKMake,
+    DevUnit      from WOKernel,
+    HAsciiString from TCollection,
+    WNTCollector from WOKBuilder
+ 
+ is
+ 
+    Create (
+    abp      : BuildProcess from WOKMake; 
+     aUnit   : DevUnit      from WOKernel;
+     aCode   : HAsciiString from TCollection;
+     checked : Boolean      from Standard;
+     hidden  : Boolean      from Standard
+    ) returns mutable StaticLibrary from WOKStep;
+    	---Purpose: creates a class instance   
+
+    ComputeTool ( me : mutable )
+     returns mutable WNTCollector from WOKBuilder
+     is redefined static protected;
+    	---Purpose: computes build tool
+ 
+end StaticLibrary;

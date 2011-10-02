@@ -1,0 +1,35 @@
+-- File:	WOKTools_EnvValue.cdl
+-- Created:	Wed Sep 27 17:47:42 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class    EnvValue    from WOKTools 
+inherits ReturnValue from WOKTools
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection
+    
+is
+    
+    Create(avarname, avalue : HAsciiString from TCollection) returns mutable EnvValue  from WOKTools; 
+    ---Purpose: Creates an EnvValue to Set in Environment
+    
+    Create(avarname : HAsciiString from TCollection) returns mutable EnvValue  from WOKTools;
+    ---Purpose: Creates an EnvValue to UnSet Environment
+    
+    SetName(me:mutable; aname : HAsciiString from TCollection);
+    Name(me) returns HAsciiString from TCollection;
+    
+    SetValue(me:mutable; avalue : HAsciiString from TCollection);
+    Value(me) returns HAsciiString from TCollection;
+    
+    ToSet(me) returns Boolean from Standard;
+    
+fields
+    myflag  : Boolean      from Standard;
+    myname  : HAsciiString from TCollection;
+    myvalue : HAsciiString from TCollection;
+end EnvValue;

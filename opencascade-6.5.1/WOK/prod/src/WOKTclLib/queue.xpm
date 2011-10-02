@@ -1,0 +1,31 @@
+/* XPM */
+static char * queue_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"19 19 6 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor1	m black	c black",
+"X	c #33339F9F5555",
+"o	c #333380805555",
+"O	c #00008080AAAA",
+"+	s iconColor2	m white	c white",
+/* pixels */
+"                   ",
+"      ....         ",
+"      .XoX........ ",
+"     .ooXoooXoooXo.",
+"     .oXOXoXOXoXOX.",
+"    ..XoooXoooXooo.",
+"    .XoXoXoXoXoXoX.",
+"    .oooXoooXoooXo.",
+"    .XoXOXoXOXoXO..",
+"   .ooXoooXoooXoo..",
+"   .oXoXoXoXoXoXo..",
+"   ..oooXoooXooo.. ",
+"   .........OXo... ",
+"   ++++++++....... ",
+"   ......++++++..  ",
+"   +++++.........  ",
+"   ....++++++++..  ",
+"   +++........+.   ",
+"      +++++++++.   "};

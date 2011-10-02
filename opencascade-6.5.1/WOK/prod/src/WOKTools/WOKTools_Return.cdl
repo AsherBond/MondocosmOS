@@ -1,0 +1,51 @@
+-- File:	WOKTools_Return.cdl
+-- Created:	Wed Aug  2 15:56:07 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Return from WOKTools 
+
+	---Purpose: Manages API return Statements
+
+uses
+    ArgTable                from WOKTools,
+    HSequenceOfReturnValue  from WOKTools,
+    ReturnValue             from WOKTools,
+    InterpFileType          from WOKTools,
+    HAsciiString            from TCollection
+is
+    Create returns Return from WOKTools;
+    
+    Clear(me:out);
+    
+    AddStringValue(me:out;     arg : CString from Standard);
+    AddStringValue(me:out;     arg : HAsciiString from TCollection);
+    AddStringParameter(me:out; aname, avalue : HAsciiString from TCollection);
+    AddIntegerValue(me:out;    anint : Integer from Standard);
+    AddBooleanValue(me:out;    abool : Boolean from Standard);
+    
+    AddSetEnvironment(me:out; name,value : HAsciiString from TCollection);
+    AddSetEnvironment(me:out; name,value : CString from Standard);
+    AddUnSetEnvironment(me:out; name : HAsciiString from TCollection);
+    AddUnSetEnvironment(me:out; name : CString from Standard);
+    
+    AddChDir(me:out; path : HAsciiString from TCollection);
+    AddChDir(me:out; path : CString from Standard);
+    
+    AddInterpFile(me:out; file : HAsciiString from TCollection; type : InterpFileType from WOKTools = WOKTools_CShell);
+    AddInterpFile(me:out; file : CString      from Standard;    type : InterpFileType from WOKTools = WOKTools_CShell);
+    
+
+    Value(me; anidx : Integer from Standard)
+    	returns ReturnValue from WOKTools;
+	
+    Values(me)
+    	returns HSequenceOfReturnValue from WOKTools;
+	
+    Length(me) returns Integer from Standard;
+
+fields
+    myargs   : HSequenceOfReturnValue from WOKTools;
+end Return;

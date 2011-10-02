@@ -1,0 +1,502 @@
+// File:	WOKTools_DoubleMap.gxx
+// Created:	Thu Jun 29 16:09:33 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+#include <Standard_DomainError.hxx>
+#include <Standard_MultiplyDefined.hxx>
+#include <Standard_NoSuchObject.hxx>
+
+// Node definition and nodes storage management
+
+#if (defined IRIX || defined WNT || defined LIN)
+
+template <class Key1, class Key2> class DoubleMapNode : public WOKTools_MapNode{
+  public :
+    Node(const Key1& K1, const Standard_Integer acode1, const Key2& K2, const Standard_Integer acode2, DoubleMapNode* n1, DoubleMapNode* n2) :
+      WOKTools_MapNode(n1),key1(K1),hashcode1(acode1), key2(K2), hashcode2(acode2), next2(n2) {}
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+  void  operator delete(void* aNode, size_t aSize) {
+    Standard::Free(aNode,aSize);
+  }
+
+  Key1   key1;
+  Standard_Integer hashcode1;
+  Key2   key2;
+  Standard_Integer hashcode2;
+  DoubleMapNode*  next2;
+};
+
+#define Node DoubleMapNode<TheKey1,TheKey2>
+
+#else
+
+class Node : public WOKTools_MapNode{
+  public :
+    Node(const TheKey1& K1, const Standard_Integer acode1, const TheKey2& K2, const Standard_Integer acode2, Node* n1, Node* n2) :
+      WOKTools_MapNode(n1),key1(K1),hashcode1(acode1), key2(K2), hashcode2(acode2), next2(n2) {}
+  void* operator new(size_t aSize) 
+    {return Standard::Allocate(aSize);}
+  void  operator delete(void* aNode, size_t aSize) {
+    Standard::Free(aNode,aSize);
+  }
+
+  TheKey1   key1;
+  Standard_Integer hashcode1;
+  TheKey2   key2;
+  Standard_Integer hashcode2;
+  Node*  next2;
+};
+
+#endif
+
+//=======================================================================
+//function : WOKTools_DoubleMap
+//purpose  : 
+//=======================================================================
+
+WOKTools_DoubleMap::WOKTools_DoubleMap(const Standard_Integer NbBuckets):
+       WOKTools_BasicMap(NbBuckets,Standard_False)
+{
+}
+
+//=======================================================================
+//function : WOKTools_DoubleMap
+//purpose  : 
+//=======================================================================
+
+WOKTools_DoubleMap::WOKTools_DoubleMap
+  (const WOKTools_DoubleMap& Other) :
+       WOKTools_BasicMap(Other.NbBuckets(),Standard_False)
+{
+  if (Other.Extent() != 0)
+    Standard_DomainError::Raise("WOKTools:Copy of DoubleMap");
+}
+
+//=======================================================================
+//function : Assign
+//purpose  : 
+//=======================================================================
+
+WOKTools_DoubleMap& WOKTools_DoubleMap::Assign
+  (const WOKTools_DoubleMap& Other)
+{
+  if (this == &Other) return *this;
+  Clear();
+  ReSize(Other.NbBuckets());
+  Node** data1 = (Node**)myData1;
+  Node** data2 = (Node**)myData2;
+  for (WOKTools_DoubleMapIterator It(Other); It.More(); It.Next()) {
+    int hashcode1 = It.Hashcode1();
+    int k1 = Index(hashcode1,NbBuckets());
+    int hashcode2 = It.Hashcode2();
+    int k2 = Index(hashcode2,NbBuckets());
+
+    Node* p;
+    p = data1[k1];
+    while (p) {
+      if ( hashcode1 == p->hashcode1 ) {
+	if (Hasher1::IsEqual(p->key1,It.Key1())) 
+	  Standard_MultiplyDefined::Raise("DoubleMap:Assign");
+      }
+      p = (Node*) p->next;
+    }
+    p = data2[k2];
+    while (p) {
+      if ( hashcode2 == p->hashcode2 ) {
+	if (Hasher2::IsEqual(p->key2,It.Key2())) 
+	  Standard_MultiplyDefined::Raise("DoubleMap:Assign");
+      }
+      p = p->next2;
+    }
+    p = new Node(It.Key1(),hashcode1, It.Key2(),hashcode2, data1[k1],data2[k2]);
+    data1[k1] = p;
+    data2[k2] = p;
+    
+    Increment();
+  }
+  
+  return *this;
+}
+
+
+//=======================================================================
+//function : ReSize
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DoubleMap::ReSize(const Standard_Integer N)
+{
+  Node** newdata1;
+  Node** newdata2;
+  Standard_Integer newBuck;
+  if (BeginResize(N,newBuck,
+		  *(Standard_Address*)&newdata1,
+		  *(Standard_Address*)&newdata2)) {
+    Node *p, *q;
+    Standard_Integer i,k1,k2;
+    if (myData1) {
+      Node** olddata1 = (Node**) myData1;
+      for (i = 0; i <= NbBuckets(); i++) {
+	if (olddata1[i]) {
+	  p = olddata1[i];
+	  while (p) {
+	    k1 = Index(p->hashcode1, newBuck);
+	    k2 = Index(p->hashcode2, newBuck);
+	    q = (Node*) p->next;
+	    p->next = newdata1[k1];
+	    p->next2 = newdata2[k2];
+	    newdata1[k1] = p;
+	    newdata2[k2] = p;
+	    p = q;
+	  }
+	}
+      }
+    }
+    EndResize(N,newBuck,newdata1,newdata2);
+  }
+}
+
+//=======================================================================
+//function : Clear
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DoubleMap::Clear()
+{
+  if (!IsEmpty()) {
+    Standard_Integer i;
+    Node** data1 = (Node**) myData1;
+    Node** data2 = (Node**) myData2;
+    Node *p,*q;
+    for (i = 0; i <= NbBuckets(); i++) {
+      p = data1[i];
+      while (p) {
+	q = (Node*) p->next;
+	delete p;
+	p = q;
+      }
+    }
+  }
+  WOKTools_BasicMap::Destroy();
+}
+
+//=======================================================================
+//function : Bind
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DoubleMap::Bind(const TheKey1& K1, const TheKey2& K2)
+{
+  if (Resizable()) ReSize(Extent());
+  Node** data1 = (Node**)myData1;
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode1 = Hasher1::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode1, NbBuckets());
+  Standard_Integer hashcode2 = Hasher2::HashCode(K2);
+  Standard_Integer k2 = Index(hashcode2, NbBuckets());
+  Node* p;
+  p = data1[k1];
+  while (p) {
+    if ( hashcode1 == p->hashcode1 ) {
+      if (Hasher1::IsEqual(p->key1,K1)) 
+	Standard_MultiplyDefined::Raise("DoubleMap:Bind");
+    }
+    p = (Node*) p->next;
+  }
+  p = data2[k2];
+  while (p) {
+    if ( hashcode2 == p->hashcode2 ) {
+      if (Hasher2::IsEqual(p->key2,K2)) 
+	Standard_MultiplyDefined::Raise("DoubleMap:Bind");
+    }
+    p = p->next2;
+  }
+  p = new Node(K1,hashcode1, K2,hashcode2, data1[k1],data2[k2]);
+  data1[k1] = p;
+  data2[k2] = p;
+  Increment();
+}
+
+//=======================================================================
+//function : AreBound
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DoubleMap::AreBound(const TheKey1& K1, 
+						 const TheKey2& K2) const
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data1 = (Node**)myData1;
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode1 = Hasher1::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode1, NbBuckets());
+  Standard_Integer hashcode2 = Hasher2::HashCode(K2);
+  Standard_Integer k2 = Index(hashcode2, NbBuckets());
+  Node *p1, *p2;
+  p1 = data1[k1];
+  while (p1) {
+    if ( hashcode1 == p1->hashcode1 ) {
+      if (Hasher1::IsEqual(p1->key1,K1)) break;
+    }
+    p1 = (Node*) p1->next;
+  }
+  if (p1 == NULL) return Standard_False;
+  p2 = data2[k2];
+  while (p2) {
+    if ( hashcode2 == p2->hashcode2 ) {
+      if (Hasher2::IsEqual(p2->key2,K2)) break;
+    }
+    p2 = p2->next2;
+  }
+  if (p2 == NULL) return Standard_False;
+  return p1 == p2;
+}
+
+//=======================================================================
+//function : IsBound1
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DoubleMap::IsBound1(const TheKey1& K1) const
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data1 = (Node**)myData1;
+  Standard_Integer hashcode1 = Hasher1::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode1, NbBuckets());
+  Node *p1;
+  p1 = data1[k1];
+  while (p1) {
+    if ( hashcode1 == p1->hashcode1 ) {
+      if (Hasher1::IsEqual(p1->key1,K1)) return Standard_True;
+    }
+    p1 = (Node*)  p1->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : IsBound2
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DoubleMap::IsBound2(const TheKey2& K2) const
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode2 = Hasher2::HashCode(K2);
+  Standard_Integer k2 = Index(hashcode2, NbBuckets());
+  Node *p2;
+  p2 = data2[k2];
+  while (p2) {
+    if ( hashcode2 == p2->hashcode2 ) {
+      if (Hasher2::IsEqual(p2->key2,K2)) return Standard_True;
+    }
+    p2 = p2->next2;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : Find1
+//purpose  : 
+//=======================================================================
+
+const TheKey2& WOKTools_DoubleMap::Find1(const TheKey1& K1) const
+{
+  Standard_NoSuchObject_Raise_if(IsEmpty(),"WOKTools_DoubleMap::Find1");  
+  Node** data1 = (Node**)myData1;
+  Standard_Integer hashcode1 = Hasher1::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode1, NbBuckets());
+  Node *p1;
+  p1 = data1[k1];
+  while (p1) {
+    if ( hashcode1 == p1->hashcode1 ) {
+      if (Hasher1::IsEqual(p1->key1,K1)) return p1->key2;
+    }
+    p1 = (Node*) p1->next;
+  }
+  Standard_NoSuchObject::Raise("WOKTools_DoubleMap::Find1");
+  return p1->key2;
+}
+
+//=======================================================================
+//function : Find2
+//purpose  : 
+//=======================================================================
+
+const TheKey1& WOKTools_DoubleMap::Find2(const TheKey2& K2) const
+{
+  Standard_NoSuchObject_Raise_if(IsEmpty(),"WOKTools_DoubleMap::Find2");  
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode2 = Hasher2::HashCode(K2);
+  Standard_Integer k2 = Index(hashcode2, NbBuckets());
+  Node *p2;
+  p2 = data2[k2];
+  while (p2) {
+    if ( hashcode2 == p2->hashcode2 ) {
+      if (Hasher2::IsEqual(p2->key2,K2)) return p2->key1;
+    }
+    p2 = p2->next2;
+  }
+  Standard_NoSuchObject::Raise("WOKTools_DoubleMap::Find2");
+  return p2->key1;
+}
+
+//=======================================================================
+//function : UnBind1
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DoubleMap::UnBind1(const TheKey1& K1)
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data1 = (Node**)myData1;
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode1 = Hasher1::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode1, NbBuckets());
+  Standard_Integer k2;
+  Node *p1, *p2, *q1, *q2;
+  q1 = q2 = NULL;
+  p1 = data1[k1];
+  while (p1) {
+    if (hashcode1 == p1->hashcode1) {
+      if (Hasher1::IsEqual(p1->key1,K1)) {
+	// remove from the first
+	if (q1)
+	  q1->next = p1->next;
+	else
+	  data1[k1] = (Node*) p1->next;
+	// remove from the second
+	Standard_Integer hashcode2 = Hasher2::HashCode(p1->key2);
+	Standard_Integer k2 = Index(hashcode2, NbBuckets());
+	p2 = data2[k2];
+	while (p2) {
+	  if (p2 == p1) {
+	    if (q2)
+	      q2->next2 = p2->next2;
+	    else
+	      data2[k2] = p2->next2;
+	    break;
+	  }
+	  q2 = p2;
+	  p2 = p2->next2;
+	}
+	delete p1;
+	Decrement();
+	return Standard_True;
+      }
+    }
+    q1 = p1;
+    p1 = (Node*) p1->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : UnBind2
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_DoubleMap::UnBind2(const TheKey2& K2)
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data1 = (Node**)myData1;
+  Node** data2 = (Node**)myData2;
+  Standard_Integer hashcode2 = Hasher2::HashCode(K2);
+  Standard_Integer k2 = Index(hashcode2, NbBuckets());
+  Standard_Integer k1;
+  Node *p1, *p2, *q1, *q2;
+  q1 = q2 = NULL;
+  p2 = data2[k2];
+  while (p2) {
+    if (hashcode2 == p2->hashcode2) {
+      if (Hasher2::IsEqual(p2->key2,K2)) {
+	// remove from the second
+	if (q2)
+	  q2->next2 = p2->next2;
+	else
+	  data2[k2] = p2->next2;
+	// remove from the first
+	Standard_Integer hashcode1 = Hasher1::HashCode(p2->key1);
+	Standard_Integer k1 = Index(hashcode1, NbBuckets());
+	p1 = data1[k1];
+	while (p1) {
+	  if (p2 == p1) {
+	    if (q1)
+	      q1->next = p1->next;
+	    else
+	      data1[k1] = (Node*) p1->next;
+	    break;
+	  }
+	  q1 = p1;
+	  p1 = (Node*)  p1->next;
+	}
+	delete p2;
+	Decrement();
+	return Standard_True;
+      }
+    }
+    q2 = p2;
+    p2 = p2->next2;
+  }
+  return Standard_False;
+}
+
+// method of the iterator
+
+//=======================================================================
+//function : Key1
+//purpose  : 
+//=======================================================================
+
+const TheKey1& WOKTools_DoubleMapIterator::Key1() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_DoubleMapIterator::Key1");  
+  return ((Node*) myNode)->key1;
+}
+
+//=======================================================================
+//function : Key2
+//purpose  : 
+//=======================================================================
+
+const TheKey2& WOKTools_DoubleMapIterator::Key2() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_DoubleMapIterator::Key2");  
+  return ((Node*) myNode)->key2;
+}
+
+
+// method of the iterator
+
+//=======================================================================
+//function : Hashcode1
+//purpose  : 
+//=======================================================================
+
+Standard_Integer WOKTools_DoubleMapIterator::Hashcode1() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_MapIterator::HashCode1");  
+  return ((Node*) myNode)->hashcode1;
+}
+
+
+//=======================================================================
+//function : Hashcode2
+//purpose  : 
+//=======================================================================
+
+Standard_Integer WOKTools_DoubleMapIterator::Hashcode2() const
+{
+  Standard_NoSuchObject_Raise_if(!More(),"WOKTools_MapIterator::HashCode2");  
+  return ((Node*) myNode)->hashcode2;
+}
+
+
+#ifdef Node
+#undef Node
+#endif
+

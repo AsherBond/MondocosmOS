@@ -1,0 +1,21 @@
+-- File:	MSAPI_Schema.cdl
+-- Created:	Thu Apr 25 16:06:42 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class Schema from MSAPI 
+
+	---Purpose: 
+
+uses
+    ArgTable     from WOKTools,
+    Return       from WOKTools
+
+is
+
+    Info(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+end Schema;

@@ -1,0 +1,40 @@
+-- File:	WOKOrbix_IDLSource.cdl
+-- Created:	Mon Aug 18 11:46:23 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class IDLSource from WOKOrbix 
+inherits Source from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess         from WOKMake,
+    HSequenceOfInputFile from WOKMake,
+    InputFile            from WOKMake,
+    DevUnit              from WOKernel,
+    File                 from WOKernel,
+    HSequenceOfFile      from WOKernel,
+    HSequenceOfEntity    from WOKBuilder,
+    HAsciiString         from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection;  
+    	   checked, hidden : Boolean  from Standard)  
+    	returns mutable IDLSource from WOKOrbix;
+
+    GetUnitDescr(me) 
+    	returns File from WOKernel
+	is protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    ---Purpose: Executes step    
+    --          Computes output files
+    	is redefined private;
+
+end IDLSource;

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classStepData__SelectNamed.html" title="This select member can be of any kind, and be named &#160;&#160;But its takes more memory than..." alt="" coords="81,237,268,267"/>
+<area shape="rect" id="node4" href="$classStepData__SelectMember.html" title="The general form for a Select Member. A Select Member can, &#160;&#160;either define a value..." alt="" coords="77,160,272,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="113,83,236,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="100,5,249,35"/>
+</map>

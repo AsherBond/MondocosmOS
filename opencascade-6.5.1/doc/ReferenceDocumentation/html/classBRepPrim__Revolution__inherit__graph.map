@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classBRepPrim__Cone.html" title="Implement the cone primitive. &#160;" alt="" coords="5,160,136,189"/>
+<area shape="rect" id="node7" href="$classBRepPrim__Cylinder.html" title="Cylinder primitive. &#160;" alt="" coords="160,160,309,189"/>
+<area shape="rect" id="node9" href="$classBRepPrim__Sphere.html" title="Implements the sphere primitive &#160;" alt="" coords="333,160,475,189"/>
+<area shape="rect" id="node11" href="$classBRepPrim__Torus.html" title="Implements the torus primitive &#160;" alt="" coords="499,160,627,189"/>
+<area shape="rect" id="node2" href="$classBRepPrim__OneAxis.html" title="BRepPrim_OneAxis" alt="" coords="244,5,393,35"/>
+</map>

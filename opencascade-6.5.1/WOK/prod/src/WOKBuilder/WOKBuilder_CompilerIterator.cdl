@@ -1,0 +1,66 @@
+-- File:	WOKBuilder_CompilerIterator.cdl
+-- Created:	Fri Oct 13 14:39:55 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class CompilerIterator from WOKBuilder 
+inherits ToolInShellIterator from WOKBuilder 
+	---Purpose: 
+
+uses
+    HSequenceOfEntity      from WOKBuilder,
+    Compilable             from WOKBuilder,
+    Compiler               from WOKBuilder,
+    BuildStatus            from WOKBuilder,
+    ToolInShell            from WOKBuilder,
+    HSequenceOfToolInShell from WOKBuilder,
+    HSequenceOfPath        from WOKUtils,
+    Param                  from WOKUtils,
+    Path                   from WOKUtils,
+    Shell                  from WOKUtils,
+    HAsciiString           from TCollection
+is
+
+    Create(toolgroup : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns CompilerIterator from WOKBuilder;
+    
+
+    Create(tools : HSequenceOfToolInShell from WOKBuilder) 
+    	returns CompilerIterator from WOKBuilder;
+
+    Create(toolgroup : HAsciiString    from TCollection;
+    	   ashell    : Shell           from WOKUtils; 
+	   adir      : Path            from WOKUtils;
+	   incdirs   : HSequenceOfPath from WOKUtils;
+	   dbdirs    : HSequenceOfPath from WOKUtils;
+    	   params    : Param           from WOKUtils)
+    	returns CompilerIterator from WOKBuilder;
+
+    Init(me:out; ashell    : Shell        from WOKUtils; 
+	    	 adir      : Path         from WOKUtils)
+    	is redefined;
+
+    Init(me:out; ashell    : Shell           from WOKUtils; 
+	    	 adir      : Path            from WOKUtils;
+	    	 incdirs   : HSequenceOfPath from WOKUtils;
+	    	 dbdirs    : HSequenceOfPath from WOKUtils);
+
+    GetTool(me;aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns ToolInShell from WOKBuilder
+    	is redefined;   
+
+    Execute(me:out; acompilable : Compilable from WOKBuilder)  
+    	returns BuildStatus from WOKBuilder;
+
+    CmdLine ( me ) returns HAsciiString from TCollection;
+    ---C++: return const &
+
+fields
+
+    myincdirs : HSequenceOfPath from WOKUtils;
+    mydbdirs : HSequenceOfPath from WOKUtils;
+    myCmdLine: HAsciiString from TCollection;
+
+end CompilerIterator;

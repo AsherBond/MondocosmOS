@@ -1,0 +1,114 @@
+-- File:	WOKStep.cdl
+-- Created:	Thu Jun 27 17:12:45 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+package WOKStep 
+
+	---Purpose: 
+
+uses
+    WOKMake,
+    WOKBuilder,
+    WOKernel,
+    WOKUtils,
+    WOKTools,
+    TColStd,
+    TCollection
+    
+is
+
+    class Source;
+	
+    	class CDLUnitSource;
+    	class ExecutableSource;
+	class ResourceSource;
+	class ToolkitSource;
+
+    deferred class MSStep;
+
+    	class MSFill;
+	    
+    	deferred class Extract;
+
+    	    class TemplateExtract;
+    	    class SourceExtract;
+    	    class HeaderExtract;
+    	    class ServerExtract;
+    	    class ClientExtract;
+    	    class EngineExtract;
+	    class JiniExtract;
+	
+	class ExtractExecList;
+	
+    class Include;    
+
+    deferred class ProcessStep;
+    	--C++: Base class for steps concerning 
+    	--     processors such as compilers, code generators, preprocessors ...
+
+	class CodeGenerate;
+    	class Compile;
+
+
+    
+    class LibUnCompress; 
+    class LibExtract;
+    class LibLimit;
+    
+   
+    deferred class Library;
+    	class DynamicLibrary;
+    	class ArchiveLibrary;
+
+    class ImplementationDep;
+    
+    deferred class LinkList;
+    
+	class TKList;
+	class WNTK;
+	
+	deferred class ComputeLinkList;
+	
+	    class TransitiveLinkList;
+	    class DirectLinkList;
+	
+	class EngLinkList;
+	
+	
+        deferred class TKReplace;
+
+    	    class TransitiveTKReplace;
+	    class DirectTKReplace;
+
+    deferred class Link;
+
+    	class ExecLink;
+	class LibLink;
+	
+    class EngDatFiles;
+    class EngLDFile;
+
+
+    	------------------------------------------
+    	-- Windows NT ----------------------------
+    	------------------------------------------
+                                            ------
+                                            ------
+    deferred class WNTCollect;              ------
+                                            ------
+	    deferred class WNTLink;         ------
+    	    	class DLLink;               ------
+	    	class EXELink;              ------
+	                                    ------
+	    deferred class WNTLibrary;      ------
+	    	class ImportLibrary;        ------
+    	    	class StaticLibrary;        ------
+		                            ------
+        ------------------------------------------
+        ------------------------------------------
+        ------------------------------------------
+
+end WOKStep;

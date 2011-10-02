@@ -1,0 +1,36 @@
+-- File:	WOKBuilder_MSExtractorIterator.cdl
+-- Created:	Wed Oct 11 11:39:03 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSExtractorIterator from WOKBuilder 
+
+	---Purpose: Manages Extraction of a MSEntity 
+
+uses
+    MSchema                 from WOKBuilder,
+    MSEntity                from WOKBuilder,
+    MSExtractor             from WOKBuilder,
+    BuildStatus             from WOKBuilder,
+    HSequenceOfEntity       from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd
+is
+    Create(ams   : MSchema     from WOKBuilder; 
+    	   anext : MSExtractor from WOKBuilder) 
+    	returns MSExtractorIterator from WOKBuilder;
+
+    Execute(me:out; anentity : MSEntity from WOKBuilder) returns BuildStatus from WOKBuilder;
+
+    Execute(me:out; anentity : MSEntity from WOKBuilder; amode : CString from Standard) 
+    	returns BuildStatus from WOKBuilder;
+    
+    Produces(me) 
+    	returns HSequenceOfEntity from WOKBuilder;
+    
+fields 
+    mymeta       : MSchema             from WOKBuilder;
+    myextractor  : MSExtractor         from WOKBuilder;
+    myproduction : HSequenceOfEntity   from WOKBuilder;
+end MSExtractorIterator;

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepOffsetAPI__MakePipe.html" title="Describes functions to build pipes. &#160;&#160;A pipe is built a basis shape (called the profile)..." alt="" coords="779,5,973,35"/>
+<area shape="rect" id="node9" href="$classBRepOffsetAPI__MakePipeShell.html" title="This class provides for a framework to construct a shell &#160;&#160;or a solid along a spine..." alt="" coords="763,59,989,88"/>
+<area shape="rect" id="node11" href="$classBRepPrimAPI__MakePrism.html" title="Describes functions to build linear swept topologies, called prisms. &#160;&#160;A prism is..." alt="" coords="781,112,971,141"/>
+<area shape="rect" id="node13" href="$classBRepPrimAPI__MakeRevol.html" title="Class to make revolved sweep topologies. &#160;&#160;&#160;&#160;a revolved sweep is defined by : &#160;&#160;..." alt="" coords="781,165,971,195"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="256,85,467,115"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="7,85,207,115"/>
+</map>

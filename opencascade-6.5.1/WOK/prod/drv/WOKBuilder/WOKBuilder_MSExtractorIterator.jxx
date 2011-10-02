@@ -1,0 +1,15 @@
+#ifndef _WOKBuilder_MSchema_HeaderFile
+#include <WOKBuilder_MSchema.hxx>
+#endif
+#ifndef _WOKBuilder_MSExtractor_HeaderFile
+#include <WOKBuilder_MSExtractor.hxx>
+#endif
+#ifndef _WOKBuilder_HSequenceOfEntity_HeaderFile
+#include <WOKBuilder_HSequenceOfEntity.hxx>
+#endif
+#ifndef _WOKBuilder_MSEntity_HeaderFile
+#include <WOKBuilder_MSEntity.hxx>
+#endif
+#ifndef _WOKBuilder_MSExtractorIterator_HeaderFile
+#include <WOKBuilder_MSExtractorIterator.hxx>
+#endif

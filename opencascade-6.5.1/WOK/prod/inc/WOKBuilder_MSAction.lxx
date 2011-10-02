@@ -1,0 +1,35 @@
+// File:	WOKBuilder_MSTranslatorAction.lxx
+// Created:	Wed Dec 20 15:22:24 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Entity
+//purpose  : 
+//=======================================================================
+inline const Handle(WOKBuilder_MSEntity)& WOKBuilder_MSAction::Entity() const 
+{
+  return myent;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Type
+//purpose  : 
+//=======================================================================
+inline WOKBuilder_MSActionType WOKBuilder_MSAction::Type() const 
+{
+  return mytype;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Date
+//purpose  : 
+//=======================================================================
+inline WOKUtils_TimeStat WOKBuilder_MSAction::Date() const 
+{
+  return mydate;
+}

@@ -1,0 +1,54 @@
+-- File:	WOKTclTools_MsgAPI.cdl
+-- Created:	Tue Nov 28 11:49:33 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MsgAPI from WOKTclTools 
+
+	---Purpose: 
+
+uses
+    ArgTable from WOKTools,
+    Return   from WOKTools,
+    Message  from WOKTools
+
+is
+
+    --- Messages Manipulation
+
+    Set(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    UnSet(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    IsSet(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    DoPrintContext(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    DontPrintContext(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    IsPrintContext(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools)
+    	returns Integer from Standard;
+
+    DoPrintHeader(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    DontPrintHeader(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+    
+    IsPrintHeader(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools)
+    	returns Integer from Standard;
+
+    PrintMessage(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools)
+    	returns Integer from Standard;
+
+    MessageInfo(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools)
+    	returns Integer from Standard;
+	
+end MsgAPI;

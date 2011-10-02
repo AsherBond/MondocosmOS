@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepFeat__LocalOperation.html" title="One of the most significant &#160;&#160;aspects of BRepFeat functionality is the use of local..." alt="" coords="5,237,203,267"/>
+<area shape="rect" id="node9" href="$classBRepFeat__MakeCylindricalHole.html" title="Provides a tool to make cylindrical holes on a shape. &#160;" alt="" coords="227,237,456,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="117,83,328,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="123,5,323,35"/>
+</map>

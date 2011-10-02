@@ -1,0 +1,44 @@
+-- File:	WOKStep_WNTK.cdl
+-- Created:	Mon Oct 28 12:09:06 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class WNTK from WOKStep inherits TKList from WOKStep
+
+ uses
+ 
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    HSequenceOfHAsciiString     from TColStd,
+    HAsciiString                from TCollection
+
+ is
+
+    Create (
+     abp     : BuildProcess from WOKMake; 
+     aunit   : DevUnit      from WOKernel; 
+     acode   : HAsciiString from TCollection; 
+     checked : Boolean      from Standard;
+     hidden  : Boolean      from Standard
+    ) returns mutable WNTK from WOKStep;
+
+    HandleInputFile (
+     me     : mutable;
+     anItem : InputFile from WOKMake
+    ) returns Boolean from Standard
+      is redefined static;
+
+    
+    Execute (
+     me         : mutable;
+     anExecList : HSequenceOfInputFile from WOKMake
+    ) is redefined static;
+
+end WNTK;

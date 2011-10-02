@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{994B284B-024D-0A62-0D5A-F9C9E73B10C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\EDL">
+      <UniqueIdentifier>{633D4DAB-0EFD-084D-0034-9D68F0868D4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MS">
+      <UniqueIdentifier>{35FA584F-1857-0AE8-0CAA-3A3453D5DAF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKAPI">
+      <UniqueIdentifier>{D5268751-08B4-0D04-014C-1BCE11965EA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKBuilder">
+      <UniqueIdentifier>{1C89D3CB-183D-1051-14D6-81C46F5106E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKDFLT">
+      <UniqueIdentifier>{8B84D6E9-163B-0353-0807-FCA547C711B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKDeliv">
+      <UniqueIdentifier>{F2101A5B-025A-0ABC-167B-371ABD601797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKMake">
+      <UniqueIdentifier>{BE35D892-0D18-0355-0606-0B5355636AF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKOBJS">
+      <UniqueIdentifier>{D74D58C7-0524-14A8-0504-36C7D5F046F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKOrbix">
+      <UniqueIdentifier>{2549074D-1464-10CD-0890-D23D28A49E14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKStep">
+      <UniqueIdentifier>{BD74DA7B-01C9-079A-0F96-EB82FD411B05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKTools">
+      <UniqueIdentifier>{7D24A8B5-0F46-179D-1965-6C1573DC5CB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKUtils">
+      <UniqueIdentifier>{7CF8069C-0597-13B0-0708-75B897FA2A35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKernel">
+      <UniqueIdentifier>{5099CF5D-16E9-0ED2-1231-58E4666C1412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKNT">
+      <UniqueIdentifier>{3E0D119B-09F9-0ABD-15EC-76FA2B154FC3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\drv\EDL\EDL.tab.c">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapIteratorOfMapOfFile_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapIteratorOfMapOfLibrary_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapIteratorOfMapOfTemplate_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapIteratorOfMapOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapNodeOfMapOfFile_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapNodeOfMapOfLibrary_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapNodeOfMapOfTemplate_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_DataMapNodeOfMapOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_HSequenceOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_MapOfFile_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_MapOfLibrary_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_MapOfTemplate_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_MapOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_SequenceNodeOfSequenceOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_SequenceOfVariable_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_StackIteratorOfStackOfBoolean_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_StackNodeOfStackOfBoolean_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\EDL_StackOfBoolean_0.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\EDL\lex.EDL.c">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL.tab.c">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_API.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_File.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_Interpretor.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_Library.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_Template.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EDL\EDL_Variable.cxx">
+      <Filter>Source files\EDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_Array1OfParam_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_DataMapIteratorOfMapOfGlobalEntity_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_DataMapIteratorOfMapOfMethod_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_DataMapIteratorOfMapOfType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HArray1OfParam_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfComponent_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfEngine_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfError_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfExecFile_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfExecPart_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfExecutable_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfExternMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfField_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfGenClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfGenType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfGlobalEntity_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfInstClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfInterface_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfMemberMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfMethod_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfPackage_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfParam_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfSchema_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_HSequenceOfType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_MapOfGlobalEntity_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_MapOfMethod_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_MapOfType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfComponent_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfEngine_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfError_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfExecFile_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfExecPart_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfExecutable_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfExternMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfField_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfGenClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfGenType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfGlobalEntity_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfInstClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfInterface_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfMemberMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfMethod_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfPackage_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfParam_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfSchema_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceNodeOfSequenceOfType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfComponent_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfEngine_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfError_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfExecFile_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfExecPart_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfExecutable_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfExternMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfField_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfGenClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfGenType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfGlobalEntity_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfInstClass_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfInterface_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfMemberMet_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfMethod_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfPackage_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfParam_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfSchema_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_SequenceOfType_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\MS\MS_TraductionError_0.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Alias.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Class.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_ClassMet.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Client.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Common.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Component.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Construc.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Engine.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Enum.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Error.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Exec.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_ExecFile.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_ExecPart.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Executable.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_ExternMet.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Field.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_GenClass.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_GenType.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_GlobalEntity.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Imported.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_InstClass.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_InstMet.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Interface.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_MemberMet.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_MetaSchema.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Method.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_NatType.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Package.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Param.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_ParamWithValue.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Pointer.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_PrimType.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Schema.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_StdClass.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MS\MS_Type.cxx">
+      <Filter>Source files\MS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfEntity_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfFactory_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfFile_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfMakeOption_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfMakeStep_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfParcel_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfUnit_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfWorkbench_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceNodeOfSequenceOfWorkshop_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfEntity_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfFactory_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfFile_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfMakeOption_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfMakeStep_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfParcel_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfUnit_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfWorkbench_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKAPI\WOKAPI_SequenceOfWorkshop_0.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_BuildProcess.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Factory.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Parcel.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_TriggeredMake.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Unit.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Warehouse.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Workbench.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Command_Workshop.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Entity.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Factory.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_File.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Locator.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_MakeOption.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_MakeStep.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Parcel.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Process.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Session.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Unit.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Warehouse.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Workbench.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKAPI\WOKAPI_Workshop.cxx">
+      <Filter>Source files\WOKAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapIteratorOfDataMapOfHAsciiStringOfMSEntity_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapIteratorOfDataMapOfHAsciiStringOfToolInShell_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapIteratorOfDataMapOfMSActionIDOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapOfHAsciiStringOfMSEntity_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapOfHAsciiStringOfToolInShell_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_DataMapOfMSActionIDOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_HSequenceOfEntity_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_HSequenceOfExtension_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_HSequenceOfLibrary_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_HSequenceOfObjectFile_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_HSequenceOfToolInShell_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_MapIteratorOfMapOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_MapOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_QueueNodeOfQueueOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_QueueOfMSAction_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceNodeOfSequenceOfEntity_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceNodeOfSequenceOfExtension_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceNodeOfSequenceOfLibrary_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceNodeOfSequenceOfObjectFile_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceNodeOfSequenceOfToolInShell_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceOfEntity_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceOfExtension_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceOfLibrary_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceOfObjectFile_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKBuilder\WOKBuilder_SequenceOfToolInShell_0.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ArchiveExtract.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ArchiveLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Archiver.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CDLFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CodeGenFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CodeGenerator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CodeGeneratorIterator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Command.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Compilable.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Compiler.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CompilerIterator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_CompressedFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_DEFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_DLLFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_DLLinker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_EXEFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_EXELinker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Entity.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_EntityHasher.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Executable.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ExecutableLinker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ExportLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ImportLibrarian.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ImportLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Include.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Library.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Linker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSAction.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSActionID.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSClientExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSEngineExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSEntity.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSEntityHasher.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSExtractorIterator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSHeaderExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSJiniExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSServerExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSTemplateExtractor.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSTool.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSTranslator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSTranslatorIterator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_MSchema.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ManifestLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Miscellaneous.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ObjectFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_PDBFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_SharedLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_SharedLinker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Specification.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_StaticLibrarian.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_StaticLibrary.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_TarFile.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_Tool.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ToolInProcess.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ToolInShell.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_ToolInShellIterator.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_WNTCollector.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_WNTLibrarian.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKBuilder\WOKBuilder_WNTLinker.cxx">
+      <Filter>Source files\WOKBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDFLT\WOKDFLT_DFLTExtract.cxx">
+      <Filter>Source files\WOKDFLT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDFLT\WOKDFLT_MSDFLTExtractor.cxx">
+      <Filter>Source files\WOKDFLT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\DELIVERY.tab.c">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\WOKDeliv_DataMapIteratorOfDataMapOfFiles_0.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\WOKDeliv_DataMapIteratorOfDataMapOfParcel_0.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\WOKDeliv_DataMapOfFiles_0.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\WOKDeliv_DataMapOfParcel_0.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKDeliv\lex.DELIVERY.c">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\DELIVERY.tab.c">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DelivBuildArchive.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DelivBuildExec.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DelivBuildSource.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryArchive.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryBase.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryCopy.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryDATA.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryExecList.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryFiles.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryGET.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryLIB.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryList.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryListShared.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryMetaStep.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryOBJSSchema.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliverySOURCES.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliverySTUBClient.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryShared.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliverySource.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryStep.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_DeliveryStepList.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKDeliv\WOKDeliv_ParseDelivery.cxx">
+      <Filter>Source files\WOKDeliv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapIteratorOfDataMapOfHAsciiStringOfDevUnit_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapIteratorOfDataMapOfHAsciiStringOfSequenceOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapIteratorOfDataMapOfHAsciiStringOfStepBuilder_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapIteratorOfDataMapOfHAsciiStringOfStep_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapOfHAsciiStringOfDevUnit_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapOfHAsciiStringOfSequenceOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapOfHAsciiStringOfStepBuilder_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_DataMapOfHAsciiStringOfStep_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_HSequenceOfInputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_HSequenceOfOutputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_HSequenceOfStepOption_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_IndexedDataMapOfBuildProcessGroup_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_IndexedDataMapOfHAsciiStringOfInputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_IndexedDataMapOfHAsciiStringOfOutputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_IndexedMapOfDepItem_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceNodeOfSequenceOfInputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceNodeOfSequenceOfOutputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceNodeOfSequenceOfStepOption_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceOfInputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceOfOutputFile_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKMake\WOKMake_SequenceOfStepOption_0.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_BuildProcess.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_BuildProcessGroup.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_BuildProcessIterator.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_DepItem.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_DepItemHasher.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_InputFile.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_MetaStep.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_OutputFile.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_Step.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_StepBuilder.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_StepFile.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_Step_1.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKMake\WOKMake_TriggerStep.cxx">
+      <Filter>Source files\WOKMake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_AppSchCxxFile.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_AppSchema.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_EngLinkList.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_LibSchema.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_MSSchExtractor.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_OSSG.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_SchExtract.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOBJS\WOKOBJS_SchGen.cxx">
+      <Filter>Source files\WOKOBJS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKOrbix\WOKOrbix_DataMapIteratorOfDataMapOfHAsciiStringOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKOrbix\WOKOrbix_DataMapOfHAsciiStringOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_ExtractServerList.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLCompile.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLCompiler.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLCompilerIterator.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLFile.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLFill.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLSource.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLSourceExtract.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_IDLTranslator.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKOrbix\WOKOrbix_ServerSource.cxx">
+      <Filter>Source files\WOKOrbix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ArchiveLibrary.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_CDLUnitSource.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ClientExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_CodeGenerate.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Compile.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ComputeLinkList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_DLLink.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_DirectLinkList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_DirectTKReplace.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_DynamicLibrary.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_EXELink.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_EngDatFiles.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_EngLDFile.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_EngLinkList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_EngineExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ExecLink.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ExecutableSource.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Extract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ExtractExecList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_HeaderExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ImplementationDep.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ImportLibrary.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Include.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_JiniExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_LibExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_LibLimit.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_LibLink.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_LibUnCompress.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Library.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Link.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_LinkList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_MSFill.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_MSStep.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ProcessStep.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ResourceSource.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ServerExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_Source.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_SourceExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_StaticLibrary.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_TKList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_TKReplace.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_TemplateExtract.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_ToolkitSource.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_TransitiveLinkList.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_TransitiveTKReplace.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_WNTCollect.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_WNTK.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_WNTLibrary.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKStep\WOKStep_WNTLink.cxx">
+      <Filter>Source files\WOKStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_Array1OfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_DataMapIteratorOfDataMapOfHAsciiStringOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_DataMapIteratorOfDataMapOfHAsciiStringOfHSequenceOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_DataMapOfHAsciiStringOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_DataMapOfHAsciiStringOfHSequenceOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_HSequenceOfDefine_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_HSequenceOfReturnValue_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_IndexedDataMapOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_IndexedMapOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_MapIteratorOfMapOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_MapOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_SequenceNodeOfSequenceOfDefine_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_SequenceNodeOfSequenceOfReturnValue_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_SequenceOfDefine_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_SequenceOfReturnValue_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKTools\WOKTools_SortOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_AsciiStringHasher.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_BasicMap.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_BasicMapIterator.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_CStringHasher.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_ChDirValue.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_CompareOfHAsciiString.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Define.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_EnvValue.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Error.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_HAsciiStringHasher.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Info.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_InterpFileValue.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Message.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Options.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_PUsage.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Return.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_ReturnValue.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_StringValue.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Verbose.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKTools\WOKTools_Warning.cxx">
+      <Filter>Source files\WOKTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_BufferOverflow_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_HSequenceOfParamItem_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_HSequenceOfPath_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_MapIteratorOfMapOfPath_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_MapOfPath_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_ProcessTimeOut_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_SequenceNodeOfSequenceOfParamItem_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_SequenceNodeOfSequenceOfPath_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_SequenceOfParamItem_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKUtils\WOKUtils_SequenceOfPath_0.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_Param.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_ParamItem.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_Path.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_PathHasher.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_PathIterator.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_RegExp.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_RemoteShell.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_SearchIterator.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_SearchList.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_Shell.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_ShellManager.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKUtils\WOKUtils_Trigger.cxx">
+      <Filter>Source files\WOKUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_Array1OfHSequenceOfHAsciiString_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfFileTypeBase_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfFileType_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfDevUnit_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfFactory_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfFile_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfParcel_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfWarehouse_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfWorkbench_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapIteratorOfDataMapOfHAsciiStringOfWorkshop_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfFileTypeBase_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfFileType_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfDevUnit_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfFactory_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfFile_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfParcel_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfWarehouse_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfWorkbench_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_DataMapOfHAsciiStringOfWorkshop_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_HSequenceOfDBMSID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_HSequenceOfFile_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_HSequenceOfStationID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_IndexedDataMapNodeOfSCMapOfSortedClientsFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_IndexedDataMapNodeOfSCMapOfSortedImpldepFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SCMapOfSortedClientsFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SCMapOfSortedImpldepFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfDBMSID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfFileType_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfFile_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfSession_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfStationID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceNodeOfSequenceOfUnitTypeDescr_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfDBMSID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfFileType_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfFile_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfSession_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfStationID_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SequenceOfUnitTypeDescr_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SortedClientsFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKernel\WOKernel_SortedImpldepFromIterator_0.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_BaseEntity.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_BaseEntityHasher.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_ClientIterator.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_DBMSystem.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_DevUnit.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Entity.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_EntityIterator.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Factory.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_File.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_FileLocatorHasher.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_FileType.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_FileTypeBase.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_FileTypeHasher.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_FileTypeKeyWords.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_GlobalFileTypeBase.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_HAsciiStringHasher.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_ImplDepIterator.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Locator.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Parcel.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Session.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Station.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_UnitGraph.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_UnitNesting.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_UnitTypeBase.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_UnitTypeDescr.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Warehouse.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Workbench.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKernel\WOKernel_Workshop.cxx">
+      <Filter>Source files\WOKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_Array1OfRegExp_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_Array1OfString_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_PrivCompareOfString_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_QuickSortOfString_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_SequenceNodeOfSequenceOfShell_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_SequenceOfShell_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_StackIteratorOfStackOfHandle_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_StackNodeOfStackOfHandle_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\WOKNT\WOKNT_StackOfHandle_0.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_AdmFile.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_CompareOfString.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_CopyIfCh.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_MixedOutput.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_OutErrOutput.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_Path.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_PathIterator.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_RegExp.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_ReplIfCh.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_ReplIfChWith.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_Shell.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_ShellManager.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_ShellOutput.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_Shell_1.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_chmod.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_cmp.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_cp.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_getopt.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_mv.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_regexp_1.c">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\WOKNT\WOKNT_rm.cxx">
+      <Filter>Source files\WOKNT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

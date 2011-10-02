@@ -1,0 +1,28 @@
+-- File:	WOKBuilder_WNTLibrary.cdl
+-- Created:	Mon Oct 21 13:30:04 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+deferred class WNTLibrarian from WOKBuilder inherits WNTCollector from WOKBuilder
+
+    ---Purpose: defines link tool ( library manager )
+
+ uses
+ 
+    HAsciiString from TCollection,
+    Param        from WOKUtils
+ 
+ is
+
+    Initialize (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    );
+    	---Purpose: initialization
+ 
+    EvalCFExt ( me : mutable )
+     returns HAsciiString from TCollection is redefined static;
+     	---Purpose: evaluates extension for name of the command file
+
+end WNTLibrarian;

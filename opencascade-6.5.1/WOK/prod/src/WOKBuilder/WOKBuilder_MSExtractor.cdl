@@ -1,0 +1,80 @@
+-- File:	WOKBuilder_MSExtractor.cdl
+-- Created:	Wed Oct 11 11:24:37 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class MSExtractor from WOKBuilder 
+inherits MSTool   from WOKBuilder
+
+	---Purpose: Extracts MSEntity from MS
+
+uses
+    MSEntity                from WOKBuilder,
+    MSAction                from WOKBuilder,
+    MSchema                 from WOKBuilder,
+    BuildStatus             from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSActionType            from WOKBuilder,
+    Entity                  from WOKBuilder,
+    HSequenceOfEntity       from WOKBuilder,
+    MSExtractorTemplatesPtr from WOKBuilder,
+    MSExtractorExtractPtr   from WOKBuilder,
+    Path                    from WOKUtils,
+    SearchList              from WOKUtils,
+    Param                   from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+raises ProgramError from Standard
+is
+
+    Initialize(aname      : HAsciiString from TCollection;
+    	   ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSExtractor from WOKBuilder;
+
+    Initialize(aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns mutable MSExtractor from WOKBuilder;
+
+    Load(me:mutable)
+    	is redefined;
+
+    SetEntity(me:mutable; anentity : MSEntity from WOKBuilder);
+    Entity(me) returns MSEntity from WOKBuilder;
+    
+    SetTemplateFiles(me:mutable; templates : HSequenceOfHAsciiString from TColStd); 
+    TemplateFiles(me) returns HSequenceOfHAsciiString from TColStd;
+
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is virtual;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is deferred;
+
+    Extract(me:mutable; ametaschema : MSchema                 from WOKBuilder;
+    	    	    	anentity    : MSEntity                from WOKBuilder)
+    	returns BuildStatus from WOKBuilder;
+
+    Extract(me:mutable; ametaschema : MSchema                 from WOKBuilder;
+    	    	    	anentity    : MSEntity                from WOKBuilder;
+    	    	    	amode       : CString                 from Standard)
+    	returns BuildStatus from WOKBuilder;
+
+    Execute(me:mutable)
+    	returns BuildStatus from WOKBuilder
+    	raises ProgramError from Standard
+    	is redefined;
+
+fields
+    myentity       : MSEntity                from WOKBuilder;
+    mytemplates    : HSequenceOfHAsciiString from TColStd;
+    myprefix       : HAsciiString            from TCollection;
+    myshared       : HAsciiString            from TCollection;
+    mysearchlist   : SearchList              from WOKUtils;
+    mytemplfunc    : MSExtractorTemplatesPtr from WOKBuilder;
+    myextractfunc  : MSExtractorExtractPtr   from WOKBuilder;
+    myinitfunc     : Address                 from Standard is protected;
+end MSExtractor;

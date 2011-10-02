@@ -1,0 +1,181 @@
+-- File:	WOKBuilder_MSchema.cdl
+-- Created:	Tue Sep 19 12:05:56 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSchema from WOKBuilder 
+inherits TShared from MMgt
+
+	---Purpose: Encapsulates MS_MetaSchema
+	--          Provides WOK interface with WOK and MetaSchema
+	--          Handles the WOK file nominating conventions (PK_Class.cdl ...)
+	--          
+
+uses
+    MetaSchema                      from MS,
+    GlobalEntity                    from MS,
+    Type                            from MS,
+    ExecFile                        from MS,
+    Specification                   from WOKBuilder,
+    MSEntity                        from WOKBuilder,
+    HSequenceOfEntity               from WOKBuilder,
+    MSActionType                    from WOKBuilder,
+    MSAction                        from WOKBuilder,
+    MSActionID                      from WOKBuilder, 
+    MSActionStatus                  from WOKBuilder,
+    DataMapOfMSActionIDOfMSAction   from WOKBuilder,
+    DataMapOfHAsciiStringOfMSEntity from WOKBuilder,
+    HAsciiString                    from TCollection,
+    HSequenceOfHAsciiString         from TColStd
+is
+    
+    Create returns mutable MSchema from WOKBuilder;
+
+    MetaSchema(me) 
+    ---C++: return const &
+    ---C++: inline
+       	returns MetaSchema from MS;
+    ---Purpose: Returns the MS Handle of MetaSchema
+    --          WOKBuilder private purpose    
+
+    ----
+    --        Type And Global Entities Management
+
+    IsDefined(me; anentity : HAsciiString from TCollection) returns Boolean from Standard; 
+    ---Purpose: Tests if a global entity or a type is defined and complete in MSchema    
+
+    RemoveEntity(me:mutable;  anentity : HAsciiString from TCollection); 
+    ---Purpose: Removes a global entity from MS_MetaSchema    
+
+    RemoveType(me:mutable;    atype : HAsciiString from TCollection); 
+    ---Purpose: Removes a type from MS_MetaSchema      
+
+    GetEntityTypes(me; anentity : HAsciiString from TCollection)
+    ---Purpose: Returns the type     
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    RemoveAutoTypes(me);
+    ---Purpose: Removes all Automatically generated Types
+    --          (instanciations)    
+
+
+    ----
+    --        WOK and MetaSchema Conventions
+
+
+    AssociatedFile(me; anentity : HAsciiString from TCollection)
+    ---Purpose: Returns the file defining entity
+    	returns HAsciiString from TCollection;
+
+    AssociatedEntity(me; atype : HAsciiString from TCollection)
+    ---Purpose: Returns the GlobalEntity defining type
+    	returns HAsciiString from TCollection;
+
+    TypeSourceFiles(me; atype : HAsciiString from TCollection)
+    ---Purpose: Returns source Files Issued From CDL
+    	returns HSequenceOfHAsciiString from TColStd;
+
+
+    -- Executable Units MetaSchema access
+
+    ExecFileName(me; anexecfile : ExecFile from MS)
+    	returns HAsciiString from TCollection
+    	is private;
+
+    ExecutableParts(me; anexecutable : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of parts of a Executable GlobalEntity    
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    ExecutableFiles(me; anexecutable : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of all source files of an executable
+    --          
+        returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableFiles(me; anexecutable : HAsciiString from TCollection;
+    	    	    	anexecpart   : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of source files of a part    
+    --          
+        returns HSequenceOfHAsciiString from TColStd;
+	
+    ExecutableModules(me; anexecutable : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of all modules (basenames) of an executable
+        returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableModules(me; anexecutable : HAsciiString from TCollection;
+    	    	    	  anexecpart   : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of modules (basenames) of a part
+        returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableLibraries(me; anexecutable : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableLibraries(me; anexecutable : HAsciiString from TCollection;
+    	    	    	    anexecpart   : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableExternals(me; anexecutable : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ExecutableExternals(me; anexecutable : HAsciiString from TCollection;
+    	    	    	     anexecpart   : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+
+    --- Compenents Interfaces Access
+    ComponentParts(me; anexecutable : HAsciiString from TCollection)
+    ---Purpose: Returns the sequence of parts of a Executable GlobalEntity    
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    
+    --- Schema Units MetaSchema Access
+    --  
+
+    SchemaClasses(me; aschema : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    SortedSchemaClasses(me; aschema : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd; 
+	
+    SchemaDescrMissingClasses(me; aschema : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+   ---- 
+    --        Actions Management (Translation, Extraction)
+
+    IsActionDefined(me; anid : MSActionID from WOKBuilder)
+    	returns Boolean from Standard;
+
+    AddAction(me; anid : MSActionID from WOKBuilder);
+
+    GetStoredActionID(me; anid : MSActionID from WOKBuilder)
+    	returns MSActionID from WOKBuilder;
+
+    GetAction(me:mutable; anid : MSActionID from WOKBuilder)
+    ---Purpose: Gets an action or creates it    
+    	returns MSAction from WOKBuilder;
+
+    ChangeActionToFailed(me:mutable; anid : MSActionID from WOKBuilder);
+
+    ChangeAddAction(me:mutable; anid : MSActionID from WOKBuilder; thefile : Specification from WOKBuilder);
+    ---Purpose: Adds Action to the map if it does not exists
+    --          Updates Date if it exists    
+
+    GetActionStatus(me:mutable; anaction : MSActionID from WOKBuilder) 
+    ---Purpose: Get the status of an action on the MetaSchema    
+    	returns MSActionStatus from WOKBuilder;
+
+
+    RemoveAction(me:mutable; anaction : MSActionID from WOKBuilder);
+    ---Purpose: Removes an action from the map/    
+
+    Clear(me:mutable);
+    ---Purpose: Empties MetaSchema and Action Map    
+
+
+fields
+    myschema   : MetaSchema                      from MS;
+    myactions  : DataMapOfMSActionIDOfMSAction   from WOKBuilder;
+    myentities : DataMapOfHAsciiStringOfMSEntity from WOKBuilder;
+end MSchema;

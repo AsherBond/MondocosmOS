@@ -1,0 +1,51 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Field.cdl	1.1
+-- File:	MS_Field.cdl
+-- Created:	Wed Jan 30 16:28:32 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class Field 
+	---Purpose:
+
+    from 
+    	MS 
+    inherits Common from MS
+    uses 
+     	Class from MS,
+	HAsciiString from TCollection,
+     	HSequenceOfInteger from TColStd
+
+is
+    Create(aClass: Class from MS; aName: HAsciiString) 
+    	returns mutable Field from MS;
+    
+    Class(me: mutable; aClass: Class from MS);
+    Class(me)
+    	returns mutable Class from MS;
+	
+    TYpe(me : mutable; 	aType: HAsciiString from TCollection);
+    TYpe(me: mutable; aType: HAsciiString; aPackage: HAsciiString);
+    TYpe(me)
+    	returns mutable HAsciiString from TCollection;
+    ---C++:return const &
+
+    Dimension(me: mutable; aDimension: Integer);
+    Dimensions(me)
+    	returns mutable HSequenceOfInteger from TColStd;
+    ---C++:return const &
+
+    Protected(me: mutable; aProtected: Boolean);
+    Protected(me)
+    	returns Integer;
+	
+fields
+
+    myClass     : HAsciiString       from TCollection;
+    myType      : HAsciiString       from TCollection;
+    myDimension : HSequenceOfInteger from TColStd;
+    myProtected : Boolean; 
+
+end Field from MS;

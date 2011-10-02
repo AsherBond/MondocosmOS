@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_Include.cdl
+-- Created:	Thu Aug 10 20:50:41 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Include from WOKBuilder 
+inherits Entity from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+is
+
+    Create(apath : Path from WOKUtils) returns mutable Include from WOKBuilder;
+
+end Include;

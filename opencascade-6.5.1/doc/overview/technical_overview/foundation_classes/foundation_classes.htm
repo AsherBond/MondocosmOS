@@ -1,0 +1,455 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Foundation Classes</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+table.whs2 { width:546px; border-spacing:0px; }
+tr.whs3 { x-cell-content-align:top; }
+td.whs4 { width:71.43%; height:30px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs5 { margin-left:6.00pt; }
+td.whs6 { width:28.57%; height:30px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+img_whs7 { width:134px; height:280px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nFoundation Classes");
+addAvenueInfo("Foundation Classes","","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Foundation Classes</p>
+
+<p class="whs1">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="546" class="whs2">
+
+<tr valign="top" class="whs3">
+<td height="30" width="71.43%" class="whs4">
+<p>Foundation Classes provide a variety of general-purpose services such 
+ as:</p>
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Primitive types, 
+ strings and various types of quantities </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Automated management 
+ of heap memory </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Exception handling 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Classes for manipulating 
+ data collections</p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Math tools such as 
+ vectors, matrices and primitive geometric types </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Basic services for 
+ saving data in ASCII files </p></li>
+</ul>
+<p>These services are organized into the following libraries:</p>
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Kernel Classes </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Math Utilities </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Basic Persistence&nbsp; 
+ </p></li>
+</ul>
+<p class="whs5">The technical overview provides only a 
+ basic description of the libraries. Please, refer for more details to<span 
+ style="font-weight: bold;"> <B><a href="../../../fcug.pdf">Foundation Classes 
+ User's guide</a></B></span></p>
+<p>See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a><font style="font-family: 'Lucida Console';"
+						face="Lucida Console">.</font></td>
+<td height="30" width="28.57%" class="whs6">
+<p><img src="../../image/fc.gif" alt="image\fc.gif" width="134px" height="280px" border="0" class="img_whs7"> </td></tr>
+</table>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">&nbsp;</p>
+
+<h2>Kernel Classes</h2>
+
+<h3>Root Classes</h3>
+
+<p><a href="kernel/p_1_1.htm">Root Classes</a>, primarily implemented in 
+ the<font style="font-style: italic;"> Standard </font>package, are the 
+ classes on which all other Open CASCADE Technology classes are built. 
+ They provide:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Primitive types such 
+ as Boolean, Character, Integer or Real </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">A memory manager 
+ based on reference counting for optimizing the allocation and deallocation 
+ of large numbers of small C++ objects </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">A base class, <font 
+ style="font-style: italic;">Standard_Transient</font>, automating memory 
+ management through smart pointers - the OCCT Handle; most of OCCT classes 
+ inherit from this base class. </p></li>
+</ul>
+
+<h3>Quantities</h3>
+
+<p><a href="kernel/p_5_1.htm">Quantity classes</a> provide the following 
+ services:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Definition of primitive 
+ types representing most of mathematical and physical quantities </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Unit conversion tools 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Resources to manage 
+ time information such as dates and time periods </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Resources to manage 
+ color definition </p></li>
+</ul>
+
+<h3>Exceptions</h3>
+
+<p><a href="kernel/p_6_1.htm">Exception classes</a> list all the exceptions, 
+ which can be raised by any OCCT function. Syntaxes compatible with the 
+ ANSI C++ standard allow you to handle abnormal conditions.</p>
+
+<p>Each exception inherits from <font style="font-style: italic;">Standard_Failure</font> 
+ either directly or by inheriting from another exception.</p>
+
+<h3>Strings</h3>
+
+<p><a href="kernel/p_2_1.htm">String classes</a> provide the following 
+ services to manipulate character strings:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Editing operations 
+ on string objects, using a built-in string manager </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Handling of dynamically-sized 
+ sequences of characters </p></li>
+</ul>
+
+<p>OCCT supports both ASCII character types (8-bit) and Unicode character 
+ types UTF-8 (8-bit) and utf-16 - UCS-2 (16-bit).</p>
+
+<p>Memory management makes string objects easier to use than ordinary character 
+ arrays. Strings may also be manipulated by handles and therefore, can 
+ be shared.</p>
+
+<p>These classes are implemented in <font style="font-style: italic;">TCollection</font> 
+ and <span><font style="font-style: italic;">NCollection </font></span>packages.</p>
+
+<h3>Collections</h3>
+
+<p>Apart from strings, <a href="kernel/p_3_1.htm">the TCollection</a> package 
+ contains classes of dynamically sized aggregates of data. They include 
+ a wide range of collections such as:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Arrays (unidimensional 
+ and bidimensional) generally used for quick access to an item. Note that 
+ an array is a fixed-sized aggregate </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Sequences and lists 
+ which are ordered collections of non-unique objects </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Maps, which provide 
+ rapid access time for member items </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Queues and stacks, 
+ which are minor structures similar to sequences but with different algorithms 
+ to explore them </p></li>
+</ul>
+
+<p>The <font style="font-style: italic;">TCollection</font> package also 
+ offers specific iterators for sequences, maps, and stacks.</p>
+
+<p>It also includes Collection classes. Collection classes are generic 
+ (C++ template-like), that is, they can contain a variety of objects which 
+ do not necessarily inherit from a unique root class. When you need to 
+ use a collection of a given object type, you must instantiate the collection 
+ for this specific type. Once the code for this declaration is compiled, 
+ all functions available on the generic collection are available on your 
+ instantiated class.</p>
+
+<p>If you are not using CDL in your project (CDL compilation under WOK 
+ is necessary to instantiate any generic Collection from package <font 
+ style="font-style: italic;">TCollection</font>), then you should use the 
+ Collections defined in <font style="font-style: italic;">NCollection<span 
+ style="font-style: normal;"> package</span></font>. It contains definitions 
+ of the same generic collection classes described above, but in a form 
+ of C++ templates. Therefore, to instantiate any collection type no additional 
+ support is required beyond the ANSI C++ compiler.</p>
+
+<p>Most collections follow value semantics, meaning that an instantiation 
+ of a collection is the actual collection, not a handle to it.</p>
+
+<h3>Collections of Standard Objects</h3>
+
+<h3>TCollection</h3>
+
+<p>The <a href="kernel/p_4_1.htm">collections of standard object</a> classes 
+ provide frequently used instantiation of generic classes from the <font 
+ style="font-style: italic;">TCollection</font> package with objects from 
+ the <font style="font-style: italic;">Standard</font> package, strings 
+ from the <font style="font-style: italic;">TCollection</font> package 
+ and geometric primitives.</p>
+
+<p>There exists a limitation: OCCT generic classes require compilation 
+ of definitions in the CDL language and therefore can only be instantiated 
+ in WOK.</p>
+
+<h3>NCollection</h3>
+
+<p>The <a href="kernel/ncollections/p_80_1.htm">NCollection</a> unit meets 
+ the requirements of OCCT community and all end users who do not use WOK 
+ development environment in their projects. </p>
+
+<p>The NCollection provides a full replacement of all <a href="kernel/p_3_1.htm">TCollection</a> 
+ generic classes so that any OCCT<span style="font-style: italic;"> <I></I></span>collection 
+ could be instantiated <font style="font-style: italic;">via</font> C++ 
+ template definitions. It is used in WOK environment (as <font style="font-style: italic;">nocdlpack 
+ </font>development unit) or in any other configuration, since it only 
+ uses the standard capabilities of C++ language.</p>
+
+<p>Earlier releases of OCCT offered NCollection classes in the form of 
+ macro definitions. Now it is strongly recommended to use C++ template 
+ classes instead, as they are more flexible and reliable. The old definitions 
+ based on C macros (in the header files <span style="font-family: 'Lucida Console', monospace;">NCollection_Define*.hxx</span>) 
+ are kept for backward compatibility and no more supported.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<h2>Math Utilities</h2>
+
+<h3>Vectors and Matrices</h3>
+
+<p>The <a href="math_utilities/p_7_1.htm">Vector and Matrix</a> classes 
+ provide commonly used mathematical algorithms which include:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Basic calculations 
+ involving vectors and matrices </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Computation of eigenvalues 
+ and eigenvectors of a square matrix </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Solvers for a set 
+ of linear algebraic equations </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Algorithms to find 
+ the roots of a set of nonlinear equations </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Algorithms to find 
+ the minimum function of one or more independent variables </p></li>
+</ul>
+
+<p>These classes also provide a data structure in order to represent any 
+ expression, relation, or function used in mathematics, including the assignment 
+ of variables.</p>
+
+<h3>Primitive Geometric Types</h3>
+
+<p>OCCT <a href="math_utilities/p_8_1.htm">primitive geometric types</a> 
+ are defined in the basic geometry package <font style="font-style: italic;">gp, 
+ which provides descriptions of primitive geometric shapes such as:</font></p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Points </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Vectors </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Lines </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Circles and conics 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Planes and elementary 
+ surfaces </p></li>
+</ul>
+
+<p>These types are handled by value only, and never by reference.</p>
+
+<p><font style="font-style: italic;">gp</font> also provides a means of 
+ positioning your shapes in space or on a plane using an axis or coordinate 
+ system, and defines the following geometric transformations available 
+ for these positioned shapes:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Translations </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Rotations </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Symmetries </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Scaling transformations 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Composed transformations 
+ </p></li>
+</ul>
+
+<h3>Common Math Algorithms</h3>
+
+<p>The common math algorithms provided in OCCT include:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Algorithms to solve 
+ a set of linear algebraic equations, </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Algorithms to find 
+ the minimum of a function of one or more independent variables, </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Algorithms to find 
+ roots of one or of a set of non-linear equations, </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">An algorithm to find 
+ the eigenvalues and eigenvectors of a square matrix.</p></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

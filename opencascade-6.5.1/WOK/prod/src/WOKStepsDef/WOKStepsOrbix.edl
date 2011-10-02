@@ -1,0 +1,28 @@
+-- File:	WOKStepsOrbix.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Aug 18 13:59:33 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKStepsOrbix_EDL) then
+@set %WOKStepsOrbix_EDL = "";
+
+
+@set %WOKStepsOrbix_LibPath = "libwokorbixsteps.so";
+
+@if ( %LocalArch == "hp" ) then
+  @set %WOKStepsOrbix_LibPath = "libwokorbixsteps.sl";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @set %WOKStepsOrbix_LibPath = "libwokorbixsteps.dylib";
+@endif;
+
+@if ( %LocalArch == "wnt" ) then
+  @set %WOKStepsOrbix_LibPath = "wokorbixsteps.dll";
+@endif;
+
+@set    %WOKStepsOrbix_DefinedSteps = " WOKOrbix_IDLSource WOKOrbix_IDLSourceExtract WOKOrbix_IDLCompile WOKOrbix_IDLFill ";
+@string %WOKStepsOrbix_DefinedSteps += "WOKOrbix_ServerSource WOKOrbix_ExtractServerList ";
+
+
+@endif;

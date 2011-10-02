@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classIFSelect__SelectSignedShared.html" title="In the graph, explore the Shareds of the input entities, &#160;&#160;until it encounters some..." alt="" coords="1049,5,1268,35"/>
+<area shape="rect" id="node13" href="$classIFSelect__SelectSignedSharing.html" title="In the graph, explore the sharings of the input entities, &#160;&#160;until it encounters some..." alt="" coords="1048,59,1269,88"/>
+<area shape="rect" id="node15" href="$classIGESSelect__SelectBasicGeom.html" title="This selection returns the basic geometric elements &#160;&#160;contained in an IGES Entity..." alt="" coords="1047,112,1271,141"/>
+<area shape="rect" id="node17" href="$classIGESSelect__SelectBypassGroup.html" title="Selects a list built as follows : &#160;&#160;Groups are entities type 402, forms 1,7,14,15..." alt="" coords="1041,165,1276,195"/>
+<area shape="rect" id="node19" href="$classIGESSelect__SelectBypassSubfigure.html" title="Selects a list built as follows : &#160;&#160;Subfigures correspond to &#160;&#160;* Definition (basic..." alt="" coords="1029,219,1288,248"/>
+<area shape="rect" id="node21" href="$classIGESSelect__SelectFaces.html" title="This selection returns the faces contained in an IGES Entity &#160;&#160;or itself if it is..." alt="" coords="1065,272,1252,301"/>
+<area shape="rect" id="node23" href="$classIGESSelect__SelectPCurves.html" title="This Selection returns the pcurves which lie on a face &#160;&#160;In two modes : global (i..." alt="" coords="1057,325,1260,355"/>
+<area shape="rect" id="node25" href="$classSTEPSelections__SelectAssembly.html" title="STEPSelections_SelectAssembly" alt="" coords="1039,379,1279,408"/>
+<area shape="rect" id="node27" href="$classSTEPSelections__SelectFaces.html" title="This selection returns &quot;STEP faces&quot; &#160;" alt="" coords="1051,432,1267,461"/>
+<area shape="rect" id="node29" href="$classSTEPSelections__SelectGSCurves.html" title="This selection returns &quot;curves in the geometric_set (except composite curves)&quot;..." alt="" coords="1037,485,1280,515"/>
+<area shape="rect" id="node31" href="$classSTEPSelections__SelectInstances.html" title="STEPSelections_SelectInstances" alt="" coords="1037,539,1280,568"/>
+<area shape="rect" id="node33" href="$classXSControl__ConnectedShapes.html" title="From a TopoDS_Shape, or from the entity which has produced it, &#160;&#160;searches for the..." alt="" coords="1049,592,1268,621"/>
+<area shape="rect" id="node2" href="$classIFSelect__SelectDeduct.html" title="A SelectDeduct determines a list of Entities from an Input &#160;&#160;Selection, by a computation..." alt="" coords="575,299,753,328"/>
+<area shape="rect" id="node4" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="377,299,524,328"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,299,328,328"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,299,156,328"/>
+</map>

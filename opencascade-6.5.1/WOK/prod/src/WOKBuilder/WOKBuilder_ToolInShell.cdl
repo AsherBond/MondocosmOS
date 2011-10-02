@@ -1,0 +1,54 @@
+-- File:	WOKBuilder_ToolInShell.cdl
+-- Created:	Wed Aug 23 20:28:04 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class ToolInShell from WOKBuilder 
+inherits Tool from WOKBuilder
+
+	---Purpose: 
+
+uses 
+    HSequenceOfEntity       from WOKBuilder,
+    HSequenceOfExtension    from WOKBuilder,
+    Param                   from WOKUtils,
+    Shell                   from WOKUtils,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection
+
+is
+
+    Initialize(aname: HAsciiString from TCollection; params : Param from WOKUtils);
+    
+    Shell(me) 
+    	returns Shell from WOKUtils is protected;
+
+	
+    SetShell(me:mutable; ashell : Shell from WOKUtils);
+    ResetShell(me) is protected;
+
+    SetTemplate(me:mutable; aname : HAsciiString from TCollection);
+    Template(me) returns HAsciiString from TCollection;
+
+    Extensions(me) returns HSequenceOfExtension from WOKBuilder;
+    SetExtensions(me:mutable; exts : HSequenceOfExtension from WOKBuilder);
+
+    TreatedExtensionNames(me) returns HSequenceOfHAsciiString from TColStd;
+
+    OptionLine(me)
+    	returns HAsciiString from TCollection;
+	
+    Load(me:mutable)
+    	is redefined;
+	
+    EvalProduction(me)
+    	returns HSequenceOfEntity from WOKBuilder;
+
+fields
+    myfile      : HAsciiString from TCollection;
+    myshell     : Shell        from WOKUtils;
+    mytemplate  : HAsciiString from TCollection;
+    myexts      : HSequenceOfExtension from WOKBuilder;
+end ToolInShell;

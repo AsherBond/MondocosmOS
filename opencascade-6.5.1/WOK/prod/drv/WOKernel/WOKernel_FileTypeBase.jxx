@@ -1,0 +1,24 @@
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKernel_FileType_HeaderFile
+#include <WOKernel_FileType.hxx>
+#endif
+#ifndef _WOKernel_HSequenceOfDBMSID_HeaderFile
+#include <WOKernel_HSequenceOfDBMSID.hxx>
+#endif
+#ifndef _WOKernel_HSequenceOfStationID_HeaderFile
+#include <WOKernel_HSequenceOfStationID.hxx>
+#endif
+#ifndef _WOKernel_Entity_HeaderFile
+#include <WOKernel_Entity.hxx>
+#endif
+#ifndef _WOKernel_FileTypeBase_HeaderFile
+#include <WOKernel_FileTypeBase.hxx>
+#endif

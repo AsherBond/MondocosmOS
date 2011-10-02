@@ -1,0 +1,63 @@
+-- File:	WOKAPI_Warehouse.cdl
+-- Created:	Wed Mar 27 10:59:40 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class    Warehouse from WOKAPI 
+inherits Entity    from WOKAPI
+
+	---Purpose: 
+
+uses
+    Session              from WOKAPI,
+    SequenceOfParcel     from WOKAPI,
+    SequenceOfEntity     from WOKAPI,
+    Warehouse            from WOKernel,
+    HSequenceOfParamItem from WOKUtils,
+    ArgTable             from WOKTools,
+    Return               from WOKTools,
+    HSequenceOfDefine    from WOKTools,
+    HAsciiString         from TCollection
+    
+
+is
+
+    Create returns Warehouse from WOKAPI;
+    
+    Create(aent : Entity from WOKAPI)
+    	returns Warehouse from WOKAPI;
+
+    Create(asession : Session from WOKAPI;
+    	   aname    : HAsciiString from TCollection;
+    	   verbose,getit  : Boolean from Standard = Standard_True)
+	returns Warehouse from WOKAPI;
+
+    BuildParameters(me:out; asession    : Session from WOKAPI;
+		            apath       : HAsciiString from TCollection; 
+		            defines     : HSequenceOfDefine from WOKTools;
+    	                    usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+    Build(me:out; asession    : Session from WOKAPI;
+    	          apath       : HAsciiString from TCollection; 
+		  defines     : HSequenceOfDefine from WOKTools;
+    	          usedefaults : Boolean from Standard)
+    	returns Boolean from Standard;
+
+    NestedEntities(me; aseq : out SequenceOfEntity from WOKAPI)
+    	returns Boolean from Standard
+    	is redefined;
+
+    Parcels(me; parcels : out SequenceOfParcel from WOKAPI);
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;
+
+    IsValid(me) 
+    	returns Boolean from Standard
+	is redefined;
+
+end Warehouse;

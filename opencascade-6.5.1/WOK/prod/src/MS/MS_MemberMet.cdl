@@ -1,0 +1,42 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_MemberMet.cdl	1.1
+-- File:	MS_MemberMet.cdl
+-- Created:	Wed Jan 30 16:04:13 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class MemberMet 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Method from MS
+    uses HAsciiString from TCollection
+    
+is
+    Initialize(aName: HAsciiString; aClass: HAsciiString from TCollection);
+
+    Class(me: mutable; aClass: HAsciiString from TCollection);
+    Class(me: mutable; aClass: HAsciiString; aPackage: HAsciiString);
+    Class(me)
+    	returns mutable HAsciiString from TCollection;
+
+    CreateFullName(me : mutable) is redefined;
+    
+    Protected(me: mutable; aProtected: Boolean);
+    IsProtected(me)
+    	returns Boolean;
+
+    Raises(me : mutable; aExcept: HAsciiString from TCollection) is redefined ;
+    Raises(me: mutable; aExcept: HAsciiString from TCollection; aPackage: HAsciiString from TCollection);
+
+fields
+
+    
+    myClass     : HAsciiString from TCollection;
+    myProtected : Boolean from Standard;
+    
+end MemberMet from MS;
+

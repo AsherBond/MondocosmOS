@@ -1,0 +1,15 @@
+#ifndef _WOKMake_Step_HeaderFile
+#include <WOKMake_Step.hxx>
+#endif
+#ifndef _WOKAPI_BuildProcess_HeaderFile
+#include <WOKAPI_BuildProcess.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKAPI_SequenceOfFile_HeaderFile
+#include <WOKAPI_SequenceOfFile.hxx>
+#endif
+#ifndef _WOKAPI_MakeStep_HeaderFile
+#include <WOKAPI_MakeStep.hxx>
+#endif

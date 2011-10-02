@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIGESData__IGESReaderData.html" title="specific FileReaderData for IGES &#160;&#160;contains header as GlobalSection, and for each..." alt="" coords="5,237,211,267"/>
+<area shape="rect" id="node9" href="$classStepData__StepReaderData.html" title="Specific FileReaderData for Step &#160;&#160;Contains litteral description of entities (for..." alt="" coords="235,237,443,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="161,83,284,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="148,5,297,35"/>
+</map>

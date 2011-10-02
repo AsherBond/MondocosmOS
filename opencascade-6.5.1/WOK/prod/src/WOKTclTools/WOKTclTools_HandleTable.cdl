@@ -1,0 +1,51 @@
+-- File:	WOKTclTools_HandleTable.cdl
+-- Created:	Wed Oct  9 13:22:07 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+ 
+generic class HandleTable from WOKTclTools ( TableItem as any )
+
+	---Purpose: 
+
+uses
+    Transient    from Standard,
+    HAsciiString from TCollection,
+    AsciiString  from TCollection
+    
+
+is
+
+    Create returns HandleTable from WOKTclTools;
+
+    Create(aprefix : CString from Standard; nbinit : Integer from Standard = 20 )
+    	returns HandleTable from WOKTclTools;
+
+ 
+    Init(me:out; aprefix : CString from Standard; nbinit : Integer from Standard = 20 );
+    
+    Prefix(me)
+    ---C++: return const &
+        returns AsciiString from TCollection;
+
+    AddHandle(me:out; ahandle : TableItem)
+    	returns HAsciiString from TCollection;
+
+    RemoveHandle(me:out; aname : HAsciiString from TCollection);
+
+    GetHandle(me; aname : HAsciiString from TCollection)
+    ---C++: return const &
+       	returns TableItem;
+	
+    GetHandle(me; aname : CString from Standard)
+    ---C++: return const &
+       	returns TableItem;
+
+fields
+
+    mybase   : Address     from Standard;
+    myprefix : AsciiString from TCollection;
+
+end HandleTable;

@@ -1,0 +1,316 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>System Environment Variables</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; background-color:Transparent; }
+h3.whs2 { background-color:Transparent; }
+p.whs3 { margin-top:0; margin-bottom:0; }
+p.whs4 { margin-top:0.00pt; }
+table.whs5 { width:656px; border-spacing:0px; }
+tr.whs6 { x-cell-content-align:top; }
+td.whs7 { width:100.00%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt;background-color:white; }";
+  strNSS += "h3.whs2 {background-color:white; }";
+  strNSS += "p.whs3 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs4 {margin-top:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Welcome to Open CASCADE Technology\nOpen CASCADE Technology Installation\nSystem Environment Variables");
+addAvenueInfo("Open CASCADE installation","welcome_to_open_cascade_technology/open_cascade_installation/open_cascade_installation.htm","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>System Environment Variables</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">To run any Open CASCADE Technology 
+ application you need to set the environment variables.</p>
+
+<h3 class="whs2">On &nbsp;Windows</h3>
+
+<p class="whs1">You can define the environment 
+ variables with env.bat script located in the OpenCACADE&lt;version_number&gt;/ros 
+ folder.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="background-color: Transparent;">The 
+ additional environment settings necessary for compiling OCCT libraries 
+ and samples by Microsoft Visual Studio can be set using script env_build.bat 
+ located in the same folder. This script accepts two arguments: the version 
+ of Visual Studio (vc8, vc9, or vc10) to be used, and the architecture 
+ (win32 or win64). You might need to edit this script to correct the paths 
+ to third-party libraries if they are installed on your system in a non-default 
+ location.</span></p>
+
+<p class="whs1">Script msvc.bat can be used 
+ with the same arguments for immediate launch of Visual Studio for (re)compiling 
+ OCCT.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<h3 class="whs2">On Unix</h3>
+
+<p class="whs1">You can define the environment 
+ variables with env.ksh or env.csh script located in the OpenCACADE&lt;version_number&gt;/ros 
+ folder of the source package.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<h2>Description of system variables:</h2>
+
+<p class="whs4">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="656" class="whs5">
+
+<tr valign="top" class="whs6">
+<td width="100%" class="whs7">
+<p class="whs4"><font style="font-weight: bold;">CASROOT 
+ </font>is used to define the root directory of Open CASCADE Technology;<font 
+ style="font-weight: bold;"><br>
+PATH</font> is required to define the path to OCCT binaries and 3rdparty 
+ folder;<font style="font-weight: bold;"><br>
+LD_LIBRARY_PATH</font> is required to define the path to OCCT libraries 
+ (on UNIX platforms only);</p>
+&nbsp; 
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_OPT</B></span> 
+ if set to 1 (default), memory manager performs optimizations as described 
+ below; if set to 2, Intel ® TBB optimized memory manager is used; if 0, 
+ every memory block is allocated in C memory heap directly (via malloc() 
+ and free() functions). In the latter case, all other options except MMGT_CLEAR 
+ &nbsp;and MMGT_REENTRANT 
+ are ignored;</p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_CLEAR</B></span> 
+ if set to 1 (default), every allocated memory block is cleared by <span 
+ style="margin-top: 0.00pt;">zeros; if set to 0, memory block is returned 
+ as it is;</span></p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_CELLSIZE</B></span> 
+ defines the maximal size of blocks allocated in large pools of <span style="margin-top: 0.00pt;">memory. 
+ Default is 200;</span></p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_NBPAGES</B></span> 
+ defines the size of memory chunks allocated for small <span style="margin-top: 0.00pt;">blocks 
+ in pages (operating-system dependent). Default is 10000;</span></p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_THRESHOLD</B></span> 
+ defines the maximal size of blocks that are recycled <span style="margin-top: 0.00pt;">internally 
+ instead of being returned to the heap. Default is 40000;</span></p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_MMAP</B></span> 
+ when set to 1 (default), large memory blocks are allocated using <span 
+ style="margin-top: 0.00pt;">memory mapping functions of the operating 
+ system; if set to 0, they will be allocated in the C heap by malloc();</span></p>
+<p class="whs4"><span style="font-weight: bold;"><B>MMGT_REENTRANT</B></span> 
+ when set to 1, all calls to optimized memory manager will be secured against 
+ possible simultaneous access from different execution threads. This variable 
+ should be set in any multithreaded application that uses optimized memory 
+ manager (MMGT_OPT=1) and has more than one thread potentially calling 
+ OCCT functions. Default is 0;</p>
+<p class="whs4"><span style="font-weight: bold;"><B>Special 
+ note</B></span>: for applications that use OCCT memory manager from more than 
+ one thread, on multiprocessor hardware, it is recommended to use options 
+ MMGT_OPT=2 and MMGT_REENTRANT=1.</p>
+<p class="whs4">&nbsp;</p>
+<p class="whs4"><font style="font-weight: bold;">CSF_LANGUAGE</font> 
+ is required to define the default language of messages;<font style="font-weight: bold;"><br>
+CSF_EXCEPTION_PROMPT</font> – if defined and set to 1 then a diagnostic 
+ message is displayed in case of an exception;<font style="font-weight: bold;"><br>
+CSF_MDTVFontDirectory</font> accesses the fonts that can be used in OCCT;<font 
+ style="font-weight: bold;"><br>
+CSF_MDTVTexturesDirectory</font> defines the directory for available textures 
+ when using texture mapping;<font style="font-weight: bold;"><br>
+CSF_UnitsDefinition</font> and <font style="font-weight: bold;">CSF_UnitsLexicon</font> 
+ are required by programs considering units;<font style="font-weight: bold;"><br>
+CSF_SHMessage</font> is required in order to define the path to the messages 
+ file for ShapeHealing;<font style="font-weight: bold;"><br>
+CSF_XSMessage</font> is required in order to define the path to the messages 
+ file for STEP and IGES translators;<font style="font-weight: bold;"><br>
+CSF_StandardDefaults</font> and <font style="font-weight: bold;">CSF_PluginDefaults</font> 
+ are required in order to maintain CASCADE Persistence mechanism to make 
+ possible any open/save operations with OCAF documents;</p>
+<p class="whs4"><font style="font-weight: bold;">CSF_StandardLiteDefaults</font> 
+ is required in order to maintain OCCT Persistence mechanism to make possible 
+ any open/save operations with Lite OCAF documents;<font style="font-weight: bold;"><br>
+CSF_XCAFDefaults</font> &nbsp;any 
+ open/save operations for XDE documents;<font style="font-weight: bold;"><br>
+CSF_GraphicShr</font> is required to define the path to the TKOpenGl library;<font 
+ style="font-weight: bold;"><br>
+CSF_IGESDefaults</font> and <font style="font-weight: bold;">CSF_STEPDefaults</font> 
+ are required for IGES and STEP translators correspondingly in order to 
+ define the path to the resource files;</p>
+<p class="whs4"><font style="font-weight: bold;">CSF_XmlOcafResource 
+ - </font>is required in order to set the path to XSD resources, which 
+ defines XML grammar.</p>
+<p class="whs4">As part of XML persistence support, these 
+ definitions can be used by end users in XML validators or editors, together 
+ with persistent XmlOcaf documents;</p>
+<p class="whs4"><font style="font-weight: bold;">CSF_MIGRATION_TYPES<span 
+ style="font-weight: normal;"> is required in order to read documents that 
+ contain old data types, such as TDataStd_Shape.</span> </font></p>
+<p class="whs4"><font style="font-weight: bold;">TCLLIBPATH, 
+ TCL_LIBRARY, TK_LIBRARY</font> and <font style="font-weight: bold;">TIX_LIBRARY</font> 
+ are required to allow work with DRAW and WOK; <font style="font-weight: bold;"><br>
+<br>
+Example:<br>
+Windows platform</font><br>
+The env.bat script is located in the OpenCACADE&lt;version_number&gt;/ros 
+ folder.<br>
+<br>
+set CASROOT=V:\OpenCASCADE&lt;version_number&gt;\ros</p>
+<p class="whs4">set PATH=%CASROOT%\win32\vc8\bin;%CASROOT%\..\3rdparty\win32\tcltk\bin; 
+ ;%CASROOT%\..\3rdparty\win32\tbb\bin;%CASROOT%\..\3rdparty\win32\gl2ps\bin;</p>
+<p class="whs4">%CASROOT%\..\3rdparty\win32\ftgl\bin;%CASROOT%\..\3rdparty\win32\ftgl\freeimage;%PATH%</p>
+&nbsp; 
+<p class="whs4">set CSF_LANGUAGE=us<br>
+set MMGT_CLEAR=1<br>
+set CSF_EXCEPTION_PROMPT=1<br>
+set CSF_MDTVFontDirectory=%CASROOT%\src\FontMFT<br>
+set CSF_MDTVTexturesDirectory=%CASROOT%\src\Textures<br>
+set CSF_UnitsDefinition=%CASROOT%\src\UnitsAPI\Units.dat<br>
+set CSF_UnitsLexicon=%CASROOT%\src\UnitsAPI\Lexi_Expr.dat<br>
+set CSF_SHMessage=%CASROOT%\src\SHMessage<br>
+set CSF_XSMessage=%CASROOT%\src\XSMessage<br>
+set CSF_StandardDefaults=%CASROOT%\src\StdResource<br>
+set CSF_PluginDefaults=%CASROOT%\src\StdResource</p>
+<p class="whs4">set CSF_XCAFDefaults=%CASROOT%\src\StdResource<br>
+set CSF_GraphicShr=%CASROOT%\win32\vc8\bin\TKOpenGl.dll<br>
+set CSF_IGESDefaults=%CASROOT%\src\XSTEPResource<br>
+set CSF_STEPDefaults=%CASROOT%\src\XSTEPResource<br>
+set CSF_MIGRATION_TYPES=%CASROOT%\src\StdResource\MigrationSheet.txt </p>
+&nbsp; 
+<p class="whs4"><font style="font-weight: bold;">Example:<br>
+Unix platform</font><br>
+The env.csh and env.ksh scripts are located in the OpenCACADE&lt;version_number&gt;/ 
+ folder.<br>
+<br>
+setenv CASROOT /dn03/OS/OCC/OpenCASCADE-&lt;version_number&gt;/ros</p>
+<p class="whs4">set OS_NAME=`uname`</p>
+<p class="whs4">if ( $?PATH ) then</p>
+<p class="whs4">setenv PATH $CASROOT/../3rdparty/$OS_NAME/tcltk/bin:$CASROOT/../3rdparty/$OS_NAME/tbb/bin:</p>
+<p class="whs4">$CASROOT/../3rdparty/$OS_NAME/gl2ps/bin:$CASROOT/../3rdparty/$OS_NAME 
+ /ftgl/bin:</p>
+<p class="whs4">CASROOT/../3rdparty/$OS_NAME /freeimage/bin:$CASROOT/$OS_NAME/bin:$PATH</p>
+<p class="whs4">else</p>
+<p class="whs4">setenv PATH $CASROOT/../3rdparty/$OS_NAME/tcltk/bin:$CASROOT/../3rdparty/$OS_NAME/tbb/bin:</p>
+<p class="whs4">$CASROOT/../3rdparty/$OS_NAME/gl2ps/bin:$CASROOT/../3rdparty/$OS_NAME 
+ /ftgl/bin:</p>
+<p class="whs4">CASROOT/../3rdparty/$OS_NAME /freeimage/bin:$CASROOT/$OS_NAME/bin</p>
+<p class="whs4">endif</p>
+<p class="whs4">if ( $?LD_LIBRARY_PATH ) then</p>
+<p class="whs4">setenv LD_LIBRARY_PATH $CASROOT/../3rdparty/$OS_NAME/tcltk/lib:</p>
+<p class="whs4">$CASROOT/../3rdparty/$OS_NAME/tbb/lib:$CASROOT/../3rdparty/$OS_NAME/gl2ps/lib:</p>
+<p class="whs4">&nbsp;$CASROOT/../3rdparty/$OS_NAME 
+ /ftgl/lib: CASROOT/../3rdparty/$OS_NAME /freeimage/lib:$CASROOT/$OS_NAME/lib:$ 
+ LD_LIBRARY_PATH</p>
+<p class="whs4">else</p>
+<p class="whs4">setenv LD_LIBRARY_PATH $CASROOT/../3rdparty/$OS_NAME/tcltk/lib:</p>
+<p class="whs4">$CASROOT/../3rdparty/$OS_NAME/tbb/lib:$CASROOT/../3rdparty/$OS_NAME/gl2ps/lib:</p>
+<p class="whs4">&nbsp;$CASROOT/../3rdparty/$OS_NAME 
+ /ftgl/lib: CASROOT/../3rdparty/$OS_NAME /freeimage/lib:$CASROOT/$OS_NAME/lib</p>
+<p class="whs4">endif<br>
+setenv CSF_MDTVFontDirectory $CASROOT/src/FontMFT<br>
+setenv CSF_LANGUAGE us<br>
+setenv MMGT_CLEAR 1<br>
+setenv CSF_SHMessage $CASROOT/src/SHMessage<br>
+setenv CSF_XSMessage $CASROOT/src/XSMessage<br>
+setenv CSF_MDTVTexturesDirectory $CASROOT/src/Textures<br>
+setenv CSF_StandardDefaults $CASROOT/src/StdResource<br>
+setenv CSF_PluginDefaults $CASROOT/src/XCAFResources<br>
+setenv CSF_XCAFDefaults $CASROOT/src/XCAFResources<br>
+setenv CSF_GraphicShr $CASROOT/$OS_NAME/lib/libTKOpenGl.so<br>
+setenv CSF_UnitsLexicon $CASROOT/src/UnitsAPI/Lexi_Expr.dat<br>
+setenv CSF_UnitsDefinition $CASROOT/src/UnitsAPI/Units.dat<br>
+setenv CSF_EXCEPTION_PROMPT 1<br>
+setenv CSF_IGESDefaults $CASROOT/src/XSTEPResource<br>
+setenv CSF_STEPDefaults $CASROOT/src/XSTEPResource<br>
+setenv CSF_MIGRATION_TYPES $CASROOT/src/StdResource/MigrationSheet.txt</p>
+<p class="whs4">setenv TCLHOME $CASROOT/../3rdparty/$OS_NAME/tcltk<br>
+setenv TCLLIBPATH $TCLHOME/lib</td></tr>
+</table>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

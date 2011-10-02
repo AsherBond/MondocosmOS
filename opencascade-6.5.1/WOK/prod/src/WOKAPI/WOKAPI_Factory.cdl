@@ -1,0 +1,73 @@
+-- File:	WOKAPI_Factory.cdl
+-- Created:	Tue Aug  1 15:54:41 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Factory   from WOKAPI 
+inherits Entity from WOKAPI
+
+	---Purpose: 
+
+uses
+
+    Session                 from WOKAPI,
+    Warehouse               from WOKAPI,
+    Workshop                from WOKAPI,
+    SequenceOfWorkshop      from WOKAPI,
+    SequenceOfEntity        from WOKAPI,
+    Factory                 from WOKernel,
+    HSequenceOfParamItem    from WOKUtils,
+    ArgTable                from WOKTools,
+    Return                  from WOKTools,
+    HSequenceOfDefine       from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd    
+    
+is
+    
+    Create returns Factory from WOKAPI;
+    
+    Create(aent : Entity from WOKAPI)
+    	returns Factory from WOKAPI;
+
+    Create(asession       : Session from WOKAPI;
+    	   aname          : HAsciiString from TCollection;
+    	   verbose,getit  : Boolean from Standard = Standard_True)
+	returns Factory from WOKAPI;
+
+    
+    BuildParameters(me:out; asession    : Session from WOKAPI;
+    	                    apath       : HAsciiString from TCollection; 
+		            defines     : HSequenceOfDefine from WOKTools;
+    	                    usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+    Build(me:out; asession    : Session from WOKAPI;
+    	          apath       : HAsciiString from TCollection; 
+		  defines     : HSequenceOfDefine from WOKTools;
+    	          usedefaults : Boolean from Standard)
+    	returns Boolean from Standard;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;
+
+    IsValid(me) 
+    	returns Boolean from Standard
+	is redefined;
+
+    NestedEntities(me; aseq : out SequenceOfEntity from WOKAPI)
+    	returns Boolean from Standard
+    	is redefined;
+
+    Workshops(me; shopseq : out SequenceOfWorkshop from WOKAPI);
+
+    Warehouse(me) 
+    	returns Warehouse from WOKAPI;
+    
+end Factory;
+
+
+

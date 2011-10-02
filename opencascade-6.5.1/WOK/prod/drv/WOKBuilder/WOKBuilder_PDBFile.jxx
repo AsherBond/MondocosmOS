@@ -1,0 +1,6 @@
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif
+#ifndef _WOKBuilder_PDBFile_HeaderFile
+#include <WOKBuilder_PDBFile.hxx>
+#endif

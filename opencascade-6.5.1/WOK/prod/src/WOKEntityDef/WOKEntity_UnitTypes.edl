@@ -1,0 +1,68 @@
+-- File:	WOKEntity_UnitTypes.edl
+-- Author:	Jean GAUTIER
+-- History:	Tue Jun 10 16:26:40 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKEntity_UnitTypes_EDL) then
+@set %WOKEntity_UnitTypes_EDL = "";
+
+ 
+--- Definition des Types d'uds dans un WB
+
+@set    %WOKEntity_UnitTypes  = " package schema interface client engine executable nocdlpack toolkit ";
+@string %WOKEntity_UnitTypes += " resource documentation ccl frontal delivery idl server jini module";
+
+
+@set %WOKEntity_package_Key              = "p";
+@set %WOKEntity_package_LongDescr        = "Set of CDL classes";
+
+@set %WOKEntity_schema_Key               = "s";
+@set %WOKEntity_schema_LongDescr         = "Data Base schema";
+
+@set %WOKEntity_interface_Key            = "i";
+@set %WOKEntity_interface_LongDescr      = "CDL exported types";
+
+@set %WOKEntity_client_Key               = "C";
+@set %WOKEntity_client_LongDescr         = "C++ client for an engine";
+
+@set %WOKEntity_engine_Key               = "e";
+@set %WOKEntity_engine_LongDescr         = "MDTV Server ";
+
+@set %WOKEntity_executable_Key           = "x";
+@set %WOKEntity_executable_LongDescr     = "Produces executables";
+
+@set %WOKEntity_nocdlpack_Key            = "n";
+@set %WOKEntity_nocdlpack_LongDescr      = "C/C++ files";
+
+@set %WOKEntity_toolkit_Key              = "t";
+@set %WOKEntity_toolkit_LongDescr        = "Builds a shared object for a set of devunits ";
+
+@set %WOKEntity_resource_Key             = "r";
+@set %WOKEntity_resource_LongDescr       = "Set of files";
+
+@set %WOKEntity_documentation_Key        = "O";
+@set %WOKEntity_documentation_LongDescr  = "Documentation files";
+
+@set %WOKEntity_ccl_Key                  = "c";
+@set %WOKEntity_ccl_LongDescr            = "Cas.Cade command language file set";
+
+@set %WOKEntity_frontal_Key              = "f";
+@set %WOKEntity_frontal_LongDescr        = "Builds CCL core file";
+
+@set %WOKEntity_delivery_Key             = "d";
+@set %WOKEntity_delivery_LongDescr       = "Parcel contruction unit";
+
+@set %WOKEntity_idl_Key                  = "I";
+@set %WOKEntity_idl_LongDescr            = "IDL unit describing interfaces";
+
+@set %WOKEntity_server_Key               = "S";
+@set %WOKEntity_server_LongDescr         = "Corba compliant server";
+
+@set %WOKEntity_jini_Key               = "j";
+@set %WOKEntity_jini_LongDescr         = "Java Native Interface";
+
+@set %WOKEntity_module_Key               = "m";
+@set %WOKEntity_module_LongDescr         = "Wok Modules";
+
+
+@endif;

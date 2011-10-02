@@ -1,0 +1,19 @@
+-- File:	WOKSteps_schema_OBJS.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 16:00:37 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_schema_OBJS_EDL) then
+@set %WOKSteps_schema_OBJS_EDL = "";
+
+    @string %WOKSteps_SchXcppGroup = " xcpp.sch ";   
+    @string %WOKSteps_SchXcppGroup += " xcpp.ossg ";
+    @set %WOKSteps_xcpp_sch  = "WOKOBJS_SchExtract(xcpp.fill)";
+    @set %WOKSteps_xcpp_ossg = "WOKOBJS_SchGen(xcpp.sch)";
+
+    @set    %WOKSteps_ObjGroup  = " obj.comp ";
+    @set %WOKSteps_obj_comp = "WOKStep_Compile(src,xcpp.ossg)";
+    @set %WOKSteps_obj_lib   = "WOKStep_DynamicLibrary(obj.comp)";
+
+
+@endif;

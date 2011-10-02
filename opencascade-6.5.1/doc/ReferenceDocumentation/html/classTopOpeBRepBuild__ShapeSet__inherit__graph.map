@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classTopOpeBRepBuild__ShellFaceSet.html" title="a bound is a shell, a boundelement is a face. &#160;&#160;The ShapeSet stores : &#160;a list of..." alt="" coords="5,83,240,112"/>
+<area shape="rect" id="node5" href="$classTopOpeBRepBuild__WireEdgeSet.html" title="a bound is a wire, a boundelement is an edge. &#160;&#160;The ShapeSet stores : &#160;a list of..." alt="" coords="264,83,499,112"/>
+</map>

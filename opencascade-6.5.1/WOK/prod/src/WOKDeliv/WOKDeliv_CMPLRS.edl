@@ -1,0 +1,19 @@
+-- File:	WOKDeliv_CMPLRS.edl
+-- Author:	Prestataire Pascal BABIN
+-- History:	Wed Jan 22 09:26:33 1997	Prestataire Pascal BABIN	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKDeliv_CMPLRS_EDL) then
+@set %WOKDeliv_CMPLRS_EDL = "";
+
+@if ( %Station == "hp" ) then
+  @string %CMPLRS_C_Options = %CMPLRS_C_Options " -Ae";
+@endif;
+
+@if ( %Station == "lin" ) then
+   @if ( %DebugMode == "False" ) then
+      @set %CMPLRS_C_ModeOpt = " -O2 -DNo_Exception ";
+    @endif;
+@endif;
+
+@endif;

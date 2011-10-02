@@ -1,0 +1,36 @@
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _WOKMake_HSequenceOfStepOption_HeaderFile
+#include <WOKMake_HSequenceOfStepOption.hxx>
+#endif
+#ifndef _WOKAPI_Workbench_HeaderFile
+#include <WOKAPI_Workbench.hxx>
+#endif
+#ifndef _WOKAPI_Unit_HeaderFile
+#include <WOKAPI_Unit.hxx>
+#endif
+#ifndef _WOKAPI_SequenceOfUnit_HeaderFile
+#include <WOKAPI_SequenceOfUnit.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_SequenceOfHAsciiString_HeaderFile
+#include <TColStd_SequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKTools_HSequenceOfDefine_HeaderFile
+#include <WOKTools_HSequenceOfDefine.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKAPI_SequenceOfMakeStep_HeaderFile
+#include <WOKAPI_SequenceOfMakeStep.hxx>
+#endif
+#ifndef _WOKMake_Step_HeaderFile
+#include <WOKMake_Step.hxx>
+#endif
+#ifndef _WOKAPI_BuildProcess_HeaderFile
+#include <WOKAPI_BuildProcess.hxx>
+#endif

@@ -1,0 +1,46 @@
+-- File:	WOKUnix_FDescr.cdl
+-- Created:	Thu May  4 16:55:43 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class FDescr from WOKUnix
+inherits File from OSD
+uses
+    Path from OSD,
+    HAsciiString from TCollection,
+    AsciiString from TCollection
+    
+raises
+    OSDError from OSD
+is
+    Create returns FDescr from WOKUnix;
+    Create( afd : Integer from Standard ) returns FDescr from WOKUnix; 
+    Create( afd : Integer from Standard; apath : HAsciiString from TCollection) returns FDescr from WOKUnix;
+    Create( apath : HAsciiString from TCollection) returns FDescr from WOKUnix;
+
+    EmptyAndOpen(me: in out);
+
+    BuildTemporary(me: in out);
+    BuildTemporary(me: in out ; apath : AsciiString from TCollection);    
+    BuildNamedPipe(me: in out) returns FDescr from WOKUnix;
+    
+    GetNbToRead(me : in out) returns Integer from Standard;
+    SetUnBuffered(me : in out);
+    SetNonBlock(me : in out);
+    Flush(me : in out);
+    Dup(me : in out);
+    FileNo(me) returns Integer from Standard;
+    GetSize(me:in out) returns Integer from Standard;
+    Name(me) returns HAsciiString from TCollection;
+
+    ReadLine(me:out) returns HAsciiString from TCollection;
+
+    Pipe(myclass; anin : out FDescr from WOKUnix; anout : out FDescr from WOKUnix) 
+    	raises OSDError from OSD;
+
+    Stdin(myclass)  returns FDescr from WOKUnix;
+    Stdout(myclass) returns FDescr from WOKUnix;
+    Stderr(myclass) returns FDescr from WOKUnix;
+    
+end;

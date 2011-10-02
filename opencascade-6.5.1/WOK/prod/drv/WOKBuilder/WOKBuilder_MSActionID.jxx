@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKBuilder_MSAction_HeaderFile
+#include <WOKBuilder_MSAction.hxx>
+#endif
+#ifndef _WOKBuilder_MSActionID_HeaderFile
+#include <WOKBuilder_MSActionID.hxx>
+#endif

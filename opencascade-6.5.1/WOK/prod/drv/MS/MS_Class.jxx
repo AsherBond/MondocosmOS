@@ -1,0 +1,27 @@
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _MS_HSequenceOfField_HeaderFile
+#include <MS_HSequenceOfField.hxx>
+#endif
+#ifndef _MS_HSequenceOfMemberMet_HeaderFile
+#include <MS_HSequenceOfMemberMet.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_HSequenceOfClass_HeaderFile
+#include <MS_HSequenceOfClass.hxx>
+#endif
+#ifndef _MS_HSequenceOfType_HeaderFile
+#include <MS_HSequenceOfType.hxx>
+#endif
+#ifndef _MS_Field_HeaderFile
+#include <MS_Field.hxx>
+#endif
+#ifndef _MS_MemberMet_HeaderFile
+#include <MS_MemberMet.hxx>
+#endif
+#ifndef _MS_Class_HeaderFile
+#include <MS_Class.hxx>
+#endif

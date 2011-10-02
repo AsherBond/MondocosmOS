@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _OSD_OSDError_HeaderFile
+#include <OSD_OSDError.hxx>
+#endif
+#ifndef _OSD_Path_HeaderFile
+#include <OSD_Path.hxx>
+#endif
+#ifndef _WOKUtils_Path_HeaderFile
+#include <WOKUtils_Path.hxx>
+#endif

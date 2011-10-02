@@ -1,0 +1,142 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>State of a Point in a Solid</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { background-color:#ffffff; }
+h2.whs2 { background-color:#ffffff; }
+p.whs3 { font-style:italic; background-color:#ffffff; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nExamples\nState of a Point");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>State of a Point </p>
+
+<h2>State of a Point on a Face</h2>
+
+<p class="whs1">To compute the state of a point on 
+ a face:</p>
+
+<p class="whs1">Use <span style="font-style: italic;"><I>BRepTools::Pnt</I></span> 
+ to get the point from your vertex.</p>
+
+<p class="whs1">Your shape must be of the <span style="font-style: italic;"><I>TopoDS_Shape</I></span> 
+ type.</p>
+
+<p class="whs1">If it is, you can use <span style="font-style: italic;"><I>BRepTopAdaptor_FClass2d</I></span> 
+ class. For example, you can use:</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRepTopAdaptor_FClass2d::Load</I></span> 
+ (to load the solid )</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRepTopAdaptor_FClass2d::Perform</I></span> 
+ (to compute the state of the point )</p>
+
+<p class="whs1">BRepTopAdaptor_FClass2d::State (to 
+ get the TopAbs_State). </p>
+
+<h2 class="whs2">&nbsp;</h2>
+
+<h2 class="whs2">State of a Point in a Solid</h2>
+
+<p class="whs1">To compute the state of a point in 
+ a solid:</p>
+
+<p class="whs1">Use <span style="font-style: italic;"><I>BRepTools::Pnt</I></span> 
+ is used to get the point from your vertex.</p>
+
+<p class="whs1">Your shape must be of the <span style="font-style: italic;"><I>TopoDS_Solid</I></span> 
+ type.</p>
+
+<p class="whs1">If it is, you can use the <span style="font-style: italic;"><I>BRepClass3d_SolidClassifier</I></span> 
+ class. For example, you can use:</p>
+
+<p class="whs3">BRepClass3d_SolidClassifier::Load 
+ (to load the solid)</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRepClass3d_SolidClassifier::Perform</I></span> 
+ (to compute the state of the point)</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRepClass3d_SolidClassifier::State</I></span> 
+ (to get a TopAbs_State object)</p>
+
+<p class="whs1"><span style="font-style: italic;"><I>BRepClass3d_SolidClassifier</I></span> 
+ inherits <span style="font-style: italic;"><I>BRepclass3d_SClassifier</I></span></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

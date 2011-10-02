@@ -1,0 +1,81 @@
+-- DEFAULT.edl
+--
+--
+@ifnotdefined ( %DEFAULT_EDL) then
+@set %DEFAULT_EDL = "";
+
+@template DEFAULT_Home ( %Entity ) is
+$/dp_xx/%Entity\^
+@end;
+
+@template DEFAULT_Adm  ( %Entity_Home ) is
+$%Entity_Home/adm\^
+@end;
+
+@template DEFAULT_Warehouse ( %Entity ) is
+$BAG\^
+@end;
+
+@template DEFAULT_Stations ( %Entity ) is
+$sun sil lin hp aix wnt mac bsd\^
+@end;
+
+@template DEFAULT_DBMSystems ( %Entity ) is
+$ DFLT \^
+@end;
+
+@template DEFAULT_ParcelConfig ( %Entity ) is
+$ \^
+@end;
+
+@template DEFAULT_Src  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_Drv  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_sun  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_sil  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_lin  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_hp  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_aix  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_wnt  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_mac  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_DFLT_bsd  ( %Entity_Home ) is
+$%Entity_Home\^
+@end;
+
+@template DEFAULT_WOKVersion ( %WOK_VERSION ) is
+$%WOK_VERSION\^
+@end;
+
+
+
+@endif;

@@ -1,0 +1,123 @@
+-- File:	WOKTools_IndexedMap.cdl
+-- Created:	Mon Jun 17 17:12:20 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+generic class IndexedMap from WOKTools (TheKey as any;
+    	    	    	    	           Hasher as any) -- as MapHasher(TheKey)
+inherits BasicMap from WOKTools
+
+	---Purpose: An indexed map is used to  store  keys and to bind
+	-- an index to them.  Each new key stored in  the map
+	-- gets an index.  Index are incremented  as keys are
+	-- stored in the map. A key can be found by the index
+	-- and an index by the  key. No key  but the last can
+	-- be  removed so the  indices are  in the range  1..Extent.
+	-- See  the  class   Map   from WOKTools   for   a
+	-- discussion about the number of buckets.
+
+raises
+    DomainError from Standard,
+    OutOfRange  from Standard
+
+is
+
+
+    Create(NbBuckets : Integer = 1) returns IndexedMap from WOKTools;
+	---Purpose: Creates   a Map with  <NbBuckets> buckets. Without
+	-- arguments the map is automatically dimensioned.
+    
+
+    Create(Other : IndexedMap from WOKTools)
+    returns IndexedMap from WOKTools
+	---Purpose: As  copying  Map  is an expensive  operation it is
+	-- incorrect  to  do  it implicitly. This constructor
+	-- will raise an  error if the Map  is not  empty. To
+	-- copy the content of a  Map use the  Assign  method (operator =).
+    raises DomainError from Standard
+    is private;
+    
+    
+    Assign(me : in out; Other : IndexedMap from WOKTools) 
+    returns IndexedMap from WOKTools
+	---Level: Public
+	---Purpose: Replace the content of this map by  the content of
+	-- the map <Other>.
+	---C++: alias operator =
+	---C++: return &
+    is static;
+    
+    ReSize(me : in out; NbBuckets : Integer)
+	---Level: Public
+	---Purpose: Changes the  number    of  buckets of  <me>  to be
+	-- <NbBuckets>. The keys  already  stored in  the map are kept.
+    is static;
+    
+    Clear(me : in out)
+	---Level: Public
+	---Purpose: Removes all keys in the map.
+	---C++: alias ~
+    is static;
+    
+    Add(me : in out; K : TheKey) returns Integer
+	---Level: Public
+	---Purpose: Adds  the Key <K> to   the Map <me>.  Returns  the
+	-- index  of the Key.  The key is new  in the map  if Extent 
+	-- has been incremented.
+    is static;
+    
+    Substitute(me : in out; I : Integer; K : TheKey)
+	---Level: Public
+	---Purpose: Substitutes the Key  at index  <I>  with <K>. 
+	-- <I> must be a valid index, <K> must be a new key.
+        ---Trigger: Raises OutOfRange if I < 1 or I > Extent
+        -- Raises DomainError if Contains(K)
+    raises
+    	OutOfRange  from Standard,  
+	DomainError from Standard   
+    is static;
+    
+    RemoveLast(me : in out)
+	---Level: Public
+	---Purpose: Removes  the last key entered  in the map, i.e the
+	-- key of index Extent().
+        ---Trigger: Raises OutOfRange if Extent() == 0
+    raises
+    	OutOfRange  from Standard 
+    is static;
+
+    Contains(me; K : TheKey) returns Boolean
+	---Level: Public
+	---Purpose: Returns True if the key <K>  is stored  in the map <me>. 
+    is static;
+    
+    FindNodeFromIndex(me; I : Integer) returns Address from Standard
+	---Level: Public
+	---Purpose: Returns the Key of index <I>.
+        ---Trigger: Raises OutOfRange if I < 1 or I > Extent
+    raises OutOfRange from Standard 
+    is static private;
+    
+    FindKey(me; I : Integer) returns any TheKey
+	---Level: Public
+	---Purpose: Returns the Key of index <I>.
+        ---Trigger: Raises OutOfRange if I < 1 or I > Extent
+    	---C++: alias operator ()
+	---C++: return const &
+    raises OutOfRange from Standard 
+    is static;
+    
+    FindNodeFromKey(me; K : TheKey) returns Address from Standard
+	---Level: Public
+	---Purpose: Returns the Index of K
+    raises OutOfRange from Standard 
+    is static private;
+    
+    FindIndex(me; K : TheKey) returns Integer
+	---Level: Public
+	---Purpose: Returns the index of the key <K> Returns 0 if K is
+	-- not in the map.
+    is static;
+    
+end IndexedMap;

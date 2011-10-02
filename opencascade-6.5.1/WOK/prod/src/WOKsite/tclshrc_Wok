@@ -1,0 +1,178 @@
+;#
+;# This is a template file for a Tcl/Tk user startup file.
+;#
+;# To use it you must :
+;#
+;# On Unix/Linux system, place or invoke it in a file named .wishrc on your
+;# home directory. Wish, the Tcl/Tk windowing shell will automatically invoke
+;# this file.
+;#
+;# On Windows system, place this file in the directory pointed to by the variable HOME.
+;# Name it tclshrc.tcl or wishrc.tcl depending on the shell you want to use.
+;# You can then click on the Tclsh or Wish icon to start Wok.
+;#
+;# This file assumes that :
+;#
+;# On Linux platforms the variable LD_LIBRARY_PATH is setted to the name
+;# of the directory where Wok shareable resides. For example if you have 
+;# downloaded Wok on /home/me/wok-C40 of a Linux system, you must set 
+;# LD_LIBRARY_PATH to /home/me/wok-C40/lib/lin because wok shareable resides
+;# in this directory. See also the INSTALL file.
+;#
+;# In the same way:
+;#
+;# On SunOS platforms you set LD_LIBRARY_PATH to /home/me/wok-C40/lib/sun.
+;# On Windows system you set the variable PATH to  C:\home\me\wok-C40\lib\lin.
+;#
+;# The following operation are done :
+;#
+;# 1. Traversing the LD_LIBRARY_PATH or PATH variable we find where you have installed
+;#    Wok.
+;# 2. We can :
+;#       a) Compute the location of EDL files Wok needs for working.
+;#       b) Modify the Tcl variable auto_path in order to add our packages: Wok and Ms
+;#       c) In the case of a first installation, setup the directory wok_entities where
+;#          Wok will manage to create its entities. 
+;# 
+;# IMPORTANT RESTRICTIONS:
+;# 
+;# The purpose of this file is to provide a simple and uniform way of using Wok on Unix/Linux
+;# and on Windows. Be aware that if you use other Tcl tools, this can be conflicting.
+;# In this case you can make up a Tcl proc from this file and invoke it at the moment you 
+;# choose.
+;#
+global env tcl_platform
+
+if { "$tcl_platform(platform)" == "unix" } {
+    if { "$tcl_platform(os)" == "HP-UX" } {
+	set ldpathvar SHLIB_PATH
+    } elseif { "$tcl_platform(os)" == "Darwin" } {
+	set ldpathvar DYLD_LIBRARY_PATH
+    } else {
+	set ldpathvar LD_LIBRARY_PATH
+    }
+    if { ![info exists env($ldpathvar)] } {
+        puts stderr "You must set $ldpathvar to point where you have installed Wok"
+        exit
+    }
+}
+
+if { "$tcl_platform(platform)" == "windows" && ![info exists env(Path)] } {
+    puts stderr "You must set PATH to point where you have installed Wok"
+    exit
+}
+if [info exists wm] {
+    wm withdraw .
+}
+if { "$tcl_platform(platform)" == "unix" } {
+    set sprtor ":"
+    set fmtshr "lib%s.so"
+    set wrk [split $env($ldpathvar) $sprtor]
+    if { $tcl_platform(os) == "HP-UX"  } { set fmtshr "lib%s.sl" }
+    if { $tcl_platform(os) == "Darwin" } { set fmtshr "lib%s.dylib" }
+    set msgnotfound "Please check your variable $ldpathvar"
+} 
+if { "$tcl_platform(platform)" == "windows" } {
+    set sprtor ";"
+    set fmtshr "%s.dll"
+    set wrk [split $env(Path) $sprtor]
+    set msgnotfound "Please check your variable PATH"
+}
+;#
+;# Find out in wrk where wok resides. That is : where the file libTKWOK resides. 
+;# 
+set wokso [format $fmtshr TKWOK]
+foreach d $wrk {
+    if { [file exists [file join $d $wokso]] && ![info exists wokfound] } {
+	set wokfound $d
+    }
+}
+if ![info exists wokfound] {
+    puts stderr "Wok (actually $wokso) was not found in the directory(ies) $d"
+    puts stderr "$msgnotfound or check that the above directory are readable."
+    return
+}
+;#
+;# Wok's here we can set up our niche.
+;#
+set wok_library [file dirname $wokfound]
+set wok_ptfm    [file tail    $wokfound]
+;#
+;#
+lappend auto_path $wok_library 
+package require Wok
+package require Ms
+package require Tclx
+;#
+;# Where tcl and edl file of wok reside.
+;#
+set env(WOK_LIBRARY) $wok_library
+set env(WOK_LIBPATH) "${wok_library}${sprtor}[file join $wok_library $wok_ptfm]"
+set env(WOKSTATION)  $wok_ptfm
+set env(WOKHOME)     [file dirname $wok_library]
+set woksite          [file join $env(WOKHOME) site]
+;#
+;# Where the files ATLIST , DEFAULT.edl and SESSION.edl reside
+;#
+if {![info exists env(WOK_ROOTADMDIR)] } { 
+    set env(WOK_ROOTADMDIR) [file normalize $env(WOKHOME)/wok_entities]
+    if ![file exists $env(WOK_ROOTADMDIR)] {
+	if [file writable $env(WOKHOME)] {
+	    puts stderr "Creating directory $env(WOK_ROOTADMDIR) for wok entities..."
+	    if [catch { wokUtils:FILES:mkdir $env(WOK_ROOTADMDIR) } status] {
+		puts stderr "Error : $status"
+		return
+	    }
+	    if ![file exists $env(WOK_ROOTADMDIR)] {
+		return
+	    }
+	} else {
+	    puts stderr "The directory $env(WOK_ROOTADMDIR) cannot be created because $env(WOKHOME) is not writable."
+	    puts stderr "Please give write access to this directory."
+	    return
+	}
+    } else {
+	#puts stderr "Using $env(WOKHOME)/wok_entities for working entities."
+    }
+} else {
+    if ![file exists $env(WOK_ROOTADMDIR)] {
+	puts stderr "The directory $env(WOK_ROOTADMDIR) can not be found"
+	return
+    }
+    #puts stderr "Using variable WOK_ROOTADMDIR = $env(WOK_ROOTADMDIR) for working entities."    
+}
+
+;#
+;# Check if  Wok stuff is correct. If not set it up silently.
+;#
+if ![file exists  [set woksession [file join $env(WOK_ROOTADMDIR) WOKSESSION.edl]]] {
+    set str1 [wokUtils:FILES:FileToString [file join $woksite WOKSESSION.edl]]
+    regsub -all -- {TOSUBSTITUTE} "$str1" "[file normalize $env(WOK_ROOTADMDIR)]" result1
+    wokUtils:FILES:StringToFile $result1 $woksession
+    if [file exists $woksession] {
+	puts stderr "File $woksession has been created. "
+    }
+}
+;#
+;#
+;#
+if ![file exists [set default [file join $env(WOK_ROOTADMDIR) DEFAULT.edl]]] {
+    set str2 [wokUtils:FILES:FileToString [file join $woksite DEFAULT.edl]]
+    regsub -all -- {/dp_xx} "$str2" "[file normalize $env(WOK_ROOTADMDIR)]" result2
+    wokUtils:FILES:StringToFile $result2 $default
+    if [file exists $default] {
+	puts stderr "File $default has been created. "
+    }
+}
+;#
+;# Where to read/write the current working entity
+;#
+set env(WOK_SESSIONID)  $env(HOME)/.wok
+;#
+;# Every thing seems OK. Display a nice prompt:
+;#
+set tcl_prompt1 {if {[info commands wokcd] != ""}  then \
+	{puts -nonewline stdout "[wokcd]> "} else \
+	{puts -nonewline stdout "tclsh> "}}
+cd $env(WOK_ROOTADMDIR)
+wokclose -a

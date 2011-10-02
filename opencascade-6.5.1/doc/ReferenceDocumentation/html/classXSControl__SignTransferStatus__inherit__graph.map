@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIFSelect__Signature.html" title="Signature provides the basic service used by the classes &#160;&#160;SelectSignature and Counter..." alt="" coords="40,315,189,344"/>
+<area shape="rect" id="node4" href="$classInterface__SignType.html" title="Provides the basic service to get a type name, according &#160;&#160;to a norm &#160;&#160;It can be..." alt="" coords="40,237,189,267"/>
+<area shape="rect" id="node6" href="$classMoniTool__SignText.html" title="Provides the basic service to get a text which identifies &#160;&#160;an object in a context..." alt="" coords="44,160,185,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="53,83,176,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="40,5,189,35"/>
+</map>

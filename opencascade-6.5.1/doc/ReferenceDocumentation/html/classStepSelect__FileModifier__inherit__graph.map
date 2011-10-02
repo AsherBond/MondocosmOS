@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classStepSelect__FloatFormat.html" title="This class gives control out format for floatting values : &#160;&#160;ZeroSuppress or no,..." alt="" coords="7,315,193,344"/>
+<area shape="rect" id="node2" href="$classIFSelect__GeneralModifier.html" title="This class gives a frame for Actions which modify the effect &#160;&#160;of a Dispatch, i.e..." alt="" coords="5,160,195,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="39,83,161,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="25,5,175,35"/>
+</map>

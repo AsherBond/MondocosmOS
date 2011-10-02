@@ -1,0 +1,16 @@
+// File:	WOKMake_InputFile.lxx
+// Created:	Tue Jun 18 14:05:56 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsDirectInput
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_InputFile::IsDirectInput() const
+{
+  if(myattr & STEPFILE_DIRECT) return Standard_True;
+  else                         return Standard_False;
+}

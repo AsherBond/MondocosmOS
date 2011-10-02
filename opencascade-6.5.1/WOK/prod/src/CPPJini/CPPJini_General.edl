@@ -1,0 +1,165 @@
+-- File:	CPPExt_Template.edl
+-- Author:	Kernel (CLE)
+-- History:	Tue Sep 19 17:25:59 1995	Kernel	Creation
+-- Copyright:	Matra Datavision 1995
+-- Purpose:     C++ extractor
+
+@verboseoff;
+
+
+-- ==============
+-- misc templates
+-- ==============
+
+@template Include(%Interface,%IClass) is
+$import %Interface.%IClass;
+@end; 
+
+@template IncludeJCas(%IClass) is
+$import jcas.%IClass;
+@end; 
+
+@template IncludeCPlus(%IClass) is
+$#include <%IClass.hxx>
+@end; 
+
+@template Define(%DName,%DValue) is
+$#define %DName %DValue
+@end;
+
+@template Undefine(%DName) is
+$#undef %DName
+@end;
+
+@template ShortDec(%Interface,%IClass) is
+$import %Interface.%IClass;
+@end;
+
+@template ShortDecJCas(%IClass) is
+$import jcas.%IClass;
+@end;
+
+-- ==============================================
+-- Methods templates
+-- ==============================================
+
+@template ConstructorHeader(%Class,%Arguments,%ArgsInCall,%NbMet) is
+$public %Class(%Arguments) {
+$   %Class_Create_%NbMet(%ArgsInCall);
+$}
+$
+$private final native void %Class_Create_%NbMet(%Arguments);
+$
+@end;
+
+@template EmptyConstructorHeader(%Class) is
+$public %Class() {
+$}
+$
+@end;
+
+@template MethodHeader(%Virtual,%Return,%MethodName,%Arguments) is
+$native public %Virtual %Return %MethodName(%Arguments);
+@end;
+
+@template OverloadMethodHeader(%Class,%Virtual,%Return,%MethodName,%Arguments,%ArgsInCall,%NbMet,%RetMode) is
+$%Virtual public %Return %MethodName(%Arguments) {
+$   %RetMode %Class_%MethodName_%NbMet(%ArgsInCall);
+$}
+$
+$private %Virtual native %Return %Class_%MethodName_%NbMet(%Arguments);
+$
+@end;
+
+@template MethodTemplateDef(%Method,%MBody,%MVar,%MRet) is
+$%Method
+${
+$%MVar
+$jcas_Locking alock(env);
+${
+$try {
+$%MBody
+$}
+$catch (Standard_Failure) {
+$  jcas_ThrowException(env,Standard_Failure::Caught()->GetMessageString());
+$}
+$}
+$alock.Release();
+$%MRet
+$}
+$
+@end;
+
+@template MethodTemplateDefOBJS(%Method,%MBody,%MVar,%MRet) is
+$%Method
+${
+$%MVar;
+$jcas_Locking alock(env);
+${
+$OS_ESTABLISH_FAULT_HANDLER;
+$try {
+$%MBody
+$}
+$catch (Standard_Failure) {
+$  jcas_ThrowException(env,Standard_Failure::Caught()->GetMessageString());
+$}
+$OS_END_FAULT_HANDLER;
+$}
+$alock.Release(); 
+$%MRet;
+$}
+$
+@end;
+
+@template EmptyDestructorTemplate(%Class) is
+$~%Class();
+@end;
+
+@template FullEmptyHandleDestructorTemplate(%Class) is
+$Handle_%Class::~Handle_%Class() {}
+@end;
+
+@template FullEmptyDestructorTemplate(%Class) is
+$%Class::~%Class() {}
+@end;
+
+
+@template EnumValueDef(%Class,%Value,%Number) is
+$public final static short %Value = %Number;
+@end;
+
+@template GetPrevious ( %PrevClassName, %PackName, %ShortClassName, %ShortPackName ) is
+$
+$public %PackName.%PrevClassName get%ShortPackName%ShortClassName () {
+$
+$ if ( thePrevious == null ) thePrevious = new %PackName.%PrevClassName ();
+$
+$ thePrevious.HID = HID;
+$
+$ if ( aVirer == 1 ) {
+$
+$  thePrevious.aVirer = aVirer;
+$  aVirer = 0;
+$
+$ }  // end if
+$
+$ return thePrevious;
+$
+$}  // end get%PackName%ShortClassName
+@end;
+
+@template SetPrevious ( %Class, %PackName, %PrevClassName ) is
+$public %Class ( %PackName.%PrevClassName aPrev ) {
+$
+$ thePrevious = aPrev;
+$ HID         = aPrev.HID;
+$ aVirer      = 0;
+$
+$}  // end %Class
+@end;
+
+@template ThePrevious ( %PackName, %PrevClassName ) is
+$
+$ private %PackName.%PrevClassName thePrevious = null;
+$
+@end;

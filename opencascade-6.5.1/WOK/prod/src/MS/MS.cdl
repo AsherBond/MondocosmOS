@@ -1,0 +1,613 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS.cdl	1.1
+-- File:	MS.cdl
+-- Created:	Thu Jan 24 14:44:08 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+package MS 
+
+	---Purpose: Meta Schema Package for MDTV Dev. Tools.
+	--          
+
+uses MMgt,
+     TCollection,
+     TColStd,
+     WOKTools
+    
+is
+
+    -- ============================================================
+    -- ======== The translater implementation =====================
+    -- =======
+    -- =======      class MetaSchema;
+    -- =======      class ExecFile;
+    -- =======      deferred class Common;
+    -- =======          class Field;
+    -- =======          class Param;
+    -- =======              class ParamWithValue;
+    -- =======          deferred class GlobalEntity
+    -- =======	            class Schema;
+    -- =======	            class Interface;
+    -- =======	            class Package;
+    -- =======	            deferred class Exec;
+    -- =======	                class Engine;
+    -- =======	                class Component;
+    -- =======	                class Executable;
+    -- =======                  class ExecPart;
+    -- =======          deferred class Method;
+    -- =======	            class ExternMet;
+    -- =======	            deferred class MemberMet;
+    -- =======	                class Construc;
+    -- =======	                class ClassMet;
+    -- =======	                class InstMet;
+    -- =======    	deferred class Type;
+    -- =======    	    class GenType;
+    -- =======	            deferred class NatType;
+    -- =======	                class Alias;
+    -- =======	                class Pointer;
+    -- =======	                class Enum;
+    -- =======	                class Imported;
+    -- =======	                class PrimType;
+    -- =======    	    deferred class Class;
+    -- =======	                class GenClass;
+    -- =======	                class InstClass;
+    -- =======    	        class StdClass;
+    -- =======		            class Error;
+    -- =======
+    -- =======      enumeration Mutable is MUtable, Immutable, Any;
+    -- ============================================================
+
+
+    exception TraductionError inherits Failure from Standard;
+
+    class ExecFile;
+         
+    class MetaSchema;
+          ---Purpose: This class provides the methods and the informations for managing
+          -- the packages, and the types used by MS.
+          --     a) All The packages used by MS.
+          --          1) A package can be created when analyzing a "cdl" text.
+          --     b) All the types used by MS.
+          --          1) A type can be created when analyzing a "cdl" text.
+
+    deferred class Common;
+    	     ---Purpose: The root of the other class of this package.
+    	     --    It contains the "common" information:
+    	     --       a) The Name of Object.
+    	     --       b) If it has been loaded.
+    	     --       d) The comment associated to the object.
+
+        class Field;
+              ---Purpose: The informations for a field.
+              --     a) Its Class.
+              --     b) The Type of field.
+              --     c) Its Dimensions.
+              --     d) If it is protected.
+
+        class Param;
+              ---Purpose: The informations for a method parameter.
+              --     a) Its Method.
+              --     b) If it is a 'In' parameter.
+              --     c) If it is a 'Out' parameter.
+              --     d) If it has a Mutable attribut
+              --     e) If it is mutable or immutable or any.
+              --     f) If it is like anothe parameter.
+              --     g) If it is like, then the like parameter.
+              --     h) If it is not like, then the Type of parameter.
+              --     i) The default value.
+
+    	class ParamWithValue;
+	       ---Purpose: Like Param with a default value
+	
+	deferred class GlobalEntity;
+	      ---Purpose: The abstract class, root of Package, Interface, Schema,
+	      -- Engine and Executable.
+
+	deferred class Exec;
+	       ---Purpose: The abstract class, root of Engine and Executable.
+
+	class Schema;
+	       ---Purpose: The informations about a Schema.
+	      --    a) The used package.
+
+	class Executable;
+	       ---Purpose: The informations about an executable.
+	      --    a) The used Schema..
+	      --    b) The used packages.
+
+    	class ExecPart;
+	
+	class Engine;
+	      ---Purpose: The informations about an engine.
+	      --    a) The used Schema..
+              --    b) The used engine.
+              --    c) The used Interfaces.
+
+    	class Component;
+
+
+	class Interface;
+	       ---Purpose: The informations about an interface.
+	      --    a) The used packages.
+              --    b) The elements of Interface.
+	      --        The Packages.
+	      --        The Classes.
+	      --        The Methods.
+
+
+    	class Client;
+	       ---Purpose: The informations about a C++ client.
+              --    a) The interfaces used.
+              --    b) The methods with asynchronous execution.
+
+	class Package;
+	         ---Purpose: The informations a bout a package.
+	      --    a) The used package.
+              --    b) The elements of package.
+	      --        The Classes.
+	      --        The Enumerations.
+	      --        The Exceptions.
+	      --        The Extern Methods.
+
+        deferred class Method;
+                   ---Purpose: The Informations for a method.
+                 --     a) The Parameters.
+                 --     b) The Returned type.	
+                 --     c) The Raises.
+                 --     d) The post conditions.
+                 --     e) If it is private.
+
+	   class ExternMet;
+                  ---Purpose: The informations for a package method.
+                 --     a) Its Package.
+
+	   deferred class MemberMet;
+	    	     ---Purpose: The informations for the class methods.
+	    	    --     a) The Class of method.
+	    	    --     b) If it is protected.
+	        class Construc;
+                       ---Purpose: The Constructor.
+	        class ClassMet;
+                       ---Purpose: The class method.
+	        class InstMet;
+                        ---Purpose: The information for a instance
+                      -- method.
+                      --     a) The Instance parameter.
+                      --     b) If it is static.
+                      --     c) If it is deferred.
+                      --     d) If it is redefined.
+
+    	deferred class Type;
+       	    	 ---Purpose: The informations for a Type.
+       	    	 --   a) Its Package.
+
+    	    class GenType;
+    	    	   ---Purpose: The informations for a generic type.
+    	    	  --     a) Its generic class.
+    	    	  --     b) If It can be any type.
+    	    	  --     c) Its type. (If any is true, the type is Null.)
+			     
+		    
+	    deferred class NatType;
+		        ---Purpose: The informations for a natural type.
+		     --       a)If it is private.
+	         class Alias;
+    	    	         ---Purpose: The informations for an 
+    	    	       -- alias
+    	    	       --      a) Its type
+	         class Pointer;
+    	    	          ---Purpose: The informations for a 
+    	    	       -- pointer
+    	    	       --      a) Its type
+	         class Enum;
+    	    	          ---Purpose: The informations for a 
+    	    	       -- enumeration
+    	    	       --      a) Its elements.
+	         class Imported;
+    	    	         ---Purpose: The informations for an 
+    	    	       -- imported type
+	         class PrimType;
+		         ---Purpose: A Primary Type.
+
+    	    deferred class Class;
+    	    	       ---Purpose: The informations for a Class.
+    	    	     --     a) If it is complete or just declared.
+    	    	     --     b) If it is deferred.
+    	    	     --     c) If it is private.
+
+	         class GenClass;
+		          ---Purpose: The informations for a Generic class
+		       --   a) The generique types.
+		       --   b) The Nesting classes.
+		       --   c) The Descreption class.
+    	      	       --   d) if it has a Mother (a Nesting Class).
+
+	         class InstClass;
+    	    	         ---Purpose: The informations for a Instanciated class
+    	    	       --    a) Its generic class.
+    	    	       --    b) The Instanciated types.
+    	    	       --    c) Its Nesting class.
+    	    	       --    d) The generic class associated, if there is any.
+					      
+    	         class StdClass;
+		          ---Purpose: The informations for a Standard class:
+		       --    a) The Ancestors
+		       --    b) The Used types.
+		       --    c) The Raises.
+		       --    d) The Verifies.
+		       --    e) The Methods.
+		       --    f) The Fields.
+		       --    g) The Redefined fields.
+		       --    h) The Friend methods.
+		       --    i) The Friend class.
+		       --    j) The generic class associated, if there is any.
+
+		     class Error;
+    	    	    	      ---Purpose: The information for a Exception.
+    	    	    	   --     a) The Ancestors.
+
+
+    
+    -- ============================================================
+    -- ============ The enumerations ==============================
+    -- ============================================================
+
+
+    enumeration Language is
+    	FORTRAN,
+	CPP,
+	C,
+	OBJECT
+    end Language;
+    
+    -- type of default value of a parameter
+    -- 
+    enumeration TypeOfValue is
+    	NONE,
+    	REAL,
+	INTEGER,
+	STRING,
+	CHAR,
+	ENUM
+    end TypeOfValue;
+    
+    -- ============================================================
+    -- ============ The sequences for management ==========
+    -- ============================================================
+
+    class MapOfType instantiates DataMap from WOKTools(HAsciiString from TCollection, 
+                                                      	  Type from MS, 
+    	                                                  HAsciiStringHasher from WOKTools);
+
+    class MapOfGlobalEntity instantiates DataMap from WOKTools(HAsciiString from TCollection, 
+                                                      	  GlobalEntity from MS, 
+    	                                                  HAsciiStringHasher from WOKTools);
+							  
+    class MapOfMethod instantiates DataMap from WOKTools(HAsciiString from TCollection, 
+                                                      	    Method from MS, 
+    	                                                    HAsciiStringHasher from WOKTools);						   							 
+
+    class SequenceOfType instantiates 
+    	    Sequence  from TCollection(Type from MS);
+
+    class SequenceOfGenType instantiates 
+    	    Sequence  from TCollection(GenType from MS);
+
+    class SequenceOfExternMet instantiates 
+    	    Sequence  from TCollection(ExternMet from MS);
+
+    class SequenceOfMethod instantiates
+    	    Sequence from TCollection (Method from MS);
+
+    class SequenceOfMemberMet instantiates
+    	    Sequence  from TCollection(MemberMet from MS);
+
+    class SequenceOfField instantiates
+    	    Sequence  from TCollection(Field from MS);
+
+    class SequenceOfParam instantiates
+    	    Sequence  from TCollection(Param from MS);
+
+    class Array1OfParam instantiates
+    	    Array1    from TCollection(Param from MS);
+
+    class SequenceOfClass instantiates
+    	    Sequence  from TCollection(Class from MS);
+
+    class SequenceOfError instantiates
+    	    Sequence  from TCollection(Error from MS);
+
+    class SequenceOfPackage instantiates
+    	    Sequence  from TCollection(Package from MS);
+	    
+    class SequenceOfInstClass instantiates
+    	    Sequence  from TCollection(InstClass from MS);
+
+    class SequenceOfGenClass instantiates
+    	    Sequence  from TCollection(GenClass from MS);
+
+    class SequenceOfGlobalEntity instantiates
+    	    Sequence  from TCollection(GlobalEntity from MS);
+
+    class SequenceOfInterface instantiates
+    	    Sequence  from TCollection(Interface from MS);
+
+    class SequenceOfSchema instantiates
+    	    Sequence  from TCollection(Schema from MS);
+
+    class SequenceOfEngine instantiates
+    	    Sequence  from TCollection(Engine from MS);
+
+    class SequenceOfComponent instantiates
+    	    Sequence  from TCollection(Component from MS);
+
+    class SequenceOfExecutable instantiates
+    	    Sequence  from TCollection(Executable from MS);
+
+	    
+    class HSequenceOfType instantiates 
+    	    HSequence  from TCollection(Type from MS, SequenceOfType);
+
+    class HSequenceOfGenType instantiates 
+    	    HSequence  from TCollection(GenType from MS, SequenceOfGenType);
+
+    class HSequenceOfExternMet instantiates 
+    	    HSequence  from TCollection(ExternMet from MS, SequenceOfExternMet);
+
+    class HSequenceOfMethod instantiates
+    	    HSequence  from TCollection(Method from MS, SequenceOfMethod);
+
+    class HSequenceOfMemberMet instantiates
+    	    HSequence  from TCollection(MemberMet from MS, SequenceOfMemberMet);
+
+    class HSequenceOfField instantiates
+    	    HSequence  from TCollection(Field from MS, SequenceOfField);
+
+    class HSequenceOfParam instantiates
+    	    HSequence  from TCollection(Param from MS, SequenceOfParam);
+
+    class HArray1OfParam instantiates
+    	    HArray1 from TCollection  (  Param from MS, Array1OfParam from MS );
+
+    class HSequenceOfClass instantiates
+    	    HSequence  from TCollection(Class from MS, SequenceOfClass);
+
+    class HSequenceOfError instantiates
+    	    HSequence  from TCollection(Error from MS, SequenceOfError);
+
+    class HSequenceOfPackage instantiates
+    	    HSequence  from TCollection(Package from MS, SequenceOfPackage);
+
+    class HSequenceOfInstClass instantiates
+    	    HSequence  from TCollection(InstClass from MS, SequenceOfInstClass);
+
+    class HSequenceOfGenClass instantiates
+    	    HSequence  from TCollection(GenClass from MS, SequenceOfGenClass);
+
+
+    class HSequenceOfGlobalEntity instantiates
+    	    HSequence  from TCollection(GlobalEntity from MS, SequenceOfGlobalEntity);
+
+    class HSequenceOfInterface instantiates
+    	    HSequence  from TCollection(Interface from MS, SequenceOfInterface);
+
+    class HSequenceOfSchema instantiates
+    	    HSequence  from TCollection(Schema from MS, SequenceOfSchema);
+
+    class HSequenceOfEngine instantiates
+    	    HSequence  from TCollection(Engine from MS, SequenceOfEngine);
+
+    class HSequenceOfComponent instantiates
+    	    HSequence  from TCollection(Component from MS, SequenceOfComponent);
+
+    class HSequenceOfExecutable instantiates
+    	    HSequence  from TCollection(Executable from MS, SequenceOfExecutable);
+
+
+    -- For executable description
+    --  
+    class SequenceOfExecFile instantiates
+    	    Sequence  from TCollection(ExecFile from MS);	    
+    class HSequenceOfExecFile instantiates 
+    	    HSequence  from TCollection(ExecFile from MS, SequenceOfExecFile from MS);
+
+    class SequenceOfExecPart instantiates
+    	    Sequence  from TCollection(ExecPart from MS);	    
+    class HSequenceOfExecPart instantiates 
+    	    HSequence  from TCollection(ExecPart from MS, SequenceOfExecPart from MS);
+
+    pointer MetaSchemaPtr to MetaSchema from MS;
+    pointer MethodPtr     to Method     from MS;
+    ---Purpose: define a pointer for a MetaSchema (usefull for memory management).
+
+    -- ----------------------
+    -- Methods for everybody
+    -- ----------------------
+
+    GetPersistentRootName 
+    	returns HAsciiString from TCollection;
+
+    GetStorableRootName 
+    	returns HAsciiString from TCollection;
+	
+    GetTransientRootName 
+    	returns HAsciiString from TCollection;
+	
+    GetPackageRootName 
+    	returns HAsciiString from TCollection;
+
+    GetVArrayRootName
+    	returns HAsciiString from TCollection;
+    ---Purpose: Warning this method is obsolete
+    ---Level: Internal
+        	
+    BuildFullName(aGEName : HAsciiString from TCollection;
+	          aEName  : HAsciiString from TCollection)
+	returns mutable HAsciiString from TCollection;
+    ---Purpose: build a full name from a global entity name and an entity name 
+
+    BuildComplexName(MyName  : HAsciiString from TCollection;
+    	    	     aEName : HAsciiString from TCollection;
+	             aGEName  : HAsciiString from TCollection)
+	returns mutable HAsciiString from TCollection;
+    ---Purpose: build a complex name for nested classes
+    --          <MyName> : the name of the containing class
+    --          <aEName> : the name of the nested class
+    --          <aGEName> : the name of the generic class
+
+    
+    GetEntityNameFromMethodName(methodName : HAsciiString from TCollection)
+    	returns mutable HAsciiString from TCollection;
+  
+    GetMethodFromFriendName(aMeta : MetaSchema from MS; methodName : HAsciiString from TCollection)
+    	returns mutable Method from MS;
+    ---Purpose: find a method with a short name.
+    --          short names are those that comes from the interface or friend method's list 
+
+    IsExportedType(aMeta     : MetaSchema from MS;
+    	    	   aType     : Type from MS)
+	returns Boolean from Standard;
+    ---Purpose: Checks if a basic type is exportable (used by IsExportableMethod and IsExportableClass).     
+	 
+    IsExportableMethod(aMeta     : MetaSchema from MS;
+    	    	       aMethod   : Method from MS)
+	returns Boolean from Standard;
+    ---Purpose: for interface, engine or stubs extractor some types cannot be exported like pointer or imported
+    --          so this function returns False if one of these type is used by the method <aMethod>
+
+    IsExportableClass(aMeta          : MetaSchema from MS;
+    	    	      aClass         : Class from MS;
+    	    	      mustCheckField : Boolean from Standard;
+    	    	      mustCheckMethods : Boolean from Standard)
+	returns Boolean from Standard;
+    ---Purpose: as <IsExportableMethod>, but this method checks if the class is not generic and checks methods.
+    --          If <mustCheckField> == Standard_True -> fields are checked.
+    --          If <mustCheckMethods> == Standard_True -> methods are checked.
+    
+    DispatchUsedType(aMeta     : MetaSchema from MS;
+    	             aType     : Type from MS;
+		     aList     : HSequenceOfHAsciiString from TColStd;
+		     aIncList  : HSequenceOfHAsciiString from TColStd;
+		     notusedwithref : Boolean from Standard);
+    ---Purpose: we test the type and dispatch it in the different lists
+    --          <aFullList>      : list of all the type used
+    --          <aList>          : list of complete types used 
+    --          <aIncp>          : list of incomplete types used
+    --          <notusedwithref> : type are assumed to be used with reference if TRUE
+    
+    MethodUsedTypes(aMeta     : MetaSchema from MS;
+    	            aMethod   : Method from MS;
+		    aList     : HSequenceOfHAsciiString from TColStd;
+		    aIncList  : HSequenceOfHAsciiString from TColStd);
+    ---Purpose: sort the method used types :
+    --          <aFullList>      : list of all the type used
+    --          <aList>          : list of complete types used 
+    --          <aIncp>          : list of incomplete types used
+     
+    ClassUsedTypes(aMeta     : MetaSchema from MS;
+    	           aClass    : Class from MS;
+		   aList     : HSequenceOfHAsciiString from TColStd;
+		   aIncList  : HSequenceOfHAsciiString from TColStd);
+    ---Purpose: sort the class used types :
+    --          <aFullList>      : list of all the type used
+    --          <aList>          : list of complete types used 
+    --          <aIncp>          : list of incomplete types used
+
+
+   
+    -- -----------------------------------------
+    -- INTERNAL PART : CAUTION - RESTRICTED AREA
+    -- -----------------------------------------	
+
+    StubClassesToExtract(aMeta               : MetaSchema from MS; 
+    	    	         aListOfInterClasses : HSequenceOfHAsciiString from TColStd;
+			 CompleteMap         : in out MapOfHAsciiString from WOKTools;
+			 IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+			 SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+    ---Level: Internal
+
+    StubPackagesToExtract(aMeta              : MetaSchema from MS; 
+    	    	         Inter               : Interface from MS;
+			 CompleteMap         : in out MapOfHAsciiString from WOKTools;
+			 IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+			 SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+    ---Level: Internal
+
+    StubMethodsToExtract(aMeta               : MetaSchema from MS; 
+    	    	         Inter               : Interface from MS;
+			 SeqOfExternMet      : HSequenceOfExternMet from MS;
+			 SeqOfMemberMet      : HSequenceOfMemberMet from MS;
+			 CompleteMap         : in out MapOfHAsciiString from WOKTools;
+			 IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+			 SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+    ---Level: Internal
+
+    StubMethodTypesToExtract(aMeta               : MetaSchema from MS; 
+    	    	    	     met                 : Method from MS;
+			     CompleteMap         : in out MapOfHAsciiString from WOKTools;
+			     IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+			     SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+    ---Level: Internal
+    
+    StubMethodsTypesToExtract(aMeta               : MetaSchema from MS; 
+    	    	    	      com                 : Common from MS;
+			      CompleteMap         : in out MapOfHAsciiString from WOKTools;
+			      IncompleteMap       : in out MapOfHAsciiString from WOKTools;
+			      SemiCompleteMap     : in out MapOfHAsciiString from WOKTools);
+    ---Level: Internal
+
+    BuildInstClass(aClass  : Class from MS;
+    	          aName    : HAsciiString from TCollection;
+		  aPackage : HAsciiString from TCollection;
+                  aSeqGen  : HSequenceOfHAsciiString from TColStd;
+		  aSeqType : HSequenceOfHAsciiString from TColStd)
+	returns mutable InstClass from MS;
+    ---Purpose: Transform an InstClass to a StdClass (for instantiation phase)	    
+    --          Don't use this method if you are not the MS's writer
+    ---Level: Internal
+    		
+    BuildStdClass(aClass   : Class from MS;
+    	          aName    : HAsciiString from TCollection;
+		  aPackage : HAsciiString from TCollection;
+                  aSeqGen  : HSequenceOfHAsciiString from TColStd;
+		  aSeqType : HSequenceOfHAsciiString from TColStd)
+	returns mutable StdClass from MS;
+    ---Purpose: Tranform a StdClass with generic parameter in a full StdClass
+    --          Don't use this method if you are not the MS's writer
+    ---Level: Internal
+    
+    BuildStdMethod(aMethod  : MemberMet from MS;
+                   aClass   : Class from MS;
+      	           aSeqGen  : HSequenceOfHAsciiString from TColStd;
+		   aSeqType : HSequenceOfHAsciiString from TColStd)
+	returns mutable MemberMet from MS;
+    ---Purpose: Transform a method with generic parameter in a normal method
+    --          Don't use this method if you are not the MS's writer
+    ---Level: Internal
+  
+    BuildStdParam(aParam   : Param from MS;
+    	          aMethod  : Method from MS;
+      	          aSeqGen  : HSequenceOfHAsciiString from TColStd;
+		  aSeqType : HSequenceOfHAsciiString from TColStd)
+        returns mutable Param from MS;
+    ---Level: Internal
+    --          Don't use this method if you are not the MS's writer
+    
+    BuildStdField(aField   : Field from MS;
+    	          aClass   : Class from MS;
+	          aSeqGen  : HSequenceOfHAsciiString from TColStd;
+		  aSeqType : HSequenceOfHAsciiString from TColStd)
+        returns mutable Field from MS;
+    ---Level: Internal
+    --          Don't use this method if you are not the MS's writer
+
+    AddOnce(aSeq : HSequenceOfHAsciiString from TColStd;
+    	    Item : HAsciiString from TCollection);
+    ---Purpose: to add an item only once in a sequence
+    --          WARNING : cursed code (use with care)
+    
+end MS;
+
+

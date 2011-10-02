@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIGESData__ViewKindEntity.html" title="defines required type for ViewKind in directory part &#160;&#160;that is, Single view or Multiple..." alt="" coords="35,237,229,267"/>
+<area shape="rect" id="node4" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="49,160,215,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="71,83,193,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="57,5,207,35"/>
+</map>

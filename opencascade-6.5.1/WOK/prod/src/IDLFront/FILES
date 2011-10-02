@@ -1,0 +1,9 @@
+IDL.lex
+IDL.yacc
+IDLFront.cxx
+idl_rules.h
+IDLFront_CMPLRS.edl
+IDLFront_LDSHR.edl
+IDLFront_Replace.tcl
+IDLFront_WOKSteps.edl
+IDL.tab.c

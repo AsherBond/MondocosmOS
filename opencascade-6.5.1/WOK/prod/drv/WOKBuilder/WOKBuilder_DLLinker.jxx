@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_DLLinker_HeaderFile
+#include <WOKBuilder_DLLinker.hxx>
+#endif

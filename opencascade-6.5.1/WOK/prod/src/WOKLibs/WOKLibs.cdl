@@ -1,0 +1,78 @@
+-- File:	WOKLibs.cdl
+-- Created:	Thu Oct  5 19:54:46 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+executable WOKLibs
+is
+
+    executable wokcmd 
+    uses
+        CSF_TclLibs      as external
+    is
+    	wokcmd;
+    end;
+    
+    executable woktoolscmd
+    uses
+        CSF_TclLibs   as external
+    is
+    	woktoolscmd;
+    end;
+
+    executable wokutilscmd
+    uses
+        CSF_TclLibs   as external
+    is
+    	wokutilscmd;
+    end;
+
+    executable woksteps
+
+    is
+    	woksteps;
+    end;
+    
+    executable wokobjssteps
+
+    is
+    	wokobjssteps;
+    end;
+    
+    executable wokdfltsteps
+
+    is
+    	wokdfltsteps;
+    end;
+    
+    executable wokdeliverysteps
+
+    is
+    	wokdeliverysteps;
+    end;
+
+
+    executable wokorbixsteps
+    
+    is
+    	wokorbixsteps;
+    end;
+ 
+    executable mscmd
+    uses
+	CSF_TclLibs as external
+    is
+    	mscmd;
+    end;
+    
+---    executable woknetcmd
+---    uses
+---    	NTD         as library,
+---    	AccesServer as library,
+---	Tcl_Lib     as external
+---    is
+---    	woknetcmd;
+---    end;
+
+end;

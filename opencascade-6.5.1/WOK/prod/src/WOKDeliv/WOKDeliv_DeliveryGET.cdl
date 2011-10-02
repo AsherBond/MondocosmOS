@@ -1,0 +1,38 @@
+-- File:	WOKDeliv_DeliveryGET.cdl
+-- Created:	Fri Mar 29 16:51:49 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+class DeliveryGET from WOKDeliv inherits DeliveryStep from WOKDeliv
+
+	---Purpose: Process get for delivery units
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     DeliveryList from WOKDeliv,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliveryGET from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+
+end DeliveryGET;

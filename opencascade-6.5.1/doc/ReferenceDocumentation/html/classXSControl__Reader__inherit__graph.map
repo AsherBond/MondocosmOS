@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classIGESControl__Reader.html" title="Reads IGES files, checks them and translates their contents into Open CASCADE models..." alt="" coords="19,83,176,112"/>
+<area shape="rect" id="node7" href="$classSTEPControl__Reader.html" title="Reads STEP files, checks them and translates their contents &#160;&#160;into Open CASCADE models..." alt="" coords="200,83,360,112"/>
+<area shape="rect" id="node5" href="$classIGESCAFControl__Reader.html" title="Provides a tool to read IGES file and put it into &#160;&#160;DECAF document. Besides transfer..." alt="" coords="5,160,189,189"/>
+</map>

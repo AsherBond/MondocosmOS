@@ -1,0 +1,71 @@
+-- File		:	LIB.edl
+-- Author	:	Eugeny PLOTNIKOV
+-- Date		:	24-OCT-1996
+-- Copyright	:	MATRA Datavision
+-- Purpose	:	Defines tools for library management
+--			( Microsoft Visual C/C++ V4.1 )
+@ifnotdefined ( %LIB_EDL ) then
+ @set %LIB_EDL = "";
+
+ @ifnotdefined ( %CSF_EDL ) then
+    @uses "CSF.edl";
+ @endif;
+
+ @set %LIB_LibraryOutput = "-out:";
+
+-- filename extension for library manager command file (list of .obj files)
+ @set %LIB_LibraryCFExt = ".lbr";
+
+-- filename for static library
+ @template LIB_FileName ( %LIB_LibName ) is
+ 	$%LIB_LibName.lib \^
+ @end;
+
+-- filename for import library
+ @template LIB_ImplibFileName ( %LIB_ImplibName ) is
+ 	$%LIB_ImplibName.lib\^
+ @end;
+
+-- filename for export library
+ @template LIB_ExplibFileName ( %LIB_ExplibName ) is
+ 	$%LIB_ExplibName.exp\^
+ @end;
+
+ @template LIB_ManifestFileName ( %LIB_ManifestName ) is
+ 	$%LIB_ManifestName.manifest\^
+ @end;
+
+ @template LIB_LibraryHeaderSTATIC (
+                         %CSF_LibraryHeaderLib ,
+                         %CSF_LibraryHeaderOpt ,
+                         %Station ) is
+ 	$%CSF_LibraryHeaderLib %CSF_LibraryHeaderOpt \^
+ @end;
+
+ @template LIB_LibraryEXP ( %CollectorOutput ) is
+	$%CollectorOutput.exp\^
+ @end;
+
+ @template LIB_LibraryMAN ( %CollectorOutput ) is
+ 	$%CollectorOutput.manifest\^
+ @end;
+ 
+ @template LIB_LibraryHeaderIMPORT ( 
+                         %CSF_LibraryHeaderLib ,
+                         %CSF_LibraryHeaderOpt ,
+                         --%LibraryHeaderLib ,
+                         --%LibraryHeaderOpt ,
+                         %LibraryDEFile ,
+			 %STLPortHome ) is
+	$%CSF_LibraryHeaderLib %CSF_LibraryHeaderOpt -def:%LibraryDEFile -libpath:%STLPortHome/lib \^
+ @end;
+
+ @template LIB_LibrarySTATLIB ( %CollectorOutput ) is
+	$%CollectorOutput.lib\^
+ @end;
+
+ @template LIB_LibraryIMPLIB ( %CollectorOutput ) is
+	$%CollectorOutput.lib\^
+ @end;
+
+@endif;

@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classIFSelect__SelectAnyType.html" title="A SelectAnyType sorts the Entities of which the Type is Kind &#160;&#160;of a given Type :..." alt="" coords="1061,5,1245,35"/>
+<area shape="rect" id="node15" href="$classIFSelect__SelectErrorEntities.html" title="A SelectErrorEntities sorts the Entities which are qualified &#160;&#160;as &quot;Error&quot;..." alt="" coords="1047,59,1260,88"/>
+<area shape="rect" id="node17" href="$classIFSelect__SelectFlag.html" title="A SelectFlag queries a flag noted in the bitmap of the Graph. &#160;&#160;The Flag is designated..." alt="" coords="1076,112,1231,141"/>
+<area shape="rect" id="node21" href="$classIFSelect__SelectRange.html" title="A SelectRange keeps or rejects a sub&#45;set of the input set, &#160;&#160;that is the Entities..." alt="" coords="1068,165,1239,195"/>
+<area shape="rect" id="node23" href="$classIFSelect__SelectRootComps.html" title="A SelectRootComps sorts the Entities which are part of Strong &#160;&#160;Componants, local..." alt="" coords="1051,219,1256,248"/>
+<area shape="rect" id="node25" href="$classIFSelect__SelectRoots.html" title="A SelectRoots sorts the Entities which are local roots of a &#160;&#160;set of Entities (not..." alt="" coords="1069,272,1237,301"/>
+<area shape="rect" id="node27" href="$classIFSelect__SelectSent.html" title="This class returns entities according sending to a file &#160;&#160;Once a model has been loaded..." alt="" coords="1073,325,1233,355"/>
+<area shape="rect" id="node29" href="$classIFSelect__SelectSignature.html" title="A SelectSignature sorts the Entities on a Signature Matching. &#160;&#160;The signature to..." alt="" coords="1057,379,1249,408"/>
+<area shape="rect" id="node31" href="$classIFSelect__SelectUnknownEntities.html" title="A SelectUnknownEntities sorts the Entities which are qualified &#160;&#160;as &quot;Unknown&quot;..." alt="" coords="1033,432,1273,461"/>
+<area shape="rect" id="node33" href="$classIGESSelect__SelectLevelNumber.html" title="This selection looks at Level Number of IGES Entities : &#160;&#160;it considers items attached..." alt="" coords="1035,485,1272,515"/>
+<area shape="rect" id="node35" href="$classIGESSelect__SelectName.html" title="Selects Entities which have a given name. &#160;&#160;Consider Property Name if present, else..." alt="" coords="1060,539,1247,568"/>
+<area shape="rect" id="node37" href="$classIGESSelect__SelectSubordinate.html" title="This selections uses Subordinate Status as sort criterium &#160;&#160;It is an integer number..." alt="" coords="1040,592,1267,621"/>
+<area shape="rect" id="node39" href="$classIGESSelect__SelectVisibleStatus.html" title="This selection looks at Blank Status of IGES Entities &#160;&#160;Direct selection keeps Visible..." alt="" coords="1036,645,1271,675"/>
+<area shape="rect" id="node41" href="$classXSControl__SelectForTransfer.html" title="This selection selects the entities which are recognised for &#160;&#160;transfer by an Actor..." alt="" coords="1047,699,1260,728"/>
+<area shape="rect" id="node2" href="$classIFSelect__SelectDeduct.html" title="A SelectDeduct determines a list of Entities from an Input &#160;&#160;Selection, by a computation..." alt="" coords="575,352,753,381"/>
+<area shape="rect" id="node4" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="377,352,524,381"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,352,328,381"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,352,156,381"/>
+<area shape="rect" id="node13" href="$classIFSelect__SelectType.html" title="A SelectType keeps or rejects Entities of which the Type &#160;&#160;is Kind of a given Cdl..." alt="" coords="1368,5,1528,35"/>
+<area shape="rect" id="node19" href="$classIFSelect__SelectIncorrectEntities.html" title="A SelectIncorrectEntities sorts the Entities which have been &#160;&#160;noted as Incorrect..." alt="" coords="1327,112,1569,141"/>
+<area shape="rect" id="node43" href="$classSTEPSelections__SelectForTransfer.html" title="STEPSelections_SelectForTransfer" alt="" coords="1323,699,1573,728"/>
+</map>

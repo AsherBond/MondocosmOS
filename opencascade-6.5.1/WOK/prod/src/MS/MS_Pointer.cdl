@@ -1,0 +1,37 @@
+-- File:	MS_Pointer.cdl
+-- Created:	Thu Nov 24 14:46:26 1994
+-- Author:	Kernel
+--		<kernel@espadon>
+---Copyright:	 Matra Datavision 1994
+
+
+class Pointer from MS  
+
+    inherits NatType from MS 
+	---Purpose: Description of the "Pointer" type (Method or Class pointers).
+
+    uses 
+	Common       from MS,
+	HAsciiString from TCollection
+
+    
+is
+
+    Create(aName, aPackage, aContainer: HAsciiString from TCollection; 
+           aPrivate: Boolean from Standard) 
+    	returns mutable Pointer from MS;
+    
+    Type(me: mutable; aType: HAsciiString from TCollection; 
+         aPackage: HAsciiString from TCollection);
+    ---Purpose: Sets the type of the pointer.
+
+    Type(me)
+    	returns mutable HAsciiString from TCollection;
+    ---Purpose: Returns the type of the pointer.
+    ---C++:return const &
+	
+fields
+
+    myType : HAsciiString from TCollection;
+
+end Pointer from MS;

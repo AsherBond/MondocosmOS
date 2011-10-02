@@ -1,0 +1,40 @@
+-- File:	WOKBuilder_EXELinker.cdl
+-- Created:	Mon Oct 21 13:11:23 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class    EXELinker from WOKBuilder 
+inherits WNTLinker from WOKBuilder
+
+    ---Purpose: provides tool to build an executable file
+
+ uses
+ 
+    HAsciiString from TCollection,
+    Param        from WOKUtils
+ 
+ is
+ 
+    Create(aName   : HAsciiString from TCollection;
+     	    aParams : Param        from WOKUtils) 
+    ---Purpose: create a class instance
+    	returns mutable EXELinker from WOKBuilder;
+
+
+    EvalHeader( me : mutable ) 
+    	returns HAsciiString from TCollection
+    	is redefined static;
+    ---Purpose: evaluats tool command line
+
+    EvalCFExt ( me : mutable )
+     	returns HAsciiString from TCollection 
+    	is redefined static;
+    ---Purpose: evaluates extension for name of the command file
+
+    EvalFooter ( me : mutable ) 
+    	returns HAsciiString from TCollection
+    	is redefined static;
+    ---Purpose: evaluates additional information for the tool
+
+end EXELinker;

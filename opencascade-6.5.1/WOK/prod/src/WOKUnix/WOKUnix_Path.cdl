@@ -1,0 +1,152 @@
+-- File:	WOKUnix_Path.cdl
+-- Created:	Mon May 29 15:09:14 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class Path from WOKUnix
+
+    	---Purpose: Supplee aux insuffisances de OSD_File
+
+inherits TShared from MMgt
+uses
+    HAsciiString from TCollection,
+    FDescr       from WOKUnix,
+    TimeStat     from WOKUnix,
+    StatBuf      from WOKUnix,
+    Extension    from WOKUnix
+
+is
+
+    Create returns mutable Path from WOKUnix;
+    ---Purpose: Instantiates Path from WOKUnix    
+
+    Create(apath : CString from Standard) 
+    	returns mutable Path from WOKUnix;
+    
+    Create(apath : HAsciiString from TCollection) 
+    ---Purpose: Instantiates Path from WOKUnix using an asciistring
+    	returns mutable Path from WOKUnix; 
+        
+    Create(adir,aname : HAsciiString from TCollection)  
+    ---Purpose: Instantiates Path from WOKUnix using an directory and
+    --          a name
+    	returns mutable Path from WOKUnix; 
+    
+    Create(adir,aname : CString from Standard)  
+    ---Purpose: Instantiates Path from WOKUnix using an directory and
+    --          a name
+    	returns mutable Path from WOKUnix; 
+    
+    CheckStats(me:mutable)
+    ---C++: inline
+    	returns Boolean from Standard;
+
+    GetStats(me:mutable)
+    	returns Boolean from Standard;
+    
+    Name(me) 
+    ---C++: return const &
+    ---C++: inline
+    ---Purpose: returns PathName    
+    	returns HAsciiString from TCollection;
+	
+    SetName(me:mutable; apath : HAsciiString from TCollection);
+    ---Purpose: sets path
+    
+    BuildFDescr(me) 
+    ---Purpose: Builds a WOKUnix_FDescr to manipulate Path
+   	returns FDescr from WOKUnix;
+    
+    Exists(me) returns Boolean;
+    ---Purpose: Tests existency of path on disk    
+
+    CreateDirectory(me:mutable; CreateParents : Boolean from Standard = Standard_False) 
+    ---Purpose: Creates path as a directory
+	returns Boolean;
+	
+    CreateFile(me:mutable; CreateParents : Boolean from Standard = Standard_False) 
+    ---Purpose: Creates path as a file on disk  
+	returns Boolean;
+
+    IsSymLink(me:mutable)
+    	returns Boolean from Standard;
+	
+    IsFile(me:mutable)
+    	returns Boolean from Standard;
+
+    IsDirectory(me:mutable)
+    	returns Boolean from Standard;
+
+    CreateSymLinkTo(me:mutable; apath : Path from WOKUnix)
+    	returns Boolean from Standard;
+
+    RemoveDirectory(me:mutable; RemoveChilds : Boolean from Standard = Standard_False)
+    	returns Boolean from Standard;
+
+    RemoveFile(me:mutable) 
+    	returns Boolean from Standard;
+
+    MoveTo(me:mutable; adestpath : Path from WOKUnix)
+    ---Purpose: Renames file to destpath Failes if mypath and dest
+    --          path are not on the same file system
+    --          mypath is changed to which of adestpath
+    	returns Boolean from Standard;
+
+    ReducedPath(me)
+    ---Purpose: reduces Path as much as possible (reads links)
+    	returns Path from WOKUnix;
+
+    IsSamePath(me; another : Path from WOKUnix)
+    ---Purpose: Tests is me corresponds to the same 
+    --          file as <another> (reads links)
+    	returns Boolean from Standard;
+
+    IsSameFile(me; another : Path from WOKUnix)
+    ---Purpose: Teste si deux fichiers ont le meme     
+    --          contenu (typiquement utilise a l'extraction)
+      	returns Boolean from Standard;
+
+    MDate(me:mutable)
+    ---C++: inline
+    ---Purpose: returns known date of path   
+    	returns TimeStat from WOKUnix;
+
+    ResetMDate(me:mutable);
+    ---C++: inline
+
+    IsOlder(me:mutable; another : Path from WOKUnix)
+    	returns Boolean from Standard;
+    IsNewer(me:mutable; another : Path from WOKUnix)
+    	returns Boolean from Standard;
+	
+    IsWriteAble(me)
+    	returns Boolean from Standard;
+    
+    Extension(me)
+    ---Purpose: extracts Extension of file    
+    	returns Extension from WOKUnix;
+
+    ExtensionName(me)
+    ---Purpose: extracts Extension of file    
+    	returns HAsciiString from TCollection;
+
+    BaseName(me)
+    ---Purpose: returns the basename of File
+    	returns HAsciiString from TCollection;
+	
+    DirName(me)
+    ---Purpose: returns the dirname of file
+	returns HAsciiString from TCollection;
+	
+    FileName(me)
+    ---Purpose: returns the filename (<BaseName>.<Extension>) of path
+    	returns HAsciiString from TCollection;
+
+fields
+    mypath  : HAsciiString from TCollection;
+    myacces : Boolean      from Standard;
+    mystats : StatBuf      from WOKUnix;
+end;
+
+   

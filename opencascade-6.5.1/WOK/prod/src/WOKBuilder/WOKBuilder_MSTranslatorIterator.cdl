@@ -1,0 +1,85 @@
+-- File:	WOKBuilder_MSTranslatorIterator.cdl
+-- Created:	Mon Sep 18 18:40:46 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+
+
+class MSTranslatorIterator from WOKBuilder 
+
+	---Purpose: Iterates on CDL files To Complete definition of a specification
+
+uses
+    MSchema                       from WOKBuilder,
+    MSEntity                      from WOKBuilder,
+    Specification                 from WOKBuilder,
+    BuildStatus                   from WOKBuilder,
+    MSTranslator                  from WOKBuilder,
+    MSAction                      from WOKBuilder,
+    MSActionID                    from WOKBuilder,
+    DataMapOfMSActionIDOfMSAction from WOKBuilder,
+    MSActionType                  from WOKBuilder,
+    HAsciiString                  from TCollection,
+    HSequenceOfHAsciiString       from TColStd,
+    QueueOfMSAction               from WOKBuilder
+is
+
+    Create(ams : MSchema from WOKBuilder; anaction : MSActionID from WOKBuilder)  
+    	returns MSTranslatorIterator from WOKBuilder; 
+    ---Purpose: instantiates Iterator    
+
+    Create(ams : MSchema from WOKBuilder)
+    	returns MSTranslatorIterator from WOKBuilder; 
+    ---Purpose: instantiates Iterator    
+
+    Reset(me:out);
+
+    Value(me:out) returns MSAction from WOKBuilder;
+    ---C++: return const &
+    --      
+    --      
+    --      
+    --      
+    ---Purpose: returns the current MSEntity to complete
+    --          even if it is already in MS (to check its validity 
+    --          outside of Iterator
+
+    GetMSAction(me:out; aname : HAsciiString from TCollection; action : MSActionType from WOKBuilder)
+    ---C++: return const &
+    	returns MSAction from WOKBuilder;
+
+    EquivActionStacked(me:out; aname : HAsciiString from TCollection; action : MSActionType from WOKBuilder);
+    
+    AddInStack(me:out; aname : HAsciiString from TCollection; action : MSActionType from WOKBuilder);
+
+    IsInStack(me; aname : HAsciiString from TCollection; action : MSActionType from WOKBuilder) 
+    	returns Boolean from Standard;
+    	
+    Execute(me:out; atranslator : MSTranslator   from WOKBuilder;
+    	    	    anaction    : MSAction       from WOKBuilder;
+    	    	    afile       : Specification  from WOKBuilder)
+    	returns BuildStatus from WOKBuilder;
+
+    Next(me : out);
+
+    More(me) returns Boolean from Standard;
+
+fields
+
+    myms         : MSchema from WOKBuilder;
+
+    mytarget     : HAsciiString from TCollection;
+    	    
+    myglobal     : QueueOfMSAction from WOKBuilder;
+    myinsttypes  : QueueOfMSAction from WOKBuilder;
+    mygentypes   : QueueOfMSAction from WOKBuilder;
+    mygetypes    : QueueOfMSAction from WOKBuilder;
+    mytypes      : QueueOfMSAction from WOKBuilder;
+
+    mycurrent    : MSAction from WOKBuilder;
+
+    mystack      : DataMapOfMSActionIDOfMSAction from WOKBuilder;
+       
+end MSTranslatorIterator;

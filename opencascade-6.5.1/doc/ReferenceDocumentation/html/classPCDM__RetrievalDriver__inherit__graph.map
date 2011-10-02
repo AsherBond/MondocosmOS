@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBinLDrivers__DocumentRetrievalDriver.html" title="BinLDrivers_DocumentRetrievalDriver" alt="" coords="597,59,877,88"/>
+<area shape="rect" id="node15" href="$classMDocStd__DocumentRetrievalDriver.html" title="retrieval driver of a standard document &#160;" alt="" coords="605,165,869,195"/>
+<area shape="rect" id="node23" href="$classXmlLDrivers__DocumentRetrievalDriver.html" title="XmlLDrivers_DocumentRetrievalDriver" alt="" coords="596,272,879,301"/>
+<area shape="rect" id="node2" href="$classPCDM__Reader.html" title="PCDM_Reader" alt="" coords="207,165,324,195"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,165,156,195"/>
+<area shape="rect" id="node9" href="$classBinDrivers__DocumentRetrievalDriver.html" title="BinDrivers_DocumentRetrievalDriver" alt="" coords="945,5,1217,35"/>
+<area shape="rect" id="node13" href="$classBinTObjDrivers__DocumentRetrievalDriver.html" title="BinTObjDrivers_DocumentRetrievalDriver" alt="" coords="931,59,1232,88"/>
+<area shape="rect" id="node11" href="$classBinXCAFDrivers__DocumentRetrievalDriver.html" title="BinXCAFDrivers_DocumentRetrievalDriver" alt="" coords="1285,5,1592,35"/>
+<area shape="rect" id="node17" href="$classStdDrivers__DocumentRetrievalDriver.html" title="retrieval driver of a Part document &#160;" alt="" coords="944,112,1219,141"/>
+<area shape="rect" id="node19" href="$classStdLDrivers__DocumentRetrievalDriver.html" title="retrieval driver of a Part document &#160;" alt="" coords="940,165,1223,195"/>
+<area shape="rect" id="node21" href="$classXCAFDrivers__DocumentRetrievalDriver.html" title="retrieval driver of a XS document &#160;" alt="" coords="939,219,1224,248"/>
+<area shape="rect" id="node25" href="$classXmlDrivers__DocumentRetrievalDriver.html" title="XmlDrivers_DocumentRetrievalDriver" alt="" coords="944,272,1219,301"/>
+<area shape="rect" id="node29" href="$classXmlTObjDrivers__DocumentRetrievalDriver.html" title="XmlTObjDrivers_DocumentRetrievalDriver" alt="" coords="928,325,1235,355"/>
+<area shape="rect" id="node27" href="$classXmlXCAFDrivers__DocumentRetrievalDriver.html" title="retrieval driver of a XS document &#160;" alt="" coords="1284,272,1593,301"/>
+</map>

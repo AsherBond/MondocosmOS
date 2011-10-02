@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepPrimAPI__MakeCone.html" title="Describes functions to build cones or portions of cones. &#160;&#160;A MakeCone object provides..." alt="" coords="789,5,976,35"/>
+<area shape="rect" id="node9" href="$classBRepPrimAPI__MakeCylinder.html" title="Describes functions to build cylinders or portions of cylinders. &#160;&#160;A MakeCylinder..." alt="" coords="780,59,985,88"/>
+<area shape="rect" id="node11" href="$classBRepPrimAPI__MakeRevolution.html" title="Describes functions to build revolved shapes. &#160;&#160;A MakeRevolution object provides..." alt="" coords="771,112,995,141"/>
+<area shape="rect" id="node13" href="$classBRepPrimAPI__MakeSphere.html" title="Describes functions to build spheres or portions of spheres. &#160;&#160;A MakeSphere object..." alt="" coords="783,165,983,195"/>
+<area shape="rect" id="node15" href="$classBRepPrimAPI__MakeTorus.html" title="Describes functions to build tori or portions of tori. &#160;&#160;A MakeTorus object provides..." alt="" coords="789,219,976,248"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="256,112,467,141"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="7,112,207,141"/>
+</map>

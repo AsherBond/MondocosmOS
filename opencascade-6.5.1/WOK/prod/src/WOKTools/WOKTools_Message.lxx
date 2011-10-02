@@ -1,0 +1,107 @@
+// File:	WOKTools_Message.lxx
+// Created:	Tue Dec  5 19:50:22 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+
+#include <TCollection_HAsciiString.hxx>
+
+
+extern WOKTools_Message& FileLogEndMsgHandler(WOKTools_Message& amsgq, const Standard_Boolean newline);
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsSet
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKTools_Message::IsSet() const
+{
+  return myison;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : PrintContext
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKTools_Message::PrintContext() const
+{
+  return myprintcontext;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : PrintContext
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKTools_Message::PrintHeader() const
+{
+  return myprintheader;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Index
+//purpose  : 
+//=======================================================================
+inline Standard_Integer WOKTools_Message::Index() const
+{
+  return myindex;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : EndMsgHandler
+//purpose  : 
+//=======================================================================
+inline WOKTools_MsgHandler WOKTools_Message::EndMsgHandler() const
+{
+  if(!mylogflag)
+    return myendmsghandlr;
+  else
+    return FileLogEndMsgHandler;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Message
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKTools_Message::Message() const
+{
+  return mymessage;
+}
+
+//=======================================================================
+//function : Switcher
+//purpose  : 
+//=======================================================================
+inline Standard_CString WOKTools_Message::Switcher() const
+{
+  return myswitcher;
+}
+//=======================================================================
+//function : LogStream
+//purpose  : 
+//=======================================================================
+inline WOKTools_MsgStreamPtr WOKTools_Message::LogStream() const
+{
+  return mylogstream;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : ToPrint
+//purpose  : 
+//=======================================================================
+inline Standard_CString WOKTools_Message::ToPrint() const
+{
+  static char EMPTY[1] = "" ;
+  if(myindex == 1)
+    return mymessage->ToCString();
+  else if(myindex < mymessage->Length()) {
+    return &(mymessage->ToCString()[myindex-1]);
+  }
+  return EMPTY;
+}

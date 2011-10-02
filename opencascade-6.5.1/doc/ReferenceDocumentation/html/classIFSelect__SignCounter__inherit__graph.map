@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIFSelect__GraphCounter.html" title="A GraphCounter computes values to be sorted with the help of &#160;&#160;a Graph. I.E. not..." alt="" coords="5,315,184,344"/>
+<area shape="rect" id="node11" href="$classIGESSelect__CounterOfLevelNumber.html" title="This class gives information about Level Number. It counts &#160;&#160;entities according level..." alt="" coords="208,315,472,344"/>
+<area shape="rect" id="node2" href="$classIFSelect__SignatureList.html" title="A SignatureList is given as result from a Counter (any kind) &#160;&#160;It gives access to..." alt="" coords="131,160,304,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="156,83,279,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="143,5,292,35"/>
+</map>

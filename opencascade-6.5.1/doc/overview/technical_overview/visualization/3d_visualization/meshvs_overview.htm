@@ -1,0 +1,238 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>MeshVS Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+p.whs2 { margin-left:24.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nVisualization\n3D Graphics & Visualization\nMesh Visualization Services");
+addAvenueInfo("3D Visualization","technical_overview/visualization/3d_visualization/p_58_1.htm","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Mesh Visualization Services</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p><font style="color: #000000; font-weight: bold;"
+		color=#000000>MeshVS</font><font style="color: #000000;"
+										color=#000000> (Mesh Visualization 
+ Service) component extends 3D visualization capabilities of Open CASCADE 
+ Technology. It provides flexible means of displaying meshes along with 
+ associated pre- and post-processor data. </font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>From a developer's point of view, it is easy to integrate 
+ the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+					face="Lucida Console"
+					color=#000000>MeshVS</font><font style="color: #000000;"
+													color=#000000> component 
+ into any mesh-related application with the help of the following guidelines:</font></p>
+
+<ol>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs2">Derive a data source 
+ class from the <font style="font-family: 'Lucida Console';"
+						face="Lucida Console">MeshVS_DataSource</font> 
+ class. Re-implement its virtual methods, so as to give the <font style="font-family: 'Lucida Console';"
+	face="Lucida Console">MeshVS </font>component access to the application 
+ data model. This is the most important part of the job, since visualization 
+ performance is affected by performance of data retrieval methods of your 
+ data source class.</p></li>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><span style="margin-left: 24.00pt;"><font 
+ style="color: #000000;"
+	color=#000000>Create an instance of the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+														face="Lucida Console"
+														color=#000000>MeshVS_Mesh</font><font 
+ style="color: #000000;"
+	color=#000000> class. </font></span></p></li>
+</ol>
+
+<ol start=3>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+															color=#000000>Create 
+ an instance of your data source class and pass it to a MeshVS_Mesh object 
+ through the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+							face="Lucida Console"
+							color=#000000>SetDataSource()</font><font style="color: #000000;"
+	color=#000000> method.</font></p></li>
+</ol>
+
+<ol start=4>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+															color=#000000>Create 
+ one or several objects of </font><font style="font-family: 'Lucida Console'; color: #000000;"
+										face="Lucida Console"
+										color=#000000>MeshVS_PrsBuilder</font><font 
+ style="color: #000000;"
+	color=#000000>-derived classes (either standard, included in the </font><font 
+ style="font-family: 'Lucida Console'; color: #000000;"
+	face="Lucida Console"
+	color=#000000>MeshVS</font><font style="color: #000000;"
+									color=#000000> package, or your custom 
+ ones). Each </font><font style="font-family: 'Lucida Console'; color: #000000;"
+							face="Lucida Console"
+							color=#000000>PrsBuilder</font><font style="color: #000000;"
+	color=#000000> is responsible for drawing a </font><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>MeshVS_Mesh</font><font 
+ style="color: #000000;"
+	color=#000000> presentation in certain display mode(s) specified as 
+ a </font><font style="font-family: 'Lucida Console'; color: #000000;"
+				face="Lucida Console"
+				color=#000000>PrsBuilder</font><font style="color: #000000;"
+													color=#000000> constructor's 
+ argument. Display mode is treated by </font><font style="font-family: 'Lucida Console'; color: #000000;"
+													face="Lucida Console"
+													color=#000000>MeshVS</font><font 
+ style="color: #000000;"
+	color=#000000> classes as a combination of bit flags (two least significant 
+ bits are used to encode standard display modes: wireframe, shading and 
+ shrink). Pass these objects to the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+												face="Lucida Console"
+												color=#000000>MeshVS_Mesh::AddBuilder()</font><font 
+ style="color: #000000;"
+	color=#000000> method. </font><font style="font-family: 'Lucida Console'; color: #000000;"
+										face="Lucida Console"
+										color=#000000>MeshVS_Mesh</font><font 
+ style="color: #000000;"
+	color=#000000> takes advantage of improved selection highlighting mechanism: 
+ it highlights its selected entities itself, with the help of so called 
+ &quot;highlighter&quot; object. You can set one of </font><font style="font-family: 'Lucida Console'; color: #000000;"
+	face="Lucida Console"
+	color=#000000>PrsBuilder</font><font style="color: #000000;"
+										color=#000000> objects to act as 
+ a highlighter with the help of a corresponding argument of the </font><font 
+ style="font-family: 'Lucida Console'; color: #000000;"
+	face="Lucida Console"
+	color=#000000>AddBuilder()</font><font style="color: #000000;"
+											color=#000000> method.</font></p></li>
+</ol>
+
+<ol start=5>
+	
+	<li style="font-size: 10pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs2"><font style="color: #000000;"
+															color=#000000>Visual 
+ attributes of the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+								face="Lucida Console"
+								color=#000000>MeshVS_Mesh</font><font style="color: #000000;"
+	color=#000000> object (such as shading color, shrink coefficient and 
+ so on) are controlled through </font><font style="font-family: 'Lucida Console'; color: #000000;"
+											face="Lucida Console"
+											color=#000000>MeshVS_Drawer</font><font 
+ style="color: #000000;"
+	color=#000000> object. It maintains a map &quot;Attribute ID --&gt; 
+ attribute value&quot; and can be easily extended with any number of custom 
+ attributes.</font></p></li>
+</ol>
+
+<p><font style="color: #000000;"
+		color=#000000>In all other respects, </font><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>MeshVS_Mesh</font><font 
+ style="color: #000000;"
+	color=#000000> is very similar to any other </font><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>AIS_InteractiveObject</font><font 
+ style="color: #000000;"
+	color=#000000>-derived class, and it should be used accordingly (refer 
+ to the description of AIS package in the documentation).</font></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classTDataStd__DeltaOnModificationOfByteArray.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="839,5,1156,35"/>
+<area shape="rect" id="node11" href="$classTDataStd__DeltaOnModificationOfExtStringArray.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="824,59,1171,88"/>
+<area shape="rect" id="node13" href="$classTDataStd__DeltaOnModificationOfIntArray.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="847,112,1148,141"/>
+<area shape="rect" id="node15" href="$classTDataStd__DeltaOnModificationOfIntPackedMap.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="827,165,1168,195"/>
+<area shape="rect" id="node17" href="$classTDataStd__DeltaOnModificationOfRealArray.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="841,219,1153,248"/>
+<area shape="rect" id="node19" href="$classTDF__DefaultDeltaOnModification.html" title="This class provides a default implementation of a &#160;&#160;TDF_DeltaOnModification. &#160;" alt="" coords="875,272,1120,301"/>
+<area shape="rect" id="node21" href="$classTNaming__DeltaOnModification.html" title="This class provides default services for an &#160;&#160;AttributeDelta on a MODIFICATION action..." alt="" coords="885,325,1109,355"/>
+<area shape="rect" id="node2" href="$classTDF__AttributeDelta.html" title="This class discribes the services we need to &#160;&#160;implement Delta and Undo/Redo services..." alt="" coords="376,165,533,195"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,165,328,195"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,165,156,195"/>
+</map>

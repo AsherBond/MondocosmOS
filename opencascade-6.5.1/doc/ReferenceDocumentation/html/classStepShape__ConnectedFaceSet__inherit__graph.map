@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classStepShape__ClosedShell.html" title="StepShape_ClosedShell" alt="" coords="35,392,213,421"/>
+<area shape="rect" id="node15" href="$classStepShape__ConnectedFaceSubSet.html" title="Representation of STEP entity ConnectedFaceSubSet &#160;" alt="" coords="237,392,493,421"/>
+<area shape="rect" id="node17" href="$classStepShape__OpenShell.html" title="StepShape_OpenShell" alt="" coords="517,392,685,421"/>
+<area shape="rect" id="node2" href="$classStepShape__TopologicalRepresentationItem.html" title="StepShape_TopologicalRepresentationItem" alt="" coords="211,237,520,267"/>
+<area shape="rect" id="node4" href="$classStepRepr__RepresentationItem.html" title="StepRepr_RepresentationItem" alt="" coords="251,160,480,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="304,83,427,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="291,5,440,35"/>
+<area shape="rect" id="node13" href="$classStepShape__OrientedClosedShell.html" title="StepShape_OrientedClosedShell" alt="" coords="5,469,243,499"/>
+<area shape="rect" id="node19" href="$classStepShape__OrientedOpenShell.html" title="StepShape_OrientedOpenShell" alt="" coords="487,469,716,499"/>
+</map>

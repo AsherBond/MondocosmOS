@@ -1,0 +1,37 @@
+/* XPM */
+static char *DocsLeftArrowSmall_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"15 15 15 1",
+/* colors */
+"` c #77868F",
+"a c #556067",
+"b c #CFD4D7",
+"c c #B5BDC2",
+"d c #8C98A0",
+"e c #7E8C95",
+"f c #606C74",
+"g c #4F5A60",
+"h c #6C7A83",
+"i c #A7B0B6",
+"j c #C2C9CD",
+"k c #99A4AB",
+"l c #EBEDEE",
+"m c #AEB7BC",
+"n c #DDE1E3",
+/* pixels */
+"llllllllllnlllf",
+"lbimbbcmbnjjjch",
+"lkcicjjbjbfbbn`",
+"ljjmjjmcegfjbbd",
+"ljbjccdaafhjbjd",
+"lcjijaahhd`cjc`",
+"lmjfaaaede`jjjf",
+"lbbhfh`ededcjjf",
+"lcccchheddejjjd",
+"lkkjbbke`khmcjf",
+"ljmnjbbmdddmmni",
+"lijcimjkbj`bmbf",
+"ljbjcjbmckjnjih",
+"ljbjcjbmckjnjih",
+"ffddkiiefhkifdi"
+};

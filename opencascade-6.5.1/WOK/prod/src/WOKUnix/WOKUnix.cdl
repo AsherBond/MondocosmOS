@@ -1,0 +1,99 @@
+-- File:	WOKUnix.cdl
+-- Created:	Fri Jan 31 18:34:49 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+package WOKUnix 
+
+	---Purpose: 
+
+uses
+    EDL,
+    OSD,
+    TCollection,
+    TColStd,
+    SortTools,
+    MMgt,
+    WOKTools
+is
+
+    imported TimeStat;
+    imported Timeval;
+    imported FDSet;
+    imported SigHandler;
+    private imported Dir;
+    private imported DirEnt;
+    private imported StatBuf;
+
+    enumeration Signals         is SIGPIPE, SIGHUP, SIGINT, SIGQUIT, SIGILL, SIGKILL, SIGBUS, SIGSEGV,  SIGCHILD;
+    enumeration BufferIs        is STDOUT, STDERR;
+    enumeration PopenOutputMode is POPEN_MIX_OUT_ERR, POPEN_OUT_ERR;
+    enumeration PopenBufferMode is POPEN_BUFFERED, POPEN_IMMEDIATE, POPEN_ECHOIFBLOCKED;
+    enumeration ShellMode       is SynchronousMode, AsynchronousMode, DumpScriptMode;
+
+
+    enumeration Extension       is CFile, HFile, CDLFile, ODLFile, IDLFile, CXXFile,
+    	    	    	    	   HXXFile, IXXFile, JXXFile, LXXFile,  GXXFile, INCFile,
+    	    	    	    	   PXXFile, F77File, CSHFile, 
+				   DBFile, FDDBFile,  DDLFile, HO2File,  
+				   LibSchemaFile, AppSchemaFile,
+				   LexFile, YaccFile, PSWFile, LWSFile, TemplateFile,
+    	    	    	    	   ObjectFile, MFile, CompressedFile,  ArchiveFile, DSOFile, DATFile,  
+    	    	    	    	   LispFile,  IconFile, TextFile, TarFile, 
+				   --- WNT extensions
+    	    	    	    	   LIBFile, DEFile, RCFile, RESFile, IMPFile, EXPFile,
+    	    	    	    	   UnknownFile, NoExtFile;
+ 
+    enumeration RESyntax        is RESyntaxAWK, RESyntaxEGREP, RESyntaxGREP, RESyntaxEMACS;
+
+    exception BufferOverflow inherits Failure from Standard;
+    exception ProcessTimeOut inherits Failure from Standard;
+
+    class Signal;
+
+    class AdmFile;
+    class Path;
+    class PathIterator;
+    class FDescr;
+    class RegExp;
+     
+    private deferred class Buffer;
+   	private class FileBuffer;
+    	private class NoBuffer;
+   	private class CantBlockBuffer;
+
+    private deferred class ProcessOutput;
+    	private class MixedOutput;
+    	private class OutErrOutput;
+    	private class DumbOutput;
+
+    private class Process;
+    class ProcessManager;
+    class ShellManager;
+
+    private deferred class ShellStatus;
+    	private class ASyncStatus;
+    	private class SyncStatus;
+   	private class DumpScript;
+    
+    class Shell;
+    class RemoteShell;
+
+    
+    private class SequenceOfProcess 
+  	instantiates  Sequence from TCollection ( Process from  WOKUnix);
+
+    private class StackOfDir
+    	instantiates     Stack from TCollection ( Dir from WOKUnix );
+
+    SystemLastError returns Integer from Standard;
+
+    SystemMessage(i : Integer from Standard) 
+	returns CString from Standard;
+	
+    LastSystemMessage
+    	returns CString from Standard;
+      
+end WOKUnix;

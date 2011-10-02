@@ -1,0 +1,19 @@
+/* XPM */
+static char * textfile_adm[] = {
+"12 12 3 1",
+" 	s None	c None",
+".	c orange",
+"X	c #FFFFFFFFF3CE",
+" XXXXXXXX   ",
+" X......X   ",
+" X......XXX ",
+" X........X ",
+" X........X ",
+" X........X ",
+" X........X ",
+" X........X ",
+" X........X ",
+" X........X ",
+" X........X ",
+" XXXXXXXXXX "};
+

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classVrmlData__Color.html" title="VrmlData_Color" alt="" coords="5,237,131,267"/>
+<area shape="rect" id="node9" href="$classVrmlData__Coordinate.html" title="VrmlData_Coordinate" alt="" coords="155,237,320,267"/>
+<area shape="rect" id="node11" href="$classVrmlData__Normal.html" title="VrmlData_Normal" alt="" coords="344,237,483,267"/>
+<area shape="rect" id="node2" href="$classVrmlData__Node.html" title="VrmlData_Node" alt="" coords="173,83,301,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="163,5,312,35"/>
+</map>

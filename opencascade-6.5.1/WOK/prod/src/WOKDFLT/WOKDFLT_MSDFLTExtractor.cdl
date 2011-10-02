@@ -1,0 +1,47 @@
+-- File:	WOKDFLT_MSDFLTExtractor.cdl
+-- Created:	Fri Jun  7 11:26:31 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class MSDFLTExtractor from WOKDFLT 
+inherits MSExtractor from WOKBuilder
+
+	---Purpose: 
+
+uses
+    MSActionType            from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSAction                from WOKBuilder,
+    Param                   from WOKUtils,
+    TimeStat                from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+    
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSDFLTExtractor from WOKDFLT;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSDFLTExtractor from WOKDFLT;
+
+    GetTypeDepList(me; atype : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd
+	is private;
+
+    GetTypeMDate(me;  atype : HAsciiString from TCollection)
+    	returns TimeStat from WOKUtils;
+    
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+
+end MSDFLTExtractor;

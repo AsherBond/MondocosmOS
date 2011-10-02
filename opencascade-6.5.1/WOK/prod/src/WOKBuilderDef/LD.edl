@@ -1,0 +1,133 @@
+-- File:	LD.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 16:57:45 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %LD_EDL ) then
+-- @set %LD_EDL = ""--;Syntax error
+-- @cout "LD";
+
+ @template LD_ShortRef ( %LibName ) is
+  $ -l%LibName \
+ @end;
+
+ @template LD_LongRef  ( %LibDir, %LibName ) is
+  $ -L%LibDir -l%LibName \
+ @end;
+
+
+ @if( %Station == "sun" ) then
+   @template LD_DBDirective (%DBDir) is
+    $ -ptr%DBDir \
+   @end;
+ @endif;
+
+ @if( %Station == "ao1" ) then
+   @template LD_DBDirective (%DBDir) is
+    $ -ptr%DBDir/cxx_repository \
+   @end;
+ @endif;
+
+ @if( %Station == "hp" ) then
+   @template LD_DBDirective (%DBDir) is
+    $ -ptr%DBDir/ptrepository \
+   @end;
+ @endif;
+
+ @template LD_LibSearchPath  ( %LibDir ) is
+  $ -L%LibDir \
+ @end;
+
+ @if( %Station != "hp" && %Station != "mac" ) then 
+   @template LD_SharedFullPath ( %LibDir, %LibName ) is
+    $ %LibDir/lib%LibName.so \
+   @end;
+ @endif;
+
+ @if( %Station == "hp" ) then 
+   @template LD_SharedFullPath ( %LibDir, %LibName ) is
+    $ %LibDir/lib%LibName.sl \
+   @end;
+ @endif;
+
+ @if( %Station == "mac" ) then 
+   @template LD_SharedFullPath ( %LibDir, %LibName ) is
+    $ %LibDir/lib%LibName.dylib \
+   @end;
+ @endif;
+
+ @template LD_ArchiveFullPath ( %LibDir, %LibName ) is
+  $ %LibDir/lib%LibName.a \
+ @end;
+
+ @template LD_ObjectRef ( %ObjectPath ) is
+  $ %ObjectPath \
+ @end;
+
+ @template LD_ExternRef ( %ExternRef ) is
+  $ %ExternRef \
+ @end;
+
+-- Definition du Link Linux
+ @if ( %Station == "lin" ) then
+    @template LD_Footer ( %Station ) is
+     $ ;
+    @end;
+ @endif;
+
+
+-- Definition du Link Sun/Solaris 2.4
+
+  @if ( %Station == "sun" ) then 
+     @template LD_Footer (  ) is
+      $ ;
+     @end;
+ @endif;
+
+-- Definition du Link DEC/OSF1
+ @if ( %Station == "ao1") then
+    @template LD_Footer (  ) is
+     $ -lm -lcxx -lc;
+     $set stat = $status
+     $/usr/bin/rm -f so_locations
+     $set status = $stat
+    @end;
+ @endif;
+
+
+-- Definition du Link Silicon Graphics
+ @if ( %Station == "sil" ) then
+   @template LD_Footer ( %Station ) is
+     $-lm ;
+     $ set ld_status=$status;
+     $ /usr/bin/rm -f so_locations
+     $ if ( $?LD_LIBRARY_PATH ) then
+     $  set ld_library_path=$LD_LIBRARY_PATH
+     $ endif
+    @end;
+ @endif;
+
+-- Definition du Link HP-UX
+ @if ( %Station == "hp" ) then
+    @template LD_Footer ( %Station ) is
+     $-L/lib -lm ;
+     $ ;
+    @end;
+ @endif;
+
+-- Definition du Link Darwin
+ @if ( %Station == "mac" ) then
+    @template LD_Footer ( %Station ) is
+     $ ;
+    @end;
+ @endif;
+
+-- Definition du Link FreeBSD
+ @if ( %Station == "bsd" ) then
+    @template LD_Footer ( %Station ) is
+     $ ;
+    @end;
+ @endif;
+
+@endif;
+

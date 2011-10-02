@@ -1,0 +1,384 @@
+// File:	WOKTools_IndexedMap.gxx
+// Created:	Mon Jun 17 17:15:12 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+#include <Standard_DomainError.hxx>
+#include <Standard_MultiplyDefined.hxx>
+#include <Standard_NoSuchObject.hxx>
+#include <Standard_OutOfRange.hxx>
+#include <WOKTools_BasicMapIterator.hxx>
+
+// Node definition and nodes storage management
+#if (defined IRIX || defined WNT || defined LIN)
+
+template <class Key> class IndexedMapNode : public WOKTools_MapNode {
+  public :
+  IndexedMapNode(const Key& K1, const Standard_Integer K2, const Standard_Integer ahashcode, IndexedMapNode* n1, IndexedMapNode* n2) 
+    : WOKTools_MapNode(n1),key(K1),index(K2),next2(n2),hashcode(ahashcode) {}
+  void* operator new(size_t aSize) {
+    return Standard::Allocate(aSize);
+  }
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+
+  Key                key;
+  Standard_Integer   index;
+  IndexedMapNode*    next2;
+  Standard_Integer   hashcode;
+};
+
+#define Node IndexedMapNode<TheKey>
+
+
+#else
+
+class Node : public WOKTools_MapNode {
+  public :
+  Node(const TheKey& K, const Standard_Integer theIndex, const Standard_Integer ahashcode, Node* n1, Node* n2) 
+    : WOKTools_MapNode(n1),key(K),index(theIndex),hashcode(ahashcode),next2(n2) {}
+  void* operator new(size_t aSize) {
+    return Standard::Allocate(aSize);
+  }
+//  void  operator delete(void* aNode, size_t aSize) {
+  void  operator delete(void* aNode) {
+//    Standard::Free(aNode,aSize);
+    Standard::Free(aNode);
+  }
+  
+  TheKey             key;
+  Standard_Integer   index;
+  Node*              next2;
+  Standard_Integer   hashcode;
+};
+
+#endif
+
+//=======================================================================
+//function : WOKTools_IndexedMap
+//purpose  : 
+//=======================================================================
+WOKTools_IndexedMap::WOKTools_IndexedMap(const Standard_Integer NbBuckets)
+  : WOKTools_BasicMap(NbBuckets,Standard_False)
+{
+}
+
+//=======================================================================
+//function : WOKTools_IndexedMap
+//purpose  : 
+//=======================================================================
+WOKTools_IndexedMap::WOKTools_IndexedMap(const WOKTools_IndexedMap& Other) 
+  : WOKTools_BasicMap(Other.NbBuckets(),Standard_False)
+{
+  if (!Other.IsEmpty())
+    Standard_DomainError::Raise("WOKTools:Copy of IndexedMap");
+}
+
+//=======================================================================
+//function : Assign
+//purpose  : 
+//=======================================================================
+WOKTools_IndexedMap& WOKTools_IndexedMap::Assign(const WOKTools_IndexedMap& Other)
+{
+  if (this == &Other) return *this;
+  Clear();
+  ReSize(Other.NbBuckets());
+  Node** data1 = (Node**)myData1;
+  for (Standard_Integer i=1; i<= Other.Extent(); i++) {
+    Node *OtherNode = (Node *) Other.FindNodeFromIndex(i);
+    int hashcode = OtherNode->hashcode;
+    int k1 = Index(hashcode,NbBuckets());
+    Node* p = data1[k1];
+    while (p) {
+      if (hashcode == p->hashcode) {
+	if (Hasher::IsEqual(p->key,OtherNode->key)) {
+	  break;
+	}
+      }
+      p = (Node*) p->next;
+    }
+    Increment();
+    Node** data2 = (Node**)myData2;
+    Standard_Integer k2 = ::HashCode(Extent(),NbBuckets());
+    p = new Node(OtherNode->key,OtherNode->index,hashcode,data1[k1],data2[k2]);
+    data1[k1] = p;
+    data2[k2] = p;
+  }
+  return *this;
+}
+
+//=======================================================================
+//function : ReSize
+//purpose  : 
+//=======================================================================
+
+void WOKTools_IndexedMap::ReSize(const Standard_Integer N)
+{
+  Node** newdata1;
+  Node** newdata2;
+  Standard_Integer newBuck;
+  if (BeginResize(N,newBuck,
+		  *(Standard_Address*)&newdata1,*(Standard_Address*)&newdata2)) {
+    if (myData1) {
+      Node** olddata = (Node**) myData1;
+      Node *p, *q;
+      Standard_Integer i,k1,k2;
+      for (i = 0; i <= NbBuckets(); i++) {
+	if (olddata[i]) {
+	  p = olddata[i];
+	  while (p) {
+	    k1 = Index(p->hashcode,newBuck);
+	    q = (Node*) p->next;
+	    p->next = newdata1[k1];
+	    newdata1[k1] = p;
+	    if (p->index > 0) {
+	      k2 = ::HashCode(p->index,newBuck);
+	      p->next2 = newdata2[k2];
+	      newdata2[k2] = p;
+	    }
+	    p = q;
+	  }
+	}
+      }
+    }
+    EndResize(N,newBuck,newdata1,newdata2);
+  }
+}
+
+//=======================================================================
+//function : Clear
+//purpose  : 
+//=======================================================================
+
+void WOKTools_IndexedMap::Clear()
+{
+  if (!IsEmpty()) {
+    Standard_Integer i;
+    Node** data1 = (Node**) myData1;
+    Node *p,*q;
+    for (i = 0; i <= NbBuckets(); i++) {
+      p = data1[i];
+      while (p) {
+	q = (Node*) p->next;
+	delete p;
+	p = q;
+      }
+    }
+  }
+  WOKTools_BasicMap::Destroy();
+}
+
+//=======================================================================
+//function : Add
+//purpose  : 
+//=======================================================================
+
+Standard_Integer WOKTools_IndexedMap::Add(const TheKey& K1)
+{
+  if (Resizable())  ReSize(Extent());
+  Node** data1 = (Node**)myData1;
+  Standard_Integer hashcode = Hasher::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode,NbBuckets());
+  Node* p;
+  p = data1[k1];
+  while (p) {
+    if (hashcode == p->hashcode) {
+      if (Hasher::IsEqual(p->key,K1)) 
+	return p->index;
+    }
+    p = (Node*) p->next;
+  }
+  Increment();
+  Node** data2 = (Node**)myData2;
+  Standard_Integer k2 = ::HashCode(Extent(),NbBuckets());
+  p = new Node(K1,Extent(),hashcode,data1[k1],data2[k2]);
+  data1[k1] = p;
+  data2[k2] = p;
+  return Extent();
+}
+
+//=======================================================================
+//function : Substitute
+//purpose  : 
+//=======================================================================
+
+void WOKTools_IndexedMap::Substitute(const Standard_Integer I,
+				     const TheKey& K1)
+{
+  Standard_OutOfRange_Raise_if(I < 1 || I > Extent(), 
+			       "IndexedMap::Substitute");
+  Node** data1 = (Node**)myData1;
+  Node* p;
+
+  // check if K1 is not already in the map
+  Standard_Integer hashcode = Hasher::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode,NbBuckets());
+  p = data1[k1];
+  while (p) {
+    if (hashcode == p->hashcode) 
+      if (Hasher::IsEqual(p->key,K1)) 
+	Standard_DomainError::Raise("IndexedMap::Substitute");
+    p = (Node*) p->next;
+  }
+
+  // Find the node for the index I
+  Node** data2 = (Node**)myData2;
+  Standard_Integer k2 = ::HashCode(I,NbBuckets());
+  p = data2[k2];
+  while (p) {
+    if (p->index == I)
+      break;
+    p = (Node*) p->next2;
+  }
+
+  // remove the old key
+  Standard_Integer k = Index(Hasher::HashCode(p->key),NbBuckets());
+  Node* q = data1[k];
+  if (q == p) data1[k] = (Node*) p->next;
+  else {
+    while(q->next != p) q = (Node*) q->next;
+    q->next = p->next;
+  }
+
+  // update the node
+  p->key = K1;
+  p->next = data1[k1];
+  data1[k1] = p;
+}
+
+//=======================================================================
+//function : RemoveLast
+//purpose  : 
+//=======================================================================
+
+void WOKTools_IndexedMap::RemoveLast()
+{
+  Standard_OutOfRange_Raise_if(Extent() == 0,
+			       "IndexedMap::RemoveLast");
+  Node** data1 = (Node**)myData1;
+  Node* p;
+  Node* q;
+
+  // Find the node for the last index and remove it
+  Node** data2 = (Node**)myData2;
+  Standard_Integer k2 = ::HashCode(Extent(),NbBuckets());
+  p = data2[k2];
+  q = NULL;
+  while (p) {
+    if (p->index == Extent())
+      break;
+    q = p;
+    p = (Node*) p->next2;
+  }
+  if (q == NULL) 
+    data2[k2] = p->next2;
+  else 
+    q->next2 = p->next2;
+
+  // remove the key
+  Standard_Integer k = Index(Hasher::HashCode(p->key), NbBuckets());
+  q = data1[k];
+  if (q == p) data1[k] = (Node*) p->next;
+  else {
+    while(q->next != p) q = (Node*) q->next;
+    q->next = p->next;
+  }
+  Decrement();
+  delete p;
+}
+
+//=======================================================================
+//function : Contains
+//purpose  : 
+//=======================================================================
+
+Standard_Boolean WOKTools_IndexedMap::Contains(const TheKey& K1) const
+{
+  if (IsEmpty()) return Standard_False;
+  Node** data1 = (Node**)myData1;
+  Standard_Integer hashcode = Hasher::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode,NbBuckets());
+  Node *p1;
+  p1 = data1[k1];
+  while (p1) {
+    if( hashcode == p1->hashcode)
+      if (Hasher::IsEqual(p1->key,K1)) 
+	return Standard_True;
+    p1 = (Node*) p1->next;
+  }
+  return Standard_False;
+}
+
+//=======================================================================
+//function : FindNodeFromIndex
+//purpose  : 
+//=======================================================================
+Standard_Address WOKTools_IndexedMap::FindNodeFromIndex(const Standard_Integer K2) const
+{
+  Standard_OutOfRange_Raise_if(K2 < 1 || K2 > Extent(), "IndexedMap");
+  Node** data2 = (Node**)myData2;
+  Standard_Integer k2 = ::HashCode(K2,NbBuckets());
+  Node *p2;
+  p2 = data2[k2];
+  while (p2) {
+    if (p2->index == K2) return p2;
+    p2 = p2->next2;
+  }
+  Standard_OutOfRange::Raise("IndexedMap : missing index !!!");
+  return p2;  
+}
+
+//=======================================================================
+//function : FindKey
+//purpose  : 
+//=======================================================================
+const TheKey& WOKTools_IndexedMap::FindKey(const Standard_Integer K2) const
+{
+  Standard_OutOfRange_Raise_if(K2 < 1 || K2 > Extent(), "IndexedMap");
+
+  return ((Node *)FindNodeFromIndex(K2))->key;
+}
+
+//=======================================================================
+//function : FindNodeFromKey
+//purpose  : 
+//=======================================================================
+Standard_Address WOKTools_IndexedMap::FindNodeFromKey(const TheKey& K1) const
+{
+  if (IsEmpty()) return 0;
+  Node** data1 = (Node**)myData1;
+  Standard_Integer hashcode = Hasher::HashCode(K1);
+  Standard_Integer k1 = Index(hashcode,NbBuckets());
+  Node *p1;
+  p1 = data1[k1];
+  while (p1) {
+    if(hashcode == p1->hashcode)
+      if (Hasher::IsEqual(p1->key,K1)) 
+	return p1;
+    p1 = (Node*) p1->next;
+  }
+  return NULL;
+}
+
+//=======================================================================
+//function : FindIndex
+//purpose  : 
+//=======================================================================
+Standard_Integer WOKTools_IndexedMap::FindIndex(const TheKey& K1) const
+{
+  if (IsEmpty()) return 0;
+  
+  Node *p = (Node *)FindNodeFromKey(K1);
+
+  if(p) return p->index;
+  return 0;
+}
+
+
+#ifdef Node
+#undef Node
+#endif
+

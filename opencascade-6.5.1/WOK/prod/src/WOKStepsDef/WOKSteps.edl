@@ -1,0 +1,78 @@
+-- File:	WOKSteps.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Jun 27 18:47:27 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKSteps_EDL) then
+@set %WOKSteps_EDL = "";
+
+@ifnotdefined ( %WOKSteps_Del_EDL ) then
+@uses "WOKSteps_Del.edl";
+@endif;
+
+@set %WOKSteps_LinkShr = "Yes";
+
+
+@set %WOKSteps_IsOrdered = "No";
+
+@set %WOKSteps_StepLibs = "WOKStepsStep WOKStepsDFLT WOKStepsOBJY WOKStepsOBJS WOKStepsDeliv WOKStepsOrbix";
+
+@ifdefined (%UnitType) then
+@string %WOKSteps_File = "WOKSteps_" %UnitType ".edl";
+
+@iffile ( %WOKSteps_File ) then
+   @uses %WOKSteps_File;
+@endif;
+
+@string %WOKSteps_DBMSFile = "WOKSteps_" %UnitType "_" %DBMS ".edl";
+
+@iffile ( %WOKSteps_DBMSFile ) then
+   @uses %WOKSteps_DBMSFile;
+@endif;
+
+@string %WOKSteps_StationFile = "WOKSteps_" %UnitType "_" %Station ".edl";
+
+@iffile ( %WOKSteps_StationFile ) then
+   @uses %WOKSteps_StationFile;
+@endif;
+
+@endif;
+
+@ifnotdefined ( %WOKSteps_SrcGroup ) then
+   @set %WOKSteps_SrcGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_XcppGroup ) then
+   @set %WOKSteps_XcppGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_SchXcppGroup ) then
+   @set %WOKSteps_SchXcppGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_ObjGroup ) then
+   @set %WOKSteps_ObjGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_LibGroup ) then
+   @set %WOKSteps_LibGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_DepGroup ) then
+   @set %WOKSteps_DepGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_ExecGroup ) then
+   @set %WOKSteps_ExecGroup = "";
+@endif;
+
+@ifnotdefined ( %WOKSteps_DelivGroup ) then
+   @set %WOKSteps_DelivGroup = "";
+@endif;
+
+@set %WOKSteps_Groups = "Src Xcpp SchXcpp Obj Dep Lib Exec Deliv";
+
+@set %WOKSteps_DefaultGroups = "Src Xcpp SchXcpp Obj Dep Lib Exec";
+
+@endif;
+

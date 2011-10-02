@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classGeom__BezierCurve.html" title="Describes a rational or non&#45;rational Bezier curve &#160;a non&#45;rational Bezier curve is..." alt="" coords="5,392,157,421"/>
+<area shape="rect" id="node13" href="$classGeom__BSplineCurve.html" title="Definition of the B_spline curve. &#160;&#160;A B&#45;spline curve can be &#160;&#160;Uniform or non&#45;uniform..." alt="" coords="181,392,339,421"/>
+<area shape="rect" id="node15" href="$classGeom__TrimmedCurve.html" title="Describes a portion of a curve (termed the &quot;basis &lt;br&gt; &#160;curve&quot;) limited..." alt="" coords="363,392,528,421"/>
+<area shape="rect" id="node2" href="$classGeom__Curve.html" title="The abstract class Curve describes the common &#160;&#160;behavior of curves in 3D space. The..." alt="" coords="205,237,315,267"/>
+<area shape="rect" id="node4" href="$classGeom__Geometry.html" title="The abstract class Geometry for 3D space is the root &#160;&#160;class of all geometric objects..." alt="" coords="191,160,329,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="199,83,321,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="185,5,335,35"/>
+</map>

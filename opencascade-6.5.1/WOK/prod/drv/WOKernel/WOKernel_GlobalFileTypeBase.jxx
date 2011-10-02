@@ -1,0 +1,9 @@
+#ifndef _WOKernel_FileTypeBase_HeaderFile
+#include <WOKernel_FileTypeBase.hxx>
+#endif
+#ifndef _WOKernel_Entity_HeaderFile
+#include <WOKernel_Entity.hxx>
+#endif
+#ifndef _WOKernel_GlobalFileTypeBase_HeaderFile
+#include <WOKernel_GlobalFileTypeBase.hxx>
+#endif

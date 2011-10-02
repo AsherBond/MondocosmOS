@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{31FE68BB-0B17-0A69-11FA-D5F1825F57C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CSFDBSchema">
+      <UniqueIdentifier>{89EF0A1F-1839-1807-0D34-3882A5250142}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\CSFDBSchema\CSFDBSchema.cxx">
+      <Filter>Source files\CSFDBSchema</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

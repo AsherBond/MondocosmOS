@@ -1,0 +1,101 @@
+-- File:	WOKBuilder_Linker.cdl
+-- Created:	Tue Oct 24 11:40:38 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Linker from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Entity                  from WOKBuilder,
+    ObjectFile              from WOKBuilder,
+    Library                 from WOKBuilder,
+    HSequenceOfEntity       from WOKBuilder,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfObjectFile   from WOKBuilder,
+    BuildStatus             from WOKBuilder,
+    SharedLibrary           from WOKBuilder,
+    HSequenceOfPath         from WOKUtils,
+    Param                   from WOKUtils,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection
+ 
+raises
+    ProgramError from Standard
+is
+
+    Initialize(aname : HAsciiString from TCollection; params : Param from WOKUtils); 
+
+    Load(me:mutable)
+    	is redefined;
+
+    ObjectList(me) returns HSequenceOfObjectFile from WOKBuilder;
+    SetObjectList(me:mutable; objects : HSequenceOfObjectFile from WOKBuilder); 
+    
+    TargetName(me) returns HAsciiString from TCollection;
+    SetTargetName(me:mutable; aname : HAsciiString from TCollection);
+    
+    LibraryRefLine(me:mutable; alib : Library from WOKBuilder)
+    	returns HAsciiString from TCollection
+    	is virtual protected;
+    
+    SetLibrarySearchPathes(me:mutable; libpathes : HSequenceOfPath from WOKUtils);    
+    LibrarySearchPathes(me)
+    	returns HSequenceOfPath from WOKUtils;
+
+    SetDatabaseDirectories(me:mutable; libpathes : HSequenceOfPath from WOKUtils);    
+    DatabaseDirectories(me)
+    	returns HSequenceOfPath from WOKUtils;
+   
+    LibraryList(me) 
+    	returns HSequenceOfLibrary from WOKBuilder;
+    SetLibraryList(me:mutable; asharedlist : HSequenceOfLibrary from WOKBuilder);
+    
+    Externals(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+    SetExternals(me:mutable; externals : HSequenceOfHAsciiString from TColStd);
+
+    EvalHeader(me:mutable)  
+    	returns HAsciiString from TCollection  
+    	is virtual protected; 
+
+    EvalLibSearchDirectives(me:mutable)
+    	returns HAsciiString from TCollection  
+    	is virtual protected; 
+	
+    EvalDatabaseDirectives(me:mutable)
+    	returns HAsciiString from TCollection  
+    	is virtual protected; 
+     
+    EvalObjectList(me:mutable) 
+    	returns HAsciiString from TCollection  
+    	is virtual protected;  
+	 
+    EvalLibraryList(me:mutable) 
+    	returns HAsciiString from TCollection  
+    	is virtual protected;  
+    
+    EvalFooter(me:mutable) 
+    	returns HAsciiString from TCollection 
+	is virtual protected;
+
+    GetLinkerProduction(me:mutable)
+    	returns HSequenceOfEntity from WOKBuilder
+	is virtual protected;
+	
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+fields
+    myname      : HAsciiString            from TCollection;
+    myobjects   : HSequenceOfObjectFile   from WOKBuilder;
+    mylibpathes : HSequenceOfPath         from WOKUtils;
+    mydbdirs    : HSequenceOfPath         from WOKUtils;
+    mylibs      : HSequenceOfLibrary      from WOKBuilder;
+    myexterns   : HSequenceOfHAsciiString from TColStd;
+end Linker;

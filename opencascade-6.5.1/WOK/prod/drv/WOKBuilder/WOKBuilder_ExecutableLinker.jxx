@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_HSequenceOfEntity_HeaderFile
+#include <WOKBuilder_HSequenceOfEntity.hxx>
+#endif
+#ifndef _WOKBuilder_ExecutableLinker_HeaderFile
+#include <WOKBuilder_ExecutableLinker.hxx>
+#endif

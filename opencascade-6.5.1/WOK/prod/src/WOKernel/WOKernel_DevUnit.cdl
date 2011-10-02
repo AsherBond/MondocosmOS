@@ -1,0 +1,130 @@
+-- File:	WOKernel_DevUnit.cdl
+-- Created:	Fri Jun 23 17:53:27 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class DevUnit from WOKernel 
+inherits Entity from WOKernel
+
+	---Purpose: 
+
+uses
+    HSequenceOfHAsciiString    from TColStd,
+    HAsciiString               from TCollection,
+    File                       from WOKernel,
+    FileType                   from WOKernel,
+    Locator                    from WOKernel,
+    UnitNesting                from WOKernel,
+    UnitTypeDescr              from WOKernel,
+    HSequenceOfFile            from WOKernel,
+    UnitGraph                  from WOKernel,
+    Locator                    from WOKernel,
+    Path                       from WOKUtils,
+    HSequenceOfParamItem       from WOKUtils
+    
+raises
+    ProgramError from Standard
+is
+    Create(atype : UnitTypeDescr from WOKernel; 
+    	   aname : HAsciiString from TCollection; 
+    	anesting : UnitNesting from WOKernel)
+    	returns mutable DevUnit from WOKernel; 
+    
+    GetParameters(me:mutable)
+    is redefined protected;
+
+    EntityCode(me) returns HAsciiString from TCollection is redefined;
+    TypeCode(me) returns Character from Standard;
+    Type(me) 
+    ---C++: return const &
+    	returns HAsciiString from TCollection;
+    
+    
+    BuildParameters(me: mutable; someparams : HSequenceOfParamItem from WOKUtils; usedefaults : Boolean from Standard)
+    ---Purpose: constructs Sequence of Parameters Needed by Entity
+    --          to be built.
+    --          Checks their consistancy
+    	returns HSequenceOfParamItem from WOKUtils is redefined;
+
+    Build(me: mutable; someparams : HSequenceOfParamItem from WOKUtils)
+    ---Purpose: Creates On disk the Unit
+    --          it must neither be opened or existing    
+    --          Parameters must all be present in someparams
+    	raises ProgramError from Standard is redefined;  
+
+    Destroy(me: mutable) is redefined;
+    ---Purpose: Destroys Unit on Disk
+    --          it must not be opened    
+
+    Open(me: mutable)  
+    	raises ProgramError from Standard is redefined;
+	
+    Close(me: mutable) is redefined;
+
+    --- Gestion de la liste des fichiers de l'ud
+
+    AddFile(me:mutable;    afile : File from WOKernel);
+    RemoveFile(me:mutable; afile : File from WOKernel);
+
+    ReadSingleFileList(me; afile : File from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd;
+    
+    WriteSingleFileList(me; afile : File from WOKernel; files : HSequenceOfFile from WOKernel);
+
+    ReadFileList(me:mutable; alocator : Locator from WOKernel);
+
+    DumpFileList(me; alocator : Locator from WOKernel);
+    ---Purpose: Updates FileList files    
+
+    SearchInFileList(me:mutable; alocator : Locator from WOKernel; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    NestedFileName(me:mutable; atype, aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    SetFileList(me:mutable; aseq : HSequenceOfHAsciiString from TColStd);
+
+    FileList(me) 
+       	returns HSequenceOfHAsciiString from TColStd
+    	is static;
+ 
+    --- Gestion des dependences de l'ud
+    --    
+    ImplDepFile(me; alocator : Locator from WOKernel;
+    	    	    aname    : HAsciiString from TCollection)
+       	returns File from WOKernel;
+    
+    ReadImplDepFile(me; afile    : Path from WOKUtils; 
+    	    	    	alocator : Locator from WOKernel;
+    	    	    	aflag    : Boolean from Standard = Standard_False)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    ImplementationDepList(me:mutable; aunitgraph : UnitGraph from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd
+    	is virtual;
+
+    ImplementationDepList(me:mutable; apart : HAsciiString from TCollection; aunitgraph : UnitGraph from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ImplementationDep(myclass; aunitgraph : UnitGraph from WOKernel; aname : HAsciiString from TCollection;
+    	    	    	    	    	    	    	    	     alist : HSequenceOfHAsciiString from TColStd)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ImplementationDep(me:mutable; aunitgraph : UnitGraph from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd
+	is virtual;
+
+    ImplementationDep(me:mutable; apart : HAsciiString from TCollection; aunitgraph : UnitGraph from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    ImplClients(me:mutable; aclientgraph : UnitGraph from WOKernel)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+fields
+
+    mytype     : UnitTypeDescr           from WOKernel;
+    myfiles    : HSequenceOfHAsciiString from TColStd;
+    
+end DevUnit;

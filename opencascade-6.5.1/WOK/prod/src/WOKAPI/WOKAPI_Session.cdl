@@ -1,0 +1,176 @@
+-- File:	WOKAPI_Session.cdl
+-- Created:	Tue Aug  1 15:43:49 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class    Session from WOKAPI 
+inherits Entity  from WOKAPI
+
+	---Purpose: Manages Session API for WOK
+
+uses
+    Entity                  from WOKAPI,
+    Factory                 from WOKAPI,
+    SequenceOfFactory       from WOKAPI,
+    Workshop                from WOKAPI,
+    Warehouse               from WOKAPI,
+    Parcel                  from WOKAPI,
+    Workbench               from WOKAPI,
+    Unit                    from WOKAPI,
+    
+    Entity                  from WOKernel,
+    Session                 from WOKernel,
+    Warehouse               from WOKernel,
+    Parcel                  from WOKernel,
+    Factory                 from WOKernel,
+    Workshop                from WOKernel,
+    Workbench               from WOKernel,
+    DevUnit                 from WOKernel,
+    
+    Path                    from WOKUtils,
+    Param                   from WOKUtils,
+    HSequenceOfParamItem    from WOKUtils,
+    
+    ArgTable                from WOKTools,
+    Return                  from WOKTools,
+    HSequenceOfDefine       from WOKTools,
+    
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    Failure                 from Standard
+
+is
+
+    Create returns Session from WOKAPI;    
+
+    -- Session Manipulation Opening
+    Open(me:out; alocation,astation : HAsciiString from TCollection = NULL) 
+    	  returns Integer from Standard;
+
+    Open(me:out;  aSession : Session from WOKAPI; aPath : HAsciiString from TCollection)
+    	is redefined;
+    Close(me:out)
+    	is redefined;
+
+    GeneralFailure(me:out; afailure : Failure from Standard);
+
+    IsValid(me)
+    	returns Boolean from Standard
+	is redefined;
+
+    Path(me) returns mutable Path from WOKUtils;
+    SetPath(me:out; apath : Path from WOKUtils);
+
+    CWEntityName(me)
+    	returns HAsciiString from TCollection;
+
+    GetCWEntity(me)
+    	returns Entity from WOKAPI;
+    
+    SetCWEntity(me:out; anent : Entity from WOKAPI);
+    
+    Factories(me; factseq : out SequenceOfFactory from WOKAPI);
+    
+    Station(me)
+    	returns HAsciiString from TCollection;
+    SetStation(me:out; astation : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+	
+    DBMSystem(me)
+    	returns HAsciiString from TCollection;
+    SetDBMSystem(me:out; adbms : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+    
+    DebugMode(me)
+    	returns Boolean from Standard;
+    SetDebugMode(me:out; amode : Boolean from Standard);
+
+    IsValidPath(me; apath : HAsciiString from TCollection) 
+    	returns Boolean from Standard;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is redefined;
+
+
+-----
+--             SESSION PRIVATE METHODS
+--             Use them only in WOKAPI classes
+
+
+    Param(me) 
+    	returns Param  from WOKUtils
+    	is private;
+    
+    SaveToFile(me)
+    	is private;
+    ---Purpose: Sauve les parametres de session dans le fichier    
+
+    OpenPath(me; apath : HAsciiString from TCollection; besilent : Boolean from Standard = Standard_False) 
+    	returns mutable Entity from WOKernel
+    	is private;
+
+    GetEntity(me; ahumanpath : HAsciiString from TCollection; fatal : Boolean = Standard_True)
+    	returns Entity from WOKernel
+    	is private;
+	    
+    GetFactory(me; ahumanpath : HAsciiString from TCollection;
+    	    	   fatal      : Boolean      from Standard = Standard_True;
+    	    	   getit      : Boolean      from Standard = Standard_True)
+    	returns Factory from WOKernel
+    	is private;
+
+    GetWarehouse(me; ahumanpath : HAsciiString from TCollection; 
+    	    	     fatal      : Boolean      from Standard = Standard_True;
+    	    	     getit      : Boolean      from Standard = Standard_True)
+    	returns Warehouse from WOKernel
+    	is private;
+	
+    GetParcel(me; ahumanpath : HAsciiString from TCollection; 
+    	    	  fatal      : Boolean      from Standard = Standard_True;
+    	    	  getit      : Boolean      from Standard = Standard_True)
+    	returns Parcel from WOKernel
+    	is private;
+	
+	
+    GetWorkshop(me; ahumanpath : HAsciiString from TCollection; 
+    	    	    fatal      : Boolean      from Standard = Standard_True;
+    	    	    getit      : Boolean      from Standard = Standard_True)
+    	returns Workshop from WOKernel
+    	is private;
+
+    GetWorkbench(me; ahumanpath : HAsciiString from TCollection; 
+    	    	     fatal      : Boolean      from Standard = Standard_True;
+    	    	     getit      : Boolean      from Standard = Standard_True)
+    	returns Workbench from WOKernel
+    	is private;
+
+    GetDevUnit(me; ahumanpath : HAsciiString from TCollection; 
+    	    	   fatal      : Boolean      from Standard = Standard_True;
+    	    	   getit      : Boolean      from Standard = Standard_True)
+    	returns DevUnit from WOKernel
+    	is private;
+
+fields 
+
+    mypath      : Path           from WOKUtils;
+    myparams    : Param          from WOKUtils;
+    
+    mycwe       : HAsciiString   from TCollection;
+
+
+friends
+
+    Create from class Entity    from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Factory   from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Workshop  from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Warehouse from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Parcel    from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Workbench from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True),
+    Create from class Unit      from WOKAPI (asession : Session from WOKAPI;aname    : HAsciiString from TCollection; fatal,getit : Boolean from Standard = Standard_True)
+
+end Session;
+
+

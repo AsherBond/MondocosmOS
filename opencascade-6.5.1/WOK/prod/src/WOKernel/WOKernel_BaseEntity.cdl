@@ -1,0 +1,69 @@
+-- File:	WOKernel_BaseEntity.cdl
+-- Created:	Tue Aug  8 16:39:36 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class BaseEntity from WOKernel 
+inherits TShared from MMgt
+	---Purpose: Common WOKernel Base class
+
+uses
+    HAsciiString        from TCollection,
+    PEntity             from WOKernel,
+    Entity              from WOKernel,
+    PSession            from WOKernel,
+    Session             from WOKernel
+
+raises ProgramError from Standard
+
+is
+    Initialize(aname    : HAsciiString from TCollection; anesting : Entity from WOKernel)
+    ---Purpose: Initialize a WOKernel BaseEntity
+    raises ProgramError from Standard;
+
+    SetName(me : mutable; aname : HAsciiString from TCollection) is static; 
+    ---Purpose: change name of Entity    
+    Name(me) 
+    ---Purpose: get Name of Entity    
+    ---C++: inline
+    ---C++: return const &
+    	returns HAsciiString from TCollection is static;
+
+    UserPathName(me) returns HAsciiString from TCollection is static;
+    ---Warning: phase out method
+    ---C++: return const &
+    ---C++: inline
+
+    FullName(me) returns HAsciiString from TCollection is static;
+    ---C++: return const &
+    ---C++: inline
+
+    SetFullName(me:mutable; afullname : HAsciiString from TCollection);
+
+    GetUniqueName(me) 
+    	returns HAsciiString from TCollection
+	is deferred;
+
+    SetNesting(me : mutable; anesting : Entity from WOKernel);
+    ---Purpose: change Nesting Entity of current Entity    
+    Nesting(me) 
+    ---Purpose: get Name of nesting Entity
+    ---C++: return const &
+    ---C++: inline
+       	returns HAsciiString from TCollection;
+   
+    SetSession(me:mutable; asession : Session from WOKernel);
+    ---Purpose: change session Of Entity    
+    Session(me)
+    ---Purpose: get pointer to current Session    
+    ---C++: inline
+    	returns Session from WOKernel;
+
+fields
+    myname          : HAsciiString from TCollection;
+    myfullname      : HAsciiString from TCollection is protected;
+    mynestingentity : HAsciiString from TCollection;
+    mysession       : PSession     from WOKernel;
+end BaseEntity;

@@ -1,0 +1,57 @@
+-- File:	WOKSteps_schema.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 15:12:27 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_schema_EDL) then
+@set %WOKSteps_schema_EDL = "";
+
+
+ @set %WOKSteps_SrcGroup  = "src ";
+ @set %WOKSteps_src       = "*WOKStep_CDLUnitSource";
+
+ @set %WOKSteps_XcppGroup = " xcpp.fill ";
+ @set %WOKSteps_xcpp_fill = "WOKStep_MSFill(src)";
+
+ @set %WOKSteps_ObjGroup  = " obj.comp obj.idep ";
+ @set %WOKSteps_obj_comp  = "WOKStep_Compile(src)";
+ 
+ @set %WOKSteps_DepGroup  = " obj.idep ";
+ @set %WOKSteps_obj_idep  = "WOKStep_ImplementationDep(obj.comp)";
+
+   --@string %WOKSteps_LibGroup   = " obj.lib ";
+   @string %WOKSteps_LibGroup   = "";
+   @set    %WOKSteps_obj_lib    = "WOKStep_DynamicLibrary(obj.comp,src)";
+
+
+ @set %WOKSteps_executable_LinksWith   = " obj.lib ";
+ --@set %WOKSteps_engine_LinksWith       = " obj.lib ";
+ @set %WOKSteps_engine_LinksWith       = "";
+ --@set %WOKSteps_interface_LinksWith    = " obj.lib ";
+ @set %WOKSteps_interface_LinksWith    = "";
+ --@set %WOKSteps_jini_LinksWith    = " obj.lib ";
+ @set %WOKSteps_jini_LinksWith    = "";
+ @set %WOKSteps_toolkit_LinksWith      = " obj.lib ";
+
+ @set %WOKSteps_toolkit_ListWith       = " obj.comp ";
+
+  @set %WOKSteps_delivery_cdl_list_steps = "src";
+  @set %WOKSteps_delivery_cdl_list_extensions = ".cdl";
+  @set %WOKSteps_delivery_inc_list_steps = "xcpp.sch";
+  @set %WOKSteps_delivery_inc_list_types = "pubinclude";
+
+  --@set %WOKSteps_delivery_lib_shared_list_steps ="obj.idep obj.lib";
+  @set %WOKSteps_delivery_lib_shared_list_steps ="obj.idep";
+  @set %WOKSteps_delivery_lib_shared_list_extensions = ".so .ImplDep";
+  @if (%Station == "hp") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".sl .ImplDep";
+  @endif;
+  @if (%Station == "mac") then 
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".dylib .ImplDep";
+  @endif;
+  @if (%Station == "wnt") then
+    @set %WOKSteps_delivery_lib_shared_list_extensions = ".DLL .LIB .PDB .ImplDep";
+    @string %WOKSteps_delivery_lib_shared_list_steps     += " obj.implib ";
+  @endif;
+
+@endif;

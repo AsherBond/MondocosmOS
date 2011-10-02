@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{B8B5E429-0E48-1813-1820-73A069AE803A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\IDLFront">
+      <UniqueIdentifier>{BDF10AA6-0E32-02E8-15C0-1AFBC4326D23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\drv\IDLFront\IDL.tab.c">
+      <Filter>Source files\IDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drv\IDLFront\lex.IDL.c">
+      <Filter>Source files\IDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\IDLFront\IDL.tab.c">
+      <Filter>Source files\IDLFront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\IDLFront\IDLFront.cxx">
+      <Filter>Source files\IDLFront</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

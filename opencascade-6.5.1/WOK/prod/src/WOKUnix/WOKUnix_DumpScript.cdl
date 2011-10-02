@@ -1,0 +1,26 @@
+-- File:	WOKUnix_DumpScript.cdl
+-- Created:	Thu Jun  8 20:07:55 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private class DumpScript from WOKUnix 
+inherits ShellStatus from WOKUnix
+	---Purpose: 
+
+uses
+    AsciiString from TCollection,
+    Shell  from WOKUnix
+is
+    Create returns mutable DumpScript from WOKUnix;
+    Create(apath    : AsciiString      from TCollection)
+                        returns mutable  DumpScript from WOKUnix;
+    
+    EndCmd(me:mutable; ashell : Shell from WOKUnix) is redefined;
+    Sync(me:mutable;   ashell : Shell from WOKUnix) is redefined;
+    Reset(me:mutable;  ashell : Shell from WOKUnix) is redefined;
+    
+    Get(me:mutable) returns Integer is redefined;
+    
+end DumpScript;

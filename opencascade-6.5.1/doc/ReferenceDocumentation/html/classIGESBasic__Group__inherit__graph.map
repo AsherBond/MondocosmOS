@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESBasic__GroupWithoutBackP.html" title="defines GroupWithoutBackP, Type &lt;402&gt; Form &lt;7&gt; &#160;&#160;in package IGESBasic..." alt="" coords="805,5,1035,35"/>
+<area shape="rect" id="node11" href="$classIGESBasic__OrderedGroup.html" title="defines OrderedGroup, Type &lt;402&gt; Form &lt;14&gt; &#160;&#160;in package IGESBasic &#160;&#160;this..." alt="" coords="825,59,1015,88"/>
+<area shape="rect" id="node13" href="$classIGESBasic__OrderedGroupWithoutBackP.html" title="defines OrderedGroupWithoutBackP, Type &lt;402&gt; Form &lt;15&gt; &#160;&#160;in package IGESBasic..." alt="" coords="777,112,1063,141"/>
+<area shape="rect" id="node2" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="377,59,543,88"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,59,328,88"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,59,156,88"/>
+</map>

@@ -1,0 +1,12 @@
+CPPJini.cxx
+CPPJini_Transient.cxx
+CPPJini_Package.cxx
+CPPJini_Enum.cxx
+CPPJini_MPV.cxx
+CPPJini_Template.edl
+CPPJini_General.edl
+CPPJini.hxx
+CPPJini_Define.hxx
+FILES
+CPPJini_LDSHR.edl
+

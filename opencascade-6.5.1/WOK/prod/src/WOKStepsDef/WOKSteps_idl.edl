@@ -1,0 +1,38 @@
+-- File:	WOKSteps_idl.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Aug  8 11:50:14 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_idl_EDL) then
+@set %WOKSteps_idl_EDL = "";
+
+  @set %WOKSteps_SrcGroup = "src ";
+  @set %WOKSteps_src      = "*WOKOrbix_IDLSource";
+
+  @set    %WOKSteps_XcppGroup  = "xcpp.list ";
+  @string %WOKSteps_XcppGroup += "xcpp.orbix ";
+  @string %WOKSteps_XcppGroup += "xcpp.src ";
+  @string %WOKSteps_XcppGroup += "xcpp.inc ";
+  @string %WOKSteps_XcppGroup += "xcpp.client ";
+  @string %WOKSteps_XcppGroup += "xcpp.server ";
+
+  @set %WOKSteps_xcpp_orbix  = "WOKOrbix_IDLCompile(src)";
+  @set %WOKSteps_xcpp_src    = "WOKOrbix_IDLSourceExtract(xcpp.orbix)";
+  @set %WOKSteps_xcpp_list   = "WOKOrbix_IDLFill(src)";
+  @set %WOKSteps_xcpp_inc    = "WOKStep_Include(src,xcpp.src)";
+  @set %WOKSteps_xcpp_server = "WOKOrbix_ServerObjects(xcpp.orbix,xcpp.src)";
+  @set %WOKSteps_xcpp_client = "WOKOrbix_ClientObjects(xcpp.orbix,xcpp.src)";
+
+
+  @set %WOKSteps_ObjGroup   = "  obj.client obj.server obj.idep ";
+  
+
+  @set %WOKSteps_obj_client    = "WOKStep_Compile(xcpp.client)";
+  @set %WOKSteps_obj_server    = "WOKStep_Compile(xcpp.server)";
+
+  @set %WOKSteps_obj_idep   = "WOKStep_ImplementationDep(obj.server)";
+
+  @set %WOKSteps_server_LinksWith     = "obj.server obj.idep";
+  @set %WOKSteps_executable_LinksWith = "obj.client";
+
+@endif;

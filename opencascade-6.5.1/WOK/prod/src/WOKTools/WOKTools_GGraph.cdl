@@ -1,0 +1,342 @@
+-- File:	WOKTools_GGraph.cdl
+-- Created:	Mon Apr 18 11:36:05 1994
+-- Author:	Christophe LEYNADIER
+--		<cle@pernox>
+---Copyright:	 Matra Datavision 1994
+
+generic class GGraph from WOKTools (GraphItem as any)
+  
+   
+	---Version:
+
+	---Purpose: Manage graphes and trees.
+	---References:
+
+  inherits TShared from MMgt
+  
+  uses HArray2OfBoolean from TColStd,
+       HArray2OfInteger from TColStd,
+       HArray1OfReal    from TColStd
+       
+  raises NullObject,ConstructionError
+  
+      
+    class SequenceOfGNode instantiates 
+          Sequence from TCollection(GNode from WOKTools);
+    class HSequenceOfGNode instantiates 
+          HSequence from TCollection(GNode from WOKTools,SequenceOfGNode);
+	  
+    class SequenceOfGEdge instantiates 
+          Sequence from TCollection(GEdge from WOKTools);
+    class HSequenceOfGEdge instantiates 
+          HSequence from TCollection(GEdge from WOKTools,SequenceOfGEdge);
+	  
+    class SequenceOfGPath instantiates 
+          Sequence from TCollection(GPath from WOKTools);
+    class HSequenceOfGPath instantiates 
+          HSequence from TCollection(GPath from WOKTools,SequenceOfGPath);
+
+    class SequenceOfGraphItem instantiates 
+          Sequence  from TCollection(GraphItem);
+    class HSequenceOfGraphItem instantiates 
+          HSequence from TCollection(GraphItem,
+    	    	    	    	     SequenceOfGraphItem);
+    		  
+
+class GNode
+  
+    inherits TShared from MMgt
+  
+
+    raises NullObject,ConstructionError
+    
+    is
+    
+    -------------------------
+    --Category: Constructors
+    -------------------------                                                              
+      Create(anItem      : GraphItem)
+        returns mutable GNode from WOKTools
+        raises NullObject,ConstructionError;
+      ---Level: Public
+      ---Purpose: Create a new node
+    
+      SetValue(me : mutable; anItem : GraphItem)
+        raises NullObject;
+      ---Level: Public
+      ---Purpose: Set the user item of <me>.
+     
+      Value(me) returns any GraphItem;
+      ---Level: Public
+      ---Purpose: Returns the user item of <me>.
+      
+      AddEdgeIn(me : mutable; In : GEdge from WOKTools);
+      AddEdgeOut(me : mutable; Out : GEdge from WOKTools);
+      ---Level: Public
+
+      GEdgesIn(me)  returns mutable HSequenceOfGEdge from WOKTools;
+      ---Level: Public
+      ---Purpose: Returns the all the GEdges going to <me>
+
+      GEdgesOut(me) returns mutable HSequenceOfGEdge from WOKTools;
+      ---Level: Public
+      ---Purpose: Returns the all the GEdges leaving from <me>
+
+    fields
+    
+      myItem    : GraphItem;                 -- the user item
+      myEdgeIn  : HSequenceOfGEdge from WOKTools;
+      myEdgeOut : HSequenceOfGEdge from WOKTools;
+      
+  end GNode;
+
+ 
+class GEdge
+    
+    inherits TShared from MMgt
+    
+    uses HSequenceOfReal from TColStd
+	
+    is
+    
+      Create 
+    	returns mutable GEdge from WOKTools;
+      
+      Create(src,dest : GNode from WOKTools)
+        returns mutable GEdge from WOKTools;
+      ---Level: Public.
+      ---Purpose: Create a new edge
+    
+      Source(me : mutable; src : GNode from WOKTools);
+      Destination(me : mutable; src : GNode from WOKTools);
+      
+      Source(me)
+    	returns GNode from WOKTools;
+      Destination(me)
+    	returns GNode from WOKTools;
+      
+    fields
+      mySource : GNode from WOKTools;
+      myDestination : GNode from WOKTools;
+    
+      
+  end GEdge;
+  
+  class GPath
+    
+    ---Purpose: A path is a set of all edges between two nodes.
+    
+    inherits TShared from MMgt
+    
+    raises NullObject,ConstructionError
+    
+    is
+      Create(aSeqEdge : HSequenceOfGEdge from WOKTools; isCycle : Boolean from Standard) 
+        returns mutable GPath from WOKTools
+    	raises ConstructionError;
+      ---Level: Public
+      ---Purpose: Create a path with a sequence of edges.
+      
+      NodeLength(me) returns Integer from Standard;
+      ---Level: Public
+      ---Purpose: Returns the number of nodes in <me>.
+      
+      EdgeLength(me) returns Integer from Standard;
+      ---Level: Public
+      ---Purpose: Returns the number of edges in <me>.
+     
+      Nodes(me) returns mutable HSequenceOfGNode from WOKTools;    
+      ---Level: Public         
+      ---Purpose: Returns all the nodes of <me>.
+       
+      Edges(me) returns mutable HSequenceOfGEdge from WOKTools;    
+      ---Level: Public
+      ---Purpose: Returns all the edges of <me>.
+   
+      IsCycle(me) returns Boolean from Standard;
+    
+    fields
+      myEdges : HSequenceOfGEdge from WOKTools; -- the edges
+      myCycle : Boolean from Standard;          -- true if i am a cycle      
+  end GPath;
+      
+  is
+    
+    Create
+      returns mutable GGraph from WOKTools;
+    ---Level: Public
+    ---Purpose: create an empty graphic graph
+
+    Destroy(me : mutable);
+    ---Level: Public
+    ---Purpose: Destroy Graph structure and elements.
+    ---C++: alias ~
+
+    AreLinked(me                : mutable;
+    	      aNode,anOtherNode : GNode from WOKTools) 
+      returns Boolean from Standard
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns TRUE if the two nodes are linked with an edge
+    --          The direction is not checked. 
+    
+    AreDirectedLinked(me                   : mutable; 
+    	    	      aSource,aDestination : GNode from WOKTools) 
+      returns Boolean from Standard
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns TRUE if the two nodes are linked with an edge
+    --          and nodes and edges can be displayed in <aView>.
+    --          The direction is checked.
+
+    DirectedLink(me                   : mutable; 
+    	    	 aSource,aDestination : GNode from WOKTools) 
+      returns mutable GEdge from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns an edge if the two nodes are linked
+    --          The direction is checked.
+   
+    AddItem(me     : mutable;
+    	    anItem : GraphItem) 
+      returns mutable GNode from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Add an item in the graph. This create a new node and
+    --          returns it (it has no edges, so it's a root-leaf).
+   
+    AddEdge(me          : mutable;
+    	    aPred,aSucc : GNode from WOKTools) 
+      returns mutable GEdge from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Add an edge between two nodes.
+    
+    DelNode(me    : mutable;
+    	    aNode : GNode from WOKTools)
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Remove a node from <me>.
+    --  Warning: All successors of me are also deleted.
+
+    DelNode(me     : mutable;
+    	    anItem : GraphItem)
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Remove all nodes from <me> having an item <GraphItem>.
+    --  Warning: All successors of me are also deleted.
+    
+    DelEdge(me     : mutable;
+    	    anEdge : GEdge from WOKTools)
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Remove an edge from <me>.
+    
+    DelEdge(me                : mutable;
+    	    aNode,anOtherNode : GNode from WOKTools)
+      raises NullObject;
+     ---Level: Public
+     ---Purpose: Remove an edge between two nodes of <me>.
+    
+    Path(me                : mutable; 
+    	 aNode,anOtherNode : GNode from WOKTools)
+      returns mutable HSequenceOfGPath from WOKTools
+      raises NullObject ;
+    ---Level: Public
+    ---Purpose: Returns a set of paths between two nodes.
+    --  Warning: It return a set in which all elements are displayed
+    --          in <aView>.    
+ 
+    BestPath(me                : mutable; 
+    	     aNode,anOtherNode : GNode from WOKTools)
+      returns mutable HSequenceOfGPath from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns a set of the smallest paths between
+    --          two nodes of <me>. (if there is more than one
+    --          path, they had the same length)
+    --  Warning: It return a set in which all elements are displayed
+    --          in <aView>.    
+ 
+    Find(me     : mutable; 
+    	 anItem : GraphItem) returns mutable GNode from WOKTools
+      raises NullObject;
+     ---Level: Public
+     ---Purpose: Returns the node with the user item <anItem>.
+
+    Fathers(me    : mutable; 
+    	    aNode : GNode from WOKTools)
+      returns mutable HSequenceOfGNode from WOKTools;
+    ---Level: Public
+    ---Purpose: Returns all Fathers of aNode.	          
+	   
+    Roots(me : mutable) returns mutable HSequenceOfGNode from WOKTools;
+    ---Level: Public
+    ---Purpose: Returns a sequence of all roots of <me>.
+	
+    Leaves(me : mutable; aNode : GNode from WOKTools) 
+      returns mutable HSequenceOfGNode from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns a sequence of all leaves of <me> from
+    --          the node <aNode>.
+	 
+    Leaves(me : mutable) returns mutable HSequenceOfGNode from WOKTools;
+    ---Level: Public
+    ---Purpose: Returns a sequence of all leaves of <me>.
+	
+    Heirs(me     : mutable;
+    	  aNode  : GNode from WOKTools;
+	  aLevel : Integer from Standard)      
+      returns mutable HSequenceOfGNode from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns a sequence of the heirs of aNode at <aLevel> 
+    --  Warning: If <aLevel> is zero, returns a Sequence of all Heirs of aNode.
+  
+    Brothers(me     : mutable;
+    	     aNode  : GNode from WOKTools)      
+      returns mutable HSequenceOfGNode from WOKTools
+      raises NullObject;
+    ---Level: Public
+    ---Purpose: Returns a sequence of the brothers of aNode.
+    --          a Brother is a node who has same father as <aNode>.
+
+    Nodes(me) returns mutable HSequenceOfGNode from WOKTools;
+    ---Level: Public
+    ---Purpose: Returns the nodes of <me>.
+
+    Edges(me) returns mutable HSequenceOfGEdge from WOKTools;
+    ---Level: Public
+    ---Purpose: Returns the edges of <me>.
+    
+    Index(myclass; aSeq : HSequenceOfGNode from WOKTools; aNode  : GNode from WOKTools)
+      returns Integer from Standard;
+      
+    Index(myclass; aSeq : HSequenceOfGEdge from WOKTools; anEdge  : GEdge from WOKTools)
+      returns Integer from Standard;
+      
+    MustBeRecompute(me : mutable)
+      returns Boolean from Standard
+      is private;
+
+    BuildAdjMatrix(me : mutable) 
+       is private;
+       
+    BuildIndMatrix(me : mutable) 
+       is private;
+       
+  fields
+    myGNodes              : HSequenceOfGNode;
+    myGEdges              : HSequenceOfGEdge;
+    myMatrixAdj           : HArray2OfBoolean from TColStd;    
+    myRoyWars             : HArray2OfBoolean from TColStd;    
+    myMatrixInd           : HArray2OfInteger from TColStd;
+    myModifiedFlag        : Boolean from Standard;
+
+ friends 
+
+    class GNode from WOKTools
+    
+end GGraph;
+

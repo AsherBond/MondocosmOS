@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepElement__SurfaceSectionFieldConstant.html" title="Representation of STEP entity SurfaceSectionFieldConstant &#160;" alt="" coords="5,237,320,267"/>
+<area shape="rect" id="node9" href="$classStepElement__SurfaceSectionFieldVarying.html" title="Representation of STEP entity SurfaceSectionFieldVarying &#160;" alt="" coords="344,237,643,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="267,83,389,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="253,5,403,35"/>
+</map>

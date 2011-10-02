@@ -1,0 +1,26 @@
+-- File:	MS_Executable.cdl
+-- Created:	Mon Feb  5 09:17:58 1996
+-- Author:	Kernel
+--		<kernel@ilebon>
+---Copyright:	 Matra Datavision 1996
+
+class Executable from MS
+
+inherits Exec from MS 
+
+uses HSequenceOfHAsciiString from TColStd,
+     HAsciiString            from TCollection,
+     HSequenceOfExecPart     from MS
+
+is
+
+    Create(anExecutable : HAsciiString from TCollection) returns mutable Executable from MS;
+    
+    AddParts(me : mutable; theParts : HSequenceOfExecPart from MS);    
+    Parts(me) returns mutable HSequenceOfExecPart from MS;
+    
+fields
+    myParts   : HSequenceOfExecPart from MS;
+    
+end Executable from MS;
+

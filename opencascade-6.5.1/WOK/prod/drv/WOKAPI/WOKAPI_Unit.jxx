@@ -1,0 +1,24 @@
+#ifndef _WOKAPI_Entity_HeaderFile
+#include <WOKAPI_Entity.hxx>
+#endif
+#ifndef _WOKAPI_Session_HeaderFile
+#include <WOKAPI_Session.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_HSequenceOfParamItem_HeaderFile
+#include <WOKUtils_HSequenceOfParamItem.hxx>
+#endif
+#ifndef _WOKTools_HSequenceOfDefine_HeaderFile
+#include <WOKTools_HSequenceOfDefine.hxx>
+#endif
+#ifndef _WOKAPI_Locator_HeaderFile
+#include <WOKAPI_Locator.hxx>
+#endif
+#ifndef _WOKAPI_SequenceOfFile_HeaderFile
+#include <WOKAPI_SequenceOfFile.hxx>
+#endif
+#ifndef _WOKAPI_Unit_HeaderFile
+#include <WOKAPI_Unit.hxx>
+#endif

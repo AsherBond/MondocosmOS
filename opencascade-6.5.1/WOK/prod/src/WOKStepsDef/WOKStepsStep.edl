@@ -1,0 +1,52 @@
+-- File:	WOKStep.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Jun 27 18:49:50 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+
+@ifnotdefined ( %WOKStepsStep_EDL) then
+@set %WOKStepsStep_EDL = "";
+
+  @set    %WOKStepsStep_LibPath      = "libwoksteps.so";
+
+  @if ( %LocalArch == "hp" ) then
+    @set    %WOKStepsStep_LibPath      = "libwoksteps.sl";
+  @endif;
+
+  @if ( %LocalArch == "mac" ) then
+    @set    %WOKStepsStep_LibPath      = "libwoksteps.dylib";
+  @endif;
+
+  @set    %WOKStepsStep_DefinedSteps  = " WOKStep_Source             WOKStep_CDLUnitSource ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ExecutableSource   WOKStep_ResourceSource ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ToolkitSource  ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_MSFill ";	
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_Include            WOKStep_HeaderExtract ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ServerExtract      WOKStep_EngineExtract ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ClientExtract      WOKStep_SourceExtract ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_JiniExtract ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_CodeGenerate       WOKStep_TemplateExtract ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ExtractExecList ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_Compile ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_TKList             WOKStep_LibUnCompress ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_LibExtract         WOKStep_LibLimit";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_DirectTKReplace    WOKStep_TransitiveTKReplace";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_LibLimit ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ArchiveLibrary     WOKStep_DynamicLibrary";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_ImplementationDep   ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_DirectLinkList     WOKStep_TransitiveLinkList ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_EngLinkList ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_LibLink            WOKStep_ExecLink ";
+  @string %WOKStepsStep_DefinedSteps += " WOKStep_EngDatFiles        WOKStep_EngLDFile";
+
+  @if ( %Station == "wnt" ) then
+
+   @set    %WOKStepsStep_LibPath      = "woksteps.dll";
+
+   @string %WOKStepsStep_DefinedSteps +=  " WOKStep_DLLink WOKStep_ImportLibrary WOKStep_StaticLibrary ";
+   @string %WOKStepsStep_DefinedSteps +=  " WOKStep_WNTK ";
+   @string %WOKStepsStep_DefinedSteps +=  " WOKStep_EXELink ";
+
+  @endif;
+
+@endif;

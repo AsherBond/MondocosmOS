@@ -1,0 +1,15 @@
+// File:	WOKBuilder_MSEntity.lxx
+// Created:	Mon Aug  5 18:02:13 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+inline const Handle(TCollection_HAsciiString)& WOKBuilder_MSEntity::Name() const 
+{
+  return myname;
+}
+
+inline const Handle(WOKBuilder_Specification)& WOKBuilder_MSEntity::File() const
+{
+  return myfile;
+}

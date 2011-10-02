@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node13" href="$classAIS__TexturedShape.html" title="This class allows to map textures on shapes &#160;&#160;Textures are image files. &#160;&#160;The texture..." alt="" coords="5,469,155,499"/>
+<area shape="rect" id="node15" href="$classXCAFPrs__AISObject.html" title="Implements AIS_InteractiveObject functionality &#160;&#160;for shape in DECAF document &#160;" alt="" coords="179,469,331,499"/>
+<area shape="rect" id="node2" href="$classAIS__InteractiveObject.html" title="Defines a class of objects with display and selection services. &#160;&#160;Entities which..." alt="" coords="80,315,253,344"/>
+<area shape="rect" id="node4" href="$classSelectMgr__SelectableObject.html" title="A framework to supply the structure of the object to be &#160;&#160;selected. At the first..." alt="" coords="59,237,275,267"/>
+<area shape="rect" id="node6" href="$classPrsMgr__PresentableObject.html" title="A framework to supply the Graphic2d or Graphic3d &#160;&#160;structure of the object to be..." alt="" coords="65,160,268,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="105,83,228,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="92,5,241,35"/>
+</map>

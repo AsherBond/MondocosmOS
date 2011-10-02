@@ -1,0 +1,27 @@
+#ifndef _EDL_Interpretor_HeaderFile
+#include <EDL_Interpretor.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _EDL_Template_HeaderFile
+#include <EDL_Template.hxx>
+#endif
+#ifndef _EDL_Variable_HeaderFile
+#include <EDL_Variable.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfAsciiString_HeaderFile
+#include <TColStd_HSequenceOfAsciiString.hxx>
+#endif
+#ifndef _EDL_DataMapIteratorOfMapOfTemplate_HeaderFile
+#include <EDL_DataMapIteratorOfMapOfTemplate.hxx>
+#endif
+#ifndef _EDL_DataMapIteratorOfMapOfVariable_HeaderFile
+#include <EDL_DataMapIteratorOfMapOfVariable.hxx>
+#endif
+#ifndef _EDL_API_HeaderFile
+#include <EDL_API.hxx>
+#endif

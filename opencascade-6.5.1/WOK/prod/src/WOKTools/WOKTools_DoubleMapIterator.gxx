@@ -1,0 +1,33 @@
+// File:	WOKTools_DoubleMapIterator.gxx
+// Created:	Thu Jun 29 16:11:03 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+//=======================================================================
+//function : WOKTools_DoubleMapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_DoubleMapIterator::WOKTools_DoubleMapIterator() :
+       WOKTools_BasicMapIterator()
+{}
+
+//=======================================================================
+//function : WOKTools_DoubleMapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_DoubleMapIterator::WOKTools_DoubleMapIterator(const WOKTools_DoubleMap& aMap) :
+       WOKTools_BasicMapIterator(aMap)
+{}
+
+//=======================================================================
+//function : WOKTools_DoubleMapIterator
+//purpose  : 
+//=======================================================================
+
+void WOKTools_DoubleMapIterator::Initialize(const WOKTools_DoubleMap& aMap)
+{
+  WOKTools_BasicMapIterator::Initialize(aMap);
+}
+

@@ -1,0 +1,334 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>XML Document Structure</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:6.00pt; }
+p.whs2 { margin-left:36.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nLDOM Package for XML\nXML Document Structure");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/ldom_package_for_xml/attribute_drivers/attribute_drivers.htm","technical_overview/application_framework/ldom_package_for_xml/xml_schema/xml_schema.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../../whd_show0.gif","../../../../whd_show2.gif","../../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../../whd_hide0.gif","../../../../whd_hide2.gif","../../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../../whd_prev0.gif","../../../../whd_prev2.gif","../../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../../whd_next0.gif","../../../../whd_next2.gif","../../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>XML Document Structure</p>
+
+<p>&nbsp;</p>
+
+<p>Every XML Document has one root element, which may have attributes and 
+ contain other nodes. In OCAF XML Documents the root element is named &quot;document&quot; 
+ and has attribute &quot;format&quot; with the name of the OCAF Schema 
+ used to generate the file. The standard XML format is &quot;XmlOcaf&quot;. 
+ The following elements are sub-elements of &lt;<font style="font-family: 'Courier New';"
+														face="Courier New">document</font>&gt; 
+ and should be unique entries as its sub-elements, in a specific order. 
+ The order is: </p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs1"><font style="font-weight: bold;">Element 
+ info</font>. Contains strings identifying the format version and other 
+ parameters of the OCAF XML document. Normally, data under the element 
+ is used by persistence algorithms to correctly retrieve and initialize 
+ an OCAF document. The data also includes a <font style="font-weight: bold;">copyright 
+ string</font>. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs1"><font style="font-weight: bold;">Element 
+ comments</font>. <font style="color: #000000;"
+						color=#000000>Consists of an unlimited number of 
+ &lt;</font><font style="font-family: 'Courier New'; color: #000000;"
+					face="Courier New"
+					color=#000000>comment</font><font style="color: #000000;"
+														color=#000000>&gt; 
+ sub-elements containing necessary comment strings.</font> </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs1"><font style="font-weight: bold;">Element 
+ label.</font> This is the root label of the document data structure, with 
+ the XML attribute &quot;tag&quot; equal to 0. It contains all the OCAF 
+ data (labels, attributes) as tree of XML elements. Every sub-label is 
+ identified by a tag (positive integer) defining a unique key for all sub-labels 
+ of a label. Every label can contain any number of elements representing 
+ OCAF attributes (see <font style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ ">OCAF 
+ Attributes Representation</font> below). </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs1"><font style="font-weight: bold;">Element 
+ shapes.</font> Contains geometrical and topological entities in BRep format. 
+ These entities being referenced by OCAF attributes written under the element 
+ &lt;<font style="font-family: 'Courier New';"
+			face="Courier New">label</font>&gt;. This element is empty 
+ if there are no shapes in the document. It is only output if attribute 
+ driver XmlMNaming_NamedShapeDriver has been added to drivers table by 
+ the DocumentStorageDriver. </p></li>
+</ul>
+
+<h2><font style="font-size: 10pt;"
+			size=2>OCAF Attributes Representation </font></h2>
+
+<p>In XML documents, OCAF attributes are elements whose name identifies 
+ the OCAF attribute type. These elements may have a simple (string or number) 
+ or complex (sub-elements) structure, depending on the architecture of 
+ OCAF attribute. Every XML type for OCAF attribute possesses a unique positive 
+ integer &quot;id&quot; XML attribute identifying the OCAF attribute throughout 
+ the document. To ensure &quot;id&quot; uniqueness, the attribute name 
+ &quot;id&quot; is reserved and is only used to indicate and identify elements 
+ which may be referenced from other parts of the OCAF XML document. <br>
+For every standard OCAF attribute, its XML name matches the name of a C++ 
+ class in Transient data model. Generally, the XML name of OCAF attribute 
+ can be specified in corresponding attribute driver. </p>
+
+<p>XML types for OCAF attributes are declared with <a href="../xml_schema/xml_schema.htm">XML 
+ W3C Schema</a> in a few XSD files where OCAF attributes are grouped by 
+ the package where they are defined. </p>
+
+<p><font style="font-weight: bold;">Example of resulting XML file </font></p>
+
+<p>The following example is a sample text from an XML file obtained by 
+ storing an OCAF document with two labels (0: and 0:2) and two attributes 
+ - TDataStd_Name (on label 0:) and TNaming_NamedShape (on label 0:2). The 
+ &lt;shapes&gt; section contents are replaced by an ellipsis. </p>
+
+<p class="whs2"><font style="font-family: 'Courier New';"
+										face="Courier New">&lt;</font><font 
+ style="font-family: 'Times New Roman'; color: magenta;"
+	face="Times New Roman"
+	color=#FF00FF>?xml</font><font style="font-family: 'Times New Roman';"
+									face="Times New Roman"> version=&quot;1.0&quot; 
+ encoding=&quot;UTF-8&quot;?&gt;</font> <font style="font-family: 'Courier New';"
+												face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>document</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman"> 
+ format=&quot;XmlOcaf&quot; xmlns=&quot;http://www.opencascade.org/OCAF/XML&quot; 
+ xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opencascade.org/OCAF/XML 
+ http://www.opencascade.org/OCAF/XML/XmlOcaf.xsd&quot;&gt;</font> <font 
+ style="font-family: 'Courier New';"
+	face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>info</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman"> 
+ date=&quot;2001-10-04&quot; schemav=&quot;0&quot; objnb=&quot;3&quot;&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>iitem</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;Copyright: 
+ Open Cascade, 2001&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+									face="Times New Roman"
+									color=#FF00FF>/iitem</font><font style="font-family: 'Times New Roman';"
+	face="Times New Roman">&gt;</font> <font style="font-family: 'Courier New';"
+											face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>iitem</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;STORAGE_VERSION: 
+ PCDM_ReadWriter_1&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+									face="Times New Roman"
+									color=#FF00FF>/iitem</font><font style="font-family: 'Times New Roman';"
+	face="Times New Roman">&gt;</font> <font style="font-family: 'Courier New';"
+											face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>iitem</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;REFERENCE_COUNTER: 
+ 0&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+					face="Times New Roman"
+					color=#FF00FF>/iitem</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>iitem</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;MODIFICATION_COUNTER: 
+ 1&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+					face="Times New Roman"
+					color=#FF00FF>/iitem</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/info</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>comments/</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>label</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman"> 
+ tag=&quot;0&quot;&gt;</font> <font style="font-family: 'Courier New';"
+									face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>TDataStd_Name</font><font style="font-family: 'Times New Roman';"
+														face="Times New Roman"> 
+ id=&quot;1&quot;&gt;Document_1&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+												face="Times New Roman"
+												color=#FF00FF>/TDataStd_Name</font><font 
+ style="font-family: 'Times New Roman';"
+	face="Times New Roman">&gt;</font> <font style="font-family: 'Courier New';"
+											face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>label</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman"> 
+ tag=&quot;2&quot;&gt;</font> <font style="font-family: 'Courier New';"
+									face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>TNaming_NamedShape</font><font style="font-family: 'Times New Roman';"
+															face="Times New Roman"> 
+ id=&quot;2&quot; evolution=&quot;primitive&quot;&gt;</font> <font style="font-family: 'Courier New';"
+	face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>olds/</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>news</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>shape</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman"> 
+ tshape=&quot;+34&quot; index=&quot;1&quot;/&gt;</font> <font style="font-family: 'Courier New';"
+	face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/news</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/TNaming_NamedShape</font><font style="font-family: 'Times New Roman';"
+	face="Times New Roman">&gt;</font> <font style="font-family: 'Courier New';"
+											face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/label</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/label</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>shapes</font><font style="font-family: 'Times New Roman';"
+												face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+...</font> <font style="font-family: 'Courier New';"
+				face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/shapes</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman">&gt;</font> 
+ <font style="font-family: 'Courier New';"
+		face="Courier New"><br>
+&lt;</font><font style="font-family: 'Times New Roman'; color: magenta;"
+				face="Times New Roman"
+				color=#FF00FF>/document</font><font style="font-family: 'Times New Roman';"
+													face="Times New Roman">&gt;</font> 
+ </p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

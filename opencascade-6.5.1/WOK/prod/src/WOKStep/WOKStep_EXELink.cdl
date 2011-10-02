@@ -1,0 +1,52 @@
+-- File:	WOKStep_EXELink.cdl
+-- Created:	Wed Oct 30 09:31:41 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class EXELink from WOKStep inherits WNTLink from WOKStep
+
+ uses
+
+    BuildProcess            from WOKMake,
+    DevUnit                 from WOKernel,
+    HAsciiString            from TCollection,
+    HSequenceOfLibrary      from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd,
+    HSequenceOfInputFile    from WOKMake,
+    HSequenceOfObjectFile   from WOKBuilder,
+    WNTCollector            from WOKBuilder
+ 
+ is
+ 
+    Create (
+     abp     : BuildProcess from WOKMake; 
+     aUnit   : DevUnit      from WOKernel;
+     aCode   : HAsciiString from TCollection;
+     checked : Boolean      from Standard;
+     hidden  : Boolean      from Standard
+    ) returns mutable EXELink from WOKStep;
+    	---Purpose: creates a class instance   
+
+    ComputeObjectList (
+     me      : mutable;
+     anInput : HSequenceOfInputFile from WOKMake
+    )
+     returns mutable HSequenceOfObjectFile from WOKBuilder
+     is redefined static protected;
+     	---Purpose: computes object list to build
+
+    ComputeLibraryList (
+     me      : mutable;
+     anInput : HSequenceOfInputFile from WOKMake
+    )
+     returns mutable HSequenceOfLibrary from WOKBuilder
+     is redefined static protected;
+     	---Purpose: computes library list to build a target
+
+    ComputeTool ( me : mutable )
+     returns mutable WNTCollector from WOKBuilder
+     is redefined static protected;
+    	---Purpose: computes build tool
+
+end EXELink;

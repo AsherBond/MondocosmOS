@@ -1,0 +1,22 @@
+-- File:	MSAPI_Package.cdl
+-- Created:	Mon Sep 18 10:27:26 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Package from MSAPI 
+
+	---Purpose: 
+
+uses
+    ArgTable     from WOKTools,
+    Return       from WOKTools
+
+is
+
+    Info(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; values : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+
+end Package;

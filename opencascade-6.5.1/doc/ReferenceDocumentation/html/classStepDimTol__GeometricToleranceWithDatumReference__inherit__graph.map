@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classStepDimTol__AngularityTolerance.html" title="Representation of STEP entity AngularityTolerance &#160;" alt="" coords="1129,5,1364,35"/>
+<area shape="rect" id="node11" href="$classStepDimTol__CircularRunoutTolerance.html" title="Representation of STEP entity CircularRunoutTolerance &#160;" alt="" coords="1113,59,1380,88"/>
+<area shape="rect" id="node13" href="$classStepDimTol__CoaxialityTolerance.html" title="Representation of STEP entity CoaxialityTolerance &#160;" alt="" coords="1129,112,1364,141"/>
+<area shape="rect" id="node15" href="$classStepDimTol__ConcentricityTolerance.html" title="Representation of STEP entity ConcentricityTolerance &#160;" alt="" coords="1116,165,1377,195"/>
+<area shape="rect" id="node17" href="$classStepDimTol__ParallelismTolerance.html" title="Representation of STEP entity ParallelismTolerance &#160;" alt="" coords="1128,219,1365,248"/>
+<area shape="rect" id="node19" href="$classStepDimTol__PerpendicularityTolerance.html" title="Representation of STEP entity PerpendicularityTolerance &#160;" alt="" coords="1108,272,1385,301"/>
+<area shape="rect" id="node21" href="$classStepDimTol__SymmetryTolerance.html" title="Representation of STEP entity SymmetryTolerance &#160;" alt="" coords="1127,325,1367,355"/>
+<area shape="rect" id="node23" href="$classStepDimTol__TotalRunoutTolerance.html" title="Representation of STEP entity TotalRunoutTolerance &#160;" alt="" coords="1123,379,1371,408"/>
+<area shape="rect" id="node2" href="$classStepDimTol__GeometricTolerance.html" title="Representation of STEP entity GeometricTolerance &#160;" alt="" coords="377,192,617,221"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,192,328,221"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,192,156,221"/>
+</map>

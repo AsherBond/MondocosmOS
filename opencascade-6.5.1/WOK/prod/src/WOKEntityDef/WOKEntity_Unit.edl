@@ -1,0 +1,31 @@
+-- File:	WOKEntity_Unit.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 13:55:49 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %WOKEntity_Unit_EDL) then
+@set %WOKEntity_Unit_EDL = "";
+
+@if ( %NestingType == "workbench" ) then
+
+	@ifnotdefined ( %WOKEntity_WorkbenchUnit_EDL) then
+		@uses "WOKEntity_WorkbenchUnit.edl";
+	@endif;
+
+@endif;
+
+@if ( %NestingType == "parcel" ) then
+
+	@ifnotdefined ( %WOKEntity_ParcelUnit_EDL) then
+		@uses "WOKEntity_ParcelUnit.edl";
+	@endif;
+
+@endif;
+
+@string %WOKEntity_FileList = %WOKEntity_FileList " dummy ";
+
+@template WOKEntity_dummy        ( %File ) is
+$%File\^
+@end;
+
+@endif;

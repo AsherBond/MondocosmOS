@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classStepVisual__PresentationArea.html" title="StepVisual_PresentationArea" alt="" coords="101,315,320,344"/>
+<area shape="rect" id="node4" href="$classStepVisual__PresentationRepresentation.html" title="StepVisual_PresentationRepresentation" alt="" coords="65,237,356,267"/>
+<area shape="rect" id="node6" href="$classStepRepr__Representation.html" title="StepRepr_Representation" alt="" coords="112,160,309,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="149,83,272,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="136,5,285,35"/>
+</map>

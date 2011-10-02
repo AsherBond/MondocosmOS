@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$structW32__PolygonNote.html" title="//////////////////// POLYGONS /////////////////////////////" alt="" coords="172,160,316,189"/>
+<area shape="rect" id="node13" href="$structW32__PolyMarker1Note.html" title="W32_PolyMarker1Note" alt="" coords="341,160,515,189"/>
+<area shape="rect" id="node2" href="$structW32__Note.html" title="W32_Note" alt="" coords="291,5,381,35"/>
+<area shape="rect" id="node7" href="$structW32__PolylineNote.html" title="//////////////////// POLYLINES ////////////////////////////" alt="" coords="5,237,147,267"/>
+<area shape="rect" id="node9" href="$structWNT__PolygonNote.html" title="WNT_PolygonNote" alt="" coords="171,237,317,267"/>
+<area shape="rect" id="node11" href="$structWNT__PolylineNote.html" title="WNT_PolylineNote" alt="" coords="172,315,316,344"/>
+<area shape="rect" id="node15" href="$structW32__PolyMarker2Note.html" title="W32_PolyMarker2Note" alt="" coords="341,237,515,267"/>
+<area shape="rect" id="node17" href="$structWNT__PolyMarker1Note.html" title="WNT_PolyMarker1Note" alt="" coords="539,237,715,267"/>
+<area shape="rect" id="node19" href="$structWNT__PolyMarker2Note.html" title="WNT_PolyMarker2Note" alt="" coords="539,315,715,344"/>
+</map>

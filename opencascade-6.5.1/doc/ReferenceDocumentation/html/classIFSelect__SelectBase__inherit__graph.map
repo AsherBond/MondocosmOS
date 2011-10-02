@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIFSelect__SelectEntityNumber.html" title="A SelectEntityNumber gets in an InterfaceModel (through a &#160;&#160;Graph), the Entity which..." alt="" coords="784,5,1008,35"/>
+<area shape="rect" id="node11" href="$classIFSelect__SelectModelEntities.html" title="A SelectModelEntities gets all the Entities of an &#160;&#160;InterfaceModel. &#160;" alt="" coords="785,59,1007,88"/>
+<area shape="rect" id="node13" href="$classIFSelect__SelectModelRoots.html" title="A SelectModelRoots gets all the Root Entities of an &#160;&#160;InterfaceModel. Remember that..." alt="" coords="792,112,1000,141"/>
+<area shape="rect" id="node15" href="$classIFSelect__SelectPointed.html" title="This type of Selection is intended to describe a direct &#160;&#160;selection without an explicit..." alt="" coords="805,165,987,195"/>
+<area shape="rect" id="node2" href="$classIFSelect__Selection.html" title="A Selection allows to define a set of Interface Entities. &#160;&#160;Entities to be put on..." alt="" coords="377,85,524,115"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+</map>

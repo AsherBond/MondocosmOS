@@ -1,0 +1,69 @@
+-- File:	WOKDeliv_DeliveryMetaStep.cdl
+-- Created:	Wed Sep  4 11:40:29 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+deferred class DeliveryMetaStep from WOKDeliv inherits MetaStep from WOKMake
+
+	---Purpose: Describes general services for delivery steps
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     Parcel from WOKernel,
+     Locator from WOKernel,
+     Path from WOKUtils,
+     HAsciiString from TCollection,
+     AsciiString from TCollection,
+     DeliveryList from WOKDeliv,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     OutputFile from WOKMake
+
+
+is
+    Initialize(aprocess : BuildProcess   from WOKMake;
+    	       aunit    : DevUnit from WOKernel; 
+    	       acode    : HAsciiString from TCollection; 
+    	       checked, hidden : Boolean  from Standard);
+	       
+
+    AdmFile(me; aname : HAsciiString from TCollection)
+    	returns mutable File from WOKernel
+	is redefined;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is protected;
+	
+    GetCOMPONENTS(me:mutable)
+    returns File from WOKernel
+    is protected;
+
+    ParseCOMPONENTS(me:mutable; aDeliveryStep : Integer)
+    returns DeliveryList from WOKDeliv
+    is protected;
+    	    	    	
+
+    GetInFileCOMPONENTS(me)
+    returns InputFile from WOKMake
+    is protected;
+    
+    DefineOutLocator(me:mutable)
+    is protected;
+    
+    OutLocator(me)
+    	returns mutable Locator from WOKernel
+    	is redefined;
+
+    AcquitExecution(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    	is redefined protected;     
+
+    
+fields
+
+    myOutLocator : Locator from WOKernel is protected;
+    myList : DeliveryList from WOKDeliv is protected;
+    
+end DeliveryMetaStep;

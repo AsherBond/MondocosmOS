@@ -1,0 +1,89 @@
+-- File:	CODEGEN.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Jul 11 17:31:05 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %CODEGEN_EDL) then
+@set %CODEGEN_EDL = "";
+
+@set %CODEGEN_Tools = "CODEGEN_LEX CODEGEN_YACC";
+
+@set %CODEGEN_LEX_Template    = "CODEGEN_LEX_CmdLine";
+@set %CODEGEN_LEX_Extensions  = "toto.lex";
+
+@set %CODEGEN_YACC_Template   = "CODEGEN_YACC_CmdLine";
+@set %CODEGEN_YACC_Extensions = "toto.yacc";
+
+@if ( %Station != "wnt" ) then
+
+ @if ( %Station == "lin" ) then
+  @set %CODEGEN_FlexBisHome = "${WOKHOME}/lib/lin";
+ @else
+  @if ( %Station == "mac" ) then
+   @set %CODEGEN_FlexBisHome = "/sw";
+  @else
+   @set %CODEGEN_FlexBisHome = "/PRODUCTS/flexbis-253-125/bin";
+  @endif;
+ @endif;
+
+@template CODEGEN_LEX_Production ( %BaseName ) is
+$lex.%BaseName.c
+@end;
+
+@template CODEGEN_LEX_OptLine  (%CODEGEN_FlexBisHome) is
+$%CODEGEN_FlexBisHome/flex -f -P<Module>  -L -8 -f <LexFile>
+@end;
+
+@template CODEGEN_LEX_CmdLine  ( %CODEGEN_FlexBisHome, %Source, %BaseName, %OutputDir ) is
+$cd %OutputDir
+$%CODEGEN_FlexBisHome/flex -f -P%BaseName  -L -8 -f %Source
+@end;
+
+
+@template CODEGEN_YACC_Production ( %CODEGEN_FlexBisHome, %BaseName ) is
+$%BaseName.tab.h %BaseName.tab.c
+@end;
+
+@template CODEGEN_YACC_OptLine (%CODEGEN_FlexBisHome) is
+$%CODEGEN_FlexBisHome/bison -d -b <Module> -p <Module> <YaccFile>
+@end;
+
+@template CODEGEN_YACC_CmdLine ( %CODEGEN_FlexBisHome, %Source, %BaseName, %OutputDir ) is
+$cd %OutputDir
+$%CODEGEN_FlexBisHome/bison -d -b %BaseName -p %BaseName %Source -o %BaseName.tab.c
+@end;
+
+@else
+
+@template CODEGEN_LEX_Production ( %BaseName ) is
+$lex.%BaseName.c
+@end;
+
+@template CODEGEN_LEX_OptLine  (%CODEGEN_LEX_CmdPath) is
+$%CODEGEN_LEX_CmdPath -f -P <Module>  -L -8 -f <LexFile>
+@end;
+
+@set %CODEGEN_LEX_CmdPath = "%WOKHOME%/lib/wnt/flex";
+
+@template CODEGEN_LEX_CmdLine  ( %CODEGEN_LEX_CmdPath, %Source, %BaseName, %OutputDir ) is
+$cd %OutputDir;
+$%CODEGEN_LEX_CmdPath -P%BaseName -L -8 -f %Source
+@end;
+
+@template CODEGEN_YACC_Production ( %BaseName ) is
+$%BaseName.tab.h %BaseName.tab.c
+@end;
+
+@set %CODEGEN_YACC_CmdPath = "%WOKHOME%/lib/wnt/bison";
+
+@template CODEGEN_YACC_OptLine (%CODEGEN_YACC_CmdPath) is
+$%CODEGEN_YACC_CmdPath -d -b <Module> -p <Module> <YaccFile>
+@end;
+
+@template CODEGEN_YACC_CmdLine (%CODEGEN_YACC_CmdPath, %Source, %BaseName, %OutputDir ) is
+$cd %OutputDir;
+$%CODEGEN_YACC_CmdPath -d -b %BaseName -p %BaseName %Source -o %BaseName.tab.c
+@end;
+
+@endif;
+@endif;

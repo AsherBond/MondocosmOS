@@ -1,0 +1,23 @@
+-- File:	WOKTools_Info.cdl
+-- Created:	Wed Jun 28 18:26:08 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Info from WOKTools 
+inherits Message from WOKTools
+
+	---Purpose: Information messages
+
+uses
+    AsciiString from TCollection
+is
+    
+    Create returns Info from WOKTools;
+
+    Code(me)
+    	returns Character from Standard
+	is redefined;
+	    	
+end Info;

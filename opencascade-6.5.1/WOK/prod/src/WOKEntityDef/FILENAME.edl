@@ -1,0 +1,27 @@
+-- File:	FILENAME.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 16:48:12 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@set %FILENAME_FILES      = "FILES";
+@set %FILENAME_MAKETEST   = "MakeTest";
+
+@set %FILENAME_EXTERNLIB  = "EXTERNLIB";
+@set %FILENAME_INTERNLIB  = "INTERNLIB";
+@set %FILENAME_DYNAMICPK  = "DYNAMICPK";
+
+@set %FILENAME_PACKAGES   = "PACKAGES";
+
+@set %FILENAME_COMPONENTS = "COMPONENTS";
+@set %FILENAME_AllComponentsSuffix = ".allcomponents";
+@set %FILENAME_DeliveryDefine = "_Define.edl";
+
+@set %FILENAME_FILELIST_EXT = ".files";
+
+@set %FILENAME_INCLUDES  = "public.includes";
+@set %FILENAME_MAKESTATE = "MakeState";
+@set %FILENAME_IMPLDEP   = "ImplDep";
+
+@set %FILENAME_HANDLEPREFIX = "Handle_";
+@set %FILENAME_REJECTLIST   = "|math.h|";
+

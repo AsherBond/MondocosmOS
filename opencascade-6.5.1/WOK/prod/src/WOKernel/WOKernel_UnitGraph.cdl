@@ -1,0 +1,45 @@
+-- File:	WOKernel_UnitGraph.cdl
+-- Created:	Mon Jan  8 18:16:01 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class UnitGraph from WOKernel 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    Locator                  from WOKernel,
+    Workbench                from WOKernel,
+    HAsciiString             from TCollection,
+    HSequenceOfHAsciiString  from TColStd,
+    DataMapOfHAsciiStringOfHSequenceOfHAsciiString from WOKTools
+    
+is
+
+    Create(awb : Workbench from WOKernel)  returns mutable UnitGraph from WOKernel;
+
+    Create(alocator : Locator from WOKernel)  returns mutable UnitGraph from WOKernel;
+
+    Contains(me; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    Add(me : mutable; aname : HAsciiString from TCollection; suppliers : HSequenceOfHAsciiString  from TColStd);
+    
+    Add(me : mutable; aname : HAsciiString from TCollection; asupplier : HAsciiString  from TCollection);
+    
+    Remove(me:mutable;     aname : HAsciiString from TCollection);
+    
+    Suppliers(me; aname : HAsciiString from TCollection)
+    ---C++: return const &
+         returns HSequenceOfHAsciiString  from TColStd;
+	
+    Locator(me) returns Locator from WOKernel;
+
+fields
+    mylocator : Locator     from WOKernel;
+    myUDMap   : DataMapOfHAsciiStringOfHSequenceOfHAsciiString from WOKTools;
+    
+end UnitGraph;

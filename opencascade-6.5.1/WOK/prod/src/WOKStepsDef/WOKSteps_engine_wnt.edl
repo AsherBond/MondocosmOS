@@ -1,0 +1,9 @@
+
+
+@ifnotdefined ( %WOKSteps_engine_wnt_EDL) then
+@set %WOKSteps_engine_wnt_EDL = "";
+
+  @set    %WOKSteps_exec_link  = "WOKStep_DLLink(exec.tks)";
+
+@endif;
+

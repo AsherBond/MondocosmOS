@@ -1,0 +1,34 @@
+/* XPM */
+static char * dir_open_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"27 22 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c grey",
+"o	c wheat",
+"O	c sienna",
+"+	c dark slate grey",
+/* pixels */
+"                           ",
+"                           ",
+"                           ",
+"                           ",
+"  ........                 ",
+" .XXXXXXXX.                ",
+".XXXXXXXXXX......          ",
+".XXXXXXXXXXXXXXXX.         ",
+".XXXXXXXXXXXXXXXXX.        ",
+".XXXXXXXXX.XXXXXXXX....... ",
+".XXXXXXXX.o.XXXXXX.ooooooO.",
+".XXXXXXX.ooo......ooooooO+.",
+".XXXXXX.oooooooooooooooO+. ",
+".XXXXX.oooooooooooooooO+.  ",
+".XXXX.oooooooooooooooO+.   ",
+".XXX.oooooooooooooooO+.    ",
+".XX.oooooooooooooooO+.     ",
+".X.oooooooooooooooO+.      ",
+"..oooooooooooooooO+.       ",
+" .OOOOOOOOOOOOOO++.        ",
+"  .+++++++++++++..         ",
+"   ..............          "};

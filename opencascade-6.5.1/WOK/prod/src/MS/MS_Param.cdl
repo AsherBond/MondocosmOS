@@ -1,0 +1,63 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Param.cdl	1.1
+-- File:	MS_Param.cdl
+-- Created:	Wed Jan 30 16:39:12 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class Param 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Common from MS
+    uses 
+     	Type         from MS,
+     	Method       from MS,
+	MethodPtr    from MS,
+	HAsciiString from TCollection,
+	TypeOfValue  from MS
+is
+    
+    Create(aMethod: Method from MS; aName: HAsciiString) 
+    	returns mutable Param from MS;
+	    
+    Method(me: mutable; aMethod: Method from MS);
+
+    IsIn(me) returns Boolean;
+    IsOut(me) returns Boolean;
+    IsImmutable(me) returns Boolean;
+    IsMutable(me) returns Boolean;
+    IsAny(me) returns Boolean;
+
+    AccessMode(me: mutable; aMode : Integer from Standard);
+    GetAccessMode(me) returns Integer from Standard;
+
+    Type(me : mutable; aTypeName : HAsciiString from TCollection);
+    Type(me : mutable; aTypeName : HAsciiString from TCollection; 
+                      aPackName : HAsciiString from TCollection);
+    Type(me)
+    	returns mutable Type from MS;
+    TypeName(me)
+    	returns mutable HAsciiString from TCollection;
+	
+    Like(me: mutable; aLike: Boolean);
+    IsLike(me)
+    	returns Boolean;
+	
+    ItsItem(me : mutable);
+    ItsNotItem(me : mutable);
+    IsItem(me) returns Boolean from Standard;
+
+    GetValueType(me)
+    	returns TypeOfValue from MS is virtual;
+	
+fields
+
+    myMethod    : MethodPtr    from MS;
+    myAccessMode : Integer from Standard;
+    myType      : HAsciiString from TCollection;
+
+end Param from MS;

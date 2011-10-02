@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__Act.html" title="Act gives a simple way to define and add functions to be ran &#160;&#160;from a SessionPilot..." alt="" coords="5,237,115,267"/>
+<area shape="rect" id="node9" href="$classIFSelect__SessionPilot.html" title="A SessionPilot is intended to make easier the use of a &#160;&#160;WorkSession. It receives..." alt="" coords="139,237,304,267"/>
+<area shape="rect" id="node11" href="$classIGESSelect__Activator.html" title="Performs Actions specific to IGESSelect, i.e. creation of &#160;&#160;IGES Selections and Dispatches..." alt="" coords="328,237,493,267"/>
+<area shape="rect" id="node13" href="$classStepSelect__Activator.html" title="Performs Actions specific to StepSelect, i.e. creation of &#160;&#160;Step Selections and Counters..." alt="" coords="517,237,685,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="255,83,377,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="241,5,391,35"/>
+</map>

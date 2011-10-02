@@ -1,0 +1,272 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>FTGL 2.1.2</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='html_ns_ns_nc.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.whs1 { font-size:10pt; font-weight:normal; }
+img_whs2 { border:none; width:749px; height:521px; border-style:none; }
+p.whs3 { font-size:10pt; font-weight:bold; }
+img_whs4 { border:none; width:748px; height:517px; border-style:none; }
+img_whs5 { border:none; width:747px; height:508px; border-style:none; }
+img_whs6 { border:none; width:749px; height:521px; float:none; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Welcome to Open CASCADE Technology\nCompilation of third-party products used for OCCT\nRecommendations for compilation\nFTGL 2.1.2");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>FTGL 2.1.2</p>
+
+<p>&nbsp;</p>
+
+<p class=ReleaseNotes-2>Windows</p>
+
+<p class="whs1">1. Open the ftgl-2.1.2\win32_vcpp\ftgl.dsw 
+ project in the corresponding version of VS and convert the latter.</p>
+
+<p class="whs1">2. Select <span style="font-weight: bold;"><B>Release 
+ MT</B></span> solution configuration.</p>
+
+<p class="whs1">3. In Solution Explorer 
+ set <span style="font-weight: bold;"><B>ftgl_dll</B></span> as the StartUp project.</p>
+
+<p class="whs1">4. Select Properties-&gt;General-&gt;Configuration 
+ Type-&gt;DynamicLibrary (.dll)</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image7.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">5. 
+ Select Properties-&gt;&#1057;/C++-&gt;General-&gt;Additional Include Directories.</font></span></p>
+
+<p class="whs1">…and a path to ftgl and 
+ freetype products include files. </p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs3">You should define the includes 
+ strictly in the following order.</p>
+
+<p class="whs1">..\include</p>
+
+<p class="whs1">..\...\include</p>
+
+<p class="whs1">freetype-2.3.7\include</p>
+
+<p class="whs1">freetype-2.3.7\include\freetype</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image17.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">6. 
+ Select Properties-&gt;Linker-&gt;General-&gt;Additional Library Directories.</font></span></p>
+
+<p class="whs1">7. Include the path to 
+ the FreeType static library freetype237MT.lib (\freetype-2.3.7-source\objs) 
+ built earlier.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image9.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">8. 
+ Select Project-&gt; Properties -&gt;Linker-&gt;Input-&gt; Additional Dependencies.</font></span></p>
+
+<p class="whs1">9. Include the FreeType 
+ static library freetype237MT.lib to the list of additional libraries.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image10.jpg" width="748px" height="517px" border="0" class="img_whs4"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">10. 
+ Select Properties-&gt;Linker-&gt;Advanced-&gt;Import Library.</font></span></p>
+
+<p class="whs1">11. Define the name of 
+ the ftgl library as<span style="font-weight: bold;"><B> ftgl_dynamic_MTD.lib</B></span></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image12.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">12. 
+ Select Project-&gt;Linker-&gt;General-&gt;OutputFile.</font></span></p>
+
+<p class="whs1">13. Please check that 
+ the name of the ftgl dynamic library is <span style="font-weight: bold;"><B>ftgl_dynamic_MTD.dll</B></span>. 
+ It is important because this name is defined in Open CASCADE Technology 
+ projects.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image14.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">14. Select Project-&gt;Properties-&gt;C/C++ 
+ -&gt;Code Generation-&gt;Runtime Library-&gt; Multi-threaded DLL (/MD).</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image15.jpg" width="749px" height="521px" border="0" class="img_whs2"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><span style="font-size: 10pt; font-weight: normal;"><font size=2 style="font-size:10pt;">15. 
+ Start the compilation.</font></span></p>
+
+<p class="whs1">You have built ftgl_dynamic_MTD 
+ and ftgl_dynamic_MTD.lib libraries located in the ftgl-2.1.2-source\win32_vcpp\build 
+ folder.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class=ReleaseNotes-3>Compilation in 64 bit mode</p>
+
+<p class="whs1">Using the Configuration 
+ manager add the <span style="font-weight: bold;"><B>x64</B></span> solution platform 
+ to <span style="font-weight: bold;"><B>Release MT</B></span> Active solution 
+ configuration by copying the settings from Win32.</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image16.jpg" width="747px" height="508px" border="0" class="img_whs5"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">Select Project-&gt;Properties-&gt;C/C++-&gt;-&gt;Advanced-&gt;Calling 
+ Convention-&gt; __fastcall(/Gr)</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="image18.jpg" x-maintain-ratio="TRUE" width="749px" height="521px" border="0" class="img_whs6"></p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs3">Attention:</p>
+
+<p class="whs1">During the compilation 
+ on VS 2005 please make sure that VS directories are defined to 64 bit 
+ configuration. </p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class=ReleaseNotes-2>Linux</p>
+
+<p class="whs1">&gt; cd ftgl-2.1.2-source</p>
+
+<p class="whs1">&gt; configure --prefix=/path-you-want-to 
+ install-ftgl/ ftgl-2.1.2 --with-freetype-prefix=/path-where-freetype-was-installed/freetype-2.3.7 
+ –enable-shared=yes </p>
+
+<p class="whs1">&gt; make</p>
+
+<p class="whs1">&gt; make install</p>
+
+<p class="whs1">You will build and then 
+ install a shared libftgl.so library located in =/path-you-want-to install--ftgl/ 
+ ftgl-2.1.2/lib</p>
+
+<p class="whs1">Remarks:</p>
+
+<p class="whs1">--with-freetype-prefix 
+ – path where freetype was installed </p>
+
+<p class="whs1">--enable-shared – building 
+ of shared libraries</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs3">Attention:</p>
+
+<p class="whs1">The FTGL manual gives 
+ the key “with-ft-prefix”. It is wrong, You must use the key “--with-freetype-prefix 
+ ”.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

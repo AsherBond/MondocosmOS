@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classStepData__ReadWriteModule.html" title="Defines basic File Access Module (Recognize, Read, Write) &#160;&#160;That is : ReaderModule..." alt="" coords="33,237,247,267"/>
+<area shape="rect" id="node4" href="$classInterface__ReaderModule.html" title="Defines unitary operations required to read an Entity from a &#160;&#160;File (see FileReaderData..." alt="" coords="47,160,233,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="79,83,201,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="65,5,215,35"/>
+</map>

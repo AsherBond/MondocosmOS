@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepOffsetAPI__MakeThickSolid.html" title="Describes functions to build hollowed solids. &#160;&#160;A hollowed solid is built from an..." alt="" coords="16,237,245,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="25,83,236,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="31,5,231,35"/>
+</map>

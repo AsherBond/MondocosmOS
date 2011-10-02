@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBOP__SectionHistoryCollector.html" title="BOP_SectionHistoryCollector" alt="" coords="597,5,816,35"/>
+<area shape="rect" id="node9" href="$classBOP__ShellSolidHistoryCollector.html" title="BOP_ShellSolidHistoryCollector" alt="" coords="592,59,821,88"/>
+<area shape="rect" id="node11" href="$classBOP__SolidSolidHistoryCollector.html" title="BOP_SolidSolidHistoryCollector" alt="" coords="593,112,820,141"/>
+<area shape="rect" id="node13" href="$classBOP__WireSolidHistoryCollector.html" title="BOP_WireSolidHistoryCollector" alt="" coords="593,165,820,195"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,85,328,115"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,85,156,115"/>
+</map>

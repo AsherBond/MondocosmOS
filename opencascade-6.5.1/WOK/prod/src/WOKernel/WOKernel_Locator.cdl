@@ -1,0 +1,72 @@
+-- File:	WOKernel_Locator.cdl
+-- Created:	Fri Jan  5 16:36:45 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class Locator from WOKernel 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    Session                     from WOKernel,
+    File                        from WOKernel,
+    DevUnit                     from WOKernel,
+    UnitNesting                 from WOKernel,
+    Workbench                   from WOKernel,
+    Parcel                      from WOKernel,
+    DataMapOfHAsciiStringOfFile from WOKernel,
+    HSequenceOfHAsciiString     from TColStd,
+    HAsciiString                from TCollection
+    
+is
+
+    Create(awb : Workbench from WOKernel)
+    	returns mutable Locator from WOKernel;
+
+    Create(asession : Session from WOKernel; avisibility : HSequenceOfHAsciiString from TColStd) 
+    	returns mutable Locator from WOKernel;
+	
+    Session(me) returns Session from WOKernel;
+    Visibility(me) returns HSequenceOfHAsciiString from TColStd;
+
+    Reset(me:mutable);
+    Check(me:mutable);
+    
+    Locate(me:mutable; alocatorname : HAsciiString from TCollection;
+    	    	       aunitname, atype, aname : HAsciiString from TCollection) 
+    ---C++: return const &
+	returns mutable File from WOKernel
+    	is private;
+    
+    Locate(me:mutable; alocatorname : HAsciiString from TCollection) 
+    ---C++: return const &
+    	returns mutable File from WOKernel;
+	    
+    Locate(me:mutable; atype, aname : HAsciiString from TCollection) 
+    ---C++: return const &
+    	returns mutable File from WOKernel;
+	
+    Locate(me:mutable; aunitname, atype, aname : HAsciiString from TCollection) 
+    ---C++: return const &
+    	returns mutable File from WOKernel;
+
+    LocateDevUnit(me:mutable; adevunitname : HAsciiString from TCollection)
+    	returns mutable DevUnit from WOKernel;
+	
+    ChangeAdd(me:mutable; afile : File from WOKernel)
+    	returns Boolean from Standard;
+
+    ChangeRemove(me:mutable; afile : File from WOKernel)
+    	returns Boolean from Standard;
+	
+
+fields
+
+    mysession    : Session                     from WOKernel;
+    mymap        : DataMapOfHAsciiStringOfFile from WOKernel;
+    myvisibility : HSequenceOfHAsciiString     from TColStd;
+    
+end Locator;

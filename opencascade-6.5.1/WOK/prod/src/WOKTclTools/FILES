@@ -1,0 +1,11 @@
+WOKTclTools_PInterp.hxx
+WOKTclTools_CommandFunction.hxx
+WOKTclTools_Messages.hxx
+WOKTclTools_Messages.cxx
+WOKTclTools_CMPLRS.edl
+WOKTclTools_WokCommand.hxx
+WOKTclTools_ExitHandler.hxx
+WOKTclTools_TriggerHandler.cxx
+WOKTclTools_TriggerHandler.hxx
+ENV.edl
+EXTERNLIB

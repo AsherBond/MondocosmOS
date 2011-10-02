@@ -1,0 +1,24 @@
+-- File:	WOKernel_FileTypeHasher.cdl
+-- Created:	Tue Oct 10 20:10:18 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class FileTypeHasher from WOKernel 
+
+	---Purpose: 
+
+uses
+    FileType from WOKernel
+
+is
+
+    HashCode(myclass; akey : FileType from WOKernel)
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; akey1, akey2: FileType from WOKernel)
+    	returns Boolean from Standard;
+
+
+end FileTypeHasher;

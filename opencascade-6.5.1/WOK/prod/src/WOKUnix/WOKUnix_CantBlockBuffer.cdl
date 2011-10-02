@@ -1,0 +1,28 @@
+-- File:	WOKUnix_CantBlockBuffer.cdl
+-- Created:	Tue May  9 13:56:16 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private class CantBlockBuffer from WOKUnix
+inherits Buffer  from WOKUnix
+uses 
+    BufferIs from WOKUnix,
+    FDescr   from WOKUnix,
+    FDSet    from WOKUnix,
+    Timeval  from WOKUnix
+raises
+    BufferOverflow from WOKUnix,
+    ProcessTimeOut from WOKUnix    
+is
+    Create(afd : FDescr   from WOKUnix; astd : BufferIs from WOKUnix) returns mutable CantBlockBuffer from WOKUnix;
+    
+    Select(me; afd : out Integer; atimeout : in out Timeval from WOKUnix; aset : in out FDSet from WOKUnix) is redefined;
+    Acquit(me:mutable; astatus : Integer from Standard; aset : FDSet from WOKUnix) raises ProcessTimeOut from WOKUnix is redefined;
+
+    Close(me:mutable) is redefined;
+
+fields
+    mybuffer : FDescr from WOKUnix;
+end;

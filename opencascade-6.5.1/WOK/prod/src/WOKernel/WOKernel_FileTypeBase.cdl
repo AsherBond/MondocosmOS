@@ -1,0 +1,113 @@
+-- File:	WOKernel_FileTypeBase.cdl
+-- Created:	Fri Jun 23 18:53:21 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class FileTypeBase from WOKernel 
+inherits TShared   from MMgt
+
+	---Purpose: using  a map to  store the various file types known
+	--          by WOK
+
+uses
+    Entity                   from WOKernel,
+    FileType                 from WOKernel,
+    DataMapOfFileType        from WOKernel,
+    DBMSID                   from WOKernel,
+    HSequenceOfDBMSID        from WOKernel,
+    StationID                from WOKernel,
+    HSequenceOfStationID     from WOKernel,
+    FileTypeIterator         from WOKernel,
+    Path                     from WOKUtils,
+    Param                    from WOKUtils,
+    HAsciiString             from TCollection,
+    HSequenceOfHAsciiString  from TColStd
+
+is
+
+    Create returns mutable FileTypeBase from WOKernel;
+    ---Purpose: instantiates the file type base    
+    
+    Load(me:mutable; parms : Param from WOKUtils);
+    ---Purpose: loads the WOK file types from a file    
+
+    SetParams(me:mutable; parms : Param from WOKUtils);
+    ---Purpose: Sets Parameters    
+
+    IsType(me; atype : HAsciiString from TCollection)
+    ---Purpose: returns True if type is defined, False otherwise   
+    	returns Boolean from Standard;
+	
+    IsType(me; atype : CString     from Standard)
+    ---Purpose: returns True if type is defined, False otherwise      
+    	returns Boolean from Standard;
+	
+    Type(me; atype : HAsciiString from TCollection) 
+    ---Purpose: returns the file type if known in the map    
+    	returns FileType from WOKernel;
+	
+    Type(me; atype : CString     from Standard)
+    ---Purpose: returns the file type if known in the map  
+    	returns FileType from WOKernel;
+
+    TypeName(me; atype : FileType from WOKernel)
+    	returns HAsciiString from TCollection;
+
+    GetNeededArguments(me:mutable; params : Param from WOKUtils) 
+    ---Purpose: Gets (calculates the list of templates args    
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    GetNeededParameters(me:mutable;   entity : HAsciiString         from TCollection;
+    	    	    	    	    anesting : HAsciiString         from TCollection;
+    	    	    	               dbmss : HSequenceOfDBMSID    from WOKernel; 
+    	    	          	    stations : HSequenceOfStationID from WOKernel) 
+    ---Purpose: Returns the list of needed parameters in a particular context    
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    NeededArguments(me)
+    ---Purpose: Returns the list of needed template arguments
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    SetNeededArguments(me; entity : Entity       from WOKernel;
+    	    	    	    adbms : DBMSID       from WOKernel; 
+			 astation : StationID    from WOKernel);
+    ---Purpose: Sets Parameters used by templates for a particular Context    
+    --          
+    
+    GetDirectories(me; entity : Entity from WOKernel;
+      	    	    	         dbmss : HSequenceOfDBMSID    from WOKernel; 
+    	    	              stations : HSequenceOfStationID from WOKernel;
+    	    	    	     hasentity : Boolean from Standard ) 
+    	returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: Calculates All Directories possibilities for a FileTypeBase in a Context.    
+    --          
+    GetDirectories(me; Theentity : Entity from WOKernel;
+      	    	    	  dbmss : HSequenceOfDBMSID    from WOKernel; 
+    	    	       stations : HSequenceOfStationID from WOKernel;
+	          getNestingdir : Boolean              from Standard;  
+	      	   getEntitydir : Boolean              from Standard; 
+         getNestingAndEntitydir : Boolean              from Standard;	   
+		     getDbmsdir : Boolean              from Standard;  
+		 getStationsdir : Boolean              from Standard;  
+  	  getStationsAndDbmsdir : Boolean              from Standard;
+    	      getIndependentdir : Boolean              from Standard)  
+    	returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: Calculates All Directories possibilities for a FileTypeBase in a Context.    
+
+    GetFiles(me; theentity : Entity from WOKernel;
+      	    	    	         dbmss : HSequenceOfDBMSID    from WOKernel; 
+    	    	              stations : HSequenceOfStationID from WOKernel;
+    	    	    	     hasentity : Boolean from Standard) 
+    	returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: Calculates All Files possibilities for a FileTypeBase in a Context.    
+    --          
+
+    TypeIterator(me)
+    	returns FileTypeIterator from WOKernel;
+
+fields
+    mytypes      : DataMapOfFileType       from WOKernel;    
+    myneededargs : HSequenceOfHAsciiString from TColStd;
+end FileTypeBase;

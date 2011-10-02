@@ -1,0 +1,51 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_Method_HeaderFile
+#include <MS_Method.hxx>
+#endif
+#ifndef _MS_MetaSchema_HeaderFile
+#include <MS_MetaSchema.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif
+#ifndef _MS_Class_HeaderFile
+#include <MS_Class.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKTools_MapOfHAsciiString_HeaderFile
+#include <WOKTools_MapOfHAsciiString.hxx>
+#endif
+#ifndef _MS_Interface_HeaderFile
+#include <MS_Interface.hxx>
+#endif
+#ifndef _MS_HSequenceOfExternMet_HeaderFile
+#include <MS_HSequenceOfExternMet.hxx>
+#endif
+#ifndef _MS_HSequenceOfMemberMet_HeaderFile
+#include <MS_HSequenceOfMemberMet.hxx>
+#endif
+#ifndef _MS_Common_HeaderFile
+#include <MS_Common.hxx>
+#endif
+#ifndef _MS_InstClass_HeaderFile
+#include <MS_InstClass.hxx>
+#endif
+#ifndef _MS_StdClass_HeaderFile
+#include <MS_StdClass.hxx>
+#endif
+#ifndef _MS_MemberMet_HeaderFile
+#include <MS_MemberMet.hxx>
+#endif
+#ifndef _MS_Param_HeaderFile
+#include <MS_Param.hxx>
+#endif
+#ifndef _MS_Field_HeaderFile
+#include <MS_Field.hxx>
+#endif
+#ifndef _MS_HeaderFile
+#include <MS.hxx>
+#endif

@@ -1,0 +1,39 @@
+-- File:	WOKBuilder_CodeGenerator.cdl
+-- Created:	Thu Jul 11 15:12:41 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class CodeGenerator  from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+    HSequenceOfExtension from WOKBuilder,
+    CodeGenFile from WOKBuilder,
+    BuildStatus  from WOKBuilder,
+    Param        from WOKUtils,
+    HAsciiString from TCollection
+    
+raises
+    ProgramError from Standard
+is
+
+    Create(aname: HAsciiString from TCollection; params : Param from WOKUtils);
+
+    SetCodeGenFile(me:mutable; afile : CodeGenFile from WOKBuilder);
+    CodeGenFile(me) returns CodeGenFile from WOKBuilder;
+
+    Execute(me:mutable) 
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+
+fields
+
+    myfile : CodeGenFile from WOKBuilder;
+
+end CodeGenerator;
+

@@ -1,0 +1,12 @@
+-- File:	WOKSteps_resource.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 13 14:21:01 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_resource_EDL) then
+@set %WOKSteps_resource_EDL = "";
+
+  @set %WOKSteps_SrcGroup = "src";
+  @set %WOKSteps_src = "*WOKStep_ResourceSource";
+
+@endif;

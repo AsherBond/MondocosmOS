@@ -1,0 +1,27 @@
+-- File:	CDLTranslate.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 16:12:23 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %CDLTranslate_EDL) then
+@set %CDLTranslate_EDL = "";
+
+@set %CDLTranslate_SHARED = "libTKCDLFront.so";
+
+@if ( %LocalArch == "hp" ) then
+  @set %CDLTranslate_SHARED = "libTKCDLFront.sl";
+@endif;
+
+@if ( %LocalArch == "mac" ) then
+  @set %CDLTranslate_SHARED = "libTKCDLFront.dylib";
+@endif;
+
+@if ( %LocalArch == "wnt" ) then
+  @set %CDLTranslate_SHARED = "TKCDLFront.dll";
+@endif;
+
+@set %CDLTranslate_NAME   = "CDLTranslate";
+
+@endif;
+
+

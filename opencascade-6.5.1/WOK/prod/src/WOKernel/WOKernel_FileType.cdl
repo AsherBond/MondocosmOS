@@ -1,0 +1,108 @@
+-- File:	WOKernel_FileType.cdl
+-- Created:	Fri Jun 23 18:45:29 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class FileType from WOKernel 
+inherits TShared from MMgt
+
+	---Purpose: manages the various file types in WOK
+
+uses
+    HAsciiString            from TCollection,
+    Template                from EDL,
+    HSequenceOfDBMSID       from WOKernel,
+    HSequenceOfStationID    from WOKernel,
+    MapOfHAsciiString       from WOKTools,
+    Param                   from WOKUtils,
+    Path                    from WOKUtils,
+    HSequenceOfHAsciiString from TColStd
+raises
+    ProgramError from Standard
+is
+    Create returns mutable FileType from WOKernel;
+    
+    Create(aname     : HAsciiString from TCollection;
+    	   atemplate : Template     from EDL) 
+    	returns mutable FileType from WOKernel;
+ 
+    Name(me) 
+    ---C++: inline
+    ---C++: return const &      
+    	returns HAsciiString from TCollection;
+ 
+    Template(me)
+    ---C++: inline
+    ---C++: return const &      
+    	returns Template from EDL;
+	
+    ComputePath(me:mutable; params : Param        from WOKUtils; 
+    	    	 afilename : HAsciiString from  TCollection)
+    ---Purpose: Computes a path using a format and parameters    
+    --          Supposes that WOKernel_FileTypeBase::SetNeededArguments
+    --          was called Before use.
+	returns HAsciiString from TCollection;
+
+    GetDefinition(me)
+    	returns HAsciiString from TCollection;
+
+    GetArguments(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    GetDependency(me:mutable) raises ProgramError from Standard is private;
+    ---Purpose: calculates Station and DBMS dependency for Type    
+    	
+    SetStationDependent(me:mutable);
+    UnSetStationDependent(me:mutable);
+    IsStationDependent(me) returns Boolean from Standard;
+    ---C++: inline
+    
+    SetDBMSDependent(me:mutable);
+    UnSetDBMSDependent(me:mutable);
+    IsDBMSDependent(me) returns Boolean from Standard;
+    ---C++: inline
+    
+    SetNestingDependent(me:mutable);
+    UnSetNestingDependent(me:mutable);
+    IsNestingDependent(me) returns Boolean from Standard;
+    ---C++: inline
+
+    SetEntityDependent(me:mutable);
+    UnSetEntityDependent(me:mutable);
+    IsEntityDependent(me) returns Boolean from Standard;
+    ---C++: inline
+
+    SetFileDependent(me:mutable);
+    UnSetFileDependent(me:mutable);
+    IsFileDependent(me) returns Boolean from Standard;
+    ---C++: inline
+
+    Directory(me:mutable);
+    File(me:mutable);
+    
+    IsFile(me)
+    ---C++: inline
+       	returns Boolean from Standard;
+	
+    IsDirectory(me)
+    ---C++: inline
+       	returns Boolean from Standard;
+
+    GetDirectory(me:mutable; params : Param from WOKUtils)
+    	returns HAsciiString from TCollection;
+	
+    GetFile(me:mutable; params : Param from WOKUtils)
+    	returns HAsciiString from TCollection;
+    
+fields
+    myname       : HAsciiString from TCollection;
+    mytemplate   : Template     from EDL;
+    mystationdep : Boolean      from Standard;
+    mydbmsdep    : Boolean      from Standard;
+    mynestingdep : Boolean      from Standard;
+    myentitydep  : Boolean      from Standard;
+    myfiledep    : Boolean      from Standard;
+    myisrep      : Boolean      from Standard;
+end FileType;

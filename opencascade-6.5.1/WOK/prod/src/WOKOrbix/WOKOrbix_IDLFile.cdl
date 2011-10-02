@@ -1,0 +1,19 @@
+-- File:	WOKOrbix_IDLFile.cdl
+-- Created:	Mon Aug 18 11:59:06 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class IDLFile from WOKOrbix 
+inherits Specification from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+
+is
+
+    Create(apath : Path from WOKUtils) returns mutable IDLFile from WOKOrbix;
+    
+end IDLFile;

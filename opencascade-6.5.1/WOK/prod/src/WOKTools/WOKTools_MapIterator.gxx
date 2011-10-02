@@ -1,0 +1,31 @@
+// File:	WOKTools_MapIterator.gxx
+
+
+//=======================================================================
+//function : WOKTools_MapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_MapIterator::WOKTools_MapIterator() :
+       WOKTools_BasicMapIterator()
+{}
+
+//=======================================================================
+//function : WOKTools_MapIterator
+//purpose  : 
+//=======================================================================
+
+WOKTools_MapIterator::WOKTools_MapIterator(const WOKTools_Map& aMap) :
+       WOKTools_BasicMapIterator(aMap)
+{}
+
+//=======================================================================
+//function : WOKTools_MapIterator
+//purpose  : 
+//=======================================================================
+
+void WOKTools_MapIterator::Initialize(const WOKTools_Map& aMap)
+{
+  WOKTools_BasicMapIterator::Initialize(aMap);
+}
+

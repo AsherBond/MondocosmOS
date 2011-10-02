@@ -1,0 +1,6 @@
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKNT_MixedOutput_HeaderFile
+#include <WOKNT_MixedOutput.hxx>
+#endif

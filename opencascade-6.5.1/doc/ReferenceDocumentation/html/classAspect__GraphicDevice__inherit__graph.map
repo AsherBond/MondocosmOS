@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classWNT__GraphicDevice.html" title="This class defines Windows NT display device. &#160;&#160;A Graphic Device defines color management..." alt="" coords="52,237,209,267"/>
+<area shape="rect" id="node11" href="$classXw__GraphicDevice.html" title="This class defines an X11 Graphic Device &#160;&#160;Warning: An Graphic Device is defined..." alt="" coords="261,237,408,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="157,83,280,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="144,5,293,35"/>
+<area shape="rect" id="node9" href="$classGraphic3d__WNTGraphicDevice.html" title="This class initializes a Windows NT Graphic Device. &#160;" alt="" coords="5,315,229,344"/>
+<area shape="rect" id="node13" href="$classGraphic3d__GraphicDevice.html" title="This class allows the definition of the Advanced &#160;&#160;Graphic Device &#160;&#160;Warning: An Graphic..." alt="" coords="253,315,445,344"/>
+</map>

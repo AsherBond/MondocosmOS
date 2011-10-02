@@ -1,0 +1,103 @@
+-- File:	ORBIX.edl
+-- Author:	Jean GAUTIER
+-- History:	Mon Aug 18 16:20:03 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %ORBIX_EDL) then
+@set %ORBIX_EDL = "";
+
+
+@set %ORBIX_Tools = "ORBIX_IDL";
+
+@set %ORBIX_Home  = "/opt/Orbix_2.2";
+
+@set %ORBIX_IDL_Extensions = "toto.idl";
+@set %ORBIX_IDL_Template   = "CmdLine";
+
+@template ORBIX_IDL_Production ( %OutputDir, %BaseName ) is
+  $ %BaseName.m %BaseName_i.cxx.template %BaseName_i.hxx.template %BaseName_S.cxx %BaseName_C.cxx %BaseName.hxx 
+@end;
+
+@template ORBIX_IncDirective (%IncDirectory) is
+$ -I%IncDirectory \
+@end;
+
+@string %ORBIX_IDL_Command = %ORBIX_Home "/bin/idl  -I" %ORBIX_Home "/include/idl";
+@set %ORBIX_IDL_Options = "-B -S -h .hxx -s _S.cxx -c _C.cxx";
+
+-- Options liees aux BDs Objet
+@if ( %DBMS == "DFLT" ) then
+  @set %DBMSOpt = "-DCSFDB";
+@endif;
+
+@if ( %Station == "sun" ) then
+  @string %ORBIX_IDL_Options += " -DSOLARIS";
+  -- Options liees aux BDs Objet
+  @if ( %DBMS == "OBJS" ) then
+    @set %DBMSOpt = "-vdelx -DOBJS -I/PRODUCTS/OS4.0.2/sunpro/include ";
+  @endif;
+@endif;
+
+@if ( %Station == "ao1" ) then
+  @string %ORBIX_IDL_Options += " -DDECOSF1";
+  -- Options liees aux BDs Objet
+  @if ( %DBMS == "OBJS" ) then
+    @set %DBMSOpt = " -DOBJS -I/PRODUCTS/OS4.0.2/include ";
+  @endif;
+@endif;
+
+@if ( %Station == "sil" ) then
+  @string %ORBIX_IDL_Options += " -DIRIX";
+  -- Options liees aux BDs Objet
+  @if ( %DBMS == "OBJS" ) then
+    @set %DBMSOpt = " -DOBJS -I/PRODUCTS/OS4.0.3/include ";
+  @endif;
+@endif;
+
+@if ( %Station == "hp" ) then
+  @string %ORBIX_IDL_Options += " -DHPUX";
+  -- Options liees aux BDs Objet
+  @if ( %DBMS == "OBJS" ) then
+    @set %DBMSOpt = " -DOBJS -I/PRODUCTS/OS4.0.2/include ";
+  @endif;
+@endif;
+
+@if ( %Station == "wnt" ) then
+  @string %ORBIX_IDL_Options += " -DWNT";
+  -- Options liees aux BDs Objet
+  @if ( %DBMS == "OBJS" ) then
+    @set %DBMSOpt = " -DOBJS -ID:/DevTools/OS4.0.2/include ";
+  @endif;
+@endif;
+
+@template ORBIX_IDL_OptLine ( %ORBIX_IDL_Command, %ORBIX_IDL_Options, %DBMSOpt, %IncDirectives ) is 
+  $IDL compiler: \^
+  $%ORBIX_IDL_Command %ORBIX_IDL_Options %DBMSOpt  \
+  $%IncDirectives <Source.idl> 
+@end;
+
+@template ORBIX_IDL_CmdLine ( %ORBIX_IDL_Command, %ORBIX_IDL_Options, %DBMSOpt, %IncDirectives, 
+			      %Source, %BaseName, %OutputDir, %TmpFile ) is 
+  $cp  %Source %OutputDir
+  $%ORBIX_IDL_Command %ORBIX_IDL_Options %DBMSOpt  \
+  $%IncDirectives \
+  $%OutputDir%BaseName.idl
+  $set idl_status = $status
+  $if( $idl_status == 0 ) then
+  $  %ORBIX_IDL_Command -O %DBMSOpt  \
+  $                     %IncDirectives \
+  $                     %Source | sed -e "s/.*://g" -e "s/\\//g" | tr " " "\n" | sort -u | sed -e "1d" | grep -v %Source > %OutputDir/%BaseName.m
+  $  sed -e 's/\#include \"\(.*\)\.h\"/\#include \<\1.hxx\>/g' -e 's/\#include \"\(.*\)\.hxx\"/\#include \<\1.hxx\>/g' %OutputDir%BaseName.ih > %OutputDir%BaseName_i.hxx.template
+  $  rm -f %OutputDir%BaseName.ih
+  $  sed -e 's/\#include \"\(.*\)\.ih\"/\#include \<\1_i.hxx\>/g' %OutputDir%BaseName.ic > %OutputDir%BaseName_i.cxx.template
+  $  rm -f %OutputDir%BaseName.ic
+  $endif
+  $rm -f %OutputDir%BaseName.idl
+  $set status = $idl_status
+@end;
+
+
+@string %ORBIX_ServerLibs = "-L " %ORBIX_Home "/lib -l IRclt -l ITini -l iiop -l orbix -l DSI  -lsocket";
+@string %ORBIX_ClientLibs = "-L " %ORBIX_Home "/lib -l IRclt -l ITini -l iiop -l orbix -l DSI  -lsocket";
+
+@endif;

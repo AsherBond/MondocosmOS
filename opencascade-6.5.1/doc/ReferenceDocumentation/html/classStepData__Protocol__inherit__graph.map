@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classHeaderSection__Protocol.html" title="Protocol for HeaderSection Entities &#160;&#160;It requires HeaderSection as a Resource &#160;" alt="" coords="5,315,189,344"/>
+<area shape="rect" id="node11" href="$classStepAP214__Protocol.html" title="Protocol for StepAP214 Entities &#160;&#160;It requires StepAP214 as a Resource &#160;" alt="" coords="213,315,371,344"/>
+<area shape="rect" id="node13" href="$classStepData__FileProtocol.html" title="A FileProtocol is defined as the addition of several already &#160;&#160;existing Protocols..." alt="" coords="395,315,568,344"/>
+<area shape="rect" id="node2" href="$classInterface__Protocol.html" title="General description of Interface Protocols. A Protocol defines &#160;&#160;a set of Entity..." alt="" coords="219,160,365,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="231,83,353,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="217,5,367,35"/>
+<area shape="rect" id="node15" href="$classStepData__DescrProtocol.html" title="A DescrProtocol is a protocol dynamically (at execution time) &#160;&#160;defined with : &#160;a..." alt="" coords="387,392,576,421"/>
+</map>

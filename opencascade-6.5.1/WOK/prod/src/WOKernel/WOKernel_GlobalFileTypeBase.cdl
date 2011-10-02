@@ -1,0 +1,29 @@
+-- File:	WOKernel_GlobalFileTypeBase.cdl
+-- Created:	Sat Oct 25 00:08:55 1997
+-- Author:	
+--		<jga@GROMINEX>
+---Copyright:	 Matra Datavision 1997
+
+
+class GlobalFileTypeBase from WOKernel 
+inherits TShared from MMgt
+
+	---Purpose: diminuer les chargement de FileTypeBase
+
+uses
+    FileTypeBase          from WOKernel,
+    DataMapOfFileTypeBase from WOKernel,
+    Entity from WOKernel
+is
+
+    Create
+    	returns mutable GlobalFileTypeBase from WOKernel;
+	
+    GetFileTypeBase(me:mutable; anentity : Entity from WOKernel)
+    	returns FileTypeBase from WOKernel;
+
+fields
+    
+    mybases : DataMapOfFileTypeBase from WOKernel;
+
+end GlobalFileTypeBase;

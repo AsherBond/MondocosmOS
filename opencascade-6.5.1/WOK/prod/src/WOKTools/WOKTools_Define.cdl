@@ -1,0 +1,37 @@
+-- File:	WOKTools_Define.cdl
+-- Created:	Fri Nov 24 14:41:27 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Define from WOKTools 
+
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection
+    
+is
+    Create returns Define from WOKTools;
+
+    Create(aname, avalue : HAsciiString from TCollection) 
+    	returns Define from WOKTools;
+
+    GetDefineIn(me:out; aline : HAsciiString from TCollection);
+    AddValue(me:out; aline : HAsciiString from TCollection);
+    IsValueValid(me; avalue : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    Name(me) returns HAsciiString from TCollection;
+    Value(me) returns HAsciiString from TCollection;
+
+    SetName(me:out; aname : HAsciiString from TCollection);
+    SetValue(me:out; avalue : HAsciiString from TCollection);
+
+fields
+    
+    myname  : HAsciiString from TCollection;
+    myvalue : HAsciiString from TCollection;
+
+end Define;

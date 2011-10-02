@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_Package_HeaderFile
+#include <MS_Package.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif

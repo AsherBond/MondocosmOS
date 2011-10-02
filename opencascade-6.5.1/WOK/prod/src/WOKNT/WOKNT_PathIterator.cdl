@@ -1,0 +1,65 @@
+-- File:	WOKNT_PathIterator.cdl
+-- Created:	Mon Aug 03 15:37:45 1998
+-- Author:	
+--		<jga@GROMINEX>
+---Copyright:	 Matra Datavision 1998
+
+
+class PathIterator from WOKNT
+
+
+uses 
+    Boolean from Standard,
+    HAsciiString from TCollection,
+    AsciiString from TCollection,
+    FindData from WOKNT,
+    Handle from WOKNT,
+    StackOfHandle   from WOKNT,
+    Path from WOKNT
+    
+is
+
+
+    Create(apath : Path from WOKNT; recursive : Boolean from Standard = Standard_False; mask : CString from Standard = "*")
+    	returns PathIterator from WOKNT;
+
+    SkipDots(me:out) is private;
+    	
+    Push(me:out; data : FindData from WOKNT; handle : Handle from WOKNT) is private;
+    Pop(me:out) is private;
+    
+    IsDots(myclass; aname : CString from Standard)
+    	returns Boolean from Standard is private;
+    
+    Next(me:out);
+    
+    
+    PathValue(me)
+    	returns Path from WOKNT;
+    
+    LevelValue(me)
+    	returns Integer from Standard;
+	
+    NameValue(me)
+    	returns HAsciiString from TCollection;
+
+    BrowsedPath(me)
+	returns Path from WOKNT;    	
+		
+    More(me)
+    	returns Boolean from Standard;
+
+    Destroy(me);
+    ---C++: alias operator~
+
+fields
+
+    mymask      : AsciiString from TCollection;
+    mypath      : Path from WOKNT;
+    mydata      : FindData from WOKNT;
+    myStack     : StackOfHandle from WOKNT;
+    mymore      : Boolean from Standard;
+    myrecflag   : Boolean from Standard;
+
+end;
+

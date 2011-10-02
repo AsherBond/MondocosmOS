@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classAIS2D__InteractiveObject.html" title="Class Interactive Object defines a class of objects &#160;&#160;with display and selection..." alt="" coords="5,237,197,267"/>
+<area shape="rect" id="node11" href="$classGraphic2d__HidingGraphicObject.html" title="Creates a 2D hiding graphic object in a view. &#160;&#160;A graphic object is a primitives..." alt="" coords="221,237,453,267"/>
+<area shape="rect" id="node13" href="$classV2d__BackgroundGraphicObject.html" title="Creates a 2D background graphic object in a view. &#160;&#160;A graphic object is a primitives..." alt="" coords="477,237,707,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="276,83,399,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="263,5,412,35"/>
+<area shape="rect" id="node9" href="$classAIS2D__ProjShape.html" title="Constructs presentable and selectable projection of &#160;&#160;TopoDS_Shape on the view plane..." alt="" coords="33,315,169,344"/>
+</map>

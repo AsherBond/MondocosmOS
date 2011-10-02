@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classChFiDS__ChamfSpine.html" title="Provides data specific to chamfers &#160;&#160;distances on each of faces. &#160;" alt="" coords="5,237,160,267"/>
+<area shape="rect" id="node9" href="$classChFiDS__FilSpine.html" title="Provides data specific to the fillets &#45; &#160;&#160;vector or rule of evolution (C2). &#160;&#160;&#160;" alt="" coords="184,237,309,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="103,83,225,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="89,5,239,35"/>
+</map>

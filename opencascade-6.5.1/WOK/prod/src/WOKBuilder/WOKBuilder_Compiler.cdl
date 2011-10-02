@@ -1,0 +1,56 @@
+-- File:	WOKBuilder_Compiler.cdl
+-- Created:	Wed Aug 23 19:47:23 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Compiler from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: Compilers Management
+uses
+    Entity               from WOKBuilder,
+    Compilable           from WOKBuilder,
+    ObjectFile           from WOKBuilder,
+    MFile                from WOKBuilder,
+    HSequenceOfEntity    from WOKBuilder,
+    BuildStatus          from WOKBuilder,
+    HSequenceOfPath      from WOKUtils,
+    Param                from WOKUtils,
+    HAsciiString         from TCollection
+    
+raises
+    ProgramError from Standard
+is
+
+    Create(aname : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns mutable Compiler from WOKBuilder;
+
+    IncludeDirectories(me) returns HSequenceOfPath from WOKUtils;
+    SetIncludeDirectories(me:mutable; incdirs : HSequenceOfPath from WOKUtils);
+    
+    DatabaseDirectories(me) returns HSequenceOfPath from WOKUtils;
+    SetDatabaseDirectories(me:mutable; incdirs : HSequenceOfPath from WOKUtils);
+    
+    Compilable(me) returns mutable Compilable from WOKBuilder;
+    SetCompilable(me:mutable; afile : Compilable from WOKBuilder);
+
+    Execute(me:mutable) 
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+fields
+    myname    : HAsciiString         from TCollection;
+    mysource  : Compilable           from WOKBuilder;
+    myobject  : ObjectFile           from WOKBuilder;
+    mymfile   : MFile                from WOKBuilder;
+    myincdirs : HSequenceOfPath      from WOKUtils;
+    mydbdirs  : HSequenceOfPath      from WOKUtils;
+    myoptions : HAsciiString         from TCollection;
+    myCmdLine : HAsciiString         from TCollection;
+
+friends
+
+   class CompilerIterator from WOKBuilder
+end Compiler;

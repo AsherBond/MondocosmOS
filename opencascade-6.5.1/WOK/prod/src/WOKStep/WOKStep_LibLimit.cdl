@@ -1,0 +1,52 @@
+-- File:	WOKStep_LibLimit.cdl
+-- Created:	Thu Jan  9 14:55:41 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class LibLimit from WOKStep 
+inherits MetaStep  from WOKMake
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    HAsciiString                from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable LibLimit from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    OutOfDateEntities(me:mutable) 
+    	returns HSequenceOfInputFile from WOKMake
+    	is redefined protected;
+
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+   	is redefined private;
+
+end LibLimit;
+

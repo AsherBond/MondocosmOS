@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classBOP__ShapeSet.html" title="BOP_ShapeSet" alt="" coords="7,32,129,61"/>
+<area shape="rect" id="node3" href="$classBOP__ShellFaceSet.html" title="class for set of faces and shells &#160;&#160;&#160;" alt="" coords="179,5,325,35"/>
+<area shape="rect" id="node5" href="$classBOP__WireEdgeSet.html" title="The class containing data and methods &#160;&#160;for a set of edges and wires &#160;" alt="" coords="179,59,325,88"/>
+</map>

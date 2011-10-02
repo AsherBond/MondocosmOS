@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_MetaSchema_HeaderFile
+#include <MS_MetaSchema.hxx>
+#endif
+#ifndef _CPPJini_ClientInfo_HeaderFile
+#include <CPPJini_ClientInfo.hxx>
+#endif

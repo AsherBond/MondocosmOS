@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKTools_MapOfHAsciiString_HeaderFile
+#include <WOKTools_MapOfHAsciiString.hxx>
+#endif
+#ifndef _WOKDeliv_DeliveryList_HeaderFile
+#include <WOKDeliv_DeliveryList.hxx>
+#endif

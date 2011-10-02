@@ -1,0 +1,45 @@
+-- File:	WOKUnix_RemoteShell.cdl
+-- Created:	Mon Nov  6 14:29:52 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class RemoteShell from WOKUnix 
+inherits Shell from WOKUnix
+
+	---Purpose: 
+
+uses
+    ShellMode        from WOKUnix,
+    PopenOutputMode  from WOKUnix,
+    PopenBufferMode  from WOKUnix,
+    HAsciiString     from TCollection,
+    AsciiString      from TCollection
+is
+
+
+    Create(ahost    : HAsciiString     from TCollection;
+    	   apath    : AsciiString      from TCollection;
+    	   amode    : ShellMode        from WOKUnix = WOKUnix_AsynchronousMode; 
+    	   outmode  : PopenOutputMode  from WOKUnix = WOKUnix_POPEN_MIX_OUT_ERR;
+    	   bufmode  : PopenBufferMode  from WOKUnix = WOKUnix_POPEN_BUFFERED)  
+    	returns mutable RemoteShell from WOKUnix;
+
+    SyncAndStatus(me : mutable) returns Integer is redefined;
+    
+    SetUser(me:mutable; auser : HAsciiString from TCollection);
+    User(me) returns HAsciiString from TCollection;
+    
+    SetPassword(me:mutable; auser : HAsciiString from TCollection);
+    Password(me) returns HAsciiString from TCollection;
+    
+fields
+
+    myuser     : HAsciiString from TCollection;
+    mypassword : HAsciiString from TCollection;
+
+end RemoteShell;
+
+
+

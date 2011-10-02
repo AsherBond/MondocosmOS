@@ -1,0 +1,48 @@
+-- File:	WOKOrbix_IDLTranslator.cdl
+-- Created:	Fri Aug 22 18:24:41 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class IDLTranslator from WOKOrbix 
+inherits MSTool from WOKBuilder
+
+	---Purpose: Translates an IDL file
+
+uses
+    Entity                  from WOKBuilder,
+    IDLFile                 from WOKOrbix,
+    BuildStatus             from WOKBuilder,
+    MSTranslatorPtr         from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    Path                    from WOKUtils,
+    Param                   from WOKUtils
+raises ProgramError from Standard
+is
+    
+    Create(aname :  HAsciiString from TCollection; params : Param from WOKUtils)  
+    	returns mutable IDLTranslator from WOKOrbix;
+    
+    Load(me:mutable)
+    	is redefined;
+    
+    Translate(me:mutable; afile     : IDLFile from WOKOrbix;
+    	    	    	  globlist  : out HSequenceOfHAsciiString from TColStd; 
+    	    	    	  inctypes  : out HSequenceOfHAsciiString from TColStd;  
+			  insttypes : out HSequenceOfHAsciiString from TColStd; 
+			  gentypes  : out HSequenceOfHAsciiString from TColStd
+    	    	    	  ) returns BuildStatus from WOKBuilder is private; 
+
+	
+    Execute(me:mutable; afile    : IDLFile from WOKOrbix)
+    ---Purpose: Executes an action 
+    --          and updates Iterator and MSchema
+    	returns BuildStatus from WOKBuilder
+	raises ProgramError from Standard;
+    
+fields
+    mytranslator : MSTranslatorPtr from WOKBuilder;
+
+end IDLTranslator;

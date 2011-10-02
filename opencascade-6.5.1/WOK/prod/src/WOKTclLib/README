@@ -1,0 +1,83 @@
+
+ This patch concerns the integration stuff in a workshop. 
+
+ In previous version of WOK, the integration stuff
+ (integration queue and repository) was attached to
+ a workshop ( a tree of workbenches). This was mainly
+ for tracing and controlling contents of the root workbench.
+
+ This can now be attached to any workbench in a workshop. 
+ This allows to organize workbenches tree to have more than one 
+ reference space. Typically several applications can share components 
+ in a root workbench and have their per-own reference code in 
+ sub-workbenches. 
+
+ The following process is used :
+
+     > 1. wprepare outputs a compared state of 2 workbenches in a report.
+       By default the current workbench (reffered to as the revision  
+       workbench) and the direct father (reffered to as the master 
+       workbench) are used. The report now contains the name of these
+       2 workbenches .
+       The user edits the report file and comments its changes. He can 
+       also suppress lines for files or units that are not involved in 
+       the current integration.
+  
+     > 2. wstore is the command used either to enqueue a report or to
+       directly update the master workbench. The process is:
+       wstore reads in the report the name of the (master) workbench to be 
+       updated. 
+       If this workbench has an integration queue (See below) the report is 
+       enqueued. 
+       If not the contents of the report is used to directly copy concerned 
+       files in the master workbench provided you give the -copy option. 
+
+     > 3. wintegre is the command used (by the administrator) to update 
+       a workbench from the report's queue. There is no significant changes 
+       with the previous behavior. An option -trig has been added to invoke 
+       a trigger each time a report has been processed. See the on-line help
+       for documentation on how to script and invoke this trigger.
+       (See also the file wintegre_trigger.example)
+        
+
+ How to attach an integration stuff to a new workbench:
+ ------------------------------------------------------
+
+       tclsh> wstore -create -wb KAS:TEST:refAPP
+
+       This will create a report queue and a repository attached to KAS:TEST:refAPP.
+       A directory respectively named "queue" and "archives" will be created in the Adm 
+       directory of the workbench KAS:TEST:refAPP (wokcd -PAdm ...). You can override the
+       default option by using the -queue -journal and -counter options. See online help.
+
+       Note: By default wstore now refuses to process a report if it contains new units.
+       This will allows your shop administrator to control the contents of the master workbench 
+       in term of developement units and to impact these changes in the packaging of the 
+       final application if required.
+  
+       If you want to bypass it, use the following option:
+       tclsh> wstore -create -wb KAS:TEST:refAPP -welcome
+
+ How to attach an integration stuff to an already equipped workbench:
+ --------------------------------------------------------------------
+
+       Previous version of WOK use the EDL parameter VC_ROOT.
+       Translate it using the command:
+       tclsh> wokparam -e %VC_ROOT
+       /adv_11/KAS/C30/SCCS
+ 
+       Then use the following syntax: (Example for workbench KAS:C30:UpdateC31)
+
+       wstore -create -wb :KAS:TEST:UpdateC31 \
+	-base /adv_11/KAS/C30/SCCS/BASES \
+	-queue /adv_11/KAS/C30/SCCS/adm/C30/FRIGO \
+	-counter /adv_11/KAS/C30/SCCS/adm/C30/report.num \
+	-journal /adv_11/KAS/C30/SCCS/adm/C30/wintegre.jnl
+
+ If you use the command iwok for integrating you will note the following changes:
+ --------------------------------------------------------------------------------
+
+       1. Icons for queue and repository appears while opening a workbench instead of a workshop.
+       2. If a workbench has a integration queue, the corresponding icons is red.
+       3. The workbench tree is available while asking for "properties" of a workshop.
+

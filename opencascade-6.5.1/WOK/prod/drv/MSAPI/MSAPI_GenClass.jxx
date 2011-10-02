@@ -1,0 +1,6 @@
+#ifndef _WOKTools_Return_HeaderFile
+#include <WOKTools_Return.hxx>
+#endif
+#ifndef _MSAPI_GenClass_HeaderFile
+#include <MSAPI_GenClass.hxx>
+#endif

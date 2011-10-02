@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classImage__DColorImage.html" title="Image_DColorImage" alt="" coords="5,237,163,267"/>
+<area shape="rect" id="node11" href="$classImage__DIndexedImage.html" title="Image_DIndexedImage" alt="" coords="188,237,367,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="119,83,241,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="105,5,255,35"/>
+<area shape="rect" id="node9" href="$classImage__ColorImage.html" title="A ColorImage is a DColorImage with specific method. &#160;&#160;Each Pixel in the Image ,as..." alt="" coords="11,315,157,344"/>
+<area shape="rect" id="node13" href="$classImage__PseudoColorImage.html" title="A PseudoColorImage is a DIndexedImage associated with a &#160;&#160;ColorMap . The ColoMap..." alt="" coords="181,315,376,344"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classTransfer__MultipleBinder.html" title="Allows direct binding between a starting Object and the Result &#160;&#160;of its transfer..." alt="" coords="584,5,763,35"/>
+<area shape="rect" id="node9" href="$classTransfer__SimpleBinderOfTransient.html" title="An adapted instantiation of SimpleBinder for Transient Result, &#160;&#160;i.e. ResultType..." alt="" coords="551,59,796,88"/>
+<area shape="rect" id="node13" href="$classTransfer__TransientListBinder.html" title="This binder binds several (a list of) Transients with a starting &#160;&#160;entity, when this..." alt="" coords="568,112,779,141"/>
+<area shape="rect" id="node15" href="$classTransfer__VoidBinder.html" title="a VoidBinder is used to bind a starting item with a status, &#160;&#160;error or warning messages..." alt="" coords="597,165,749,195"/>
+<area shape="rect" id="node17" href="$classTransferBRep__BinderOfShape.html" title="TransferBRep_BinderOfShape" alt="" coords="564,219,783,248"/>
+<area shape="rect" id="node21" href="$classTransferBRep__ShapeListBinder.html" title="This binder binds several (a list of) shapes with a starting &#160;&#160;entity, when this..." alt="" coords="560,272,787,301"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,139,328,168"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+<area shape="rect" id="node11" href="$classTransfer__BinderOfTransientInteger.html" title="This type of Binder allows to attach as result, besides a &#160;&#160;Transient Object, an..." alt="" coords="847,59,1097,88"/>
+<area shape="rect" id="node19" href="$classTransferBRep__ShapeBinder.html" title="A ShapeBinder is a BinderOfShape with some additional services &#160;&#160;to cast the Result..." alt="" coords="871,219,1073,248"/>
+</map>

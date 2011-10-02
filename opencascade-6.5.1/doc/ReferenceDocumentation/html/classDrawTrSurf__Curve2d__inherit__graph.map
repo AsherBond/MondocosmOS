@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classDrawTrSurf__BezierCurve2d.html" title="DrawTrSurf_BezierCurve2d" alt="" coords="5,392,205,421"/>
+<area shape="rect" id="node13" href="$classDrawTrSurf__BSplineCurve2d.html" title="DrawTrSurf_BSplineCurve2d" alt="" coords="229,392,435,421"/>
+<area shape="rect" id="node19" href="$classTestTopOpeDraw__DrawableC2D.html" title="TestTopOpeDraw_DrawableC2D" alt="" coords="459,392,693,421"/>
+<area shape="rect" id="node2" href="$classDrawTrSurf__Drawable.html" title="this class adds to the Drawable3D methods to &#160;&#160;display Curves and Curves on Surface..." alt="" coords="251,237,413,267"/>
+<area shape="rect" id="node4" href="$classDraw__Drawable3D.html" title="Draw_Drawable3D" alt="" coords="259,160,405,189"/>
+<area shape="rect" id="node6" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="271,83,393,112"/>
+<area shape="rect" id="node8" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="257,5,407,35"/>
+<area shape="rect" id="node15" href="$classDrawFairCurve__Batten.html" title="Interactive Draw object of type &quot;Batten&quot; &#160;" alt="" coords="244,469,420,499"/>
+<area shape="rect" id="node17" href="$classDrawFairCurve__MinimalVariation.html" title="Interactive Draw object of type &quot;MVC&quot; &#160;" alt="" coords="215,547,449,576"/>
+</map>

@@ -1,0 +1,15 @@
+#ifndef _MS_HSequenceOfGenType_HeaderFile
+#include <MS_HSequenceOfGenType.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_GenType_HeaderFile
+#include <MS_GenType.hxx>
+#endif
+#ifndef _MS_GenClass_HeaderFile
+#include <MS_GenClass.hxx>
+#endif

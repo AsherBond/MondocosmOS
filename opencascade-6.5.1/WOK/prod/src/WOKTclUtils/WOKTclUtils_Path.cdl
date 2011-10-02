@@ -1,0 +1,24 @@
+-- File:	WOKTclUtils_Path.cdl
+-- Created:	Thu Feb 27 16:58:33 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class Path from WOKTclUtils 
+
+	---Purpose: 
+
+uses
+    ArgTable from WOKTools,
+    Return   from WOKTools
+
+is
+
+    FileCompare(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+    DirectorySearch(myclass; argc : Integer from Standard; argv : ArgTable from WOKTools; retval : out Return from WOKTools) 
+    	returns Integer from Standard;
+
+end Path;

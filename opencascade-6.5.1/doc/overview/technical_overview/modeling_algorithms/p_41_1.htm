@@ -1,0 +1,223 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nFeatures");
+addAvenueInfo("Modeling Algorithms","technical_overview/modeling_algorithms/boolean_operations/p_38_1_nbo.htm","technical_overview/modeling_algorithms/p_42_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Features</p>
+
+<p>&nbsp;</p>
+
+<p>BRepFeat is necessary for the creation and manipulation of both form 
+ and mechanical features in a Boundary Representation framework.</p>
+
+<p><font style="color: #000000;"
+		color=#000000>Form features can be depressions or protrusions and 
+ include the following types:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>Cylinder</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>Draft 
+ Prism</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>Prism</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>Revolved 
+ feature</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>Pipe</p></li>
+</ul>
+
+<p><font style="color: #000000;"
+		color=#000000>Depending on whether you wish to make a depression 
+ or a protrusion, you can choose your operation type between the following:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>removing 
+ matter (a Boolean cut: <font style="font-weight: bold;">Fuse</font> setting 
+ <font style="font-style: italic;">0</font>)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>adding 
+ matter (Boolean fusion: <font style="font-weight: bold;">Fuse</font> setting 
+ <font style="font-style: italic;">1</font>)</p></li>
+</ul>
+
+<p class="whs1">&nbsp;</p>
+
+<p><font style="color: #000000;"
+		color=#000000>The semantics of form feature creation is based on 
+ the construction of shapes:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>for 
+ a certain length in a certain direction</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>up 
+ to a limiting face</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>from 
+ a limiting face at a height</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>above 
+ and/or below a plane</p></li>
+</ul>
+
+<p><font style="color: #000000;"
+		color=#000000>The shape defining the construction of a feature 
+ can be either a supporting edge or a concerned area of a face.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>In case of supporting edge, this contour can be attached 
+ to a face of the basis shape by binding. When the contour is bound to 
+ this face, the information that the contour will slide on the face becomes 
+ available to the relevant class methods. In case of the concerned area 
+ of a face, you could, for example, cut it out and move it at a different 
+ height, which will define the limiting face of a protrusion or depression.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>Topological definition with local operations of this 
+ sort makes calculations simpler and faster than a global operation. The 
+ latter would entail a second phase of removing unwanted matter to get 
+ the same result.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>Mechanical features include ribs - protrusions - 
+ and grooves (or slots) - depressions along planar (linear) surfaces or 
+ revolution surfaces.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>The semantics of mechanical features is based on 
+ giving thickness to a contour. This thickness can either be unilateral 
+ - on one side of the contour - or bilateral - on both sides. As in the 
+ semantics of form features, the thickness is defined by construction of 
+ shapes in specific contexts.</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>However, in case of mechanical features, development 
+ contexts differ. Here they include extrusion:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>to 
+ a limiting face of the basis shape</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>to 
+ or from a limiting plane</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p-CTopic-Text-Bulleted><p class=Topic-Text-Bulleted>to 
+ a height.</p></li>
+</ul>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

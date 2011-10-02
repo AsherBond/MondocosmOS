@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classBRep__Curve3D.html" title="Representation of a curve by a 3D curve. &#160;" alt="" coords="5,315,128,344"/>
+<area shape="rect" id="node11" href="$classBRep__CurveOnSurface.html" title="Representation of a curve by a curve in the &#160;&#160;parametric space of a surface. &#160;" alt="" coords="152,315,325,344"/>
+<area shape="rect" id="node2" href="$classBRep__CurveRepresentation.html" title="Root class for the curve representations. Contains &#160;&#160;a location. &#160;" alt="" coords="47,160,257,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="91,83,213,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="77,5,227,35"/>
+<area shape="rect" id="node13" href="$classBRep__CurveOnClosedSurface.html" title="Representation of a curve by two pcurves on &#160;&#160;a closed surface. &#160;" alt="" coords="129,392,348,421"/>
+</map>

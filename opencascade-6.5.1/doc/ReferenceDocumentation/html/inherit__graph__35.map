@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classAdvApprox__Cutting.html" title="to choose the way of cutting in approximation &#160;" alt="" coords="7,59,156,88"/>
+<area shape="rect" id="node3" href="$classAdvApprox__DichoCutting.html" title="if Cutting is necessary in [a,b], we cut at (a+b) / 2. &#160;" alt="" coords="205,5,395,35"/>
+<area shape="rect" id="node5" href="$classAdvApprox__PrefAndRec.html" title="inherits class Cutting; contains a list of preferential points (pi)i &#160;&#160;and a list..." alt="" coords="211,59,389,88"/>
+<area shape="rect" id="node7" href="$classAdvApprox__PrefCutting.html" title="inherits class Cutting; contains a list of preferential points (di)i &#160;&#160;if Cutting..." alt="" coords="211,112,389,141"/>
+</map>

@@ -1,0 +1,32 @@
+WOKTools_GEdge::WOKTools_GEdge()
+{
+}
+
+WOKTools_GEdge::WOKTools_GEdge(const Handle(WOKTools_GNode)& src,
+			       const Handle(WOKTools_GNode)& dest)
+{
+  mySource      = src;
+  myDestination = dest;
+}
+
+
+void WOKTools_GEdge::Source(const Handle(WOKTools_GNode)& src)
+{
+  mySource = src;
+}
+
+void WOKTools_GEdge::Destination(const Handle(WOKTools_GNode)& dest)
+{
+  myDestination =  dest;
+}
+
+Handle(WOKTools_GNode) WOKTools_GEdge::Source() const
+{
+  return mySource;
+}
+
+Handle(WOKTools_GNode) WOKTools_GEdge::Destination() const
+{
+  return myDestination;
+}
+

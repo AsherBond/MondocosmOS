@@ -1,0 +1,15 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _TColStd_SequenceOfHAsciiString_HeaderFile
+#include <TColStd_SequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKMake_Step_HeaderFile
+#include <WOKMake_Step.hxx>
+#endif
+#ifndef _WOKMake_BuildProcessGroup_HeaderFile
+#include <WOKMake_BuildProcessGroup.hxx>
+#endif

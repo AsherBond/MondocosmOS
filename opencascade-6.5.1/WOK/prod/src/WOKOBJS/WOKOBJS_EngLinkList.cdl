@@ -1,0 +1,31 @@
+-- File:	WOKOBJS_EngLinkList.cdl
+-- Created:	Mon Apr 28 18:02:30 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class    EngLinkList from WOKOBJS 
+inherits EngLinkList from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess          from WOKMake,
+    InputFile    from WOKMake,
+    DevUnit      from WOKernel,
+    HAsciiString from TCollection
+    
+is
+
+    
+    Create(abp   : BuildProcess from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable EngLinkList from WOKOBJS;
+	
+    ComputeSchema(me:mutable; aunit : DevUnit from WOKernel; infile : InputFile from WOKMake) 
+    	is redefined private;
+
+end EngLinkList;

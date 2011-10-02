@@ -1,0 +1,89 @@
+-- File:	EDL.cdl
+-- Created:	Thu Jun  1 18:01:41 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+package EDL 
+   uses MMgt,
+    	TCollection,
+        TColStd,
+	OSD
+is  
+   imported FunctionSignature;
+
+   class API;
+   ---Purpose: User API for EDL.
+  		
+   class Variable;
+   ---Purpose: for each variable of an EDL source.
+  
+   class MapOfVariable instantiates DataMap from TCollection(AsciiString from TCollection, 
+                                                             Variable from EDL, 
+    	                                                     AsciiString from TCollection);
+   ---Purpose: for all variables of an EDL source.
+
+   class SequenceOfVariable instantiates Sequence from TCollection (Variable from EDL);
+   class HSequenceOfVariable instantiates HSequence from TCollection (Variable from EDL,
+                                                                     SequenceOfVariable from EDL);
+   
+   class Template;
+   ---Purpose: for each template in an EDL source.
+  
+   class MapOfTemplate instantiates DataMap from TCollection(AsciiString from TCollection, 
+                                                             Template from EDL, 
+    	                                                     AsciiString from TCollection);
+   ---Purpose: for all templates of an EDL source.
+   
+   class Library;
+   ---Purpose: for calling function from others libraries from EDL
+  
+   class MapOfLibrary instantiates DataMap from TCollection(AsciiString from TCollection, 
+                                                             Library from EDL, 
+    	                                                     AsciiString from TCollection);
+							     
+   class File;
+   ---Purpose: to opened files in EDL.
+  
+   class MapOfFile instantiates DataMap from TCollection(AsciiString from TCollection, 
+                                                             File from EDL, 
+    	                                                     AsciiString from TCollection);
+							     
+
+   -- ENUMERATIONS
+   -- 
+   enumeration ParameterMode is
+    VARIABLE,
+    STRING
+   end;
+
+   enumeration Error is
+    NORMAL,
+    SYNTAXERROR,
+    VARNOTFOUND,
+    TEMPMULTIPLEDEFINED,
+    TEMPLATENOTDEFINED,
+    LIBRARYNOTFOUND,
+    LIBNOTOPEN,
+    FUNCTIONNOTFOUND,
+    FILEOPENED,
+    FILENOTOPENED,
+    FILENOTFOUND,
+    TOOMANYINCLUDELEVEL
+   end;
+   
+   -- PRIVATE
+   -- 
+   private class StackOfBoolean instantiates Stack from TCollection(Boolean from Standard);
+   ---Purpose: for evaluation of expressions
+      
+   private class Interpretor;
+   
+   -- METHODES
+   -- 
+   PrintError(anError : Error from EDL; anArg : CString from Standard);
+   
+end;
+
+
+

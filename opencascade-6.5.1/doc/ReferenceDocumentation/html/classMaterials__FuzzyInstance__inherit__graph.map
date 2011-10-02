@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classMaterials__Material.html" title="This class describes the facilities available to &#160;&#160;create and manipulate materials..." alt="" coords="27,315,173,344"/>
+<area shape="rect" id="node2" href="$classDynamic__FuzzyClass.html" title="This class is the root class to dynamically define &#160;&#160;objects of a given type but..." alt="" coords="19,160,181,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="39,83,161,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="25,5,175,35"/>
+</map>

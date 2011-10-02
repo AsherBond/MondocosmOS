@@ -1,0 +1,13 @@
+-- File:	WOKTools_WOKSteps.edl
+-- Author:	Jean GAUTIER
+-- History:	Tue Aug 12 17:12:59 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKTools_WOKSteps_EDL) then
+@set %WOKTools_WOKSteps_EDL = "";
+
+
+@string %WOKSteps_XcppGroup += "xcpp.repl";
+@set %WOKSteps_xcpp_repl = "*WOKTools_Replace(xcpp.header)";
+
+@endif;

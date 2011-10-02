@@ -1,0 +1,66 @@
+-- File:	EDL_Template.cdl
+-- Created:	Tue Jun  6 14:37:55 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Template from EDL
+
+uses HSequenceOfAsciiString from TColStd,
+     HSequenceOfHAsciiString from TColStd,
+     HAsciiString           from TCollection,
+     HSequenceOfVariable    from EDL
+	     
+is
+
+    Create
+    	returns Template from EDL;
+	
+    Create(aName : CString from Standard) 
+    	returns Template from EDL;
+	
+    Create(aTmp : Template from EDL) 
+    	returns Template from EDL;
+	
+    Assign(me : out; aTemplate : Template from EDL);
+    ---C++: alias operator =
+	
+    Destroy(me);
+    ---C++: alias ~
+       
+    GetName(me)
+    	returns CString from Standard;
+	
+	
+    GetLine(me; index : Integer from Standard)
+    	returns CString from Standard;
+   
+    SetLine(me : out; index : Integer from Standard; aValue : CString from Standard);
+    
+    AddLine(me : out; aValue : CString from Standard);
+    
+    ClearLines(me : out);
+
+	
+    Eval(me : out; aVar : HSequenceOfVariable from EDL);
+    
+    GetEval(me) 
+        returns mutable HSequenceOfAsciiString from TColStd;
+	
+    VariableList(me : out; aVarList : HSequenceOfHAsciiString from TColStd);
+    AddToVariableList(me : out; aVarName : HAsciiString from TCollection);
+    GetVariableList(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+
+    HashCode(myclass; aVar : Template from EDL; Upper : Integer from Standard) 
+    	returns Integer from Standard;
+	
+    IsEqual(myclass; aTemp1 : Template from EDL; aTemp2 : Template from EDL)
+    	returns Boolean from Standard;
+
+fields
+    	myName     : HAsciiString from TCollection;
+	myVariable : HSequenceOfHAsciiString from TColStd;
+	myValue    : HSequenceOfAsciiString from TColStd;
+	myEval     : HSequenceOfAsciiString from TColStd;
+end;

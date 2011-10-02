@@ -1,0 +1,227 @@
+-- File:	MS_MetaSchema.cdl
+-- Created:	1995
+-- Author:      CLE
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class MetaSchema 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits TShared from MMgt
+    uses 
+    	Class                 from MS,
+	Field                 from MS,
+     	Type                  from MS,
+    	Package               from MS,
+    	Schema                from MS,
+    	Interface             from MS,
+    	Engine                from MS,
+	Component             from MS,
+	Client                from MS,
+    	Executable            from MS,
+	HSequenceOfInstClass  from MS,
+	HAsciiString          from TCollection,
+    	MapOfType             from MS,
+	MapOfGlobalEntity     from MS,
+	MapOfMethod           from MS,
+	Method                from MS,
+	Common                from MS,
+	InstClass             from MS,
+	ExternMet             from MS,
+	MemberMet             from MS,
+	DataMapIteratorOfMapOfGlobalEntity from MS,
+	DataMapIteratorOfMapOfMethod       from MS,
+	DataMapIteratorOfMapOfType         from MS,
+	HSequenceOfHAsciiString            from TColStd
+	     
+is
+    Create returns mutable MetaSchema;
+    ---Purpose: create an empry workspace.
+        
+    AddPackage(me : mutable; aCommon : Package from MS) returns Boolean;
+    ---Purpose: add a object (if not defined) in the scope of the workspace.
+    --             Executable 
+    --             Engine
+    --             Schemas
+    --             Interface
+    --             Package
+    --             Classe
+    --             and all other types...
+    -- if result : 
+    --             True  : Ok
+    --             False : already defined.
+    
+    AddEngine(me : mutable; aCommon : Engine from MS) returns Boolean;     
+    
+    AddComponent(me : mutable; aCommon : Component from MS) returns Boolean;     
+     
+    AddSchema(me : mutable; aCommon : Schema from MS) returns Boolean;
+    
+    AddExecutable(me : mutable; aCommon : Executable from MS) returns Boolean;
+    
+    AddInterface(me : mutable; aCommon : Interface from MS) returns Boolean;
+
+    AddClient(me : mutable; aCommon : Client from MS) returns Boolean;
+    
+    AddType(me : mutable; aCommon : Type from MS) returns Boolean;
+    
+    AddMethod(me : mutable; aCommon : Method from MS) returns Boolean;
+    
+    Executables(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the executables defined in the workspace.
+    
+    Engines(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the engines defined in the workspace.
+
+    Components(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the components defined in the workspace.
+    
+    Schemas(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the schemas defined in the workspace.
+    
+    Interfaces(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the interfaces defined in the workspace.
+    
+    Clients(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the clients defined in the workspace.
+
+    Packages(me) returns DataMapIteratorOfMapOfGlobalEntity from MS;
+    ---Purpose: returns the list of the packages defined in the workspace.
+    
+    Types(me) returns DataMapIteratorOfMapOfType from MS;    
+    ---Purpose: returns the list of the classes defined in the workspace.
+
+    Methods(me) returns DataMapIteratorOfMapOfMethod from MS;
+    
+    GetExecutable(me; anExecutable : HAsciiString from TCollection) returns mutable Executable;
+    ---C++: return const &
+    ---Purpose: returns the Executable named anExecutable
+    
+    GetEngine(me; anEngine: HAsciiString from TCollection) returns mutable Engine;
+    ---C++: return const &    
+    ---Purpose: returns the Engine named anEngine
+
+    GetComponent(me; aComponent: HAsciiString from TCollection) returns mutable Component;
+    ---C++: return const &
+    ---Purpose: returns the Component named aComponent
+    
+    GetSchema(me; aSchema: HAsciiString from TCollection) returns mutable Schema;
+    ---C++: return const &
+    ---Purpose: returns the Schema named aSchema
+    
+    GetInterface(me; anInterface: HAsciiString from TCollection) returns mutable Interface;
+    ---C++: return const &
+    ---Purpose: returns the Interface named anInterface
+
+    GetClient(me; aClient : HAsciiString from TCollection) returns mutable Client;
+    ---C++: return const &
+    ---Purpose: returns the client named aClient
+
+    GetPackage(me; aPackage: HAsciiString from TCollection) returns mutable Package;
+    ---C++: return const &
+    ---Purpose: returns the list of the packages defined in the workspace.
+    
+    RemovePackage(me : mutable; aPackage : HAsciiString from TCollection);
+    RemoveExecutable(me : mutable; anExec : HAsciiString from TCollection);
+    RemoveEngine(me : mutable; aEngine : HAsciiString from TCollection);
+    RemoveComponent(me : mutable; aComponent : HAsciiString from TCollection);
+    RemoveSchema(me : mutable; aSchema : HAsciiString from TCollection);
+    RemoveInterface(me : mutable; anInterface : HAsciiString from TCollection);
+    RemoveClient(me : mutable; aClient : HAsciiString from TCollection);
+    
+    GetType(me; aType : HAsciiString from TCollection) returns mutable Type from MS;    
+    ---C++: return const &
+    ---Purpose: returns the list of the classes defined in the workspace.
+    
+    RemoveType(me : mutable; aType : HAsciiString from TCollection; 
+    	    	    	     mustUpdatePackage : Boolean from Standard = Standard_True);
+
+    GetMethod(me; aMethod : HAsciiString from TCollection) returns mutable Method from MS;   
+     ---C++: return const &
+   
+    RemoveMethod(me : mutable; aMethod : HAsciiString from TCollection);
+    
+    IsExecutable(me; anExecutable : HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <anExecutable> is an executable.
+    
+    IsEngine(me; anEngine: HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <anEngine> is an engine.
+
+    IsComponent(me; aComponent : HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <aComponent> is a component.
+   
+    IsSchema(me; aSchema: HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <aSchema> is a schema.
+    
+    IsInterface(me; anInterface: HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <anInterface> is an interface.
+    
+    IsClient(me; aClient : HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <aClient> is a client.
+
+    IsPackage(me; aPackage: HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <aPackage> is a package.
+    
+    IsDefined(me; aType: HAsciiString from TCollection; aPackage: HAsciiString from TCollection) 
+       returns Boolean;
+    ---Purpose: returns Standard_True if <aType> is a type defined in the package <aPackage>.
+
+    IsDefined(me; aType: HAsciiString from TCollection) returns Boolean;
+    ---Purpose: returns Standard_True if <aType> is a type defined.
+    
+    IsMethod(me; aMethod :  HAsciiString from TCollection) returns Boolean;
+
+    GetInstantiations(me; aGenClass  :  HAsciiString from TCollection) 
+    	returns HSequenceOfInstClass from MS;
+    ---Purpose: Returns the list of instantiations using <aGenClass>
+
+    GetPersistentClassesFromSchema(me; aSchema  :  HAsciiString from TCollection;  withStorable : Boolean from Standard = Standard_False) 
+    	returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: Returns the list of persistent classes listed into the schema <aSchema>  
+    
+    GetPersistentClassesFromClasses(me; aClassList  : HSequenceOfHAsciiString from TColStd; withStorable : Boolean from Standard = Standard_False)
+    	returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: Returns the list of persistent classes used by the classes listed into <aClassList> and not
+    --          present in <aClassList>
+
+    Check(me; aName : HAsciiString from TCollection) 
+    	returns Boolean from Standard;
+    ---Purpose: Check the entity named <aName>
+    --          Returns Standard_False if checking failed 
+    --          otherwise Standard_True
+
+    --
+    -- PRIVATE METHODS
+    --
+
+    CheckClass(me; aClass : Class from MS) 
+    	returns Boolean from Standard is private;
+
+    CheckMemberMethod(me; aMeth : MemberMet from MS) 
+    	returns Boolean from Standard is private;
+    
+    CheckExternMethod(me; aMeth : ExternMet from MS) 
+    	returns Boolean from Standard is private;
+    
+    CheckField(me; aField : Field from MS)
+	returns Boolean from Standard is private;    
+
+    CheckInstClass(me; anInst : InstClass from MS)
+    	returns Boolean from Standard is private;
+	
+fields
+
+    myTypes       : MapOfType from MS;
+    myPackages    : MapOfGlobalEntity from MS;
+    mySchemas     : MapOfGlobalEntity from MS;
+    myExecutables : MapOfGlobalEntity from MS;
+    myInterfaces  : MapOfGlobalEntity from MS;
+    myClients     : MapOfGlobalEntity from MS;
+    myEngines     : MapOfGlobalEntity from MS;
+    myComponents  : MapOfGlobalEntity from MS;
+    myMethods     : MapOfMethod       from MS;
+    
+end MetaSchema from MS;
+

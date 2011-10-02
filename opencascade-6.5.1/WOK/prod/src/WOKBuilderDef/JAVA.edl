@@ -1,0 +1,59 @@
+@ifnotdefined ( %JAVA_EDL ) then
+ @set %JAVA_EDL = "";
+
+ @ifnotdefined( %CSF_EDL ) then
+   @uses "CSF.edl";
+ @endif;
+
+ @string %JAVA_Command       = "javac";
+ @string %JAVA_HeaderCommand = "javah";
+
+ @set %JAVA_Options       = "";
+ @set %JAVA_HeaderOptions = "";
+
+ @template JAVA_Compiler (
+	    %CSF_JavaHome,
+            %JAVA_Command, %JAVA_Options, %IncludeDir, %Source, %OutDir
+           ) is
+ $%CSF_JavaHome/bin/%JAVA_Command %JAVA_Options -classpath %IncludeDir -d %OutDir %Source\^
+ @end;
+
+ @template JAVA_Header (
+            %CSF_JavaHome,
+            %JAVA_HeaderCommand, %JAVA_HeaderOptions, %IncludeDir, %Class, %OutFile
+           ) is
+ $%CSF_JavaHome/bin/%JAVA_HeaderCommand %JAVA_HeaderOptions -classpath %IncludeDir -o %OutFile %Class\^
+ @end;
+@endif;
+
+@string %CXX_JAVA = " -I" %CSF_JavaHome "/include ";
+
+@if ( %Station == "sun" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include/solaris ";
+@endif;
+
+@if ( %Station == "lin" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include/linux ";
+@endif;
+
+@if ( %Station == "sil" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include/irix ";
+@endif;
+
+@if ( %Station == "hp" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include/hpux ";
+@endif;
+
+@if ( %Station == "mac" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include ";
+@endif;
+
+@if ( %Station == "bsd" ) then
+    @string %CXX_JAVA += " -I" %CSF_JavaHome "/include/freebsd ";
+@endif;
+
+@if ( %Station == "aix" ) then
+    @string %CXX_JAVA += "" ;
+@endif;
+
+

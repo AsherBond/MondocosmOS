@@ -1,0 +1,32 @@
+-- File:	WOKSteps_executable.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 14:29:08 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_executable_EDL) then
+@set %WOKSteps_executable_EDL = "";
+
+
+  @set    %WOKSteps_SrcGroup   = "src src.list";
+  @set    %WOKSteps_src        = "*WOKStep_ExecutableSource";
+  @set    %WOKSteps_src_list   = "*WOKStep_ExtractExecList(src)";
+
+  @set    %WOKSteps_ObjGroup   = "exec.comp ";
+  @set    %WOKSteps_exec_comp  = "#WOKStep_Compile(src.list)";
+
+  @set    %WOKSteps_DepGroup   = "exec.idep ";
+  @set    %WOKSteps_exec_idep  = "#WOKStep_ImplementationDep(src,exec.comp)";
+
+  @set    %WOKSteps_ExecGroup  = "exec.libs exec.tks exec.link";
+
+  @set    %WOKSteps_exec_libs  = "#WOKStep_TransitiveLinkList(src,src.list,exec.comp,exec.idep)";
+  @set    %WOKSteps_exec_tks   = "#*WOKStep_TransitiveTKReplace(exec.libs)";
+
+
+  @set    %WOKSteps_exec_link  = "#WOKStep_ExecLink(exec.tks)";
+
+  @set %WOKSteps_delivery_cdl_list_steps = "src";
+  @set %WOKSteps_delivery_cdl_list_extensions = ".cdl";
+
+
+@endif;

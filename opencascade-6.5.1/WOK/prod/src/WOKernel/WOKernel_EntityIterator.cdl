@@ -1,0 +1,40 @@
+
+class EntityIterator from WOKernel
+uses
+	Session from WOKernel,
+	Entity  from WOKernel,
+	HAsciiString from TCollection,
+	DataMapIteratorOfDataMapOfHAsciiStringOfFactory   from WOKernel,
+	DataMapIteratorOfDataMapOfHAsciiStringOfWarehouse from WOKernel,
+	DataMapIteratorOfDataMapOfHAsciiStringOfWorkshop  from WOKernel,
+	DataMapIteratorOfDataMapOfHAsciiStringOfParcel    from WOKernel,
+	DataMapIteratorOfDataMapOfHAsciiStringOfWorkbench from WOKernel,
+	DataMapIteratorOfDataMapOfHAsciiStringOfDevUnit   from WOKernel
+is
+
+	Create(asession : Session from WOKernel)
+		returns EntityIterator from WOKernel;
+
+	More(me)
+	    returns Boolean from Standard;
+
+	Key(me)
+	---C++: return const &
+		returns HAsciiString from TCollection;
+
+	Value(me)
+	---C++: return const &
+		returns Entity from WOKernel;
+
+	Next(me:out);
+
+fields
+
+	myfactit : DataMapIteratorOfDataMapOfHAsciiStringOfFactory   from WOKernel;
+	mywareit : DataMapIteratorOfDataMapOfHAsciiStringOfWarehouse from WOKernel;
+	myshopit : DataMapIteratorOfDataMapOfHAsciiStringOfWorkshop  from WOKernel;
+	myparcit : DataMapIteratorOfDataMapOfHAsciiStringOfParcel    from WOKernel;
+	mybenchit: DataMapIteratorOfDataMapOfHAsciiStringOfWorkbench from WOKernel;
+	myunitit : DataMapIteratorOfDataMapOfHAsciiStringOfDevUnit   from WOKernel;
+
+end;

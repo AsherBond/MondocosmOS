@@ -1,0 +1,6 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKNT_CompareOfString_HeaderFile
+#include <WOKNT_CompareOfString.hxx>
+#endif

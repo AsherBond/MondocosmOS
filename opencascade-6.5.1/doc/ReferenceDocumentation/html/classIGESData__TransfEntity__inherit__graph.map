@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESGeom__TransformationMatrix.html" title="defines IGESTransformationMatrix, Type &lt;124&gt; Form &lt;0&gt; &#160;&#160;in package IGESGeom..." alt="" coords="5,315,248,344"/>
+<area shape="rect" id="node2" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="44,160,209,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="65,83,188,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="52,5,201,35"/>
+</map>

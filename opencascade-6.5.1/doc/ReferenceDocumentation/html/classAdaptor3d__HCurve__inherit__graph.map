@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classAdaptor3d__HCurveOnSurface.html" title="Adaptor3d_HCurveOnSurface" alt="" coords="573,5,792,35"/>
+<area shape="rect" id="node9" href="$classAdaptor3d__HIsoCurve.html" title="Adaptor3d_HIsoCurve" alt="" coords="600,59,765,88"/>
+<area shape="rect" id="node11" href="$classBiTgte__HCurveOnEdge.html" title="BiTgte_HCurveOnEdge" alt="" coords="595,112,771,141"/>
+<area shape="rect" id="node13" href="$classBiTgte__HCurveOnVertex.html" title="BiTgte_HCurveOnVertex" alt="" coords="588,165,777,195"/>
+<area shape="rect" id="node15" href="$classBRepAdaptor__HCompCurve.html" title="BRepAdaptor_HCompCurve" alt="" coords="580,219,785,248"/>
+<area shape="rect" id="node17" href="$classBRepAdaptor__HCurve.html" title="BRepAdaptor_HCurve" alt="" coords="599,272,767,301"/>
+<area shape="rect" id="node19" href="$classChFiDS__HElSpine.html" title="ChFiDS_HElSpine" alt="" coords="616,325,749,355"/>
+<area shape="rect" id="node21" href="$classGeomAdaptor__GHCurve.html" title="GeomAdaptor_GHCurve" alt="" coords="592,379,773,408"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,192,328,221"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,192,156,221"/>
+<area shape="rect" id="node23" href="$classGeomAdaptor__HCurve.html" title="An interface between the services provided by any &#160;&#160;curve from the package Geom and..." alt="" coords="841,379,1012,408"/>
+</map>

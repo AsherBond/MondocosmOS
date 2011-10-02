@@ -1,0 +1,50 @@
+-- File:	WOKOBJS_SchGen.cdl
+-- Created:	Mon Feb 24 15:36:43 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class    SchGen from WOKOBJS
+inherits Step   from WOKMake
+
+uses
+    BuildProcess          from WOKMake,
+    InputFile            from WOKMake,
+    HSequenceOfInputFile from WOKMake,
+    DevUnit              from WOKernel,
+    HSequenceOfPath      from WOKUtils,
+    HAsciiString         from TCollection
+is
+
+    Create(abp   : BuildProcess from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable SchGen from WOKOBJS;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    HandleInputFile(me:mutable; infile : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+	
+    OutOfDateEntities(me:mutable) 
+    	returns HSequenceOfInputFile from WOKMake
+    	is redefined protected;
+
+    ComputeIncDirectories(me)
+    	returns HSequenceOfPath from WOKUtils is private;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+end SchGen;

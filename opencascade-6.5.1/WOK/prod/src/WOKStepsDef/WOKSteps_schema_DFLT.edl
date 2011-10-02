@@ -1,0 +1,40 @@
+-- File:	WOKSteps_schema_DFLT.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 15:13:09 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_schema_DFLT_EDL) then
+@set %WOKSteps_schema_DFLT_EDL = "";
+
+
+    @string %WOKSteps_XcppGroup += " xcpp.sch ";   
+    @set    %WOKSteps_xcpp_sch  = "WOKDFLT_DFLTExtract(xcpp.fill)";
+
+    @string %WOKSteps_ObjGroup  = " obj.comp ";
+
+    @set    %WOKSteps_obj_comp  = "WOKStep_Compile(xcpp.sch)";
+ 
+    @if (%Station != "wnt") then
+      @set %WOKSteps_obj_lib   = "WOKStep_DynamicLibrary(obj.comp)";
+    @else
+
+      @string %WOKSteps_DepGroup  += " obj.implib ";
+      @set    %WOKSteps_obj_implib = "WOKStep_ImportLibrary(obj.comp)";
+
+      --@set %WOKSteps_LibGroup = " obj.libs obj.tks obj.lib";
+      @set %WOKSteps_LibGroup = " obj.libs obj.tks";
+
+      @set %WOKSteps_obj_libs = "*WOKStep_DirectLinkList(obj.comp,obj.idep)";
+      @set %WOKSteps_obj_tks  = "WOKStep_DirectTKReplace(obj.libs)";
+      @set %WOKSteps_obj_lib  = "WOKStep_DLLink(obj.tks,obj.implib)";
+      @set %WOKSteps_toolkit_LinksWith    = " obj.implib ";
+      @set %WOKSteps_package_LinksWith    = " obj.implib ";
+      @set %WOKSteps_nocdlpack_LinksWith  = " obj.implib "; 
+      @set %WOKSteps_engine_LinksWith     = " obj.implib ";
+      @set %WOKSteps_interface_LinksWith  = " obj.implib ";
+      @set %WOKSteps_executable_LinksWith = " obj.implib ";
+
+      @set %WOKSteps_toolkit_ListWith    = " obj.comp obj.idep ";
+    @endif;
+
+@endif;

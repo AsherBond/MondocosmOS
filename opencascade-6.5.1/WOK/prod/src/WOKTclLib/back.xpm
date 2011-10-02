@@ -1,0 +1,33 @@
+/* XPM */
+static char * dirup_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c wheat",
+"o	c sienna",
+"O	c dark slate grey",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"  ........          ",
+" .XXXXXXXX.         ",
+".XXXXXXXXXX......   ",
+".oXXXXXXXXoXXXXXX.  ",
+".XooooooooXXXXXXXo. ",
+".XXXXXXXXXXXX.XXXoO.",
+".XXXXXXXXXXX...XXoO.",
+".XXXXXXXXXX.....XoO.",
+".XXXXXXXXXXXX.XXXoO.",
+".XXXXXXXXXXXX.XXXoO.",
+".XX.XXX.XXXXX.XXXoO.",
+".X...X...X...XXXXoO.",
+".XX.XXX.XXXXXXXXXoO.",
+".XXXXXXXXXXXXXXXXoO.",
+".XXXXXXXXXXXXXXXXoO.",
+" .oooooooooooooooOO.",
+"  .OOOOOOOOOOOOOOO.O",
+"   ...............O "};

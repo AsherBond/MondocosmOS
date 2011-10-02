@@ -1,0 +1,154 @@
+-- File:	WOKUtils_Param.cdl
+-- Created:	Mon May 29 15:25:31 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Param from WOKUtils 
+
+	---Purpose: WOK Parameters values
+
+uses
+    CString                 from Standard,
+    HAsciiString            from TCollection,
+    API                     from EDL,
+    Path                    from WOKUtils,
+    SearchList              from WOKUtils,
+    HSequenceOfParamItem    from WOKUtils,
+    MapOfHAsciiString       from WOKTools,
+    HSequenceOfAsciiString  from TColStd,
+    HSequenceOfHAsciiString from TColStd
+raises
+    ProgramError
+is
+    Create returns Param from WOKUtils;
+    ---Purpose: creates a WOK parameters map
+
+    Clear(me:out);
+    ---Purpose: clears all in Param List   
+
+-- Liste des Reperoires de fichiers EDL
+
+    SetSearchDirectories(me:out; aseq : HSequenceOfAsciiString from TColStd);
+    SearchDirectories(me) returns HSequenceOfAsciiString from TColStd;
+
+    SetSearchDirectories(me:out; aseq : SearchList from WOKUtils);
+
+    SetBasicVariables ( me : out );
+
+    SearchFile(me; afilename : HAsciiString from TCollection) 
+    	returns Path from WOKUtils;
+
+-- Liste des SubClasses (facultatif)
+
+    SetSubClasses(me:out; aseq : HSequenceOfAsciiString from TColStd);
+    SubClasses(me) returns HSequenceOfAsciiString from TColStd;
+
+-- Set, Unset d'une ou plusieurs variables
+
+    IsSet(me; aname : CString from Standard)
+    ---Purpose: test is a param is setted
+    --          NB: does not try to load it    
+    	returns Boolean from Standard;
+
+    Set(me; aname : CString from Standard; avalue : CString from Standard);
+    ---Purpose: Sets a variable to a values 
+    --          Overrides preceding value (if any)
+
+    Set(me; aseq : HSequenceOfParamItem from WOKUtils);
+
+    UnSet(me; aname : CString from Standard);
+    ---Purpose: Removes parameter from the map
+
+
+-- Obtention, Evaluation d'une variable
+
+    Value(me; aname    : CString from Standard; usesubs : Boolean from Standard = Standard_True)
+    	returns HAsciiString from TCollection;
+
+    Eval(me; aname    : CString from Standard; usesubs : Boolean from Standard = Standard_True)    
+    ---Purpose: Evaluates   the contents of  a  parameter 
+    --          Names beginning with % are Variables
+    --          Others are templates
+    	returns HAsciiString from TCollection;
+
+-- Chargement de valeurs
+
+    IsClassVisible(me; aclass : CString from Standard)
+    	returns Boolean from Standard;
+
+    IsFileVisible(me; afile : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+	
+    VisiblePath(me; afile : HAsciiString from TCollection)
+    	returns Path from WOKUtils;
+
+    ParamClass(me; aparamname : CString from Standard)
+    ---Purpose: Returns the Parameter Class of a param    
+    	returns HAsciiString from TCollection
+    	is private;
+	
+    ClassLoadFlag(me; aclass : CString from Standard)
+    ---Purpose: Returns the edl variable name for Class (ie. %MyClass_EDL)    
+    	returns HAsciiString from TCollection;
+
+    ClassSubLoadFlag(me; aclass,asub : CString from Standard)
+    ---Purpose: Returns the edl variable name for Class (ie. %MyClass_EDL)    
+    	returns HAsciiString from TCollection;
+
+    ClassFile(me; aclass : CString from Standard)
+    ---Purpose: Returns the file name for Class (ie. MyClass.edl)    
+    	returns HAsciiString from TCollection;
+
+    ClassSubFile(me; aclass, asub : CString from Standard)
+    ---Purpose: Returns the file name for Class (ie. MyClass.edl)    
+    	returns HAsciiString from TCollection;
+
+    LoadFile(me; afile : HAsciiString from TCollection; filemaynotexist : Boolean from Standard = Standard_False)
+    	returns Boolean from Standard;
+
+    LoadParamClass(me; aclass : CString from Standard)
+    ---Purpose: Load a class 
+    	returns Boolean from Standard;
+
+    LoadParamClass(me; aclass, asub : CString from Standard)
+    ---Purpose: Load a class and SubClass
+    	returns Boolean from Standard;
+	
+    LoadParamClass(me; aclass  : CString from Standard;
+    	    	       asubseq : HSequenceOfAsciiString from TColStd)
+    ---Purpose: Loads a class and its SubClasses    
+    	returns Boolean from Standard;
+
+    GetClassValues(me; aclass : CString from Standard)
+    ---Purpose: Gets all defined Values for a class
+    --          (used to implement tenv)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+-- Obtention de la liste des Arguments d'un parametre
+
+    GetArguments(me; aname : CString from Standard)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    GetArguments(me; aname : CString from Standard;
+    	    	     aseq  : mutable HSequenceOfHAsciiString from TColStd;
+    	    	     amap  : in out MapOfHAsciiString from WOKTools);
+    ---Purpose: Private Purposes    
+
+    
+-- Ecriture de valeurs
+
+    Write(me; afile : Path from WOKUtils; somevars   : HSequenceOfHAsciiString from TColStd)   
+    	 returns Boolean from Standard raises ProgramError from Standard;
+	
+    Write(me; afile : Path from WOKUtils; somevars   : HSequenceOfParamItem from WOKUtils)   
+    	 returns Boolean from Standard raises ProgramError from Standard;
+ 
+    
+
+fields
+    myapi  : API                    from EDL;
+    mysubs : HSequenceOfAsciiString from TColStd;
+
+end Param;

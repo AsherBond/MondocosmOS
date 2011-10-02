@@ -1,0 +1,2055 @@
+#
+# arrayprocs.tcl --
+#
+# Extended Tcl array procedures.
+# 
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-ArrayProcedures for_array_keys
+
+proc for_array_keys {varName arrayName codeFragment} {
+    upvar $varName enumVar $arrayName enumArray
+
+    if ![info exists enumArray] {
+	error "\"$arrayName\" isn't an array"
+    }
+
+    set code 0
+    set result {}
+    set searchId [array startsearch enumArray]
+    while {[array anymore enumArray $searchId]} {
+	set enumVar [array nextelement enumArray $searchId]
+        set code [catch {uplevel 1 $codeFragment} result]
+        if {$code != 0 && $code != 4} break
+    }
+    array donesearch enumArray $searchId
+
+    if {$code == 0 || $code == 3 || $code == 4} {
+        return $result
+    }
+    if {$code == 1} {
+        global errorCode errorInfo
+        return -code $code -errorcode $errorCode -errorinfo $errorInfo $result
+    }
+    return -code $code $result
+}
+#
+# compat --
+#
+# This file provides commands compatible with older versions of Extended Tcl.
+# 
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-GenCompat assign_fields cexpand
+
+proc assign_fields {list args} {
+    puts stderr {**** Your program is using an obsolete TclX proc, "assign_fields".}
+    puts stderr {**** Please use the command "lassign". Compatibility support will}
+    puts stderr {**** be removed in the next release.}
+
+    proc assign_fields {list args} {
+        if [lempty $args] {
+            return
+        }
+        return [uplevel lassign [list $list] $args]
+    }
+    return [uplevel assign_fields [list $list] $args]
+}
+
+# Added TclX 7.4a
+proc cexpand str {subst -nocommands -novariables $str}
+
+#@package: TclX-ServerCompat server_open server_connect server_send \
+                             server_info server_cntl
+
+# Added TclX 7.4a
+
+proc server_open args {
+    set cmd server_connect
+
+    set buffered 1
+    while {[string match -* [lindex $args 0]]} {
+        set opt [lvarpop args]
+        if [cequal $opt -buf] {
+            set buffered 1
+        } elseif  [cequal $opt -nobuf] {
+            set buffered 0
+        }
+        lappend cmd $opt
+    }
+    set handle [uplevel [concat $cmd $args]]
+    if $buffered {
+        lappend handle [dup $handle]
+    }
+    return $handle
+}
+
+# Added TclX 7.5a
+
+proc server_connect args {
+    set cmd socket
+
+    set buffered 1
+    set twoids 0
+    while {[string match -* [lindex $args 0]]} {
+        switch -- [set opt [lvarpop args]] {
+            -buf {
+                set buffered 1
+            }
+            -nobuf {
+                set buffered 0
+            }
+            -myip {
+                lappend cmd -myaddr [lvarpop args]
+            }
+            -myport {
+                lappend cmd -myport [lvarpop args]
+            }
+            -twoids {
+                set twoids 1
+            }
+            default {
+                error "unknown option \"$opt\""
+            }
+        }
+    }
+    set handle [uplevel [concat $cmd $args]]
+    if !$buffered {
+        fconfigure $handle -buffering none 
+    }
+    if $twoids {
+        lappend handle [dup $handle]
+    }
+    return $handle
+}
+
+proc server_send args {
+    set cmd puts
+
+    while {[string match -* [lindex $args 0]]} {
+        switch -- [set opt [lvarpop args]] {
+            {-dontroute} {
+                error "server_send if obsolete, -dontroute is not supported by the compatibility proc"
+            }
+            {-outofband} {
+                error "server_send if obsolete, -outofband is not supported by the compatibility proc"
+            }
+        }
+        lappend cmd $opt
+    }
+    uplevel [concat $cmd $args]
+    flush [lindex $args 0]
+}
+
+proc server_info args {
+    eval [concat host_info $args]
+}
+
+proc server_cntl args {
+    eval [concat fcntl $args]
+}
+
+#@package: TclX-ClockCompat fmtclock convertclock getclock
+
+# Added TclX 7.5a
+
+proc fmtclock {clockval {format {}} {zone {}}} {
+    lappend cmd clock format $clockval
+    if ![lempty $format] {
+        lappend cmd -format $format
+    }
+    if ![lempty $zone] {
+        lappend cmd -gmt 1
+    }
+    return [eval $cmd]
+}
+
+# Added TclX 7.5a
+
+proc convertclock {dateString {zone {}} {baseClock {}}} {
+    lappend cmd clock scan $dateString
+    if ![lempty $zone] {
+        lappend cmd -gmt 1
+    }
+    if ![lempty $baseClock] {
+        lappend cmd -base $baseClock
+    }
+    return [eval $cmd]
+}
+
+# Added TclX 7.5a
+
+proc getclock {} {
+    return [clock seconds]
+}
+
+#@package: TclX-FileCompat mkdir rmdir unlink frename
+
+# Added TclX 7.6.0
+
+proc mkdir args {
+    set path 0
+    if {[llength $args] > 1} {
+        lvarpop args
+        set path 1
+    }
+    foreach dir [lindex $args 0] {
+        if {((!$path) && [file isdirectory $dir]) || \
+                ([file exists $dir] && ![file isdirectory $dir])} {
+            error "creating directory \"$dir\" failed: file already exists" \
+                    {} {POSIX EEXIST {file already exists}}
+        }
+        file mkdir $dir
+    }
+    return
+}
+
+# Added TclX 7.6.0
+
+proc rmdir args {
+    set nocomplain 0
+    if {[llength $args] > 1} {
+        lvarpop args
+        set nocomplain 1
+        global errorInfo errorCode
+        set saveErrorInfo $errorInfo
+        set saveErrorCode $errorCode
+    }
+    foreach dir [lindex $args 0] {
+        if $nocomplain {
+            catch {file delete $dir}
+        } else {
+            if ![file exists $dir] {
+                error "can't remove \"$dir\": no such file or directory" {} \
+                        {POSIX ENOENT {no such file or directory}}
+            }
+            if ![cequal [file type $dir] directory] {
+                error "$dir: not a directory" {} \
+                        {POSIX ENOTDIR {not a directory}}
+            }
+            file delete $dir
+        }
+    }
+    if $nocomplain {
+        set errorInfo $saveErrorInfo 
+        set errorCode $saveErrorCode
+    }
+    return
+}
+
+# Added TclX 7.6.0
+
+proc unlink args {
+    set nocomplain 0
+    if {[llength $args] > 1} {
+        lvarpop args
+        set nocomplain 1
+        global errorInfo errorCode
+        set saveErrorInfo $errorInfo
+        set saveErrorCode $errorCode
+    }
+    foreach file [lindex $args 0] {
+        if {[file exists $file] &&[cequal [file type $file] directory]} {
+            if !$nocomplain {
+                error "$file: not owner" {} {POSIX EPERM {not owner}}
+            }
+        } elseif $nocomplain {
+            catch {file delete $file}
+        } else {
+            if ![file exists $file] {
+                error "can't remove \"$file\": no such file or directory" {} \
+                        {POSIX ENOENT {no such file or directory}}
+            }
+            file delete $file
+        }
+    }
+    if $nocomplain {
+        set errorInfo $saveErrorInfo 
+        set errorCode $saveErrorCode
+    }
+    return
+}
+
+# Added TclX 7.6.0
+
+proc frename {old new} {
+    if {[file isdirectory $new] && ![lempty [readdir $new]]} {
+        error "rename \"foo\" to \"baz\" failed: directory not empty" {} \
+                POSIX ENOTEMPTY {directory not empty}
+    }
+    file rename $old $new
+}
+
+#
+# convlib.tcl --
+#
+#     Convert Ousterhout style tclIndex files and associated libraries to a
+# package library.
+# 
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-convertlib convert_lib
+
+#------------------------------------------------------------------------------
+# tclx:ParseTclIndex
+# Parse a tclIndex file, returning an array of file names with the list of
+# procedures in each package. This is done by sourcing the file and then
+# going through the local auto_index array that was created. Issues warnings
+# for lines that can't be converted.  tclIndex should be an absolute path
+# name.  Returns 1 if all lines are converted, 0 if some failed.
+#
+
+proc tclx:ParseTclIndex {tclIndex fileTblVar ignore} {
+    upvar $fileTblVar fileTbl
+    set allOK 1
+
+    # Open and validate the file.
+
+    set tclIndexFH [open $tclIndex r]
+    set hdr [gets $tclIndexFH]
+    if {!(($hdr == {# Tcl autoload index file, version 2.0}) ||
+          ($hdr == {# Tcl autoload index file, version 2.0 for [incr Tcl]}))} {
+        error "can only convert version 2.0 Tcl auto-load files"
+    }
+    set dir [file dirname $tclIndex]  ;# Expected by the script.
+    eval [read $tclIndexFH]
+    close $tclIndexFH
+
+    foreach procName [array names auto_index] {
+        if ![string match "source *" $auto_index($procName)] {
+            puts stderr "WARNING: Can't convert load command for \"$procName\": $auto_index($procName)"
+            set allOK 0
+            continue
+        }
+        set filePath [lindex $auto_index($procName) 1]
+        set fileName [file tail $filePath] 
+        if {[lsearch $ignore $fileName] >= 0} continue
+
+        lappend fileTbl($filePath) $procName
+    }
+    if ![info exists fileTbl] {
+        error "no entries could be converted in $tclIndex"
+    }
+    return $allOK
+}
+
+#------------------------------------------------------------------------------
+# convert_lib:
+# Convert a tclIndex library to a .tlib. ignore any files in the ignore
+# list
+
+proc convert_lib {tclIndex packageLib {ignore {}}} {
+    global tclx_library
+    source $tclx_library/buildidx.tcl
+
+    if {[file tail $tclIndex] != "tclIndex"} {
+        error "Tail file name must be `tclIndex': $tclIndex"}
+    if ![file readable $tclIndex] {
+        error "File not readable: $tclIndex"
+    }
+
+    # Expand to root relative file name.
+
+    set tclIndex [glob $tclIndex]
+    if ![string match "/*" $tclIndex] {
+        set tclIndex "[pwd]/$tclIndex"
+    }
+
+    # Parse the file.
+
+    set allOK [tclx:ParseTclIndex $tclIndex fileTbl $ignore]
+
+    # Generate the .tlib package names with contain the directory and
+    # file name, less any extensions.
+
+    if {[file extension $packageLib] != ".tlib"} {
+        append packageLib ".tlib"
+    }
+    set libFH [open $packageLib w]
+
+    foreach srcFile [array names fileTbl] {
+        set pkgName [file tail [file dirname $srcFile]]/[file tail [file root $srcFile]]
+        set srcFH [open $srcFile r]
+        puts $libFH "#@package: $pkgName $fileTbl($srcFile)\n"
+        copyfile $srcFH $libFH
+        close $srcFH
+    }
+    close $libFH
+    buildpackageindex $packageLib
+    if !$allOK {
+        error "*** Not all entries converted, but library generated"
+    }
+}
+#
+# edprocs.tcl --
+#
+# Tools for Tcl developers. Procedures to save procs to a file and to edit
+# a proc in memory.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-developer_utils saveprocs edprocs
+
+proc saveprocs {fileName args} {
+    set fp [open $fileName w]
+    puts $fp "# tcl procs saved on [fmtclock [getclock]]\n"
+    puts $fp [eval "showproc $args"]
+    close $fp
+}
+
+proc edprocs {args} {
+    global env
+
+    set tmpFilename /tmp/tcldev.[id process]
+
+    set fp [open $tmpFilename w]
+    puts $fp "\n# TEMP EDIT BUFFER -- YOUR CHANGES ARE FOR THIS SESSION ONLY\n"
+    puts $fp [eval "showproc $args"]
+    close $fp
+
+    if [info exists env(EDITOR)] {
+        set editor $env(EDITOR)
+    } else {
+	set editor vi
+    }
+
+    set startMtime [file mtime $tmpFilename]
+    system "$editor $tmpFilename"
+
+    if {[file mtime $tmpFilename] != $startMtime} {
+	source $tmpFilename
+	echo "Procedures were reloaded."
+    } else {
+	echo "No changes were made."
+    }
+    unlink $tmpFilename
+    return
+}
+#
+# eventloop.tcl --
+#
+# Eventloop procedure.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-events mainloop
+
+proc mainloop {} {
+    global tcl_interactive
+
+    if {[info exists tcl_interactive] && $tcl_interactive} {
+        commandloop -async -interactive on -endcommand exit
+    }
+    set loopVar 0
+    catch {vwait loopVar}
+    exit
+}
+#
+# forfile.tcl --
+#
+# Proc to execute code on every line of a file.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-forfile for_file
+
+proc for_file {var filename cmd} {
+    upvar $var line
+    set fp [open $filename r]
+    set code 0
+    set result {}
+    while {[gets $fp line] >= 0} {
+        set code [catch {uplevel 1 $cmd} result]
+        if {$code != 0 && $code != 4} break
+    }
+    close $fp
+
+    if {$code == 0 || $code == 3 || $code == 4} {
+        return $result
+    }
+    if {$code == 1} {
+        global errorCode errorInfo
+        return -code $code -errorcode $errorCode -errorinfo $errorInfo $result
+    }
+    return -code $code $result
+}
+#
+# globrecur.tcl --
+#
+#  Build or process a directory list recursively.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-globrecur recursive_glob
+
+proc recursive_glob {dirlist globlist} {
+    set result {}
+    set recurse {}
+    foreach dir $dirlist {
+        if ![file isdirectory $dir] {
+            error "\"$dir\" is not a directory"
+        }
+        foreach pattern $globlist {
+            set result [concat $result \
+                    [glob -nocomplain -- [file join $dir $pattern]]]
+        }
+        foreach file [readdir $dir] {
+            set file [file join $dir $file]
+            if [file isdirectory $file] {
+                set fileTail [file tail $file]
+                if {!(($fileTail == ".") || ($fileTail == ".."))} {
+                    lappend recurse $file
+                }
+            }
+        }
+    }
+    if ![lempty $recurse] {
+        set result [concat $result [recursive_glob $recurse $globlist]]
+    }
+    return $result
+}
+
+#@package: TclX-forrecur for_recursive_glob
+
+proc for_recursive_glob {var dirlist globlist cmd {depth 1}} {
+    upvar $depth $var myVar
+    set recurse {}
+    foreach dir $dirlist {
+        if ![file isdirectory $dir] {
+            error "\"$dir\" is not a directory"
+        }
+        set code 0
+        set result {}
+        foreach pattern $globlist {
+            foreach file [glob -nocomplain -- [file join $dir $pattern]] {
+                set myVar $file
+                set code [catch {uplevel $depth $cmd} result]
+                if {$code != 0 && $code != 4} break
+            }
+            if {$code != 0 && $code != 4} break
+        }
+        if {$code != 0 && $code != 4} {
+            if {$code == 3} {
+                return $result
+            }
+            if {$code == 1} {
+                global errorCode errorInfo
+                return -code $code -errorcode $errorCode \
+                        -errorinfo $errorInfo $result
+            }
+            return -code $code $result
+        }
+
+        foreach file [readdir $dir] {
+            set file [file join $dir $file]
+            if [file isdirectory $file] {
+                set fileTail [file tail $file]
+                if {!(($fileTail == ".") || ($fileTail == ".."))} {
+                    lappend recurse $file
+                }
+            }
+        }
+    }
+    if ![lempty $recurse] {
+        return [for_recursive_glob $var $recurse $globlist $cmd \
+                    [expr {$depth + 1}]]
+    }
+    return {}
+}
+#
+# help.tcl --
+#
+# Tcl help command. (see TclX manual)
+# 
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+# The help facility is based on a hierarchical tree of subjects (directories)
+# and help pages (files).  There is a virtual root to this tree. The root
+# being the merger of all "help" directories found along the $auto_path
+# variable.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-help help helpcd helppwd apropos
+
+#------------------------------------------------------------------------------
+# Return a list of help root directories.
+
+proc help:RootDirs {} {
+    global auto_path
+    set roots {}
+    foreach dir $auto_path {
+        if [file isdirectory $dir/help] {
+            lappend roots $dir/help
+        }
+    }
+    return $roots
+}
+
+#------------------------------------------------------------------------------
+# Take a path name which might have "." and ".." elements and flatten them out.
+# Also removes trailing and adjacent "/", unless its the only character.
+
+proc help:FlattenPath pathName {
+    set newPath {}
+    foreach element [split $pathName /] {
+        if {"$element" == "." || [lempty $element]} continue
+
+        if {"$element" == ".."} {
+            if {[llength [join $newPath /]] == 0} {
+                error "Help: name goes above subject directory root" {} \
+                    [list TCLXHELP NAMEABOVEROOT $pathName]
+            }
+            lvarpop newPath [expr [llength $newPath]-1]
+            continue
+        }
+        lappend newPath $element
+    }
+    set newPath [join $newPath /]
+
+    # Take care of the case where we started with something line "/" or "/."
+
+    if {("$newPath" == "") && [string match "/*" $pathName]} {
+        set newPath "/"
+    }
+        
+    return $newPath
+}
+
+#------------------------------------------------------------------------------
+# Given a pathName relative to the virtual help root, convert it to a list of
+# real file paths.  A list is returned because the path could be "/", returning
+# a list of all roots. The list is returned in the same order of the auto_path
+# variable. If path does not start with a "/", it is take as relative to the
+# current help subject.  Note:  The root directory part of the name is not
+# flattened.  This lets other commands pick out the part relative to the
+# one of the root directories.
+
+proc help:ConvertPath pathName {
+    global TCLXENV
+
+    if {![string match "/*" $pathName]} {
+        if {"$TCLXENV(help:curSubject)" == "/"} {
+            set pathName "/$pathName"
+        } else {
+            set pathName "$TCLXENV(help:curSubject)/$pathName"
+        }
+    }
+    set pathName [help:FlattenPath $pathName]
+
+    # If the virtual root is specified, return a list of directories.
+
+    if {$pathName == "/"} {
+        return [help:RootDirs]
+    }
+
+    # Not the virtual root find the first match.
+
+    foreach dir [help:RootDirs] {
+        if [file readable $dir/$pathName] {
+            return [list $dir/$pathName]
+        }
+    }
+    error "\"$pathName\" does not exist" {} \
+        [list TCLXHELP NOEXIST $pathName]
+}
+
+#------------------------------------------------------------------------------
+# Return the virtual root relative name of the file given its absolute path.
+# The root part of the path should not have been flattened, as we would not
+# be able to match it.
+
+proc help:RelativePath pathName {
+    foreach dir [help:RootDirs] {
+        if {[csubstr $pathName 0 [clength $dir]] == $dir} {
+            set name [csubstr $pathName [clength $dir] end]
+            if {$name == ""} {set name /}
+            return $name
+        }
+    }
+    if ![info exists found] {
+        error "problem translating \"$pathName\"" {} [list TCLXHELP INTERROR]
+    }
+}
+
+#------------------------------------------------------------------------------
+# Given a list of path names to subjects generated by ConvertPath, return
+# the contents of the subjects.  Two lists are returned, subjects under that
+# subject and a list of pages under the subject.  Both lists are returned
+# sorted.  This merges all the roots into a virtual root.  pathName is the
+# string that was passed to ConvertPath and is used for error reporting.
+# *.brk files are not returned.
+
+proc help:ListSubject {pathName pathList subjectsVar pagesVar} {
+    upvar $subjectsVar subjects $pagesVar pages
+
+    set subjects {}
+    set pages {}
+    set foundDir 0
+    foreach dir $pathList {
+        if ![file isdirectory $dir] continue
+        set foundDir 1
+        foreach file [glob -nocomplain $dir/*] {
+            if [string match *.brf $file] continue
+            if [file isdirectory $file] {
+                lappend subjects [file tail $file]/
+            } else {
+                lappend pages [file tail $file]
+            }
+        }
+    }
+    if !$foundDir {
+        if [cequal $pathName /] {
+            global auto_path
+            error "no \"help\" directories found on auto_path ($auto_path)" {} \
+                [list TCLXHELP NOHELPDIRS]
+        } else {
+            error "\"$pathName\" is not a subject" {} \
+                [list TCLXHELP NOTSUBJECT $pathName]
+        }
+    }
+    set subjects [lsort $subjects]
+    set pages [lsort $pages]
+    return {}
+}
+
+#------------------------------------------------------------------------------
+# Display a line of output, pausing waiting for input before displaying if the
+# screen size has been reached.  Return 1 if output is to continue, return
+# 0 if no more should be outputed, indicated by input other than return.
+#
+
+proc help:Display line {
+    global TCLXENV
+    if {$TCLXENV(help:lineCnt) >= 23} {
+        set TCLXENV(help:lineCnt) 0
+        puts -nonewline stdout ":"
+        flush stdout
+        gets stdin response
+        if {![lempty $response]} {
+            return 0}
+    }
+    puts stdout $line
+    incr TCLXENV(help:lineCnt)
+}
+
+#------------------------------------------------------------------------------
+# Display a help page (file).
+
+proc help:DisplayPage filePath {
+
+    set inFH [open $filePath r]
+    while {[gets $inFH fileBuf] >= 0} {
+        if {![help:Display $fileBuf]} {
+            break}
+    }
+    close $inFH
+}    
+
+#------------------------------------------------------------------------------
+# Display a list of file names in a column format. This use columns of 14 
+# characters 3 blanks.
+
+proc help:DisplayColumns {nameList} {
+    set count 0
+    set outLine ""
+    foreach name $nameList {
+        if {$count == 0} {
+            append outLine "   "}
+        append outLine $name
+        if {[incr count] < 4} {
+            set padLen [expr 17-[clength $name]]
+            if {$padLen < 3} {
+               set padLen 3}
+            append outLine [replicate " " $padLen]
+        } else {
+           if {![help:Display $outLine]} {
+               return}
+           set outLine ""
+           set count 0
+        }
+    }
+    if {$count != 0} {
+        help:Display [string trimright $outLine]}
+    return
+}
+
+#------------------------------------------------------------------------------
+# Display help on help, the first occurance of a help page called "help" in
+# the help root.
+
+proc help:HelpOnHelp {} {
+    set helpPage [lindex [help:ConvertPath /help] 0]
+    if [lempty $helpPage] {
+        error "No help page on help found" {} \
+            [list TCLXHELP NOHELPPAGE]
+    }
+    help:DisplayPage $helpPage
+}
+
+#------------------------------------------------------------------------------
+# Help command.
+
+proc help {{what {}}} {
+    global TCLXENV
+
+    set TCLXENV(help:lineCnt) 0
+
+    # Special case "help help", so we can get it at any level.
+
+    if {($what == "help") || ($what == "?")} {
+        help:HelpOnHelp
+        return
+    }
+
+    set pathList [help:ConvertPath $what]
+    if [file isfile [lindex $pathList 0]] {
+        help:DisplayPage [lindex $pathList 0]
+        return
+    }
+
+    help:ListSubject $what $pathList subjects pages
+    set relativeDir [help:RelativePath [lindex $pathList 0]]
+
+    if {[llength $subjects] != 0} {
+        help:Display "\nSubjects available in $relativeDir:"
+        help:DisplayColumns $subjects
+    }
+    if {[llength $pages] != 0} {
+        help:Display "\nHelp pages available in $relativeDir:"
+        help:DisplayColumns $pages
+    }
+}
+
+
+#------------------------------------------------------------------------------
+# helpcd command.  The name of the new current directory is assembled from the
+# current directory and the argument.
+
+proc helpcd {{dir /}} {
+    global TCLXENV
+
+    set pathName [lindex [help:ConvertPath $dir] 0]
+
+    if {![file isdirectory $pathName]} {
+        error "\"$dir\" is not a subject" \
+            [list TCLXHELP NOTSUBJECT $dir]
+    }
+
+    set TCLXENV(help:curSubject) [help:RelativePath $pathName]
+    return
+}
+
+#------------------------------------------------------------------------------
+# Helpcd main.
+
+proc helppwd {} {
+        global TCLXENV
+        echo "Current help subject: $TCLXENV(help:curSubject)"
+}
+
+#------------------------------------------------------------------------------
+# apropos command.  This search the 
+
+proc apropos {regexp} {
+    global TCLXENV
+
+    set TCLXENV(help:lineCnt) 0
+
+    set ch [scancontext create]
+    scanmatch -nocase $ch $regexp {
+        set path [lindex $matchInfo(line) 0]
+        set desc [lrange $matchInfo(line) 1 end]
+        if {![help:Display [format "%s - %s" $path $desc]]} {
+            set stop 1
+            return}
+    }
+    set stop 0
+    foreach dir [help:RootDirs] {
+        foreach brief [glob -nocomplain $dir/*.brf] {
+            set briefFH [open $brief]
+            scanfile $ch $briefFH
+            close $briefFH
+            if $stop break
+        }
+        if $stop break
+    }
+    scancontext delete $ch
+}
+
+#------------------------------------------------------------------------------
+# One time initialization done when the file is sourced.
+#
+global TCLXENV
+
+set TCLXENV(help:curSubject) "/"
+#
+# profrep  --
+#
+# Generate Tcl profiling reports.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-profrep profrep
+
+#
+# Convert the profile array from entries that have only the time spent in
+# the proc to the time spend in the proc and all it calls.
+#
+proc profrep:sum {inDataVar outDataVar} {
+    upvar 1 $inDataVar inData $outDataVar outData
+    
+    foreach inStack [array names inData] {
+        for {set idx 0} {![lempty [set part [lrange $inStack $idx end]]]} \
+                {incr idx} {
+            if ![info exists outData($part)] {
+                set outData($part) {0 0 0}
+            }
+            lassign $outData($part) count real cpu
+            if {$idx == 0} {
+                incr count [lindex $inData($inStack) 0]
+            }
+            incr real [lindex $inData($inStack) 1]
+            incr cpu [lindex $inData($inStack) 2]
+            set outData($part) [list $count $real $cpu]
+        }
+    }
+}
+
+#
+# Do sort comparison.  May only be called by profrep:sort, as it address its
+# local variables.
+#
+proc profrep:sortcmp {key1 key2} {
+    upvar profData profData keyIndex keyIndex
+    
+    set val1 [lindex $profData($key1) $keyIndex]
+    set val2 [lindex $profData($key2) $keyIndex]
+
+    if {$val1 < $val2} {
+        return -1
+    }
+    if {$val1 > $val2} {
+        return 1
+    }
+    return 0
+}
+
+#
+# Generate a list, sorted in descending order by the specified key, contain
+# the indices into the summarized data.
+#
+proc profrep:sort {profDataVar sortKey} {
+    upvar $profDataVar profData
+
+    case $sortKey {
+        {calls} {set keyIndex 0}
+        {real}  {set keyIndex 1}
+        {cpu}   {set keyIndex 2}
+        default {
+            error "Expected a sort type of: `calls', `cpu' or ` real'"
+        }
+    }
+
+    return [lsort -integer -decreasing -command profrep:sortcmp \
+            [array names profData]]
+}
+
+#
+# Print the sorted report
+#
+proc profrep:print {profDataVar sortedProcList outFile userTitle} {
+    upvar $profDataVar profData
+    
+    set maxNameLen 0
+    foreach procStack [array names profData] {
+        foreach procName $procStack {
+            set maxNameLen [max $maxNameLen [clength $procName]]
+        }
+    }
+
+    if {$outFile == ""} {
+        set outFH stdout
+    } else {
+        set outFH [open $outFile w]
+    }
+
+    # Output a header.
+
+    set stackTitle "Procedure Call Stack"
+    set maxNameLen [max [expr $maxNameLen+6] [expr [clength $stackTitle]+4]]
+    set hdr [format "%-${maxNameLen}s %10s %10s %10s" $stackTitle \
+                    "Calls" "Real Time" "CPU Time"]
+    if {$userTitle != ""} {
+        puts $outFH [replicate - [clength $hdr]]
+        puts $outFH $userTitle
+    }
+    puts $outFH [replicate - [clength $hdr]]
+    puts $outFH $hdr
+    puts $outFH [replicate - [clength $hdr]]
+
+    # Output the data in sorted order.
+
+    foreach procStack $sortedProcList {
+        set data $profData($procStack)
+        puts $outFH [format "%-${maxNameLen}s %10d %10d %10d" \
+                            [lvarpop procStack] \
+                            [lindex $data 0] [lindex $data 1] [lindex $data 2]]
+        foreach procName $procStack {
+            if {$procName == "<global>"} break
+            puts $outFH "    $procName"
+        }
+    }
+    if {$outFile != ""} {
+        close $outFH
+    }
+}
+
+#------------------------------------------------------------------------------
+# Generate a report from data collect from the profile command.
+#   o profDataVar (I) - The name of the array containing the data from profile.
+#   o sortKey (I) - Value to sort by. One of "calls", "cpu" or "real".
+#   o outFile (I) - Name of file to write the report to.  If omitted, stdout
+#     is assumed.
+#   o userTitle (I) - Title line to add to output.
+
+proc profrep {profDataVar sortKey {outFile {}} {userTitle {}}} {
+    upvar $profDataVar profData
+
+    profrep:sum profData sumProfData
+    set sortedProcList [profrep:sort sumProfData $sortKey]
+    profrep:print sumProfData $sortedProcList $outFile $userTitle
+
+}
+#
+# pushd.tcl --
+#
+# C-shell style directory stack procs.
+#
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-directory_stack pushd popd dirs
+
+global TCLXENV(dirPushList)
+
+set TCLXENV(dirPushList) ""
+
+proc pushd {{new ""}} {
+    global TCLXENV
+
+    set current [pwd]
+    if {[clength $new] > 0} {
+        set dirs [glob -nocomplain $new]
+        set count [llength $dirs]
+        if {$count == 0} {
+            error "no such directory: $new"
+        } elseif {$count != 1} {
+            error "ambiguous directory: $new: [join $directories ", "]"
+        }
+        cd [lindex $dirs 0]
+        lvarpush TCLXENV(dirPushList) $current
+    } else {
+        if [lempty $TCLXENV(dirPushList)] {
+            error "directory stack empty"
+        }
+        cd [lindex $TCLXENV(dirPushList) 0]
+        lvarpop TCLXENV(dirPushList)
+        lvarpush TCLXENV(dirPushList) $current
+    }
+    return [pwd]
+}
+
+proc popd {} {
+    global TCLXENV
+
+    if [lempty $TCLXENV(dirPushList)] {
+        error "directory stack empty"
+    }
+    cd [lvarpop TCLXENV(dirPushList)]
+    return [pwd]
+}
+
+proc dirs {} { 
+    global TCLXENV
+    return [concat [list [pwd]] $TCLXENV(dirPushList)]
+}
+#
+# setfuncs --
+#
+# Perform set functions on lists.  Also has a procedure for removing duplicate
+# list entries.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-set_functions union intersect intersect3 lrmdups
+
+#
+# return the logical union of two lists, removing any duplicates
+#
+proc union {lista listb} {
+    return [lrmdups [concat $lista $listb]]
+}
+
+#
+# sort a list, returning the sorted version minus any duplicates
+#
+proc lrmdups list {
+    if [lempty $list] {
+        return {}
+    }
+    set list [lsort $list]
+    set last [lvarpop list]
+    lappend result $last
+    foreach element $list {
+	if ![cequal $last $element] {
+	    lappend result $element
+	    set last $element
+	}
+    }
+    return $result
+}
+
+#
+# intersect3 - perform the intersecting of two lists, returning a list
+# containing three lists.  The first list is everything in the first
+# list that wasn't in the second, the second list contains the intersection
+# of the two lists, the third list contains everything in the second list
+# that wasn't in the first.
+#
+
+proc intersect3 {list1 list2} {
+    set a1(0) {} ; unset a1(0)
+    set a2(0) {} ; unset a2(0)
+    set a3(0) {} ; unset a3(0)
+    foreach v $list1 {
+        set a1($v) {}
+    }
+    foreach v $list2 {
+        if [info exists a1($v)] {
+            set a2($v) {} ; unset a1($v)
+        } {
+            set a3($v) {}
+        }
+    }
+    list [lsort [array names a1]] [lsort [array names a2]] \
+         [lsort [array names a3]]
+}
+
+#
+# intersect - perform an intersection of two lists, returning a list
+# containing every element that was present in both lists
+#
+proc intersect {list1 list2} {
+    set intersectList ""
+
+    set list1 [lsort $list1]
+    set list2 [lsort $list2]
+
+    while {1} {
+        if {[lempty $list1] || [lempty $list2]} break
+
+        set compareResult [string compare [lindex $list1 0] [lindex $list2 0]]
+
+        if {$compareResult < 0} {
+            lvarpop list1
+            continue
+        }
+
+        if {$compareResult > 0} {
+            lvarpop list2
+            continue
+        }
+
+        lappend intersectList [lvarpop list1]
+        lvarpop list2
+    }
+    return $intersectList
+}
+
+
+#
+# showproc.tcl --
+#
+# Display procedure headers and bodies.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-showproc showproc
+
+proc showproc args {
+    if [lempty $args] {
+        set args [info procs]
+    }
+    set out {}
+
+    foreach procname $args {
+        if [lempty [info procs $procname]] {
+            auto_load $procname
+        }
+        set arglist [info args $procname]
+        set nargs {}
+        while {[llength $arglist] > 0} {
+            set varg [lvarpop arglist 0]
+            if [info default $procname $varg defarg] {
+                lappend nargs [list $varg $defarg]
+            } else {
+                lappend nargs $varg
+            }
+        }
+        append out "proc $procname [list $nargs] \{[info body $procname]\}\n"
+    }
+    return $out
+}
+#
+# string_file --
+#
+# Functions to read and write strings from a file that has not been opened.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-stringfile_functions read_file write_file
+
+proc read_file {fileName args} {
+    if {$fileName == "-nonewline"} {
+        set flag $fileName
+        set fileName [lvarpop args]
+    } else {
+        set flag {}
+    }
+    set fp [open $fileName]
+    set stat [catch {
+        eval read $flag $fp $args
+    } result]
+    close $fp
+    if {$stat != 0} {
+        global errorInfo errorCode
+        error $result $errorInfo $errorCode
+    }
+    return $result
+} 
+
+proc write_file {fileName args} {
+    set fp [open $fileName w]
+    
+    set stat [catch {
+        foreach string $args {
+            puts $fp $string
+        }
+    } result]
+    close $fp
+    if {$stat != 0} {
+        global errorInfo errorCode
+        error $result $errorInfo $errorCode
+    }
+}
+
+#
+# tcllib.tcl --
+#
+# Various command dealing with tlib package libraries.
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+# Copyright (c) 1991-1994 The Regents of the University of California.
+# All rights reserved.
+#
+# Permission is hereby granted, without written agreement and without
+# license or royalty fees, to use, copy, modify, and distribute this
+# software and its documentation for any purpose, provided that the
+# above copyright notice and the following two paragraphs appear in
+# all copies of this software.
+#
+# IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR
+# DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT
+# OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF
+# CALIFORNIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+# ON AN "AS IS" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATION TO
+# PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+#------------------------------------------------------------------------------
+#
+
+#@package: TclX-libraries searchpath auto_load_file
+
+#------------------------------------------------------------------------------
+# searchpath:
+# Search a path list for a file. (catch is for bad ~user)
+#
+proc searchpath {pathlist file} {
+    foreach dir $pathlist {
+        if {$dir == ""} {set dir .}
+        if {[catch {file exists $dir/$file} result] == 0 && $result}  {
+            return $dir/$file
+        }
+    }
+    return {}
+}
+
+#------------------------------------------------------------------------------
+# auto_load_file:
+# Search auto_path for a file and source it.
+#
+proc auto_load_file {name} {
+    global auto_path errorCode
+    if {[string first / $name] >= 0} {
+        return  [uplevel 1 source $name]
+    }
+    set where [searchpath $auto_path $name]
+    if [lempty $where] {
+        error "couldn't find $name in any directory in auto_path"
+    }
+    uplevel 1 source $where
+}
+
+#@package: TclX-lib-list auto_packages auto_commands
+
+#------------------------------------------------------------------------------
+# auto_packages:
+# List all of the loadable packages.  If -files is specified, the file paths
+# of the packages is also returned.
+
+proc auto_packages {{option {}}} {
+    global auto_pkg_index
+
+    auto_load  ;# Make sure all indexes are loaded.
+    if ![info exists auto_pkg_index] {
+        return {}
+    }
+    
+    set packList [array names auto_pkg_index] 
+    if [lempty $option] {
+        return $packList
+    }
+
+    if {$option != "-files"} {
+        error "Unknow option \"$option\", expected \"-files\""
+    }
+    set locList {}
+    foreach pack $packList {
+        lappend locList [list $pack [lindex $auto_pkg_index($pack) 0]]
+    }
+    return $locList
+}
+
+#------------------------------------------------------------------------------
+# auto_commands:
+# List all of the loadable commands.  If -loaders is specified, the commands
+# that will be involked to load the commands is also returned.
+
+proc auto_commands {{option {}}} {
+    global auto_index
+
+    auto_load  ;# Make sure all indexes are loaded.
+    if ![info exists auto_index] {
+        return {}
+    }
+    
+    set cmdList [array names auto_index] 
+    if [lempty $option] {
+        return $cmdList
+    }
+
+    if {$option != "-loaders"} {
+        error "Unknow option \"$option\", expected \"-loaders\""
+    }
+    set loadList {}
+    foreach cmd $cmdList {
+        lappend loadList [list $cmd $auto_index($cmd)]
+    }
+    return $loadList
+}
+
+#
+# fmath.tcl --
+#
+#   Contains a package of procs that interface to the Tcl expr command built-in
+# functions.  These procs provide compatibility with older versions of TclX and
+# are also generally useful.
+#------------------------------------------------------------------------------
+# Copyright 1993-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+
+#@package: TclX-fmath acos asin atan ceil cos cosh exp fabs floor log log10 \
+           sin sinh sqrt tan tanh fmod pow atan2 abs double int round
+
+proc acos  x {uplevel [list expr acos($x)]}
+proc asin  x {uplevel [list expr asin($x)]}
+proc atan  x {uplevel [list expr atan($x)]}
+proc ceil  x {uplevel [list expr ceil($x)]}
+proc cos   x {uplevel [list expr cos($x)]}
+proc cosh  x {uplevel [list expr cosh($x)]}
+proc exp   x {uplevel [list expr exp($x)]}
+proc fabs  x {uplevel [list expr abs($x)]}
+proc floor x {uplevel [list expr floor($x)]}
+proc log   x {uplevel [list expr log($x)]}
+proc log10 x {uplevel [list expr log10($x)]}
+proc sin   x {uplevel [list expr sin($x)]}
+proc sinh  x {uplevel [list expr sinh($x)]}
+proc sqrt  x {uplevel [list expr sqrt($x)]}
+proc tan   x {uplevel [list expr tan($x)]}
+proc tanh  x {uplevel [list expr tanh($x)]}
+
+proc fmod {x n} {uplevel [list expr fmod($x,$n)]}
+proc pow {x n} {uplevel [list expr pow($x,$n)]}
+
+# New functions that TclX did not provide in eariler versions.
+
+proc atan2  x {uplevel [list expr atan2($x)]}
+proc abs    x {uplevel [list expr abs($x)]}
+proc double x {uplevel [list expr double($x)]}
+proc int    x {uplevel [list expr int($x)]}
+proc round  x {uplevel [list expr round($x)]}
+
+#
+# buildhelp.tcl --
+#
+# Program to extract help files from TCL manual pages or TCL script files.
+# The help directories are built as a hierarchical tree of subjects and help
+# files.  
+# 
+#------------------------------------------------------------------------------
+# Copyright 1992-1996 Karl Lehenbauer and Mark Diekhans.
+#
+# Permission to use, copy, modify, and distribute this software and its
+# documentation for any purpose and without fee is hereby granted, provided
+# that the above copyright notice appear in all copies.  Karl Lehenbauer and
+# Mark Diekhans make no representations about the suitability of this
+# software for any purpose.  It is provided "as is" without express or
+# implied warranty.
+#------------------------------------------------------------------------------
+#
+# For nroff man pages, the areas of text to extract are delimited with:
+#
+#     '\"@help: subjectdir/helpfile
+#     '\"@endhelp
+#
+# start in column one. The text between these markers is extracted and stored
+# in help/subjectdir/help.  The file must not exists, this is done to enforced 
+# cleaning out the directories before help file generation is started, thus
+# removing any stale files.  The extracted text is run through:
+#
+#     nroff -man|col -xb   {col -b on BSD derived systems}
+#
+# If there is other text to include in the helpfile, but not in the manual 
+# page, the text, along with nroff formatting commands, may be included using:
+#
+#     '\"@:Other text to include in the help page.
+#
+# A entry in the brief file, used by apropos my be included by:
+#
+#     '\"@brief: Short, one line description
+#
+# These brief request must occur with in the bounds of a help section.
+#
+# If some header text, such as nroff macros, need to be preappended to the
+# text streem before it is run through nroff, then that text can be bracketed
+# with:
+#
+#     '\"@header
+#     '\"@endheader
+#
+# If multiple header blocks are encountered, they will all be preappended.
+#
+# For TCL script files, which are indentified because they end in ".tcl",
+# the text to be extracted is delimited by:
+#
+#    #@help: subjectdir/helpfile
+#    #@endhelp
+#
+# And brief lines are in the form:
+#
+#     #@brief: Short, one line description
+#
+# The only processing done on text extracted from .tcl files it to replace
+# the # in column one with a space.
+#
+#
+#-----------------------------------------------------------------------------
+# 
+# To generate help:
+#
+#   buildhelp helpDir brief.brf filelist
+#
+# o helpDir is the help tree root directory.  helpDir should  exists, but any
+#   subdirectories that don't exists will be created.  helpDir should be
+#   cleaned up before the start of manual page generation, as this program
+#   will not overwrite existing files.
+# o brief.brf  is the name of the brief file to create form the @brief entries.
+#   It must have an extension of ".brf".  It will be created in helpDir.
+# o filelist are the nroff manual pages, or .tcl, .tlib files to extract
+#   the help files from. If the suffix is not .tcl or .tlib, a nroff manual
+#   page is assumed.
+#
+#-----------------------------------------------------------------------------
+
+#@package: TclX-buildhelp buildhelp
+
+#-----------------------------------------------------------------------------
+# Truncate a file name of a help file if the system does not support long
+# file names.  If the name starts with `Tcl_', then this prefix is removed.
+# If the name is then over 14 characters, it is truncated to 14 charactes
+#  
+proc TruncFileName {pathName} {
+    global truncFileNames
+
+    if {!$truncFileNames} {
+        return $pathName}
+    set fileName [file tail $pathName]
+    if {"[crange $fileName 0 3]" == "Tcl_"} {
+        set fileName [crange $fileName 4 end]}
+    set fileName [crange $fileName 0 13]
+    return "[file dirname $pathName]/$fileName"
+}
+
+#-----------------------------------------------------------------------------
+# Proc to ensure that all directories for the specified file path exists,
+# and if they don't create them.  Don't use -path so we can set the
+# permissions.
+
+proc EnsureDirs {filePath} {
+    set dirPath [file dirname $filePath]
+    if [file exists $dirPath] return
+    foreach dir [split $dirPath /] {
+        lappend dirList $dir
+        set partPath [join $dirList /]
+        if [file exists $partPath] continue
+
+        mkdir $partPath
+        chmod u=rwx,go=rx $partPath
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to set up scan context for use by FilterNroffManPage.
+# This keeps the a two line cache of the previous two lines encountered
+# and the blank lines that followed them.
+#
+
+proc CreateFilterNroffManPageContext {} {
+    global filterNroffManPageContext
+
+    set filterNroffManPageContext [scancontext create]
+
+    # On finding a page header, drop the previous line (which is
+    # the page footer). Also deleting the blank lines followin
+    # the last line on the previous page.
+
+    scanmatch $filterNroffManPageContext {@@@BUILDHELP@@@} {
+        catch {unset prev2Blanks}
+        catch {unset prev1Line}
+        catch {unset prev1Blanks}
+        set nukeBlanks {}
+    }
+
+    # Save blank lines
+
+    scanmatch $filterNroffManPageContext {$^} {
+        if ![info exists nukeBlanks] {
+            append prev1Blanks \n
+        }
+    }
+
+    # Non-blank line, save it.  Output the 2nd previous line if necessary.
+
+    scanmatch $filterNroffManPageContext {
+        catch {unset nukeBlanks}
+        if [info exists prev2Line] {
+            puts $outFH $prev2Line
+            unset prev2Line
+        }
+        if [info exists prev2Blanks] {
+            puts $outFH $prev2Blanks nonewline
+            unset prev2Blanks
+        }
+        if [info exists prev1Line] {
+            set prev2Line $prev1Line
+        }
+        set prev1Line $matchInfo(line)
+        if [info exists prev1Blanks] {
+            set prev2Blanks $prev1Blanks
+            unset prev1Blanks
+        }
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to filter a formatted manual page, removing the page headers and
+# footers.  This relies on each manual page having a .TH macro in the form:
+#   .TH @@@BUILDHELP@@@ n
+
+proc FilterNroffManPage {inFH outFH} {
+    global filterNroffManPageContext
+
+    if ![info exists filterNroffManPageContext] {
+        CreateFilterNroffManPageContext
+    }
+
+    scanfile $filterNroffManPageContext $inFH
+
+    if [info exists prev2Line] {
+        puts $outFH $prev2Line
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to set up scan context for use by ExtractNroffHeader
+#
+
+proc CreateExtractNroffHeaderContext {} {
+    global extractNroffHeaderContext
+
+    set extractNroffHeaderContext [scancontext create]
+
+    scanmatch $extractNroffHeaderContext {'\\"@endheader[ 	]*$} {
+        break
+    }
+    scanmatch $extractNroffHeaderContext {'\\"@:} {
+        append nroffHeader "[crange $matchInfo(line) 5 end]\n"
+    }
+    scanmatch $extractNroffHeaderContext {
+        append nroffHeader "$matchInfo(line)\n"
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to extract nroff text to use as a header to all pass to nroff when
+# processing a help file.
+#    manPageFH - The file handle of the manual page.
+#
+
+proc ExtractNroffHeader {manPageFH} {
+    global extractNroffHeaderContext nroffHeader
+
+    if ![info exists extractNroffHeaderContext] {
+        CreateExtractNroffHeaderContext
+    }
+    scanfile $extractNroffHeaderContext $manPageFH
+}
+
+
+#-----------------------------------------------------------------------------
+# Proc to set up scan context for use by ExtractNroffHelp
+#
+
+proc CreateExtractNroffHelpContext {} {
+    global extractNroffHelpContext
+
+    set extractNroffHelpContext [scancontext create]
+
+    scanmatch $extractNroffHelpContext {^'\\"@endhelp[ 	]*$} {
+        break
+    }
+
+    scanmatch $extractNroffHelpContext {^'\\"@brief:} {
+        if $foundBrief {
+            error {Duplicate "@brief:" entry}
+        }
+        set foundBrief 1
+        puts $briefHelpFH "$helpName\t[csubstr $matchInfo(line) 11 end]"
+        continue
+    }
+
+    scanmatch $extractNroffHelpContext {^'\\"@:} {
+        puts $nroffFH  [csubstr $matchInfo(line) 5 end]
+        continue
+    }
+    scanmatch $extractNroffHelpContext {^'\\"@help:} {
+        error {"@help" found within another help section"}
+    }
+    scanmatch $extractNroffHelpContext {
+        puts $nroffFH $matchInfo(line)
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to extract a nroff help file when it is located in the text.
+#    manPageFH - The file handle of the manual page.
+#    manLine - The '\"@help: line starting the data to extract.
+#
+
+proc ExtractNroffHelp {manPageFH manLine} {
+    global helpDir nroffHeader briefHelpFH colArgs
+    global extractNroffHelpContext
+
+    if ![info exists extractNroffHelpContext] {
+        CreateExtractNroffHelpContext
+    }
+
+    set helpName [string trim [csubstr $manLine 9 end]]
+    set helpFile [TruncFileName "$helpDir/$helpName"]
+    if [file exists $helpFile] {
+        error "Help file already exists: $helpFile"
+    }
+    EnsureDirs $helpFile
+
+    set tmpFile "[file dirname $helpFile]/tmp.[id process]"
+
+    echo "    creating help file $helpName"
+
+    set nroffFH [open "| nroff -man | col $colArgs > $tmpFile" w]
+
+    puts $nroffFH {.TH @@@BUILDHELP@@@ 1}
+
+    set foundBrief 0
+    scanfile $extractNroffHelpContext $manPageFH
+
+    # Close returns an error on if anything comes back on stderr, even if
+    # its a warning.  Output errors and continue.
+
+    set stat [catch {
+        close $nroffFH
+    } msg]
+    if $stat {
+        puts stderr "nroff: $msg"
+    }
+
+    set tmpFH [open $tmpFile r]
+    set helpFH [open $helpFile w]
+
+    FilterNroffManPage $tmpFH $helpFH
+
+    close $tmpFH
+    close $helpFH
+
+    unlink $tmpFile
+    chmod a-w,a+r $helpFile
+}
+
+#-----------------------------------------------------------------------------
+# Proc to set up scan context for use by ExtractScriptHelp
+#
+
+proc CreateExtractScriptHelpContext {} {
+    global extractScriptHelpContext
+
+    set extractScriptHelpContext [scancontext create]
+
+    scanmatch $extractScriptHelpContext {^#@endhelp[ 	]*$} {
+        break
+    }
+
+    scanmatch $extractScriptHelpContext {^#@brief:} {
+        if $foundBrief {
+            error {Duplicate "@brief" entry}
+        }
+        set foundBrief 1
+        puts $briefHelpFH "$helpName\t[csubstr $matchInfo(line) 9 end]"
+        continue
+    }
+
+    scanmatch $extractScriptHelpContext {^#@help:} {
+        error {"@help" found within another help section"}
+    }
+ 
+    scanmatch $extractScriptHelpContext {^#$} {
+        puts $helpFH ""
+    }
+
+    scanmatch $extractScriptHelpContext {
+        if {[clength $matchInfo(line)] > 1} {
+            puts $helpFH " [csubstr $matchInfo(line) 1 end]"
+        } else {
+            puts $helpFH $matchInfo(line)
+        }
+    }
+}
+
+#-----------------------------------------------------------------------------
+# Proc to extract a tcl script help file when it is located in the text.
+#    ScriptPageFH - The file handle of the .tcl file.
+#    ScriptLine - The #@help: line starting the data to extract.
+#
+
+proc ExtractScriptHelp {scriptPageFH scriptLine} {
+    global helpDir briefHelpFH
+    global extractScriptHelpContext
+
+    if ![info exists extractScriptHelpContext] {
+        CreateExtractScriptHelpContext
+    }
+
+    set helpName [string trim [csubstr $scriptLine 7 end]]
+    set helpFile "$helpDir/$helpName"
+    if {[file exists $helpFile]} {
+        error "Help file already exists: $helpFile"
+    }
+    EnsureDirs $helpFile
+
+    echo "    creating help file $helpName"
+
+    set helpFH [open $helpFile w]
+
+    set foundBrief 0
+    scanfile $extractScriptHelpContext $scriptPageFH
+
+    close $helpFH
+    chmod a-w,a+r $helpFile
+}
+
+#-----------------------------------------------------------------------------
+# Proc to scan a nroff manual file looking for the start of a help text
+# sections and extracting those sections.
+#    pathName - Full path name of file to extract documentation from.
+#
+
+proc ProcessNroffFile {pathName} {
+   global nroffScanCT scriptScanCT nroffHeader
+
+   set fileName [file tail $pathName]
+
+   set nroffHeader {}
+   set manPageFH [open $pathName r]
+   set matchInfo(fileName) [file tail $pathName]
+
+   echo "    scanning $pathName"
+
+   scanfile $nroffScanCT $manPageFH
+
+   close $manPageFH
+}
+
+#-----------------------------------------------------------------------------
+# Proc to scan a Tcl script file looking for the start of a
+# help text sections and extracting those sections.
+#    pathName - Full path name of file to extract documentation from.
+#
+
+proc ProcessTclScript {pathName} {
+   global scriptScanCT nroffHeader
+
+   set scriptFH [open "$pathName" r]
+   set matchInfo(fileName) [file tail $pathName]
+
+   echo "    scanning $pathName"
+   scanfile $scriptScanCT $scriptFH
+
+   close $scriptFH
+}
+
+#-----------------------------------------------------------------------------
+# build: main procedure.  Generates help from specified files.
+#    helpDirPath - Directory were the help files go.
+#    briefFile - The name of the brief file to create.
+#    sourceFiles - List of files to extract help files from.
+
+proc buildhelp {helpDirPath briefFile sourceFiles} {
+    global helpDir truncFileNames nroffScanCT
+    global scriptScanCT briefHelpFH colArgs
+
+    echo ""
+    echo "Begin building help tree"
+
+    # Determine version of col command to use (no -x on BSD)
+    if {[system {col -bx </dev/null >/dev/null 2>&1}] != 0} {
+        set colArgs {-b}
+    } else {
+        set colArgs {-bx}
+    }
+    set helpDir $helpDirPath
+    if {![file exists $helpDir]} {
+        mkdir $helpDir
+    }
+
+    if {![file isdirectory $helpDir]} {
+        error [concat "$helpDir is not a directory or does not exist. "  
+                      "This should be the help root directory"]
+    }
+        
+    set status [catch {set tmpFH [open $helpDir/AVeryVeryBigFileName w]}]
+    if {$status != 0} {
+        set truncFileNames 1
+    } else {
+        close $tmpFH
+        unlink $helpDir/AVeryVeryBigFileName
+        set truncFileNames 0
+    }
+
+    set nroffScanCT [scancontext create]
+
+    scanmatch $nroffScanCT {'\\"@help:} {
+        ExtractNroffHelp $matchInfo(handle) $matchInfo(line)
+        continue
+    }
+
+    scanmatch $nroffScanCT {^'\\"@header} {
+        ExtractNroffHeader $matchInfo(handle)
+        continue
+    }
+    scanmatch $nroffScanCT {^'\\"@endhelp} {
+        error [concat {@endhelp" without corresponding "@help:"} \
+                 ", offset = $matchInfo(offset)"]
+    }
+    scanmatch $nroffScanCT {^'\\"@brief} {
+        error [concat {"@brief" without corresponding "@help:"} \
+                 ", offset = $matchInfo(offset)"]
+    }
+
+    set scriptScanCT [scancontext create]
+    scanmatch $scriptScanCT {^#@help:} {
+        ExtractScriptHelp $matchInfo(handle) $matchInfo(line)
+    }
+
+    if {[file extension $briefFile] != ".brf"} {
+        error "Brief file \"$briefFile\" must have an extension \".brf\""
+    }
+    if [file exists $helpDir/$briefFile] {
+        error "Brief file \"$helpDir/$briefFile\" already exists"
+    }
+    set briefHelpFH [open "|sort > $helpDir/$briefFile" w]
+
+    foreach manFile [glob $sourceFiles] {
+        set ext [file extension $manFile]
+        if {$ext == ".tcl" || $ext == ".tlib"} {
+            set status [catch {ProcessTclScript $manFile} msg]
+        } else {
+            set status [catch {ProcessNroffFile $manFile} msg]
+        }
+        if {$status != 0} {
+            global errorInfo errorCode
+            error "Error extracting help from: $manFile" $errorInfo $errorCode
+        }
+    }
+
+    close $briefHelpFH
+    chmod a-w,a+r $helpDir/$briefFile
+    echo "Completed extraction of help files"
+}
+

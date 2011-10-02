@@ -1,0 +1,13 @@
+srcinc:::CreateFactory.tcl
+srcinc:::WOKSESSION.edl
+srcinc:::DEFAULT.edl
+srcinc:::FILES
+srcinc:::tclshrc_Wok
+srcinc:::INSTALL
+srcinc:::wok.csh
+srcinc:::wok.bat
+srcinc:::wokinit.bat
+srcinc:::interp.tcl
+srcinc:::wokinit.csh
+srcinc:::.tclshrc
+srcinc:::tclshrc.tcl

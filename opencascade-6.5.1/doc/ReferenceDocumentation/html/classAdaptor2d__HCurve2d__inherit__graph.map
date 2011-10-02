@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classAdaptor2d__HLine2d.html" title="Adaptor2d_HLine2d" alt="" coords="629,5,781,35"/>
+<area shape="rect" id="node9" href="$classAdaptor3d__HOffsetCurve.html" title="Adaptor3d_HOffsetCurve" alt="" coords="611,59,800,88"/>
+<area shape="rect" id="node11" href="$classBRepAdaptor__HCurve2d.html" title="BRepAdaptor_HCurve2d" alt="" coords="613,112,797,141"/>
+<area shape="rect" id="node13" href="$classGeom2dAdaptor__GHCurve.html" title="Geom2dAdaptor_GHCurve" alt="" coords="607,165,804,195"/>
+<area shape="rect" id="node17" href="$classProjLib__HCompProjectedCurve.html" title="ProjLib_HCompProjectedCurve" alt="" coords="591,219,820,248"/>
+<area shape="rect" id="node19" href="$classProjLib__HProjectedCurve.html" title="ProjLib_HProjectedCurve" alt="" coords="611,272,800,301"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,139,328,168"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+<area shape="rect" id="node15" href="$classGeom2dAdaptor__HCurve.html" title="Provides an interface between the services provided by any &#160;&#160;curve from the package..." alt="" coords="871,165,1057,195"/>
+</map>

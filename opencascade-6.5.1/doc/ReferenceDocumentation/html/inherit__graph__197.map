@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classBOP__LoopClassifier.html" title="Root class to classify Loops in order to build Areas &#160;" alt="" coords="7,32,156,61"/>
+<area shape="rect" id="node3" href="$classBOP__CompositeClassifier.html" title="The Root class for algorithms &#160;&#160;to classify composite Loops, i.e, Loops that &#160;&#160;can..." alt="" coords="205,32,397,61"/>
+<area shape="rect" id="node5" href="$classBOP__ShellFaceClassifier.html" title="BOP_ShellFaceClassifier" alt="" coords="447,5,628,35"/>
+<area shape="rect" id="node7" href="$classBOP__WireEdgeClassifier.html" title="The algorithm is to classify loops that &#160;&#160;shapes are Wires, Element are Edge. &#160;" alt="" coords="447,59,628,88"/>
+</map>

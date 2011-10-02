@@ -1,0 +1,26 @@
+-- File:	WOKUnix_Signal.cdl
+-- Created:	Wed May 24 17:32:41 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class Signal from WOKUnix
+uses
+    Signals from WOKUnix,
+    SigHandler from WOKUnix
+is
+    Create                               returns Signal from WOKUnix;
+    Create(asig : Signals from WOKUnix) returns Signal from WOKUnix;
+    
+    Set(me : in out; asig : Signals from WOKUnix);
+    
+    Arm(me : in out; ahandler : SigHandler from WOKUnix);
+    Arm(myclass; asig : Signals from WOKUnix; ahandler : SigHandler from WOKUnix);
+
+    GetSig(myclass; asig : Signals from WOKUnix) returns Integer from Standard is  private;
+
+fields
+    mysig   : Signals from WOKUnix;
+    isarmed : Boolean from Standard;
+end;
+

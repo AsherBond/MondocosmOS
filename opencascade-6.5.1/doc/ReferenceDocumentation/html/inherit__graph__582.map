@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classConvert__ElementarySurfaceToBSplineSurface.html" title="Root class for algorithms which convert an elementary &#160;&#160;surface (cylinder, cone,..." alt="" coords="5,85,333,115"/>
+<area shape="rect" id="node3" href="$classConvert__ConeToBSplineSurface.html" title="This algorithm converts a bounded Cone into a rational &#160;&#160;B&#45;spline surface. &#160;&#160;The..." alt="" coords="392,5,624,35"/>
+<area shape="rect" id="node5" href="$classConvert__CylinderToBSplineSurface.html" title="This algorithm converts a bounded cylinder into a rational &#160;&#160;B&#45;spline surface. The..." alt="" coords="383,59,633,88"/>
+<area shape="rect" id="node7" href="$classConvert__SphereToBSplineSurface.html" title="This algorithm converts a bounded Sphere into a rational &#160;&#160;B&#45;spline surface. The..." alt="" coords="385,112,631,141"/>
+<area shape="rect" id="node9" href="$classConvert__TorusToBSplineSurface.html" title="This algorithm converts a bounded Torus into a rational &#160;&#160;B&#45;spline surface. The torus..." alt="" coords="392,165,624,195"/>
+</map>

@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif
+#ifndef _MS_InstClass_HeaderFile
+#include <MS_InstClass.hxx>
+#endif

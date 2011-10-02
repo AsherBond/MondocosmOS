@@ -1,0 +1,46 @@
+-- File:	WOKDeliv_DeliverySOURCES.cdl
+-- Created:	Mon Dec 30 16:32:42 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliverySOURCES from WOKDeliv inherits DeliveryMetaStep from WOKDeliv
+
+	---Purpose: Process listing for step source in Delivery
+
+uses DevUnit from WOKernel,
+     File from WOKernel,
+     BuildProcess from WOKMake,
+     InputFile from WOKMake,
+     Step from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DeliverySOURCES from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is private;
+    
+    ExecuteMetaStep(me:mutable)
+    returns Boolean
+    is private;
+    
+    ExecuteSubStep(me:mutable)
+    returns Boolean
+    is private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is protected;
+    
+    AdmFileType(me)
+    	returns HAsciiString from TCollection;
+
+end DeliverySOURCES;

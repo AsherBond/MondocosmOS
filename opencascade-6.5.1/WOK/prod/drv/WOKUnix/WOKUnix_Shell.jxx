@@ -1,0 +1,18 @@
+#ifndef _WOKUnix_ShellStatus_HeaderFile
+#include <WOKUnix_ShellStatus.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Path_HeaderFile
+#include <WOKUnix_Path.hxx>
+#endif
+#ifndef _TCollection_AsciiString_HeaderFile
+#include <TCollection_AsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Shell_HeaderFile
+#include <WOKUnix_Shell.hxx>
+#endif

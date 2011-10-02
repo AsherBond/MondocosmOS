@@ -1,0 +1,24 @@
+-- File:	WOKTools_StringValue.cdl
+-- Created:	Wed Sep 27 17:45:10 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class StringValue    from WOKTools 
+inherits ReturnValue from WOKTools
+
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection
+is
+
+    Create(astr : HAsciiString from TCollection) returns mutable StringValue from WOKTools;
+    
+    Value(me) returns HAsciiString from TCollection;
+    SetValue(me:mutable; avalue : HAsciiString from TCollection);
+
+fields
+    myvalue : HAsciiString from TCollection;
+end StringValue;

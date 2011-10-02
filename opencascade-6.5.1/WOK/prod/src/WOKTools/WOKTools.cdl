@@ -1,0 +1,131 @@
+-- File:	WOKTools.cdl
+-- Created:	Fri Nov 24 13:45:46 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+package WOKTools 
+
+	---Purpose: 
+
+uses
+    SortTools,
+    OSD,
+    TCollection,
+    TColStd,
+    MMgt
+ 
+
+is
+
+    imported ArgTable;
+    imported PUsage;
+    imported MsgHandler;
+    imported MsgControl;
+    imported MsgStreamPtr;
+
+    enumeration ReturnType      is String, Environment, ChDir, InterpFile;
+    enumeration InterpFileType  is CShell, BourneShell, KornShell, TclInterp, EmacsLisp, WNTCmd;
+
+
+-- GENERIC COLLECTIONS
+
+    private deferred class BasicMap;
+    private deferred class BasicMapIterator;
+    class AsciiStringHasher;
+    class HAsciiStringHasher;
+    class CStringHasher;
+    class CompareOfHAsciiString;
+    
+
+    generic class Map, MapIterator;
+    ---Purpose: Optimized WOK Oriented (String) Map
+
+    generic class DataMap, DataMapIterator;
+    ---Purpose: Optimized WOK Oriented (String) DataMap
+
+    generic class DoubleMap, DoubleMapIterator;
+    ---Purpose: Optimized WOK Oriented (String) DoubleMap
+
+    generic class IndexedMap;
+	---Purpose: A Map where the keys are indexed.
+	
+    generic class IndexedDataMap;
+	---Purpose: An Indexed Map where data can be stored with the keys.
+
+    generic class GGraph,
+                  GEdge,
+                  GNode,
+                  GPath,
+		  SequenceOfGraphItem,
+		  SequenceOfGNode,
+		  HSequenceOfGNode,
+		  SequenceOfGPath,
+		  HSequenceOfGPath,
+		  SequenceOfGEdge,
+		  HSequenceOfGEdge,
+                  HSequenceOfGraphItem;
+			   
+    ---Purpose: Main class of graphs.
+
+    class Define;
+    class Options;
+
+    class Return;
+    
+    deferred class ReturnValue;
+    	class StringValue;
+	class EnvValue;
+	class ChDirValue;
+	class InterpFileValue;
+
+    deferred class Message;
+    
+    	class Info;
+	class Verbose;
+	class Warning;
+	class Error;
+    	-- class LogMsg;
+
+
+-- INSTANCIATIONS
+
+    class MapOfHAsciiString
+    	instantiates Map     from WOKTools (HAsciiString       from TCollection,
+	    	    	    	    	    HAsciiStringHasher from WOKTools); 
+
+    class DataMapOfHAsciiStringOfHAsciiString
+    	instantiates DataMap from WOKTools (HAsciiString       from TCollection,
+	    	    	    	    	    HAsciiString       from TCollection,
+	    	    	    	    	    HAsciiStringHasher from WOKTools); 
+
+    class IndexedMapOfHAsciiString
+    	instantiates IndexedMap from WOKTools ( HAsciiString       from TCollection,
+	    	    	    	    	    	HAsciiStringHasher from WOKTools); 
+    class IndexedDataMapOfHAsciiString
+    	instantiates IndexedDataMap from WOKTools ( HAsciiString       from TCollection, AsciiString       from TCollection,
+	    	    	    	    	    	    HAsciiStringHasher from WOKTools); 
+
+    class DataMapOfHAsciiStringOfHSequenceOfHAsciiString
+    	instantiates        DataMap from WOKTools ( HAsciiString            from TCollection, 
+	    	    	    	    	    	    HSequenceOfHAsciiString from TColStd, 
+    	    	    	    	    	    	    HAsciiStringHasher      from WOKTools );
+    class SequenceOfReturnValue 
+    	instantiates  Sequence from TCollection ( ReturnValue from WOKTools); 
+    class HSequenceOfReturnValue 
+    	instantiates HSequence from TCollection ( ReturnValue from WOKTools,  SequenceOfReturnValue  from WOKTools);
+
+    class SequenceOfDefine 
+    	instantiates  Sequence from TCollection ( Define from WOKTools); 
+    class HSequenceOfDefine 
+    	instantiates HSequence from TCollection ( Define from WOKTools,  SequenceOfDefine  from WOKTools);
+
+    class Array1OfHAsciiString instantiates 
+    	  Array1 from TCollection(HAsciiString from TCollection);
+    class SortOfHAsciiString instantiates 
+    	  HeapSort from SortTools(HAsciiString from TCollection,
+    	    	    	    	  Array1OfHAsciiString from WOKTools,
+	    	    	    	  CompareOfHAsciiString from WOKTools);
+				  
+end WOKTools;

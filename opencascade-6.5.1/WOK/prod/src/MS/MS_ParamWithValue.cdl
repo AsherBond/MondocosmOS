@@ -1,0 +1,38 @@
+-- File:	MS_ParamWithValue.cdl
+-- Created:	Fri Dec  6 14:48:29 1996
+-- Author:	Christophe LEYNADIER
+--		<cle@parigox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class ParamWithValue from MS 
+
+inherits Param from MS
+
+uses 
+     	Type         from MS,
+     	Method       from MS,
+	MethodPtr    from MS,
+	HAsciiString from TCollection,
+	TypeOfValue  from MS
+	
+is
+    Create(aMethod: Method from MS; aName: HAsciiString) 
+    	returns mutable ParamWithValue from MS;
+
+    IntegerValue(me: mutable; aInteger: HAsciiString);
+    RealValue(me: mutable; aReal: HAsciiString);
+    StringValue(me: mutable; aString: HAsciiString);
+    EnumValue(me: mutable; aEnum: HAsciiString);
+
+    Value(me: mutable; aValue: HAsciiString; TypeVal : TypeOfValue from MS);
+    GetValue(me) returns mutable HAsciiString;
+    GetValueType(me)
+    	returns TypeOfValue from MS is redefined;
+	   
+    
+   fields
+    
+    myValue     : HAsciiString from TCollection;
+    myTypeVal   : TypeOfValue  from MS;
+    
+end;

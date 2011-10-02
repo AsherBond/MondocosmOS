@@ -1,0 +1,49 @@
+-- File:	WOKStep_ImplementationDep.cdl
+-- Created:	Thu Jun 27 17:32:13 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class ImplementationDep from WOKStep
+inherits Step from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess          from WOKMake,
+    InputFile             from WOKMake,
+    HSequenceOfInputFile  from WOKMake,
+    DevUnit               from WOKernel,
+    HSequenceOfFile       from WOKernel,
+    File                  from WOKernel,
+    HSequenceOfEntity     from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    Path                  from WOKUtils,
+    MapOfHAsciiString     from WOKTools,
+    HAsciiString          from TCollection
+
+is
+
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable ImplementationDep from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake) 
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private;
+
+end ImplementationDep;

@@ -1,0 +1,42 @@
+-- File:	WOKBuilder_Archiver.cdl
+-- Created:	Tue Oct 24 11:35:07 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Archiver from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Param                 from WOKUtils,
+    ArchiveLibrary        from WOKBuilder,
+    BuildStatus           from WOKBuilder,
+    HSequenceOfObjectFile from WOKBuilder,
+    HAsciiString          from TCollection
+raises
+    ProgramError from Standard
+is
+
+    Create(params : Param from WOKUtils) 
+    	returns mutable Archiver from WOKBuilder;
+
+    Load(me:mutable)
+    	is redefined;
+    
+    SetObjectList(me:mutable; objects : HSequenceOfObjectFile from WOKBuilder);  
+    ObjectList(me) returns HSequenceOfObjectFile from WOKBuilder;
+    
+    TargetName(me) returns HAsciiString from TCollection;
+    SetTargetName(me:mutable; aname : HAsciiString from TCollection);
+
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+fields
+    myobjects : HSequenceOfObjectFile from WOKBuilder;
+    mytarget  : HAsciiString          from TCollection;
+end Archiver;

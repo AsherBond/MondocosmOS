@@ -1,0 +1,81 @@
+-- File:	WOKUnix_Shell.cdl
+-- Created:	Thu Jun  8 17:31:30 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Shell from WOKUnix 
+inherits Process from WOKUnix
+
+	---Purpose: 
+
+uses
+    Path                    from WOKUnix,
+    ShellMode               from WOKUnix,
+    ShellStatus             from WOKUnix,
+    PopenOutputMode         from WOKUnix,
+    PopenBufferMode         from WOKUnix,
+    HAsciiString            from TCollection,
+    AsciiString            from TCollection,    
+    HSequenceOfHAsciiString from TColStd
+    
+is
+    Create(amode    : ShellMode        from WOKUnix = WOKUnix_AsynchronousMode; 
+    	   outmode  : PopenOutputMode  from WOKUnix = WOKUnix_POPEN_MIX_OUT_ERR;
+    	   bufmode  : PopenBufferMode  from WOKUnix = WOKUnix_POPEN_BUFFERED) 
+    	returns mutable Shell from WOKUnix; 
+	
+    Create(apath    : AsciiString      from TCollection;
+    	   amode    : ShellMode        from WOKUnix = WOKUnix_AsynchronousMode; 
+    	   outmode  : PopenOutputMode  from WOKUnix = WOKUnix_POPEN_MIX_OUT_ERR;
+    	   bufmode  : PopenBufferMode  from WOKUnix = WOKUnix_POPEN_BUFFERED) 
+    	returns mutable Shell from WOKUnix; 
+  
+    SetEcho(me:mutable);
+    UnsetEcho(me:mutable);
+    IsEchoed(me)
+    	returns Boolean from Standard;
+    
+    Echo(me; astr : HAsciiString from TCollection);
+    
+    Lock(me:mutable);
+    UnLock(me:mutable);
+    IsLocked(me)
+    	returns Boolean from Standard;
+     
+    LogInFile(me:mutable; apath : Path from WOKUnix);
+    NoLog(me:mutable);
+    LogFile(me)
+    	returns Path from WOKUnix;
+    
+    Log(me; astr : HAsciiString from TCollection);
+
+    SetSynchronous(me:mutable);
+    SetASynchronous(me:mutable);
+    
+    SyncAndStatus(me : mutable) returns Integer is virtual;
+    
+    Status(me) returns Integer;  
+
+    Errors(me : mutable) returns HSequenceOfHAsciiString from TColStd;
+    ClearOutput(me : mutable);
+    
+    Send(me : mutable; astring : HAsciiString from TCollection) is redefined; 
+    
+    Execute(me:mutable; astring : HAsciiString from TCollection) returns Integer from Standard; 
+    Execute(me:mutable; somestrings : HSequenceOfHAsciiString from TColStd)  returns Integer  from  Standard;
+
+    SetHost(me:mutable; ahost : HAsciiString from TCollection);
+    Host(me) returns HAsciiString from TCollection;
+    
+fields
+
+    mystatus  : ShellStatus  from WOKUnix is protected;
+    mymode    : ShellMode    from WOKUnix;
+    myname    : HAsciiString from TCollection;
+    mylocked  : Boolean      from Standard;
+    myecho    : Boolean      from Standard;
+    mylogfile : Path         from WOKUnix;
+    myhost    : HAsciiString from TCollection;
+end Shell;

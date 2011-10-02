@@ -1,0 +1,50 @@
+-- File:	WOKStep_LibExtract.cdl
+-- Created:	Wed Jul 24 10:20:56 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+class LibExtract from WOKStep 
+inherits Step from WOKMake
+
+	---Purpose: 
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    HAsciiString                from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection; 
+    	   checked, hidden : Boolean  from Standard) 
+    	returns mutable LibExtract from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+	
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+    
+    HandleInputFile(me:mutable; item : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+   	is redefined private;
+
+end LibExtract;

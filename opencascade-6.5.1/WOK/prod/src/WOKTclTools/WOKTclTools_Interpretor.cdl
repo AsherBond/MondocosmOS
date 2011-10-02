@@ -1,0 +1,156 @@
+-- File:	WOKTclTools_Interpretor.cdl
+-- Created:	Fri Jul 28 21:52:33 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+
+class Interpretor from WOKTclTools 
+inherits TShared  from MMgt
+
+	---Purpose: Provides  an  encapsulation of the TCL interpretor
+	--          to define WOKTclTools commands.
+
+uses
+	PInterp               from WOKTclTools,
+	WokCommand            from WOKTclTools,
+	Return                from WOKTools,
+	CommandFunction       from WOKTclTools,
+	ExitHandler           from WOKTclTools
+
+is
+
+    Create returns mutable Interpretor from WOKTclTools;
+
+    Create(anInterp : PInterp from WOKTclTools)
+	    returns mutable Interpretor from WOKTclTools;
+    
+    Add(me : mutable; Command  : CString;
+    	              Help     : CString;
+		      Function : CommandFunction from WOKTclTools;
+		      Group    : CString = "User Commands");
+	---Purpose: Creates a  new command  with name <Command>,  help
+	--          string <Help> in group <Group>.
+	--          <Function> implement the function.
+
+
+    Add(me : mutable; Command  : CString;
+    	              Help     : CString;
+		      Function : WokCommand from WOKTclTools;
+		      Group    : CString = "User Commands");
+
+
+--    AddHandleTable(me : out;atable  : HandleTable from WOKTclTools);
+--    AddHandleTable(me : out;aprefix : CString     from Standard);
+
+    AddExitHandler(me: mutable; Function : ExitHandler from WOKTclTools);
+    DeleteExitHandler(me: mutable; Function : ExitHandler from WOKTclTools);
+
+    IsCmdName(me : mutable; Command  : CString) returns Boolean from Standard;
+
+    Remove(me : mutable; Command : CString)
+    returns Boolean;
+	---Purpose: Removes   <Command>, returns true  if success (the
+	--          command existed).
+
+
+    -- Packages
+    -- 
+    -- 
+
+    PkgProvide(me: mutable; aname, aversion : CString from Standard)
+    	returns Integer from Standard;
+
+    --  The result
+    --
+
+    TreatReturn(me:mutable; values : Return from WOKTools)
+    	returns Integer from Standard;
+
+    Result(me) returns CString;
+    GetReturnValues(me; retval : out Return from WOKTools)
+    	returns Boolean from Standard;
+    
+    Reset(me : mutable);
+	---Purpose: Resets the result to empty string
+	
+    Append(me : mutable; Result : CString); 
+	---Purpose: Appends to the result
+    	
+    Append(me : mutable; Result : Integer); 
+	---Purpose: Appends  to the result
+    	
+    Append(me : mutable; Result : Real); 
+	---Purpose: Appends  to the result
+    	
+    AppendElement(me : mutable; Result : CString);
+	---Purpose: Appends to the result the string as a list element
+
+
+
+    --
+    --      Interpretation
+    --      
+    
+    Eval(me : mutable; Script : CString) 
+    returns Integer;
+	---Purpose: Eval the script and returns OK = 0, ERROR = 1
+	
+    RecordAndEval(me : mutable; Script : CString; Flags : Integer = 0) 
+    returns Integer;
+	---Purpose: Eval the script and returns OK = 0, ERROR = 1
+	--          Store the script in the history record.
+	
+    EvalFile(me : mutable; FileName : CString) 
+    returns Integer;
+	---Purpose: Eval the content on the file and returns status
+	
+    Complete(myclass; Script : CString) returns Boolean;
+	---Purpose: Returns True if the script is complete, no pending
+	--          closing braces. (})
+    
+    Destroy(me : mutable);
+	---C++: alias ~
+
+    --
+    --  Access to Tcl_Interp
+    --  
+
+    Set(me : mutable; anInterp : PInterp from WOKTclTools);
+    
+    Interp (me) returns PInterp from WOKTclTools;
+
+    -- 
+    --  Current Interpretor Handling
+    --  
+    Current(myclass) 
+    ---C++: return &
+       	returns Interpretor from WOKTclTools;
+
+    --
+    --	Messages Handling
+    --	
+    SetEndMessageProc(myclass; aproc : CString from Standard);
+    UnSetEndMessageProc(myclass);
+    
+    EndMessageProc(myclass) 
+    ---C++: return &
+       	returns CString from Standard;
+	
+    SetEndMessageArgs(myclass; aArgs : CString from Standard);
+    UnSetEndMessageArgs(myclass);
+    
+    EndMessageArgs(myclass) 
+    ---C++: return &
+       	returns CString from Standard;
+    
+    TreatMessage(me; newline : Boolean from Standard; atype : Character from Standard; amsg : CString from Standard);
+
+fields
+ 
+    isAllocated  : Boolean from Standard;
+    myInterp     : PInterp from WOKTclTools;
+--    myhtables    : SequenceOfHandleTable from WOKTclTools;
+
+end Interpretor;

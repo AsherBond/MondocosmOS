@@ -1,0 +1,18 @@
+-- File:	MS_GlobalEntity.cdl
+-- Created:	Mon Aug 23 18:06:58 1993
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1993
+
+deferred class GlobalEntity 
+
+    from 
+    	MS 
+    inherits Common from MS 
+    uses
+    	HAsciiString from TCollection
+    
+is
+    Initialize(aName :HAsciiString); 
+    
+end;

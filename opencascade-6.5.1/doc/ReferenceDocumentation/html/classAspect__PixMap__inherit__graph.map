@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classImage__PixMap.html" title="This class defines a system&#45;independent bitmap &#160;" alt="" coords="5,237,123,267"/>
+<area shape="rect" id="node9" href="$classWNT__PixMap.html" title="This class defines a windows bitmap &#160;" alt="" coords="147,237,253,267"/>
+<area shape="rect" id="node11" href="$classXw__PixMap.html" title="This class defines a X11 pixmap &#160;" alt="" coords="277,237,373,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="139,83,261,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="125,5,275,35"/>
+</map>

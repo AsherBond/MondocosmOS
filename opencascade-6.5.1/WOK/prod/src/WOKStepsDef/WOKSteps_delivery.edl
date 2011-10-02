@@ -1,0 +1,84 @@
+-- File:	WOKSteps_delivery.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 13 14:13:32 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_delivery_EDL) then
+@set %WOKSteps_delivery_EDL = "";
+
+
+  @set %WOKSteps_DelivSrcGroup  = " src ";
+  @set %WOKSteps_src       = "*WOKDeliv_DeliverySource";
+
+  @set    %WOKSteps_DelivBaseGroup  = "base ";
+  @set %WOKSteps_base      = "*WOKDeliv_DeliveryBase(src)";
+
+  @set    %WOKSteps_DelivSourceGroup  = "cdl.list ";
+  @string %WOKSteps_DelivSourceGroup += "cdl.copy ";
+  @string %WOKSteps_DelivSourceGroup += "source.list ";
+  @string %WOKSteps_DelivSourceGroup += "source.build ";
+
+  @set %WOKSteps_cdl_list       = "*WOKDeliv_DeliveryStepList(src)";
+  @set %WOKSteps_cdl_copy       = "WOKDeliv_DeliveryCopy(cdl.list)";
+  @set %WOKSteps_source_list    = "*WOKDeliv_DeliverySOURCES(src)";
+  @set %WOKSteps_source_build   = "#WOKDeliv_DelivBuildSource(source.list)";
+
+  @set    %WOKSteps_DelivIncludeGroup  = "inc.list ";
+  @string %WOKSteps_DelivIncludeGroup += "inc.copy ";
+
+  @set %WOKSteps_inc_list       = "*WOKDeliv_DeliveryStepList(src)";
+  @set %WOKSteps_inc_copy       = "WOKDeliv_DeliveryCopy(inc.list)";
+
+
+  @set %WOKSteps_DelivLibGroup = "get.list ";
+  @string %WOKSteps_DelivLibGroup += "get.copy ";
+  @set %WOKSteps_get_list  = "*WOKDeliv_DeliveryGET(src)";
+  @set %WOKSteps_get_copy  = "WOKDeliv_DeliveryCopy(get.list)";
+
+
+  @string %WOKSteps_DelivLibGroup += "lib.shared.list ";
+  @string %WOKSteps_DelivLibGroup += "lib.shared.build ";
+
+  @if (%Station != "wnt") then
+     @string %WOKSteps_DelivLibGroup += "lib.arch.list ";
+     @string %WOKSteps_DelivLibGroup += "lib.arch.build ";
+  @endif;
+
+  @string %WOKSteps_DelivLibGroup += "lib.server.list ";
+  @string %WOKSteps_DelivLibGroup += "lib.server.copy ";
+  @string %WOKSteps_DelivLibGroup += "lib.client.list ";
+  @string %WOKSteps_DelivLibGroup += "lib.client.build ";
+
+  @set %WOKSteps_lib_shared_list  = "*WOKDeliv_DeliveryListShared(src)";
+  @set %WOKSteps_lib_shared_build = "WOKDeliv_DeliveryCopy(lib.shared.list)";
+  @set %WOKSteps_lib_arch_list    = "*WOKDeliv_DeliveryArchive(src)";
+  @set %WOKSteps_lib_arch_build   = "#WOKDeliv_DelivBuildArchive(lib.arch.list)";
+
+  @set %WOKSteps_lib_server_list  = "*WOKDeliv_DeliveryStepList(src)";
+
+  @set %WOKSteps_lib_server_copy  = "WOKDeliv_DeliveryCopy(lib.server.list)";
+  @set %WOKSteps_lib_client_list  = "*WOKDeliv_DeliveryStepList(src)";
+  @set %WOKSteps_lib_client_build = "WOKDeliv_DeliveryCopy(lib.client.list)";
+
+  @set    %WOKSteps_DelivExecGroup  = "frontal ";
+  @string %WOKSteps_DelivExecGroup += "exec.list ";
+  @string %WOKSteps_DelivExecGroup += "exec.build ";
+
+  @set %WOKSteps_frontal          = "*WOKDeliv_DeliveryDATA(src)";
+  @set %WOKSteps_exec_list        = "*WOKDeliv_DeliveryExecList(src)";
+  @set %WOKSteps_exec_build       = "#WOKDeliv_DelivBuildExec(exec.list)";
+
+  @set %WOKSteps_DelivFilesGroup  = "files";
+  @set %WOKSteps_files            = "*WOKDeliv_DeliveryFiles(src)";
+
+  @string %WOKSteps_DelivGroup = %WOKSteps_DelivSrcGroup %WOKSteps_DelivBaseGroup %WOKSteps_DelivSourceGroup %WOKSteps_DelivIncludeGroup %WOKSteps_DelivLibGroup %WOKSteps_DelivExecGroup %WOKSteps_DelivFilesGroup;
+
+  @set %WOKSteps_delivery_includes = "obj.inc xcpp.header xcpp.client xcpp.sch ccl";
+
+  @set %WOKSteps_delivery_cdl_list_admfiletype = "admfile";
+  @set %WOKSteps_delivery_inc_list_admfiletype = "dbadmfile";
+  @set %WOKSteps_delivery_lib_shared_list_admfiletype = "stadmfile";
+  @set %WOKSteps_delivery_lib_server_list_admfiletype = "stadmfile";
+
+
+@endif;

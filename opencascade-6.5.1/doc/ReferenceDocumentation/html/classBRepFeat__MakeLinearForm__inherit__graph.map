@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classBRepFeat__RibSlot.html" title="Provides functions to build mechanical features. &#160;&#160;Mechanical features include ribs..." alt="" coords="40,160,181,189"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="5,83,216,112"/>
+<area shape="rect" id="node6" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="11,5,211,35"/>
+</map>

@@ -1,0 +1,231 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs2 { margin-left:4.50pt; margin-top:10.00pt; font-weight:bold; }
+p.whs3 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nFoundation Classes\nMath Utilities\nVectors and matrices");
+addAvenueInfo("Math Utilities","","technical_overview/foundation_classes/math_utilities/p_8_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Vectors and Matrices</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Vectors 
+ and Matrices</font> component provides a C++ implementation of the fundamental 
+ types <font style="font-weight: bold;">Matrix</font> and <font style="font-weight: bold;">Vector</font>, 
+ currently used to define more complex data structures.</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Vector</font> 
+ and <font style="font-weight: bold;">Matrix</font> classes support vectors 
+ and matrices of real values with standard operations such as addition, 
+ multiplication, transposition, inversion etc.</p>
+
+<p class="whs1">Vectors and matrices 
+ have arbitrary ranges which must be defined at declaration time and cannot 
+ be changed after declaration.</p>
+
+<p class="whs2">Example</p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>math_Vector 
+ v(1, 3);<br>
+// a vector of dimension 3 with range (1..3)<br>
+<br>
+math_Matrix m(0, 2, 0, 2);<br>
+// a matrix of dimension 3x3 with range (0..2, 0..2)<br>
+<br>
+math_Vector v(N1, N2);<br>
+// a vector of dimension N2-N1+1 with range (N1..N2)</font></p>
+
+<p class="whs1"><font style="font-weight: bold;">Vector</font> 
+ and <font style="font-weight: bold;">Matrix</font> objects follow &quot;value 
+ semantics&quot;, that is, they cannot be shared and are copied though 
+ assignment.</p>
+
+<p class="whs2">Example</p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>math_Vector 
+ v1(1, 3), v2(0, 2);<br>
+<br>
+v2 = v1; // v1 is copied into v2<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ // a modification of v1 does not affect v2</font></p>
+
+<p class="whs1"><font style="font-weight: bold;">Vector</font> 
+ and <font style="font-weight: bold;">Matrix</font> elements can be retrieved 
+ using indexes, which must be in the range defined upon Vector/Matrix creation. 
+ The elements can be initialized with some numerical value upon creation 
+ as well.</p>
+
+<p class="whs2">Example</p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>math_Vector 
+ v(1, 3);<br>
+math_Matrix m(1, 3, 1, 3);<br>
+Standard_Real value;<br>
+<br>
+v(2) = 1.0;<br>
+value = v(1);<br>
+m(1, 3) = 1.0;<br>
+value = m(2, 2);</font></p>
+
+<p class="whs1">Some operations on 
+ <font style="font-weight: bold;">Vector</font> and <font style="font-weight: bold;">Matrix</font> 
+ objects may not be legal. In this case an exception is raised. Two standard 
+ exceptions are used:</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">Standard_DimensionError</font> exception is 
+ raised when two matrices or vectors involved in an operation are of incompatible 
+ dimensions.</p>
+
+<p class="whs3">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">Standard_RangeError</font> exception is raised 
+ if an attempt to access outside the range defined upon creation of a vector 
+ or a matrix is made.</p>
+
+<p class="whs3">&nbsp;</p>
+
+<p class="whs2">Example</p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>math_Vector 
+ v1(1, 3), v2(1, 2), v3(0, 2);<br>
+<br>
+v1 = v2;<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ // error:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ //<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Standard_DimensionError 
+ is raised<br>
+<br>
+v1 = v3;<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ // OK: ranges are not equal<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ //<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ but dimensions are compatible<br>
+<br>
+v1(0) = 2.0; // error:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ //<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Standard_RangeError 
+ is raised</font></p>
+
+<p class="whs1">&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

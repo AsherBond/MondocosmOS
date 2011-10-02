@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classVrmlData__Box.html" title="VrmlData_Box" alt="" coords="633,5,751,35"/>
+<area shape="rect" id="node9" href="$classVrmlData__Cone.html" title="VrmlData_Cone" alt="" coords="628,59,756,88"/>
+<area shape="rect" id="node11" href="$classVrmlData__Cylinder.html" title="VrmlData_Cylinder" alt="" coords="619,112,765,141"/>
+<area shape="rect" id="node13" href="$classVrmlData__Faceted.html" title="VrmlData_Faceted" alt="" coords="617,165,767,195"/>
+<area shape="rect" id="node17" href="$classVrmlData__IndexedLineSet.html" title="VrmlData_IndexedLineSet" alt="" coords="593,219,791,248"/>
+<area shape="rect" id="node19" href="$classVrmlData__Sphere.html" title="VrmlData_Sphere" alt="" coords="623,272,761,301"/>
+<area shape="rect" id="node2" href="$classVrmlData__Node.html" title="VrmlData_Node" alt="" coords="205,139,333,168"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+<area shape="rect" id="node15" href="$classVrmlData__IndexedFaceSet.html" title="VrmlData_IndexedFaceSet" alt="" coords="840,165,1043,195"/>
+</map>

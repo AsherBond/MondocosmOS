@@ -1,0 +1,49 @@
+ Managing the integration queue:
+
+ Click on a specific report with <Mb1> to select it.
+
+ When the queue contains duplicated elements, these elements are displayed in orange.
+ Click on two elements with <MB1> to get the difference.
+
+ <Integrate> 
+
+  Integrates (wintegre) the selected report into the list of reports.
+  This button is only active if the current user is allowed to write into the repository and 
+  if the report has been selected.
+  
+ <Remove>  
+
+  Removes the report (wstore -rm) from the selected list.
+
+ <Update>  
+
+  Refreshes the window containing the list of reports.
+
+
+
+ Consulting the integration journal:
+
+ <Display> 
+
+  Displays the whole contents of the integration journal.
+
+ <ToDay's>
+
+  Displays the list of integrations performed in the current day.
+
+ <Prev> 
+
+  Goes to the previous day in the integration journal.
+
+ <Next> 
+
+  Goes to he next day in the integration journal.
+
+ <To Editor>
+
+  Sends the integration journal to an editor.
+
+ <Purge>
+
+  Saves the contents of the integration journal and creates a new empty journal. This allows the 
+  current integration journal to be maintained to a reasonable size.

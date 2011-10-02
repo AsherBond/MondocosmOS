@@ -1,0 +1,12 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_HSequenceOfObjectFile_HeaderFile
+#include <WOKBuilder_HSequenceOfObjectFile.hxx>
+#endif
+#ifndef _WOKBuilder_WNTCollector_HeaderFile
+#include <WOKBuilder_WNTCollector.hxx>
+#endif

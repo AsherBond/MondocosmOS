@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepAlgo__Common.html" title="Describes functions for performing a topological &#160;&#160;common operation (Boolean intersection)..." alt="" coords="5,237,157,267"/>
+<area shape="rect" id="node9" href="$classBRepAlgo__Cut.html" title="Describes functions for performing a topological cut &#160;&#160;operation (Boolean subtraction)..." alt="" coords="181,237,299,267"/>
+<area shape="rect" id="node11" href="$classBRepAlgo__Fuse.html" title="Describes functions for performing a topological &#160;&#160;fusion operation (Boolean union)..." alt="" coords="323,237,445,267"/>
+<area shape="rect" id="node13" href="$classBRepAlgo__Section.html" title="Construction of the section lines between two shapes. &#160;&#160;For this Boolean operation..." alt="" coords="469,237,613,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="207,83,417,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="212,5,412,35"/>
+</map>

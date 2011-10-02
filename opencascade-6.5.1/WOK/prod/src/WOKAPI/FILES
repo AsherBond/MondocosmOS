@@ -1,0 +1,9 @@
+WOKAPI_APICommand.hxx
+WOKAPI_Command_Factory.cxx
+WOKAPI_Command_Workshop.cxx
+WOKAPI_Command_Warehouse.cxx
+WOKAPI_Command_Parcel.cxx
+WOKAPI_Command_Workbench.cxx
+WOKAPI_Command_Unit.cxx
+WOKAPI_Command_TriggeredMake.cxx
+

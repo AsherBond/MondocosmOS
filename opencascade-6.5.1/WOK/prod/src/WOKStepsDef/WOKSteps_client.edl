@@ -1,0 +1,52 @@
+-- File:	WOKSteps_client.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 13:28:18 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_client_EDL) then
+@set %WOKSteps_client_EDL = "";
+
+  @set %WOKSteps_SrcGroup    = "src ";
+  @set %WOKSteps_src         = "*WOKStep_CDLUnitSource";
+
+
+  @set %WOKSteps_XcppGroup   = " xcpp.fill xcpp.client ";
+  @set %WOKSteps_xcpp_fill   = "WOKStep_MSFill(src)";
+  @set %WOKSteps_xcpp_client = "WOKStep_ClientExtract(xcpp.fill)";
+
+  @set %WOKSteps_ObjGroup    = "obj.comp ";
+  @set %WOKSteps_obj_comp    = "WOKStep_Compile(xcpp.client)";
+
+  @set %WOKSteps_DepGroup    = "obj.idep ";
+  @set %WOKSteps_obj_idep    = "WOKStep_ImplementationDep(obj.comp,src)";
+
+  @set %WOKSteps_LibGroup    = "obj.lib ";
+  @set %WOKSteps_obj_lib     = "WOKStep_DynamicLibrary(obj.comp)";
+
+  @set %WOKSteps_executable_LinksWith = " obj.lib ";
+  @set %WOKSteps_toolkit_LinksWith    = " obj.lib ";
+  @set %WOKSteps_engine_LinksWith     = " obj.lib ";
+  @set %WOKSteps_interface_LinksWith  = " obj.lib ";
+  @set %WOKSteps_jini_LinksWith  = " obj.lib ";
+
+  @set %WOKSteps_toolkit_ListsWith    = " obj.comp ";
+
+  @set %WOKSteps_delivery_cdl_list_steps = "src";
+  @set %WOKSteps_delivery_cdl_list_extensions = ".cdl";
+  @set %WOKSteps_delivery_inc_list_steps = "xcpp.client";
+  @set %WOKSteps_delivery_inc_list_extensions = ".hxx";
+
+  @set %WOKSteps_delivery_lib_client_list_steps ="obj.idep obj.lib";
+  @set %WOKSteps_delivery_lib_client_list_extensions = ".so .ImplDep";
+  @if (%Station == "hp") then 
+    @set %WOKSteps_delivery_lib_client_list_extensions = ".sl .ImplDep";
+  @endif; 
+  @if (%Station == "mac") then 
+    @set %WOKSteps_delivery_lib_client_list_extensions = ".dylib .ImplDep";
+  @endif; 
+  @if (%Station == "wnt") then
+    @set %WOKSteps_delivery_lib_client_list_extensions = ".DLL .LIB .PDB .ImplDep";
+    @string %WOKSteps_delivery_lib_client_list_steps +=" obj.implib";
+  @endif;
+
+@endif;

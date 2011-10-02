@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classVrmlData__Appearance.html" title="VrmlData_Appearance" alt="" coords="404,59,577,88"/>
+<area shape="rect" id="node7" href="$classVrmlData__ArrayVec3d.html" title="VrmlData_ArrayVec3d" alt="" coords="407,112,575,141"/>
+<area shape="rect" id="node15" href="$classVrmlData__Geometry.html" title="VrmlData_Geometry" alt="" coords="409,272,572,301"/>
+<area shape="rect" id="node31" href="$classVrmlData__Group.html" title="VrmlData_Group" alt="" coords="425,325,556,355"/>
+<area shape="rect" id="node33" href="$classVrmlData__Material.html" title="VrmlData_Material" alt="" coords="417,379,564,408"/>
+<area shape="rect" id="node35" href="$classVrmlData__ShapeNode.html" title="VrmlData_ShapeNode" alt="" coords="407,432,575,461"/>
+<area shape="rect" id="node37" href="$classVrmlData__Texture.html" title="VrmlData_Texture" alt="" coords="419,485,563,515"/>
+<area shape="rect" id="node41" href="$classVrmlData__TextureCoordinate.html" title="VrmlData_TextureCoordinate" alt="" coords="381,539,600,568"/>
+<area shape="rect" id="node43" href="$classVrmlData__TextureTransform.html" title="Implementation of the TextureTransform node." alt="" coords="385,592,596,621"/>
+<area shape="rect" id="node45" href="$classVrmlData__UnknownNode.html" title="VrmlData_UnknownNode" alt="" coords="397,645,584,675"/>
+<area shape="rect" id="node47" href="$classVrmlData__WorldInfo.html" title="VrmlData_WorldInfo" alt="" coords="413,699,568,728"/>
+<area shape="rect" id="node2" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,432,156,461"/>
+<area shape="rect" id="node9" href="$classVrmlData__Color.html" title="VrmlData_Color" alt="" coords="685,5,811,35"/>
+<area shape="rect" id="node11" href="$classVrmlData__Coordinate.html" title="VrmlData_Coordinate" alt="" coords="665,59,831,88"/>
+<area shape="rect" id="node13" href="$classVrmlData__Normal.html" title="VrmlData_Normal" alt="" coords="679,112,817,141"/>
+<area shape="rect" id="node17" href="$classVrmlData__Box.html" title="VrmlData_Box" alt="" coords="689,165,807,195"/>
+<area shape="rect" id="node19" href="$classVrmlData__Cone.html" title="VrmlData_Cone" alt="" coords="684,219,812,248"/>
+<area shape="rect" id="node21" href="$classVrmlData__Cylinder.html" title="VrmlData_Cylinder" alt="" coords="675,272,821,301"/>
+<area shape="rect" id="node23" href="$classVrmlData__Faceted.html" title="VrmlData_Faceted" alt="" coords="673,325,823,355"/>
+<area shape="rect" id="node27" href="$classVrmlData__IndexedLineSet.html" title="VrmlData_IndexedLineSet" alt="" coords="649,379,847,408"/>
+<area shape="rect" id="node29" href="$classVrmlData__Sphere.html" title="VrmlData_Sphere" alt="" coords="679,432,817,461"/>
+<area shape="rect" id="node25" href="$classVrmlData__IndexedFaceSet.html" title="VrmlData_IndexedFaceSet" alt="" coords="896,325,1099,355"/>
+<area shape="rect" id="node39" href="$classVrmlData__ImageTexture.html" title="VrmlData_ImageTexture" alt="" coords="655,485,841,515"/>
+</map>

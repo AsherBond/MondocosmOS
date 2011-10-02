@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classIGESSelect__ModelModifier.html" title="IGESSelect_ModelModifier" alt="" coords="27,315,224,344"/>
+<area shape="rect" id="node4" href="$classIFSelect__Modifier.html" title="This class gives a frame for Actions which can work globally &#160;&#160;on a File once completely..." alt="" coords="56,237,195,267"/>
+<area shape="rect" id="node6" href="$classIFSelect__GeneralModifier.html" title="This class gives a frame for Actions which modify the effect &#160;&#160;of a Dispatch, i.e..." alt="" coords="31,160,220,189"/>
+<area shape="rect" id="node8" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="64,83,187,112"/>
+<area shape="rect" id="node10" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="51,5,200,35"/>
+</map>

@@ -1,0 +1,45 @@
+#ifndef _WOKernel_UnitGraph_HeaderFile
+#include <WOKernel_UnitGraph.hxx>
+#endif
+#ifndef _WOKernel_Locator_HeaderFile
+#include <WOKernel_Locator.hxx>
+#endif
+#ifndef _WOKUtils_Shell_HeaderFile
+#include <WOKUtils_Shell.hxx>
+#endif
+#ifndef _WOKBuilder_MSTranslatorIterator_HeaderFile
+#include <WOKBuilder_MSTranslatorIterator.hxx>
+#endif
+#ifndef _WOKTools_MapOfHAsciiString_HeaderFile
+#include <WOKTools_MapOfHAsciiString.hxx>
+#endif
+#ifndef _WOKMake_IndexedDataMapOfHAsciiStringOfInputFile_HeaderFile
+#include <WOKMake_IndexedDataMapOfHAsciiStringOfInputFile.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKMake_DataMapOfHAsciiStringOfStep_HeaderFile
+#include <WOKMake_DataMapOfHAsciiStringOfStep.hxx>
+#endif
+#ifndef _WOKMake_IndexedDataMapOfBuildProcessGroup_HeaderFile
+#include <WOKMake_IndexedDataMapOfBuildProcessGroup.hxx>
+#endif
+#ifndef _WOKMake_DataMapOfHAsciiStringOfSequenceOfHAsciiString_HeaderFile
+#include <WOKMake_DataMapOfHAsciiStringOfSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKMake_BuildProcessGroup_HeaderFile
+#include <WOKMake_BuildProcessGroup.hxx>
+#endif
+#ifndef _WOKMake_Step_HeaderFile
+#include <WOKMake_Step.hxx>
+#endif
+#ifndef _TColStd_SequenceOfHAsciiString_HeaderFile
+#include <TColStd_SequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif

@@ -1,0 +1,67 @@
+-- File:	WOKAPI_MakeOption.cdl
+-- Created:	Sat Apr 13 00:38:56 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class MakeOption from WOKAPI 
+
+	---Purpose: 
+
+uses
+    StepType                from WOKAPI,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+    
+is
+
+    Create returns MakeOption from WOKAPI;
+
+    Create(another : MakeOption from WOKAPI) returns MakeOption from WOKAPI;
+
+    Create( acode     : HAsciiString from TCollection; 
+    	    atype     : StepType from WOKAPI;
+    	    targets   : HSequenceOfHAsciiString from TColStd;
+            isforced  : Boolean from Standard)
+    	returns MakeOption from WOKAPI;
+	
+    Create( acode     : HAsciiString from TCollection; 
+    	    atype     : StepType from WOKAPI;
+    	    targets   : HSequenceOfHAsciiString from TColStd;
+            isforced  : Boolean from Standard;
+    	    platforms : HSequenceOfHAsciiString from TColStd)
+    	returns MakeOption from WOKAPI;
+
+    Code(me)
+    	returns HAsciiString from TCollection;
+    SetCode(me:out; acode : HAsciiString from TCollection);
+    
+    Type(me)
+    	returns StepType from WOKAPI;
+    SetType(me:out; atype : StepType from WOKAPI);
+    
+    Targets(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+    SetTargets(me:out; target : HSequenceOfHAsciiString from TColStd);
+    
+    IsForced(me) 
+    	returns Boolean from Standard;
+    SetForce(me:out; aflg : Boolean from Standard);
+    
+    Platforms(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+    SetPlatforms(me:out; platform : HSequenceOfHAsciiString from TColStd);
+   
+fields
+
+    mycode      : HAsciiString from TCollection;
+    myforce     : Boolean from Standard;
+    mytype      : StepType from WOKAPI;
+    mytargets   : HSequenceOfHAsciiString from TColStd;
+    myplatforms : HSequenceOfHAsciiString from TColStd;
+    
+end MakeOption;
+
+
+

@@ -1,0 +1,656 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Building Modules</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-top:0; margin-bottom:0; color:#008080; font-weight:bold; }
+p.whs2 { margin-top:0; margin-bottom:0; }
+table.whs3 { x-cell-content-align:top; width:100%; border-spacing:0px; }
+col.whs4 { width:19.59%; }
+col.whs5 { width:80.41%; }
+tr.whs6 { x-cell-content-align:top; }
+td.whs7 { width:19.59%; padding-right:10px; padding-left:10px; border-right-style:none; border-left-style:none; border-top-style:none; border-bottom-style:none; }
+p.whs8 { margin-right:0px; }
+img_whs9 { border:none; width:156px; height:292px; float:none; border-style:none; }
+td.whs10 { width:80.41%; padding-right:10px; padding-left:10px; border-top-style:none; border-bottom-style:none; border-right-style:none; }
+p.whs11 { margin-top:0; margin-bottom:0; text-align:justify; font-weight:bold; color:#000080; }
+p.whs12 { margin-top:0; margin-bottom:0; text-align:justify; }
+p.whs13 { text-align:justify; }
+p.whs14 { margin-left:6.00pt; }
+p.whs15 { margin-left:48px; margin-top:0pt; }
+p.whs16 { margin-left:48px; }
+ul.whs17 { list-style:square; }
+ul.whs18 { list-style:disc; }
+p.whs19 { margin-left:96px; }
+p.whs20 { margin-left:12px; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs1 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs2 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs8 {margin-right:1pt; }";
+  strNSS += "p.whs11 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs12 {margin-top:1pt;margin-bottom:1pt; }";
+  strNSS += "p.whs15 {margin-top:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Welcome to Open CASCADE Technology\nBuilding Modules\nBuilding Modules");
+addAvenueInfo("Building Modules","","Building_Tools_Generation.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Building Modules </p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">Source package</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">The source package of the Open 
+ CASCADE Technology including the source files of samples and tools and 
+ the set of building procedures is available for self-dependent preparation 
+ binary files on UNIX and Windows platforms. </p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">The building tools are delivered 
+ in the form of Visual C++ Projects for Windows platform and a Makefile 
+ procedure for Unix platform.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="100%" class="whs3">
+<col class="whs4">
+<col class="whs5">
+
+<tr valign="top" class="whs6">
+<td width="19.59%" class="whs7">
+<p class="whs8"><img src="../../building.png" x-maintain-ratio="TRUE" width="156px" height="292px" border="0" class="img_whs9"></td>
+<td width="80.41%" class="whs10">
+<p class="whs11"><span style="color: #008080;"><font color=teal >Description 
+ of the Directory Tree</font></span> </p>
+<p class="whs12"><span style="font-weight: bold;"><B>data</B></span> 
+ - This folder contains files in various formats for experiments with OCCT 
+ functionality</p>
+<p class="whs12"><span style="font-weight: bold;"><B>doc</B></span> 
+ - This folder contains OCCT documentation;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>doc/Overview</B></span> 
+ - This folder contains OCCT Overview documentation;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>doc/ReferenceDocumentation</B></span> 
+ - This folder contains OCCT Reference documentation generated by Doxygen;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/adm/make</B></span> 
+ - This folder contains files of Makefile 
+ procedure , which allow rebuilding OCCT on Unix platforms;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/adm/win32</B></span> 
+ - This folder contains Visual Studio workspace for Visual C++ &nbsp;&nbsp;2005, 
+ 2008 and 2010, which allows rebuilding OCCT on Windows platform in 32 
+ bit mode.</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/adm/win64</B></span> 
+ - This folder contains Visual Studio workspace for Visual C++ 2005, 2008 
+ and 2010, which allows rebuilding OCCT on Windows platform in 64 bit mode.</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/drv</B></span> 
+ - This folder contains source files generated by WOK (private header files 
+ and instantiations 
+ of generic classes);</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/inc</B></span> 
+ - This folder contains all OCCT header files;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>ros/src</B></span> 
+ - This folder contains OCCT source files. They are organized in folders, 
+ one per development unit;</p>
+<p class="whs12"><span style="font-weight: bold;"><B>Samples</B></span> 
+ - This folder contains source files and building procedure for Standard 
+ samples of applications and Tutorial (c# and mfc 
+ samples are applicable only for Windows platform);</p>
+<p class="whs2">&nbsp;</td></tr>
+</table>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p><font style="color: #008080; font-weight: bold;"
+		color=#008080>Common pre-requisites.</font> </p>
+
+<p class="whs13">Open CASCADE Technology is certified using 
+ STL implementation 
+ by the supported compilers. Nevertheless the source code can be rebuilt 
+ using other implementations (for example STLPort) 
+ but OPEN CASCADE S.A.S. did not undertake any certification actions on 
+ such implementations and therefore cannot guarantee reliable work with 
+ other implementations.</p>
+
+<p class="whs13">You need about 4 GB 
+ of free disk space to rebuild Open CASCADE Technology.&nbsp; </p>
+
+<p class="whs13">Before compilation, you need to build (or 
+ to install the binaries of) 3<font style="vertical-align: super;">rd</font> 
+ party libraries mentioned in Hardware and Software Requirements. </p>
+
+<p class=ReleaseNotes-3
+	style="margin-top: 0; margin-bottom: 0;">&nbsp;</p>
+
+<p><font style="color: #008080; font-weight: bold;"
+		color=#008080>Rebuilding on Windows.</font> </p>
+
+<p class="whs2">&nbsp;</p>
+
+<p><font style="color: #ff0000; font-weight: bold;"
+		color=#FF0000>Attention:</font></p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Libraries (dll 
+ ,dlld ,lib 
+ and libd) and 
+ executable (exe) 
+ files built by MS Visual Studio projects on Windows platform, are now 
+ placed to the <span style="font-weight: bold;"><B>ros/win32</B></span><span 
+ style="font-weight: bold;"><B>/vc8, vc9</B></span> and <span style="font-weight: bold;"><B>vc10</B></span> 
+ correspondingly (<span style="font-weight: bold;"><B>ros/win64</B></span> 
+ for 64-bit) 
+ folder. </p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Before compilation, 
+ you must define a path to the header and library files of TclTk, 
+ Freetype, Ftgl, FreeImage, gl2ps and TBB. Fot this, use MS Visual Studio 
+ menu Tools/Option from Directories tab or edit env_build.bat file to define 
+ PRODUCTS_PATH variable.</p></li>
+</ul>
+
+<p class="whs15"><span style="margin-left: 6.00pt;">For 
+ building Qt samples make sure that the path to Qt (QTDIR) has also been 
+ added.</span></p>
+
+<p class="whs16">gl2ps, TBB and FreeImage are optional products. 
+ To build Open CASCADE Technology with or without these products, use variable 
+ CSF_DEFINES to specify additional compiler macros (list separated by semicolons, 
+ or just semicolon if empty):</p>
+
+<ul type="square" class="whs17">
+	
+	<li class=kadov-p><p class="whs16">HAVE_TBB - use if you 
+ want to build OCCT with Intel TBB</p></li>
+	
+	<li class=kadov-p><p class="whs16">HAVE_FREEIMAGE - use 
+ if you want to build OCCT with FreeImage</p></li>
+	
+	<li class=kadov-p><p class="whs16">HAVE_GL2PS - use if 
+ you want to build OCCT with gl2ps</p></li>
+</ul>
+
+<p class="whs16">Examples:</p>
+
+<ul type="disc" class="whs18">
+	
+	<li class=kadov-p><p class="whs16">Building without gl2ps, 
+ TBB and FreeImage:</p></li>
+</ul>
+
+<p class="whs19">set CSF_DEFINES=;</p>
+
+<ul type="disc" class="whs18">
+	
+	<li class=kadov-p><p class="whs16">Building with gl2ps, 
+ TBB and FreeImage:</p></li>
+</ul>
+
+<p class="whs19">set CSF_DEFINES=HAVE_TBB;HAVE_FREEIMAGE;HAVE_GL2PS</p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Use script msvc.bat 
+ located in the <span style="font-weight: bold;"><B>ros</B></span> sub-folder 
+ of OCCT installation directory for launching MS Visual Studio in the environment 
+ configured for building OCCT libraries. The script accepts optional arguments: 
+ the version of Visual Studio to launch (<span style="font-weight: bold;"><B>vc8</B></span>, 
+ <span style="font-weight: bold;"><B>vc9</B></span>, or <span style="font-weight: bold;"><B>vc10</B></span>), 
+ the architecture (<span style="font-weight: bold;"><B>win32</B></span> or <span 
+ style="font-weight: bold;"><B>win64</B></span>), the mode of libraries to use 
+ for execution (<span style="font-weight: bold;"><B>Debug</B></span> or <span 
+ style="font-weight: bold;"><B>Release</B></span>), and the path to the solution 
+ file.</p></li>
+</ul>
+
+<p><font style="color: #008080; font-weight: bold;"
+		color=#008080>Rebuilding on Windows with MS Visual Studio project 
+ files.</font></p>
+
+<p><span style="font-weight: bold;"><B>ros/adm/win32</B></span> 
+ and <span style="font-weight: bold;"><B>ros/adm/win64</B></span> folder contain 
+ vc8, vc9 and vc10 folders with MS Visual Studio project files for MS VC 
+ 2005, 2008 and 2010 correspondingly that can be used to rebuild Open CASCADE 
+ Technology in 32 or 64 bit mode. </p>
+
+<p>Each of them describes and builds one library (.dll) 
+ or executable (.exe). 
+ They are designed to compile sources and to search header files in a directory 
+ structure created from downloaded archives. All these projects are gathered 
+ in workspaces corresponding to OCCT modules.</p>
+
+<p>&nbsp;</p>
+
+<p>The workspaces are listed below and must be rebuilt in accordance with 
+ that order. &nbsp;</p>
+
+<p>Below is the ordered list of workspaces to rebuild. </p>
+
+<ul>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Foundation Classes 
+ (file FoundationClasses.sln)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Modeling Data (file 
+ ModelingData.sln)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Modeling Algorithms 
+ (file ModelingAlgorithms.sln)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Visualization (file 
+ Visualization.sln)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Application Framework 
+ (file ApplicationFramework.sln)&nbsp;</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Data Exchange (file 
+ DataExchange.sln)</p></li>
+	
+	<li style="font-size: 10pt;"
+		class=kadov-p><p class="whs14">Draw (file Draw.sln)</p></li>
+</ul>
+
+<p class="whs14">Additionally a common MS Visual Studio 
+ solution file OCCT.sln is provided. This solution comprises all OCCT projects 
+ and can be used for (re)building a complete set of OCCT libraries or separate 
+ OCCT module in one instance of Visual Studio.</p>
+
+<p class="whs14">&nbsp;</p>
+
+<p><font style="color: #008080; font-weight: bold;"
+		color=#008080>Rebuilding on Unix and Linux 
+ with autoconf, 
+ automake and 
+ libtool scripts.</font> 
+ </p>
+
+<p class="whs14"><span lang=EN-US>During the compilation 
+ by makefiles 
+ some Linux OS and on a station with NVIDIA 
+ video card you may experience problems because the i</span>nstallation 
+ procedure of NVIDIA 
+ video driver removes library libGL.so 
+ included in package libMesaGL 
+ from directory /usr/X11R6/lib 
+ and places this library libGL.so 
+ in directory /usr/lib. 
+ However, libtool 
+ expects to find the library in directory /usr/X11R6/lib, 
+ which causes compilation crash (See /usr/X11R6/lib/libGLU.la). 
+ <br>
+We suggest making links: <span style="font-family: 'Lucida Console', monospace;"><br>
+<br>
+ln -s /usr/lib/libGL.so 
+ /usr/X11R6/lib/libGL.so 
+ <br>
+ln -s /usr/lib/libGL.la 
+ /usr/X11R6/lib/libGL.la</span> 
+ </p>
+
+<p class="whs20">On Unix OCCT can be also rebuilt using scripts 
+ based on GNU autoconf, 
+ automake and 
+ libtool. These 
+ scripts are located in the $CASROOT/adm/make/... 
+ folders. </p>
+
+<p class="whs20">Set the environment variables CC to an ANSI 
+ C compiler, 
+ and CXX to 
+ your C++ compiler. If you are using GNU GCC, 
+ you can skip this step. In many instances the same option must be passed 
+ to the link as well, do that by setting LDFLAGS.</p>
+
+<p class="whs20">Now use the ./configure with the correct 
+ options as described below.</p>
+
+<p class=Blockquote><font style="font-family: Arial;
+									font-size: 10pt;
+									color: #000000;"
+							face=Arial
+							size=2
+							color=#000000>--with-tcl=/path-where-tcl-is-installed 
+ :<br>
+for example --with-tcl=/usr/lib 
+ </font></p>
+
+<p class=Blockquote><font style="font-family: Arial;
+									font-size: 10pt;
+									color: #000000;"
+							face=Arial
+							size=2
+							color=#000000>--with-tk=/path-where-tk-is-installed 
+ :<br>
+for example --with-tk=/usr/lib </font></p>
+
+<p class=Blockquote><font style="font-family: Arial;
+									font-size: 10pt;
+									color: #000000;"
+							face=Arial
+							size=2
+							color=#000000>--with-gl-include=/path-where-gl-included-are-installed 
+ :<br>
+for example --with-gl-include=/usr/X11R6/include if GL/gl.h is located 
+ in /usr/X11R6/include<br>
+<br>
+--with-gl-library=/path-where-gl- library-is-installed :<br>
+for example --with-gl-library=/usr/X11R6/lib if GL.so is located in this 
+ directory<br>
+<br>
+--with-xmu-include=/path-where-xmu-included-are-defined :<br>
+for example --with-xmu-include=/usr/X11/R6/include if /X11/Xmu/Xmu.h is 
+ located in /usr/X11R6/include<br>
+<br>
+--with-xmu-library=/path-where-xmu-library-is-installed :<br>
+for example --with-xmu-library=/usr/X11R6/lib </font></p>
+
+<p class=Blockquote
+	style="font-size: 10pt;"><font style="font-family: Arial;"
+									face=Arial>–</font>with-tbb-include=/path-where-tbb-include-is-installed 
+ </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">for example –with-tbb-include =/usr/tbb/include 
+ if tbb.h is located in this directory </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">–with-tbb-library=/path-where-tbb-library-are-defined</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">for example, –with-tbb-library=/usr/tbb/lib 
+ if libtbb.so and libtbbmalloc.so is located in this directory</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">--with-freetype=/path-where-freetype-is-installed</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">--with-ftgl=/path-where-ftgl-is-installed</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;">--with-gl2ps=/path-where-gl2ps-is-installed</p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">--with-freeimage==/path-where-freeimage-is-installed</p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">--with-qt=/path-where-qt-is-installed 
+ </p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">--enable-static=yes if 
+ you want to generate static library<br>
+--enable-shared=no if you don't want to generate shared library by default 
+ only shared library are built.</p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">--enable-debug=yes/no 
+ - building in debug mode (yes: set -g key of compiler). <br>
+--enable-production=yes/no - building in optimized mode&nbsp; (yes: set 
+ -O key of compiler). </p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;"><span style="font-family: Arial; font-size: 10pt;"><font size=2 style="font-size:10pt;">Additional 
+ flags:</font></span></p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">--disable-draw - allows 
+ OCCT building without Draw.</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			font-weight: bold;
+			margin-left: 12px;">Building without optional products:</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">Open CASCADE technology will be built without 
+ optional products if you will not define the following options:</p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">–with-tbb-include=, –with-tbb-library= 
+ (without tbb), --with-gl2ps= (without gl2ps) and --with-freeimage= (without 
+ freeimage)</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">If you want to build Draw, define the following 
+ flags:</p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;"><span>-</span><span>-enable-draw=yes 
+ --with-tcl=/path-where-tcl-is-installed --with-tk=/path-where-tk-is-installed</span></p>
+
+<p class=Blockquote
+	style="font-family: Arial; font-size: 10pt;">&nbsp;</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;
+			color: #ff0000;
+			font-weight: bold;">Attention<span style="font-weight: normal; color: #000000;"><font color=black >: 
+ 64-bit platforms are detected automatically.</font></span></p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">&nbsp;</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">Example:</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">The ./configure should be executed with 
+ the flags depending on the type of UNIX platform as described below: </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;--with-gl-include=/usr/include 
+ --with-gl-library=/usr/lib&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-xmu-include=/usr/X11R6/include/X11&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-xmu-library=/usr/X11R6/lib&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-tcl=${TCLHOME}/lib&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-tk=${TCLHOME}/lib&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;"><span style="font-size: 10pt; font-family: 'Lucida Console', monospace;"><font size=2 style="font-size:10pt;">flags=&quot;$flags 
+ –with-tbb-include =/usr/tbb/include&quot;</font></span></p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ –with-tbb-library=/usr/tbb/lib&quot;</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-freetype=/usr/freetype-2.3.7&quot;</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-ftgl=/usr/ftgl-2.1.2&quot;</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-gl2ps=/usr/gl2ps-1.3.5&quot;</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --with-freeimage=/usr/freeimage-3.14.1&quot;</p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --disable-debug --enable-production&quot; </p>
+
+<p class=Blockquote
+	style="font-size: 10pt;
+			margin-left: 12px;
+			font-family: 'Lucida Console', monospace;">flags=&quot;$flags 
+ --enable-draw=yes”</p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;"><span style="font-family: 'Lucida Console', monospace;">./configure 
+ $flags --prefix=${INSTALL_DIR}</span> </p>
+
+<p class=Blockquote
+	style="font-family: Arial;
+			font-size: 10pt;
+			margin-left: 12px;">where <span style="font-family: 'Lucida Console', monospace;">${INSTALL_DIR}</span> 
+ is the folder where Open CASCADE Technology will be installed.</p>
+
+<p class="whs20">If configure exits successfully, you can 
+ build OCCT with <span style="font-family: 'Lucida Console', monospace;">make</span> 
+ command.</p>
+
+<p class="whs20"><span style="font-family: 'Lucida Console', monospace;">make 
+ install</span> command will install OCCT in usable form without any additional 
+ operations.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

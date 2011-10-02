@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classPCDM__StorageDriver.html" title="persistent implemention of storage. &#160;" alt="" coords="365,165,531,195"/>
+<area shape="rect" id="node2" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,165,156,195"/>
+<area shape="rect" id="node7" href="$classBinLDrivers__DocumentStorageDriver.html" title="persistent implemention of storage a document in a binary file &#160;" alt="" coords="581,59,853,88"/>
+<area shape="rect" id="node15" href="$classMDocStd__DocumentStorageDriver.html" title="storage driver for a standard document &#160;" alt="" coords="589,165,845,195"/>
+<area shape="rect" id="node23" href="$classXmlLDrivers__DocumentStorageDriver.html" title="XmlLDrivers_DocumentStorageDriver" alt="" coords="580,272,855,301"/>
+<area shape="rect" id="node9" href="$classBinDrivers__DocumentStorageDriver.html" title="persistent implemention of storage a document in a binary file &#160;" alt="" coords="921,5,1185,35"/>
+<area shape="rect" id="node13" href="$classBinTObjDrivers__DocumentStorageDriver.html" title="BinTObjDrivers_DocumentStorageDriver" alt="" coords="907,59,1200,88"/>
+<area shape="rect" id="node11" href="$classBinXCAFDrivers__DocumentStorageDriver.html" title="BinXCAFDrivers_DocumentStorageDriver" alt="" coords="1253,5,1552,35"/>
+<area shape="rect" id="node17" href="$classStdDrivers__DocumentStorageDriver.html" title="storage driver of a Part document &#160;" alt="" coords="920,112,1187,141"/>
+<area shape="rect" id="node19" href="$classStdLDrivers__DocumentStorageDriver.html" title="storage driver of a Part document &#160;" alt="" coords="916,165,1191,195"/>
+<area shape="rect" id="node21" href="$classXCAFDrivers__DocumentStorageDriver.html" title="storage driver of a XS document &#160;" alt="" coords="915,219,1192,248"/>
+<area shape="rect" id="node25" href="$classXmlDrivers__DocumentStorageDriver.html" title="XmlDrivers_DocumentStorageDriver" alt="" coords="920,272,1187,301"/>
+<area shape="rect" id="node29" href="$classXmlTObjDrivers__DocumentStorageDriver.html" title="XmlTObjDrivers_DocumentStorageDriver" alt="" coords="904,325,1203,355"/>
+<area shape="rect" id="node27" href="$classXmlXCAFDrivers__DocumentStorageDriver.html" title="storage driver of a XS document &#160;" alt="" coords="1252,272,1553,301"/>
+</map>

@@ -1,0 +1,44 @@
+-- File:	WOKStep_ToolkitSource.cdl
+-- Created:	Thu May 29 11:07:13 1997
+-- Author:	Jean GAUTIER
+--		<jga@hourax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+class ToolkitSource from WOKStep
+inherits Source from WOKStep
+
+	---Purpose: Computes Toolkit Source File 
+	--          List.
+
+uses
+    BuildProcess         from WOKMake,
+    InputFile            from WOKMake,
+    HSequenceOfInputFile from WOKMake,
+    DevUnit              from WOKernel,
+    File                 from WOKernel,
+    HSequenceOfFile      from WOKernel,
+    HSequenceOfEntity    from WOKBuilder,
+    HAsciiString         from TCollection
+
+is
+
+    Create(abp      : BuildProcess    from WOKMake; 
+    	   aunit    : DevUnit         from WOKernel; 
+    	   acode    : HAsciiString    from TCollection;  
+    	   checked, hidden : Boolean  from Standard)  
+    	returns mutable ToolkitSource from WOKStep;
+
+    GetPACKAGES(me) 
+    	returns File from WOKernel
+    	is  protected;
+
+    AddPACKAGES(me:mutable; unitcdl : InputFile from WOKMake) is protected;
+
+    Execute(me: mutable; execlist : HSequenceOfInputFile from WOKMake)
+    ---Purpose: Executes step    
+    --          Computes output files
+    	is redefined private;
+
+end ToolkitSource;
+
+

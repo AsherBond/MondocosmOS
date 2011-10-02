@@ -1,0 +1,9 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_FDescr_HeaderFile
+#include <WOKUnix_FDescr.hxx>
+#endif
+#ifndef _WOKUnix_Path_HeaderFile
+#include <WOKUnix_Path.hxx>
+#endif

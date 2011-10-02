@@ -1,0 +1,20 @@
+-- File:	WOKBuilder_Specification.cdl
+-- Created:	Thu Aug 10 20:47:10 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Specification from WOKBuilder 
+inherits       Entity        from WOKBuilder
+
+	---Purpose: Base Class for spec definition files
+
+uses
+    Path from WOKUtils
+
+
+is
+    Initialize(apath : Path from WOKUtils);
+
+end Specification;

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{62C3C217-197A-133A-1948-801D204668DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CPPClient">
+      <UniqueIdentifier>{8A6DD14E-1631-0EC2-0AE8-549C5C07E24D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\CPPClient\CPPClient.cxx">
+      <Filter>Source files\CPPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPClient\CPPClient_Enum.cxx">
+      <Filter>Source files\CPPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPClient\CPPClient_MPV.cxx">
+      <Filter>Source files\CPPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPClient\CPPClient_Package.cxx">
+      <Filter>Source files\CPPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CPPClient\CPPClient_Transient.cxx">
+      <Filter>Source files\CPPClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

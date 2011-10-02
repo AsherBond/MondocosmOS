@@ -1,0 +1,100 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Package.cdl	1.1
+-- File:	MS_Package.cdl
+-- Created:	Tue Jan 29 04:41:14 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Package 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits GlobalEntity from MS 
+    uses 
+    	HSequenceOfHAsciiString from TColStd,
+	ExternMet from MS,
+     	HSequenceOfExternMet from MS,
+	Type from MS,
+	HAsciiString from TCollection
+
+is
+
+    Create(aPackage :HAsciiString) 
+    	returns mutable Package from MS;
+    
+    Use(me: mutable; aPackage: HAsciiString);
+    Uses(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    
+    IsUsed(me; aPackage: HAsciiString)
+    	returns Boolean from Standard;
+	  
+    Class(me: mutable; aClass: HAsciiString);
+    Classes(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasClass(me;  aClass: HAsciiString)
+    	returns Boolean from Standard;
+
+    Except(me: mutable; aExcept: HAsciiString);
+    Excepts(me) 
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasExcept(me;  anExcept : HAsciiString)
+    	returns Boolean from Standard;
+
+
+    Enum(me: mutable; aEnum: HAsciiString);
+    Enums(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasEnum(me;  anEnum: HAsciiString)
+    	returns Boolean from Standard;
+
+    Alias(me: mutable; anAlias: HAsciiString);
+    Aliases(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasAlias(me;  anEnum: HAsciiString)
+    	returns Boolean from Standard;
+     
+    Pointer(me: mutable; aPointer: HAsciiString);
+    Pointers(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasPointer(me;  anEnum: HAsciiString)
+    	returns Boolean from Standard;
+     
+    Imported(me: mutable; anImported: HAsciiString);
+    Importeds(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasImported(me;  anEnum: HAsciiString)
+    	returns Boolean from Standard;
+     
+    Primitive(me: mutable; anPrimitive: HAsciiString);
+    Primitives(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    HasPrimitive(me;  anEnum: HAsciiString)
+    	returns Boolean from Standard;
+     
+    Method(me: mutable; aMethod: ExternMet from MS);
+    Methods(me) 
+     	returns mutable HSequenceOfExternMet from MS;
+    Comment(me)
+         returns HAsciiString from TCollection;
+    SetComment(me : mutable; aComment : HAsciiString from TCollection);
+
+	
+fields
+
+    myUses     : HSequenceOfHAsciiString from TColStd;
+    myClasses  : HSequenceOfHAsciiString from TColStd;
+    myExcepts  : HSequenceOfHAsciiString from TColStd;
+    myEnums    : HSequenceOfHAsciiString from TColStd;
+    myAliases  : HSequenceOfHAsciiString from TColStd;
+    myPointers : HSequenceOfHAsciiString from TColStd;
+    myImports  : HSequenceOfHAsciiString from TColStd;
+    myPrims    : HSequenceOfHAsciiString from TColStd;
+    
+    myMethods  : HSequenceOfExternMet from MS;
+    myPackComment  : HAsciiString from TCollection;   -- Comment to Package declaration 
+
+end Package from MS;
+

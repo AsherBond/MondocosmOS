@@ -1,0 +1,34 @@
+-- File:	WOKernel_DBMSystem.cdl
+-- Created:	Fri Jul 28 16:36:25 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class DBMSystem from WOKernel 
+
+	---Purpose: 
+
+uses
+    DBMSID            from WOKernel,
+    HSequenceOfDBMSID from WOKernel,
+    HAsciiString       from TCollection
+raises
+    ProgramError     from Standard
+is
+
+    GetID(myclass; astring : HAsciiString from TCollection) 
+    	returns DBMSID      from WOKernel
+	raises ProgramError from Standard;
+
+    IsNameKnown(myclass; astring : HAsciiString from TCollection) 
+    	returns Boolean from Standard;
+
+    GetName(myclass; anid : DBMSID from WOKernel)
+       	returns HAsciiString from TCollection;
+
+    GetHSeqOfDBMS(myclass; astr : HAsciiString from TCollection)
+    	returns HSequenceOfDBMSID from WOKernel
+    	raises  ProgramError from Standard;
+
+end DBMSystem;

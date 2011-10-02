@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classTransferBRep__ShapeBinder.html" title="A ShapeBinder is a BinderOfShape with some additional services &#160;&#160;to cast the Result..." alt="" coords="13,315,216,344"/>
+<area shape="rect" id="node2" href="$classTransfer__Binder.html" title="A Binder is an auxiliary object to Map the Result of the &#160;&#160;Transfer of a given Object..." alt="" coords="52,160,177,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="53,83,176,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="40,5,189,35"/>
+</map>

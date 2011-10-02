@@ -1,0 +1,19 @@
+-- File:	WOKBuilder_Miscellaneous.cdl
+-- Created:	Mon Oct 16 16:30:45 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Miscellaneous from WOKBuilder 
+inherits Entity from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Path from WOKUtils
+is
+    
+    Create(apath : Path from WOKUtils) returns mutable Miscellaneous from WOKBuilder;
+
+end Miscellaneous;

@@ -1,0 +1,32 @@
+/* XPM */
+static char * warehouse_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"19 19 7 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor1	m black	c black",
+"X	c #CCCCBFBFAAAA",
+"o	c #66668080AAAA",
+"O	c #9999BFBFFFFF",
+"+	c #999980805555",
+"@	s iconColor2	m white	c white",
+/* pixels */
+"                   ",
+"                   ",
+"                   ",
+"     .XXXXXXXXXo.  ",
+"      OXOXOXOXO.o  ",
+"   ............o+  ",
+"   .@XO.OX.X.X.oo  ",
+"   .@XXXXXXXXX.o+  ",
+"   .@XO.@..XOX.oo  ",
+"   .@X.@+.@..X.o+  ",
+"   .@X@.oo...X.oo  ",
+"   .@X.@+.@..X.o+  ",
+"   .@XO.@..X...oo  ",
+"   .@XXX..XXXX.o+  ",
+"   .@XOXOXOXOX.oo  ",
+"   .@XX.XX.X.X..   ",
+"   .Oooooooooo.    ",
+"     o      +.     ",
+"     .      ..     "};

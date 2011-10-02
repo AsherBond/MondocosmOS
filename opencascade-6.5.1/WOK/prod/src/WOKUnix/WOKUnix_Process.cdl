@@ -1,0 +1,89 @@
+-- File:	WOKUnix_Process.cdl
+-- Created:	Tue May  9 14:18:26 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+private class Process from WOKUnix
+inherits TShared from MMgt
+
+
+	---Purpose: 
+
+
+uses
+    HAsciiString    from TCollection,
+    ProcessOutput   from WOKUnix,
+    Timeval         from WOKUnix,
+    FDSet           from WOKUnix,
+    ArgTable        from WOKTools,
+    FDescr          from WOKUnix,
+    PopenOutputMode from WOKUnix,
+    PopenBufferMode from WOKUnix
+raises 
+    --ProgramError from Standard, 
+    OSDError     from OSD
+is
+    
+    Create(argcount : Integer; cmdline: ArgTable from WOKTools;
+    	   anoutputmode : PopenOutputMode from WOKUnix = WOKUnix_POPEN_MIX_OUT_ERR; 
+           abuffermode  : PopenBufferMode from WOKUnix = WOKUnix_POPEN_BUFFERED;
+    	   atimeout     : Integer from Standard = -1) 
+    	returns mutable Process;
+	     
+    Create(cmdline : HAsciiString from TCollection;
+    	   anoutputmode : PopenOutputMode from WOKUnix = WOKUnix_POPEN_MIX_OUT_ERR; 
+           abuffermode  : PopenBufferMode from WOKUnix = WOKUnix_POPEN_BUFFERED;
+    	   atimeout     : Integer from Standard = -1) 
+    	returns mutable Process;
+
+    --Command(me) returns ProgramError from Standard;
+    SetCommand(me:mutable;argcount : Integer; cmdline: ArgTable from WOKTools);
+    --SetCommand(me : mutable; cmdline: ArgTable from WOKTools)
+    --	                    raises ProgramError from Standard;
+ 
+    Launch(me : mutable);
+    IsLaunched(me) returns Boolean;    
+
+    Pid(me) returns Integer;
+    
+    Output(me : mutable) 
+    ---C++: return &
+    	returns mutable ProcessOutput from WOKUnix
+    	is protected;
+    
+    Timeout(me) returns Integer from Standard;
+    SetTimeout(me : mutable;atimeout : Integer);
+    
+    Select(me; afdmax : out Integer from Standard; 
+    	       atimeout : in out Timeval from WOKUnix;
+               aset :  out FDSet from WOKUnix) 
+    	is protected;
+    
+    Acquit(me; selectstatus : Integer from Standard ; aset : FDSet from WOKUnix)  
+    	is protected;
+   
+    SelectAndAcquit(me) is protected;
+
+    Send(me : mutable; astring : HAsciiString from TCollection) 
+    	raises  OSDError from OSD is virtual; 
+
+    Kill(me:mutable);
+    Destroy(me:mutable);
+    ---C++: alias ~
+
+
+
+fields 
+    myargv       : ArgTable        from WOKTools;
+    mymode       : PopenOutputMode from WOKUnix;
+    mybuffermode : PopenBufferMode from WOKUnix;
+    myinput      : FDescr          from WOKUnix;
+    myoutput     : ProcessOutput   from WOKUnix;
+    mylaunched   : Boolean         from Standard;
+    mytimeout    : Integer         from Standard;
+    mychildpid   : Integer         from Standard;
+end Process;
+
+

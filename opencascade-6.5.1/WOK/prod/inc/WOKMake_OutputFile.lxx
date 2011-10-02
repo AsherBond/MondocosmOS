@@ -1,0 +1,28 @@
+// File:	WOKMake_OutputFile.lxx
+// Created:	Wed Jun 19 15:38:08 1996
+// Author:	Jean GAUTIER
+//		<jga@cobrax.paris1.matra-dtv.fr>
+
+
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsProduction
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_OutputFile::IsProduction() const
+{
+  if(myattr & STEPFILE_REFPROD) return Standard_True;
+  else                          return Standard_False;
+}
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : IsMember
+//purpose  : 
+//=======================================================================
+inline Standard_Boolean WOKMake_OutputFile::IsMember() const
+{
+  if(myattr & STEPFILE_MEMBEXT) return Standard_True;
+  else                          return Standard_False;
+}

@@ -1,0 +1,10 @@
+@if (%Station == "hp") then
+
+@string %CMPLRS_C_Options += " -Ae ";
+
+@endif;
+
+@if ( %Station == "lin" ) then
+  @string %CMPLRS_C_ModeOpt = " -O2 -DNo_Exception " ;
+@endif;
+

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classIFGraph__SubPartsIterator.html" title="defines general form for graph classes of which result is &#160;&#160;not a single iteration..." alt="" coords="5,59,197,88"/>
+<area shape="rect" id="node3" href="$classIFGraph__ConnectedComponants.html" title="determines Connected Componants in a Graph. They define &#160;&#160;disjoined sets of Entities..." alt="" coords="245,5,485,35"/>
+<area shape="rect" id="node5" href="$classIFGraph__Cycles.html" title="determines strong componants in a graph which are Cycles &#160;" alt="" coords="303,59,428,88"/>
+<area shape="rect" id="node7" href="$classIFGraph__StrongComponants.html" title="determines strong componants of a graph, that is &#160;&#160;isolated entities (single componants)..." alt="" coords="261,112,469,141"/>
+<area shape="rect" id="node9" href="$classIFGraph__SCRoots.html" title="determines strong componants in a graph which are Roots &#160;" alt="" coords="535,112,671,141"/>
+</map>

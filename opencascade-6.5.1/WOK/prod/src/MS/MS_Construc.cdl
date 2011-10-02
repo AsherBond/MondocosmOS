@@ -1,0 +1,26 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Construc.cdl	1.1
+-- File:	MS_Construc.cdl
+-- Created:	Wed Jan 30 16:08:59 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class Construc 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits MemberMet from MS
+
+    uses 
+	HAsciiString from TCollection
+	
+is
+    Create (aName: HAsciiString from TCollection; aClass: HAsciiString from TCollection) 
+    	returns mutable Construc from MS;
+
+end Construc from MS;
+
+

@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepCheck__Edge.html" title="BRepCheck_Edge" alt="" coords="5,237,147,267"/>
+<area shape="rect" id="node9" href="$classBRepCheck__Face.html" title="BRepCheck_Face" alt="" coords="171,237,309,267"/>
+<area shape="rect" id="node11" href="$classBRepCheck__Shell.html" title="BRepCheck_Shell" alt="" coords="333,237,472,267"/>
+<area shape="rect" id="node13" href="$classBRepCheck__Vertex.html" title="BRepCheck_Vertex" alt="" coords="496,237,648,267"/>
+<area shape="rect" id="node15" href="$classBRepCheck__Wire.html" title="BRepCheck_Wire" alt="" coords="672,237,808,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="341,83,464,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="328,5,477,35"/>
+</map>

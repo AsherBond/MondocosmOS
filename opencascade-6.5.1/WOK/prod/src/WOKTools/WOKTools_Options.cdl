@@ -1,0 +1,69 @@
+-- File:	WOKTools_Options.cdl
+-- Created:	Tue Aug  1 20:09:20 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Options from WOKTools 
+
+	---Purpose: Manages Options of WOKTools Methods
+
+uses
+    PUsage                  from WOKTools,
+    HSequenceOfDefine       from WOKTools,
+    ArgTable                from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+is
+
+    Create(argc  : Integer  from Standard; 
+    	   argv  : ArgTable from WOKTools; 
+           opts  : CString  from Standard;
+    	   usage : PUsage   from WOKTools; 
+    	   excl  : CString  from Standard = " ") returns Options from WOKTools; 
+    ---Purpose: Instantiates the Options Iterator
+	   
+    Next(me:out);
+    ---Purpose: Advance to next option 
+    --          ( -D and -h options are treated and skipped)    
+    
+    Option(me)         returns Character from Standard;
+    ---Purpose: returns the code of currently analyzed option    
+    OptionArgument(me) returns HAsciiString from TCollection;
+    ---Purpose: returns the option argument if any    
+    OptionListArgument(me) returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: returns the option list argument if any    
+    
+    More(me) returns Boolean from Standard;
+    ---Purpose: tests if option iteration is finished    
+
+    Define(me:out; aname : HAsciiString from TCollection; avalue : HAsciiString from TCollection); 
+    
+    Defines(me) returns HSequenceOfDefine from WOKTools;
+    ---Purpose: returns the sequence of parameters defined (if any)    
+    AddPrefixToDefines(me : out; aname : HAsciiString from TCollection);
+    ---Purpose: Adds <aname>_ to defines list
+    --          Used to simplify use of API
+
+    Arguments(me) returns HSequenceOfHAsciiString from TColStd;
+    ---Purpose: returns the arguments passed to API    
+    
+    Failed(me) returns Boolean from Standard;
+    ---Purpose: Tests if argument analysis failed    
+
+fields
+    myusage      : PUsage                  from WOKTools;
+    myoptions    : HAsciiString            from TCollection;
+    myexclopt    : HAsciiString            from TCollection;
+    myexclflg    : Character               from Standard;
+    myargc       : Integer                 from Standard;
+    myargv       : ArgTable                from WOKTools;
+    mydefines    : HSequenceOfDefine       from WOKTools;
+    mymore       : Boolean                 from Standard;
+    mycuropt     : Byte                    from Standard;
+    mycurarg     : HAsciiString            from TCollection;
+    mycurlistarg : HSequenceOfHAsciiString from TColStd;
+    myargs       : HSequenceOfHAsciiString from TColStd;
+    myerrflg     : Boolean                 from Standard;
+end Options;

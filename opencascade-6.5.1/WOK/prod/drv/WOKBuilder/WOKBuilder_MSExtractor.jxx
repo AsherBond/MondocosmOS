@@ -1,0 +1,27 @@
+#ifndef _WOKBuilder_MSEntity_HeaderFile
+#include <WOKBuilder_MSEntity.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUtils_SearchList_HeaderFile
+#include <WOKUtils_SearchList.hxx>
+#endif
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _WOKUtils_Param_HeaderFile
+#include <WOKUtils_Param.hxx>
+#endif
+#ifndef _WOKBuilder_MSAction_HeaderFile
+#include <WOKBuilder_MSAction.hxx>
+#endif
+#ifndef _WOKBuilder_MSchema_HeaderFile
+#include <WOKBuilder_MSchema.hxx>
+#endif
+#ifndef _WOKBuilder_MSExtractor_HeaderFile
+#include <WOKBuilder_MSExtractor.hxx>
+#endif

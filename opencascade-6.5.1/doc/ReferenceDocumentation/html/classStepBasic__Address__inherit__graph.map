@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepBasic__OrganizationalAddress.html" title="StepBasic_OrganizationalAddress" alt="" coords="5,237,251,267"/>
+<area shape="rect" id="node9" href="$classStepBasic__PersonalAddress.html" title="StepBasic_PersonalAddress" alt="" coords="275,237,480,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="191,83,313,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="177,5,327,35"/>
+</map>

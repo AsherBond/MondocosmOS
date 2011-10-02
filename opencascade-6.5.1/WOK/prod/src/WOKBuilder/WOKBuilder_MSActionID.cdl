@@ -1,0 +1,51 @@
+-- File:	WOKBuilder_MSTranslatorActionID.cdl
+-- Created:	Wed Dec 20 16:14:02 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class MSActionID from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    HAsciiString from TCollection,
+    MSActionType from WOKBuilder,
+    MSAction     from WOKBuilder
+    
+is
+    Create(aname:HAsciiString from TCollection; atype : MSActionType from WOKBuilder) 
+    ---C++: inline
+       	returns MSActionID from WOKBuilder;
+	
+    Name(me) returns mutable HAsciiString from TCollection;
+    ---C++: return const &
+    ---C++: inline
+        
+    SetName(me:out; aname : HAsciiString from TCollection);
+
+    Type(me) returns MSActionType from WOKBuilder;
+    ---C++: inline
+        
+    SetType(me:out; atype : MSActionType from WOKBuilder);
+    
+    IsEqual(myclass; K1, K2 : MSActionID from WOKBuilder)
+    	returns Boolean from Standard;
+	
+    HashCode(myclass; K : MSActionID from WOKBuilder)
+    	returns Integer from Standard;
+
+    IsEqual(myclass; K1, K2 : MSAction from WOKBuilder)
+    	returns Boolean from Standard;
+	
+    HashCode(myclass; K : MSAction from WOKBuilder)
+    	returns Integer from Standard;
+
+    
+fields
+    
+    myname : HAsciiString from TCollection;
+    mytype : MSActionType from WOKBuilder;
+
+end MSActionID;

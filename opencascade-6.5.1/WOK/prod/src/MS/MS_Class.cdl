@@ -1,0 +1,144 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Class.cdl	1.1
+-- File:	MS_Class.cdl
+-- Created:	Tue Jan 29 11:41:42 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Class 
+
+    from MS 
+    inherits Type from MS
+
+	---Purpose: 
+
+    uses 
+      	GenClass             from MS,
+     	Package              from MS,
+	Field                from MS,
+	Method               from MS,
+	MemberMet            from MS,
+    	HAsciiString         from TCollection,
+	HSequenceOfHAsciiString from TColStd,
+        HSequenceOfClass     from MS,
+	HSequenceOfType      from MS,
+	HSequenceOfField     from MS,
+	HSequenceOfMemberMet from MS,
+	HSequenceOfError     from MS,
+	HSequenceOfMethod    from MS
+
+is
+
+    Initialize(aName: HAsciiString; aPackage: HAsciiString);
+    Initialize(aName, aPackage : HAsciiString;
+    	       Mother : HAsciiString from TCollection; 
+    	       aPrivate, aDeferred, aInComplete: Boolean);
+	       
+    Validity(me; aName: HAsciiString; aPackage: HAsciiString)
+    	is deferred;
+    
+    Deferred(me: mutable; aDeferred: Boolean);
+    Deferred(me)
+    	returns Boolean;
+    
+    Private(me: mutable; aPrivate: Boolean);
+    Private(me)
+    	returns Boolean;
+
+    Check(me; aName: HAsciiString; aPackage: HAsciiString);
+    
+    Inherit(me : mutable; aClass : HAsciiString from TCollection);
+    Inherit(me : mutable; aClass : Class from MS);
+    Inherit(me : mutable; aClass : HAsciiString; aPackage: HAsciiString);
+    GetInherits(me)
+    	returns HSequenceOfClass from MS;
+    GetInheritsNames(me)     
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    ---Purpose: returns the first ancestors
+  
+    GetFullInheritsNames(me : mutable)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+    ---Purpose: returns the full inheritance of <me>
+  
+    Use(me: mutable; aClass: HAsciiString from TCollection);
+    Use(me: mutable; aClass: HAsciiString; aPackage: HAsciiString);
+    GetUses(me)
+       returns mutable HSequenceOfType from MS;
+    GetUsesNames(me)
+       returns HSequenceOfHAsciiString from TColStd;
+       
+    Field(me: mutable; aField: Field from MS);
+    GetFields(me)
+       returns mutable HSequenceOfField from MS;
+
+    Method(me: mutable; aMethod: MemberMet from MS);
+    GetMethods(me)
+       returns mutable HSequenceOfMemberMet from MS; 
+
+    Raises(me: mutable; aExcept: HAsciiString from TCollection);
+    Raises(me: mutable; aExcept: HAsciiString; aPackage: HAsciiString);
+    GetRaises(me)
+       returns mutable HSequenceOfHAsciiString from TColStd;
+
+    FriendMet(me: mutable; aMethod: HAsciiString from TCollection);
+    GetFriendMets(me)
+       returns mutable HSequenceOfHAsciiString from TColStd;
+
+    Friend(me: mutable; aClass: HAsciiString from TCollection);
+    Friend(me: mutable; aClass: HAsciiString; aPackage: HAsciiString);
+    Friend(me: mutable; aClass: Class from MS);
+    GetFriendsNames(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    Incomplete(me: mutable; aIncomplete: Boolean) is virtual;
+    Incomplete(me)
+    	returns Boolean is virtual;
+
+    Mother(me : mutable; aMother : HAsciiString from TCollection);
+    GetMother(me)
+    	returns HAsciiString from TCollection;
+    ---Level: Internal
+    
+    IsNested(me)
+	returns Boolean from Standard;	
+    NestingClass(me : mutable; aNesting  : HAsciiString from TCollection);
+    GetNestingClass(me)
+    	returns HAsciiString from TCollection;
+    
+    IsPersistent(me : mutable)
+    	returns Boolean from Standard;
+	
+    IsTransient(me : mutable)
+    	returns Boolean from Standard;
+	
+    IsStorable(me : mutable)
+    	returns Boolean from Standard;
+    
+    Comment(me)
+         returns HAsciiString from TCollection;
+    
+    SetComment(me : mutable; aComment : HAsciiString from TCollection);
+
+        
+fields
+
+    myIncomplete : Boolean                 from Standard;
+    myDeferred   : Boolean                 from Standard;
+    myPrivate    : Boolean                 from Standard;
+    myInherits   : HSequenceOfHAsciiString from TColStd;
+    myUses       : HSequenceOfHAsciiString from TColStd;
+    myFields     : HSequenceOfField        from MS;
+    myMethods    : HSequenceOfMemberMet    from MS;
+    myRaises     : HSequenceOfHAsciiString from TColStd;
+    myFriendMets : HSequenceOfHAsciiString from TColStd;
+    myFriends    : HSequenceOfHAsciiString from TColStd;
+    myMother     : HAsciiString            from TCollection;
+    myNestingClass : HAsciiString          from TCollection;
+    myComment    : HAsciiString            from TCollection;   -- Comment to class declaration 
+
+end Class from MS;
+
+
+

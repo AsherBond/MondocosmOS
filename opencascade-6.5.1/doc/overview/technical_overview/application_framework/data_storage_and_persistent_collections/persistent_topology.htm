@@ -1,0 +1,206 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Persistent Topology</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs3 { margin-left:4.50pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nPersistent Topology");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/data_storage_and_persistent_collections/persistent_geometry.htm","technical_overview/application_framework/standard_documents.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Persistent Topology</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Persistent 
+ Topology</font> component describes topological data structures which 
+ can be stored in the database. These packages provide a way to convert 
+ data from the transient &quot;world&quot; to the persistent &quot;world&quot;.</p>
+
+<p class="whs1"><font style="font-weight: bold;">Persistent 
+ Topology</font> is <font style="font-weight: bold;">based on the BRep 
+ concrete data model</font> provided by the topology packages. Unlike the 
+ components of the <font style="font-weight: bold;">Persistent Geometry</font> 
+ package, topological components can be fully shared within a single model, 
+ as well as between several models.</p>
+
+<p class="whs1">Each topological component 
+ is considered to be a shape: a <font style="font-weight: bold;">TopoDS_Shape</font> 
+ object. The system's capacity to convert a transient shape into a persistent 
+ shape and vice-versa applies to all objects, irrespective of their complexity, 
+ including:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>vertex</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>edge</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>wire</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>face</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>shell</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>solid, 
+ and so on.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">When a user creates 
+ a data model using BRep shapes, he uses the conversion functions that 
+ the system provides to store the data in, and retrieve it from the database. 
+ The data can also be shared.</p>
+
+<p class="whs1">Persistent Topology 
+ is provided by several packages.</p>
+
+<p class="whs1">The <font style="font-weight: bold;">PTopoDS</font> 
+ package describes the persistent data model associated with any BRep shape; 
+ it is the persistent version of any shape of type <font style="font-weight: bold;">TopoDS_Shape</font>. 
+ As is the case for persistent geometric models, this data structure is 
+ never edited or queried, it is simply stored in or retrieved from the 
+ database. It is created or converted by the <font style="font-weight: bold;">Translate</font> 
+ function provided by the <font style="font-weight: bold;">MgtBRep</font> 
+ package.</p>
+
+<p class="whs1">The <font style="font-weight: bold;">MgtBRepAbs</font> 
+ and <font style="font-weight: bold;">PTColStd</font> packages provide 
+ tools used by the conversion functions of topological objects.</p>
+
+<p class="whs3"><font style="color: #000000; font-weight: bold;"
+										color=#000000>Example</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Create 
+ a shape<br>
+TopoDS_Shape aShape;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Create 
+ a persistent shape<br>
+PtColStd_DoubleTransientPersistentMap aMap;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>Handle(PTopoDS_HShape) 
+ aPShape =<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>aMap.Bind2(MgtBRep::Translate<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ (aShape,aMap,MgtBRepAbs_WithTriangle));</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>aPShape.Nullify();</font></p>
+
+&nbsp; 
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>//Restore 
+ a transient shape<br>
+Handle(PTopoDS_HShape) aPShape;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>Handle(TopoDS_HShape) 
+ aShape =<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>aMap.Bind1(MgtBRep::Translate<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ (aPShape,aMap,MgtBRepAbs_WithTriangle));</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console'; color: #000000;"
+															face="Lucida Console"
+															color=#000000>aShape.Nullify();</font></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

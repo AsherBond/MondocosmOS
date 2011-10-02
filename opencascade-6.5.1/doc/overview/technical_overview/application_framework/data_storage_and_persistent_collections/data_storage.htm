@@ -1,0 +1,182 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Data Storage</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:6.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nApplication Framework\nPersistent Data Storage\nBasic Data Storage");
+addAvenueInfo("Persistent Data Storage","technical_overview/application_framework/data_storage_and_persistent_collections/overview_data_storage.htm","technical_overview/application_framework/data_storage_and_persistent_collections/persistent_collections.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Basic Data Storage</p>
+
+<p>Normally, all data structures provided by Open CASCADE Technology are 
+ run-time structures, in other words, transient data. As transient data, 
+ they exist only while an application is running and are not stored permanently. 
+ However, <a href="overview_data_storage.htm">the Data Storage</a> module 
+ provides resources, which enable an application to store data on disk 
+ as persistent data.</p>
+
+<p>Data storage services also provide libraries of persistent classes and 
+ translation functions needed to translate data from transient to persistent 
+ state and vice-versa.</p>
+
+<h3>Libraries of persistent classes</h3>
+
+<p>Libraries of persistent classes are extensible libraries of elementary 
+ classes you use to define the database schema of your application. They 
+ include:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs1">Unicode (8-bit or 
+ 16-bit character type) strings </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs1">Collections of any 
+ kind of persistent data such as arrays, stacks, queues, and graphs </p></li>
+</ul>
+
+<p>All persistent classes are derived from the Persistent base class, which 
+ defines a unique way of creating and handling persistent objects. You 
+ create new persistent classes by inheriting from this base class.</p>
+
+<h3>Translation Functions</h3>
+
+<p>Translation functions allow you to convert persistent objects to transient 
+ ones and vice-versa. These translation functions are used to build Storage 
+ and Retrieval drivers of an application.</p>
+
+<p>For each class of 2D and 3D geometric types, and for the general shape 
+ class in the topological data structure library, there are corresponding 
+ persistent class libraries, which allow you to translate your data with 
+ ease.</p>
+
+<h3>Creation of Persistent Classes</h3>
+
+<p>If you are using Unix platforms as well as WOK and CDL, you can create 
+ your own persistent classes. In this case, data storage is achieved by 
+ implementing Storage and Retrieval drivers.</p>
+
+<p>The <font style="font-weight: bold;">Storage</font> package is used 
+ to write and read persistent objects. These objects are read and written 
+ by a retrieval or storage algorithm (<font style="font-weight: bold;">Storage_Schema</font> 
+ object) in a container (disk, memory, network ...). Drivers (<font style="font-weight: bold;">FSD_File</font> 
+ objects) assign a physical container for data to be stored or retrieved.</p>
+
+<p>The standard procedure for an application in reading a container is 
+ the following:</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>open 
+ the driver in reading mode,</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>call 
+ the <font style="font-weight: bold;">Read</font> function from the schema, 
+ setting the driver as a parameter. This function returns an instance of 
+ the <font style="font-weight: bold;">Storage_Data</font> class which contains 
+ the data being read,</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>close 
+ the driver.</p>
+
+<p>&nbsp;</p>
+
+<p>The standard procedure for an application in writing a container is 
+ the following:</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>open 
+ the driver in writing mode,</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>create 
+ an instance of the <font style="font-weight: bold;">Storage_Data</font> 
+ class, then add the persistent data to write with the function <font style="font-weight: bold;">AddRoot</font>,</p>
+
+<p>-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>call 
+ the function <font style="font-weight: bold;">Write</font> from the schema, 
+ setting the driver and the <font style="font-weight: bold;">Storage_Data</font> 
+ instance as parameters,</p>
+
+<p>- &nbsp;close 
+ the driver.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

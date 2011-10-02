@@ -1,0 +1,18 @@
+#ifndef _WOKernel_UnitGraph_HeaderFile
+#include <WOKernel_UnitGraph.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _Standard_NoMoreObject_HeaderFile
+#include <Standard_NoMoreObject.hxx>
+#endif
+#ifndef _Standard_NoSuchObject_HeaderFile
+#include <Standard_NoSuchObject.hxx>
+#endif
+#ifndef _WOKernel_ClientIterator_HeaderFile
+#include <WOKernel_ClientIterator.hxx>
+#endif

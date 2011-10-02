@@ -1,0 +1,80 @@
+-- File:	WOKStep_TKReplace.cdl
+-- Created:	Thu Aug  8 14:32:16 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+
+deferred class TKReplace from WOKStep 
+inherits LinkList from WOKStep
+
+	---Purpose: 
+
+uses
+    BuildProcess                from WOKMake,
+    HSequenceOfInputFile        from WOKMake,
+    InputFile                   from WOKMake,
+    OutputFile                  from WOKMake,
+    DevUnit                     from WOKernel,
+    HSequenceOfFile             from WOKernel,
+    File                        from WOKernel,
+    HSequenceOfEntity           from WOKBuilder,
+    HSequenceOfPath             from WOKUtils,
+    IndexedMapOfHAsciiString    from WOKTools,
+    MapOfHAsciiString           from WOKTools,
+    HSequenceOfHAsciiString     from TColStd,
+    HArray2OfBoolean            from TColStd,
+    HAsciiString                from TCollection
+
+is
+
+    Initialize(abp      : BuildProcess    from WOKMake; 
+    	       aunit    : DevUnit         from WOKernel; 
+    	       acode    : HAsciiString    from TCollection; 
+    	       checked, hidden : Boolean  from Standard) 
+    	returns mutable TKReplace from WOKStep;
+
+    AdmFileType(me)
+    	returns HAsciiString from TCollection
+        is redefined protected;
+
+    OutputDirTypeName(me)
+    	returns HAsciiString from TCollection
+    	is redefined protected;
+
+    HandleInputFile(me:mutable; item : InputFile from WOKMake)
+    ---Purpose: 1 - Adds File In list if file is compilable or an admfile
+    --          2 - Sets Build Flag if file is a compilable
+    	returns Boolean from Standard
+    	is redefined protected;
+
+    LoadTKDefs(me:mutable);
+
+    IsAuthorized(me; atk : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    GetTKForUnit(me:mutable; aunit : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection
+    	is protected;
+
+    SubstituteInput(me:mutable; infile : InputFile from WOKMake)
+    	returns OutputFile from WOKMake;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake) 
+    	is redefined private; 
+
+fields
+
+    myuds       : IndexedMapOfHAsciiString from WOKTools;
+    mytks       : IndexedMapOfHAsciiString from WOKTools;
+    
+    myautorized : MapOfHAsciiString        from WOKTools;
+    myauthlist  : Boolean                  from Standard;
+    
+    mydirecttks : MapOfHAsciiString        from WOKTools;
+    myorig      : MapOfHAsciiString        from WOKTools;
+    mytreated   : MapOfHAsciiString        from WOKTools;
+    myadded     : MapOfHAsciiString        from WOKTools;
+    mymatrix    : HArray2OfBoolean         from TColStd;
+    
+end TKReplace;

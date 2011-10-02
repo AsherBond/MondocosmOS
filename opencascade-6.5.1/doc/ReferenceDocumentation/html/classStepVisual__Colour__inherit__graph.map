@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classStepVisual__BackgroundColour.html" title="StepVisual_BackgroundColour" alt="" coords="569,5,788,35"/>
+<area shape="rect" id="node9" href="$classStepVisual__ColourSpecification.html" title="StepVisual_ColourSpecification" alt="" coords="565,59,792,88"/>
+<area shape="rect" id="node13" href="$classStepVisual__PreDefinedColour.html" title="StepVisual_PreDefinedColour" alt="" coords="571,112,787,141"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,59,328,88"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,59,156,88"/>
+<area shape="rect" id="node11" href="$classStepVisual__ColourRgb.html" title="StepVisual_ColourRgb" alt="" coords="903,59,1068,88"/>
+<area shape="rect" id="node15" href="$classStepVisual__DraughtingPreDefinedColour.html" title="StepVisual_DraughtingPreDefinedColour" alt="" coords="840,112,1131,141"/>
+</map>

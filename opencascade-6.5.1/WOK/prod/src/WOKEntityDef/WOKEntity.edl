@@ -1,0 +1,109 @@
+-- File:	WOKEntity.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Mar 28 11:11:40 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+
+---- Purpose:  Describe WOKernel entities.
+
+
+@ifnotdefined ( %WOKEntity_EDL) then
+@set %WOKEntity_EDL = "";
+
+--
+-- Arguments de Template settes par WOK.
+-- 
+--       %Entity               : Entity  Name
+--       %Entity_Station       : Parametre {Unit}_{sun|ao1|hp ...}
+--       %Entity_DBMS          : Parametre {Unit}_{OBJY|MEM|OBJS|OO2}
+--       %Entity_DBMS_Station  : Parametre {Unit}_{OBJY|MEM|OBJS|OO2}_{sun|ao1|hp ...}
+--       %Entity_?????         : Parametre Settes par l'entite (reclames lors de la creation)
+--       %Nesting              : Nesting Name
+--       %Nesting_Station      : Parametre {WB|Parcel}_{sun|ao1|hp ...}
+--       %Nesting_DBMS         : Parametre {WB|Parcel}_{OBJY|MEM|OBJS|OO2}
+--       %Nesting_DBMS_Station : Parametre {WB|Parcel}_{OBJY|MEM|OBJS|OO2}_{sun|ao1|hp ...}
+--       %Nesting_?????        : Parametre Settes par le Nesting (reclames lors de la creation)
+--       %DBMS                 : Plateforme SGBDOO
+--       %Station              : Station
+--       %File                 : Fichier  
+
+@set %WOKEntity_DirList =  " HomeDir AdmDir ";
+
+@template WOKEntity_HomeDir ( %Entity_Home ) is
+  $%Entity_Home\^
+@end;
+
+@template WOKEntity_AdmDir  ( %Entity_Adm  ) is
+  $%Entity_Adm\^
+@end;
+
+@set %WOKEntity_FileList  = " admfile DefinitionFile ";
+
+@template WOKEntity_admfile ( %Entity_Adm, %File ) is
+	$%Entity_Adm/%File\^
+@end;
+
+
+@template WOKEntity_DefinitionFile ( %Nesting_Adm, %Entity ) is
+	$%Nesting_Adm/%Entity.edl\^
+@end;
+
+@set %WOKEntity_ParamList = " %Entity_Stations %Entity_DBMSystems ";
+
+@if( %EntityType == "factory" ) then
+
+	@ifnotdefined ( %WOKEntity_Factory_EDL ) then
+		@uses "WOKEntity_Factory.edl";
+	@endif;
+	
+@endif;
+
+
+@if( %EntityType == "workshop" ) then
+
+	@ifnotdefined ( %WOKEntity_Workshop ) then
+		@uses "WOKEntity_Workshop.edl";
+	@endif;
+	
+@endif;
+
+@if( %EntityType == "devunit" ) then
+
+	@set %WOKEntity_DirList   =  "";
+	@set %WOKEntity_ParamList =  "%Nesting_DBMSystems %Nesting_Stations ";
+	@set %WOKEntity_FileList  = " ";
+
+	@ifnotdefined ( %WOKEntity_Unit_EDL ) then
+		@uses "WOKEntity_Unit.edl";
+	@endif;
+
+@endif;
+
+@if( %EntityType == "workbench" ) then
+
+
+	@ifnotdefined ( %WOKEntity_Workbench ) then
+		@uses "WOKEntity_Workbench.edl";
+	@endif;
+
+@endif;
+
+@if( %EntityType == "parcel" ) then
+
+	@ifnotdefined ( %WOKEntity_Parcel ) then
+		@uses "WOKEntity_Parcel.edl";
+	@endif;
+	
+@endif;
+
+
+@if( %EntityType == "warehouse" ) then
+
+	@ifnotdefined ( %WOKEntity_Warehouse ) then
+		@uses "WOKEntity_Warehouse.edl";
+	@endif;
+	
+@endif;
+
+
+@endif;

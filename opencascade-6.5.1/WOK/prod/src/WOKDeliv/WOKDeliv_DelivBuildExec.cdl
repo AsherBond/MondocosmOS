@@ -1,0 +1,46 @@
+-- File:	WOKDeliv_DelivBuildExec.cdl
+-- Created:	Tue Oct 29 14:54:50 1996
+-- Author:	Arnaud BOUZY
+--		<adn@legox.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1996
+
+class DelivBuildExec from WOKDeliv inherits DeliveryCopy from WOKDeliv
+
+	---Purpose: Produces executables from deliveries
+
+uses DevUnit from WOKernel,
+     Parcel from WOKernel,
+     InputFile from WOKMake,
+     HSequenceOfInputFile from WOKMake,
+     BuildProcess from WOKMake,
+     HSequenceOfHAsciiString from TColStd,
+     HAsciiString from TCollection
+
+is
+
+    Create(aprocess : BuildProcess   from WOKMake;
+    	   aunit    : DevUnit from WOKernel; 
+    	   acode    : HAsciiString from TCollection; 
+    	   checked, hidden : Boolean  from Standard)
+    returns mutable DelivBuildExec from WOKDeliv;
+
+    Execute(me:mutable; execlist : HSequenceOfInputFile from WOKMake)
+    is redefined private;
+    
+    HandleInputFile(me:mutable; anitem : InputFile from WOKMake)
+    returns Boolean from Standard
+    is redefined protected;
+    
+    MakeldFile(me: mutable; aparcel : Parcel from WOKernel;
+    	    	    	    asourceunit : DevUnit from WOKernel;
+			    adestunit : DevUnit from WOKernel;
+			    namexec : HAsciiString from TCollection;
+    	    	    	    execlist : HSequenceOfInputFile from WOKMake)
+    returns Boolean
+    is private;
+
+
+    VisibleParcels(me)
+    returns HSequenceOfHAsciiString from TColStd;
+    
+end DelivBuildExec;

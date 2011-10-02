@@ -1,0 +1,24 @@
+-- File:	WOKernel_HAsciiStringHasher.cdl
+-- Created:	Thu Feb  6 16:48:56 1997
+-- Author:	Prestataire Pascal BABIN
+--		<pba@voilax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+private class HAsciiStringHasher from WOKernel
+uses
+    HAsciiString from TCollection
+is
+
+   HashCode(myclass; Key : HAsciiString from TCollection; Upper : Integer from Standard) returns Integer;
+	    ---Level: Public
+	---Purpose: Returns a HasCode value  for  the  Key <K>  in the
+	-- range 0..Upper.
+	-- Default ::HashCode(K,Upper)
+	    
+   IsEqual(myclass; K1, K2 : HAsciiString from TCollection) returns Boolean;
+	---Level: Public
+	---Purpose: Returns True  when the two  keys are the same. Two
+	-- same  keys  must   have  the  same  hashcode,  the
+	-- contrary is not necessary.
+	-- Default K1 == K2
+end;

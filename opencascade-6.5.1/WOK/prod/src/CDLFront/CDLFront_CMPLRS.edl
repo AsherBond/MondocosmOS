@@ -1,0 +1,17 @@
+-- File:	CDLFront_CMPLRS.edl
+-- Author:	Prestataire Pascal BABIN
+-- History:	Tue Jan 21 16:18:59 1997	Prestataire Pascal BABIN	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %CDLFront_CMPLRS_EDL) then
+@set %CDLFront_CMPLRS_EDL = "";
+
+@if ( %Station == "hp" ) then
+  @string %CMPLRS_C_ModeOpt = " -Ae -DNo_Exception " ;
+@endif;
+
+@if ( %Station == "lin" ) then
+  @string %CMPLRS_C_ModeOpt = " -O2 -DNo_Exception " ;
+@endif;
+
+@endif;

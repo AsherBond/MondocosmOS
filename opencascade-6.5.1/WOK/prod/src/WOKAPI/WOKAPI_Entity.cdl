@@ -1,0 +1,256 @@
+-- File:	WOKAPI_Entity.cdl
+-- Created:	Mon Feb  5 15:07:30 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class Entity from WOKAPI 
+
+	---Purpose: 
+
+uses
+    Session                 from WOKAPI,
+    SequenceOfEntity        from WOKAPI,
+    Entity                  from WOKernel,
+    Session                 from WOKernel,
+    HSequenceOfParamItem    from WOKUtils,
+    HSequenceOfDefine       from WOKTools,
+    HSequenceOfReturnValue  from WOKTools,
+    ArgTable                from WOKTools,
+    Return                  from WOKTools,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd,
+    SequenceOfHAsciiString  from TColStd
+is 
+
+    Create returns Entity from WOKAPI;
+
+    Create(aent : Entity from WOKAPI)
+ 	returns Entity from WOKAPI;
+
+    Create(asession : Session from WOKAPI;
+    	   aname    : HAsciiString from TCollection;
+    	   verbose  : Boolean from Standard = Standard_False;
+           getit    : Boolean from Standard = Standard_True)
+    	returns Entity from WOKAPI;
+
+
+    Destructor ( me : out );
+    ---C++: alias "Standard_EXPORT virtual ~WOKAPI_Entity () {}"
+
+    IsValid(me)
+    	returns Boolean from Standard
+	is virtual;
+
+    IsAccessible(me)
+    	returns Boolean from Standard
+	is virtual;
+
+    IsWriteAble(me)
+    	returns Boolean from Standard
+	is virtual;
+
+    IsSession(me)   returns Boolean from Standard;
+    IsFactory(me)   returns Boolean from Standard;
+    IsWarehouse(me) returns Boolean from Standard;
+    IsParcel(me)    returns Boolean from Standard;
+    IsWorkshop(me)  returns Boolean from Standard;
+    IsWorkbench(me) returns Boolean from Standard;
+    IsUnit(me)      returns Boolean from Standard;
+    
+
+    NestedEntities(me; aseq : out SequenceOfEntity from WOKAPI)
+    	returns Boolean from Standard
+    	is virtual;
+
+    NestingEntity(me)
+    	returns Entity from WOKAPI;
+
+    Name(me)
+    	returns HAsciiString from TCollection;
+
+    Code(me) 
+    	returns HAsciiString from TCollection;
+
+    UserPath(me)
+    	returns HAsciiString from TCollection;
+	
+    -- Vie de l'entite
+    
+    Open(me:out;  aSession : Session from WOKAPI; aPath : HAsciiString from TCollection)
+    	is virtual;
+
+    Close(me:out)
+    	is virtual;
+
+    Destroy(me:out)
+    	returns Boolean from Standard
+    	is virtual;
+
+
+    -- Parameters de l'entite
+    
+    IsParameterSet(me; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+
+    EntityParameterName(me; aparam : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+    
+    ParameterValue(me; aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    ParameterEval(me; aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    ParameterArguments(me; aname : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    ParameterClassValues(me; aclass : HAsciiString from TCollection)
+    	returns HSequenceOfParamItem from WOKUtils;
+	
+    ParameterClasses(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    ParameterSearchList(me)
+    	returns HSequenceOfHAsciiString from TColStd;
+	
+    ParameterClassFiles(me; aclass : HAsciiString from TCollection)
+    	returns HSequenceOfHAsciiString from TColStd;
+
+    FindParameterFile(me; afile : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    ParameterSet(me; aname, avalue : HAsciiString from TCollection);
+    
+    ParameterUnSet(me; aname : HAsciiString from TCollection);
+    
+    ParameterReset(me);
+
+    -- Types de l'unite
+
+    IsFileType(me; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+	
+    IsFileTypeFileDependent(me; aname : HAsciiString from TCollection)
+    	returns Boolean from Standard;
+	
+    GetFileTypeDefinition(me; aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    GetFileTypeDirectory(me; aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    GetFileTypeArguments(me; aname : HAsciiString from TCollection; argseq : out SequenceOfHAsciiString from TColStd);
+
+    FileTypes(me; typeseq : out SequenceOfHAsciiString from TColStd);
+
+    -- Definition des paths de l'entite
+
+    GetFiles(me; fileseq : out SequenceOfHAsciiString from TColStd);
+
+    GetDirs(me; dirseq : out SequenceOfHAsciiString from TColStd);
+
+    CheckDirs(me; createifmissing : Boolean from Standard = Standard_True; besilent : Boolean from Standard = Standard_False)
+    	returns Boolean from Standard;
+    	
+    -- Fichiers de l'entite
+    
+    GetFilePath(me; atype, aname : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+	
+    GetFilePath(me; atype : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection;
+
+    -- Scripts de l'entite
+    -- 
+    GetInterpFiles(me; files : out HSequenceOfReturnValue from WOKTools);
+
+    GetEnvActions(me; asession :     Session from WOKAPI; 
+    	    	       actions  : out Return  from WOKTools)
+    	returns Integer from Standard;
+
+
+    -- HTML de l'entite
+    -- 
+    HomePage(me; astream : OStream from Standard)
+    	returns Boolean from Standard is virtual;
+
+    ItemHRef(me; astream : OStream from Standard)
+    	returns Boolean from Standard is virtual;    	
+
+    PageHeader(me; astream : OStream from Standard)
+    	returns Boolean from Standard is virtual protected;	
+
+    PageFooter(me; astream : OStream from Standard)
+    	returns Boolean from Standard is virtual protected;
+
+    --------             Entity PRIVATE methods
+    --                   
+    --                   
+
+    Set(me:out; anentity : Entity from WOKernel)
+       	is private;
+	
+    Session(me)
+    	returns Session from WOKernel
+    	is private;
+
+    Entity(me) 
+    ---C++: inline
+    ---C++: return const &
+    	returns Entity from WOKernel
+    	is private;
+ 
+    UpdateBeforeDestroy(me:out; anesting : Entity from WOKernel) is private;
+    UpdateBeforeBuild(me:out; anesting : Entity from WOKernel) is private;
+
+    -- Naissance et mort de l'entite
+
+    BuildName(me; path        : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection
+    	is private;
+	
+    BuildNesting(me; path        : HAsciiString from TCollection)
+    	returns HAsciiString from TCollection
+    	is private;
+	
+    	
+    GetBuildParameters(me; asession    : Session from WOKAPI;
+    	      	    	   aname       : HAsciiString from TCollection;
+    	    	    	   anesting    : Entity from WOKAPI;
+			   defines     : HSequenceOfDefine from WOKTools;
+    	    	    	   usedefaults : Boolean from Standard)
+    	returns HSequenceOfParamItem from WOKUtils
+    	is private;
+	
+    BuildEntity(me:out; asession    : Session from WOKAPI;
+    	                name        : HAsciiString from TCollection; 
+      	    	        anesting    : Entity from WOKAPI;
+		        defines     : HSequenceOfDefine from WOKTools;
+    	                usedefaults : Boolean from Standard;
+    	    	    	checkhome   : Boolean from Standard = Standard_False)
+    	returns Boolean from Standard
+    	is private;
+
+	
+
+
+fields
+
+    myEntity   : Entity from WOKernel is protected;
+
+friends 
+
+    class Session      from WOKAPI,
+    class Factory      from WOKAPI,
+    class Warehouse    from WOKAPI,
+    class Parcel       from WOKAPI,
+    class Workshop     from WOKAPI,
+    class Workbench    from WOKAPI,
+    class Unit         from WOKAPI,
+    class File         from WOKAPI,
+    class Locator      from WOKAPI,
+    class BuildProcess from WOKAPI
+    
+end Entity;

@@ -1,0 +1,62 @@
+
+PRE-REQUISITES:
+---------------
+
+ This version of Wok requires at least Tcl 8.0.
+ (In the following we assume you have downloaded this tarball in /home/me)
+
+
+ The section A) and B) explain how to install Wok and getting started.
+ The section C) explains how you can use this version of Wok to access
+ previous version of OpenCascade.
+
+A) First installation Unix/Linux systems.
+-----------------------------------------
+
+ This section assumes that you have never installed WOK on your system. Performing the
+ four following steps will install WOK and create a minimal environment for working.
+
+ 1. From the current directory where you have downloaded , move to the sub-directory
+    site. 
+    % cd /home/me/wok-CXX/site
+
+ 2. Copy from this directory the file tclshrc_Wok in your home directory with name
+     .tclshrc or .wishrc depending on the shell you want to use.
+
+ 3. Insert in your LD_LIBRARY_PATH the location where the wok shareable have been downloaded
+    that is in our case:
+    /home/me/wok-CXX/lib/lin if your are on Linux
+    /home/me/wok-CXX/lib/sun if your are on SunOS
+
+ 4. Start tclsh or wish.  You can then create new wok entities.
+
+
+B) First installation on WindowsNT.
+-----------------------------------
+
+ We suppose that you have downloaded the zip archive for WOK in directory W:\wok-CXX
+
+    1. Open a MS-DOS command console and set the current directory as follow
+    
+      W:> cd wok-CXX\site
+
+    2. Copy from this directory the file tclshrc_Wok in the directory pointed to by the variable 
+       HOME if any. If this variable is not setted, set it to a location and copy the file tclshrc_Wok 
+       in there. The final name must be tclshrc.tcl or wishrc.tcl depending on the shell you want to
+       use.
+       
+
+    3. Insert in the PATH variable the location where Wok dll resides that is :
+       wok-CXX\lib\wnt
+
+    4. Start tclsh or wish.
+
+C) Accessing previous OpenCascade workbenches.
+---------------------------------------------
+
+    By default , all the required initialisations are done in the tcl init file. One of them consist to
+    set the location where Wok will find or created entities. This location is pointed to by the environment 
+    variable ( or MS Dos variable ) named WOK_ROOTADMDIR. If you want to address previous Wok workbenches 
+    (say those created with the C3.1 version) set the variable WOK_ROOTADMDIR to this place. 
+    Note: The directory pointed to by WOK_ROOTADMDIR contains at least 3 files. ATLIST, DEFAULT.edl, SESSION.edl.
+    

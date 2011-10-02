@@ -1,0 +1,14 @@
+// File:	WOKernel_Session.lxx
+// Created:	Wed Jul 26 18:35:45 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+inline WOKernel_StationID WOKernel_Session::Station() const
+{
+  return mystation;
+}
+
+inline WOKernel_DBMSID WOKernel_Session::DBMSystem() const
+{
+  return mydbms;
+}

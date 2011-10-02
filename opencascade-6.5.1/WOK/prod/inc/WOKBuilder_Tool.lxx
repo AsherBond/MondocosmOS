@@ -1,0 +1,10 @@
+
+//=======================================================================
+//Author   : Jean Gautier (jga)
+//function : Params
+//purpose  : 
+//=======================================================================
+inline const WOKUtils_Param& WOKBuilder_Tool::Params() const
+{
+  return myparams;
+}

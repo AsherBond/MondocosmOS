@@ -1,0 +1,43 @@
+-- File:	WOKBuilder_ExecutableLinker.cdl
+-- Created:	Thu Feb  8 11:43:14 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class    ExecutableLinker from WOKBuilder  
+inherits           Linker from WOKBuilder
+
+	---Purpose: Links an executable
+	--          
+
+uses   
+    
+    Entity                from WOKBuilder,
+    ObjectFile            from WOKBuilder,
+    Library               from WOKBuilder,
+    HSequenceOfLibrary    from WOKBuilder,
+    HSequenceOfObjectFile from WOKBuilder,
+    HSequenceOfEntity     from WOKBuilder,
+    BuildStatus           from WOKBuilder,
+    SharedLibrary         from WOKBuilder,
+    HSequenceOfPath       from WOKUtils,
+    Param                 from WOKUtils,
+    HAsciiString          from TCollection
+ 
+
+is
+
+    Create(aname  : HAsciiString from TCollection; params : Param from WOKUtils)
+    	returns mutable ExecutableLinker from WOKBuilder;
+	
+    EvalHeader(me:mutable) 
+    	returns  HAsciiString from TCollection 
+    	is redefined protected;
+	
+    GetLinkerProduction(me:mutable)
+    	returns HSequenceOfEntity from WOKBuilder
+	is redefined protected;
+  
+
+end ExecutableLinker;

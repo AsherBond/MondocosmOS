@@ -1,0 +1,60 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_InstMet.cdl	1.1
+-- File:	MS_InstMet.cdl
+-- Created:	Wed Jan 30 16:08:59 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class InstMet 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits MemberMet from MS
+    uses 
+	HAsciiString from TCollection
+	
+is
+    Create (aName: HAsciiString from TCollection; aClass: HAsciiString from TCollection) 
+    	returns mutable InstMet from MS;
+
+    Static(me: mutable; aStatic: Boolean);
+    IsStatic(me)
+        returns Boolean;
+
+    Deferred(me: mutable; aDeferred: Boolean);
+    IsDeferred(me)
+	returns Boolean;
+	
+    Redefined(me: mutable; aRedefined: Boolean);
+    IsRedefined(me)
+    	returns Boolean;
+
+    ConstMode(me : mutable; aMode : Integer from Standard);
+    ---Purpose: set the mode to MSINSTMET_OUT or MSINSTMET_MUTABLE
+    ---Level: Internal
+
+    Const(me : mutable; aConst : Boolean from Standard);
+    ---Purpose: set the method to be out or mutable (undefined but const)
+
+    IsConst(me)
+    	returns Boolean from Standard;
+    ---Purpose: the method is not mutable and not out
+    
+    IsMutable(me) 
+    	returns Boolean from Standard;
+	
+    IsOut(me) 
+    	returns Boolean from Standard;
+
+    Mode(me : mutable; aMode : Integer from Standard);
+    GetMode(me) returns Integer from Standard;	
+    ---Level: Internal
+
+fields
+
+    myMode : Integer from Standard;
+
+end InstMet from MS;

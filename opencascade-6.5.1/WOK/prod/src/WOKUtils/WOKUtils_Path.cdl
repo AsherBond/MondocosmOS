@@ -1,0 +1,147 @@
+-- File:	WOKUtils_Path.cdl
+-- Created:	Fri Jan 31 19:02:27 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class Path from WOKUtils 
+inherits TShared from MMgt
+
+	---Purpose: 
+
+uses
+    Path         from OSD,
+    HAsciiString from TCollection,
+    TimeStat     from WOKUtils,
+    Extension    from WOKUtils
+raises
+    OSDError    from OSD
+is
+
+    Create returns mutable Path from WOKUtils;
+    ---Purpose: Instantiates Path from WOKUtils    
+
+    Create(apath : CString from Standard) 
+    	returns mutable Path from WOKUtils;
+    
+    Create(apath : HAsciiString from TCollection) 
+    ---Purpose: Instantiates Path from WOKUtils using an asciistring
+    	returns mutable Path from WOKUtils; 
+        
+    Create(apath : Path from OSD) 
+    ---Purpose: Instantiates Path from WOKUtils using an OSD_Path
+    	returns mutable Path from WOKUtils; 
+
+    Create(adir,aname : HAsciiString from TCollection)  
+    ---Purpose: Instantiates Path from WOKUtils using an directory and
+    --          a name
+    	returns mutable Path from WOKUtils; 
+    
+    Create(adir,aname : CString from Standard)  
+    ---Purpose: Instantiates Path from WOKUtils using an directory and
+    --          a name
+    	returns mutable Path from WOKUtils; 
+    
+    Name(me) 
+    ---C++: return const &
+    ---Purpose: returns PathName    
+    	returns HAsciiString from TCollection;
+	
+    SetName(me:mutable; apath : HAsciiString from TCollection);
+    ---Purpose: sets path
+    
+    Exists(me) returns Boolean;
+    ---Purpose: Tests existency of path on disk    
+
+    CreateDirectory(me; CreateParents : Boolean from Standard = Standard_False) 
+    ---Purpose: Creates path as a directory    
+    	returns Boolean
+        raises OSDError from OSD;
+	
+    CreateFile(me; CreateParents : Boolean from Standard = Standard_False) 
+    ---Purpose: Creates path as a file on disk    
+    	returns Boolean
+    	raises OSDError from OSD;
+
+    IsSymLink(me)
+    	returns Boolean from Standard;
+	
+    IsFile(me)
+    	returns Boolean from Standard;
+
+    IsDirectory(me)
+    	returns Boolean from Standard;
+
+    CreateSymLinkTo(me; apath : Path from WOKUtils);
+
+    RemoveDirectory(me; RemoveChilds : Boolean from Standard = Standard_False);
+
+    RemoveFile(me);
+
+    MoveTo(me:mutable; adestpath : Path from WOKUtils)
+    ---Purpose: Renames file to destpath Failes if mypath and dest
+    --          path are not on the same file system
+    --          mypath is changed to which of adestpath
+    	raises OSDError from OSD;
+
+    ReducedPath(me)
+    ---Purpose: reduces Path as much as possible (reads links)
+    	returns Path from WOKUtils;
+
+    IsSamePath(me; another : Path from WOKUtils)
+    ---Purpose: Tests is me corresponds to the same 
+    --          file as <another> (reads links)
+    	returns Boolean from Standard;
+
+    IsSameFile(me; another : Path from WOKUtils)
+    ---Purpose: Teste si deux fichiers ont le meme     
+    --          contenu (typiquement utilise a l'extraction)
+      	returns Boolean from Standard;
+
+    MDateIsKnown(me)     
+    ---Purpose: Tests if Date of Path is known
+   	returns Boolean;
+
+    GetMDate(me:mutable) 
+    ---Purpose: Get MDate of path on File System    
+    	returns TimeStat from WOKUtils raises  OSDError from OSD;
+	
+    MDate(me)
+    ---Purpose: returns known date of path   
+    	returns TimeStat from WOKUtils;
+
+    ResetMDate(me:mutable);
+
+    IsOlder(me:mutable; another : Path from WOKUtils)
+    	returns Boolean from Standard;
+    IsNewer(me:mutable; another : Path from WOKUtils)
+    	returns Boolean from Standard;
+	
+    IsWriteAble(me)
+    	returns Boolean from Standard;
+    
+    Extension(me)
+    ---Purpose: extracts Extension of file    
+    	returns Extension from WOKUtils;
+
+    ExtensionName(me)
+    ---Purpose: extracts Extension of file    
+    	returns HAsciiString from TCollection;
+
+    BaseName(me)
+    ---Purpose: returns the basename of File
+    	returns HAsciiString from TCollection;
+	
+    DirName(me)
+    ---Purpose: returns the dirname of file
+	returns HAsciiString from TCollection;
+	
+    FileName(me)
+    ---Purpose: returns the filename (<BaseName>.<Extension>) of path
+    	returns HAsciiString from TCollection;
+
+fields
+    mypath : HAsciiString from TCollection;
+    mydate : TimeStat    from WOKUtils;
+end Path;

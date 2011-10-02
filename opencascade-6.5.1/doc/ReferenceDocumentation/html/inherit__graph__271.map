@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classBOPTools__StateFiller.html" title="root class to compute states (3D) &#160;" alt="" coords="5,32,165,61"/>
+<area shape="rect" id="node3" href="$classBOPTools__SolidStateFiller.html" title="class to compute states (3D) for the edges (and theirs &#160;&#160;split parts), vertices,..." alt="" coords="215,5,404,35"/>
+<area shape="rect" id="node5" href="$classBOPTools__WireStateFiller.html" title="class to compute states (3D) for the edges (and theirs &#160;&#160;split parts), vertices,..." alt="" coords="215,59,404,88"/>
+</map>

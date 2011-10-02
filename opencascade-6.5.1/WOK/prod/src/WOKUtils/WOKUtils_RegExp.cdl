@@ -1,0 +1,16 @@
+-- File:	WOKUtils_RegExp.cdl
+-- Created:	Mon Feb  3 19:25:50 1997
+-- Author:	Jean GAUTIER
+--		<jga@cobrax.paris1.matra-dtv.fr>
+---Copyright:	 Matra Datavision 1997
+
+
+class RegExp from WOKUtils 
+inherits TShared from MMgt
+
+is
+
+    Create returns mutable RegExp from WOKUtils;
+    
+
+end RegExp;

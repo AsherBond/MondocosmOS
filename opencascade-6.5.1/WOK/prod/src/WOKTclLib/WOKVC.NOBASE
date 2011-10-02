@@ -1,0 +1,113 @@
+#
+# Interface NOBASE
+#
+proc wokIntegre:BASE:ftos { file vrs } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:stof { file vrs } {
+    return {}	
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:IsElm { file } {
+    return {}
+}
+#;>
+#
+#;<
+proc wokIntegre:BASE:InitFile { infile vrs cmt Sfile {fileid stdout} } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:ReInitFile { Sfile vrs cmt infile {fileid stdout} } {
+    return {}
+}
+#;
+# 
+#;<
+proc wokIntegre:BASE:UpdateFile { Sfile vrs cmt infile {fileid stdout} } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:DeleteFile { infile {fileid stdout} } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:GetFile { Sfile invrs {fileid stdout} } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:List { fshop Bname vrs } {
+    set Bname [lindex [split $Bname .] 0]
+    foreach wb [sinfo -w $fshop] {
+	if [expr { ( [llength [w_info -A ${fshop}:${wb}]] > 1 ) ? 0 : 1 }] {
+	    set root $wb
+	    break
+	}
+    }
+    set listfile {}
+    if [wokinfo -x ${fshop}:${root}:${Bname}] {
+	set listfile [wokUtils:FILES:ls [wokinfo -p source:. ${fshop}:${root}:${Bname}]]
+    }
+    return $listfile
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:EOF { {fileid stdout} } {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:BASE:Execute { VERBOSE command {fileid stdout} } {
+    return {}
+}
+;#;>
+;#
+;#;<
+proc wokIntegre:BASE:diff { sfile v1 v2 } {
+    return {}
+}
+;#;>
+;# 
+;#;<
+proc wokIntegre:BASE:cat  { sfile {v last} } {
+    return {}
+}
+;#;>
+;# 
+;#;<
+proc wokIntegre:BASE:vrs { sfile } {
+    return {}
+}
+;#;>
+;#
+;#;<
+proc wokIntegre:BASE:check { sfile } {
+    return {}
+}	
+;#;>
+;# 
+;#;<
+proc wokIntegre:BASE:tree { infile fils} {
+    return {}
+}
+#;>
+# 
+#;<
+proc wokIntegre:Version:Check { shop ver } {
+    return {}
+}

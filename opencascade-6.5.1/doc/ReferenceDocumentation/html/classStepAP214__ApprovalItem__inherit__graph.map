@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classStepAP214__DateAndTimeItem.html" title="StepAP214_DateAndTimeItem" alt="" coords="499,5,728,35"/>
+<area shape="rect" id="node7" href="$classStepAP214__DateItem.html" title="StepAP214_DateItem" alt="" coords="528,59,699,88"/>
+<area shape="rect" id="node9" href="$classStepAP214__OrganizationItem.html" title="StepAP214_OrganizationItem" alt="" coords="503,112,724,141"/>
+<area shape="rect" id="node11" href="$classStepAP214__PersonAndOrganizationItem.html" title="StepAP214_PersonAndOrganizationItem" alt="" coords="468,165,759,195"/>
+<area shape="rect" id="node13" href="$classStepAP214__SecurityClassificationItem.html" title="StepAP214_SecurityClassificationItem" alt="" coords="473,219,753,248"/>
+<area shape="rect" id="node2" href="$classStepData__SelectType.html" title="SelectType is the basis used for SELECT_TYPE definitions from &#160;&#160;the EXPRESS form..." alt="" coords="5,112,176,141"/>
+</map>

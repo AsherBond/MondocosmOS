@@ -1,0 +1,12 @@
+#ifndef _WOKUnix_Process_HeaderFile
+#include <WOKUnix_Process.hxx>
+#endif
+#ifndef _WOKUnix_ShellManager_HeaderFile
+#include <WOKUnix_ShellManager.hxx>
+#endif
+#ifndef _WOKUnix_SequenceOfProcess_HeaderFile
+#include <WOKUnix_SequenceOfProcess.hxx>
+#endif
+#ifndef _WOKUnix_ProcessManager_HeaderFile
+#include <WOKUnix_ProcessManager.hxx>
+#endif

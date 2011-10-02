@@ -1,0 +1,233 @@
+# Microsoft Developer Studio Generated NMAKE File, Based on __XQTNAM__.dsp
+!IF "$(CFG)" == ""
+CFG=__XQTNAM__ - Win32 Debug
+!MESSAGE No configuration specified. Defaulting to __XQTNAM__ - Win32 Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "__XQTNAM__ - Win32 Release" && "$(CFG)" != "__XQTNAM__ - Win32 Debug"
+!MESSAGE Invalid configuration "$(CFG)" specified.
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "__XQTNAM__.mak" CFG="__XQTNAM__ - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "__XQTNAM__ - Win32 Release" (based on "Win32 (x86) Console Application")
+!MESSAGE "__XQTNAM__ - Win32 Debug" (based on "Win32 (x86) Console Application")
+!MESSAGE 
+!ERROR An invalid configuration is specified.
+!ENDIF 
+
+!IF "$(OS)" == "Windows_NT"
+NULL=
+!ELSE 
+NULL=nul
+!ENDIF 
+
+
+!IF  "$(CFG)" == "__XQTNAM__ - Win32 Release"
+
+OUTDIR=.\..\..\win32\bin
+INTDIR=.\..\..\win32\obj\__XNAM__
+LIBDIR=.\..\..\win32\lib
+# Begin Custom Macros
+OutDir=.\..\..\win32\bin
+# End Custom Macros
+
+!IF "$(RECURSE)" == "0" 
+
+ALL : "$(OUTDIR)\__XQTNAMEX__"
+
+!ELSE 
+
+ALL : __FIELD1__ "$(OUTDIR)\__XQTNAMEX__"
+
+!ENDIF 
+
+!IF "$(RECURSE)" == "1" 
+CLEAN :__FIELD2__ 
+!ELSE 
+CLEAN :
+!ENDIF 
+	-@erase "$(INTDIR)\__XQTNAM__.obj"
+	-@erase "$(OUTDIR)\__XQTNAMEX__"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+    if not exist "$(LIBDIR)/$(NULL)" mkdir "$(LIBDIR)"
+
+"$(INTDIR)" :
+    if not exist "$(INTDIR)/$(NULL)" mkdir "$(INTDIR)"
+
+MTL=midl.exe
+CPP=cl.exe
+CPP_PROJ=/nologo /W3 /GX /O2 /D __COMPOPT__ "WIN32" /D "NDEBUG" /D "No_Exception" /D "_WINDOWS" /D "WNT" /D "CSFDB" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+RSC=rc.exe
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\__XQTNAM__.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=__TKDEP__ /nologo /subsystem:console /incremental:no  /machine:IX86 /out:"$(OUTDIR)\__XQTNAMEX__" /implib:"$(LIBDIR)\__XQTNAM__.lib" /libpath:"$(LIBDIR)" 
+LINK32_OBJS= \
+	"$(INTDIR)\__XQTNAM__.obj" 
+
+"$(OUTDIR)\__XQTNAMEX__" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ELSEIF  "$(CFG)" == "__XQTNAM__ - Win32 Debug"
+
+OUTDIR=.\..\..\win32\bind
+INTDIR=.\..\..\win32\objd\__XNAM__
+LIBDIR=.\..\..\win32\libd
+# Begin Custom Macros
+OutDir=.\..\..\win32\bind
+# End Custom Macros
+
+!IF "$(RECURSE)" == "0" 
+
+ALL : "$(OUTDIR)\__XQTNAMEX__"
+
+!ELSE 
+
+ALL : __FIELD3__ "$(OUTDIR)\__XQTNAMEX__"
+
+!ENDIF 
+
+!IF "$(RECURSE)" == "1" 
+CLEAN :__FIELD4__ 
+!ELSE 
+CLEAN :
+!ENDIF 
+	-@erase "$(INTDIR)\__XQTNAM__.obj"
+	-@erase "$(OUTDIR)\__XQTNAMEX__"
+	-@erase "$(OUTDIR)\__XQTNAM__.ilk"
+	-@erase "$(OUTDIR)\__XQTNAM__.pdb"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+    if not exist "$(LIBDIR)/$(NULL)" mkdir "$(LIBDIR)"
+
+"$(INTDIR)" :
+    if not exist "$(INTDIR)/$(NULL)" mkdir "$(INTDIR)"
+
+MTL=midl.exe
+CPP=cl.exe
+CPP_PROJ=/nologo /W3 /GX /Zi /Od __COMPOPTD__ /D "WIN32" /D "DEB" /D "_DEBUG" /D "_WINDOWS" /D "WNT" /D "CSFDB" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+RSC=rc.exe
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\__XQTNAM__.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=__TKDEP__ /nologo /subsystem:console /incremental:no /pdb:"$(OUTDIR)\__XQTNAM__.pdb" /debug /machine:IX86 /out:"$(OUTDIR)\__XQTNAMEX__" /implib:"$(LIBDIR)\__XQTNAM__.lib" /pdbtype:sept /libpath:"$(LIBDIR)" 
+LINK32_OBJS= \
+	"$(INTDIR)\__XQTNAM__.obj" 
+
+"$(OUTDIR)\__XQTNAMEX__" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ENDIF 
+
+
+!IF "$(NO_EXTERNAL_DEPS)" != "1"
+!IF EXISTS("__XQTNAM__.dep")
+!INCLUDE "__XQTNAM__.dep"
+!ELSE 
+!MESSAGE Warning: cannot find "__XQTNAM__.dep"
+!ENDIF 
+!ENDIF 
+
+
+!IF "$(CFG)" == "__XQTNAM__ - Win32 Release" || "$(CFG)" == "__XQTNAM__ - Win32 Debug"
+SOURCE=..\..\src\__XNAM__\__XQTNAM__.cxx
+
+!IF  "$(CFG)" == "__XQTNAM__ - Win32 Release"
+
+CPP_SWITCHES=/nologo  /W3 /GX /O2 __COMPOPT__ /I "..\..\inc" /I "..\..\drv\__XQTNAM__" /I "..\..\src\__XQTNAM__" /D "WIN32" /D "NDEBUG" /D "No_Exception" /D "_WINDOWS" /D "WNT" /D "CSFDB" /D "____XQTNAM___DLL" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
+
+"$(INTDIR)\__XQTNAM__.obj" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_SWITCHES) $(SOURCE)
+
+
+!ELSEIF  "$(CFG)" == "__XQTNAM__ - Win32 Debug"
+
+CPP_SWITCHES=/nologo  /W3 /GX /Zi /Od __COMPOPTD__ /I "..\..\inc" /I "..\..\drv\__XQTNAM__" /I "..\..\src\__XQTNAM__" /D "WIN32" /D "DEB" /D "_DEBUG" /D "_WINDOWS" /D "WNT" /D "CSFDB" /D "____XQTNAM___DLL" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /GZ /c 
+
+"$(INTDIR)\__XQTNAM__.obj" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_SWITCHES) $(SOURCE)
+
+
+!ENDIF 
+
+__FILES__
+
+!ENDIF 
+

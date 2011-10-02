@@ -1,0 +1,35 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Type.cdl	1.1
+-- File:	MS_Type.cdl
+-- Created:	Thu Mar 14 12:24:39 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Type 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits Common from MS 
+    uses
+     	Package from MS,
+	HAsciiString from TCollection
+
+is
+    Initialize(aName: HAsciiString);
+    Initialize(aName, aPackage, Container: HAsciiString; InPackage: Boolean);
+	       
+    Private(me) returns Boolean is deferred;
+	
+    Package(me: mutable; aPackage: HAsciiString) is virtual;
+    Package(me) returns mutable Package from MS is virtual;
+    
+fields
+
+    myPackage     : HAsciiString from TCollection;
+    
+end Type from MS;
+
+

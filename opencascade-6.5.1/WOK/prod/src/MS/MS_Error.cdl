@@ -1,0 +1,29 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Error.cdl	1.1
+-- File:	MS_Error.cdl
+-- Created:	Wed Jan 30 11:32:05 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+class Error 
+	---Purpose: 
+
+    from 
+    	MS 
+    inherits StdClass from MS
+    uses HAsciiString     from TCollection,
+    	 GenClass         from MS
+
+is
+    Create(aName: HAsciiString; aPackage: HAsciiString)
+    	returns mutable Error from MS;
+
+    Create(aName, aPackage, Mother : HAsciiString;
+    	   aPrivate, aDeferred, aInComplete: Boolean)
+    	returns mutable Error from MS;
+	       
+    Validity(me; aName: HAsciiString; aPackage: HAsciiString) is redefined;
+    
+end Error from MS;
+

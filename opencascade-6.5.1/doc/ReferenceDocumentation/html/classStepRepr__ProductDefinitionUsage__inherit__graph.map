@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classStepRepr__AssemblyComponentUsage.html" title="Representation of STEP entity AssemblyComponentUsage &#160;" alt="" coords="1020,85,1295,115"/>
+<area shape="rect" id="node19" href="$classStepRepr__MakeFromUsageOption.html" title="Representation of STEP entity MakeFromUsageOption &#160;" alt="" coords="1035,139,1280,168"/>
+<area shape="rect" id="node2" href="$classStepBasic__ProductDefinitionRelationship.html" title="Representation of STEP entity ProductDefinitionRelationship &#160;" alt="" coords="376,112,672,141"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,112,328,141"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,112,156,141"/>
+<area shape="rect" id="node11" href="$classStepRepr__NextAssemblyUsageOccurrence.html" title="Representation of STEP entity NextAssemblyUsageOccurrence &#160;" alt="" coords="1363,5,1672,35"/>
+<area shape="rect" id="node13" href="$classStepRepr__PromissoryUsageOccurrence.html" title="StepRepr_PromissoryUsageOccurrence" alt="" coords="1375,59,1660,88"/>
+<area shape="rect" id="node15" href="$classStepRepr__QuantifiedAssemblyComponentUsage.html" title="Representation of STEP entity QuantifiedAssemblyComponentUsage &#160;" alt="" coords="1344,112,1691,141"/>
+<area shape="rect" id="node17" href="$classStepRepr__SpecifiedHigherUsageOccurrence.html" title="Representation of STEP entity SpecifiedHigherUsageOccurrence &#160;" alt="" coords="1360,165,1675,195"/>
+</map>

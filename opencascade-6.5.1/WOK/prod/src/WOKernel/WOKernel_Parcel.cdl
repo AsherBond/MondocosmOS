@@ -1,0 +1,45 @@
+-- File:	WOKernel_Parcel.cdl
+-- Created:	Fri Jun 23 17:39:49 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Parcel from WOKernel 
+inherits UnitNesting from WOKernel
+
+	---Purpose: A parcel is  a set of development Units  delivered
+	--          from a team to another
+
+uses
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    Warehouse               from WOKernel,
+    FileType                from WOKernel,
+    File                    from WOKernel,
+    HSequenceOfParamItem    from WOKUtils
+    
+is
+    Create(aname : HAsciiString from TCollection; anesting : Warehouse from  WOKernel)  
+    	returns mutable Parcel  from  WOKernel; 
+    
+    EntityCode(me) 
+    	returns HAsciiString from TCollection
+	is redefined;
+
+    GetUnitList(me:mutable)
+    	returns HSequenceOfHAsciiString from TColStd
+	is redefined private;
+
+    GetUnitListFile(me)
+    	returns File from WOKernel
+	is redefined private;
+
+    Delivery(me) returns HAsciiString from TCollection;
+    
+    Open(me: mutable)  is redefined;
+    Close(me: mutable) is redefined;
+
+fields
+    mydelivery : HAsciiString from TCollection;
+end Parcel;

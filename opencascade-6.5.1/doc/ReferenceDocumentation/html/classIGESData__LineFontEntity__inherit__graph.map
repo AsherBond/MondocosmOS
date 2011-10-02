@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classIGESGraph__LineFontDefPattern.html" title="defines IGESLineFontDefPattern, Type &lt;304&gt; Form &lt;2&gt; &#160;&#160;in package IGESGraph..." alt="" coords="5,315,240,344"/>
+<area shape="rect" id="node11" href="$classIGESGraph__LineFontDefTemplate.html" title="defines IGESLineFontDefTemplate, Type &lt;304&gt; Form &lt;1&gt; &#160;&#160;in package IGESGraph..." alt="" coords="264,315,509,344"/>
+<area shape="rect" id="node2" href="$classIGESData__IGESEntity.html" title="defines root of IGES Entity definition, including Directory &#160;&#160;Part, lists of (optionnal)..." alt="" coords="172,160,337,189"/>
+<area shape="rect" id="node4" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="193,83,316,112"/>
+<area shape="rect" id="node6" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="180,5,329,35"/>
+</map>

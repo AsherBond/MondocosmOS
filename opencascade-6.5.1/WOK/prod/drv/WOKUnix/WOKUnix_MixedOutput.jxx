@@ -1,0 +1,12 @@
+#ifndef _WOKUnix_Buffer_HeaderFile
+#include <WOKUnix_Buffer.hxx>
+#endif
+#ifndef _WOKUnix_FDescr_HeaderFile
+#include <WOKUnix_FDescr.hxx>
+#endif
+#ifndef _TColStd_HSequenceOfHAsciiString_HeaderFile
+#include <TColStd_HSequenceOfHAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_MixedOutput_HeaderFile
+#include <WOKUnix_MixedOutput.hxx>
+#endif

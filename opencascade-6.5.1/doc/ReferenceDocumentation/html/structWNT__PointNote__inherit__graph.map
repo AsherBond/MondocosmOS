@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$structWNT__BeginMarkerNote.html" title="WNT_BeginMarkerNote" alt="" coords="501,5,680,35"/>
+<area shape="rect" id="node9" href="$structWNT__ImageNote.html" title="WNT_ImageNote" alt="" coords="523,59,659,88"/>
+<area shape="rect" id="node11" href="$structWNT__LineNote.html" title="WNT_LineNote" alt="" coords="529,112,652,141"/>
+<area shape="rect" id="node13" href="$structWNT__MarkerPointNote.html" title="WNT_MarkerPointNote" alt="" coords="504,165,677,195"/>
+<area shape="rect" id="node15" href="$structWNT__PolyEllipseNote.html" title="WNT_PolyEllipseNote" alt="" coords="509,219,672,248"/>
+<area shape="rect" id="node29" href="$structWNT__TextNote.html" title="WNT_TextNote" alt="" coords="529,272,652,301"/>
+<area shape="rect" id="node2" href="$structW32__PointNote.html" title="////////////////////// POINTS ////////////////////////////" alt="" coords="148,139,273,168"/>
+<area shape="rect" id="node4" href="$structW32__Note.html" title="W32_Note" alt="" coords="7,139,97,168"/>
+<area shape="rect" id="node17" href="$structWNT__ArcNote.html" title="WNT_ArcNote" alt="" coords="747,165,861,195"/>
+<area shape="rect" id="node27" href="$structWNT__EllipseNote.html" title="WNT_EllipseNote" alt="" coords="736,219,872,248"/>
+<area shape="rect" id="node19" href="$structWNT__PolyChordNote.html" title="WNT_PolyChordNote" alt="" coords="932,139,1092,168"/>
+<area shape="rect" id="node23" href="$structWNT__PolySectorNote.html" title="WNT_PolySectorNote" alt="" coords="929,192,1095,221"/>
+<area shape="rect" id="node21" href="$structWNT__ChordNote.html" title="WNT_ChordNote" alt="" coords="1147,139,1280,168"/>
+<area shape="rect" id="node25" href="$structWNT__SectorNote.html" title="WNT_SectorNote" alt="" coords="1144,192,1283,221"/>
+<area shape="rect" id="node31" href="$structWNT__PolyTextNote.html" title="WNT_PolyTextNote" alt="" coords="728,272,880,301"/>
+</map>

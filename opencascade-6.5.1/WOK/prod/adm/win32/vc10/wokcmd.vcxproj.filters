@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{7B04DD5E-08BC-1165-0ABF-733AEB368E31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKLibs">
+      <UniqueIdentifier>{DF7EBBCE-0AD1-0917-0FE5-EABCA5D2841C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\WOKLibs\wokcmd.cxx">
+      <Filter>Source files\WOKLibs</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

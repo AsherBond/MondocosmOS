@@ -1,0 +1,87 @@
+-- File:	WOKBuilder_Command.cdl
+-- Created:	Wed Nov 15 10:26:00 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+
+class Command from WOKBuilder 
+inherits ToolInShell from WOKBuilder
+
+	---Purpose: 
+
+uses
+    Param                   from WOKUtils,
+    Path                    from WOKUtils,
+    BuildStatus             from WOKBuilder,
+    HSequenceOfHAsciiString from TColStd,
+    HAsciiString            from TCollection,
+    Boolean                 from Standard
+    
+raises
+    ProgramError      from Standard
+
+is
+
+    Create(aname : HAsciiString from TCollection; params : Param from WOKUtils) 
+    	returns mutable Command from WOKBuilder;
+
+    Load(me:mutable)
+    	is redefined;
+
+    Copy(me:mutable; afrom, ato : Path from WOKUtils)
+    ---Purpose: copies afrom in ato
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+    PreserveCopy(me:mutable; afrom, ato : Path from WOKUtils)
+    ---Purpose: copies afrom in ato
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+	
+     CopyAndChmod(me:mutable; afrom, ato : Path from WOKUtils)
+    ---Purpose: copies afrom in ato and chmod
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+    Move(me:mutable; afrom, ato : Path from WOKUtils)
+    ---Purpose: Moves afrom in ato
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+    ReplaceIfChanged(me:mutable; afrom, ato : Path from WOKUtils)
+    ---Purpose: Replaces <ato> with <afrom> if <afrom> differs from <ato>
+    --          NB : Destroys afrom in all cases
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+    ReplaceIfChangedWith(me:mutable; afrom, abase, ato : Path from WOKUtils)
+    ---Purpose: Replaces <ato> with <afrom> if <afrom> differs from <abase>
+    --          NB : - Destroys afrom in all cases
+    --               - Status is Success if replacement was done
+    --                           Unbuilt if replacement was not done
+    --                           Failed if errors occured
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+    Compress(me:mutable; afile : Path from WOKUtils)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+    CompressTo(me:mutable; afile, adest : Path from WOKUtils)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+    
+    UnCompress(me:mutable; afile : Path from WOKUtils)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+    UnCompressTo(me:mutable; afile, adest : Path from WOKUtils)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+    Execute(me:mutable)
+    	returns BuildStatus  from WOKBuilder
+    	raises  ProgramError from Standard;
+
+end Command;

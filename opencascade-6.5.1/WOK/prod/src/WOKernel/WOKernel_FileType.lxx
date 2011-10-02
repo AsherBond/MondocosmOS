@@ -1,0 +1,59 @@
+// File:	WOKernel_FileType.lxx
+// Created:	Fri Jul 28 18:10:24 1995
+// Author:	Jean GAUTIER
+//		<jga@cobrax>
+
+
+//=======================================================================
+//function : Name
+//purpose  : 
+//=======================================================================
+inline const Handle(TCollection_HAsciiString)& WOKernel_FileType::Name() const
+{
+  return myname;
+}
+
+//=======================================================================
+//function : Template
+//purpose  : gives the format for workbench path solver
+//=======================================================================
+inline const EDL_Template& WOKernel_FileType::Template() const 
+{
+  return mytemplate;
+}
+
+
+inline Standard_Boolean WOKernel_FileType::IsStationDependent() const 
+{
+  return mystationdep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsDBMSDependent() const 
+{
+  return mydbmsdep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsEntityDependent() const 
+{
+  return myentitydep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsNestingDependent() const 
+{
+  return mynestingdep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsFileDependent() const 
+{
+  return myfiledep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsDirectory() const
+{
+  return myisrep;
+}
+
+inline Standard_Boolean WOKernel_FileType::IsFile() const
+{
+  return !myisrep;
+}

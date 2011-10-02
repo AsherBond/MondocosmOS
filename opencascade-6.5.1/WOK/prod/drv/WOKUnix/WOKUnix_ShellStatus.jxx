@@ -1,0 +1,18 @@
+#ifndef _Standard_ProgramError_HeaderFile
+#include <Standard_ProgramError.hxx>
+#endif
+#ifndef _TCollection_AsciiString_HeaderFile
+#include <TCollection_AsciiString.hxx>
+#endif
+#ifndef _WOKUnix_FDescr_HeaderFile
+#include <WOKUnix_FDescr.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKUnix_Shell_HeaderFile
+#include <WOKUnix_Shell.hxx>
+#endif
+#ifndef _WOKUnix_ShellStatus_HeaderFile
+#include <WOKUnix_ShellStatus.hxx>
+#endif

@@ -1,0 +1,30 @@
+-- File:	WOKBuilder_ImportLibrarian.cdl
+-- Created:	Mon Oct 21 13:42:31 1996
+-- Author:	PLOTNIKOV Eugeny
+--		<eugeny@maniax>
+---Copyright:	 Matra Datavision 1996
+
+class ImportLibrarian from WOKBuilder inherits WNTLibrarian from WOKBuilder
+
+    ---Purpose: defines tool to build import library
+
+ uses
+ 
+    HAsciiString from TCollection,
+    Param        from WOKUtils
+ 
+ is
+ 
+    Create (
+     aName   : HAsciiString from TCollection;
+     aParams : Param        from WOKUtils
+    ) returns mutable ImportLibrarian from WOKBuilder;
+    	---Purpose: create a class instance
+
+    EvalHeader ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluats tool command line
+ 
+    EvalFooter ( me : mutable ) returns HAsciiString from TCollection is redefined static;
+    	---Purpose: evaluates additional information for the tool
+
+end ImportLibrarian;

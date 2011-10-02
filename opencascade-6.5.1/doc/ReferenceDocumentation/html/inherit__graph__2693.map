@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classStepToGeom__Root.html" title="This class implements the common services for &#160;&#160;all classes of StepToGeom which report..." alt="" coords="5,5,152,35"/>
+<area shape="rect" id="node3" href="$classStepToGeom__MakePolyline.html" title="Translates polyline entity into Geom_BSpline &#160;&#160;In case if polyline has more than..." alt="" coords="200,5,403,35"/>
+</map>

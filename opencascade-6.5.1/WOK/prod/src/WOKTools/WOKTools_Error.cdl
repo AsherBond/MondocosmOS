@@ -1,0 +1,22 @@
+-- File:	WOKTools_Error.cdl
+-- Created:	Wed Jun 28 20:22:09 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class Error from WOKTools 
+inherits Message from WOKTools
+
+	---Purpose: Error messages
+
+uses
+    AsciiString from TCollection
+is
+
+    Create returns Error from WOKTools;
+    
+    Code(me)
+    	returns Character from Standard
+	is redefined;
+	    
+end Error;

@@ -1,0 +1,16 @@
+-- File:	WOKSteps_interface_wnt.edl
+-- Author:	Jean GAUTIER
+-- History:	Wed Mar 12 13:22:32 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %WOKSteps_interface_wnt_EDL) then
+@set %WOKSteps_interface_wnt_EDL = "";
+
+
+@set %WOKSteps_exec_list = "*WOKStep_DirectLinkList(obj.comp,obj.idep)";
+@set %WOKSteps_exec_tks  = "*WOKStep_DirectTKReplace(exec.list)";
+@set %WOKSteps_exec_link = "*WOKStep_DLLink(exec.tks)";
+	
+@set %WOKSteps_interface_LinksWith = "";
+
+@endif;

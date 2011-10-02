@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classTopoDS__TCompound.html" title="TopoDS_TCompound" alt="" coords="553,5,708,35"/>
+<area shape="rect" id="node9" href="$classTopoDS__TCompSolid.html" title="TopoDS_TCompSolid" alt="" coords="553,59,708,88"/>
+<area shape="rect" id="node11" href="$classTopoDS__TEdge.html" title="TopoDS_TEdge" alt="" coords="571,112,691,141"/>
+<area shape="rect" id="node15" href="$classTopoDS__TFace.html" title="TopoDS_TFace" alt="" coords="572,165,689,195"/>
+<area shape="rect" id="node19" href="$classTopoDS__TShell.html" title="TopoDS_TShell" alt="" coords="572,219,689,248"/>
+<area shape="rect" id="node21" href="$classTopoDS__TSolid.html" title="TopoDS_TSolid" alt="" coords="573,272,688,301"/>
+<area shape="rect" id="node23" href="$classTopoDS__TVertex.html" title="TopoDS_TVertex" alt="" coords="565,325,696,355"/>
+<area shape="rect" id="node27" href="$classTopoDS__TWire.html" title="TopoDS_TWire" alt="" coords="573,379,688,408"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,192,328,221"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,192,156,221"/>
+<area shape="rect" id="node13" href="$classBRep__TEdge.html" title="The TEdge from BRep is inherited from the TEdge &#160;&#160;from TopoDS. It contains the geometric..." alt="" coords="764,112,871,141"/>
+<area shape="rect" id="node17" href="$classBRep__TFace.html" title="The Tface from BRep is based on the TFace from &#160;&#160;TopoDS. The TFace contains : &#160;&#160;..." alt="" coords="765,165,869,195"/>
+<area shape="rect" id="node25" href="$classBRep__TVertex.html" title="The TVertex from BRep inherits from the TVertex &#160;&#160;from TopoDS. It contains the geometric..." alt="" coords="759,325,876,355"/>
+</map>

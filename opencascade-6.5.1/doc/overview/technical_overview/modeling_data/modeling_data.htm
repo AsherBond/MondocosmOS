@@ -1,0 +1,297 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Modeling Data</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:18.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+table.whs2 { width:558px; margin-left:11.25pt; border-spacing:0px; }
+tr.whs3 { x-cell-content-align:top; }
+td.whs4 { width:72.04%; height:213px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs5 { margin-left:6.00pt; margin-top:1.00pt; margin-bottom:1.00pt; }
+td.whs6 { width:27.96%; height:213px; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; }
+p.whs7 { margin-top:1.00pt; margin-bottom:1.00pt; }
+img_whs8 { width:156px; height:195px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Data\nModeling Data");
+addAvenueInfo("Modeling Data","","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Modeling Data</p>
+
+<p class="whs1">&nbsp;</p>
+
+<table x-use-null-cells cellspacing="0" width="558" class="whs2">
+
+<tr valign="top" class="whs3">
+<td height="213" width="72.04%" class="whs4">
+<p>Modeling Data supplies data structures to represent 2D and 3D geometric 
+ models.</p>
+<p>These services are organized into the following libraries:</p>
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">2D Geometry </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">3D Geometry </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Geometry Utilities 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Topology </p></li>
+</ul>
+<p class="whs5">The technical overview provides only 
+ a basic description of the libraries. Please, refer for more details to<span 
+ style="font-weight: bold;"> <B></B></span><font style="font-weight: bold;"><a 
+ href="../../../modata.pdf">Modeling Data User's guide</a></font> </p>
+<p>See also: our web site at <a href="http://www.opencascade.com/support/training/">E-learning 
+ and Training</a>.</td>
+<td height="213" width="27.96%" class="whs6">
+<p class="whs7"><img src="../../image/md.gif" alt="image\md.gif" width="156px" height="195px" border="0" class="img_whs8"> </td></tr>
+</table>
+
+<p class="whs1">&nbsp;</p>
+
+<h2>2D Geometry</h2>
+
+<p>This library provides 2D geometric data structures.</p>
+
+<p><font style="font-style: italic;"><a href="2d_geometry/p_19_1.htm">Geom2D</a></font> 
+ geometric package provides 2D geometric data structures handled by reference 
+ and complying with STEP specification. These objects are parameterized, 
+ and, as a result, are oriented. They include Bezier, BSpline, and offset 
+ curves, and provide functions for conversion of <font style="font-style: italic;">Geom2D</font> 
+ objects to <font style="font-style: italic;">gp</font> (basic geometry) 
+ objects, which are non-oriented and non-parameterized.</p>
+
+<p>Geom2dLProp local geometric properties package allows computing such 
+ properties as:</p>
+
+<p>Derivative vectors of a parametric point on a 2D curve;</p>
+
+<p>Tangent vectors of a parametric point on a 2D curve (normal and curvature).</p>
+
+<p>&nbsp;</p>
+
+<h2>3D Geometry</h2>
+
+<p>This library provides 3D geometric data structures.</p>
+
+<p><font style="font-style: italic;"><a href="3d_geometry/p_22_1.htm">Geom</a> 
+ </font>geometric package provides 3D geometric data structures handled 
+ by reference and complying with STEP specification. These objects are 
+ parameterized and, as a result, are oriented. They include Bezier, BSpline, 
+ and offset curves and surfaces, and provide functions for conversion of 
+ <font style="font-style: italic;">Geom</font> objects to gp (basic geometry) 
+ objects, which are non-oriented and non-parameterized.</p>
+
+<p><a href="3d_geometry/p_25_1.htm">GeomLProp</a> local geometric properties 
+ package allows you to compute such properties as:</p>
+
+<p>Derivative vectors of a parametric point on a curve or a surface</p>
+
+<p>Tangent vectors of a parametric point on a curve or a surface</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Normal </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Curvature </p></li>
+</ul>
+
+<h2>Geometry Utilities</h2>
+
+<p>This library provides standard high-level functions in 2D and 3D geometry 
+ such as:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">Direct construction 
+ of algorithms </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><a href="geometry_utilities/p_14_1.htm">Interpolation</a> 
+ of a set of points to form a curve </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><a href="geometry_utilities/p_14_1.htm">Approximation</a> 
+ of curves and surfaces from points </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><a href="geometry_utilities/p_16_1.htm">Conversion</a> 
+ of more elementary geometry to BSpline curves and surfaces </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><a href="geometry_utilities/p_17_1.htm">Calculation</a> 
+ of points on a 2D or 3D curve </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><a href="geometry_utilities/p_18_1.htm">Calculation</a> 
+ of extrema between two geometries </p></li>
+</ul>
+
+<h2>Topology</h2>
+
+<p>Topological library allows you to build pure topological <a href="topology/p_27_1.htm">data 
+ structures</a>..</p>
+
+<p>Topology defines relationships between simple geometric entities. In 
+ this way, you can model complex shapes as assemblies of simpler entities. 
+ Due to a built-in non-manifold (or mixed-dimensional) feature, you can 
+ build models mixing:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">0D entities such 
+ as points </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">1D entities such 
+ as curves </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">2D entities such 
+ as surfaces </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5">3D entities such 
+ as volumes </p></li>
+</ul>
+
+<p>You can, for example, represent a single object made of several distinct 
+ bodies containing embedded curves and surfaces connected or non-connected 
+ to an outer boundary.</p>
+
+<p>Abstract topological data structure describes a basic entity - a shape, 
+ which can be divided into the following component topologies:</p>
+
+<ul>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Vertex 
+ -</font> a zero-dimensional shape corresponding to a point in geometry 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Edge 
+ -</font> a shape corresponding to a curve, and bound by a vertex at each 
+ extremity </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Wire 
+ -</font> a sequence of edges connected by their vertices </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Face 
+ -</font> part of a plane (in 2D geometry) or a surface (in 3D geometry) 
+ bounded by a closed wire </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Shell 
+ -</font> a collection of faces connected by some edges of their wire boundaries 
+ </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Solid 
+ -</font> a part of 3D space bound by a shell </p></li>
+	
+	<li style="font-size: 8pt;"
+		class=kadov-p><p class="whs5"><font style="font-weight: bold;">Compound 
+ solid -</font> a collection of solids. </p></li>
+</ul>
+
+<p>The wire and the solid can be either infinite or closed.</p>
+
+<p>A face with 3D underlying geometry may also refer to a collection of 
+ connected triangles that approximate the underlying surface. The surfaces 
+ can be undefined leaving the faces represented by triangles only. If so, 
+ the model is purely polyhedral.</p>
+
+<p>Along with the above data structures and that for a generalized shape, 
+ this library also provides resources to define the location of shapes.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

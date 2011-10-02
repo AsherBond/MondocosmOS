@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{E8F5147A-1167-0A6C-0D9B-D3BF9AEB50BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\WOKSH">
+      <UniqueIdentifier>{E6EC4756-16F7-123A-0846-C7006CC36926}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\WOKSH\woksh.cxx">
+      <Filter>Source files\WOKSH</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

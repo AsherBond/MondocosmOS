@@ -1,0 +1,37 @@
+-- File:	WOKBuilder_MSServerExtractor.cdl
+-- Created:	Tue Mar 19 19:33:36 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class MSServerExtractor from WOKBuilder 
+inherits    MSExtractor from WOKBuilder 
+	---Purpose: 
+
+uses
+    MSActionStatus          from WOKBuilder,
+    MSActionType            from WOKBuilder,
+    MSAction                from WOKBuilder,
+    Param                   from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+
+is
+    
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSServerExtractor from WOKBuilder;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSServerExtractor from WOKBuilder;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+end MSServerExtractor;

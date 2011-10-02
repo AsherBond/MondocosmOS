@@ -1,0 +1,39 @@
+-- File:	WOKBuilder_MSTemplateExtractor.cdl
+-- Created:	Tue Mar 19 20:10:51 1996
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1996
+
+
+class MSTemplateExtractor from WOKBuilder 
+inherits MSExtractor     from WOKBuilder 
+
+	---Purpose: 
+
+uses
+    MSActionType            from WOKBuilder,
+    MSActionStatus          from WOKBuilder,
+    MSAction                from WOKBuilder,
+    Param                   from WOKUtils,
+    HAsciiString            from TCollection,
+    HSequenceOfHAsciiString from TColStd
+    
+is
+
+    Create(ashared    : HAsciiString from TCollection;
+    	   searchlist : HSequenceOfHAsciiString from TColStd)
+    	returns mutable MSTemplateExtractor from WOKBuilder;
+    
+    Create(params : Param from WOKUtils) 
+    	returns mutable MSTemplateExtractor from WOKBuilder;
+
+    ExtractorID(me)
+    	returns MSActionType from WOKBuilder
+    	is redefined;
+
+    ExtractionStatus(me:mutable; anaction : MSAction from WOKBuilder)
+    	returns MSActionStatus from WOKBuilder
+    	is redefined;
+
+
+end MSTemplateExtractor;

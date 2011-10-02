@@ -1,0 +1,18 @@
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _WOKMake_DataMapOfHAsciiStringOfStepBuilder_HeaderFile
+#include <WOKMake_DataMapOfHAsciiStringOfStepBuilder.hxx>
+#endif
+#ifndef _WOKMake_Step_HeaderFile
+#include <WOKMake_Step.hxx>
+#endif
+#ifndef _WOKMake_BuildProcess_HeaderFile
+#include <WOKMake_BuildProcess.hxx>
+#endif
+#ifndef _WOKernel_DevUnit_HeaderFile
+#include <WOKernel_DevUnit.hxx>
+#endif
+#ifndef _WOKMake_StepBuilder_HeaderFile
+#include <WOKMake_StepBuilder.hxx>
+#endif

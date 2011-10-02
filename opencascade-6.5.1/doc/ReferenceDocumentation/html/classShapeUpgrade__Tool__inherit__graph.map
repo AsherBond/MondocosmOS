@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classShapeUpgrade__EdgeDivide.html" title="ShapeUpgrade_EdgeDivide" alt="" coords="612,5,812,35"/>
+<area shape="rect" id="node11" href="$classShapeUpgrade__FaceDivide.html" title="Divides a Face (both edges in the wires, by splitting &#160;&#160;curves and pcurves, and the..." alt="" coords="613,85,811,115"/>
+<area shape="rect" id="node17" href="$classShapeUpgrade__FixSmallCurves.html" title="ShapeUpgrade_FixSmallCurves" alt="" coords="600,139,824,168"/>
+<area shape="rect" id="node21" href="$classShapeUpgrade__RemoveInternalWires.html" title="Removes all internal wires having area less than specified min area &#160;" alt="" coords="577,192,847,221"/>
+<area shape="rect" id="node23" href="$classShapeUpgrade__WireDivide.html" title="Divides edges in the wire lying on the face or free wires or &#160;&#160;free edges with a..." alt="" coords="613,245,811,275"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="205,139,328,168"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="7,139,156,168"/>
+<area shape="rect" id="node9" href="$classShapeUpgrade__ClosedEdgeDivide.html" title="ShapeUpgrade_ClosedEdgeDivide" alt="" coords="908,5,1153,35"/>
+<area shape="rect" id="node13" href="$classShapeUpgrade__ClosedFaceDivide.html" title="Divides a Face with one or more seam edge to avoid closed faces. &#160;&#160;Splitting is performed..." alt="" coords="909,59,1152,88"/>
+<area shape="rect" id="node15" href="$classShapeUpgrade__FaceDivideArea.html" title="Divides face by max area criterium. &#160;" alt="" coords="916,112,1145,141"/>
+<area shape="rect" id="node19" href="$classShapeUpgrade__FixSmallBezierCurves.html" title="ShapeUpgrade_FixSmallBezierCurves" alt="" coords="896,165,1165,195"/>
+</map>

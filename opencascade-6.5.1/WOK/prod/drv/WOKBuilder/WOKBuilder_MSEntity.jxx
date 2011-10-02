@@ -1,0 +1,18 @@
+#ifndef _WOKBuilder_Specification_HeaderFile
+#include <WOKBuilder_Specification.hxx>
+#endif
+#ifndef _TCollection_HAsciiString_HeaderFile
+#include <TCollection_HAsciiString.hxx>
+#endif
+#ifndef _MS_MetaSchema_HeaderFile
+#include <MS_MetaSchema.hxx>
+#endif
+#ifndef _MS_Type_HeaderFile
+#include <MS_Type.hxx>
+#endif
+#ifndef _MS_GlobalEntity_HeaderFile
+#include <MS_GlobalEntity.hxx>
+#endif
+#ifndef _WOKBuilder_MSEntity_HeaderFile
+#include <WOKBuilder_MSEntity.hxx>
+#endif

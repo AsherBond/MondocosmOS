@@ -1,0 +1,72 @@
+-- File:	LDAR.edl
+-- Author:	Jean GAUTIER
+-- History:	Fri Feb 16 17:10:04 1996	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1996
+
+@ifnotdefined ( %LDAR_EDL ) then
+@set %LDAR_EDL = "";
+
+@ifnotdefined ( %LD_EDL ) then
+@uses "LD.edl";
+@endif;
+
+@set %LDAR_Template  = "LDAR";
+@set %LDAR_ObjectRef = "LD_ObjectRef";
+
+@template LDAR_FileName ( %LDAR_LibName ) is
+$lib%LDAR_LibName.a\^
+@end;
+
+@if( %Station != "sun" ) then
+
+  @set %RmCmd = "/usr/bin/rm"; 
+  @if ( %Station == "hp" || %Station == "lin" || %Station == "mac" || %Station == "bsd" ) then
+    @set %RmCmd = "/bin/rm"; 
+  @endif;
+
+  @set %LDAR_LibLimit = "100";
+
+  @template LDAR ( %RmCmd, %LibName, %ObjectList ) is
+   $ %RmCmd -f %LibName 
+   $ ar q %LibName \
+   $ %ObjectList 
+   $ ;
+  @end;
+
+  @template LDAR_Begin ( %RmCmd, %LibName ) is
+   $ %RmCmd -f %LibName 
+  @end;
+
+  @template LDAR_Iter ( %LibName, %ObjectList ) is
+   $ ar q %LibName \
+   $  %ObjectList  \
+   $ ;
+  @end;
+
+  @template LDAR_End ( %LibName ) is
+   $ set status = 0
+  @end;
+
+@endif;
+
+@if( %Station == "sun" ) then
+
+  @template LDAR_Begin ( %LibName ) is
+   $ /usr/bin/rm -f %LibName 
+  @end;
+
+
+  @template LDAR_Iter (%LibName,%ObjectList)  is
+   $ %CSF_CXX_COMPILER -xar -o %LibName \
+   $ %ObjectList \
+   $ ;
+  @end;
+
+  @template LDAR_End ( %LibName ) is
+   $ set status = 0
+  @end;
+
+@endif;
+
+@endif;
+

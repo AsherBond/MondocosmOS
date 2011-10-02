@@ -1,0 +1,19 @@
+-- File:	EDL_CMPLRS.edl
+-- Author:	Jean GAUTIER
+-- History:	Thu Dec  4 16:22:56 1997	Jean GAUTIER	Creation
+-- Copyright:	 Matra Datavision 1997
+
+@ifnotdefined ( %EDL_CMPLRS_EDL) then
+@set %EDL_CMPLRS_EDL = "";
+
+@if ( %Station == "hp" ) then
+   @string %CMPLRS_C_Options = " -Ae " %CMPLRS_C_Options ;
+@endif;
+
+@if ( %Station == "lin" ) then
+   @if ( %DebugMode == "False" ) then
+      @set %CMPLRS_C_ModeOpt = " -O2 -DNo_Exception ";
+    @endif;
+@endif;
+
+@endif;

@@ -1,0 +1,25 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_ClassMet.cdl	1.1
+-- File:	MS_ClassMet.cdl
+-- Created:	Wed Jan 30 16:08:59 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+class ClassMet 
+
+    from 
+    	MS 
+    inherits MemberMet from MS
+    uses
+	HAsciiString from TCollection
+
+	---Purpose: 
+is
+
+
+    Create (aName: HAsciiString from TCollection; aClass: HAsciiString from TCollection) 
+    	returns mutable ClassMet from MS;
+
+end ClassMet from MS;

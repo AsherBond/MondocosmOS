@@ -1,0 +1,78 @@
+-- File:	WOKMake_DeliveryList.cdl
+-- Created:	Thu Mar 28 17:43:06 1996
+-- Author:	Arnaud BOUZY
+--		<adn@dekpon>
+---Copyright:	 Matra Datavision 1996
+
+
+class DeliveryList from WOKDeliv inherits TShared from MMgt
+
+	---Purpose: Describes the content of a delivery for a defined 
+	--          step
+	
+
+uses MapOfHAsciiString from WOKTools,
+     HAsciiString from TCollection
+    
+is
+    
+
+    Create(aDelivStep : Integer)
+    returns mutable DeliveryList;
+    
+    GetStep(me)
+    returns Integer;
+    
+    SetName(me: mutable; name : CString);
+    
+    GetName(me)
+    returns HAsciiString from TCollection;
+    
+    ChangeMap(me:mutable)
+    ---C++: return &
+    returns MapOfHAsciiString from WOKTools;
+    
+    GetMap(me)
+    ---C++: return const &
+    returns MapOfHAsciiString from WOKTools;
+    
+    ChangeRequireMap(me:mutable)
+    ---C++: return &
+    returns MapOfHAsciiString from WOKTools;
+    
+    GetRequireMap(me)
+    ---C++: return const &
+    returns MapOfHAsciiString from WOKTools;
+    
+    SetPutPath(me:mutable);
+    ---C++: inline
+    
+    IsPutPath(me)
+    ---C++: inline
+    returns Boolean;
+    
+    SetPutLib(me:mutable);
+    ---C++: inline
+    
+    IsPutLib(me)
+    ---C++: inline
+    returns Boolean;
+    
+    SetPutInclude(me:mutable);
+    ---C++: inline
+    
+    IsPutInclude(me)
+    ---C++: inline
+    returns Boolean;
+    
+fields
+
+    myStep : Integer;
+    myMap : MapOfHAsciiString from WOKTools;
+    myReqMap : MapOfHAsciiString from WOKTools;
+    myName : HAsciiString from TCollection;
+    myPutPath : Boolean;
+    myPutLib : Boolean;
+    myPutInclude : Boolean;
+    
+end DeliveryList;

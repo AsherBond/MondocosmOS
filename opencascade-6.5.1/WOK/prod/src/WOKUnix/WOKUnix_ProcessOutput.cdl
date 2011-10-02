@@ -1,0 +1,27 @@
+-- File:	WOKUnix_ProcessOutput.cdl
+-- Created:	Thu May  4 16:23:17 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+private deferred class ProcessOutput from WOKUnix
+inherits TShared from MMgt
+uses
+    Timeval from WOKUnix,
+    FDSet   from WOKUnix,
+    FDescr  from WOKUnix,
+    HSequenceOfHAsciiString from TColStd
+is
+    Initialize;
+    
+    Clear(me) is deferred;
+    Echo(me)   returns HSequenceOfHAsciiString from TColStd is deferred;
+    Errors(me) returns HSequenceOfHAsciiString from TColStd is deferred;
+
+    Select(me; afdmax : out Integer; atimeout : in out Timeval from WOKUnix; aset : out FDSet from WOKUnix) is deferred;
+    
+    Acquit(me; selectstatus : Integer; aset : FDSet from WOKUnix) is deferred;
+
+    Close(me:mutable) is deferred;
+
+end;

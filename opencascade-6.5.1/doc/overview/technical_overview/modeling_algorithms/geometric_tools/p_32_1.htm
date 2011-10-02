@@ -1,0 +1,290 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+img_whs3 { width:440px; height:299px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Algorithms\nGeometric Tools\nLines and Circles from constraints");
+addAvenueInfo("Geometric Tools","technical_overview/modeling_algorithms/geometric_tools/p_34_1.htm","");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Lines and Circles from Constraints</p>
+
+<h2>&nbsp;</h2>
+
+<p class="whs1">The <font style="font-weight: bold;">Lines 
+ and Circles from Constraints</font> component provides numerous <font 
+ style="font-weight: bold;">construction algorithms for 2D circles or lines 
+ described with numeric or geometric constraints</font> in relation to 
+ other curves. These constraints enable the following to be imposed:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ radius of a circle,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ angle that a straight line makes with another straight line,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ tangency of a straight line or circle in relation to a curve,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ passage of a straight line or circle through a point,</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ centering of a circle on a point or curve.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">For example, these 
+ algorithms enable to easily construct a circle of a given radius, centered 
+ on a straight line and tangential to another circle.</p>
+
+<p class="whs1">The implemented algorithms 
+ are more complex than those provided by the <font style="font-weight: bold;">Direct 
+ Constructions</font> component for building 2D circles or lines.</p>
+
+<p class="whs1">The expression of a 
+ tangency problem generally leads to several results, according to the 
+ relative positions of the solution and the circles or straight lines in 
+ relation to which the tangency constraints are expressed. For example, 
+ consider the following case of a circle of a given radius (a small one) 
+ which is tangential to two secant circles C1 and C2:</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1"><img src="../../../image/occ_0005.gif" alt="image\occ_0005.gif" width="440px" height="299px" border="0" class="img_whs3"><font 
+ style="font-family: Helvetica;"> </font><font style="font-weight: bold;"><span 
+ style="font-family: Arial, sans-serif;"><br>
+<br>
+Example of a Tangency Constraint</span></font></p>
+
+<p class="whs1">The diagram above clearly 
+ shows that there are 8 possible solutions.</p>
+
+<p class="whs1">In order to limit the 
+ number of solutions, we can try to express the relative position of the 
+ required solution in relation to the circles to which it is tangential. 
+ For example, if we specify that the solution is inside the circle C1 and 
+ outside the circle C2, only two solutions referenced 3 and 4 on the diagram 
+ respond to the problem posed.</p>
+
+<p class="whs1">This technique of <font 
+ style="font-weight: bold;">qualification</font> of a solution, in relation 
+ to the curves to which it is tangential, can be used in all algorithms 
+ for constructing a circle or a straight line by geometric constraints. 
+ Four qualifiers are used, which specify the following:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ solution(s) must enclose the argument, or</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ solution(s) must be enclosed by the argument, or</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ solution(s) and the argument must be external to one another, or</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ relative position is not qualified, i.e. all solutions apply.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">These definitions are 
+ very easy to interpret on a circle, where it is easy to identify the interior 
+ and exterior sides. In fact, for any kind of curve the interior is defined 
+ as the left-hand side of the curve in relation to its orientation.</p>
+
+<p class="whs1">OCCT implements several 
+ categories of algorithms:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">analytic algorithms</font>, where solutions 
+ are obtained by the resolution of an equation; such algorithms are used 
+ when the geometries which are worked on (tangency arguments, position 
+ of the center, etc.) are points, lines or circles;</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">geometric algorithms</font>, where the solution 
+ is generally obtained by calculating the intersection of parallel or bisecting 
+ curves built from geometric arguments; and</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">iterative algorithms</font>, where the solution 
+ is obtained by a process of iteration.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">For each kind of geometric 
+ construction of a constrained line or circle, OCCT provides two types 
+ of access to the user:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>algorithms 
+ from the package <font style="font-weight: bold;">Geom2dGcc</font> automatically 
+ select the algorithm best suited to the problem to be treated, both in 
+ the general case and in all types of specific cases; the arguments used 
+ are <font style="font-weight: bold;">Geom2d</font> objects; the solutions 
+ computed are <font style="font-weight: bold;">gp</font> objects;</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>algorithms 
+ from the package <font style="font-weight: bold;">GccAna</font> only treat 
+ the problem analytically, and can only be used when the geometries to 
+ be worked on are lines or circles; the arguments used and solutions computed 
+ are <font style="font-weight: bold;">gp</font> objects.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">The algorithms provided 
+ compute <font style="font-weight: bold;">all solutions,</font> which correspond 
+ to the geometric problem posed, <font style="font-weight: bold;">except</font> 
+ where the resolution is performed by an iterative algorithm.</p>
+
+<p class="whs1">Iterative algorithms 
+ compute <font style="font-weight: bold;">only one solution</font>, namely 
+ the one closest to an initial given position. This type of algorithm is 
+ used in the following cases:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>to 
+ build a circle, when an argument is more complex than a line or a circle, 
+ and where the radius is not known or difficult to determine: this is the 
+ case for a circle tangential to three geometric elements, or tangential 
+ to two geometric elements and centered on a curve;</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>to 
+ build a line, when a tangency argument is more complex than a line or 
+ a circle.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">Qualified curves (for 
+ tangency arguments) are provided either by:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ <font style="font-weight: bold;">GccEnt</font> package, for direct use 
+ by <font style="font-weight: bold;">GccAna</font> algorithms, or</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>the 
+ <font style="font-weight: bold;">Geom2dGcc</font> package, for general 
+ use by <font style="font-weight: bold;">Geom2dGcc</font> algorithms.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">The <font style="font-weight: bold;">GccEnt</font> 
+ and <font style="font-weight: bold;">Geom2dGcc</font> packages also provide 
+ simple functions for building qualified curves in a very efficient way.</p>
+
+<p class="whs1">The <font style="font-weight: bold;">GccAna</font> 
+ package also provides algorithms for <font style="font-weight: bold;">constructing 
+ bisecting loci</font> between circles, lines or points. Bisecting loci 
+ between two geometric objects are such that each of their points is at 
+ the same distance from the two geometric objects. They are typically curves, 
+ such as circles, lines or conics for <font style="font-weight: bold;">GccAna</font> 
+ algorithms. Each elementary solution is given as an elementary bisecting 
+ locus object (line, circle, ellipse, hyperbola, parabola), described by 
+ the <font style="font-weight: bold;">GccInt</font> package.</p>
+
+<p class="whs1">Note: Curves used by 
+ <font style="font-weight: bold;">GccAna</font> algorithms to define the 
+ geometric problem to be solved, are 2D lines or circles from the <font 
+ style="font-weight: bold;">gp</font> package: they are not explicitly 
+ parameterized. However, these lines or circles retain an implicit parameterization, 
+ corresponding to that which they induce on equivalent <font style="font-weight: bold;">Geom2d</font> 
+ objects. This induced parameterization is the one used when returning 
+ parameter values on such curves, for instance with the functions <font 
+ style="font-weight: bold;">Tangency1</font>, <font style="font-weight: bold;">Tangency2</font>, 
+ <font style="font-weight: bold;">Tangency3</font>, <font style="font-weight: bold;">Intersection2</font> 
+ and <font style="font-weight: bold;">CenterOn3</font> provided by construction 
+ algorithms from the <font style="font-weight: bold;">GccAna</font> or 
+ <font style="font-weight: bold;">Geom2dGcc</font> packages.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

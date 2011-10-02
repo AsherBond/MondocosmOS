@@ -1,0 +1,99 @@
+-- SCCS		Date: 04/23/95
+--		Information: @(#)MS_Method.cdl	1.1
+-- File:	MS_Method.cdl
+-- Created:	Wed Jan 30 15:51:42 1995
+-- Author:	Christophe LEYNADIER
+--		<cle@ilebon>
+---Copyright:	 Matra Datavision 1995
+
+
+deferred class Method 
+	---Purpose: 
+
+    from MS 
+    inherits Common from MS
+    uses 
+     	Param                   from MS,
+     	HSequenceOfHAsciiString from TColStd,
+     	HSequenceOfError        from MS,
+     	HArray1OfParam          from MS,
+     	HSequenceOfParam        from MS,
+	Type                    from MS,
+	HAsciiString            from TCollection
+    	
+is
+    Initialize(aName: HAsciiString);
+
+    CreateFullName(me : mutable) is virtual;
+	
+    Params(me: mutable; params: HSequenceOfParam from MS);
+    Params(me)
+        returns mutable HArray1OfParam from MS;
+	
+    Private(me: mutable; aPrivate: Boolean);
+    Private(me)
+    	returns Boolean;
+	
+    Returns(me: mutable; aParam: Param from MS);
+    Returns(me)
+    	returns mutable Param from MS;
+	
+    Raises(me: mutable; aExcept: HAsciiString from TCollection) is virtual;
+    GetRaisesName(me)
+    	returns mutable HSequenceOfHAsciiString from TColStd;
+	
+    Inline(me : mutable; anInline : Boolean from Standard);
+    IsInline(me) 
+    	returns Boolean from Standard;
+	
+    ConstReturn(me : mutable; aConst : Boolean from Standard);
+    IsConstReturn(me) 
+    	returns Boolean from Standard;
+	
+    Alias(me : mutable; anAlias : HAsciiString from TCollection);
+    IsAlias(me)
+    	returns HAsciiString from TCollection;
+	
+    SetAliasType(me : mutable; aType : Boolean from Standard);
+
+    Comment(me)
+         returns HAsciiString from TCollection;
+    SetComment(me : mutable; aComment : HAsciiString from TCollection);
+    
+    IsOperator(me) 
+    	returns Boolean from Standard;
+    IsQuotedAlias(me)
+    	returns Boolean from Standard;
+	
+    RefReturn(me : mutable; aRef : Boolean from Standard);
+    IsRefReturn(me) 
+	returns Boolean from Standard;    	    
+
+    Destructor(me : mutable; aDestructor : Boolean from Standard);
+    IsDestructor(me)
+    	returns Boolean from Standard;
+	
+    FunctionCall(me : mutable; aFunctionCall  : Boolean from Standard);
+    IsFunctionCall(me)	
+	returns Boolean from Standard;
+	    
+    IsSameSignature(me; aMetName : HAsciiString from TCollection)
+    	returns Boolean;
+     
+--modified by NIZNHY-PKV Sun May  4 16:18:07 2008f      
+    PtrReturn(me : mutable;  
+    	    aRef : Boolean from Standard);
+    IsPtrReturn(me) 
+	returns Boolean from Standard;  
+--modified by NIZNHY-PKV Sun May  4 16:18:13 2008t 
+
+fields
+    myParam     : HArray1OfParam from MS;        -- list of parameters
+    myAttribute : Integer;
+    myReturns   : Param from MS;                   -- return parameter
+    myRaises    : HSequenceOfHAsciiString from TColStd;        -- list of exceptions it raises
+    myAlias     : HAsciiString from TCollection;   -- alias method of me
+    myComment   : HAsciiString from TCollection;   -- Comment to method 
+    
+end Method from MS;
+

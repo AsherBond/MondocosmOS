@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classBRepFilletAPI__MakeChamfer.html" title="Describes functions to build chamfers on edges of a shell or solid. &#160;&#160;Chamfered Edge..." alt="" coords="5,237,219,267"/>
+<area shape="rect" id="node9" href="$classBRepFilletAPI__MakeFillet.html" title="Describes functions to build fillets on the broken edges of a shell or solid. &#160;&#160;A..." alt="" coords="243,237,429,267"/>
+<area shape="rect" id="node2" href="$classBRepBuilderAPI__MakeShape.html" title="This is the root class for all shape &#160;&#160;constructions. It stores the result. &#160;&#160;&#160;&#160;It..." alt="" coords="119,83,329,112"/>
+<area shape="rect" id="node4" href="$classBRepBuilderAPI__Command.html" title="Root class for all commands in BRepBuilderAPI. &#160;&#160;&#160;&#160;Provides : &#160;&#160;&#160;&#160;* Managements of..." alt="" coords="124,5,324,35"/>
+</map>

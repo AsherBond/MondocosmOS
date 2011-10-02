@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classIFSelect__BasicDumper.html" title="BasicDumper takes into account, for SessionFile, all the &#160;&#160;classes defined in the..." alt="" coords="5,237,179,267"/>
+<area shape="rect" id="node9" href="$classIGESSelect__Dumper.html" title="Dumper from IGESSelect takes into account, for SessionFile, the &#160;&#160;classes defined..." alt="" coords="203,237,360,267"/>
+<area shape="rect" id="node2" href="$classMMgt__TShared.html" title="The abstract class TShared is the root class of &#160;&#160;managed objects. TShared objects..." alt="" coords="125,83,248,112"/>
+<area shape="rect" id="node4" href="$classStandard__Transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy." alt="" coords="112,5,261,35"/>
+</map>

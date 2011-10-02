@@ -1,0 +1,174 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; font-family:Arial, sans-serif; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; font-family:Arial, sans-serif; }
+p.whs3 { margin-left:24.50pt; margin-top:4.50pt; text-indent:-9.50pt; font-family:Arial, sans-serif; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS += "p.whs3 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nModeling Data\nTopology\nGlobal Properties of Shapes");
+addAvenueInfo("Topology","technical_overview/modeling_data/topology/p_27_1.htm","technical_overview/modeling_data/topology/p_29_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Global Properties of Shapes</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Global 
+ Properties of Shapes</font> component provides algorithms for computing 
+ the global properties of a composite geometric system in 3D space, and 
+ frameworks to query the computed results.</p>
+
+<p class="whs1">The global properties computed 
+ for a system are :</p>
+
+<p class="whs2">-&nbsp;its mass,</p>
+
+<p class="whs2">-&nbsp;its center of mass,</p>
+
+<p class="whs2">-&nbsp;its matrix of inertia,</p>
+
+<p class="whs2">-&nbsp;its moment about an 
+ axis,</p>
+
+<p class="whs2">-&nbsp;its radius of gyration 
+ about an axis,</p>
+
+<p class="whs2">-&nbsp;and its principal properties 
+ of inertia such as principal axis, principal moments, and principal radius 
+ of gyration.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">Geometric systems are generally 
+ defined as shapes. Depending on the way they are analyzed, these shapes 
+ will give properties of:</p>
+
+<p class="whs2">-&nbsp;lines induced from 
+ the edges of the shape,</p>
+
+<p class="whs2">-&nbsp;surfaces induced from 
+ the faces of the shape, or</p>
+
+<p class="whs2">-&nbsp;volumes induced from 
+ the solid bounded by the shape.</p>
+
+<p class="whs2">&nbsp;</p>
+
+<p class="whs1">The global properties of several 
+ systems may be brought together to give the global properties of the system 
+ composed of the sum of all individual systems.</p>
+
+<p class="whs1">The <font style="font-weight: bold;">Global 
+ Properties of Shapes</font> component is composed of :</p>
+
+<p class="whs2">-&nbsp;seven functions for 
+ computing global properties of a shape: one function for lines, two functions 
+ for surfaces and four functions for volumes. The choice of functions depends 
+ on input parameters and algorithms used for computation (<font style="font-weight: bold;">BRepGProp</font> 
+ global functions),</p>
+
+<p class="whs2">-&nbsp;a framework for computing 
+ global properties for a set of points (<font style="font-weight: bold;">GProp_PGProps</font>),</p>
+
+<p class="whs2">-&nbsp;and a general framework 
+ to :</p>
+
+<p class="whs3">-&nbsp;bring together the 
+ global properties retained by several more elementary frameworks, and</p>
+
+<p class="whs3">-&nbsp;provide a general programming 
+ interface to consult computed global properties.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

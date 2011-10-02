@@ -1,0 +1,21 @@
+-- File:	WOKTools_Warning.cdl
+-- Created:	Wed Jun 28 20:20:22 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+class Warning from WOKTools 
+inherits Message from WOKTools
+
+	---Purpose: Warning messages
+
+uses
+    AsciiString from TCollection
+is
+    Create returns Warning from WOKTools;
+    
+    Code(me)
+    	returns Character from Standard
+	is redefined;
+	    
+end Warning;

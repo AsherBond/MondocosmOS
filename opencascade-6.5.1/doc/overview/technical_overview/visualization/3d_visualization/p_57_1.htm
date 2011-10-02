@@ -1,0 +1,661 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Overview</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../../../html_ns_ns_nc_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../../html_ns_ns_nc.css'>");}
+//-->
+</script>
+<script LANGUAGE="JavaScript" TITLE="BSSC Special Effects" src="../../../ehlpdhtm.js" name="EHELP_DHTM"></script>
+
+<style type="text/css">
+<!--
+p.whs1 { margin-left:4.50pt; margin-top:4.50pt; }
+p.whs2 { margin-left:14.50pt; margin-top:4.50pt; text-indent:-9.50pt; }
+p.whs3 { margin-left:4.50pt; margin-top:10.00pt; }
+p.whs4 { margin-left:18.00pt; }
+p.whs5 { margin-left:24.00pt; margin-top:6.00pt; }
+p.whs6 { margin-left:36.00pt; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "p.whs2 {text-indent:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Technical Overview\nVisualization\n3D Graphics & Visualization\nSelection Management");
+addAvenueInfo("3D Visualization","technical_overview/visualization/3d_visualization/p_56_1.htm","technical_overview/visualization/3d_visualization/p_58_1.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../../whd_show0.gif","../../../whd_show2.gif","../../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../../whd_hide0.gif","../../../whd_hide2.gif","../../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../../whd_prev0.gif","../../../whd_prev2.gif","../../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../../whd_next0.gif","../../../whd_next2.gif","../../../whd_next1.gif");
+
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+</script>
+<p class=ReleaseNotes-1>Selection Management</p>
+
+<p class="whs1">&nbsp;</p>
+
+<p class="whs1">The <font style="font-weight: bold;">SelectMgr</font> 
+ package provides low level services and the classes <font style="font-weight: bold;">SelectMgr_SelectionManager</font> 
+ and <font style="font-weight: bold;">SelectMgr_ViewerSelector</font> in 
+ particular are only to be used when you do not want to use the services 
+ provided by <font style="font-weight: bold;">AIS</font>.</p>
+
+<p class="whs1"><font style="font-weight: bold;">SelectMgr</font> 
+ manages the process of dynamic selection through the following services:</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>activating 
+ and deactivating selection modes for Interactive Objects</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>adding 
+ and removing viewer selectors</p>
+
+<p class="whs2">-<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>definitions 
+ of abstract filter classes</p>
+
+<p class="whs1">The principle of graphic 
+ selection consists in representing the objects which you want to select 
+ by a bounding box in the selection view. The object is selected when you 
+ use the mouse to designate the zone produced by the object.</p>
+
+<p class="whs1">To realize this, the 
+ application creates a selection structure which is independent of the 
+ point of view. This structure is made up of sensitive primitives which 
+ have one owner object associated to each of them. The role of the sensitive 
+ primitive is to reply to the requests of the selection algorithm whereas 
+ the owner's purpose is to make the link between the sensitive primitive 
+ and the object to be selected. Each selection structure corresponds to 
+ a selection mode which defines the elements that can be selected.</p>
+
+<p class="whs1">For example, to select 
+ a complete geometric model, the application can create a sensitive primitive 
+ for each face of the interactive object representing the geometric model. 
+ In this case, all the primitives share the same owner. On the other hand, 
+ to select an edge in a model, the application must create one sensitive 
+ primitive per edge.</p>
+
+<p class="whs3"><font style="font-size: 10pt;
+	color: #000000;
+	font-weight: bold;"
+															size=2
+															color=#000000>Example</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>void 
+ InteractiveBox::ComputeSelection<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>(const 
+ Handle(SelectMgr_Selection)&amp; Sel,</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ const Standard_Integer Mode){</font></p>
+
+&nbsp; 
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>switch(Mode){</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>case 
+ 0:<br>
+// locating the whole box by making its faces sensitive ...<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>{</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ Handle(SelectMgr_EntityOwner) Ownr = new<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ SelectMgr_EntityOwner(this,5);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ for(Standard_Integer I=1;I&lt;=Nbfaces;I++){</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ Sel-&gt;Add(new Select3D_SensitiveFace<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>(Ownr,[array 
+ of the vertices] face I);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ }</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>case 
+ 1:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>// 
+ locates the<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>edges<span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>{</font></p>
+
+&nbsp; 
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ for(Standard_Integer i=1;i&lt;=12;i++){</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>// 
+ 1 owner per edge...<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Handle(mypk_EdgeOwner) 
+ Ownr =<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>new 
+ mypk_EdgeOwner(this,i,6);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>// 
+ 6-&gt;priority<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Sel-&gt;Add(new<span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>Select3D_SensitiveSegment<span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>(Ownr,firstpt(i),lastpt(i));</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ }</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span> 
+ }</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>}</font></p>
+
+<p class="whs1">The algorithms for 
+ creating selection structures store the sensitive primitives in a <font 
+ style="font-weight: bold;">SelectMgr_Selection</font> object. To do this, 
+ a set of ready-made sensitive primitives is supplied in the <font style="font-weight: bold;">Select2D</font> 
+ and <font style="font-weight: bold;">Select3D</font> packages. New sensitive 
+ primitives can be defined through inheritance from<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><font 
+ style="font-weight: bold;">SensitiveEntity</font>. For the application 
+ to make its own objects selectable, it must define owner classes inheriting 
+ <font style="font-weight: bold;">SelectMgr_EntityOwner</font>.</p>
+
+<p class="whs1">For any object inheriting 
+ from AIS_InteractiveObject, you redefine its ComputeSelection functions. 
+ In the example below there are different modes of selection on the topological 
+ shape contained within the interactive object -selection of the shape 
+ itself, the vertices, the edges, the wires, the faces.</p>
+
+<p class="whs3"><font style="font-size: 10pt;
+	color: #000000;
+	font-weight: bold;"
+															size=2
+															color=#000000>Example</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>void 
+ MyPack_MyClass::ComputeSelection(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>const 
+ Handle(SelectMgr_Selection)&amp; aSelection,</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>const 
+ Standard_Integer aMode)<br>
+{</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>switch(aMode){</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>case 
+ 0:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>StdSelect_BRepSelectionTool::Load(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>aSelection,this,myShape,TopAbs_SHAPE);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>}</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>case 
+ 1:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>StdSelect_BRepSelectionTool::Load(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>aSelection,this,myShape,TopAbs_VERTEX);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>}</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>case 
+ 2:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>StdSelect_BRepSelectionTool::Load(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>aSelection,this,myShape,TopAbs_EDGE);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>}</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>case 
+ 3:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>StdSelect_BRepSelectionTool::Load(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>aSelection,this,myShape,TopAbs_WIRE);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>}</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>case 
+ 4:<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span>StdSelect_BRepSelectionTool::Load(<span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;"><br>
+&nbsp;&nbsp;&nbsp;</font></span><span style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>aSelection,this,myShape,TopAbs_FACE);</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>break;</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000><span 
+ style="font-size: 8pt; font-family='Times: New Roman;"><font size=1 style="font-size:8pt;">&nbsp;&nbsp;&nbsp;</font></span>}</font></p>
+
+<p class="whs1"><font style="font-family: 'Lucida Console';
+	font-size: 10pt;
+	color: #000000;"
+															face="Lucida Console"
+															size=2
+															color=#000000>}</font></p>
+
+<p class="whs1">The <font style="font-weight: bold;">StdSelect_BRepSelectionTool</font> 
+ object provides a high level service which will make the shape 'myShape' 
+ selectable when the <font style="font-weight: bold;">AIS_InteractiveContext</font> 
+ is asked to display your object.</p>
+
+<p class="whs4">&nbsp;</p>
+
+<p class="whs4"><font style="font-size: 11pt;
+												color: #000000;
+												font-weight: bold;"
+										size=2
+										color=#000000>Note:</font></p>
+
+<p><font style="color: #000000;"
+		color=#000000>The traditional way of highlighting selected entity 
+ owners adopted by Open CASCADE Technology assumes that each entity owner 
+ highlights itself on its own. This approach has two drawbacks: </font></p>
+
+<ul>
+	
+	<li style="font-size: 8pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs5"><font 
+ style="color: #000000;"
+	color=#000000>each entity owner has to maintain its own </font><font 
+ style="font-family: 'Lucida Console'; color: #000000;"
+	face="Lucida Console"
+	color=#000000>Prs3d_Presentation</font><font style="color: #000000;"
+												color=#000000> object, 
+ that results in large memory overhead for thousands of owners;</font></p></li>
+	
+	<li style="font-size: 8pt; /*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p><p class="whs5"><font 
+ style="color: #000000;"
+	color=#000000>drawing selected owners one by one is not efficient from 
+ the OpenGL usage viewpoint.</font></p></li>
+</ul>
+
+<p><font style="color: #000000;"
+		color=#000000>That is why a different method has been introduced. 
+ On the basis of </font><font style="font-family: 'Lucida Console'; color: #000000;"
+								face="Lucida Console"
+								color=#000000>SelectMgr_EntityOwner::IsAutoHilight()</font><font 
+ style="color: #000000;"
+	color=#000000> return value an </font><font style="font-family: 'Lucida Console'; color: #000000;"
+												face="Lucida Console"
+												color=#000000>AIS_LocalContext</font><font 
+ style="color: #000000;"
+	color=#000000> object either uses the traditional way of highlighting 
+ (</font><font style="font-family: 'Lucida Console'; color: #000000;"
+				face="Lucida Console"
+				color=#000000>IsAutoHilight()</font><font style="color: #000000;"
+															color=#000000> 
+ returned true) or groups such owners according to their Selectable Objects 
+ and finally calls </font><font style="font-family: 'Lucida Console'; color: #000000;"
+								face="Lucida Console"
+								color=#000000>SelectMgr_SelectableObject::HilightSelected()</font><font 
+ style="color: #000000;"
+	color=#000000> or </font><font style="font-family: 'Lucida Console'; color: #000000;"
+									face="Lucida Console"
+									color=#000000>ClearSelected()</font><font 
+ style="color: #000000;"
+	color=#000000>, passing a group of owners as an argument. </font></p>
+
+<p class="whs4">&nbsp;</p>
+
+<p><font style="color: #000000;"
+		color=#000000>Hence, an application can derive its own interactive 
+ object and redefine </font><font style="font-family: 'Lucida Console'; color: #000000;"
+									face="Lucida Console"
+									color=#000000>HilightSelected()</font><font 
+ style="color: #000000;"
+	color=#000000>, </font><font style="font-family: 'Lucida Console'; color: #000000;"
+								face="Lucida Console"
+								color=#000000>ClearSelected()</font><font 
+ style="color: #000000;"
+	color=#000000> and </font><font style="font-family: 'Lucida Console'; color: #000000;"
+									face="Lucida Console"
+									color=#000000>HilightOwnerWithColor()</font><font 
+ style="color: #000000;"
+	color=#000000> virtual methods to take advantage of such OpenGL technique 
+ as arrays of primitives. In any case, these methods should at least have 
+ empty implementation.</font></p>
+
+<p class="whs6">&nbsp;</p>
+
+<p class=Body-Text
+	style="margin-left: 5.75pt;"><font style="font-size: 8pt;"
+										size=2>The </font><font style="font-family: 'Lucida Console'; font-size: 8pt;"
+	face="Lucida Console"
+	size=2>AIS_LocalContext::UpdateSelected(const Handle(AIS_InteratciveObject)&amp;, 
+ Standard_Boolean)</font><font style="font-size: 8pt;"
+								size=2> method can be used for efficient 
+ redrawing a selection presentation for a given interactive object from 
+ an application code.</font></p>
+
+<p class="whs3"><font style="color: #000000;"
+															color=#000000>Additionally, 
+ the </font><font style="font-family: 'Lucida Console'; color: #000000;"
+					face="Lucida Console"
+					color=#000000>SelectMgr_SelectableObject::ClearSelections()</font><font 
+ style="color: #000000;"
+	color=#000000> method now accepts an optional Boolean argument. This 
+ parameter defines whether all object selections should be flagged for 
+ further update or not. This improved method can be used to re-compute 
+ an object selection (without redisplaying the object completely) when 
+ some selection mode is activated not for the first time.</font></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

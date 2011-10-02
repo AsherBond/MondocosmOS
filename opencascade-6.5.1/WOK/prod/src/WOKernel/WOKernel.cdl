@@ -1,0 +1,202 @@
+-- File:	WOKernel.cdl
+-- Created:	Fri 23 Jun 16:12:52 1995
+-- Author:	Jean GAUTIER
+--		<jga@cobrax>
+---Copyright:	 Matra Datavision 1995
+
+package WOKernel
+
+    ---Purpose: WOK Entities Structure 
+    --          
+    --          Notions Implemented Here :
+    --          
+    --          Factories
+    --          Workshops
+    --          Parcels
+    --          Development Units
+    --          Workbenches
+    --          Files in WOK Structure (including Locate)
+
+uses
+    WOKTools,
+    WOKUtils,
+    EDL,
+    TColStd,
+    TCollection,
+    MMgt,
+    GraphTools
+    
+is
+
+-- ENUMERATIONS
+
+    
+    enumeration StationID is SUN, DECOSF, SGI, HP, WNT, MAC, LIN, AIX, BSD , VMS , UnknownStation;
+    ---Purpose: liste les stations supportees par WOK
+
+    enumeration DBMSID is DFLT, OBJY, OBJS, UnknownDBMS;
+    ---Purpose: liste les DBs objet supportees par WOK
+
+    class Station;
+    ---Purpose: Manages Stations Operations    
+    
+    class DBMSystem;
+    ---Purpose: Manages DBMS Operations
+
+    class FileType;
+    class FileTypeHasher;
+
+    class GlobalFileTypeBase;
+    class FileTypeBase;
+
+    deferred class BaseEntity;
+    ---Purpose: Base class for the WOK Kernel manipulates entities
+    
+    deferred class Entity;
+    ---Purpose: Base class for the WOK Kernel manipulates entities
+    
+    pointer PEntity to Entity from WOKernel;
+    ---Purpose: used to avoid cycling handles
+    
+    class BaseEntityHasher;
+    ---Purpose: Hashes an entity    
+    
+    	class Session;
+	---Purpose: a session is the WOK process lifetime
+
+	class EntityIterator;
+
+	pointer PSession to Session from WOKernel;
+     
+     	class Factory;
+	---Purpose: a  factory  is the  development environment  for 
+	--          the team of developers.
+	--          A factory has a warehouse and a set of workshops
+    
+     	class Workshop;
+	---Purpose: a workshop is a tree of workbench
+	--          It is used to work under a particular Parcel config
+	--          for a particuliar job	
+	--          A worshop implies a root workbench in it
+
+     	class Warehouse;
+	---Purpose: a warehouse is a parcel container
+
+    	class UnitTypeDescr;
+        ---Purpose: describes a unit type
+
+    	class UnitTypeBase;
+
+     	deferred class UnitNesting;
+    	---Purpose: Unit Nesting is a Developement unit container
+    	--          Two kinds of them : Parcel and Workbench
+	
+     	    class Parcel;
+	    ---Purpose: a parcel is the deliverable nesting for
+	    --          software components (DevUnits).
+	    --          It is present in the warehouse
+	    
+     	    class Workbench;
+	    ---Purpose: a workbench is the developement environment for
+	    --          a developper.
+	    --          It contains DevUnits.
+	    --          It is contained by a workshop
+
+    	class Locator;
+    
+     	class DevUnit;
+	---Purpose: a development unit is the smallest entity
+	--          manipulated by the developper
+	--          there is various kind of DevUnits for different purposes
+
+
+    	class UnitGraph;
+
+ 	class File;
+	---Purpose: a DevUnit is a set of Files
+
+	class FileLocatorHasher;
+	
+    private class ImplDepIterator;
+    ---Purpose: provides an algorithm for implementations dependancies search
+
+    private class ClientIterator;
+    ---Purpose: provides an algorithm for clients search
+       
+    private class HAsciiStringHasher;
+	
+-- INSTANTIATIONS
+
+    class SequenceOfUnitTypeDescr
+    	instantiates Sequence   from TCollection  ( UnitTypeDescr         from WOKernel);
+
+    class SequenceOfStationID
+    	instantiates Sequence  from TCollection  ( StationID             from WOKernel ); 
+    class HSequenceOfStationID
+    	instantiates HSequence from TCollection  ( StationID             from WOKernel,  
+    	    	    	    	    	    	   SequenceOfStationID   from WOKernel); 
+
+    class SequenceOfDBMSID
+    	instantiates Sequence  from TCollection  ( DBMSID                from WOKernel );
+    class HSequenceOfDBMSID
+    	instantiates HSequence from TCollection  ( DBMSID                from WOKernel,  
+    	    	    	    	    	    	   SequenceOfDBMSID      from WOKernel); 
+
+    class DataMapOfHAsciiStringOfFactory
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   Factory           from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfWarehouse
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   Warehouse         from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfWorkshop
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   Workshop          from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfParcel
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   Parcel            from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfWorkbench
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   Workbench         from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfDevUnit
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   DevUnit           from WOKernel,  
+    	    	    	    	    	           HAsciiStringHasher    from WOKTools);
+    class DataMapOfHAsciiStringOfFile
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   File             from WOKernel, 
+	    	    	    	    	    	   HAsciiStringHasher    from WOKTools);
+    class DataMapOfFileType    
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   FileType         from WOKernel, 
+    	    	    	    	    	    	   HAsciiStringHasher    from WOKTools);
+						   
+    class DataMapOfFileTypeBase    
+    	instantiates   DataMap from WOKTools     ( HAsciiString          from TCollection,   FileTypeBase     from WOKernel, 
+    	    	    	    	    	    	   HAsciiStringHasher    from WOKTools);
+						   
+    alias FileTypeIterator is DataMapIteratorOfDataMapOfFileType  from WOKernel;
+						   
+    class SequenceOfSession
+    	instantiates  Sequence from TCollection  ( Session                   from WOKernel);
+
+    class SequenceOfFile       
+    	instantiates Sequence  from TCollection  ( File                  from WOKernel); 
+    class HSequenceOfFile       
+    	instantiates HSequence from TCollection  ( File                  from WOKernel, 
+    	    	    	    	    	    	   SequenceOfFile        from WOKernel); 
+
+    private class Array1OfHSequenceOfHAsciiString
+    	instantiates    Array1 from TCollection  ( HSequenceOfHAsciiString from TColStd );
+	
+    private class SequenceOfFileType
+    	instantiates Sequence  from TCollection  ( FileType              from WOKernel );
+	
+    private class SortedImpldepFromIterator 
+    	instantiates SortedStrgCmptsFromIterator from GraphTools (UnitGraph          from WOKernel,
+                                                                  HAsciiString       from TCollection,
+								  HAsciiStringHasher from WOKernel,
+								  ImplDepIterator    from WOKernel);
+    private class SortedClientsFromIterator 
+    	instantiates SortedStrgCmptsFromIterator from GraphTools (UnitGraph          from WOKernel,
+                                                                  HAsciiString       from TCollection,
+								  HAsciiStringHasher from WOKernel,
+								  ClientIterator     from WOKernel);
+	
+end WOKernel;
