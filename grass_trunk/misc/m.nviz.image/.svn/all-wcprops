@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48543/grass/trunk/misc/m.nviz.image
+END
+cplane.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/cplane.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/local_proto.h
+END
+vector.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/vector.c
+END
+m.nviz.image.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48543/grass/trunk/misc/m.nviz.image/m.nviz.image.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/main.c
+END
+write_img.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/write_img.c
+END
+volume.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/volume.c
+END
+surface.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/surface.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48542/grass/trunk/misc/m.nviz.image/Makefile
+END
+args.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48541/grass/trunk/misc/m.nviz.image/args.c
+END

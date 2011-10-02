@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45071/grass/trunk/imagery/i.ortho.photo
+END
+alg_photo_rectify.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/14462/grass/trunk/imagery/i.ortho.photo/alg_photo_rectify.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/33038/grass/trunk/imagery/i.ortho.photo/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/33944/grass/trunk/imagery/i.ortho.photo/README
+END
+alg_camera_position.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/14772/grass/trunk/imagery/i.ortho.photo/alg_camera_position.txt
+END

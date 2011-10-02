@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48579/grass/trunk/vector/v.in.lidar
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48579/grass/trunk/vector/v.in.lidar/main.c
+END
+v.in.lidar.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48578/grass/trunk/vector/v.in.lidar/v.in.lidar.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46418/grass/trunk/vector/v.in.lidar/Makefile
+END

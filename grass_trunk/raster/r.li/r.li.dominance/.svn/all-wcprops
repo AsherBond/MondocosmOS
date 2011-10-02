@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.dominance
+END
+r.li.dominance.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.dominance/r.li.dominance.html
+END
+rliDominance_formula.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/grass/!svn/ver/21811/grass/trunk/raster/r.li/r.li.dominance/rliDominance_formula.png
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.dominance/Makefile
+END
+dominance.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.dominance/dominance.c
+END

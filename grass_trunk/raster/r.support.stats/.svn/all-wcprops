@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/raster/r.support.stats
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/33142/grass/trunk/raster/r.support.stats/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38061/grass/trunk/raster/r.support.stats/main.c
+END
+histo.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40771/grass/trunk/raster/r.support.stats/histo.c
+END
+r.support.stats.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48557/grass/trunk/raster/r.support.stats/r.support.stats.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38906/grass/trunk/raster/r.support.stats/Makefile
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38120/grass/trunk/raster/r.support.stats/check.c
+END

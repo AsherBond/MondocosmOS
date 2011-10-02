@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.richness
+END
+richness.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.richness/richness.c
+END
+r.li.richness.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.richness/r.li.richness.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.richness/Makefile
+END
+rliRichness_formula.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/21811/grass/trunk/raster/r.li/r.li.richness/rliRichness_formula.png
+END

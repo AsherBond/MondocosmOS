@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48398/grass/trunk/lib/raster3d
+END
+long.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/long.c
+END
+history.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/history.c
+END
+changeprecision.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/changeprecision.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/open.c
+END
+volume_layout.xcf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47536/grass/trunk/lib/raster3d/volume_layout.xcf
+END
+headerinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/headerinfo.c
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48397/grass/trunk/lib/raster3d/close.c
+END
+putvalue.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/putvalue.c
+END
+index.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/index.c
+END
+defaults.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/defaults.c
+END
+tilemath.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48398/grass/trunk/lib/raster3d/tilemath.c
+END
+volume.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/volume.c
+END
+null.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/null.c
+END
+keys.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/keys.c
+END
+getvalue.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/getvalue.c
+END
+maskfn.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47537/grass/trunk/lib/raster3d/maskfn.c
+END
+intio.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/intio.c
+END
+rle.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/rle.c
+END
+region.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47643/grass/trunk/lib/raster3d/region.c
+END
+cache1.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/cache1.c
+END
+retile.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/retile.c
+END
+changetype.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/changetype.c
+END
+mapset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/mapset.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/error.c
+END
+getblock.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/getblock.c
+END
+cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/cats.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47538/grass/trunk/lib/raster3d/Makefile
+END
+range.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/range.c
+END
+windowio.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/windowio.c
+END
+param.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/param.c
+END
+doubleio.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/doubleio.c
+END
+cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/cache.c
+END
+writeascii.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/writeascii.c
+END
+G3d.h_unused
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47537/grass/trunk/lib/raster3d/G3d.h_unused
+END
+volume_layout.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47532/grass/trunk/lib/raster3d/volume_layout.png
+END
+cachehash.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/cachehash.c
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/window.c
+END
+resample.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/resample.c
+END
+tilealloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/tilealloc.c
+END
+tilewrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/tilewrite.c
+END
+raster3d_intern.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/raster3d_intern.h
+END
+cachehash.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47537/grass/trunk/lib/raster3d/cachehash.h
+END
+color.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/color.c
+END
+filename.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47537/grass/trunk/lib/raster3d/filename.c
+END
+fpcompress.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/fpcompress.c
+END
+volume_tile_cell_generator.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/47531/grass/trunk/lib/raster3d/volume_tile_cell_generator.sh
+END
+fpxdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/fpxdr.c
+END
+open2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48398/grass/trunk/lib/raster3d/open2.c
+END
+snap.gif
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47531/grass/trunk/lib/raster3d/snap.gif
+END
+tileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/tileio.c
+END
+filecompare.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/filecompare.c
+END
+raster3dlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47538/grass/trunk/lib/raster3d/raster3dlib.dox
+END
+header.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/header.c
+END
+tilenull.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/tilenull.c
+END
+snap.rgb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47531/grass/trunk/lib/raster3d/snap.rgb
+END
+tileread.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/tileread.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47537/grass/trunk/lib/raster3d/alloc.c
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/misc.c
+END
+mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/mask.c
+END

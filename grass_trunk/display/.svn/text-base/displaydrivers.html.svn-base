@@ -1,0 +1,23 @@
+<!-- meta page description: Display drivers -->
+<!-- meta page index: display --> 
+
+The current command line rendering mechanism is direct rendering into
+a file. The driver is selected by setting
+the <tt>GRASS_RENDER_IMMEDIATE</tt> variable or by
+running <em><a href="d.mon.html">d.mon</a></em> module.
+
+<p>
+<b>List of available display drivers:</b>
+<ul>
+  <li><a href="cairodriver.html">Cairo driver</a>
+  <li><a href="pngdriver.html">PNG driver</a>
+  <li><a href="psdriver.html">PS driver (Postscript)</a>
+  <li><a href="htmldriver.html">HTMLMAP driver</a>
+</ul>
+
+<h2>SEE ALSO</h2>
+
+<em>
+  <a href="d.mon.html">d.mon</a>,
+  <a href="variables.html#rendering">variables</a>
+</em>

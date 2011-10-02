@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/46065/grass/trunk/raster/r.rescale
+END
+r.rescale.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/43810/grass/trunk/raster/r.rescale/r.rescale.html
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/33142/grass/trunk/raster/r.rescale/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46065/grass/trunk/raster/r.rescale/main.c
+END
+get_range.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40771/grass/trunk/raster/r.rescale/get_range.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.rescale/Makefile
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48594/grass/trunk/temporal/tv.register
+END
+tv.register.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48326/grass/trunk/temporal/tv.register/tv.register.html
+END
+test.tv.register.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48594/grass/trunk/temporal/tv.register/test.tv.register.sh
+END
+tv.register.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48594/grass/trunk/temporal/tv.register/tv.register.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48326/grass/trunk/temporal/tv.register/Makefile
+END

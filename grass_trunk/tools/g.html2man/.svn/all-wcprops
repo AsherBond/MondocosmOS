@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/43707/grass/trunk/tools/g.html2man
+END
+htmltags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/16799/grass/trunk/tools/g.html2man/htmltags.txt
+END
+groff.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/43707/grass/trunk/tools/g.html2man/groff.py
+END
+html.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/43707/grass/trunk/tools/g.html2man/html.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/43707/grass/trunk/tools/g.html2man/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/13488/grass/trunk/tools/g.html2man/README
+END
+g.html2man.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/43707/grass/trunk/tools/g.html2man/g.html2man.py
+END

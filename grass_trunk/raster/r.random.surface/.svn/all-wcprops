@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/43719/grass/trunk/raster/r.random.surface
+END
+save.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40273/grass/trunk/raster/r.random.surface/save.c
+END
+calcsurf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38119/grass/trunk/raster/r.random.surface/calcsurf.c
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40771/grass/trunk/raster/r.random.surface/init.c
+END
+makebigf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/makebigf.c
+END
+gennorm.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38020/grass/trunk/raster/r.random.surface/gennorm.c
+END
+cpfilter.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/cpfilter.c
+END
+gasdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/gasdev.c
+END
+makepp.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/makepp.c
+END
+zero.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/zero.c
+END
+random.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38020/grass/trunk/raster/r.random.surface/random.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/32820/grass/trunk/raster/r.random.surface/local_proto.h
+END
+digits.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/digits.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40215/grass/trunk/raster/r.random.surface/main.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/14989/grass/trunk/raster/r.random.surface/TODO
+END
+decay.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/decay.c
+END
+ransurf.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38136/grass/trunk/raster/r.random.surface/ransurf.h
+END
+dd.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/dd.c
+END
+r.random.surface.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/r.random.surface.html
+END
+calcsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35039/grass/trunk/raster/r.random.surface/calcsd.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38906/grass/trunk/raster/r.random.surface/Makefile
+END

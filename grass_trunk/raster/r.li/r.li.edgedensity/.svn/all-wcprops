@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.edgedensity
+END
+rliEdgeDensity_formula1.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grass/!svn/ver/21597/grass/trunk/raster/r.li/r.li.edgedensity/rliEdgeDensity_formula1.png
+END
+edgedensity.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.edgedensity/edgedensity.c
+END
+rliEdgeDensity_formula2.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grass/!svn/ver/21597/grass/trunk/raster/r.li/r.li.edgedensity/rliEdgeDensity_formula2.png
+END
+r.li.edgedensity.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.edgedensity/r.li.edgedensity.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.edgedensity/Makefile
+END

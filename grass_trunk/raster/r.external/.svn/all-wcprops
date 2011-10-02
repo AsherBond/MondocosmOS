@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48005/grass/trunk/raster/r.external
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/main.c
+END
+r.external.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/46555/grass/trunk/raster/r.external/r.external.html
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/window.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/proto.h
+END
+proj.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/proj.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/list.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42035/grass/trunk/raster/r.external/Makefile
+END
+link.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48005/grass/trunk/raster/r.external/link.c
+END

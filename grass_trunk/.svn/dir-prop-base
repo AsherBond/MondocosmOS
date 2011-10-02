@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 108
+autom4te.cache
+dist.*
+bin.*
+config.log
+Makefile-grass_trunk.mk
+error.log
+grass.pc
+config.status*
+latex
+html
+
+END

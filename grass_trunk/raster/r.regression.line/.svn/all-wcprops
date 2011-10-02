@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48557/grass/trunk/raster/r.regression.line
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47356/grass/trunk/raster/r.regression.line/main.c
+END
+r.regression.line.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/48557/grass/trunk/raster/r.regression.line/r.regression.line.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/43677/grass/trunk/raster/r.regression.line/Makefile
+END

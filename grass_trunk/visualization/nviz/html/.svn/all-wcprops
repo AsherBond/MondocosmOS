@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html
+END
+nviz_panel_sites.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_panel_sites.html
+END
+nviz_panel_scale.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_scale.html
+END
+nviz_panel_lights.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_lights.html
+END
+gmsmodviz.gif
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/16117/grass/trunk/visualization/nviz/html/gmsmodviz.gif
+END
+nviz_panel_dsf2.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_dsf2.html
+END
+nviz_desc.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_desc.html
+END
+bugs_todo.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/bugs_todo.html
+END
+nviz_panel_vect.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_panel_vect.html
+END
+nviz_panel_pos.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_pos.html
+END
+nviz_panel_labels.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_labels.html
+END
+nviz_quit.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_quit.html
+END
+nviz_image.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_image.html
+END
+nviz_toc.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_toc.html
+END
+nviz_panel_dsf.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_dsf.html
+END
+nviz_panel_color.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_color.html
+END
+nviz_panel_surf.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_surf.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/39655/grass/trunk/visualization/nviz/html/Makefile
+END
+grass_logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/21112/grass/trunk/visualization/nviz/html/grass_logo.png
+END
+nviz_panel_sdiff.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_sdiff.html
+END
+nviz_credit.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_credit.html
+END
+nviz_panel_dsf1.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_dsf1.html
+END
+nviz_panel_kanim.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_kanim.html
+END
+nviz_panel_dsf3.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_dsf3.html
+END
+nviz_panel_vol.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_vol.html
+END
+nviz_state.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_state.html
+END
+nviz_panel_cplane.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_cplane.html
+END
+nviz_panel_what.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_what.html
+END
+nviz_panel_move.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_move.html
+END
+nviz_hints.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_hints.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/index.html
+END
+nviz_startup.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_startup.html
+END
+nviz_panel_anim.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_panel_anim.html
+END
+nviz_3dsetting.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48558/grass/trunk/visualization/nviz/html/nviz_3dsetting.html
+END
+nviz_script.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48557/grass/trunk/visualization/nviz/html/nviz_script.html
+END

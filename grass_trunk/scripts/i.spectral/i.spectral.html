@@ -1,0 +1,34 @@
+<h2>DESCRIPTION</h2>
+
+<em>i.spectral</em> displays spectral response at user specified 
+locations in images.
+
+<h2>NOTES</h2>
+
+This script needs gnuplot to be installed.
+
+<h2>EXAMPLE</h2>
+
+North Carolina sample dataset:
+
+<div class="code"><pre>
+g.region rast=lsat7_2002_10 -p
+LIST=`g.mlist type=rast pat="lsat7_2002_[1-5,7]0" fs=","`
+i.spectral raster=$LIST east_north=637502.25,221744.25
+</pre></div>
+
+This will search all LANDSAT map for 2002 but select only the B, G, R, 
+NIR, and MIR channels.
+
+<h2>SEE ALSO</h2>
+
+<em><a href="d.what.rast.html">d.what.rast</a></em><br>
+<em><a href="d.where.html">d.where</a></em><br>
+<em><a href="r.what.html">r.what</a></em><br>
+
+<h2>AUTHOR</h2>
+
+Markus Neteler<br>
+Francesco Pirotti
+
+<p><i>Last changed: $Date: 2011-09-29 12:18:47 -0700 (Thu, 29 Sep 2011) $</i>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47630/grass/trunk/macosx/pkg/resources
+END
+Description.plist.in
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/23104/grass/trunk/macosx/pkg/resources/Description.plist.in
+END
+ReadMe.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/29700/grass/trunk/macosx/pkg/resources/ReadMe.rtf
+END
+postflight.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/42486/grass/trunk/macosx/pkg/resources/postflight.in
+END
+Info.plist.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34988/grass/trunk/macosx/pkg/resources/Info.plist.in
+END
+License.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47630/grass/trunk/macosx/pkg/resources/License.rtf
+END

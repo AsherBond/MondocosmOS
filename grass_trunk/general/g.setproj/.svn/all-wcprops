@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48558/grass/trunk/general/g.setproj
+END
+get_deg.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/get_deg.c
+END
+get_num.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/get_num.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47131/grass/trunk/general/g.setproj/main.c
+END
+get_stp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/get_stp.c
+END
+get_datum.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/get_datum.c
+END
+proj.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/general/g.setproj/proj.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/24867/grass/trunk/general/g.setproj/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/22158/grass/trunk/general/g.setproj/README
+END
+g.setproj.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48558/grass/trunk/general/g.setproj/g.setproj.html
+END

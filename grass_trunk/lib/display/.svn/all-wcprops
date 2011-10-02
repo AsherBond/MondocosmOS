@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/47139/grass/trunk/lib/display
+END
+draw2.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/46746/grass/trunk/lib/display/draw2.c
+END
+raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46984/grass/trunk/lib/display/raster.c
+END
+setup.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/46984/grass/trunk/lib/display/setup.c
+END
+r_raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47139/grass/trunk/lib/display/r_raster.c
+END
+raster2.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38109/grass/trunk/lib/display/raster2.c
+END
+tran_colr.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38069/grass/trunk/lib/display/tran_colr.c
+END
+displaylib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47074/grass/trunk/lib/display/displaylib.dox
+END
+symbol.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/39463/grass/trunk/lib/display/symbol.c
+END
+clip.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38015/grass/trunk/lib/display/clip.c
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38015/grass/trunk/lib/display/window.c
+END
+icon.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33054/grass/trunk/lib/display/icon.c
+END
+cnversions.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/35639/grass/trunk/lib/display/cnversions.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38893/grass/trunk/lib/display/Makefile
+END
+clip.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34916/grass/trunk/lib/display/clip.h
+END

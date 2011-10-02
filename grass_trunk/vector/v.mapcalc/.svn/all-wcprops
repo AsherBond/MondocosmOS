@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/45107/grass/trunk/vector/v.mapcalc
+END
+plugin.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/plugin.c
+END
+mapcalc.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/mapcalc.c
+END
+vector.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/vector.c
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/plugin.h
+END
+mapcalc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/mapcalc.h
+END
+vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/vector.h
+END
+yylex.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/yylex.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/list.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/10619/grass/trunk/vector/v.mapcalc/README
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45107/grass/trunk/vector/v.mapcalc/map.c
+END
+yylex.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/yylex.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/list.h
+END
+map.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/map.h
+END
+any.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/any.c
+END
+number.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32587/grass/trunk/vector/v.mapcalc/number.c
+END
+v.mapcalc.y
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/31239/grass/trunk/vector/v.mapcalc/v.mapcalc.y
+END
+any.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/any.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/33486/grass/trunk/vector/v.mapcalc/Makefile
+END
+number.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/number.h
+END

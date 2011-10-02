@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48593/grass/trunk/gui/wxpython/gui_modules
+END
+menuform.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48446/grass/trunk/gui/wxpython/gui_modules/menuform.py
+END
+location_wizard.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/47386/grass/trunk/gui/wxpython/gui_modules/location_wizard.py
+END
+colorrules.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48024/grass/trunk/gui/wxpython/gui_modules/colorrules.py
+END
+gdialogs.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48512/grass/trunk/gui/wxpython/gui_modules/gdialogs.py
+END
+states.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32489/grass/trunk/gui/wxpython/gui_modules/states.txt
+END
+mapdisp.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48592/grass/trunk/gui/wxpython/gui_modules/mapdisp.py
+END
+histogram.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48415/grass/trunk/gui/wxpython/gui_modules/histogram.py
+END
+wxplot.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48592/grass/trunk/gui/wxpython/gui_modules/wxplot.py
+END
+gmodeler.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48346/grass/trunk/gui/wxpython/gui_modules/gmodeler.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48581/grass/trunk/gui/wxpython/gui_modules/__init__.py
+END
+preferences.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48580/grass/trunk/gui/wxpython/gui_modules/preferences.py
+END
+menu.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46662/grass/trunk/gui/wxpython/gui_modules/menu.py
+END
+dbm_dialogs.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48084/grass/trunk/gui/wxpython/gui_modules/dbm_dialogs.py
+END
+gcpmanager.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48535/grass/trunk/gui/wxpython/gui_modules/gcpmanager.py
+END
+wxnviz.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47986/grass/trunk/gui/wxpython/gui_modules/wxnviz.py
+END
+sqlbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47386/grass/trunk/gui/wxpython/gui_modules/sqlbuilder.py
+END
+vclean.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45152/grass/trunk/gui/wxpython/gui_modules/vclean.py
+END
+gcmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48396/grass/trunk/gui/wxpython/gui_modules/gcmd.py
+END
+disp_print.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34382/grass/trunk/gui/wxpython/gui_modules/disp_print.py
+END
+psmap.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48322/grass/trunk/gui/wxpython/gui_modules/psmap.py
+END
+prompt.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48164/grass/trunk/gui/wxpython/gui_modules/prompt.py
+END
+mapdisp_window.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48051/grass/trunk/gui/wxpython/gui_modules/mapdisp_window.py
+END
+mcalc_builder.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/47386/grass/trunk/gui/wxpython/gui_modules/mcalc_builder.py
+END
+toolbars.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48593/grass/trunk/gui/wxpython/gui_modules/toolbars.py
+END
+nviz.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46530/grass/trunk/gui/wxpython/gui_modules/nviz.py
+END
+gselect.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48396/grass/trunk/gui/wxpython/gui_modules/gselect.py
+END
+gcpmapdisp.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48228/grass/trunk/gui/wxpython/gui_modules/gcpmapdisp.py
+END
+layertree.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48592/grass/trunk/gui/wxpython/gui_modules/layertree.py
+END
+dbm_base.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47172/grass/trunk/gui/wxpython/gui_modules/dbm_base.py
+END
+menudata.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48322/grass/trunk/gui/wxpython/gui_modules/menudata.py
+END
+workspace.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/47989/grass/trunk/gui/wxpython/gui_modules/workspace.py
+END
+ghelp.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48185/grass/trunk/gui/wxpython/gui_modules/ghelp.py
+END
+wxplot_dialogs.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48581/grass/trunk/gui/wxpython/gui_modules/wxplot_dialogs.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48451/grass/trunk/gui/wxpython/gui_modules/utils.py
+END
+wxvdriver.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48282/grass/trunk/gui/wxpython/gui_modules/wxvdriver.py
+END
+dbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48514/grass/trunk/gui/wxpython/gui_modules/dbm.py
+END
+units.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/37971/grass/trunk/gui/wxpython/gui_modules/units.py
+END
+nviz_mapdisp.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48538/grass/trunk/gui/wxpython/gui_modules/nviz_mapdisp.py
+END
+mapdisp_vdigit.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48282/grass/trunk/gui/wxpython/gui_modules/mapdisp_vdigit.py
+END
+wxvdigit.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48282/grass/trunk/gui/wxpython/gui_modules/wxvdigit.py
+END
+nviz_tools.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48586/grass/trunk/gui/wxpython/gui_modules/nviz_tools.py
+END
+nviz_preferences.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/47849/grass/trunk/gui/wxpython/gui_modules/nviz_preferences.py
+END
+goutput.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48456/grass/trunk/gui/wxpython/gui_modules/goutput.py
+END
+globalvar.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48547/grass/trunk/gui/wxpython/gui_modules/globalvar.py
+END
+ogc_services.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/45843/grass/trunk/gui/wxpython/gui_modules/ogc_services.py
+END
+render.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48120/grass/trunk/gui/wxpython/gui_modules/render.py
+END
+psmap_dialogs.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48321/grass/trunk/gui/wxpython/gui_modules/psmap_dialogs.py
+END
+debug.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/44870/grass/trunk/gui/wxpython/gui_modules/debug.py
+END
+vdigit.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48054/grass/trunk/gui/wxpython/gui_modules/vdigit.py
+END
+gpyshell.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/46508/grass/trunk/gui/wxpython/gui_modules/gpyshell.py
+END

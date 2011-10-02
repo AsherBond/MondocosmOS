@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/scripts/r.in.wms
+END
+r.in.wms.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47426/grass/trunk/scripts/r.in.wms/r.in.wms.py
+END
+wms_download.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38602/grass/trunk/scripts/r.in.wms/wms_download.py
+END
+wms_gdal.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/37108/grass/trunk/scripts/r.in.wms/wms_gdal.py
+END
+wms_request.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38602/grass/trunk/scripts/r.in.wms/wms_request.py
+END
+wms_parse.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/42330/grass/trunk/scripts/r.in.wms/wms_parse.py
+END
+gdalwarp.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38602/grass/trunk/scripts/r.in.wms/gdalwarp.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/39655/grass/trunk/scripts/r.in.wms/Makefile
+END
+r.in.gdalwarp.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47426/grass/trunk/scripts/r.in.wms/r.in.gdalwarp.py
+END
+r.in.wms.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48558/grass/trunk/scripts/r.in.wms/r.in.wms.html
+END

@@ -1,0 +1,26 @@
+<h2>DESCRIPTION</h2>
+
+<em>d.info</em> displays information about the active display monitor.
+
+<h2>NOTES</h2>
+
+Units are screen pixels (except for <em>-g</em> flag where map units
+are used).<br>
+Where two numbers are given the format is: width, height.<br>
+Where four numbers are given the format is: left, right, top, bottom.
+<br><br>
+Note: GRASS display pixel coordinates are measured from the top left.
+<p>
+<br>
+
+<h2>SEE ALSO</h2>
+
+<em><a href="d.frame.html">d.frame</a></em><br>
+<em><a href="d.vect.html">d.vect</a></em><br>
+<em><a href="d.rast.html">d.rast</a></em><br>
+
+<h2>AUTHOR</h2>
+
+Glynn Clements
+
+<p><i>Last changed: $Date$</i>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47811/grass/trunk/lib/db/dbmi_base/test
+END
+test_columns.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/43453/grass/trunk/lib/db/dbmi_base/test/test_columns.c
+END
+test_dbmi_base_lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/43453/grass/trunk/lib/db/dbmi_base/test/test_dbmi_base_lib.h
+END
+test_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47811/grass/trunk/lib/db/dbmi_base/test/test_main.c
+END
+test_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/43479/grass/trunk/lib/db/dbmi_base/test/test_table.c
+END
+test.dbmi_base.lib.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/43453/grass/trunk/lib/db/dbmi_base/test/test.dbmi_base.lib.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/43453/grass/trunk/lib/db/dbmi_base/test/Makefile
+END

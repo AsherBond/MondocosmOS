@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48399/grass/trunk/temporal/t.create
+END
+t.create.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48132/grass/trunk/temporal/t.create/t.create.html
+END
+t.create.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48399/grass/trunk/temporal/t.create/t.create.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48132/grass/trunk/temporal/t.create/Makefile
+END

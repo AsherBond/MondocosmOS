@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/scripts/v.centroids
+END
+v.centroids.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/scripts/v.centroids/v.centroids.html
+END
+v.centroids.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47426/grass/trunk/scripts/v.centroids/v.centroids.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/20915/grass/trunk/scripts/v.centroids/Makefile
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/47474/grass/trunk/lib/nviz
+END
+change_view.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47343/grass/trunk/lib/nviz/change_view.c
+END
+cplanes_obj.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46933/grass/trunk/lib/nviz/cplanes_obj.c
+END
+render.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/42519/grass/trunk/lib/nviz/render.c
+END
+exag.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/42631/grass/trunk/lib/nviz/exag.c
+END
+position.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47004/grass/trunk/lib/nviz/position.c
+END
+nvizlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38552/grass/trunk/lib/nviz/nvizlib.dox
+END
+nviz.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47398/grass/trunk/lib/nviz/nviz.c
+END
+map_obj.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47474/grass/trunk/lib/nviz/map_obj.c
+END
+lights.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46799/grass/trunk/lib/nviz/lights.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38893/grass/trunk/lib/nviz/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47320/grass/trunk/lib/nviz/draw.c
+END

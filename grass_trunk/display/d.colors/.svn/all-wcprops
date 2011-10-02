@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48559/grass/trunk/display/d.colors
+END
+set_sigs.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32675/grass/trunk/display/d.colors/set_sigs.c
+END
+tbl_toggle.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38109/grass/trunk/display/d.colors/tbl_toggle.c
+END
+curses.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38099/grass/trunk/display/d.colors/curses.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46065/grass/trunk/display/d.colors/main.c
+END
+d.colors.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48559/grass/trunk/display/d.colors/d.colors.html
+END
+graphics.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/14195/grass/trunk/display/d.colors/graphics.h
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/display/d.colors/colors.h
+END
+interact.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40273/grass/trunk/display/d.colors/interact.c
+END
+get_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/display/d.colors/get_info.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/37976/grass/trunk/display/d.colors/Makefile
+END
+Readme
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/14198/grass/trunk/display/d.colors/Readme
+END
+externs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32675/grass/trunk/display/d.colors/externs.h
+END
+sigint.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/display/d.colors/sigint.c
+END

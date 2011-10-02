@@ -1,0 +1,377 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/48465/grass/trunk/lib/raster
+END
+put_row.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40772/grass/trunk/lib/raster/put_row.c
+END
+quant_rw.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40743/grass/trunk/lib/raster/quant_rw.c
+END
+raster_metadata.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40739/grass/trunk/lib/raster/raster_metadata.c
+END
+history.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48465/grass/trunk/lib/raster/history.c
+END
+interp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45137/grass/trunk/lib/raster/interp.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45071/grass/trunk/lib/raster/open.c
+END
+color_look.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47671/grass/trunk/lib/raster/color_look.c
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/40775/grass/trunk/lib/raster/init.c
+END
+color_rule_get.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38136/grass/trunk/lib/raster/color_rule_get.c
+END
+window_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40772/grass/trunk/lib/raster/window_map.c
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45071/grass/trunk/lib/raster/close.c
+END
+color_hist.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_hist.c
+END
+maskfd.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38067/grass/trunk/lib/raster/maskfd.c
+END
+put_title.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38424/grass/trunk/lib/raster/put_title.c
+END
+color_shift.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38136/grass/trunk/lib/raster/color_shift.c
+END
+histo_eq.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38424/grass/trunk/lib/raster/histo_eq.c
+END
+color_get.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_get.c
+END
+quant_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/41157/grass/trunk/lib/raster/quant_io.c
+END
+cell_title.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38003/grass/trunk/lib/raster/cell_title.c
+END
+align_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/lib/raster/align_window.c
+END
+color_compat.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_compat.c
+END
+sample.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40771/grass/trunk/lib/raster/sample.c
+END
+color_rand.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38113/grass/trunk/lib/raster/color_rand.c
+END
+fpreclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38424/grass/trunk/lib/raster/fpreclass.c
+END
+auto_mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40419/grass/trunk/lib/raster/auto_mask.c
+END
+put_cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40273/grass/trunk/lib/raster/put_cellhd.c
+END
+color_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40273/grass/trunk/lib/raster/color_write.c
+END
+color_rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47654/grass/trunk/lib/raster/color_rules.c
+END
+quant.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/41157/grass/trunk/lib/raster/quant.c
+END
+color_xform.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/42277/grass/trunk/lib/raster/color_xform.c
+END
+color_set.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_set.c
+END
+cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/40464/grass/trunk/lib/raster/cats.c
+END
+get_cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40217/grass/trunk/lib/raster/get_cellhd.c
+END
+color_remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47554/grass/trunk/lib/raster/color_remove.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40620/grass/trunk/lib/raster/Makefile
+END
+range.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/41157/grass/trunk/lib/raster/range.c
+END
+color_insrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_insrt.c
+END
+rasterlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45386/grass/trunk/lib/raster/rasterlib.dox
+END
+color_invrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_invrt.c
+END
+raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40853/grass/trunk/lib/raster/raster.c
+END
+color_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47512/grass/trunk/lib/raster/color_init.c
+END
+color_rule.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47606/grass/trunk/lib/raster/color_rule.c
+END
+color_out.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47612/grass/trunk/lib/raster/color_out.c
+END
+R.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/40772/grass/trunk/lib/raster/R.h
+END
+get_row.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46323/grass/trunk/lib/raster/get_row.c
+END
+mask_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38612/grass/trunk/lib/raster/mask_info.c
+END
+gdal.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46744/grass/trunk/lib/raster/gdal.c
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40773/grass/trunk/lib/raster/window.c
+END
+color_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47524/grass/trunk/lib/raster/color_read.c
+END
+null_val.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40464/grass/trunk/lib/raster/null_val.c
+END
+zero_cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42876/grass/trunk/lib/raster/zero_cell.c
+END
+color_free.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_free.c
+END
+set_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47378/grass/trunk/lib/raster/set_window.c
+END
+cellstats_eq.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38424/grass/trunk/lib/raster/cellstats_eq.c
+END
+color_org.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_org.c
+END
+get_row_colr.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/lib/raster/get_row_colr.c
+END
+format.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38019/grass/trunk/lib/raster/format.c
+END
+alloc_cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/42876/grass/trunk/lib/raster/alloc_cell.c
+END
+color_range.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38424/grass/trunk/lib/raster/color_range.c
+END
+reclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45681/grass/trunk/lib/raster/reclass.c
+END
+cell_stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38067/grass/trunk/lib/raster/cell_stats.c
+END
+histogram.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40273/grass/trunk/lib/raster/histogram.c
+END

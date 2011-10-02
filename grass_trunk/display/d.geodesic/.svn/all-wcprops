@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48558/grass/trunk/display/d.geodesic
+END
+plot.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/display/d.geodesic/plot.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/33225/grass/trunk/display/d.geodesic/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47179/grass/trunk/display/d.geodesic/main.c
+END
+d.geodesic.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48558/grass/trunk/display/d.geodesic/d.geodesic.html
+END
+d_geodesic.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48143/grass/trunk/display/d.geodesic/d_geodesic.png
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/display/d.geodesic/Makefile
+END

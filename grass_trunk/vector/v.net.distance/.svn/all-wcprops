@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.distance
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48060/grass/trunk/vector/v.net.distance/main.c
+END
+v.net.distance.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.distance/v.net.distance.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/41826/grass/trunk/vector/v.net.distance/Makefile
+END

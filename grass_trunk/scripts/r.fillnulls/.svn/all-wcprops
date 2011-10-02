@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/scripts/r.fillnulls
+END
+r.fillnulls.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/scripts/r.fillnulls/r.fillnulls.html
+END
+r.fillnulls.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48096/grass/trunk/scripts/r.fillnulls/r.fillnulls.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/12754/grass/trunk/scripts/r.fillnulls/Makefile
+END

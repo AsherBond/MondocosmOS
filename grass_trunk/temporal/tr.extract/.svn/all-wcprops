@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.extract
+END
+tr.extract.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48440/grass/trunk/temporal/tr.extract/tr.extract.html
+END
+test.tr.extract.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48440/grass/trunk/temporal/tr.extract/test.tr.extract.sh
+END
+tr.extract.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.extract/tr.extract.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48440/grass/trunk/temporal/tr.extract/Makefile
+END

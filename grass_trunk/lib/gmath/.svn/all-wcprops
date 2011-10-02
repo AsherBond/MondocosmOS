@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/48290/grass/trunk/lib/gmath
+END
+dalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47661/grass/trunk/lib/gmath/dalloc.c
+END
+ccmath_grass_wrapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/42049/grass/trunk/lib/gmath/ccmath_grass_wrapper.c
+END
+gmathlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/gmathlib.dox
+END
+ialloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47661/grass/trunk/lib/gmath/ialloc.c
+END
+solvers_krylov.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/solvers_krylov.c
+END
+rand1.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/gmath/rand1.c
+END
+eigen_tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/eigen_tools.c
+END
+brent.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47661/grass/trunk/lib/gmath/brent.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/21764/grass/trunk/lib/gmath/README
+END
+ATLAS_wrapper_blas_level_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48290/grass/trunk/lib/gmath/ATLAS_wrapper_blas_level_1.c
+END
+solvers_direct_cholesky_band.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/42052/grass/trunk/lib/gmath/solvers_direct_cholesky_band.c
+END
+findzc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47661/grass/trunk/lib/gmath/findzc.c
+END
+DEPEND
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/13927/grass/trunk/lib/gmath/DEPEND
+END
+fft.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47661/grass/trunk/lib/gmath/fft.c
+END
+lu.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/35274/grass/trunk/lib/gmath/lu.c
+END
+mult.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/mult.c
+END
+solvers_classic_iter.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/42049/grass/trunk/lib/gmath/solvers_classic_iter.c
+END
+sparse_matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/sparse_matrix.c
+END
+gauss.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/42043/grass/trunk/lib/gmath/gauss.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/42043/grass/trunk/lib/gmath/TODO
+END
+symmetric_band_matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/42052/grass/trunk/lib/gmath/symmetric_band_matrix.c
+END
+getg.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/lib/gmath/getg.c
+END
+solvers_direct.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42049/grass/trunk/lib/gmath/solvers_direct.c
+END
+blas_level_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48290/grass/trunk/lib/gmath/blas_level_1.c
+END
+blas_level_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48290/grass/trunk/lib/gmath/blas_level_2.c
+END
+blas_level_3.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48290/grass/trunk/lib/gmath/blas_level_3.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38893/grass/trunk/lib/gmath/Makefile
+END
+la.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/la.c
+END
+max_pow2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/gmath/max_pow2.c
+END
+del2g.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/del2g.c
+END

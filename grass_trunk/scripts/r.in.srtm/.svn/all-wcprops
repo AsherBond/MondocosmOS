@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/scripts/r.in.srtm
+END
+r.in.srtm.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47426/grass/trunk/scripts/r.in.srtm/r.in.srtm.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/16213/grass/trunk/scripts/r.in.srtm/Makefile
+END
+r.in.srtm.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/scripts/r.in.srtm/r.in.srtm.html
+END

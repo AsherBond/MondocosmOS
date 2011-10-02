@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47153/grass/trunk/general/g.gisenv
+END
+g.gisenv.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/44868/grass/trunk/general/g.gisenv/g.gisenv.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47153/grass/trunk/general/g.gisenv/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/general/g.gisenv/Makefile
+END

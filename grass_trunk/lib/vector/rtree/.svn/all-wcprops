@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree
+END
+split.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/split.h
+END
+gammavol.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44855/grass/trunk/lib/vector/rtree/gammavol.c
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/io.c
+END
+index.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/index.c
+END
+card.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44855/grass/trunk/lib/vector/rtree/card.c
+END
+index.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/index.h
+END
+indexf.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/indexf.c
+END
+card.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44856/grass/trunk/lib/vector/rtree/card.h
+END
+indexm.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/indexm.c
+END
+node.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/node.c
+END
+rtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/44855/grass/trunk/lib/vector/rtree/rtree.h
+END
+Makefile.alone
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38383/grass/trunk/lib/vector/rtree/Makefile.alone
+END
+split.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/split.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40620/grass/trunk/lib/vector/rtree/Makefile
+END
+rect.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46939/grass/trunk/lib/vector/rtree/rect.c
+END

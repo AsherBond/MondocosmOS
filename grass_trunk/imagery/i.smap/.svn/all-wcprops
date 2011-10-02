@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48558/grass/trunk/imagery/i.smap
+END
+model.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/model.c
+END
+opencell.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/opencell.c
+END
+interp.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/interp.c
+END
+history.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/history.c
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/labels.c
+END
+segment.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/segment.c
+END
+multialloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/multialloc.c
+END
+invert.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/invert.c
+END
+i.smap.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48558/grass/trunk/imagery/i.smap/i.smap.html
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/parse.c
+END
+reg_util.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/reg_util.c
+END
+decimate.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/decimate.c
+END
+read_sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/read_sig.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/local_proto.h
+END
+openfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/openfiles.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/main.c
+END
+read_block.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/read_block.c
+END
+bouman.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/bouman.h
+END
+write_img.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/write_img.c
+END
+closefiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/closefiles.c
+END
+region.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/region.h
+END
+solve.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/solve.c
+END
+alpha_max.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45042/grass/trunk/imagery/i.smap/alpha_max.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/imagery/i.smap/Makefile
+END

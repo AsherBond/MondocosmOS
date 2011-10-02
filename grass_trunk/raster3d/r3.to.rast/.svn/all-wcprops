@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.to.rast
+END
+r3.to.rast.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.to.rast/r3.to.rast.html
+END
+test_raster_slice_1_00001.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_1_00001.ref
+END
+test_raster_slice_2_00001.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_2_00001.ref
+END
+test_raster_slice_1_00002.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_1_00002.ref
+END
+test_raster_slice_3_00001.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_3_00001.ref
+END
+test_raster_slice_2_00002.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_2_00002.ref
+END
+test_raster_slice_1_00003.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_1_00003.ref
+END
+test_raster_slice_2_00003.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_2_00003.ref
+END
+test_raster_slice_1_00004.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_1_00004.ref
+END
+test_raster_slice_3_00002.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_3_00002.ref
+END
+test_raster_slice_2_00004.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_2_00004.ref
+END
+test_raster_slice_1_00005.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_1_00005.ref
+END
+test_raster_slice_3_00003.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_3_00003.ref
+END
+test_raster_slice_2_00005.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_2_00005.ref
+END
+test_raster_slice_3_00004.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_3_00004.ref
+END
+test_raster_slice_float_00001.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test_raster_slice_float_00001.ref
+END
+test_raster_slice_3_00005.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.to.rast/test_raster_slice_3_00005.ref
+END
+test_raster_slice_float_00002.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test_raster_slice_float_00002.ref
+END
+r3.to.rast.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/20451/grass/trunk/raster3d/r3.to.rast/r3.to.rast.png
+END
+test_raster_slice_float_00003.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test_raster_slice_float_00003.ref
+END
+test_raster_slice_float_00004.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test_raster_slice_float_00004.ref
+END
+test_raster_slice_float_00005.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test_raster_slice_float_00005.ref
+END
+test.r3.to.rast.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46745/grass/trunk/raster3d/r3.to.rast/test.r3.to.rast.sh
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47804/grass/trunk/raster3d/r3.to.rast/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.to.rast/Makefile
+END

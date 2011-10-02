@@ -1,0 +1,135 @@
+10
+
+dir
+48594
+https://svn.osgeo.org/grass/grass/trunk/db
+https://svn.osgeo.org/grass
+
+
+
+2011-09-29T19:18:47.461599Z
+48557
+neteler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15284696-431f-4ddb-bdfa-cd5b030d7da7
+
+databaseintro.html
+file
+
+
+
+
+2011-10-02T04:19:35.421807Z
+79cd749c2840f2798158e52604093587
+2011-09-18T21:40:25.555573Z
+48353
+martinl
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4845
+
+db.execute
+dir
+
+db.login
+dir
+
+db.createdb
+dir
+
+db.tables
+dir
+
+db.dropdb
+dir
+
+db.copy
+dir
+
+db.drivers
+dir
+
+db.select
+dir
+
+db.describe
+dir
+
+db.columns
+dir
+
+db.databases
+dir
+
+Makefile
+file
+
+
+
+
+2011-10-02T04:19:35.421807Z
+642f7f938d9fe79047a5063ea9ee12eb
+2011-09-02T14:19:41.367869Z
+48063
+neteler
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+358
+
+db.connect
+dir
+
+drivers
+dir
+

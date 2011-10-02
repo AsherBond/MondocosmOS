@@ -1,0 +1,57 @@
+<h2>DESCRIPTION</h2>
+
+<em>d.geodesic</em> displays a geodesic line in the active frame on the user's 
+graphics monitor. This is also known as the great circle line and traces the 
+shortest distance between two user-specified points on the curved surface of 
+a longitude/latitude data set. The two coordinate locations named must fall 
+within the boundaries of the user's current geographic region. 
+
+<h2>OPTIONS</h2>
+
+This program can be run either interactively or non-interactively. 
+If the user types <b>d.geodesic</b> on the command line and runs it without other program 
+parameters, the mouse will be activated; the user is asked to use 
+the mouse to indicate the starting and ending points of each geodesic line 
+to be drawn. The default line color (black) and text color (red) 
+will be used. 
+
+<p>
+Alternately, the user can specify the starting and ending coordinates 
+of the geodesic, line color, and text color on the command line, 
+and run the program non-interactively. 
+
+<p>
+Once the user indicates the starting and ending coordinates 
+of the geodesic, the line and its length (in miles) are displayed to 
+the user's graphics monitor. If the text color is set to <em>none</em>,
+the great circle distance is not displayed.
+
+<h2>EXAMPLE</h2>
+
+<div class="code"><pre>
+g.region vect=world_political -p
+d.mon wx0
+d.vect world_political type=area
+d.geodesic coor=55:58W,33:18S,26:43E,60:37N lcolor=yellow tcolor=red
+</pre></div>
+
+<p>
+<center>
+<img src="d_geodesic.png" border=1><br>
+<i>Geodesic line (great circle line)</i>
+</center>
+
+<h2>NOTES</h2>
+
+This program works only with GRASS locations using a longitude/latitude 
+coordinate system. 
+
+<h2>SEE ALSO</h2>
+
+<em><a href="d.rhumbline.html">d.rhumbline</A></em>
+
+<h2>AUTHOR</h2>
+
+Michael Shapiro, U.S. Army Construction Engineering Research Laboratory
+
+<p><i>Last changed: $Date$</i>

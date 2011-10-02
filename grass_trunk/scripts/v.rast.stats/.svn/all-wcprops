@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48558/grass/trunk/scripts/v.rast.stats
+END
+v.rast.stats.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48085/grass/trunk/scripts/v.rast.stats/v.rast.stats.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/17878/grass/trunk/scripts/v.rast.stats/Makefile
+END
+v.rast.stats.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48558/grass/trunk/scripts/v.rast.stats/v.rast.stats.html
+END

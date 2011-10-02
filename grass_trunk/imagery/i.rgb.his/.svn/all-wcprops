@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/imagery/i.rgb.his
+END
+rgb2his.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38020/grass/trunk/imagery/i.rgb.his/rgb2his.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40771/grass/trunk/imagery/i.rgb.his/main.c
+END
+openfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40215/grass/trunk/imagery/i.rgb.his/openfiles.c
+END
+i.rgb.his.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/imagery/i.rgb.his/i.rgb.his.html
+END
+closefiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/39400/grass/trunk/imagery/i.rgb.his/closefiles.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38136/grass/trunk/imagery/i.rgb.his/globals.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/imagery/i.rgb.his/Makefile
+END

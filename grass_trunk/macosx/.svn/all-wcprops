@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/grass/!svn/ver/47630/grass/trunk/macosx
+END
+bundle.make
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38369/grass/trunk/macosx/bundle.make
+END
+ReadMe.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38369/grass/trunk/macosx/ReadMe.rtf
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/42273/grass/trunk/macosx/Makefile
+END

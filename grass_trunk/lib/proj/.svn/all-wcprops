@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/45484/grass/trunk/lib/proj
+END
+pcs.csv
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/41452/grass/trunk/lib/proj/pcs.csv
+END
+stpaul.lla
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/14091/grass/trunk/lib/proj/stpaul.lla
+END
+stgeorge.lla
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/14089/grass/trunk/lib/proj/stgeorge.lla
+END
+TN.lla
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14092/grass/trunk/lib/proj/TN.lla
+END
+gdal_datum.csv
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/41452/grass/trunk/lib/proj/gdal_datum.csv
+END
+pcs.override.csv
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/41225/grass/trunk/lib/proj/pcs.override.csv
+END
+conus.lla
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/14082/grass/trunk/lib/proj/conus.lla
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/proj/local_proto.h
+END
+coordinate_axis.csv
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/41452/grass/trunk/lib/proj/coordinate_axis.csv
+END
+MD.lla
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14085/grass/trunk/lib/proj/MD.lla
+END
+hawaii.lla
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/14084/grass/trunk/lib/proj/hawaii.lla
+END
+projop_wparm.csv
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/41452/grass/trunk/lib/proj/projop_wparm.csv
+END
+stlrnc.lla
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/14090/grass/trunk/lib/proj/stlrnc.lla
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45484/grass/trunk/lib/proj/Makefile
+END
+prime_meridian.csv
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/12374/grass/trunk/lib/proj/prime_meridian.csv
+END
+unit_of_measure.csv
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/41452/grass/trunk/lib/proj/unit_of_measure.csv
+END
+proj-parms.table
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40557/grass/trunk/lib/proj/proj-parms.table
+END
+ntv1_can.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/14086/grass/trunk/lib/proj/ntv1_can.dat
+END
+nzgd2kgrid0005.gsb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/14087/grass/trunk/lib/proj/nzgd2kgrid0005.gsb
+END
+gcs.override.csv
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/42664/grass/trunk/lib/proj/gcs.override.csv
+END
+ftol.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/45484/grass/trunk/lib/proj/ftol.c
+END
+WI.lla
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14093/grass/trunk/lib/proj/WI.lla
+END
+prvi.lla
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/14088/grass/trunk/lib/proj/prvi.lla
+END
+projlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/35044/grass/trunk/lib/proj/projlib.dox
+END
+get_proj.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38913/grass/trunk/lib/proj/get_proj.c
+END
+stateplane.csv
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/41225/grass/trunk/lib/proj/stateplane.csv
+END
+datum.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/35667/grass/trunk/lib/proj/datum.c
+END
+WO.lla
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14094/grass/trunk/lib/proj/WO.lla
+END
+gt_datum.csv
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/37664/grass/trunk/lib/proj/gt_datum.csv
+END
+proj-units.table
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40557/grass/trunk/lib/proj/proj-units.table
+END
+convert.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/42680/grass/trunk/lib/proj/convert.c
+END
+alaska.lla
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/14081/grass/trunk/lib/proj/alaska.lla
+END
+gcs.csv
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/41452/grass/trunk/lib/proj/gcs.csv
+END
+FL.lla
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14083/grass/trunk/lib/proj/FL.lla
+END
+proj-desc.table
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40557/grass/trunk/lib/proj/proj-desc.table
+END
+gt_ellips.csv
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/37664/grass/trunk/lib/proj/gt_ellips.csv
+END
+do_proj.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/proj/do_proj.c
+END
+ellipse.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/35667/grass/trunk/lib/proj/ellipse.c
+END
+ellipsoid.csv
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/41452/grass/trunk/lib/proj/ellipsoid.csv
+END

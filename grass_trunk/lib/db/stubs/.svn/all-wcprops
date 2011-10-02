@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/43719/grass/trunk/lib/db/stubs
+END
+drop_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/drop_col.c
+END
+close_cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/close_cursor.c
+END
+delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/delete.c
+END
+open_update.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/open_update.c
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/init.c
+END
+opendb.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/opendb.c
+END
+deletedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/deletedb.c
+END
+createdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/createdb.c
+END
+closedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/closedb.c
+END
+drop_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/drop_table.c
+END
+bindupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/bindupdate.c
+END
+add_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/add_col.c
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/fetch.c
+END
+drop_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/drop_index.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38893/grass/trunk/lib/db/stubs/Makefile
+END
+open_select.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/open_select.c
+END
+list_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/list_index.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/execute.c
+END
+insert.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/insert.c
+END
+list_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/list_tables.c
+END
+create_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/create_table.c
+END
+priv.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/priv.c
+END
+finish.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/finish.c
+END
+listdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/listdb.c
+END
+update.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/update.c
+END
+transaction.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/transaction.c
+END
+open_insert.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/open_insert.c
+END
+desc_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/desc_table.c
+END
+finddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/finddb.c
+END
+rows.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/rows.c
+END
+create_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/lib/db/stubs/create_index.c
+END

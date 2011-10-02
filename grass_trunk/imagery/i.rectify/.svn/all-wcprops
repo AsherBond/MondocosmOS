@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48558/grass/trunk/imagery/i.rectify
+END
+get_wind.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/43886/grass/trunk/imagery/i.rectify/get_wind.c
+END
+nearest.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/43936/grass/trunk/imagery/i.rectify/nearest.c
+END
+cp.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34251/grass/trunk/imagery/i.rectify/cp.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45133/grass/trunk/imagery/i.rectify/global.h
+END
+rectify.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44347/grass/trunk/imagery/i.rectify/rectify.c
+END
+lanczos.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44297/grass/trunk/imagery/i.rectify/lanczos.c
+END
+readcell.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45111/grass/trunk/imagery/i.rectify/readcell.c
+END
+report.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45129/grass/trunk/imagery/i.rectify/report.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/14531/grass/trunk/imagery/i.rectify/README
+END
+i.rectify.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48558/grass/trunk/imagery/i.rectify/i.rectify.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45171/grass/trunk/imagery/i.rectify/main.c
+END
+exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45171/grass/trunk/imagery/i.rectify/exec.c
+END
+cubic.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/43973/grass/trunk/imagery/i.rectify/cubic.c
+END
+bilinear.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/44083/grass/trunk/imagery/i.rectify/bilinear.c
+END
+target.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/34251/grass/trunk/imagery/i.rectify/target.c
+END
+crs.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38020/grass/trunk/imagery/i.rectify/crs.c
+END
+env.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.rectify/env.c
+END
+cubic_f.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44063/grass/trunk/imagery/i.rectify/cubic_f.c
+END
+bilinear_f.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/44052/grass/trunk/imagery/i.rectify/bilinear_f.c
+END
+crs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.rectify/crs.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/imagery/i.rectify/Makefile
+END

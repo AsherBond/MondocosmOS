@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47630/grass/trunk/lib/external/ccmath
+END
+hconj.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/hconj.c
+END
+solv.s
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/solv.s
+END
+chousv.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/chousv.c
+END
+mmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/mmul.c
+END
+cmcpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cmcpy.c
+END
+cminv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cminv.c
+END
+heigval.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/heigval.c
+END
+trnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/trnm.c
+END
+rmmult.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/rmmult.c
+END
+trncm.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/trncm.c
+END
+cmprt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cmprt.c
+END
+solvps.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/solvps.c
+END
+csolv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/csolv.c
+END
+eigen.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/eigen.c
+END
+atou1.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/atou1.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/Makefile
+END
+lgpl.license
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47630/grass/trunk/lib/external/ccmath/lgpl.license
+END
+psinv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/psinv.c
+END
+qrbdi.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qrbdi.c
+END
+otrsm.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/otrsm.c
+END
+C01-matrix
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/C01-matrix
+END
+eigval.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/eigval.c
+END
+smgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/smgen.c
+END
+housev.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/housev.c
+END
+cmmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cmmul.c
+END
+house.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/house.c
+END
+vmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/vmul.c
+END
+sv2uv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/sv2uv.c
+END
+chouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/chouse.c
+END
+atovm.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/atovm.c
+END
+svdu1v.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/svdu1v.c
+END
+hevmax.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/hevmax.c
+END
+qreval.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qreval.c
+END
+ortho.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/ortho.c
+END
+ccmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40296/grass/trunk/lib/external/ccmath/ccmath.h
+END
+sv2u1v.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/sv2u1v.c
+END
+matprt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/matprt.c
+END
+heigvec.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/heigvec.c
+END
+solvtd.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/solvtd.c
+END
+utrnhm.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/utrnhm.c
+END
+evmax.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/evmax.c
+END
+otrma.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/otrma.c
+END
+qrecvc.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qrecvc.c
+END
+cvmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cvmul.c
+END
+ldumat.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/ldumat.c
+END
+mattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/mattr.c
+END
+mcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/mcopy.c
+END
+solvru.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/solvru.c
+END
+cmattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cmattr.c
+END
+unitary.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/unitary.c
+END
+qrbdu1.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qrbdu1.c
+END
+hmgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/hmgen.c
+END
+svdval.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/svdval.c
+END
+cmmult.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/cmmult.c
+END
+ruinv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/ruinv.c
+END
+unfl.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/unfl.c
+END
+svduv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/svduv.c
+END
+utrncm.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/utrncm.c
+END
+minv.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/minv.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/41939/grass/trunk/lib/external/ccmath/README
+END
+sv2val.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/sv2val.c
+END
+qrbdv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qrbdv.c
+END
+solv.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/solv.c
+END
+qrevec.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/qrevec.c
+END
+ldvmat.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/external/ccmath/ldvmat.c
+END

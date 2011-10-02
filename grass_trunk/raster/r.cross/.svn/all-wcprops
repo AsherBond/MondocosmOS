@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/46065/grass/trunk/raster/r.cross
+END
+renumber.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40223/grass/trunk/raster/r.cross/renumber.c
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/raster/r.cross/tree.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.cross/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46065/grass/trunk/raster/r.cross/main.c
+END
+glob.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38136/grass/trunk/raster/r.cross/glob.h
+END
+cross.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40222/grass/trunk/raster/r.cross/cross.c
+END
+cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38099/grass/trunk/raster/r.cross/cats.c
+END
+r.cross.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32772/grass/trunk/raster/r.cross/r.cross.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/raster/r.cross/Makefile
+END
+store.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/raster/r.cross/store.c
+END

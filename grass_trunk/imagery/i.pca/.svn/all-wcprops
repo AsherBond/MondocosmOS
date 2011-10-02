@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48558/grass/trunk/imagery/i.pca
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40273/grass/trunk/imagery/i.pca/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/44488/grass/trunk/imagery/i.pca/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/imagery/i.pca/Makefile
+END
+i.pca.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48558/grass/trunk/imagery/i.pca/i.pca.html
+END
+support.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45415/grass/trunk/imagery/i.pca/support.c
+END

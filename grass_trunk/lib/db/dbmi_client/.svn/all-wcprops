@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47972/grass/trunk/lib/db/dbmi_client
+END
+copy_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47759/grass/trunk/lib/db/dbmi_client/copy_tab.c
+END
+c_execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_client/c_execute.c
+END
+c_openupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_client/c_openupdate.c
+END
+c_insert.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_insert.c
+END
+c_list_drivers.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_list_drivers.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40570/grass/trunk/lib/db/dbmi_client/select.c
+END
+c_close_cur.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_close_cur.c
+END
+c_list_idx.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_list_idx.c
+END
+c_priv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_client/c_priv.c
+END
+c_listdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_listdb.c
+END
+c_update.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_update.c
+END
+db.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/43475/grass/trunk/lib/db/dbmi_client/db.c
+END
+c_list_tabs.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_client/c_list_tabs.c
+END
+c_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_version.c
+END
+c_desc_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_desc_table.c
+END
+c_finddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_finddb.c
+END
+delete_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47922/grass/trunk/lib/db/dbmi_client/delete_tab.c
+END
+c_rows.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_rows.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38893/grass/trunk/lib/db/dbmi_client/Makefile
+END
+c_drop_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46985/grass/trunk/lib/db/dbmi_client/c_drop_tab.c
+END
+column.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46777/grass/trunk/lib/db/dbmi_client/column.c
+END
+c_openselect.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/39551/grass/trunk/lib/db/dbmi_client/c_openselect.c
+END
+c_drop_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_client/c_drop_col.c
+END
+c_delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_delete.c
+END
+c_opendb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39575/grass/trunk/lib/db/dbmi_client/c_opendb.c
+END
+c_create_idx.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_create_idx.c
+END
+c_deletedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_deletedb.c
+END
+c_createdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_createdb.c
+END
+shutdown.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47972/grass/trunk/lib/db/dbmi_client/shutdown.c
+END
+c_closedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_closedb.c
+END
+c_bindupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_client/c_bindupdate.c
+END
+printtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/43453/grass/trunk/lib/db/dbmi_client/printtab.c
+END
+c_add_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_add_col.c
+END
+table.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/table.c
+END
+c_openinsert.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_openinsert.c
+END
+c_create_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_create_tab.c
+END
+c_fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_fetch.c
+END
+c_drop_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32623/grass/trunk/lib/db/dbmi_client/c_drop_index.c
+END
+start.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42651/grass/trunk/lib/db/dbmi_client/start.c
+END

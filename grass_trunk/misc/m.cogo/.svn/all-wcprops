@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/48558/grass/trunk/misc/m.cogo
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/31782/grass/trunk/misc/m.cogo/TODO
+END
+m.cogo.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48558/grass/trunk/misc/m.cogo/m.cogo.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/46065/grass/trunk/misc/m.cogo/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38906/grass/trunk/misc/m.cogo/Makefile
+END
+cogo.dat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/17313/grass/trunk/misc/m.cogo/cogo.dat
+END

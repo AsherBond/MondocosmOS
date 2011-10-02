@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48466/grass/trunk/raster/r.sunmask
+END
+solpos00.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38020/grass/trunk/raster/r.sunmask/solpos00.c
+END
+r.sunmask.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32846/grass/trunk/raster/r.sunmask/r.sunmask.html
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/15526/grass/trunk/raster/r.sunmask/TODO
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48466/grass/trunk/raster/r.sunmask/main.c
+END
+solpos00.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster/r.sunmask/solpos00.h
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44157/grass/trunk/raster/r.sunmask/global.h
+END
+g_solposition.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47131/grass/trunk/raster/r.sunmask/g_solposition.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.sunmask/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/15523/grass/trunk/raster/r.sunmask/README
+END

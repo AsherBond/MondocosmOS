@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47426/grass/trunk/scripts/r.buffer
+END
+r.buffer.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47426/grass/trunk/scripts/r.buffer/r.buffer.py
+END
+r.buffer.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46555/grass/trunk/scripts/r.buffer/r.buffer.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/34409/grass/trunk/scripts/r.buffer/Makefile
+END

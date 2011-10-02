@@ -1,0 +1,135 @@
+<h2>DESCRIPTION</h2>
+
+
+<em>i.gensig</em>
+is a non-interactive method for generating input into 
+<em><a href="i.maxlik.html">i.maxlik</A></em>.
+It can be used as the first pass in the GRASS two-pass 
+classification process (instead of 
+<em><a href="i.cluster.html">i.cluster</A></em>
+ or 
+<em><a href="i.class.html">i.class</A></em>).
+
+It reads a raster map layer, called the training map, which
+has some of the pixels or regions already classified.
+<em>i.gensig</em> will then extract spectral signatures
+from an image based on the classification of the pixels in
+the training map and make these signatures available to
+
+<em><a href="i.maxlik.html">i.maxlik</A></em>.
+
+
+<p>
+
+The user would then execute the GRASS program 
+<em><a href="i.maxlik.html">i.maxlik</A></em>
+to actually create the final classified map.
+
+
+<h2>OPTIONS</h2>
+
+<H3>Parameters</H3>
+
+<dl>
+
+<dt><b>trainingmap=</b><em>name</em>
+
+<dd>ground truth training map
+
+<p>
+
+This map must be prepared by the user in advance using vector or
+raster digitizer. Of course other methods could be devised by the user
+for creating this training map - <em>i.gensig</em> makes no assumption
+about the origin of this map layer. It simply creates signatures for
+the classes defined in the training map for the image to be classified
+(the image is specified in other options - see below).
+
+<dt><b>group=</b><em>name</em> 
+
+<dd>imagery group
+
+<p>
+
+This is the name of the group that contains the band files
+which comprise the image to be analyzed. The <em>
+<a href="i.group.html">i.group</A> </em> command is
+used to construct groups of raster layers which comprise an
+image.
+
+
+<p>
+
+<dt><A NAME="subgroup"></A><b>subgroup=</b><em>name</em>
+
+<dd>subgroup containing image files
+
+<p>
+
+This names the subgroup within the group that selects a
+subset of the bands to be analyzed. The <em>
+<a href="i.group.html">i.group</A> </em> command is
+also used to prepare this subgroup.  The subgroup mechanism
+allows the user to select a subset of all the band files
+that form an image.
+
+
+<dt><b>signaturefile=</b><em>name</em> 
+
+<dd>resultant signature file
+
+<p>
+
+This is the resultant signature file (containing the means
+and covariance matrices) for each class in the training map
+that is associated with the band files in the subgroup
+select (see <a href="#subgroup">above</A>).
+
+</dl>
+
+<h2>INTERACTIVE MODE</h2>
+
+If none of the arguments are specified on the command line, 
+<em>i.gensig</em>
+will interactively prompt for the names of these maps and files.
+
+
+<p>
+
+It should be noted that interactive mode here only means
+interactive prompting for maps and files.
+It does not mean visualization of the signatures that
+result from the process.
+
+
+<h2>SEE ALSO</h2>
+
+<em><a href="i.group.html">i.group</A></em>
+for creating groups and subgroups.
+
+<p>
+
+<em><a href="wxGUI.Vector_Digitizing_Tool.html">wxGUI vector digitizer</A></em>
+and
+<em><a href="r.digit.html">r.digit</A></em>
+for interactively  creating the training map.
+
+<p>
+
+<em><a href="i.cluster.html">i.cluster</A></em>
+for unsupervised clustering as an alternative to 
+<em>i.gensig</em> to create signatures.
+
+
+<p>
+
+<em><a href="i.class.html">i.class</A></em>
+for a graphic/interactive as an alternative to 
+<em>i.gensig</em> to create signatures.
+
+<h2>AUTHOR</h2>
+
+Michael Shapiro,
+U.S.Army Construction Engineering Research Laboratory
+
+<p><i>Last changed: $Date: 2011-09-29 12:48:00 -0700 (Thu, 29 Sep 2011) $</i>

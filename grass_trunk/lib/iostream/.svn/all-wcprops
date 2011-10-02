@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48562/grass/trunk/lib/iostream
+END
+ami_stream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48562/grass/trunk/lib/iostream/ami_stream.cpp
+END
+rtimer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48562/grass/trunk/lib/iostream/rtimer.cpp
+END
+mm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48562/grass/trunk/lib/iostream/mm.cpp
+END
+mm_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48562/grass/trunk/lib/iostream/mm_utils.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40620/grass/trunk/lib/iostream/Makefile
+END

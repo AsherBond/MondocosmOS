@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48558/grass/trunk/imagery/i.landsat.acca
+END
+tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/44266/grass/trunk/imagery/i.landsat.acca/tools.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44039/grass/trunk/imagery/i.landsat.acca/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/44159/grass/trunk/imagery/i.landsat.acca/main.c
+END
+i.landsat.acca.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48558/grass/trunk/imagery/i.landsat.acca/i.landsat.acca.html
+END
+algorithm.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/46152/grass/trunk/imagery/i.landsat.acca/algorithm.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/44039/grass/trunk/imagery/i.landsat.acca/Makefile
+END

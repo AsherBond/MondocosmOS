@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48122/grass/trunk/scripts/v.db.renamecolumn
+END
+v.db.renamecolumn.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.renamecolumn/v.db.renamecolumn.html
+END
+v.db.renamecolumn.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/48122/grass/trunk/scripts/v.db.renamecolumn/v.db.renamecolumn.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38097/grass/trunk/scripts/v.db.renamecolumn/Makefile
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/vector/v.label.sa
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38950/grass/trunk/vector/v.label.sa/labels.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38061/grass/trunk/vector/v.label.sa/main.c
+END
+v_label_sa.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38951/grass/trunk/vector/v.label.sa/v_label_sa.jpg
+END
+labels.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38552/grass/trunk/vector/v.label.sa/labels.h
+END
+v.label.sa.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/vector/v.label.sa/v.label.sa.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/37976/grass/trunk/vector/v.label.sa/Makefile
+END
+annealing.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/33004/grass/trunk/vector/v.label.sa/annealing.c
+END

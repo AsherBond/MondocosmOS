@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/47536/grass/trunk/lib/dspf
+END
+struct_copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/dspf/struct_copy.c
+END
+dspf_header.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38709/grass/trunk/lib/dspf/dspf_header.c
+END
+cube_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45773/grass/trunk/lib/dspf/cube_io.c
+END
+cell_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32675/grass/trunk/lib/dspf/cell_table.c
+END
+print_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/dspf/print_info.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38893/grass/trunk/lib/dspf/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/23598/grass/trunk/lib/dspf/README
+END
+viz.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47536/grass/trunk/lib/dspf/viz.h
+END

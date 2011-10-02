@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48557/grass/trunk/imagery/i.evapo.pm
+END
+i.evapo.pm.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48557/grass/trunk/imagery/i.evapo.pm/i.evapo.pm.html
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/44987/grass/trunk/imagery/i.evapo.pm/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46202/grass/trunk/imagery/i.evapo.pm/main.c
+END
+functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/44987/grass/trunk/imagery/i.evapo.pm/functions.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45523/grass/trunk/imagery/i.evapo.pm/Makefile
+END

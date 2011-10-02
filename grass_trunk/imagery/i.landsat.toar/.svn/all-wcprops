@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/imagery/i.landsat.toar
+END
+landsat_set.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44032/grass/trunk/imagery/i.landsat.toar/landsat_set.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/43983/grass/trunk/imagery/i.landsat.toar/local_proto.h
+END
+i.landsat.toar.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48557/grass/trunk/imagery/i.landsat.toar/i.landsat.toar.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46150/grass/trunk/imagery/i.landsat.toar/main.c
+END
+landsat.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/44032/grass/trunk/imagery/i.landsat.toar/landsat.c
+END
+earth_sun.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47630/grass/trunk/imagery/i.landsat.toar/earth_sun.c
+END
+landsat.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/43983/grass/trunk/imagery/i.landsat.toar/landsat.h
+END
+landsat_met.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44032/grass/trunk/imagery/i.landsat.toar/landsat_met.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/43983/grass/trunk/imagery/i.landsat.toar/Makefile
+END
+earth_sun.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/43983/grass/trunk/imagery/i.landsat.toar/earth_sun.h
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/43719/grass/trunk/raster/r.out.ascii
+END
+r.out.ascii.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32772/grass/trunk/raster/r.out.ascii/r.out.ascii.html
+END
+localproto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/33133/grass/trunk/raster/r.out.ascii/localproto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/41149/grass/trunk/raster/r.out.ascii/main.c
+END
+formspecific.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/40222/grass/trunk/raster/r.out.ascii/formspecific.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40620/grass/trunk/raster/r.out.ascii/Makefile
+END

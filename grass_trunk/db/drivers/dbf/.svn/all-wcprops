@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/db/drivers/dbf
+END
+listtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/listtab.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/execute.c
+END
+dbdriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/37701/grass/trunk/db/drivers/dbf/dbdriver.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/proto.h
+END
+str.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/str.c
+END
+create_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/create_table.c
+END
+cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46950/grass/trunk/db/drivers/dbf/cursor.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/select.c
+END
+describe.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/describe.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32675/grass/trunk/db/drivers/dbf/main.c
+END
+db.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/db.c
+END
+table.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47517/grass/trunk/db/drivers/dbf/table.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46719/grass/trunk/db/drivers/dbf/globals.h
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/fetch.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/error.c
+END
+grass-dbf.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48557/grass/trunk/db/drivers/dbf/grass-dbf.html
+END
+main_debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32758/grass/trunk/db/drivers/dbf/main_debug.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/dbf/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/39594/grass/trunk/db/drivers/dbf/Makefile
+END
+dbfexe.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46431/grass/trunk/db/drivers/dbf/dbfexe.c
+END
+column.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46719/grass/trunk/db/drivers/dbf/column.c
+END

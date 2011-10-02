@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.db
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/34808/grass/trunk/vector/v.to.db/find.c
+END
+calc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/vector/v.to.db/calc.c
+END
+units.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/41300/grass/trunk/vector/v.to.db/units.c
+END
+update.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/36599/grass/trunk/vector/v.to.db/update.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40188/grass/trunk/vector/v.to.db/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/41300/grass/trunk/vector/v.to.db/global.h
+END
+query.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34808/grass/trunk/vector/v.to.db/query.c
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45656/grass/trunk/vector/v.to.db/lines.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44201/grass/trunk/vector/v.to.db/parse.c
+END
+areas.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34808/grass/trunk/vector/v.to.db/areas.c
+END
+report.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/36599/grass/trunk/vector/v.to.db/report.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/vector/v.to.db/Makefile
+END
+v.to.db.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.db/v.to.db.html
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48594/grass/trunk/lib/python/temporal
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48399/grass/trunk/lib/python/temporal/core.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48594/grass/trunk/lib/python/temporal/base.py
+END
+temporal_extent.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48594/grass/trunk/lib/python/temporal/temporal_extent.py
+END
+abstract_datasets.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48594/grass/trunk/lib/python/temporal/abstract_datasets.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48401/grass/trunk/lib/python/temporal/__init__.py
+END
+metadata.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48399/grass/trunk/lib/python/temporal/metadata.py
+END
+space_time_datasets.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48594/grass/trunk/lib/python/temporal/space_time_datasets.py
+END
+spatial_extent.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48399/grass/trunk/lib/python/temporal/spatial_extent.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48401/grass/trunk/lib/python/temporal/Makefile
+END

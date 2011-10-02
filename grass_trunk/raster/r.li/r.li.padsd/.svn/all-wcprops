@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.padsd
+END
+r.li.padsd.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.padsd/r.li.padsd.html
+END
+rlipadsd_formula.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/22490/grass/trunk/raster/r.li/r.li.padsd/rlipadsd_formula.png
+END
+padsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.padsd/padsd.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.padsd/Makefile
+END

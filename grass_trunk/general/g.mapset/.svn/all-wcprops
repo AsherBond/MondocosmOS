@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/general/g.mapset
+END
+g.mapset.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/general/g.mapset/g.mapset.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48022/grass/trunk/general/g.mapset/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/general/g.mapset/Makefile
+END

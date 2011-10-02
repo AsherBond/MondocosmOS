@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/raster/r.le/r.le.pixel
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32634/grass/trunk/raster/r.le/r.le.pixel/input.c
+END
+texture.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38131/grass/trunk/raster/r.le/r.le.pixel/texture.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/17469/grass/trunk/raster/r.le/r.le.pixel/local_proto.h
+END
+r.le.pixel.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/raster/r.le/r.le.pixel/r.le.pixel.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38061/grass/trunk/raster/r.le/r.le.pixel/main.c
+END
+pixel.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38020/grass/trunk/raster/r.le/r.le.pixel/pixel.h
+END
+cellclip.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38131/grass/trunk/raster/r.le/r.le.pixel/cellclip.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40771/grass/trunk/raster/r.le/r.le.pixel/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/11587/grass/trunk/raster/r.le/r.le.pixel/Makefile
+END

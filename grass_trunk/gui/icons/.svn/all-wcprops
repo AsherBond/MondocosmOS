@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/48396/grass/trunk/gui/icons
+END
+grass-48x48.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/37855/grass/trunk/gui/icons/grass-48x48.png
+END
+grass_error.ico
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass_error.ico
+END
+grass.menu
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/39360/grass/trunk/gui/icons/grass.menu
+END
+grass.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39363/grass/trunk/gui/icons/grass.xpm
+END
+grass_map.ico
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass_map.ico
+END
+grass.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46427/grass/trunk/gui/icons/grass.desktop
+END
+grass_dialog.ico
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass_dialog.ico
+END
+grass_sql.ico
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass_sql.ico
+END
+grass.ico
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass.ico
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/46008/grass/trunk/gui/icons/Makefile
+END
+grass_nviz.ico
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45042/grass/trunk/gui/icons/grass_nviz.ico
+END

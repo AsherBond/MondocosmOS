@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/general/g.mremove
+END
+g.mremove.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/general/g.mremove/g.mremove.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47339/grass/trunk/general/g.mremove/main.c
+END
+check_reclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45093/grass/trunk/general/g.mremove/check_reclass.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40706/grass/trunk/general/g.mremove/Makefile
+END

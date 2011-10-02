@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46934/grass/trunk/vector/v.build.polylines
+END
+walk.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46934/grass/trunk/vector/v.build.polylines/walk.c
+END
+v.build.polylines.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46934/grass/trunk/vector/v.build.polylines/v.build.polylines.html
+END
+walk.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46934/grass/trunk/vector/v.build.polylines/walk.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46934/grass/trunk/vector/v.build.polylines/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32675/grass/trunk/vector/v.build.polylines/global.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38906/grass/trunk/vector/v.build.polylines/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/31953/grass/trunk/vector/v.build.polylines/README
+END

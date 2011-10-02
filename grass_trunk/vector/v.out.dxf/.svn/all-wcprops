@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/vector/v.out.dxf
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/39888/grass/trunk/vector/v.out.dxf/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32675/grass/trunk/vector/v.out.dxf/global.h
+END
+write_dxf.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/vector/v.out.dxf/write_dxf.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.out.dxf/Makefile
+END
+v.out.dxf.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/vector/v.out.dxf/v.out.dxf.html
+END

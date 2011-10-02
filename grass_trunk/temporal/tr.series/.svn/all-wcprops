@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.series
+END
+tr.series.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48440/grass/trunk/temporal/tr.series/tr.series.html
+END
+test.tr.series.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.series/test.tr.series.sh
+END
+tr.series.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.series/tr.series.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48440/grass/trunk/temporal/tr.series/Makefile
+END

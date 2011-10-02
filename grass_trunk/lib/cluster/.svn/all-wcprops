@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/43719/grass/trunk/lib/cluster
+END
+c_reclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_reclass.c
+END
+c_merge.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_merge.c
+END
+c_means.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_means.c
+END
+c_reassign.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_reassign.c
+END
+c_nclasses.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_nclasses.c
+END
+clusterlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/clusterlib.dox
+END
+c_distinct.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_distinct.c
+END
+c_sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_sig.c
+END
+c_execmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_execmem.c
+END
+c_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38553/grass/trunk/lib/cluster/c_exec.c
+END
+c_begin.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_begin.c
+END
+c_assign.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/39001/grass/trunk/lib/cluster/c_assign.c
+END
+c_sum2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_sum2.c
+END
+c_clear.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_clear.c
+END
+c_sep.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_sep.c
+END
+c_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38544/grass/trunk/lib/cluster/c_point.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38893/grass/trunk/lib/cluster/Makefile
+END

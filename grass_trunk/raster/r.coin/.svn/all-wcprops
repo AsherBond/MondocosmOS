@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/46065/grass/trunk/raster/r.coin
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster/r.coin/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46065/grass/trunk/raster/r.coin/main.c
+END
+print_coin.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/34197/grass/trunk/raster/r.coin/print_coin.c
+END
+prnt_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/raster/r.coin/prnt_entry.c
+END
+make_coin.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40648/grass/trunk/raster/r.coin/make_coin.c
+END
+totals.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/raster/r.coin/totals.c
+END
+format.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/raster/r.coin/format.c
+END
+print_hdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38028/grass/trunk/raster/r.coin/print_hdr.c
+END
+r.coin.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32772/grass/trunk/raster/r.coin/r.coin.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/raster/r.coin/Makefile
+END
+coin.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38020/grass/trunk/raster/r.coin/coin.h
+END

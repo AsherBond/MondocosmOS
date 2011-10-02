@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/imagery/i.albedo
+END
+bb_alb_aster.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/33856/grass/trunk/imagery/i.albedo/bb_alb_aster.c
+END
+bb_alb_noaa.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/33856/grass/trunk/imagery/i.albedo/bb_alb_noaa.c
+END
+i.albedo.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/imagery/i.albedo/i.albedo.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/41149/grass/trunk/imagery/i.albedo/main.c
+END
+bb_alb_landsat.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/33856/grass/trunk/imagery/i.albedo/bb_alb_landsat.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40620/grass/trunk/imagery/i.albedo/Makefile
+END
+bb_alb_modis.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/33856/grass/trunk/imagery/i.albedo/bb_alb_modis.c
+END
+functions.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/33856/grass/trunk/imagery/i.albedo/functions.h
+END

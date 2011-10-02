@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/imagery/i.gensig
+END
+lookup_class.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38014/grass/trunk/imagery/i.gensig/lookup_class.c
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38612/grass/trunk/imagery/i.gensig/labels.c
+END
+means.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40771/grass/trunk/imagery/i.gensig/means.c
+END
+signature.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/23439/grass/trunk/imagery/i.gensig/signature.h
+END
+files.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34539/grass/trunk/imagery/i.gensig/files.h
+END
+read_train.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40222/grass/trunk/imagery/i.gensig/read_train.c
+END
+covariance.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40771/grass/trunk/imagery/i.gensig/covariance.c
+END
+copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.gensig/copy.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38612/grass/trunk/imagery/i.gensig/parse.c
+END
+get_train.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40771/grass/trunk/imagery/i.gensig/get_train.c
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34870/grass/trunk/imagery/i.gensig/check.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38136/grass/trunk/imagery/i.gensig/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38061/grass/trunk/imagery/i.gensig/main.c
+END
+openfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40215/grass/trunk/imagery/i.gensig/openfiles.c
+END
+i.gensig.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48558/grass/trunk/imagery/i.gensig/i.gensig.html
+END
+eigen.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38020/grass/trunk/imagery/i.gensig/eigen.c
+END
+parms.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.gensig/parms.h
+END
+closefiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38106/grass/trunk/imagery/i.gensig/closefiles.c
+END
+can_invert.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38020/grass/trunk/imagery/i.gensig/can_invert.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38020/grass/trunk/imagery/i.gensig/alloc.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/imagery/i.gensig/Makefile
+END
+write_sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/34870/grass/trunk/imagery/i.gensig/write_sig.c
+END

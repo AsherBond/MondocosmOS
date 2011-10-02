@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/grass/!svn/ver/48559/grass/trunk/doc
+END
+migration_50_51.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/31953/grass/trunk/doc/migration_50_51.txt
+END
+debugging.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/33377/grass/trunk/doc/debugging.txt
+END
+html_documentation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/13283/grass/trunk/doc/html_documentation.txt
+END
+projectionintro.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48557/grass/trunk/doc/projectionintro.html
+END
+parms_flags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/19568/grass/trunk/doc/parms_flags.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/33038/grass/trunk/doc/Makefile
+END
+howto_release.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46478/grass/trunk/doc/howto_release.txt
+END
+infrastructure.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42931/grass/trunk/doc/infrastructure.txt
+END

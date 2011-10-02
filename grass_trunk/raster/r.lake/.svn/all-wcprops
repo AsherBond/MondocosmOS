@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48557/grass/trunk/raster/r.lake
+END
+r.lake.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48557/grass/trunk/raster/r.lake/r.lake.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/41705/grass/trunk/raster/r.lake/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/raster/r.lake/Makefile
+END

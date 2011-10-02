@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/43719/grass/trunk/raster/r.digit
+END
+get_circle.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/raster/r.digit/get_circle.c
+END
+create_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/create_map.c
+END
+get_en.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/get_en.c
+END
+get_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/raster/r.digit/get_area.c
+END
+digitize.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38003/grass/trunk/raster/r.digit/digitize.c
+END
+instruct.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/instruct.c
+END
+get_label.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38099/grass/trunk/raster/r.digit/get_label.c
+END
+get_type.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/get_type.c
+END
+setup_graph.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/setup_graph.c
+END
+r.digit.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/35357/grass/trunk/raster/r.digit/r.digit.html
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.digit/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38061/grass/trunk/raster/r.digit/main.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/15202/grass/trunk/raster/r.digit/TODO
+END
+get_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/raster/r.digit/get_line.c
+END
+get_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/raster/r.digit/get_point.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/37976/grass/trunk/raster/r.digit/Makefile
+END
+bnw_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/raster/r.digit/bnw_line.c
+END

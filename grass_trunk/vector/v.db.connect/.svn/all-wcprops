@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/vector/v.db.connect
+END
+v.db.connect.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48557/grass/trunk/vector/v.db.connect/v.db.connect.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47479/grass/trunk/vector/v.db.connect/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/vector/v.db.connect/Makefile
+END

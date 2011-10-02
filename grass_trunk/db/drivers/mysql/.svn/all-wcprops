@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/db/drivers/mysql
+END
+listtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/listtab.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/execute.c
+END
+grass-mysql.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/db/drivers/mysql/grass-mysql.html
+END
+dbdriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/37701/grass/trunk/db/drivers/mysql/dbdriver.h
+END
+index.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/index.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34539/grass/trunk/db/drivers/mysql/proto.h
+END
+create_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/34539/grass/trunk/db/drivers/mysql/create_table.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34539/grass/trunk/db/drivers/mysql/parse.c
+END
+replace.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/33856/grass/trunk/db/drivers/mysql/replace.c
+END
+cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/cursor.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/select.c
+END
+grass-mesql.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/db/drivers/mysql/grass-mesql.html
+END
+describe.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/36682/grass/trunk/db/drivers/mysql/describe.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32675/grass/trunk/db/drivers/mysql/main.c
+END
+db.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/34539/grass/trunk/db/drivers/mysql/db.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32675/grass/trunk/db/drivers/mysql/globals.h
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/39135/grass/trunk/db/drivers/mysql/fetch.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/error.c
+END
+dbe.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34439/grass/trunk/db/drivers/mysql/dbe.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/mysql/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/33038/grass/trunk/db/drivers/mysql/Makefile
+END

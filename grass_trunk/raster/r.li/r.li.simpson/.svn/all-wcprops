@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.simpson
+END
+rliSimpson_formula.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/45009/grass/trunk/raster/r.li/r.li.simpson/rliSimpson_formula.png
+END
+simpson.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.simpson/simpson.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.simpson/Makefile
+END
+r.li.simpson.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.simpson/r.li.simpson.html
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48558/grass/trunk/imagery/i.ifft
+END
+i.ifft.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48558/grass/trunk/imagery/i.ifft/i.ifft.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/42876/grass/trunk/imagery/i.ifft/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/imagery/i.ifft/Makefile
+END

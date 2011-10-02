@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46278/grass/trunk/vector/v.surf.bspline
+END
+crosscorr.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45107/grass/trunk/vector/v.surf.bspline/crosscorr.c
+END
+v.surf.bspline.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/45087/grass/trunk/vector/v.surf.bspline/v.surf.bspline.html
+END
+bspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46269/grass/trunk/vector/v.surf.bspline/bspline.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46269/grass/trunk/vector/v.surf.bspline/main.c
+END
+resamp.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46278/grass/trunk/vector/v.surf.bspline/resamp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46269/grass/trunk/vector/v.surf.bspline/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/42319/grass/trunk/vector/v.surf.bspline/README
+END

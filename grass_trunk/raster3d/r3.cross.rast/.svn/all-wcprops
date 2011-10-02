@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.cross.rast
+END
+test_cross_section_slice_NAN.ref
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/46721/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_NAN.ref
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47727/grass/trunk/raster3d/r3.cross.rast/main.c
+END
+test_cross_section_result.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_result.ref
+END
+test_cross_section_slice_0.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_0.ref
+END
+test_cross_section_slice_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_1.ref
+END
+r3.cross.rast.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.cross.rast/r3.cross.rast.html
+END
+r3.cross.rast.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/20451/grass/trunk/raster3d/r3.cross.rast/r3.cross.rast.png
+END
+test_cross_section_slice_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_2.ref
+END
+test_cross_section_slice_3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_3.ref
+END
+test_cross_section_slice_4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_4.ref
+END
+test_cross_section_slice_5.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.cross.rast/test_cross_section_slice_5.ref
+END
+test.r3.cross.rast.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/46730/grass/trunk/raster3d/r3.cross.rast/test.r3.cross.rast.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.cross.rast/Makefile
+END

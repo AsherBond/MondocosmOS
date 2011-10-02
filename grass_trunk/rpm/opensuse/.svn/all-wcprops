@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/41517/grass/trunk/rpm/opensuse
+END
+grass-6.3.0_wx-vdigit.patch
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/35399/grass/trunk/rpm/opensuse/grass-6.3.0_wx-vdigit.patch
+END
+grass.spec
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/41517/grass/trunk/rpm/opensuse/grass.spec
+END

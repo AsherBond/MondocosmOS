@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48106/grass/trunk/scripts/wxpyimgview
+END
+wxpyimgview.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48106/grass/trunk/scripts/wxpyimgview/wxpyimgview.html
+END
+wxpyimgview.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47426/grass/trunk/scripts/wxpyimgview/wxpyimgview.py
+END
+wxpyimgview_gui.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47426/grass/trunk/scripts/wxpyimgview/wxpyimgview_gui.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40359/grass/trunk/scripts/wxpyimgview/Makefile
+END

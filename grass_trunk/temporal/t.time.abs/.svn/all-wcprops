@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48594/grass/trunk/temporal/t.time.abs
+END
+t.time.abs.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48376/grass/trunk/temporal/t.time.abs/t.time.abs.html
+END
+t.time.abs.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48594/grass/trunk/temporal/t.time.abs/t.time.abs.py
+END
+test.t.time.abs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48594/grass/trunk/temporal/t.time.abs/test.t.time.abs.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48376/grass/trunk/temporal/t.time.abs/Makefile
+END

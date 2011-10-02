@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48558/grass/trunk/misc/m.nviz.script
+END
+local.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48532/grass/trunk/misc/m.nviz.script/local.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48533/grass/trunk/misc/m.nviz.script/main.c
+END
+m.nviz.script.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48558/grass/trunk/misc/m.nviz.script/m.nviz.script.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48533/grass/trunk/misc/m.nviz.script/Makefile
+END

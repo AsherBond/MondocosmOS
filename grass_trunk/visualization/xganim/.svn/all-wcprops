@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48562/grass/trunk/visualization/xganim
+END
+gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48562/grass/trunk/visualization/xganim/gui.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48562/grass/trunk/visualization/xganim/main.cpp
+END
+xganim.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/visualization/xganim/xganim.html
+END
+gui.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/34342/grass/trunk/visualization/xganim/gui.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39052/grass/trunk/visualization/xganim/Makefile
+END

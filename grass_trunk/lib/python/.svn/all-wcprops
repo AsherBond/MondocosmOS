@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/48594/grass/trunk/lib/python
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47977/grass/trunk/lib/python/core.py
+END
+pythonlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45540/grass/trunk/lib/python/pythonlib.dox
+END
+setup.py.sed
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46915/grass/trunk/lib/python/setup.py.sed
+END
+array.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47310/grass/trunk/lib/python/array.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48400/grass/trunk/lib/python/__init__.py
+END
+grass__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48400/grass/trunk/lib/python/grass__init__.py
+END
+raster.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47310/grass/trunk/lib/python/raster.py
+END
+task.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48575/grass/trunk/lib/python/task.py
+END
+vector.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48173/grass/trunk/lib/python/vector.py
+END
+db.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48065/grass/trunk/lib/python/db.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48399/grass/trunk/lib/python/Makefile
+END
+raster3d.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48173/grass/trunk/lib/python/raster3d.py
+END

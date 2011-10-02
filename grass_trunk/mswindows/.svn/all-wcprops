@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/48218/grass/trunk/mswindows
+END
+GRASS-Packager.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45747/grass/trunk/mswindows/GRASS-Packager.bat
+END
+README.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40502/grass/trunk/mswindows/README.html
+END
+generic.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40977/grass/trunk/mswindows/generic.manifest
+END
+GRASS-Installer.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47953/grass/trunk/mswindows/GRASS-Installer.nsi
+END
+generic.manifest.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/41469/grass/trunk/mswindows/generic.manifest.rc
+END
+grass.ico
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/41469/grass/trunk/mswindows/grass.ico
+END
+env.bat
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47871/grass/trunk/mswindows/env.bat
+END

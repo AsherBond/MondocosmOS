@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48577/grass/trunk/raster/r.in.lidar
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46570/grass/trunk/raster/r.in.lidar/local_proto.h
+END
+r.in.lidar.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48577/grass/trunk/raster/r.in.lidar/r.in.lidar.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48576/grass/trunk/raster/r.in.lidar/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46797/grass/trunk/raster/r.in.lidar/Makefile
+END
+support.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46570/grass/trunk/raster/r.in.lidar/support.c
+END

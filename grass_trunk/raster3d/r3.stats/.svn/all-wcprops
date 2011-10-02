@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.stats
+END
+test_volume_double_stats_9.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_9.ref
+END
+r3.stats.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.stats/r3.stats.html
+END
+test_volume_float_stats_21.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_21.ref
+END
+test_volume_float_stats_e.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_e.ref
+END
+test_volume_float_stats_14.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_14.ref
+END
+test_volume_double_stats_22.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_22.ref
+END
+test_volume_double_stats_e.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_e.ref
+END
+test_volume_double_stats_18.ref
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_18.ref
+END
+test_volume_float_stats_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_1.ref
+END
+test_volume_float_stats_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_2.ref
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47643/grass/trunk/raster3d/r3.stats/main.c
+END
+test.r3.stats.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test.r3.stats.sh
+END
+test_volume_double_stats_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_1.ref
+END
+test_volume_float_stats_7.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_float_stats_7.ref
+END
+test_volume_double_stats_3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46787/grass/trunk/raster3d/r3.stats/test_volume_double_stats_3.ref
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.stats/Makefile
+END

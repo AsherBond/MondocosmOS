@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48593/grass/trunk/gui/wxpython
+END
+wxpythonlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/44947/grass/trunk/gui/wxpython/wxpythonlib.dox
+END
+gis_set.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48565/grass/trunk/gui/wxpython/gis_set.py
+END
+build_ext.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/37703/grass/trunk/gui/wxpython/build_ext.py
+END
+wxgui.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48591/grass/trunk/gui/wxpython/wxgui.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45587/grass/trunk/gui/wxpython/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45753/grass/trunk/gui/wxpython/README
+END
+gis_set_error.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46055/grass/trunk/gui/wxpython/gis_set_error.py
+END

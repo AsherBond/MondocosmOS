@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48504/grass/trunk/display/d.vect
+END
+dir.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47485/grass/trunk/display/d.vect/dir.c
+END
+label.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47909/grass/trunk/display/d.vect/label.c
+END
+shape.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47875/grass/trunk/display/d.vect/shape.c
+END
+topo.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48453/grass/trunk/display/d.vect/topo.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47875/grass/trunk/display/d.vect/local_proto.h
+END
+opt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47485/grass/trunk/display/d.vect/opt.c
+END
+plot.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47485/grass/trunk/display/d.vect/plot.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48504/grass/trunk/display/d.vect/main.c
+END
+d.vect.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47683/grass/trunk/display/d.vect/d.vect.html
+END
+area.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47875/grass/trunk/display/d.vect/area.c
+END
+attr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47501/grass/trunk/display/d.vect/attr.c
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48280/grass/trunk/display/d.vect/lines.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/display/d.vect/Makefile
+END
+zcoor.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47491/grass/trunk/display/d.vect/zcoor.c
+END

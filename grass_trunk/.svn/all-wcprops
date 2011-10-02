@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/grass/!svn/ver/48594/grass/trunk
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/48564/grass/trunk/configure
+END
+SUBMITTING
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/45880/grass/trunk/SUBMITTING
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/47536/grass/trunk/AUTHORS
+END
+grass.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/21415/grass/trunk/grass.pc.in
+END
+REQUIREMENTS.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/43221/grass/trunk/REQUIREMENTS.html
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48564/grass/trunk/configure.in
+END
+grass7_arch.png
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/42629/grass/trunk/grass7_arch.png
+END
+SUBMITTING_PYTHON
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46362/grass/trunk/SUBMITTING_PYTHON
+END
+contributors.csv
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47767/grass/trunk/contributors.csv
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/31415/grass/trunk/config.guess
+END
+contributors_extra.csv
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47767/grass/trunk/contributors_extra.csv
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/31415/grass/trunk/config.sub
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/grass/!svn/ver/42931/grass/trunk/README
+END
+SUBMITTING_DOCS
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/45880/grass/trunk/SUBMITTING_DOCS
+END
+grasslib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/47538/grass/trunk/grasslib.dox
+END
+GPL.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/24837/grass/trunk/GPL.TXT
+END
+binaryInstall.src
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46316/grass/trunk/binaryInstall.src
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/grass/!svn/ver/31515/grass/trunk/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/42931/grass/trunk/INSTALL
+END
+translators.csv
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/46413/grass/trunk/translators.csv
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/19337/grass/trunk/CHANGES
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/47629/grass/trunk/COPYING
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/48326/grass/trunk/Makefile
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/47301/grass/trunk/aclocal.m4
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/40661/grass/trunk/install-sh
+END

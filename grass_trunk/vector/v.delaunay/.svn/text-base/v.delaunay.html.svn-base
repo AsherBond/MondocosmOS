@@ -1,0 +1,69 @@
+<h2>DESCRIPTION</h2>
+
+<em>v.delaunay</em> uses an existing vector points map (<b>input</b>)
+to create a Delaunay triangulation vector map (<b>output</b>).
+<p>
+
+<br>
+Delaunay triangulation and Voronoi diagram example:
+<center>
+<img src=v_voronoi_delaunay.png border=1><br>  <!-- installed by v.voronoi -->
+<table border=0 width=590>
+<tr><td><center>
+<i>Delaunay Triangulation (left pane), Voronoi diagram (center pane),
+and both (right pane)</i>
+</center></td></tr>
+</table>
+</center>
+
+
+<h2>EXAMPLE</h2>
+
+Commands used with the Spearfish dataset to create the above figure.
+<div class="code"><pre>
+  g.region n=4927250 s=4919400 w=588650 e=594850
+  d.frame -c fr=one at=0,100,0,33.3333
+  d.frame -c fr=two at=0,100,33.3333,66.6667
+  d.frame -c fr=three at=0,100,66.6667,100
+
+  v.delaunay -lr in=archsites out=arch_delaunay
+  d.frame -s one
+  d.vect arch_delaunay
+  d.vect archsites color=red fcolor=red size=5 icon=basic/circle
+
+  v.voronoi -l in=archsites out=arch_voronoi
+  d.frame -s two
+  d.vect arch_voronoi type=line
+  d.vect archsites color=red fcolor=red size=5 icon=basic/circle
+
+  d.frame -s three
+  d.vect arch_voronoi type=line
+  d.vect arch_delaunay color=blue
+  d.vect archsites color=red fcolor=red size=5 icon=basic/circle
+</pre></div>
+
+
+<h2>REFERENCES</h2>
+<em>Leonid Guibas and Jorge Stolfi, (1985). 
+Primitives for the 
+Manipulation of General Subdivisions and the Computation of
+Voronoi Diagrams, ACM Transactions on Graphics, Vol 4, No. 2, 
+April 1985, Pages 74-123
+</em>
+
+
+<h2>SEE ALSO</h2>
+<em>
+<a href="v.voronoi.html">v.voronoi</A>, 
+<a href="v.hull.html">v.hull</A>
+</em>
+
+
+<h2>AUTHORS</h2>
+Martin Pavlovsky, Google Summer of Code 2008, Student<br>
+Paul Kelly, Mentor<br>
+Based on "dct" by Geoff Leach, Department of Computer Science, RMIT.<br>
+
+
+<p>
+<i>Last changed: $Date$</i>

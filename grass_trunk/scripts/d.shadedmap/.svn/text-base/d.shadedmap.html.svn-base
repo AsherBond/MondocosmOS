@@ -1,0 +1,35 @@
+<h2>DESCRIPTION</h2>
+
+<em>d.shadedmap</em> will drape a color raster map over a shaded relief map.
+
+<h2>NOTES</h2>
+
+refer to the <em>d.his</em> help page for more details; <em>d.shadedmap</em>
+is simply a frontend to that module.
+
+<h2>EXAMPLE</h2>
+
+In this example, the aspect map in the North Carolina sample
+dataset location is used to hillshade the elevation map:
+
+<div class="code"><pre>
+g.region rast=aspect -p
+d.shadedmap reliefmap=aspect drapemap=elevation
+</pre></div>
+
+<h2>SEE ALSO</h2>
+
+<em>
+<a href="d.his.html">d.his</a>,
+<a href="g.pnmcomp.html">g.pnmcomp</a>,
+<a href="nviz.html">NVIZ</a>,
+<a href="r.slope.aspect.html">r.slope.aspect</a>,
+<a href="r.shaded.relief.html">r.shaded.relief</a>
+</em>
+
+<h2>AUTHORS</h2>
+
+Unknown; updated to GRASS 5.7 by Michael Barton
+
+<p>
+<i>Last changed: $Date$</i>

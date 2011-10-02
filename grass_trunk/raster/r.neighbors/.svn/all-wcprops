@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/46065/grass/trunk/raster/r.neighbors
+END
+divr_cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38099/grass/trunk/raster/r.neighbors/divr_cats.c
+END
+bufs.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/raster/r.neighbors/bufs.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/36892/grass/trunk/raster/r.neighbors/local_proto.h
+END
+r.neighbors.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/43575/grass/trunk/raster/r.neighbors/r.neighbors.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46065/grass/trunk/raster/r.neighbors/main.c
+END
+null_cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38099/grass/trunk/raster/r.neighbors/null_cats.c
+END
+intr_cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38099/grass/trunk/raster/r.neighbors/intr_cats.c
+END
+readweights.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38020/grass/trunk/raster/r.neighbors/readweights.c
+END
+ncb.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38136/grass/trunk/raster/r.neighbors/ncb.h
+END
+gather.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38014/grass/trunk/raster/r.neighbors/gather.c
+END
+readcell.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38119/grass/trunk/raster/r.neighbors/readcell.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/raster/r.neighbors/Makefile
+END

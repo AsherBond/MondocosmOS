@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.addtable
+END
+v.db.addtable.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47480/grass/trunk/scripts/v.db.addtable/v.db.addtable.py
+END
+v.db.addtable.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.addtable/v.db.addtable.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/17778/grass/trunk/scripts/v.db.addtable/Makefile
+END

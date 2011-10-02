@@ -1,0 +1,378 @@
+10
+
+dir
+48594
+https://svn.osgeo.org/grass/grass/trunk/vector
+https://svn.osgeo.org/grass
+
+
+
+2011-10-01T07:31:11.342647Z
+48579
+mmetz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15284696-431f-4ddb-bdfa-cd5b030d7da7
+
+v.net.visibility
+dir
+
+v.db.connect
+dir
+
+v.to.rast3
+dir
+
+v.net.distance
+dir
+
+v.net.bridge
+dir
+
+v.net.spanningtree
+dir
+
+v.external
+dir
+
+v.perturb
+dir
+
+v.edit
+dir
+
+v.in.dxf
+dir
+
+v.to.3d
+dir
+
+v.net.salesman
+dir
+
+v.distance
+dir
+
+v.reclass
+dir
+
+v.to.points
+dir
+
+v.in.ascii
+dir
+
+v.out.ascii
+dir
+
+v.build
+dir
+
+v.in.lidar
+dir
+
+v.segment
+dir
+
+v.db.select
+dir
+
+v.univar
+dir
+
+v.class
+dir
+
+Makefile
+file
+
+
+
+
+2011-10-02T04:19:52.869893Z
+c8f546550e69b59f37f5038eb83b351f
+2011-08-31T10:47:51.579047Z
+47995
+mmetz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1424
+
+v.what.rast
+dir
+
+v.build.polylines
+dir
+
+v.net.iso
+dir
+
+v.kernel
+dir
+
+v.extrude
+dir
+
+v.sample
+dir
+
+v.outlier
+dir
+
+v.generalize
+dir
+
+v.external.out
+dir
+
+v.in.region
+dir
+
+v.info
+dir
+
+v.split
+dir
+
+v.net.flow
+dir
+
+v.in.ogr
+dir
+
+v.in.sites
+dir
+
+v.lidar.edgedetection
+dir
+
+v.patch
+dir
+
+v.lidar.correction
+dir
+
+v.surf.idw
+dir
+
+v.net.connectivity
+dir
+
+v.vol.rst
+dir
+
+v.qcount
+dir
+
+v.out.pov
+dir
+
+v.transform
+dir
+
+v.mkgrid
+dir
+
+v.category
+dir
+
+vectorintro.html
+file
+
+
+
+
+2011-10-02T04:19:52.869893Z
+3879460e66b524e5597f55f3087cc7e4
+2011-09-29T19:18:47.461599Z
+48557
+neteler
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17158
+
+v.convert
+dir
+
+v.random
+dir
+
+v.net.path
+dir
+
+v.label.sa
+dir
+
+v.overlay
+dir
+
+v.clean
+dir
+
+v.kcv
+dir
+
+v.net
+dir
+
+v.out.dxf
+dir
+
+v.normal
+dir
+
+v.net.timetable
+dir
+
+v.voronoi
+dir
+
+v.parallel
+dir
+
+v.vect.stats
+dir
+
+v.colors
+dir
+
+v.what
+dir
+
+v.hull
+dir
+
+v.out.svg
+dir
+
+v.to.db
+dir
+
+v.net.components
+dir
+
+v.out.vtk
+dir
+
+v.support
+dir
+
+v.net.alloc
+dir
+
+v.label
+dir
+
+v.select
+dir
+
+v.neighbors
+dir
+
+v.type
+dir
+
+v.in.dwg
+dir
+
+v.surf.rst
+dir
+
+v.in.db
+dir
+
+v.to.rast
+dir
+
+v.drape
+dir
+
+v.net.allpairs
+dir
+
+v.out.ogr
+dir
+
+v.net.steiner
+dir
+
+v.mapcalc
+dir
+
+v.lrs
+dir
+
+v.delaunay
+dir
+
+v.net.centrality
+dir
+
+v.lidar.growing
+dir
+
+v.colors.out
+dir
+
+v.buffer
+dir
+
+v.extract
+dir
+
+v.proj
+dir
+
+v.surf.bspline
+dir
+

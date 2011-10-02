@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48557/grass/trunk/raster/r.thin
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38136/grass/trunk/raster/r.thin/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46065/grass/trunk/raster/r.thin/main.c
+END
+r.thin.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48557/grass/trunk/raster/r.thin/r.thin.html
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/44866/grass/trunk/raster/r.thin/io.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/raster/r.thin/Makefile
+END
+thin_lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/44866/grass/trunk/raster/r.thin/thin_lines.c
+END

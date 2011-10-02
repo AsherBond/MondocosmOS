@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/vector/v.voronoi
+END
+vo_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/vector/v.voronoi/vo_write.c
+END
+sw_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32675/grass/trunk/vector/v.voronoi/sw_defs.h
+END
+write.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.voronoi/write.h
+END
+v_voronoi_delaunay.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/20020/grass/trunk/vector/v.voronoi/v_voronoi_delaunay.png
+END
+sw_voronoi.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_voronoi.c
+END
+sw_geometry.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_geometry.c
+END
+sw_output.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_output.c
+END
+sw_edgelist.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_edgelist.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/35461/grass/trunk/vector/v.voronoi/README
+END
+v.voronoi.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48558/grass/trunk/vector/v.voronoi/v.voronoi.html
+END
+sw_memory.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_memory.c
+END
+dt_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/vector/v.voronoi/dt_write.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48384/grass/trunk/vector/v.voronoi/main.c
+END
+sw_heap.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40286/grass/trunk/vector/v.voronoi/sw_heap.c
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38552/grass/trunk/vector/v.voronoi/defs.h
+END
+vo_extend.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48378/grass/trunk/vector/v.voronoi/vo_extend.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.voronoi/Makefile
+END
+sw_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48378/grass/trunk/vector/v.voronoi/sw_main.c
+END

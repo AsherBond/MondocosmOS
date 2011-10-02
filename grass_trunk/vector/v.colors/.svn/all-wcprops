@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47867/grass/trunk/vector/v.colors
+END
+make_colors.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47655/grass/trunk/vector/v.colors/make_colors.c
+END
+scan_attr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47655/grass/trunk/vector/v.colors/scan_attr.c
+END
+scan_cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47655/grass/trunk/vector/v.colors/scan_cats.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47655/grass/trunk/vector/v.colors/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47867/grass/trunk/vector/v.colors/main.c
+END
+write_rgb.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47603/grass/trunk/vector/v.colors/write_rgb.c
+END
+v.colors.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47656/grass/trunk/vector/v.colors/v.colors.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47626/grass/trunk/vector/v.colors/Makefile
+END
+thumbnails.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47626/grass/trunk/vector/v.colors/thumbnails.py
+END

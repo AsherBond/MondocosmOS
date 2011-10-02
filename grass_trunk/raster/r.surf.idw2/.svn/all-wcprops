@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/43719/grass/trunk/raster/r.surf.idw2
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32526/grass/trunk/raster/r.surf.idw2/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/41221/grass/trunk/raster/r.surf.idw2/main.c
+END
+r.surf.idw2.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32772/grass/trunk/raster/r.surf.idw2/r.surf.idw2.html
+END
+read_cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40771/grass/trunk/raster/r.surf.idw2/read_cell.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/raster/r.surf.idw2/Makefile
+END

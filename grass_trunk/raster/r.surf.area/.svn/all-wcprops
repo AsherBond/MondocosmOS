@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48510/grass/trunk/raster/r.surf.area
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48510/grass/trunk/raster/r.surf.area/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48510/grass/trunk/raster/r.surf.area/main.c
+END
+area.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48510/grass/trunk/raster/r.surf.area/area.c
+END
+r.surf.area.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48510/grass/trunk/raster/r.surf.area/r.surf.area.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/raster/r.surf.area/Makefile
+END

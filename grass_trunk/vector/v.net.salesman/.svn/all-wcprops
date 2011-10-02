@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.salesman
+END
+v.net.salesman.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.salesman/v.net.salesman.html
+END
+vnetsalesmantime.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/46794/grass/trunk/vector/v.net.salesman/vnetsalesmantime.png
+END
+vnetsalesman.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46794/grass/trunk/vector/v.net.salesman/vnetsalesman.png
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48060/grass/trunk/vector/v.net.salesman/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38906/grass/trunk/vector/v.net.salesman/Makefile
+END

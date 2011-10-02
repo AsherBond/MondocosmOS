@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.in.v5d
+END
+v5d.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47661/grass/trunk/raster3d/r3.in.v5d/v5d.c
+END
+vis5d.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47661/grass/trunk/raster3d/r3.in.v5d/vis5d.h
+END
+binio.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47661/grass/trunk/raster3d/r3.in.v5d/binio.c
+END
+v5d.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47661/grass/trunk/raster3d/r3.in.v5d/v5d.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47732/grass/trunk/raster3d/r3.in.v5d/main.c
+END
+binio.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47661/grass/trunk/raster3d/r3.in.v5d/binio.h
+END
+r3.in.v5d.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.in.v5d/r3.in.v5d.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.in.v5d/Makefile
+END

@@ -1,0 +1,184 @@
+10
+
+dir
+48594
+https://svn.osgeo.org/grass/grass/trunk/raster/r.li
+https://svn.osgeo.org/grass
+
+
+
+2011-09-29T19:48:00.889616Z
+48558
+neteler
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+15284696-431f-4ddb-bdfa-cd5b030d7da7
+
+r.li.mpa
+dir
+
+r.li.richness
+dir
+
+r.li.patchnum
+dir
+
+r.li.padrange
+dir
+
+r.li.cwed
+dir
+
+r.li.renyi
+dir
+
+r.li.simpson
+dir
+
+r.li.padsd
+dir
+
+r.li.pielou
+dir
+
+r.li.padcv
+dir
+
+r.li.dominance
+dir
+
+r.li.patchdensity
+dir
+
+r.li.mps
+dir
+
+r.li.setup
+dir
+
+r.li.shape
+dir
+
+TODO
+file
+
+
+
+
+2011-10-02T04:19:45.161855Z
+b7606b2d0950839bc9e8e5269e9c5b8f
+2007-03-14T12:29:45.000000Z
+22975
+markus
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+870
+
+r.li.daemon
+dir
+
+r.li.edgedensity
+dir
+
+r.li.shannon
+dir
+
+r.li.html
+file
+
+
+
+
+2011-10-02T04:19:45.165855Z
+7259e7b20b0a18137866a7672b70f572
+2010-11-26T13:29:14.230544Z
+44428
+neteler
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8113
+
+Makefile
+file
+
+
+
+
+2011-10-02T04:19:45.165855Z
+d57764db6b61af0ac4a055cff812f985
+2010-11-26T13:29:14.230544Z
+44428
+neteler
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+449
+

@@ -1,0 +1,14 @@
+TODO
+
+11/2008: Integrate latest GRASS 7 API changes
+
+-------
+Probably the sun position calculation should be replaced
+with 
+
+ G_calc_solar_position()
+
+currently used in r.sunmask. G_calc_solar_position() is based on
+solpos.c from NREL and very precise.
+
+MN 4/2001

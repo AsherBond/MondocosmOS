@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/43719/grass/trunk/lib/stats
+END
+c_range.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_range.c
+END
+c_median.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_median.c
+END
+c_thresh.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/41667/grass/trunk/lib/stats/c_thresh.c
+END
+c_divr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/36918/grass/trunk/lib/stats/c_divr.c
+END
+c_sum.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_sum.c
+END
+c_skew.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_skew.c
+END
+c_minx.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_minx.c
+END
+c_ave.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_ave.c
+END
+c_intr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_intr.c
+END
+c_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_reg.c
+END
+c_maxx.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_maxx.c
+END
+c_min.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_min.c
+END
+c_mode.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_mode.c
+END
+sort_cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38014/grass/trunk/lib/stats/sort_cell.c
+END
+c_max.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_max.c
+END
+c_kurt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_kurt.c
+END
+c_count.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_count.c
+END
+c_var.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_var.c
+END
+c_stddev.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_stddev.c
+END
+c_percentile.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38014/grass/trunk/lib/stats/c_percentile.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38893/grass/trunk/lib/stats/Makefile
+END

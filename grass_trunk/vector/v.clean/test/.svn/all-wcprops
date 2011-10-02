@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/vector/v.clean/test
+END
+topocheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45703/grass/trunk/vector/v.clean/test/topocheck.c
+END
+v.clean.test
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/10639/grass/trunk/vector/v.clean/test/v.clean.test
+END
+description.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/vector/v.clean/test/description.html
+END
+v.rand.poly
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/31239/grass/trunk/vector/v.clean/test/v.rand.poly
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/33485/grass/trunk/vector/v.clean/test/Makefile
+END

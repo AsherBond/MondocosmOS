@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47630/grass/trunk/lib/python/ctypes
+END
+fix.sed
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/42489/grass/trunk/lib/python/ctypes/fix.sed
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47540/grass/trunk/lib/python/ctypes/__init__.py
+END
+ctypesgen.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgen.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47536/grass/trunk/lib/python/ctypes/Makefile
+END
+loader.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/42331/grass/trunk/lib/python/ctypes/loader.py
+END
+preamble.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/42331/grass/trunk/lib/python/ctypes/preamble.py
+END

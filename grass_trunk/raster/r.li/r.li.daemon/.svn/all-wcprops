@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.daemon
+END
+avlID.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/avlID.c
+END
+daemon.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.daemon/daemon.c
+END
+avlID.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/avlID.h
+END
+daemon.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.daemon/daemon.h
+END
+worker.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.daemon/worker.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38777/grass/trunk/raster/r.li/r.li.daemon/list.c
+END
+index.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.daemon/index.h
+END
+GenericCell.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/GenericCell.c
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster/r.li/r.li.daemon/list.h
+END
+ipc.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40696/grass/trunk/raster/r.li/r.li.daemon/ipc.h
+END
+GenericCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/GenericCell.h
+END
+avl.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/avl.c
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/defs.h
+END
+avl.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.daemon/avl.h
+END
+r.li.daemon.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.daemon/r.li.daemon.html
+END
+avlDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.daemon/avlDefs.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38893/grass/trunk/raster/r.li/r.li.daemon/Makefile
+END

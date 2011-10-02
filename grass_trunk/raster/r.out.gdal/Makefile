@@ -1,0 +1,13 @@
+MODULE_TOPDIR = ../..
+
+PGM  = r.out.gdal
+
+LIBES = $(GPROJLIB) $(IMAGERYLIB) $(DBMILIB) $(RASTERLIB) $(GISLIB) $(GDALLIBS) $(MATHLIB)
+DEPENDENCIES = $(GPROJDEP) $(IMAGERYDEP) $(DBMIDEP) $(RASTERDEP) $(GISDEP)
+EXTRA_INC = $(PROJINC) $(GDALCFLAGS)
+
+include $(MODULE_TOPDIR)/include/Make/Module.make
+
+ifneq ($(USE_GDAL),)
+default: cmd
+endif

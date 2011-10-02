@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/43719/grass/trunk/vector/v.mapcalc/plugins
+END
+testmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/32526/grass/trunk/vector/v.mapcalc/plugins/testmod.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/10617/grass/trunk/vector/v.mapcalc/plugins/Makefile
+END

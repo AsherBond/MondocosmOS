@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.rast
+END
+local.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40188/grass/trunk/vector/v.to.rast/local.h
+END
+raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/41174/grass/trunk/vector/v.to.rast/raster.c
+END
+v.to.rast.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.rast/v.to.rast.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44074/grass/trunk/vector/v.to.rast/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.to.rast/Makefile
+END
+do_lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/41436/grass/trunk/vector/v.to.rast/do_lines.c
+END
+support.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42695/grass/trunk/vector/v.to.rast/support.c
+END
+do_areas.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/42919/grass/trunk/vector/v.to.rast/do_areas.c
+END
+vect2rast.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40215/grass/trunk/vector/v.to.rast/vect2rast.c
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/46239/grass/trunk/macosx/app
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/22970/grass/trunk/macosx/app/main.m
+END
+build_html_user_index.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46239/grass/trunk/macosx/app/build_html_user_index.sh
+END
+python_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40105/grass/trunk/macosx/app/python_wrapper
+END
+GRASS.applescript
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/31082/grass/trunk/macosx/app/GRASS.applescript
+END
+Info.plist.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34988/grass/trunk/macosx/app/Info.plist.in
+END
+app.icns
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/22970/grass/trunk/macosx/app/app.icns
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/42158/grass/trunk/macosx/app/Makefile
+END
+PkgInfo
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/22970/grass/trunk/macosx/app/PkgInfo
+END
+grass.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42146/grass/trunk/macosx/app/grass.sh.in
+END
+build_gui_user_menu.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/40177/grass/trunk/macosx/app/build_gui_user_menu.sh
+END

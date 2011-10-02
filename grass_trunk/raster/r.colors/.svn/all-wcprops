@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47651/grass/trunk/raster/r.colors
+END
+stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47594/grass/trunk/raster/r.colors/stats.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47534/grass/trunk/raster/r.colors/local_proto.h
+END
+r.colors.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47624/grass/trunk/raster/r.colors/r.colors.html
+END
+raster_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47178/grass/trunk/raster/r.colors/raster_main.c
+END
+edit_colors.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47651/grass/trunk/raster/r.colors/edit_colors.c
+END
+r3.colors.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47624/grass/trunk/raster/r.colors/r3.colors.html
+END
+rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46784/grass/trunk/raster/r.colors/rules.c
+END
+raster3d_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47178/grass/trunk/raster/r.colors/raster3d_main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47627/grass/trunk/raster/r.colors/Makefile
+END
+thumbnails.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47047/grass/trunk/raster/r.colors/thumbnails.py
+END

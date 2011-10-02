@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47479/grass/trunk/vector/v.in.dxf
+END
+add_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/36668/grass/trunk/vector/v.in.dxf/add_line.c
+END
+add_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/36668/grass/trunk/vector/v.in.dxf/add_point.c
+END
+make_arc.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/36805/grass/trunk/vector/v.in.dxf/make_arc.c
+END
+add_polyline.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/41153/grass/trunk/vector/v.in.dxf/add_polyline.c
+END
+dxf_to_vect.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38552/grass/trunk/vector/v.in.dxf/dxf_to_vect.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45107/grass/trunk/vector/v.in.dxf/global.h
+END
+add_lwpolyline.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/36805/grass/trunk/vector/v.in.dxf/add_lwpolyline.c
+END
+layer_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/36668/grass/trunk/vector/v.in.dxf/layer_list.c
+END
+add_circle.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/36667/grass/trunk/vector/v.in.dxf/add_circle.c
+END
+write_vect.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47479/grass/trunk/vector/v.in.dxf/write_vect.c
+END
+v.in.dxf.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39061/grass/trunk/vector/v.in.dxf/v.in.dxf.html
+END
+read_dxf.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45107/grass/trunk/vector/v.in.dxf/read_dxf.c
+END
+add_arc.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/36667/grass/trunk/vector/v.in.dxf/add_arc.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44455/grass/trunk/vector/v.in.dxf/main.c
+END
+add_text.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/36668/grass/trunk/vector/v.in.dxf/add_text.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/vector/v.in.dxf/Makefile
+END
+add_3dface.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/36668/grass/trunk/vector/v.in.dxf/add_3dface.c
+END

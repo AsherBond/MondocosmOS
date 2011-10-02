@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48422/grass/trunk/scripts/v.db.update
+END
+v.db.update.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48122/grass/trunk/scripts/v.db.update/v.db.update.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/17229/grass/trunk/scripts/v.db.update/Makefile
+END
+v.db.update.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48422/grass/trunk/scripts/v.db.update/v.db.update.html
+END

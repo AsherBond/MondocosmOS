@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48557/grass/trunk/scripts/r.shaded.relief
+END
+r.shaded.relief.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48557/grass/trunk/scripts/r.shaded.relief/r.shaded.relief.html
+END
+r.shaded.relief.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/47426/grass/trunk/scripts/r.shaded.relief/r.shaded.relief.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/12754/grass/trunk/scripts/r.shaded.relief/Makefile
+END

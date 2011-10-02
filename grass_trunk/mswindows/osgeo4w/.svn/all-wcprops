@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48218/grass/trunk/mswindows/osgeo4w
+END
+postinstall.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/46125/grass/trunk/mswindows/osgeo4w/postinstall.bat
+END
+mklibs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46125/grass/trunk/mswindows/osgeo4w/mklibs.sh
+END
+grass.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46133/grass/trunk/mswindows/osgeo4w/grass.tmpl
+END
+mklibs.sed
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38563/grass/trunk/mswindows/osgeo4w/mklibs.sed
+END
+config.h.switch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38563/grass/trunk/mswindows/osgeo4w/config.h.switch
+END
+package.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38563/grass/trunk/mswindows/osgeo4w/package.cmd
+END
+ini.bat.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38563/grass/trunk/mswindows/osgeo4w/ini.bat.tmpl
+END
+grass.bat.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48170/grass/trunk/mswindows/osgeo4w/grass.bat.tmpl
+END
+msys.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40894/grass/trunk/mswindows/osgeo4w/msys.bat
+END
+geos-config
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45484/grass/trunk/mswindows/osgeo4w/geos-config
+END
+config.h.vc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45484/grass/trunk/mswindows/osgeo4w/config.h.vc
+END
+package.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48217/grass/trunk/mswindows/osgeo4w/package.sh
+END
+env.bat.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45557/grass/trunk/mswindows/osgeo4w/env.bat.tmpl
+END
+preremove.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46125/grass/trunk/mswindows/osgeo4w/preremove.bat
+END
+gdal-config
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45484/grass/trunk/mswindows/osgeo4w/gdal-config
+END

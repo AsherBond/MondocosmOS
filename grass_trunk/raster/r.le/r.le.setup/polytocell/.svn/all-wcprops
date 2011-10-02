@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/43719/grass/trunk/raster/r.le/r.le.setup/polytocell
+END
+bmf_to_cll.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/38127/grass/trunk/raster/r.le/r.le.setup/polytocell/bmf_to_cll.c
+END
+wrte_recrd.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/wrte_recrd.c
+END
+bmf.b
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/22131/grass/trunk/raster/r.le/r.le.setup/polytocell/bmf.b
+END
+yadjust.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/yadjust.c
+END
+ply_t_bmif.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/32758/grass/trunk/raster/r.le/r.le.setup/polytocell/ply_t_bmif.c
+END
+ply_to_cll.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/ply_to_cll.h
+END
+save_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/save_area.c
+END
+find_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/find_area.c
+END
+do_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/do_line.c
+END
+do_dots.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/32526/grass/trunk/raster/r.le/r.le.setup/polytocell/do_dots.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/33486/grass/trunk/raster/r.le/r.le.setup/polytocell/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/11825/grass/trunk/raster/r.le/r.le.setup/polytocell/README
+END

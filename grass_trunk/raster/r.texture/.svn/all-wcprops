@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/raster/r.texture
+END
+r.texture.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/raster/r.texture/r.texture.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47702/grass/trunk/raster/r.texture/main.c
+END
+h_measure.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47698/grass/trunk/raster/r.texture/h_measure.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.texture/Makefile
+END
+h_measure.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47698/grass/trunk/raster/r.texture/h_measure.h
+END

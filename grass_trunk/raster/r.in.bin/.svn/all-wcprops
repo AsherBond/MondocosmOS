@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/44381/grass/trunk/raster/r.in.bin
+END
+r.in.bin.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32846/grass/trunk/raster/r.in.bin/r.in.bin.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44381/grass/trunk/raster/r.in.bin/main.c
+END
+gmt_grd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/raster/r.in.bin/gmt_grd.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/raster/r.in.bin/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/15226/grass/trunk/raster/r.in.bin/README
+END

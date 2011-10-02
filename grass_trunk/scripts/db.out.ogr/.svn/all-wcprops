@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48122/grass/trunk/scripts/db.out.ogr
+END
+db.out.ogr.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48091/grass/trunk/scripts/db.out.ogr/db.out.ogr.html
+END
+db.out.ogr.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48122/grass/trunk/scripts/db.out.ogr/db.out.ogr.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/25449/grass/trunk/scripts/db.out.ogr/Makefile
+END

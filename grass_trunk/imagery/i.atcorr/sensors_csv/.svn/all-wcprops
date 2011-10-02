@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/sensors_csv
+END
+PRISM-N.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/PRISM-N.csv
+END
+PRISM-B.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/PRISM-B.csv
+END
+VGT1_spot4.csv
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/sensors_csv/VGT1_spot4.csv
+END
+VGT2_spot5.csv
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/sensors_csv/VGT2_spot5.csv
+END
+PRISM-F.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/PRISM-F.csv
+END
+AVNIR.csv
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/AVNIR.csv
+END
+spot5.2
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/spot5.2
+END
+spot5.3
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/spot5.3
+END
+ikonos.csv
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/ikonos.csv
+END
+rapideye.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/45084/grass/trunk/imagery/i.atcorr/sensors_csv/rapideye.csv
+END
+spot5.4
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/spot5.4
+END
+spot5.5
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/44940/grass/trunk/imagery/i.atcorr/sensors_csv/spot5.5
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48557/grass/trunk/display/d.vect.chart
+END
+plot.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/display/d.vect.chart/plot.c
+END
+bar.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38026/grass/trunk/display/d.vect.chart/bar.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47179/grass/trunk/display/d.vect.chart/main.c
+END
+d.vect.chart.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/display/d.vect.chart/d.vect.chart.html
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/display/d.vect.chart/global.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38906/grass/trunk/display/d.vect.chart/Makefile
+END
+d.vect.chart_example.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/18919/grass/trunk/display/d.vect.chart/d.vect.chart_example.jpg
+END
+pie.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38026/grass/trunk/display/d.vect.chart/pie.c
+END

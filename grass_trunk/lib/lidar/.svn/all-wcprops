@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/46266/grass/trunk/lib/lidar
+END
+zones.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46266/grass/trunk/lib/lidar/zones.c
+END
+lidar.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46266/grass/trunk/lib/lidar/lidar.h
+END
+raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/46266/grass/trunk/lib/lidar/raster.c
+END
+InterpSpline.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/42317/grass/trunk/lib/lidar/InterpSpline.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/42317/grass/trunk/lib/lidar/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/42319/grass/trunk/lib/lidar/README
+END

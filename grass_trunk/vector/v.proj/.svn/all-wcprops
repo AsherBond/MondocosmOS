@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48558/grass/trunk/vector/v.proj
+END
+v.proj.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48558/grass/trunk/vector/v.proj/v.proj.html
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.proj/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45071/grass/trunk/vector/v.proj/main.c
+END
+setenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/vector/v.proj/setenv.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/vector/v.proj/Makefile
+END

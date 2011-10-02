@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47811/grass/trunk/lib/db/dbmi_base
+END
+xdrtoken.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrtoken.c
+END
+sqltype.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/sqltype.c
+END
+sqlCtype.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/sqlCtype.c
+END
+columnfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/columnfmt.c
+END
+xdrtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrtable.c
+END
+string.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/string.c
+END
+xdrprocedure.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrprocedure.c
+END
+ret_codes.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/ret_codes.c
+END
+index.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/index.c
+END
+xdrhandle.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrhandle.c
+END
+xdrdatetime.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrdatetime.c
+END
+xdrshort.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrshort.c
+END
+zero.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/zero.c
+END
+xdrfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrfloat.c
+END
+xdrstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrstring.c
+END
+dirent.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/dirent.c
+END
+xdrindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrindex.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/error.c
+END
+legal_dbname.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/legal_dbname.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38893/grass/trunk/lib/db/dbmi_base/Makefile
+END
+xdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdr.c
+END
+column.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/column.c
+END
+strip.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/strip.c
+END
+xdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/db/dbmi_base/xdr.h
+END
+login.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/login.c
+END
+xdrint.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrint.c
+END
+dbmscap.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/dbmscap.c
+END
+isdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/isdir.c
+END
+case.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/case.c
+END
+xdrcolumn.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrcolumn.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/11675/grass/trunk/lib/db/dbmi_base/README
+END
+value.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/value.c
+END
+cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/cursor.c
+END
+token.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/39614/grass/trunk/lib/db/dbmi_base/token.c
+END
+valuefmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/valuefmt.c
+END
+whoami.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/whoami.c
+END
+default_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/default_name.c
+END
+interval.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/interval.c
+END
+table.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/table.c
+END
+xdrdouble.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrdouble.c
+END
+macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/11675/grass/trunk/lib/db/dbmi_base/macros.h
+END
+connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47746/grass/trunk/lib/db/dbmi_base/connect.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45867/grass/trunk/lib/db/dbmi_base/alloc.c
+END
+xdrvalue.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrvalue.c
+END
+handle.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47780/grass/trunk/lib/db/dbmi_base/handle.c
+END
+xdrchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/xdrchar.c
+END
+datetime.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45853/grass/trunk/lib/db/dbmi_base/datetime.c
+END

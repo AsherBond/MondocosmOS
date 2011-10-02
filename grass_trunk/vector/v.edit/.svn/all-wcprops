@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48452/grass/trunk/vector/v.edit
+END
+max_distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/vector/v.edit/max_distance.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46963/grass/trunk/vector/v.edit/select.c
+END
+snap.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/34284/grass/trunk/vector/v.edit/snap.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48452/grass/trunk/vector/v.edit/main.c
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/39370/grass/trunk/vector/v.edit/close.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38026/grass/trunk/vector/v.edit/global.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/39370/grass/trunk/vector/v.edit/proto.h
+END
+v.edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48445/grass/trunk/vector/v.edit/v.edit.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38906/grass/trunk/vector/v.edit/Makefile
+END
+args.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48434/grass/trunk/vector/v.edit/args.c
+END

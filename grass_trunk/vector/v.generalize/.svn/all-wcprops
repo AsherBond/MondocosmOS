@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/vector/v.generalize
+END
+point.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/vector/v.generalize/point.h
+END
+misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/44899/grass/trunk/vector/v.generalize/misc.h
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/42122/grass/trunk/vector/v.generalize/matrix.c
+END
+smoothing.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42124/grass/trunk/vector/v.generalize/smoothing.c
+END
+displacement.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/44899/grass/trunk/vector/v.generalize/displacement.c
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38026/grass/trunk/vector/v.generalize/matrix.h
+END
+simplification.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/38026/grass/trunk/vector/v.generalize/simplification.c
+END
+v.generalize.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48557/grass/trunk/vector/v.generalize/v.generalize.html
+END
+pq.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.generalize/pq.c
+END
+operators.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/44899/grass/trunk/vector/v.generalize/operators.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47240/grass/trunk/vector/v.generalize/main.c
+END
+pq.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38026/grass/trunk/vector/v.generalize/pq.h
+END
+point.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/vector/v.generalize/point.c
+END
+network.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/44899/grass/trunk/vector/v.generalize/network.c
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47479/grass/trunk/vector/v.generalize/misc.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/vector/v.generalize/Makefile
+END

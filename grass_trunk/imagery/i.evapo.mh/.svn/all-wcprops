@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48557/grass/trunk/imagery/i.evapo.mh
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47688/grass/trunk/imagery/i.evapo.mh/main.c
+END
+i.evapo.mh.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48557/grass/trunk/imagery/i.evapo.mh/i.evapo.mh.html
+END
+mh_original.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/44987/grass/trunk/imagery/i.evapo.mh/mh_original.c
+END
+mh_eto.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44987/grass/trunk/imagery/i.evapo.mh/mh_eto.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45523/grass/trunk/imagery/i.evapo.mh/Makefile
+END
+mh_samani.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/44987/grass/trunk/imagery/i.evapo.mh/mh_samani.c
+END

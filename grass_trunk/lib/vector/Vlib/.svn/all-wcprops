@@ -1,0 +1,431 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48454/grass/trunk/lib/vector/Vlib
+END
+build.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47876/grass/trunk/lib/vector/Vlib/build.c
+END
+intersect.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46942/grass/trunk/lib/vector/Vlib/intersect.c
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/close.c
+END
+legal_vname.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/legal_vname.c
+END
+read.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48270/grass/trunk/lib/vector/Vlib/read.c
+END
+dangles.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/dangles.c
+END
+break_polygons.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47026/grass/trunk/lib/vector/Vlib/break_polygons.c
+END
+array.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/array.c
+END
+init_head.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/init_head.c
+END
+constraint.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/constraint.c
+END
+dbcolumns.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/dbcolumns.c
+END
+ascii.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48025/grass/trunk/lib/vector/Vlib/ascii.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/error.c
+END
+cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47911/grass/trunk/lib/vector/Vlib/cats.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47525/grass/trunk/lib/vector/Vlib/Makefile
+END
+write_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48270/grass/trunk/lib/vector/Vlib/write_nat.c
+END
+rewind_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47881/grass/trunk/lib/vector/Vlib/rewind_ogr.c
+END
+open_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/open_nat.c
+END
+build_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47879/grass/trunk/lib/vector/Vlib/build_ogr.c
+END
+hist.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/hist.c
+END
+remove_areas.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/remove_areas.c
+END
+area.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47881/grass/trunk/lib/vector/Vlib/area.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47014/grass/trunk/lib/vector/Vlib/list.c
+END
+close_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47943/grass/trunk/lib/vector/Vlib/close_ogr.c
+END
+overlay.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/overlay.c
+END
+read_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48270/grass/trunk/lib/vector/Vlib/read_ogr.c
+END
+simple_features.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/44720/grass/trunk/lib/vector/Vlib/simple_features.c
+END
+box.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47917/grass/trunk/lib/vector/Vlib/box.c
+END
+write.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48281/grass/trunk/lib/vector/Vlib/write.c
+END
+geos.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45656/grass/trunk/lib/vector/Vlib/geos.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47331/grass/trunk/lib/vector/Vlib/open.c
+END
+snap.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46942/grass/trunk/lib/vector/Vlib/snap.c
+END
+dgraph.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45874/grass/trunk/lib/vector/Vlib/dgraph.c
+END
+cindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47609/grass/trunk/lib/vector/Vlib/cindex.c
+END
+clean_nodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/clean_nodes.c
+END
+dgraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45042/grass/trunk/lib/vector/Vlib/dgraph.h
+END
+break_lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46956/grass/trunk/lib/vector/Vlib/break_lines.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46942/grass/trunk/lib/vector/Vlib/select.c
+END
+bridges.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46457/grass/trunk/lib/vector/Vlib/bridges.c
+END
+type.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/type.c
+END
+poly.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47015/grass/trunk/lib/vector/Vlib/poly.c
+END
+color_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47867/grass/trunk/lib/vector/Vlib/color_write.c
+END
+sindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46956/grass/trunk/lib/vector/Vlib/sindex.c
+END
+rewind_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47881/grass/trunk/lib/vector/Vlib/rewind_nat.c
+END
+buffer2.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45874/grass/trunk/lib/vector/Vlib/buffer2.c
+END
+color_remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47867/grass/trunk/lib/vector/Vlib/color_remove.c
+END
+level_two.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48454/grass/trunk/lib/vector/Vlib/level_two.c
+END
+graph.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/graph.c
+END
+build_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46956/grass/trunk/lib/vector/Vlib/build_nat.c
+END
+write_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48270/grass/trunk/lib/vector/Vlib/write_ogr.c
+END
+e_intersect.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45874/grass/trunk/lib/vector/Vlib/e_intersect.c
+END
+level.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44720/grass/trunk/lib/vector/Vlib/level.c
+END
+close_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/close_nat.c
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/44720/grass/trunk/lib/vector/Vlib/window.c
+END
+overlap.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/overlap.c
+END
+open_ogr.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47943/grass/trunk/lib/vector/Vlib/open_ogr.c
+END
+buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/buffer.c
+END
+color_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47867/grass/trunk/lib/vector/Vlib/color_read.c
+END
+e_intersect.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45042/grass/trunk/lib/vector/Vlib/e_intersect.h
+END
+remove_duplicates.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46956/grass/trunk/lib/vector/Vlib/remove_duplicates.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/39172/grass/trunk/lib/vector/Vlib/README
+END
+read_nat.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47881/grass/trunk/lib/vector/Vlib/read_nat.c
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/map.c
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47015/grass/trunk/lib/vector/Vlib/find.c
+END
+field.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47781/grass/trunk/lib/vector/Vlib/field.c
+END
+net.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/net.c
+END
+line.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45105/grass/trunk/lib/vector/Vlib/line.c
+END
+rewind.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47881/grass/trunk/lib/vector/Vlib/rewind.c
+END
+header.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48189/grass/trunk/lib/vector/Vlib/header.c
+END
+merge_lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46901/grass/trunk/lib/vector/Vlib/merge_lines.c
+END
+tin.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/44720/grass/trunk/lib/vector/Vlib/tin.c
+END

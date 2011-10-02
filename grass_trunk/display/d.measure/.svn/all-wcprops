@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/display/d.measure
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/display/d.measure/local_proto.h
+END
+msurements.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38015/grass/trunk/display/d.measure/msurements.c
+END
+draw_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38015/grass/trunk/display/d.measure/draw_line.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46065/grass/trunk/display/d.measure/main.c
+END
+d.measure.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/display/d.measure/d.measure.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/37976/grass/trunk/display/d.measure/Makefile
+END

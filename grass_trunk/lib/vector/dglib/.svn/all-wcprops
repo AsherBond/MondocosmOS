@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47630/grass/trunk/lib/vector/dglib
+END
+edgemgmt-template.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/edgemgmt-template.c
+END
+tavl.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/tavl.c
+END
+v2-defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/v2-defs.h
+END
+tavl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/tavl.h
+END
+heap.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/heap.c
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/11171/grass/trunk/lib/vector/dglib/BUGS
+END
+heap.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/heap.h
+END
+avl.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/avl.c
+END
+type.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/type.h
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47629/grass/trunk/lib/vector/dglib/COPYING
+END
+avl.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/avl.h
+END
+Makefile.alone
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/10614/grass/trunk/lib/vector/dglib/Makefile.alone
+END
+dglib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38327/grass/trunk/lib/vector/dglib/dglib.dox
+END
+sp-template.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/sp-template.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/39655/grass/trunk/lib/vector/dglib/Makefile
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/tree.c
+END
+graph.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph.c
+END
+helpers.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/helpers.c
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/tree.h
+END
+misc-template.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/misc-template.c
+END
+graph.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph.h
+END
+helpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/helpers.h
+END
+graph_v1.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph_v1.c
+END
+graph_v2.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph_v2.c
+END
+v1-defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/v1-defs.h
+END
+span-template.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/span-template.c
+END
+dgl.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/18934/grass/trunk/lib/vector/dglib/dgl.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/10614/grass/trunk/lib/vector/dglib/README
+END
+graph_v1.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph_v1.h
+END
+graph_v2.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/graph_v2.h
+END
+nodemgmt-template.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47628/grass/trunk/lib/vector/dglib/nodemgmt-template.c
+END

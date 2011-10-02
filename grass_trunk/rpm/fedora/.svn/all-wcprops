@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/31953/grass/trunk/rpm/fedora
+END
+grass_FC2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/31953/grass/trunk/rpm/fedora/grass_FC2.spec
+END
+grass_FC3.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/31953/grass/trunk/rpm/fedora/grass_FC3.spec
+END
+INSTALL.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/17108/grass/trunk/rpm/fedora/INSTALL.TXT
+END
+grass_FC4.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/22871/grass/trunk/rpm/fedora/grass_FC4.spec
+END
+grass_FC6.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/22871/grass/trunk/rpm/fedora/grass_FC6.spec
+END
+grass_FC7.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/24574/grass/trunk/rpm/fedora/grass_FC7.spec
+END
+gdal-ogr-grass-plugin.spec
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/24574/grass/trunk/rpm/fedora/gdal-ogr-grass-plugin.spec
+END
+grass-readline.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/31239/grass/trunk/rpm/fedora/grass-readline.patch
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48557/grass/trunk/imagery/i.emissivity
+END
+i.emissivity.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/imagery/i.emissivity/i.emissivity.html
+END
+emissivity_generic.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/33939/grass/trunk/imagery/i.emissivity/emissivity_generic.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/41149/grass/trunk/imagery/i.emissivity/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/40620/grass/trunk/imagery/i.emissivity/Makefile
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.visibility
+END
+rotation_tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/25162/grass/trunk/vector/v.net.visibility/rotation_tree.c
+END
+geometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38026/grass/trunk/vector/v.net.visibility/geometry.h
+END
+data_structures.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/25162/grass/trunk/vector/v.net.visibility/data_structures.h
+END
+v.net.visibility.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.visibility/v.net.visibility.html
+END
+rotation_tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/25162/grass/trunk/vector/v.net.visibility/rotation_tree.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38061/grass/trunk/vector/v.net.visibility/main.c
+END
+visibility.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/36752/grass/trunk/vector/v.net.visibility/visibility.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/25162/grass/trunk/vector/v.net.visibility/proto.h
+END
+geometry.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/32526/grass/trunk/vector/v.net.visibility/geometry.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38906/grass/trunk/vector/v.net.visibility/Makefile
+END
+data_structures.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/25162/grass/trunk/vector/v.net.visibility/data_structures.c
+END
+visibility.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/38026/grass/trunk/vector/v.net.visibility/visibility.h
+END

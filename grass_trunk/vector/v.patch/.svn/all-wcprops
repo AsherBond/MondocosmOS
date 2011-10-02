@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/vector/v.patch
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46435/grass/trunk/vector/v.patch/main.c
+END
+v.patch.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48557/grass/trunk/vector/v.patch/v.patch.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/vector/v.patch/Makefile
+END

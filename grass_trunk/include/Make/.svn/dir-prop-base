@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 69
+Platform.make
+.Grass.make.swp
+Doxyfile_arch_html
+Doxyfile_arch_latex
+
+END

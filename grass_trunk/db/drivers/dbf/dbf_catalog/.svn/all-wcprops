@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/43719/grass/trunk/db/drivers/dbf/dbf_catalog
+END
+river.dbf
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/10867/grass/trunk/db/drivers/dbf/dbf_catalog/river.dbf
+END
+datetime.dbf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/11238/grass/trunk/db/drivers/dbf/dbf_catalog/datetime.dbf
+END

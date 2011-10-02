@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/43719/grass/trunk/lib/bitmap
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/bitmap/main.c
+END
+smain.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/bitmap/smain.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40620/grass/trunk/lib/bitmap/Makefile
+END
+bitmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/bitmap/bitmap.c
+END
+sparse.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/bitmap/sparse.c
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.out.ascii
+END
+test_float_nsbt_null_grass6_comp_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null_grass6_comp_1.ref
+END
+test_float_nsbt_null_grass6_comp_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null_grass6_comp_2.ref
+END
+r3.out.ascii.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.out.ascii/r3.out.ascii.html
+END
+test_float_nsbt_null_grass6_comp_3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null_grass6_comp_3.ref
+END
+test_double_nsbt_null_grass6_comp_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null_grass6_comp_1.ref
+END
+test_double_nsbt_null_grass6_comp_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null_grass6_comp_2.ref
+END
+test_double_nsbt_null_grass6_comp_3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null_grass6_comp_3.ref
+END
+test_float_nsbt_null_prec5.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null_prec5.ref
+END
+test_float_nsbt_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null.ref
+END
+test_float_nstb_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nstb_null.ref
+END
+test_float_snbt_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_snbt_null.ref
+END
+test_float_sntb_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_sntb_null.ref
+END
+test_float_sntb_null_prec8.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_sntb_null_prec8.ref
+END
+test_double_nsbt_null_prec5.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null_prec5.ref
+END
+test_float_nsbt_null_no_header.ref
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_float_nsbt_null_no_header.ref
+END
+test_double_sntb_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_sntb_null.ref
+END
+test_double_snbt_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_snbt_null.ref
+END
+test_double_nstb_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nstb_null.ref
+END
+test_double_nsbt_null.ref
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null.ref
+END
+test_double_sntb_null_prec8.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_sntb_null_prec8.ref
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47719/grass/trunk/raster3d/r3.out.ascii/main.c
+END
+test_double_nsbt_null_no_header.ref
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/grass/!svn/ver/46728/grass/trunk/raster3d/r3.out.ascii/test_double_nsbt_null_no_header.ref
+END
+test.r3.out.ascii.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/46740/grass/trunk/raster3d/r3.out.ascii/test.r3.out.ascii.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.out.ascii/Makefile
+END

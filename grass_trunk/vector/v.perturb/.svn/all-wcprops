@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/vector/v.perturb
+END
+normalsv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/normalsv.c
+END
+fische.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/fische.c
+END
+zufallrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/zufallrs.c
+END
+zufall.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/34459/grass/trunk/vector/v.perturb/zufall.h
+END
+zufalli.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/zufalli.c
+END
+zufallsv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/zufallsv.c
+END
+v.perturb.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/vector/v.perturb/v.perturb.html
+END
+zufall.f77.README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/13306/grass/trunk/vector/v.perturb/zufall.f77.README
+END
+normalen.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/normalen.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46065/grass/trunk/vector/v.perturb/main.c
+END
+perturb.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/13306/grass/trunk/vector/v.perturb/perturb.h
+END
+normal00.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/normal00.c
+END
+zufall.c.README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/13306/grass/trunk/vector/v.perturb/zufall.c.README
+END
+myrng.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/myrng.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.perturb/Makefile
+END
+zufall.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/zufall.c
+END
+normalrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/vector/v.perturb/normalrs.c
+END

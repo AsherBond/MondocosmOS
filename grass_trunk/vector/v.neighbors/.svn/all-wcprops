@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48557/grass/trunk/vector/v.neighbors
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46959/grass/trunk/vector/v.neighbors/main.c
+END
+v.neighbors.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48557/grass/trunk/vector/v.neighbors/v.neighbors.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/vector/v.neighbors/Makefile
+END

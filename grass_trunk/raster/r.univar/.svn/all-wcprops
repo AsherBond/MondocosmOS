@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48258/grass/trunk/raster/r.univar
+END
+stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48240/grass/trunk/raster/r.univar/stats.c
+END
+r.univar.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/43818/grass/trunk/raster/r.univar/r.univar.html
+END
+sort.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32813/grass/trunk/raster/r.univar/sort.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48258/grass/trunk/raster/r.univar/globals.h
+END
+r.univar_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/43815/grass/trunk/raster/r.univar/r.univar_main.c
+END
+r3.univar.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/43818/grass/trunk/raster/r.univar/r3.univar.html
+END
+r3.univar_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47651/grass/trunk/raster/r.univar/r3.univar_main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47536/grass/trunk/raster/r.univar/Makefile
+END

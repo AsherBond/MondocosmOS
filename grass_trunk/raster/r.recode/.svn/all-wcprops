@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48466/grass/trunk/raster/r.recode
+END
+recode.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48466/grass/trunk/raster/r.recode/recode.c
+END
+r.recode.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/44115/grass/trunk/raster/r.recode/r.recode.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48466/grass/trunk/raster/r.recode/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38136/grass/trunk/raster/r.recode/global.h
+END
+read_rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38120/grass/trunk/raster/r.recode/read_rules.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/raster/r.recode/Makefile
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/43719/grass/trunk/lib/gtcltk
+END
+grocat.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/35358/grass/trunk/lib/gtcltk/grocat.c
+END
+select.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/35358/grass/trunk/lib/gtcltk/select.tcl
+END
+gronsole.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/37332/grass/trunk/lib/gtcltk/gronsole.tcl
+END
+options.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/35358/grass/trunk/lib/gtcltk/options.tcl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39655/grass/trunk/lib/gtcltk/Makefile
+END
+gmsg.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/35358/grass/trunk/lib/gtcltk/gmsg.tcl
+END

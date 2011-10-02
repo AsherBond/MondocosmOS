@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/46401/grass/trunk/gui/images
+END
+loc_wizard.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45587/grass/trunk/gui/images/loc_wizard.png
+END
+loc_wizard_qgis.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45587/grass/trunk/gui/images/loc_wizard_qgis.png
+END
+grass_splash.xcf.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46401/grass/trunk/gui/images/grass_splash.xcf.bz2
+END
+grass_form.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45587/grass/trunk/gui/images/grass_form.png
+END
+scalebar-simple.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46391/grass/trunk/gui/images/scalebar-simple.png
+END
+silesia_splash.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45740/grass/trunk/gui/images/silesia_splash.png
+END
+small_up_arrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45589/grass/trunk/gui/images/small_up_arrow.png
+END
+startup_banner.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/33942/grass/trunk/gui/images/startup_banner.png
+END
+small_down_arrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45589/grass/trunk/gui/images/small_down_arrow.png
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45587/grass/trunk/gui/images/Makefile
+END
+qgis_world.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45587/grass/trunk/gui/images/qgis_world.png
+END
+scalebar-fancy.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46391/grass/trunk/gui/images/scalebar-fancy.png
+END

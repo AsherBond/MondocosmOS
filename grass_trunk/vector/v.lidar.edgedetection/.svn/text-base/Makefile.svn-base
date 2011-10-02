@@ -1,0 +1,14 @@
+MODULE_TOPDIR = ../..
+
+PGM = v.lidar.edgedetection
+
+LIBES = $(LIDARLIB) $(GMATHLIB) $(VECTORLIB) $(DBMILIB) $(SEGMENTLIB) $(GISLIB) $(MATHLIB)
+DEPENDENCIES = $(LIDARDEP) $(GMATHDEP) $(VECTORDEP) $(DBMIDEP) $(SEGMENTDEP) $(GISDEP)
+EXTRA_INC = $(VECT_INC)
+EXTRA_CFLAGS = $(VECT_CFLAGS) 
+
+include $(MODULE_TOPDIR)/include/Make/Module.make
+
+default: cmd
+
+ 

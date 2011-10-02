@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/general/g.mkfontcap
+END
+stroke_fonts.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34923/grass/trunk/general/g.mkfontcap/stroke_fonts.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32675/grass/trunk/general/g.mkfontcap/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46065/grass/trunk/general/g.mkfontcap/main.c
+END
+g.mkfontcap.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/general/g.mkfontcap/g.mkfontcap.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/general/g.mkfontcap/Makefile
+END
+freetype_fonts.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/43106/grass/trunk/general/g.mkfontcap/freetype_fonts.c
+END

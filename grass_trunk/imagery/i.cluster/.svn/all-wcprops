@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48558/grass/trunk/imagery/i.cluster
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.cluster/global.h
+END
+landsat_cluster.fig
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/31787/grass/trunk/imagery/i.cluster/landsat_cluster.fig
+END
+print1.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print1.c
+END
+print2.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print2.c
+END
+print3.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print3.c
+END
+timer.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/timer.c
+END
+print4.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print4.c
+END
+print5.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print5.c
+END
+checkpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/checkpt.c
+END
+print6.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/imagery/i.cluster/print6.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/imagery/i.cluster/local_proto.h
+END
+open_files.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40215/grass/trunk/imagery/i.cluster/open_files.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40771/grass/trunk/imagery/i.cluster/main.c
+END
+landsat_cluster.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/31787/grass/trunk/imagery/i.cluster/landsat_cluster.png
+END
+i.cluster.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48558/grass/trunk/imagery/i.cluster/i.cluster.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/imagery/i.cluster/Makefile
+END

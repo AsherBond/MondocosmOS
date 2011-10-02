@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48103/grass/trunk/scripts/v.dissolve
+END
+v.dissolve.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48103/grass/trunk/scripts/v.dissolve/v.dissolve.html
+END
+v.dissolve.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47426/grass/trunk/scripts/v.dissolve/v.dissolve.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/20915/grass/trunk/scripts/v.dissolve/Makefile
+END

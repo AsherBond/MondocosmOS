@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/grass/!svn/ver/48557/grass/trunk/lib/db
+END
+dbmilib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45854/grass/trunk/lib/db/dbmilib.dox
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/33038/grass/trunk/lib/db/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/39463/grass/trunk/lib/db/README
+END

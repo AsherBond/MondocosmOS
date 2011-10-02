@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48359/grass/trunk/db/drivers/sqlite
+END
+grass-sqlite.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/43033/grass/trunk/db/drivers/sqlite/grass-sqlite.html
+END
+listtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/listtab.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/execute.c
+END
+dbdriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/37701/grass/trunk/db/drivers/sqlite/dbdriver.h
+END
+index.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/index.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48156/grass/trunk/db/drivers/sqlite/proto.h
+END
+create_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/create_table.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/23044/grass/trunk/db/drivers/sqlite/README
+END
+cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48182/grass/trunk/db/drivers/sqlite/cursor.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/select.c
+END
+describe.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48359/grass/trunk/db/drivers/sqlite/describe.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48332/grass/trunk/db/drivers/sqlite/main.c
+END
+db.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48182/grass/trunk/db/drivers/sqlite/db.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/db/drivers/sqlite/globals.h
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48350/grass/trunk/db/drivers/sqlite/fetch.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48156/grass/trunk/db/drivers/sqlite/error.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48156/grass/trunk/db/drivers/sqlite/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/db/drivers/sqlite/Makefile
+END

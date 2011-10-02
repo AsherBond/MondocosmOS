@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48466/grass/trunk/raster/r.reclass
+END
+r.reclass.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/39250/grass/trunk/raster/r.reclass/r.reclass.html
+END
+stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38014/grass/trunk/raster/r.reclass/stats.c
+END
+add_rule.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster/r.reclass/add_rule.c
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38020/grass/trunk/raster/r.reclass/input.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45697/grass/trunk/raster/r.reclass/main.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38099/grass/trunk/raster/r.reclass/parse.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.reclass/Makefile
+END
+range.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38014/grass/trunk/raster/r.reclass/range.c
+END
+reclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48466/grass/trunk/raster/r.reclass/reclass.c
+END
+rule.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38136/grass/trunk/raster/r.reclass/rule.h
+END

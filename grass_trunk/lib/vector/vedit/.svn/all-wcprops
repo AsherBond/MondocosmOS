@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/46957/grass/trunk/lib/vector/vedit
+END
+merge.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/merge.c
+END
+snap.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/snap.c
+END
+delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/delete.c
+END
+move.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/move.c
+END
+veditlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/veditlib.dox
+END
+copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/copy.c
+END
+vertex.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/vertex.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/select.c
+END
+render.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46957/grass/trunk/lib/vector/vedit/render.c
+END
+break.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46902/grass/trunk/lib/vector/vedit/break.c
+END
+zbulk.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45106/grass/trunk/lib/vector/vedit/zbulk.c
+END
+flip.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/flip.c
+END
+distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/distance.c
+END
+cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45106/grass/trunk/lib/vector/vedit/cats.c
+END
+chtype.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44910/grass/trunk/lib/vector/vedit/chtype.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38893/grass/trunk/lib/vector/vedit/Makefile
+END

@@ -1,0 +1,18 @@
+<h2>DESCRIPTION</h2>
+
+<em>v.db.reconnect.all</em> changes database connection of all layers of
+all vectors in the current mapset from old_database to database. If a link
+does not match the old_database it is left untouched.
+
+<h2>NOTES</h2>
+
+The value of the <em>old_database</em> option needs to be the exact
+string which appears as the fourth field printed by
+<tt>v.db.connect -g</tt>, i.e. with substituted variables.
+
+
+<h2>AUTHOR</h2>
+Radim Blazek
+
+<p>
+<i>Last changed: $Date$</i>

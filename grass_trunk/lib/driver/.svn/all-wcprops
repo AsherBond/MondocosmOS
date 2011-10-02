@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/46978/grass/trunk/lib/driver
+END
+Erase.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33172/grass/trunk/lib/driver/Erase.c
+END
+driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/46978/grass/trunk/lib/driver/driver.h
+END
+Raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34720/grass/trunk/lib/driver/Raster.c
+END
+Graph.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32650/grass/trunk/lib/driver/Graph.c
+END
+path.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34916/grass/trunk/lib/driver/path.h
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46978/grass/trunk/lib/driver/init.c
+END
+Move.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/33270/grass/trunk/lib/driver/Move.c
+END
+Font.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/36390/grass/trunk/lib/driver/Font.c
+END
+text2.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34923/grass/trunk/lib/driver/text2.c
+END
+text3.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34923/grass/trunk/lib/driver/text3.c
+END
+font_freetype.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32662/grass/trunk/lib/driver/font_freetype.c
+END
+Get_t_box.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34923/grass/trunk/lib/driver/Get_t_box.c
+END
+Text_size.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34923/grass/trunk/lib/driver/Text_size.c
+END
+Color.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34720/grass/trunk/lib/driver/Color.c
+END
+Set_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32866/grass/trunk/lib/driver/Set_window.c
+END
+Text.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34923/grass/trunk/lib/driver/Text.c
+END
+Line_width.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32650/grass/trunk/lib/driver/Line_width.c
+END
+driverlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/34923/grass/trunk/lib/driver/driverlib.h
+END
+parse_ftcap.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46978/grass/trunk/lib/driver/parse_ftcap.c
+END
+Box.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/33270/grass/trunk/lib/driver/Box.c
+END
+font2.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/driver/font2.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38893/grass/trunk/lib/driver/Makefile
+END
+path.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34916/grass/trunk/lib/driver/path.c
+END
+Draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34916/grass/trunk/lib/driver/Draw.c
+END

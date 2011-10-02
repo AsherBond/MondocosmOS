@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/vector/v.clean
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48327/grass/trunk/vector/v.clean/main.c
+END
+rmdac.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38026/grass/trunk/vector/v.clean/rmdac.c
+END
+rmline.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38026/grass/trunk/vector/v.clean/rmline.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/33598/grass/trunk/vector/v.clean/proto.h
+END
+v.clean.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48557/grass/trunk/vector/v.clean/v.clean.html
+END
+prune.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46959/grass/trunk/vector/v.clean/prune.c
+END
+v_clean_rmsa.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/24019/grass/trunk/vector/v.clean/v_clean_rmsa.png
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/vector/v.clean/Makefile
+END

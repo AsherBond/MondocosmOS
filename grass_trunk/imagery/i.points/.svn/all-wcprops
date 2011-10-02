@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48559/grass/trunk/imagery/i.points
+END
+graphics.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/graphics.c
+END
+colors.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/colors.c
+END
+ask_mag.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/ask_mag.c
+END
+analyze.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/analyze.c
+END
+zoom_pnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/zoom_pnt.c
+END
+call.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/call.c
+END
+points.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/points.c
+END
+cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40217/grass/trunk/imagery/i.points/cell.c
+END
+title.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/title.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/local_proto.h
+END
+debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/debug.c
+END
+mark.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/mark.c
+END
+cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/cellhd.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38552/grass/trunk/imagery/i.points/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/37976/grass/trunk/imagery/i.points/Makefile
+END
+zoom_box.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/zoom_box.c
+END
+group.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/group.c
+END
+drawcell.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40771/grass/trunk/imagery/i.points/drawcell.c
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/input.c
+END
+digit.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/digit.c
+END
+curses.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/curses.c
+END
+conv.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/conv.c
+END
+where.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/where.c
+END
+view.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/view.c
+END
+ask.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38703/grass/trunk/imagery/i.points/ask.c
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/find.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46065/grass/trunk/imagery/i.points/main.c
+END
+zoom.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/zoom.c
+END
+i.points.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48559/grass/trunk/imagery/i.points/i.points.html
+END
+target.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/target.c
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/defs.h
+END
+dot.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/dot.c
+END
+mouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.points/mouse.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/33993/grass/trunk/imagery/i.points/globals.h
+END
+equ.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/imagery/i.points/equ.c
+END

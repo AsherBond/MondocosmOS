@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/43719/grass/trunk/imagery/i.atcorr/test_suite
+END
+ETM4_400x400.raw
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_400x400.raw
+END
+ETM4.res
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4.res
+END
+ETM4_atmospheric_input_GRASS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_atmospheric_input_GRASS.txt
+END
+ETM4_400x400.hdr
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_400x400.hdr
+END
+ETM4_atmospheric_input.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_atmospheric_input.txt
+END
+ETM4_400x400_atms_corr.raw
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_400x400_atms_corr.raw
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/37111/grass/trunk/imagery/i.atcorr/test_suite/README.txt
+END
+ETM4_400x400_atms_corr.hdr
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/test_suite/ETM4_400x400_atms_corr.hdr
+END

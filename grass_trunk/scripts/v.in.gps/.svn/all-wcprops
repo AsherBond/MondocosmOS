@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.gps
+END
+grass_write_ascii.style
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48153/grass/trunk/scripts/v.in.gps/grass_write_ascii.style
+END
+v.in.gps.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.gps/v.in.gps.html
+END
+v.in.gpsbabel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48153/grass/trunk/scripts/v.in.gps/v.in.gpsbabel
+END
+v.in.gps.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48154/grass/trunk/scripts/v.in.gps/v.in.gps.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48153/grass/trunk/scripts/v.in.gps/Makefile
+END

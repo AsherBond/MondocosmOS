@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/scripts/v.db.join
+END
+v.db.join.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/scripts/v.db.join/v.db.join.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/24251/grass/trunk/scripts/v.db.join/Makefile
+END
+v.db.join.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48381/grass/trunk/scripts/v.db.join/v.db.join.py
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/vector/v.reclass
+END
+v.reclass.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48558/grass/trunk/vector/v.reclass/v.reclass.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48333/grass/trunk/vector/v.reclass/main.c
+END
+rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.reclass/rules.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.reclass/Makefile
+END
+reclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38026/grass/trunk/vector/v.reclass/reclass.c
+END

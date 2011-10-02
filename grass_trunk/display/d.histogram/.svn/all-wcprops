@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/display/d.histogram
+END
+dhist.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33146/grass/trunk/display/d.histogram/dhist.h
+END
+options.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32675/grass/trunk/display/d.histogram/options.h
+END
+d.histogram.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/display/d.histogram/d.histogram.html
+END
+pie.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/display/d.histogram/pie.h
+END
+bar.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38099/grass/trunk/display/d.histogram/bar.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47179/grass/trunk/display/d.histogram/main.c
+END
+bar.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/display/d.histogram/bar.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/display/d.histogram/Makefile
+END
+draw_slice.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38020/grass/trunk/display/d.histogram/draw_slice.c
+END
+get_stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40146/grass/trunk/display/d.histogram/get_stats.c
+END
+pie.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38099/grass/trunk/display/d.histogram/pie.c
+END

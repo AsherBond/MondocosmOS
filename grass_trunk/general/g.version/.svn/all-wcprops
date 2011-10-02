@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45525/grass/trunk/general/g.version
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45525/grass/trunk/general/g.version/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40665/grass/trunk/general/g.version/Makefile
+END
+g.version.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45188/grass/trunk/general/g.version/g.version.html
+END

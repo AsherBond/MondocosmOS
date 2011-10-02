@@ -1,0 +1,80 @@
+MODULE_TOPDIR = ..
+
+include $(MODULE_TOPDIR)/include/Make/Other.make
+
+MANPAGES = $(patsubst $(HTMLDIR)/%.html,$(MANDIR)/%.$(MANSECT),$(wildcard $(HTMLDIR)/*.html))
+
+DSTFILES := \
+	$(HTMLDIR)/grassdocs.css \
+	$(HTMLDIR)/grass_logo.png \
+	$(HTMLDIR)/grass_icon.png \
+	$(HTMLDIR)/nviz/grassdocs.css \
+	$(HTMLDIR)/nviz/grass_logo.png \
+	$(GEM_DST)
+
+categories = \
+	d:display \
+	db:database \
+	g:general \
+	i:imagery \
+	m:misc \
+	ps:postscript \
+	r:raster \
+	r3:raster3D \
+	v:vector
+
+IDXCATS := $(foreach cat,$(categories),$(lastword $(subst :, ,$(cat))))
+
+IDXSRC = full_index index $(IDXCATS)
+
+INDICES := $(patsubst %,$(HTMLDIR)/%.html,$(IDXSRC))
+
+default: $(DSTFILES)
+	@echo "Generating HTML manual pages index (help system)..."
+	$(MAKE) $(INDICES)
+	$(call build,check)
+	$(MAKE) manpages
+
+# This must be a separate target so that evaluation of $(MANPAGES)
+# is delayed until the indices have been generated
+manpages:
+	$(MAKE) $(MANPAGES)
+
+.PHONY: manpages
+
+define build
+GISBASE="$(RUN_GISBASE)" ARCH="$(ARCH)" ARCH_DISTDIR="$(ARCH_DISTDIR)" \
+	$(PYTHON) ./build_$(1).py $(2)
+endef
+
+$(HTMLDIR)/full_index.html: $(wildcard $(HTMLDIR)/*.*.html)
+	$(call build,full_index)
+
+$(HTMLDIR)/index.html:
+	$(call build,index)
+
+define category_rule
+$$(HTMLDIR)/$(2).html: $$(wildcard $$(HTMLDIR)/$(1).*.html)
+	$$(call build,class,$(1) $(2))
+endef
+
+$(foreach cat,$(categories),$(eval $(call category_rule,$(firstword $(subst :, ,$(cat))),$(lastword $(subst :, ,$(cat))))))
+
+$(HTMLDIR)/grassdocs.css: grassdocs.css
+	$(INSTALL_DATA) $< $@
+
+$(HTMLDIR)/nviz/grassdocs.css: grassdocs.css | $(HTMLDIR)/nviz
+	$(INSTALL_DATA) $< $@
+
+$(HTMLDIR)/grass_logo.png: grass_logo.png
+	$(INSTALL_DATA) $< $@
+
+$(HTMLDIR)/nviz/grass_logo.png: grass_logo.png | $(HTMLDIR)/nviz
+	$(INSTALL_DATA) $< $@
+
+$(HTMLDIR)/grass_icon.png: grass_icon.png
+	$(INSTALL_DATA) $< $@
+
+$(HTMLDIR)/nviz:
+	$(MKDIR) $@
+

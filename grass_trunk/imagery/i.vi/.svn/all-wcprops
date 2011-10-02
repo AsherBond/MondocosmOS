@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48557/grass/trunk/imagery/i.vi
+END
+pvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/pvi.c
+END
+ndvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/ndvi.c
+END
+msavi2.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/msavi2.c
+END
+arvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/arvi.c
+END
+vari.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34153/grass/trunk/imagery/i.vi/vari.c
+END
+savi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/savi.c
+END
+ipvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/ipvi.c
+END
+wdvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/wdvi.c
+END
+msavi.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/msavi.c
+END
+gemi.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/gemi.c
+END
+gari.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/gari.c
+END
+dvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/dvi.c
+END
+evi.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/evi.c
+END
+sr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/sr.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/44394/grass/trunk/imagery/i.vi/main.c
+END
+gvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/33856/grass/trunk/imagery/i.vi/gvi.c
+END
+i.vi.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/imagery/i.vi/i.vi.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40620/grass/trunk/imagery/i.vi/Makefile
+END

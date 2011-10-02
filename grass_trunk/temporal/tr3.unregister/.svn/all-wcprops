@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48399/grass/trunk/temporal/tr3.unregister
+END
+tr3.unregister.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/48326/grass/trunk/temporal/tr3.unregister/tr3.unregister.html
+END
+tr3.unregister.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/48399/grass/trunk/temporal/tr3.unregister/tr3.unregister.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48326/grass/trunk/temporal/tr3.unregister/Makefile
+END

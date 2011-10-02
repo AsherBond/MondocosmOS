@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/raster/r.le/r.le.patch
+END
+trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38131/grass/trunk/raster/r.le/r.le.patch/trace.c
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40771/grass/trunk/raster/r.le/r.le.patch/input.c
+END
+patch.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35757/grass/trunk/raster/r.le/r.le.patch/patch.c
+END
+r.le.patch.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/raster/r.le/r.le.patch/r.le.patch.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38061/grass/trunk/raster/r.le/r.le.patch/main.c
+END
+patch.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38020/grass/trunk/raster/r.le/r.le.patch/patch.h
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40771/grass/trunk/raster/r.le/r.le.patch/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/11587/grass/trunk/raster/r.le/r.le.patch/Makefile
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.wfs
+END
+v.in.wfs.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47426/grass/trunk/scripts/v.in.wfs/v.in.wfs.py
+END
+v.in.wfs.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.wfs/v.in.wfs.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/24489/grass/trunk/scripts/v.in.wfs/Makefile
+END

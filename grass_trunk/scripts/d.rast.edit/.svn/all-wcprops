@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48558/grass/trunk/scripts/d.rast.edit
+END
+d.rast.edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48558/grass/trunk/scripts/d.rast.edit/d.rast.edit.html
+END
+d.rast.edit.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47426/grass/trunk/scripts/d.rast.edit/d.rast.edit.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/34206/grass/trunk/scripts/d.rast.edit/Makefile
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/43719/grass/trunk/raster/r.in.poly
+END
+poly2rast.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/43331/grass/trunk/raster/r.in.poly/poly2rast.c
+END
+raster.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40223/grass/trunk/raster/r.in.poly/raster.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/39007/grass/trunk/raster/r.in.poly/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/43331/grass/trunk/raster/r.in.poly/main.c
+END
+getformat.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38703/grass/trunk/raster/r.in.poly/getformat.c
+END
+r.in.poly.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35357/grass/trunk/raster/r.in.poly/r.in.poly.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.in.poly/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/15244/grass/trunk/raster/r.in.poly/README
+END
+format.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/15237/grass/trunk/raster/r.in.poly/format.h
+END
+get_item.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/43331/grass/trunk/raster/r.in.poly/get_item.c
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47131/grass/trunk/raster/r.proj
+END
+r.proj.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44062/grass/trunk/raster/r.proj/r.proj.h
+END
+nearest.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38128/grass/trunk/raster/r.proj/nearest.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47131/grass/trunk/raster/r.proj/main.c
+END
+bilinear.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/43944/grass/trunk/raster/r.proj/bilinear.c
+END
+bordwalk.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47131/grass/trunk/raster/r.proj/bordwalk.c
+END
+cubic.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/43944/grass/trunk/raster/r.proj/cubic.c
+END
+lanczos.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/44296/grass/trunk/raster/r.proj/lanczos.c
+END
+bilinear_f.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/43944/grass/trunk/raster/r.proj/bilinear_f.c
+END
+cubic_f.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/43944/grass/trunk/raster/r.proj/cubic_f.c
+END
+readcell.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/42876/grass/trunk/raster/r.proj/readcell.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40620/grass/trunk/raster/r.proj/Makefile
+END
+r.proj.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47131/grass/trunk/raster/r.proj/r.proj.html
+END

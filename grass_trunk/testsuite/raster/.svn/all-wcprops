@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/33989/grass/trunk/testsuite/raster
+END
+rhemisphere.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/33989/grass/trunk/testsuite/raster/rhemisphere.sh
+END
+rmapcalc_test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/18714/grass/trunk/testsuite/raster/rmapcalc_test.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/18717/grass/trunk/testsuite/raster/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/18700/grass/trunk/testsuite/raster/README
+END
+raster_md5test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/18715/grass/trunk/testsuite/raster/raster_md5test.sh
+END

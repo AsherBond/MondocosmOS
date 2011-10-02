@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/48454/grass/trunk/lib/vector
+END
+vectorlib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46962/grass/trunk/lib/vector/vectorlib.dox
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48437/grass/trunk/lib/vector/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/10724/grass/trunk/lib/vector/README
+END
+vectorascii.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48436/grass/trunk/lib/vector/vectorascii.html
+END

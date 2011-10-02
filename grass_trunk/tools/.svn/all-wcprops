@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/grass/!svn/ver/48353/grass/trunk/tools
+END
+copywrite.pl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/29778/grass/trunk/tools/copywrite.pl
+END
+reindent.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48253/grass/trunk/tools/reindent.py
+END
+grass_indent_ALL.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32431/grass/trunk/tools/grass_indent_ALL.sh
+END
+mkhtml.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48353/grass/trunk/tools/mkhtml.py
+END
+g.echo.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/40207/grass/trunk/tools/g.echo.c
+END
+module_synopsis.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/41036/grass/trunk/tools/module_synopsis.sh
+END
+sql.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/47359/grass/trunk/tools/sql.sh
+END
+grass_indent.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47679/grass/trunk/tools/grass_indent.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/41458/grass/trunk/tools/Makefile
+END

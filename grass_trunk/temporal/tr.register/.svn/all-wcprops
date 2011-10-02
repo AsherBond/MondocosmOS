@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.register
+END
+test.tr.register.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.register/test.tr.register.sh
+END
+tr.register.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/48594/grass/trunk/temporal/tr.register/tr.register.py
+END
+register_ECAD_maps_temp_mean_1995_2010.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/grass/!svn/ver/48326/grass/trunk/temporal/tr.register/register_ECAD_maps_temp_mean_1995_2010.py
+END
+tr.register.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48289/grass/trunk/temporal/tr.register/tr.register.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48289/grass/trunk/temporal/tr.register/Makefile
+END

@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48559/grass/trunk/imagery/i.vpoints
+END
+setup.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/setup.c
+END
+graphics.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/graphics.c
+END
+colors.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38113/grass/trunk/imagery/i.vpoints/colors.c
+END
+ask_mag.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/ask_mag.c
+END
+analyze.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/analyze.c
+END
+zoom_pnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/zoom_pnt.c
+END
+i.vpoints.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48559/grass/trunk/imagery/i.vpoints/i.vpoints.html
+END
+call.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/call.c
+END
+points.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/points.c
+END
+cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40217/grass/trunk/imagery/i.vpoints/cell.c
+END
+title.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/title.c
+END
+debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/debug.c
+END
+crs.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/crs.c
+END
+mark.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/mark.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/driver.c
+END
+cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/cellhd.c
+END
+group.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/group.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/37976/grass/trunk/imagery/i.vpoints/Makefile
+END
+crs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/crs.h
+END
+zoom_box.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/zoom_box.c
+END
+drawcell.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40771/grass/trunk/imagery/i.vpoints/drawcell.c
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/input.c
+END
+digit.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/digit.c
+END
+vectpoints.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38026/grass/trunk/imagery/i.vpoints/vectpoints.h
+END
+curses.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/curses.c
+END
+conv.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/conv.c
+END
+view.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/view.c
+END
+where.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/33598/grass/trunk/imagery/i.vpoints/where.c
+END
+plot.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38026/grass/trunk/imagery/i.vpoints/plot.c
+END
+ask.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38703/grass/trunk/imagery/i.vpoints/ask.c
+END
+drawvect.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38026/grass/trunk/imagery/i.vpoints/drawvect.c
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/find.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46065/grass/trunk/imagery/i.vpoints/main.c
+END
+zoom.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/zoom.c
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/defs.h
+END
+dot.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/dot.c
+END
+target.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/target.c
+END
+mouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38015/grass/trunk/imagery/i.vpoints/mouse.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33993/grass/trunk/imagery/i.vpoints/globals.h
+END
+equ.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.vpoints/equ.c
+END

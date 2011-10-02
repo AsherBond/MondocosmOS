@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/scripts/i.image.mosaic
+END
+i.image.mosaic.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48557/grass/trunk/scripts/i.image.mosaic/i.image.mosaic.html
+END
+i.image.mosaic.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48090/grass/trunk/scripts/i.image.mosaic/i.image.mosaic.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/12839/grass/trunk/scripts/i.image.mosaic/Makefile
+END

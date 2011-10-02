@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/db/db.describe
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45042/grass/trunk/db/db.describe/local_proto.h
+END
+printtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45042/grass/trunk/db/db.describe/printtab.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45042/grass/trunk/db/db.describe/main.c
+END
+db.describe.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/db/db.describe/db.describe.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/db/db.describe/Makefile
+END

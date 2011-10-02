@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47630/grass/trunk/lib/external/bwidget
+END
+mainframe.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/mainframe.tcl
+END
+dialog.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/dialog.tcl
+END
+utils.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/utils.tcl
+END
+labelentry.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/labelentry.tcl
+END
+entry.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/entry.tcl
+END
+init.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/init.tcl
+END
+pagesmgr.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/pagesmgr.tcl
+END
+font.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/font.tcl
+END
+pkgIndex.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/pkgIndex.tcl
+END
+scrollframe.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/scrollframe.tcl
+END
+button.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/button.tcl
+END
+panedw.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/panedw.tcl
+END
+label.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/label.tcl
+END
+notebook.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/notebook.tcl
+END
+widget.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/widget.tcl
+END
+listbox.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/listbox.tcl
+END
+scrollw.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/scrollw.tcl
+END
+passwddlg.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/passwddlg.tcl
+END
+LGPL-2.1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38880/grass/trunk/lib/external/bwidget/LGPL-2.1.txt
+END
+scrollview.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/scrollview.tcl
+END
+xpm2image.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/xpm2image.tcl
+END
+README.grass
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/README.grass
+END
+arrow.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/arrow.tcl
+END
+progressdlg.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/progressdlg.tcl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39655/grass/trunk/lib/external/bwidget/Makefile
+END
+tree.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/tree.tcl
+END
+separator.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/separator.tcl
+END
+dragsite.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/dragsite.tcl
+END
+dynhelp.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/dynhelp.tcl
+END
+CHANGES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/CHANGES.txt
+END
+combobox.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/combobox.tcl
+END
+messagedlg.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/messagedlg.tcl
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47630/grass/trunk/lib/external/bwidget/README
+END
+bitmap.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/bitmap.tcl
+END
+color.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/color.tcl
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47630/grass/trunk/lib/external/bwidget/LICENSE.txt
+END
+spinbox.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/spinbox.tcl
+END
+buttonbox.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/buttonbox.tcl
+END
+dropsite.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/dropsite.tcl
+END
+progressbar.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/progressbar.tcl
+END
+labelframe.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/labelframe.tcl
+END
+titleframe.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/35358/grass/trunk/lib/external/bwidget/titleframe.tcl
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48558/grass/trunk/raster3d/r3.mkdspf
+END
+vizual.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32675/grass/trunk/raster3d/r3.mkdspf/vizual.h
+END
+iso_surface.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.mkdspf/iso_surface.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.mkdspf/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47594/grass/trunk/raster3d/r3.mkdspf/main.c
+END
+r3_find.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47643/grass/trunk/raster3d/r3.mkdspf/r3_find.c
+END
+make_header.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.mkdspf/make_header.c
+END
+fill_cfax.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.mkdspf/fill_cfax.c
+END
+calc_linefax.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/38020/grass/trunk/raster3d/r3.mkdspf/calc_linefax.c
+END
+r3.mkdspf.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48558/grass/trunk/raster3d/r3.mkdspf/r3.mkdspf.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.mkdspf/Makefile
+END
+r3_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47593/grass/trunk/raster3d/r3.mkdspf/r3_data.c
+END

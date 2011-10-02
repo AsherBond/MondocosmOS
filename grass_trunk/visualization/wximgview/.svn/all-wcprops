@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48562/grass/trunk/visualization/wximgview
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48562/grass/trunk/visualization/wximgview/main.cpp
+END
+wximgview.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/41026/grass/trunk/visualization/wximgview/wximgview.html
+END
+wximgview.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/41026/grass/trunk/visualization/wximgview/wximgview.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/41026/grass/trunk/visualization/wximgview/Makefile
+END

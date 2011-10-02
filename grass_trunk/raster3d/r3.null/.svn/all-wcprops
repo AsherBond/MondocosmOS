@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.null
+END
+r3.null.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.null/r3.null.html
+END
+test_volume_float_null_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_float_null_1.ref
+END
+test_volume_float_null_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_float_null_2.ref
+END
+test.r3.null.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test.r3.null.sh
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47643/grass/trunk/raster3d/r3.null/main.c
+END
+test_volume_double_null_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_double_null_1.ref
+END
+test_volume_double_null_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_double_null_2.ref
+END
+test_volume_float_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_float_1.ref
+END
+test_volume_float_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_float_2.ref
+END
+test_volume_double_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_double_1.ref
+END
+test_volume_double_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/47528/grass/trunk/raster3d/r3.null/test_volume_double_2.ref
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.null/Makefile
+END

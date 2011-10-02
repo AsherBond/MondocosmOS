@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/vector/v.overlay
+END
+line_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38026/grass/trunk/vector/v.overlay/line_area.c
+END
+local.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/vector/v.overlay/local.h
+END
+area_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38026/grass/trunk/vector/v.overlay/area_area.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47479/grass/trunk/vector/v.overlay/main.c
+END
+v.overlay.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/vector/v.overlay/v.overlay.html
+END
+v_overlay_area_lines.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/45353/grass/trunk/vector/v.overlay/v_overlay_area_lines.png
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/vector/v.overlay/Makefile
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38026/grass/trunk/vector/v.overlay/util.c
+END

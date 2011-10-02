@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/43719/grass/trunk/raster/r.composite
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40223/grass/trunk/raster/r.composite/main.c
+END
+r.composite.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32772/grass/trunk/raster/r.composite/r.composite.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/raster/r.composite/Makefile
+END

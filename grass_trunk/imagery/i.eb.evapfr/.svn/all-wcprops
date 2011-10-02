@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/imagery/i.eb.evapfr
+END
+soilmoisture.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/37961/grass/trunk/imagery/i.eb.evapfr/soilmoisture.c
+END
+i.eb.evapfr.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/imagery/i.eb.evapfr/i.eb.evapfr.html
+END
+evap_fr.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/37961/grass/trunk/imagery/i.eb.evapfr/evap_fr.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47333/grass/trunk/imagery/i.eb.evapfr/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40620/grass/trunk/imagery/i.eb.evapfr/Makefile
+END

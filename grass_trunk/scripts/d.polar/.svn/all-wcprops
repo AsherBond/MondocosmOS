@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48557/grass/trunk/scripts/d.polar
+END
+d.polar.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48557/grass/trunk/scripts/d.polar/d.polar.html
+END
+d_polar_aspect.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/19009/grass/trunk/scripts/d.polar/d_polar_aspect.png
+END
+d.polar.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48122/grass/trunk/scripts/d.polar/d.polar.py
+END
+polar_diagram.eps
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/20257/grass/trunk/scripts/d.polar/polar_diagram.eps
+END
+ps_defs.eps
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/20257/grass/trunk/scripts/d.polar/ps_defs.eps
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/39655/grass/trunk/scripts/d.polar/Makefile
+END

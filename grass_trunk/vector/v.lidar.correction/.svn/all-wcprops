@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48557/grass/trunk/vector/v.lidar.correction
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45107/grass/trunk/vector/v.lidar.correction/main.c
+END
+correction.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.correction/correction.c
+END
+v.lidar.correction.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/48557/grass/trunk/vector/v.lidar.correction/v.lidar.correction.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/46270/grass/trunk/vector/v.lidar.correction/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.correction/README
+END
+correction.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.correction/correction.h
+END

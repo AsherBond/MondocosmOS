@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf
+END
+r3.showdspf.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf/r3.showdspf.html
+END
+kns_globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/32675/grass/trunk/raster3d/r3.showdspf/kns_globals.h
+END
+Ball.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/Ball.c
+END
+r3_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47593/grass/trunk/raster3d/r3.showdspf/r3_data.c
+END
+vizual.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32675/grass/trunk/raster3d/r3.showdspf/vizual.h
+END
+Ball.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/Ball.h
+END
+draw_cap_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/draw_cap_ogl.c
+END
+r3_find.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47643/grass/trunk/raster3d/r3.showdspf/r3_find.c
+END
+main_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf/main_ogl.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.showdspf/Makefile
+END
+cap_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38703/grass/trunk/raster3d/r3.showdspf/cap_data.c
+END
+kns_defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/kns_defines.h
+END
+vizual2.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.showdspf/vizual2.h
+END
+do_color_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/do_color_ogl.c
+END
+togif.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32675/grass/trunk/raster3d/r3.showdspf/togif.c
+END
+draw_cappolys_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/draw_cappolys_ogl.c
+END
+init_caps.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.showdspf/init_caps.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/24595/grass/trunk/raster3d/r3.showdspf/README
+END
+togif.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/togif.h
+END
+get_color_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf/get_color_ogl.c
+END
+showdspf.gif
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/15758/grass/trunk/raster3d/r3.showdspf/showdspf.gif
+END
+BallMath.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/BallMath.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/15760/grass/trunk/raster3d/r3.showdspf/TODO
+END
+draw_polys_ogl.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/draw_polys_ogl.c
+END
+make_header.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.showdspf/make_header.c
+END
+r3.showdspf_opengl_mods.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf/r3.showdspf_opengl_mods.html
+END
+BallAux.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/BallAux.c
+END
+BallMath.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/BallMath.h
+END
+thresh_array.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/thresh_array.c
+END
+new_init_graphics.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/47810/grass/trunk/raster3d/r3.showdspf/new_init_graphics.c
+END
+BallAux.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster3d/r3.showdspf/BallAux.h
+END

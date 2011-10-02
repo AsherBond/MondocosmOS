@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/45042/grass/trunk/raster/r.buffer
+END
+distance.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38020/grass/trunk/raster/r.buffer/distance.h
+END
+process_rite.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/process_rite.c
+END
+process_at.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/process_at.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/execute.c
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38020/grass/trunk/raster/r.buffer/init.c
+END
+find_dist.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38020/grass/trunk/raster/r.buffer/find_dist.c
+END
+process_row.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/process_row.c
+END
+read_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40222/grass/trunk/raster/r.buffer/read_map.c
+END
+support.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38099/grass/trunk/raster/r.buffer/support.c
+END
+r.buffer2.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45042/grass/trunk/raster/r.buffer/r.buffer2.html
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/34539/grass/trunk/raster/r.buffer/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42695/grass/trunk/raster/r.buffer/main.c
+END
+write_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40223/grass/trunk/raster/r.buffer/write_map.c
+END
+process_left.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/process_left.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/raster/r.buffer/Makefile
+END
+parse_dist.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.buffer/parse_dist.c
+END

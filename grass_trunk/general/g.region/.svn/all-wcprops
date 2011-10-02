@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/general/g.region
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/41834/grass/trunk/general/g.region/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47643/grass/trunk/general/g.region/main.c
+END
+printwindow.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45790/grass/trunk/general/g.region/printwindow.c
+END
+zoom.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40698/grass/trunk/general/g.region/zoom.c
+END
+adjust.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40698/grass/trunk/general/g.region/adjust.c
+END
+g.region.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/general/g.region/g.region.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47536/grass/trunk/general/g.region/Makefile
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48557/grass/trunk/vector/v.random
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47479/grass/trunk/vector/v.random/main.c
+END
+v.random.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48557/grass/trunk/vector/v.random/v.random.html
+END
+test.v.random.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46730/grass/trunk/vector/v.random/test.v.random.sh
+END
+test_random_vect_1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46730/grass/trunk/vector/v.random/test_random_vect_1.ref
+END
+test_random_vect_2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46730/grass/trunk/vector/v.random/test_random_vect_2.ref
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/vector/v.random/Makefile
+END
+test_random_vect_3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46730/grass/trunk/vector/v.random/test_random_vect_3.ref
+END
+test_random_vect_4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46730/grass/trunk/vector/v.random/test_random_vect_4.ref
+END

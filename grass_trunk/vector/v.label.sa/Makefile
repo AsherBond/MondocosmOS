@@ -1,0 +1,14 @@
+
+MODULE_TOPDIR = ../..
+
+PGM = v.label.sa
+
+LIBES = $(DISPLAYLIB) $(VECTLIB) $(GISLIB) $(FTLIB)
+DEPENDENCIES= $(DISPLAYDEP) $(VECTDEP) $(GISDEP)
+EXTRA_INC = $(VECT_INC) $(FTINC)
+EXTRA_CFLAGS = $(VECT_CFLAGS)
+
+include $(MODULE_TOPDIR)/include/Make/Module.make
+
+default: cmd
+

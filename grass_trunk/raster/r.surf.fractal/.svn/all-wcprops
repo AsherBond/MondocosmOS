@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/43719/grass/trunk/raster/r.surf.fractal
+END
+process.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40826/grass/trunk/raster/r.surf.fractal/process.c
+END
+frac.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38020/grass/trunk/raster/r.surf.fractal/frac.h
+END
+spec_syn.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38020/grass/trunk/raster/r.surf.fractal/spec_syn.c
+END
+write_rast.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/40771/grass/trunk/raster/r.surf.fractal/write_rast.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/41221/grass/trunk/raster/r.surf.fractal/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38906/grass/trunk/raster/r.surf.fractal/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/15561/grass/trunk/raster/r.surf.fractal/README
+END
+r.surf.fractal.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/34761/grass/trunk/raster/r.surf.fractal/r.surf.fractal.html
+END

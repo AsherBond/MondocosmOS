@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48558/grass/trunk/scripts/v.in.mapgen
+END
+v.in.mapgen.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48558/grass/trunk/scripts/v.in.mapgen/v.in.mapgen.html
+END
+v.in.mapgen.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47426/grass/trunk/scripts/v.in.mapgen/v.in.mapgen.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/17234/grass/trunk/scripts/v.in.mapgen/Makefile
+END

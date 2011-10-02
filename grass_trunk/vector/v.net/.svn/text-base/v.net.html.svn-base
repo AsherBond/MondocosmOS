@@ -1,0 +1,85 @@
+<h2>DESCRIPTION</h2>
+
+<em>v.net</em> is used for network preparation and maintenance. 
+It permits to insert missing nodes or arcs and to connect unconnected 
+nodes to the network within a given distance threshold. 
+It can also report the current network graph status. 
+
+<p>
+In terms of network analysis, a network consists of nodes connected by 
+arcs. In a vector map prepared for network analysis, nodes are represented 
+by the grass-internal geometry type <em>node</em> and arcs by the geometry 
+type <em>line</em>. If a <em>line</em> consists of several vertices and 
+segments (the typical case), only its staring and ending vertex are 
+regarded as network nodes. Further more, explicit starting and ending 
+nodes for e.g. a least costly path search or subnetwork allocation are 
+represented by the geometry type point.
+
+<p>
+In general, network analysis will find the least costly (shortest or 
+fastest) path from point A to point B by follwing the existing lines. 
+This implies that these points must lie at the start or end point of a 
+line with is part of the network. If no line is starting or ending at a 
+given point, this point is not part of the network, i.e. the point is 
+unconnected and unreachable.
+
+<h3>NOTES</h3>
+
+If vector editing is required to modify the
+graph, <em><a href="wxGUI.Vector_Digitizing_Tool.html">wxGUI vector
+digitizer</a></em> or <em><a href="v.edit.html">v.edit</a></em> can be
+used. Separately,
+<a href="lrs.html">Linear Referencing System</a> is available in
+GRASS.
+
+<h3>EXAMPLES</h3>
+
+<a href="http://www.grassbook.org/data_menu3rd.php">NC dataset</a> based examples.
+
+<p>
+Create nodes globally for all line ends and intersections:
+
+<div class="code"><pre>
+v.net input=streams output=streams_node operation=nodes
+</pre></div>
+
+Merge in nodes from a separate map within given threshold:
+
+<div class="code"><pre>
+v.net input=streams points=firestations out=streems_net operation=connect thresh=500
+</pre></div>
+
+For generating network for given vector point map is required input file in format
+
+<div class="code"><pre>
+[category of edge] [category of start node] [category of end node]
+</pre></div>
+
+<div class="code"><pre>
+v.net points=geodetic_swwake_pts output=geodetic_swwake_pts_net operation=arcs file=- << EOF
+> 1 28000 28005
+> 2 27945 27958
+> 3 27886 27897
+> EOF
+</pre></div>
+
+<h2>SEE ALSO</h2>
+
+<em>
+  <a href="wxGUI.Vector_Digitizing_Tool.html">wxGUI vector digitizer</a>,
+  <a href="v.edit.html">v.edit</a><br>
+  <a href="v.net.iso.html">v.net.iso</a>,
+  <a href="v.net.path.html">v.net.path</a>,
+  <a href="v.net.steiner.html">v.net.steiner</a>,
+  <a href="v.net.salesman.html">v.net.salesman</a>
+</em>
+
+<h2>AUTHORS</h2>
+
+Radim Blazek, ITC-irst, Trento, Italy<br>
+
+Martin Landa, FBK-irst (formerly ITC-irst), Trento, Italy and CTU in
+Prague, Czech Republic (operation 'connect' and 'arcs')
+
+<p>
+<i>Last changed: $Date$</i>

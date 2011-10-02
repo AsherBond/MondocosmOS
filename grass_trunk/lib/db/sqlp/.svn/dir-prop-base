@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 50
+OBJ.*
+sqlp.tab.c
+sqlp.tab.h
+sqlp.output
+sqlp.yy.c
+
+END

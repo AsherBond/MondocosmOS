@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/47643/grass/trunk/lib/manage
+END
+empty.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45093/grass/trunk/lib/manage/empty.c
+END
+element_list
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45093/grass/trunk/lib/manage/element_list
+END
+read_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45110/grass/trunk/lib/manage/read_list.c
+END
+option.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47340/grass/trunk/lib/manage/option.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45093/grass/trunk/lib/manage/list.c
+END
+get_len.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45093/grass/trunk/lib/manage/get_len.c
+END
+do_remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47643/grass/trunk/lib/manage/do_remove.c
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45093/grass/trunk/lib/manage/find.c
+END
+show_elem.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/45093/grass/trunk/lib/manage/show_elem.c
+END
+managelib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45093/grass/trunk/lib/manage/managelib.dox
+END
+do_rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47643/grass/trunk/lib/manage/do_rename.c
+END
+sighold.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45093/grass/trunk/lib/manage/sighold.c
+END
+manage_local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45093/grass/trunk/lib/manage/manage_local_proto.h
+END
+add_elem.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45093/grass/trunk/lib/manage/add_elem.c
+END
+do_copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45093/grass/trunk/lib/manage/do_copy.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47536/grass/trunk/lib/manage/Makefile
+END
+do_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45093/grass/trunk/lib/manage/do_list.c
+END

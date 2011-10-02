@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/43719/grass/trunk/lib/rst/data
+END
+dataquad.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/lib/rst/data/dataquad.c
+END
+dataquad.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/lib/rst/data/dataquad.h
+END
+DESCRIPTION.DATA
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/14151/grass/trunk/lib/rst/data/DESCRIPTION.DATA
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38893/grass/trunk/lib/rst/data/Makefile
+END

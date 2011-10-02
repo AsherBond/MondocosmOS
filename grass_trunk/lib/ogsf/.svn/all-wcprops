@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/47918/grass/trunk/lib/ogsf
+END
+Gv3.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47620/grass/trunk/lib/ogsf/Gv3.c
+END
+gk.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gk.c
+END
+gp.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47474/grass/trunk/lib/ogsf/gp.c
+END
+gsd_fringe.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_fringe.c
+END
+gs.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47360/grass/trunk/lib/ogsf/gs.c
+END
+gpd.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47716/grass/trunk/lib/ogsf/gpd.c
+END
+GVL2.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47593/grass/trunk/lib/ogsf/GVL2.c
+END
+gvl_calc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39323/grass/trunk/lib/ogsf/gvl_calc.c
+END
+Gvl3.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47643/grass/trunk/lib/ogsf/Gvl3.c
+END
+gv.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47474/grass/trunk/lib/ogsf/gv.c
+END
+gvd.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47474/grass/trunk/lib/ogsf/gvd.c
+END
+gsd_img_mpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/35353/grass/trunk/lib/ogsf/gsd_img_mpeg.c
+END
+gsd_img_ppm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40958/grass/trunk/lib/ogsf/gsd_img_ppm.c
+END
+gsdrape.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32617/grass/trunk/lib/ogsf/gsdrape.c
+END
+GP2.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47620/grass/trunk/lib/ogsf/GP2.c
+END
+gvl.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47536/grass/trunk/lib/ogsf/gvl.c
+END
+gsd_objs.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39323/grass/trunk/lib/ogsf/gsd_objs.c
+END
+gsd_views.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47343/grass/trunk/lib/ogsf/gsd_views.c
+END
+gsd_legend.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38612/grass/trunk/lib/ogsf/gsd_legend.c
+END
+Gs3.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/46347/grass/trunk/lib/ogsf/Gs3.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38893/grass/trunk/lib/ogsf/Makefile
+END
+gvl_calc2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gvl_calc2.c
+END
+gvld.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/32658/grass/trunk/lib/ogsf/gvld.c
+END
+gs_query.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gs_query.c
+END
+GV2.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47620/grass/trunk/lib/ogsf/GV2.c
+END
+gsd_cplane.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_cplane.c
+END
+gsds.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsds.c
+END
+GSX.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/GSX.c
+END
+gsdiff.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsdiff.c
+END
+gsd_wire.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_wire.c
+END
+gsd_prim.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_prim.c
+END
+GS_util.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/GS_util.c
+END
+gv_quick.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gv_quick.c
+END
+gsget.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsget.c
+END
+rowcol.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/31313/grass/trunk/lib/ogsf/rowcol.h
+END
+gsd_img_tif.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_img_tif.c
+END
+gsd_surf.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32617/grass/trunk/lib/ogsf/gsd_surf.c
+END
+gsd_label.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_label.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/14075/grass/trunk/lib/ogsf/README
+END
+gsget.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsget.h
+END
+rgbpack.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/31313/grass/trunk/lib/ogsf/rgbpack.h
+END
+mc33_table.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/mc33_table.h
+END
+GK2.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32585/grass/trunk/lib/ogsf/GK2.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/19877/grass/trunk/lib/ogsf/TODO
+END
+gsd_fonts.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/gsd_fonts.c
+END
+gs_norms.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32617/grass/trunk/lib/ogsf/gs_norms.c
+END
+gs_bm.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32617/grass/trunk/lib/ogsf/gs_bm.c
+END
+gvl_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47643/grass/trunk/lib/ogsf/gvl_file.c
+END
+trans.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/lib/ogsf/trans.c
+END
+Gp3.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47778/grass/trunk/lib/ogsf/Gp3.c
+END
+GS2.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47918/grass/trunk/lib/ogsf/GS2.c
+END
+ogsflib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47475/grass/trunk/lib/ogsf/ogsflib.dox
+END

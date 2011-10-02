@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.bridge
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48060/grass/trunk/vector/v.net.bridge/main.c
+END
+v.net.bridge.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48557/grass/trunk/vector/v.net.bridge/v.net.bridge.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/41780/grass/trunk/vector/v.net.bridge/Makefile
+END

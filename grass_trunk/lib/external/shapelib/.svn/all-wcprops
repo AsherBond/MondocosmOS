@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/43719/grass/trunk/lib/external/shapelib
+END
+shapefil.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32582/grass/trunk/lib/external/shapelib/shapefil.h
+END
+safileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32582/grass/trunk/lib/external/shapelib/safileio.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38893/grass/trunk/lib/external/shapelib/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/30934/grass/trunk/lib/external/shapelib/README
+END
+shpopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32582/grass/trunk/lib/external/shapelib/shpopen.c
+END
+dbfopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32582/grass/trunk/lib/external/shapelib/dbfopen.c
+END

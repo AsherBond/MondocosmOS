@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45071/grass/trunk/imagery/i.ortho.photo/lib
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/init.c
+END
+conz_points.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/conz_points.c
+END
+isnull.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/isnull.c
+END
+group_elev.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/group_elev.c
+END
+open_camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/open_camera.c
+END
+matrixdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/matrixdefs.h
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/local_proto.h
+END
+m_copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_copy.c
+END
+ask_camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/ask_camera.c
+END
+orthoref.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/orthoref.c
+END
+find_camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/find_camera.c
+END
+ls_elev.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/45071/grass/trunk/imagery/i.ortho.photo/lib/ls_elev.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/error.c
+END
+title_camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/title_camera.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38893/grass/trunk/imagery/i.ortho.photo/lib/Makefile
+END
+m_mult.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_mult.c
+END
+cam.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/cam.c
+END
+funcdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/funcdefs.h
+END
+find_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/find_init.c
+END
+m_add.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_add.c
+END
+georef.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/georef.c
+END
+ref_points.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/ref_points.c
+END
+ls_cameras.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/45071/grass/trunk/imagery/i.ortho.photo/lib/ls_cameras.c
+END
+orthophoto.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/orthophoto.h
+END
+cam_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/cam_info.c
+END
+init_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/init_info.c
+END
+fopen_camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/fopen_camera.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/TODO
+END
+mat.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/mat.h
+END
+m_inverse.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_inverse.c
+END
+camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/41013/grass/trunk/imagery/i.ortho.photo/lib/camera.c
+END
+m_transpose.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_transpose.c
+END
+m_zero.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/34272/grass/trunk/imagery/i.ortho.photo/lib/m_zero.c
+END
+elev.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/41013/grass/trunk/imagery/i.ortho.photo/lib/elev.c
+END

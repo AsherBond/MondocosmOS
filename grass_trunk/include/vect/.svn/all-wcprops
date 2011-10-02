@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/47943/grass/trunk/include/vect
+END
+dig_structs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47943/grass/trunk/include/vect/dig_structs.h
+END
+dig_externs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47038/grass/trunk/include/vect/dig_externs.h
+END
+dig_defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47867/grass/trunk/include/vect/dig_defines.h
+END
+digit.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/33993/grass/trunk/include/vect/digit.h
+END
+dig_macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38552/grass/trunk/include/vect/dig_macros.h
+END

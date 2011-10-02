@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/42052/grass/trunk/lib/gmath/test
+END
+test_ccmath_wrapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_ccmath_wrapper.c
+END
+test_tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_tools.c
+END
+test_blas1.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/test_blas1.c
+END
+test_tools_les.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/test_tools_les.c
+END
+test_blas2.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/42052/grass/trunk/lib/gmath/test/test_blas2.c
+END
+bench_blas2.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/42052/grass/trunk/lib/gmath/test/bench_blas2.c
+END
+test_blas3.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/test_blas3.c
+END
+bench_solver_direct.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/bench_solver_direct.c
+END
+bench_blas3.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/bench_blas3.c
+END
+test.gmath.lib.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/test.gmath.lib.html
+END
+test_matrix_conversion.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_matrix_conversion.c
+END
+bench_solver_krylov.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/bench_solver_krylov.c
+END
+test_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_main.c
+END
+test_gmath_lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_gmath_lib.h
+END
+test_solvers.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/42051/grass/trunk/lib/gmath/test/test_solvers.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/39389/grass/trunk/lib/gmath/test/Makefile
+END

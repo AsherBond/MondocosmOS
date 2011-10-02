@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/test
+END
+test_tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47531/grass/trunk/lib/raster3d/test/test_tools.c
+END
+test_coordinate_transform.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/test/test_coordinate_transform.c
+END
+test.g3d.lib.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/47531/grass/trunk/lib/raster3d/test/test.g3d.lib.html
+END
+test_put_get_value.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47594/grass/trunk/lib/raster3d/test/test_put_get_value.c
+END
+test_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47593/grass/trunk/lib/raster3d/test/test_main.c
+END
+test_g3d_lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47536/grass/trunk/lib/raster3d/test/test_g3d_lib.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47536/grass/trunk/lib/raster3d/test/Makefile
+END

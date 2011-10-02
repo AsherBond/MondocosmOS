@@ -1,0 +1,863 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/48484/grass/trunk/lib/gis
+END
+geodist.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/37744/grass/trunk/lib/gis/geodist.c
+END
+writ_zeros.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/34484/grass/trunk/lib/gis/writ_zeros.c
+END
+copy_dir.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/43156/grass/trunk/lib/gis/copy_dir.c
+END
+parser_html.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/40842/grass/trunk/lib/gis/parser_html.c
+END
+legal_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38612/grass/trunk/lib/gis/legal_name.c
+END
+debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/38019/grass/trunk/lib/gis/debug.c
+END
+radii.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/37744/grass/trunk/lib/gis/radii.c
+END
+FIPS.code
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/13794/grass/trunk/lib/gis/FIPS.code
+END
+area_poly2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/37744/grass/trunk/lib/gis/area_poly2.c
+END
+bres_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/37744/grass/trunk/lib/gis/bres_line.c
+END
+parser_help.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47036/grass/trunk/lib/gis/parser_help.c
+END
+key_value2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40701/grass/trunk/lib/gis/key_value2.c
+END
+datum.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/34539/grass/trunk/lib/gis/datum.c
+END
+ll_scan.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/gis/ll_scan.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/45071/grass/trunk/lib/gis/list.c
+END
+parser_interface.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/44421/grass/trunk/lib/gis/parser_interface.c
+END
+clicker.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34461/grass/trunk/lib/gis/clicker.c
+END
+projections
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39521/grass/trunk/lib/gis/projections
+END
+short_way.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/37744/grass/trunk/lib/gis/short_way.c
+END
+ll_format.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34539/grass/trunk/lib/gis/ll_format.c
+END
+popen.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/40904/grass/trunk/lib/gis/popen.c
+END
+gisdbase.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/37744/grass/trunk/lib/gis/gisdbase.c
+END
+gislib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47460/grass/trunk/lib/gis/gislib.dox
+END
+overwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/44630/grass/trunk/lib/gis/overwrite.c
+END
+pole_in_poly.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/37744/grass/trunk/lib/gis/pole_in_poly.c
+END
+fmode.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/37701/grass/trunk/lib/gis/fmode.c
+END
+proj2.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/46187/grass/trunk/lib/gis/proj2.c
+END
+parser_local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45212/grass/trunk/lib/gis/parser_local_proto.h
+END
+snprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/40839/grass/trunk/lib/gis/snprintf.c
+END
+new_des
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/13853/grass/trunk/lib/gis/new_des
+END
+verbose.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34486/grass/trunk/lib/gis/verbose.c
+END
+color_str.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38069/grass/trunk/lib/gis/color_str.c
+END
+find_rast.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47643/grass/trunk/lib/gis/find_rast.c
+END
+make_loc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47630/grass/trunk/lib/gis/make_loc.c
+END
+is.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/32526/grass/trunk/lib/gis/is.c
+END
+zone.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/37744/grass/trunk/lib/gis/zone.c
+END
+counter.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/37162/grass/trunk/lib/gis/counter.c
+END
+find_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45071/grass/trunk/lib/gis/find_file.c
+END
+zero.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/38552/grass/trunk/lib/gis/zero.c
+END
+geodesic.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34484/grass/trunk/lib/gis/geodesic.c
+END
+ls_filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40706/grass/trunk/lib/gis/ls_filter.c
+END
+area_ellipse.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/37744/grass/trunk/lib/gis/area_ellipse.c
+END
+myname.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/45071/grass/trunk/lib/gis/myname.c
+END
+spawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/40905/grass/trunk/lib/gis/spawn.c
+END
+color_rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47551/grass/trunk/lib/gis/color_rules.c
+END
+strings.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47460/grass/trunk/lib/gis/strings.c
+END
+mapset.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/37744/grass/trunk/lib/gis/mapset.c
+END
+G.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/38019/grass/trunk/lib/gis/G.h
+END
+getl.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/37744/grass/trunk/lib/gis/getl.c
+END
+README.TYPE
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/13881/grass/trunk/lib/gis/README.TYPE
+END
+put_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/37744/grass/trunk/lib/gis/put_window.c
+END
+gisinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47237/grass/trunk/lib/gis/gisinit.c
+END
+key_value3.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40701/grass/trunk/lib/gis/key_value3.c
+END
+wind_format.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/37981/grass/trunk/lib/gis/wind_format.c
+END
+worker.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/34487/grass/trunk/lib/gis/worker.c
+END
+pi.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/22204/grass/trunk/lib/gis/pi.h
+END
+gisbase.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/37744/grass/trunk/lib/gis/gisbase.c
+END
+handler.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/40463/grass/trunk/lib/gis/handler.c
+END
+ls.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/34484/grass/trunk/lib/gis/ls.c
+END
+commas.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/34484/grass/trunk/lib/gis/commas.c
+END
+putenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/46977/grass/trunk/lib/gis/putenv.c
+END
+set_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47292/grass/trunk/lib/gis/set_window.c
+END
+wind_in.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/gis/wind_in.c
+END
+mapset_nme.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46173/grass/trunk/lib/gis/mapset_nme.c
+END
+wind_2_box.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40836/grass/trunk/lib/gis/wind_2_box.c
+END
+remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/45071/grass/trunk/lib/gis/remove.c
+END
+proj3.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/46187/grass/trunk/lib/gis/proj3.c
+END
+endian.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/37744/grass/trunk/lib/gis/endian.c
+END
+find_rast3d.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47643/grass/trunk/lib/gis/find_rast3d.c
+END
+intersect.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/gis/intersect.c
+END
+tempfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45071/grass/trunk/lib/gis/tempfile.c
+END
+sleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/32526/grass/trunk/lib/gis/sleep.c
+END
+state83
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/13897/grass/trunk/lib/gis/state83
+END
+basename.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/gis/basename.c
+END
+area_sphere.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/37744/grass/trunk/lib/gis/area_sphere.c
+END
+file_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45071/grass/trunk/lib/gis/file_name.c
+END
+nme_in_mps.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/39824/grass/trunk/lib/gis/nme_in_mps.c
+END
+parser_wps.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46103/grass/trunk/lib/gis/parser_wps.c
+END
+make_mapset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47630/grass/trunk/lib/gis/make_mapset.c
+END
+home.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/38764/grass/trunk/lib/gis/home.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/45826/grass/trunk/lib/gis/error.c
+END
+flate.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/41499/grass/trunk/lib/gis/flate.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48389/grass/trunk/lib/gis/Makefile
+END
+get_ellipse.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/45071/grass/trunk/lib/gis/get_ellipse.c
+END
+colors.desc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/46620/grass/trunk/lib/gis/colors.desc
+END
+rotate.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/lib/gis/rotate.c
+END
+locale.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/34695/grass/trunk/lib/gis/locale.c
+END
+win32_pipes.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/gis/win32_pipes.c
+END
+named_colr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32529/grass/trunk/lib/gis/named_colr.c
+END
+rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/45071/grass/trunk/lib/gis/rename.c
+END
+location.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/37744/grass/trunk/lib/gis/location.c
+END
+area.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/37744/grass/trunk/lib/gis/area.c
+END
+key_value4.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40701/grass/trunk/lib/gis/key_value4.c
+END
+find_etc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/gis/find_etc.c
+END
+date.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/37744/grass/trunk/lib/gis/date.c
+END
+plot.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/37744/grass/trunk/lib/gis/plot.c
+END
+datum.table
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40870/grass/trunk/lib/gis/datum.table
+END
+token.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47779/grass/trunk/lib/gis/token.c
+END
+parser_script.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48389/grass/trunk/lib/gis/parser_script.c
+END
+get_projinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47942/grass/trunk/lib/gis/get_projinfo.c
+END
+trim_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/39000/grass/trunk/lib/gis/trim_dec.c
+END
+parser_standard_options.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47591/grass/trunk/lib/gis/parser_standard_options.c
+END
+distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45893/grass/trunk/lib/gis/distance.c
+END
+mapset_msc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/45071/grass/trunk/lib/gis/mapset_msc.c
+END
+parser.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48205/grass/trunk/lib/gis/parser.c
+END
+percent.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/35951/grass/trunk/lib/gis/percent.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47559/grass/trunk/lib/gis/open.c
+END
+find_vect.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/42304/grass/trunk/lib/gis/find_vect.c
+END
+units.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/41304/grass/trunk/lib/gis/units.c
+END
+ellipse.table
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/21591/grass/trunk/lib/gis/ellipse.table
+END
+user_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/43104/grass/trunk/lib/gis/user_config.c
+END
+timestamp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/37793/grass/trunk/lib/gis/timestamp.c
+END
+window_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47292/grass/trunk/lib/gis/window_map.c
+END
+state27
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/13896/grass/trunk/lib/gis/state27
+END
+mapcase.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/gis/mapcase.c
+END
+copy_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/gis/copy_file.c
+END
+adj_cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40698/grass/trunk/lib/gis/adj_cellhd.c
+END
+open_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45071/grass/trunk/lib/gis/open_misc.c
+END
+ascii_chk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34484/grass/trunk/lib/gis/ascii_chk.c
+END
+paths.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/43104/grass/trunk/lib/gis/paths.c
+END
+rd_cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48484/grass/trunk/lib/gis/rd_cellhd.c
+END
+env.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47154/grass/trunk/lib/gis/env.c
+END
+done_msg.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/34484/grass/trunk/lib/gis/done_msg.c
+END
+area_poly1.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/37744/grass/trunk/lib/gis/area_poly1.c
+END
+pager.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/40776/grass/trunk/lib/gis/pager.c
+END
+wr_cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/40017/grass/trunk/lib/gis/wr_cellhd.c
+END
+key_value1.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40701/grass/trunk/lib/gis/key_value1.c
+END
+progrm_nme.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/37793/grass/trunk/lib/gis/progrm_nme.c
+END
+wind_scan.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45894/grass/trunk/lib/gis/wind_scan.c
+END
+get_window.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47292/grass/trunk/lib/gis/get_window.c
+END
+mach_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34695/grass/trunk/lib/gis/mach_name.c
+END
+nl_to_spaces.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/gis/nl_to_spaces.c
+END
+line_dist.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34484/grass/trunk/lib/gis/line_dist.c
+END
+view.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/34484/grass/trunk/lib/gis/view.c
+END
+datumtransform.table
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46067/grass/trunk/lib/gis/datumtransform.table
+END
+wind_limits.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32526/grass/trunk/lib/gis/wind_limits.c
+END
+whoami.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/37793/grass/trunk/lib/gis/whoami.c
+END
+rhumbline.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/34484/grass/trunk/lib/gis/rhumbline.c
+END
+asprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/40839/grass/trunk/lib/gis/asprintf.c
+END
+seek.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/45466/grass/trunk/lib/gis/seek.c
+END
+wind_overlap.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/lib/gis/wind_overlap.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/40464/grass/trunk/lib/gis/alloc.c
+END
+proj1.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/46187/grass/trunk/lib/gis/proj1.c
+END

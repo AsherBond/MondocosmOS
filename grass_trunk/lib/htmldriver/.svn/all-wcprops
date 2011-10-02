@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47143/grass/trunk/lib/htmldriver
+END
+htmldriver.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47143/grass/trunk/lib/htmldriver/htmldriver.html
+END
+Text.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/33856/grass/trunk/lib/htmldriver/Text.c
+END
+Graph_Clse.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33856/grass/trunk/lib/htmldriver/Graph_Clse.c
+END
+Polygon.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34916/grass/trunk/lib/htmldriver/Polygon.c
+END
+htmlmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34916/grass/trunk/lib/htmldriver/htmlmap.h
+END
+Box.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/34720/grass/trunk/lib/htmldriver/Box.c
+END
+Driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46983/grass/trunk/lib/htmldriver/Driver.c
+END
+Graph_Set.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46983/grass/trunk/lib/htmldriver/Graph_Set.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38893/grass/trunk/lib/htmldriver/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/32584/grass/trunk/lib/htmldriver/README
+END
+Draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/34916/grass/trunk/lib/htmldriver/Draw.c
+END

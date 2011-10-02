@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/46065/grass/trunk/raster/r.kappa
+END
+calc_kappa.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38020/grass/trunk/raster/r.kappa/calc_kappa.c
+END
+r.kappa.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32772/grass/trunk/raster/r.kappa/r.kappa.html
+END
+stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44964/grass/trunk/raster/r.kappa/stats.c
+END
+kappa.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38136/grass/trunk/raster/r.kappa/kappa.h
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.kappa/local_proto.h
+END
+prt_hdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.kappa/prt_hdr.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46065/grass/trunk/raster/r.kappa/main.c
+END
+prt_label.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38099/grass/trunk/raster/r.kappa/prt_label.c
+END
+sum.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/raster/r.kappa/sum.c
+END
+prt_mat.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/44964/grass/trunk/raster/r.kappa/prt_mat.c
+END
+mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38612/grass/trunk/raster/r.kappa/mask.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/raster/r.kappa/Makefile
+END

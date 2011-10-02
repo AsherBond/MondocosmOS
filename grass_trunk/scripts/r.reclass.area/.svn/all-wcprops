@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/scripts/r.reclass.area
+END
+r.reclass.area.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48557/grass/trunk/scripts/r.reclass.area/r.reclass.area.html
+END
+r.reclass.area.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/47426/grass/trunk/scripts/r.reclass.area/r.reclass.area.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/12503/grass/trunk/scripts/r.reclass.area/Makefile
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/raster/r.statistics
+END
+o_min.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_min.c
+END
+o_mode.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_mode.c
+END
+o_max.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_max.c
+END
+o_kurt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_kurt.c
+END
+o_var.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_var.c
+END
+gauss.dat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/15496/grass/trunk/raster/r.statistics/gauss.dat
+END
+o_median.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_median.c
+END
+r.statistics.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48557/grass/trunk/raster/r.statistics/r.statistics.html
+END
+o_sdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_sdev.c
+END
+o_sum.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_sum.c
+END
+o_divr.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_divr.c
+END
+write_rec.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/raster/r.statistics/write_rec.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/main.c
+END
+method.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/method.h
+END
+o_skew.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_skew.c
+END
+run_cmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/43717/grass/trunk/raster/r.statistics/run_cmd.c
+END
+o_average.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_average.c
+END
+read_stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38020/grass/trunk/raster/r.statistics/read_stats.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/raster/r.statistics/Makefile
+END
+o_adev.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40648/grass/trunk/raster/r.statistics/o_adev.c
+END

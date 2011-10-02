@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/46065/grass/trunk/raster/r.what.color
+END
+r.what.color.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/44636/grass/trunk/raster/r.what.color/r.what.color.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46065/grass/trunk/raster/r.what.color/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/raster/r.what.color/Makefile
+END

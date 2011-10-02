@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47868/grass/trunk/vector/v.colors.out
+END
+make_colors.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47681/grass/trunk/vector/v.colors.out/make_colors.c
+END
+scan_cats.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47681/grass/trunk/vector/v.colors.out/scan_cats.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47681/grass/trunk/vector/v.colors.out/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47868/grass/trunk/vector/v.colors.out/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47681/grass/trunk/vector/v.colors.out/Makefile
+END
+v.colors.out.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/47613/grass/trunk/vector/v.colors.out/v.colors.out.html
+END

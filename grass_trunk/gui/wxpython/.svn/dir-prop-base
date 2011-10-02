@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 40
+build_ext.pyc
+menustrings.py
+html
+latex
+
+END

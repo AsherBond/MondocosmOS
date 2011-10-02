@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/grass/!svn/ver/48557/grass/trunk/db/drivers
+END
+mk_dbdriver_h.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47218/grass/trunk/db/drivers/mk_dbdriver_h.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/33038/grass/trunk/db/drivers/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/16675/grass/trunk/db/drivers/README
+END

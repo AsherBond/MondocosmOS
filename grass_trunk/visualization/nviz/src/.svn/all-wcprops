@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47536/grass/trunk/visualization/nviz/src
+END
+script_support.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/15929/grass/trunk/visualization/nviz/src/script_support.c
+END
+position.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/position.c
+END
+cutplane_obj.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/cutplane_obj.c
+END
+interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/40879/grass/trunk/visualization/nviz/src/interface.h
+END
+mkdspf_iso_surface.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/mkdspf_iso_surface.c
+END
+README.flythrough
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/32411/grass/trunk/visualization/nviz/src/README.flythrough
+END
+do_zoom.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/40965/grass/trunk/visualization/nviz/src/do_zoom.c
+END
+tkWinPort.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/tkWinPort.h
+END
+volume.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/volume.c
+END
+tkFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/tkFont.h
+END
+nvizAppInit.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/nvizAppInit.c
+END
+viz.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32675/grass/trunk/visualization/nviz/src/viz.h
+END
+label.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/label.c
+END
+change_view.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/change_view.c
+END
+tclcommands
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/15930/grass/trunk/visualization/nviz/src/tclcommands
+END
+togl_ws.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/20438/grass/trunk/visualization/nviz/src/togl_ws.h
+END
+coldefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/coldefs.h
+END
+init_commands.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/init_commands.c
+END
+query_vect.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/38026/grass/trunk/visualization/nviz/src/query_vect.c
+END
+mkdspf_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/32675/grass/trunk/visualization/nviz/src/mkdspf_main.c
+END
+tkPort.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/tkPort.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47536/grass/trunk/visualization/nviz/src/Makefile
+END
+draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/draw.c
+END
+tkWin.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/tkWin.h
+END
+ks_names.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/ks_names.h
+END
+togl.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32528/grass/trunk/visualization/nviz/src/togl.c
+END
+mkdspf_init_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/mkdspf_init_file.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/16861/grass/trunk/visualization/nviz/src/ChangeLog
+END
+map_obj.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/47474/grass/trunk/visualization/nviz/src/map_obj.c
+END
+nviz_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/40879/grass/trunk/visualization/nviz/src/nviz_init.c
+END
+togl_cb.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/togl_cb.c
+END
+togl.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/41458/grass/trunk/visualization/nviz/src/togl.h
+END
+pg.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/visualization/nviz/src/pg.h
+END
+mkdspf_calc_linefax.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/mkdspf_calc_linefax.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39463/grass/trunk/visualization/nviz/src/README
+END
+anim_support.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/anim_support.c
+END
+togl_flythrough.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/42592/grass/trunk/visualization/nviz/src/togl_flythrough.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/15954/grass/trunk/visualization/nviz/src/TODO
+END
+exag.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/exag.c
+END
+TOGL_LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/15958/grass/trunk/visualization/nviz/src/TOGL_LICENSE
+END
+glwrappers.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/glwrappers.c
+END
+pick_vect_commands.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/38026/grass/trunk/visualization/nviz/src/pick_vect_commands.c
+END
+quick_draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/quick_draw.c
+END
+lights.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/lights.c
+END
+nvizMain.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/46065/grass/trunk/visualization/nviz/src/nvizMain.c
+END
+mkdspf_fill_cfax.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/mkdspf_fill_cfax.c
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35719/grass/trunk/visualization/nviz/src/misc.c
+END
+tkUnixPort.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/32526/grass/trunk/visualization/nviz/src/tkUnixPort.h
+END

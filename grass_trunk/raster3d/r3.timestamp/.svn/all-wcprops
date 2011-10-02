@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.timestamp
+END
+r3.timestamp.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/48279/grass/trunk/raster3d/r3.timestamp/r3.timestamp.html
+END
+r3.timestamp.main.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/47643/grass/trunk/raster3d/r3.timestamp/r3.timestamp.main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/47536/grass/trunk/raster3d/r3.timestamp/Makefile
+END

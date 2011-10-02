@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48557/grass/trunk/vector/v.lidar.edgedetection
+END
+edgedetection.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.edgedetection/edgedetection.c
+END
+v.lidar.edgedetection.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/48557/grass/trunk/vector/v.lidar.edgedetection/v.lidar.edgedetection.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/45107/grass/trunk/vector/v.lidar.edgedetection/main.c
+END
+edgedetection.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.edgedetection/edgedetection.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/46271/grass/trunk/vector/v.lidar.edgedetection/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/42319/grass/trunk/vector/v.lidar.edgedetection/README
+END

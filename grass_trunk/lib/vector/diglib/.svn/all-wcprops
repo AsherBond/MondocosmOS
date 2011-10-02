@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48270/grass/trunk/lib/vector/diglib
+END
+head.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47039/grass/trunk/lib/vector/diglib/head.c
+END
+test.ok
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/12240/grass/trunk/lib/vector/diglib/test.ok
+END
+port_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/port_init.c
+END
+portable.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47992/grass/trunk/lib/vector/diglib/portable.c
+END
+cindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47354/grass/trunk/lib/vector/diglib/cindex.c
+END
+inside.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46900/grass/trunk/lib/vector/diglib/inside.c
+END
+type.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/type.c
+END
+spindex_rw.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46941/grass/trunk/lib/vector/diglib/spindex_rw.c
+END
+poly.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/poly.c
+END
+allocation.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/allocation.c
+END
+angle.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/angle.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/41457/grass/trunk/lib/vector/diglib/Makefile
+END
+struct_alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46900/grass/trunk/lib/vector/diglib/struct_alloc.c
+END
+frmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/frmt.c
+END
+spindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47039/grass/trunk/lib/vector/diglib/spindex.c
+END
+line_dist.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/37860/grass/trunk/lib/vector/diglib/line_dist.c
+END
+test32.ok
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/36392/grass/trunk/lib/vector/diglib/test32.ok
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47039/grass/trunk/lib/vector/diglib/list.c
+END
+plus_area.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47039/grass/trunk/lib/vector/diglib/plus_area.c
+END
+linecros.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47355/grass/trunk/lib/vector/diglib/linecros.c
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/test.c
+END
+file.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/file.c
+END
+test64.ok
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/36392/grass/trunk/lib/vector/diglib/test64.ok
+END
+update.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/update.c
+END
+cindex_rw.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47039/grass/trunk/lib/vector/diglib/cindex_rw.c
+END
+port_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/port_test.c
+END
+plus.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/plus.c
+END
+plus_struct.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47887/grass/trunk/lib/vector/diglib/plus_struct.c
+END
+plus_node.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/plus_node.c
+END
+box.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47917/grass/trunk/lib/vector/diglib/box.c
+END
+prune.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45104/grass/trunk/lib/vector/diglib/prune.c
+END
+plus_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48270/grass/trunk/lib/vector/diglib/plus_line.c
+END

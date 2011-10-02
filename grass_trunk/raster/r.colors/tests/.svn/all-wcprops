@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests
+END
+test_elev_float_example3_logabs.ref
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example3_logabs.ref
+END
+example4
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/example4
+END
+test_volume_double_default.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_default.ref
+END
+test_elev_int_example2_perc.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example2_perc.ref
+END
+test_elev_float_example1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example1.ref
+END
+test_elev_float_example2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example2.ref
+END
+test_elev_int_example4_perc.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example4_perc.ref
+END
+test_elev_float_example3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example3.ref
+END
+test.r.colors.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test.r.colors.sh
+END
+test_elev_float_example4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example4.ref
+END
+test_elev_int_example4_inv.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example4_inv.ref
+END
+test_elev_double_example1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example1.ref
+END
+test_elev_double_example2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example2.ref
+END
+test_elev_double_example3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example3.ref
+END
+test_elev_double_example4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example4.ref
+END
+test_elev_int_example1_hist.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example1_hist.ref
+END
+test_elev_int_example3_logabs.ref
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example3_logabs.ref
+END
+test_elev_float_example4_inv.ref
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example4_inv.ref
+END
+test_volume_double_example1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example1.ref
+END
+test_volume_double_example2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example2.ref
+END
+test_volume_double_example3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example3.ref
+END
+test_elev_double_example4_inv.ref
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example4_inv.ref
+END
+test_volume_double_example4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example4.ref
+END
+test_volume_double_example5.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example5.ref
+END
+test_elev_int_example2_log.ref
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example2_log.ref
+END
+test_elev_double_example1_hist.ref
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example1_hist.ref
+END
+test_elev_int_example1_perc.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example1_perc.ref
+END
+test_elev_double_example3_logabs.ref
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example3_logabs.ref
+END
+test_elev_int_example3_perc.ref
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example3_perc.ref
+END
+test_volume_double_example4_inv.ref
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example4_inv.ref
+END
+test_elev_float_example2_log.ref
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example2_log.ref
+END
+test_elev_double_example2_log.ref
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_example2_log.ref
+END
+test_volume_double_example1_hist.ref
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example1_hist.ref
+END
+test_volume_double_example3_logabs.ref
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example3_logabs.ref
+END
+test_elev_double_default.ref
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_double_default.ref
+END
+test_volume_double_example2_log.ref
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_volume_double_example2_log.ref
+END
+test_elev_int_example1.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example1.ref
+END
+test_elev_int_example2.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example2.ref
+END
+example1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/example1
+END
+test_elev_int_example3.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example3.ref
+END
+example2
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/example2
+END
+test_elev_float_example1_hist.ref
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_float_example1_hist.ref
+END
+test_elev_int_example4.ref
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/test_elev_int_example4.ref
+END
+example3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46951/grass/trunk/raster/r.colors/tests/example3
+END

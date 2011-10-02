@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.cwed
+END
+rlicwed_formula.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/22495/grass/trunk/raster/r.li/r.li.cwed/rlicwed_formula.png
+END
+cwed.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47676/grass/trunk/raster/r.li/r.li.cwed/cwed.c
+END
+utility.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.cwed/utility.c
+END
+cellWeighted.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.cwed/cellWeighted.h
+END
+r.li.cwed.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48558/grass/trunk/raster/r.li/r.li.cwed/r.li.cwed.html
+END
+utility.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47670/grass/trunk/raster/r.li/r.li.cwed/utility.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38906/grass/trunk/raster/r.li/r.li.cwed/Makefile
+END

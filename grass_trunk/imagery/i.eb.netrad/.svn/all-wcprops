@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/imagery/i.eb.netrad
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47333/grass/trunk/imagery/i.eb.netrad/main.c
+END
+r_net.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44969/grass/trunk/imagery/i.eb.netrad/r_net.c
+END
+i.eb.netrad.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/imagery/i.eb.netrad/i.eb.netrad.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45523/grass/trunk/imagery/i.eb.netrad/Makefile
+END

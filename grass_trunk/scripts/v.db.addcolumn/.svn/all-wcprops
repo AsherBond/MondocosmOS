@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.addcolumn
+END
+v.db.addcolumn.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.addcolumn/v.db.addcolumn.html
+END
+v.db.addcolumn.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/47426/grass/trunk/scripts/v.db.addcolumn/v.db.addcolumn.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/39818/grass/trunk/scripts/v.db.addcolumn/Makefile
+END

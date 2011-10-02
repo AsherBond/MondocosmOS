@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48388/grass/trunk/raster/r.to.vect
+END
+lines_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/raster/r.to.vect/lines_io.c
+END
+areas_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/39133/grass/trunk/raster/r.to.vect/areas_io.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48388/grass/trunk/raster/r.to.vect/main.c
+END
+r.to.vect.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32772/grass/trunk/raster/r.to.vect/r.to.vect.html
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32675/grass/trunk/raster/r.to.vect/global.h
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38014/grass/trunk/raster/r.to.vect/lines.c
+END
+areas.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/42289/grass/trunk/raster/r.to.vect/areas.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/raster/r.to.vect/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/20087/grass/trunk/raster/r.to.vect/README
+END
+points.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/raster/r.to.vect/points.c
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38119/grass/trunk/raster/r.to.vect/util.c
+END

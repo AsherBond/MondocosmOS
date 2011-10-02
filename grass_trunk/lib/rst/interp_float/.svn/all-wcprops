@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47117/grass/trunk/lib/rst/interp_float
+END
+DESCRIPTION.INTERP
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/24055/grass/trunk/lib/rst/interp_float/DESCRIPTION.INTERP
+END
+secpar2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/lib/rst/interp_float/secpar2d.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35274/grass/trunk/lib/rst/interp_float/matrix.c
+END
+segmen2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40186/grass/trunk/lib/rst/interp_float/segmen2d.c
+END
+protos
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/14166/grass/trunk/lib/rst/interp_float/protos
+END
+resout2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42876/grass/trunk/lib/rst/interp_float/resout2d.c
+END
+vinput2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47117/grass/trunk/lib/rst/interp_float/vinput2d.c
+END
+interpf.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38715/grass/trunk/lib/rst/interp_float/interpf.h
+END
+point2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38026/grass/trunk/lib/rst/interp_float/point2d.c
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/14153/grass/trunk/lib/rst/interp_float/BUGS
+END
+write2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38715/grass/trunk/lib/rst/interp_float/write2d.c
+END
+func2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/lib/rst/interp_float/func2d.c
+END
+input2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/38612/grass/trunk/lib/rst/interp_float/input2d.c
+END
+output2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42876/grass/trunk/lib/rst/interp_float/output2d.c
+END
+interp2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40186/grass/trunk/lib/rst/interp_float/interp2d.c
+END
+minmax.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/lib/rst/interp_float/minmax.c
+END
+init2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38715/grass/trunk/lib/rst/interp_float/init2d.c
+END
+print_tree
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/14165/grass/trunk/lib/rst/interp_float/print_tree
+END
+distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32526/grass/trunk/lib/rst/interp_float/distance.c
+END
+ressegm2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/40223/grass/trunk/lib/rst/interp_float/ressegm2d.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38893/grass/trunk/lib/rst/interp_float/Makefile
+END

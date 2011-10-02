@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/misc/m.transform
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48535/grass/trunk/misc/m.transform/main.c
+END
+crs.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48534/grass/trunk/misc/m.transform/crs.c
+END
+m.transform.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/misc/m.transform/m.transform.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48535/grass/trunk/misc/m.transform/Makefile
+END
+crs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48534/grass/trunk/misc/m.transform/crs.h
+END

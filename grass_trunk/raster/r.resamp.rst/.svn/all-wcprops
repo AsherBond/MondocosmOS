@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/47630/grass/trunk/raster/r.resamp.rst
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/15468/grass/trunk/raster/r.resamp.rst/BUGS
+END
+HISTORY
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/15470/grass/trunk/raster/r.resamp.rst/HISTORY
+END
+r.resamp.rst.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/32772/grass/trunk/raster/r.resamp.rst/r.resamp.rst.html
+END
+DESCRIPTION
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/15469/grass/trunk/raster/r.resamp.rst/DESCRIPTION
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47630/grass/trunk/raster/r.resamp.rst/main.c
+END
+surf.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/raster/r.resamp.rst/surf.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/raster/r.resamp.rst/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/15473/grass/trunk/raster/r.resamp.rst/README
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/46065/grass/trunk/raster/r.circle
+END
+r.circle.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/35232/grass/trunk/raster/r.circle/r.circle.html
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/15138/grass/trunk/raster/r.circle/TODO
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46065/grass/trunk/raster/r.circle/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/raster/r.circle/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/15137/grass/trunk/raster/r.circle/README
+END

@@ -1,0 +1,647 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48396/grass/trunk/gui/icons/grass
+END
+map-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/map-export.png
+END
+layer-shaded-relief-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-shaded-relief-add.png
+END
+layer-redraw.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-redraw.png
+END
+script-save.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45840/grass/trunk/gui/icons/grass/script-save.png
+END
+settings.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/settings.png
+END
+tools.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/tools.png
+END
+layer-vector-chart-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-vector-chart-add.png
+END
+execute.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/execute.png
+END
+3d-rotate.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47899/grass/trunk/gui/icons/grass/3d-rotate.png
+END
+map-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/map-add.png
+END
+3d-settings.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/47794/grass/trunk/gui/icons/grass/3d-settings.png
+END
+gcp-save.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-save.png
+END
+undo.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/undo.png
+END
+layer-wms-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/47317/grass/trunk/gui/icons/grass/layer-wms-add.png
+END
+move.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/move.png
+END
+reload.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/reload.png
+END
+layer-cell-cats-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-cell-cats-add.png
+END
+modeler-main.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/modeler-main.png
+END
+page-settings.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45840/grass/trunk/gui/icons/grass/page-settings.png
+END
+map-settings.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45840/grass/trunk/gui/icons/grass/map-settings.png
+END
+layer-open.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-open.png
+END
+check.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/check.png
+END
+vertex-delete.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/vertex-delete.png
+END
+relation-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/relation-create.png
+END
+measure-length.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/measure-length.png
+END
+edit.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/edit.png
+END
+pdf-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45999/grass/trunk/gui/icons/grass/pdf-export.png
+END
+calculator.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46392/grass/trunk/gui/icons/grass/calculator.png
+END
+redo.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/redo.png
+END
+zoom-extent.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/zoom-extent.png
+END
+options.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/options.png
+END
+layer-group-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-group-add.png
+END
+layer-vector-thematic-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-vector-thematic-add.png
+END
+print-compose.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/46248/grass/trunk/gui/icons/grass/print-compose.png
+END
+layer-raster-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster-add.png
+END
+ps-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/ps-export.png
+END
+cats-copy.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/cats-copy.png
+END
+scalebar-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/scalebar-add.png
+END
+gcp-remove.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-remove.png
+END
+gcp-delete.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-delete.png
+END
+layer-raster-analyze.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster-analyze.png
+END
+layer-more.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-more.png
+END
+layer-command-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-command-add.png
+END
+line-split.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/line-split.png
+END
+pointer.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/pointer.png
+END
+show.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/show.png
+END
+script-load.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45840/grass/trunk/gui/icons/grass/script-load.png
+END
+vertex-move.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/vertex-move.png
+END
+layer-his-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-his-add.png
+END
+zoom-last.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/zoom-last.png
+END
+line-delete.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/line-delete.png
+END
+monitor-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/monitor-create.png
+END
+polygon-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/polygon-create.png
+END
+attributes-display.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/attributes-display.png
+END
+info.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/info.png
+END
+cats-display.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/cats-display.png
+END
+save.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/save.png
+END
+data-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/data-add.png
+END
+gcp-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-add.png
+END
+georectify.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/georectify.png
+END
+image-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/image-export.png
+END
+layer-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-add.png
+END
+map-info.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45921/grass/trunk/gui/icons/grass/map-info.png
+END
+layer-remove.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/layer-remove.png
+END
+overlay-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/overlay-add.png
+END
+gcp-rms.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-rms.png
+END
+layer-raster-more.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster-more.png
+END
+module-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/module-add.png
+END
+layer-vector-more.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-vector-more.png
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/LICENSE.TXT
+END
+pan.png
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/pan.png
+END
+vertex-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/vertex-create.png
+END
+layer-label-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-label-add.png
+END
+layer-import.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-import.png
+END
+boundary-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/boundary-create.png
+END
+redraw.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/redraw.png
+END
+layer-raster3d-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster3d-add.png
+END
+table.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/table.png
+END
+help.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/help.png
+END
+zoom-in.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/zoom-in.png
+END
+zoom-out.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/zoom-out.png
+END
+point-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/point-create.png
+END
+line-move.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/line-move.png
+END
+layer-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48396/grass/trunk/gui/icons/grass/layer-export.png
+END
+3d-help.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47794/grass/trunk/gui/icons/grass/3d-help.png
+END
+print.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/print.png
+END
+modeler-variables.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/modeler-variables.png
+END
+erase.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/erase.png
+END
+python-export.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/python-export.png
+END
+open.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/open.png
+END
+layer-vector-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-vector-add.png
+END
+create.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/create.png
+END
+shortest-distance.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/45606/grass/trunk/gui/icons/grass/shortest-distance.png
+END
+layer-raster-histogram.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster-histogram.png
+END
+font.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/font.png
+END
+layer-aspect-arrow-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-aspect-arrow-add.png
+END
+layer-raster-profile.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-raster-profile.png
+END
+centroid-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46191/grass/trunk/gui/icons/grass/centroid-create.png
+END
+line-edit.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/line-edit.png
+END
+layer-rgb-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-rgb-add.png
+END
+gcp-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/gcp-create.png
+END
+text-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/text-add.png
+END
+quit.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/quit.png
+END
+legend-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/legend-add.png
+END
+zoom-more.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/zoom-more.png
+END
+layer-grid-add.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/layer-grid-add.png
+END
+line-create.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45457/grass/trunk/gui/icons/grass/line-create.png
+END

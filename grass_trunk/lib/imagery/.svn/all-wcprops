@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/grass/!svn/ver/43719/grass/trunk/lib/imagery
+END
+sigset.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/sigset.c
+END
+sigsetfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/sigsetfile.c
+END
+list_gp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/34815/grass/trunk/lib/imagery/list_gp.c
+END
+georef.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/georef.c
+END
+fopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32585/grass/trunk/lib/imagery/fopen.c
+END
+list_subgp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/34815/grass/trunk/lib/imagery/list_subgp.c
+END
+ref.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/ref.c
+END
+points.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/39380/grass/trunk/lib/imagery/points.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/14001/grass/trunk/lib/imagery/README
+END
+eol.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/eol.c
+END
+find.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/find.c
+END
+title.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39380/grass/trunk/lib/imagery/title.c
+END
+sigfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38596/grass/trunk/lib/imagery/sigfile.c
+END
+sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/sig.c
+END
+target.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/target.c
+END
+loc_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/41881/grass/trunk/lib/imagery/loc_info.c
+END
+var.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/var.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/lib/imagery/alloc.c
+END
+imagerylib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/34346/grass/trunk/lib/imagery/imagerylib.dox
+END
+group.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/39380/grass/trunk/lib/imagery/group.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38893/grass/trunk/lib/imagery/Makefile
+END

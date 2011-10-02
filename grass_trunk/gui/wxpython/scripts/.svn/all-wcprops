@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/46534/grass/trunk/gui/wxpython/scripts
+END
+r.li.setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/45587/grass/trunk/gui/wxpython/scripts/r.li.setup.py
+END
+vkrige.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46534/grass/trunk/gui/wxpython/scripts/vkrige.py
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/43719/grass/trunk/lib/db/sqlp/test
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/31082/grass/trunk/lib/db/sqlp/test/test
+END
+sqlptest.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/lib/db/sqlp/test/sqlptest.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40620/grass/trunk/lib/db/sqlp/test/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/10129/grass/trunk/lib/db/sqlp/test/README
+END

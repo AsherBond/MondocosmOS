@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/vector/v.surf.rst
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/16327/grass/trunk/vector/v.surf.rst/BUGS
+END
+HISTORY
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/10672/grass/trunk/vector/v.surf.rst/HISTORY
+END
+DESCRIPTION
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/10672/grass/trunk/vector/v.surf.rst/DESCRIPTION
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47479/grass/trunk/vector/v.surf.rst/main.c
+END
+surf.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/33177/grass/trunk/vector/v.surf.rst/surf.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/vector/v.surf.rst/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/25271/grass/trunk/vector/v.surf.rst/README
+END
+v.surf.rst.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/vector/v.surf.rst/v.surf.rst.html
+END

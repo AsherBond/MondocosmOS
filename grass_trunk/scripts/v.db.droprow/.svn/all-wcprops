@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/48557/grass/trunk/scripts/v.db.droprow
+END
+v.db.droprow.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/scripts/v.db.droprow/v.db.droprow.html
+END
+v.db.droprow.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/47426/grass/trunk/scripts/v.db.droprow/v.db.droprow.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38716/grass/trunk/scripts/v.db.droprow/Makefile
+END

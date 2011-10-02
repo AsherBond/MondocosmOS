@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.reconnect.all
+END
+v.db.reconnect.all.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/48100/grass/trunk/scripts/v.db.reconnect.all/v.db.reconnect.all.html
+END
+v.db.reconnect.all.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/47426/grass/trunk/scripts/v.db.reconnect.all/v.db.reconnect.all.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/17021/grass/trunk/scripts/v.db.reconnect.all/Makefile
+END

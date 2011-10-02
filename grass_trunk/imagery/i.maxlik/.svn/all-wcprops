@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/imagery/i.maxlik
+END
+i.maxlik.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48558/grass/trunk/imagery/i.maxlik/i.maxlik.html
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40215/grass/trunk/imagery/i.maxlik/open.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/imagery/i.maxlik/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40771/grass/trunk/imagery/i.maxlik/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/33993/grass/trunk/imagery/i.maxlik/global.h
+END
+hist.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/42695/grass/trunk/imagery/i.maxlik/hist.c
+END
+invert.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38020/grass/trunk/imagery/i.maxlik/invert.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/imagery/i.maxlik/Makefile
+END
+classify.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38014/grass/trunk/imagery/i.maxlik/classify.c
+END

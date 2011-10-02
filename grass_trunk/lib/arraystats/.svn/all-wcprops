@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/43719/grass/trunk/lib/arraystats
+END
+basic.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/33856/grass/trunk/lib/arraystats/basic.c
+END
+class.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/33856/grass/trunk/lib/arraystats/class.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38893/grass/trunk/lib/arraystats/Makefile
+END
+discont.README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/31082/grass/trunk/lib/arraystats/discont.README.txt
+END

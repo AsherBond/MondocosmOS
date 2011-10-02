@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48557/grass/trunk/db/drivers/odbc
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/execute.c
+END
+listtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/listtab.c
+END
+grass-odbc.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/48557/grass/trunk/db/drivers/odbc/grass-odbc.html
+END
+dbdriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/37701/grass/trunk/db/drivers/odbc/dbdriver.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/proto.h
+END
+create_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/create_table.c
+END
+odbc.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/odbc.h
+END
+cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/cursor.c
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/select.c
+END
+describe.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/describe.c
+END
+listdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/listdb.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/15654/grass/trunk/db/drivers/odbc/TODO
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32675/grass/trunk/db/drivers/odbc/main.c
+END
+db.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/db.c
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/15647/grass/trunk/db/drivers/odbc/INSTALL
+END
+table.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/table.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32675/grass/trunk/db/drivers/odbc/globals.h
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/fetch.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/error.c
+END
+connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/connect.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/db/drivers/odbc/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/db/drivers/odbc/Makefile
+END

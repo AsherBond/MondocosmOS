@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48557/grass/trunk/scripts/db.test
+END
+test1
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38178/grass/trunk/scripts/db.test/test1
+END
+db.test.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48557/grass/trunk/scripts/db.test/db.test.html
+END
+db.test.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47426/grass/trunk/scripts/db.test/db.test.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/39655/grass/trunk/scripts/db.test/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/12848/grass/trunk/scripts/db.test/README
+END

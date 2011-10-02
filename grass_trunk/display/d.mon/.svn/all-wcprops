@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/48421/grass/trunk/display/d.mon
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46994/grass/trunk/display/d.mon/select.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47083/grass/trunk/display/d.mon/main.c
+END
+stop.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47144/grass/trunk/display/d.mon/stop.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47083/grass/trunk/display/d.mon/proto.h
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47044/grass/trunk/display/d.mon/list.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47186/grass/trunk/display/d.mon/Makefile
+END
+d.mon.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/48421/grass/trunk/display/d.mon/d.mon.html
+END
+start.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/47083/grass/trunk/display/d.mon/start.c
+END

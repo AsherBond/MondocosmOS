@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48563/grass/trunk/include/Make
+END
+Html.make
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48561/grass/trunk/include/Make/Html.make
+END
+Script.make
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46687/grass/trunk/include/Make/Script.make
+END
+Lib.make
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38893/grass/trunk/include/Make/Lib.make
+END
+Install.make
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/45800/grass/trunk/include/Make/Install.make
+END
+Doxyfile_arch_latex.in
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/44040/grass/trunk/include/Make/Doxyfile_arch_latex.in
+END
+Etc.make
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/41457/grass/trunk/include/Make/Etc.make
+END
+Vars.make
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48563/grass/trunk/include/Make/Vars.make
+END
+Doxygen.make
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44040/grass/trunk/include/Make/Doxygen.make
+END
+Stlib.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/12982/grass/trunk/include/Make/Stlib.make
+END
+Dir.make
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/46986/grass/trunk/include/Make/Dir.make
+END
+Grass.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47949/grass/trunk/include/Make/Grass.make
+END
+ScriptRules.make
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/39796/grass/trunk/include/Make/ScriptRules.make
+END
+Other.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/33038/grass/trunk/include/Make/Other.make
+END
+Python.make
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/45388/grass/trunk/include/Make/Python.make
+END
+Module.make
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/43657/grass/trunk/include/Make/Module.make
+END
+DB.make
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/37701/grass/trunk/include/Make/DB.make
+END
+Docs.make
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/44674/grass/trunk/include/Make/Docs.make
+END
+Compile.make
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/48563/grass/trunk/include/Make/Compile.make
+END
+Platform.make.in
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/47949/grass/trunk/include/Make/Platform.make.in
+END
+Multi.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/33981/grass/trunk/include/Make/Multi.make
+END
+Rules.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/40667/grass/trunk/include/Make/Rules.make
+END
+Doxyfile_arch_html.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/46857/grass/trunk/include/Make/Doxyfile_arch_html.in
+END
+NoHtml.make
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/33830/grass/trunk/include/Make/NoHtml.make
+END
+Shlib.make
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46169/grass/trunk/include/Make/Shlib.make
+END

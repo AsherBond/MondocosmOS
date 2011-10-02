@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/grass/!svn/ver/43719/grass/trunk/lib/rowio
+END
+rowiolib.dox
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38359/grass/trunk/lib/rowio/rowiolib.dox
+END
+get.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/get.c
+END
+release.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/release.c
+END
+setup.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/setup.c
+END
+forget.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/forget.c
+END
+put.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/put.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38893/grass/trunk/lib/rowio/Makefile
+END
+fileno.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38358/grass/trunk/lib/rowio/fileno.c
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.setup
+END
+circle.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/21597/grass/trunk/raster/r.li/r.li.setup/circle.txt
+END
+r.li.setup
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/31239/grass/trunk/raster/r.li/r.li.setup/r.li.setup
+END
+sample_area_vector.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/46991/grass/trunk/raster/r.li/r.li.setup/sample_area_vector.sh
+END
+polygon.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/21597/grass/trunk/raster/r.li/r.li.setup/polygon.txt
+END
+square_query
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/22515/grass/trunk/raster/r.li/r.li.setup/square_query
+END
+r.li.setup.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48557/grass/trunk/raster/r.li/r.li.setup/r.li.setup.html
+END
+r.li.setup.main
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/41899/grass/trunk/raster/r.li/r.li.setup/r.li.setup.main
+END
+square_mouse_selection.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46991/grass/trunk/raster/r.li/r.li.setup/square_mouse_selection.sh
+END
+masked_area_selection.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/46992/grass/trunk/raster/r.li/r.li.setup/masked_area_selection.sh
+END
+sampleAreas.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/21597/grass/trunk/raster/r.li/r.li.setup/sampleAreas.jpg
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/46992/grass/trunk/raster/r.li/r.li.setup/Makefile
+END
+area_query
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/22515/grass/trunk/raster/r.li/r.li.setup/area_query
+END
+r.li.setup.procedures.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/46992/grass/trunk/raster/r.li/r.li.setup/r.li.setup.procedures.tcl
+END
+r.li.windows.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/22643/grass/trunk/raster/r.li/r.li.setup/r.li.windows.tcl
+END

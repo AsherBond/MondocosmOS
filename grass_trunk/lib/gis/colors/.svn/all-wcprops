@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/46620/grass/trunk/lib/gis/colors
+END
+aspect
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/aspect
+END
+curvature
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/curvature
+END
+evi
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/37014/grass/trunk/lib/gis/colors/evi
+END
+ramp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/ramp
+END
+aspectcolr
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/aspectcolr
+END
+bcyr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/bcyr
+END
+sepia
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/33163/grass/trunk/lib/gis/colors/sepia
+END
+grey255
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/23794/grass/trunk/lib/gis/colors/grey255
+END
+wave
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/wave
+END
+population_dens
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46620/grass/trunk/lib/gis/colors/population_dens
+END
+bgyr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/24487/grass/trunk/lib/gis/colors/bgyr
+END
+celsius
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/39220/grass/trunk/lib/gis/colors/celsius
+END
+rstcurv
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/40960/grass/trunk/lib/gis/colors/rstcurv
+END
+corine
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/38505/grass/trunk/lib/gis/colors/corine
+END
+byg
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/byg
+END
+slope
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/slope
+END
+precipitation_monthly
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/41688/grass/trunk/lib/gis/colors/precipitation_monthly
+END
+srtm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/36828/grass/trunk/lib/gis/colors/srtm
+END
+grey1.0
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/23794/grass/trunk/lib/gis/colors/grey1.0
+END
+elevation
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/elevation
+END
+population
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/population
+END
+ryb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/ryb
+END
+byr
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/byr
+END
+gdd
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/39029/grass/trunk/lib/gis/colors/gdd
+END
+ndvi
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/36768/grass/trunk/lib/gis/colors/ndvi
+END
+ryg
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/ryg
+END
+rainbow
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/rainbow
+END
+gyr
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/gyr
+END
+terrain
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/terrain
+END
+grey
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/grey
+END
+etopo2
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/etopo2
+END
+precipitation
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/36954/grass/trunk/lib/gis/colors/precipitation
+END
+haxby
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/40681/grass/trunk/lib/gis/colors/haxby
+END
+differences
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/23412/grass/trunk/lib/gis/colors/differences
+END

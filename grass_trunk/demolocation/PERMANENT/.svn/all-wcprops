@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/43797/grass/trunk/demolocation/PERMANENT
+END
+WIND
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/22893/grass/trunk/demolocation/PERMANENT/WIND
+END
+DEFAULT_WIND
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/22893/grass/trunk/demolocation/PERMANENT/DEFAULT_WIND
+END
+PROJ_INFO
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/22893/grass/trunk/demolocation/PERMANENT/PROJ_INFO
+END
+MYNAME
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/16127/grass/trunk/demolocation/PERMANENT/MYNAME
+END
+VAR
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/22893/grass/trunk/demolocation/PERMANENT/VAR
+END
+PROJ_UNITS
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/16127/grass/trunk/demolocation/PERMANENT/PROJ_UNITS
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.geonames
+END
+v.in.geonames.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48557/grass/trunk/scripts/v.in.geonames/v.in.geonames.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/31894/grass/trunk/scripts/v.in.geonames/Makefile
+END
+v.in.geonames.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48122/grass/trunk/scripts/v.in.geonames/v.in.geonames.py
+END

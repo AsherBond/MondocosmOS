@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/46989/grass/trunk/imagery/i.atcorr
+END
+Output.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Output.cpp
+END
+GeomCond.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/GeomCond.h
+END
+Interp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33217/grass/trunk/imagery/i.atcorr/Interp.cpp
+END
+i.atcorr.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46989/grass/trunk/imagery/i.atcorr/i.atcorr.html
+END
+AtmosModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/33219/grass/trunk/imagery/i.atcorr/AtmosModel.cpp
+END
+Iwave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/Iwave.cpp
+END
+Altitude.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46015/grass/trunk/imagery/i.atcorr/Altitude.cpp
+END
+Abstra.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33217/grass/trunk/imagery/i.atcorr/Abstra.cpp
+END
+Transform.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Transform.h
+END
+gauss.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/33217/grass/trunk/imagery/i.atcorr/gauss.cpp
+END
+Date.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Date.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46128/grass/trunk/imagery/i.atcorr/main.cpp
+END
+Gauss.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Gauss.h
+END
+common.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/44247/grass/trunk/imagery/i.atcorr/common.cpp
+END
+6s.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46015/grass/trunk/imagery/i.atcorr/6s.cpp
+END
+AerosolModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/AerosolModel.h
+END
+GeomCond.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/GeomCond.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46015/grass/trunk/imagery/i.atcorr/Makefile
+END
+AerosolConcentration.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/AerosolConcentration.h
+END
+create_iwave.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/44576/grass/trunk/imagery/i.atcorr/create_iwave.py
+END
+Output.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/36941/grass/trunk/imagery/i.atcorr/Output.h
+END
+Interp.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Interp.h
+END
+AtmosModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/AtmosModel.h
+END
+Transform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/33217/grass/trunk/imagery/i.atcorr/Transform.cpp
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/README
+END
+Iwave.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46980/grass/trunk/imagery/i.atcorr/Iwave.h
+END
+Altitude.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/46015/grass/trunk/imagery/i.atcorr/Altitude.h
+END
+Abstra.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/Abstra.h
+END
+computations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/33219/grass/trunk/imagery/i.atcorr/computations.cpp
+END
+AerosolModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/33219/grass/trunk/imagery/i.atcorr/AerosolModel.cpp
+END
+AerosolConcentration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grass/!svn/ver/33217/grass/trunk/imagery/i.atcorr/AerosolConcentration.cpp
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/46015/grass/trunk/imagery/i.atcorr/common.h
+END
+6s.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/24231/grass/trunk/imagery/i.atcorr/6s.h
+END

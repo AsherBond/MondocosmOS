@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/raster/r.distance
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38099/grass/trunk/raster/r.distance/labels.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/46065/grass/trunk/raster/r.distance/main.c
+END
+mapgrapher
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/15799/grass/trunk/raster/r.distance/mapgrapher
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38136/grass/trunk/raster/r.distance/defs.h
+END
+edges.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/raster/r.distance/edges.c
+END
+distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40771/grass/trunk/raster/r.distance/distance.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38612/grass/trunk/raster/r.distance/parse.c
+END
+report.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38136/grass/trunk/raster/r.distance/report.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/raster/r.distance/Makefile
+END
+r.distance.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/raster/r.distance/r.distance.html
+END

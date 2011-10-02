@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/48557/grass/trunk/raster/r.uslek
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/41865/grass/trunk/raster/r.uslek/main.c
+END
+r.uslek.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/48557/grass/trunk/raster/r.uslek/r.uslek.html
+END
+tex2usle_k.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33856/grass/trunk/raster/r.uslek/tex2usle_k.c
+END
+prct2tex.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/44247/grass/trunk/raster/r.uslek/prct2tex.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38906/grass/trunk/raster/r.uslek/Makefile
+END

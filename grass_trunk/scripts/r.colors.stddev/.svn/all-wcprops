@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48122/grass/trunk/scripts/r.colors.stddev
+END
+r.colors.stddev.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/grass/!svn/ver/48122/grass/trunk/scripts/r.colors.stddev/r.colors.stddev.py
+END
+r.colors.stddev.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grass/!svn/ver/48097/grass/trunk/scripts/r.colors.stddev/r.colors.stddev.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/34706/grass/trunk/scripts/r.colors.stddev/Makefile
+END

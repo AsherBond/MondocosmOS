@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/vector/v.surf.idw
+END
+read_sites.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/41109/grass/trunk/vector/v.surf.idw/read_sites.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/43350/grass/trunk/vector/v.surf.idw/main.c
+END
+v.surf.idw.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/vector/v.surf.idw/v.surf.idw.html
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40188/grass/trunk/vector/v.surf.idw/proto.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/vector/v.surf.idw/Makefile
+END

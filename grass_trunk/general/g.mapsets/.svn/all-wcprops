@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/general/g.mapsets
+END
+get_maps.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/44620/grass/trunk/general/g.mapsets/get_maps.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42623/grass/trunk/general/g.mapsets/local_proto.h
+END
+g.mapsets.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/48557/grass/trunk/general/g.mapsets/g.mapsets.html
+END
+g.mapsets_picker.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/42625/grass/trunk/general/g.mapsets/g.mapsets_picker.py
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/44620/grass/trunk/general/g.mapsets/main.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/42623/grass/trunk/general/g.mapsets/list.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39655/grass/trunk/general/g.mapsets/Makefile
+END

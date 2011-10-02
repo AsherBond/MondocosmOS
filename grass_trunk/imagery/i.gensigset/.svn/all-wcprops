@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48558/grass/trunk/imagery/i.gensigset
+END
+lookup_class.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/38014/grass/trunk/imagery/i.gensigset/lookup_class.c
+END
+i.gensigset.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48558/grass/trunk/imagery/i.gensigset/i.gensigset.html
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38612/grass/trunk/imagery/i.gensigset/labels.c
+END
+read_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40771/grass/trunk/imagery/i.gensigset/read_data.c
+END
+invert.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38020/grass/trunk/imagery/i.gensigset/invert.c
+END
+files.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/imagery/i.gensigset/files.h
+END
+read_train.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/40222/grass/trunk/imagery/i.gensigset/read_train.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38612/grass/trunk/imagery/i.gensigset/parse.c
+END
+get_train.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40771/grass/trunk/imagery/i.gensigset/get_train.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32526/grass/trunk/imagery/i.gensigset/local_proto.h
+END
+openfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/40215/grass/trunk/imagery/i.gensigset/openfiles.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38061/grass/trunk/imagery/i.gensigset/main.c
+END
+parms.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/34539/grass/trunk/imagery/i.gensigset/parms.h
+END
+closefiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38106/grass/trunk/imagery/i.gensigset/closefiles.c
+END
+subcluster.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/38014/grass/trunk/imagery/i.gensigset/subcluster.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38906/grass/trunk/imagery/i.gensigset/Makefile
+END
+write_sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/34870/grass/trunk/imagery/i.gensigset/write_sig.c
+END

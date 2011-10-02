@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/47630/grass/trunk/lib/python/ctypes/ctypesgencore/parser
+END
+lex.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/47630/grass/trunk/lib/python/ctypes/ctypesgencore/parser/lex.py
+END
+cgrammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/cgrammar.py
+END
+datacollectingparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/grass/!svn/ver/42601/grass/trunk/lib/python/ctypes/ctypesgencore/parser/datacollectingparser.py
+END
+cdeclarations.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/cdeclarations.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/__init__.py
+END
+cparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/cparser.py
+END
+lextab.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/lextab.py
+END
+pplexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/42484/grass/trunk/lib/python/ctypes/ctypesgencore/parser/pplexer.py
+END
+yacc.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grass/!svn/ver/47630/grass/trunk/lib/python/ctypes/ctypesgencore/parser/yacc.py
+END
+parsetab.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/parsetab.py
+END
+ctypesparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/42345/grass/trunk/lib/python/ctypes/ctypesgencore/parser/ctypesparser.py
+END
+preprocessor.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/43120/grass/trunk/lib/python/ctypes/ctypesgencore/parser/preprocessor.py
+END

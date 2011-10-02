@@ -1,0 +1,443 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47643/grass/trunk/raster/r.mapcalc
+END
+xbitxor.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xbitxor.c
+END
+evaluate.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40522/grass/trunk/raster/r.mapcalc/evaluate.c
+END
+xround.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/39130/grass/trunk/raster/r.mapcalc/xround.c
+END
+xshiftl.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xshiftl.c
+END
+r.mapcalc.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/42210/grass/trunk/raster/r.mapcalc/r.mapcalc.html
+END
+xexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xexp.c
+END
+function.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33501/grass/trunk/raster/r.mapcalc/function.c
+END
+xshiftr.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xshiftr.c
+END
+xor2.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xor2.c
+END
+xne.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xne.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47536/grass/trunk/raster/r.mapcalc/Makefile
+END
+expression.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38020/grass/trunk/raster/r.mapcalc/expression.c
+END
+map3.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47643/grass/trunk/raster/r.mapcalc/map3.c
+END
+xneg.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xneg.c
+END
+expression.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38003/grass/trunk/raster/r.mapcalc/expression.h
+END
+mapcalc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38136/grass/trunk/raster/r.mapcalc/mapcalc.h
+END
+xmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xmod.c
+END
+xlt.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xlt.c
+END
+xbitor.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xbitor.c
+END
+mapcalc.l
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/33038/grass/trunk/raster/r.mapcalc/mapcalc.l
+END
+globals2.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/raster/r.mapcalc/globals2.h
+END
+xres.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xres.c
+END
+xsqrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xsqrt.c
+END
+xmedian.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38082/grass/trunk/raster/r.mapcalc/xmedian.c
+END
+mapcalc.y
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/33674/grass/trunk/raster/r.mapcalc/mapcalc.y
+END
+xnot.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xnot.c
+END
+column_shift.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/column_shift.c
+END
+xand.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xand.c
+END
+xfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xfloat.c
+END
+xeq.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xeq.c
+END
+xisnull.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xisnull.c
+END
+xnull.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xnull.c
+END
+xgt.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xgt.c
+END
+xor.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xor.c
+END
+xmode.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xmode.c
+END
+xand2.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xand2.c
+END
+xshiftru.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xshiftru.c
+END
+xcoor3.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47536/grass/trunk/raster/r.mapcalc/xcoor3.c
+END
+xint.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xint.c
+END
+xle.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xle.c
+END
+xgraph.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xgraph.c
+END
+xrowcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38136/grass/trunk/raster/r.mapcalc/xrowcol.c
+END
+xdouble.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xdouble.c
+END
+xres3.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47534/grass/trunk/raster/r.mapcalc/xres3.c
+END
+r3.mapcalc.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/35753/grass/trunk/raster/r.mapcalc/r3.mapcalc.html
+END
+xlog.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xlog.c
+END
+xdiv.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xdiv.c
+END
+xtan.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xtan.c
+END
+xmin.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xmin.c
+END
+globals3.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/47536/grass/trunk/raster/r.mapcalc/globals3.h
+END
+xatan.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xatan.c
+END
+xrand.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38136/grass/trunk/raster/r.mapcalc/xrand.c
+END
+xcos.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xcos.c
+END
+xmax.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xmax.c
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/42695/grass/trunk/raster/r.mapcalc/map.c
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/33501/grass/trunk/raster/r.mapcalc/check.c
+END
+xacos.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xacos.c
+END
+xeval.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xeval.c
+END
+xadd.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xadd.c
+END
+xsin.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xsin.c
+END
+xsub.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xsub.c
+END
+xasin.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xasin.c
+END
+xge.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xge.c
+END
+func_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/33501/grass/trunk/raster/r.mapcalc/func_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46065/grass/trunk/raster/r.mapcalc/main.c
+END
+xmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xmul.c
+END
+xif.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xif.c
+END
+xbitnot.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xbitnot.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/36473/grass/trunk/raster/r.mapcalc/globals.h
+END
+xbitand.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xbitand.c
+END
+xcoor.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40771/grass/trunk/raster/r.mapcalc/xcoor.c
+END
+xpow.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xpow.c
+END
+xabs.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38028/grass/trunk/raster/r.mapcalc/xabs.c
+END

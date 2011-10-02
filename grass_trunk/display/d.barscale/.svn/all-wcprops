@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/48557/grass/trunk/display/d.barscale
+END
+d.barscale.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/48557/grass/trunk/display/d.barscale/d.barscale.html
+END
+options.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/45236/grass/trunk/display/d.barscale/options.h
+END
+draw_scale.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/45615/grass/trunk/display/d.barscale/draw_scale.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47179/grass/trunk/display/d.barscale/main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38906/grass/trunk/display/d.barscale/Makefile
+END

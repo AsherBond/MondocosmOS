@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/48557/grass/trunk/display/d.what.vect
+END
+openvect.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/display/d.what.vect/openvect.c
+END
+what.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38026/grass/trunk/display/d.what.vect/what.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/46065/grass/trunk/display/d.what.vect/main.c
+END
+d.what.vect.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48557/grass/trunk/display/d.what.vect/d.what.vect.html
+END
+what.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32675/grass/trunk/display/d.what.vect/what.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/39052/grass/trunk/display/d.what.vect/Makefile
+END

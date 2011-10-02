@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48558/grass/trunk/general/g.parser
+END
+g.parser.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48558/grass/trunk/general/g.parser/g.parser.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/47421/grass/trunk/general/g.parser/main.c
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47421/grass/trunk/general/g.parser/global.h
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38412/grass/trunk/general/g.parser/test.py
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38405/grass/trunk/general/g.parser/test.sh
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47421/grass/trunk/general/g.parser/proto.h
+END
+standard_option.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/47591/grass/trunk/general/g.parser/standard_option.c
+END
+test.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38405/grass/trunk/general/g.parser/test.pl
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47597/grass/trunk/general/g.parser/parse.c
+END
+revoke.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/47421/grass/trunk/general/g.parser/revoke.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/general/g.parser/Makefile
+END
+translate.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/47596/grass/trunk/general/g.parser/translate.c
+END

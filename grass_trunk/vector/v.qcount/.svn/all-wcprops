@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48558/grass/trunk/vector/v.qcount
+END
+findquads.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38026/grass/trunk/vector/v.qcount/findquads.c
+END
+indices.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38026/grass/trunk/vector/v.qcount/indices.c
+END
+v.qcount.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48558/grass/trunk/vector/v.qcount/v.qcount.html
+END
+quaddefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/39898/grass/trunk/vector/v.qcount/quaddefs.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/39898/grass/trunk/vector/v.qcount/main.c
+END
+count.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/39898/grass/trunk/vector/v.qcount/count.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/38906/grass/trunk/vector/v.qcount/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/13307/grass/trunk/vector/v.qcount/README
+END
+cressie.vm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/13307/grass/trunk/vector/v.qcount/cressie.vm
+END

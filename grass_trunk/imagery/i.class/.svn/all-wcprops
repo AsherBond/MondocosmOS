@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/48559/grass/trunk/imagery/i.class
+END
+graphics.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/graphics.c
+END
+add_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/add_point.c
+END
+signature.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40771/grass/trunk/imagery/i.class/signature.c
+END
+complete_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32589/grass/trunk/imagery/i.class/complete_reg.c
+END
+remove_mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/remove_mask.c
+END
+set_signals.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/set_signals.c
+END
+restore_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/restore_reg.c
+END
+title.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/title.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/local_proto.h
+END
+define_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/define_reg.c
+END
+cellhd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/40771/grass/trunk/imagery/i.class/cellhd.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/driver.c
+END
+erase_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/erase_reg.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/37976/grass/trunk/imagery/i.class/Makefile
+END
+zoom_box.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/zoom_box.c
+END
+point.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/point.h
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/input.c
+END
+edge_order.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/edge_order.c
+END
+sigalarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/sigalarm.c
+END
+init_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/init_reg.c
+END
+curses.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/curses.c
+END
+edge.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/edge.c
+END
+analyze_sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/38009/grass/trunk/imagery/i.class/analyze_sig.c
+END
+conv.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/conv.c
+END
+input_std.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/input_std.c
+END
+g_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/g_init.c
+END
+view.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/view.c
+END
+edge_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/edge_point.c
+END
+del_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/del_point.c
+END
+i.class.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/48559/grass/trunk/imagery/i.class/i.class.html
+END
+outline.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/40771/grass/trunk/imagery/i.class/outline.c
+END
+histograms.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/histograms.c
+END
+readbands.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40222/grass/trunk/imagery/i.class/readbands.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/46065/grass/trunk/imagery/i.class/main.c
+END
+band_files.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40215/grass/trunk/imagery/i.class/band_files.c
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/defs.h
+END
+mouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/mouse.c
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/32675/grass/trunk/imagery/i.class/globals.h
+END
+draw_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/draw_reg.c
+END
+save_reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/save_reg.c
+END
+draw_cell.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/40771/grass/trunk/imagery/i.class/draw_cell.c
+END
+redisplay.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38015/grass/trunk/imagery/i.class/redisplay.c
+END
+input_color.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32526/grass/trunk/imagery/i.class/input_color.c
+END

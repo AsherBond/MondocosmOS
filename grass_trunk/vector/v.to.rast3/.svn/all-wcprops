@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.rast3
+END
+v.to.rast3.test.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/46741/grass/trunk/vector/v.to.rast3/v.to.rast3.test.png
+END
+v.to.rast3.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/48557/grass/trunk/vector/v.to.rast3/v.to.rast3.html
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/47594/grass/trunk/vector/v.to.rast3/main.c
+END
+vector_to_volume.ref
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/46741/grass/trunk/vector/v.to.rast3/vector_to_volume.ref
+END
+test.v.to.rast3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/46741/grass/trunk/vector/v.to.rast3/test.v.to.rast3.sh
+END
+random_points.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46741/grass/trunk/vector/v.to.rast3/random_points.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/47536/grass/trunk/vector/v.to.rast3/Makefile
+END

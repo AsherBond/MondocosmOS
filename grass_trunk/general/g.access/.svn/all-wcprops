@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48557/grass/trunk/general/g.access
+END
+set_perms.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/42737/grass/trunk/general/g.access/set_perms.c
+END
+exp_perms.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/42737/grass/trunk/general/g.access/exp_perms.c
+END
+local_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32526/grass/trunk/general/g.access/local_proto.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/48419/grass/trunk/general/g.access/main.c
+END
+get_perms.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/43105/grass/trunk/general/g.access/get_perms.c
+END
+access.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/15674/grass/trunk/general/g.access/access.h
+END
+g.access.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/48557/grass/trunk/general/g.access/g.access.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/38906/grass/trunk/general/g.access/Makefile
+END

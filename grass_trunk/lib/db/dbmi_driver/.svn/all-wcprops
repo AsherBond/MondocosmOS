@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45673/grass/trunk/lib/db/dbmi_driver
+END
+d_openselect.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_openselect.c
+END
+d_drop_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_drop_col.c
+END
+d_delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_delete.c
+END
+d_execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_execute.c
+END
+d_mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_mkdir.c
+END
+d_opendb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_opendb.c
+END
+d_create_idx.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_create_idx.c
+END
+dbstubs.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/lib/db/dbmi_driver/dbstubs.h
+END
+d_deletedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_deletedb.c
+END
+d_createdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_createdb.c
+END
+d_close_cur.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/45673/grass/trunk/lib/db/dbmi_driver/d_close_cur.c
+END
+d_bindupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_bindupdate.c
+END
+d_list_tabs.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_list_tabs.c
+END
+d_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_version.c
+END
+d_openinsert.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_openinsert.c
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/33598/grass/trunk/lib/db/dbmi_driver/driver.c
+END
+procs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/32526/grass/trunk/lib/db/dbmi_driver/procs.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/38893/grass/trunk/lib/db/dbmi_driver/Makefile
+END
+d_create_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_create_tab.c
+END
+mk_dbstubs_h.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/grass/!svn/ver/20457/grass/trunk/lib/db/dbmi_driver/mk_dbstubs_h.sh
+END
+d_drop_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_drop_index.c
+END
+d_openupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_openupdate.c
+END
+d_insert.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_insert.c
+END
+d_closedb.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_closedb.c
+END
+d_list_idx.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_list_idx.c
+END
+d_priv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_priv.c
+END
+d_listdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_listdb.c
+END
+d_update.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_update.c
+END
+d_add_col.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_add_col.c
+END
+d_desc_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_desc_table.c
+END
+d_finddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_finddb.c
+END
+driver_state.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/45673/grass/trunk/lib/db/dbmi_driver/driver_state.c
+END
+d_fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_fetch.c
+END
+d_rows.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_rows.c
+END
+d_drop_tab.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/32637/grass/trunk/lib/db/dbmi_driver/d_drop_tab.c
+END

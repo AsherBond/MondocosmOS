@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/48402/grass/trunk/lib/temporal
+END
+update_stds_spatial_temporal_extent_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/update_stds_spatial_temporal_extent_template.sql
+END
+stds_vector_register_trigger_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/48287/grass/trunk/lib/temporal/stds_vector_register_trigger_template.sql
+END
+str3ds_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/str3ds_metadata_table.sql
+END
+test.temporal.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/grass/!svn/ver/48330/grass/trunk/lib/temporal/test.temporal.py
+END
+update_strds_metadata_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/48326/grass/trunk/lib/temporal/update_strds_metadata_template.sql
+END
+raster3d_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/raster3d_metadata_table.sql
+END
+update_stvds_metadata_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/grass/!svn/ver/48326/grass/trunk/lib/temporal/update_stvds_metadata_template.sql
+END
+stds_tables_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/stds_tables_template.sql
+END
+map_tables_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/map_tables_template.sql
+END
+strds_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/strds_metadata_table.sql
+END
+stds_raster3d_register_trigger_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grass/!svn/ver/48326/grass/trunk/lib/temporal/stds_raster3d_register_trigger_template.sql
+END
+raster_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/raster_metadata_table.sql
+END
+vector_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/vector_metadata_table.sql
+END
+stvds_metadata_table.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/stvds_metadata_table.sql
+END
+update_str3ds_metadata_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/grass/!svn/ver/48326/grass/trunk/lib/temporal/update_str3ds_metadata_template.sql
+END
+stds_raster_register_trigger_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grass/!svn/ver/48326/grass/trunk/lib/temporal/stds_raster_register_trigger_template.sql
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/grass/!svn/ver/48402/grass/trunk/lib/temporal/Makefile
+END
+stds_map_register_table_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/48390/grass/trunk/lib/temporal/stds_map_register_table_template.sql
+END
+map_stds_register_table_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grass/!svn/ver/48293/grass/trunk/lib/temporal/map_stds_register_table_template.sql
+END

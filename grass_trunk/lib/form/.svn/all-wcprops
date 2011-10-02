@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/grass/!svn/ver/43719/grass/trunk/lib/form
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/35199/grass/trunk/lib/form/open.c
+END
+form.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/35719/grass/trunk/lib/form/form.c
+END
+form.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/35199/grass/trunk/lib/form/form.tcl
+END
+todo
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/35199/grass/trunk/lib/form/todo
+END
+html_library_grass.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/grass/!svn/ver/35199/grass/trunk/lib/form/html_library_grass.tcl
+END
+html_library.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/grass/!svn/ver/35199/grass/trunk/lib/form/html_library.tcl
+END
+generate.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/35199/grass/trunk/lib/form/generate.c
+END
+license.terms
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/35199/grass/trunk/lib/form/license.terms
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/41458/grass/trunk/lib/form/Makefile
+END

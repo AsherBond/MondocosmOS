@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/grass/!svn/ver/46555/grass/trunk/raster/r.resamp.bspline
+END
+crosscorr.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/grass/!svn/ver/46267/grass/trunk/raster/r.resamp.bspline/crosscorr.c
+END
+bspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/46267/grass/trunk/raster/r.resamp.bspline/bspline.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/46267/grass/trunk/raster/r.resamp.bspline/main.c
+END
+r.resamp.bspline.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grass/!svn/ver/46555/grass/trunk/raster/r.resamp.bspline/r.resamp.bspline.html
+END
+resamp.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46267/grass/trunk/raster/r.resamp.bspline/resamp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/grass/!svn/ver/46267/grass/trunk/raster/r.resamp.bspline/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/grass/!svn/ver/42319/grass/trunk/raster/r.resamp.bspline/README
+END

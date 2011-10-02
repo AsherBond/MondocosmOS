@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/43719/grass/trunk/raster/r.out.vrml
+END
+vrml.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/32526/grass/trunk/raster/r.out.vrml/vrml.c
+END
+put_view.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/32526/grass/trunk/raster/r.out.vrml/put_view.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/grass/!svn/ver/41149/grass/trunk/raster/r.out.vrml/main.c
+END
+r.out.vrml.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/grass/!svn/ver/32772/grass/trunk/raster/r.out.vrml/r.out.vrml.html
+END
+pv.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/39131/grass/trunk/raster/r.out.vrml/pv.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/grass/!svn/ver/38906/grass/trunk/raster/r.out.vrml/Makefile
+END
+put_grid.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/grass/!svn/ver/40771/grass/trunk/raster/r.out.vrml/put_grid.c
+END

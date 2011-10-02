@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 44
+package.log*
+configure-stamp
+lib
+package
+vc
+
+END

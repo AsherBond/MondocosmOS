@@ -1,0 +1,467 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/grass/!svn/ver/48563/grass/trunk/include
+END
+datetime.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/42261/grass/trunk/include/datetime.h
+END
+label_bm.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/label_bm.h
+END
+stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/41667/grass/trunk/include/stats.h
+END
+rowio.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/38358/grass/trunk/include/rowio.h
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/45117/grass/trunk/include/VERSION
+END
+region_bm.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/include/region_bm.h
+END
+cdhc.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/include/cdhc.h
+END
+btree.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/32526/grass/trunk/include/btree.h
+END
+V_.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/38026/grass/trunk/include/V_.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/46987/grass/trunk/include/display.h
+END
+shhopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/shhopt.h
+END
+symbol.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47486/grass/trunk/include/symbol.h
+END
+glocale.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/34461/grass/trunk/include/glocale.h
+END
+dbmi.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/45854/grass/trunk/include/dbmi.h
+END
+vbuildlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/include/vbuildlib.h
+END
+P_site.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/38552/grass/trunk/include/P_site.h
+END
+dlg_bm.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/dlg_bm.h
+END
+raster3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/47537/grass/trunk/include/raster3d.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/40665/grass/trunk/include/Makefile
+END
+sitelib.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/include/sitelib.h
+END
+codes.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/10811/grass/trunk/include/codes.h
+END
+arraystats.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/38003/grass/trunk/include/arraystats.h
+END
+raster.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/47527/grass/trunk/include/raster.h
+END
+site.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47630/grass/trunk/include/site.h
+END
+devlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/devlib.h
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45091/grass/trunk/include/config.h.in
+END
+transform.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/include/transform.h
+END
+bitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/bitmap.h
+END
+dbmidefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/45866/grass/trunk/include/dbmidefs.h
+END
+libtrans.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/libtrans.h
+END
+gis.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/47604/grass/trunk/include/gis.h
+END
+readsites.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/32526/grass/trunk/include/readsites.h
+END
+rbtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/42281/grass/trunk/include/rbtree.h
+END
+imagedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/41880/grass/trunk/include/imagedefs.h
+END
+nviz.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/47343/grass/trunk/include/nviz.h
+END
+geom.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/14576/grass/trunk/include/geom.h
+END
+icon.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/include/icon.h
+END
+raster3ddefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/grass/!svn/ver/47643/grass/trunk/include/raster3ddefs.h
+END
+fontcap.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45042/grass/trunk/include/fontcap.h
+END
+imagery.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38138/grass/trunk/include/imagery.h
+END
+gstypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47474/grass/trunk/include/gstypes.h
+END
+gmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/42051/grass/trunk/include/gmath.h
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/38149/grass/trunk/include/colors.h
+END
+rasterdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47612/grass/trunk/include/rasterdefs.h
+END
+Paintlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/Paintlib.h
+END
+segment.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/45868/grass/trunk/include/segment.h
+END
+keyframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/keyframe.h
+END
+form.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/include/form.h
+END
+icon_bm.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/include/icon_bm.h
+END
+dlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/grass/!svn/ver/32526/grass/trunk/include/dlg.h
+END
+std_incs.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/38552/grass/trunk/include/std_incs.h
+END
+ibtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/ibtree.h
+END
+cluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/38552/grass/trunk/include/cluster.h
+END
+blas.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/include/blas.h
+END
+ortholib.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/ortholib.h
+END
+gisdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/47779/grass/trunk/include/gisdefs.h
+END
+kftypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/include/kftypes.h
+END
+gsurf.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/47536/grass/trunk/include/gsurf.h
+END
+lock.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32526/grass/trunk/include/lock.h
+END
+spawn.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/40648/grass/trunk/include/spawn.h
+END
+version.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/23569/grass/trunk/include/version.h.in
+END
+lapack.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/lapack.h
+END
+la.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/grass/!svn/ver/32526/grass/trunk/include/la.h
+END
+dig_atts.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/dig_atts.h
+END
+patterns.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/grass/!svn/ver/32526/grass/trunk/include/patterns.h
+END
+gprojects.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/grass/!svn/ver/45790/grass/trunk/include/gprojects.h
+END
+vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/48020/grass/trunk/include/vector.h
+END
+search.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/32526/grass/trunk/include/search.h
+END
+linkm.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/32526/grass/trunk/include/linkm.h
+END
+P_datetime.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/32526/grass/trunk/include/P_datetime.h
+END
+vedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/grass/!svn/ver/44903/grass/trunk/include/vedit.h
+END
+sqlp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/32675/grass/trunk/include/sqlp.h
+END
+ogsf_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/grass/!svn/ver/47918/grass/trunk/include/ogsf_proto.h
+END
+bdlg_bm.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/grass/!svn/ver/32526/grass/trunk/include/bdlg_bm.h
+END
+neta.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/41777/grass/trunk/include/neta.h
+END
+manage.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/grass/!svn/ver/45093/grass/trunk/include/manage.h
+END
+help.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/grass/!svn/ver/14581/grass/trunk/include/help.h
+END
