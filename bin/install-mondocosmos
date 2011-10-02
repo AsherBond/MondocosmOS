@@ -17,7 +17,7 @@ cd $DIR/MondocosmOS/bin
 ./configure-mondopath
 
 cd ..
-./install-it-all
+./install-it-all $MONDOPATH
 
 cd $DIR
 git clone git://github.com/AsherBond/MondocosmOS-Images.git
