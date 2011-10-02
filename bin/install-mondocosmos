@@ -1,9 +1,21 @@
 #!/bin/bash
 # Asher Bond 2011
 
+export MONDOPATH=/var/lib/MondocosmOS
 
-apt-get update && apt-get -y upgrade
-apt-get install git
+echo "MONDOPATH: $MONDOPATH"
+
+# add $MONDOPATH to $PATH if it's not already there
+if !(`echo "$PATH" | grep -q "$MONDOPATH"`) ; then
+        export PATH=$PATH:$MONDOPATH/bin
+fi
+
+
+echo "PATH: $PATH"
+
+
+#apt-get update && apt-get -y upgrade
+#apt-get install git
 
 # default dir
 DIR='/var/lib'
