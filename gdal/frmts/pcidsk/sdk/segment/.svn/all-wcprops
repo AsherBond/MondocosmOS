@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment
+END
+cpcidsk_tex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/21231/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsk_tex.cpp
+END
+vecsegdataindex.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/20074/trunk/gdal/frmts/pcidsk/sdk/segment/vecsegdataindex.h
+END
+cpcidsktoutinmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsktoutinmodel.cpp
+END
+cpcidskvectorsegment_consistencycheck.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/gdal/!svn/ver/20076/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskvectorsegment_consistencycheck.cpp
+END
+cpcidskrpcmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskrpcmodel.cpp
+END
+metadatasegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/metadatasegment.h
+END
+cpcidsksegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/gdal/!svn/ver/20074/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsksegment.h
+END
+cpcidskbinarysegment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskbinarysegment.cpp
+END
+cpcidskephemerissegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskephemerissegment.h
+END
+pcidsksegmentbuilder.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/pcidsksegmentbuilder.h
+END
+cpcidskgeoref.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskgeoref.h
+END
+cpcidsk_array.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsk_array.cpp
+END
+cpcidskapmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskapmodel.cpp
+END
+cpcidskbitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskbitmap.h
+END
+metadatasegment_p.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/gdal/!svn/ver/21231/trunk/gdal/frmts/pcidsk/sdk/segment/metadatasegment_p.cpp
+END
+cpcidskgcp2segment.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskgcp2segment.h
+END
+vecsegheader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/gdal/!svn/ver/21231/trunk/gdal/frmts/pcidsk/sdk/segment/vecsegheader.cpp
+END
+cpcidskvectorsegment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/gdal/!svn/ver/21680/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskvectorsegment.cpp
+END
+cpcidskpct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gdal/!svn/ver/21680/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskpct.cpp
+END
+sysblockmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/22353/trunk/gdal/frmts/pcidsk/sdk/segment/sysblockmap.cpp
+END
+toutinstructures.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/toutinstructures.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gdal/!svn/ver/19061/trunk/gdal/frmts/pcidsk/sdk/segment/Makefile
+END
+vecsegdataindex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/gdal/!svn/ver/21231/trunk/gdal/frmts/pcidsk/sdk/segment/vecsegdataindex.cpp
+END
+cpcidskads40model.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskads40model.h
+END
+cpcidsksegment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gdal/!svn/ver/20074/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsksegment.cpp
+END
+cpcidsk_tex.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsk_tex.h
+END
+cpcidskephemerissegment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskephemerissegment.cpp
+END
+cpcidskgeoref.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskgeoref.cpp
+END
+cpcidsktoutinmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsktoutinmodel.h
+END
+cpcidskpolymodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskpolymodel.h
+END
+cpcidskrpcmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskrpcmodel.h
+END
+cpcidskbinarysegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskbinarysegment.h
+END
+cpcidskbitmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskbitmap.cpp
+END
+cpcidskgcp2segment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskgcp2segment.cpp
+END
+cpcidsk_array.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidsk_array.h
+END
+cpcidskapmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskapmodel.h
+END
+orbitstructures.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/orbitstructures.h
+END
+vecsegheader.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gdal/!svn/ver/20074/trunk/gdal/frmts/pcidsk/sdk/segment/vecsegheader.h
+END
+cpcidskvectorsegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gdal/!svn/ver/20074/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskvectorsegment.h
+END
+cpcidskpct.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gdal/!svn/ver/20111/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskpct.h
+END
+sysblockmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gdal/!svn/ver/21231/trunk/gdal/frmts/pcidsk/sdk/segment/sysblockmap.h
+END
+cpcidskads40model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/gdal/!svn/ver/22390/trunk/gdal/frmts/pcidsk/sdk/segment/cpcidskads40model.cpp
+END

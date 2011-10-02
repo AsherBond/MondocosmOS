@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/gdal/!svn/ver/22870/trunk/gdal/frmts/envisat
+END
+EnvisatFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gdal/!svn/ver/10645/trunk/gdal/frmts/envisat/EnvisatFile.h
+END
+envisat_dump.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/gdal/!svn/ver/10609/trunk/gdal/frmts/envisat/envisat_dump.c
+END
+envisatdataset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gdal/!svn/ver/22870/trunk/gdal/frmts/envisat/envisatdataset.cpp
+END
+dumpgeo.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/gdal/!svn/ver/10609/trunk/gdal/frmts/envisat/dumpgeo.c
+END
+records.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/gdal/!svn/ver/22499/trunk/gdal/frmts/envisat/records.c
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gdal/!svn/ver/22485/trunk/gdal/frmts/envisat/makefile.vc
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gdal/!svn/ver/22485/trunk/gdal/frmts/envisat/GNUmakefile
+END
+records.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/gdal/!svn/ver/22488/trunk/gdal/frmts/envisat/records.h
+END
+EnvisatFile.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gdal/!svn/ver/22619/trunk/gdal/frmts/envisat/EnvisatFile.c
+END

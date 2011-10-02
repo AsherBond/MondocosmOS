@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/gdal/!svn/ver/22978/trunk/gdal/frmts/georaster
+END
+oci_wrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gdal/!svn/ver/22068/trunk/gdal/frmts/georaster/oci_wrapper.h
+END
+georaster_dataset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gdal/!svn/ver/22645/trunk/gdal/frmts/georaster/georaster_dataset.cpp
+END
+georaster_priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gdal/!svn/ver/22409/trunk/gdal/frmts/georaster/georaster_priv.h
+END
+georaster_rasterband.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/22409/trunk/gdal/frmts/georaster/georaster_rasterband.cpp
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gdal/!svn/ver/22166/trunk/gdal/frmts/georaster/makefile.vc
+END
+frmt_georaster.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gdal/!svn/ver/21054/trunk/gdal/frmts/georaster/frmt_georaster.html
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gdal/!svn/ver/22218/trunk/gdal/frmts/georaster/GNUmakefile
+END
+oci_wrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gdal/!svn/ver/22561/trunk/gdal/frmts/georaster/oci_wrapper.cpp
+END
+georaster_wrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gdal/!svn/ver/22978/trunk/gdal/frmts/georaster/georaster_wrapper.cpp
+END

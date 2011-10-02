@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/gdal/!svn/ver/23046/trunk/gdal/swig/perl/lib/Geo
+END
+GDAL.dox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gdal/!svn/ver/23046/trunk/gdal/swig/perl/lib/Geo/GDAL.dox
+END
+OGR.dox
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gdal/!svn/ver/23046/trunk/gdal/swig/perl/lib/Geo/OGR.dox
+END
+OSR.dox
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gdal/!svn/ver/23039/trunk/gdal/swig/perl/lib/Geo/OSR.dox
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/gdal/!svn/ver/23097/trunk/gdal/swig/perl
+END
+rv.dox
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/gdal/!svn/ver/13218/trunk/gdal/swig/perl/rv.dox
+END
+make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gdal/!svn/ver/15360/trunk/gdal/swig/perl/make.bat
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gdal/!svn/ver/21598/trunk/gdal/swig/perl/Doxyfile
+END
+META.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gdal/!svn/ver/10610/trunk/gdal/swig/perl/META.yml
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/gdal/!svn/ver/23097/trunk/gdal/swig/perl/Makefile.PL
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/gdal/!svn/ver/20502/trunk/gdal/swig/perl/GNUmakefile
+END
+cr.dox
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/gdal/!svn/ver/13218/trunk/gdal/swig/perl/cr.dox
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/gdal/!svn/ver/19748/trunk/gdal/swig/perl/README
+END
+index.dox
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/gdal/!svn/ver/21580/trunk/gdal/swig/perl/index.dox
+END
+cv.dox
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/gdal/!svn/ver/14236/trunk/gdal/swig/perl/cv.dox
+END
+check_dox.pl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gdal/!svn/ver/23023/trunk/gdal/swig/perl/check_dox.pl
+END
+transform.dox
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/gdal/!svn/ver/15229/trunk/gdal/swig/perl/transform.dox
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gdal/!svn/ver/15360/trunk/gdal/swig/perl/MANIFEST
+END
+rr.dox
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/gdal/!svn/ver/12902/trunk/gdal/swig/perl/rr.dox
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gdal/!svn/ver/19748/trunk/gdal/swig/perl/Makefile
+END

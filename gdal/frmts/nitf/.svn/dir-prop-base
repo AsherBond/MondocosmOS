@@ -1,0 +1,18 @@
+K 10
+svn:ignore
+V 49
+nitfdump
+*.lo
+*.obj
+*.exe
+*.manifest
+*.lib
+*.exp
+
+K 13
+svn:mergeinfo
+V 128
+/sandbox/warmerdam/1.6-esri/gdal/frmts/nitf:19503
+/sandbox/warmerdam/1.8-esri/gdal/frmts/nitf:22747
+/trunk/gdal/frmts/nitf:19503
+END

@@ -1,0 +1,424 @@
+10
+
+dir
+23159
+https://svn.osgeo.org/gdal/trunk/gdal/ogr/ogrsf_frmts
+https://svn.osgeo.org/gdal
+
+
+
+2011-10-01T23:25:08.373396Z
+23159
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+f0d54148-0727-0410-94bb-9a71ac55c965
+
+arcobjects
+dir
+
+grass
+dir
+
+ogdi
+dir
+
+idrisi
+dir
+
+vfk
+dir
+
+gtm
+dir
+
+xplane
+dir
+
+pgeo
+dir
+
+mitab
+dir
+
+filegdb
+dir
+
+gpx
+dir
+
+arcgen
+dir
+
+couchdb
+dir
+
+dgn
+dir
+
+libkml
+dir
+
+vrt
+dir
+
+mem
+dir
+
+gml
+dir
+
+dwg
+dir
+
+ogrsf_frmts.h
+file
+
+
+
+
+2011-10-02T04:15:04.984466Z
+15d153bbe74ae0f4cee248218d6f5438
+2011-10-01T11:55:08.959485Z
+23148
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13260
+
+kml
+dir
+
+geoconcept
+dir
+
+gmt
+dir
+
+GNUmakefile
+file
+
+
+
+
+2011-10-02T04:15:04.984466Z
+c9ff5a5e447b67c625f64079192ee1ed
+2011-10-01T11:55:08.959485Z
+23148
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1258
+
+sua
+dir
+
+sqlite
+dir
+
+geojson
+dir
+
+avc
+dir
+
+generic
+dir
+
+pcidsk
+dir
+
+mssqlspatial
+dir
+
+s57
+dir
+
+gpsbabel
+dir
+
+gft
+dir
+
+dxf
+dir
+
+htf
+dir
+
+makefile.vc
+file
+
+
+
+
+2011-10-02T04:15:04.984466Z
+fbdd74028f4aef1db1e3d63c19e03c23
+2011-10-01T11:55:08.959485Z
+23148
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3790
+
+ogr_formats.html
+file
+
+
+
+
+2011-10-02T04:15:04.988466Z
+f6664028f4318eec0c56e14ffc716d53
+2011-10-01T11:55:08.959485Z
+23148
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8633
+
+pds
+dir
+
+ntf
+dir
+
+edigeo
+dir
+
+openair
+dir
+
+svg
+dir
+
+wfs
+dir
+
+shape
+dir
+
+aeronavfaa
+dir
+
+pg
+dir
+
+fme
+dir
+
+rec
+dir
+
+oci
+dir
+
+tiger
+dir
+
+sdts
+dir
+
+nas
+dir
+
+ogrsf_frmts.dox
+file
+
+
+
+
+2011-10-02T04:15:04.992466Z
+c0f7ec1c4612dd58ffaeff69758d8dd0
+2011-05-13T17:59:41.707672Z
+22368
+rouault
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+98057
+
+ingres
+dir
+
+dods
+dir
+
+csv
+dir
+
+pgdump
+dir
+
+o
+dir
+
+idb
+dir
+
+bna
+dir
+
+mdb
+dir
+
+georss
+dir
+
+ogr_attrind.h
+file
+
+
+
+
+2011-10-02T04:15:04.992466Z
+bbac2a5960d6548537fc04c202418ab7
+2010-07-18T15:20:35.303691Z
+20101
+tamas
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3783
+
+mysql
+dir
+
+odbc
+dir
+
+geomedia
+dir
+
+sde
+dir
+
+sosi
+dir
+
+ili
+dir
+

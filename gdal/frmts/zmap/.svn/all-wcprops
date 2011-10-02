@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/gdal/!svn/ver/22671/trunk/gdal/frmts/zmap
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gdal/!svn/ver/22634/trunk/gdal/frmts/zmap/makefile.vc
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gdal/!svn/ver/22634/trunk/gdal/frmts/zmap/GNUmakefile
+END
+zmapdataset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gdal/!svn/ver/22671/trunk/gdal/frmts/zmap/zmapdataset.cpp
+END

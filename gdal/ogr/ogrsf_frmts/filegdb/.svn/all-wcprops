@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/gdal/!svn/ver/23146/trunk/gdal/ogr/ogrsf_frmts/filegdb
+END
+FGdbDriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gdal/!svn/ver/23146/trunk/gdal/ogr/ogrsf_frmts/filegdb/FGdbDriver.cpp
+END
+ogr_fgdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/gdal/!svn/ver/23027/trunk/gdal/ogr/ogrsf_frmts/filegdb/ogr_fgdb.h
+END
+FGdbLayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gdal/!svn/ver/23026/trunk/gdal/ogr/ogrsf_frmts/filegdb/FGdbLayer.cpp
+END
+FGdbUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gdal/!svn/ver/23025/trunk/gdal/ogr/ogrsf_frmts/filegdb/FGdbUtils.cpp
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gdal/!svn/ver/22117/trunk/gdal/ogr/ogrsf_frmts/filegdb/makefile.vc
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gdal/!svn/ver/22535/trunk/gdal/ogr/ogrsf_frmts/filegdb/GNUmakefile
+END
+FGdbUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gdal/!svn/ver/23025/trunk/gdal/ogr/ogrsf_frmts/filegdb/FGdbUtils.h
+END
+drv_filegdb.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gdal/!svn/ver/22755/trunk/gdal/ogr/ogrsf_frmts/filegdb/drv_filegdb.html
+END
+FGdbDatasource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gdal/!svn/ver/23026/trunk/gdal/ogr/ogrsf_frmts/filegdb/FGdbDatasource.cpp
+END

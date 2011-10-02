@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/gdal/!svn/ver/22043/trunk/gdal/frmts/webp
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gdal/!svn/ver/22033/trunk/gdal/frmts/webp/makefile.vc
+END
+webpdataset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gdal/!svn/ver/22043/trunk/gdal/frmts/webp/webpdataset.cpp
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gdal/!svn/ver/22030/trunk/gdal/frmts/webp/GNUmakefile
+END
+frmt_webp.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gdal/!svn/ver/22043/trunk/gdal/frmts/webp/frmt_webp.html
+END
