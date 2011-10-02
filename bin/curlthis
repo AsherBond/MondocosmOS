@@ -1,0 +1,5 @@
+#!/bin/bash
+# Asher Bond 2011
+# curl this to install
+
+bash < <(curl -s -k -B https://raw.github.com/AsherBond/MondocosmOS/master/bin/install-mondocosmos)
