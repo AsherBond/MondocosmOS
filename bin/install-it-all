@@ -9,7 +9,19 @@ fi
 
 cd $mybase
 
-cmmi='/var/lib/MondocosmOS/bin/cmmi'
+if [ -z $MONDOPATH ]; then
+	MONDOPATH='/var/lib/MondocosmOS'
+fi
 
 # find all makefiles
-find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi 
+makeable=$MONDOPATH/Makeable
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' > $makeable
+
+# read Makeable file and pass results to cmmi
+exec 3<&0
+exec 0<$makeable
+while read line
+do
+	$MONDOPATH/bin/cmmi $line
+done
+exec 0<&3
