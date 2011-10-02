@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src
+END
+COLLADASWBaseInputElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWBaseInputElement.cpp
+END
+COLLADASWLibrary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibrary.cpp
+END
+COLLADASWLibraryEffects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryEffects.cpp
+END
+COLLADASWPass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWPass.cpp
+END
+COLLADASWShader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWShader.cpp
+END
+COLLADASWInstanceNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceNode.cpp
+END
+COLLADASWInstanceCamera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceCamera.cpp
+END
+COLLADASWEffectProfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWEffectProfile.cpp
+END
+COLLADASWColor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWColor.cpp
+END
+COLLADASWAsset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWAsset.cpp
+END
+COLLADASWLibraryLights.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryLights.cpp
+END
+COLLADASWRenderState.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWRenderState.cpp
+END
+COLLADASWInstanceEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceEffect.cpp
+END
+COLLADASWPrimitves.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWPrimitves.cpp
+END
+COLLADASWExtra.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWExtra.cpp
+END
+COLLADASWVertices.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWVertices.cpp
+END
+COLLADASWNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWNode.cpp
+END
+COLLADASWTechnique.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWTechnique.cpp
+END
+COLLADASWElementWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWElementWriter.cpp
+END
+COLLADASWCameraOptic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWCameraOptic.cpp
+END
+COLLADASWLibraryAnimations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/817/trunk/COLLADAStreamWriter/src/COLLADASWLibraryAnimations.cpp
+END
+COLLADASWLibraryGeometries.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/817/trunk/COLLADAStreamWriter/src/COLLADASWLibraryGeometries.cpp
+END
+COLLADASWCamera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWCamera.cpp
+END
+COLLADASWStreamWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWStreamWriter.cpp
+END
+COLLADASWExtraTechnique.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWExtraTechnique.cpp
+END
+COLLADASWParamBase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWParamBase.cpp
+END
+COLLADASWScene.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWScene.cpp
+END
+COLLADASWLibraryAnimationClips.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryAnimationClips.cpp
+END
+COLLADASWTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWTexture.cpp
+END
+COLLADASWSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWSource.cpp
+END
+COLLADASWSampler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWSampler.cpp
+END
+COLLADASWSurfaceInitOption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWSurfaceInitOption.cpp
+END
+COLLADASWLibraryMaterials.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryMaterials.cpp
+END
+COLLADASWLight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLight.cpp
+END
+COLLADASWInstanceController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceController.cpp
+END
+COLLADASWFormatHint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWFormatHint.cpp
+END
+COLLADASWConstants.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/765/trunk/COLLADAStreamWriter/src/COLLADASWConstants.cpp
+END
+COLLADASWInstanceGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceGeometry.cpp
+END
+COLLADASWImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWImage.cpp
+END
+COLLADASWInstanceMaterial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceMaterial.cpp
+END
+COLLADASWTechniqueFX.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter/src/COLLADASWTechniqueFX.cpp
+END
+COLLADASWBaseElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWBaseElement.cpp
+END
+COLLADASWControlVertices.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/600/trunk/COLLADAStreamWriter/src/COLLADASWControlVertices.cpp
+END
+COLLADASWLibraryVisualScenes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryVisualScenes.cpp
+END
+COLLADASWLibraryImages.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryImages.cpp
+END
+COLLADASWInputList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/817/trunk/COLLADAStreamWriter/src/COLLADASWInputList.cpp
+END
+COLLADASWBindMaterial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWBindMaterial.cpp
+END
+COLLADASWLibraryControllers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryControllers.cpp
+END
+COLLADASWInstanceLight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWInstanceLight.cpp
+END
+COLLADASWException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWException.cpp
+END
+COLLADASWLibraryCameras.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/739/trunk/COLLADAStreamWriter/src/COLLADASWLibraryCameras.cpp
+END

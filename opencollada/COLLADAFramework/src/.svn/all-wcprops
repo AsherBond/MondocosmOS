@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/835/trunk/COLLADAFramework/src
+END
+COLLADAFWVisualScene.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWVisualScene.cpp
+END
+COLLADAFWUniqueId.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/768/trunk/COLLADAFramework/src/COLLADAFWUniqueId.cpp
+END
+COLLADAFWMeshPrimitive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/828/trunk/COLLADAFramework/src/COLLADAFWMeshPrimitive.cpp
+END
+COLLADAFWScale.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWScale.cpp
+END
+COLLADAFWLoaderUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/586/trunk/COLLADAFramework/src/COLLADAFWLoaderUtils.cpp
+END
+COLLADAFWMorphController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWMorphController.cpp
+END
+COLLADAFWValidate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/778/trunk/COLLADAFramework/src/COLLADAFWValidate.cpp
+END
+COLLADAFWInstanceKinematicsScene.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/739/trunk/COLLADAFramework/src/COLLADAFWInstanceKinematicsScene.cpp
+END
+COLLADAFWFileInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/567/trunk/COLLADAFramework/src/COLLADAFWFileInfo.cpp
+END
+COLLADAFWGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWGeometry.cpp
+END
+COLLADAFWMaterial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWMaterial.cpp
+END
+COLLADAFWRotate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWRotate.cpp
+END
+COLLADAFWTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/835/trunk/COLLADAFramework/src/COLLADAFWTexture.cpp
+END
+COLLADAFWSkinControllerData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWSkinControllerData.cpp
+END
+COLLADAFWSampler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/688/trunk/COLLADAFramework/src/COLLADAFWSampler.cpp
+END
+COLLADAFWMatrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWMatrix.cpp
+END
+COLLADAFWFormula.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWFormula.cpp
+END
+COLLADAFWTransformation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWTransformation.cpp
+END
+COLLADAFWLight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWLight.cpp
+END
+COLLADAFWKinematicsModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/739/trunk/COLLADAFramework/src/COLLADAFWKinematicsModel.cpp
+END
+COLLADAFWSkinController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWSkinController.cpp
+END
+COLLADAFWConstants.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWConstants.cpp
+END
+COLLADAFWAxisInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/597/trunk/COLLADAFramework/src/COLLADAFWAxisInfo.cpp
+END
+COLLADAFWImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/688/trunk/COLLADAFramework/src/COLLADAFWImage.cpp
+END
+COLLADAFWRoot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/701/trunk/COLLADAFramework/src/COLLADAFWRoot.cpp
+END
+COLLADAFWNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/778/trunk/COLLADAFramework/src/COLLADAFWNode.cpp
+END
+COLLADAFWFormulas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/828/trunk/COLLADAFramework/src/COLLADAFWFormulas.cpp
+END
+COLLADAFWCamera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWCamera.cpp
+END
+COLLADAFWKinematicsController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/739/trunk/COLLADAFramework/src/COLLADAFWKinematicsController.cpp
+END
+COLLADAFWEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/589/trunk/COLLADAFramework/src/COLLADAFWEffect.cpp
+END
+COLLADAFWMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/757/trunk/COLLADAFramework/src/COLLADAFWMesh.cpp
+END
+COLLADAFWTranslate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWTranslate.cpp
+END
+COLLADAFWPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWPrecompiledHeaders.cpp
+END
+COLLADAFWFloatOrDoubleArray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/547/trunk/COLLADAFramework/src/COLLADAFWFloatOrDoubleArray.cpp
+END
+COLLADAFWEffectCommon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/497/trunk/COLLADAFramework/src/COLLADAFWEffectCommon.cpp
+END
+COLLADAFWKinematicsScene.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/586/trunk/COLLADAFramework/src/COLLADAFWKinematicsScene.cpp
+END
+COLLADAFWColor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/597/trunk/COLLADAFramework/src/COLLADAFWColor.cpp
+END
+COLLADAFWRenderState.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/597/trunk/COLLADAFramework/src/COLLADAFWRenderState.cpp
+END

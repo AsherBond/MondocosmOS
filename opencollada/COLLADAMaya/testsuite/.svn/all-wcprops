@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/337/trunk/COLLADAMaya/testsuite
+END
+coherencytest.exe
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/44/trunk/COLLADAMaya/testsuite/coherencytest.exe
+END
+testAllFiles.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/76/trunk/COLLADAMaya/testsuite/testAllFiles.bat
+END
+testFile.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/337/trunk/COLLADAMaya/testsuite/testFile.bat
+END
+cube.mb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/44/trunk/COLLADAMaya/testsuite/cube.mb
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/553/trunk/Externals/expat/conftools
+END
+expat.m4
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/expat.m4
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/mkinstalldirs
+END
+libtool.m4
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/libtool.m4
+END
+PrintPath
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/PrintPath
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/config.guess
+END
+get-version.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/get-version.sh
+END
+ac_c_bigendian_cross.m4
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/ac_c_bigendian_cross.m4
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/ltmain.sh
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/config.sub
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/553/trunk/Externals/expat/conftools/install-sh
+END

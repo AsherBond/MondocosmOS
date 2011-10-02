@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince
+END
+libxml2.vco
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/libxml2.vco
+END
+wincecompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/wincecompat.h
+END
+libxml2.vcp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/libxml2.vcp
+END
+libxml2.vcb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/libxml2.vcb
+END
+libxml2.vcw
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/libxml2.vcw
+END
+wincecompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/wincecompat.c
+END
+libxml2.vcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/wince/libxml2.vcl
+END

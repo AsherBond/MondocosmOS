@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/845/trunk/COLLADAMax/include
+END
+COLLADAMaxVisualSceneImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxVisualSceneImporter.h
+END
+COLLADAMaxXRefFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxXRefFile.h
+END
+COLLADAMaxTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/845/trunk/COLLADAMax/include/COLLADAMaxTypes.h
+END
+MorphR3.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/165/trunk/COLLADAMax/include/MorphR3.h
+END
+COLLADAMaxStableHeaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/843/trunk/COLLADAMax/include/COLLADAMaxStableHeaders.h
+END
+COLLADAMaxDocumentExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxDocumentExporter.h
+END
+COLLADAMaxNodeImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxNodeImporter.h
+END
+COLLADAMaxMorphControllerCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxMorphControllerCreator.h
+END
+COLLADAMaxCameraImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxCameraImporter.h
+END
+COLLADAMaxVisualSceneExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxVisualSceneExporter.h
+END
+COLLADAMaxAnimationAssigner.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxAnimationAssigner.h
+END
+COLLADAMaxGoogleWarehouseActionItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxGoogleWarehouseActionItem.h
+END
+COLLADAMaxMaterialCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/689/trunk/COLLADAMax/include/COLLADAMaxMaterialCreator.h
+END
+COLLADAMaxEffectImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxEffectImporter.h
+END
+COLLADAMaxLibraryNodesImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxLibraryNodesImporter.h
+END
+COLLADAMaxControllerList.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxControllerList.h
+END
+COLLADAMaxCameraExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxCameraExporter.h
+END
+COLLADAMaxColladaImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxColladaImporter.h
+END
+COLLADAMaxExportSceneGraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxExportSceneGraph.h
+END
+COLLADAMaxController.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxController.h
+END
+COLLADAMaxEffectExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/749/trunk/COLLADAMax/include/COLLADAMaxEffectExporter.h
+END
+COLLADAMaxConversionFunctor.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxConversionFunctor.h
+END
+COLLADAMaxExportNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxExportNode.h
+END
+COLLADAMaxColladaExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxColladaExporter.h
+END
+COLLADAMaxLightImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/845/trunk/COLLADAMax/include/COLLADAMaxLightImporter.h
+END
+COLLADAMaxImporterBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/844/trunk/COLLADAMax/include/COLLADAMaxImporterBase.h
+END
+COLLADAMaxGeometriesExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxGeometriesExporter.h
+END
+COLLADAMaxXRefExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxXRefExporter.h
+END
+COLLADAMaxAnimationListImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxAnimationListImporter.h
+END
+COLLADAMaxISkinInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxISkinInterface.h
+END
+COLLADAMaxAnimationCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxAnimationCreator.h
+END
+COLLADAMaxGoogleWarehouse.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxGoogleWarehouse.h
+END
+COLLADAMaxGeometryExtra.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxGeometryExtra.h
+END
+COLLADAMaxFWLErrorHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxFWLErrorHandler.h
+END
+COLLADAMaxLightExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/845/trunk/COLLADAMax/include/COLLADAMaxLightExporter.h
+END
+COLLADAMaxAnimationImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxAnimationImporter.h
+END
+COLLADAMaxPrerequisites.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/843/trunk/COLLADAMax/include/COLLADAMaxPrerequisites.h
+END
+COLLADAMaxImageImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxImageImporter.h
+END
+COLLADAMaxControllerImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/539/trunk/COLLADAMax/include/COLLADAMaxControllerImporter.h
+END
+COLLADAMaxMultiMtl.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxMultiMtl.h
+END
+COLLADAMaxAnimationExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxAnimationExporter.h
+END
+COLLADAMaxImageExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxImageExporter.h
+END
+COLLADAMaxExtraDataHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/844/trunk/COLLADAMax/include/COLLADAMaxExtraDataHandler.h
+END
+COLLADAMaxControllerExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxControllerExporter.h
+END
+COLLADAMaxPhysiqueSkinInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxPhysiqueSkinInterface.h
+END
+COLLADAMaxGeometryImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxGeometryImporter.h
+END
+COLLADAMaxMeshAccess.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxMeshAccess.h
+END
+COLLADAMaxColladaPlugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/390/trunk/COLLADAMax/include/COLLADAMaxColladaPlugin.h
+END
+COLLADAMaxMaterialImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxMaterialImporter.h
+END
+COLLADAMaxExtra.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxExtra.h
+END
+COLLADAMaxSkinControllerDataImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxSkinControllerDataImporter.h
+END
+COLLADAMaxGeometryExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxGeometryExporter.h
+END
+COLLADAMaxSkinInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxSkinInterface.h
+END
+COLLADAMaxMaterialExporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxMaterialExporter.h
+END
+COLLADAMaxIMeshAccess.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxIMeshAccess.h
+END
+COLLADAMaxXRefIncludes.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxXRefIncludes.h
+END
+COLLADAMaxTexTangentCalculator.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/498/trunk/COLLADAMax/include/COLLADAMaxTexTangentCalculator.h
+END
+COLLADAMaxOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxOptions.h
+END
+COLLADAMaxXRefFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/647/trunk/COLLADAMax/include/COLLADAMaxXRefFunctions.h
+END
+COLLADAMaxSceneGraphCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/689/trunk/COLLADAMax/include/COLLADAMaxSceneGraphCreator.h
+END
+COLLADAMaxDocumentImporter.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/844/trunk/COLLADAMax/include/COLLADAMaxDocumentImporter.h
+END

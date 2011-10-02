@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/790/trunk/COLLADAMaya/scripts
+END
+make_release_for_installer.bat
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/739/trunk/COLLADAMaya/scripts/make_release_for_installer.bat
+END
+openColladaImporterOpts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/649/trunk/COLLADAMaya/scripts/openColladaImporterOpts.mel
+END
+COLLADAMaya.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/739/trunk/COLLADAMaya/scripts/COLLADAMaya.vcproj
+END
+openColladaExporterOpts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/664/trunk/COLLADAMaya/scripts/openColladaExporterOpts.mel
+END

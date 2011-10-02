@@ -1,0 +1,27 @@
+- General
+    - Internationalisation (i18n)
+
+- Visual scene export
+    - Effect texture reference export (bind vertex)
+	    
+- Effects 
+    - hlsl shader import / export
+    - cgfx shader import
+    - parameters import
+
+- Animations 
+    - path animation export
+    - skew (shear) animation import/export
+      (possible solution could be the animation formula from collada 1.5)
+    - clip animation import
+
+- Physical scene import/export
+
+- Subdivision surfaces import/export
+
+- Nurbs import/export
+
+- Splines import/export
+
+- External references import/export (XREFs):
+    - write/read mutiple documents

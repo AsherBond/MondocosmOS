@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/630/trunk/Externals/MathMLSolver/include
+END
+MathMLError.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLError.h
+END
+MathMLParserConstants.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLParserConstants.h
+END
+MathMLParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLParser.h
+END
+MathMLSerializationVisitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSerializationVisitor.h
+END
+MathMLSolverPrerequisites.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSolverPrerequisites.h
+END
+MathMLSolverFunctionExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/591/trunk/Externals/MathMLSolver/include/MathMLSolverFunctionExtensions.h
+END
+MathMLSolverStableHeaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSolverStableHeaders.h
+END
+MathMLSingleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSingleton.h
+END
+MathMLStreamParserHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLStreamParserHandler.h
+END
+MathMLString.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLString.h
+END
+MathMLStreamParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLStreamParser.h
+END
+MathMLSerializationUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSerializationUtil.h
+END
+MathMLSymbolTable.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLSymbolTable.h
+END
+MathMLEvaluatorVisitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/586/trunk/Externals/MathMLSolver/include/MathMLEvaluatorVisitor.h
+END
+MathMLPlatform.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/630/trunk/Externals/MathMLSolver/include/MathMLPlatform.h
+END

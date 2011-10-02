@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/691/trunk/COLLADAMaya/COLLADAMaya.xcodeproj
+END
+build_boost_for_opencollada.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/440/trunk/COLLADAMaya/COLLADAMaya.xcodeproj/build_boost_for_opencollada.sh
+END
+project.pbxproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/691/trunk/COLLADAMaya/COLLADAMaya.xcodeproj/project.pbxproj
+END
+configure_libxml_for_COLLADAMaya.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/376/trunk/COLLADAMaya/COLLADAMaya.xcodeproj/configure_libxml_for_COLLADAMaya.sh
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc
+END
+fixup-tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc/fixup-tests.py
+END
+xstc-to-python.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc/xstc-to-python.xsl
+END
+xstc.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc/xstc.py
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc/Makefile.am
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/588/trunk/Externals/LibXML/xstc/.cvsignore
+END

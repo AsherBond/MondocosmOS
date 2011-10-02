@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/679/trunk/dae2ogre/src
+END
+DAE2OgreBaseWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/428/trunk/dae2ogre/src/DAE2OgreBaseWriter.cpp
+END
+DAE2OgreOgreWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/679/trunk/dae2ogre/src/DAE2OgreOgreWriter.cpp
+END
+DAE2OgreMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/580/trunk/dae2ogre/src/DAE2OgreMeshWriter.cpp
+END
+DAE2OgreSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/679/trunk/dae2ogre/src/DAE2OgreSerializer.cpp
+END
+OgreVertexElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/428/trunk/dae2ogre/src/OgreVertexElement.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/628/trunk/dae2ogre/src/main.cpp
+END
+DAE2OgreSceneGraphWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/428/trunk/dae2ogre/src/DAE2OgreSceneGraphWriter.cpp
+END

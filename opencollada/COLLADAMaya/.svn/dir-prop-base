@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 79
+COLLADAMaya.ncb
+COLLADAMaya.suo
+enc_temp_folder
+Debug
+properties.txt
+Documents
+
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip
+END
+fetch.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/fetch.h
+END
+info.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/info.h
+END
+zzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/zzip.h
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/plugin.h
+END
+_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/_config.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/types.h
+END
+stdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/stdint.h
+END
+lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/lib.h
+END
+_msvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/_msvc.h
+END
+file.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/file.h
+END
+__hints.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/__hints.h
+END
+__dirent.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/__dirent.h
+END
+__debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/__debug.h
+END
+conf.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/conf.h
+END
+__mmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/__mmap.h
+END
+format.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/645/trunk/Externals/zziplib/include/zzip/format.h
+END

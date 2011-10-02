@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples
+END
+parse4.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/parse4.c
+END
+io1.res
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/io1.res
+END
+io2.res
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/io2.res
+END
+xpath1.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/xpath1.c
+END
+xpath2.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/xpath2.c
+END
+testWriter.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/testWriter.c
+END
+xpath1.res
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/xpath1.res
+END
+index.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/index.py
+END
+xpath2.res
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/xpath2.res
+END
+tree1.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/tree1.c
+END
+tree2.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/tree2.c
+END
+reader1.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader1.c
+END
+reader2.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader2.c
+END
+reader3.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader3.c
+END
+reader4.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader4.c
+END
+tree1.res
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/tree1.res
+END
+tst.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/tst.xml
+END
+tree2.res
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/tree2.res
+END
+reader1.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader1.res
+END
+writer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/writer.xml
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/.cvsignore
+END
+reader3.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader3.res
+END
+examples.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/examples.xml
+END
+reader4.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/reader4.res
+END
+examples.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/examples.xsl
+END
+test1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/test1.xml
+END
+test2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/test2.xml
+END
+test3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/test3.xml
+END
+io1.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/io1.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/Makefile.am
+END
+io2.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/io2.c
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/index.html
+END
+parse1.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/parse1.c
+END
+parse2.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/parse2.c
+END
+parse3.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/doc/examples/parse3.c
+END

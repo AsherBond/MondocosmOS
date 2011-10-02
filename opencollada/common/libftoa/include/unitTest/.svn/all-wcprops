@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/650/trunk/common/libftoa/include/unitTest
+END
+ftoaUnitTest.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/650/trunk/common/libftoa/include/unitTest/ftoaUnitTest.h
+END
+dtoaUnitTest.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/650/trunk/common/libftoa/include/unitTest/dtoaUnitTest.h
+END

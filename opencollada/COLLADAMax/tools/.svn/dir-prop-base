@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 138
+apimainpage_pdf.txt
+astyle.exe
+astyle.html
+doxygen_pdf.cfg
+doxygen_warnings.log
+header.tex.tmpl
+make_astyle.bat
+make_doc.bat
+make_pdf.bat
+
+END

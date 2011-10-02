@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg
+END
+cg.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg.h
+END
+cgGL.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cgGL.h
+END
+cg_profiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg_profiles.h
+END
+cgD3D8.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cgD3D8.h
+END
+cgD3D9.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cgD3D9.h
+END
+cgGL_profiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cgGL_profiles.h
+END
+cg_enums.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg_enums.h
+END
+cg_bindlocations.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg_bindlocations.h
+END
+cg_errors.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg_errors.h
+END
+cg_datatypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/113/trunk/Externals/Cg/include/Cg/cg_datatypes.h
+END

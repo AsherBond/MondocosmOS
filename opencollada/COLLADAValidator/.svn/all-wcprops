@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/840/trunk/COLLADAValidator
+END
+COLLADAValidator.sln
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/780/trunk/COLLADAValidator/COLLADAValidator.sln
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/774/trunk/COLLADAValidator/SConscript
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/781/trunk/COLLADAValidator/CMakeLists.txt
+END

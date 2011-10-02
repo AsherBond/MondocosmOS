@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/644/trunk/Externals/zlib/src
+END
+zlib1.rc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/644/trunk/Externals/zlib/src/zlib1.rc
+END
+deflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/deflate.c
+END
+inffasx64.asm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/644/trunk/Externals/zlib/src/inffasx64.asm
+END
+zutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/644/trunk/Externals/zlib/src/zutil.c
+END
+gzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/644/trunk/Externals/zlib/src/gzio.c
+END
+inffas32.asm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/644/trunk/Externals/zlib/src/inffas32.asm
+END
+crc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/644/trunk/Externals/zlib/src/crc32.c
+END
+inftrees.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/644/trunk/Externals/zlib/src/inftrees.c
+END
+gvmat32.asm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/src/gvmat32.asm
+END
+inflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/inflate.c
+END
+trees.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/644/trunk/Externals/zlib/src/trees.c
+END
+uncompr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/uncompr.c
+END
+gvmat64.asm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/src/gvmat64.asm
+END
+gvmat32c.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/644/trunk/Externals/zlib/src/gvmat32c.c
+END
+inffast.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/inffast.c
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/644/trunk/Externals/zlib/src/compress.c
+END
+adler32.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/adler32.c
+END
+infback.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/644/trunk/Externals/zlib/src/infback.c
+END

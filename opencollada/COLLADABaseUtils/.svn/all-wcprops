@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/847/trunk/COLLADABaseUtils
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/626/trunk/COLLADABaseUtils/SConscript
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/781/trunk/COLLADABaseUtils/CMakeLists.txt
+END

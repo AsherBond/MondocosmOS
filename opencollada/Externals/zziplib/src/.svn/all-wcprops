@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/645/trunk/Externals/zziplib/src
+END
+dir.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/dir.c
+END
+plugin.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/plugin.c
+END
+file.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/file.c
+END
+zip.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/zip.c
+END
+err.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/err.c
+END
+fetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/fetch.c
+END
+info.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/info.c
+END
+stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/645/trunk/Externals/zziplib/src/stat.c
+END

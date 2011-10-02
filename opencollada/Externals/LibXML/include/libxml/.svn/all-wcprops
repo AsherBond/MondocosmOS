@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml
+END
+xmlwin32version.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml/xmlwin32version.h
+END
+xmlschemastypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlschemastypes.h
+END
+nanohttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/nanohttp.h
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/parser.h
+END
+xmlwriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlwriter.h
+END
+relaxng.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/relaxng.h
+END
+nanoftp.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/nanoftp.h
+END
+xmlversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlversion.h
+END
+debugXML.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/debugXML.h
+END
+xpointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xpointer.h
+END
+catalog.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/catalog.h
+END
+xmlversion.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml/xmlversion.h.in
+END
+SAX2.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/SAX2.h
+END
+xmlsave.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlsave.h
+END
+HTMLparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/HTMLparser.h
+END
+dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/dict.h
+END
+hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/hash.h
+END
+xmlexports.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlexports.h
+END
+encoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/encoding.h
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml/.cvsignore
+END
+xmlmemory.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlmemory.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/threads.h
+END
+SAX.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/SAX.h
+END
+xmlautomata.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlautomata.h
+END
+xmlwin32version.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml/xmlwin32version.h.in
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/tree.h
+END
+valid.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/valid.h
+END
+uri.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/uri.h
+END
+schematron.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/schematron.h
+END
+schemasInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/schemasInternals.h
+END
+xmlschemas.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlschemas.h
+END
+xpathInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xpathInternals.h
+END
+c14n.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/c14n.h
+END
+xmlmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlmodule.h
+END
+xmlunicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlunicode.h
+END
+chvalid.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/chvalid.h
+END
+xmlerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlerror.h
+END
+xinclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xinclude.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/list.h
+END
+xmlregexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlregexp.h
+END
+parserInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/parserInternals.h
+END
+pattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/pattern.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/libxml/Makefile.am
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/globals.h
+END
+xmlreader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlreader.h
+END
+xpath.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/323/trunk/Externals/LibXML/include/libxml/xpath.h
+END
+DOCBparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/DOCBparser.h
+END
+HTMLtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/HTMLtree.h
+END
+entities.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/entities.h
+END
+xlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xlink.h
+END
+xmlstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlstring.h
+END
+xmlIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/libxml/xmlIO.h
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/760/trunk/Externals/lib3ds
+END
+lib3ds.m4
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/755/trunk/Externals/lib3ds/lib3ds.m4
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/755/trunk/Externals/lib3ds/AUTHORS
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/755/trunk/Externals/lib3ds/configure.in
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/755/trunk/Externals/lib3ds/INSTALL
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/755/trunk/Externals/lib3ds/ChangeLog
+END
+lib3ds-config.in
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/755/trunk/Externals/lib3ds/lib3ds-config.in
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/755/trunk/Externals/lib3ds/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/755/trunk/Externals/lib3ds/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/755/trunk/Externals/lib3ds/autogen.sh
+END
+lib3ds.sln
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/755/trunk/Externals/lib3ds/lib3ds.sln
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/755/trunk/Externals/lib3ds/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/755/trunk/Externals/lib3ds/README
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/755/trunk/Externals/lib3ds/CMakeLists.txt
+END

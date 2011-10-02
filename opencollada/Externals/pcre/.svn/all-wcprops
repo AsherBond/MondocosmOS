@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/812/trunk/Externals/pcre
+END
+pcre.sln
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/558/trunk/Externals/pcre/pcre.sln
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/626/trunk/Externals/pcre/SConscript
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/781/trunk/Externals/pcre/CMakeLists.txt
+END

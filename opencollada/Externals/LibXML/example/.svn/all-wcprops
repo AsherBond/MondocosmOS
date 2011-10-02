@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/588/trunk/Externals/LibXML/example
+END
+gjobs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/588/trunk/Externals/LibXML/example/gjobs.xml
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/example/Makefile.am
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/example/.cvsignore
+END
+gjobread.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/example/gjobread.c
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/847/trunk
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/774/trunk/SConstruct
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/679/trunk/README
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/804/trunk/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/591/trunk/Makefile
+END

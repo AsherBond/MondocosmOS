@@ -1,0 +1,3707 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/829/trunk/Externals/MayaDataModel/include
+END
+MayaDMEnvironmentFog.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvironmentFog.h
+END
+MayaDMExplodeNurbsShell.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMExplodeNurbsShell.h
+END
+MayaDMDefaultRenderUtilityList.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDefaultRenderUtilityList.h
+END
+MayaDMObjectBinFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectBinFilter.h
+END
+MayaDMPolyCrease.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCrease.h
+END
+MayaDMWood.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWood.h
+END
+MayaDMEnvFacade.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvFacade.h
+END
+MayaDMRigidBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRigidBody.h
+END
+MayaDMMentalrayTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMentalrayTexture.h
+END
+MayaDMCopyColorSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCopyColorSet.h
+END
+MayaDMPolyMoveUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMoveUV.h
+END
+MayaDMPoleVectorConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPoleVectorConstraint.h
+END
+MayaDMAnimBlend.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimBlend.h
+END
+MayaDMMountain.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMountain.h
+END
+MayaDMBump3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBump3d.h
+END
+MayaDMPolySphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySphere.h
+END
+MayaDMFurPointOnMeshInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurPointOnMeshInfo.h
+END
+MayaDMPolyLayoutUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyLayoutUV.h
+END
+MayaDMFluidEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFluidEmitter.h
+END
+MayaDMRamp.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRamp.h
+END
+MayaDMUnknown.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUnknown.h
+END
+MayaDMAngleBetween.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAngleBetween.h
+END
+MayaDMCurveInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveInfo.h
+END
+MayaDMFurDescription.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurDescription.h
+END
+MayaDMNurbsSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsSurface.h
+END
+MayaDMImagePlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMImagePlane.h
+END
+MayaDMRigidConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRigidConstraint.h
+END
+MayaDMLayeredTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLayeredTexture.h
+END
+MayaDMPolyAverageVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyAverageVertex.h
+END
+MayaDMSurfaceSampler.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceSampler.h
+END
+MayaDMVertexBakeSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVertexBakeSet.h
+END
+MayaDMAbstractBaseNurbsConversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAbstractBaseNurbsConversion.h
+END
+MayaDMPolyMergeFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMergeFace.h
+END
+MayaDMPlanarTrimSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPlanarTrimSurface.h
+END
+MayaDMReverseSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMReverseSurface.h
+END
+MayaDMCondition.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCondition.h
+END
+MayaDMLambert.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLambert.h
+END
+MayaDMDirectedDisc.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDirectedDisc.h
+END
+MayaDMAnimCurveTL.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveTL.h
+END
+MayaDMSubdivSurfaceVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivSurfaceVarGroup.h
+END
+MayaDMAnnotationShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnnotationShape.h
+END
+MayaDMOffsetCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOffsetCurve.h
+END
+MayaDMPlace3dTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPlace3dTexture.h
+END
+MayaDMOrientationMarker.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOrientationMarker.h
+END
+MayaDMAlignCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAlignCurve.h
+END
+MayaDMSubdAddTopology.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdAddTopology.h
+END
+MayaDMParticle.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticle.h
+END
+MayaDMScript.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMScript.h
+END
+MayaDMOrientConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOrientConstraint.h
+END
+MayaDMDefaultShaderList.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDefaultShaderList.h
+END
+MayaDMSquareSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSquareSrf.h
+END
+MayaDMSoftMod.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSoftMod.h
+END
+MayaDMSubdModifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdModifier.h
+END
+MayaDMEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEntity.h
+END
+MayaDMNComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNComponent.h
+END
+MayaDMHyperGraphInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHyperGraphInfo.h
+END
+MayaDMHikHandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHikHandle.h
+END
+MayaDMAnimCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurve.h
+END
+MayaDMPolySmoothFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySmoothFace.h
+END
+MayaDMPolyMapCut.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMapCut.h
+END
+MayaDMPolyBevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyBevel.h
+END
+MayaDMTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/829/trunk/Externals/MayaDataModel/include/MayaDMTypes.h
+END
+MayaDMBlendShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/667/trunk/Externals/MayaDataModel/include/MayaDMBlendShape.h
+END
+MayaDMPositionMarker.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPositionMarker.h
+END
+MayaDMSkinCluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSkinCluster.h
+END
+MayaDMPointOnCurveInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointOnCurveInfo.h
+END
+MayaDMPfxGeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPfxGeometry.h
+END
+MayaDMPolyHelix.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyHelix.h
+END
+MayaDMRevolvedPrimitive.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRevolvedPrimitive.h
+END
+MayaDMMotionPath.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMotionPath.h
+END
+MayaDMPolyColorMod.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyColorMod.h
+END
+MayaDMCurveFromMeshCoM.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromMeshCoM.h
+END
+MayaDMDynBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDynBase.h
+END
+MayaDMJointCluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMJointCluster.h
+END
+MayaDMRenderSphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderSphere.h
+END
+MayaDMLookAt.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLookAt.h
+END
+MayaDMParticleCloud.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleCloud.h
+END
+MayaDMSnapshot.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSnapshot.h
+END
+MayaDMFurAttractors.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurAttractors.h
+END
+MayaDMClipLibrary.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMClipLibrary.h
+END
+MayaDMBirailSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBirailSrf.h
+END
+MayaDMBakeSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBakeSet.h
+END
+MayaDMPolyMirror.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMirror.h
+END
+MayaDMImplicitBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMImplicitBox.h
+END
+MayaDMPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/310/trunk/Externals/MayaDataModel/include/MayaDMPrecompiledHeaders.cpp
+END
+MayaDMAnimCurveUL.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveUL.h
+END
+MayaDMPolyNormal.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyNormal.h
+END
+MayaDMGuide.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGuide.h
+END
+MayaDMToonLineAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMToonLineAttributes.h
+END
+MayaDMOffsetSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOffsetSurface.h
+END
+MayaDMConnectables.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/648/trunk/Externals/MayaDataModel/include/MayaDMConnectables.h
+END
+MayaDMPairBlend.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPairBlend.h
+END
+MayaDMMarble.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMarble.h
+END
+MayaDMChooser.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMChooser.h
+END
+MayaDMResolution.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResolution.h
+END
+MayaDMPolyExtrudeFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyExtrudeFace.h
+END
+MayaDMShadingEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMShadingEngine.h
+END
+MayaDMCurveShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveShape.h
+END
+MayaDMLineModifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLineModifier.h
+END
+MayaDMVectorRenderGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVectorRenderGlobals.h
+END
+MayaDMFlow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFlow.h
+END
+MayaDMUnknownDag.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUnknownDag.h
+END
+MayaDMNewtonField.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNewtonField.h
+END
+MayaDMTripleShadingSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTripleShadingSwitch.h
+END
+MayaDMFlexorShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFlexorShape.h
+END
+MayaDMPointMatrixMult.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointMatrixMult.h
+END
+MayaDMHistorySwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHistorySwitch.h
+END
+MayaDMPointEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointEmitter.h
+END
+MayaDMBlend.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlend.h
+END
+MayaDMCurveNormalizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveNormalizer.h
+END
+MayaDMPolyMoveFacetUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMoveFacetUV.h
+END
+MayaDMPolySplitVert.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySplitVert.h
+END
+MayaDMSubSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubSurface.h
+END
+MayaDMSurfaceInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceInfo.h
+END
+MayaDMPolyMapDel.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMapDel.h
+END
+MayaDMSmear.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSmear.h
+END
+MayaDMPolyPlatonicSolid.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPlatonicSolid.h
+END
+MayaDMPolySmooth.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySmooth.h
+END
+MayaDMArcLengthDimension.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMArcLengthDimension.h
+END
+MayaDMSamplerInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSamplerInfo.h
+END
+MayaDMImplicitSphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMImplicitSphere.h
+END
+MayaDMConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMConstraint.h
+END
+MayaDMRampShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRampShader.h
+END
+MayaDMHikEffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHikEffector.h
+END
+MayaDMClosestPointOnSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMClosestPointOnSurface.h
+END
+MayaDMDynGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDynGlobals.h
+END
+MayaDMParticleTranspMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleTranspMapper.h
+END
+MayaDMSingleShadingSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSingleShadingSwitch.h
+END
+MayaDMJointFfd.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMJointFfd.h
+END
+MayaDMDeformTwist.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformTwist.h
+END
+MayaDMHikGroundPlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHikGroundPlane.h
+END
+MayaDMProjection.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMProjection.h
+END
+MayaDMMaterialFacade.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMaterialFacade.h
+END
+MayaDMEnvBall.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvBall.h
+END
+MayaDMResultCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResultCurve.h
+END
+MayaDMParticleAgeMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleAgeMapper.h
+END
+MayaDMPolyCreateFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCreateFace.h
+END
+MayaDMPolyCylProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCylProj.h
+END
+MayaDMSubdTweak.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdTweak.h
+END
+MayaDMRebuildCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRebuildCurve.h
+END
+MayaDMMakeNurbCylinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbCylinder.h
+END
+MayaDMSketchPlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSketchPlane.h
+END
+MayaDMRemapColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRemapColor.h
+END
+MayaDMHikSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHikSolver.h
+END
+MayaDMDof.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDof.h
+END
+MayaDMPolyFlipUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyFlipUV.h
+END
+MayaDMMpBirailSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMpBirailSrf.h
+END
+MayaDMIkMCsolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkMCsolver.h
+END
+MayaDMBaseLattice.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBaseLattice.h
+END
+MayaDMContainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMContainer.h
+END
+MayaDMFilterEuler.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilterEuler.h
+END
+MayaDMField.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMField.h
+END
+MayaDMRenderCone.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderCone.h
+END
+MayaDMReflect.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMReflect.h
+END
+MayaDMGravityField.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGravityField.h
+END
+MayaDMRenderRect.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderRect.h
+END
+MayaDMRadialField.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRadialField.h
+END
+MayaDMFurFeedback.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurFeedback.h
+END
+MayaDMPolyOptUvs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyOptUvs.h
+END
+MayaDMMentalrayIblShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/528/trunk/Externals/MayaDataModel/include/MayaDMMentalrayIblShape.h
+END
+MayaDMHwShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHwShader.h
+END
+MayaDMCloud.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCloud.h
+END
+MayaDMMultDoubleLinear.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMultDoubleLinear.h
+END
+MayaDMLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLight.h
+END
+MayaDMIkSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkSystem.h
+END
+MayaDMPolyModifierWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyModifierWorld.h
+END
+MayaDMLuminance.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLuminance.h
+END
+MayaDMFilterResample.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilterResample.h
+END
+MayaDMPolyNormalizeUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyNormalizeUV.h
+END
+MayaDMNParticle.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNParticle.h
+END
+MayaDMPointLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointLight.h
+END
+MayaDMGeometryVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeometryVarGroup.h
+END
+MayaDMAbstractBaseCreate.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAbstractBaseCreate.h
+END
+MayaDMCurveNormalizerLinear.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveNormalizerLinear.h
+END
+MayaDMDropoffLocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDropoffLocator.h
+END
+MayaDMSubdModifierWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdModifierWorld.h
+END
+MayaDMRbfSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRbfSrf.h
+END
+MayaDMGrid.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGrid.h
+END
+MayaDMObjectMultiFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectMultiFilter.h
+END
+MayaDMHairConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHairConstraint.h
+END
+MayaDMPolyTransfer.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyTransfer.h
+END
+MayaDMAnisotropic.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnisotropic.h
+END
+MayaDMSubdivComponentId.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivComponentId.h
+END
+MayaDMParentConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParentConstraint.h
+END
+MayaDMHsvToRgb.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHsvToRgb.h
+END
+MayaDMEnvSphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvSphere.h
+END
+MayaDMBevelPlus.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBevelPlus.h
+END
+MayaDMBlinn.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlinn.h
+END
+MayaDMGammaCorrect.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGammaCorrect.h
+END
+MayaDMGeoConnectable.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeoConnectable.h
+END
+MayaDMInsertKnotSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMInsertKnotSurface.h
+END
+MayaDMFluidTexture2D.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFluidTexture2D.h
+END
+MayaDMPolyDelFacet.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyDelFacet.h
+END
+MayaDMRenderLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderLayer.h
+END
+MayaDMObjectRenderFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectRenderFilter.h
+END
+MayaDMDiskCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDiskCache.h
+END
+MayaDMNurbsTessellate.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsTessellate.h
+END
+MayaDMIkEffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkEffector.h
+END
+MayaDMWater.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWater.h
+END
+MayaDMPolyStraightenUVBorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyStraightenUVBorder.h
+END
+MayaDMLattice.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/827/trunk/Externals/MayaDataModel/include/MayaDMLattice.h
+END
+MayaDMProjectTangent.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMProjectTangent.h
+END
+MayaDMControlPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/569/trunk/Externals/MayaDataModel/include/MayaDMControlPoint.h
+END
+MayaDMOffsetCos.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOffsetCos.h
+END
+MayaDMPolyCollapseEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCollapseEdge.h
+END
+MayaDMRebuildSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRebuildSurface.h
+END
+MayaDMCopyUVSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCopyUVSet.h
+END
+MayaDMBlendDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlendDevice.h
+END
+MayaDMAvgCurves.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAvgCurves.h
+END
+MayaDMMultMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMultMatrix.h
+END
+MayaDMSimpleVolumeShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSimpleVolumeShader.h
+END
+MayaDMNurbsToSubdiv.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsToSubdiv.h
+END
+MayaDMMakeNurbCone.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbCone.h
+END
+MayaDMAnimCurveTA.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveTA.h
+END
+MayaDMFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFile.h
+END
+MayaDMParentTessellate.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParentTessellate.h
+END
+MayaDMBrownian.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBrownian.h
+END
+MayaDMAirField.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAirField.h
+END
+MayaDMSurfaceLuminance.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceLuminance.h
+END
+MayaDMStitchAsNurbsShell.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStitchAsNurbsShell.h
+END
+MayaDMEnvFog.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvFog.h
+END
+MayaDMCurveFromMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromMesh.h
+END
+MayaDMPolySewEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySewEdge.h
+END
+MayaDMNCloth.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNCloth.h
+END
+MayaDMTransformGeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTransformGeometry.h
+END
+MayaDMLodGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLodGroup.h
+END
+MayaDMAnimClip.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimClip.h
+END
+MayaDMShaderGlow.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMShaderGlow.h
+END
+MayaDMPolyMoveEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMoveEdge.h
+END
+MayaDMPlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPlane.h
+END
+MayaDMRemapValue.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRemapValue.h
+END
+MayaDMCacheFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCacheFile.h
+END
+MayaDMFacade.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFacade.h
+END
+MayaDMPolySoftEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySoftEdge.h
+END
+MayaDMChecker.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMChecker.h
+END
+MayaDMDependNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/528/trunk/Externals/MayaDataModel/include/MayaDMDependNode.h
+END
+MayaDMDeformBend.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformBend.h
+END
+MayaDMGroupId.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGroupId.h
+END
+MayaDMCurveFromSubdivEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSubdivEdge.h
+END
+MayaDMQuadShadingSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMQuadShadingSwitch.h
+END
+MayaDMReverse.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMReverse.h
+END
+MayaDMFfBlendSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFfBlendSrf.h
+END
+MayaDMSpotLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSpotLight.h
+END
+MayaDMResultCurveTimeToAngular.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResultCurveTimeToAngular.h
+END
+MayaDMPolySubdFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySubdFace.h
+END
+MayaDMPolySplitEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySplitEdge.h
+END
+MayaDMHyperLayout.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHyperLayout.h
+END
+MayaDMRemapHsv.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRemapHsv.h
+END
+MayaDMPolyCopyUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCopyUV.h
+END
+MayaDMHairTubeShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHairTubeShader.h
+END
+MayaDMNonExtendedLightShapeNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNonExtendedLightShapeNode.h
+END
+MayaDMPlusMinusAverage.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPlusMinusAverage.h
+END
+MayaDMCharacter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCharacter.h
+END
+MayaDMCacheBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCacheBase.h
+END
+MayaDMReference.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMReference.h
+END
+MayaDMTextureBakeSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTextureBakeSet.h
+END
+MayaDMGeometryFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeometryFilter.h
+END
+MayaDMPolyPipe.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPipe.h
+END
+MayaDMAlignSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAlignSurface.h
+END
+MayaDMCurveFromSurfaceBnd.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSurfaceBnd.h
+END
+MayaDMPolySeparate.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySeparate.h
+END
+MayaDMFluidTexture3D.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFluidTexture3D.h
+END
+MayaDMNRigid.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNRigid.h
+END
+MayaDMPolyPlanarProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPlanarProj.h
+END
+MayaDMHeightField.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHeightField.h
+END
+MayaDMObjectTypeFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectTypeFilter.h
+END
+MayaDMLodThresholds.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLodThresholds.h
+END
+MayaDMHwRenderGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHwRenderGlobals.h
+END
+MayaDMParticleIncandMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleIncandMapper.h
+END
+MayaDMMakeNurbCircle.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbCircle.h
+END
+MayaDMPolyUnite.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyUnite.h
+END
+MayaDMMakeGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeGroup.h
+END
+MayaDMStucco.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStucco.h
+END
+MayaDMLoft.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLoft.h
+END
+MayaDMPolyMergeVert.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMergeVert.h
+END
+MayaDMWeightGeometryFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWeightGeometryFilter.h
+END
+MayaDMCloth.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCloth.h
+END
+MayaDMSurfaceShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceShape.h
+END
+MayaDMTextureEnv.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTextureEnv.h
+END
+MayaDMMaterialInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMaterialInfo.h
+END
+MayaDMAddMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAddMatrix.h
+END
+MayaDMAnimCurveUA.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveUA.h
+END
+MayaDMMovie.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMovie.h
+END
+MayaDMPolyChipOff.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyChipOff.h
+END
+MayaDMMeshVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMeshVarGroup.h
+END
+MayaDMLightInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLightInfo.h
+END
+MayaDMSnow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSnow.h
+END
+MayaDMRenderQuality.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderQuality.h
+END
+MayaDMCurveFromSurfaceIso.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSurfaceIso.h
+END
+MayaDMShellTessellate.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMShellTessellate.h
+END
+MayaDMNormalConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNormalConstraint.h
+END
+MayaDMNurbsToSubdivProc.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsToSubdivProc.h
+END
+MayaDMPolyBoolOp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyBoolOp.h
+END
+MayaDMExpression.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMExpression.h
+END
+MayaDMSubdBlindData.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdBlindData.h
+END
+MayaDMMakeNurbTorus.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbTorus.h
+END
+MayaDMSubdLayoutUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdLayoutUV.h
+END
+MayaDMRoundConstantRadius.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRoundConstantRadius.h
+END
+MayaDMPolyAppendVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyAppendVertex.h
+END
+MayaDMCloseCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCloseCurve.h
+END
+MayaDMHardenPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHardenPoint.h
+END
+MayaDMTextureToGeom.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTextureToGeom.h
+END
+MayaDMProjectCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMProjectCurve.h
+END
+MayaDMLayeredShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLayeredShader.h
+END
+MayaDMBoundaryBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBoundaryBase.h
+END
+MayaDMPolyBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyBase.h
+END
+MayaDMDagPose.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDagPose.h
+END
+MayaDMRevolve.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRevolve.h
+END
+MayaDMGlobalCacheControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGlobalCacheControl.h
+END
+MayaDMSubdPlanarProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdPlanarProj.h
+END
+MayaDMSubdCleanTopology.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdCleanTopology.h
+END
+MayaDMCurveNormalizerAngle.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveNormalizerAngle.h
+END
+MayaDMGeometryConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeometryConstraint.h
+END
+MayaDMShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMShape.h
+END
+MayaDMAudio.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAudio.h
+END
+MayaDMSpring.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSpring.h
+END
+MayaDMPolyToSubdiv.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyToSubdiv.h
+END
+MayaDMBlendColors.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlendColors.h
+END
+MayaDMDimensionShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDimensionShape.h
+END
+MayaDMPolyAutoProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyAutoProj.h
+END
+MayaDMParticleColorMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleColorMapper.h
+END
+MayaDMAmbientLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAmbientLight.h
+END
+MayaDMTweak.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTweak.h
+END
+MayaDMMakeNurbSphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbSphere.h
+END
+MayaDMPolyPrimitive.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPrimitive.h
+END
+MayaDMCloseSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCloseSurface.h
+END
+MayaDMPolyTorus.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyTorus.h
+END
+MayaDMSpBirailSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSpBirailSrf.h
+END
+MayaDMLeather.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLeather.h
+END
+MayaDMPolyBridgeEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyBridgeEdge.h
+END
+MayaDMDeleteComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeleteComponent.h
+END
+MayaDMInstancer.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMInstancer.h
+END
+MayaDMEnvCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvCube.h
+END
+MayaDMBoneLattice.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBoneLattice.h
+END
+MayaDMPolySphProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySphProj.h
+END
+MayaDMJointLattice.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMJointLattice.h
+END
+MayaDMClamp.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMClamp.h
+END
+MayaDMMakeTwoPointCircularArc.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeTwoPointCircularArc.h
+END
+MayaDMPolyDelEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyDelEdge.h
+END
+MayaDMPolyPrism.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPrism.h
+END
+MayaDMRock.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRock.h
+END
+MayaDMFfd.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFfd.h
+END
+MayaDMResultCurveTimeToLinear.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResultCurveTimeToLinear.h
+END
+MayaDMHardwareRenderGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHardwareRenderGlobals.h
+END
+MayaDMObjectScriptFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectScriptFilter.h
+END
+MayaDMDeformSquash.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformSquash.h
+END
+MayaDMSampler.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSampler.h
+END
+MayaDMTimeToUnitConversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTimeToUnitConversion.h
+END
+MayaDMRenderLayerManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderLayerManager.h
+END
+MayaDMPolyColorDel.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyColorDel.h
+END
+MayaDMMakeNurbsSquare.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbsSquare.h
+END
+MayaDMLightLinker.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLightLinker.h
+END
+MayaDMSurfaceVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceVarGroup.h
+END
+MayaDMDeformableShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformableShape.h
+END
+MayaDMPolyCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCube.h
+END
+MayaDMMakeNurbPlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbPlane.h
+END
+MayaDMDirectionalLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDirectionalLight.h
+END
+MayaDMCurveFromSurfaceCoS.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSurfaceCoS.h
+END
+MayaDMAvgNurbsSurfacePoints.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAvgNurbsSurfacePoints.h
+END
+MayaDMPolyCut.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCut.h
+END
+MayaDMAnimCurveTT.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveTT.h
+END
+MayaDMCharacterOffset.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCharacterOffset.h
+END
+MayaDMLocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLocator.h
+END
+MayaDMTimeFunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTimeFunction.h
+END
+MayaDMStyleCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStyleCurve.h
+END
+MayaDMMakeTextCurves.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeTextCurves.h
+END
+MayaDMObjectFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectFilter.h
+END
+MayaDMFrameCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFrameCache.h
+END
+MayaDMIkPASolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkPASolver.h
+END
+MayaDMBoolean.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBoolean.h
+END
+MayaDMFilterClosestSample.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilterClosestSample.h
+END
+MayaDMRenderBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderBox.h
+END
+MayaDMMakeThreePointCircularArc.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeThreePointCircularArc.h
+END
+MayaDMSelectionListOperator.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSelectionListOperator.h
+END
+MayaDMPolyQuad.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyQuad.h
+END
+MayaDMPolyPlane.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPlane.h
+END
+MayaDMInsertKnotCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMInsertKnotCurve.h
+END
+MayaDMWire.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWire.h
+END
+MayaDMStroke.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStroke.h
+END
+MayaDMSetRange.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSetRange.h
+END
+MayaDMFurCurveAttractors.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurCurveAttractors.h
+END
+MayaDMSubdivToNurbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivToNurbs.h
+END
+MayaDMProxyManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMProxyManager.h
+END
+MayaDMFilletCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilletCurve.h
+END
+MayaDMStudioClearCoat.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStudioClearCoat.h
+END
+MayaDMFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilter.h
+END
+MayaDMOcean.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOcean.h
+END
+MayaDMTexture2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTexture2d.h
+END
+MayaDMTransferAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTransferAttributes.h
+END
+MayaDMDeformSine.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformSine.h
+END
+MayaDMPolyCreaseEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCreaseEdge.h
+END
+MayaDMUseBackground.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUseBackground.h
+END
+MayaDMClusterHandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/827/trunk/Externals/MayaDataModel/include/MayaDMClusterHandle.h
+END
+MayaDMPfxToon.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPfxToon.h
+END
+MayaDMAreaLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAreaLight.h
+END
+MayaDMPolyModifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyModifier.h
+END
+MayaDMAnimCurveTU.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveTU.h
+END
+MayaDMPhong.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPhong.h
+END
+MayaDMReverseCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMReverseCurve.h
+END
+MayaDMEnvChrome.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvChrome.h
+END
+MayaDMPolyColorPerVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyColorPerVertex.h
+END
+MayaDMSoftModHandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/827/trunk/Externals/MayaDataModel/include/MayaDMSoftModHandle.h
+END
+MayaDMPolyMergeEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMergeEdge.h
+END
+MayaDMTime.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTime.h
+END
+MayaDMPolySplit.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySplit.h
+END
+MayaDMCurveRange.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveRange.h
+END
+MayaDMPfxHair.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPfxHair.h
+END
+MayaDMAnimCurveUT.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveUT.h
+END
+MayaDMDistanceBetween.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDistanceBetween.h
+END
+MayaDMVolumeNoise.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVolumeNoise.h
+END
+MayaDMGroupParts.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGroupParts.h
+END
+MayaDMPsdFileTex.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPsdFileTex.h
+END
+MayaDMPolyMoveVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMoveVertex.h
+END
+MayaDMNonAmbientLightShapeNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNonAmbientLightShapeNode.h
+END
+MayaDMPolyCollapseF.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCollapseF.h
+END
+MayaDMUvChooser.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUvChooser.h
+END
+MayaDMPolyWedgeFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyWedgeFace.h
+END
+MayaDMImplicitCone.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMImplicitCone.h
+END
+MayaDMPhongE.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPhongE.h
+END
+MayaDMPolyExtrudeVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyExtrudeVertex.h
+END
+MayaDMJoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMJoint.h
+END
+MayaDMSubdBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdBase.h
+END
+MayaDMOpticalFX.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOpticalFX.h
+END
+MayaDMDoubleShadingSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDoubleShadingSwitch.h
+END
+MayaDMExtendCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMExtendCurve.h
+END
+MayaDMScaleConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMScaleConstraint.h
+END
+MayaDMPolyNormalPerVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyNormalPerVertex.h
+END
+MayaDMPolyPoke.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPoke.h
+END
+MayaDMDisplayLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDisplayLayer.h
+END
+MayaDMPolyDelVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyDelVertex.h
+END
+MayaDMPolyCloseBorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCloseBorder.h
+END
+MayaDMObjectAttrFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectAttrFilter.h
+END
+MayaDMPartition.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPartition.h
+END
+MayaDMPolyReduce.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyReduce.h
+END
+MayaDMPointOnSurfaceInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointOnSurfaceInfo.h
+END
+MayaDMPolyCylinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCylinder.h
+END
+MayaDMBlindDataTemplate.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlindDataTemplate.h
+END
+MayaDMAddDoubleLinear.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAddDoubleLinear.h
+END
+MayaDMIkHandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkHandle.h
+END
+MayaDMNonLinear.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNonLinear.h
+END
+MayaDMPolyBlindData.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyBlindData.h
+END
+MayaDMHwReflectionMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHwReflectionMap.h
+END
+MayaDMTexture3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTexture3d.h
+END
+MayaDMPolyMapSewMove.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMapSewMove.h
+END
+MayaDMWtAddMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWtAddMatrix.h
+END
+MayaDMCreateUVSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCreateUVSet.h
+END
+MayaDMDisplayLayerManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDisplayLayerManager.h
+END
+MayaDMAnimCurveUU.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimCurveUU.h
+END
+MayaDMRenderLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderLight.h
+END
+MayaDMUnitToTimeConversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUnitToTimeConversion.h
+END
+MayaDMPolyPyramid.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPyramid.h
+END
+MayaDMStitchSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStitchSrf.h
+END
+MayaDMMute.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMute.h
+END
+MayaDMHoldMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHoldMatrix.h
+END
+MayaDMPolyMergeUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMergeUV.h
+END
+MayaDMCreateColorSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCreateColorSet.h
+END
+MayaDMPolyTweak.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyTweak.h
+END
+MayaDMFluidShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFluidShape.h
+END
+MayaDMNetwork.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNetwork.h
+END
+MayaDMSubdivReverseFaces.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivReverseFaces.h
+END
+MayaDMPlace2dTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPlace2dTexture.h
+END
+MayaDMVortexField.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVortexField.h
+END
+MayaDMDetachCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDetachCurve.h
+END
+MayaDMNurbsCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsCurve.h
+END
+MayaDMClosestPointOnMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMClosestPointOnMesh.h
+END
+MayaDMDagNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDagNode.h
+END
+MayaDMStencil.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStencil.h
+END
+MayaDMCommands.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/648/trunk/Externals/MayaDataModel/include/MayaDMCommands.h
+END
+MayaDMFilterSimplify.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFilterSimplify.h
+END
+MayaDMLightFog.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLightFog.h
+END
+MayaDMSubdivToPoly.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivToPoly.h
+END
+MayaDMSolidFractal.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSolidFractal.h
+END
+MayaDMPolyExtrudeEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyExtrudeEdge.h
+END
+MayaDMIkSplineSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkSplineSolver.h
+END
+MayaDMAttachSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAttachSurface.h
+END
+MayaDMPolyProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyProj.h
+END
+MayaDMSurfaceShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSurfaceShader.h
+END
+MayaDMEnvSky.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMEnvSky.h
+END
+MayaDMSnapshotShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSnapshotShape.h
+END
+MayaDMHyperView.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHyperView.h
+END
+MayaDMUniformField.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUniformField.h
+END
+MayaDMPolyPrimitiveMisc.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyPrimitiveMisc.h
+END
+MayaDMPolyMoveFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMoveFace.h
+END
+MayaDMBaseShadingSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBaseShadingSwitch.h
+END
+MayaDMSubdiv.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdiv.h
+END
+MayaDMPointConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPointConstraint.h
+END
+MayaDMDisplacementShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDisplacementShader.h
+END
+MayaDMFurGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurGlobals.h
+END
+MayaDMPolyMapSew.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyMapSew.h
+END
+MayaDMSubdMapSewMove.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdMapSewMove.h
+END
+MayaDMParticleSamplerInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParticleSamplerInfo.h
+END
+MayaDMVectorProduct.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVectorProduct.h
+END
+MayaDMVolumeFog.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVolumeFog.h
+END
+MayaDMNurbsDimShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNurbsDimShape.h
+END
+MayaDMCurveFromSubdivFace.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSubdivFace.h
+END
+MayaDMPrimitive.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPrimitive.h
+END
+MayaDMDefaultLightList.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDefaultLightList.h
+END
+MayaDMAttachCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAttachCurve.h
+END
+MayaDMAimConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAimConstraint.h
+END
+MayaDMRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRecord.h
+END
+MayaDMSmoothCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSmoothCurve.h
+END
+MayaDMSubdivCollapse.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdivCollapse.h
+END
+MayaDMPostProcessList.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPostProcessList.h
+END
+MayaDMCurveFromSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSurface.h
+END
+MayaDMTrimWithBoundaries.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTrimWithBoundaries.h
+END
+MayaDMDeformFlare.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformFlare.h
+END
+MayaDMRigidSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRigidSolver.h
+END
+MayaDMPolyTweakUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyTweakUV.h
+END
+MayaDMMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMesh.h
+END
+MayaDMContrast.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMContrast.h
+END
+MayaDMPolyCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCreator.h
+END
+MayaDMTangentConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTangentConstraint.h
+END
+MayaDMMultilisterLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMultilisterLight.h
+END
+MayaDMCacheBlend.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCacheBlend.h
+END
+MayaDMFfBlendSrfObsolete.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFfBlendSrfObsolete.h
+END
+MayaDMWrap.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMWrap.h
+END
+MayaDMTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTransform.h
+END
+MayaDMBaseGeometryVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBaseGeometryVarGroup.h
+END
+MayaDMPolySmoothProxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySmoothProxy.h
+END
+MayaDMFurPointOnSubd.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFurPointOnSubd.h
+END
+MayaDMResultCurveTimeToTime.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResultCurveTimeToTime.h
+END
+MayaDMDynamicConstraint.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDynamicConstraint.h
+END
+MayaDMChoice.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMChoice.h
+END
+MayaDMHikFloorContactMarker.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHikFloorContactMarker.h
+END
+MayaDMPassMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPassMatrix.h
+END
+MayaDMExtendSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMExtendSurface.h
+END
+MayaDMDefaultTextureList.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDefaultTextureList.h
+END
+MayaDMLightList.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLightList.h
+END
+MayaDMStableHeaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/310/trunk/Externals/MayaDataModel/include/MayaDMStableHeaders.h
+END
+MayaDMFfFilletSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFfFilletSrf.h
+END
+MayaDMCurveFromMeshEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromMeshEdge.h
+END
+MayaDMShadingMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMShadingMap.h
+END
+MayaDMOldBlindDataBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOldBlindDataBase.h
+END
+MayaDMDeleteColorSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeleteColorSet.h
+END
+MayaDMNucleus.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNucleus.h
+END
+MayaDMPolySplitRing.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySplitRing.h
+END
+MayaDMDragField.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDragField.h
+END
+MayaDMBrush.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBrush.h
+END
+MayaDMPolyFlipEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyFlipEdge.h
+END
+MayaDMAvgSurfacePoints.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAvgSurfacePoints.h
+END
+MayaDMUnitConversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUnitConversion.h
+END
+MayaDMClipScheduler.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMClipScheduler.h
+END
+MayaDMHairSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMHairSystem.h
+END
+MayaDMCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCamera.h
+END
+MayaDMBevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBevel.h
+END
+MayaDMIkSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkSolver.h
+END
+MayaDMBulge.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBulge.h
+END
+MayaDMRgbToHsv.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRgbToHsv.h
+END
+MayaDMDpBirailSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDpBirailSrf.h
+END
+MayaDMPolyDuplicateEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyDuplicateEdge.h
+END
+MayaDMCurveVarGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveVarGroup.h
+END
+MayaDMPolyAppend.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyAppend.h
+END
+MayaDMPolyModifierUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyModifierUV.h
+END
+MayaDMSubdHierBlind.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdHierBlind.h
+END
+MayaDMObjectSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectSet.h
+END
+MayaDMRenderGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderGlobals.h
+END
+MayaDMArrayMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMArrayMapper.h
+END
+MayaDMCurveFromSubdiv.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveFromSubdiv.h
+END
+MayaDMMakeCircularArc.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeCircularArc.h
+END
+MayaDMGranite.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGranite.h
+END
+MayaDMSubCurve.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubCurve.h
+END
+MayaDMJiggle.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMJiggle.h
+END
+MayaDMMultiplyDivide.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMultiplyDivide.h
+END
+MayaDMDistanceDimShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDistanceDimShape.h
+END
+MayaDMParamDimension.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMParamDimension.h
+END
+MayaDMSubdMapCut.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdMapCut.h
+END
+MayaDMIntersectSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIntersectSurface.h
+END
+MayaDMSculpt.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSculpt.h
+END
+MayaDMTrim.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTrim.h
+END
+MayaDMGeometryShape.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeometryShape.h
+END
+MayaDMOceanShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMOceanShader.h
+END
+MayaDMUntrim.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUntrim.h
+END
+MayaDMGlobalStitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGlobalStitch.h
+END
+MayaDMExtrude.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMExtrude.h
+END
+MayaDMCrater.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCrater.h
+END
+MayaDMCluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCluster.h
+END
+MayaDMPolyCone.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyCone.h
+END
+MayaDMFollicle.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFollicle.h
+END
+MayaDMBump2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBump2d.h
+END
+MayaDMDeleteUVSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeleteUVSet.h
+END
+MayaDMFitBspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFitBspline.h
+END
+MayaDMIkRPsolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkRPsolver.h
+END
+MayaDMSubdTweakUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdTweakUV.h
+END
+MayaDMCurveIntersect.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCurveIntersect.h
+END
+MayaDMBlendWeighted.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlendWeighted.h
+END
+MayaDMSmoothTangentSrf.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSmoothTangentSrf.h
+END
+MayaDMAnimBlendInOut.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMAnimBlendInOut.h
+END
+MayaDMBlendTwoAttr.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlendTwoAttr.h
+END
+MayaDMMakeIllustratorCurves.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeIllustratorCurves.h
+END
+MayaDMStrokeGlobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMStrokeGlobals.h
+END
+MayaDMFractal.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFractal.h
+END
+MayaDMNoise.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMNoise.h
+END
+MayaDMCgfxShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCgfxShader.h
+END
+MayaDMRenderGlobalsList.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMRenderGlobalsList.h
+END
+MayaDMSubdAutoProj.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdAutoProj.h
+END
+MayaDMBoundary.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/827/trunk/Externals/MayaDataModel/include/MayaDMBoundary.h
+END
+MayaDMIkSCsolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMIkSCsolver.h
+END
+MayaDMGeoConnector.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMGeoConnector.h
+END
+MayaDMSubdModifierUV.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMSubdModifierUV.h
+END
+MayaDMFourByFourMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMFourByFourMatrix.h
+END
+MayaDMDeformFunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformFunc.h
+END
+MayaDMCharacterMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCharacterMap.h
+END
+MayaDMResultCurveTimeToUnitless.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMResultCurveTimeToUnitless.h
+END
+MayaDMVolumeAxisField.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVolumeAxisField.h
+END
+MayaDMDetachSurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDetachSurface.h
+END
+MayaDMMakeNurbCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMMakeNurbCube.h
+END
+MayaDMTurbulenceField.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMTurbulenceField.h
+END
+MayaDMObjectNameFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMObjectNameFilter.h
+END
+MayaDMBlendColorSets.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMBlendColorSets.h
+END
+MayaDMPolyTriangulate.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolyTriangulate.h
+END
+MayaDMCameraView.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMCameraView.h
+END
+MayaDMPolySubdEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMPolySubdEdge.h
+END
+MayaDMLeastSquaresModifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMLeastSquaresModifier.h
+END
+MayaDMUnknownTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMUnknownTransform.h
+END
+MayaDMVolumeShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVolumeShader.h
+END
+MayaDMVolumeLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMVolumeLight.h
+END
+MayaDMDeformWave.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/524/trunk/Externals/MayaDataModel/include/MayaDMDeformWave.h
+END

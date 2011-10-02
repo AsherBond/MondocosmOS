@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/809/trunk/Externals/pcre/src
+END
+pcre_compile.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_compile.c
+END
+pcre_chartables.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_chartables.c
+END
+pcre_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_tables.c
+END
+pcre_try_flipped.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_try_flipped.c
+END
+pcre_newline.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_newline.c
+END
+pcre_globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_globals.c
+END
+pcre_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/809/trunk/Externals/pcre/src/pcre_exec.c
+END

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 70
+doc
+COLLADAMax.suo
+COLLADAMax.ncb
+shaders.out
+release
+release_log.txt
+
+END

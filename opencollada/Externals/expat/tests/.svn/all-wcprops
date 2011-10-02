@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/553/trunk/Externals/expat/tests
+END
+minicheck.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/553/trunk/Externals/expat/tests/minicheck.h
+END
+runtests.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/553/trunk/Externals/expat/tests/runtests.c
+END
+chardata.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/553/trunk/Externals/expat/tests/chardata.c
+END
+runtestspp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/553/trunk/Externals/expat/tests/runtestspp.cpp
+END
+xmltest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/553/trunk/Externals/expat/tests/xmltest.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/553/trunk/Externals/expat/tests/README.txt
+END
+minicheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/553/trunk/Externals/expat/tests/minicheck.c
+END
+chardata.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/553/trunk/Externals/expat/tests/chardata.h
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/763/trunk/dae2ogre/include
+END
+DAE2OgrePrerequisites.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/428/trunk/dae2ogre/include/DAE2OgrePrerequisites.h
+END
+DAE2OgreStableHeaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/428/trunk/dae2ogre/include/DAE2OgreStableHeaders.h
+END
+DAE2OgreBaseWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/428/trunk/dae2ogre/include/DAE2OgreBaseWriter.h
+END
+DAE2OgreSerializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/763/trunk/dae2ogre/include/DAE2OgreSerializer.h
+END
+DAE2OgreOgreWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/628/trunk/dae2ogre/include/DAE2OgreOgreWriter.h
+END
+DAE2OgreMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/608/trunk/dae2ogre/include/DAE2OgreMeshWriter.h
+END
+OgreMeshFileFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/428/trunk/dae2ogre/include/OgreMeshFileFormat.h
+END
+OgreVertexElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/428/trunk/dae2ogre/include/OgreVertexElement.h
+END
+DAE2OgreSceneGraphWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/679/trunk/dae2ogre/include/DAE2OgreSceneGraphWriter.h
+END

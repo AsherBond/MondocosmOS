@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/762/trunk/dae23ds_lib3ds/src
+END
+DAE23dsWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/762/trunk/dae23ds_lib3ds/src/DAE23dsWriter.cpp
+END
+DAE23dsSceneGraphHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/754/trunk/dae23ds_lib3ds/src/DAE23dsSceneGraphHandler.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/754/trunk/dae23ds_lib3ds/src/main.cpp
+END
+DAE23dsPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/754/trunk/dae23ds_lib3ds/src/DAE23dsPrecompiledHeaders.cpp
+END

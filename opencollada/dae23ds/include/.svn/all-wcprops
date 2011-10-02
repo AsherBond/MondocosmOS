@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/841/trunk/dae23ds/include
+END
+DAE23dsMeshBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/841/trunk/dae23ds/include/DAE23dsMeshBase.h
+END
+DAE23dsMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/841/trunk/dae23ds/include/DAE23dsMeshWriter.h
+END
+DAE23dsMeshHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshHandler.h
+END
+DAE23dsBitSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsBitSet.h
+END
+DAE23dsMaterialsLengthCalculator.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMaterialsLengthCalculator.h
+END
+DAE23dsMeshSpliter.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshSpliter.h
+END
+DAE23dsPrerequisites.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsPrerequisites.h
+END
+DAE23dsTriangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsTriangle.h
+END
+DAE23dsStableHeaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsStableHeaders.h
+END
+DAE23dsBaseWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsBaseWriter.h
+END
+DAE23dsMeshLengthCalculator.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshLengthCalculator.h
+END
+DAE23dsChunkIDs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsChunkIDs.h
+END
+DAE23dsSceneGraphBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsSceneGraphBase.h
+END
+DAE23dsWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsWriter.h
+END
+DAE23dsMeshSpliterDumper.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshSpliterDumper.h
+END
+DAE23dsMaterialsBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMaterialsBase.h
+END
+DAE23dsSceneGraphWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsSceneGraphWriter.h
+END
+DAE23dsSceneGraphHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsSceneGraphHandler.h
+END
+DAE23dsMaterialsWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMaterialsWriter.h
+END
+DAE23dsMeshAccessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshAccessor.h
+END
+DAE23dsMeshSpliter_impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/651/trunk/dae23ds/include/DAE23dsMeshSpliter_impl.h
+END

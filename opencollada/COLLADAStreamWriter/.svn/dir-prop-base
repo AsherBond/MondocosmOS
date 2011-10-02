@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 63
+
+COLLADAStreamWriter.ncb
+COLLADAStreamWriter.suo
+Debug
+Release
+
+END

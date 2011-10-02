@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/841/trunk/dae23ds/src
+END
+DAE23dsMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/841/trunk/dae23ds/src/DAE23dsMeshWriter.cpp
+END
+DAE23dsBitSet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsBitSet.cpp
+END
+DAE23dsMeshHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMeshHandler.cpp
+END
+DAE23dsMaterialsLengthCalculator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMaterialsLengthCalculator.cpp
+END
+DAE23dsPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsPrecompiledHeaders.cpp
+END
+DAE23dsBaseWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsBaseWriter.cpp
+END
+DAE23dsMeshLengthCalculator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMeshLengthCalculator.cpp
+END
+DAE23dsSceneGraphBase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsSceneGraphBase.cpp
+END
+DAE23dsMaterialsBase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMaterialsBase.cpp
+END
+DAE23dsWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/841/trunk/dae23ds/src/DAE23dsWriter.cpp
+END
+DAE23dsMeshSpliterDumper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMeshSpliterDumper.cpp
+END
+DAE23dsSceneGraphWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsSceneGraphWriter.cpp
+END
+DAE23dsSceneGraphHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsSceneGraphHandler.cpp
+END
+DAE23dsMaterialsWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMaterialsWriter.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/651/trunk/dae23ds/src/main.cpp
+END
+DAE23dsMeshAccessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/651/trunk/dae23ds/src/DAE23dsMeshAccessor.cpp
+END
+DAE23dsMeshBase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/841/trunk/dae23ds/src/DAE23dsMeshBase.cpp
+END

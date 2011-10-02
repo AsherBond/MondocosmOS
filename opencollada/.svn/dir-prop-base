@@ -1,0 +1,25 @@
+K 10
+svn:ignore
+V 197
+testcases
+COLLADAWeb
+*.ncb
+*.suo
+externals
+URITest
+COLLADANextGen.sln
+RealtimeDAE
+COLLADAMaxrelease
+COLLADA.sln
+documents
+Documents
+StreamWriterSample
+scons-build
+libOpenCollada.a
+.sconsign.dblite
+
+K 13
+svn:mergeinfo
+V 54
+/branches/scene_with_simplified_inst_kin_model:705-738
+END

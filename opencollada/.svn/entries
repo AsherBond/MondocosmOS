@@ -1,0 +1,215 @@
+10
+
+dir
+847
+http://opencollada.googlecode.com/svn/trunk
+http://opencollada.googlecode.com/svn
+
+
+
+2011-09-13T12:16:16.018985Z
+847
+opencollada2@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+ec7ac696-a6cd-11de-b195-ab392a2a73f5
+
+COLLADASaxFrameworkLoader
+dir
+
+htdocs
+dir
+
+dae23ds_lib3ds
+dir
+
+dae23ds
+dir
+
+GeneratedSaxParser
+dir
+
+scripts
+dir
+
+dae2ogre
+dir
+
+common
+dir
+
+dae2ma
+dir
+
+README
+file
+
+
+
+
+2011-10-02T13:46:30.554479Z
+d23f9624b2e8eeb6a953b405c97c6ea4
+2009-11-16T11:14:30.976929Z
+679
+robert@opencollada.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1796
+
+G3DWarehouseBrowser
+dir
+
+COLLADAValidator
+dir
+
+Externals
+dir
+
+COLLADAMax
+dir
+
+COLLADAMaya
+dir
+
+SConstruct
+file
+
+
+
+
+2011-10-02T13:46:30.554479Z
+4520c44aaad5ca7437aa7885f75b5cdb
+2010-10-12T09:15:49.384021Z
+774
+robert%opencollada.org@gtempaccount.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3497
+
+COLLADAStreamWriter
+dir
+
+COLLADABaseUtils
+dir
+
+COLLADAFramework
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2011-10-02T13:46:30.554479Z
+9e9590d9f8cdd5ecfb010a93227d6112
+2011-01-18T14:00:57.384412Z
+804
+opencollada2@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2902
+
+Makefile
+file
+
+
+
+
+2011-10-02T13:46:30.554479Z
+9304aba17e56b3ed878fe6505d208462
+2009-09-24T17:19:35.163354Z
+591
+robert@opencollada.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+79
+

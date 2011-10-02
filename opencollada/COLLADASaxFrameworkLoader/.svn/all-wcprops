@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/839/trunk/COLLADASaxFrameworkLoader
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/626/trunk/COLLADASaxFrameworkLoader/SConscript
+END
+COLLADASaxFrameworkLoader.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/682/trunk/COLLADASaxFrameworkLoader/COLLADASaxFrameworkLoader.sln
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/781/trunk/COLLADASaxFrameworkLoader/CMakeLists.txt
+END
+BUILD.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/581/trunk/COLLADASaxFrameworkLoader/BUILD.txt
+END

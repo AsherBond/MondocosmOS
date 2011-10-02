@@ -1,0 +1,791 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/781/trunk/Externals/LibXML
+END
+testReader.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/testReader.c
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/AUTHORS
+END
+libxml.3
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/588/trunk/Externals/LibXML/libxml.3
+END
+libxml-2.0.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/libxml-2.0.pc.in
+END
+trionan.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/trionan.c
+END
+catalog.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/catalog.c
+END
+trionan.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/trionan.h
+END
+dict.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/dict.c
+END
+testXPath.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/testXPath.c
+END
+check-xml-test-suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/check-xml-test-suite.py
+END
+encoding.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/encoding.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/COPYING
+END
+genChRanges.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/genChRanges.py
+END
+xmlcatalog.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/xmlcatalog.c
+END
+SAX.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/236/trunk/Externals/LibXML/SAX.c
+END
+uri.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/236/trunk/Externals/LibXML/uri.c
+END
+schematron.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/schematron.c
+END
+xml2-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/588/trunk/Externals/LibXML/xml2-config.1
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/configure.in
+END
+xmlmodule.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlmodule.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/ChangeLog
+END
+testapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/testapi.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/list.c
+END
+testRelax.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/testRelax.c
+END
+xmlregexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/323/trunk/Externals/LibXML/xmlregexp.c
+END
+README.tests
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/README.tests
+END
+elfgcchack.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/elfgcchack.h
+END
+xmlreader.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlreader.c
+END
+HACKING
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/588/trunk/Externals/LibXML/HACKING
+END
+entities.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/entities.c
+END
+HTMLtree.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/HTMLtree.c
+END
+xmlstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlstring.c
+END
+Makefile.win
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/Makefile.win
+END
+xmlschemastypes.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlschemastypes.c
+END
+libxml.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/574/trunk/Externals/LibXML/libxml.h
+END
+relaxng.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/relaxng.c
+END
+rngparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/rngparser.c
+END
+testHTML.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/testHTML.c
+END
+legacy.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/236/trunk/Externals/LibXML/legacy.c
+END
+check-relaxng-test-suite2.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/check-relaxng-test-suite2.py
+END
+SAX2.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/SAX2.c
+END
+testThreadsWin32.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/236/trunk/Externals/LibXML/testThreadsWin32.c
+END
+testSchemas.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/236/trunk/Externals/LibXML/testSchemas.c
+END
+testdso.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/testdso.c
+END
+check-relaxng-test-suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/588/trunk/Externals/LibXML/check-relaxng-test-suite.py
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/INSTALL
+END
+chvalid.def
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/chvalid.def
+END
+testThreads.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/236/trunk/Externals/LibXML/testThreads.c
+END
+libtoolize
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/601/trunk/Externals/LibXML/libtoolize
+END
+Makefile.tests
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/Makefile.tests
+END
+LibXML.sln
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/LibXML.sln
+END
+dbgenattr.pl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/dbgenattr.pl
+END
+runtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/runtest.c
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/741/trunk/Externals/LibXML/SConscript
+END
+xmlunicode.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlunicode.c
+END
+build_glob.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/588/trunk/Externals/LibXML/build_glob.py
+END
+xml2-config.in
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/xml2-config.in
+END
+parserInternals.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/236/trunk/Externals/LibXML/parserInternals.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/README
+END
+pattern.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/pattern.c
+END
+acconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/acconfig.h
+END
+DOCBparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/DOCBparser.c
+END
+xpath.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/xpath.c
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/acinclude.m4
+END
+xlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/xlink.c
+END
+genUnicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/588/trunk/Externals/LibXML/genUnicode.py
+END
+xmlIO.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlIO.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/Makefile.am
+END
+testOOM.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/588/trunk/Externals/LibXML/testOOM.c
+END
+nanohttp.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/nanohttp.c
+END
+xmlwriter.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlwriter.c
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/588/trunk/Externals/LibXML/install-sh
+END
+triodef.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/triodef.h
+END
+libxml.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/libxml.spec.in
+END
+nanoftp.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/nanoftp.c
+END
+testC14N.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/testC14N.c
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/depcomp
+END
+debugXML.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/debugXML.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/236/trunk/Externals/LibXML/config.h
+END
+xmlsave.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlsave.c
+END
+HTMLparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/HTMLparser.c
+END
+hash.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/hash.c
+END
+xml2Conf.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/xml2Conf.sh.in
+END
+Copyright
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/Copyright
+END
+xmlmemory.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlmemory.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/error.c
+END
+threads.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/threads.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/588/trunk/Externals/LibXML/NEWS
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/588/trunk/Externals/LibXML/.cvsignore
+END
+testURI.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/testURI.c
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/tree.c
+END
+xmlschemas.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmlschemas.c
+END
+dbgen.pl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/588/trunk/Externals/LibXML/dbgen.pl
+END
+regressions.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/regressions.py
+END
+chvalid.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/chvalid.c
+END
+testAutomata.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/236/trunk/Externals/LibXML/testAutomata.c
+END
+check-xsddata-test-suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/588/trunk/Externals/LibXML/check-xsddata-test-suite.py
+END
+trio.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/trio.c
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/config.h.in
+END
+testOOMlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/testOOMlib.c
+END
+trio.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/trio.h
+END
+testOOMlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/testOOMlib.h
+END
+global.data
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/global.data
+END
+MAINTAINERS
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/MAINTAINERS
+END
+parser.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/236/trunk/Externals/LibXML/parser.c
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/configure
+END
+triostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/triostr.c
+END
+xpointer.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/xpointer.c
+END
+triostr.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/triostr.h
+END
+gentest.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/588/trunk/Externals/LibXML/gentest.py
+END
+libxml.m4
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/588/trunk/Externals/LibXML/libxml.m4
+END
+TODO_SCHEMAS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/TODO_SCHEMAS
+END
+libxml-2.0-uninstalled.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/libxml-2.0-uninstalled.pc.in
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/700/trunk/Externals/LibXML/autogen.sh
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/781/trunk/Externals/LibXML/CMakeLists.txt
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/588/trunk/Externals/LibXML/mkinstalldirs
+END
+valid.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/valid.c
+END
+check-xinclude-test-suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/check-xinclude-test-suite.py
+END
+triop.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/236/trunk/Externals/LibXML/triop.h
+END
+c14n.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/236/trunk/Externals/LibXML/c14n.c
+END
+xinclude.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/xinclude.c
+END
+runsuite.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/236/trunk/Externals/LibXML/runsuite.c
+END
+README.cvs-commits
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/README.cvs-commits
+END
+regressions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/588/trunk/Externals/LibXML/regressions.xml
+END
+globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/globals.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/588/trunk/Externals/LibXML/TODO
+END
+testModule.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/testModule.c
+END
+xmllint.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/xmllint.c
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/588/trunk/Externals/LibXML/missing
+END
+testRegexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/Externals/LibXML/testRegexp.c
+END
+testSAX.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/236/trunk/Externals/LibXML/testSAX.c
+END

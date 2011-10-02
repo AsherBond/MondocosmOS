@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/788/trunk/common/libftoa
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/678/trunk/common/libftoa/SConscript
+END
+libftoa.sln
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/739/trunk/common/libftoa/libftoa.sln
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/781/trunk/common/libftoa/CMakeLists.txt
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src
+END
+XMLTestPrefix.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src/XMLTestPrefix.h
+END
+XMLTestPrefix2.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src/XMLTestPrefix2.h
+END
+macos_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src/macos_main.c
+END
+libxml2_GUSIConfig.cp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src/libxml2_GUSIConfig.cp
+END
+config-mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/macos/src/config-mac.h
+END

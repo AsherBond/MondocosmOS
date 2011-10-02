@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 20
+*.ncb
+*.suo
+bin
+lib
+
+END

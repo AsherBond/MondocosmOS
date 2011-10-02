@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/809/trunk/Externals/pcre/include
+END
+pcre.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/809/trunk/Externals/pcre/include/pcre.h
+END
+config_win.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/558/trunk/Externals/pcre/include/config_win.h
+END
+config_linux.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/626/trunk/Externals/pcre/include/config_linux.h
+END
+config_mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/564/trunk/Externals/pcre/include/config_mac.h
+END
+pcre_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/809/trunk/Externals/pcre/include/pcre_internal.h
+END
+ucp.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/809/trunk/Externals/pcre/include/ucp.h
+END

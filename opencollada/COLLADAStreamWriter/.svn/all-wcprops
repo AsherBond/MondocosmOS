@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/839/trunk/COLLADAStreamWriter
+END
+BUILD
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/95/trunk/COLLADAStreamWriter/BUILD
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/93/trunk/COLLADAStreamWriter/BUGS
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/93/trunk/COLLADAStreamWriter/LICENSE
+END
+COLLADAStreamWriter.sln
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/682/trunk/COLLADAStreamWriter/COLLADAStreamWriter.sln
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/COLLADAStreamWriter/AUTHORS
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/COLLADAStreamWriter/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/93/trunk/COLLADAStreamWriter/INSTALL
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/679/trunk/COLLADAStreamWriter/SConscript
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/6/trunk/COLLADAStreamWriter/COPYING
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/93/trunk/COLLADAStreamWriter/README
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/781/trunk/COLLADAStreamWriter/CMakeLists.txt
+END

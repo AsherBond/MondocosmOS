@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/832/trunk/COLLADAMaya/src
+END
+COLLADAMayaShaderHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/649/trunk/COLLADAMaya/src/COLLADAMayaShaderHelper.cpp
+END
+COLLADAMayaSceneElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/649/trunk/COLLADAMaya/src/COLLADAMayaSceneElement.cpp
+END
+COLLADAMayaAnimationExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaAnimationExporter.cpp
+END
+COLLADAMayaAnimationKeys.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/764/trunk/COLLADAMaya/src/COLLADAMayaAnimationKeys.cpp
+END
+COLLADAMayaImageExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaImageExporter.cpp
+END
+COLLADAMayaControllerExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/828/trunk/COLLADAMaya/src/COLLADAMayaControllerExporter.cpp
+END
+COLLADAMayaSceneGraph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaSceneGraph.cpp
+END
+COLLADAMayaAnimationClipExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaAnimationClipExporter.cpp
+END
+COLLADAMayaGeometryExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/817/trunk/COLLADAMaya/src/COLLADAMayaGeometryExporter.cpp
+END
+COLLADAMayaImportOptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/trunk/COLLADAMaya/src/COLLADAMayaImportOptions.cpp
+END
+COLLADAMayaMaterialExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/824/trunk/COLLADAMaya/src/COLLADAMayaMaterialExporter.cpp
+END
+COLLADAMayaAnimationElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaAnimationElement.cpp
+END
+COLLADAMayaReferenceManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaReferenceManager.cpp
+END
+COLLADAMayaSetHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/649/trunk/COLLADAMaya/src/COLLADAMayaSetHelper.cpp
+END
+COLLADAMayaGeometryPolygonExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/832/trunk/COLLADAMaya/src/COLLADAMayaGeometryPolygonExporter.cpp
+END
+COLLADAMayaHwShaderExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/828/trunk/COLLADAMaya/src/COLLADAMayaHwShaderExporter.cpp
+END
+COLLADAMayaPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaPrecompiledHeaders.cpp
+END
+COLLADAMayaAnimationTools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaAnimationTools.cpp
+END
+COLLADAMayaCgfxShaderIncludes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/649/trunk/COLLADAMaya/src/COLLADAMayaCgfxShaderIncludes.cpp
+END
+COLLADAMayaEffectTextureExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/664/trunk/COLLADAMaya/src/COLLADAMayaEffectTextureExporter.cpp
+END
+COLLADAMayaAnimationCurves.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaAnimationCurves.cpp
+END
+COLLADAMayaDocumentExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/766/trunk/COLLADAMaya/src/COLLADAMayaDocumentExporter.cpp
+END
+COLLADAMayaConsoleMain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaConsoleMain.cpp
+END
+COLLADAMayaVisualSceneExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/664/trunk/COLLADAMaya/src/COLLADAMayaVisualSceneExporter.cpp
+END
+COLLADAMayaAnimationHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaAnimationHelper.cpp
+END
+COLLADAMayaSourceInput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaSourceInput.cpp
+END
+COLLADAMayaCameraExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/664/trunk/COLLADAMaya/src/COLLADAMayaCameraExporter.cpp
+END
+COLLADAMayaEffectExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/828/trunk/COLLADAMaya/src/COLLADAMayaEffectExporter.cpp
+END
+COLLADAMayaFileTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaFileTranslator.cpp
+END
+COLLADAMayaDagHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/828/trunk/COLLADAMaya/src/COLLADAMayaDagHelper.cpp
+END
+COLLADAMayaExportOptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/COLLADAMaya/src/COLLADAMayaExportOptions.cpp
+END
+COLLADAMayaRotateHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/497/trunk/COLLADAMaya/src/COLLADAMayaRotateHelper.cpp
+END
+COLLADAMayaLightExporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/COLLADAMaya/src/COLLADAMayaLightExporter.cpp
+END
+COLLADAMayaAnimationSampleCache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/827/trunk/COLLADAMaya/src/COLLADAMayaAnimationSampleCache.cpp
+END

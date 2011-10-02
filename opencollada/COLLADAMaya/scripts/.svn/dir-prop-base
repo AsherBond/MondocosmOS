@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 77
+*.user
+COLLADAMaya.pdb
+OpenMayaErrorLog.txt
+$(MAYA_LOCATION)
+release_log.txt
+
+END

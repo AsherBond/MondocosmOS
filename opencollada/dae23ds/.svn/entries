@@ -1,0 +1,86 @@
+10
+
+dir
+847
+http://opencollada.googlecode.com/svn/trunk/dae23ds
+http://opencollada.googlecode.com/svn
+
+
+
+2011-08-04T12:17:30.684031Z
+841
+opencollada2@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+ec7ac696-a6cd-11de-b195-ab392a2a73f5
+
+dae23ds.sln
+file
+
+
+
+
+2011-10-02T13:46:19.670425Z
+9c6e9d032f5ff97635feba818355baa7
+2011-08-04T12:17:30.684031Z
+841
+opencollada2@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36493
+
+include
+dir
+
+runtime
+dir
+
+doc
+dir
+
+src
+dir
+
+scripts
+dir
+
+bin
+dir
+
+obj
+dir
+
+template
+dir
+

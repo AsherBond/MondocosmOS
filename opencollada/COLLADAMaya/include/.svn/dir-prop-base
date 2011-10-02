@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 85
+vld.h
+vldapi.h
+COLLADAMaya.h
+COLLADAMayaConsoleFileDialog.h
+COLLADAMayaVersionInfo.h
+
+END

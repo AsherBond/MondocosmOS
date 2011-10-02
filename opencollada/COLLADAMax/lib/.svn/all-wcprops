@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/552/trunk/COLLADAMax/lib
+END
+morpher_x64.lib
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/552/trunk/COLLADAMax/lib/morpher_x64.lib
+END
+morpher_x86.lib
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/552/trunk/COLLADAMax/lib/morpher_x86.lib
+END
+morpher_x64.def
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/552/trunk/COLLADAMax/lib/morpher_x64.def
+END
+morpher_x86.def
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/552/trunk/COLLADAMax/lib/morpher_x86.def
+END

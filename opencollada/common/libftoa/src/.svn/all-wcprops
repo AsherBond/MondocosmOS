@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/788/trunk/common/libftoa/src
+END
+Commondtoa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/788/trunk/common/libftoa/src/Commondtoa.cpp
+END
+Commonftoa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/788/trunk/common/libftoa/src/Commonftoa.cpp
+END
+Commonitoa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/678/trunk/common/libftoa/src/Commonitoa.cpp
+END
+itoaUnitTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/650/trunk/common/libftoa/src/itoaUnitTest.cpp
+END

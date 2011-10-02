@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/588/trunk/Externals/LibXML/python
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/TODO
+END
+types.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/types.c
+END
+libxml_wrap.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/libxml_wrap.h
+END
+libxml.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/libxml.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/Makefile.am
+END
+drv_libxml2.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/drv_libxml2.py
+END
+setup.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/setup.py.in
+END
+libxml2class.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/libxml2class.txt
+END
+generator.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/generator.py
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/.cvsignore
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/README
+END
+libxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/libxml.py
+END
+libxml2-python-api.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/libxml2-python-api.xml
+END

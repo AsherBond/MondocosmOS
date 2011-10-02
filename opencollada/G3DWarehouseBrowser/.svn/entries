@@ -1,0 +1,80 @@
+10
+
+dir
+847
+http://opencollada.googlecode.com/svn/trunk/G3DWarehouseBrowser
+http://opencollada.googlecode.com/svn
+
+
+
+2011-08-08T10:09:10.802798Z
+842
+opencollada2@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ec7ac696-a6cd-11de-b195-ab392a2a73f5
+
+G3DWarehouseBrowser.sln
+file
+
+
+
+
+2011-10-02T13:46:20.226427Z
+556b32696f717b6b9477fe649ff33503
+2009-11-06T15:42:27.839717Z
+646
+robert@opencollada.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1264
+
+include
+dir
+
+doc
+dir
+
+lib
+dir
+
+src
+dir
+
+scripts
+dir
+
+obj
+dir
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32
+END
+Makefile.bcb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/Makefile.bcb
+END
+Makefile.msvc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/Makefile.msvc
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/Readme.txt
+END
+libxml2.def.src
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/libxml2.def.src
+END
+configure.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/configure.js
+END
+defgen.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/defgen.xsl
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/.cvsignore
+END
+Makefile.mingw
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/win32/Makefile.mingw
+END

@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests
+END
+reader6.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader6.py
+END
+reader8.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader8.py
+END
+tstURI.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tstURI.py
+END
+validDTD.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/validDTD.py
+END
+pushSAX.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/pushSAX.py
+END
+ctxterror.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/ctxterror.py
+END
+invalid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/invalid.xml
+END
+build.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/build.py
+END
+indexes.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/indexes.py
+END
+xpathret.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/xpathret.py
+END
+resolver.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/resolver.py
+END
+readernext.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/readernext.py
+END
+test.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/test.dtd
+END
+validSchemas.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/validSchemas.py
+END
+inbuf.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/inbuf.py
+END
+outbuf.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/outbuf.py
+END
+cutnpaste.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/cutnpaste.py
+END
+tstmem.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tstmem.py
+END
+sync.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/sync.py
+END
+tstxpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tstxpath.py
+END
+tst.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tst.xml
+END
+xpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/xpath.py
+END
+reader3.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader3.py
+END
+xpathns.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/xpathns.py
+END
+walker.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/walker.py
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/.cvsignore
+END
+serialize.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/serialize.py
+END
+reader5.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader5.py
+END
+thread2.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/thread2.py
+END
+reader7.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader7.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/error.py
+END
+validate.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/validate.py
+END
+regexp.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/regexp.py
+END
+dtdvalid.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/dtdvalid.py
+END
+schema.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/schema.py
+END
+relaxng.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/relaxng.py
+END
+reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader.py
+END
+xpathext.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/xpathext.py
+END
+nsdel.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/nsdel.py
+END
+validRNG.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/validRNG.py
+END
+valid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/valid.xml
+END
+attribs.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/attribs.py
+END
+tstLastError.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tstLastError.py
+END
+tst.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/tst.py
+END
+readererr.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/readererr.py
+END
+compareNodes.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/compareNodes.py
+END
+push.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/push.py
+END
+pushSAXhtml.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/pushSAXhtml.py
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/Makefile.am
+END
+reader2.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader2.py
+END
+reader4.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/588/trunk/Externals/LibXML/python/tests/reader4.py
+END

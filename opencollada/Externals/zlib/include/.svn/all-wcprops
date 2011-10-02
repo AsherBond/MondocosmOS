@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/644/trunk/Externals/zlib/include
+END
+inffast.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/644/trunk/Externals/zlib/include/inffast.h
+END
+inffixed.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/644/trunk/Externals/zlib/include/inffixed.h
+END
+crc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/include/crc32.h
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/include/zconf.h
+END
+inftrees.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/644/trunk/Externals/zlib/include/inftrees.h
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/644/trunk/Externals/zlib/include/zlib.h
+END
+trees.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/include/trees.h
+END
+inflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/644/trunk/Externals/zlib/include/inflate.h
+END
+deflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/644/trunk/Externals/zlib/include/deflate.h
+END
+zconf.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/644/trunk/Externals/zlib/include/zconf.in.h
+END
+zutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/644/trunk/Externals/zlib/include/zutil.h
+END

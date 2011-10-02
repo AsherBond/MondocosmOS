@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/832/trunk/COLLADAMaya
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/649/trunk/COLLADAMaya/LICENSE.TXT
+END
+INSTALL_WIN.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/649/trunk/COLLADAMaya/INSTALL_WIN.TXT
+END
+generateVersionHeader.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/464/trunk/COLLADAMaya/generateVersionHeader.sh
+END
+COLLADAMaya.sln
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/817/trunk/COLLADAMaya/COLLADAMaya.sln
+END
+TODO.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/649/trunk/COLLADAMaya/TODO.TXT
+END
+INSTALL_LINUX.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/649/trunk/COLLADAMaya/INSTALL_LINUX.TXT
+END
+AUTHORS.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/143/trunk/COLLADAMaya/AUTHORS.TXT
+END
+INSTALL_MAC.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/649/trunk/COLLADAMaya/INSTALL_MAC.TXT
+END
+BUILD_WIN.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/649/trunk/COLLADAMaya/BUILD_WIN.TXT
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/184/trunk/COLLADAMaya/README.TXT
+END
+FEATURES.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/172/trunk/COLLADAMaya/FEATURES.TXT
+END
+BUILD_MAC.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/649/trunk/COLLADAMaya/BUILD_MAC.TXT
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/453/trunk/COLLADAMaya/Makefile
+END
+BUGS.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/649/trunk/COLLADAMaya/BUGS.TXT
+END

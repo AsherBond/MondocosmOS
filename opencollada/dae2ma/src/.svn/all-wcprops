@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/831/trunk/dae2ma/src
+END
+DAE2MANode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MANode.cpp
+END
+DAE2MAMorphAnimation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAMorphAnimation.cpp
+END
+DAE2MAImportOptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAImportOptions.cpp
+END
+DAE2MAGeometryBinding.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAGeometryBinding.cpp
+END
+DAE2MAExtraDataCallbackHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAExtraDataCallbackHandler.cpp
+END
+DAE2MALightImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MALightImporter.cpp
+END
+DAE2MABaseImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MABaseImporter.cpp
+END
+DAE2MAEffectAnimation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAEffectAnimation.cpp
+END
+DAE2MAPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAPrecompiledHeaders.cpp
+END
+DAE2MADocumentImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/831/trunk/dae2ma/src/DAE2MADocumentImporter.cpp
+END
+DAE2MAAnimationImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAAnimationImporter.cpp
+END
+DAE2MAVisualSceneImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAVisualSceneImporter.cpp
+END
+DAE2MASaxErrorHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MASaxErrorHandler.cpp
+END
+DAE2MAImageImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAImageImporter.cpp
+END
+DAE2MAControllerImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAControllerImporter.cpp
+END
+DAE2MAConsoleMain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/675/trunk/dae2ma/src/DAE2MAConsoleMain.cpp
+END
+DAE2MANodeImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MANodeImporter.cpp
+END
+DAE2MAShadingBinding.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MAShadingBinding.cpp
+END
+DAE2MACameraImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MACameraImporter.cpp
+END
+DAE2MABaseAnimation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MABaseAnimation.cpp
+END
+DAE2MATransformAnimation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/663/trunk/dae2ma/src/DAE2MATransformAnimation.cpp
+END
+DAE2MAGeometryImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/828/trunk/dae2ma/src/DAE2MAGeometryImporter.cpp
+END
+DAE2MAEffectImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/689/trunk/dae2ma/src/DAE2MAEffectImporter.cpp
+END
+DAE2MAMaterialImporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/694/trunk/dae2ma/src/DAE2MAMaterialImporter.cpp
+END

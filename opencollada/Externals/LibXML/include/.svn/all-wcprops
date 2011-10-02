@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/588/trunk/Externals/LibXML/include
+END
+wsockcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/wsockcompat.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/Makefile.am
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/588/trunk/Externals/LibXML/include/.cvsignore
+END
+win32config.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/236/trunk/Externals/LibXML/include/win32config.h
+END

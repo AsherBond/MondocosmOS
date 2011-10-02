@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/839/trunk/Externals/expat
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/553/trunk/Externals/expat/configure
+END
+expat_config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/553/trunk/Externals/expat/expat_config.h.in
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/553/trunk/Externals/expat/Makefile.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/553/trunk/Externals/expat/configure.in
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/553/trunk/Externals/expat/MANIFEST
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/813/trunk/Externals/expat/SConscript
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/553/trunk/Externals/expat/Changes
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/553/trunk/Externals/expat/COPYING
+END
+expat.sln
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/553/trunk/Externals/expat/expat.sln
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/553/trunk/Externals/expat/README
+END
