@@ -1,0 +1,20 @@
+K 10
+svn:ignore
+V 172
+configure
+Makefile
+Makefile.in
+config.h
+config.log
+config.status
+aclocal.m4
+.*.swp
+stamp-h1
+autom4te.cache
+mm3d-*.tar.gz
+mm3d*win32-installer.exe
+mm3d.exe
+imageformats
+dll
+
+END

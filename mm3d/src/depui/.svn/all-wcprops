@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/misfitcode/!svn/ver/438/mm3d/trunk/src/depui
+END
+textureframe.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/depui/textureframe.cc
+END
+textureframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/depui/textureframe.h
+END
+modelviewport.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/438/mm3d/trunk/src/depui/modelviewport.cc
+END
+modelviewport.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/419/mm3d/trunk/src/depui/modelviewport.h
+END
+errorobj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/depui/errorobj.cc
+END
+texwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/391/mm3d/trunk/src/depui/texwidget.cc
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/depui/Makefile.am
+END
+errorobj.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/depui/errorobj.h
+END
+texwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/391/mm3d/trunk/src/depui/texwidget.h
+END

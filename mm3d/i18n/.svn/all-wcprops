@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n
+END
+qt_ru.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_ru.ts
+END
+qt_de.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_de.ts
+END
+mm3d_ref.ts
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n/mm3d_ref.ts
+END
+mm3d_sk.ts
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n/mm3d_sk.ts
+END
+qt_zh_CN.ts
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_zh_CN.ts
+END
+qt_ar.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_ar.ts
+END
+qt_untranslated.ts
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_untranslated.ts
+END
+mm3d_de.ts
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n/mm3d_de.ts
+END
+qt_cs.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_cs.ts
+END
+qt_fr.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_fr.ts
+END
+mm3d_bork.ts
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n/mm3d_bork.ts
+END
+qt_sk.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_sk.ts
+END
+qt_iw.ts
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/i18n/qt_iw.ts
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misfitcode/!svn/ver/433/mm3d/trunk/i18n/Makefile.am
+END
+mm3d_fr.ts
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/438/mm3d/trunk/i18n/mm3d_fr.ts
+END

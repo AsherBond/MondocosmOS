@@ -1,0 +1,455 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools
+END
+selectfacetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectfacetool.cc
+END
+rotatetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rotatetool.h
+END
+selectfacetoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectfacetoolwidget.cc
+END
+bgscaletool.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/bgscaletool.h
+END
+sheartool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/sheartool.cc
+END
+rotatetoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rotatetoolwidget.h
+END
+movetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/movetool.h
+END
+selectprojtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectprojtool.h
+END
+projtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/projtool.h
+END
+cylindertoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cylindertoolwidget.cc
+END
+bgmovetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/bgmovetool.cc
+END
+cylindertoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cylindertoolwidget.h
+END
+projtoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/projtoolwidget.h
+END
+extrudetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/extrudetool.cc
+END
+selectbonetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectbonetool.h
+END
+scaletool.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/scaletool.h
+END
+scaletoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/scaletoolwidget.cc
+END
+selectgrouptool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectgrouptool.cc
+END
+atrneartool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/atrneartool.cc
+END
+ellipsetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/ellipsetool.cc
+END
+rotatetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rotatetool.cc
+END
+ellipsetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/ellipsetool.h
+END
+rotatetoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rotatetoolwidget.cc
+END
+rectangletool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rectangletool.cc
+END
+movetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/movetool.cc
+END
+selectprojtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectprojtool.cc
+END
+projtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/projtool.cc
+END
+dragvertextool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/dragvertextool.h
+END
+projtoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/projtoolwidget.cc
+END
+cubetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cubetool.h
+END
+atrfartool.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/atrfartool.h
+END
+extrudetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/extrudetool.h
+END
+jointtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/jointtool.cc
+END
+toolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/toolwidget.cc
+END
+cubetoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cubetoolwidget.h
+END
+polytool.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/polytool.h
+END
+polytoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/polytoolwidget.cc
+END
+selectgrouptool.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectgrouptool.h
+END
+atrneartool.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/atrneartool.h
+END
+selectconnectedtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectconnectedtool.h
+END
+rectangletool.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/rectangletool.h
+END
+cylindertool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cylindertool.cc
+END
+cylindertool.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cylindertool.h
+END
+torustool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/torustool.cc
+END
+cubetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cubetool.cc
+END
+torustoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/torustoolwidget.cc
+END
+bgmovetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/bgmovetool.h
+END
+cubetoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/cubetoolwidget.cc
+END
+selectbonetool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectbonetool.cc
+END
+scaletool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/scaletool.cc
+END
+scaletoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/scaletoolwidget.h
+END
+selectfacetool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectfacetool.h
+END
+bgscaletool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/bgscaletool.cc
+END
+ellipsetoolwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/ellipsetoolwidget.cc
+END
+selectconnectedtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectconnectedtool.cc
+END
+ellipsetoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/ellipsetoolwidget.h
+END
+selectfacetoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectfacetoolwidget.h
+END
+sheartool.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/sheartool.h
+END
+dragvertextool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/dragvertextool.cc
+END
+selectvertextool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectvertextool.cc
+END
+vertextool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/vertextool.cc
+END
+torustool.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/torustool.h
+END
+atrfartool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/atrfartool.cc
+END
+selectvertextool.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectvertextool.h
+END
+vertextool.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/vertextool.h
+END
+torustoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/torustoolwidget.h
+END
+polytool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/polytool.cc
+END
+jointtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/jointtool.h
+END
+toolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/toolwidget.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/Makefile.am
+END
+selectpointtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectpointtool.cc
+END
+polytoolwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/polytoolwidget.h
+END
+pointtool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/pointtool.cc
+END
+selectpointtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/selectpointtool.h
+END
+pointtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tools/pointtool.h
+END

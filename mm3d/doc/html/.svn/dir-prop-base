@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 86
+Makefile
+Makefile.in
+.*.swp
+*.o
+*.a
+*.qm
+*.moc.*
+*.base.*
+.deps
+.svnignore
+olh_*.html
+
+END

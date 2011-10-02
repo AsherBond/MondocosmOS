@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data
+END
+intfile192k
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/intfile192k
+END
+test_rgb_comp.tga
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgb_comp.tga
+END
+test_rgba_comp.tga
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgba_comp.tga
+END
+test_rgb_uncomp.tga
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgb_uncomp.tga
+END
+intfile0k
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/intfile0k
+END
+model_equal_test.mm3d
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/model_equal_test.mm3d
+END
+test_rgb_300.tga
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgb_300.tga
+END
+test_rgba_200.tga
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgba_200.tga
+END
+test_rgba_uncomp.tga
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/test_rgba_uncomp.tga
+END
+model_hidden_test.mm3d
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/libmm3d/data/model_hidden_test.mm3d
+END

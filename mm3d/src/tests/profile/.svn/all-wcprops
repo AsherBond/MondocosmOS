@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile
+END
+calc_normals.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile/calc_normals.cc
+END
+load_md3.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile/load_md3.cc
+END
+calc_fnormals.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile/calc_fnormals.cc
+END
+group_triangles.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile/group_triangles.cc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/tests/profile/Makefile
+END

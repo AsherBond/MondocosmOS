@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/misfitcode/!svn/ver/439/mm3d/trunk/src
+END
+stdtools.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdtools.cc
+END
+stdtools.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdtools.h
+END
+stdcmds.cc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdcmds.cc
+END
+maketags.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/344/mm3d/trunk/src/maketags.sh
+END
+stdcmds.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdcmds.h
+END
+stdfilters.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdfilters.cc
+END
+3dm.cc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/344/mm3d/trunk/src/3dm.cc
+END
+stdtexfilters.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdtexfilters.cc
+END
+stdfilters.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdfilters.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misfitcode/!svn/ver/344/mm3d/trunk/src/Makefile.am
+END
+stdtexfilters.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/stdtexfilters.h
+END
+icon.rc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/344/mm3d/trunk/src/icon.rc
+END

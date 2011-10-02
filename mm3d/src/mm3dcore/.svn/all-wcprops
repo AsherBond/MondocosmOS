@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/428/mm3d/trunk/src/mm3dcore
+END
+align.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/align.h
+END
+luaif.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/luaif.cc
+END
+texturetest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/428/mm3d/trunk/src/mm3dcore/texturetest.cc
+END
+pluginmgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/pluginmgr.cc
+END
+bounding.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/bounding.cc
+END
+luascript.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/428/mm3d/trunk/src/mm3dcore/luascript.cc
+END
+bounding.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/bounding.h
+END
+allocstats.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/allocstats.cc
+END
+cmdmgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/cmdmgr.cc
+END
+decal.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/decal.h
+END
+rotatepoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/rotatepoint.h
+END
+allocstats.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/allocstats.h
+END
+cmdline.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/377/mm3d/trunk/src/mm3dcore/cmdline.cc
+END
+cmdmgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/cmdmgr.h
+END
+contextpanelobserver.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/contextpanelobserver.cc
+END
+cmdline.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/cmdline.h
+END
+command.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/command.cc
+END
+decalmgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/decalmgr.h
+END
+sysconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/sysconf.h
+END
+prefparse.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/prefparse.cc
+END
+contextwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/contextwidget.cc
+END
+toolbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/toolbox.h
+END
+prefparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/prefparse.h
+END
+align.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/align.cc
+END
+luaif.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/luaif.h
+END
+texturetest.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/texturetest.h
+END
+suborigin.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/suborigin.h
+END
+pluginmgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/pluginmgr.h
+END
+luascript.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/luascript.h
+END
+decal.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/decal.cc
+END
+rotatepoint.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/rotatepoint.cc
+END
+menuconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/menuconf.h
+END
+tool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/tool.cc
+END
+decalmgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/decalmgr.cc
+END
+contextpanelobserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/contextpanelobserver.h
+END
+prefs.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/prefs.cc
+END
+tool.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/428/mm3d/trunk/src/mm3dcore/tool.h
+END
+command.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/377/mm3d/trunk/src/mm3dcore/command.h
+END
+prefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/prefs.h
+END
+toolpoly.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/toolpoly.cc
+END
+3dmprefs.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/3dmprefs.cc
+END
+scriptif.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/scriptif.cc
+END
+toolpoly.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/toolpoly.h
+END
+sysconf.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/377/mm3d/trunk/src/mm3dcore/sysconf.cc
+END
+3dmprefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/3dmprefs.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/Makefile.am
+END
+scriptif.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/scriptif.h
+END
+toolbox.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/toolbox.cc
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/394/mm3d/trunk/src/mm3dcore/version.h
+END
+pluginapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/pluginapi.h
+END
+contextwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/mm3dcore/contextwidget.h
+END

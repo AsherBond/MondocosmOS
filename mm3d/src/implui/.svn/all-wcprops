@@ -1,0 +1,665 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/438/mm3d/trunk/src/implui
+END
+msgqt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/msgqt.cc
+END
+backgroundwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/backgroundwin.cc
+END
+msgqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/msgqt.h
+END
+newanim.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/newanim.cc
+END
+jointwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/jointwin.cc
+END
+contextinfluences.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextinfluences.h
+END
+contextrotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextrotation.h
+END
+animexportwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animexportwin.h
+END
+pointwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/pointwin.cc
+END
+spherifywin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/spherifywin.cc
+END
+helpwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/helpwin.h
+END
+statusbar.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/377/mm3d/trunk/src/implui/statusbar.cc
+END
+pointwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/pointwin.h
+END
+spherifywin.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/spherifywin.h
+END
+alignwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/alignwin.h
+END
+boolwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/boolwin.h
+END
+mergewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/mergewin.cc
+END
+objprompt.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/objprompt.h
+END
+backgroundselect.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/backgroundselect.cc
+END
+paintwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/paintwidget.cc
+END
+texwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/texwin.h
+END
+backgroundselect.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/backgroundselect.h
+END
+paintwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/paintwidget.h
+END
+contextprojection.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextprojection.h
+END
+mview.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/mview.cc
+END
+mview.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/407/mm3d/trunk/src/implui/mview.h
+END
+rgbawin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/rgbawin.cc
+END
+transformwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/transformwin.cc
+END
+aboutwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/aboutwin.h
+END
+projectionwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/projectionwin.cc
+END
+valuewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/valuewin.cc
+END
+transimp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/transimp.cc
+END
+groupclean.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/429/mm3d/trunk/src/implui/groupclean.cc
+END
+contextinfluences.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/contextinfluences.cc
+END
+newanim.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/newanim.h
+END
+groupclean.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/429/mm3d/trunk/src/implui/groupclean.h
+END
+licensewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/licensewin.h
+END
+animwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animwin.cc
+END
+keyvaluewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/keyvaluewin.cc
+END
+animconvertwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animconvertwin.cc
+END
+contextgroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextgroup.h
+END
+contextrotation.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/contextrotation.cc
+END
+animexportwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/animexportwin.cc
+END
+keyvaluewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/keyvaluewin.h
+END
+animconvertwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animconvertwin.h
+END
+metawin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/metawin.h
+END
+contextpanel.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextpanel.h
+END
+qttex.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/qttex.h
+END
+alignwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/alignwin.cc
+END
+contextposition.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/contextposition.cc
+END
+painttexturewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/painttexturewin.cc
+END
+objprompt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/objprompt.cc
+END
+mapdirection.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/mapdirection.cc
+END
+animsetwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animsetwin.cc
+END
+pluginwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/pluginwin.h
+END
+contextname.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextname.cc
+END
+aboutwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/361/mm3d/trunk/src/implui/aboutwin.cc
+END
+animwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animwidget.h
+END
+viewpanel.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/414/mm3d/trunk/src/implui/viewpanel.cc
+END
+viewwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/429/mm3d/trunk/src/implui/viewwin.h
+END
+qtmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/qtmain.h
+END
+projectionwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/projectionwin.h
+END
+valuewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/valuewin.h
+END
+extrudewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/extrudewin.cc
+END
+autoassignjointwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/autoassignjointwin.cc
+END
+backgroundwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/backgroundwin.h
+END
+licensewin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/licensewin.cc
+END
+autoassignjointwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/autoassignjointwin.h
+END
+viewportsettings.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/viewportsettings.h
+END
+jointwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/jointwin.h
+END
+viewwin_influences.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/viewwin_influences.cc
+END
+metawin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/metawin.cc
+END
+contextpanel.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextpanel.cc
+END
+animwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animwin.h
+END
+boolwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/boolwin.cc
+END
+keycfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/keycfg.h
+END
+groupwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/groupwin.cc
+END
+ms3dprompt.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/ms3dprompt.h
+END
+painttexturewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/painttexturewin.h
+END
+pluginwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/pluginwin.cc
+END
+mergewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/mergewin.h
+END
+mapdirection.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/mapdirection.h
+END
+animsetwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/animsetwin.h
+END
+contextprojection.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextprojection.cc
+END
+texturecoord.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/texturecoord.cc
+END
+animwidget.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/animwidget.cc
+END
+viewwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/429/mm3d/trunk/src/implui/viewwin.cc
+END
+texturecoord.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/391/mm3d/trunk/src/implui/texturecoord.h
+END
+cal3dprompt.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/cal3dprompt.h
+END
+rgbawin.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/rgbawin.h
+END
+transformwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/transformwin.h
+END
+viewpanel.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/viewpanel.h
+END
+transimp.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/transimp.h
+END
+extrudewin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/extrudewin.h
+END
+viewportsettings.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/438/mm3d/trunk/src/implui/viewportsettings.cc
+END
+contextgroup.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextgroup.cc
+END
+qttex.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/428/mm3d/trunk/src/implui/qttex.cc
+END
+helpwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/helpwin.cc
+END
+ms3dprompt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/ms3dprompt.cc
+END
+keycfg.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/428/mm3d/trunk/src/implui/keycfg.cc
+END
+statusbar.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/statusbar.h
+END
+contextposition.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextposition.h
+END
+boolpanel.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/boolpanel.cc
+END
+groupwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/groupwin.h
+END
+boolpanel.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/boolpanel.h
+END
+texwin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/424/mm3d/trunk/src/implui/texwin.cc
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/429/mm3d/trunk/src/implui/Makefile.am
+END
+contextname.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/contextname.h
+END
+cal3dprompt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/cal3dprompt.cc
+END
+qtmain.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/implui/qtmain.cc
+END

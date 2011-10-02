@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 83
+Makefile
+Makefile.in
+*.o
+*.a
+*.qm
+*.gcno
+*.gcda
+*.moc.*
+*.base.*
+.deps
+.*.swp
+tags
+
+END

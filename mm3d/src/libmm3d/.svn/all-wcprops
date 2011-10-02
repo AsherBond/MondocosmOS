@@ -1,0 +1,719 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/439/mm3d/trunk/src/libmm3d
+END
+misc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/428/mm3d/trunk/src/libmm3d/misc.cc
+END
+md3filter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/410/mm3d/trunk/src/libmm3d/md3filter.h
+END
+datadest.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/datadest.h
+END
+misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/misc.h
+END
+sorted_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/sorted_list.h
+END
+modelutil.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/modelutil.cc
+END
+model.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/415/mm3d/trunk/src/libmm3d/model.cc
+END
+mm3dfilter_ref.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dfilter_ref.h
+END
+drawcontext.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/426/mm3d/trunk/src/libmm3d/drawcontext.h
+END
+mm3dfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dfilter.cc
+END
+bsptree.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/388/mm3d/trunk/src/libmm3d/bsptree.h
+END
+model_meta.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_meta.cc
+END
+mm3dport.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/428/mm3d/trunk/src/libmm3d/mm3dport.h
+END
+filefactory.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filefactory.cc
+END
+modelfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/377/mm3d/trunk/src/libmm3d/modelfilter.h
+END
+filefactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filefactory.h
+END
+rawtex.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/rawtex.cc
+END
+texscale.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/texscale.h
+END
+cobfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/cobfilter.h
+END
+pcxtex.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/pcxtex.cc
+END
+undomgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/undomgr.cc
+END
+pcxtex.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/pcxtex.h
+END
+undomgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/undomgr.h
+END
+mlocale.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mlocale.h
+END
+glmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/glmath.h
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/util.h
+END
+objfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/417/mm3d/trunk/src/libmm3d/objfilter.cc
+END
+mm3dtypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dtypes.h
+END
+txtfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/txtfilter.h
+END
+md2filter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/385/mm3d/trunk/src/libmm3d/md2filter.cc
+END
+filedatasource.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filedatasource.cc
+END
+local_array.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/local_array.h
+END
+filedatadest.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filedatadest.h
+END
+model_inner.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_inner.cc
+END
+datasource.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/datasource.h
+END
+mm3dreg.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dreg.cc
+END
+tgatex.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/tgatex.h
+END
+model_select.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/391/mm3d/trunk/src/libmm3d/model_select.cc
+END
+translate.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/377/mm3d/trunk/src/libmm3d/translate.h
+END
+modelutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/modelutil.h
+END
+model_anim.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_anim.cc
+END
+bsptree.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/426/mm3d/trunk/src/libmm3d/bsptree.cc
+END
+undo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/undo.cc
+END
+modelstatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/modelstatus.h
+END
+texmgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/349/mm3d/trunk/src/libmm3d/texmgr.cc
+END
+release_ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/release_ptr.h
+END
+mm3dfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dfilter.h
+END
+binutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/binutil.h
+END
+texscale.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/texscale.cc
+END
+model_bool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/378/mm3d/trunk/src/libmm3d/model_bool.cc
+END
+mlocale.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mlocale.cc
+END
+glmath.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/glmath.cc
+END
+rawtex.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/rawtex.h
+END
+model_draw.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/426/mm3d/trunk/src/libmm3d/model_draw.cc
+END
+ms3dfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/ms3dfilter.h
+END
+model_texture.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/439/mm3d/trunk/src/libmm3d/model_texture.cc
+END
+log.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/log.cc
+END
+cmdlinemgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/cmdlinemgr.cc
+END
+local_ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/local_ptr.h
+END
+file_closer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/file_closer.h
+END
+model_influence.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_influence.cc
+END
+md3filter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/422/mm3d/trunk/src/libmm3d/md3filter.cc
+END
+datadest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/datadest.cc
+END
+memdatasource.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/memdatasource.h
+END
+filedatasource.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filedatasource.h
+END
+tgatex.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/tgatex.cc
+END
+mesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mesh.h
+END
+cal3dfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/cal3dfilter.h
+END
+mm3dreg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dreg.h
+END
+texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/377/mm3d/trunk/src/libmm3d/texture.h
+END
+modelstatus.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/modelstatus.cc
+END
+mm3dport.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/428/mm3d/trunk/src/libmm3d/mm3dport.cc
+END
+texmgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misfitcode/!svn/ver/349/mm3d/trunk/src/libmm3d/texmgr.h
+END
+cobfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/cobfilter.cc
+END
+model_group.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/429/mm3d/trunk/src/libmm3d/model_group.cc
+END
+ms3dfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/390/mm3d/trunk/src/libmm3d/ms3dfilter.cc
+END
+model_insert.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/416/mm3d/trunk/src/libmm3d/model_insert.cc
+END
+txtfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/txtfilter.cc
+END
+modelundo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/391/mm3d/trunk/src/libmm3d/modelundo.cc
+END
+msg.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/msg.cc
+END
+raii.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/raii.h
+END
+triprim.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/triprim.cc
+END
+filedatadest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filedatadest.cc
+END
+memdatadest.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/memdatadest.h
+END
+model_copy.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/425/mm3d/trunk/src/libmm3d/model_copy.cc
+END
+model_proj.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_proj.cc
+END
+filtermgr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filtermgr.cc
+END
+weld.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/weld.cc
+END
+mesh.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/390/mm3d/trunk/src/libmm3d/mesh.cc
+END
+cal3dfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/378/mm3d/trunk/src/libmm3d/cal3dfilter.cc
+END
+filtermgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/filtermgr.h
+END
+translate.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/translate.cc
+END
+weld.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/weld.h
+END
+glheaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/glheaders.h
+END
+texture.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/texture.cc
+END
+model.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/misfitcode/!svn/ver/429/mm3d/trunk/src/libmm3d/model.h
+END
+mm3dfilter_ref.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/378/mm3d/trunk/src/libmm3d/mm3dfilter_ref.cc
+END
+modelfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/modelfilter.cc
+END
+lwofilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/lwofilter.cc
+END
+undo.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/undo.h
+END
+lwofilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/lwofilter.h
+END
+model_print.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/model_print.cc
+END
+model_ops.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/430/mm3d/trunk/src/libmm3d/model_ops.cc
+END
+objfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/401/mm3d/trunk/src/libmm3d/objfilter.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misfitcode/!svn/ver/377/mm3d/trunk/src/libmm3d/log.h
+END
+cmdlinemgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/cmdlinemgr.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/384/mm3d/trunk/src/libmm3d/Makefile.am
+END
+endianconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/endianconfig.h
+END
+md2filter-anorms.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/md2filter-anorms.h
+END
+dxffilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/378/mm3d/trunk/src/libmm3d/dxffilter.cc
+END
+mm3dconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/mm3dconfig.h
+END
+memdatadest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/memdatadest.cc
+END
+modelundo.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/391/mm3d/trunk/src/libmm3d/modelundo.h
+END
+msg.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misfitcode/!svn/ver/377/mm3d/trunk/src/libmm3d/msg.h
+END
+triprim.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/triprim.h
+END
+memdatasource.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/memdatasource.cc
+END
+dxffilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/dxffilter.h
+END
+md2filter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/md2filter.h
+END
+datasource.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/libmm3d/datasource.cc
+END

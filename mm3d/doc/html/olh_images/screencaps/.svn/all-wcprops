@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps
+END
+example_bool_object_a.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_object_a.png
+END
+example_bool_object_b.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_object_b.png
+END
+example_dragvertex_after.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_dragvertex_after.png
+END
+viewport_persp_filled.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/viewport_persp_filled.png
+END
+example_dragvertex_before.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_dragvertex_before.png
+END
+example_edgeturn_after.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_edgeturn_after.png
+END
+viewport_ortho_filled.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/viewport_ortho_filled.png
+END
+example_edgeturn_before.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_edgeturn_before.png
+END
+example_bool_subtract.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_subtract.png
+END
+example_bool_union.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_union.png
+END
+example_faceout_after.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_faceout_after.png
+END
+example_faceout_before.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_faceout_before.png
+END
+example_bool_intersect.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_intersect.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/Makefile.am
+END
+example_simplify_after.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_simplify_after.png
+END
+example_bool_fuse.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_fuse.png
+END
+example_bool_before.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_bool_before.png
+END
+example_simplify_before.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/example_simplify_before.png
+END
+viewport_persp_wireframe.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/viewport_persp_wireframe.png
+END
+viewport_ortho_wireframe.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/misfitcode/!svn/ver/355/mm3d/trunk/doc/html/olh_images/screencaps/viewport_ortho_wireframe.png
+END

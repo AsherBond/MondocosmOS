@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands
+END
+edgedivcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/edgedivcmd.cc
+END
+hidecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/hidecmd.cc
+END
+edgedivcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/edgedivcmd.h
+END
+copycmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/copycmd.cc
+END
+hidecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/hidecmd.h
+END
+edgeturncmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/edgeturncmd.cc
+END
+pastecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/pastecmd.h
+END
+subdividecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/subdividecmd.cc
+END
+edgeturncmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/edgeturncmd.h
+END
+rotatetexcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/rotatetexcmd.cc
+END
+rotatetexcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/rotatetexcmd.h
+END
+extrudecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/extrudecmd.h
+END
+faceoutcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/faceoutcmd.h
+END
+dupcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/dupcmd.cc
+END
+aligncmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/aligncmd.cc
+END
+assignjointcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/assignjointcmd.h
+END
+flipcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/flipcmd.h
+END
+simplifycmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/simplifycmd.cc
+END
+makefacecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/makefacecmd.h
+END
+unweldcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/unweldcmd.h
+END
+snapcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/snapcmd.cc
+END
+deletecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/deletecmd.cc
+END
+snapcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/snapcmd.h
+END
+invnormalcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/invnormalcmd.cc
+END
+invertcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/invertcmd.cc
+END
+invnormalcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/invnormalcmd.h
+END
+invertcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/invertcmd.h
+END
+copycmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/copycmd.h
+END
+pastecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/pastecmd.cc
+END
+backgroundcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/backgroundcmd.cc
+END
+extrudecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/extrudecmd.cc
+END
+subdividecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/subdividecmd.h
+END
+backgroundcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/backgroundcmd.h
+END
+selectfreecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/selectfreecmd.cc
+END
+jointcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/jointcmd.cc
+END
+selectfreecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/selectfreecmd.h
+END
+jointcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/jointcmd.h
+END
+faceoutcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/faceoutcmd.cc
+END
+assignjointcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/assignjointcmd.cc
+END
+pointcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/pointcmd.cc
+END
+spherifycmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/spherifycmd.cc
+END
+flipcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/flipcmd.cc
+END
+dupcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/dupcmd.h
+END
+pointcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/pointcmd.h
+END
+spherifycmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/spherifycmd.h
+END
+weldcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/weldcmd.cc
+END
+aligncmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/aligncmd.h
+END
+makefacecmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/makefacecmd.cc
+END
+flattencmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/flattencmd.cc
+END
+weldcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/weldcmd.h
+END
+simplifycmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/simplifycmd.h
+END
+unweldcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/unweldcmd.cc
+END
+flattencmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/flattencmd.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/Makefile.am
+END
+capcmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/capcmd.cc
+END
+deletecmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/deletecmd.h
+END
+capcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/misfitcode/!svn/ver/344/mm3d/trunk/src/commands/capcmd.h
+END

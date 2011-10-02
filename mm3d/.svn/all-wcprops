@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/misfitcode/!svn/ver/440/mm3d/trunk
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/mkinstalldirs
+END
+mm3d-win32-installer.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misfitcode/!svn/ver/394/mm3d/trunk/mm3d-win32-installer.nsi
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/misfitcode/!svn/ver/344/mm3d/trunk/AUTHORS
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/misfitcode/!svn/ver/344/mm3d/trunk/depcomp
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/misfitcode/!svn/ver/440/mm3d/trunk/ChangeLog
+END
+.svnignore
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/344/mm3d/trunk/.svnignore
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/344/mm3d/trunk/config.guess
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/344/mm3d/trunk/config.sub
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/misfitcode/!svn/ver/344/mm3d/trunk/README
+END
+Makefile.mingw
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/misfitcode/!svn/ver/429/mm3d/trunk/Makefile.mingw
+END
+cleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/344/mm3d/trunk/cleanup.sh
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/344/mm3d/trunk/config.h.in
+END
+autosetup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/344/mm3d/trunk/autosetup.sh
+END
+README.SVN
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/374/mm3d/trunk/README.SVN
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/394/mm3d/trunk/configure.ac
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/misfitcode/!svn/ver/438/mm3d/trunk/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/misfitcode/!svn/ver/346/mm3d/trunk/INSTALL
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/misfitcode/!svn/ver/344/mm3d/trunk/acinclude.m4
+END
+INSTALL.WIN32
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/misfitcode/!svn/ver/344/mm3d/trunk/INSTALL.WIN32
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/misfitcode/!svn/ver/344/mm3d/trunk/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/344/mm3d/trunk/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/misfitcode/!svn/ver/344/mm3d/trunk/missing
+END
+CODE
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/misfitcode/!svn/ver/374/mm3d/trunk/CODE
+END
+config.h.mingw
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/misfitcode/!svn/ver/394/mm3d/trunk/config.h.mingw
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/344/mm3d/trunk/install.bat
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/misfitcode/!svn/ver/344/mm3d/trunk/NEWS
+END
+TRANSLATORS
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/misfitcode/!svn/ver/344/mm3d/trunk/TRANSLATORS
+END
+mm3d.reg
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/misfitcode/!svn/ver/344/mm3d/trunk/mm3d.reg
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/misfitcode/!svn/ver/344/mm3d/trunk/install-sh
+END
