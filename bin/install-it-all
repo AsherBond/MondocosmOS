@@ -12,4 +12,4 @@ cd $mybase
 cmmi='/var/lib/MondocosmOS/bin/cmmi'
 
 # find all makefiles
-find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi $mybase 
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi 
