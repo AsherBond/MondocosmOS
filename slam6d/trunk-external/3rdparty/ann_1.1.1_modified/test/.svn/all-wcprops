@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test
+END
+rand.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/rand.cpp
+END
+test1.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test1.in
+END
+test2.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test2.in
+END
+test1-query.pts
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test1-query.pts
+END
+test2-query.pts
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test2-query.pts
+END
+rand.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/rand.h
+END
+ann_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/ann_test.cpp
+END
+test1-data.pts
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test1-data.pts
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/Makefile
+END
+test1.save
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test1.save
+END
+test2-data.pts
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test2-data.pts
+END
+test2.save
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/test/test2.save
+END

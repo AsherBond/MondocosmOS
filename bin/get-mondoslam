@@ -29,4 +29,7 @@ cd $DIR
 svn co https://mplapack.svn.sourceforge.net/svnroot/mplapack mplapack
 
 cd $DIR
+svn co https://svn.openslam.org/data/svn/slam6d slam6d
+
+cd $DIR
 git clone git://github.com/shihongzhi/PTAMM.git PTAMM

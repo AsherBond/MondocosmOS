@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample
+END
+query.pts
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample/query.pts
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample/Makefile
+END
+ann_sample.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample/ann_sample.cpp
+END
+data.pts
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample/data.pts
+END
+sample.save
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/ann_1.1.1_modified/sample/sample.save
+END

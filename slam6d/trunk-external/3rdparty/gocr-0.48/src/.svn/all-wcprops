@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src
+END
+pcx.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pcx.h
+END
+gocr.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/gocr.h
+END
+output.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/output.c
+END
+pgm2asc.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pgm2asc.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/Makefile.in
+END
+progress.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/progress.c
+END
+output.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/output.h
+END
+progress.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/progress.h
+END
+jconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/jconv.c
+END
+ocr0n.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/ocr0n.c
+END
+amiga.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/amiga.h
+END
+unicode.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/unicode.c
+END
+otsu.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/otsu.c
+END
+pnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pnm.c
+END
+unicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/unicode.h
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/Makefile
+END
+barcode.c.orig
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/barcode.c.orig
+END
+otsu.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/otsu.h
+END
+barcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/barcode.c
+END
+pnm.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pnm.h
+END
+test2.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/test2.c
+END
+ocr0.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/ocr0.c
+END
+ocr1.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/ocr1.c
+END
+barcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/barcode.h
+END
+database.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/database.c
+END
+lgocr.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/lgocr.c
+END
+ocr0.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/ocr0.h
+END
+detect.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/detect.c
+END
+ocr1.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/ocr1.h
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/lines.c
+END
+job.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/job.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/list.c
+END
+lgocr.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/lgocr.h
+END
+tga.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/tga.c
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/list.h
+END
+tga.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/tga.h
+END
+pixel.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pixel.c
+END
+test.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/test.cc
+END
+box.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/box.c
+END
+pcx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pcx.c
+END
+gocr.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/gocr.c
+END
+pgm2asc.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/pgm2asc.c
+END
+remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/3rdparty/gocr-0.48/src/remove.c
+END

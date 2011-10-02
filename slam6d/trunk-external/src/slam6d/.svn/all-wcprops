@@ -1,0 +1,473 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/slam6d/!svn/ver/510/trunk/src/slam6d
+END
+scan_io_txyzr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/469/trunk/src/slam6d/scan_io_txyzr.cc
+END
+scan_io_uos_rgb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/453/trunk/src/slam6d/scan_io_uos_rgb.cc
+END
+scan_io_zahn.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_zahn.cc
+END
+scan_io_riegl_txt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/508/trunk/src/slam6d/scan_io_riegl_txt.cc
+END
+scan_io_asc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_asc.cc
+END
+kdc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/kdc.cc
+END
+scan_io_ks_rgb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/467/trunk/src/slam6d/scan_io_ks_rgb.cc
+END
+scan_io_leica_txt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/509/trunk/src/slam6d/scan_io_leica_txt.cc
+END
+scan_io_ais.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_ais.cc
+END
+graphSlam6D.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/481/trunk/src/slam6d/graphSlam6D.cc
+END
+loopToro.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/loopToro.cc
+END
+exportPoints.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/323/trunk/src/slam6d/exportPoints.cc
+END
+scan_io_xyz_rgb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/453/trunk/src/slam6d/scan_io_xyz_rgb.cc
+END
+scan_io_iais.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_iais.cc
+END
+loopHOG-Man.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/loopHOG-Man.cc
+END
+icp6Dlumeuler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/293/trunk/src/slam6d/icp6Dlumeuler.cc
+END
+lum6Dquat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/lum6Dquat.cc
+END
+icp6Dsvd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/474/trunk/src/slam6d/icp6Dsvd.cc
+END
+scan_io_front.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_front.cc
+END
+pose2frames.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/459/trunk/src/slam6d/pose2frames.cc
+END
+scan_io_x3d.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_x3d.cc
+END
+convergence.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/convergence.cc
+END
+kd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/kd.cc
+END
+scan_io_uos_map.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_uos_map.cc
+END
+testICPortho.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/testICPortho.m
+END
+scan_io_uos.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/460/trunk/src/slam6d/scan_io_uos.cc
+END
+graph.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/graph.cc
+END
+scan_io_rxp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/499/trunk/src/slam6d/scan_io_rxp.cc
+END
+elch6D.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/elch6D.cc
+END
+icp6D.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/icp6D.cc
+END
+scan_io_xyzr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/323/trunk/src/slam6d/scan_io_xyzr.cc
+END
+scan_io_ks.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/scan_io_ks.cc
+END
+scan_io_old.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_old.cc
+END
+icp6Dlumquat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/293/trunk/src/slam6d/icp6Dlumquat.cc
+END
+scan_io_oct.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/304/trunk/src/slam6d/scan_io_oct.cc
+END
+scan_io_xyz.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/474/trunk/src/slam6d/scan_io_xyz.cc
+END
+frames2pose.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/458/trunk/src/slam6d/frames2pose.cc
+END
+graph_balancer.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/363/trunk/src/slam6d/graph_balancer.cc
+END
+scan_io_uos_map_frames.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_uos_map_frames.cc
+END
+scan_io_stl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/495/trunk/src/slam6d/scan_io_stl.cc
+END
+scan_io_ply.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/510/trunk/src/slam6d/scan_io_ply.cc
+END
+icp6Dhelix.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/icp6Dhelix.cc
+END
+scan_io_wrl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_wrl.cc
+END
+scan_io_rts_map.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_rts_map.cc
+END
+elch6Dquat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/elch6Dquat.cc
+END
+icp6Dquat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/397/trunk/src/slam6d/icp6Dquat.cc
+END
+scan_io_rts.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_rts.cc
+END
+graphToro.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/graphToro.cc
+END
+graphHOG-Man.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/graphHOG-Man.cc
+END
+icp6Dquatscale.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/421/trunk/src/slam6d/icp6Dquatscale.cc
+END
+elch6Dslerp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/elch6Dslerp.cc
+END
+ghelix6DQ2.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/ghelix6DQ2.cc
+END
+icp6Dapx.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/icp6Dapx.cc
+END
+icp6Dortho.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/293/trunk/src/slam6d/icp6Dortho.cc
+END
+riegl2frames.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/356/trunk/src/slam6d/riegl2frames.cc
+END
+scan_io_riegl_project.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/423/trunk/src/slam6d/scan_io_riegl_project.cc
+END
+scan.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/slam6d/!svn/ver/506/trunk/src/slam6d/scan.cc
+END
+scan_io_riegl_bin.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_riegl_bin.cc
+END
+slam6D.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/slam6D.cc
+END
+scan_io_riegl_rgb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/278/trunk/src/slam6d/scan_io_riegl_rgb.cc
+END
+gapx6D.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/472/trunk/src/slam6d/gapx6D.cc
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/507/trunk/src/slam6d/CMakeLists.txt
+END
+ann_kd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/431/trunk/src/slam6d/ann_kd.cc
+END
+point_type.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/359/trunk/src/slam6d/point_type.cc
+END
+match_with_ground_truth.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/match_with_ground_truth.cc
+END
+scan_io_uos_frames.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_uos_frames.cc
+END
+scan_io_zuf.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_zuf.cc
+END
+elch6DunitQuat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/elch6DunitQuat.cc
+END
+elch6Deuler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/elch6Deuler.cc
+END
+toGlobal.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/507/trunk/src/slam6d/toGlobal.cc
+END
+scan_io_ifp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/scan_io_ifp.cc
+END
+icp6Ddual.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/293/trunk/src/slam6d/icp6Ddual.cc
+END
+scan_diff.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/474/trunk/src/slam6d/scan_diff.cc
+END
+frame_to_graph.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/362/trunk/src/slam6d/frame_to_graph.cc
+END
+scan_red.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/499/trunk/src/slam6d/scan_red.cc
+END
+frames2riegl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/474/trunk/src/slam6d/frames2riegl.cc
+END
+lum6Deuler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/483/trunk/src/slam6d/lum6Deuler.cc
+END
+d2tree.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/273/trunk/src/slam6d/d2tree.cc
+END

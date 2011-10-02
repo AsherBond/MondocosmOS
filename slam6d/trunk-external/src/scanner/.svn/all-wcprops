@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/slam6d/!svn/ver/347/trunk/src/scanner
+END
+david_scanner.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/347/trunk/src/scanner/david_scanner.cc
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/347/trunk/src/scanner/CMakeLists.txt
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs
+END
+registerscans.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs/registerscans.cc
+END
+panoramacreator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs/panoramacreator.cc
+END
+generatesiftfeatures.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs/generatesiftfeatures.cc
+END
+readscan.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs/readscan.cc
+END
+matchsiftfeatures.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/455/trunk/src/slam6d/sift/programs/matchsiftfeatures.cc
+END

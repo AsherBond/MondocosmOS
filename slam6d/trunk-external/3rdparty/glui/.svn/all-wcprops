@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/502/trunk/3rdparty/glui
+END
+glui_img_downarrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_downarrow.c
+END
+glui_spinner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_spinner.cpp
+END
+arcball.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/arcball.cpp
+END
+glui_img_listbox_up_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_listbox_up_dis.c
+END
+glui.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui.h
+END
+glui_node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_node.cpp
+END
+glui_img_spinup_0.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spinup_0.c
+END
+glui_edittext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_edittext.cpp
+END
+glui_img_spinup_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spinup_1.c
+END
+glui_img_uparrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_uparrow.c
+END
+glui_img_spindown_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spindown_dis.c
+END
+glui_statictext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_statictext.cpp
+END
+glui_img_listbox_up.ppm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_listbox_up.ppm
+END
+glui_bitmaps.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_bitmaps.cpp
+END
+algebra3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/algebra3.cpp
+END
+glui_img_checkbox_0.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_checkbox_0.c
+END
+glui_img_checkbox_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_checkbox_1.c
+END
+glui_img_radiobutton_0.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_radiobutton_0.c
+END
+glui_img_radiobutton_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_radiobutton_1.c
+END
+quaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/quaternion.h
+END
+glui_add_controls.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_add_controls.cpp
+END
+glui_button.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_button.cpp
+END
+glui_img_spindown_0.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spindown_0.c
+END
+glui_img_spindown_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spindown_1.c
+END
+glui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui.cpp
+END
+glui_control.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_control.cpp
+END
+glui_img_listbox_down.ppm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_img_listbox_down.ppm
+END
+glui_img_listbox_up.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_listbox_up.c
+END
+glui_img_rightarrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_rightarrow.c
+END
+glui_listbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_listbox.cpp
+END
+arcball.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/arcball.h
+END
+glui_checkbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_checkbox.cpp
+END
+glui_commandline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/475/trunk/3rdparty/glui/glui_commandline.cpp
+END
+glui_img_listbox_up_dis.ppm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_listbox_up_dis.ppm
+END
+glui_column.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_column.cpp
+END
+glui_mouse_iaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_mouse_iaction.cpp
+END
+glui_radio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_radio.cpp
+END
+glui_translation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_translation.cpp
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/475/trunk/3rdparty/glui/LICENSE.txt
+END
+glui_panel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_panel.cpp
+END
+glui_rotation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_rotation.cpp
+END
+glui_img_checkbox_0_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_checkbox_0_dis.c
+END
+glui_rollout.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_rollout.cpp
+END
+glui_separator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_separator.cpp
+END
+glui_img_leftarrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_leftarrow.c
+END
+glui_img_checkbox_1_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_checkbox_1_dis.c
+END
+glui_bitmap_img_data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/glui_bitmap_img_data.cpp
+END
+glui_img_radiobutton_0_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_radiobutton_0_dis.c
+END
+glui_img_radiobutton_1_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_radiobutton_1_dis.c
+END
+algebra3.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/algebra3.h
+END
+quaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/500/trunk/3rdparty/glui/quaternion.cpp
+END
+glui_img_listbox_down.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_listbox_down.c
+END
+glui_img_spinup_dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/glui/glui_img_spinup_dis.c
+END
+stdinc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/502/trunk/3rdparty/glui/stdinc.h
+END

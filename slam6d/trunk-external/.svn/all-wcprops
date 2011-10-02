@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svnroot/slam6d/!svn/ver/510/trunk
+END
+manifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/slam6d/!svn/ver/368/trunk/manifest.xml
+END
+LICENSING
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/slam6d/!svn/ver/482/trunk/LICENSING
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/slam6d/!svn/ver/495/trunk/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/slam6d/!svn/ver/384/trunk/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/slam6d/!svn/ver/508/trunk/README
+END
+README.planes
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/424/trunk/README.planes
+END

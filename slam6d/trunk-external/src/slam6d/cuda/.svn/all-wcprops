@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/cuda
+END
+icp6Dcuda.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/430/trunk/src/slam6d/cuda/icp6Dcuda.cc
+END
+CIcpGpuCuda.cu
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/280/trunk/src/slam6d/cuda/CIcpGpuCuda.cu
+END

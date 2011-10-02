@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp
+END
+README-autopano-sift-c.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/README-autopano-sift-c.txt
+END
+CamLens.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/CamLens.c
+END
+ANNkd_wrap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/ANNkd_wrap.cpp
+END
+saInterp.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/saInterp.c
+END
+APSCpp.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/APSCpp.c
+END
+sphereAlign.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/sphereAlign.h
+END
+HermiteSpline.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/HermiteSpline.c
+END
+saRemap.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/saRemap.c
+END
+APSCpp_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/APSCpp_main.c
+END
+saInterp.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/saInterp.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/CMakeLists.txt
+END
+HermiteSpline.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCpp/HermiteSpline.h
+END

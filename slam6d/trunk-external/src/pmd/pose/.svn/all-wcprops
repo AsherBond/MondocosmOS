@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/slam6d/!svn/ver/285/trunk/src/pmd/pose
+END
+motion3-horn.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/pose/motion3-horn.cc
+END
+history.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/pose/history.cc
+END
+pmdc.conf
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/pose/pmdc.conf
+END
+pose.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/285/trunk/src/pmd/pose/pose.cc
+END
+djvm.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/pose/djvm.ttf
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/slam6d/!svn/ver/409/trunk/src/pmd
+END
+o3d.L32.pcp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/o3d.L32.pcp
+END
+essential-trn.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/essential-trn.xml
+END
+pmdc.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/pmdc.conf
+END
+essential-rot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/essential-rot.xml
+END
+distortion-pmd-6x4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/distortion-pmd-6x4.xml
+END
+distortion-cam-6x4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/distortion-cam-6x4.xml
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/README
+END
+cvpmd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/cvpmd.cc
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/409/trunk/src/pmd/CMakeLists.txt
+END
+intrinsic-pmd-6x4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/intrinsic-pmd-6x4.xml
+END
+pmdWrap.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/slam6d/!svn/ver/273/trunk/src/pmd/pmdWrap.cc
+END
+intrinsic-cam-6x4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/intrinsic-cam-6x4.xml
+END

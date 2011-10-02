@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+
+<project>
+  <name>SLAM6D - Simultaneous Localization and Mapping with 6 DoF</name>
+
+  <author>
+    <name>Andreas Nuechter</name>
+    <url>http://www.nuechti.de</url>
+  </author>
+  <author>
+    <name>Kai Lingemann</name>
+  </author>
+  <author>
+    <name>Jochen Sprickerhof</name>
+  </author>
+  <author>
+    <name>Dorit Borrmann</name>
+  </author>
+  <author>
+    <name>Jan Elseberg</name>
+  </author>
+  <author>
+    <name>Peter Schneider</name>
+  </author>
+  <author>
+    <name>Deyuan Qui</name>
+  </author>
+
+
+  <briefdescription>
+    This project consists of a software to register 3D point clouds into a common coordinate system, as well as a viewer to display the scene. For the registration, different ICP minimizing algorithms can be chosen, as well as global relaxation methods, aiming at generating an overall globally consistent scene. Several formats for the point clouds are supported, new formats can be implemented easily. 
+  </briefdescription>
+
+  <description>
+ This project consists of a software to register 3D point clouds into a common coordinate system, as well as a viewer to display the scene. For the registration, different ICP minimizing algorithms can be chosen, as well as global relaxation methods, aiming at generating an overall globally consistent scene. Several formats for the point clouds are supported, new formats can be implemented easily.
+ </description>
+
+
+<image> 
+  <url>http://www.openslam.org/imgs/indoor.png</url>
+  <thumbnailurl>http://www.openslam.org/imgs/s_indoor.png</thumbnailurl>
+  <description>A matches indoor 3D point cloud acquired with Kurt3D</description>
+</image>
+
+
+<image> 
+  <url>http://www.openslam.org/imgs/outdoor.png</url>
+  <thumbnailurl>http://www.openslam.org/imgs/s_outdoor.png</thumbnailurl>
+  <description>Example outdoor 3D scan</description>
+</image>
+
+<image> 
+  <url>http://www.openslam.org/imgs/outdoor_top_view.png</url>
+  <thumbnailurl>http://www.openslam.org/imgs/s_outdoor_top_view.png</thumbnailurl>
+  <description>Large outdoor scene in a bird eye view</description>
+</image>
+
+<image> 
+  <url>http://www.openslam.org/imgs/oerebro_mine.png</url>
+  <thumbnailurl>http://www.openslam.org/imgs/s_oerebro_mine.png</thumbnailurl>
+  <description>3D scans inside the Kvarntorp mine near Oerebro</description>
+</image>
+
+  <requirement>
+    6DSLAM was tested under gcc 4.3.2, icc 11.0 and MS Visual Studio 
+  </requirement>
+
+  <map>6DSLAM can be used to create consistent 3D point clouds </map>
+
+  <input>3D scan data in various file formats. </input>
+
+  <paper>
+    <title>3D Robotic Mapping</title>
+    <authorlist>Andreas Nuechter</authorlist>
+    <publishedin>Springer Tracts in Advanced Robotics (STAR), ISBN 978-3540898832, Springer Verlag</publishedin>
+    <year>2009</year>
+  </paper>
+
+  <license>
+    SLAM6D is licenced under GPLv3
+  </license>
+
+ 
+</project>

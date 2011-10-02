@@ -1,0 +1,485 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat
+END
+myexcept.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/myexcept.cpp
+END
+newmatrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatrm.h
+END
+nm_cc.mak
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nm_cc.mak
+END
+tmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt.h
+END
+garch.dat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/garch.dat
+END
+nm_b55.mak
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nm_b55.mak
+END
+solution.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/solution.h
+END
+nm10.htm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nm10.htm
+END
+garch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/garch.txt
+END
+evalue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/evalue.cpp
+END
+precisio.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/precisio.h
+END
+newmatio.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatio.h
+END
+newfft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newfft.cpp
+END
+newmat.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat.h
+END
+myexcept.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/myexcept.h
+END
+test_exc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/test_exc.txt
+END
+garch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/garch.cpp
+END
+tmt1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt1.cpp
+END
+tmt2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt2.cpp
+END
+newmat.lfl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat.lfl
+END
+tmt3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt3.cpp
+END
+jacobi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/jacobi.cpp
+END
+tmt4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt4.cpp
+END
+newmatex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatex.cpp
+END
+tmt5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt5.cpp
+END
+tmt6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt6.cpp
+END
+newmatnl.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatnl.h
+END
+tmt7.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt7.cpp
+END
+svd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/svd.cpp
+END
+tmt8.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt8.cpp
+END
+tmt9.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt9.cpp
+END
+tmt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt.txt
+END
+nl_ex.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nl_ex.txt
+END
+bandmat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/bandmat.cpp
+END
+sl_ex.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/sl_ex.txt
+END
+rbd.css
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/rbd.css
+END
+test_exc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/test_exc.cpp
+END
+cholesky.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/cholesky.cpp
+END
+newmatap.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatap.h
+END
+nm_targ.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nm_targ.txt
+END
+newmatnl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatnl.cpp
+END
+sort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/sort.cpp
+END
+example.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/example.txt
+END
+newmatrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatrm.cpp
+END
+tmt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmt.cpp
+END
+nl_ex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nl_ex.cpp
+END
+tmta.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmta.cpp
+END
+tmtb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtb.cpp
+END
+tmtc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtc.cpp
+END
+add_time.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/add_time.png
+END
+tmtd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtd.cpp
+END
+nm_gnu.mak
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/nm_gnu.mak
+END
+tmte.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmte.cpp
+END
+sl_ex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/sl_ex.cpp
+END
+tmtf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtf.cpp
+END
+tmtg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtg.cpp
+END
+solution.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/solution.cpp
+END
+controlw.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/controlw.h
+END
+newmat1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat1.cpp
+END
+tmth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmth.cpp
+END
+newmat2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat2.cpp
+END
+tmti.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmti.cpp
+END
+newmat3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat3.cpp
+END
+tmtj.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtj.cpp
+END
+fft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/fft.cpp
+END
+newmat4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat4.cpp
+END
+tmtk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtk.cpp
+END
+newmat5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat5.cpp
+END
+tmtl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtl.cpp
+END
+newmat6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat6.cpp
+END
+tmtm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/tmtm.cpp
+END
+newmat7.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat7.cpp
+END
+newmat8.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat8.cpp
+END
+boolean.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/boolean.h
+END
+newmat9.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmat9.cpp
+END
+newmatrc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/newmatrc.h
+END
+hholder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/hholder.cpp
+END
+include.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/include.h
+END
+submat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/submat.cpp
+END
+example.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/newmat/example.cpp
+END

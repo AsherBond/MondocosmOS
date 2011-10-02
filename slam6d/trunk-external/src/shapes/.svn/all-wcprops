@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/slam6d/!svn/ver/508/trunk/src/shapes
+END
+matchMarker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/505/trunk/src/shapes/matchMarker.cc
+END
+plane.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/508/trunk/src/shapes/plane.cc
+END
+geom_math.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/358/trunk/src/shapes/geom_math.cc
+END
+ConfigFileHough.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/slam6d/!svn/ver/508/trunk/src/shapes/ConfigFileHough.cc
+END
+quadtree.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/286/trunk/src/shapes/quadtree.cc
+END
+hough.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/508/trunk/src/shapes/hough.cc
+END
+scan_ransac.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/290/trunk/src/shapes/scan_ransac.cc
+END
+hsm3d.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/424/trunk/src/shapes/hsm3d.cc
+END
+accumulator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/505/trunk/src/shapes/accumulator.cc
+END
+caliboard.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/507/trunk/src/shapes/caliboard.cc
+END
+numberrec.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/286/trunk/src/shapes/numberrec.cc
+END
+image.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/428/trunk/src/shapes/image.cc
+END
+convexplane.cc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/508/trunk/src/shapes/convexplane.cc
+END
+shapes.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/slam6d/!svn/ver/290/trunk/src/shapes/shapes.cc
+END
+toImage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/slam6d/!svn/ver/428/trunk/src/shapes/toImage.cc
+END
+parascan.cc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/505/trunk/src/shapes/parascan.cc
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/507/trunk/src/shapes/CMakeLists.txt
+END

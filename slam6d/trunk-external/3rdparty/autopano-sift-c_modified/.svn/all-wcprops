@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified
+END
+LoweDetector.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/LoweDetector.c
+END
+DisplayImage.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/DisplayImage.c
+END
+GaussianConvolution.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/GaussianConvolution.c
+END
+Transform.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/Transform.c
+END
+BondBall.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/BondBall.c
+END
+AreaFilter.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/AreaFilter.c
+END
+TestRandom.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/TestRandom.c
+END
+Random.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/Random.c
+END
+ImageMap.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/ImageMap.c
+END
+AutoPanoSift.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/AutoPanoSift.h
+END
+README.1ST
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/README.1ST
+END
+autopano-c-complete.vbs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/autopano-c-complete.vbs
+END
+AutoPano.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/AutoPano.c
+END
+MatchKeys.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/MatchKeys.c
+END
+APSCmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/APSCmain.c
+END
+autopano-c-complete
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/autopano-c-complete
+END
+Utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/Utils.c
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/LICENSE
+END
+ScaleSpace.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/ScaleSpace.c
+END
+autopano-c-complete.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/autopano-c-complete.sh
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/ChangeLog
+END
+RANSAC.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/RANSAC.c
+END
+ArrayList.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/ArrayList.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/README
+END
+TestKDTree.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/TestKDTree.c
+END
+TestArray.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/TestArray.c
+END
+SimpleMatrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/SimpleMatrix.c
+END
+KDTree.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/KDTree.c
+END
+ImageMatchModel.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/ImageMatchModel.c
+END
+KeypointXML.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/KeypointXML.c
+END
+GenerateKeys.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/GenerateKeys.c
+END
+HashTable.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/slam6d/!svn/ver/437/trunk/3rdparty/autopano-sift-c_modified/HashTable.c
+END

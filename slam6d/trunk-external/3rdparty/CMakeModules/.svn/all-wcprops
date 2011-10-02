@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/slam6d/!svn/ver/317/trunk/3rdparty/CMakeModules
+END
+make2cmake.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/make2cmake.cmake
+END
+empty.depend.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/empty.depend.in
+END
+parse_cubin.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/parse_cubin.cmake
+END
+CountProcessors.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/CountProcessors.cmake
+END
+FindCUDA.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/FindCUDA.cmake
+END
+run_nvcc.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/slam6d/!svn/ver/273/trunk/3rdparty/CMakeModules/run_nvcc.cmake
+END

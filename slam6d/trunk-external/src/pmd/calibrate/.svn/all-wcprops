@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/slam6d/!svn/ver/128/trunk/src/pmd/calibrate
+END
+calibrate.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/calibrate/calibrate.cc
+END
+extrinsic.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/calibrate/extrinsic.cc
+END
+grabFramesCam.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/calibrate/grabFramesCam.cc
+END
+grabFramesPMD.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/127/trunk/src/pmd/calibrate/grabFramesPMD.cc
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/slam6d/!svn/ver/508/trunk/bin
+END
+libxml2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/215/trunk/bin/libxml2.dll
+END
+vigraimpex.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/slam6d/!svn/ver/215/trunk/bin/vigraimpex.dll
+END
+rts_recordingtime_gps.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/70/trunk/bin/rts_recordingtime_gps.m
+END
+sift_script.example_MERCATOR.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_MERCATOR.sh
+END
+iconv.dll
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/215/trunk/bin/iconv.dll
+END
+sift_script.example_PANNINI2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_PANNINI2.sh
+END
+zlib1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/215/trunk/bin/zlib1.dll
+END
+sift_script.example.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example.sh
+END
+sift_script.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/slam6d/!svn/ver/216/trunk/bin/sift_script.bat
+END
+bash_completion_3dtk.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/468/trunk/bin/bash_completion_3dtk.sh
+END
+wx.fbp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/slam6d/!svn/ver/496/trunk/bin/wx.fbp
+END
+sift_script.example_NEW.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_NEW.sh
+END
+convert.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/31/trunk/bin/convert.py
+END
+sift_script.example_PANNINI.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_PANNINI.sh
+END
+hough.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/508/trunk/bin/hough.cfg
+END
+asc_comma_remove.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/63/trunk/bin/asc_comma_remove.sh
+END
+sift_script.example_CYLINDRICAL.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_CYLINDRICAL.sh
+END
+rts_recordingtime_sync.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/slam6d/!svn/ver/70/trunk/bin/rts_recordingtime_sync.m
+END
+sift_script.example_STEREOGRAPHIC.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_STEREOGRAPHIC.sh
+END
+sift_script.example_STANDARD.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_STANDARD.sh
+END
+sift_script.example_RECTILINEAR.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/447/trunk/bin/sift_script.example_RECTILINEAR.sh
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/slam6d/!svn/ver/508/trunk/include/shapes
+END
+geom_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/358/trunk/include/shapes/geom_math.h
+END
+ConfigFileHough.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/508/trunk/include/shapes/ConfigFileHough.h
+END
+shape.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/424/trunk/include/shapes/shape.h
+END
+integralimg.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/integralimg.h
+END
+ConfigFileHough.icc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/424/trunk/include/shapes/ConfigFileHough.icc
+END
+ransac.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/351/trunk/include/shapes/ransac.h
+END
+quadtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/quadtree.h
+END
+hough.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/505/trunk/include/shapes/hough.h
+END
+ransac_Boctree.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/505/trunk/include/shapes/ransac_Boctree.h
+END
+ppair.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/429/trunk/include/shapes/ppair.h
+END
+numbers.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/numbers.h
+END
+scan_ransac.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/290/trunk/include/shapes/scan_ransac.h
+END
+config_sickday.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/config_sickday.h
+END
+hsm3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/hsm3d.h
+END
+accumulator.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/accumulator.h
+END
+numberrec.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/numberrec.h
+END
+image.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/slam6d/!svn/ver/428/trunk/include/shapes/image.h
+END
+convexplane.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/slam6d/!svn/ver/505/trunk/include/shapes/convexplane.h
+END
+NumberRecOctree.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/346/trunk/include/shapes/NumberRecOctree.h
+END
+sickday.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/slam6d/!svn/ver/286/trunk/include/shapes/sickday.h
+END
+parascan.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/slam6d/!svn/ver/505/trunk/include/shapes/parascan.h
+END

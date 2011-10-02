@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/slam6d/!svn/ver/67/trunk/dat
+END
+scan000.3d
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan000.3d
+END
+scan000.pose
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan000.pose
+END
+scan001.3d
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan001.3d
+END
+scan001.pose
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan001.pose
+END
+scan002.3d
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan002.3d
+END
+scan002.pose
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/slam6d/!svn/ver/17/trunk/dat/scan002.pose
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/slam6d/!svn/ver/61/trunk/dat/README
+END

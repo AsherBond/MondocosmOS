@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/slam6d/!svn/ver/452/trunk/src/slam6d/sift/library
+END
+Feature.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/Feature.cc
+END
+PanoramaMap.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/PanoramaMap.cc
+END
+PointC.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/slam6d/!svn/ver/452/trunk/src/slam6d/sift/library/PointC.cc
+END
+PolarPointCloud.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/PolarPointCloud.cc
+END
+PointCloud.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/PointCloud.cc
+END
+ScanTransform.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/ScanTransform.cc
+END
+FeatureMatchSetGroup.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/FeatureMatchSetGroup.cc
+END
+FeatureMatchSet.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/FeatureMatchSet.cc
+END
+Reader_RIEGL.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/Reader_RIEGL.cc
+END
+Register.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/Register.cc
+END
+Coord.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/Coord.cc
+END
+FeatureBase.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/FeatureBase.cc
+END
+FeatureSet.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/FeatureSet.cc
+END
+FeatureMatch.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/slam6d/!svn/ver/450/trunk/src/slam6d/sift/library/FeatureMatch.cc
+END
