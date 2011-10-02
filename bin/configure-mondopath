@@ -1,0 +1,16 @@
+#!/bin/bash
+# Asher Bond 2011
+# configures path for mondocosm
+
+export MONDOPATH=/var/lib/MondocosmOS
+
+echo "MONDOPATH: $MONDOPATH"
+
+# add $MONDOPATH to $PATH if it's not already there
+if !(`echo "$PATH" | grep -q "$MONDOPATH"`) ; then
+        export PATH=$PATH:$MONDOPATH/bin
+fi
+
+
+echo "PATH: $PATH"
+

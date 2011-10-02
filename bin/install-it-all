@@ -9,7 +9,7 @@ fi
 
 cd $mybase
 
-cmmi=`find . -type f -name "cmmi"`
+#cmmi=`find . -type f -name "cmmi"`
 
 # find all makefiles
-find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs $cmmi $mybase 
+find . -type f -name "Makefile" | perl -p -e 's/Makefile$//g' | xargs cmmi $mybase 
