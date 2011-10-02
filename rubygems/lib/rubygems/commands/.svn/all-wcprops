@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2501/trunk/lib/rubygems/commands
+END
+push_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2377/trunk/lib/rubygems/commands/push_command.rb
+END
+specification_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2178/trunk/lib/rubygems/commands/specification_command.rb
+END
+generate_index_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2059/trunk/lib/rubygems/commands/generate_index_command.rb
+END
+unpack_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2460/trunk/lib/rubygems/commands/unpack_command.rb
+END
+update_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2482/trunk/lib/rubygems/commands/update_command.rb
+END
+sources_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2110/trunk/lib/rubygems/commands/sources_command.rb
+END
+cleanup_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2186/trunk/lib/rubygems/commands/cleanup_command.rb
+END
+rdoc_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2352/trunk/lib/rubygems/commands/rdoc_command.rb
+END
+lock_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1876/trunk/lib/rubygems/commands/lock_command.rb
+END
+help_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1838/trunk/lib/rubygems/commands/help_command.rb
+END
+fetch_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2495/trunk/lib/rubygems/commands/fetch_command.rb
+END
+owner_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2377/trunk/lib/rubygems/commands/owner_command.rb
+END
+contents_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2497/trunk/lib/rubygems/commands/contents_command.rb
+END
+cert_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1776/trunk/lib/rubygems/commands/cert_command.rb
+END
+pristine_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2257/trunk/lib/rubygems/commands/pristine_command.rb
+END
+build_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1577/trunk/lib/rubygems/commands/build_command.rb
+END
+setup_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2482/trunk/lib/rubygems/commands/setup_command.rb
+END
+which_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2356/trunk/lib/rubygems/commands/which_command.rb
+END
+environment_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2501/trunk/lib/rubygems/commands/environment_command.rb
+END
+query_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2494/trunk/lib/rubygems/commands/query_command.rb
+END
+search_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2138/trunk/lib/rubygems/commands/search_command.rb
+END
+install_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2495/trunk/lib/rubygems/commands/install_command.rb
+END
+server_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2499/trunk/lib/rubygems/commands/server_command.rb
+END
+stale_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1764/trunk/lib/rubygems/commands/stale_command.rb
+END
+outdated_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1856/trunk/lib/rubygems/commands/outdated_command.rb
+END
+uninstall_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2082/trunk/lib/rubygems/commands/uninstall_command.rb
+END
+mirror_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2257/trunk/lib/rubygems/commands/mirror_command.rb
+END
+list_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1717/trunk/lib/rubygems/commands/list_command.rb
+END
+check_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2019/trunk/lib/rubygems/commands/check_command.rb
+END
+dependency_command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2479/trunk/lib/rubygems/commands/dependency_command.rb
+END

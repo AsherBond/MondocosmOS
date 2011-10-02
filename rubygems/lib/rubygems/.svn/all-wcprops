@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2528/trunk/lib/rubygems
+END
+user_interaction.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2341/trunk/lib/rubygems/user_interaction.rb
+END
+command.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2495/trunk/lib/rubygems/command.rb
+END
+dependency.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2479/trunk/lib/rubygems/dependency.rb
+END
+source_info_cache_entry.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1939/trunk/lib/rubygems/source_info_cache_entry.rb
+END
+local_remote_options.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2315/trunk/lib/rubygems/local_remote_options.rb
+END
+install_update_options.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2371/trunk/lib/rubygems/install_update_options.rb
+END
+validator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2456/trunk/lib/rubygems/validator.rb
+END
+old_format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2140/trunk/lib/rubygems/old_format.rb
+END
+builder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2466/trunk/lib/rubygems/builder.rb
+END
+format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2381/trunk/lib/rubygems/format.rb
+END
+gemcutter_utilities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2441/trunk/lib/rubygems/gemcutter_utilities.rb
+END
+spec_fetcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2495/trunk/lib/rubygems/spec_fetcher.rb
+END
+dependency_installer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2495/trunk/lib/rubygems/dependency_installer.rb
+END
+indexer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2482/trunk/lib/rubygems/indexer.rb
+END
+doc_manager.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2479/trunk/lib/rubygems/doc_manager.rb
+END
+gem_runner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2140/trunk/lib/rubygems/gem_runner.rb
+END
+config_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2441/trunk/lib/rubygems/config_file.rb
+END
+custom_require.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1905/trunk/lib/rubygems/custom_require.rb
+END
+errors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2495/trunk/lib/rubygems/errors.rb
+END
+package_task.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2471/trunk/lib/rubygems/package_task.rb
+END
+version_option.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2371/trunk/lib/rubygems/version_option.rb
+END
+specification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2487/trunk/lib/rubygems/specification.rb
+END
+require_paths_builder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2140/trunk/lib/rubygems/require_paths_builder.rb
+END
+exceptions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2495/trunk/lib/rubygems/exceptions.rb
+END
+platform.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2488/trunk/lib/rubygems/platform.rb
+END
+text.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2078/trunk/lib/rubygems/text.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2474/trunk/lib/rubygems/version.rb
+END
+source_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2456/trunk/lib/rubygems/source_index.rb
+END
+remote_fetcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2528/trunk/lib/rubygems/remote_fetcher.rb
+END
+package.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2456/trunk/lib/rubygems/package.rb
+END
+installer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2482/trunk/lib/rubygems/installer.rb
+END
+source_info_cache.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2456/trunk/lib/rubygems/source_info_cache.rb
+END
+requirement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2474/trunk/lib/rubygems/requirement.rb
+END
+gem_path_searcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2350/trunk/lib/rubygems/gem_path_searcher.rb
+END
+ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1343/trunk/lib/rubygems/ext.rb
+END
+uninstaller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2317/trunk/lib/rubygems/uninstaller.rb
+END
+server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2514/trunk/lib/rubygems/server.rb
+END
+defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2465/trunk/lib/rubygems/defaults.rb
+END
+security.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2456/trunk/lib/rubygems/security.rb
+END
+command_manager.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2490/trunk/lib/rubygems/command_manager.rb
+END
+dependency_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2337/trunk/lib/rubygems/dependency_list.rb
+END
+test_utilities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2456/trunk/lib/rubygems/test_utilities.rb
+END
+gem_openssl.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2292/trunk/lib/rubygems/gem_openssl.rb
+END

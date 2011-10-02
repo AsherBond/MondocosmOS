@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/2393/trunk/bin
+END
+update_rubygems
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2393/trunk/bin/update_rubygems
+END
+gem
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2221/trunk/bin/gem
+END

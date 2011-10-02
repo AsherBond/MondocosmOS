@@ -1,0 +1,42 @@
+K 22
+bzr:ancestry:v3-trunk0
+V 106
+luislavena@gmail.com-20080330101939-xc6rixa7wzj84135
+luislavena@gmail.com-20080331225718-r2numoi7bj0ouliz
+
+K 12
+bzr:file-ids
+V 0
+
+K 25
+bzr:revision-id:v3-trunk0
+V 174
+1632 luislavena@gmail.com-20080330102051-34in128mz38ssb8a
+1633 luislavena@gmail.com-20080330152410-j8amtn2zifw0em2z
+1634 luislavena@gmail.com-20080331225917-ytr6six5p8byh8ip
+
+K 17
+bzr:revision-info
+V 126
+timestamp: 2008-03-31 19:59:17.671000004 -0300
+committer: Luis Lavena <luislavena@gmail.com>
+properties: 
+	branch-nick: trunk
+
+K 10
+svn:ignore
+V 56
+.config
+.rdebug_hist
+TAGS
+coverage
+doc
+pkg
+.idea
+tmtags
+
+K 13
+svn:mergeinfo
+V 38
+/branches/1_3:2441,2444,2451-2452,2484
+END

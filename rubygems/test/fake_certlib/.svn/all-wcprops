@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2292/trunk/test/fake_certlib
+END
+openssl.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2292/trunk/test/fake_certlib/openssl.rb
+END

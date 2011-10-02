@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2456/trunk/lib/rubygems/package
+END
+tar_header.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2456/trunk/lib/rubygems/package/tar_header.rb
+END
+f_sync_dir.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2456/trunk/lib/rubygems/package/f_sync_dir.rb
+END
+tar_writer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2456/trunk/lib/rubygems/package/tar_writer.rb
+END
+tar_input.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2283/trunk/lib/rubygems/package/tar_input.rb
+END
+tar_output.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2456/trunk/lib/rubygems/package/tar_output.rb
+END
+tar_reader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2456/trunk/lib/rubygems/package/tar_reader.rb
+END
