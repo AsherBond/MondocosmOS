@@ -13,7 +13,7 @@ cd $DIR
 git clone git://github.com/AsherBond/MondocosmOS.git MondocosmOS
 cd MondocosmOS
 git pull
-cd $DIR/bin
+cd $DIR/MondocosmOS/bin
 ./configure-mondopath
 
 cd ..
